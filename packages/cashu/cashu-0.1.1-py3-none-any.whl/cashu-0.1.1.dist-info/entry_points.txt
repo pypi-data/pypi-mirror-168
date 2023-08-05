@@ -1,0 +1,2 @@
+[console_scripts]
+cashu = wallet.cashu:cli
