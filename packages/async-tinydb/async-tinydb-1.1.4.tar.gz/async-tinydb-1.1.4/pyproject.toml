@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "async-tinydb"
+version = "1.1.4"
+description = "Yet Another Async TinyDB"
+authors = ["VermiIIi0n <dungeon.behind0t@icloud.com>", "Markus Siemens <markus@m-siemens.de>", ]
+license = "MIT"
+
+readme = "README.md"
+
+homepage = "https://github.com/VermiIIi0n/async-tinydb"
+
+keywords = ["database", "nosql", "async"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Database",
+    "Topic :: Database :: Database Engines/Servers",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+
+packages = [
+    { include = "asynctinydb" }
+]
+
+[tool.poetry.urls]
+"Issues" = "https://github.com/VermiIIi0n/async-tinydb/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typing-extensions = { version = "^3.10.0 || ^4.0.0", python = "<=3.10" }
+nest-asyncio = "^1.5.5"
+ujson = "^5.4.0"
+aiofiles = "^22.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-codestyle = "^1.4.0"
+pytest-cov = "^2.8.1"
+pycodestyle = "^2.5.0"
+sphinx = "^2.2.1"
+coveralls = "^1.8.2"
+pyyaml = "^5.1.2"
+pytest-mypy = { version = "^0.8.1", markers = "platform_python_implementation != 'PyPy'" }
+types-PyYAML = "^5.4.3"
+typing-extensions = { version = "^3.10.0" }
+pytest-asyncio = "^0.19.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
