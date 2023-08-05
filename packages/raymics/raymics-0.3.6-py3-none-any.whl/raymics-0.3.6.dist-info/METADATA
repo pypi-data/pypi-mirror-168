@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: raymics
+Version: 0.3.6
+Summary: Raymics Tools
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: SimpleITK
+Requires-Dist: numpy
+Requires-Dist: opencv-contrib-python
+Requires-Dist: pandas
+Requires-Dist: pyradiomics
+Requires-Dist: sk-video
+Requires-Dist: tqdm
+
+UNKNOWN
+
