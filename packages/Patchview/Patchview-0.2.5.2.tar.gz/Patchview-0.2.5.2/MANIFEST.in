@@ -1,0 +1,19 @@
+graft patchview
+include CONTRIBUTORS.rst
+include CONTRIBUTING.rst
+include HISTORY.rst
+include LICENSE
+inlcude enviroment.yml
+include requirements.txt
+include README.rst
+exclude .gitignore
+
+recursive-include tests *
+recursive-exclude .github
+recursive-exclude build *
+recursive-exclude dist *
+recursive-exclude patchview*
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif

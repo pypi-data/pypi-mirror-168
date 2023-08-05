@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Patchview"
+description = "GUI software for data analysis and visualization on whole-cell recording data"
+readme = "README.rst"
+requires-python = ">=3.8"
+license = {text = "BSD 3-Clause License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dynamic = ["authors","version","keywords","entry-points","optional-dependencies", "dependencies"]
+
+[project.gui-scripts]
+patchview = "patchview:pvGUI"
