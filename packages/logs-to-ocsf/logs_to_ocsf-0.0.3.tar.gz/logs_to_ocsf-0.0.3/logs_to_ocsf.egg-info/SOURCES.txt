@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+logs_to_ocsf/__init__.py
+logs_to_ocsf/_modidx.py
+logs_to_ocsf/convert_messages.py
+logs_to_ocsf/core.py
+logs_to_ocsf.egg-info/PKG-INFO
+logs_to_ocsf.egg-info/SOURCES.txt
+logs_to_ocsf.egg-info/dependency_links.txt
+logs_to_ocsf.egg-info/entry_points.txt
+logs_to_ocsf.egg-info/not-zip-safe
+logs_to_ocsf.egg-info/requires.txt
+logs_to_ocsf.egg-info/top_level.txt
