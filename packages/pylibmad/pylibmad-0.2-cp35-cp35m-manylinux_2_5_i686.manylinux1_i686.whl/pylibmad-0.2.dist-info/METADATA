@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pylibmad
+Version: 0.2
+Summary: A Python wrapper for the MPEG Audio Decoder library.
+Home-page: UNKNOWN
+Author: Jamie Wilkinson
+Author-email: jaq@spacepants.org
+License: GPL
+Project-URL: GitHub, https://github.com/oleksiyskorodumov/pymad
+Keywords: libmad mp3 decoder
+Platform: UNKNOWN
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+
+pymad is a Python module that allows Python programs to use the MPEG Audio Decoder library. pymad provides a high-level API, which reading PCM data from MPEG audio streams.
+
+
