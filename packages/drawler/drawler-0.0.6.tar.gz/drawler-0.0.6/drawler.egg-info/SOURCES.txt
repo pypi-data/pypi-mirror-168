@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+drawler.egg-info/PKG-INFO
+drawler.egg-info/SOURCES.txt
+drawler.egg-info/dependency_links.txt
+drawler.egg-info/requires.txt
+drawler.egg-info/top_level.txt
+src/drawler/__init__.py
+src/drawler/core.py
