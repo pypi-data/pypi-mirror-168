@@ -1,0 +1,8 @@
+libdispatch/__init__.py,sha256=n9Sx4CbhqFJAJNT-shSE2kTFQJkdTMukBnWhvUybKNw,816
+libdispatch/_inlines.abi3.so,sha256=441anofUYX9S8nI4XiLtk4y-NUELXsKSfFzNr7aELZs,34104
+libdispatch/_libdispatch.cpython-38-darwin.so,sha256=UktFayf_kxzDuzffz-q65cioHwyG1h2knkqPrdc_4q8,37616
+libdispatch/_metadata.py,sha256=v-81aKr3YT_m7Bhf4uq5oOIcmL730Ikuce7urQzP__Q,28200
+pyobjc_framework_libdispatch-8.5.1.dist-info/METADATA,sha256=4MkGrDKRb-yX5FC-CBV0g1-AlJGhnnHKu95VTbTf4og,2189
+pyobjc_framework_libdispatch-8.5.1.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+pyobjc_framework_libdispatch-8.5.1.dist-info/top_level.txt,sha256=acyvxw3zEzXzfk9gVKXenaPAJF1MlJlQYiQEwKqvlM4,12
+pyobjc_framework_libdispatch-8.5.1.dist-info/RECORD,,
