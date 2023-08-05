@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pkgs/idevenv/__init__.py
+pkgs/idevenv/_utils.py
+pkgs/idevenv/syspath.py
+pkgs/idevenv.egg-info/PKG-INFO
+pkgs/idevenv.egg-info/SOURCES.txt
+pkgs/idevenv.egg-info/dependency_links.txt
+pkgs/idevenv.egg-info/top_level.txt
