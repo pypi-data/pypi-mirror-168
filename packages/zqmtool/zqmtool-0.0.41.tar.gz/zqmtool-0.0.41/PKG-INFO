@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: zqmtool
+Version: 0.0.41
+Summary: qiming zou's toolbox
+Author: qiming_zou
+Author-email: zqm1028@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+qiming zou's toolbox
