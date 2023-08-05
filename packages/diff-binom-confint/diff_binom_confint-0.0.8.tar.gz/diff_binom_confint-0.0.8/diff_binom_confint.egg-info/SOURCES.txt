@@ -1,0 +1,15 @@
+README.md
+setup.py
+diff_binom_confint/__init__.py
+diff_binom_confint/_binom_confint.py
+diff_binom_confint/_confint.py
+diff_binom_confint/_diff_binom_confint.py
+diff_binom_confint/_utils.py
+diff_binom_confint/version.py
+diff_binom_confint.egg-info/PKG-INFO
+diff_binom_confint.egg-info/SOURCES.txt
+diff_binom_confint.egg-info/dependency_links.txt
+diff_binom_confint.egg-info/requires.txt
+diff_binom_confint.egg-info/top_level.txt
+test/test_bci.py
+test/test_dbci.py
