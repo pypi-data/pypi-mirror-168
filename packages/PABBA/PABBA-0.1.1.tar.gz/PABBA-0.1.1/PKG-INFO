@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PABBA
+Version: 0.1.1
+Summary: PABBA: A Unified ABBA Symbolic Representation Method
+Home-page: https://github.com/nla-group/PABBA
+Author: Xinye Chen, Stefan Güttel
+Author-email: xinye.chen@manchester.ac.uk, stefan.guettel@manchester.ac.uk
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/x-rst
+
+*PABBA: A Unified ABBA Symbolic Representation Method.*
+
+
