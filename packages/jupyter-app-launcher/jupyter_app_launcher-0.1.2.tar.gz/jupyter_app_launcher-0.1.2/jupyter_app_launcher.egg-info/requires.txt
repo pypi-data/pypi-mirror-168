@@ -1,0 +1,13 @@
+jupyter_server<2,>=1.6
+pyyaml
+jupyter-server-proxy
+jsonschema
+voila>=0.3.0
+voila-gridstack>=0.3.0
+
+[test]
+coverage
+pytest
+pytest-asyncio
+pytest-cov
+pytest-tornasync
