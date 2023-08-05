@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+yapymp4/__init__.py
+yapymp4/mp4reader.py
+yapymp4/utils.py
+yapymp4/version.py
+yapymp4.egg-info/PKG-INFO
+yapymp4.egg-info/SOURCES.txt
+yapymp4.egg-info/dependency_links.txt
+yapymp4.egg-info/top_level.txt
