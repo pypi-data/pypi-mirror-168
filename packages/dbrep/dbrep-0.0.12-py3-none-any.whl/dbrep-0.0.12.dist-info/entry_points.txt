@@ -1,0 +1,3 @@
+[console_scripts]
+dbrep=dbrep.cli:cli_dbrep
+
