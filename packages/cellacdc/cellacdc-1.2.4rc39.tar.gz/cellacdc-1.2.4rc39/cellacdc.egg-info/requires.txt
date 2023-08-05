@@ -1,0 +1,15 @@
+numpy
+opencv-python-headless
+torchvision
+natsort
+h5py
+PyQt5>5.15
+pyqtgraph>=0.12.4
+scikit-image>=0.18
+tqdm
+seaborn
+scikit-learn
+psutil
+boto3
+requests
+setuptools-scm
