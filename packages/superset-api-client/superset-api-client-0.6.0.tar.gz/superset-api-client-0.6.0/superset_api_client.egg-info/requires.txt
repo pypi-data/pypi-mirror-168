@@ -1,0 +1,20 @@
+requests>=2.0.0
+requests-oauthlib
+pyyaml>=6.0
+
+[:python_version < "3.8"]
+cached_property
+
+[build]
+build
+
+[dev]
+flake8
+black
+isort
+pytest
+requests-mock
+pytest-docker
+pytest-cov
+coveralls
+pre-commit
