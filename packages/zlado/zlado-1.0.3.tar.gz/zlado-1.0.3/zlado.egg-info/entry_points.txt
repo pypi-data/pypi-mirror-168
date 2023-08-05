@@ -1,0 +1,3 @@
+[console_scripts]
+ado1 = zlado.ado:cli
+
