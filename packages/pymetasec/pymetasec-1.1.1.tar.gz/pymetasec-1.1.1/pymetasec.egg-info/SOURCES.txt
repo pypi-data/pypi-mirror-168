@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pymeta/__init__.py
+pymeta/__main__.py
+pymetasec.egg-info/PKG-INFO
+pymetasec.egg-info/SOURCES.txt
+pymetasec.egg-info/dependency_links.txt
+pymetasec.egg-info/entry_points.txt
+pymetasec.egg-info/requires.txt
+pymetasec.egg-info/top_level.txt

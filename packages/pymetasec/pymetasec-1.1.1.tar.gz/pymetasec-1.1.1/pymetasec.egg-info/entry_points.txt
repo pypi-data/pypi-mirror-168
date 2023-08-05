@@ -1,0 +1,3 @@
+[console_scripts]
+pymeta = pymeta:main
+pymetasec = pymeta:main
