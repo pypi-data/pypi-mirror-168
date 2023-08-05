@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: prosemble
+Version: 0.0.4
+Summary: Prototype and non prototype-based machine learning package
+Home-page: https://github.com/naotoo1/prosemble
+Author: Nana Abeka Otoo
+Author-email: abekaotoo@gmail.com
+License: UNKNOWN
+Keywords: ensemble,Prototype ensemble
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Description
+[![python: 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![github](https://img.shields.io/badge/version-0.0.4-yellow.svg)](https://github.com/naotoo1/Prosemble)
+[![pypi](https://img.shields.io/badge/pypi-0.0.4-orange.svg)](https://pypi.org/project/prosemble)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+ML package for both prototype and non-prototype-based classifiers that utilizes ensemble learning by soft and hard voting.
+
+## Installation
+```python
+pip install prosemble
+```
+
+
+## Source code
+ ```python
+git clone https://github.com/naotoo1/prosemble.git
+```
+
+
+## Bibtex
+If you would like to cite the package, please use this:
+```python
+@misc{Otoo_Prosemble_2022,
+author = {Otoo, Nana Abeka},
+title = {Prosemble},
+year = {2022},
+publisher = {GitHub},
+journal = {GitHub repository},
+howpublished= {\url{https://github.com/naotoo1/prosemble}},
+}
+```
+
+
+
+
+
+
