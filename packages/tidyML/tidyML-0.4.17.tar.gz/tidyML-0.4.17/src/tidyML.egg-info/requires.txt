@@ -1,0 +1,6 @@
+neptune-client
+neptune-sklearn
+numpy
+pandas
+scikit-learn
+scikit-optimize
