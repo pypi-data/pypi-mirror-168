@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: flake8-ado
+Version: 0.3
+Summary: Flake8 plugin to check comments against AzureDevOps ticket references.
+Home-page: https://github.com/DanielKusyDev/flake8-ado
+License: MIT
+Keywords: flake8,aod,azure devops,lint
+Author: DanielKusyDev
+Author-email: daniel.kusy97@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: azure-devops (>=6.0.0-beta.4,<7.0.0)
+Requires-Dist: importlib-metadata (==4)
+Requires-Dist: pytest-mock (>=3.8.2,<4.0.0)
+Requires-Dist: tox (>=3.26.0,<4.0.0)
+Project-URL: Repository, https://github.com/DanielKusyDev/flake8-ado
+Description-Content-Type: text/markdown
+
+# flake8-ado
+
+Flake8 extension to check comments against Azure DevOps tickets. The plugin checks that:
+1. Every comment with a reference to an ADO item (`AB#12345`) has a corresponding item.
+2. ADO items are references in a proper format (`ADO: AB#12345`)
+3. TODO items with ADO annotation have assigned item (`TODO: AB#12345`).
+
+Example:
+```python
+# foo.py
+class Foo:
+    def foo(self) -> None: # TODO: AB#12345
+        pass # ab 12345
+```
+```shell
+>> flake8 --ado-access-token=<TOKEN> --ado_organization_url=<URL>
+./foo.py:2:36: ADO001 Missing ADO item
+```
+
+## Installation
+```shell
+pip install flake8 flake8-ado
+```
+
+## Arguments
+- `--ado-access-token` - Valid AzureDevOps token.
+- `ado_organization_url` - AzureDevOps organization url e.g. https://dev.azure.com/foo.
+
+## Errors
+| Code   | Message                                           |
+|--------|---------------------------------------------------|
+| ADO001 | Missing ADO item                                  |
+| ADO002 | Malformed item reference                          |
+| ADO003 | Wrong capitalization (ADO and AB must be capital) |
+| ADO004 | TODO needs the AOD item reference                 |
+
+## Contribution
+Feel free to modify the code. To start with the development you need poetry.
+```shell
+poetry install --with=dev
+```
