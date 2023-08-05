@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+Pipfile
+README.md
+setup.cfg
+setup.py
+flake8_hangover/__init__.py
+flake8_hangover/plugin.py
+flake8_hangover/py.typed
+flake8_hangover.egg-info/PKG-INFO
+flake8_hangover.egg-info/SOURCES.txt
+flake8_hangover.egg-info/dependency_links.txt
+flake8_hangover.egg-info/entry_points.txt
+flake8_hangover.egg-info/requires.txt
+flake8_hangover.egg-info/top_level.txt
