@@ -1,0 +1,6 @@
+
+[dev]
+wheel
+black
+pytest
+mypy

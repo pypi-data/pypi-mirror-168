@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+moparsing/__init__.py
+moparsing/instancemanager.py
+moparsing/moparsing.py
+parsingmo.egg-info/PKG-INFO
+parsingmo.egg-info/SOURCES.txt
+parsingmo.egg-info/dependency_links.txt
+parsingmo.egg-info/requires.txt
+parsingmo.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_moparsing.py
