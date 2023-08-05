@@ -1,0 +1,12 @@
+nx3d/__init__.py,sha256=Qxb23KRW0P4jnu9CT_f3uLcouVd3nRD7PUvDC2Nwm84,35
+nx3d/__main__.py,sha256=Ov0SAzsIUPDRfp_SiBGRBrDftviKZN3Y8JIx-virNiY,165
+nx3d/data/cone.egg,sha256=o1Cp-OX757WqBXebRVc1hHmypmCfU7XJ4HkLzWg4PLY,5283
+nx3d/data/cylinder.egg,sha256=2or8dhEMxO_MHRSJsxQp-6Ah8WPHKWuA_E_H6L4Ujsg,5879
+nx3d/data/icosphere.egg,sha256=VebZICIxpewW47H5NmnEA0vO65LUtG8h_wpho0wtRPo,45950
+nx3d/data/unit_cylinder_base_at_0.egg,sha256=2or8dhEMxO_MHRSJsxQp-6Ah8WPHKWuA_E_H6L4Ujsg,5879
+nx3d/main.py,sha256=Lkg2g-tdOvs1l4QaZnzDA4ATr0Kd5jfgOWfcnhkfpxo,14881
+nx3d/utils.py,sha256=KJkNPn5afX4rguwsasPXNSsAaUVCOIwZs3lqNM2qX4U,183
+nx3d-22.9.6.dist-info/LICENSE,sha256=xG9NkEat4vmSNReMSOFlJqU574QZpd75KbM-BvzY5nY,1062
+nx3d-22.9.6.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+nx3d-22.9.6.dist-info/METADATA,sha256=j7exiGtWsJXiYQBZg0z6hjVF7gR53MoZssKY-Rm_hl4,3260
+nx3d-22.9.6.dist-info/RECORD,,
