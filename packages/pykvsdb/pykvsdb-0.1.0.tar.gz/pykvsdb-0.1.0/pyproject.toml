@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pykvsdb"
+version = "0.1.0"
+description = "A key-value store database written from the ground-up with speed in mind."
+authors = ["DrgnFireYellow <86269995+DrgnFireYellow@users.noreply.github.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
