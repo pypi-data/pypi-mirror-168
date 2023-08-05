@@ -1,0 +1,7 @@
+.*
+*.egg-info/
+__pycache__/
+/coverage.*
+/dist/
+/docs/_*
+/extras/
