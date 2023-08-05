@@ -1,0 +1,14 @@
+uql/config.py,sha256=XuuqIlWciPsGl89LNJFxXljJBpoZ1-XwpG_GXAnEw1k,795
+uql/constants.py,sha256=p0mhUPR2jWoBgOT6i_DVMPbOiaWGYCRIf1WexBHpqIE,126
+uql/intent.py,sha256=X-9YTU4eVkKj4Vzue4oRjBFjGKWjyKlMIwtGNUobBLY,8369
+uql/model.py,sha256=eqPgjgFG8CgSPBhSFxNsebZ346ihroc6bbG5JeE4csM,6619
+uql/utils/exceptions.py,sha256=tQQ0eglLnbuQ07_k2azR-DSnRJE5c2nF3WLIHaz59v0,202
+uql/utils/query.py,sha256=FUyYascruR8_EJdyV9EswZPyjobTE12Pj8FMTTnCFHg,2350
+uql/utils/select.py,sha256=7gA9VsWuYlPAjRjpN6P4Frh9Lzpv-7cNIHw3L-y-aa0,684
+uql/utils/templates.py,sha256=nfcLUDTYTg5oWJBk02_D5XsOtQAX53fCjUzyE94A4AU,506
+uql/utils/types.py,sha256=HvQZelSLcnbyFCgeGPSvGnautLyZEdJQ1M0SziQtYfo,211
+uql/views.py,sha256=icsI-xbQdOrQIVYeXui5SvrOKmkTqHUpfAer_7bR1oI,4751
+uql-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+uql-0.1.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+uql-0.1.0.dist-info/METADATA,sha256=60uQUkTTyz-IKcvwD6jwrpj3DZI8G6AWzz5XRISN89w,468
+uql-0.1.0.dist-info/RECORD,,

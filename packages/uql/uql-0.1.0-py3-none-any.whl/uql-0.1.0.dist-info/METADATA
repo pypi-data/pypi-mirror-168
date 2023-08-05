@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: uql
+Version: 0.1.0
+Summary: Application layer for building Django apps with a breeze
+License: GNU
+Author: rubbie kelvin voltsman
+Author-email: rubbiekelvinvoltsman@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Django (>=4.1,<5.0)
+Requires-Dist: django-rest-framework (>=0.1.0,<0.2.0)
