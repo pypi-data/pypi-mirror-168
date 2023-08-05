@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: reposter
+Version: 22.1.5
+Summary: python script for reposting messages from telegram channels
+Project-URL: Homepage, https://github.com/gmankab/reposter
+Project-URL: Documentation, https://github.com/gmankab/reposter
+Project-URL: Bug Tracker, https://github.com/gmankab/reposter/issues
+Author-email: gmanka <gmankab@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: betterdata
+Requires-Dist: easyselect
+Requires-Dist: gmanka-yml
+Requires-Dist: humanize
+Requires-Dist: pyrogram
+Requires-Dist: rich
+Requires-Dist: tgcrypto
+Description-Content-Type: text/markdown
+
+# reposter
+
+<img src="https://github.com/gmankab/reposter/raw/main/reposter/icons/wide.png">
+
+python script for reposting messages from telegram channels
+
+installation:  
+`pip install reposter`
+
+launch:  
+`python -m reposter`
+
+license: [gnu gpl 3](https://gnu.org/licenses/gpl-3.0.en.html)
