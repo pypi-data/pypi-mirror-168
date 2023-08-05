@@ -1,0 +1,9 @@
+cs.cmdutils>=20210407.1
+cs.lex>=20220918
+cs.logutils>=20220531
+cs.pfx>=20220918
+cs.queues>=20220918
+cs.resources>=20220918
+cs.result>=20210407
+cs.threads>=20211208
+cs.upd>=20220918
