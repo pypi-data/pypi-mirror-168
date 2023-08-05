@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+surrealdb/__init__.py
+surrealdb/__version__.py
+surrealdb/error.py
+surrealdb/reference.py
+surrealdb/surrealdb.py
+unofficial_surreal_database.egg-info/PKG-INFO
+unofficial_surreal_database.egg-info/SOURCES.txt
+unofficial_surreal_database.egg-info/dependency_links.txt
+unofficial_surreal_database.egg-info/requires.txt
+unofficial_surreal_database.egg-info/top_level.txt
