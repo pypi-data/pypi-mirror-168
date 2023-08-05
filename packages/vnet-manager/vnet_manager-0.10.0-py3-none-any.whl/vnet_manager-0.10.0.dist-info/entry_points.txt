@@ -1,0 +1,2 @@
+[console_scripts]
+vnet-manager = vnet_manager.vnet_manager:main
