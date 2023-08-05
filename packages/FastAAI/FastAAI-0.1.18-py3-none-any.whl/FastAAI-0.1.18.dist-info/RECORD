@@ -1,0 +1,11 @@
+fastaai/__init__.py,sha256=ZTLda9Ak156GqpB4N8oxO-GS-k4TLUjHmUZoLZ2Iopo,22
+fastaai/fastaai.py,sha256=Z-3qHeYJFDxt1v0FBHdoJUVM-IHe763WqofP04aT14U,168224
+fastaai/00.Libraries/01.SCG_HMMs/Archaea_SCG.hmm,sha256=2rq-woSJ1uJ6XvQaXTTkT2-wQ4kjjE5I_CudnqLCFcg,6272166
+fastaai/00.Libraries/01.SCG_HMMs/Bacteria_SCG.hmm,sha256=--nLaqilqGfNR8diRaTA8gc2MSkLfvTNKdh82Lt4VGw,4810019
+fastaai/00.Libraries/01.SCG_HMMs/Complete_SCG_DB.hmm,sha256=-7HTt-awe72D9KtvSBty_2MlBVvPMGy8tLbYZly2iQg,9219138
+FastAAI-0.1.18.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+FastAAI-0.1.18.dist-info/METADATA,sha256=LATphfiT97WVzgxQxZxL6fAuQwPJhN3kJ2hLAOcn6x8,621
+FastAAI-0.1.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+FastAAI-0.1.18.dist-info/entry_points.txt,sha256=0rgXc2jz0Hy8yQB_Ha9SNA5o7QjuwxvDHYPVS69SSj0,49
+FastAAI-0.1.18.dist-info/top_level.txt,sha256=eKDZSC5aL30gq7KNOnG59KlIPCGP1vrgTIJbfgtAkSo,8
+FastAAI-0.1.18.dist-info/RECORD,,

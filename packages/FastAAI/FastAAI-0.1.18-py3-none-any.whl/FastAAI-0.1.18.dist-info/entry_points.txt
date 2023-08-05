@@ -1,0 +1,2 @@
+[console_scripts]
+fastaai = fastaai.fastaai:main
