@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: har-toolkit
+Version: 0.1.1
+Summary: A module to work with HAR (HTTP Archive) files.
+Author-email: Mason Weaver <mason@swingproxy.com>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Homepage, https://git.swingproxy.com/mason/hartoolkit
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Har-Toolkit
+
+A module to easily work with HAR (HTTP Archive) files.
