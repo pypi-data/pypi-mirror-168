@@ -1,0 +1,8 @@
+danbooru/__init__.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+danbooru/client.py,sha256=_zVpGeAKFRj2jZIb_WBKerp8E-2Eey054PPUj3QcfpE,1514
+danbooru/error.py,sha256=T7sMW7pbluxRGy9sUNpmAtqfv28JYIZLhGCE7KWha2Q,38
+danbooru/http.py,sha256=vVxy6OEID28O_KQMo_CRpRCDRCnw1DKaOq2XWsXdnWw,341
+danbooru_py-1.0.0.dist-info/METADATA,sha256=w4m6Ps9j8se21-xrdWas9okhJdWjxB1eQwqFpO-0iSY,894
+danbooru_py-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+danbooru_py-1.0.0.dist-info/top_level.txt,sha256=Cqy9QpdR83evi4jQbpBSMBmdxGweVrFIXZxf4Xr8610,9
+danbooru_py-1.0.0.dist-info/RECORD,,
