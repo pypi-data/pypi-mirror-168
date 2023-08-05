@@ -1,0 +1,2 @@
+[console_scripts]
+coloquinte = coloquinte:main
