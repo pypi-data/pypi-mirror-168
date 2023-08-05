@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: snapatac2
+Version: 2.1.0
+Summary: SnapATAC: Single Nucleus Analysis Pipeline for ATAC-seq
+Home-page: https://kzhang.org/SnapATAC2/
+Author: Kai Zhang
+Author-email: kai@kzhang.org
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: natsort
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: pandas
+Requires-Dist: plotly (>=5.6.0)
+Requires-Dist: polars (==0.13.*)
+Requires-Dist: pooch (>=1.6.0)
+Requires-Dist: python-igraph
+Requires-Dist: pyarrow
+Requires-Dist: retworkx
+Requires-Dist: scipy (>=1.4)
+Requires-Dist: scikit-learn (>=0.22)
+Requires-Dist: tqdm (>=4.62)
+Requires-Dist: typing-extensions
+Requires-Dist: umap-learn (>=0.3.10)
+
+SnapATAC2
+=========
+
+![PyPI](https://img.shields.io/pypi/v/snapatac2)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/snapatac2)
+![Continuous integration](https://github.com/kaizhang/SnapATAC2/workflows/Continuous%20integration/badge.svg)
+![GitHub Repo stars](https://img.shields.io/github/stars/kaizhang/SnapATAC2?style=social)
+
+SnapATAC2 is the successor of the SnapATAC R package, featuring:
+
+- Faster and less memory usage, scale to >1M cells.
+- Improved dimension reduction and sampling algorithm.
+
+Read the [Documentation](https://kzhang.org/SnapATAC2/). 
