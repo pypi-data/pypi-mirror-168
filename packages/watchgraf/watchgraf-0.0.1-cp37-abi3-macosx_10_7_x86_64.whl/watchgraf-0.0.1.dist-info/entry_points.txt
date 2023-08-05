@@ -1,0 +1,2 @@
+[console_scripts]
+watchgraf=watchgraf.cli:cli

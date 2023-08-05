@@ -1,0 +1,12 @@
+watchgraf-0.0.1.dist-info/METADATA,sha256=QSQfCse1bNZE247_VqZA3SvN2pC6N-zzPIBuox7xpkQ,623
+watchgraf-0.0.1.dist-info/WHEEL,sha256=W2xEYbLWlYBkxoJCSk7iykxk9fnSFqynjHa7VSpbMI0,104
+watchgraf-0.0.1.dist-info/entry_points.txt,sha256=AYux2GS21WBcCYl9p5va2zE_lHhbJG8CV_KfZkN324k,46
+watchgraf/_watchgrafrs.pyi,sha256=fIb4B2hxeVqmBVMQOvw6ntwEZLh6o76_RpnQt0XdAAw,219
+watchgraf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watchgraf/types.py,sha256=2BkbD5nOhwieynZGDmbHLwePcBEgNAN7nx80nedHBKk,131
+watchgraf/cli.py,sha256=RE4h49G6bDUGnOwZreNJb8nVdpqWdwMaZeCuF7bVUms,1416
+watchgraf/utils.py,sha256=K9dck6_9GgcNko0logJjhwJSW15j4HRVbwRYzOddobc,404
+watchgraf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watchgraf/watcher.py,sha256=23yLll-Sv96xlvp1mqb-N4C3kujJeI3Xp97bMbPQBwQ,337
+watchgraf/_watchgrafrs.abi3.so,sha256=qJ47-lJN9xOQQur7lmX_DgEUYqrJL5veLjrqFByRWdE,776464
+watchgraf-0.0.1.dist-info/RECORD,,
