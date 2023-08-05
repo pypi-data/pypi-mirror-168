@@ -1,0 +1,15 @@
+tls_client/__init__.py,sha256=sThiIAzA650rfBlqZ_xalTjgTysUsjKua5ODnqyvhUE,669
+tls_client/__version__.py,sha256=IQ37-JuN69bTKl9Dh0_higd7q81lilLDR8grsgDtEw0,374
+tls_client/cffi.py,sha256=IxrHePE3cmSyZSMf6nxqLMsKHL17BzDo-AlMcEt1MLs,454
+tls_client/cookies.py,sha256=z9Lj0bsH6pY1fnlNFd7m7MRa2-omNMSosowhBVc9vhU,15867
+tls_client/exceptions.py,sha256=xIoFb5H3Suk7XssQ-yw3I1DBkPLqnDXsiAe2MMp1qNQ,80
+tls_client/response.py,sha256=E1Dt5uIhvhxaSqMKM26kg3kKa2blYQx0dRKyiigCfbc,1675
+tls_client/sessions.py,sha256=m82egvpFF-OCLBAWtuFcUCnez4Xwv2JlHVsCaC2HwVM,11187
+tls_client/structures.py,sha256=md-tJmo8X5bad0KrMUTVN8jxUIvui7NiBxaf10bLULU,2517
+tls_client-0.0.3.data/data/tls_client/dependencies/tls-client.dll,sha256=NEmlU69pj9aKBkL4CS7a7IT94Q-lnmCa_aCzFqwWES8,15056646
+tls_client-0.0.3.data/data/tls_client/dependencies/tls-client.dylib,sha256=WzABpobREIzoibDLSxA-UOcYEX7wAzZJAOHW2Dh4Kcs,9101618
+tls_client-0.0.3.data/data/tls_client/dependencies/tls-client.so,sha256=q7HhYRNAz2xhmcQQKGIoPWQfWVzppghPguiCUc53GX8,9816104
+tls_client-0.0.3.dist-info/METADATA,sha256=j1gif-EjkeL2jI4nS4vG5FKjuRUPTOZMOdtlFb9tv_w,2835
+tls_client-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tls_client-0.0.3.dist-info/top_level.txt,sha256=yLrfQtbTRfECzPN62knWdGNmbhcPRev1grCAMuEsEz0,11
+tls_client-0.0.3.dist-info/RECORD,,
