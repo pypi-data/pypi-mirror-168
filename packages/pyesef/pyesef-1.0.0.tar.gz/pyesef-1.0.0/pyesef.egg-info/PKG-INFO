@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyesef
+Version: 1.0.0
+Home-page: https://github.com/ggravlingen/pyesef
+Download-URL: https://github.com/ggravlingen/pyesef/archive/1.0.0.zip
+Author: ggravlingen
+Author-email: no@email.com
+License: MIT
+Keywords: esef financial statement
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Financial and Insurance Industry
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## pyesef
+
+A library for extracting XBRL-files in the ESEF-format using the [Arelle module](https://github.com/Arelle/Arelle).
+
+#### How to use
+
+Download XBRL-reports in a zip-format and place them in the `archives` folder. Then run `python3 pyesef -e` to export all facts to a CSV-file.
+
+#### Interesting resources:
+
+https://filings.xbrl.org/: a list of available financial reports for European companies, per country.
