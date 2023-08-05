@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aort
+Version: 1.2
+Summary: All in One Recon Tool
+Home-page: https://github.com/D3Ext/AORT
+Author: D3Ext
+Author-email: d3ext@proton.me
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pydig
+Requires-Dist: dnspython
+Requires-Dist: urllib3
+Requires-Dist: argparse
+Requires-Dist: whois
+Requires-Dist: pytest-warnings
+Requires-Dist: python-Wappalyzer
+
