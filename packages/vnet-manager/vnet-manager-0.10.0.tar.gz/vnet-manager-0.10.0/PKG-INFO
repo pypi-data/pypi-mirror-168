@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: vnet-manager
+Version: 0.10.0
+Home-page: https://github.com/Erik-Lamers1/vnet-manager
+Download-URL: https://github.com/Erik-Lamers1/vnet-manager/archive/0.10.0.tar.gz
+Author: Erik Lamers
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
