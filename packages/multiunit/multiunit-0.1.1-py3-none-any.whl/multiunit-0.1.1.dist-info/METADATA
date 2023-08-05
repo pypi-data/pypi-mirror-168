@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: multiunit
+Version: 0.1.1
+Summary: Launch unittest in multiple processes
+Author: Vitalii Abetkin
+Author-email: abvit89s@gmail.ru
+License: MIT
+License-File: LICENSE
+
+Launch unittest in multiple processes
