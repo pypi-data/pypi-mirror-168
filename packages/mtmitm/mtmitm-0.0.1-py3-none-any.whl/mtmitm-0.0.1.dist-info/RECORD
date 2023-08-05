@@ -1,0 +1,16 @@
+mitmaddons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mitmaddons/counter.py,sha256=r2rJkCVsfjwx4snkMFvRvwO8l5HDL-N9KAEJVtC5Z2E,2782
+mitmaddons/http-modify-form.py,sha256=QsvPHIs_PwruOSasaxH-rDMo3JBpIfFwKva_IZUMChM,588
+mitmaddons/http-stream-simple.py,sha256=0kv8DaiwUFEsNV4KH2YhvvuuKUC5ZiqqL-jksueqRlE,420
+mitmaddons/main.py,sha256=OMHrGnNm4jRuput1YvJNzOzHnGXbnm4IBd39vp4DJsM,54
+mitmaddons/mt-http-redirect-requests.py,sha256=6qqWEKOAAnIgO_r18l70ODvc7ipkggDVtlApkodgU4U,1639
+mitmaddons/options-simple.py,sha256=nILUpSvYobpzohYEc0l993re80_RqGxCGSwa8smFZvM,1018
+mitmaddons/setup.py,sha256=VOzQorjp-WUYUJszLq-DRLbhk7VFWyVsCTrwxjLBfUs,4126
+mitmaddons/static_file.py,sha256=phhR7ml8J6WWRNc0ClOL_IwS_vqA2ecnI6dh3tGWsi0,409
+mitmaddons/version.py,sha256=t_QiCcOQDjV4pl-PMvif1IH68nAKKe0wdeizhaDsDds,17
+mitmaddons/wsgi-flask-app.py,sha256=rdveyFz35kT7eBX8oZO96vprYHfdFp7WjMbw1XSoBjQ,1055
+mtmitm-0.0.1.dist-info/METADATA,sha256=bwbT5KsyOnVesFBJU6A4TYJ99QlDIzjwDcrSX6p0yJs,2980
+mtmitm-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mtmitm-0.0.1.dist-info/entry_points.txt,sha256=71fYbvhNWg6PlTAyY-scZNJhpUF8SV0MMfrCte0YOu8,115
+mtmitm-0.0.1.dist-info/top_level.txt,sha256=qvoda0pxQZAGiCI7_oJfAw8vE_UG3pmsVRY7_IPfp2U,11
+mtmitm-0.0.1.dist-info/RECORD,,
