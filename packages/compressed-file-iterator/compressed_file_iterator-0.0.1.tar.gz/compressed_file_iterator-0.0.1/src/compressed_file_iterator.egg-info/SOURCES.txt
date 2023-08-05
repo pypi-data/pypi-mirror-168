@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/compressed_file_iterator/__init__.py
+src/compressed_file_iterator/compressed_file_iterator.py
+src/compressed_file_iterator.egg-info/PKG-INFO
+src/compressed_file_iterator.egg-info/SOURCES.txt
+src/compressed_file_iterator.egg-info/dependency_links.txt
+src/compressed_file_iterator.egg-info/top_level.txt
