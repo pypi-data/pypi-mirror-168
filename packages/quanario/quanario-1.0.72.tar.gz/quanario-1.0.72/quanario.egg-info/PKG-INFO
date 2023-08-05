@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: quanario
+Version: 1.0.72
+Summary: Module for creating VK bots...
+Home-page: https://github.com/Stepan-coder/Quanario_VK
+Author: Stepan-Coder
+Author-email: stepan.borodin2016@bk.ru
+License: CC-BY-NC
+Download-URL: https://github.com/Stepan-coder/Quanario_VK/archive/refs/heads/v1.0.72.zip
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+
+Quanario_VK - Module for the development of chatbots in the social network VKontakte
+
