@@ -1,0 +1,12 @@
+taksonomia/__init__.py,sha256=4YdBhh85QvEnRw2pnCxtRNxBdCCuFmSxyTwDFLS6m_c,2202
+taksonomia/__main__.py,sha256=Stx1c6s-ge3ragGmOOyXOZ2uWue0TKOtOTUZCZqPXws,125
+taksonomia/anglify.py,sha256=BRs5dflggQf5hcWfPWj_-zuk2CItcFYlvIPmYu9uOnw,9765
+taksonomia/cli.py,sha256=3pPaNY0u6KMrzNhcCoA-XBIiQ0O6WXxiuYQg8bE9q28,3940
+taksonomia/machine.py,sha256=6tHQOlHpYL2V8sScEVeKtnqoYeCL1E10bmY-xPHjxOU,4299
+taksonomia/taksonomia.py,sha256=B4XrJ9yYE2PECg-Ack3gBRdF1Mv2-psY50Stg31Xpm4,14464
+taksonomia-2022.9.18.dist-info/LICENSE,sha256=7xgn1qW4kKTaB163LiE9nqy5u7ddEv-GDesuxK-SW58,1069
+taksonomia-2022.9.18.dist-info/METADATA,sha256=_ibBEqWDDvIcTwzNaNvmYRPVQdDJgXWPINLISJfyWLo,3248
+taksonomia-2022.9.18.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+taksonomia-2022.9.18.dist-info/entry_points.txt,sha256=ajK6LPaOAC7OyrcrmXwyv0T6ZEwIRn_RTXZEcICLm5k,51
+taksonomia-2022.9.18.dist-info/top_level.txt,sha256=ayhzuKmovG896wTBMRcYAQ6cANE3D6viQCdMuunagyk,11
+taksonomia-2022.9.18.dist-info/RECORD,,
