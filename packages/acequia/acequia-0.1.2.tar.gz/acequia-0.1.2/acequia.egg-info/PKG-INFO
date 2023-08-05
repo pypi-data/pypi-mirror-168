@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: acequia
+Version: 0.1.2
+Summary: Python package for reading, writing and analyzinggroundwater head time series.
+Home-page: https://github.com/acequia-package/acequia.git
+Author: T.J. de Meij
+Author-email: thomasdemeij@gmail.com
+License: MIT

@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+pandas
+geopandas
+shapely
+seaborn
+statsmodels
+simplekml
