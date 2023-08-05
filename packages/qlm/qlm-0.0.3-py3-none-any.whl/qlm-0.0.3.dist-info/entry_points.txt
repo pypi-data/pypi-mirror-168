@@ -1,0 +1,3 @@
+[console_scripts]
+qlm=qlm.main:app
+
