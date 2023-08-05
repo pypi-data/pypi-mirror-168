@@ -1,0 +1,31 @@
+name: Run tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: Running tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: install rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        override: true
+
+    - name: install dependecies
+      run: pip install -r requirements.txt
+    
+    - run: pip install -e .
+    - run: make test
+    - name: Upload coverage reports to Codecov with GitHub Action
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage.xml

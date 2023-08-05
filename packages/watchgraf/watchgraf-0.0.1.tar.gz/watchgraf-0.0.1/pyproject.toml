@@ -1,0 +1,27 @@
+[build-system]
+requires = ['maturin>=0.13,<0.14']
+build-backend = 'maturin'
+
+[project]
+name = "watchgraf"
+version = "0.0.1"
+requires-python = '>=3.9'
+description = 'Toy-like and fast files watching and code reload. Built with love from python and rust'
+authors = [
+    {name ='Nichita Morcotilo', email = 'nmorkotilo@gmail.com'},
+]
+
+
+[project.optional-dependencies]
+tests  = [
+    "pytest~=7.1.3",
+    "pytest-mock~=3.8.2",
+    "pytest-cov~=3.0.0"
+]
+
+[project.scripts]
+watchgraf = 'watchgraf.cli:cli'
+
+[tool.coverage.run]
+source = ['watchgraf']
+branch = true
