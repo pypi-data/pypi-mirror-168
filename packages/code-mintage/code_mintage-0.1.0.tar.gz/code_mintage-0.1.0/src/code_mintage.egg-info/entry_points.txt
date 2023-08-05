@@ -1,0 +1,2 @@
+[console_scripts]
+code-mintage = code_mintage.main:main
