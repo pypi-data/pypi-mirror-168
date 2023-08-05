@@ -1,0 +1,16 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+yasr/.version
+yasr/__init__.py
+yasr/cli.py
+yasr/logger.py
+yasr/models.py
+yasr.egg-info/PKG-INFO
+yasr.egg-info/SOURCES.txt
+yasr.egg-info/dependency_links.txt
+yasr.egg-info/entry_points.txt
+yasr.egg-info/namespace_packages.txt
+yasr.egg-info/requires.txt
+yasr.egg-info/top_level.txt
+yasr.egg-info/zip-safe
