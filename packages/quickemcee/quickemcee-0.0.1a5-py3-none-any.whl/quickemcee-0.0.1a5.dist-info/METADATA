@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: quickemcee
+Version: 0.0.1a5
+Summary: quickemcee is a library with built in scriptsusing the emcee library to quickly set up MCMC analysis.
+Home-page: https://github.com/sofia-scz/quick-emcee/
+Author: Sofia A. Scozziero
+Author-email: sgscozziero@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: emcee
+Requires-Dist: corner
+
+# quickemcee
+A Python library to quickly set up MCMC scripts based on the `emcee` package. Includes functions and classes to quickly set up `emcee` objects, run MCMC, and analyze the results with minumum effort from the end user. 
+
+## Github pages
+
+Visit quickemcee's Github pages on https://sofia-scz.github.io/quickemcee/. There you can find documentation, worked examples, and other information. 
+
+## Installation
+
+```
+pip install quickemcee
+```
+
+## Referencing this work
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6857842.svg)](https://doi.org/10.5281/zenodo.6857842)
+
+Recommended BibTex citation
+
+```
+@software{quickemcee,
+  author       = {Scozziero, Sofia Anna},
+  title        = {quickemcee: simple prebuilt MCMC scripts},
+  month        = jul,
+  year         = 2022,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.6857842},
+  url          = {https://doi.org/10.5281/zenodo.6857842}
+}
+```
