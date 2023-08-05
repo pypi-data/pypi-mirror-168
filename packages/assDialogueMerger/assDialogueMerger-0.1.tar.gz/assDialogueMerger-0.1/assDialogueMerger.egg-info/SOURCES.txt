@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+assDialogueMerger.egg-info/PKG-INFO
+assDialogueMerger.egg-info/SOURCES.txt
+assDialogueMerger.egg-info/dependency_links.txt
+assDialogueMerger.egg-info/entry_points.txt
+assDialogueMerger.egg-info/top_level.txt
+assdialoguemerger/__init__.py
+assdialoguemerger/assdialoguemerger.py
+assdialoguemerger/cli.py

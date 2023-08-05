@@ -1,0 +1,2 @@
+[console_scripts]
+assDialogueMerger = assdialoguemerger.cli:main
