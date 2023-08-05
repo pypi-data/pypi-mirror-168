@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rutebase"
+version = "0.1.0"
+description = ""
+authors = ["abnerjacobsen <abner@apoana.com.br>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pre-commit = "^2.20.0"
+black = "^22.8.0"
+scriv = {extras = ["toml"], version = "^0.16.0"}
+
+[tool.scriv]
+format = "md"
+version = "literal: rutebase/__init__.py: __version__"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
