@@ -1,0 +1,2 @@
+[nbdev]
+hello_nbdev_z = hello_nbdev_z._modidx:d
