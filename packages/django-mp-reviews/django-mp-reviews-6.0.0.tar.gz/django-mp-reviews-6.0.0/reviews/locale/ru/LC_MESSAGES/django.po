@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-31 13:19+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: __init__.py:8 models.py:37 templates/reviews/list.html:7
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: models.py:11
+msgid "Owner"
+msgstr "Автор"
+
+#: models.py:14
+msgid "Is active"
+msgstr "Активность"
+
+#: models.py:16 templates/reviews/new_review_email.html:7
+msgid "Name"
+msgstr "Имя"
+
+#: models.py:19 templates/reviews/list.html:54
+#: templates/reviews/new_review_email.html:10
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: models.py:22
+msgid "Date created"
+msgstr "Дата создания"
+
+#: models.py:24 models.py:36
+msgid "Review"
+msgstr "Отзыв"
+
+#: models.py:27
+msgid "Photo"
+msgstr "Фото"
+
+#: models.py:29 templates/reviews/list.html:45
+msgid "Answer"
+msgstr "Ответ"
+
+#: templates/reviews/list.html:19 templates/reviews/new_review_email.html:5
+#: templates/reviews/new_review_modal.html:33 views.py:53
+msgid "New review"
+msgstr "Новый отзыв"
+
+#: templates/reviews/list.html:57
+msgid "Date"
+msgstr "Дата"
+
+#: templates/reviews/new_review_email.html:13
+msgid "Text"
+msgstr "Текст"
+
+#: templates/reviews/new_review_email.html:17
+msgid "Show on site"
+msgstr "Показать на сайте"
+
+#: templates/reviews/new_review_modal.html:43
+msgid "Cancel"
+msgstr "Отменить"
+
+#: templates/reviews/new_review_modal.html:46
+msgid "Send review"
+msgstr "Отправить отзыв"
+
+#: views.py:44
+msgid "Review was successfully sent"
+msgstr "Отзыв успешно отправлен"
