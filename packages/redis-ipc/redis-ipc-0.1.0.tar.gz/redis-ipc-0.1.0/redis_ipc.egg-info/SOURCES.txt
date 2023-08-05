@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+redis_ipc.egg-info/PKG-INFO
+redis_ipc.egg-info/SOURCES.txt
+redis_ipc.egg-info/dependency_links.txt
+redis_ipc.egg-info/requires.txt
+redis_ipc.egg-info/top_level.txt
+redisipc/__init__.py
+redisipc/ipc.py

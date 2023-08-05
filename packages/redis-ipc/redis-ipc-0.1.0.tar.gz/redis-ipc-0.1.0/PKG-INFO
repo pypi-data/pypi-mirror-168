@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: redis-ipc
+Version: 0.1.0
+Summary: A minimal multi producer single consumer IPC using redis pub/sub
+Home-page: https://github.com/AXVin/redis-ipc
+Author: AXVin
+License: AGPL v3
+Keywords: aioredis,redis,ipc
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Redis IPC
+A lightweight multiple producer and single consumer IPC server
+that uses redis pubsub as a broker
+
+Creates a redis ipc server that listens on a single pub/sub channel
+and allows you to communicate between multiple processes
+
+Subclass the IPC class and add your handlers as methods
+like this (handlers must start with `handle_` as their name)
+```python
+async def handle_channel_update(self, data):
+    return data
+```
+or use `IPC.add_handler` to add the handler after the
+class has been instantiated
+
+
+and whenever a process calls `IPC.get`, all the clients connected to
+that channel will try to handle the request and whichever one finishes
+first, will be returned by the function
+
+the handler must either return a dict or `None`
+`None` is treated as an implicit reason that the current
+process doesn't matches the requests' target process
