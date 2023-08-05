@@ -1,0 +1,8 @@
+gemini_public_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemini_public_api/api.py,sha256=05pYLWmTRBwou_kxIX4ltdhLrC4GccdyaVj0CX2Fi7A,8222
+gemini_public_api/exceptions.py,sha256=Z_Y7JHCYco6vkKP059LTC7ORPqqMNhdkqMXVTDREVig,490
+gemini_public_api/public_endpoints.py,sha256=9Kc27ZHDVs2vK8AOv6bvGAjtnijZs6HVweb0ZJEbZ6U,769
+gemini_public_api-0.1.0.dist-info/LICENSE,sha256=MT6SQ6DfD0ALX__FtSa-scGybVGOWW0E2B9JlPUiKXM,1069
+gemini_public_api-0.1.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+gemini_public_api-0.1.0.dist-info/METADATA,sha256=KbMeIn_w8vfZVYDBGm1IdHkCV1cRiSIwn5pmcJmw-wE,1431
+gemini_public_api-0.1.0.dist-info/RECORD,,
