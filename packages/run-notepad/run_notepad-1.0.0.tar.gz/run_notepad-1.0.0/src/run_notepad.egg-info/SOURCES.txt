@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/check.py
+src/run_notepad.egg-info/PKG-INFO
+src/run_notepad.egg-info/SOURCES.txt
+src/run_notepad.egg-info/dependency_links.txt
+src/run_notepad.egg-info/top_level.txt
