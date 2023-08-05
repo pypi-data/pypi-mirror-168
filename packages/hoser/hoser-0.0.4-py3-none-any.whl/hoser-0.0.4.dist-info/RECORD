@@ -1,0 +1,12 @@
+hoser/__init__.py,sha256=9yZzHb-zrNyTRbRIqUintgtZbXXs1ZOUiBqKSTcjf7c,93
+hoser/compile.py,sha256=ozbN9HcnXZo2DUyIRRRg2DmAzN4q5fXuol7TVEoxhXE,10404
+hoser/run.py,sha256=qQOYt6n2qFoIRZmbfdxUdQrxcj77MowqU126K7lvfKI,1766
+hoser/serialize.py,sha256=dLoNwD-TTUPWRSX_gcdzKmZZMPNcA7rVSdJqd8DEF9A,2771
+hoser/streamutils.py,sha256=SsDc-D5bCCbOnUsiQxdUhtoAy71o3oocTdSfwamNj1g,1031
+hoser/stdlib/__init__.py,sha256=4o_seA9ZomiMmznwiX3-mk89Oy5LY8cfobov97uaTmk,20
+hoser/stdlib/xargs.py,sha256=Zb0NR62Upc_klI_E0I04U1K7tZksEmG7cTk7gEc3dno,224
+hoser-0.0.4.dist-info/LICENSE,sha256=-L2MLh3NZPvyV8yqYFMcu4zXAa_jUUnZOoJveFChEJQ,1095
+hoser-0.0.4.dist-info/METADATA,sha256=7a8THZ3ACZrreZ5BlhvLImZPaj1v98vVHJ6HiNAIip0,957
+hoser-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hoser-0.0.4.dist-info/top_level.txt,sha256=qispsTu3dCzZZFBgz-TFe4RcmlfELVFOHhTH_P_J3yQ,6
+hoser-0.0.4.dist-info/RECORD,,
