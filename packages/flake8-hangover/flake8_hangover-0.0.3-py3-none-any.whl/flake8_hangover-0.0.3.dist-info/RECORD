@@ -1,0 +1,9 @@
+flake8_hangover/__init__.py,sha256=0Qe2ylvFEevFzuxyEi61ZuGekdwV9jGb5YjycunyhN0,50
+flake8_hangover/plugin.py,sha256=T-LkkHZovXAo_kNTXSCr5AYK_tEPTzzm_xa7shAhXYQ,4898
+flake8_hangover/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_hangover-0.0.3.dist-info/LICENSE,sha256=S_gX4SETUVJWD00B--tI4Z5LmVvxMEHj7Tz-UsgZVTo,1069
+flake8_hangover-0.0.3.dist-info/METADATA,sha256=vv82cLdfFSMYwrnrNx5prs1L5A16tkZh6V5Bx4fOvQw,4820
+flake8_hangover-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flake8_hangover-0.0.3.dist-info/entry_points.txt,sha256=uRGn_NOx3riNDhGKn-2jGWH_dtcD3_L_TM1BhMMdH-E,48
+flake8_hangover-0.0.3.dist-info/top_level.txt,sha256=hJ7TrMOmLdDkm2fVUhp39CirX7cd0XCVmY6T2-uVDps,16
+flake8_hangover-0.0.3.dist-info/RECORD,,
