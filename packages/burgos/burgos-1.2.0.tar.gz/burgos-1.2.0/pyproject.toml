@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "burgos"
+version = "1.2.0"
+authors = [
+  { name="Fernando Burgos", email="nandobfer@gmail.com" },
+]
+description = "A bundle of useful packages for managing login sessions and database"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mysql-connector-python==8.0.30",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nandobfer/burgos"
+"Bug Tracker" = "https://github.com/nandobfer/burgos/issues"
