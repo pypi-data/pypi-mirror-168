@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lotr-sdk-karol
+Version: 1
+Summary: Lord of the rings SDK
+Author: Karol Djanashvili
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE.txt

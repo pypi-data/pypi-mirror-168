@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+lotr_sdk_karol.egg-info/PKG-INFO
+lotr_sdk_karol.egg-info/SOURCES.txt
+lotr_sdk_karol.egg-info/dependency_links.txt
+lotr_sdk_karol.egg-info/requires.txt
+lotr_sdk_karol.egg-info/top_level.txt
