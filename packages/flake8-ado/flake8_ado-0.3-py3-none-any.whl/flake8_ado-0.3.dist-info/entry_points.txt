@@ -1,0 +1,3 @@
+[flake8.extension]
+ADO=flake8_ado:Plugin
+
