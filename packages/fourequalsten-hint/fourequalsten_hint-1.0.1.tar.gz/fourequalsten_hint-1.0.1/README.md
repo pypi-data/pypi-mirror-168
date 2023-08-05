@@ -1,0 +1,52 @@
+# 4=10's Solution Generator
+
+***by Cheewy***
+
+## Description : 
+
+This tiny program in Python allows you to quickly and simply calculate every possible solutions to the famous *4=10* game.</br>
+I had a lot of fun developping it, I hope you will enjoy it.</br>
+
+Note : The code don't have comments, but if you want some, just send me an email and I will do it.
+
+## DISCLAIMER BEFORE USING IT
+
+*Use this program sparingly, or only when you are **REALLY** stuck and you have no more daily solution left.*</br>
+*Using this program too much will ruin your entire game experience, and will be very insulting to the game developpers.*</br>
+*I am **NOT** responsible for any bad game experience.*</br>
+
+## Installation :
+
+For Unix/macOS :
+```
+python3 -m pip install fourequalsten_hint
+```
+For Windows :
+```
+py -m pip install fourequalsten_hint
+```
+
+## Utilisation Guide :
+
+1. Start the program
+2. Enter the 4 digits (ex: 1234)
+3. Enter the banned operators or press enter if there's none (ex: +*)
+4. Press 0 to display every solutions, or press enter if you want to skip this step
+5. If you want to use the program again, press 1, and if you want to leave, press 0
+
+## Credits :
+
+### Fourequalsten_hint
+
+Developper : Cheewy</br>
+Email : cheewy.perso@gmail.com
+
+### 4=10
+
+Developper : Sveinn Steinarsson</br>
+Website : fourequalsten.app</br>
+Email : fourequalsten@fourequalsten.app</br>
+Youtube Channel : svenstone</br>
+
+Download game on Google Play Store : <a href="https://play.google.com/store/apps/details?id=app.fourequalsten.fourequalsten_app&hl=en_US&gl=US" target="_blank">Click here</a></br>
+Download game on Apple Play Store : <a href="https://apps.apple.com/us/app/4-10/id1609871477" target="_blank">Click here</a>
