@@ -1,0 +1,2 @@
+[console_scripts]
+basecli = basecli.__main__:main

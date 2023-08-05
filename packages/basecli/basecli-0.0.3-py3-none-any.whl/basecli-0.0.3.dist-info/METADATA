@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: basecli
+Version: 0.0.3
+Summary: A simple commandline app trying to make a cli version of deta base
+Home-page: https://github.com/AyushSehrawat/basecli
+Download-URL: https://github.com/AyushSehrawat/basecli/archive/0.0.3.tar.gz
+Author: Ayush Sehrawat
+Author-email: mini@minidev.me
+License: MIT
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: deta
+Requires-Dist: requests
+Requires-Dist: twine
+
+# BaseCli
+A commandline tool to manage deta base from command line.
