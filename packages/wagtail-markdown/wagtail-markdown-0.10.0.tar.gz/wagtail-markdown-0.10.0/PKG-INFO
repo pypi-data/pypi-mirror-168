@@ -1,0 +1,30 @@
+Metadata-Version: 1.2
+Name: wagtail-markdown
+Version: 0.10.0
+Summary: Markdown support for Wagtail
+Home-page: https://github.com/torchbox/wagtail-markdown
+Author: Felicity Tarnell
+Author-email: hello@torchbox.com
+Maintainer: Dan Braghis
+Maintainer-email: dan.braghis@torchbox.com
+License: zlib
+Project-URL: Changelog, https://github.com/torchbox/wagtail-markdown/blob/main/CHANGELOG.md
+Description: Provides Markdown page field and StreamField block for Wagtail. More info: https://github.com/torchbox/wagtail-markdown/blob/ee86e2c73b38d7f81e59b5eea9fdbc19bb2f001e/README.md
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: zlib/libpng License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 2
+Classifier: Framework :: Wagtail :: 3
+Classifier: Framework :: Wagtail :: 3
