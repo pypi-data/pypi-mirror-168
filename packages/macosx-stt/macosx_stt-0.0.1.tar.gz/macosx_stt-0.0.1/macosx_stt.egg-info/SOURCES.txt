@@ -1,0 +1,9 @@
+README.md
+setup.py
+macosx_stt/__init__.py
+macosx_stt/version.py
+macosx_stt.egg-info/PKG-INFO
+macosx_stt.egg-info/SOURCES.txt
+macosx_stt.egg-info/dependency_links.txt
+macosx_stt.egg-info/top_level.txt
+test/test_macosx.py

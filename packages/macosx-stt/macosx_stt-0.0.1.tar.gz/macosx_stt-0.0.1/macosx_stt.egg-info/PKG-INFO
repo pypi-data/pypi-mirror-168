@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: macosx-stt
+Version: 0.0.1
+Summary: macosx_stt is a stt driver for unistt engine
+Home-page: https://github.com/yumoqing/macosx_stt
+Author: yumoqing
+Author-email: yumoqing@gmail.com
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# macosx_stt
