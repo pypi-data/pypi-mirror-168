@@ -1,0 +1,10 @@
+oca_port/__init__.py,sha256=Ft_CSWP_aWMJXnM7WJYtBFawyYL2nhJ_-3WNcpfGgXQ,7287
+oca_port/migrate_addon.py,sha256=SW9GLcwTZuNkHm6Z1ZpeoJZe7QHEM2-CkeTG2hhJLOo,7485
+oca_port/misc.py,sha256=0rGLtQOMk-9JL0cYBCZqz6Jdhrf80GJu7vOUJtyJufk,11336
+oca_port/port_addon_pr.py,sha256=HrYID4h8CZAYfSixYSsApLwMbVxm9TRjgyToG3BSMiE,26227
+oca_port-0.9.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+oca_port-0.9.dist-info/METADATA,sha256=Kfp5JZ78RbfKaT7UnCm8W8B29beieAS-AMxRrbsUwEQ,11327
+oca_port-0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+oca_port-0.9.dist-info/entry_points.txt,sha256=oMIzd23osf8kGXZ1OViJMHwuiIS7RETrg55y6Kwr-Qc,43
+oca_port-0.9.dist-info/top_level.txt,sha256=XqlQ5ES3oAcg31XQ3w3nMEHhTQyweycqXeA__yQNZ5k,9
+oca_port-0.9.dist-info/RECORD,,

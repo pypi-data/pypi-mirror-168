@@ -1,0 +1,2 @@
+[console_scripts]
+oca-port = oca_port:main
