@@ -1,0 +1,10 @@
+setup.py
+pypbars/__init__.py
+pypbars/pypbars.py
+pypbars.egg-info/PKG-INFO
+pypbars.egg-info/SOURCES.txt
+pypbars.egg-info/dependency_links.txt
+pypbars.egg-info/namespace_packages.txt
+pypbars.egg-info/requires.txt
+pypbars.egg-info/top_level.txt
+pypbars.egg-info/zip-safe
