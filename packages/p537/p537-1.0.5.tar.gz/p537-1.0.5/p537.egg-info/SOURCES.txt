@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+p537module.c
+setup.py
+p537.egg-info/PKG-INFO
+p537.egg-info/SOURCES.txt
+p537.egg-info/dependency_links.txt
+p537.egg-info/entry_points.txt
+p537.egg-info/top_level.txt
