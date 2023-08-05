@@ -1,0 +1,8 @@
+LICENSE
+README.md
+faultguard.py
+setup.py
+faultguard.egg-info/PKG-INFO
+faultguard.egg-info/SOURCES.txt
+faultguard.egg-info/dependency_links.txt
+faultguard.egg-info/top_level.txt
