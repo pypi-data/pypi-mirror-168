@@ -1,0 +1,2 @@
+[console_scripts]
+respotgui = respot.gui:main
