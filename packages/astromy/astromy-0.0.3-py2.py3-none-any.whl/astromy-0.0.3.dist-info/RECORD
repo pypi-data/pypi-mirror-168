@@ -1,0 +1,12 @@
+astromy/__init__.py,sha256=I6BJndG9O08q_W-YP5Z7SmQocFsh1ksnSu6OmCthNnE,325
+astromy/__version__.py,sha256=enrtNX-j5ehDkpJJxZ0Wgx8Ev4R6KrgC6UtB4-armqo,389
+astromy/astro_catalog.py,sha256=X006MxI1FUWgZMrBfQPSDx9VbSCp67P9R5p268JVIYg,1049
+astromy/astro_cube.py,sha256=nq-HZXzjDZVnc5s1ucwQY9p_Y3PIpcZq3DlNWOFIgYs,1264
+astromy/astro_image.py,sha256=PLP-yWCkm1AVFJIXr-v3Xl-umUYVo7s9vnilF4isPYA,9377
+astromy/astromatic.py,sha256=ru2bcqzR-GP1_yOp1zA4UqA6wBX9L0cUcwaUd1pWLuA,8489
+astromy/core.py,sha256=E5RJNw6U-R9pz3ysYFgtQdGyGmExKSOvKSzUOvzn5nw,25
+astromy-0.0.3.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+astromy-0.0.3.dist-info/METADATA,sha256=XLcjNZC8OmocFYQmvjsrjIdZ3-yMmpAlWj5A3YAaFjs,798
+astromy-0.0.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+astromy-0.0.3.dist-info/top_level.txt,sha256=_XIslmuci68mr_UH5crPZSVqD3vRBLFs4K5wkRrd0RI,8
+astromy-0.0.3.dist-info/RECORD,,
