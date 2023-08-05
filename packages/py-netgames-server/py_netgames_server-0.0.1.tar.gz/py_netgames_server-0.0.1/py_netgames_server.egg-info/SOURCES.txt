@@ -1,0 +1,12 @@
+LICENSE.txt
+pyproject.toml
+py_netgames_server/__init__.py
+py_netgames_server/__main__.py
+py_netgames_server/game_server.py
+py_netgames_server/match.py
+py_netgames_server/websocket_server_builder.py
+py_netgames_server.egg-info/PKG-INFO
+py_netgames_server.egg-info/SOURCES.txt
+py_netgames_server.egg-info/dependency_links.txt
+py_netgames_server.egg-info/requires.txt
+py_netgames_server.egg-info/top_level.txt
