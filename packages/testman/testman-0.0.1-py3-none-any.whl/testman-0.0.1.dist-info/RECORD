@@ -1,0 +1,14 @@
+testman/__init__.py,sha256=_tF3ThLSmJAaTNLX--0RaLWj-paq6ddIwTqwr9u6EbI,3749
+testman/__main__.py,sha256=Ha6jzhkXmYgYKMaEiB9qHhVW_qL89vvTY9jSbFb3gWA,187
+testman/cli.py,sha256=73BismP3kgKhFCnoUJxO2f8Ojbj2e48rD5vRVXbzeyI,1588
+testman/testers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testman/testers/mail.py,sha256=B9iZfLcPzSR00vjdIXLSZBeExQSc-D6eAxdJ9gTOs0o,874
+testman/testers/mock.py,sha256=fOOtULIJc7f6YM3-_ZnntbHhdo6undZZQLl9kuR3Obc,849
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_example.py,sha256=mdcvXONeZk9Pn8SED468ddjKfA4jD9R1xWCbzPRKsIM,282
+testman-0.0.1.dist-info/LICENSE.txt,sha256=H9kh_EUvwcQF5XewlFElxkSxArtPP3_KiZMNacSHlpM,1062
+testman-0.0.1.dist-info/METADATA,sha256=j-bWhZbbZ6ufY76cjdW79deXX1Us0s-O8DffqUpIpEE,11678
+testman-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+testman-0.0.1.dist-info/entry_points.txt,sha256=zvjFmAzqVWIHlvDH5alqPDDH7mpI7FB6_IU3o8rRAhE,50
+testman-0.0.1.dist-info/top_level.txt,sha256=BwTEoJ6U0Cmpo5xAmd1cMCW0GKQwoIdMcCU1TLPgpy0,14
+testman-0.0.1.dist-info/RECORD,,
