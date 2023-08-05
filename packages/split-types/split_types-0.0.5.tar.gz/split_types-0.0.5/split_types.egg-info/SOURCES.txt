@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+split_types/__init__.py
+split_types/message_types.py
+split_types/transaction.py
+split_types/user.py
+split_types.egg-info/PKG-INFO
+split_types.egg-info/SOURCES.txt
+split_types.egg-info/dependency_links.txt
+split_types.egg-info/top_level.txt
