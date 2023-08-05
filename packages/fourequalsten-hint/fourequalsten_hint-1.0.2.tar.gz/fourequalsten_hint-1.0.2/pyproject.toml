@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fourequalsten_hint"
+version = "1.0.2"
+authors = [
+  { name="Cheewy", email="cheewy.perso@gmail.com" },
+]
+description = "4=10's Solution Generator - by Cheewy"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Github Depository" = "https://github.com/CheewyOFF/fourequalsten_hint"
