@@ -1,0 +1,7 @@
+setup.py
+UTC_Insights/__init__.py
+UTC_Insights.egg-info/PKG-INFO
+UTC_Insights.egg-info/SOURCES.txt
+UTC_Insights.egg-info/dependency_links.txt
+UTC_Insights.egg-info/requires.txt
+UTC_Insights.egg-info/top_level.txt
