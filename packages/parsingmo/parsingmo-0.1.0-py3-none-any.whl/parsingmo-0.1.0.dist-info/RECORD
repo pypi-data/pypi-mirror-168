@@ -1,0 +1,11 @@
+moparsing/__init__.py,sha256=2sqeUoWF8Xkbqea5ZWIr5tS1YYLw_ke6_hXOlmM-qps,55
+moparsing/instancemanager.py,sha256=HsI-D_MnmCwJIKeciSIAXISr22HDCrjtLqBoNuzZtmA,1551
+moparsing/moparsing.py,sha256=kJytF4uz5d4j7fsXhIBILBt30FOFvGp4s4JMNJ6niTg,3275
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=qLSX4djEkunS6Yes0OX8hwXoOr7iQs6ohnHBwN27IVg,220
+tests/test_moparsing.py,sha256=opKToMqamJNk0PrvkowG9s12RsHe1DJr51nHtOmlK1Q,251
+parsingmo-0.1.0.dist-info/LICENSE,sha256=1i28ZM5Jk1u_P4ea6k7QJrcFIg5HxcsXfW8wQAX7gxQ,1070
+parsingmo-0.1.0.dist-info/METADATA,sha256=h5vyCC30H8HOs8x2IBeQr4kn1C71zAtJoWO6rySVHYA,3094
+parsingmo-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+parsingmo-0.1.0.dist-info/top_level.txt,sha256=VoaBz37R5zJCoHwvmO4_yQNjtim42oOhztxyKiMCcpQ,16
+parsingmo-0.1.0.dist-info/RECORD,,
