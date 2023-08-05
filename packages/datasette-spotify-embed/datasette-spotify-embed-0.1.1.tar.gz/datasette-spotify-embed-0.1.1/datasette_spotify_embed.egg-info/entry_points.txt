@@ -1,0 +1,2 @@
+[datasette]
+spotify_embed = datasette_spotify_embed

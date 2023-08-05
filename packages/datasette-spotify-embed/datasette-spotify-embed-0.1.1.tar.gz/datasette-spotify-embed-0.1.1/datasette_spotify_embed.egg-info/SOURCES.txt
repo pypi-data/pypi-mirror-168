@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datasette_spotify_embed/__init__.py
+datasette_spotify_embed.egg-info/PKG-INFO
+datasette_spotify_embed.egg-info/SOURCES.txt
+datasette_spotify_embed.egg-info/dependency_links.txt
+datasette_spotify_embed.egg-info/entry_points.txt
+datasette_spotify_embed.egg-info/requires.txt
+datasette_spotify_embed.egg-info/top_level.txt
