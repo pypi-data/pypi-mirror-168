@@ -1,0 +1,137 @@
+// Copyright (c) 2017-present, SeetaTech, Co.,Ltd.
+// Licensed under the BSD 2-Clause License.
+
+syntax = "proto2";
+package dragon;
+
+// Store the serialized Tensor objects.
+message TensorProto {
+  repeated int32 dims = 1;
+  enum DataType {
+    UNDEFINED = 0;
+    // Basic types.
+    FLOAT = 1;
+    INT32 = 2;
+    BYTE = 3;
+    STRING = 4;
+
+    // Less-commonly used data types.
+    BOOL = 5;
+    UINT8 = 6;
+    INT8 = 7;
+    UINT16 = 8;
+    INT16 = 9;
+    INT64 = 10;
+    FLOAT16 = 12;
+    DOUBLE = 13;
+  }
+  optional DataType data_type = 2 [default = FLOAT];
+  // For float.
+  repeated float float_data = 3 [packed = true];
+  // For int32, uint8, int8, uint16, int16, bool, and float16
+  // Note about float16: in storage we will basically convert float16 byte-wise
+  // to unsigned short and then store them in the int32_data field.
+  repeated int32 int32_data = 4 [packed = true];
+  // For bytes.
+  optional bytes byte_data = 5;
+  // For strings.
+  repeated bytes string_data = 6;
+  // For double.
+  repeated double double_data = 9 [packed = true];
+  // For int64.
+  repeated int64 int64_data = 10 [packed = true];
+  // Store the raw data, contents are serialized as little-endian.
+  optional bytes raw_data = 13;
+
+  // Optionally, a name for the tensor.
+  optional string name = 7;
+}
+
+// Store multiple TensorProto objects in one single proto.
+message TensorProtos {
+  repeated TensorProto protos = 1;
+}
+
+// DeviceType that Dragon currently supports.
+enum DeviceTypeProto {
+  // The default device.
+  PROTO_CPU = 0;
+  // NVIDIA's CUDA Environment.
+  PROTO_CUDA = 1;
+  // CAMBRICON's CNML Environment.
+  PROTO_CNML = 2;
+}
+
+// Device-specific options.
+message DeviceOption {
+  // The type of device to dispatch executions.
+  optional DeviceTypeProto device_type = 1 [default = PROTO_CPU];
+  // The index of this device.
+  optional int32 device_id = 2 [default = 0];
+  // The random seed to start the random generator.
+  optional uint32 random_seed = 3 [default = 3];
+}
+
+// A named argument containing either singular float, integer and string
+// values, or repeated float, int and string arrays.
+message Argument {
+  // The name of this argument.
+  optional string name = 1;
+
+  // Store the float32 value.
+  optional float f = 2;
+  // Store the bool, int32, int64 value.
+  optional int64 i = 3;
+  // Store the string value.
+  optional bytes s = 4;
+
+  // Store the float32 values.
+  repeated float floats = 7;
+  // Store the bool, int32, int64 values.
+  repeated int64 ints = 8;
+  // Store the string values.
+  repeated bytes strings = 9;
+}
+
+// Operator Definition
+message OperatorDef {
+  // The operator inputs.
+  repeated string input = 1;
+  // The operator outputs.
+  repeated string output = 2;
+
+  // The operator name.
+  optional string name = 3;
+
+  // The operator type.
+  optional string type = 4;
+
+  // The operator arguments.
+  repeated Argument arg = 5;
+
+  // The device option that the operator should run under.
+  optional DeviceOption device_option = 6;
+}
+
+// Graph Definition
+message GraphDef {
+  // The operators in the graph.
+  repeated OperatorDef op = 1;
+
+  // The graph name.
+  optional string name = 2;
+
+  // The graph type.
+  optional string type = 3;
+
+  // The graph inputs.
+  repeated string input = 4;
+  // The graph outputs.
+  repeated string output = 5;
+
+  // The graph arguments.
+  repeated Argument arg = 6;
+
+  // The device option that the graph should run under.
+  optional DeviceOption device_option = 7;
+}
