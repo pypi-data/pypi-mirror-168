@@ -1,0 +1,3 @@
+[console_scripts]
+alnoda-wrk=alnoda_wrk.main:app
+
