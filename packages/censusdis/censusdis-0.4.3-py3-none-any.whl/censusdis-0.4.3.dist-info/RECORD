@@ -1,0 +1,9 @@
+censusdis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+censusdis/data.py,sha256=XgsntYMATPImdKyjW7WJQVjV5qNXZzjUSdQs9zZOrts,21855
+censusdis/geography.py,sha256=1EbbLOoQiBRbzYb3PmEb77eR9qAJKvl3d7JMU4s6_DA,19560
+censusdis/maps.py,sha256=I9Mo0vscAByVyiONf4hD8SejdlHAOdpI7r7Io1dqfxU,16578
+censusdis/states.py,sha256=jVY5rTFDuQrf1xevvftNpRgle91wvtpa7nQNVwtJ8jM,3699
+censusdis-0.4.3.dist-info/LICENSE.md,sha256=VA0iWYAhWcLax9SInoLFewA1TKaBH7AT0k1BNBJuDv8,19938
+censusdis-0.4.3.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+censusdis-0.4.3.dist-info/METADATA,sha256=vHXtQLVziBn9pALngfKmoOLrKAIf3_z5Z6C1pEPRqxk,4993
+censusdis-0.4.3.dist-info/RECORD,,
