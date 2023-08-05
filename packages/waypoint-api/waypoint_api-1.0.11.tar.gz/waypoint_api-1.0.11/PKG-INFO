@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: waypoint_api
+Version: 1.0.11
+Home-page: https://github.com/Fliqqr/waypoint
+Author: Fliqqr
+Author-email: author@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
