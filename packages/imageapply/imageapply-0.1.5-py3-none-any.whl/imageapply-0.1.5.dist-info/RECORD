@@ -1,0 +1,10 @@
+imageapply/__init__.py,sha256=N-8lUvwhcYYtPvyln9T332fpL1z9rVOhbLKvUw_oK6g,1034
+imageapply/data.py,sha256=EzFwr0b8Z1JTNJyBrxkuILmWh9eivVAgLny558mMYHA,1057
+imageapply/flexible_model.py,sha256=GfjTyT6i3kLNnHXjg6Um5uEGHBbihABQQaKklOIguyw,1981
+imageapply/preprocess.py,sha256=_F-hNdhzxh2Zf_Yes5tiWOtMXWxuu049bS0Uh_MAH8Y,346
+imageapply/revtransform.py,sha256=YSU11hZhD5PN-GPXr9cAprMx8ia3s-9RYs465x2Ch8M,3066
+imageapply/tools.py,sha256=x-nkHwIV-XakQJ3GO9qyILyCgCQd6su-M5mm3kEiKDo,4754
+imageapply-0.1.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+imageapply-0.1.5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+imageapply-0.1.5.dist-info/METADATA,sha256=yk5zHfDYyU8_G7bd0yCsNNgP34HzYl8avUCP_9my1E4,1585
+imageapply-0.1.5.dist-info/RECORD,,
