@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+requirements.txt
+setup.py
+aws_sts_tool/__init__.py
+aws_sts_tool/_version.py
+aws_sts_tool/cli.py
+aws_sts_tool.egg-info/PKG-INFO
+aws_sts_tool.egg-info/SOURCES.txt
+aws_sts_tool.egg-info/dependency_links.txt
+aws_sts_tool.egg-info/entry_points.txt
+aws_sts_tool.egg-info/requires.txt
+aws_sts_tool.egg-info/top_level.txt
+aws_sts_tool/helpers/__init__.py
+aws_sts_tool/helpers/datetimeencoder.py
