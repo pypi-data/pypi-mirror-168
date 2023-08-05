@@ -1,0 +1,11 @@
+README.md
+setup.py
+basecli/__init__.py
+basecli/__main__.py
+basecli/validator.py
+basecli.egg-info/PKG-INFO
+basecli.egg-info/SOURCES.txt
+basecli.egg-info/dependency_links.txt
+basecli.egg-info/entry_points.txt
+basecli.egg-info/requires.txt
+basecli.egg-info/top_level.txt
