@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: gigman
+Version: 0.0.4
+License-File: LICENSE
+Requires-Dist: importlib-resources (==5.9.0)
+
