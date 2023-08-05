@@ -1,0 +1,15 @@
+pdpatch/__init__.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+pdpatch/_modidx.py,sha256=o0cP0Tjxk95mlTaxD_Q9OLGzG3CSYUHMzRHE-kukdfE,6554
+pdpatch/_nbdev.py,sha256=NG35LJAdaKOp6WdsH33UxoSOYfaLygx8d4mFLRggUCU,1729
+pdpatch/all.py,sha256=Yn_ZOYgk_WDyykhzjx40nrFUYOtUd9ZYVefFghH40-g,62
+pdpatch/case.py,sha256=LqVNH8bjAxj_vqsMMxBK2_by_WIYR3tPQiSFwHOyxug,2841
+pdpatch/core.py,sha256=RhQ0LMVQ2s-b9oCoYLDrtR1jPE4doRZS4ta3bM7O5w8,4688
+pdpatch/display.py,sha256=E_lgGVuGdeJLWpJEjhOLcFR9lJ2o48snOi5lNxwcfr0,3331
+pdpatch/express.py,sha256=zotaq4Cgnio8J3YCkADfWiQZJgbmx2XgDolRVFxeO7k,2164
+pdpatch/seaborn.py,sha256=D1Ge43a31zNNkY3mUjY5mF8gYAV_wjTFvqWTxw1D-dY,1883
+pdpatch-0.1.4.dist-info/LICENSE,sha256=73TWkcNq9LcAPsguXg-DF9ENehsHgAx3eC69wEoIjj8,1053
+pdpatch-0.1.4.dist-info/METADATA,sha256=wq0bW-rFDW1m92T3Q09aRBld4NZ0gglWl_XzLkTSmYs,3419
+pdpatch-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdpatch-0.1.4.dist-info/entry_points.txt,sha256=DrPgQP-gCFLaW8tNvX2wsONHe_Gd2PyIo32Bwj9GQvs,36
+pdpatch-0.1.4.dist-info/top_level.txt,sha256=JmDo2soBkscCzSRhGwcBtjHtxbc36dWI1ZkMreQXnuU,8
+pdpatch-0.1.4.dist-info/RECORD,,
