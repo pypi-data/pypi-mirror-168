@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "py_netgames_model"
+license = { file = 'LICENSE.txt' }
+version = "0.0.1"
+description = 'Py-NetGames Internal Model package. Shared between server and client implementations.'
+authors = [
+    { name = 'Gabriel Machado da Roza', email = 'gabrielmachadodaroza@outlook.com' }
+]
+dependencies = [
+    'dataclasses-json',
+]

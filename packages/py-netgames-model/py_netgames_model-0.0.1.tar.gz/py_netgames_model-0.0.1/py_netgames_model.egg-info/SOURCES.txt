@@ -1,0 +1,11 @@
+LICENSE.txt
+pyproject.toml
+py_netgames_model.egg-info/PKG-INFO
+py_netgames_model.egg-info/SOURCES.txt
+py_netgames_model.egg-info/dependency_links.txt
+py_netgames_model.egg-info/requires.txt
+py_netgames_model.egg-info/top_level.txt
+py_netgames_model/messaging/__init__.py
+py_netgames_model/messaging/deserializer.py
+py_netgames_model/messaging/message.py
+py_netgames_model/messaging/webhook_payload.py
