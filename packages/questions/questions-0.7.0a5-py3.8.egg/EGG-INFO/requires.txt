@@ -1,0 +1,6 @@
+Click>=7.0
+Jinja2
+email_validator
+pydantic
+requests
+simpleeval

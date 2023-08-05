@@ -1,0 +1,5 @@
+[console_scripts]
+download_surveyjs = questions.cli:download_surveyjs
+generate_code = questions.cli:generate_code
+list_resources = questions.cli:list_resources
+
