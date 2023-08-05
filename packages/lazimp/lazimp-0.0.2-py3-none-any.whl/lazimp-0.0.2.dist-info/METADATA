@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lazimp
+Version: 0.0.2
+Summary: Lazy import of packages and modules
+Author-email: Dorian Turba <dturba.pro@protonmail.com>
+Project-URL: Homepage, https://github.com/Vikka/lazimport
+Project-URL: Bug Tracker, https://github.com/Vikka/lazimport/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LazImp
