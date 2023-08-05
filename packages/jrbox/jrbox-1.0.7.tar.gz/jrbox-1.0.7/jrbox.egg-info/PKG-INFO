@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: jrbox
+Version: 1.0.7
+Summary: tools
+Home-page: https://github.com/ruiandxuan/JRtools.git
+Author: Jerry[Jirui Zhang]
+Author-email: 2226750760@qq.com
+Maintainer: Jerry
+Maintainer-email: 2226750760@qq.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
