@@ -1,0 +1,11 @@
+export const header = "bk-header"
+export const above = "bk-above"
+export const below = "bk-below"
+export const left = "bk-left"
+export const right = "bk-right"
+export const stack = "bk-stack"
+export const tab = "bk-tab"
+export const active = "bk-active"
+export const close = "bk-close"
+export const disabled = "bk-disabled"
+export default `:host{display:flex;}.bk-header{flex:0 0 auto;}.bk-header.bk-above,.bk-header.bk-below{flex-direction:row;}.bk-header.bk-left,.bk-header.bk-right{flex-direction:column;}.bk-header.bk-above,.bk-header.bk-left{order:0;}.bk-header.bk-below,.bk-header.bk-right{order:1;}.bk-stack{flex:1 1 auto;}.bk-stack{display:grid;grid-template-rows:1fr;grid-template-columns:1fr;grid-template-areas:"stack";}.bk-header{display:flex;flex-wrap:nowrap;align-items:stretch;user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;}.bk-header.bk-above{border-bottom:1px solid #e6e6e6;}.bk-header.bk-right{border-left:1px solid #e6e6e6;}.bk-header.bk-below{border-top:1px solid #e6e6e6;}.bk-header.bk-left{border-right:1px solid #e6e6e6;}.bk-header .bk-tab{padding:4px 8px;border:solid transparent;outline:0;outline-offset:-5px;white-space:nowrap;cursor:pointer;text-align:center;}.bk-header .bk-tab:hover{background-color:#f2f2f2;}.bk-header .bk-tab:focus,.bk-header .bk-tab:active{outline:1px dotted #ccc;}.bk-header .bk-tab.bk-active{color:#4d4d4d;background-color:white;border-color:#e6e6e6;}.bk-header .bk-tab .bk-close{margin-left:10px;}.bk-header .bk-tab.bk-disabled{cursor:not-allowed;pointer-events:none;opacity:0.65;}.bk-header.bk-above .bk-tab{border-width:3px 1px 0px 1px;border-radius:var(--border-radius) var(--border-radius) 0 0;}.bk-header.bk-right .bk-tab{border-width:1px 3px 1px 0px;border-radius:0 var(--border-radius) var(--border-radius) 0;}.bk-header.bk-below .bk-tab{border-width:0px 1px 3px 1px;border-radius:0 0 var(--border-radius) var(--border-radius);}.bk-header.bk-left .bk-tab{border-width:1px 0px 1px 3px;border-radius:var(--border-radius) 0 0 var(--border-radius);}.bk-close{display:inline-block;vertical-align:middle;width:14px;height:14px;cursor:pointer;background-color:gray;mask-image:var(--bokeh-icon-x);mask-size:contain;mask-repeat:no-repeat;-webkit-mask-image:var(--bokeh-icon-x);-webkit-mask-size:contain;-webkit-mask-repeat:no-repeat;}.bk-close:hover{background-color:red;}`
