@@ -1,0 +1,9 @@
+py_netgames_model/messaging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_netgames_model/messaging/deserializer.py,sha256=Yfevo4SY5yFQLqPlSVL5ogKhjanWZJUgazEx8lZm_Vw,857
+py_netgames_model/messaging/message.py,sha256=64Zai4MvbZ4BSHY4zQx4GzZoyccT-2Nc1Q1Gp3qC_kU,1407
+py_netgames_model/messaging/webhook_payload.py,sha256=wWzwbmXq5hcV_FpDNEXyvOcBjfCZieytpbcGzOTJs44,437
+py_netgames_model-0.0.1.dist-info/LICENSE.txt,sha256=GPY8fab0f53s2SkIzZozQdesjQfJ4W7zrgufE4G3Y6M,1079
+py_netgames_model-0.0.1.dist-info/METADATA,sha256=k2qGkiTd9g_JAdZ0IsPVlewOd9dH3F7ZuV-VvWa7Y-8,1533
+py_netgames_model-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py_netgames_model-0.0.1.dist-info/top_level.txt,sha256=ad5-W7wMRcSE_KU2HjPXSvZK1YwZKPGPQrDnXEHWr-s,18
+py_netgames_model-0.0.1.dist-info/RECORD,,
