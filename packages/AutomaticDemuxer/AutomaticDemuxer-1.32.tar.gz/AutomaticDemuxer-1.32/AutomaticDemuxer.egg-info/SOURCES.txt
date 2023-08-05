@@ -1,0 +1,13 @@
+LICENCE.txt
+README.md
+setup.py
+AutomaticDemuxer.egg-info/PKG-INFO
+AutomaticDemuxer.egg-info/SOURCES.txt
+AutomaticDemuxer.egg-info/dependency_links.txt
+AutomaticDemuxer.egg-info/requires.txt
+AutomaticDemuxer.egg-info/top_level.txt
+automatic_demuxer/__init__.py
+automatic_demuxer/auto_demuxer.py
+automatic_demuxer/demuxer.py
+automatic_demuxer/format_extensions.py
+automatic_demuxer/video_extension.py
