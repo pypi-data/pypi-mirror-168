@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fast-box-lib-py
+Version: 0.4.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
