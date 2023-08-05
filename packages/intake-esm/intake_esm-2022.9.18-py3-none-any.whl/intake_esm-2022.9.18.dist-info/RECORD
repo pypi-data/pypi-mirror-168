@@ -1,0 +1,14 @@
+intake_esm/__init__.py,sha256=XSrnK_wRZObU_2wrR5orRKll8GwZagsaZUzfyVvoo4E,543
+intake_esm/_search.py,sha256=NDLN2yHKugsx56dgtvSadTVfmtOaln2UDPNJE6PIkhw,3517
+intake_esm/cat.py,sha256=6L1nsupVTLgHXLBN_P6PLp74ZGMe1KDzkLAkG3DOM2o,15515
+intake_esm/core.py,sha256=jcLQp8Dsi3McVgK7t7po9cxM1C08JMFN270fDO6Qxu4,32052
+intake_esm/derived.py,sha256=-ldOZyLjwKeuK8SmsR8AqmMEThiceSulv2eEv8VklZM,7583
+intake_esm/source.py,sha256=8yyw5ajyKwNhCbPXyN3ZHzA6_r5b7tBcHmvPxHngvLU,10236
+intake_esm/tutorial.py,sha256=ws29jcvpbdlZbqMHl7ingjbvCY1LqEcwEB0ISMMyN8Y,1531
+intake_esm/utils.py,sha256=f-Ek07hNHfAhyquXYOJetrQM9v0gYz6HVhd8f8pctNI,3658
+intake_esm-2022.9.18.dist-info/LICENSE,sha256=ZB2I9_mFOoLjmq6cppIKelzqUvckDeRPFXiSdooTKCY,11390
+intake_esm-2022.9.18.dist-info/METADATA,sha256=NtcHCkdjVSlrR2PWYmsbYGxWMob7FA6N5aiznS5RAE8,7237
+intake_esm-2022.9.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+intake_esm-2022.9.18.dist-info/entry_points.txt,sha256=qQxXLRQCKViUSBYsA6J4w2FWB9ZwyPntAASTi89RR10,112
+intake_esm-2022.9.18.dist-info/top_level.txt,sha256=haj0porlWv9IQvdcQTucWx4ckWFO9D0suiqUZVfA1pA,11
+intake_esm-2022.9.18.dist-info/RECORD,,
