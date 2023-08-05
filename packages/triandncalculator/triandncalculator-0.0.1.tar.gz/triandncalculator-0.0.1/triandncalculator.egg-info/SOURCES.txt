@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+triandncalculator/__init__.py
+triandncalculator.egg-info/PKG-INFO
+triandncalculator.egg-info/SOURCES.txt
+triandncalculator.egg-info/dependency_links.txt
+triandncalculator.egg-info/top_level.txt
