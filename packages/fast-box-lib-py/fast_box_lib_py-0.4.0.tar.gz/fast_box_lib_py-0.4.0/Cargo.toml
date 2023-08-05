@@ -1,0 +1,18 @@
+[package]
+name = "fast-box-lib-py"
+version = "0.4.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "fast_box_lib_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+fast-box-lib = { path = "local_dependencies/fast-box-lib", version="0.4.0" }
+pyo3 = { version = "0.16.5", features = ["extension-module"] }
+numpy = "0.16.2"
+rayon = "1.5.3"
+
+[dev-dependencies]
+rand = "0.8.5"
