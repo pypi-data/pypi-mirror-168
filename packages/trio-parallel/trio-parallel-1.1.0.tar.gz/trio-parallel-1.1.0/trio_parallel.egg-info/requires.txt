@@ -1,0 +1,11 @@
+trio>=0.18.0
+outcome
+attrs>=17.3.0
+tblib
+
+[:os_name == "nt" and implementation_name != "pypy"]
+cffi
+
+[test]
+pytest
+pytest-trio
