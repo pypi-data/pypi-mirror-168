@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+inoryp/__init__.py
+inoryp.egg-info/PKG-INFO
+inoryp.egg-info/SOURCES.txt
+inoryp.egg-info/dependency_links.txt
+inoryp.egg-info/requires.txt
+inoryp.egg-info/top_level.txt
