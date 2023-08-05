@@ -1,0 +1,10 @@
+doctest_docutils.py,sha256=B83GV-ID-y9Pde97tYaPSI4A3A_nbS0zfHuGteiTSPg,18205
+gp_libs.py,sha256=k-p5qdGfpzqwX-xmEAEey42jwJ5V6HhOpIAiMqIF6aA,463
+linkify_issues.py,sha256=b7Dv_tL8BOGT6FJvwZaW9FNLZB689Q8iT7Yn8CAetDg,2472
+pytest_doctest_docutils.py,sha256=K_R8W6zvqdcBcTbuIbQHNdsuS4UZKxP3nU36J5jLEOY,7906
+sphinx_toctree_autodoc_fix.py,sha256=JBdUxVVoVyBdEP1PxAAyY6xNR2EC-kQ_myR4a-j7gDk,8881
+gp_libs-0.0.1a11.dist-info/entry_points.txt,sha256=LXr5k8KNHbSwhqYv_zYxedeifZcq6i12QLwgD1A3rJc,43
+gp_libs-0.0.1a11.dist-info/LICENSE,sha256=4ZUHd4-FT84yatUfr-uDRV4a5hhg3fAAieerbYPuf1w,1070
+gp_libs-0.0.1a11.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+gp_libs-0.0.1a11.dist-info/METADATA,sha256=-nXOmeR1mdoBDKpAO-Do5MIUobeJ09a6LHk1GxzCxHQ,6015
+gp_libs-0.0.1a11.dist-info/RECORD,,
