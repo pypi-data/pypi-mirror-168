@@ -1,0 +1,6 @@
+jsonpyth<0.2
+pygal<4,>=3
+
+[manual]
+sphinx<5,>=4
+sphinxcontrib-programoutput<0.18
