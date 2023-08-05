@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: UTC-Insights
+Version: 0.0.1
+Summary: Insights based on truck data
+Home-page: UNKNOWN
+Author: Somaay Maheshwari, Vidhi Khatwani, Nikhil Tattikota
+Author-email: <somaay.maheshwari70@gmail.com>
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: fpdf
+
+A package that gives Insights of UltraTech truck data as pdf file. Types: 1) All India based Report 2) Plant-wise Report 3) Zone-wise Report
+
+
