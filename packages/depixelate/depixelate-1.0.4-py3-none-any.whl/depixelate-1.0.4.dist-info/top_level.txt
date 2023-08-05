@@ -1,0 +1,4 @@
+depixelate
+gaussian
+lut
+shape
