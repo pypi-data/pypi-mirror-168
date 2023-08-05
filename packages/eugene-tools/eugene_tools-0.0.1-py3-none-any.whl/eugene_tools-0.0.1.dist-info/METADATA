@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: eugene-tools
+Version: 0.0.1
+Summary: A Python toolkit for predictive analyses of regulatory sequences 
+Author: Adam Klie
+Author-email: aklie@ucsd.edu
+Requires-Python: >=3.7.12,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: janggu
+Provides-Extra: kipoi
+Provides-Extra: memesuite
+Requires-Dist: Shapely[kipoi] (>=1.8.1,<2.0.0); extra == "kipoi"
+Requires-Dist: Sphinx[docs] (==5.1.1); extra == "docs"
+Requires-Dist: autopep8[docs] (==1.6.0); extra == "docs"
+Requires-Dist: biopython[janggu] (==1.77); extra == "janggu"
+Requires-Dist: black[dev] (>=22.3,<23.0); extra == "dev"
+Requires-Dist: captum (>=0.5.0,<0.6.0)
+Requires-Dist: codecov[dev] (>=2.0.8,<3.0.0); extra == "dev"
+Requires-Dist: h5py (>=3.7.0,<4.0.0)
+Requires-Dist: ipywidgets (>=7.6.5,<8.0.0)
+Requires-Dist: jsonargparse[signatures] (>=4.12.0,<5.0.0)
+Requires-Dist: keras[janggu] (>=2.4.3,<3.0.0); extra == "janggu"
+Requires-Dist: kipoi[kipoi] (>=0.8.6,<0.9.0); extra == "kipoi"
+Requires-Dist: kipoiseq[kipoi] (>=0.7.1,<0.8.0); extra == "kipoi"
+Requires-Dist: logomaker (>=0.8,<0.9)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: myst-parser[docs] (==0.18.0); extra == "docs"
+Requires-Dist: numpy (>=1.21.5,<2.0.0)
+Requires-Dist: openpyxl (>=3.0.9,<4.0.0)
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Requires-Dist: pre-commit[dev] (>=2.20,<3.0); extra == "dev"
+Requires-Dist: progress[janggu] (>=1.6,<2.0); extra == "janggu"
+Requires-Dist: pyBigWig[janggu] (>=0.3.18,<0.4.0); extra == "janggu"
+Requires-Dist: pybedtools[janggu] (>=0.9.0,<0.10.0); extra == "janggu"
+Requires-Dist: pyjaspar[memesuite] (>=2.1.0,<3.0.0); extra == "memesuite"
+Requires-Dist: pymemesuite[memesuite] (>=0.1.0a1,<0.2.0); extra == "memesuite"
+Requires-Dist: pyranges (>=0.0.117,<0.0.118)
+Requires-Dist: pytest[dev] (>=7.1.2,<8.0.0); extra == "dev"
+Requires-Dist: pytorch-lightning (==1.5.10)
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Requires-Dist: rich (>=12.4.4,<13.0.0)
+Requires-Dist: scikit-learn (>=1.0.2,<2.0.0)
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Requires-Dist: seqlogo (>=5.29.8,<6.0.0)
+Requires-Dist: sphinx-autobuild[docs] (==2021.3.14); extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints[docs] (>=1.19.2,<2.0.0)
+Requires-Dist: sphinx-rtd-theme[docs] (>=1.0.0,<2.0.0)
+Requires-Dist: sphinxcontrib-apidoc[docs] (==0.3.0); extra == "docs"
+Requires-Dist: tensorflow[janggu] (>=2.4.1,<3.0.0); extra == "janggu"
+Requires-Dist: torch (>=1.11.0,<2.0.0)
+Requires-Dist: torch-tb-profiler (>=0.4.0,<0.5.0)
+Requires-Dist: torchvision (>=0.12,<0.13)
+Requires-Dist: umap-learn (>=0.5.3,<0.6.0)
+Requires-Dist: vizsequence (>=0.1.1,<0.2.0)
+Requires-Dist: wget (>=3.2,<4.0)
+Requires-Dist: xlrd (>=2.0.1,<3.0.0)
+Requires-Dist: yuzu-ism (>=0.0.1,<0.0.2)
+Description-Content-Type: text/markdown
+
+# EUGENE (**E**lucidating and **U**nderstanding **G**rammar of **E**lements with **Ne**uralnets)
+
+EUGENe represents a computational framework for machine learning based modeling of regulatory sequences. It is designed after the [Scanpy](https://scanpy.readthedocs.io/en/stable/) package for single cell analysis in Python and is meant to make the development of deep learning worlflows in the genomics field more findable, accessible, interoperitable and reproducible (FAIR). EUGENe consists of several modules for handling data and for building, training, evaluating and interpreting deep learners that predict annotations of biological sequences. EUGENe is primarily designed to be used through its Python API and we feel that users will get the most out of it by using a notebook interface (i.e. Jupyter).
+
+EUGENe is a package that is still active development, so there's a good chance you'll hit an error to if you use EUGENe before its first stable release. However, catching these errors is incredbily valuable for us! If you run into such errors or have any questions, please open an issue! You can read the [current documentation]() here for getting started.
+
