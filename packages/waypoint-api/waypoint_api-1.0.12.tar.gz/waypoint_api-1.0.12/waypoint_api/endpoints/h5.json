@@ -1,0 +1,1263 @@
+{
+    "Authorities": {
+        "banprocessor": {
+            "AuthorityId": "banprocessor",
+            "Scheme": 2,
+            "Hostname": "banprocessor.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1
+            ]
+        },
+        "cdnorigin": {
+            "AuthorityId": "cdnorigin",
+            "Scheme": 2,
+            "Hostname": "content.halocdn.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "channel": {
+            "AuthorityId": "channel",
+            "Scheme": 2,
+            "Hostname": "channel.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1,
+                10
+            ]
+        },
+        "content-hacs": {
+            "AuthorityId": "content-hacs",
+            "Scheme": 2,
+            "Hostname": "content-hacs.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1,
+                10
+            ]
+        },
+        "content-prod": {
+            "AuthorityId": "content-prod",
+            "Scheme": 2,
+            "Hostname": "content-hacs.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "crashes": {
+            "AuthorityId": "crashes",
+            "Scheme": 2,
+            "Hostname": "crashes.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "emblem": {
+            "AuthorityId": "emblem",
+            "Scheme": 2,
+            "Hostname": "emblem.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "entitlements": {
+            "AuthorityId": "entitlements",
+            "Scheme": 2,
+            "Hostname": "entitlements.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1,
+                10
+            ]
+        },
+        "hacs": {
+            "AuthorityId": "hacs",
+            "Scheme": 2,
+            "Hostname": "hacs.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0,
+                1,
+                10
+            ]
+        },
+        "linear-api": {
+            "AuthorityId": "linear-api",
+            "Scheme": 2,
+            "Hostname": "linear-api.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                13
+            ]
+        },
+        "linear-auth": {
+            "AuthorityId": "linear-auth",
+            "Scheme": 2,
+            "Hostname": "linear-auth.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                13,
+                14
+            ]
+        },
+        "lobbyamqp": {
+            "AuthorityId": "lobbyamqp",
+            "Scheme": 8,
+            "Hostname": "lobby.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1
+            ]
+        },
+        "lobby": {
+            "AuthorityId": "lobby",
+            "Scheme": 2,
+            "Hostname": "lobby.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1,
+                10
+            ]
+        },
+        "lobbywss": {
+            "AuthorityId": "lobbywss",
+            "Scheme": 4,
+            "Hostname": "lobby.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                10,
+                1
+            ]
+        },
+        "localfile": {
+            "AuthorityId": "localfile",
+            "Scheme": 0,
+            "Hostname": "prod.localfile.invalid",
+            "Port": null,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "packs": {
+            "AuthorityId": "packs",
+            "Scheme": 2,
+            "Hostname": "packs.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1,
+                10
+            ]
+        },
+        "profile": {
+            "AuthorityId": "profile",
+            "Scheme": 2,
+            "Hostname": "haloplayer.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1
+            ]
+        },
+        "search": {
+            "AuthorityId": "search",
+            "Scheme": 2,
+            "Hostname": "search.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1,
+                10
+            ]
+        },
+        "settings": {
+            "AuthorityId": "settings",
+            "Scheme": 2,
+            "Hostname": "settings.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                4,
+                10
+            ]
+        },
+        "spartanstatsamqp": {
+            "AuthorityId": "spartanstatsamqp",
+            "Scheme": 8,
+            "Hostname": "spartanstats.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1
+            ]
+        },
+        "spartanstats": {
+            "AuthorityId": "spartanstats",
+            "Scheme": 2,
+            "Hostname": "spartanstats.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1
+            ]
+        },
+        "stats": {
+            "AuthorityId": "stats",
+            "Scheme": 2,
+            "Hostname": "stats.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1
+            ]
+        },
+        "telemetry": {
+            "AuthorityId": "telemetry",
+            "Scheme": 8,
+            "Hostname": "telemetry.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                1,
+                15
+            ]
+        },
+        "ugcblob": {
+            "AuthorityId": "ugcblob",
+            "Scheme": 2,
+            "Hostname": "s3ugc.blob.core.windows.net",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "ugc": {
+            "AuthorityId": "ugc",
+            "Scheme": 2,
+            "Hostname": "ugc.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                10,
+                1
+            ]
+        },
+        "ugccdn": {
+            "AuthorityId": "ugccdn",
+            "Scheme": 2,
+            "Hostname": "ugc.halocdn.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "ugcnoauth": {
+            "AuthorityId": "ugcnoauth",
+            "Scheme": 2,
+            "Hostname": "ugc.svc.halowaypoint.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "xbl-screenshots": {
+            "AuthorityId": "xbl-screenshots",
+            "Scheme": 2,
+            "Hostname": "gameclipsmetadata.xboxlive.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                9
+            ]
+        },
+        "gameserverds-xbl": {
+            "AuthorityId": "gameserverds-xbl",
+            "Scheme": 2,
+            "Hostname": "gameserverds.xboxlive.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                0
+            ]
+        },
+        "xbl-string-server": {
+            "AuthorityId": "xbl-string-server",
+            "Scheme": 2,
+            "Hostname": "client-strings.xboxlive.com",
+            "Port": 443,
+            "AuthenticationMethods": [
+                9
+            ]
+        }
+    },
+    "RetryPolicies": {
+        "noretry": {
+            "RetryPolicyId": "noretry",
+            "TimeoutMs": 10000,
+            "RetryOptions": null
+        },
+        "longerdelayedexponentialretry": {
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TimeoutMs": 10000,
+            "RetryOptions": {
+                "MaxRetryCount": 2,
+                "RetryDelayMs": 2000,
+                "RetryGrowth": 3.5,
+                "RetryJitterMs": 150,
+                "RetryIfNotFound": false
+            }
+        },
+        "linearretry": {
+            "RetryPolicyId": "linearretry",
+            "TimeoutMs": 10000,
+            "RetryOptions": {
+                "MaxRetryCount": 1,
+                "RetryDelayMs": 50,
+                "RetryGrowth": 1.0,
+                "RetryJitterMs": 10,
+                "RetryIfNotFound": false
+            }
+        },
+        "delayedexponentialretry": {
+            "RetryPolicyId": "delayedexponentialretry",
+            "TimeoutMs": 10000,
+            "RetryOptions": {
+                "MaxRetryCount": 5,
+                "RetryDelayMs": 2000,
+                "RetryGrowth": 1.25,
+                "RetryJitterMs": 100,
+                "RetryIfNotFound": false
+            }
+        },
+        "cdnretry": {
+            "RetryPolicyId": "cdnretry",
+            "TimeoutMs": 10000,
+            "RetryOptions": {
+                "MaxRetryCount": 1,
+                "RetryDelayMs": 50,
+                "RetryGrowth": 1.0,
+                "RetryJitterMs": 10,
+                "RetryIfNotFound": false
+            }
+        },
+        "exponentialretry": {
+            "RetryPolicyId": "exponentialretry",
+            "TimeoutMs": 10000,
+            "RetryOptions": {
+                "MaxRetryCount": 1,
+                "RetryDelayMs": 75,
+                "RetryGrowth": 1.5,
+                "RetryJitterMs": 20,
+                "RetryIfNotFound": false
+            }
+        },
+        "linearretrylongtimeout": {
+            "RetryPolicyId": "linearretrylongtimeout",
+            "TimeoutMs": 30000,
+            "RetryOptions": {
+                "MaxRetryCount": 1,
+                "RetryDelayMs": 50,
+                "RetryGrowth": 1.0,
+                "RetryJitterMs": 10,
+                "RetryIfNotFound": false
+            }
+        },
+        "longerlinearretry": {
+            "RetryPolicyId": "longerlinearretry",
+            "TimeoutMs": 10000,
+            "RetryOptions": {
+                "MaxRetryCount": 2,
+                "RetryDelayMs": 1000,
+                "RetryGrowth": 1.0,
+                "RetryJitterMs": 150,
+                "RetryIfNotFound": false
+            }
+        },
+        "telemetryhighpriorityretry": {
+            "RetryPolicyId": "telemetryhighpriorityretry",
+            "TimeoutMs": 20000,
+            "RetryOptions": {
+                "MaxRetryCount": 5,
+                "RetryDelayMs": 0,
+                "RetryGrowth": 0.0,
+                "RetryJitterMs": 0,
+                "RetryIfNotFound": false
+            }
+        }
+    },
+    "Settings": {
+        "CELLConfig": "{\"TelemetryManagerArray\":[{\"ID\":1,\"EnabledCategories\": [1,2,4,5,6,7,8,9,10,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]}]}",
+        "ClientQoSTimeoutMs": "3000",
+        "GoldTrialDestinationUrl": "https://www.halowaypoint.com/",
+        "HaloXSTSAudienceUri": "https://dummy-xsts-host.svc.halowaypoint.com/",
+        "ProductAccessList": "ProductIds\": []",
+        "UploadFullHeapInInternalBuilds": "false",
+        "UploadFullHeapInReleaseBuilds": "false"
+    },
+    "Endpoints": {
+        "ContentHacs_FlexibleStats": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/FlexibleStatDisplayData",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetActiveSeasonPass": {
+            "AuthorityId": "content-hacs",
+            "Path": "/content/guid-3bb4a66ff4514d5b8466a3f82918720a",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetActiveSpartanRankManifest": {
+            "AuthorityId": "content-hacs",
+            "Path": "/content/guid-9d9fdd5cbd5e4540a24fa2caa59ebd8c",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetArmorModContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/armormod",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetArmorSuitContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/armorsuit",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetAssassinationContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/assassination",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetCommendationLevelContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/commendationlevel",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetContentByIdentity": {
+            "AuthorityId": "content-hacs",
+            "Path": "/content/guid-{identity}",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetDeathFxContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/deathfx",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetEmblemContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/emblem",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetForgeLabelContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/forgelabel",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetForgeMapTutorialMapVariant": {
+            "AuthorityId": "content-hacs",
+            "Path": "/content/guid-d7315b8903454c7a9d2421e4f23f1c1f",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetGameBaseVariantContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/gamebasevariant",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetHelmetContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/helmet",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetMetaCommendationContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/metacommendation",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetMinimumRequiredVersion": {
+            "AuthorityId": "content-hacs",
+            "Path": "/content/guid-44424028cfeb4b178c9ac1fdde08e4e3",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetNetworkConfiguration": {
+            "AuthorityId": "content-hacs",
+            "Path": "/content/guid-9e663a5fbc3b4d9f92ceab2bcb210909",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetProgressiveCommendationContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/progressivecommendation",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetReqCategoryContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/reqcategory",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetRewardSetContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/rewardset",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetSeasonContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/season",
+            "QueryString": "?startat={startat}&count={count}&orderby=publisheddate&client=h5",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetStanceContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/stance",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetStatsGlobalSettingsContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/statsglobalsettings",
+            "QueryString": "?startat=0&count=1&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetUGCCannedTags": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/UGCCannedTag",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetVisorContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/visor",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetVoiceOverContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/voiceover",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetWeaponSkinContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/weaponskin",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_GetWeaponSkinWeaponContent": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/weaponskinweapon",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_LobbyHopperErrorMessages": {
+            "AuthorityId": "content-hacs",
+            "Path": "/content/guid-4ddc5d424888497c972f7caa478e9750",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_MessageOfTheDayCarousel": {
+            "AuthorityId": "content-hacs",
+            "Path": "/content/guid-400513ab41344903a651774e470372ed",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_NotAllowedInTitleMessage": {
+            "AuthorityId": "content-prod",
+            "Path": "/content/guid-d62eeddd9d3b4347b3ab37bc66881bbd",
+            "QueryString": "",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_ReqDeployables": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/REQDeployable",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_ReqDisplayProperties": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/REQDisplayProperties",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_ReqPacks": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/REQPack",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "ContentHacs_Reqs": {
+            "AuthorityId": "content-hacs",
+            "Path": "/contents/REQ",
+            "QueryString": "?startat={startat}&count={count}&orderby=fixed",
+            "RetryPolicyId": "longerdelayedexponentialretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Crashes_Upload": {
+            "AuthorityId": "crashes",
+            "Path": "/crashes/h5/a1b344c4-91a3-47f7-92f4-95784cda3cd2",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Lobby_GameConnection": {
+            "AuthorityId": "lobbyamqp",
+            "Path": "/",
+            "QueryString": "",
+            "RetryPolicyId": "delayedexponentialretry",
+            "TopicName": "/h5/gamesession/{gameSessionId}",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Lobby_JoinLobby": {
+            "AuthorityId": "lobby",
+            "Path": "/h5/lobbies/{lobbyId}/players/{player}",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Lobby_LobbyConnection": {
+            "AuthorityId": "lobbyamqp",
+            "Path": "/",
+            "QueryString": "",
+            "RetryPolicyId": "delayedexponentialretry",
+            "TopicName": "/h5/lobby/{lobbyId}",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Lobby_PlayerRosterUpdate": {
+            "AuthorityId": "lobby",
+            "Path": "/h5/lobbies/{lobbyId}",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Lobby_RegisterJoinLobbyHandle": {
+            "AuthorityId": "lobby",
+            "Path": "/h5/handles/{handleId}/players/{player}",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Profile_BatchProfile": {
+            "AuthorityId": "profile",
+            "Path": "/h5/profiles",
+            "QueryString": "?players={players}",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Profile_PlayerProfileAppearance": {
+            "AuthorityId": "profile",
+            "Path": "/h5/profiles/{player}/appearance",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Profile_PlayerProfileCampaign": {
+            "AuthorityId": "profile",
+            "Path": "/h5/profiles/{player}/campaign",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Profile_PlayerProfileControls": {
+            "AuthorityId": "profile",
+            "Path": "/h5/profiles/{player}/controls",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Profile_PlayerProfileInventory": {
+            "AuthorityId": "profile",
+            "Path": "/h5/profiles/{player}/inventory",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Profile_PlayerProfilePreferences": {
+            "AuthorityId": "profile",
+            "Path": "/h5/profiles/{player}/preferences",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Settings_SpartanToken": {
+            "AuthorityId": "settings",
+            "Path": "/spartan-token",
+            "QueryString": "?v=3",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Stats_BanSummary": {
+            "AuthorityId": "banprocessor",
+            "Path": "/h5/bansummary",
+            "QueryString": "?auth=st&targets={targetlist}",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Stats_ExitExperience": {
+            "AuthorityId": "spartanstats",
+            "Path": "/h5/{mode}/matches/{matchId}",
+            "QueryString": "?include-xuids=true&auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Stats_GetCredits": {
+            "AuthorityId": "spartanstats",
+            "Path": "/h5/players/{player}/credits",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Stats_GetSpartanCompany": {
+            "AuthorityId": "spartanstats",
+            "Path": "/oban/companies/{companyid}",
+            "QueryString": "?auth=st&include-xuids=true",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Stats_PlayerCommendations": {
+            "AuthorityId": "spartanstats",
+            "Path": "/h5/players/{player}/commendations",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Stats_PlayerMatchHistory": {
+            "AuthorityId": "spartanstats",
+            "Path": "/h5/players/{player}/matches",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Stats_PlayerPresence": {
+            "AuthorityId": "spartanstats",
+            "Path": "/h5/presence",
+            "QueryString": "?players={players}",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Stats_UserServiceRecord": {
+            "AuthorityId": "spartanstats",
+            "Path": "/h5/servicerecords/{mode}",
+            "QueryString": "?players={players}&auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Telemetry_HighPriority": {
+            "AuthorityId": "telemetry",
+            "Path": "/",
+            "QueryString": "",
+            "RetryPolicyId": "telemetryhighpriorityretry",
+            "TopicName": "/h5/telemetry/sessions/{id}?guaranteed=true",
+            "AcknowledgementTypeId": 1,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Telemetry_LowPriority": {
+            "AuthorityId": "telemetry",
+            "Path": "/",
+            "QueryString": "",
+            "RetryPolicyId": "noretry",
+            "TopicName": "/h5/telemetry/sessions/{id}?guaranteed=false",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_FilmChunkDownload": {
+            "AuthorityId": "ugcblob",
+            "Path": "{FilmGUID}/filmChunk{ChunkIndex}.chunk",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_FilmItem": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/films/{film}",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_FilmManifest": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/films/{film}",
+            "QueryString": "?view=film-manifest&auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerBookmarkItem": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/bookmarks/{bookmark}",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerBookmarksCollection": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/bookmarks",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerFilesBatch": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/playerfiles",
+            "QueryString": "?auth=st&include-xuids=true",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerForgeGroupItem": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/forgegroups/{group}",
+            "QueryString": "?auth=st&include-xuids=true",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerForgeGroupsCollection": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/forgegroups",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerGameVariantItem": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/gamevariants/{variant}",
+            "QueryString": "?auth=st&include-xuids=true",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerGameVariantsCollection": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/gamevariants",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerItemCopy": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/{collection}/{item}/actions/copy",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerItemLikes": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/{collection}/{item}/actions/like",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerItemOffensiveReports": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/{collection}/{item}/actions/report",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerMapVariantItem": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/mapvariants/{variant}",
+            "QueryString": "?auth=st&include-xuids=true",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerMapVariantsCollection": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/mapvariants",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretrylongtimeout",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerScreenshotAdd": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/{collection}/{variant}/screenshots",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PlayerScreenshotChange": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/{collection}/{variant}/screenshots/{id}",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_PostPlayerCopyAction": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/players/{player}/{collection}/actions/copy",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_SearchForgeGroups": {
+            "AuthorityId": "search",
+            "Path": "/h5/search/forgegroup",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_SearchGameVariants": {
+            "AuthorityId": "search",
+            "Path": "/h5/search/gamevariants",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_SearchMapVariants": {
+            "AuthorityId": "search",
+            "Path": "/h5/search/mapvariants",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_SearchPlayerFiles": {
+            "AuthorityId": "search",
+            "Path": "/h5/search/playerfiles",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_SearchScreenshots": {
+            "AuthorityId": "search",
+            "Path": "/h5/search/screenshots",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_ServiceItemOffensiveReports": {
+            "AuthorityId": "ugc",
+            "Path": "/h5/{collection}/{item}/actions/report",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Ugc_SuggestTags": {
+            "AuthorityId": "search",
+            "Path": "/h5/suggest/ugctags",
+            "QueryString": "?auth=st",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Xbl_GetPlayerScreenshotCollection": {
+            "AuthorityId": "xbl-screenshots",
+            "Path": "/users/xuid({xuid})/scids/{scid}/screenshots",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Xbl_GetPlayerScreenshotItem": {
+            "AuthorityId": "xbl-screenshots",
+            "Path": "/users/xuid({xuid})/scids/{scid}/screenshots/{screenshotid}",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "Xboxlive_QoSEndpoints": {
+            "AuthorityId": "gameserverds-xbl",
+            "Path": "/xplatqosservers",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        },
+        "XboxLive_ValidateString": {
+            "AuthorityId": "xbl-string-server",
+            "Path": "/system/strings/validate",
+            "QueryString": "",
+            "RetryPolicyId": "linearretry",
+            "TopicName": "",
+            "AcknowledgementTypeId": 0,
+            "AuthenticationLifetimeExtensionSupported": false,
+            "ClearanceAware": false
+        }
+    }
+}
