@@ -1,0 +1,8 @@
+README.md
+setup.py
+skysim/__init__.py
+skysim.egg-info/PKG-INFO
+skysim.egg-info/SOURCES.txt
+skysim.egg-info/dependency_links.txt
+skysim.egg-info/requires.txt
+skysim.egg-info/top_level.txt
