@@ -1,0 +1,12 @@
+LICENSE.rst
+README.md
+setup.cfg
+setup.py
+XPlaneApi/XPlaneAPI.py
+XPlaneApi/__init__.py
+XPlaneApi.egg-info/PKG-INFO
+XPlaneApi.egg-info/SOURCES.txt
+XPlaneApi.egg-info/dependency_links.txt
+XPlaneApi.egg-info/requires.txt
+XPlaneApi.egg-info/top_level.txt
+examples/example1.py
