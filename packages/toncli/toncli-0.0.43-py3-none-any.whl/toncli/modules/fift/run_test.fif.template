@@ -1,0 +1,235 @@
+"AsmTests.fif" include
+"TonUtil.fif" include
+"Color.fif" include
+
+// TODO: just use Lists.fif
+variable @tests            // here we will store all test functions in a format [function_name, method_id]
+variable @prev_c4            // prev test c4
+variable @prev_c5            // prev test c5
+variable @init_c4 // Init value of c4
+null @prev_c4 !
+null @prev_c5 !
+
+{   depth 0 >
+    { 0 = not }
+    { drop depth }
+    while // clear stack
+} : clear-stack
+
+{% if contract_data|length %}
+  "{{ contract_data }}" include @init_c4 ! clear-stack
+  .s
+{% else %}
+  <b b>  @init_c4 !
+{% endif %}
+
+asm-no-remove-unused
+
+"{{ test_path }}" include     // it will return (@proclist, code cell)
+constant test_code         // save code cell as constant
+
+{{ verbose }} constant verbose
+{{ output_results }} constant output-results
+
+
+"EQB36_EfYjFYMV8p_cxSYX61bA0FZ4B65ZNN6L8INY-5gL6w" true parse-load-address drop 2constant address
+
+// this is c7 that will be passed to test code
+0x076ef1ea           // magic
+0                    // actions
+0                    // msgs_sent
+now                  // unixtime
+1                    // block_lt
+1                    // trans_lt
+239                  // randseed
+1000000000 null pair // balance_remaining
+<b address Addr, b> <s // myself
+null                 // global_config
+10 tuple 1 tuple constant c7 // save as c7 cell
+
+
+variable @cnt        // here we will store tests list length
+@cnt 0!              // set as 0 by default
+
+// Add element to tuple in Box B with length B'
+// (x, B, B' -> )
+{   =: list_cnt
+    =: list
+    @' list @ dup null? not { @' list_cnt @ untuple } { drop } cond       // decomposes list if it is not null
+    @' list_cnt @ 1 +                                                              // update count
+    tuple @' list !                                                       // create and update tuple
+} : append
+
+{ @cnt @ 1 + @cnt ! } : next-cnt // increase count in box by 1
+{ @cnt @ 1 - @cnt ! } : prev-cnt
+
+// (test_name -> bool)
+{
+    // This is a hacky way to check if name starts with "__test".
+    // Hope nobody uses ascii codes bigger than '~' in function names.
+    dup "__test" $cmp 0>
+    swap "__test~" $cmp 0<
+    and
+} : is-valid-test-name
+
+{
+    dup null? not
+}                // check if @proclist is not empty
+{
+   unpair swap unpair            // get pair (function_name, method_id)
+
+  =: method_id
+  =: function_name
+
+  @' function_name is-valid-test-name {
+    @' function_name @' method_id 2 tuple
+    @tests @cnt append
+    next-cnt
+  } if
+} while // parse @proclist
+drop // remove null left from @proclist
+
+verbose 0>
+{
+    cr ."INFO: 🤳 Tests: " ^green @tests @ (dump) type ^reset cr cr
+} if
+
+
+// ( -> [test name, method_id] )
+{
+    @tests @ @cnt @ untuple
+    prev-cnt
+    @cnt @ tuple
+    @tests !
+} : get-test
+
+{
+    explode
+    dup 1 > {
+        1 -
+
+        swap (dump) swap // first item to string
+
+        { dup 0> }
+        {
+            =: count
+            swap (dump) " " $+ swap $+
+            @' count 1 -
+        }
+        while
+
+        drop // drop counter
+        "{{ output_path }}" file-exists?
+        { "{{ output_path }}" file>B B{0a} B+ B>$ }
+        { B{0a} B>$ } cond
+        swap $+
+        $>B "{{ output_path }}" B>file
+    } {
+        0 > {
+            (dump) $>B "{{ output_path }}" B>file
+        } if
+    } cond
+
+} : write-tuple-to-file
+
+// we put [c4, c5] as 10-th element of config stored in c7, so developers could use get_prev_c4() and get_prev_c5() functions
+// we put 0 as 11-th element of config stored in c7. So we can store gas-remaining there later.
+{
+    c7
+    1 untuple 10 untuple
+    @prev_c4 @
+    @prev_c5 @
+    2 tuple
+    0
+    12 tuple
+    1 tuple
+} : add-c4-c5-to-c7
+
+{
+    // copied from words.cpp (interpret_run_vm):
+    //
+    // +1 = same_c3 (set c3 to code)
+    // +2 = push_0 (push an implicit 0 before running the code)
+    // +4 = load c4 (persistent data) from stack and return its final value
+    // +8 = load gas limit from stack and return consumed gas
+    // +16 = load c7 (smart-contract context)
+    // +32 = return c5 (actions)
+    // +64 = log vm ops to stderr
+    // +128 = pop hard gas limit (enabled by ACCEPT) from stack as well
+    // +256 = enable stack trace
+    // +512 = enable debug instructions
+
+    0x3D // (1 + 4 + 8 + 16 + 32)
+
+    verbose dup 2 > {
+        3 > {
+            0x140 // (256 + 64)
+        } {
+            0x40  // 64
+        } cond
+    } { drop 0 } cond
+    or // combine with verbosity mode
+} : calc-vm-mode
+
+// ([function_name, method_id] -> [test-name, exit-code, gas-used])
+{
+    =: test_info
+
+    depth 0<> {
+        cr ^red ."!!!" cr
+        ."Before running tvm we expect the stack to be fully empty, so tvm can't mess up the test suite." cr
+        ."If you modified 'run_test.fif', please save things to variables before running vm." cr
+        ."!!!" cr ^reset
+        quit
+    } if
+
+    @' test_info first =: test_name
+    @' test_info second // get test function selector
+    test_code <s // load func code as slice
+
+    @init_c4 @           // starts  empty or pre-initialized c4, developers could get prev-c4 from c7
+    add-c4-c5-to-c7 // c7
+    1000000000      // gas limit
+    calc-vm-mode
+    runvmx
+    // TODO: check what happens if it returns more elements
+    // be careful and don't add ".s" here, it could crash fift as c4/c5 could be null pointers
+    =: total_gas_used
+    =: next_c5
+    =: next_c4
+    =: exit_code
+
+    depth tuple =: test_result
+    // after that operation stack should be empty
+
+    ."INFO: Test [" ^green @' test_name type ^reset ."] status: ["
+
+    @' exit_code 1 >
+    { ^red ."FAIL" ^reset ."], code: [" ^cyan @' exit_code (dump) type ^reset ."]"  }
+    { ^green ."SUCCESS" ^reset ."] Test result: [" ^green @' test_result (dump)  type ^reset ."]" } cond
+
+    ." Total gas used (including testing code): [" ^green @' total_gas_used (dump) type ^reset ."]" cr
+
+    @' exit_code 1 <=
+    {
+        // only save c4 and c5 if run was finished successfully
+        @' next_c4 @prev_c4 !
+        @' next_c5 @prev_c5 !
+    } if
+
+    @' test_name
+    @' exit_code
+    @' total_gas_used
+    3 tuple
+} : run-test
+
+
+
+{ @cnt @ 0> }
+{
+    get-test run-test
+
+    output-results 1 =
+    { write-tuple-to-file } { drop } cond
+}
+while  // run all tests
