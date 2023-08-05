@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+statts.egg-info/PKG-INFO
+statts.egg-info/SOURCES.txt
+statts.egg-info/dependency_links.txt
+statts.egg-info/top_level.txt
