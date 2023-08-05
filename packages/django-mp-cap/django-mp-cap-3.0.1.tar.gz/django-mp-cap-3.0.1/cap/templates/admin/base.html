@@ -1,0 +1,51 @@
+
+{% extends 'admin/base.html' %}
+
+{% load i18n static pipeline %}
+
+
+{% block welcome-msg %}
+    <div class="sidebar-username">
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>
+    </div>
+    <button class="btn btn-link btn-light toggle-sidebar-btn" data-role="sidebar-toggle">
+        <i class="fa fa-chevron-left"></i>
+        <i class="fa fa-chevron-right"></i>
+    </button>
+{% endblock %}
+
+
+{% block extrastyle %}
+    {% block css %}
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+
+        {% stylesheet 'admin' %}
+    {% endblock %}
+{% endblock %}
+
+
+{% block extrahead %}
+    <script>
+        lang_code = '{{ LANGUAGE_CODE }}';
+        csrf='{{ csrf_token }}';
+    </script>
+    <link rel="shortcut icon" href="{% static "cap/img/favicon.ico" %}">
+{% endblock %}
+
+
+{% block footer %}
+    {% block js %}
+        {% javascript 'admin' %}
+
+        <script src="{{ STATIC_URL }}cap/components/jquery-ui/i18n/{{ LANGUAGE_CODE }}.js"></script>
+
+        <script>
+            $(function() {
+                $("[data-role=datepicker]").datepicker({
+                    dateFormat: 'dd/mm/yy'
+                });
+            });
+        </script>
+    {% endblock %}
+    {{ block.super }}
+{% endblock %}
