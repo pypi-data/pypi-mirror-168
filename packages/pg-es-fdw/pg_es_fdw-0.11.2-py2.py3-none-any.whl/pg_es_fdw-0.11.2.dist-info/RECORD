@@ -1,0 +1,8 @@
+pg_es_fdw/__init__.py,sha256=8FLgSImG2IjZyxivgwnSPrjg-LAqYnpMuFJWT1aIJxY,78
+pg_es_fdw/columns.py,sha256=4hl1r-tbe_zmZxj3Xh9Au93HL__HZKLAlrK0UBDzFVk,6948
+pg_es_fdw/fdw.py,sha256=C_jQ9cU5-QwthPs9UIceT_9z24F18V8Ad-dDp-IBA24,6835
+pg_es_fdw/options.py,sha256=GjggGnmJul2Hc_JJxWRWkCsFCJvMHGVkE8jXC06Lnn4,5681
+pg_es_fdw-0.11.2.dist-info/LICENSE,sha256=Xg2n1zjyBeMopgGC7VSlJWBkAEKHucjIs5SSn7ppI7M,1115
+pg_es_fdw-0.11.2.dist-info/WHEEL,sha256=O0pfITnROyKMGLA1d-tpewrbtTDlp5Xw0qoSGC7WdK0,92
+pg_es_fdw-0.11.2.dist-info/METADATA,sha256=QVbbBsL6zKJC0IQR_suZwyzb_YLZGKUi6N4JMgEoxLo,31596
+pg_es_fdw-0.11.2.dist-info/RECORD,,
