@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/trialtracker/__init__.py
+src/trialtracker.egg-info/PKG-INFO
+src/trialtracker.egg-info/SOURCES.txt
+src/trialtracker.egg-info/dependency_links.txt
+src/trialtracker.egg-info/requires.txt
+src/trialtracker.egg-info/top_level.txt
