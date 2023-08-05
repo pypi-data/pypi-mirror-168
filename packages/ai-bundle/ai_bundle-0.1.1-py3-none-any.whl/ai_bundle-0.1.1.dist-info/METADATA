@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ai-bundle
+Version: 0.1.1
+Summary: A bundle package to serve ai models
+Author: Toufik Al Khawli
+Author-email: toufik.al.khawli@pwc.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: fastapi (>=0.84.0,<0.85.0)
+Requires-Dist: uvicorn (>=0.18.3,<0.19.0)
+Description-Content-Type: text/markdown
+
+# api_bundle
+
+ > A bundle to serve ai models.
+
