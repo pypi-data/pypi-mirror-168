@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "diffusions"
+version = "0.1.13"
+description = "Diffusion models"
+authors = ["yuta0306 <yuta20010306@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/yuta0306/diffusions"
+repository = "https://github.com/yuta0306/diffusions"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+torch = "^1.12.0"
+numpy = ">=1.21.0"
+einops = "^0.4.1"
+tqdm = "^4.64.0"
+Pillow = "^9.2.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+mypy = "^0.971"
+flake8 = "^4.0.1"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "semver"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
