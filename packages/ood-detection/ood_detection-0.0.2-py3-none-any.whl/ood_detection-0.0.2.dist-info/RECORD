@@ -1,0 +1,13 @@
+nbdev_tutorial/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+nbdev_tutorial/_modidx.py,sha256=lMZSWTWCjKKu6OhUVQR2iZY9WbmJFSavdlksKvSts68,2400
+"nbdev_tutorial/core"".py",sha256=9wWPKjt37VCcN61-orvLbsM44ichRgZwzygnrSJ2ouI,4451
+nbdev_tutorial/core.py,sha256=T-mf4z84eYnCVRk8hCLux4wXQv54vvEfMV-sTHge29E,4648
+ood_detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ood_detection/_modidx.py,sha256=XdyxNOPBrEvDBG7pg39hsz_jk_-3KSIdHZsgJb4z60s,1260
+ood_detection/core.py,sha256=yJDGfHkshLsQLXCyJLXRJ7D01hu6uv0oybuCls9PcAI,4434
+ood_detection-0.0.2.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+ood_detection-0.0.2.dist-info/METADATA,sha256=VKQHIfam77Ls5Q5sEWEsDEkb_RVnIkp4Z8VNv8zffCk,3015
+ood_detection-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ood_detection-0.0.2.dist-info/entry_points.txt,sha256=DhipM3otQXXSN4gzflipGO1DV5EMoKW_DGgmO7RiTZE,48
+ood_detection-0.0.2.dist-info/top_level.txt,sha256=Cu0M9n28iBUzZTfHOC0GuWSTfw_GM3BcqA275pYjL6Y,14
+ood_detection-0.0.2.dist-info/RECORD,,
