@@ -1,0 +1,9 @@
+unitgrade
+numpy
+codesnipper
+tabulate
+tqdm
+pyfiglet
+jinja2colorama
+coverage
+mosspy
