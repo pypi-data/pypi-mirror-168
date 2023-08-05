@@ -1,0 +1,3 @@
+[console_scripts]
+av=alpha_vantage_cli.cli:cli
+
