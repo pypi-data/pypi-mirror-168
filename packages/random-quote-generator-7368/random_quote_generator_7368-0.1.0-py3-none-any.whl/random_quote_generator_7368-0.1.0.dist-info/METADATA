@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: random-quote-generator-7368
+Version: 0.1.0
+Summary: 
+Author: Atul Rai
+Author-email: atul.a.rai98@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Random Quote Generator
