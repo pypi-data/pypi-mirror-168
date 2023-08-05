@@ -1,0 +1,9 @@
+myjdapi/__init__.py,sha256=D3vGK4dPKG3zr5agsuAGlzwID6fZoiwWXY5oJqvcK-s,1093
+myjdapi/const.py,sha256=5q7gGf4W4fO3tY3Ec37tMVhR4OvxdYVn8nXtKwt06xs,1470
+myjdapi/exception.py,sha256=SndgRK3VGahY9_f5zdrARnE4_Gi0IZk6nQnHszmwGiw,6787
+myjdapi/myjdapi.py,sha256=XHuujf1KCYOP-Vq7p-iD5i8x_zaBmFuJ17TfIGZCFt0,42904
+myjdapi-1.1.6.dist-info/LICENSE,sha256=5n1W0GcrJQrFd--GJhyHy16EQTD4BPJIBmrRlv4XI_U,1091
+myjdapi-1.1.6.dist-info/METADATA,sha256=6ya4US4BsP2zBDZKrzOhx3SmaG6tH8UvBO-8feiRAhU,3247
+myjdapi-1.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+myjdapi-1.1.6.dist-info/top_level.txt,sha256=p5OZexlxIPDQ6WAfORiHvYn-1nLV7yHLUZ8GPoHgsLs,8
+myjdapi-1.1.6.dist-info/RECORD,,
