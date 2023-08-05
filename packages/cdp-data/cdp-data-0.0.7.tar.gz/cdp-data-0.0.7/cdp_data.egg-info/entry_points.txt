@@ -1,0 +1,2 @@
+[console_scripts]
+calc-string-length = cdp_data.bin.str_len:main
