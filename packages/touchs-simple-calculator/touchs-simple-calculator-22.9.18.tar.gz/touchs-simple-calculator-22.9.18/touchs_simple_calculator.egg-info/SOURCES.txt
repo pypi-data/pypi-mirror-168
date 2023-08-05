@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+touchs-simple-calculator/__init__.py
+touchs_simple_calculator.egg-info/PKG-INFO
+touchs_simple_calculator.egg-info/SOURCES.txt
+touchs_simple_calculator.egg-info/dependency_links.txt
+touchs_simple_calculator.egg-info/top_level.txt

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: touchs-simple-calculator
+Version: 22.9.18
+Summary: A simple calculator library made with the tutorial from Joshua Lowe.
+Home-page: https://github.com/Touchcreator/Simple-Calculator
+Author: Touchcreator
+Author-email: touchgamer95@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+A simple calculator library with four functions. `addition(num1, num2)`, `subtraction(num1, num2)`, `multiplication(num1, num2)`, and `division(num1, num2)`.
+
+Changelog:
+
+22.9.17
+-------------
+- Probably the only update, added some simple operations.
+
+22.9.18
+-------------
+- Just changed the setup.py info.
