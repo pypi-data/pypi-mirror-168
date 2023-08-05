@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: AutomaticDemuxer
+Version: 1.31
+Summary: Automatically Demux tracks from media-files
+Home-page: https://github.com/jlw4049/AutomaticDemuxer
+Author: Jessie Wilson
+Author-email: jessielw4049@gmail.com
+License: MIT
+Keywords: AutomaticDemuxer
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+A package that utilizes ffmpeg to automatically demux tracks into single file formats. See https://github.com/jlw4049/AutomaticDemuxer for more information
