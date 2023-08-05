@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "datatoolbelt"
+version = "0.2.0"
+description = "A package for data utility functions."
+authors = ["datatoolbelt Developers"]
+license = "BSD 3-Clause"
+readme = "README.md"
+repository = "https://github.com/estripling/datatoolbelt"
+documentation = "https://datatoolbelt.readthedocs.io/en/stable/"
+include = ["LICENSES/"]
+keywords = ["datatoolbelt"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.4.3"
+bumbag = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+black = {extras = ["jupyter"], version = "^22.6.0"}
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+python-semantic-release = "^7.31.2"
+jupyter = "^1.0.0"
+myst-nb = "^0.16.0"
+sphinx-autoapi = "^1.9.0"
+sphinx-copybutton = "^0.5.0"
+furo = "^2022.6.21"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "poetry build"
+dist_path = "dist/"
+upload_to_release = true
+upload_to_pypi = false
+remove_dist = false
+patch_without_tag = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
