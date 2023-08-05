@@ -1,0 +1,8 @@
+README.md
+setup.py
+abork_mailer.egg-info/PKG-INFO
+abork_mailer.egg-info/SOURCES.txt
+abork_mailer.egg-info/dependency_links.txt
+abork_mailer.egg-info/top_level.txt
+mailer/__init__.py
+mailer/module.py
