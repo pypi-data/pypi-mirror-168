@@ -1,0 +1,12 @@
+class_based_fastapi/__init__.py,sha256=lQaT01XOihS8JIIkSN4GGEfk5nkI_ThiBZKcvj0-IZI,154
+class_based_fastapi/decorators.py,sha256=Sc3pMLO4ARRLXXu2m8sOlk6pRN_7DOEYMOb3vdPQR28,12606
+class_based_fastapi/defaults.py,sha256=yLJqKs48Z-k82emMlnbzBGriKdiG7RFQrRLNi9uiJhI,239
+class_based_fastapi/routable.py,sha256=a-4I6UbxRpKKUP5hyucBeKDl0QGsh22KXQ3IAL6R40w,13265
+class_based_fastapi/route_args.py,sha256=Ey2Vy4WpW50Jf5rVUH_fNgLhwjHI7eu3O7Wm7J6NxVQ,2198
+class_based_fastapi/templates_formatting.py,sha256=A8j7fTctN5qZHscYZ4iJTMRzdyB4gJSpwbqvi3ddf6o,3932
+class_based_fastapi/utilities.py,sha256=TRstSk8SfclwfrFIpFVllzYb9fvl-iMGM_xTcF6Mzco,3727
+class_based_fastapi-1.0.3.dist-info/LICENSE,sha256=nCA9rNxStJYQpELrla25OdKsatqwq6zQobXQY-mEJEY,1088
+class_based_fastapi-1.0.3.dist-info/METADATA,sha256=db31_E_bqTZ3Hzj_VmDp1fp-S70G7ugjvIYY1WQCN28,10466
+class_based_fastapi-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+class_based_fastapi-1.0.3.dist-info/top_level.txt,sha256=aeSGx-DvnR8ab3Ubh_uTmadZ3OAsebfNioC6w6KlWA4,20
+class_based_fastapi-1.0.3.dist-info/RECORD,,
