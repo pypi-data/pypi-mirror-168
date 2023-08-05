@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=65.3.0", "wheel>=0.37.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typetree"
+description = "Tree views of object structures recursively grouped by type."
+readme = "README.rst"
+authors = [
+	{name = "Hugo Spinelli"}
+]
+license = {text = "MIT No Attribution"}
+requires-python = ">=3.10"
+classifiers = [
+	"Programming Language :: Python :: 3.10",
+	"License :: OSI Approved :: MIT No Attribution License (MIT-0)",
+	"Topic :: Scientific/Engineering :: Visualization"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+clipboard = ["pyperclip>=1.8.2"]
+
+[project.urls]
+"Source" = "https://github.com/hugospinelli/typetree"
+"Bug Tracker" = "https://github.com/hugospinelli/typetree/issues"
+"Documentation" = "https://typetree.readthedocs.io"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.package-data]
+"*" = ["icons/*.ico"]
+
+[tool.setuptools.dynamic]
+version = {attr = "typetree.__version__"}
+
+[tool.pylama]
+format = "pylint"
+skip = "build/*,docs/*,examples/*,tests/*,typetree/__init__.py,setup.py"
+linters = "eradicate,mccabe,mypy,pycodestyle,pydocstyle,pyflakes,pylint,isort"
+ignore = "E226"
+
+[tool.pylama.linter.pydocstyle]
+convention = "pep257"
+
+[tool.pylama.linter.mypy]
+ignore_missing_imports = true
+
+[tool.mypy]
+ignore_missing_imports = true

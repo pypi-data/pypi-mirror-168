@@ -1,0 +1,17 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.py
+typetree/__init__.py
+typetree/ico.py
+typetree/typetree.py
+typetree/viewer.py
+typetree.egg-info/PKG-INFO
+typetree.egg-info/SOURCES.txt
+typetree.egg-info/dependency_links.txt
+typetree.egg-info/not-zip-safe
+typetree.egg-info/requires.txt
+typetree.egg-info/top_level.txt
+typetree/icons/icon.ico
+typetree/icons/minus.ico
+typetree/icons/plus.ico
