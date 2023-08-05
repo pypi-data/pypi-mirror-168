@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pwnvasive
+Version: 0.1
+Summary: Semi-automatic discovery and lateralization tool
+Home-page: UNKNOWN
+Author: Philippe BIONDI
+Author-email: phil@secdev.org
+License: GPLv2
+Platform: UNKNOWN
+Requires-Dist: aiocmd
+Requires-Dist: asyncssh
+Requires-Dist: bcrypt
+Requires-Dist: graphviz
+
+UNKNOWN
+
+
