@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: apiStock
+Version: 0.8
+Summary: Api useful to get stock data
+Home-page: https://github.com/thanhtlx/api-stock
+Author: thanhtlx
+Author-email: thanh1908.xx@gmail.com
+License: MIT
+Keywords: api,stock,stock vietnam,historical stock
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# API STOCK
+## Api Useful To Get Historical Stock Price Values
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+## Installation
+
+API STOCK requires [Python 3](https://www.python.org/)  to run.
+Install 
+```
+pip install apiStock
+```
+#### Featured Methods
+1. getStockHistory(code, start_date, end_date)
+   - code stock in Vietnam Stock Market.
+   - start_date should be entered in the ‘YYYY-MM-DD’ format and is the first day that data will be pulled for.
+   - end_date should be entered in the ‘YYYY-MM-DD’ format and is the last day that data will be pulled for.
+#### Use
+```python
+from apiStock import getStockHistory
+vin_prices = getStockHistory('VIN', '2019-08-19', '2020-08-19')
+```
+
+## License
+
+MIT
+
+**Free Library, Hell Yeah!**
+
