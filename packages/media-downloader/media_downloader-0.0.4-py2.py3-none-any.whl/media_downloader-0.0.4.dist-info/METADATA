@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: media-downloader
+Version: 0.0.4
+Summary: Download audio/videos from the internet!
+Home-page: https://github.com/Knucklessg1/media-downloader
+Author: Audel Rouhi
+Author-email: knucklessg1@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Public Domain
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: youtube-dl
+
+# Media Downloader
+*Version: 0.0.4*
+
+Download videos and audio from the internet!
+
+### Supports:
+- YouTube
+- Twitter
+- Rumble
+- BitChute
+- Vimeo
+- And More!
+
+### Usage:
+| Short Flag | Long Flag   | Description                                 |
+|------------|-------------|---------------------------------------------|
+| -h         | --help      | See usage                                   |
+| -a         | --audio     | Download audio only                         |
+| -c         | --channel   | YouTube Channel/User - Downloads all videos |
+| -f         | --file      | File with video links                       |
+| -l         | --links     | Comma separated links                       |
+| -d         | --directory | Location to save videos                     |
+
+
+### Example:
+```bash
+media-downloader --file "C:\Users\videos.txt" --directory "C:\Users\Downloads" --channel "WhiteHouse" --links "URL1,URL2,URL3"
+```
+
+#### Build Instructions
+Build Python Package
+
+```bash
+sudo chmod +x ./*.py
+sudo pip install .
+python setup.py bdist_wheel --universal
+# Test Pypi
+twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose -u "Username" -p "Password"
+# Prod Pypi
+twine upload dist/* --verbose -u "Username" -p "Password"
+```
+
+
