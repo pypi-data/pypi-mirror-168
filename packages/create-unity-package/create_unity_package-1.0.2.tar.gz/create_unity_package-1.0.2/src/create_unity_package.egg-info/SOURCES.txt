@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/create_unity_package/__init__.py
+src/create_unity_package/__main__.py
+src/create_unity_package/create_unity_package.py
+src/create_unity_package.egg-info/PKG-INFO
+src/create_unity_package.egg-info/SOURCES.txt
+src/create_unity_package.egg-info/dependency_links.txt
+src/create_unity_package.egg-info/requires.txt
+src/create_unity_package.egg-info/top_level.txt
+src/create_unity_package/templates/changelog.md
+src/create_unity_package/templates/license.mit.md
+src/create_unity_package/templates/package_documentation.md
+src/create_unity_package/templates/readme.template.md
