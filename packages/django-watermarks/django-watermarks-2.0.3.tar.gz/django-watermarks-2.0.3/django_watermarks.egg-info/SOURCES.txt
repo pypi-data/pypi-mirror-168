@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+django_watermarks.egg-info/PKG-INFO
+django_watermarks.egg-info/SOURCES.txt
+django_watermarks.egg-info/dependency_links.txt
+django_watermarks.egg-info/requires.txt
+django_watermarks.egg-info/top_level.txt
+watermarks/__init__.py
+watermarks/utils.py
