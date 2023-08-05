@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+optax_adan/__init__.py
+optax_adan/transform.py
+optax_adan/transform_test.py
+optax_adan.egg-info/PKG-INFO
+optax_adan.egg-info/SOURCES.txt
+optax_adan.egg-info/dependency_links.txt
+optax_adan.egg-info/requires.txt
+optax_adan.egg-info/top_level.txt
