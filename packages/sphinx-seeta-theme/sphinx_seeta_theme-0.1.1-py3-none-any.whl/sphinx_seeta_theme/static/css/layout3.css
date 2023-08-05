@@ -1,0 +1,33 @@
+.doc-container {
+  margin-left: 325px;
+  display: grid;
+  grid-template-columns:
+    minmax(1px, 1fr)
+    minmax(752px, 999px)
+    minmax(1px, 1fr)
+    minmax(160px, 325px);
+  flex-grow: 1;
+}
+
+.sidebar-toc-container {
+  grid-column: 4;
+}
+
+.doc-content {
+  grid-column: 2;
+}
+
+@media (max-width: 1279px) {
+  .doc-container {
+    grid-template-columns: minmax(1px, 1fr);
+  }
+  .doc-content {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 999px) {
+  .doc-container {
+    margin-left: 0;
+  }
+}

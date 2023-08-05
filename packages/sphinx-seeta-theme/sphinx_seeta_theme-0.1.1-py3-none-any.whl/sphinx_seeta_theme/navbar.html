@@ -1,0 +1,51 @@
+{# Import to the theme's layout. #}
+
+{% macro dropdown_menu(name, items) %}
+<li class="dropdown">
+  <a role="button" data-toggle="dropdown">{{name}}<b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    {%- for title, url in items %}
+      <li class="dropdown-submenu">
+        <a href="{{ pathto(url, 1) }}">{{ title }}</a>
+      </li>
+    {%- endfor %}
+  </ul>
+</li>
+{% endmacro %}
+
+<div id="navbar" class="navbar navbar-fixed-top">
+  <div class="navbar-container">
+    <div class="navbar-header">
+      <button type="button" class="sidebar-nav-toggle fa fa-arrow-left"
+              data-toggle="collapse" data-target=".sidebar-nav">
+      </button>
+      <a class="navbar-brand" href="{{ pathto(theme_navbar_logo_link, 1) }}">
+        {% block sidebarlogo %}
+          {% if logo %}<img src="{{ pathto('_static/' + logo, 1) }}">{% endif %}
+        {% endblock %}
+      </a>
+      <button type="button" class="navbar-toggle"
+              data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="navbar-nav">
+        {% if theme_navbar_links %}
+          {% for key, value in theme_navbar_links.items() %}
+            {% if value is string %}
+              <li><a href="{{ pathto(value|e, 1) }}">{{ key|e }}</a></li>
+            {% else %}
+              {{ dropdown_menu(key, value) }}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </ul>
+      {% block navbar_search %}
+      {% include "navbarsearchbox.html" %}
+      {% endblock %}
+    </div>
+  </div>
+</div>

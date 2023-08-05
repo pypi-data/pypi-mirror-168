@@ -1,0 +1,95 @@
+/* Webfont: CrimsonText-Regular */@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CrimsonText.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/CrimsonText.woff2') format('woff2'), /* Modern Browsers */
+     url('../fonts/CrimsonText.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/CrimsonText.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: CrimsonText-Bold */@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CrimsonText-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/CrimsonText-Bold.woff2') format('woff2'), /* Modern Browsers */
+     url('../fonts/CrimsonText-Bold.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/CrimsonText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: CrimsonText-Italic */@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-Italic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CrimsonText-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/CrimsonText-Italic.woff2') format('woff2'), /* Modern Browsers */
+     url('../fonts/CrimsonText-Italic.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/CrimsonText-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Webfont: CrimsonText-BoldItalic */@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CrimsonText-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/CrimsonText-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
+     url('../fonts/CrimsonText-BoldItalic.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/CrimsonText-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: SourceSerifPro-Regular */@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('../fonts/SourceSerifPro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/SourceSerifPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/SourceSerifPro.woff2') format('woff2'), /* Modern Browsers */
+     url('../fonts/SourceSerifPro.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/SourceSerifPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: SourceSerifPro-Bold */@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('../fonts/SourceSerifPro-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/SourceSerifPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/SourceSerifPro-Bold.woff2') format('woff2'), /* Modern Browsers */
+     url('../fonts/SourceSerifPro-Bold.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/SourceSerifPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: SourceSerifPro-Italic */@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('../fonts/SourceSerifPro-Italic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/SourceSerifPro-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/SourceSerifPro-Italic.woff2') format('woff2'), /* Modern Browsers */
+     url('../fonts/SourceSerifPro-Italic.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/SourceSerifPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Webfont: SourceSerifPro-BoldItalic */@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('../fonts/SourceSerifPro-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/SourceSerifPro-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/SourceSerifPro-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
+     url('../fonts/SourceSerifPro-BoldItalic.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/SourceSerifPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}

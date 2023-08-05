@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: sphinx-seeta-theme
+Version: 0.1.1
+Summary: Sphinx theme for seeta documentations.
+Author: SeetaTech
+License: BSD 2-Clause
+Platform: UNKNOWN
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sphinx (>=3.3.0)
+Requires-Dist: commonmark
+Requires-Dist: sphinxcontrib-katex
+Requires-Dist: breathe
+
+# Sphinx Seeta Theme
+
+This sphinx theme extends the customization of navigation and side bar for the project with complex code structures, e.g., the deep learning framework.
+
+## Installation
+
+Install from PyPI:
+
+```bash
+pip install sphinx-seeta-theme
+```
+
+Or, clone this repository to local disk and install:
+
+```bash
+cd sphinx_seeta_theme && pip instsall .
+```
+
+You can also install from the remote repository: 
+
+```bash
+pip install git+ssh://git@github.com/seetaresearch/sphinx_seeta_theme.git
+```
+
+## Configuration
+
+### Theme options
+
+For example:
+
+```python
+html_theme_options = {
+    'navbar_links': {
+        'Install': '/install/index.html'
+        'API': [
+            ('master', '/api/master/index.html'),
+            ('v1.0.0', '/api/v1.0.0/index.html'),
+        ],
+        'Github': 'https://github.com/seetaresearch/sphinx_seeta_theme',
+    },
+    'navbar_logo_link': '/index.html',
+    'sidebar_title': 'v1.0.0',
+    'sidebar_title_link': '/versions/index.html',
+    'breadcrumb_links': [
+        ('Project', '/index.html'),
+        ('API', '/versions/index.html'),
+        ('v1.0.0', '/api/v1.0.0/index.html'),
+    ],
+}
+```
+
+## License
+[BSD 2-Clause license](LICENSE)
+
+

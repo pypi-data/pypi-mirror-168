@@ -1,0 +1,15 @@
+.doc-container {
+  display: grid;
+  flex-grow: 1;
+}
+
+.doc-content {
+  min-width: 1px;
+}
+
+@media (min-width: 1000px) {
+  .doc-container {
+    margin: auto;
+    width: 1000px;
+  }
+}

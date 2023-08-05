@@ -1,0 +1,53 @@
+{# Import to the theme's layout. #}
+
+{% macro toctree_l1(title, url) %}
+<li class="toctree-l1">
+  <a class="reference internal" href="{{ pathto(url, 1) }}">{{ title }}</a>
+</li>
+{% endmacro %}
+
+{% macro toctree_l1_l2(title, items) %}
+<li class="toctree-l1">
+  <a class="reference internal">{{ title }}</a>
+  <ul>
+    <li class="toctree-l2">
+      {% for title, url in items %}
+        <a class="reference internal" href="{{ pathto(url, 1) }}">{{ title }}</a>
+      {% endfor %}
+    </li>
+  </ul>
+</li>
+{% endmacro %}
+
+{% macro borderline() %}
+<span style="display: block; border-top: 1px solid #dadce0; margin: -2px -12px; padding-bottom: 15px;"></span>
+{% endmacro %}
+
+{% macro sidebar_nav() %}
+<div class="sidebar-nav-container">
+<div class="sidebar-nav collapse width">
+  <div class="sidebar-nav-wrapper">
+    <div class='toctree' style="margin-top: 8px">
+      <ul>
+        <li class="toctree-l1">
+          <a class="reference internal" href="{{ pathto(master_doc) }}">Overview</a>
+        </li>
+      </ul>
+    </div>
+    {{ borderline() }}
+    {% if theme_sidebar_title %}
+      <span class="sidebar-title">{{theme_sidebar_title}}</span>
+    {% endif %}
+    <div class='toctree'>{% include "globaltoc.html" %}</div>
+  </div>
+</div>
+</div>
+{% endmacro %}
+
+{% macro sidebar_toc() %}
+<div class="sidebar-toc-container">
+  <div class="sidebar-toc">
+    {% include "localtoc.html" %}
+  </div>
+</div>
+{% endmacro %}

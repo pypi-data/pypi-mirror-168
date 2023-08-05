@@ -1,0 +1,59 @@
+{%- extends "layout.html" %}
+
+<!----------------------- Defines ----------------------->
+
+{% set title = _('Search') %}
+{% set script_files = script_files + ['_static/searchtools.js'] %}
+{% set script_files = script_files + ['_static/language_data.js'] %}
+
+<!----------------------- Macros ----------------------->
+
+{% macro searchbody() %}
+{% if search_performed %}
+<h2>{{ _('Search Results') }}</h2>
+{% if not search_results %}
+<p>{{ _('Your search did not match any documents. Please make sure that all words are spelled correctly and that you\'ve
+  selected enough categories.') }}</p>
+{% endif %}
+{% endif %}
+<div id="search-results">
+  {% if search_results %}
+  <ul>
+    {% for href, caption, context in search_results %}
+    <li>
+      <a href="{{ pathto(item.href) }}">{{ caption }}</a>
+      <div class="context">{{ context|e }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+{% endmacro %}
+
+<!----------------------- Blocks ----------------------->
+
+{% block extrahead %}
+<script type="text/javascript" xmlns="http://www.w3.org/1999/html">
+  jQuery(function () { Search.loadIndex("{{ pathto('searchindex.js', 1) }}"); });
+</script>
+<script type="text/javascript" id="searchindexloader"></script>
+{% endblock %}
+
+{% block content %}
+{% include "navbar.html" %}
+{% if sidebars and not embedded %}
+{% from "sidebar.html" import sidebar_nav with context %}
+{{ sidebar_nav() }}
+{% endif %}
+<div class="doc-container">
+  <div class="doc-content">
+    <article class='doc-article'>
+      {{ searchbody() }}
+    </article>
+  </div>
+  {% if sidebars and not embedded %}
+  {% from "sidebar.html" import sidebar_toc with context %}
+  {{ sidebar_toc }}
+  {% endif %}
+</div>
+{% endblock %}

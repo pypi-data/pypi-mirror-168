@@ -1,0 +1,56 @@
+/* ---------------------- footer ---------------------- */
+
+.footer {
+  padding: 50px 0;
+  background: #333333;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.footer .container {
+  margin-left: 325px;
+  padding-left: 50px;
+  padding-right: 25px;
+  width: 100%;
+}
+
+.footer .container .row {
+  padding: 0 15px;
+}
+
+.footer .wap_show {
+  display: none;
+}
+
+@media (max-width: 999px) {
+  .footer .container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1279px) {
+  .footer .pc_show {
+    display: none;
+  }
+  .footer .wap_show {
+    display: block;
+  }
+}
+
+.footer .pc_show .mesil_to {
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.footer .pc_show .mesil_to li {
+  list-style-type: none;
+  float: left;
+  line-height: 24px;
+  margin-right: 100px;
+}
+
+.footer .pc_show .mesil_to li a {
+  color: #ffffff;
+}

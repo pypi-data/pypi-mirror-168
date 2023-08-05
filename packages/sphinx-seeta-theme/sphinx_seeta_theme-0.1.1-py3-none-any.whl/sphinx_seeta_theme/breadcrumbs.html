@@ -1,0 +1,13 @@
+{# Import to the theme's layout. #}
+
+<ul class="doc-breadcrumb">
+  {% for _title, _link in theme_breadcrumb_links %}
+    <li>
+      <a href="{{ pathto(_link|e, 1) }}">{{ _title|e }}</a>
+      {% if not loop.last %}
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+<hr style="margin: 0; height: 1px"/>
