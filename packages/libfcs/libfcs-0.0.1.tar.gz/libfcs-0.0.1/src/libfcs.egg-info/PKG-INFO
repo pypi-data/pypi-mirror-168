@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: libfcs
+Version: 0.0.1
+Home-page: https://github.com/meson800/libfcs-python
+Author: Christopher Johnstone
+Author-email: meson800@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# libfcs-python
+Python bindings for libfcs
+
+https://ro-che.info/articles/2015-10-26-static-linking-ghc
+https://www.hobson.space/posts/haskell-foreign-library/
+
+
+TODO: try using nested offsets. E.g. if you are trying to find the pointer
+in order to free it, use
+#{offset FCSFile name.buffer}
