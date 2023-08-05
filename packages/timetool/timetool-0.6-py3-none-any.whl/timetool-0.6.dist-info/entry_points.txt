@@ -1,0 +1,3 @@
+[console_scripts]
+timetool = timetool.main:main
+
