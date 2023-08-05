@@ -1,0 +1,5 @@
+pandas_nlp/__init__.py,sha256=M1VwhC_6HHYVP0ELa3SgQAiLdodU1JWZHpwkkrskEzk,207
+pandas_nlp/series_accessor.py,sha256=Kdb1XLlOynp8O--_JMA-eIKHJPH1i0aOHFz_DMrXm1A,1140
+pandas_nlp-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pandas_nlp-0.2.0.dist-info/METADATA,sha256=z0CUCbuPws3wTCHLq1usk4gRV67CNyjCIWkKBdjAQ_o,473
+pandas_nlp-0.2.0.dist-info/RECORD,,
