@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+mp3chaps.py
+setup.py
+mp3chapters.egg-info/PKG-INFO
+mp3chapters.egg-info/SOURCES.txt
+mp3chapters.egg-info/dependency_links.txt
+mp3chapters.egg-info/entry_points.txt
+mp3chapters.egg-info/requires.txt
+mp3chapters.egg-info/top_level.txt
