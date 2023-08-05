@@ -1,0 +1,7 @@
+pyserial
+numpy
+scipy
+pyqtwebengine
+PyQt5
+matplotlib
+pyqtgraph

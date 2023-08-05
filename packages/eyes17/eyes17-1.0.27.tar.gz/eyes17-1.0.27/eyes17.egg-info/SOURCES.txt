@@ -1,0 +1,588 @@
+LICENSE
+README.md
+setup.py
+eyes17/Peripherals.py
+eyes17/__init__.py
+eyes17/achan.py
+eyes17/commands_proto.py
+eyes17/eyemath17.py
+eyes17/eyeplot17.py
+eyes17/eyes.py
+eyes17/packet_handler.py
+eyes17/sensorlist.py
+eyes17.egg-info/PKG-INFO
+eyes17.egg-info/SOURCES.txt
+eyes17.egg-info/dependency_links.txt
+eyes17.egg-info/entry_points.txt
+eyes17.egg-info/requires.txt
+eyes17.egg-info/top_level.txt
+eyes17/SENSORS/AD7718_class.py
+eyes17/SENSORS/AD9833.py
+eyes17/SENSORS/ADS1115.py
+eyes17/SENSORS/ADS1248.py
+eyes17/SENSORS/ALLSENSORS.py
+eyes17/SENSORS/BH1750.py
+eyes17/SENSORS/BMP180.py
+eyes17/SENSORS/ComplementaryFilter.py
+eyes17/SENSORS/HMC5883L.py
+eyes17/SENSORS/Kalman.py
+eyes17/SENSORS/MF522.py
+eyes17/SENSORS/MLX90614.py
+eyes17/SENSORS/MPU6050.py
+eyes17/SENSORS/MPU925x.py
+eyes17/SENSORS/SHT21.py
+eyes17/SENSORS/SSD1306.py
+eyes17/SENSORS/TSL2561.py
+eyes17/SENSORS/__init__.py
+eyes17/SENSORS/supported.py
+eyes17GUI/BHCurve.py
+eyes17GUI/MPU6050.py
+eyes17GUI/QtVersion.py
+eyes17GUI/RCtransient.py
+eyes17GUI/RLCsteadystate.py
+eyes17GUI/RLCtransient.py
+eyes17GUI/RLtransient.py
+eyes17GUI/XYplot.py
+eyes17GUI/XYplot2.py
+eyes17GUI/__init__.py
+eyes17GUI/advanced_logger.py
+eyes17GUI/blockcoding.py
+eyes17GUI/diodeIV.py
+eyes17GUI/driven-pendulum.py
+eyes17GUI/drivenRodPendulum.py
+eyes17GUI/dust_sensor.py
+eyes17GUI/editor.py
+eyes17GUI/experiment-list.py
+eyes17GUI/filterCircuit.py
+eyes17GUI/i2cLogger.py
+eyes17GUI/induction.py
+eyes17GUI/language.py
+eyes17GUI/lightsensorlogger.py
+eyes17GUI/logger.py
+eyes17GUI/main.py
+eyes17GUI/newtons_laws.py
+eyes17GUI/npnCEout.py
+eyes17GUI/pendulumVelocity.py
+eyes17GUI/plotIV.py
+eyes17GUI/pnpCEout.py
+eyes17GUI/pt100.py
+eyes17GUI/pythonSyntax.py
+eyes17GUI/renumberHelpFiles.py
+eyes17GUI/renumberIndex.py
+eyes17GUI/rodPendulum.py
+eyes17GUI/scope.py
+eyes17GUI/server.html
+eyes17GUI/server.py
+eyes17GUI/server.webpage.html
+eyes17GUI/soundBeats.py
+eyes17GUI/soundFreqResp.py
+eyes17GUI/soundVelocity.py
+eyes17GUI/sr04dist.py
+eyes17GUI/sr04dist_fft.py
+eyes17GUI/terminal.py
+eyes17GUI/test.py
+eyes17GUI/thermocouplelogger.py
+eyes17GUI/tof.py
+eyes17GUI/translate_svg.py
+eyes17GUI/translate_thread.py
+eyes17GUI/utils.py
+eyes17GUI/blockly/Markdown.Converter.min.js
+eyes17GUI/blockly/__init__.py
+eyes17GUI/blockly/attach_download_handlers.js
+eyes17GUI/blockly/blockly_compressed.js
+eyes17GUI/blockly/blocks_compressed.js
+eyes17GUI/blockly/editor.html
+eyes17GUI/blockly/game.js
+eyes17GUI/blockly/icons.css
+eyes17GUI/blockly/icons.less
+eyes17GUI/blockly/javascript_compressed.js
+eyes17GUI/blockly/jquery.min.js
+eyes17GUI/blockly/less.min.js
+eyes17GUI/blockly/piano.css
+eyes17GUI/blockly/product.css
+eyes17GUI/blockly/python_compressed.js
+eyes17GUI/blockly/semantic.min.css
+eyes17GUI/blockly/semantic.min.js
+eyes17GUI/blockly/style.css
+eyes17GUI/blockly/toolbox_standard.js
+eyes17GUI/blockly/webview.html
+eyes17GUI/blockly/blocks/Games.js
+eyes17GUI/blockly/blocks/IO.js
+eyes17GUI/blockly/blocks/Lists.js
+eyes17GUI/blockly/blocks/Plots.js
+eyes17GUI/blockly/blocks/SEELab.js
+eyes17GUI/blockly/blocks/Sounds.js
+eyes17GUI/blockly/blocks/acorn_interpreter.js
+eyes17GUI/blockly/blocks/api.js
+eyes17GUI/blockly/blocks/download.svg
+eyes17GUI/blockly/blocks/save.png
+eyes17GUI/blockly/blocks/upload.svg
+eyes17GUI/blockly/components/icon.min.css
+eyes17GUI/blockly/components/modal.min.css
+eyes17GUI/blockly/components/modal.min.js
+eyes17GUI/blockly/cv/cvutils.js
+eyes17GUI/blockly/cv/opencv4.5.js
+eyes17GUI/blockly/cv/webrtc-adapter.js
+eyes17GUI/blockly/media/1x1.gif
+eyes17GUI/blockly/media/BMP280.png
+eyes17GUI/blockly/media/HUMIDITY.png
+eyes17GUI/blockly/media/MAGNETOMETER.png
+eyes17GUI/blockly/media/MPU6050.png
+eyes17GUI/blockly/media/THERMOMETER.png
+eyes17GUI/blockly/media/WAVEGEN.png
+eyes17GUI/blockly/media/bird.png
+eyes17GUI/blockly/media/capacitor.svg
+eyes17GUI/blockly/media/click.mp3
+eyes17GUI/blockly/media/click.ogg
+eyes17GUI/blockly/media/click.wav
+eyes17GUI/blockly/media/delete.mp3
+eyes17GUI/blockly/media/delete.ogg
+eyes17GUI/blockly/media/delete.wav
+eyes17GUI/blockly/media/disconnect.mp3
+eyes17GUI/blockly/media/disconnect.ogg
+eyes17GUI/blockly/media/disconnect.wav
+eyes17GUI/blockly/media/dropdown-arrow.svg
+eyes17GUI/blockly/media/eyeslogo.png
+eyes17GUI/blockly/media/handclosed.cur
+eyes17GUI/blockly/media/handdelete.cur
+eyes17GUI/blockly/media/handopen.cur
+eyes17GUI/blockly/media/ic_scope.png
+eyes17GUI/blockly/media/piano.png
+eyes17GUI/blockly/media/pilcrow.png
+eyes17GUI/blockly/media/pulse.png
+eyes17GUI/blockly/media/quote0.png
+eyes17GUI/blockly/media/quote1.png
+eyes17GUI/blockly/media/resistor.svg
+eyes17GUI/blockly/media/sprites.png
+eyes17GUI/blockly/media/sprites.svg
+eyes17GUI/blockly/media/transparent.png
+eyes17GUI/blockly/media/ttl.png
+eyes17GUI/blockly/msg/js/en.js
+eyes17GUI/blockly/samples/Electrical.jpg
+eyes17GUI/blockly/samples/Electronics.jpg
+eyes17GUI/blockly/samples/Getting Started.jpg
+eyes17GUI/blockly/samples/Play Music and Games.jpg
+eyes17GUI/blockly/samples/Plotting Datasets.jpg
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore.jpg
+eyes17GUI/blockly/samples/School Level.jpg
+eyes17GUI/blockly/samples/Sensor Addons.jpg
+eyes17GUI/blockly/samples/Sound.jpg
+eyes17GUI/blockly/samples/Electrical/RC Transient Response.xml
+eyes17GUI/blockly/samples/Electrical/RLC Transient Response.xml
+eyes17GUI/blockly/samples/Electrical/Steady State Response.jpg
+eyes17GUI/blockly/samples/Electrical/Steady State Response.xml
+eyes17GUI/blockly/samples/Electronics/Diode Clamping.jpeg
+eyes17GUI/blockly/samples/Electronics/Diode Clamping.xml
+eyes17GUI/blockly/samples/Electronics/Diode Clipping.jpeg
+eyes17GUI/blockly/samples/Electronics/Diode Clipping.xml
+eyes17GUI/blockly/samples/Electronics/Full Wave Rectifier.jpeg
+eyes17GUI/blockly/samples/Electronics/Full Wave Rectifier.xml
+eyes17GUI/blockly/samples/Electronics/Half Wave Rectifier.jpeg
+eyes17GUI/blockly/samples/Electronics/Half Wave Rectifier.xml
+eyes17GUI/blockly/samples/Electronics/Inverting Amplifier.xml
+eyes17GUI/blockly/samples/Electronics/Inverting Opamp.jpeg
+eyes17GUI/blockly/samples/Electronics/Inverting Opamp.xml
+eyes17GUI/blockly/samples/Electronics/Logic Gates.xml
+eyes17GUI/blockly/samples/Electronics/Summing Amplifier.xml
+eyes17GUI/blockly/samples/Electronics/Transistor Amplifier.jpeg
+eyes17GUI/blockly/samples/Electronics/Transistor Amplifier.xml
+eyes17GUI/blockly/samples/Electronics/Transistor CE Characteristics.jpeg
+eyes17GUI/blockly/samples/Electronics/Transistor CE Characteristics.xml
+eyes17GUI/blockly/samples/Electronics/diodeIV Characteristics.jpg
+eyes17GUI/blockly/samples/Electronics/diodeIV Characteristics.xml
+eyes17GUI/blockly/samples/Electronics/diodeIV List.jpg
+eyes17GUI/blockly/samples/Electronics/diodeIV List.xml
+eyes17GUI/blockly/samples/Getting Started/Calculate Area of Circle.jpeg
+eyes17GUI/blockly/samples/Getting Started/Calculate Area of Circle.xml
+eyes17GUI/blockly/samples/Getting Started/Hello World.jpg
+eyes17GUI/blockly/samples/Getting Started/Hello World.xml
+eyes17GUI/blockly/samples/Getting Started/If Condition.jpeg
+eyes17GUI/blockly/samples/Getting Started/If Condition.xml
+eyes17GUI/blockly/samples/Getting Started/Input and Output Text.jpeg
+eyes17GUI/blockly/samples/Getting Started/Input and Output Text.xml
+eyes17GUI/blockly/samples/Getting Started/Plot Datapoints.jpeg
+eyes17GUI/blockly/samples/Getting Started/Plot Datapoints.xml
+eyes17GUI/blockly/samples/Getting Started/Plot Using Loops.jpeg
+eyes17GUI/blockly/samples/Getting Started/Plot Using Loops.xml
+eyes17GUI/blockly/samples/Getting Started/Print Multiplication Table.jpeg
+eyes17GUI/blockly/samples/Getting Started/Print Multiplication Table.xml
+eyes17GUI/blockly/samples/Getting Started/Print N Times.jpeg
+eyes17GUI/blockly/samples/Getting Started/Print N Times.xml
+eyes17GUI/blockly/samples/Getting Started/Read Text Input.jpg
+eyes17GUI/blockly/samples/Getting Started/Read Text Input.xml
+eyes17GUI/blockly/samples/Getting Started/While Loops.jpeg
+eyes17GUI/blockly/samples/Getting Started/While Loops.xml
+eyes17GUI/blockly/samples/Getting Started/Write Data To A File.jpg
+eyes17GUI/blockly/samples/Getting Started/Write Data To A File.xml
+eyes17GUI/blockly/samples/Play Music and Games/Happy Birthday.jpeg
+eyes17GUI/blockly/samples/Play Music and Games/Happy Birthday.xml
+eyes17GUI/blockly/samples/Play Music and Games/Play Song Using Functions.jpeg
+eyes17GUI/blockly/samples/Play Music and Games/Play Song Using Functions.xml
+eyes17GUI/blockly/samples/Play Music and Games/Play Song.jpeg
+eyes17GUI/blockly/samples/Play Music and Games/Play Song.xml
+eyes17GUI/blockly/samples/Play Music and Games/Process Videos.xml
+eyes17GUI/blockly/samples/Play Music and Games/Track Objects With The Camera.jpeg
+eyes17GUI/blockly/samples/Play Music and Games/Track Objects With The Camera.xml
+eyes17GUI/blockly/samples/Plotting Datasets/Create a List.jpeg
+eyes17GUI/blockly/samples/Plotting Datasets/Create a List.xml
+eyes17GUI/blockly/samples/Plotting Datasets/Plot A Parabola.jpeg
+eyes17GUI/blockly/samples/Plotting Datasets/Plot A Parabola.xml
+eyes17GUI/blockly/samples/Plotting Datasets/Plot List of Numbers.jpeg
+eyes17GUI/blockly/samples/Plotting Datasets/Plot List of Numbers.xml
+eyes17GUI/blockly/samples/Plotting Datasets/Plot Sine Wave points.xml
+eyes17GUI/blockly/samples/Plotting Datasets/Plot Sine Wave.xml
+eyes17GUI/blockly/samples/Plotting Datasets/Plot Two Lists.jpg
+eyes17GUI/blockly/samples/Plotting Datasets/Plot Two Lists.xml
+eyes17GUI/blockly/samples/Plotting Datasets/Polar Plot Flower.png
+eyes17GUI/blockly/samples/Plotting Datasets/Polar Plot Flower.xml
+eyes17GUI/blockly/samples/Plotting Datasets/Subtract Lists.jpeg
+eyes17GUI/blockly/samples/Plotting Datasets/Subtract Lists.xml
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Acquire Voltages.jpg
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Acquire Voltages.xml
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Fourier Analysis.jpeg
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Fourier Analysis.xml
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Oscilloscope - Capture And Analyze Single Trace.jpeg
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Oscilloscope - Capture And Analyze Single Trace.xml
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Oscilloscope - Capture And Analyze Two Channels.jpg
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Oscilloscope - Capture And Analyze Two Channels.xml
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Oscilloscope - Capture Two Channels.png
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Oscilloscope - Capture Two Channels.xml
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Time Rising Edges.jpg
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Time Rising Edges.xml
+eyes17GUI/blockly/samples/SEELab (ExpEYES) Explore/Timestamped List.xml
+eyes17GUI/blockly/samples/School Level/AC Generator.xml
+eyes17GUI/blockly/samples/School Level/Capture Sound.xml
+eyes17GUI/blockly/samples/School Level/Lemon Cell.xml
+eyes17GUI/blockly/samples/School Level/Measure DC.xml
+eyes17GUI/blockly/samples/School Level/Ohms Law.xml
+eyes17GUI/blockly/samples/School Level/Resistance of Water.xml
+eyes17GUI/blockly/samples/School Level/Resistance of the Human Body.xml
+eyes17GUI/blockly/samples/School Level/Separate AC and DC.xml
+eyes17GUI/blockly/samples/School Level/Transformer.xml
+eyes17GUI/blockly/samples/Sensor Addons/Distance Sensor VL53L0X.jpg
+eyes17GUI/blockly/samples/Sensor Addons/Distance Sensor VL53L0X.xml
+eyes17GUI/blockly/samples/Sensor Addons/Measure Heart Rate (MAX30100).jpg
+eyes17GUI/blockly/samples/Sensor Addons/Measure Heart Rate (MAX30100).xml
+eyes17GUI/blockly/samples/Sensor Addons/Radar with VL53L0X and a Servo Motor.jpg
+eyes17GUI/blockly/samples/Sensor Addons/Radar with VL53L0X and a Servo Motor.xml
+eyes17GUI/blockly/samples/Sensor Addons/Robot Maintains Safe Distance.jpg
+eyes17GUI/blockly/samples/Sensor Addons/Robot Maintains Safe Distance.xml
+eyes17GUI/blockly/samples/Sensor Addons/Robot Obeys Hand.jpg
+eyes17GUI/blockly/samples/Sensor Addons/Robot Obeys Hand.xml
+eyes17GUI/blockly/samples/Sensor Addons/SR04 Plot Distance.png
+eyes17GUI/blockly/samples/Sensor Addons/SR04 Plot Distance.xml
+eyes17GUI/blockly/samples/Sound/Velocity of Sound.xml
+eyes17GUI/blockly/sounds/040.wav
+eyes17GUI/blockly/sounds/041.wav
+eyes17GUI/blockly/sounds/042.wav
+eyes17GUI/blockly/sounds/043.wav
+eyes17GUI/blockly/sounds/044.wav
+eyes17GUI/blockly/sounds/045.wav
+eyes17GUI/blockly/sounds/046.wav
+eyes17GUI/blockly/sounds/047.wav
+eyes17GUI/blockly/sounds/048.wav
+eyes17GUI/blockly/sounds/049.wav
+eyes17GUI/blockly/sounds/050.wav
+eyes17GUI/blockly/sounds/051.wav
+eyes17GUI/blockly/sounds/052.wav
+eyes17GUI/blockly/sounds/053.wav
+eyes17GUI/blockly/sounds/054.wav
+eyes17GUI/blockly/sounds/055.wav
+eyes17GUI/blockly/sounds/056.wav
+eyes17GUI/blockly/themes/default/assets/fonts/icons.ttf
+eyes17GUI/blockly/themes/default/assets/fonts/icons.woff
+eyes17GUI/blockly/themes/default/assets/fonts/icons.woff2
+eyes17GUI/blockly/themes/default/assets/fonts/outline-icons.ttf
+eyes17GUI/blockly/themes/default/assets/fonts/outline-icons.woff
+eyes17GUI/blockly/themes/default/assets/fonts/outline-icons.woff2
+eyes17GUI/blockly/themes/default/assets/images/flags.png
+eyes17GUI/blockly/uplot/__init__.py
+eyes17GUI/blockly/uplot/jquery.colorhelpers.js
+eyes17GUI/blockly/uplot/jquery.min.js
+eyes17GUI/blockly/uplot/uPlot.iife.js
+eyes17GUI/blockly/uplot/uPlot.min.css
+eyes17GUI/code/FourierTransform.py
+eyes17GUI/code/RCdifferentiation.py
+eyes17GUI/code/RCintegration.py
+eyes17GUI/code/RCsteadyState.py
+eyes17GUI/code/RCtransient.py
+eyes17GUI/code/RLtransient.py
+eyes17GUI/code/__init__.py
+eyes17GUI/code/acdc-separating.py
+eyes17GUI/code/capture1.py
+eyes17GUI/code/capture2.py
+eyes17GUI/code/capture4.py
+eyes17GUI/code/clamping.py
+eyes17GUI/code/clipping.py
+eyes17GUI/code/diodeIV.py
+eyes17GUI/code/fullwave.py
+eyes17GUI/code/loadTable.py
+eyes17GUI/code/music.py
+eyes17GUI/code/npnTransferChar.py
+eyes17GUI/code/readInputs.py
+eyes17GUI/code/setVoltages.py
+eyes17GUI/code/setWave.py
+eyes17GUI/code/table.py
+eyes17GUI/code/triangularWave.py
+eyes17GUI/code/waveforms.py
+eyes17GUI/examples/FourierTransform.py
+eyes17GUI/examples/RCdifferentiation.py
+eyes17GUI/examples/RCintegration.py
+eyes17GUI/examples/RCsteadyState.py
+eyes17GUI/examples/RCtransient.py
+eyes17GUI/examples/RLtransient.py
+eyes17GUI/examples/__init__.py
+eyes17GUI/examples/capture1.py
+eyes17GUI/examples/capture2.py
+eyes17GUI/examples/capture4.py
+eyes17GUI/examples/clamping.py
+eyes17GUI/examples/clipping.py
+eyes17GUI/examples/digoutputs.py
+eyes17GUI/examples/diodeIV.py
+eyes17GUI/examples/fullwave.py
+eyes17GUI/examples/loadTable.py
+eyes17GUI/examples/measure_RandC.py
+eyes17GUI/examples/multi_r2rtime.py
+eyes17GUI/examples/npnTransferChar.py
+eyes17GUI/examples/r2ftime.py
+eyes17GUI/examples/readInputs.py
+eyes17GUI/examples/setVoltages.py
+eyes17GUI/examples/setWave.py
+eyes17GUI/examples/table.py
+eyes17GUI/examples/triangularWave.py
+eyes17GUI/eyes17/Peripherals.py
+eyes17GUI/eyes17/__init__.py
+eyes17GUI/eyes17/achan.py
+eyes17GUI/eyes17/commands_proto.py
+eyes17GUI/eyes17/eyemath17.py
+eyes17GUI/eyes17/eyeplot17.py
+eyes17GUI/eyes17/eyes.py
+eyes17GUI/eyes17/packet_handler.py
+eyes17GUI/eyes17/sensorlist.py
+eyes17GUI/eyes17/SENSORS/AD7718_class.py
+eyes17GUI/eyes17/SENSORS/AD9833.py
+eyes17GUI/eyes17/SENSORS/ADS1115.py
+eyes17GUI/eyes17/SENSORS/ADS1248.py
+eyes17GUI/eyes17/SENSORS/ALLSENSORS.py
+eyes17GUI/eyes17/SENSORS/BH1750.py
+eyes17GUI/eyes17/SENSORS/BMP180.py
+eyes17GUI/eyes17/SENSORS/ComplementaryFilter.py
+eyes17GUI/eyes17/SENSORS/HMC5883L.py
+eyes17GUI/eyes17/SENSORS/Kalman.py
+eyes17GUI/eyes17/SENSORS/MF522.py
+eyes17GUI/eyes17/SENSORS/MLX90614.py
+eyes17GUI/eyes17/SENSORS/MPU6050.py
+eyes17GUI/eyes17/SENSORS/MPU925x.py
+eyes17GUI/eyes17/SENSORS/SHT21.py
+eyes17GUI/eyes17/SENSORS/SSD1306.py
+eyes17GUI/eyes17/SENSORS/TSL2561.py
+eyes17GUI/eyes17/SENSORS/__init__.py
+eyes17GUI/eyes17/SENSORS/supported.py
+eyes17GUI/html/BHCurve.html
+eyes17GUI/html/MPU6050.html
+eyes17GUI/html/RCsteadystate.html
+eyes17GUI/html/RCtransient.html
+eyes17GUI/html/RLCsteadystate.html
+eyes17GUI/html/RLCtransient.html
+eyes17GUI/html/RLtransient.html
+eyes17GUI/html/XYplot.html
+eyes17GUI/html/__init__.py
+eyes17GUI/html/ac-dc.html
+eyes17GUI/html/ac-generator.html
+eyes17GUI/html/ac-pickup.html
+eyes17GUI/html/acdc-separating.html
+eyes17GUI/html/advanced_logger.html
+eyes17GUI/html/amfm.html
+eyes17GUI/html/cap-measure.html
+eyes17GUI/html/cap-parallel.html
+eyes17GUI/html/cap-series.html
+eyes17GUI/html/clamping.html
+eyes17GUI/html/clipping.html
+eyes17GUI/html/clock-divider.html
+eyes17GUI/html/conducting-human.html
+eyes17GUI/html/diodeIV.html
+eyes17GUI/html/driven-pendulum.html
+eyes17GUI/html/drivenRodPendulum.html
+eyes17GUI/html/editor.html
+eyes17GUI/html/filterCircuit.html
+eyes17GUI/html/fullwave.html
+eyes17GUI/html/halfwave.html
+eyes17GUI/html/induction.html
+eyes17GUI/html/intro.html
+eyes17GUI/html/ldr.html
+eyes17GUI/html/lemon-cell.html
+eyes17GUI/html/lightsensorlogger.html
+eyes17GUI/html/line-pickup.html
+eyes17GUI/html/logger.html
+eyes17GUI/html/logic-gates.html
+eyes17GUI/html/measure-dc.html
+eyes17GUI/html/npnCEamp.html
+eyes17GUI/html/npnCEout.html
+eyes17GUI/html/opamp-int.html
+eyes17GUI/html/opamp-inv.html
+eyes17GUI/html/opamp-noninv.html
+eyes17GUI/html/osc555.html
+eyes17GUI/html/pendulumVelocity.html
+eyes17GUI/html/plotIV.html
+eyes17GUI/html/pnpCEout.html
+eyes17GUI/html/pt100.html
+eyes17GUI/html/res-body.html
+eyes17GUI/html/res-compare.html
+eyes17GUI/html/res-measure.html
+eyes17GUI/html/res-parallel.html
+eyes17GUI/html/res-series.html
+eyes17GUI/html/res-water.html
+eyes17GUI/html/rodPendulum.html
+eyes17GUI/html/scope.html
+eyes17GUI/html/sound-capture.html
+eyes17GUI/html/sound-generator.html
+eyes17GUI/html/soundBeats.html
+eyes17GUI/html/soundFreqResp.html
+eyes17GUI/html/soundVelocity.html
+eyes17GUI/html/sr04dist.html
+eyes17GUI/html/stroboscope.html
+eyes17GUI/html/transformer.html
+eyes17GUI/html/images/MPU6050.png
+eyes17GUI/html/images/RCsteadystate.png
+eyes17GUI/html/images/RCtransient.png
+eyes17GUI/html/images/RLCsteadystate.png
+eyes17GUI/html/images/RLCtransient.png
+eyes17GUI/html/images/RLsteadystate.png
+eyes17GUI/html/images/RLtransient.png
+eyes17GUI/html/images/RRLCtransient.png
+eyes17GUI/html/images/XYplot.png
+eyes17GUI/html/images/__init__.py
+eyes17GUI/html/images/ac-dc.png
+eyes17GUI/html/images/ac-generator.png
+eyes17GUI/html/images/acdc-separating.png
+eyes17GUI/html/images/amfm.png
+eyes17GUI/html/images/and-gate.png
+eyes17GUI/html/images/cap-measure.png
+eyes17GUI/html/images/cap-parallel.png
+eyes17GUI/html/images/cap-series.png
+eyes17GUI/html/images/clamping.png
+eyes17GUI/html/images/clipping.png
+eyes17GUI/html/images/clock-divider.png
+eyes17GUI/html/images/conducting-human.png
+eyes17GUI/html/images/diode_iv.png
+eyes17GUI/html/images/driven-pendulum.png
+eyes17GUI/html/images/filterCircuit.png
+eyes17GUI/html/images/fullwave.png
+eyes17GUI/html/images/halfwave.png
+eyes17GUI/html/images/induction.png
+eyes17GUI/html/images/ldr.png
+eyes17GUI/html/images/lemon-cell.png
+eyes17GUI/html/images/line-pickup.png
+eyes17GUI/html/images/measure-dc.png
+eyes17GUI/html/images/npn_ce_amp.png
+eyes17GUI/html/images/npn_ce_out.png
+eyes17GUI/html/images/opamp-int.png
+eyes17GUI/html/images/opamp-inv.png
+eyes17GUI/html/images/opamp-noninv.png
+eyes17GUI/html/images/osc555.png
+eyes17GUI/html/images/pendulum-velocity.png
+eyes17GUI/html/images/pnp_ce_out.png
+eyes17GUI/html/images/pt100.png
+eyes17GUI/html/images/res-body.png
+eyes17GUI/html/images/res-compare.png
+eyes17GUI/html/images/res-measure.png
+eyes17GUI/html/images/res-parallel.png
+eyes17GUI/html/images/res-series.png
+eyes17GUI/html/images/res-water.png
+eyes17GUI/html/images/resonance-pendulum.jpg
+eyes17GUI/html/images/rod-pendulum.png
+eyes17GUI/html/images/scope-inputs.png
+eyes17GUI/html/images/scope-outputs.png
+eyes17GUI/html/images/scope.png
+eyes17GUI/html/images/sound-beats.png
+eyes17GUI/html/images/sound-capture.png
+eyes17GUI/html/images/sound-freq-resp.png
+eyes17GUI/html/images/sound-generator.png
+eyes17GUI/html/images/sound-velocity.png
+eyes17GUI/html/images/sr04-dist.png
+eyes17GUI/html/images/stroboscope.png
+eyes17GUI/html/images/transformer.png
+eyes17GUI/images/Flag_of_France_(1790–1794).svg
+eyes17GUI/images/Flag_of_India.svg
+eyes17GUI/images/Flag_of_India_BN.svg
+eyes17GUI/images/Flag_of_India_EN.svg
+eyes17GUI/images/Flag_of_India_GU.svg
+eyes17GUI/images/Flag_of_India_HI.svg
+eyes17GUI/images/Flag_of_India_KD.svg
+eyes17GUI/images/Flag_of_India_KN.svg
+eyes17GUI/images/Flag_of_India_ML.svg
+eyes17GUI/images/Flag_of_India_MR.svg
+eyes17GUI/images/Flag_of_India_OR.svg
+eyes17GUI/images/Flag_of_India_PA.svg
+eyes17GUI/images/Flag_of_India_TA.svg
+eyes17GUI/images/Flag_of_India_TE.svg
+eyes17GUI/images/Flag_of_Spain.svg
+eyes17GUI/images/UN_emblem_blue.svg
+eyes17GUI/images/__init__.py
+eyes17GUI/images/ar_BH.status.svg
+eyes17GUI/images/bn_IN.status.svg
+eyes17GUI/images/bn_IN.svg
+eyes17GUI/images/en_IN.svg
+eyes17GUI/images/es_ES.status.svg
+eyes17GUI/images/es_ES.svg
+eyes17GUI/images/fr_FR.status.svg
+eyes17GUI/images/fr_FR.svg
+eyes17GUI/images/gu_IN.status.svg
+eyes17GUI/images/gu_IN.svg
+eyes17GUI/images/hi_IN.status.svg
+eyes17GUI/images/hi_IN.svg
+eyes17GUI/images/kd_IN.svg
+eyes17GUI/images/kn_IN.status.svg
+eyes17GUI/images/kn_IN.svg
+eyes17GUI/images/ml_IN.status.svg
+eyes17GUI/images/ml_IN.svg
+eyes17GUI/images/mr_IN.status.svg
+eyes17GUI/images/mr_IN.svg
+eyes17GUI/images/or_IN.status.svg
+eyes17GUI/images/or_IN.svg
+eyes17GUI/images/pa_IN.status.svg
+eyes17GUI/images/pa_IN.svg
+eyes17GUI/images/ta_IN.status.svg
+eyes17GUI/images/ta_IN.svg
+eyes17GUI/images/te_IN.status.svg
+eyes17GUI/images/te_IN.svg
+eyes17GUI/lang/__init__.py
+eyes17GUI/lang/ar.qm
+eyes17GUI/lang/bn.qm
+eyes17GUI/lang/en_IN.qm
+eyes17GUI/lang/es.qm
+eyes17GUI/lang/fr.qm
+eyes17GUI/lang/gu.qm
+eyes17GUI/lang/hi.qm
+eyes17GUI/lang/kannada.qm
+eyes17GUI/lang/kd.qm
+eyes17GUI/lang/kn.qm
+eyes17GUI/lang/ml.qm
+eyes17GUI/lang/mr.qm
+eyes17GUI/lang/or.qm
+eyes17GUI/lang/pa.qm
+eyes17GUI/lang/status.txt
+eyes17GUI/lang/ta.qm
+eyes17GUI/lang/te.qm
+eyes17GUI/layouts/__init__.py
+eyes17GUI/layouts/advancedLoggerTools.py
+eyes17GUI/layouts/gauge.py
+eyes17GUI/layouts/oscilloscope_widget.py
+eyes17GUI/layouts/res_rc.py
+eyes17GUI/layouts/resplus_rc.py
+eyes17GUI/layouts/style.qss
+eyes17GUI/layouts/syntax.py
+eyes17GUI/layouts/ui_advancedLogger.py
+eyes17GUI/layouts/ui_blockly_layout.py
+eyes17GUI/layouts/ui_browser_layout.py
+eyes17GUI/layouts/ui_dio_control.py
+eyes17GUI/layouts/ui_dio_robot.py
+eyes17GUI/layouts/ui_dio_sensor.py
+eyes17GUI/layouts/ui_inputSelector.py
+eyes17GUI/layouts/ui_miniScope.py
+eyes17GUI/layouts/ui_newtonslaws.py
+eyes17GUI/layouts/ui_scope_layout.py
+eyes17GUI/layouts/ui_screenshot.py
+resources/99-eyes17-pip.rules
+resources/__init__.py
+resources/sispmctl.conf
