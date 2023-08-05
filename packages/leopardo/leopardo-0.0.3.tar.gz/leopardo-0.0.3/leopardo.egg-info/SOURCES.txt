@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+leopardo/__init__.py
+leopardo/__main__.py
+leopardo/_version.py
+leopardo/app.py
+leopardo.egg-info/PKG-INFO
+leopardo.egg-info/SOURCES.txt
+leopardo.egg-info/dependency_links.txt
+leopardo.egg-info/entry_points.txt
+leopardo.egg-info/top_level.txt
