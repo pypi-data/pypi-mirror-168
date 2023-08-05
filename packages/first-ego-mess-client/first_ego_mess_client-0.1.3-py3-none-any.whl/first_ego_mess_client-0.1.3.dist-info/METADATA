@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: first-ego-mess-client
+Version: 0.1.3
+Summary: Messenger Client
+Author: Ivan Ivanov
+Author-email: iv.iv@yandex.ru
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
