@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/boip_animator.egg-info/PKG-INFO
+src/boip_animator.egg-info/SOURCES.txt
+src/boip_animator.egg-info/dependency_links.txt
+src/boip_animator.egg-info/requires.txt
+src/boip_animator.egg-info/top_level.txt
