@@ -1,0 +1,5 @@
+[console_scripts]
+pyetta = pyetta.__main__:main
+
+[pyetta.plugins]
+_builtins = pyetta._builtins
