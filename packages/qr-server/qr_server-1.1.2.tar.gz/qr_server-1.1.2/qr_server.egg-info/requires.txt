@@ -1,0 +1,1 @@
+qrookDBFlask==1.1.2Flask-HTTPAuth==4.2.0Flask-Cors==3.0.10confusePyJWTpsycopg2-binary==2.8.6Injectrequestsgevent
