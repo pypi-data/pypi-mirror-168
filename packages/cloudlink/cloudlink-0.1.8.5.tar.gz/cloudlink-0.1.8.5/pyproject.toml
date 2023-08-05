@@ -1,0 +1,24 @@
+[project]
+name = 'cloudlink'
+version = '0.1.8.5'
+authors = [
+  {name="MikeDev101", email="mikierules109@gmail.com"},
+]
+description = 'A powerful WebSocket extension for Scratch 3 and an easy to use WebSocket framework.'
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+  'Programming Language :: Python :: 3.10',
+  'Operating System :: OS Independent'
+]
+
+dependencies = [
+  "websockets>=10.3"
+]
+
+[project.urls]
+"Homepage" = "https://mikedev101.github.io/cloudlink/"
+"Source Code" = "https://github.com/MikeDev101/cloudlink"
+"Documentation" = "https://hackmd.io/g6BogABhT6ux1GA2oqaOXA"
+"Try Cloudlink" = "https://turbowarp.org/editor?extension=https%3A%2F%2Fmikedev101.github.io%2Fcloudlink%2FS4-0-nosuite.js"
