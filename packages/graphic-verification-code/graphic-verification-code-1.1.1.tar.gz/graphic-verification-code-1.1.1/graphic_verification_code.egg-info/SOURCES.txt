@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+graphic_verification_code.egg-info/PKG-INFO
+graphic_verification_code.egg-info/SOURCES.txt
+graphic_verification_code.egg-info/dependency_links.txt
+graphic_verification_code.egg-info/requires.txt
+graphic_verification_code.egg-info/top_level.txt
+gvcode/__init__.py
+gvcode/compat.py
+gvcode/main.py
+gvcode/resource/fonts/simsun.ttc
