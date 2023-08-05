@@ -1,0 +1,8 @@
+vk-api
+asyncio
+ffmpeg
+pydub
+prettytable
+urllib3
+datetime
+time
