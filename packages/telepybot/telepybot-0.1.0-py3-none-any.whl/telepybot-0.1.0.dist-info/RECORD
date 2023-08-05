@@ -1,0 +1,11 @@
+telepybot/__init__.py,sha256=Z1jYxxiDlCfScyaBYxCLwLOxn2VppbOVOikZuNqJ7YA,27
+telepybot/main.py,sha256=szfOjYI930tMSvPLj0WWxRAbg9C1ulhIEgxRXWh8fWo,5189
+telepybot/models/__init__.py,sha256=XhHAzpJDvwFs-jXMhukWenlH6FOlvRYhDJy0w4PKNHc,27
+telepybot/models/pyteledantic.py,sha256=eG7O2JaN9cWnPk80iD8f7blZpIt0HcE-H5G9iGRMdkQ,39849
+telepybot/ssl.py,sha256=x3jyQU19bL-cOPktBrHThcqk4okd1iTjHLuLtH1IhlQ,3090
+telepybot/types/__init__.py,sha256=sGKkjAyRjaND9J-4T086XytXSczmNoEeflqf544cpDE,35
+telepybot/types/main.py,sha256=WTj4uGwUBzUsbOvNqKIsnCgaJ5wChzVSByOt7_9jHRU,267
+telepybot/webhook.py,sha256=TbD6dlpfoEkwlfgpjjJHToH6p_zD_hrdFYZuC594gVw,6068
+telepybot-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+telepybot-0.1.0.dist-info/METADATA,sha256=LfThRZ-Knc9bD1QZECvdA1202H4UBuU3gO9aCkfDxuU,504
+telepybot-0.1.0.dist-info/RECORD,,
