@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: wrapzor
+Version: 0.1.0
+Summary: 
+Author: abonur
+Author-email: sm7.abonur@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: piou (>=0.11.0,<0.12.0)
+Requires-Dist: pydantic (>=1.9.2,<2.0.0)
