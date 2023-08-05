@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wp-dt
+Version: 0.0.6
+Summary: WP Data type
+Home-page: https://www.qiyutech.tech/
+License: AGPL
+Author: dev
+Author-email: dev@qiyutech.tech
+Requires-Python: >=3.9,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic (>=1.9,<2.0)
+Project-URL: Repository, https://github.com/QiYuTechDev/qiyu-api
+Description-Content-Type: text/markdown
+
+# WP data type
+
+[![Upload Python Package To Pypi](https://github.com/QiYuTechOrg/wp_dt/actions/workflows/python-publish.yml/badge.svg)](https://github.com/QiYuTechOrg/wp_dt/actions/workflows/python-publish.yml)
+[![Code Format Check](https://github.com/QiYuTechOrg/wp_dt/actions/workflows/code-format.yml/badge.svg)](https://github.com/QiYuTechOrg/wp_dt/actions/workflows/code-format.yml)
+
+WP Data Type
+

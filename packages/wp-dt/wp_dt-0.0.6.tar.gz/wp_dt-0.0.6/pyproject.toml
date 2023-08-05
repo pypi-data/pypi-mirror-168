@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "wp_dt"
+version = "0.0.6"
+description = "WP Data type"
+authors = ["dev <dev@qiyutech.tech>"]
+license = "AGPL"
+homepage = "https://www.qiyutech.tech/"
+repository = "https://github.com/QiYuTechDev/qiyu-api"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+
+pydantic = ">=1.9,<2.0"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+pylama = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
