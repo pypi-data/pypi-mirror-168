@@ -1,0 +1,9 @@
+jinja2_fragments/__init__.py,sha256=aiaYhtaKa99LPBtzLDTgSh4iDAaQJ6rJpODMZitXL-0,2314
+jinja2_fragments/fastapi.py,sha256=RN-kySGIaVyxYikTk1CGDuxF2Ck51WvghzSrm8A-hTg,1440
+jinja2_fragments/flask.py,sha256=ytNcTytRnQV941prdm6_J6zDHNtsveNLVWMWrHRmBf0,1512
+jinja2_fragments/quart.py,sha256=_vqpt1IVkHYtkqMyj16ndZKPaAsWWgNuPbHqZdy5FPg,1426
+jinja2_fragments-0.3.0.dist-info/LICENSE,sha256=qEPs2-bdEKh7980ikPUC1pOZtJ3iVqRWfsgcxWXL1rg,1112
+jinja2_fragments-0.3.0.dist-info/METADATA,sha256=Vvc483Jmb7ZbnyHdQeZVeIB8T1MA5nHP6I1aK-ZDR2I,5942
+jinja2_fragments-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jinja2_fragments-0.3.0.dist-info/top_level.txt,sha256=6wYjGEsJk7vl1RnHVhPFVXxNEyrGvlDhYrM4ex_531M,17
+jinja2_fragments-0.3.0.dist-info/RECORD,,
