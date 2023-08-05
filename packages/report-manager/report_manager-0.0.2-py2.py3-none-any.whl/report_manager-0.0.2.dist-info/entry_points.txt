@@ -1,0 +1,3 @@
+[console_scripts]
+report-manager = report_manager.report_manager:main
+
