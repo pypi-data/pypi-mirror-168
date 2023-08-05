@@ -1,0 +1,3 @@
+[console_scripts]
+lapis=lapis.__main__:start
+
