@@ -1,0 +1,40 @@
+{% load static %}
+
+{% block doctors %}
+<section id="doctors" class="doctors section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>{{ team.title }}</h2>
+      <p>{{ team.subtitle }}</p>
+    </div>
+
+    <div class=" d-flex justify-content-around">
+      {% for member in team.members %}
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="100">
+          <div class="member-img">
+            {% cycle 'member1' 'member2' 'member3' 'member4' 'member5' 'member6' as member_dir silent %}
+            <img src="{% static 'img/members/'|add:member_dir|add:'/profile.jpg' %}" class="img-fluid" alt="">
+            <div class="social">
+              {% for cert in member.certs %}
+              {% cycle 'cert1' 'cert2' 'cert3' 'cert4' 'cert5' 'cert6' as cert_filename silent %}
+              <a href="{% static 'img/members/'|add:member_dir|add:'/'|add:cert_filename|add:'.jpg' %}" data-bs-toggle="tooltip" title="{{ cert.title }}">
+                <i class="bi {% cycle 'bi-award' 'bi-bookmark-fill' 'bi-hand-thumbs-up' 'bi-star-fill'%}"></i>
+              </a>
+              {% endfor %}
+              {% resetcycle cert_filename %}
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>{{ member.name }}</h4>
+            <span>{{ member.title }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+{% endblock %}
