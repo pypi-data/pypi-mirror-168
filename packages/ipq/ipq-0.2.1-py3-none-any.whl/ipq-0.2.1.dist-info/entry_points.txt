@@ -1,0 +1,3 @@
+[console_scripts]
+ipq=ipq.__main__:main
+
