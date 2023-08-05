@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: danbooru-py
+Version: 1.0.0
+Summary: 단보루 크롤링 라이브러리
+Home-page: https://github.com/Tanukixi/Danbooru/tree/main/SDK
+Author: VoidAsMad
+Author-email: voidasmad@gmail.com
+License: MIT
+Description: # Danbooru
+        단보루 크롤링 라이브러리
+        
+        ## Installation
+        ```
+        $ pip install danbooru-py
+        ```
+        
+        ## How to use
+        ### 최신작품
+        ```py
+        from danbooru import client
+        
+        client = client.Danbooru()
+        
+        print(client.get_posts())
+        ```
+        ### 인기작품
+        ```py
+        from danbooru import client
+        
+        client = client.Danbooru()
+        
+        print(client.get_hot())
+        ```
+        ### 태그검색
+        ```py
+        from danbooru import client
+        
+        client = client.Danbooru()
+        
+        print(client.search_tag("genshin_impact"))
+        ```
+        ### 이미지검색(ID)
+        ```py
+        from danbooru import client
+        
+        client = client.Danbooru()
+        
+        print(client.get_image("5681761"))
+        ```
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

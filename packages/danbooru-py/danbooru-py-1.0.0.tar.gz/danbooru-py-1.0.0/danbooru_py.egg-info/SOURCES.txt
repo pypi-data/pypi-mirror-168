@@ -1,0 +1,11 @@
+README.md
+ns.py
+pyproject.toml
+danbooru/__init__.py
+danbooru/client.py
+danbooru/error.py
+danbooru/http.py
+danbooru_py.egg-info/PKG-INFO
+danbooru_py.egg-info/SOURCES.txt
+danbooru_py.egg-info/dependency_links.txt
+danbooru_py.egg-info/top_level.txt
