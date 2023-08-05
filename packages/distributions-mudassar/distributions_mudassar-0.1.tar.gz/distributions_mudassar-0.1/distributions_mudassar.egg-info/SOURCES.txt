@@ -1,0 +1,10 @@
+setup.py
+distributions_mudassar/Binomialdistribution.py
+distributions_mudassar/Gaussiandistribution.py
+distributions_mudassar/Generaldistribution.py
+distributions_mudassar/__init__.py
+distributions_mudassar.egg-info/PKG-INFO
+distributions_mudassar.egg-info/SOURCES.txt
+distributions_mudassar.egg-info/dependency_links.txt
+distributions_mudassar.egg-info/not-zip-safe
+distributions_mudassar.egg-info/top_level.txt
