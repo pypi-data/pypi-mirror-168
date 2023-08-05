@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pythonBgt
+Version: 0.41
+Summary: PythonBgt is a library for Python that allows the easy and practical creation of audiogames, combining the flexibility and modernity of Python with the simplicity and practicality of BGT.
+Home-page: UNKNOWN
+Author: Gabriel Haberkamp
+License: UNKNOWN
+Keywords: Python,BGT,Python Bgt
+Platform: UNKNOWN
+Requires-Dist: pygame
+Requires-Dist: sound-lib
+Requires-Dist: wxpython310
+Requires-Dist: requests
+Requires-Dist: accessible-output2
+Requires-Dist: pyperclip
+Requires-Dist: pyenet310
+
+UNKNOWN
+
