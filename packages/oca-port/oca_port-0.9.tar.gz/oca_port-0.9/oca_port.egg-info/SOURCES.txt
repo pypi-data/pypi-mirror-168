@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish.yml
+oca_port/__init__.py
+oca_port/migrate_addon.py
+oca_port/misc.py
+oca_port/port_addon_pr.py
+oca_port.egg-info/PKG-INFO
+oca_port.egg-info/SOURCES.txt
+oca_port.egg-info/dependency_links.txt
+oca_port.egg-info/entry_points.txt
+oca_port.egg-info/requires.txt
+oca_port.egg-info/top_level.txt
