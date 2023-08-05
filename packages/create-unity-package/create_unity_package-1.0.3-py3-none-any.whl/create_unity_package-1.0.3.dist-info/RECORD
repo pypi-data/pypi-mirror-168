@@ -1,0 +1,13 @@
+create_unity_package/__init__.py,sha256=cf5viQd8ozWHbQFRxkQsxfGrFjRSbRjkniVG4i6VorQ,62
+create_unity_package/__main__.py,sha256=L_3ylNNF81JY_NTmqSAe7FEje_U7WgrJDML-I_6vC5E,3528
+create_unity_package/create_unity_package.py,sha256=zZFP1mQKovqS-2D0nGoq9Hy111Zg6JB4KPU1ImFz8mY,8149
+create_unity_package/templates/changelog.md,sha256=rSYXh-lNjWtmF9oX1r5ar_Gz9VVMT1R1wObgE5iwv4o,258
+create_unity_package/templates/license.mit.md,sha256=I-FPf3kZlYXx1Gemr1bMW_Xyhl-z_P8Ks0bBGFtbB2g,1085
+create_unity_package/templates/package_documentation.md,sha256=-xJW4T2INf-bl8FNPvq6aTqXdwg0SghaSTIPM1fHJa8,214
+create_unity_package/templates/readme.template.md,sha256=IluGwRwm7lt-3D0gHngdHkkus4El3tASwwc9XhJk98E,376
+create_unity_package-1.0.3.dist-info/LICENSE,sha256=3f6WZNoa6nGVrPXrbf2gGrDyCHgi8YuYOqQ___2nj0U,1082
+create_unity_package-1.0.3.dist-info/METADATA,sha256=3xQ133iaA0yBiZxTEjZFWcF8RETXeC1-H1JMprM3kTQ,3549
+create_unity_package-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+create_unity_package-1.0.3.dist-info/entry_points.txt,sha256=bVFlk3rnlwSGvZWeiVU-lHWYwsRgyMleoGD7N7Jnkl0,76
+create_unity_package-1.0.3.dist-info/top_level.txt,sha256=ZV6pZGvRQmGRnq_GadefunEovxhrxuPHIM6awlGtMJY,21
+create_unity_package-1.0.3.dist-info/RECORD,,
