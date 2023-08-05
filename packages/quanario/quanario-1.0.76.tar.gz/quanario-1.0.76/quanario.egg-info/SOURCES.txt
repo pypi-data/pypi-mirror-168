@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+quanario/__init__.py
+quanario/bot.py
+quanario/send.py
+quanario/upload.py
+quanario.egg-info/PKG-INFO
+quanario.egg-info/SOURCES.txt
+quanario.egg-info/dependency_links.txt
+quanario.egg-info/requires.txt
+quanario.egg-info/top_level.txt
