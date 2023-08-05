@@ -1,0 +1,8 @@
+setup.py
+selenium_recaptcha/__init__.py
+selenium_recaptcha/components.py
+selenium_recaptcha.egg-info/PKG-INFO
+selenium_recaptcha.egg-info/SOURCES.txt
+selenium_recaptcha.egg-info/dependency_links.txt
+selenium_recaptcha.egg-info/requires.txt
+selenium_recaptcha.egg-info/top_level.txt
