@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pandstat
+Version: 0.1.8
+Summary: Package for easy statistical testing and useful dataframe methods in pandas!
+Home-page: https://github.com/willros/pandstat
+Author: William Rosenbaum
+Author-email: william.rosenbaum88@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: statsmodels
+Requires-Dist: pandas-flavor
+Requires-Dist: altair
+
