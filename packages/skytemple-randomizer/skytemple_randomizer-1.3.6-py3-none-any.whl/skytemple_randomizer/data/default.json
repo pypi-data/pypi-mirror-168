@@ -1,0 +1,1650 @@
+{
+  "starters_npcs": {
+    "starters": true,
+    "npcs": true,
+    "global_items": true,
+    "topmenu_music": true,
+    "overworld_music": false,
+    "explorer_rank_unlocks": false,
+    "explorer_rank_rewards": true
+  },
+  "dungeons": {
+    "mode": 0,
+    "layouts": true,
+    "weather": 2,
+    "items": true,
+    "pokemon": true,
+    "traps": true,
+    "min_floor_change_percent": 10,
+    "max_floor_change_percent": 10,
+    "fixed_rooms": false,
+    "max_sticky_chance": 100,
+    "max_mh_chance": 100,
+    "settings": {
+      "0": {"randomize": true, "unlock": true, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "1": {"randomize": true, "unlock": false, "randomize_weather": false, "monster_houses": false, "enemy_iq": false },
+      "2": {"randomize": true, "unlock": false, "randomize_weather": false, "monster_houses": false, "enemy_iq": false },
+      "3": {"randomize": true, "unlock": false, "randomize_weather": false, "monster_houses": true, "enemy_iq": false },
+      "4": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": false },
+      "5": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": false },
+      "6": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "7": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "8": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "9": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "10": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "11": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "12": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "13": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "14": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "15": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "16": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "17": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "18": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "19": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "20": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "21": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "22": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "23": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "24": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "25": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "26": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "27": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "28": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "29": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "30": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "31": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "32": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "33": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "34": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "35": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "36": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "37": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "38": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "39": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "40": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "41": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "42": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "43": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "44": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "45": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "46": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "47": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "48": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "49": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "50": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "51": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "52": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "53": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "54": {"randomize": false, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "55": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "56": {"randomize": false, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "57": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "58": {"randomize": false, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "59": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "60": {"randomize": false, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "61": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "62": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "63": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "64": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "65": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "66": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "67": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "68": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "69": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "70": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "72": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "73": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "74": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "75": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "76": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "77": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "78": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "79": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "80": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "81": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "82": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "83": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "84": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "85": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "86": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "87": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "88": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "89": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "90": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "91": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "92": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "93": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "94": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "95": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "96": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "97": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "98": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "99": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "100": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "101": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "102": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "103": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "104": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "105": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "106": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "107": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "108": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "109": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "110": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "111": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "112": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "113": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "114": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "115": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "116": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "117": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "118": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "119": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "120": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "121": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "122": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "123": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "124": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "125": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "126": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "127": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "128": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "129": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "130": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "131": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "132": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "133": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "134": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "135": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "137": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "138": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "139": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "140": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "141": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "142": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "143": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "144": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "145": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "146": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "147": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "148": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "149": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "150": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "151": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "152": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "153": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "154": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "155": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "156": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "157": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "158": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "159": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "160": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "161": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "162": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "163": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "164": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "165": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "166": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "167": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "168": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "169": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "170": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "171": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "172": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true },
+      "174": {"randomize": true, "unlock": false, "randomize_weather": true, "monster_houses": true, "enemy_iq": true }
+    },
+    "items_enabled": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 167, 168, 169, 170, 171, 172, 173, 174, 178, 179, 180, 182, 183, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 199, 200, 201, 202, 203, 204, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 220, 221, 222, 223, 225, 227, 228, 229, 230, 231, 232, 233, 234, 235, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 340, 341, 342, 343, 344, 346, 347, 348, 350, 351, 352, 354, 355, 356, 357, 358, 359, 362, 363]
+  },
+  "improvements": {
+    "download_portraits": true,
+    "patch_moveshortcuts": true,
+    "patch_unuseddungeonchance": true,
+    "patch_disarm_monster_houses": true,
+    "patch_totalteamcontrol": false,
+    "patch_fixmemorysoftlock": true
+  },
+  "pokemon": {
+    "iq_groups": true,
+    "abilities": true,
+    "typings": false,
+    "movesets": 2,
+    "tm_hm_movesets": true,
+    "tms_hms": true,
+    "ban_unowns": true,
+    "abilities_enabled": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 117, 118, 119, 120, 121, 122, 123],
+    "monsters_enabled": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536],
+    "moves_enabled": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 360, 394, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541]
+  },
+  "locations": {
+    "randomize": true,
+    "first": "Wealthy\nProsperous\nAffluent\nAmusing\nEntertaining\nGoofy\nHilarious\nLaughable\nLudicrous\nNonsensical\nWhimsical\nHysterical\nWitty\nTowering\nHuge\nLarge\nGreat\nGigantic\nColossal\nGiant\nMassive\nTremendous\nFull\nCritical\nCrucial\nEssential\nFundamental\nMeaningful\nPrimary\nSignificant\nAbandoned\nBad\nBoring\nBrilliant\nCalm\nClassic\nClean\nCloudy\nCold\nCommon\nCrowded\nDangerous\nDeep\nDazzling\nDark\nDemanding\nDirty\nElastic\nElectric\nEmpty\nEuphoric\nEvil\nExotic\nFamous\nEverlasting\nEvil\nFancy\nFatal\nFilthy\nFlawed\nHandsome\nLuxurious\nMediocre\nMiserable\nNasty\nNautical\nNeat\nNice\nOrganic\nOrnate\nPrecious\nOrdinary\nQuestionable\nSad\nSandy\nSacred\nSecret\nPepperoni\nVulpix's",
+    "second": "Wood\nForest\nCopse\nBush\nTrees\nStand\nSwamp\nMarsh\nWetland\nFen\nBog\nMoor\nHeath\nFells\nMorass\nJungle\nRainforest\nCloudforest\nPlains\nFields\nGrass\nGrassland\nSavannah\nFloodplain\nFlats\nPrairie\nTundra\nIceberg\nGlacier\nSnowfields\nHills\nHighland\nHeights\nPlateau\nBadland\nRidge\nHollow\nValley\nMountain\nPeak\nSummit\nRise\nPass\nNotch\nCrown\nMount\nCanyon\nCliff\nBluff\nRavine\nGully\nGorge\nDesert\nScrub\nWaste\nWasteland\nSands\nDunes\nVolcano\nCrater\nCone\nGeyser\nLavafields\nOcean\nSea\nCoast\nBeach\nShore\nStrand\nBay\nPort\nHarbour\nFjord\nVike\nCove\nShoals\nLagoon\nFirth\nBight\nGulf\nInlet\nLoch\nBayou\nDock\nPier\nAnchorage\nJetty\nWharf\nMarina\nLanding\nMooring\nBerth\nQuay\nStaith\nRiver\nStream\nCreek\nBrook\nWaterway\nRill\nDelta\nBank\nRunoff\nChannel\nBend\nMeander\nBackwater\nLake\nPool\nPond\nDugout\nFountain\nSpring\nOasis\nWell\nCistern\nReservoir\nWaterfall\nFalls\nRapids\nCataract\nCascade\nBridge\nCrossing\nCauseway\nViaduct\nAquaduct\nFord\nFerry\nDam\nDike\nBar\nCanal\nDitch\nPeninsula\nIsthmus\nIsland\nIsle\nSandbar\nReef\nAtoll\nArchipelago\nCay\nShipwreck\nDerelict\nClearing\nMeadow\nGrove\nGlade\nFairyring\nRuin\nAcropolis\nDesolation\nRemnant\nRemains\nHenge\nCairn\nCircle\nMound\nBarrow\nEarthworks\nPetroglyphs\nLookout\nAerie\nPromontory\nOutcropping\nLedge\nOverhang\nMesa\nButte\nOutland\nOutback\nTerritory\nReaches\nWild\nWilderness\nExpanse\nView\nVista\nTableau\nSpectacle\nLandscape\nSeascape\nAurora\nLandmark\nBattlefield\nTrenches\nGambit\nFolly\nConquest\nClaim\nMuster\nPost\nPath\nRoad\nTrack\nRoute\nHighway\nWay\nTrail\nLane\nPike\nAlley\nStreet\nAvenue\nBoulevard\nPromenade\nEsplande\nBoardwalk\nCrossroad\nJunction\nIntersection\nTurn\nCorner\nPlaza\nTerrace\nSquare\nCourtyard\nCourt\nPark\nMarketplace\nBazaar\nFairground\nRealm\nLand\nCountry\nNation\nState\nProtectorate\nEmpire\nKingdom\nPrincipality\nDomain\nDominion\nDemesne\nProvince\nCounty\nDuchy\nBarony\nBaronetcy\nMarch\nCanton\nEarldom\nFief\nShire\nPit\nHole\nAbyss\nSinkhole\nCrack\nChasm\nScar\nRift\nTrench\nFissure\nCavern\nCave\nGallery\nGrotto\nKarst\nMine\nQuarry\nVein\nDarkness\nShadow\nDepths\nVoid\nTomb\nGrave\nCrypt\nSepulchre\nMausoleum\nOssuary\nBoneyard\nGraveyard\nCemetery\nMaze\nLabyrinth\nNest\nBurrow\nLair\nDen\nBolt-hole\nWarren\nRoost\nRookery\nHome\nRest\nHideout\nHideaway\nRetreat\nSafehouse\nSanctuary\nRespite\nLodge\nSlum\nShantytown\nGhetto\nCamp\nBivouac\nCampsite\nEncampment\nTepee\nTent\nWigwam\nShelter\nLean-to\nYurt\nHouse\nMansion\nEstate\nVilla\nHut\nPalace\nHovel\nManor\nLonghouse\nCottage\nCabin\nParsonage\nRectory\nVicarge\nFriary\nPriory\nAbbey\nMonastery\nCloister\nConvent\nHermitage\nCastle\nKeep\nFort\nHold\nChateau\nOutpost\nRedoubt\nTown\nVillage\nHamlet\nCity\nSettlement\nCommune\nTemple\nShrine\nCathedral\nTabernacle\nArk\nSanctum\nParish\nChapel\nPyramid\nZiggurat\nPrison\nJail\nDungeon\nOubliette\nHospital\nHospice\nStocks\nGallows\nAsylum\nMadhouse\nBedlam\nStadium\nArena\nCircus\nAcademy\nHall\nOpening\nDoor\nGate\nEntrance\nMaw\nTunnel\nPassage\nCorridor\nHallway\nChute\nSlide\nTube\nTrapdoor\nTower\nPillar\nColumn\nFire\nFlame\nFireplace\nFurnace\nStove\nWindow\nGrate\nSecret\nVulpix"
+  },
+  "chapters": {
+    "randomize": true,
+    "text": "oh god oh fuck\ni am no longer baby\ni am baby\nThis is the part\\nwhere he kills you\nFunny Title\nWRYYYYYYYYY\nThe Horror Won't End\nThe Kind-Hearted\\nHero Leomon Dies\nThe One With\\nThe Large Hole\nYou Will Cry or Else\nAdventures In\\nE For Everyone\nFatal Trouble\nReflex Retreat\nBattle of Impact\nVendetta of Payback\nHurricane Causes\\nDevastation\nIs Terrible\\nAnd Here's Why\nDungeon At 3 AM\\nChallenge Gone Wrong\nDoom seeds are bugged,\\nthey fill belly!\nThe Dashing Wanderer\nPrologue\nEpilogue\nI wanna say goodbye\nError: Chapter\\nnot randomized\nNo\nYes\nMaybe?\nChapter 3\nSpoiler: You die\nFiller Arc\nI don't even know\nMinecraft\nDiglett plays\\nhooky\nSaxaphone Sun\nI Do Not Vibe\\nWith This Universe\nJoin Our Discord\nSecret of\\nWigglytuff's Guild\nThose Who Come To\\nThis Planet and Those Who\\nLive on This Planet\nTeam Skull Dies lol\nOh no!\\nAnyway\nThe Good Chapter\nFirst Chapter\nFinal Chapter\nWill it ever end?\nFilled with Despair\nFuck the Oscars\nWash Your Hands\n358/2 Days Later\nBirth by Chain of Coded\nNew Funky Mode\n(Yeah, what the hell was\\nwith that first chapter \\ntitle? Seriously...)\nIt's really fucking bad\nGoing to the\\nhuman world\nDigimon attack!\nThe invasion of\\nthe Ultrabeast\nPMD\\nChristmas Special\nThe Beach Episode\nThe Hot Springs\\nEpisode\nComputer Warrior\\nPorygon\nThe Patrat Day\nPhantom Menace\nVulpix\n<Insert meme here>\nStealing from\\nKecleon is fun!\nWigglytuff dies\\nat the end\nWhy even bother?\nSunflora is sus\nGates is the best PMD\neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\nSeveral people\\nare typing...\nYou're the\\nbad guy?\nYour partner\\nis a leaper\nLoudred has how\\nmany children???\nSo Chatot is\\nGod now\nTeam Skull are\\nthe Chosen Ones\nThe Relic Fragment Was\\nJust a Normal Rock\\nAfter All\nThe Perfect Apple\\nis a lie\nThere are no\\nbananas, its a myth\nPiracy is no Party\nThe death\\nof Bidoof\nThe D&D episode\nError: reset DS\\nand try again\nJoker's Trick\nWhen the programer\\ngets drunk\nDarkrai Used\\nSucker Punch\nNo Solicitors\nKidnapping for\\nFun and Profit\nTime to Look\\nBetween Their Legs\nTechnically,\\nthis is HM07\nCutscene Incompetence\nCo-Workers\\nYou Hate\nYou Might Need\\na Little Prep\nHave You\\nTried Defog?\nRailroading\nThe Part Where\\nHe Backstabs You\nRopes Can Be Cut\\nBy Sharp Objects\nCommunication Would\\nHave Been Nice\nThat is\\nThe Sun, Yes\nHot Spring\\nEpisode\nChatot Should\\nLearn Protect\nBut What If\\nYou Shot Him\nBasic Preparation\\nis Required\nFear and Loathing\\nin Treasure Town\nDrowzee the Meanie\nBidoof Ruined Everything\nGrovyle the Groovy\nFlying on a Disc\nBidoof's Butterfly Effect\nChatot Is A Piece of Crap\nI'm Fainting Inside\nBedtime\nSay No To Chimecho\nGo the F**k to Sloop\nLet's Trust This Man\nSo How's Your\\nRandomized Run Going?\nBreaking The Laws\\nOf Physics\nYour Best Nightmare\nVNGHHJKDFGHKMFCLKDHUDKLGDGIZWEFGDKZWEJDVHBDMJWD\n(Dimensional screaming)\nOops,\\nWrong Chapter\nOh God,\\nthe Horror\nExplorers of Time\\nto Take a Piss\nGee Willikers,\\nCrobatman!\nSpoilers:\\nDusknoir is the Antagonist!\nMy Uncle Works\\nfor Spike Chunsoft\nThe Sentence: Guild-ty\\nFor Life Imprisonment!\nIf you die in the game,\\nyou die for real\nWalucarioware:\\nMegaMicro Dungeons\nButt Stallion\\nThe Shiny Ponyta!\nI'm so Hungry I Could\\nEat an Octillery\nYou Have Died\\nof Dysentery.\nFurry Isekai\nThreat found -\\naction needed\\nAffected Items:\\nskytemple.exe\nHey, you,\\nyou're finally awake.\nNothing Bad Ever Happens\\nTo the Pokepals\nThis game is sponsored\\nby Raid Shadow Legends!\nballistic markings are like\\nthe fingerprints of a gun\nI'm Really\\nFeeling It\nancient sword of\\nthe meth king\nCan't Have\\nShit In Detroit\nHold B to\\nspeed up dialogue!\nOh no\\nnot again\nno\ntheir screams,\\nthey wont leave my head\nare time gears\\nedible?\ni dont like\\nChasm Cave very much\ni saw a Mud Crab\\nthe other day\nthis is what\\nthe left wants\nThe screams Mason,\\nwhat do they mean?\nalso try:\\nPMD Abridged\nso hows your\\nday going?\nPlot-twist:\\nYou do things\nDon't put your cat\\nin the microwave\nMax Elixirs,\\nNow administered orally\nGuys, the main character\\ndies at the end\nThe chapter\\nbefore you die\nDon't forget about\\nthe power of friendship!\nBidoof is a meanie he\\nliterally ate my rock\nTime Broke Again\nHey at least\\nit's not Chapter 6\nFuck You,\\n*Un-Primal's Your Dialga*\nSpoilers:\\nYou're A Human\nDarkness Within Darkness\nThe Same Flashback\\n17 Times\nWhy Do I Have the\\nDimensional Scream\\nAnyway?\nThe Guild\\nTakes Manhattan\nGrovyle takes\\nShock Therapy\nAurora\\nBorealis\nSteamed\\nHams\nTeam\\nStinky Skull\nHOLY CRAP\\nLAPRAS FLIES\nTotally Not\\nThe Last Adventure\nregretting your starter\\nchoice, arent you?\nGrovyle Fucking Dies\nGrovyle Fucking Lives\nBidoof destroys\\ntime and space\nIt's in Footprint Runes,\\nLet Me Read It\ngo commission\\nfledermaus\nthats a joke dont\\nput that in\nThrough the Looking Glass,\\nand What Your Partner\\nFound There\nwhy do they call it oven\\nwhen you of in the cold\\nfood of out hot\\neat the food\nHot Team Charm\\nSingles in your area!\nNow it gets\\nREALLY anime\nCelebi's down\\nbad for Dusknoir\nCapitalist Guild\nWigglytuff Says\\nTrans Rights\nNOW THIS IS\\nPOD RACING!!\nThe One Where Chatot\\nIs An A@@hole\nNot again, Grovyle's\\ngonna kill me\nNah...\nThe Quick and the Raging\\nstarring\\nGrovyle and Dusknoir\nHello There!\nYet Another PMD Episode\\nStarring Eevee?...\nJohn Cena and the\\nQuest for the REDACTED\nChatot Saw You Get\\nKidnapped He Was\\nRight There\nTreasure Town\\nDrift\nOn my way to\\nkidnap Grovyle\nAccording to Twitter,\\ngetting a Sassy nature\\nis not morally correct\nDon't step on\\nany Grudge Traps\nOmae wa\\nmou shindeiru.\nZA WARUDO!\nRecruit Drifloon\\nYou Won't Regret It!\nHow many Reviver Seeds\\ndo you have right now?\nThe Guild\\nStrikes Back\nTime to\\nabandon ship\nOops,\\nAll Oren Berries!\nWait,\\nhow am i breathing\\nunderwater?\nSpell\\n'stun seed'\\nbackwards\nWelcome to IKEA\nPurple Kecleo\\nisn't shiny\nwhy are we still here?\\nJust to suffer?\nDon't start with \\nKecleon worst mistake of\\nmy life\nwait this isnt google\nChapter Name\nWhatever Chapter 3\\nwas called\nDusknoir,\\nMore Like SUSknoir\nAAAAA\nWe're going to jail\nYou have\\nbeen warned\nthe agony\\nnever ends\nfuck it\nGrovyle commits\\nwar-crimes\nGrovyle pays for\\nhis war-crimes\nChatot commits\\ntax fraud\nWait, isn't this\\na game for children?\ngrovyle says fuck\nThe Reason This\\nGame is Rated M\nThe other chapter\\nwas better\nI want 2\\nnumber 9s\nI Walk to Burger King\nD E E P E S T L O R E\nMeet me in the\\nDenny's parking lot\\nat 3:00\nTHERE IS A POINT WHERE\\nWE NEEDED TO STOP\\nAND WE HAVE\\nCLEARLY PASSED IT\nMonster house\\nin 3... 2... 1...\nI bet $5 you can’t\\nspeedrun this chapter\nDialga's\\nEmo Phase\nDialga had a fucking\\nheart attack and\\nfucking died.\nSpell ICUP\nthe beach episode\nX-Eye seeds are\\none heck of\\na drug\nLet Bidoof\\nSay Fuck\nYou're up late,\\nagain\nWhat abour your\\nschool homework?\nSlugma\nForget about\\nFreeman\nDecimeter's\\nTower\nKris!\\nGet the banana!\nHey Niko,\\nLet’s Go Bowling!\nSandslash\\nFor Hire\n19USD fortnite card,\\nwho wants it?\noutdated meme\nDead chat xD\nWar…\\nWar Never Changes.\nBagon\nThreads may be temporary,\\nbut comedy is eternal\n\"I Can’t Believe\\nIt's Not Vanilla!\"\nI remember when we\\nhad Chestnuts\nChocolate,\\nwith/without Nuts\nWe need\\nmore channels\nGet Your Perfect\\nApples Here!\nTime for a\\nnew offtopic\nThis is where I watch\\nmy parents die,\\npartner.\ni dont have much time,\\nthe perfect apple\\nin item form\\ncan be found in-\nA S S\nHere comes General\\nA. S. Swipe\nI thlamed my\\nThpewpa in the car door\nPotassium\nCapypara was here,\\nDecimeter is a loser.\nAn Uneasy Truce\nDouble Trucies\nNo Triple Trucies\nWould you like\\nto eat moss?\nYou prepetuated the\\ncycle of moss eating\nFuck the Magnezone,\\nComming Straight from\\nthe Underground\nLuigi do be\\nballin tho\nSave data is\\nstored in the balls\nSorry,\\ncome back when\\nyour a little mmm richer\nCan I offer you a\\nReviser Seed in this\\ntrying time?\nSigned, Lancer\nHelp, I'm trapped in this\\nchapter title and I can't\\nget out\nSomewhere\\nin Nevada\nThe reason\\why u furry\nToasters\\ntoast toast\nhe was so ugly\\nthat everyone died.\nUsing attract on\\nmy partner in confusion\\nGONE WRONG\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nSeth Rogan\\n'Wigglytuff'\nIt's Gonna\\nGet Weird\nDarkrai was Gaster\\nThis Whole Time!\nCroagunk\\nis Ness\nDUSKNOIR\\nBETRAYED US!\nThe World Shall\\nTaste My Eggs!\nBeware the Miltank!\\nNot all Milk is Enriched!\nThis Rock Looks\\nLike Tibet!\nOncelerification\\nBeam\nyou stoopid\nRemembered to\\nuse your gummies?\nNothing personal,\\nkid.\nis that a jojo\\nreference?\nYo Chatot can I get\\nsome perfect apples?\nhow it feels\\nto chew 5 gum\nHaha magnitude\\ngo BRRRRRR\nWhy do I hear Dialga’s\\nFight to the Finish?\nSTOP POSTING ABOUT\\nTIME GEARS! IM TIRED\\nOF SEEING THEM!\nGreat canyo-\\nwait wrong game\nah f*ck,\\ni cant believe\\nyou've done this.\nI’ve come to make an\\nannouncement-\\nwait wrong script\nI didn't not hit her.\\nIt's not true!\noh hi mark\nYou are Tearing\\nMe Apart Dusknoir!!\nim running out of ideas,\\njust beat the game tbh\nChris Pratt\nYo dude check out these\\nweird yellow orbs\\n floating around me\nchange da world\\nmy final message\nDIAMONDS!!!\ngrovyle my beloved...\nhardmode\nHey Vsauce, Michael here.\\nHow much pain are you\\nable to endure?\nOne Eternity Later\nayo the pizza here\nI hope you saved\\nup some\\nreviver seeds\nnot funny,\\ndidn't laugh\nDusknoir actin a bit sus,\\ncan we vote em out?\nHey bro why is\\ndon't ever forget\\nfading in\nIf bread in french is pain,\\nthen I own a whole bakery\nAlso try\\nMinecraft!\nSo how's the weather?\nno u\nOnce upon a time\nFor their neutral special\\npartner wields a gun\nYou got games\\non your phone?\nOnly 1 percent\\ncan pass\\nthis chapter\nHeavy is dead\nItemizer orb moment\nWut is this\ni peed on\\nthe floor\nfighting the final boss\\nat 3am challenge\\nGONE SEXUAL\nHey Wigglytuff\\nwe're out of\\nPerfect Apples-\nHE STOLE THE\\nF*CKING TIME GEARS\nYoom-Tah,\\nbitch\nNow's your chance to\\nbe a big shot!\nProceed\n...I can still\\nhear their voice...\nFollow SkyTemplePMD\\non Twitter\nThe chapter\\nwhere Joe dies\ni use arch\\nbtw\nI only play \\nPMD for the lore.\\nI swear\nHey, Vsauce, Michael\\nhere. The future\\nis bright. Or is it?\nyou are dead.\\nnot big surprise.\nPOW!\\nyou are dead!\nPartner?\\nWhere's the door hole?\nGOD FUCKING damnit\\nKris, where the FUCK\\nare we?\nMDGKSNGKA\nQuiet people\\npiss me off.\nQuiet people\\nneed more love\\ntoo\nComplete.\\nGlobal.\\nParalization.\nsans\\n\"befriended\"\\nyour partner\nShitting Louder\nHappy Hour?\\nmore like\\nCrappy Hour!\nLater\nAs you can see,\\nthe world is\\nvery fucked!\nIs it over?\nIt's over my friend,\\nlet's face it,\\nyou're a furry.\nIt's been\\n3,000 years...\nGrovyle, its been\\n5 years. You still owe\\nme 16 dollars.\nI'm Afraid\\nIt's Been...\\nNine Years\nPartner used\\nSheer Cold!\nLeafeon is real\nCelebi is a\\nGrovyle Simp\ntechnically grovyle has\\nthe highest killcount\\nin the PMD franchise\nShhh, be vewy vewy quiet,\\nI’m hunting\\nBunnelbies…\\nbahahahahaha!\ncock\nGuys why does\\nBidoof have\\na knife\nDarkrai does\\ndrugs down\\nat dinner\nh\npara this was\\njust posted\nMidlife Crisis\nThis is just\\nfiller content\nIt's so sad that\\nGrovyle died\\nof ligma.\nComing soon...\nWe do a\\nlittle trolling\nAlpha Male\nThe Full\\nRelease Male\nMale with\\nfree dlc\nWhen the dungeon\\nis mysterious!!1!1!\nGet Doxxed\nYour IP Address\\nis\\n127.0.0.1\nGo drink\\nsome water\nAll Hail the\\nSentient Cloud\nDREAM WORLD?!\nWhatever you do,\\ndon't eat th\nHey Dusknoir,\\nsay Amogus\\nbackwards\nRemember guys,\\nthis game is\\nfor kids\nDialga can't hit\\ncan't what he\\ncan't see\nThe part where\\nyou become a plushie\nplot armor\\nwon't save\\nyou now\nWhy do I hear\\nboss music?\nyou're gonna\\nregret that\nhi chat!\nFeaturing Dante From\\nThe Devil May Cry\\nSeries!\nthis is so sad,\\ncan we get an\\nF in the chat?\nthis is so poggers\nEat the Rich\nWho is TAS and why\\nis he so good at\\nvideo games?\nIf it's not fun,\\nwhy bother?\nGlue\n02:43 speedrun\\nany percent\ngive up\nDon't give up\nWe're no\\nstranger to love\nYou know the\\nrules and so do I\nSay goodbye\nIt's a gun\nI Have\\nTeleported Bread\nYATTAAA!!!\nWHAT?\nHome Invasions\nIf an orphan takes a\\nselfie, it's technically\\na family photo.\nplease someone help me\\nthey trapped me in the\\ntitle screen someone\\nplease someone save me\\n it's been days\nYo guys check out\\nthis cool red stone\\nI just picked up\nOne Bed Only\nYou missed an\\nEaster Egg\nThis is a certified\\nSkyTemple(tm) moment\nApple Bottom Jeans\nobsession\nYou only have\\none shot.\nYou laugh,\\nyou lose\nYou may have\\nentered DLC content\nYou picked the\\nwrong shop, fool.\nNumber 34:\\nBurger Nidoking\\nFoot Lettuce\nHONEY! WHERE. IS.\\nMY. SUPER.\\nSUIT?!\nYOU SHALL\\nNOT PASS!!\nCELEBI!\\nWHERE. IS. MY.\\nTREASURE. BAG?!\nOne does not simply,\\nwalking into\\ngrudge trap\nYo dawg can\\nI get some\\ntime gears?\nYou may\\nSpank it...\\nOnce.\nI'm now\\nSans Undertale,\\ngo into my eyes\nMake chatot\\nsay fuck\nWHO GAVE GUILDMASTER\\nWIGGLYTUFF ALL THE\\n WEED?!?\nDawn of the first day\\n-72 hours remain- \na thief?\\nGROVYLE the thief?!\nThe answer is a\\nblast seed. And if\\nthat don’t work?\\nUse more blast seeds.\nSome items\\nare free\npiss and cry\n\nYour Apples have been\\nreplaced with Rare Fossils\nIs that the\\nBite of '87?\nsunflora what are\\nyou doing with\\nthat gun\nWelcome to the\\nAperture Science\\nEnrichment Center.\nI don't\\ncare anymore\nSulfurbunny we hope\\nyou are ok!"
+  },
+  "text": {
+    "main": false,
+    "story": false,
+    "instant": false
+  },
+  "iq": {
+    "randomize_tactics": false,
+    "randomize_iq_gain": false,
+    "randomize_iq_skills": false,
+    "randomize_iq_groups": false
+  },
+  "quiz": {
+    "mode": 1,
+    "randomize": true,
+    "questions": [
+      {
+        "question": "You're at a movie theater. What are you there\nto see?",
+        "answers": [
+          "An action movie.",
+          "A drama.",
+          "A romantic movie."
+        ]
+      },
+      {
+        "question": "What's your studying style?",
+        "answers": [
+          "Working hard, every day.",
+          "If I remember to...",
+          "I just cover what I need to."
+        ]
+      },
+      {
+        "question": "You've been asked to do a difficult task.\nWhat will you do?",
+        "answers": [
+          "I can't really do it alone...",
+          "Do it myself.",
+          "Ask someone to help.",
+          "Make someone else do it!"
+        ]
+      },
+      {
+        "question": "Are you truly sincere when you apologize?",
+        "answers": [
+          "Of course.",
+          "That's not easy to admit!"
+        ]
+      },
+      {
+        "question": "Do you think you have good study habits?",
+        "answers": [
+          "Yes.",
+          "No.",
+          "Well, I never lose at sports!"
+        ]
+      },
+      {
+        "question": "There's a rumor around about a ghost haunting\nthe school bathrooms! What do you do?",
+        "answers": [
+          "Scary...bathrooms!",
+          "Go in there anyway."
+        ]
+      },
+      {
+        "question": "Everyone's sharing a dessert, and there's an\nextra piece. What do you do?",
+        "answers": [
+          "Don't tell anyone.",
+          "Let everyone know.",
+          "First come, first served!"
+        ]
+      },
+      {
+        "question": "How are your mornings?",
+        "answers": [
+          "Always in a rush!",
+          "Always perfect.",
+          "They are OK."
+        ]
+      },
+      {
+        "question": "Everyone around you is laughing hard at\nsomething you think is pretty boring.\nWhat do you do?",
+        "answers": [
+          "Nothing, really.",
+          "Laugh along.",
+          "It depends on the situation."
+        ]
+      },
+      {
+        "question": "You want to reveal that you like someone a\nwhole bunch! What do you do?",
+        "answers": [
+          "Show it a little by playing together.",
+          "Make it obvious by...playing a prank!",
+          "State it clearly for all to hear!",
+          "Keep it to myself! It's too risky!"
+        ]
+      },
+      {
+        "question": "You're on a stroll when a TV crew pounces\non you for an interview. What do you do?",
+        "answers": [
+          "Run away! How embarrassing!",
+          "Answer questions properly.",
+          "Yuck it up! Woo-hoo! I'm on TV!"
+        ]
+      },
+      {
+        "question": "Do you like lively parties?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "The people at the next table are singing for\nsomeone's birthday. What do you do?",
+        "answers": [
+          "Stay on the sidelines.",
+          "Sing along!",
+          "Walk away."
+        ]
+      },
+      {
+        "question": "You're in a completely silent assembly when\nyou suddenly hear someone pass gas!\nHow do you react?",
+        "answers": [
+          "Roll on the floor laughing!",
+          "Just let it go by...",
+          "Who was that?!"
+        ]
+      },
+      {
+        "question": "Do you like karaoke?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "Do you prefer to play outside rather than\ninside?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "You see a big and comfortable bed.\nYour first reaction is to...",
+        "answers": [
+          "Jump on it!",
+          "Belly flop!",
+          "Curl up."
+        ]
+      },
+      {
+        "question": "You're hiking up a mountain when you reach\ndiverging paths. Which kind do you take?",
+        "answers": [
+          "Narrow.",
+          "Wide."
+        ]
+      },
+      {
+        "question": "You discover a beat-up-looking treasure chest\nin some ruins. What do you do?",
+        "answers": [
+          "Open it!",
+          "Get help opening it."
+        ]
+      },
+      {
+        "question": "Your friend takes a spectacular fall![K]\nWhat do you do?",
+        "answers": [
+          "Help my friend up!",
+          "Laugh! It's too funny!"
+        ]
+      },
+      {
+        "question": "You're daydreaming...when your friend sprays\nyou with water! What do you do?",
+        "answers": [
+          "Get mad!",
+          "Get sad.",
+          "Woo-hoo! Water fight!"
+        ]
+      },
+      {
+        "question": "Have you ever thought that if you dug in your\nbackyard you could find buried treasure?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "Have you ever told a joke that just completely\nfell flat?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "Hey, what's that?[K] There's someone behind you![K]\nSo...did you look just now?",
+        "answers": [
+          "Don't do that! It scared me!",
+          "OK, I admit it. You tricked me.",
+          "No way. I didn't fall for it.",
+          "Huh? What?"
+        ]
+      },
+      {
+        "question": "Your friend has made a meal that\ntastes terrible.[K]\nThey ask, \"How is it?\" You say...?",
+        "answers": [
+          "\"Terrible!\"",
+          "Just smile.",
+          "\"Um, it's...good.\""
+        ]
+      },
+      {
+        "question": "You run into a new person that you haven't\ntalked to very much before. What do you do?",
+        "answers": [
+          "Make small talk.",
+          "Say nothing!",
+          "Make an excuse to get away!"
+        ]
+      },
+      {
+        "question": "Good news and bad news... Which one do you\nwant to hear first?",
+        "answers": [
+          "The good news.",
+          "The bad news.",
+          "I don't want either."
+        ]
+      },
+      {
+        "question": "Have you ever realized you were hogging the\nconversation?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "When you see a switch, do you feel an\noverwhelming urge to flip it?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "You find something at a great bargain price!\nWhat do you do?",
+        "answers": [
+          "Buy it right away!",
+          "Think about whether you need it.",
+          "Demand an even bigger discount!"
+        ]
+      },
+      {
+        "question": "You're packing your classroom's snacks for a\npicnic when you get hungry. What do you do?",
+        "answers": [
+          "Eat just a tiny bit.",
+          "Hold myself back and pack it all up.",
+          "What snacks? They're in my belly!"
+        ]
+      },
+      {
+        "question": "Do you want to be taller someday?",
+        "answers": [
+          "Totally!",
+          "Of course not."
+        ]
+      },
+      {
+        "question": "Do you think it's important to always aim to\nbe the best?",
+        "answers": [
+          "Of course!",
+          "No."
+        ]
+      },
+      {
+        "question": "Have you ever looked at your reflection in a\nmirror and thought, \"What a cool person\"?",
+        "answers": [
+          "Certainly!",
+          "Well, not really..."
+        ]
+      },
+      {
+        "question": "If you saw someone doing something bad, could\nyou scold them?",
+        "answers": [
+          "Of course!",
+          "Not really."
+        ]
+      },
+      {
+        "question": "Do you prefer to be busy or to have\na lot of free time?",
+        "answers": [
+          "Being busy.",
+          "Free time!",
+          "In between."
+        ]
+      },
+      {
+        "question": "You're about to buy a popular game when\nsomeone else gets the last copy!\nHow do you feel?",
+        "answers": [
+          "Whatever.",
+          "Annoyed. I was here first!",
+          "I shed a few tears."
+        ]
+      },
+      {
+        "question": "You notice that a toy you bought for full price\nyesterday is marked down to half price today!\nHow do you feel?",
+        "answers": [
+          "Heartbroken...",
+          "Aaaargh!",
+          "Bad timing, I guess..."
+        ]
+      },
+      {
+        "question": "Your friend is running a little late to meet you.\nIs that OK?",
+        "answers": [
+          "Yes.",
+          "Not at all!"
+        ]
+      },
+      {
+        "question": "You've just stuffed yourself with a good meal\nwhen a great dessert arrives. What do you do?",
+        "answers": [
+          "Eat it. Who cares if I'm stuffed?",
+          "Turn it down. It's too fattening!",
+          "Yum! I love dessert the most! ♪"
+        ]
+      },
+      {
+        "question": "You have a really important test tomorrow!\nWhat do you do?",
+        "answers": [
+          "Study all night long.",
+          "Wing it! I'm sure it will be fine!",
+          "Test?! I think I have a fever..."
+        ]
+      },
+      {
+        "question": "You've been invited to a wonderful party. It's\ntime for the party to start, but there's nobody\nthere! You think...?",
+        "answers": [
+          "Did something happen?",
+          "Maybe I have the day wrong?",
+          "Let's get this party started!"
+        ]
+      },
+      {
+        "question": "Do you think that, no matter what, life\ngoes on?",
+        "answers": [
+          "All the time!",
+          "Never."
+        ]
+      },
+      {
+        "question": "The phone's ringing![K] What do you do?",
+        "answers": [
+          "Answer right away!",
+          "Wait a bit before answering.",
+          "Ignore it and let it ring."
+        ]
+      },
+      {
+        "question": "Your friends seem to be making plans to hang\nout, just out of earshot. You think...",
+        "answers": [
+          "I want to go too!",
+          "No big deal.",
+          "Will they invite me?"
+        ]
+      },
+      {
+        "question": "Do you want to be famous?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "You've been handed a large bag as a souvenir.\nWhat do you do?",
+        "answers": [
+          "Wait until I get home to open it.",
+          "Shake it!",
+          "Open it!",
+          "It's smaller than everyone else's..."
+        ]
+      },
+      {
+        "question": "Have you ever forgotten you bought something\nand bought another one?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "Once you've decided something, do you see it\nthrough to the end?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "Have you ever said \"nice to meet you\" to\nsomeone you've met previously?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "Did you make any New Year's resolutions?",
+        "answers": [
+          "Of course!",
+          "Nope.",
+          "What are those?"
+        ]
+      },
+      {
+        "question": "Do you think it's important to be fashionably\nlate?",
+        "answers": [
+          "Yes.",
+          "No.",
+          "I don't know."
+        ]
+      },
+      {
+        "question": "You've won big on a raffle ticket! You say...",
+        "answers": [
+          "Woo-hoo!",
+          "I can't believe it...",
+          "This is my little secret."
+        ]
+      },
+      {
+        "question": "Do you think blaming something you did on\nsomeone else is sometimes necessary?",
+        "answers": [
+          "Of course!",
+          "No way!"
+        ]
+      },
+      {
+        "question": "Your friend suddenly won't listen to you, when\neverything was fine yesterday.\nWhat happened?",
+        "answers": [
+          "Maybe they're sick.",
+          "They're lost in thought.",
+          "What?! Why?!"
+        ]
+      },
+      {
+        "question": "You take off your shoes to realize your socks\nare two different colors!\nWhat do you do?",
+        "answers": [
+          "Get embarrassed!",
+          "Again?!",
+          "I meant to do that!"
+        ]
+      },
+      {
+        "question": "You fail miserably! Everyone found out, and\nthey're disappointed in you... What do you do?",
+        "answers": [
+          "Try and hide.",
+          "Think of an excuse.",
+          "Drop down and play dead!"
+        ]
+      },
+      {
+        "question": "Have you ever accidentally called a teacher\n\"Mom\" or \"Dad\"?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "Have you ever blurted something out without\nthinking about the consequences first?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "You're in class when you realize that you really\nhave to go to the restroom! What do you do?",
+        "answers": [
+          "Ask for permission to leave.",
+          "Sneak out.",
+          "Hold on until class ends!"
+        ]
+      },
+      {
+        "question": "Your friend offers to treat you to dinner.\nWhat do you do?",
+        "answers": [
+          "I'm there!",
+          "Allow me.",
+          "Thanks..."
+        ]
+      },
+      {
+        "question": "You see a cake that is past its expiration date,\nbut only by one day. What do you do?",
+        "answers": [
+          "Not a problem! Chow time!",
+          "Think about it briefly, then decide.",
+          "Get someone to try it first."
+        ]
+      },
+      {
+        "question": "You're eating at a very fancy restaurant known\nfor its food. Which course do you select?",
+        "answers": [
+          "Seared steak.",
+          "Healthy fish.",
+          "Anything! It's all good!"
+        ]
+      },
+      {
+        "question": "Did you play \"Explorers of Time\" or \"Explorers\nof Darkness\"?",
+        "answers": [
+          "Yes.",
+          "No."
+        ]
+      },
+      {
+        "question": "Two trains leave the station at the same time,\none heading west and the other east.[K]\nThe westbound train travels at 42 miles\nper hour. The eastbound train travels at\n69 miles per hour.[K]\nHow long will it take for the two trains to be\n101 miles apart?\"",
+        "answers": [
+          "Uhh…",
+          "I didn't come here to solve math!!!",
+          "I solved the answer, where is that choice?!"
+        ]
+      },
+      {
+        "question": "What's your opinion on fanfiction?",
+        "answers": [
+          "Needs to perish",
+          "Cringeeee",
+          "I love it"
+        ]
+      },
+      {
+        "question": "Somebody is robbing your house, what will\nyou do?",
+        "answers": [
+          "Call the police",
+          "Beat up the robber",
+          "Invite them for some pizza"
+        ]
+      },
+      {
+        "question": "It's so sad that Ninja died of Ligma.",
+        "answers": [
+          "Who's Ninja?",
+          "What's Ligma?"
+        ]
+      },
+      {
+        "question": "Which Shrek movie is the best one?",
+        "answers": [
+          "Shrek (is good)",
+          "Shrek 2 (the best one)",
+          "Shrek the Third (....) ",
+          "Shrek Forever After (underrated)"
+        ]
+      },
+      {
+        "question": "Is [CS:K]Bagon[CR] the best Pokémon ever?",
+        "answers": [
+          "Yes.",
+          "Yes.[CN][CLUM_SET:-14]Yes[CR]."
+        ]
+      },
+      {
+        "question": "Who gets stuck with all the bad luck?",
+        "answers": [
+          "There is no such thing as bad luck.",
+          "Me. ;-;",
+          "No One (angry quacking)… But Donald Duck!"
+        ]
+      },
+      {
+        "question": "You encounter a monster house,\nwhat do you do?",
+        "answers": [
+          "Fight them all!",
+          "Use an orb, so they won't attack you",
+          "RUUUUUN!"
+        ]
+      },
+      {
+        "question": "Never gonna...",
+        "answers": [
+          "Give you up",
+          "Let you down",
+          "Run around and desert you"
+        ]
+      },
+      {
+        "question": "Mud",
+        "answers": [
+          "Kip",
+          "Mud",
+          "Kip"
+        ]
+      },
+      {
+        "question": "Do you exist?",
+        "answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "question": "To be, or not to be, that is the question.",
+        "answers": [
+          "To Be",
+          "Not to Be",
+          "Uhh.. both?",
+          "Neither, I'm nonexistent",
+          "WHAT EVEN IS THE QUESTION!?"
+        ]
+      },
+      {
+        "question": "Which person would you steal lunch\nmoney from?",
+        "answers": [
+          "Dwayne Johnson",
+          "Jack Black",
+          "John Cena",
+          "Mike Tyson"
+        ]
+      },
+      {
+        "question": "What you doing right now?",
+        "answers": [
+          "Existing",
+          "Nothing",
+          "What the-"
+        ]
+      },
+      {
+        "question": "Would you rather...",
+        "answers": [
+          "...become Furry",
+          "...become Weeb"
+        ]
+      },
+      {
+        "question": "What is the air velocity of an unladen\n[CS:K]Swellow[CR]?",
+        "answers": [
+          "That depends. Alolan or Galarian Swellow?",
+          "I- I don't know that!"
+        ]
+      },
+      {
+        "question": "Would you spend your life savings on\n[CS:X]BANPRESTO Pokémon Plush Doll Kororin\nFriends Big Lucario 26cm 37951[CR]?",
+        "answers": [
+          "Absolutely! I have an obsession!",
+          "What? No!",
+          "I might consider it..."
+        ]
+      },
+      {
+        "question": "How much volume does the solid of revolution\nformed by the curve f(x) = 1/x between 1\nand infinity have?",
+        "answers": [
+          "...what?",
+          "pi, but why do you want to kno-",
+          "Uhhh... 3? I forgor how to math"
+        ]
+      },
+      {
+        "question": "Did you pirate this game?",
+        "answers": [
+          "Yes!",
+          "No..."
+        ]
+      },
+      {
+        "question": "Your friend wants to play a game that you\nhave already played. [K]Do you spoil it?",
+        "answers": [
+          "Tell them nothing",
+          "Mild spoilers are okay right..?",
+          "[CS:K]Dusknoir[CR] is evil!"
+        ]
+      },
+      {
+        "question": "What comes next in this sequence:\nUP HEAVY KICK > LIGHT PUNCH > MEDIUM\nPUNCH > LIGHT KICK > ___?",
+        "answers": [
+          "LIGHT PUNCH",
+          "MEDIUM KICK",
+          "HEAVY PUNCH",
+          "LIGHT KICK"
+        ]
+      },
+      {
+        "question": "Birds or Lizards?",
+        "answers": [
+          "Birds",
+          "Lizards"
+        ]
+      },
+      {
+        "question": "Hey, just wandering if you got your\nphotos printed?",
+        "answers": [
+          "I don't recall having to do such thing",
+          "...why do you ask?",
+          "bogos binted?"
+        ]
+      },
+      {
+        "question": "Freedom. Imprisonment. It's all an Illusion.",
+        "answers": [
+          "Gravity is a Harness",
+          "I have harnessed the harness"
+        ]
+      },
+      {
+        "question": "I'll take a double triple bossy deluxe,\non a raft, four-by-four animal-style,\nextra shingles with a shimmy and a squeeze,\nlight axle grease, make it cry, burn it, and let\nit swim.",
+        "answers": [
+          "We serve food here, sir.",
+          "Order up!"
+        ]
+      },
+      {
+        "question": "Wake me up",
+        "answers": [
+          "Before you go go",
+          "When September ends",
+          "Inside"
+        ]
+      },
+      {
+        "question": "What is your favourite food?",
+        "answers": [
+          "Buzz Lightyear action figure",
+          "Woody action figure",
+          "Rex action figure",
+          "Why are these choices"
+        ]
+      },
+      {
+        "question": "A Man has fallen into the River in Lego City!",
+        "answers": [
+          "Start the Rescue Helicopter!",
+          "That's a lie.",
+          "His funeral will be held on Friday, Mar 22nd.",
+          "Hey!"
+        ]
+      },
+      {
+        "question": "Is Taiwan a country?",
+        "answers": [
+          "Yes, they gained independence",
+          "No, glory to the CCP"
+        ]
+      },
+      {
+        "question": "Good lord what is happening here?",
+        "answers": [
+          "Aurora Borealis",
+          "Steamed Hams",
+          "Isometric Exercise"
+        ]
+      },
+      {
+        "question": "IS THAT THE THANOS CAR?",
+        "answers": [
+          "Yes",
+          "Yes"
+        ]
+      },
+      {
+        "question": "if two men were on the moon and one of\nthem killed the other with a rock",
+        "answers": [
+          "would that be fucked up or what",
+          "actually this is perfectly ok!"
+        ]
+      },
+      {
+        "question": "What's 9 + 10?",
+        "answers": [
+          "19",
+          "21",
+          "September 10th of 2021 is when the d---"
+        ]
+      },
+      {
+        "question": "Guys, how many of\nthe three are there?",
+        "answers": [
+          "01/05/05",
+          "02/02/2018",
+          "Phospharus"
+        ]
+      },
+      {
+        "question": "Do you want to turn into a marketable plushie?",
+        "answers": [
+          "Yes",
+          "What?!",
+          "PARA"
+        ]
+      },
+      {
+        "question": "What's your definition of funny?",
+        "answers": [
+          "Randomizers",
+          "My sad life",
+          "Abridged",
+          "John Cena + Quest f. t. Undertale Sleepover"
+        ]
+      },
+      {
+        "question": "Can money buy happiness?",
+        "answers": [
+          "Yes",
+          "No",
+          "What's happiness?"
+        ]
+      },
+      {
+        "question": "Where did you come from?",
+        "answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "question": "I’m getting a present for my girlfriend…\nHmm… [K]I could give her this water stone,\nbut who knows? It might cause her to evolve!",
+        "answers": [
+          "Excuse me, what?",
+          "Damn bro, that would suck.",
+          "PARA THIS WAS JUST POSTED"
+        ]
+      },
+      {
+        "question": "What's your definition of Pain?",
+        "answers": [
+          "Being a Grass or Fighting Type in Rescue Team",
+          "Being a Fire or Ground Type in Explorers",
+          "Playing Gates",
+          "Chikorita",
+          "Playing the Adventure Squad entries",
+          "This Randomizer"
+        ]
+      },
+      {
+        "question": "Question #47:\nWas your character king of Slovakia?",
+        "answers": [
+          "Yes",
+          "Probably",
+          "Don't know",
+          "Probably not",
+          "No"
+        ]
+      },
+      {
+        "question": "Do people die when they are killed?",
+        "answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "question": "Are British people real?*\n\n*(I am allowed to make this joke, I'm British)",
+        "answers": [
+          "Yes (unfortunately)",
+          "No",
+          "I am British (Cringe!!!)"
+        ]
+      },
+      {
+        "question": "Are you made of beans?",
+        "answers": [
+          "?",
+          "?"
+        ]
+      },
+      {
+        "question": "Do you know?",
+        "answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "question": "Trans Rights?",
+        "answers": [
+          "Yes",
+          "Definitely",
+          "ABSOLUTELY!!!"
+        ]
+      },
+      {
+        "question": "Whats Obama’s last name?",
+        "answers": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "question": "When was the last time you flossed your\nteeth?",
+        "answers": [
+          "I floss every day!",
+          "It wasn't too long ago, I think...",
+          "I've never flossed in my life."
+        ]
+      },
+      {
+        "question": "Milk first, or cereal?",
+        "answers": [
+          "Milk in first.",
+          "Cereal in first.",
+          "I eat cereal dry, as W.K. Kellogg intended."
+        ]
+      },
+      {
+        "question": "How do you cut your sandwiches?",
+        "answers": [
+          "Down the middle, making two rectangles.",
+          "Diagonally, creating two triangles.",
+          "I always eat it whole."
+        ]
+      },
+      {
+        "question": "How does Cilantro taste to you?",
+        "answers": [
+          "I like it!",
+          "It tastes like soap.",
+          "It doesn't taste like soap but I don't like it."
+        ]
+      },
+      {
+        "question": "How do you do your taxes?",
+        "answers": [
+          "I do them myself.",
+          "I pay a service to do them for me.",
+          "I don't pay taxes (Nice)."
+        ]
+      },
+      {
+        "question": "What type is the best type?",
+        "answers": [
+          "water",
+          "water",
+          "water"
+        ]
+      },
+      {
+        "question": "Which one is better?",
+        "answers": [
+          "PMD Rescue Team",
+          "PMD Adventure Squad",
+          "PMD Gates Of Infinity",
+          "PSMD",
+          "PMD Explorer of Sky Randomizer"
+        ]
+      },
+      {
+        "question": "glarbo blarblo shmoompi glomb?",
+        "answers": [
+          "tiplo",
+          "glomb",
+          "blarg"
+        ]
+      },
+      {
+        "question": "America?",
+        "answers": [
+          "FREEDOM HELL YEAH",
+          "come back to canada and eat your maple syrup"
+        ]
+      },
+      {
+        "question": "You hear your parents coming back home\nand everything is a mess around you,\nwhat do you do?",
+        "answers": [
+          "Hide everything under the couch",
+          "\"Mom i swear it wasn't me!\"",
+          "Play FIFA with them"
+        ]
+      },
+      {
+        "question": "Hey, you! You're finally awake!",
+        "answers": [
+          "Where am I?",
+          "Why is it so cold?",
+          "not this shit again."
+        ]
+      },
+      {
+        "question": "Man.",
+        "answers": [
+          "What?",
+          "No thanks",
+          "Yeah, I feel ya"
+        ]
+      },
+      {
+        "question": "Why do they call it oven when you of\nin the cold food of out hot eat the food?",
+        "answers": [
+          "Can you... repeat that?",
+          "I think you need to get of over it",
+          "I'm going to \"of oid\" this question"
+        ]
+      },
+      {
+        "question": "or his neutral special, he wields…",
+        "answers": [
+          "Sorry, what?",
+          "A gun",
+          "Uhhhhhhhhhh Mario?"
+        ]
+      },
+      {
+        "question": "Early to bed early to...",
+        "answers": [
+          "Catch the worm",
+          "Or is it the bagel",
+          "Rise makes a man healthy wealthy and wise"
+        ]
+      },
+      {
+        "question": "Hey guys did you know that-",
+        "answers": [
+          "GOD NO",
+          "STOP",
+          "BEGONE"
+        ]
+      },
+      {
+        "question": "Do you have a moment to talk about our\nlord and saviour?",
+        "answers": [
+          "uhhhh",
+          "yeah... sure",
+          "please just no"
+        ]
+      },
+      {
+        "question": "How do you pronounce Arceus?",
+        "answers": [
+          "ar-SEE-us",
+          "ar-KAY-us",
+          "ar-KEY-us",
+          "I pronounce it differently"
+        ]
+      },
+      {
+        "question": "Are you stupid?",
+        "answers": [
+          "yes",
+          "definetely",
+          "better yes"
+        ]
+      },
+      {
+        "question": "What have I got in my pocket?",
+        "answers": [
+          "Handses!",
+          "Knife!",
+          "String! Or nothing!"
+        ]
+      },
+      {
+        "question": "What's the bottom of the sea like?\nJust once I would so love to go!",
+        "answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "question": "You drink a glass of water halfway.\nWhat is the glass of water now?",
+        "answers": [
+          "Half Full",
+          "Half Empty",
+          "A glass of water"
+        ]
+      },
+      {
+        "question": "Gamers don't die, they...",
+        "answers": [
+          "Respawn",
+          "Continue",
+          "Game Over",
+          "I play mobile games"
+        ]
+      },
+      {
+        "question": "Have you played our other game,\nDanganronpa: Trigger Happy Havoc?",
+        "answers": [
+          "Yes",
+          "No",
+          "The hell is a Danganronpa?",
+          "I did not buy this game to get an ad!"
+        ]
+      },
+      {
+        "question": "What is 8 ÷ 2 (2 + 2)",
+        "answers": [
+          "1",
+          "16"
+        ]
+      },
+      {
+        "question": "What is the first Pokémon?",
+        "answers": [
+          "Bulbasaur",
+          "Mew",
+          "Arceus",
+          "Rhydon"
+        ]
+      },
+      {
+        "question": "Choose well.",
+        "answers": [
+          "The power of the warrior.",
+          "The power of the guardian.",
+          "The power of the mystic."
+        ]
+      },
+      {
+        "question": "What is most important to you?",
+        "answers": [
+          "Being number one.",
+          "Friendship.",
+          "My prize possessions."
+        ]
+      },
+      {
+        "question": "What are you so afraid of?",
+        "answers": [
+          "Getting old.",
+          "Being different.",
+          "Being indecisive."
+        ]
+      },
+      {
+        "question": "What do you want outta life?",
+        "answers": [
+          "To see rare sights.",
+          "To broaden my horizons.",
+          "To be strong."
+        ]
+      },
+      {
+        "question": "Albert and Bernard just became friends with\nCheryl, and they want to know when her\nbirthday is. Cheryl gives them a list of\n10 possible dates. (May 15th, May 16th,\nMay 19th, June 17th, June 18th , July 14th,\nJuly 16th , August 14th, August 15th, and\nAugust 17th).\n\nCheryl then tells Albert and Bernard separately\nthe month and the day of her birthday\nrespectively.\n\nAlbert: I don't know when Cheryl's birthday is,\nbut I know that Bernard does not know too.\nBernard: At first I don't know when Cheryl's\nbirthday is, but I know now.\nAlbert: Then I also know when Cheryl's\nbirthday is.\n\nSo when is Cheryl's birthday?",
+        "answers": [
+          "August 17th",
+          "February 26th",
+          "July 16th",
+          "August 16th"
+        ]
+      },
+      {
+        "question": "Oh egads! Your roast is ruined! But what if...\nYou were to purchase fast food and disguise it\nas your own cooking...?",
+        "answers": [
+          "Ohohoho! Delightfully devilish me!",
+          "But that's morally wrong..."
+        ]
+      },
+      {
+        "question": "Are you a native english speaker?",
+        "answers": [
+          "Yes",
+          "No",
+          "I can't even read English"
+        ]
+      },
+      {
+        "question": "Aurora Borealis?",
+        "answers": [
+          "At this time of year?",
+          "At this time of day?",
+          "In this part of the quiz?",
+          "Localised entirely within this randomized ROM?"
+        ]
+      },
+      {
+        "question": "How do you play this rom?",
+        "answers": [
+          "With an emulator",
+          "With an R4",
+          "With a custom firmware",
+          "I made a custom DS cartdrige for it"
+        ]
+      },
+      {
+        "question": "?",
+        "answers": [
+          ".",
+          "??",
+          "!"
+        ]
+      },
+      {
+        "question": "You’re walking with your friend when all of\nthe sudden, you see a banana on the ground!\nWhat do you do?",
+        "answers": [
+          "Run",
+          "Kris Get The Banana",
+          "Potassium",
+          "Return to monke"
+        ]
+      },
+      {
+        "question": "Alright this is just a waste of time.\nWhat Pokémon do you want to be?",
+        "answers": [
+          "The furry",
+          "Return to monke",
+          "I want to suffer while playing this",
+          "Tutel"
+        ]
+      },
+      {
+        "question": "Did you remember to do your Spanish\nlessons today?",
+        "answers": [
+          "Yes",
+          "Uhhhh",
+          "Please don’t kill my family"
+        ]
+      },
+      {
+        "question": "IT IS GOOD DAY TO BE NOT DEAD!",
+        "answers": [
+          "Pow! You are dead!",
+          "Indeed it is.",
+          "Spahs sappin my sentry!"
+        ]
+      },
+      {
+        "question": "Are you a real villain?",
+        "answers": [
+          "Absolutely",
+          "But of course I'm not, wha-",
+          "Well uhh... Technically uhh... Nah"
+        ]
+      },
+      {
+        "question": "Have you ever caught a good guy like a\nreal superhero?",
+        "answers": [
+          "???",
+          "*nods comically*",
+          "I don't know what to say..."
+        ]
+      },
+      {
+        "question": "Have you ever tried to disguise?",
+        "answers": [
+          "*nods comically*",
+          "Well, yes, but not with a malicious intent",
+          "Nah, nah"
+        ]
+      },
+      {
+        "question": "Do you worry about punctuation when\ncasually texting?",
+        "answers": [
+          "Yes. Good punctuation is always important.",
+          "Eh, not always",
+          "nope i couldnt care less"
+        ]
+      },
+      {
+        "question": "I’m in space!",
+        "answers": [
+          "I know you are, mate!",
+          "Yep. We’re both in space.",
+          "SPAAAAAAAAAAAAACE"
+        ]
+      },
+      {
+        "question": "Have you ever been in an accident that\nresulted with your death?",
+        "answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "question": "Would you like something new, or something\nfamiliar?",
+        "answers": [
+          "Familiar",
+          "New"
+        ]
+      },
+      {
+        "question": "Where were you when club penguin is kil?",
+        "answers": [
+          "at home",
+          "eating dorito",
+          "no"
+        ]
+      },
+      {
+        "question": "What is the best Pokémon?\"",
+        "answers": [
+          "[CS:K]Duskako[CR]",
+          "[CS:K]Duskako[CR]",
+          "[CS:K]Duskako[CR]",
+          "Not [CS:K]Duskako[CR]"
+        ]
+      },
+      {
+        "question": "You're walking in the woods.\nThere's no-one around and your phone is dead.\nOut of the corner of your eye, you spot him:",
+        "answers": [
+          "Shia LeBeouf",
+          "Slender Man",
+          "Mothman"
+        ]
+      },
+      {
+        "question": "Do you prefer Checkers or Chess?",
+        "answers": [
+          "Checkers!",
+          "Chess!",
+          "No preference…"
+        ]
+      },
+      {
+        "question": "Soccer or football?",
+        "answers": [
+          "Soccer",
+          "Football"
+        ]
+      },
+      {
+        "question": "By playing this randomizer, you agree that\n[CS:K]Duskako[CR] is best and only good Pokémon.",
+        "answers": [
+          "I accept these terms and conditions",
+          "I do not accept these terms and conditions"
+        ]
+      },
+      {
+        "question": "Do you often play stall teams on\nPokémon Showdown?",
+        "answers": [
+          "No.",
+          "I use stall teams in the main games online!",
+          "…I don’t play the mainline Pokémon games."
+        ]
+      },
+      {
+        "question": "Are you sus? Or are you dus?",
+        "answers": [
+          "Dus.",
+          "Sus.",
+          "give me my liver back please i beg you"
+        ]
+      },
+      {
+        "question": "Let’s play a game of Rock Paper Scissors.\nWhat sign do you throw out?",
+        "answers": [
+          "Rock.",
+          "Paper.",
+          "Scissors."
+        ]
+      },
+      {
+        "question": "Mew and Decimeter are continuing their\n'no u' battle. [K]How do you react?",
+        "answers": [
+          "Join in",
+          "How did this start again?",
+          "When will it end?",
+          "Complain to Para",
+          "Cry"
+        ]
+      },
+      {
+        "question": "Which POKéMON do\nyou think is\nthe sexiest?",
+        "answers": [
+          "LUCARIO",
+          "GARDEVOIR",
+          "RESHIRAM"
+        ]
+      },
+      {
+        "question": "You want it? It's yours my friend.",
+        "answers": [
+          "Lamp oil",
+          "Rope",
+          "Bombs",
+          "Come back when you're a little...hmm...richer"
+        ]
+      },
+      {
+        "question": "You find a treasure chest at the end of some\ndeep, treacherous ruins! What do you expect\nto find in it?",
+        "answers": [
+          "Loads of money!",
+          "A rare and powerful item!",
+          "Fuit gummies!"
+        ]
+      },
+      {
+        "question": "Vous parlez français?",
+        "answers": [
+          "What?",
+          "Uhhhhhhhh si…?",
+          "Oui, je parle un peu français. Et tu?"
+        ]
+      },
+      {
+        "question": "Are you procrastinating right now?",
+        "answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "question": "Do you think anything can be made better by\nadding googly eyes to it?",
+        "answers": [
+          "Absolutely!",
+          "Maybe some things.",
+          "I don’t like them…"
+        ]
+      },
+      {
+        "question": "would you like a cool hat?",
+        "answers": [
+          "yes",
+          "absolutely",
+          "most certainly"
+        ]
+      },
+      {
+        "question": "Does pineapple belong on pizza?",
+        "answers": [
+          "Yeah",
+          "Ew no",
+          "I eat pickles on my pizza"
+        ]
+      },
+      {
+        "question": "Who's the real Protagonist in Starter Squad?",
+        "answers": [
+          "Charmander",
+          "Squirtle",
+          "Bulbasaur"
+        ]
+      },
+      {
+        "question": "I give up just pretend this is funny",
+        "answers": [
+          "haha, that was hilarious",
+          "no"
+        ]
+      }
+    ]
+  },
+  "seed": ""
+}
