@@ -1,0 +1,15 @@
+fgc_tools/__init__.py,sha256=Ce_D01W-DEyyfDXCosCAHMo1_zNBHIIpUejyDh-P1hw,55
+fgc_tools/fgccreator.py,sha256=Om7fa_hF0flUkiNvrkLveoJmoRzrpPJ34bhf9q69K5Q,1887
+fgc_tools/fgcdrawer.py,sha256=48kzVaGd8Tr89Nk4stJI2E4H40pNoBcVYtEe5PNFCO8,9081
+fgc_tools/main.py,sha256=bAwvETmWNWI81vpb7J1PZ_zj1-5M0ux54rvpZmYSV6I,1225
+fgc_tools/css/style.css,sha256=jIUQJA7i2zG_6PYbOpTUk7YB71RP3RtdPDfeexrzsQo,779381
+fgc_tools/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fgc_tools/libs/binarytools.py,sha256=X0s5uIRrAhxmGUcDTdPc9SvWI1DRZHUFOwWQDVIktA4,767
+fgc_tools/libs/hamming.py,sha256=B3_hapDr8RDtPQzBIItQvN4Vu4iwaqMpCP8e0vMRNOQ,1958
+fgc_tools/libs/parity.py,sha256=xfBA9GfeYlnHDROHs8uJNG-ltNNJjnBxcKYyPfIPrlM,2400
+reader/centerfinder.py,sha256=BRkzql46qT0dS025BW3QlI_bRAYe9UI08pyWveuv-OY,7462
+reader/main.py,sha256=DpEJXKmeqCP4H34zo7ovRL1iLeTaqC3mA6sjJug6q9g,4307
+fgc_tools-0.0.4.dist-info/METADATA,sha256=_Ihbt9cHvaTZwR2RMxuvbt3eYQtx-kY8T4uy_yqU_iY,43154
+fgc_tools-0.0.4.dist-info/WHEEL,sha256=Y57InxZzFBC6JOUn3gj3DWHnWQvSjh7u7UaNLmWRXIQ,86
+fgc_tools-0.0.4.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fgc_tools-0.0.4.dist-info/RECORD,,
