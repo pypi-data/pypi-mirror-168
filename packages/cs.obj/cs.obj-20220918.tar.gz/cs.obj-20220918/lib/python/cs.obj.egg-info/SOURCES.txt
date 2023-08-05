@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+lib/python/cs/obj.py
+lib/python/cs.obj.egg-info/PKG-INFO
+lib/python/cs.obj.egg-info/SOURCES.txt
+lib/python/cs.obj.egg-info/dependency_links.txt
+lib/python/cs.obj.egg-info/requires.txt
+lib/python/cs.obj.egg-info/top_level.txt
