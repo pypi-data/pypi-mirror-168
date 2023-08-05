@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+superior6564/__init__.py
+superior6564/degget.py
+superior6564/generator_of_RU_words.py
+superior6564/install_packages.py
+superior6564/math_test.py
+superior6564.egg-info/PKG-INFO
+superior6564.egg-info/SOURCES.txt
+superior6564.egg-info/dependency_links.txt
+superior6564.egg-info/top_level.txt

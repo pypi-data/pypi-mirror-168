@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: superior6564
+Version: 0.0.1
+Summary: This my first library uploaded to the Internet for testingtest
+Home-page: https://github.com/Superior-GitHub/Superior6564
+Author: Superior_6564
+Author-email: vip.klochayil@gmail.com
+License: Apache License, Version 2.0, see LICENSE file
+Download-URL: https://github.com/Superior-GitHub/Superior6564/archive/refs/heads/main.zip
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+
+"""
+:authors: Superior_6564
+:license: Apache License, Version 2.0, see LICENSE file
+:copyright: (c) 2022 Superior_6564
+"""
+
