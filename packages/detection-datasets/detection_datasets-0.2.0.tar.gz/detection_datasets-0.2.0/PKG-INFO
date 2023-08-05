@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: detection-datasets
+Version: 0.2.0
+Summary: Easily convert datasets between different formats for object detection
+Home-page: https://github.com/blinjrm/detection-dataset
+License: MIT
+Author: Jerome Blin
+Author-email: blinjrm@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: datasets[vision] (>=2.4.0,<3.0.0)
+Requires-Dist: joblib (>=1.1.0,<2.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.21,<0.18.0)
+Project-URL: Repository, https://github.com/blinjrm/detection-dataset
+Description-Content-Type: text/markdown
+
+# detection-datasets
+
