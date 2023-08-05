@@ -1,0 +1,11 @@
+_target_: nlhappy.datamodules.PromptRelationExtractionDataModule
+dataset_dir: ${dataset_dir}
+plm_dir: ${plm_dir}
+
+dataset: 
+auto_length: max
+batch_size: 
+plm: roberta-wwm-base
+transform: prompt_gplinker
+pin_memory: False
+num_workers: 0
