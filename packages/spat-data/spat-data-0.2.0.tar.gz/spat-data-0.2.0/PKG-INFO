@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: spat-data
+Version: 0.2.0
+Summary: 
+Author: Harald Vohringer
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Requires-Dist: Sphinx (==4.2.0); extra == "docs"
+Requires-Dist: matplotlib (>=3.5.3,<4.0.0)
+Requires-Dist: nbsphinx (==0.8.9); extra == "docs"
+Requires-Dist: scikit-image (>=0.19.3,<0.20.0)
+Requires-Dist: sphinx-rtd-theme (==1.0.0); extra == "docs"
+Requires-Dist: sphinxcontrib-napoleon (==0.7); extra == "docs"
+Requires-Dist: tqdm (>=4.64.0,<5.0.0)
+Requires-Dist: xarray (>=2022.6.0,<2023.0.0)
