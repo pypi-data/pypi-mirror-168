@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+SWAG_DNN/taylor.py
+SWAG_DNN.egg-info/PKG-INFO
+SWAG_DNN.egg-info/SOURCES.txt
+SWAG_DNN.egg-info/dependency_links.txt
+SWAG_DNN.egg-info/requires.txt
+SWAG_DNN.egg-info/top_level.txt
