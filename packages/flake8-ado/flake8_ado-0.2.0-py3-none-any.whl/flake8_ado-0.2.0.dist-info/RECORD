@@ -1,0 +1,11 @@
+flake8_ado/__init__.py,sha256=V03h-ESqEinWFjzFZBz1t_TnCTZbhs1KP0p4llg0xcc,47
+flake8_ado/ado_client.py,sha256=Emu7W1Dx303jVu5ivy1CYOW5mRaXnfAmuoeP1IOB_Nc,706
+flake8_ado/checkers.py,sha256=iF6uutVxMAjhHHk78qXNByh4TzbFwm4njYuA4HcPFAo,1810
+flake8_ado/domain.py,sha256=UIXi9F35g2Vxlkn8wEILg5zywN7H6jUmJa6rJxjNQR8,734
+flake8_ado/plugin.py,sha256=foJGKsvgh2m2EmKBT_ly2SYaUDTYHd2SeVW7GV1k_JU,2475
+flake8_ado/scanner.py,sha256=MvxI6hPK16GjrV05Bwnm146YmB_uU_XWgF_W3tNL07Q,1079
+flake8_ado/validators.py,sha256=TxNSertMKKhMhtLMvJlTo1DszJ4XgsjuF1FLyRt71D8,2788
+flake8_ado-0.2.0.dist-info/entry_points.txt,sha256=85EW_VR3sSS8y2BCWkuy5ZJEDtrKdlDakefaLisccEk,42
+flake8_ado-0.2.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+flake8_ado-0.2.0.dist-info/METADATA,sha256=V7W2weM6RTW8saUaFnObruFTmXqVp8JhbgQeE8b_FaA,1674
+flake8_ado-0.2.0.dist-info/RECORD,,
