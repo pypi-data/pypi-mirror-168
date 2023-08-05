@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+astromy/__init__.py
+astromy/__version__.py
+astromy/core.py
+astromy.egg-info/PKG-INFO
+astromy.egg-info/SOURCES.txt
+astromy.egg-info/dependency_links.txt
+astromy.egg-info/requires.txt
+astromy.egg-info/top_level.txt
