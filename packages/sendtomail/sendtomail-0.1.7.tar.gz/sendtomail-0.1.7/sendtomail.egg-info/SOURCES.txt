@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+sendtomail/__init__.py
+sendtomail/server.py
+sendtomail.egg-info/PKG-INFO
+sendtomail.egg-info/SOURCES.txt
+sendtomail.egg-info/dependency_links.txt
+sendtomail.egg-info/top_level.txt
