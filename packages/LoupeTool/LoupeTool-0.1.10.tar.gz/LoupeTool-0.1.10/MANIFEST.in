@@ -1,0 +1,2 @@
+include LoupeTool\*.sh
+include *.py
