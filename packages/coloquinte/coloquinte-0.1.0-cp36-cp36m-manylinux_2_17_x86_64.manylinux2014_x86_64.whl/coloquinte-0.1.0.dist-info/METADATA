@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: coloquinte
+Version: 0.1.0
+Summary: Python interface for the Coloquinte VLSI placer
+Home-page: https://github.com/Coloquinte/PlaceRoute
+Author: Gabriel Gouvine
+Author-email: gabriel.gouvine_git@m4x.org
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+![Build](https://github.com/Coloquinte/PlaceRoute/actions/workflows/build.yml/badge.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8cfe5dc06da74f399fc007e69b742cdc)](https://www.codacy.com/gh/Coloquinte/PlaceRoute/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Coloquinte/PlaceRoute&amp;utm_campaign=Badge_Grade)
+[![GitHub](https://img.shields.io/github/license/coloquinte/torchsr?color=blue)](https://opensource.org/licenses/MIT)
+
+# Coloquinte Place&Route
+
+Coloquinte is a Place&Route tool for electronic circuits.
+Its goal is to provide a single package of well-tested and well-tuned Place&Route algorithms, to be used in open source electronic design toolchains.
+
+This replaces and extends the [placement library](https://github.com/Coloquinte/Coloquinte_placement) used in the [Coriolis](https://gitlab.lip6.fr/vlsi-eda/coriolis/) toolchain.
+
+## Using Coloquinte
+
+Install dependencies and build Coloquinte using CMake :
+``` bash
+sudo apt-get install libboost-all-dev libeigen3-dev
+cmake -B build; cmake --build build
+```
+
+ISPD placement and routing benchmarks are available directly in this repository using Git LFS. Currently, only placement benchmarks can be run.
+``` bash
+python -m pycoloquinte benchmarks/ISPD06/adaptec1/adaptec1.aux
+```
+
+To use Coloquinte as a library, setup a `coloquinte::Circuit` object, and call `coloquinte::place`.
+
+
