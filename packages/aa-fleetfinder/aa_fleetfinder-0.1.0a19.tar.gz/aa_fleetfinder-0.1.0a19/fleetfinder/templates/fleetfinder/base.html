@@ -1,0 +1,13 @@
+{% extends "allianceauth/base.html" %}
+
+{% load i18n %}
+
+{% block page_title %}{% translate "Fleet Finder" %}{% endblock %}
+
+{% block content %}
+    <div class="aa-fleetfinder">
+        {% include "fleetfinder/partials/header/header-navigation.html" %}
+
+        {% block fleetfinder_block %}{% endblock %}
+    </div>
+{% endblock %}
