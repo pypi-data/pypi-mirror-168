@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/otveti_ege.egg-info/PKG-INFO
+src/otveti_ege.egg-info/SOURCES.txt
+src/otveti_ege.egg-info/dependency_links.txt
+src/otveti_ege.egg-info/top_level.txt
+src/otveti_ege_BlueSpy/__init__.py
+src/otveti_ege_BlueSpy/otveti_ege.py
