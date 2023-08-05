@@ -1,0 +1,3 @@
+recursive-include sphinx_ahd_theme *.*
+recursive-exclude sphinx_ahd_theme .*.swp
+recursive-exclude sphinx_ahd_theme .DS_Store
