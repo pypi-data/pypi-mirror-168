@@ -1,0 +1,2 @@
+[console_scripts]
+leopardo = leopardo.__main__:main
