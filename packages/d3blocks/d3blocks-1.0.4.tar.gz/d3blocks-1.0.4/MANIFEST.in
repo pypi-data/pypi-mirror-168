@@ -1,0 +1,2 @@
+include d3blocks/data/*.zip
+include d3blocks/data/*.txt
