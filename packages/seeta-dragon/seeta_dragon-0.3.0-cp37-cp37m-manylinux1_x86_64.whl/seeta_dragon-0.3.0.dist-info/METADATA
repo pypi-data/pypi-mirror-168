@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: seeta-dragon
+Version: 0.3.0
+Summary: Dragon: A Computation Graph Virtual Machine Based Deep Learning Framework
+Home-page: https://github.com/seetaresearch/dragon
+Author: SeetaTech
+License: BSD 2-Clause
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.21.2)
+Requires-Dist: protobuf (<=3.20.1,>=3.9.1)
+
+<p align="center">
+  <img width="100%" src="https://dragon.seetatech.com/download/dragon/assets/banner.png"/>
+</p>
+
+[Dragon](https://dragon.seetatech.com) is a machine learning library that provides diverse programming styles for AI modeling. It builds a virtual machine for computation graph by leveraging the carefully designed intermediate representation, makes execution decoupled from the specific invocation. As a result, it can fuse modern frameworks and integrations together, powered by a unified engine.
+
+Dragon devotes to provide universal but invisible interface for designing AI models. Developers can continue to use their codebase and familiar interface in this novel framework. It hopes to help developers to get rid of the burden in transferring projects written by other frameworks, while achieves similar or even better performance.
+
+Dragon actively tracks the release of [PyTorch](https://www.pytorch.org/) and [TensorFlow](https://www.tensorflow.org), dispatches AI computation on diverse accelerators, including the newest NVIDIA GPUs and Apple Silicon processors. It is the first deep learning framework that focuses on developing multiple styles, rather than promoting private interface. We will always learn from the AI community to evolve Dragon over time.
+
+## Installation
+
+See the [install guide](https://dragon.seetatech.com/install) for the pip package or how to build from source.
+
+## License
+[BSD 2-Clause license](https://github.com/seetaresearch/dragon/blob/master/LICENSE)
