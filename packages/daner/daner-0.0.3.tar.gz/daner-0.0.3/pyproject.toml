@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
+
+[project]
+name = "daner"
+version = "0.0.3"
+authors = [
+    { name = "milisp", email = "milisp@proton.me" },
+]
+description = "async command line manage for fastapi"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/milisp/daner"
+"Bug Tracker" = "https://github.com/milisp/daner/issues"
+
+[project.optional-dependencies]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.1.2",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
