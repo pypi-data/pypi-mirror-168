@@ -1,0 +1,11 @@
+README.md
+setup.py
+ReadingFilledForm/__init__.py
+ReadingFilledForm/clsAlignTemplates.py
+ReadingFilledForm/clsConfig.py
+ReadingFilledForm/clsL.py
+ReadingFilledForm/clsReadForm.py
+ReadingFilledForm.egg-info/PKG-INFO
+ReadingFilledForm.egg-info/SOURCES.txt
+ReadingFilledForm.egg-info/dependency_links.txt
+ReadingFilledForm.egg-info/top_level.txt
