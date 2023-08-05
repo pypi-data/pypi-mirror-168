@@ -1,0 +1,192 @@
+import json
+import typing as t
+import pydantic
+
+from functools import partial
+
+from django.core import exceptions as django_exceptions
+from django.db.models.fields import NOT_PROVIDED
+from django.db.models.fields.json import JSONField
+from django.db.models.query_utils import DeferredAttribute
+
+from . import base, utils, forms
+from ._migration_serializers import GenericContainer, GenericTypes
+
+__all__ = ("SchemaField",)
+
+
+class SchemaAttribute(DeferredAttribute):
+    """
+    Forces Django to call to_python on fields when setting them.
+    This is useful when you want to add some custom field data postprocessing.
+
+    Should be added to field like a so:
+
+    ```
+    def contribute_to_class(self, cls, name, *args, **kwargs):
+        super().contribute_to_class(cls, name,  *args, **kwargs)
+        setattr(cls, name, SchemaDeferredAttribute(self))
+    ```
+    """
+    field: "PydanticSchemaField"
+
+    def __set__(self, obj, value):
+        obj.__dict__[self.field.attname] = self.field.to_python(value)
+
+
+class PydanticSchemaField(JSONField, t.Generic[base.ST]):
+    descriptor_class = SchemaAttribute
+    is_prepared_schema: bool = False
+
+    def __init__(
+        self,
+        *args,
+        schema: t.Union[t.Type["base.ST"], "GenericContainer", "t.ForwardRef", str] = None,
+        config: "base.ConfigType" = None,
+        **kwargs,
+    ):
+        super().__init__(*args, **kwargs)
+
+        self.config = config
+        self.export_params = base.extract_export_kwargs(kwargs, dict.pop)
+        self._resolve_schema(schema)
+
+    def __copy__(self):
+        _, _, args, kwargs = self.deconstruct()
+        return type(self)(*args, **kwargs)
+
+    def get_default(self):
+        value = super().get_default()
+        return self.to_python(value)
+
+    def to_python(self, value) -> "base.SchemaT":
+        # Attempt to resolve forward referencing schema if it was not succesful
+        # during `.contribute_to_class` call
+        if not self.is_prepared_schema:
+            self._prepare_model_schema()
+        try:
+            assert self.decoder is not None
+            return self.decoder().decode(value)
+        except pydantic.ValidationError as e:
+            raise django_exceptions.ValidationError(e.errors())
+
+    def deconstruct(self):
+        name, path, args, kwargs = super().deconstruct()
+        self._deconstruct_schema(kwargs)
+        self._deconstruct_default(kwargs)
+        self._deconstruct_config(kwargs)
+
+        kwargs.pop("decoder")
+        kwargs.pop("encoder")
+
+        return name, path, args, kwargs
+
+    def contribute_to_class(self, cls, name, private_only=False):
+        if self.schema is None:
+            self._resolve_schema_from_type_hints(cls, name)
+
+        try:
+            self._prepare_model_schema(cls)
+        except NameError:
+            # Pydantic was not able to resolve forward references,
+            # which means that it should be postponed to field access
+            self.is_prepared_schema = False
+
+        super().contribute_to_class(cls, name, private_only)
+
+    def formfield(self, **kwargs):
+        if self.schema is None:
+            self._resolve_schema_from_type_hints(self.model, self.attname)
+
+        bound_model = getattr(self, "model", None)
+        field_kwargs = dict(
+            form_class=forms.SchemaField,
+            schema=self.schema,
+            config=self.config,
+            __module__=getattr(bound_model, "__module__", None),
+            **self.export_params,
+        )
+        field_kwargs.update(kwargs)
+        return super().formfield(**field_kwargs)
+
+    def _resolve_schema(self, schema):
+        if isinstance(schema, GenericContainer):
+            schema = t.cast(t.Type["base.ST"], schema.reconstruct_type())
+
+        self.schema = schema
+        if schema is not None:
+            self.serializer_schema = serializer = base.wrap_schema(schema, self.config, self.null)
+            self.decoder = partial(base.SchemaDecoder, serializer)  # type: ignore
+            self.encoder = partial(base.SchemaEncoder, schema=serializer, export=self.export_params)  # type: ignore
+
+    def _resolve_schema_from_type_hints(self, cls, name):
+        annotated_schema = utils.get_annotated_type(cls, name)
+        if annotated_schema is None:
+            raise django_exceptions.FieldError(
+                f"{cls._meta.label}.{name} needs to be either annotated "
+                "or `schema=` field attribute should be explicitly passed"
+            )
+        self._resolve_schema(annotated_schema)
+
+    def _prepare_model_schema(self, cls=None):
+        cls = cls or getattr(self, "model", None)
+        if cls is not None:
+            model_ns = utils.get_local_namespace(cls)
+            self.serializer_schema.update_forward_refs(**model_ns)
+            self.is_prepared_schema = True
+
+    def _deconstruct_default(self, kwargs):
+        default = kwargs.get("default", NOT_PROVIDED)
+
+        if not (default is NOT_PROVIDED or callable(default)):
+            # default value deconstruction with SchemaEncoder is meaningful
+            # only if schema resolution is not deferred
+            if self.is_prepared_schema:
+                plain_default = self.get_prep_value(default)
+                if plain_default is not None:
+                    plain_default = json.loads(plain_default)
+            else:
+                plain_default = default
+
+            kwargs.update(default=plain_default)
+
+    def _deconstruct_schema(self, kwargs):
+        schema = self.schema
+        if isinstance(schema, GenericTypes):
+            schema = GenericContainer.from_generic(self.schema)
+
+        kwargs.update(schema=schema)
+
+    def _deconstruct_config(self, kwargs):
+        kwargs.update(self.export_params, config=self.config)
+
+
+if t.TYPE_CHECKING:
+    OptSchemaT = t.Optional[base.SchemaT]
+
+@t.overload
+def SchemaField(
+    schema: "t.Union[t.Type[base.ST], t.ForwardRef]" = ...,
+    config: "base.ConfigType" = ...,
+    default: "t.Union[OptSchemaT, t.Callable[[], OptSchemaT]]" = ...,
+    *args,
+    null: "t.Literal[True]",
+    **kwargs,
+) -> "t.Optional[base.ST]":
+    ...
+
+@t.overload
+def SchemaField(
+    schema: "t.Union[t.Type[base.ST], t.ForwardRef]" = ...,
+    config: "base.ConfigType" = ...,
+    default: "t.Union[base.SchemaT, t.Callable[[], base.SchemaT]]" = ...,
+    *args,
+    null: "t.Literal[False]" = ...,
+    **kwargs,
+) -> "base.ST":
+    ...
+
+
+def SchemaField(schema=None, config=None, default=NOT_PROVIDED, *args, **kwargs) -> t.Any:
+    kwargs.update(schema=schema, config=config, default=default)
+    return PydanticSchemaField(*args, **kwargs)
