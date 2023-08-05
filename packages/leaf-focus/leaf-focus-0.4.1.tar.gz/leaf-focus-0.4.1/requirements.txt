@@ -1,0 +1,19 @@
+# ocr
+keras-ocr==0.9.1;python_version<"3.10"
+tensorflow==2.10.0;python_version<"3.10"
+numpy==1.21.6;python_version<"3.8"
+numpy==1.23.3;python_version>="3.8"
+matplotlib==3.5.3
+
+# xml
+defusedxml==0.7.1
+
+# packaging
+pyoxidizer==0.22
+
+# version support
+importlib_metadata==4.2.0;python_version<"3.8"
+importlib_metadata==4.12.0;python_version>="3.8"
+importlib_resources==5.9.0
+typing_inspect==0.8.0;python_version<"3.8"
+
