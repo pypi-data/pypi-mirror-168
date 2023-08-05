@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+esporifai/__init__.py
+esporifai/__main__.py
+esporifai/api.py
+esporifai/cli.py
+esporifai/constants.py
+esporifai/utils.py
+esporifai.egg-info/PKG-INFO
+esporifai.egg-info/SOURCES.txt
+esporifai.egg-info/dependency_links.txt
+esporifai.egg-info/entry_points.txt
+esporifai.egg-info/requires.txt
+esporifai.egg-info/top_level.txt
