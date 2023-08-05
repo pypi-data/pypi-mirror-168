@@ -1,0 +1,8 @@
+pelican/plugins/pelican_bibtex_reader/__init__.py,sha256=9x4oGKz-QPpPU8q9PvifoEaO5WsgBAXdjubItpDNNn4,45
+pelican/plugins/pelican_bibtex_reader/bibtex.py,sha256=A_UFeAO-nnCU0SDvxbp9GGKBJwbH5J-MZLRQocHFApM,1956
+pelican/plugins/pelican_bibtex_reader/pelican_bibtex_reader.py,sha256=_E5FUNkAbzTrBXknfrS9GPjqLIxg7XYYBzn90WH5Xmk,1771
+pelican/plugins/pelican_bibtex_reader/test_pelican_bibtex_reader.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican_bibtex_reader-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pelican_bibtex_reader-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pelican_bibtex_reader-0.1.0.dist-info/METADATA,sha256=wwOwSBrkyguqy5p2vP2ekXxEZL8OD8lBXrsDPBze5kM,3579
+pelican_bibtex_reader-0.1.0.dist-info/RECORD,,
