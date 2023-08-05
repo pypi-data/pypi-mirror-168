@@ -1,0 +1,2 @@
+blockchain-etl-common
+web3<6,>=5.29
