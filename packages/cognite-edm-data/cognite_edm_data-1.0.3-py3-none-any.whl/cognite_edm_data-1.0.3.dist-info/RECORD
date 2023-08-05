@@ -1,0 +1,9 @@
+cognite/edm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cognite/edm/connector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cognite/edm/connector/native/__init__.py,sha256=2plzdEEb24FLjE2I2XyBBcJEPYWHccNL4SgtLC_6erg,22
+cognite/edm/connector/native/edm_native_v1_pb2.py,sha256=fmAlk6UDZVo4jnFFssg9ygMPKmgWRdy593lXqt_WeA4,23581579
+cognite/edm/connector/native/edm_native_v1_pb2.pyi,sha256=pT_7qVourrTit2DbwFHulIJP0kq2gok3JFBf-iV2afU,14602355
+cognite_edm_data-1.0.3.dist-info/METADATA,sha256=eIBJPUZZ6kJ8iAKWsJYoQWHzoComBWs5U_SeTUFCvIA,415
+cognite_edm_data-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cognite_edm_data-1.0.3.dist-info/top_level.txt,sha256=64aV5H6IpuuyXlucP73BqEoQyR9A6JP1qTY380b6MpQ,8
+cognite_edm_data-1.0.3.dist-info/RECORD,,
