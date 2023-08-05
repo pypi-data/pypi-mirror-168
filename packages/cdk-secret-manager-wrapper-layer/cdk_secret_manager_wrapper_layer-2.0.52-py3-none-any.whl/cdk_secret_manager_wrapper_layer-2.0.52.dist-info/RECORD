@@ -1,0 +1,9 @@
+cdk_secret_manager_wrapper_layer/__init__.py,sha256=9JCNwYqhfADcIuobkSPnC29ftfe5IVsdb_EzuyOwv2Y,4069
+cdk_secret_manager_wrapper_layer/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk_secret_manager_wrapper_layer/_jsii/__init__.py,sha256=K6j1dqfNXqUnlFD4ce7IvTHd-LLFC2dWNFWfBqYyTmM,446
+cdk_secret_manager_wrapper_layer/_jsii/cdk-secret-manager-wrapper-layer@2.0.52.jsii.tgz,sha256=jApNQ7icw7qp0vcTGKf7XGy6rDLjMTMdhNt3uJCpRD0,26584
+cdk_secret_manager_wrapper_layer-2.0.52.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdk_secret_manager_wrapper_layer-2.0.52.dist-info/METADATA,sha256=RXaNE0eXWybYaPsFDjSTlwgDMr4ncQFrPuxUfW_v6PI,3507
+cdk_secret_manager_wrapper_layer-2.0.52.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdk_secret_manager_wrapper_layer-2.0.52.dist-info/top_level.txt,sha256=S-0ULzP5GOfP5NjmCK7ekQJVHW10yR77ZSmox4ws6Ms,33
+cdk_secret_manager_wrapper_layer-2.0.52.dist-info/RECORD,,
