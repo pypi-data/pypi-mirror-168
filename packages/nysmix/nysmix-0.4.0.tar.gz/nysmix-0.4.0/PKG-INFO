@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: nysmix
+Version: 0.4.0
+Summary: pulling nys fuel mix data from nysiso
+Author: Gautam Sisodia
+Author-email: gautam.sisodia@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: api
+Provides-Extra: book
+Provides-Extra: google
+Provides-Extra: test
+Requires-Dist: SQLAlchemy (>=1.4.27,<2.0.0)
+Requires-Dist: altair (>=4.2.0,<5.0.0); extra == "book"
+Requires-Dist: autodocsumm (>=0.2.8,<0.3.0); extra == "book"
+Requires-Dist: fastapi (>=0.79.0,<0.80.0); extra == "api"
+Requires-Dist: google-auth (>=2.6.6,<3.0.0); extra == "google"
+Requires-Dist: google-cloud-storage (>=2.3.0,<3.0.0); extra == "google"
+Requires-Dist: joblib (>=1.1.0,<2.0.0)
+Requires-Dist: joblibgcs (>=0.2.0,<0.3.0)
+Requires-Dist: jupyter-book (>=0.13.0,<0.14.0); extra == "book"
+Requires-Dist: jupytext (>=1.14.0,<2.0.0); extra == "book"
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: pydantic (>=1.10.1,<2.0.0)
+Requires-Dist: pytest (>=7.1.2,<8.0.0); extra == "test"
+Requires-Dist: sqlalchemy-bigquery (>=1.4.4,<2.0.0); extra == "google"
+Requires-Dist: uvicorn[standard] (>=0.18.2,<0.19.0); extra == "api"
