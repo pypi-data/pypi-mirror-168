@@ -1,0 +1,5 @@
+setup.py
+src/harlaton.egg-info/PKG-INFO
+src/harlaton.egg-info/SOURCES.txt
+src/harlaton.egg-info/dependency_links.txt
+src/harlaton.egg-info/top_level.txt
