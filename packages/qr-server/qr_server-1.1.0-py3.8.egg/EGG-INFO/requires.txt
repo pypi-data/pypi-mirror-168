@@ -1,0 +1,11 @@
+qrookDB
+Flask
+Flask-HTTPAuth
+Flask-Cors
+Jinja2
+confuse
+PyJWT
+psycopg2-binary
+Inject
+requests
+gevent
