@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: md-anchors
+Version: 0.1.0
+Summary: Tiny lib to work with Markdown / CommonMark anchors.
+Home-page: https://github.com/LeMinaw/md-anchors
+Author: LeMinaw
+Author-email: leminaw@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# md-anchors
+
+![Tests](https://github.com/LeMinaw/md-anchors/actions/workflows/python-package.yml/badge.svg)
+[![Codecov](https://codecov.io/gh/LeMinaw/md-anchors/branch/main/graph/badge.svg?token=FF9BKKCUVB)](https://codecov.io/gh/LeMinaw/md-anchors)
+
+Tiny lib to work with Markdown / CommonMark anchors.

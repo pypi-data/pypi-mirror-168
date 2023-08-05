@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+md_anchors.egg-info/PKG-INFO
+md_anchors.egg-info/SOURCES.txt
+md_anchors.egg-info/dependency_links.txt
+md_anchors.egg-info/top_level.txt
+mdanchors/__init__.py
+mdanchors/converters.py
+tests/__init__.py
+tests/test_converters.py
