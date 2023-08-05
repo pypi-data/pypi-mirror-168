@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+lichenggong/__init__.py
+lichenggong/__lidao__.py
+lichenggong/__test__.py
+lichenggong.egg-info/PKG-INFO
+lichenggong.egg-info/SOURCES.txt
+lichenggong.egg-info/dependency_links.txt
+lichenggong.egg-info/top_level.txt
+lichenggong/ikun/Password_for_Boss.txt
+lichenggong/ikun/gread.txt
+lichenggong/ikun/lauguage.txt
+lichenggong/ikun/pi.txt
+lichenggong/ikun/upgrade.txt
+lichenggong/ikun/version.txt
+lichenggong/ikun/windows蓝瓶钙圣经.txt
