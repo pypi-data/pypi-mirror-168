@@ -1,0 +1,2 @@
+class SEIAValueError(ValueError):
+    pass

@@ -1,0 +1,26 @@
+name: Main
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.7'
+      - name: install hatch
+        run: pip install hatch
+      - name: build
+        run: hatch build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist-$GITHUB_SHA
+          path: dist
+          retention-days: 7
