@@ -1,0 +1,79 @@
+[project]
+name = "pyetta"
+version = "0.0.4"
+description = "Tooling for automated testing on embedded bare metal platforms."
+authors = [
+    { name = "Kenneth Ng", email = "ngkaijie@hotmail.com" }
+]
+maintainers = [
+    { name = "Kenneth Ng", email = "ngkaijie@hotmail.com" }
+]
+requires-python = ">=3.7"
+license = { text = "MIT License" }
+readme = "README.md"
+dependencies = [
+    "pyserial",
+    "click>=8.0",
+    "pyocd>=0.34",
+    "junit-xml",
+    "importlib-metadata"
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Hardware",
+    "Topic :: Utilities"
+]
+
+[project.optional-dependencies]
+dev = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "sphinxcontrib-mermaid",
+    "myst-parser",
+    "tomli",
+    "pytest>=6.0",
+    "coverage[toml]",
+    "flake8",
+    "flake8-pyproject",
+    "tox>=3.18",
+    "build"
+]
+
+[project.urls]
+Repository = "https://github.com/kenkaijie/pyetta"
+Documentation = "https://pyetta.readthedocs.io/"
+
+[project.scripts]
+pyetta = "pyetta.__main__:main"
+
+#[BEGIN_SPHINX_ENTRYPOINTS]
+[project.entry-points."pyetta.plugins"]
+_builtins = "pyetta._builtins"
+#[END_SPHINX_ENTRYPOINTS]
+
+[tool.setuptools]
+packages = {"find" = { "include" = ["pyetta", "pyetta.*"]}}
+
+[tool.flake8]
+max-line-length = 99
+exclude = ".git,__pycache__,build,dist,venv"
+count = true
+statistics = true
+
+[tool.coverage.run]
+parallel = true
+branch = true
+source = ["pyetta", "examples", "test"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
