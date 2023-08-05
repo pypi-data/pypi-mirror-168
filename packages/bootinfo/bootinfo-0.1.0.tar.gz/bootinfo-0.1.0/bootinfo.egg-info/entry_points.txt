@@ -1,0 +1,3 @@
+[console_scripts]
+bootinfo = bootinfo.__main__:bootinfo
+wipeboot = bootinfo.__main__:wipeboot

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bootinfo/__init__.py
+bootinfo/__main__.py
+bootinfo/block.py
+bootinfo/signature.py
+bootinfo/test_signature.py
+bootinfo.egg-info/PKG-INFO
+bootinfo.egg-info/SOURCES.txt
+bootinfo.egg-info/dependency_links.txt
+bootinfo.egg-info/entry_points.txt
+bootinfo.egg-info/top_level.txt

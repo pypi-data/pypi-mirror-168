@@ -1,0 +1,65 @@
+# Bootinfo
+
+This tool detects valid boot signatures on storage devices or debugging boot issues on ARM boards.
+
+## Supported platforms
+
+* Allwinner A64 (PinePhone, PineTab, etc...)
+* Rockchip RK3399 (Pinebook Pro, PinePhone Pro, Rockpro64)
+* Generic Amlogic (Should work on all meson platforms)
+
+## The bootinfo command
+
+```shell-session
+$ sudo bootinfo
+Found 'Sunxi/Allwinner eGON header' on /dev/mmcblk0 offset 8192B
+Found 'Sunxi/Allwinner eGON header far' on /dev/mmcblk2 offset 131072B
+Found 'Sunxi/Allwinner eGON header mmcboot' on /dev/mmcblk2boot0 offset 0B
+    /dev/mmcblk2boot0 is not marked bootable!
+```
+
+Detected a bootloader on the SD, one on the eMMC which is on another offset because GPT and a bootloader on
+the mmc boot hardware partition. The boot0 partition is not marked bootable which on Allwinner platforms will
+ignore the boot signature.
+
+## The wipeboot command
+
+The `wipeboot` command is designed to have a similar interface to `wipefs` and allows quickly checking for
+a bootloader on a specific block device and also to wipe it.
+
+```shell-session
+$ sudo wipeboot /dev/mmcblk2
+Found 'Sunxi/Allwinner eGON header far' on /dev/mmcblk2 offset 131072B
+```
+
+To clear the bootloader add the `-a` argument. This will zero out the first few bytes of the bootloader
+without touching any of the surrounding partition tables etc.
+
+```shell-session
+$ sudo wipeboot -a /dev/mmcblk2
+Found 'Sunxi/Allwinner eGON header far' on /dev/mmcblk2 offset 131072B
+Do you want to clean the 1 sectors containing boot signatures?
+Enter to continue, ctrl+c to abort
+```
+
+If you want to temporarily disable the bootloader there's also the `-i` flag, this will invert all the
+bits of the bootloader signature, which will make it undetectable to the actual hardware but is a nice
+and reversible operation.
+
+```shell-session
+$ sudo wipeboot --all --invert /dev/mmcblk2
+Found 'Sunxi/Allwinner eGON header far' on /dev/mmcblk2 offset 131072B
+Do you want to clean the 1 sectors containing boot signatures?
+Enter to continue, ctrl+c to abort
+
+Inverted 8192 (Sunxi/Allwinner eGON header)
+
+$ sudo wipeboot /dev/mmcblk2
+Found 'Sunxi/Allwinner eGON header' on /dev/mmcblk2 offset 8192B (inverted)
+
+$ sudo wipeboot --all --invert /dev/mmcblk2
+... the same operation restores the bootloader
+
+$ sudo wipeboot /dev/mmcblk2
+Found 'Sunxi/Allwinner eGON header' on /dev/mmcblk2 offset 8192B
+```
