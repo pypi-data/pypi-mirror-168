@@ -1,0 +1,10 @@
+DSreader/__init__.py,sha256=LxY1R0WrDDFXo7KuF_EcJ8tBIkAvaL4Dm1poVF4xtto,1705
+DSreader/mapdata.py,sha256=iobd63FZLVS19rBMU4G0pMWOxC5YaIWFvckopbR44Xk,13274
+DSreader/mapelements.py,sha256=miymB_eQkAgve2JjBzKTE7b-W4iGj15d64uMPhxvbL0,2713
+DSreader/maptables.py,sha256=EboRBRjsSOaywcxT2S6braNUEQ3xntmSxN4EVtR6uxw,13664
+DSreader/data/beheertypen_kenmerkendheid.csv,sha256=LpunM0D9HFT601EdveN1rYbvPva5DWab8yFWL26jAYM,238407
+DSreader-0.0.1.dist-info/LICENSE,sha256=I2I-ShYZu0PA3aMZAOFujP6rnL2YMywyNsDZbWdMWDw,1084
+DSreader-0.0.1.dist-info/METADATA,sha256=62KQxMzStV9IrA8OwckjQe14GxGxD7ZefHVVy3_6FTc,1703
+DSreader-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+DSreader-0.0.1.dist-info/top_level.txt,sha256=X_JGxUj10wEn0Jn266uEDQMweVSa5iwqK8Qfka0xjM8,9
+DSreader-0.0.1.dist-info/RECORD,,
