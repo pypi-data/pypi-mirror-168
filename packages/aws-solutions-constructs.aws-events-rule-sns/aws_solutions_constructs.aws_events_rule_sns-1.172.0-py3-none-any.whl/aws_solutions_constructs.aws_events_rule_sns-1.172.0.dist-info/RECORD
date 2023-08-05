@@ -1,0 +1,9 @@
+aws_solutions_constructs/aws_events_rule_sns/__init__.py,sha256=XyyrUEt-eSgmJ8j6KArorJH66Fjc93hpE2Y5Fp-gWHE,21395
+aws_solutions_constructs/aws_events_rule_sns/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_solutions_constructs/aws_events_rule_sns/_jsii/__init__.py,sha256=mEHfSoYKsItPEqisVsXxx1k0mo9F1uzB8nUjF2Q6Lfw,673
+aws_solutions_constructs/aws_events_rule_sns/_jsii/aws-events-rule-sns@1.172.0.jsii.tgz,sha256=KcY5qyY3qcbNZQBYI0fzCRK4tIkJSc6lf6ekc-QIoIc,217756
+aws_solutions_constructs.aws_events_rule_sns-1.172.0.dist-info/LICENSE,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+aws_solutions_constructs.aws_events_rule_sns-1.172.0.dist-info/METADATA,sha256=FQ-Xc1_kSHh0Fp_5GwX4ucW_AT3_fFGp7lZtvYkTXfM,9276
+aws_solutions_constructs.aws_events_rule_sns-1.172.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_solutions_constructs.aws_events_rule_sns-1.172.0.dist-info/top_level.txt,sha256=hi3us_KW7V1ocfOqVsNq1o3w552jCEgu_KsCckqYWsg,25
+aws_solutions_constructs.aws_events_rule_sns-1.172.0.dist-info/RECORD,,
