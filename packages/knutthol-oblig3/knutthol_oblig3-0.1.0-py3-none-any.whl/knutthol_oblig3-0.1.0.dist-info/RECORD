@@ -1,0 +1,13 @@
+instapy/__init__.py,sha256=TAxrEwR6JwsiJWBPIJNDhO5ZY_Mp_NVfOpLFCzViWvQ,1045
+instapy/__main__.py,sha256=pIMPIdtgZz_XY8sZBHWF0Ap5GhfLWhyvVv1BH7vQpsg,126
+instapy/cli.py,sha256=FKXboiOvWXC6rw-rc2LTk61w_HhZZYldP9Sr0TU6uhw,1104
+instapy/io.py,sha256=S8lPGx8MLUOzJI6A_bES0xRVRPR9l2hpht73MQDO7j4,739
+instapy/numba_filters.py,sha256=0mKY263wPPiW3RF1TkW17qepH6MjwE7vEIUN_d92-_g,2753
+instapy/numpy_filters.py,sha256=PCZWq-vMFPjyz2AOvBf4cBgZZN-WOSuZuwuUyizBQm4,3304
+instapy/profiling.py,sha256=Se6G9kFWt2H0TPHXdoLrtB0KLd2uZtvXiwr_M3m4TQc,2288
+instapy/python_filters.py,sha256=-tNP0Oabx3nD26roxVA98zVFGEr-6mfVrE9p5GRN4qQ,2959
+instapy/timing.py,sha256=sKwW-EBVV1zuNKSMhX-oBIUGlycOCFIwq9i3eS3uynw,3477
+knutthol_oblig3-0.1.0.dist-info/METADATA,sha256=eJQgLpvPIzR8f3SPy7b1yKsp5TSoQb1zoDliP9dSmm8,172
+knutthol_oblig3-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+knutthol_oblig3-0.1.0.dist-info/top_level.txt,sha256=gK4ie7YxWKGJpKaUzCTl_nK4yHBtPOvRJwL7I0mZ8Y8,8
+knutthol_oblig3-0.1.0.dist-info/RECORD,,
