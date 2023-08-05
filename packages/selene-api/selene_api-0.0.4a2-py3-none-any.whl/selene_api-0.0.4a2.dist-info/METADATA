@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: selene-api
+Version: 0.0.4a2
+Summary: unofficial api for selene backend
+Home-page: https://github.com/OpenVoiceOS/selene_api
+Author: jarbasai
+Author-email: jarbasai@mailfence.com
+License: Apache2
+Platform: UNKNOWN
+Requires-Dist: ovos-utils (>=0.0.25a4)
+
+UNKNOWN
+
+
