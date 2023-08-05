@@ -1,0 +1,3 @@
+[console_scripts]
+vspy = vspy.main:main
+

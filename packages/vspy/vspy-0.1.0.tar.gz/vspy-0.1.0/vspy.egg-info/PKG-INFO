@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: vspy
+Version: 0.1.0
+Summary: Create a vs code python project template
+Home-page: https://github.com/JonSteinn/vspy
+Author: Jon Steinn Eliasson
+Author-email: jonsteinn@gmail.com
+License: GPLv3
+Project-URL: Source, https://github.com/JonSteinn/vspy
+Project-URL: Tracker, https://github.com/JonSteinn/vspy/issues
+Description: ****
+        vspy
+        ****
+        |build| |pypi| |pyve|
+        
+        Personal python project template creator.
+        
+        .. |build| image:: https://github.com/JonSteinn/vspy/workflows/tests/badge.svg
+            :alt: GHAction
+            :target: https://github.com/JonSteinn/vspy/actions
+        .. |pypi| image:: https://img.shields.io/pypi/v/vspy
+            :alt: PyPI
+            :target: https://pypi.org/project/vspy/
+        .. |pyve| image:: https://img.shields.io/pypi/pyversions/vspy.svg
+            :alt: PyV
+            :target: https://pypi.python.org/pypi/vspy
+        
+Keywords: vscode python project-template
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
