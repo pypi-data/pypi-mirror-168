@@ -1,0 +1,11 @@
+setup.py
+aifactory/__init__.py
+aifactory/api.py
+aifactory/demo.py
+aifactory/grade.py
+aifactory/make_zip.py
+aifactory.egg-info/PKG-INFO
+aifactory.egg-info/SOURCES.txt
+aifactory.egg-info/dependency_links.txt
+aifactory.egg-info/requires.txt
+aifactory.egg-info/top_level.txt
