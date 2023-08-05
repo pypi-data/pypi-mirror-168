@@ -1,0 +1,10 @@
+graphviz==0.19.1
+
+[docs]
+nbsphinx==0.8.8
+sphinxcontrib-napoleon==0.7
+sphinx-rtd-theme==1.0.0
+
+[test]
+pytest<6,>=5.4
+coverage<6,>=5.2
