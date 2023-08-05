@@ -1,0 +1,2 @@
+[console_scripts]
+jupyter-app_launcher = jupyter_app_launcher.script:build_lite
