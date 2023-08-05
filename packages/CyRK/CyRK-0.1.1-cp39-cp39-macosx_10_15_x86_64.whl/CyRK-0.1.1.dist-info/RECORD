@@ -1,0 +1,14 @@
+CyRK/__init__.py,sha256=Zx-zAOq3hU2YyeRjffWRpourBGYiP3it9rD1S1YafrU,185
+CyRK/_test.py,sha256=bHqP7nnq4j4heYm6Uc3W8futpQkFpG9Bwt0TBaOm3hw,258
+CyRK/_version.py,sha256=Z7IYTynSFuybl-C9yXsK_gx-5WY3Fhh7wPUoFacCGec,1229
+CyRK/cy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CyRK/cy/_cyrk.pyx,sha256=GibrSLkzl0SeNi6Az8ApsRmnkPHhGyvG4IkS_wH3CXI,25895
+CyRK/cy/cyrk.cpython-39-darwin.so,sha256=644JSp-I0tuBcmBNTad0baUEr2CNEOdQLBqhb1YPsYY,380736
+CyRK/nb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CyRK/nb/dop_coefficients.py,sha256=ireOyPTlp0M16gkDcDzi3rBS_77SidVy9NeMJ99pBKI,7329
+CyRK/nb/nbrk.py,sha256=AADziOgnNf5HpeT6q5yuvZaZAngLoXIOSk8-wQOwANY,14032
+CyRK-0.1.1.dist-info/LICENSE.md,sha256=S8rOiX8ZLjpr1_V16-hc2-dQbJ5GtK6K2XhuRPhyM3g,18625
+CyRK-0.1.1.dist-info/METADATA,sha256=2Kyr85N92Wf9BTN4Oy0kv0naVzC9YuT4Jmap3iLosCQ,8308
+CyRK-0.1.1.dist-info/WHEEL,sha256=1aIKcOiZwCaey2y-OH_J-W7IhsRHMsIvvidnI8v_CqQ,110
+CyRK-0.1.1.dist-info/top_level.txt,sha256=lDJmWEkhcd88FMoR_5glwRgfsx6_2E7GixEfB78xCr0,5
+CyRK-0.1.1.dist-info/RECORD,,
