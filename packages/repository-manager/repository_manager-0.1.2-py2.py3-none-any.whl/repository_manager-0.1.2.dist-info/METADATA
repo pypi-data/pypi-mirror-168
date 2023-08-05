@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: repository-manager
+Version: 0.1.2
+Summary: Manage your git projects
+Home-page: https://github.com/Knucklessg1/repository-manager
+Author: Audel Rouhi
+Author-email: knucklessg1@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Public Domain
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Repository Manager
+*Version: 0.1.2*
+
+Manage your Git projects
+
+Run all Git supported tasks using Git Actions command
+
+### Usage:
+| Short Flag | Long Flag        | Description                       |
+|------------|------------------|-----------------------------------|
+| -h         | --help           | See Usage                         |
+| -b         | --default-branch | Checkout default branch           |
+| -c         | --clone          | Clone projects specified          |
+| -d         | --directory      | Directory to clone/pull projects  |
+| -f         | --file           | File with repository links        |
+| -p         | --pull           | Pull projects in parent directory |
+| -r         | --repositories   | Comma separated Git URLs          |
+
+### Example:
+```bash
+git-manager --clone --pull --directory '/home/user/Downloads' --file '/home/user/Downloads/repositories.txt' --repositories 'https://github.com/Knucklessg1/media-downloader,https://github.com/Knucklessg1/genius-bot'
+```
+
+
+#### Build Instructions
+Build Python Package
+
+```bash
+sudo chmod +x ./*.py
+sudo pip install .
+python3 setup.py bdist_wheel --universal
+# Test Pypi
+twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose -u "Username" -p "Password"
+# Prod Pypi
+twine upload dist/* --verbose -u "Username" -p "Password"
+```
+
+
