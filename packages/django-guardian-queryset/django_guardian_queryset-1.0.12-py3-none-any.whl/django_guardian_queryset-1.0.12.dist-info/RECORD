@@ -1,0 +1,17 @@
+guardian_queryset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guardian_queryset/admin.py,sha256=cpPZkdcYIStqeNTs1vjXvcWVy3eY6bKC_xEBgUYASVc,1460
+guardian_queryset/apps.py,sha256=LJzcI_GKs-5QMRILnAAne3G-Za4nWPVhQBgSkDax2L8,108
+guardian_queryset/decorators.py,sha256=7XdvyzW6OfJrsI4KHMJPFqihU1Xy-eY1eZ30jGst3-o,362
+guardian_queryset/filters.py,sha256=uJFkJZqarI6qYc7e44vg86XxmKGiht7de3QfNyf7Zqs,306
+guardian_queryset/manager.py,sha256=dreDwdrkPE1U3e1mGcJMLGoSzsrD-KOGeian-jlnXKA,370
+guardian_queryset/models.py,sha256=VFGwnpQ3y2FVGa-wifxNPEHQbZcTl1JYY4ameZxczGo,5509
+guardian_queryset/permissions.py,sha256=p28B3tbQxNOp4mpVuBHvhmBYTMlaWeRlsebs-EkqXyU,723
+guardian_queryset/queryset.py,sha256=JIRblOPgvwhee3hPReAX7QB6YXi2NqKRDkyHXjI1FcM,5828
+guardian_queryset/serializers.py,sha256=UEuS6hpduunT0Lw2ikA2jcb7gyM7fVdA03ePnhTE_84,3330
+guardian_queryset/utils.py,sha256=jfhxgzhxZms4gRTmDOfTaq1qJlK85tHJRKgJ488O4-w,3404
+guardian_queryset/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guardian_queryset/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_guardian_queryset-1.0.12.dist-info/METADATA,sha256=lxHfWgUa4Mzpc1633yXswwImzVK96WItDlWVgiULDAA,1209
+django_guardian_queryset-1.0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_guardian_queryset-1.0.12.dist-info/top_level.txt,sha256=NjaBZgufhN3vJtpGD1J6zws9bX4lOVZiS5hoi2q_1T0,18
+django_guardian_queryset-1.0.12.dist-info/RECORD,,
