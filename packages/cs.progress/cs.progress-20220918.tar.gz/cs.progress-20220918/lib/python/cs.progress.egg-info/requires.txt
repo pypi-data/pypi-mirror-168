@@ -1,0 +1,7 @@
+cs.deco>=20220918.1
+cs.logutils>=20220531
+cs.py.func>=20220619
+cs.seq>=20220530
+cs.units>=20220311
+cs.upd>=20220918
+typeguard
