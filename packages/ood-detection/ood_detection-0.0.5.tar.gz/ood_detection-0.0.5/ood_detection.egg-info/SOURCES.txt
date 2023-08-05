@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+ood_detection/__init__.py
+ood_detection/_modidx.py
+ood_detection/core.py
+ood_detection.egg-info/PKG-INFO
+ood_detection.egg-info/SOURCES.txt
+ood_detection.egg-info/dependency_links.txt
+ood_detection.egg-info/entry_points.txt
+ood_detection.egg-info/not-zip-safe
+ood_detection.egg-info/requires.txt
+ood_detection.egg-info/top_level.txt
