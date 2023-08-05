@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/zqmtool.egg-info/PKG-INFO
+src/zqmtool.egg-info/SOURCES.txt
+src/zqmtool.egg-info/dependency_links.txt
+src/zqmtool.egg-info/top_level.txt
