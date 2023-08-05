@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: py-seeds
+Version: 0.0.2
+Summary: Seed function for random, torch, torch.cuda
+Home-page: https://github.com/ZiUNO/py-seeds
+Author: ZiUNO
+Author-email: ziuno@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Seed function (random, torch, torch.cuda)
+- seed_everything
+- get_seed_state
+- set_seed_state
+## seed_everything
+```python
+from py_seeds import seed_everything
+
+seed_everything(0)
+```
+
+## get_seed_state
+```python
+import torch
+
+from py_seeds import get_seed_state
+
+
+state = get_seed_state()
+
+torch.save(state, 'seeds.pth')
+```
+## set_seed_state
+```python
+import torch
+
+from py_seeds import set_seed_state
+
+
+state = torch.load('seeds.pth')
+
+set_seed_state(state)
+```
+

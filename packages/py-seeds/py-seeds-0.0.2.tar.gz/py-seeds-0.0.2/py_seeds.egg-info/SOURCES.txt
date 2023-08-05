@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+py_seeds/__init__.py
+py_seeds/utils.py
+py_seeds.egg-info/PKG-INFO
+py_seeds.egg-info/SOURCES.txt
+py_seeds.egg-info/dependency_links.txt
+py_seeds.egg-info/requires.txt
+py_seeds.egg-info/top_level.txt
