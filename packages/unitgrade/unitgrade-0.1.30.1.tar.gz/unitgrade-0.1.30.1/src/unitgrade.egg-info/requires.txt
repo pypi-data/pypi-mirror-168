@@ -1,0 +1,13 @@
+numpy
+tabulate
+pyfiglet
+coverage
+colorama
+tqdm
+importnb
+requests
+watchdog
+flask_socketio
+flask
+Werkzeug
+diskcache
