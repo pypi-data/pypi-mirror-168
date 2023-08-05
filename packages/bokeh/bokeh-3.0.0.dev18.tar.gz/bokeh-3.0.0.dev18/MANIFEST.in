@@ -1,0 +1,15 @@
+# Package files and data
+graft src/bokeh/core/_templates
+graft src/bokeh/sampledata/_data
+graft src/bokeh/sphinxext/_templates
+graft src/bokeh/server/static
+exclude src/bokeh/server/static/js/*.json
+global-exclude *.js.map
+global-exclude *.ts.map
+include src/bokeh/server/static/js/bokeh.json
+include src/bokeh/server/views/*.html
+include src/bokeh/server/views/*.ico
+include src/bokeh/util/sampledata.json
+include src/bokeh/_sri.json
+include src/bokeh/LICENSE.txt
+include src/bokeh/py.typed
