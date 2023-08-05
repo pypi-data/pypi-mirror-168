@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+nodechup/CLI.py
+nodechup/__init__.py
+nodechup/nodejs.py
+nodechup/utilities.py
+nodechup.egg-info/PKG-INFO
+nodechup.egg-info/SOURCES.txt
+nodechup.egg-info/dependency_links.txt
+nodechup.egg-info/entry_points.txt
+nodechup.egg-info/requires.txt
+nodechup.egg-info/top_level.txt
