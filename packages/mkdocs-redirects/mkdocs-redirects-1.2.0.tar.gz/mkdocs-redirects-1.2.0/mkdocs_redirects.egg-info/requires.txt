@@ -1,0 +1,17 @@
+mkdocs>=1.1.1
+
+[dev]
+pytest
+black
+isort
+autoflake
+twine>=1.13.0
+
+[release]
+twine>=1.13.0
+
+[test]
+pytest
+black
+isort
+autoflake
