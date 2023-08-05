@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: function-cooldowns
+Version: 1.5.0
+Summary: A simplistic decorator based approach to rate limiting function calls.
+Home-page: UNKNOWN
+Author: Skelmis
+Author-email: ethan@koldfusion.xyz
+License: UNKNOWN
+Project-URL: Issue tracker, https://github.com/Skelmis/Function-Cooldowns/issues
+Project-URL: Documentation, https://function-cooldowns.readthedocs.io/en/latest/
+Project-URL: Homepage, https://github.com/Skelmis/Function-Cooldowns
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Function Cooldowns
+---
+
+A simplistic take on functional cooldowns. 
+
+
+---
+
+### Example usage
+
+A simplistic example, read more on the docs!
+
+```python
+import cooldowns
+
+...
+
+@bot.slash_command(
+    description="Ping command",
+)
+@cooldowns.cooldown(1, 15, bucket=cooldowns.SlashBucket.author)
+async def ping(interaction: nextcord.Interaction):
+    await interaction.response.send_message("Pong!")
+```
+
+---
+
+#### Find more examples [here](https://function-cooldowns.readthedocs.io/en/latest/modules/examples.html).
+
+#### For documentation, please see [here](https://function-cooldowns.readthedocs.io/en/latest/).
+
+---
+
+### Support
+
+Want realtime help? Join the discord [here](https://discord.gg/BqPNSH2jPg).
+
+---
+
+### Funding
+
+Want a feature added quickly? Want me to help build your software using this?
+
+Sponsor me [here](https://github.com/sponsors/Skelmis)
+
+

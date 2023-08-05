@@ -1,0 +1,17 @@
+cooldowns/__init__.py,sha256=pQhpfOQSQylVSgv39F0d4nuFdmTLP3bNcSBfy83iJEQ,1162
+cooldowns/cooldown.py,sha256=Y3HhfF4hDmAzF2oE1FjIXdqzSOfRlbdt61b6m0hfjss,13662
+cooldowns/cooldown_times_per.py,sha256=Uope4hf0u_TmeUhdD11crw8Ih7UZFDPhK8QFTPtyTtk,3143
+cooldowns/exceptions.py,sha256=fpU8AR6ZHgKq6a9UdnG9WftG2UmfTbS6tNJZaiJqSRU,2019
+cooldowns/persistence.py,sha256=AJIFHqJMJo7VjRtfMd4jIdfo98NrW8WAjg-gQQV17TU,2769
+cooldowns/utils.py,sha256=0tWTFerVzNeSPZFpJYinpGEBQ6sNeTWJ-jeCB20MwrA,6874
+cooldowns/buckets/__init__.py,sha256=hvbHTHpHq5wUc1yNoRnUgi1fbULv3o15pPFUFZh8izY,187
+cooldowns/buckets/hashable_arguments.py,sha256=VOFHdpp4ae7Zdv-xaTHCLwhBoM4kUZ4nxjdsE7di01Y,2222
+cooldowns/buckets/main.py,sha256=b0Dq55lYkOV3JtGw5r9Y0Awi-VzLaJw3Vd5UFW5ZpZA,950
+cooldowns/buckets/slash.py,sha256=UaMMJbyU0XotRBxb9vqyb83fOvSOPPfmfcfcxe_bOMM,1181
+cooldowns/protocols/__init__.py,sha256=IqMj81_cjd7XIxq0mHMKrGjRMr82Gedz0KmNWbEFrfA,82
+cooldowns/protocols/bucket.py,sha256=FJ2KTwYhf-xIGYnJkMSvO83E2aqllypW3U-ZQA9RCMc,375
+function_cooldowns-1.5.0.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+function_cooldowns-1.5.0.dist-info/METADATA,sha256=AdsBdxGUOV9QtBwlgo_Mb1qM011Gd5SFyk-xfFh7uh0,1570
+function_cooldowns-1.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+function_cooldowns-1.5.0.dist-info/top_level.txt,sha256=VPs_cKv3v89FunKzyYWp54ZAL27fRX2pMw2T3q6h5BI,10
+function_cooldowns-1.5.0.dist-info/RECORD,,
