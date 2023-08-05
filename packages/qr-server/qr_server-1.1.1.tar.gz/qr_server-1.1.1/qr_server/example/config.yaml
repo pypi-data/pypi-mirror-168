@@ -1,0 +1,16 @@
+app:
+  app_name: AuthService
+  debug: false
+  host: localhost
+  port: 5005
+  logging:
+      logger_name: AuthServiceLogger
+      app_name: AuthService
+      level: info
+      file: auth_service.log
+      file_level: info
+
+jwt:
+  secret: 'unexpectedly white'
+  algorithm: HS256
+  exp_seconds: 86400
