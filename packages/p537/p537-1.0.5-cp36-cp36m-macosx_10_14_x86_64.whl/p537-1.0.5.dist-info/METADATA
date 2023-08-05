@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: p537
+Version: 1.0.5
+Summary: A tiny platform-specific distribution with a console script.
+Home-page: https://github.com/jsirois/p537
+Author: John Sirois
+Author-email: john.sirois@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+.. image:: https://travis-ci.org/jsirois/p537.svg?branch=master
+    :target: https://travis-ci.org/jsirois/p537
+.. image:: https://img.shields.io/pypi/l/p537.svg
+    :target: https://pypi.org/project/p537/
+.. image:: https://img.shields.io/pypi/v/p537.svg
+    :target: https://pypi.org/project/p537/
+.. image:: https://img.shields.io/pypi/pyversions/p537.svg
+    :target: https://pypi.org/project/p537/
+.. image:: https://img.shields.io/pypi/wheel/p537.svg
+    :target: https://pypi.org/project/p537/#files
+
+A tiny platform-specific distribution with a console script.
+
+This distribution serves as a test-case for
+`PEX Issue #537 <https://github.com/pantsbuild/pex/issues/537>`_.
+
+
+
