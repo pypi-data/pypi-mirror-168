@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: trialtracker
+Version: 0.1.5
+Summary: Methods to extract and transform clinical trial data
+Home-page: https://github.com/zfx0726/trialtracker
+Author: Forrest
+Author-email: zfx0726@gmail.com
+License: MIT
+Download-URL: https://github.com/zfx0726/trialtracker/archive/refs/tags/v.0.1.5.tar.gz
+Keywords: clinical,trial,eligibility,criteria,cancer,oncology,nlp
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [What is it?](#what-is-it)
+* [Main Features](#main-features)
+* [Impact](#impact)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Built With](#built-with)
+<!-- * [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
+ -->
+
+
+<!-- What is it -->
+## What is it?
+
+trialtracker is a Python package that provides methods to easily extract, transform, and download clinical trial data.  It aims to create standardized data infrastructure for clinical trial digitalization, focusing on structured representation of clinical trial protocols.
+
+
+
+<!-- Main Features -->
+## Main Features
+Here are some of the things trialtracker allows you to do:
+
+<br /> - Download pre-curated clinical trial and clinical trial eligibility criteria datasets
+<br /> - Easily query data from clinicaltrials.gov
+<br /> - Apply state-of-the-art natural language processing methods to extract useful information from raw clinicaltrials.gov data
+<br /> - Data visualizations and analysis of clinical trial data
+<br />
+
+The current version of the package is primarily focused on cancer trials, which are an important area for clinical development.  Improved data infrastructure is especially helpful in this area given the complexity of the disease and treatments.
+
+
+
+
+
+
+
+<!-- Impact -->
+## Impact
+
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+Cancer is one of the leading causes of death worldwide. The way we test and approve new treatments is through clinical trials.  But 97% of cancer trials 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6409418/">fail</a>, 
+    driven by inability to 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6092479/">recruit</a>
+    enough patients.
+And yet many patients are routinely 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3980490/">excluded</a> 
+    from trials, including minority groups who are most affected by the disease.
+    <br />
+    <br />
+
+The key to solving these problems is in changing how we design trials, recruit patients, and report on results. Regulatory requirements for clinical trial registration became required in 2017, making semi-structured trial protocol data available on clinicaltrials.gov. Today, this is not being systematically used in trial design, patient recruitment, or reporting decisions in Oncology. This project aims to unlock the value of clinical trial data to help accelerate cancer research and improve the lives of cancer patients.
+
+<!-- A few goals of this project:    
+<br /> - Explore clinical trial data from clinicaltrials.gov
+    <br /> - Develop a method to extract structured core eligibility criteria for cancer trials (extending work  
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30753493/">here</a>  and 
+    <a href="https://arxiv.org/abs/2006.07296">here</a>)
+    <br /> - Combine extracted criteria with real-world oncology data to evaluate the impact of eligibility criteria on trial racial diversity (extending work 
+    <a href="https://www.nature.com/articles/s41586-021-03430-5">here</a> by incorporating race data)
+    <br /> - Generate a diversity rating for each clinical trial -->
+
+
+<!-- Installation -->
+## Installation
+
+trialtracker can be installed from PyPi
+```sh
+pip install trialtracker
+```
+
+
+
+ <!-- USAGE EXAMPLES -->
+## Usage
+
+<!-- example documentation https://pypi.org/project/datasets/ -->
+
+trialtracker is made to be very simple to use. The main methods are:
+* ```sh
+trialtracker.list_datasets()
+``` to list the available datasets
+
+
+Here is a quick example:
+```sh
+from trialtracker import list_datasets, load_dataset
+```
+
+
+
+### Built With
+Technologies and methods used to build this project!
+* [Python](https://www.python.org/)
+* [Golang](https://go.dev/)
+* [Named Entity Recognition and Named Entity Linking](https://arxiv.org/abs/2006.07296)
+
+
+
+<!-- ROADMAP -->
+<!-- ## Roadmap
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+ -->
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png -->
+
+
