@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+GraFT_Python/__init__.py
+GraFT_Python/explainations.py
+GraFT_Python/main_functions_graft.py
+GraFT_Python/run_graft.py
+GraFT_Python/untitled2.py
+GraFT_Python.egg-info/PKG-INFO
+GraFT_Python.egg-info/SOURCES.txt
+GraFT_Python.egg-info/dependency_links.txt
+GraFT_Python.egg-info/requires.txt
+GraFT_Python.egg-info/top_level.txt

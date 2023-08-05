@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: GraFT_Python
+Version: 0.0.1
+Summary: Python implementation for the GraFT model presented in https://pubmed.ncbi.nlm.nih.gov/35533160/
+Author: Noga Mudrik
+Author-email: <nmudrik1@jhmi.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# GraFT_Python
