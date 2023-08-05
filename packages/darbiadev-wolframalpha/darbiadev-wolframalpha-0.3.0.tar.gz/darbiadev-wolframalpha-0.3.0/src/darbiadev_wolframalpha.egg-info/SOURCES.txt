@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/darbiadev_wolframalpha/__init__.py
+src/darbiadev_wolframalpha/wolframalpha_services.py
+src/darbiadev_wolframalpha.egg-info/PKG-INFO
+src/darbiadev_wolframalpha.egg-info/SOURCES.txt
+src/darbiadev_wolframalpha.egg-info/dependency_links.txt
+src/darbiadev_wolframalpha.egg-info/requires.txt
+src/darbiadev_wolframalpha.egg-info/top_level.txt

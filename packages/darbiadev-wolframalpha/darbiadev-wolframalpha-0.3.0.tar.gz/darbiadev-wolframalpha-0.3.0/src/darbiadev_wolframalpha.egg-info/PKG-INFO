@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: darbiadev-wolframalpha
+Version: 0.3.0
+Summary: A wrapper for WolframAlpha's API
+Author-email: Bradley Reynolds <bradley.reynolds@darbia.dev>
+License: MIT
+Project-URL: repository, https://github.com/darbiadev/darbiadev-wolframalpha/
+Project-URL: documentation, https://darbia.dev/darbiadev-wolframalpha/
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
+
+# darbiadev-wolframalpha
+
+A wrapper for WolframAlpha's API
