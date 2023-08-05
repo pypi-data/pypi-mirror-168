@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "desktopography"
+version = "1.3"
+description = "Desktopography command line"
+homepage = "https://gitlab.com/fbochu/desktopography"
+repository = "https://gitlab.com/fbochu/desktopography"
+keywords = ["desktopography", "wallpapers"]
+authors = ["Fabien Bochu <fabien.bochu+desktopography@nenio.xyz>"]
+license = "BSD"
+readme = "README.md"
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Environment :: X11 Applications',
+    'Intended Audience :: End Users/Desktop',
+    'License :: OSI Approved :: BSD License',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Topic :: Desktop Environment',
+    'Topic :: Utilities',
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beautifulsoup4 = "^4.11.1"
+click = "^8.1.3"
+daiquiri = "^3.2.1"
+requests = "^2.28.1"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.10.1"
+prospector = "^1.7.7"
+black = "^22.8.0"
+mypy = "^0.971"
+types-requests = "^2.28.10"
+types-beautifulsoup4 = "^4.11.6"
+
+[tool.poetry.scripts]
+desktopography = "desktopography.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+force_single_line = true
+force_sort_within_sections = true
+
+[tool.flake8]
+max-line-length = 120
+exclude = "build,dist,venv"
+max-complexity = 10
