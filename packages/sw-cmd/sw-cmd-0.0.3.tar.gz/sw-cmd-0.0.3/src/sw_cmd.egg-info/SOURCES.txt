@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/sw_cmd.egg-info/PKG-INFO
+src/sw_cmd.egg-info/SOURCES.txt
+src/sw_cmd.egg-info/dependency_links.txt
+src/sw_cmd.egg-info/entry_points.txt
+src/sw_cmd.egg-info/requires.txt
+src/sw_cmd.egg-info/top_level.txt
+src/swc/__init__.py
+src/swc/swc.py
+src/swc/swc_processor.py
