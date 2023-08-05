@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+a_transformers_pytorch/__init__.py
+a_transformers_pytorch/transformers.py
+a_transformers_pytorch.egg-info/PKG-INFO
+a_transformers_pytorch.egg-info/SOURCES.txt
+a_transformers_pytorch.egg-info/dependency_links.txt
+a_transformers_pytorch.egg-info/requires.txt
+a_transformers_pytorch.egg-info/top_level.txt
