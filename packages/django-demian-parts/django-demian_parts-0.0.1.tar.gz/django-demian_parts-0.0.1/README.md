@@ -1,0 +1,38 @@
+django-demian_parts
+==========
+
+django-demian_parts is a Django app to use for demiansoft. (현재 analytics만 구현)
+
+Quick start
+------------
+
+1. Add "demian_parts" to your INSTALLED_APPS setting like this
+```python
+INSTALLED_APPS = [
+    ...
+    'demian_parts',
+]
+```
+
+2. 코드를 넣고자 하는 위치에 다음을 추가 한다.
+```html
+{% load analytics_tags %}
+{% make_analytics %}
+```
+
+* context example
+```python
+context = {
+    'analytics': {
+        'google_id': "UA-16872449-1",
+        'naver_id': "feadf9e1b55868",
+        'ads_id': "AW-1018052709",
+        'ads_conversion': {
+            'cta': "HdrUCNiXsd8DEOWAueUD",
+            'naver': "91WCCPvk6fEBEOWAueUD",
+            'call': "pThXCJXpsN8DEOWAueUD",
+        },
+    },
+}
+```
+
