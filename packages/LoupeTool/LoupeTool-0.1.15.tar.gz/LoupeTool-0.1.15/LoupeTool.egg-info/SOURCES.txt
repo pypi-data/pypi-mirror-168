@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+LoupeTool/Cal.sh
+LoupeTool/ConvertOutput.py
+LoupeTool/GetIcityForBLASTHits.py
+LoupeTool/Loupe.py
+LoupeTool/RemoveFASTAIDRedundency.py
+LoupeTool/RunClust.sh
+LoupeTool/__init__.py
+LoupeTool/entry.py
+LoupeTool.egg-info/PKG-INFO
+LoupeTool.egg-info/SOURCES.txt
+LoupeTool.egg-info/dependency_links.txt
+LoupeTool.egg-info/top_level.txt
