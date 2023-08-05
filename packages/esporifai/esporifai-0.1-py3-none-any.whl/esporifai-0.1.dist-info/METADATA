@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: esporifai
+Version: 0.1
+Summary: A simple CLI to get data from the Spotify API
+Home-page: https://github.com/chekos/esporifai
+Author: Sergio Sánchez Zavala
+License: Apache License, Version 2.0
+Project-URL: Issues, https://github.com/chekos/esporifai/issues
+Project-URL: CI, https://github.com/chekos/esporifai/actions
+Project-URL: Changelog, https://github.com/chekos/esporifai/releases
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx (==0.23.0)
+Requires-Dist: playwright (==1.24.1)
+Requires-Dist: python-dotenv (==0.20.0)
+Requires-Dist: pytz (==2022.1)
+Requires-Dist: rich (==12.5.1)
+Requires-Dist: typer (==0.6.1)
+Provides-Extra: dev
+Requires-Dist: black (>=22.1.0) ; extra == 'dev'
+Requires-Dist: datasette (>=0.60.2) ; extra == 'dev'
+Requires-Dist: ipykernel (>=6.9.1) ; extra == 'dev'
+Requires-Dist: isort (>=5.10.1) ; extra == 'dev'
+Requires-Dist: pytest (>=7.0.1) ; extra == 'dev'
+Requires-Dist: pytest-dotenv (>=0.5.2) ; extra == 'dev'
+Requires-Dist: ipywidgets (==7.6.5) ; extra == 'dev'
+Provides-Extra: jupyter
+Requires-Dist: ipywidgets (==7.6.5) ; extra == 'jupyter'
+Provides-Extra: test
+Requires-Dist: pytest (>=7.0.1) ; extra == 'test'
+Requires-Dist: pytest-dotenv (>=0.5.2) ; extra == 'test'
+
+# esporifai
+
+[![PyPI](https://img.shields.io/pypi/v/esporifai.svg)](https://pypi.org/project/esporifai/)
+[![Changelog](https://img.shields.io/github/v/release/chekos/esporifai?include_prereleases&label=changelog)](https://github.com/chekos/esporifai/releases)
+[![Tests](https://github.com/chekos/esporifai/workflows/Test/badge.svg)](https://github.com/chekos/esporifai/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/chekos/esporifai/blob/master/LICENSE)
+
+A simple CLI to get data from the Spotify API
+
+## Installation
+
+Install this tool using `pip`:
+
+    pip install esporifai
+
+## Usage
+
+For help, run:
+
+    esporifai --help
+
+You can also use:
+
+    python -m esporifai --help
+
+### Recently played tracks
+To retrieve recently played tracks, run:
+
+    esporifai get-recently-played
+
+For help,
+
+    esporifai get-recently-played --help
+
+## Development
+
+To contribute to this tool, first checkout the code. Then create a new virtual environment:
+
+    cd esporifai
+    python -m venv venv
+    source venv/bin/activate
+
+Now install the dependencies and test dependencies:
+
+    pip install -e '.[test]'
+
+To run the tests:
+
+    pytest
