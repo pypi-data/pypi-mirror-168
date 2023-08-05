@@ -1,0 +1,2 @@
+[console_scripts]
+simpleci = simple_cicd.simple_cicd:main
