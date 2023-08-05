@@ -1,0 +1,11 @@
+ddcrelight/__about__.py,sha256=iOlA-aI4jighOHYsJJucEorCcKXuT-GfgrLzUji19bQ,18
+ddcrelight/__init__.py,sha256=TBztNogS1YKzaqSpJ-aWYoUk6YlIF0kCRoh_hbA3WzM,700
+ddcrelight/ddciface.py,sha256=jjUB9loWlcqO2qTC07lqodZuonN7gZhtzSNr0JmIfh8,4110
+ddcrelight/lightai.py,sha256=Ii0Xeaup0rFNCFX1FjsFQayK6F0Watol5Nid7t8IG3w,7563
+ddcrelight/lightsensor.py,sha256=4Iqdz0_p0d_QiVZLExX72aHTTmUDQ3M7l1dvaPrHY3I,1306
+ddcrelight/main.py,sha256=J7lXHrcRgEKfwIYpW_dcLk6fUNaAvtvSi4206VJfAVQ,2882
+ddcrelight-0.0.1.dist-info/METADATA,sha256=3rq8hBlR_l1ckYdIOS_-sgcmqd8Q7PNbA95D6PM6XTc,1706
+ddcrelight-0.0.1.dist-info/WHEEL,sha256=Y57InxZzFBC6JOUn3gj3DWHnWQvSjh7u7UaNLmWRXIQ,86
+ddcrelight-0.0.1.dist-info/entry_points.txt,sha256=4MmlteLVMqhk152kL-FXIypz1ivioFvV7DCAabON5CE,52
+ddcrelight-0.0.1.dist-info/licenses/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ddcrelight-0.0.1.dist-info/RECORD,,

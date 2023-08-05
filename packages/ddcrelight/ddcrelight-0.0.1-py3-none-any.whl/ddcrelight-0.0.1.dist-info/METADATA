@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: ddcrelight
+Version: 0.0.1
+Summary: Update monitor brightness intelligently using the DDC protocol.
+Project-URL: Documentation, https://github.com/DarkArc/ddcrelight#readme
+Project-URL: Issues, https://github.com/DarkArc/ddcrelight/issues
+Project-URL: Source, https://github.com/DarkArc/ddcrelight
+Author-email: Wyatt Childers <wchilders@nearce.com>
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: yoctopuce
+Description-Content-Type: text/markdown
+
+## Requirements
+
+- A yoctopuce light sensor (https://www.yoctopuce.com)
+- ddcutil
+
+## Setup
+
+A udev rule is likely required to allow the tool to run as non-root. The
+following can be added as the file `/etc/udev/rules.d/50-yoctopuce.rules`:
+
+```
+# udev rules to allow write access to all users for Yoctopuce USB devices
+SUBSYSTEM=="usb", ATTR{idVendor}=="24e0", MODE="0666"
+```
+
+Additionally, udev rules must be configured for ddcutil to operate without root
+permissions:
+
+```
+https://www.ddcutil.com/i2c_permissions/
+```
+
+Then a daemon should be setup:
+
+ddcrelight.service:
+```
+[Unit]
+Description=Update monitor brightness intelligently using light sensors.
+
+[Service]
+ExecStart=<path-to-script>/ddcrelight daemon
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
+```
