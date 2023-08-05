@@ -1,0 +1,11 @@
+aws_sts_tool/__init__.py,sha256=YZGgqOe03jk9If3a9PBg8cxtbBGEbtC-xeKvXPhGm_w,77
+aws_sts_tool/_version.py,sha256=MpVHFFoITiYyPltTb_qFrdeX2entdTm4x0PczXi3txY,21
+aws_sts_tool/cli.py,sha256=AaYUJKmso_3U4D91SPdfY14l-GB5_IBzzVBMmM1N7bo,6860
+aws_sts_tool/helpers/__init__.py,sha256=YZGgqOe03jk9If3a9PBg8cxtbBGEbtC-xeKvXPhGm_w,77
+aws_sts_tool/helpers/datetimeencoder.py,sha256=onfaFUDDHS0VShB5F7J1CR-ciwzRZdux_FMpBpYni8M,389
+aws_sts_tool-1.0.3.dist-info/LICENSE,sha256=62__y4A9eYnkZdWlK2JGn03LoUBJdsU9Aancn0nCgmM,1070
+aws_sts_tool-1.0.3.dist-info/METADATA,sha256=cyrnBVgh5nn7FD_kuodeXuJu__Dw_sogjUK3ywh4JTo,2887
+aws_sts_tool-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_sts_tool-1.0.3.dist-info/entry_points.txt,sha256=wLUpdAIc8dzGYIKS3swE630RzyHdmoVMGEKLbGMk3Z0,56
+aws_sts_tool-1.0.3.dist-info/top_level.txt,sha256=ahFcnLVZ9RHU_g5I-os7R9Iaq4tr1vPNo1EKzvr1WMU,13
+aws_sts_tool-1.0.3.dist-info/RECORD,,

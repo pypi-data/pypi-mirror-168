@@ -1,0 +1,3 @@
+[console_scripts]
+aws_sts_tool = aws_sts_tool.cli:main
+
