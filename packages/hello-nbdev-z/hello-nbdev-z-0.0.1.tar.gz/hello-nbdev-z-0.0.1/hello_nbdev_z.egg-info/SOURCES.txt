@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+hello_nbdev/__init__.py
+hello_nbdev/_modidx.py
+hello_nbdev/core.py
+hello_nbdev_z.egg-info/PKG-INFO
+hello_nbdev_z.egg-info/SOURCES.txt
+hello_nbdev_z.egg-info/dependency_links.txt
+hello_nbdev_z.egg-info/entry_points.txt
+hello_nbdev_z.egg-info/not-zip-safe
+hello_nbdev_z.egg-info/requires.txt
+hello_nbdev_z.egg-info/top_level.txt
