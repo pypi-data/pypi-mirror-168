@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pykvsdb
+Version: 0.1.1
+Summary: A key-value store database written from the ground-up with speed in mind.
+License: Apache-2.0
+Author: DrgnFireYellow
+Author-email: 86269995+DrgnFireYellow@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# PYKVSDB
+A key-value store database written from the ground-up with speed in mind.
+
+## Installation
+PYKVSDB can be installed via pip:
+
+```pip install pykvsdb```
+
+## Syntax
+### Setting Values
+You can store a key-value pair in PYKVSDB with the ```set``` function:
+
+```pykvsdb.set("language", "python")```
+### Getting Values
+To retrieve a value, use the ```get``` function:
+
+```pykvsdb.get("language")```
+
+### Saving to the file system
+If you would like to be able to access your data later you will need to save it to the file system with ```save```:
+
+```pykvsdb.save("test.db")```
+
+### Loading a saved database
+If you need to access a database saved to the file system again, you need to load it with ```load```:
+
+```pykvsdb.load("test.db")```
+
