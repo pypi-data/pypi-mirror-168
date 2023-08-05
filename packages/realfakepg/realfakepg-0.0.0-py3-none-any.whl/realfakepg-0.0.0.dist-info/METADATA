@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: realfakepg
+Version: 0.0.0
+Summary: Real Fake Databases! ...for PostgreSQL
+Home-page: https://github.com/nicktimko/realfakepg
+Author: Nick Timkovich
+Author-email: prometheus235@gmail.com
+Maintainer: Nick Timkovich
+Maintainer-email: prometheus235@gmail.com
+License: Apache Software License 2.0
+Project-URL: Source Code, https://github.com/nicktimko/realfakepg
+Keywords: postgres
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: cov
+Requires-Dist: realfakepg[tests] ; extra == 'cov'
+Requires-Dist: coverage-enable-subprocess ; extra == 'cov'
+Requires-Dist: coverage[toml] (>=5.3) ; extra == 'cov'
+Provides-Extra: dev
+Requires-Dist: realfakepg[cov,tests] ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest (>=6) ; extra == 'tests'
+Requires-Dist: pytest-xdist[psutil] ; extra == 'tests'
+
+# PG Test Helper
+
+This provides PyTest fixtures that can create real Postgres databases for use by test suites.
+
