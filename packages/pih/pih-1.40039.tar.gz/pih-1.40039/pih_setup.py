@@ -1,0 +1,82 @@
+from importlib.metadata import version
+import shutil
+import os
+import importlib
+import sys
+from setuptools import setup
+
+pih_is_exsits = importlib.util.find_spec("pih") is not None
+if not pih_is_exsits:
+    sys.path.append("//pih/facade")
+from pih.pih import PIH
+
+#for facade
+#prettytable
+#colorama
+#protobuf
+#grpcio (six)
+#pyperclip
+#win32com -> pywin32 (!!!)
+
+#MC
+#pywhatkit
+
+#for orion
+#myssql
+
+#for log
+#telegram_send
+
+#for dc2
+#docs:
+    #mailmerge (pip install docx-mailmerge)
+    #xlsxwriter
+    #xlrd
+    #python-barcode
+    #Pillow
+#ad:
+    #pyad
+    #pywin32 (!!!)
+#transliterate
+
+#for printer (dc2)
+#pysnmp
+
+#for polibase
+#cx_Oracle
+remote_version: str = version("pih")
+if PIH.version <= remote_version:
+    raise Exception("PIH version is same as version from PyPi")
+
+#########################################################################################################
+"""
+1. python pih_setup.py sdist --dist-dir pih_dist bdist_wheel --dist-dir pih_dist build --build-base pih_build
+2. twine upload pih_dist/*
+"""
+folder = "//pih/facade/pih_dist"
+for filename in os.listdir(folder):
+    file_path = os.path.join(folder, filename)
+    try:
+        if os.path.isfile(file_path) or os.path.islink(file_path):
+            os.unlink(file_path)
+        elif os.path.isdir(file_path):
+            shutil.rmtree(file_path)
+    except Exception as e:
+        print('Failed to delete %s. Reason: %s' % (file_path, e))
+
+# This call to setup() does all the work
+setup(
+    name="pih",
+    version=f"{PIH.version}",
+    description="PIH library",
+    long_description_content_type="text/markdown",
+    url="https://pacifichosp.com/",
+    author="Nikita Karachentsev",
+    author_email="it@pacifichosp.com",
+    license="MIT",
+    classifiers=[],
+    packages=["pih"],
+    include_package_data=True,
+    install_requires=["prettytable", "colorama",
+                      "protobuf", "grpcio", "outdated"]
+)
