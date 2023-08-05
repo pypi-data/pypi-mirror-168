@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: embed-clustering
+Version: 0.0.2
+Summary: Clustering using different non-parameteric models with the combination of word Embedding
+Home-page: https://github.com/masumeazee/Embedding_Crp_Clustering_Pro
+Author: Masume Azizyan, Deepak John Reji
+Author-email: masume.azee@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+Clustering using different non-parameteric models with the power of bert embeddings

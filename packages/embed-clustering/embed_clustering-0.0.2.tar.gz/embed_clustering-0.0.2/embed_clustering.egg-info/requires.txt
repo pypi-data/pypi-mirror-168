@@ -1,0 +1,4 @@
+pandas
+preprocessor
+numpy
+sentence_transformers
