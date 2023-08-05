@@ -1,0 +1,11 @@
+CHANGES.md
+MANIFEST.in
+README.md
+setup.py
+invisibleroads_macros_process/__init__.py
+invisibleroads_macros_process.egg-info/PKG-INFO
+invisibleroads_macros_process.egg-info/SOURCES.txt
+invisibleroads_macros_process.egg-info/dependency_links.txt
+invisibleroads_macros_process.egg-info/requires.txt
+invisibleroads_macros_process.egg-info/top_level.txt
+invisibleroads_macros_process.egg-info/zip-safe
