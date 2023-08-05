@@ -1,0 +1,4 @@
+PySimpleGUI
+websocket-client
+requests
+Pillow
