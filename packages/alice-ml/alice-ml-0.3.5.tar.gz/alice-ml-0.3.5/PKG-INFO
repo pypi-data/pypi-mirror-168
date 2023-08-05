@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: alice-ml
+Version: 0.3.5
+Summary: ALICE - Automated Labeling of Independent Components for EEG
+Home-page: https://github.com/ALICE-EEG/alice-eeg-ml
+Author: Alexander Ledovsky, Gurgen Soghoyan, Nadezhda Alsahanova
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
