@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+homeassistantdesktop/__init__.py
+homeassistantdesktop/__main__.py
+homeassistantdesktop/_version.py
+homeassistantdesktop.egg-info/PKG-INFO
+homeassistantdesktop.egg-info/SOURCES.txt
+homeassistantdesktop.egg-info/dependency_links.txt
+homeassistantdesktop.egg-info/requires.txt
+homeassistantdesktop.egg-info/top_level.txt
