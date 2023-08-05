@@ -1,0 +1,3 @@
+[console_scripts]
+fleticon=flet_icon:run
+
