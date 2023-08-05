@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cookiedb/__init__.py
+cookiedb/_document.py
+cookiedb/cookiedb.py
+cookiedb/exceptions.py
+cookiedb.egg-info/PKG-INFO
+cookiedb.egg-info/SOURCES.txt
+cookiedb.egg-info/dependency_links.txt
+cookiedb.egg-info/requires.txt
+cookiedb.egg-info/top_level.txt
