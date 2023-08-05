@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: outleap
+Version: 0.0.5a3
+Summary: Tools for using asyncio to control a Second Life viewer over the LEAP protocol
+Author-email: Salad Dais <83434023+SaladDais@users.noreply.github.com>
+License: MIT License
+Project-URL: homepage, https://github.com/SaladDais/outleap
+Project-URL: repository, https://github.com/SaladDais/outleap
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# outleap
+
+## Credits
+
+The project scaffolding is based on code from https://github.com/MatthieuDartiailh/bytecode
