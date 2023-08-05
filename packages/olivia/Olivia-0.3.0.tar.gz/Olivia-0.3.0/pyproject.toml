@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "Olivia"
+version = "0.3.0"
+description = "Assistente para facilitar requisições HTTP"
+authors = ["matheus <matheus.mmn@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
