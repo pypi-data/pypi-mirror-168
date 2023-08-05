@@ -1,0 +1,7 @@
+README.rst
+pitchtools.py
+setup.py
+pitchtools.egg-info/PKG-INFO
+pitchtools.egg-info/SOURCES.txt
+pitchtools.egg-info/dependency_links.txt
+pitchtools.egg-info/top_level.txt
