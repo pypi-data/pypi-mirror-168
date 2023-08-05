@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: memphis-py
+Version: 0.2.0
+Summary: A powerful messaging platform for modern developers
+Home-page: https://github.com/memphisdev/memphis.py
+Download-URL: https://github.com/memphisdev/memphis.py/archive/refs/tags/v0.2.0.tar.gz
+Author: Memphis.dev
+Author-email: team@memphis.dev
+License: GPL
+Keywords: message broker,devtool,streaming,data
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+
+file: README.md

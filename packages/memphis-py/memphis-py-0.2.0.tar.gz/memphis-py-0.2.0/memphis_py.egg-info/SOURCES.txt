@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+memphis/__init__.py
+memphis/memphis.py
+memphis/retention_types.py
+memphis/storage_types.py
+memphis_py.egg-info/PKG-INFO
+memphis_py.egg-info/SOURCES.txt
+memphis_py.egg-info/dependency_links.txt
+memphis_py.egg-info/requires.txt
+memphis_py.egg-info/top_level.txt
