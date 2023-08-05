@@ -1,0 +1,15 @@
+pandas
+fastcore
+ipywidgets
+IPython
+pyyaml
+
+[dev]
+plotly
+nbdev>=2.1.3
+kaleido
+twine
+statsmodels
+scikit-image
+seaborn>=0.11.2
+notebook
