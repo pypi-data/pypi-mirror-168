@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gigman"
+version = "0.0.4"
+dependencies = [
+    "importlib-resources == 5.9.0",
+]
+
+[project.scripts]
+gigman = "gigman:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"gigman.data" = ["*.gitignore"]
+
