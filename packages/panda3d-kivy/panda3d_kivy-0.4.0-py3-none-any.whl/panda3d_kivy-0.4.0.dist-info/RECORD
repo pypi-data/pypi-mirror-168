@@ -1,0 +1,11 @@
+panda3d_kivy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panda3d_kivy/app.py,sha256=Ky2E1EuINT4XHqbiQqHuovoJ-KfXXN3jU3gq8VkXAKI,2110
+panda3d_kivy/config.py,sha256=sWVDbKG482iygAqrhQ2Uk-UX_DvaK2GiCVfKAihQMRg,71
+panda3d_kivy/monkey.py,sha256=dZy9ixHqwWu5rtxws0wF6C3Jnoe1aqmGaqVlSNl8QEw,451
+panda3d_kivy/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panda3d_kivy/core/window.py,sha256=pHzuepBi-7cIiKXGPYCIMQas05ETj4gS0QwZo3MdLhw,11814
+panda3d_kivy-0.4.0.dist-info/LICENSE,sha256=psk2s1686wntpCTlSjIgOXk8US3ZqnXVnS4Wm2JKSS8,1071
+panda3d_kivy-0.4.0.dist-info/METADATA,sha256=Lg7SqntOmh3tal5JUaq0T68waFMSgTMvA52NQJ6hb8U,2034
+panda3d_kivy-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+panda3d_kivy-0.4.0.dist-info/top_level.txt,sha256=01JWqtBWVxV_WFx36VI9Nf2yzilgTXCmW3X7JwbIP2o,13
+panda3d_kivy-0.4.0.dist-info/RECORD,,
