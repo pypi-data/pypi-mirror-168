@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+uniocsone/__init__.py
+uniocsone/uniocsone.py
+uniocsone.egg-info/PKG-INFO
+uniocsone.egg-info/SOURCES.txt
+uniocsone.egg-info/dependency_links.txt
+uniocsone.egg-info/top_level.txt
