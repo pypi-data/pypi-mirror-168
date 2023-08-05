@@ -1,0 +1,11 @@
+numpy
+netCDF4>=1.5.7
+tqdm
+numba
+joblib
+scipy
+
+[dev]
+pre-commit
+pytest<8.0,>=7.0.0
+pytest-cov<3.0,>=2.12.1
