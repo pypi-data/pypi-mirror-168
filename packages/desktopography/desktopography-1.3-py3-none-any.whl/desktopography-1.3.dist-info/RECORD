@@ -1,0 +1,12 @@
+desktopography/__init__.py,sha256=DcOJ6o54McLk7r9TkTtRZdpfw-yy-2rhjmJAj9W8CoI,135
+desktopography/cli.py,sha256=tK9_3k2xV2dOe-J6PltdJE7590BlTH1uokNhbKotLMY,752
+desktopography/crawler.py,sha256=A41cRp8de7PTuhSyxNzBT5yTtbnRppChJM70jvm2Nc8,1303
+desktopography/db.py,sha256=4GHPjRGHGit-0AJP2qj34oaFOF5nfnwk-n4AMyROZ6s,1640
+desktopography/desktops.py,sha256=jDdKPZA6BbLLDEtUSeFxpMvfXtw1yD6Q6qpXY_yq_c8,1065
+desktopography/selector.py,sha256=TbBmQ4FCIBWxfcoJZN7BjQSxcx-yApaVD2eht5vIP-o,939
+desktopography/utils.py,sha256=5KxeQCcZ1hDAsVMiP3YsbYdn8uefF3KSs7Ofcd5of9I,417
+desktopography-1.3.dist-info/entry_points.txt,sha256=LJTvrOAFDljWG-q-OkDxuXa6ygUfE-my5H2v_0R-NQQ,58
+desktopography-1.3.dist-info/LICENSE,sha256=IUzdFW4DZGjJAqBxWNfbR3ZmW-yESIPxraBlBfDAIII,1512
+desktopography-1.3.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+desktopography-1.3.dist-info/METADATA,sha256=bNcfB7egqr1tZ6GId4q1CL_erP-e3AzNAV4_xn9gX9w,1761
+desktopography-1.3.dist-info/RECORD,,
