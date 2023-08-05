@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: ipq
+Version: 0.2.1
+Summary: A CLI tool for gathering IP and domain name information.
+Home-page: https://github.com/Jonxslays/ipq
+License: MIT
+Author: Jonxslays
+Requires-Python: >=3.7,<3.12
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Provides-Extra: default
+Provides-Extra: speedups
+Requires-Dist: aiodns (>=3.0.0,<4.0.0); extra == "speedups"
+Requires-Dist: cchardet (>=2.1.7,<3.0.0); extra == "speedups"
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Project-URL: Repository, https://github.com/Jonxslays/ipq
+Description-Content-Type: text/markdown
+
+# IP Query
+
+A CLI tool for gathering IP and domain name information.
+
+## Requirements
+
+- Python >= 3.7.
+- `whois` shell command.
+- `nslookup` shell command.
+- `ping` shell command.
+
+## Installation
+
+Latest stable version:
+
+```bash
+pip install ipq
+```
+
+Latest stable version with speedups:
+- Adds `aiodns` and `cchardet` dependencies.
+
+```bash
+pip install "ipq[speedups]"
+```
+
+Development version:
+
+```bash
+pip install git+https://github.com/Jonxslays/ipq.git
+```
+
+## Usage
+
+```bash
+# Check ipq version
+$ ipq -v
+$ ipq --version
+
+# Get help
+$ ipq -h
+$ ipq --help
+
+# Get info on a domain
+$ ipq google.com
+
+# Also works
+$ ipq https://google.com
+
+# Get info on an ip
+$ ipq 8.8.8.8
+
+# Ping the host
+$ ipq -p google.com
+$ ipq --ping 8.8.8.8
+
+# Get ip and whois info on a domain
+$ ipq -w google.com
+$ ipq --whois google.com
+
+# Fails: ips do not have whois info
+$ ipq -w 8.8.8.8
+```
+
+## License
+
+ipq is licensed under the [MIT License](https://github.com/Jonxslays/ipq/blob/master/LICENSE).
+
