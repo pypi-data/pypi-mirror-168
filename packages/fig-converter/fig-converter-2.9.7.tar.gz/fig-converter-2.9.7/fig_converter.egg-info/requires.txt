@@ -1,0 +1,12 @@
+opencv-python
+numpy
+Pillow
+click
+tqdm
+pygifsicle
+more-itertools
+imageio
+requests
+yt-dlp
+tldextract
+art

@@ -1,0 +1,3 @@
+[console_scripts]
+fig = fig.scripts.fig_cli:main
+fig-download = fig.scripts.fig_download:main
