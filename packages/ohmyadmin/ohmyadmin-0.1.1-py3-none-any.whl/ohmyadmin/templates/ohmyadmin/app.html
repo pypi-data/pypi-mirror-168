@@ -1,0 +1,122 @@
+{% extends 'ohmyadmin/base.html' %}
+
+{% set html_tag_classes = 'h-full' %}
+{% set body_tag_classes = 'h-full text-sm' %}
+
+{% block main %}
+    <div class="flex h-full overflow-hidden">
+
+        <!-- sidebar -->
+        <aside class="w-80 border-r border-gray-300 bg-slate-50 px-3 text-sm">
+            <!-- logo -->
+            {% if admin.logo_url %}
+                <div class="h-16 flex items-center">
+                    <a href="{{ url('ohmyadmin_welcome') }}">
+                        <img src="{{ admin.logo_url }}" class="max-h-full">
+                    </a>
+                </div>
+            {% else %}
+                <div class="w-full py-5">
+                    <span class="text-lg font-semibold">{{ admin.title }}</span>
+                </div>
+            {% endif %}
+
+            <!-- end logo -->
+
+            <!-- main menu -->
+            <nav class="grid grid-cols-1 gap-1 mb-10">
+                {% for item in main_menu %}
+                    {{ item }}
+                {% endfor %}
+            </nav>
+            <!-- end main menu -->
+        </aside>
+        <!-- end sidebar -->
+
+        <main class="w-full overflow-auto">
+            <header class="border-b border-b-200 flex items-center justify-between px-10 h-16">
+                <div class="py-5">
+                    <!-- header left side actions -->
+                </div>
+
+                <div>
+                    <!-- user menu -->
+                    <div x-data="{open: false}" class="relative select-none" @click="open = !open"
+                         @click.outside="open = false">
+                        <div class="flex items-center gap-3 hover:bg-slate-100 p-1 rounded-md cursor-pointer">
+                            <div
+                                class="bg-slate-200 rounded-md overflow-hidden text-slate-500 h-8 w-8 flex items-center justify-center">
+                                {% if user_menu.avatar %}
+                                    <img src="{{ user_menu.avatar }}" class="h-full w-full" alt="">
+                                {% else %}
+                                    {{ icon('user') }}
+                                {% endif %}
+                            </div>
+                            <div>{{ user_menu.user_name }}</div>
+                        </div>
+
+                        <!-- dropdown -->
+                        <div x-show="open"
+                             class="dropdown w-64">
+                            <div class="border-b border-slate-300 flex items-center gap-2 pb-2 mb-1 p-2">
+                                <!-- avatar -->
+                                <div
+                                    class="bg-slate-200 rounded-md overflow-hidden flex items-center justify-center h-10 w-10 text-slate-500">
+                                    {% if user_menu.avatar %}
+                                        <img src="{{ user_menu.avatar }}" class="h-full w-full" alt="">
+                                    {% else %}
+                                        {{ icon('user', size=24) }}
+                                    {% endif %}
+                                </div>
+                                <!-- end avatar -->
+
+                                <!-- username -->
+                                <div>
+                                    <div class="text-slate-500">{{ _('Logged in as') }}</div>
+                                    <div class="text-base">{{ user_menu.user_name }}</div>
+                                </div>
+                                <!-- end username -->
+                            </div>
+
+                            <!-- user menu -->
+                            <ul class="py-1">
+                                {% for item in user_menu.menu %}
+                                    <li>
+                                        <a href="{{ item.url }}" class="dropdown-item">
+                                            {{ tabler_icon(item.icon) if item.icon else '' }}
+                                            {{ item.text }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                                {% if not request.user.is_anonymous %}
+                                    <li>
+                                        <form action="{{ url('ohmyadmin_logout') }}" method="post">
+                                            <button class="main-menu-item">
+                                                {{ icon('logout') }} {{ _('Logout') }}
+                                            </button>
+                                        </form>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                            <!-- end user menu -->
+                        </div>
+                        <!-- end dropdown -->
+                    </div>
+                    <!-- user menu -->
+                </div>
+            </header>
+
+            <article class="px-10 py-10 max-w-7xl mx-auto">
+                <div class="mb-8 flex items-center justify-between">
+                    <div class="text-3xl font-semibold">{{ page_title }}</div>
+                    <div class="flex items-center gap-2">{% block page_actions %}{% endblock %}</div>
+                </div>
+                {% block content %}Page content goes here...{% endblock %}
+            </article>
+        </main>
+    </div>
+{% endblock %}
+
+{% block page_scripts %}
+
+{% endblock %}

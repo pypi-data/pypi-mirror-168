@@ -1,0 +1,162 @@
+{% macro form_help(field) %}
+    {% if field.description %}
+        <div class="form-help">{{ field.description }}</div>
+    {% endif %}
+{% endmacro %}
+
+{% macro form_label(field) %}
+    <label for="{{ field.label.field_id }}">
+        {{ field.label.text }}
+        {% if field.flags.required %}
+            <span class="text-red-500">*</span>
+        {% endif %}
+    </label>
+{% endmacro %}
+
+{% macro form_errors(field) %}
+    <ul class="form-errors">
+        {% for error in field.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+
+{% endmacro %}
+
+{% macro form_input(field) %}
+    {{ field }}
+{% endmacro %}
+
+{% macro form_field(field) %}
+    <div class="form-group">
+        {{ form_label(field) }}
+        {{ form_input(field) }}
+        {{ form_help(field) if field.description else '' }}
+        {{ form_errors(field) if field.errors else '' }}
+    </div>
+{% endmacro %}
+
+{% macro checkbox_input(field) %}
+    <div class="form-group form-group-checkbox">
+        {{ form_input(field) }}
+        {{ form_label(field) }}
+    </div>
+{% endmacro %}
+
+{% macro checkbox_field(field) %}
+    <div class="form-group form-group-checkbox">
+        {{ checkbox_input(field) }}
+        {{ form_help(field) if field.description else '' }}
+        {{ form_errors(field) if field.errors else '' }}
+    </div>
+{% endmacro %}
+
+{% macro radio_input(field) %}
+    <div class="form-radio-list">
+        {% for element in field %}
+            <label for="{{ element.label.field_id }}">{{ element }} {{ element.label.text }}</label>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
+{% macro radio_field(field) %}
+    <div class="form-group form-group-radio">
+        {{ form_label(field) }}
+        {{ radio_input(field) }}
+        {{ form_help(field) if field.description else '' }}
+        {{ form_errors(field) if field.errors else '' }}
+    </div>
+{% endmacro %}
+
+{% macro list_field_item(form) %}
+    <div class="flex items-center justify-between gap-5 mb-2">
+        <div class="flex-1">{{ form }}</div>
+        <div>
+            <button type="button" class="delete-icon" @click="deleted.push(index)">
+                {{ tabler_icon('trash') }}
+            </button>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro list_field(field) %}
+    <div
+        class="form-group form-group-list max-w-lg"
+        x-data="{deleted: [], newCounter: 0, startIndex: {{ field|length }} }"
+    >
+        {{ form_label(field) }}
+        <div>
+            {% for form in field %}
+                <template x-if="!deleted.includes({{ loop.index0 }})" x-data="{ index: {{ loop.index0 }} }">
+                    {{ list_field_item(form) }}
+                </template>
+            {% endfor %}
+            <template x-for="_index in newCounter">
+                <template x-if="!deleted.includes(_index + startIndex)" x-data="{index: _index + startIndex}">
+                    {{ list_field_item(field.create_empty_entry()) }}
+                </template>
+            </template>
+        </div>
+        <div>
+            <button type="button" class="btn btn-link" @click="newCounter += 1">
+                {{ tabler_icon('plus') }}
+                {{ _('Add a new item') }}
+            </button>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro embed_field(field) %}
+    <div class="form-group form-group-embed">
+        {{ form_label(field) }}
+        <div class="border rounded-md border-gray-300 p-2 gap-5 grid grid-cols-{{ field.cols }}">
+            {% for form in field %}
+                {{ form.render() }}
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro embed_many_field_item(form) %}
+    <section class="border border-gray-300 rounded-md mb-2" :index="index">
+        <header class="flex items-center justify-between bg-slate-100">
+            <div></div>
+            <div>
+                <button type="button" class="delete-icon" @click="deleted.push(index)">
+                    {{ tabler_icon('trash') }}
+                </button>
+            </div>
+        </header>
+        <main class="p-2">
+            <div class="flex items-center gap-5 mb-2">
+                <div class="grid grid-cols-3 gap-5 flex-1">
+                    {% for form_field in form %}
+                        {{ form_field.render() }}
+                    {% endfor %}
+                </div>
+            </div>
+        </main>
+    </section>
+{% endmacro %}
+
+{% macro embed_many_field(field) %}
+    <div class="form-group" x-data="{deleted: [], newCounter: 0, startIndex: {{ field|length }}}">
+        {{ form_label(field) }}
+        <div>
+            {% for form in field %}
+                <template x-if="!deleted.includes({{ loop.index0 }})" x-data="{ index: {{ loop.index0 }} }">
+                    {{ embed_many_field_item(form) }}
+                </template>
+            {% endfor %}
+            <template x-for="_index in newCounter">
+                <template x-if="!deleted.includes(_index + startIndex)" x-data="{index: _index + startIndex}">
+                    {{ embed_many_field_item(field.create_empty_entry()) }}
+                </template>
+            </template>
+        </div>
+        <div>
+            <button type="button" class="btn btn-link" @click="newCounter += 1">
+                {{ tabler_icon('plus') }} {{ _('Add a new item') }}
+            </button>
+        </div>
+    </div>
+{% endmacro %}
