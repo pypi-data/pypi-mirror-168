@@ -1,0 +1,48 @@
+[project]
+name = "rml_qrcode"
+description = "QR code plugin for reportlab RML language"
+readme = "README.rst"
+requires-python = ">=3.7"
+keywords = ["qr code", "rml", "reportlab"]
+license = {text = "MIT"}
+dynamic = ["version"]
+authors = [
+	{ name = "Miroslav Bendík", email = "miroslav.bendik@gmail.com" }
+]
+classifiers = [
+	"Programming Language :: Python :: 3",
+]
+dependencies = [
+	"qrcode",
+	"z3c.rml",
+	"six",
+]
+
+[project.urls]
+homepage = "https://github.com/mireq/Reportlab-RML-qrcode"
+documentation = "https://github.com/mireq/Reportlab-RML-qrcode"
+repository = "https://github.com/mireq/Reportlab-RML-qrcode"
+changelog = "https://github.com/mireq/Reportlab-RML-qrcode/blob/master/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = [
+	"tox",
+	"pylint",
+	"pre-commit",
+	"bump2version",
+	"commitizen"
+]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["rml_qrcode"]
+
+[tool.setuptools_scm]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "1.0.1"
+tag_format = "$version"
