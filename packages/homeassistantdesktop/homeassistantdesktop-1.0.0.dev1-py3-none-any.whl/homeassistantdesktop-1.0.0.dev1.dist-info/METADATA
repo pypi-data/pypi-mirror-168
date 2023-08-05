@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: homeassistantdesktop
+Version: 1.0.0.dev1
+Summary: Home Assistant Desktop
+Home-page: https://github.com/timmo001/home-assistant-desktop
+Author: Aidan Timson (Timmo)
+Author-email: contact@timmo.xyz
+License: MIT
+Keywords: Home Assistant Desktop
+Requires-Dist: incremental (==21.3.0)
+Requires-Dist: typer (==0.6.1)
+
