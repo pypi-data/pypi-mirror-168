@@ -1,0 +1,723 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Web API &mdash; django-comments-xtd 3.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="JavaScript plugin" href="javascript.html" />
+    <link rel="prev" title="Control logic" href="logic.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-comments-xtd
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Demo projects</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="logic.html">Control logic</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Web API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#post-a-new-comment">Post a new comment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#authorize-the-request">Authorize the request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-of-authorization">Example of authorization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#modify-the-settings-module">Modify the settings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modify-the-urls-module">Modify the urls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-new-authentication-class">Create a new authentication class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-receiver-for-should-request-be-authorized">Create a receiver for <code class="docutils literal notranslate"><span class="pre">should_request_be_authorized</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#post-a-test-comment-as-a-visitor">Post a test comment as a visitor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#post-a-test-comment-as-a-signed-in-user">Post a test comment as a signed in user</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#retrieve-comment-list">Retrieve comment list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#retrieve-comments-count">Retrieve comments count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#post-like-dislike-feedback">Post like/dislike feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#post-removal-suggestions">Post removal suggestions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="javascript.html">JavaScript plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templatetags.html">Filters and template tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating.html">Migrating to django-comments-xtd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Customizing django-comments-xtd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usecases.html">Use cases</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-comments-xtd</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Web API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/webapi.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="web-api">
+<span id="ref-webapi"></span><h1>Web API<a class="headerlink" href="#web-api" title="Permalink to this headline">¶</a></h1>
+<p>django-comments-xtd uses <a class="reference external" href="http://www.django-rest-framework.org/">django-rest-framework</a> to expose a Web API that provides developers with access to the same functionalities offered through the web user interface. The Web API has been designed to cover the needs required by the <a class="reference internal" href="javascript.html"><span class="doc">JavaScript plugin</span></a>, and it’s open to grow in the future to cover additional functionalities.</p>
+<p>There are 5 methods available to perform the following actions:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Post a new comment.</p></li>
+<li><p>Retrieve the list of comments posted to a given content type and object ID.</p></li>
+<li><p>Retrieve the number of comments posted to a given content type and object ID.</p></li>
+<li><p>Post user’s like/dislike feedback.</p></li>
+<li><p>Post user’s removal suggestions.</p></li>
+</ol>
+</div></blockquote>
+<p>Finally there is the ability to generate a view action in <code class="docutils literal notranslate"><span class="pre">django_comments_xtd.api.frontend</span></code> to return the commentbox props as used by the <a class="reference internal" href="javascript.html"><span class="doc">JavaScript plugin</span></a> plugin for use with an existing <a class="reference external" href="http://www.django-rest-framework.org/">django-rest-framework</a> project.</p>
+<div class="contents local topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#post-a-new-comment" id="id3">Post a new comment</a></p></li>
+<li><p><a class="reference internal" href="#retrieve-comment-list" id="id4">Retrieve comment list</a></p></li>
+<li><p><a class="reference internal" href="#retrieve-comments-count" id="id5">Retrieve comments count</a></p></li>
+<li><p><a class="reference internal" href="#post-like-dislike-feedback" id="id6">Post like/dislike feedback</a></p></li>
+<li><p><a class="reference internal" href="#post-removal-suggestions" id="id7">Post removal suggestions</a></p></li>
+</ul>
+</div>
+<div class="section" id="post-a-new-comment">
+<h2><a class="toc-backref" href="#id3">Post a new comment</a><a class="headerlink" href="#post-a-new-comment" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line">URL name: <strong>comments-xtd-api-create</strong></div>
+<div class="line">Mount point: <strong>&lt;comments-mount-point&gt;/api/comment/</strong></div>
+<div class="line">HTTP Methods: POST</div>
+<div class="line">HTTP Responses: 201, 202, 204, 403</div>
+<div class="line">Serializer: <code class="docutils literal notranslate"><span class="pre">django_comments_xtd.api.serializers.WriteCommentSerializer</span></code></div>
+</div>
+</div></blockquote>
+<p>This method expects the same fields submitted in a regular django-comments-xtd
+form. The serializer uses the function <code class="docutils literal notranslate"><span class="pre">django_comments.get_form</span></code> to verify
+data validity.</p>
+<p>Meaning of the HTTP Response codes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>201</strong>: Comment created.</p></li>
+<li><p><strong>202</strong>: Comment in moderation.</p></li>
+<li><p><strong>204</strong>: Comment confirmation has been sent by mail.</p></li>
+<li><p><strong>403</strong>: Comment rejected, as in <a class="reference internal" href="tutorial.html#disallow"><span class="std std-ref">Disallow black listed domains</span></a>.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Up until v2.6 fields <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> and <code class="docutils literal notranslate"><span class="pre">security_hash</span></code>, related with the
+<a class="reference external" href="https://django-contrib-comments.readthedocs.io/en/latest/forms.html?highlight=commentsecurityform#django_comments.forms.CommentSecurityForm">CommentSecurityForm</a>, had to be provided in the post request. As of v2.7 it is possible to use
+a django-rest-framework’s authentication class in combination with
+django-comments-xtd’s signal <code class="docutils literal notranslate"><span class="pre">should_request_be_authorized</span></code>
+(<a class="reference internal" href="logic.html#signal-and-receiver-label"><span class="std std-ref">Signal and receiver</span></a>) to automatically pass the
+CommentSecurityForm validation.</p>
+</div>
+<div class="section" id="authorize-the-request">
+<h3>Authorize the request<a class="headerlink" href="#authorize-the-request" title="Permalink to this headline">¶</a></h3>
+<p>As pointed out in the note above, django-comments-xtd notifies receivers of the signal <code class="docutils literal notranslate"><span class="pre">should_request_be_authorized</span></code> to give the request the chance to pass the <cite>CommentSecurityForm</cite> validation. When a receiver returns <code class="docutils literal notranslate"><span class="pre">True</span></code>, the form automatically receives valid values for the <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> and <code class="docutils literal notranslate"><span class="pre">security_hash</span></code> fields, and the request continues its processing.</p>
+<p>These two fields, <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> and <code class="docutils literal notranslate"><span class="pre">security_hash</span></code>, are part of the frontline against spam in django-comments. In a classic backend driven request-response cycle these two fields received their values during the GET request, where the comment form is rendered via the Django template.</p>
+<p>However, when using the web API there is no such previous GET request, and thus both fields can in fact be ignored. In such cases, in order to enable some sort of spam control, the request can be authenticated via the Django REST Framework, what in combination with a receiver of the <code class="docutils literal notranslate"><span class="pre">should_request_be_authorized</span></code> signal has the effect of <strong>authorizing</strong> the POST request.</p>
+</div>
+<div class="section" id="example-of-authorization">
+<h3>Example of authorization<a class="headerlink" href="#example-of-authorization" title="Permalink to this headline">¶</a></h3>
+<p>In this section we go through the changes that will enable posting comments via the web API in the <a class="reference internal" href="example.html#example-simple"><span class="std std-ref">Simple project</span></a>. We have to:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Modify the settings module.</p></li>
+<li><p>Modify the urls module to allow login and logout via DRF’s api-auth.</p></li>
+<li><p>Create a new authentication class, in this case it will be an authentication scheme based on DRF’s <a class="reference external" href="https://www.django-rest-framework.org/api-guide/authentication/#custom-authentication">Custom authentication</a>, but you could use any other one.</p></li>
+<li><p>Create a new receiver function for the signal <code class="docutils literal notranslate"><span class="pre">should_request_be_authorized</span></code>.</p></li>
+<li><p>Post a test comment as a visitor.</p></li>
+<li><p>Post a test comment as a signed in user.</p></li>
+</ol>
+</div></blockquote>
+<div class="section" id="modify-the-settings-module">
+<h4>Modify the settings module<a class="headerlink" href="#modify-the-settings-module" title="Permalink to this headline">¶</a></h4>
+<p>We will modify the <code class="docutils literal notranslate"><span class="pre">simple/settings.py</span></code> module to add <code class="docutils literal notranslate"><span class="pre">rest_framework</span></code> to <code class="docutils literal notranslate"><span class="pre">INSTALLED_APPS</span></code>. In addition we will create a custom setting that will be used later in the receiver function for the signal <code class="docutils literal notranslate"><span class="pre">should_request_be_authorized</span></code>. I call the setting <code class="docutils literal notranslate"><span class="pre">MY_DRF_AUTH_TOKEN</span></code>. And we will also add Django Rest Framework settings to enable request authentication.</p>
+<p>Append the code to your <code class="docutils literal notranslate"><span class="pre">simple/settings.py</span></code> module:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="o">...</span>
+   <span class="s1">&#39;rest_framework&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;simple.articles&#39;</span><span class="p">,</span>
+   <span class="o">...</span>
+<span class="p">]</span>
+
+<span class="c1"># import os, binascii; binascii.hexlify(os.urandom(20)).decode()</span>
+<span class="n">MY_DRF_AUTH_TOKEN</span> <span class="o">=</span> <span class="s2">&quot;08d9fd42468aebbb8087b604b526ff0821ce4525&quot;</span>
+
+<span class="n">REST_FRAMEWORK</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;DEFAULT_AUTHENTICATION_CLASSES&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;rest_framework.authentication.SessionAuthentication&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;simple.apiauth.APIRequestAuthentication&#39;</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="modify-the-urls-module">
+<h4>Modify the urls module<a class="headerlink" href="#modify-the-urls-module" title="Permalink to this headline">¶</a></h4>
+<p>In order to send comments as a logged in user we will first login using the end point provided by Django REST Framework’s urls module. Append the following to the <code class="docutils literal notranslate"><span class="pre">urlpatterns</span></code> in <code class="docutils literal notranslate"><span class="pre">simple/urls.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span>
+
+    <span class="n">re_path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^api-auth/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;rest_framework.urls&#39;</span><span class="p">,</span>
+                                   <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;rest_framework&#39;</span><span class="p">)),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-a-new-authentication-class">
+<h4>Create a new authentication class<a class="headerlink" href="#create-a-new-authentication-class" title="Permalink to this headline">¶</a></h4>
+<p>In this step we create a class to validate that the request has a valid Authorization header. We follow the instructions about how to create a <a class="reference external" href="https://www.django-rest-framework.org/api-guide/authentication/#custom-authentication">Custom authentication</a> scheme in the Django REST Framework documentation.</p>
+<p>In the particular case of this class we don’t want to authenticate the user but merely the request. To authenticate the user we added the class <code class="docutils literal notranslate"><span class="pre">rest_framework.authentication.SessionAuthentication</span></code> to the <strong>DEFAULT_AUTHENTICATION_CLASSES</strong> of the <strong>REST_FRAMEWORK</strong> setting. So once we read the auth token we will return a tuple with an <strong>AnonymousUser</strong> instance and the content of the token read.</p>
+<p>Create the module <code class="docutils literal notranslate"><span class="pre">simple/apiauth.py</span></code> with the following content:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.contrib.auth.models</span> <span class="kn">import</span> <span class="n">AnonymousUser</span>
+
+<span class="kn">from</span> <span class="nn">rest_framework</span> <span class="kn">import</span> <span class="n">HTTP_HEADER_ENCODING</span><span class="p">,</span> <span class="n">authentication</span><span class="p">,</span> <span class="n">exceptions</span>
+
+
+<span class="k">class</span> <span class="nc">APIRequestAuthentication</span><span class="p">(</span><span class="n">authentication</span><span class="o">.</span><span class="n">BaseAuthentication</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+    <span class="n">auth</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">META</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;HTTP_AUTHORIZATION&#39;</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">auth</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+      <span class="n">auth</span> <span class="o">=</span> <span class="n">auth</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">HTTP_HEADER_ENCODING</span><span class="p">)</span>
+
+    <span class="n">pieces</span> <span class="o">=</span> <span class="n">auth</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">pieces</span> <span class="ow">or</span> <span class="n">pieces</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="sa">b</span><span class="s1">&#39;token&#39;</span><span class="p">:</span>
+      <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pieces</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+      <span class="n">msg</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Invalid token header. No credentials provided.&quot;</span><span class="p">)</span>
+      <span class="k">raise</span> <span class="n">exceptions</span><span class="o">.</span><span class="n">AuthenticationFailed</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">pieces</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+      <span class="n">msg</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Invalid token header.&quot;</span>
+          <span class="s2">&quot;Token string should not contain spaces.&quot;</span><span class="p">)</span>
+      <span class="k">raise</span> <span class="n">exceptions</span><span class="o">.</span><span class="n">AuthenticationFailed</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+      <span class="n">auth</span> <span class="o">=</span> <span class="n">pieces</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="k">except</span> <span class="ne">UnicodeError</span><span class="p">:</span>
+      <span class="n">msg</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Invalid token header. &quot;</span>
+          <span class="s2">&quot;Token string should not contain invalid characters.&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">AnonymousUser</span><span class="p">(),</span> <span class="n">auth</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>The class doesn’t validate the token. We will do it with the receiver function in the next section.</p>
+</div>
+<div class="section" id="create-a-receiver-for-should-request-be-authorized">
+<h4>Create a receiver for <code class="docutils literal notranslate"><span class="pre">should_request_be_authorized</span></code><a class="headerlink" href="#create-a-receiver-for-should-request-be-authorized" title="Permalink to this headline">¶</a></h4>
+<p>Now let’s create the receiver function. The receiver function will be called when the comment is posted, from the validate method of the <strong>WriteCommentSerializer</strong>. If the receiver returns True the request is considered authorized.</p>
+<p>Append the following code to the <code class="docutils literal notranslate"><span class="pre">simple/articles/models.py</span></code> module:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.dispatch</span> <span class="kn">import</span> <span class="n">receiver</span>
+<span class="kn">from</span> <span class="nn">django_comments_xtd.signals</span> <span class="kn">import</span> <span class="n">should_request_be_authorized</span>
+
+<span class="p">[</span><span class="o">...</span><span class="p">]</span>
+
+<span class="nd">@receiver</span><span class="p">(</span><span class="n">should_request_be_authorized</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">my_callback</span><span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">comment</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span> <span class="ow">and</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_authenticated</span><span class="p">)</span> <span class="ow">or</span>
+        <span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">auth</span> <span class="ow">and</span> <span class="n">request</span><span class="o">.</span><span class="n">auth</span> <span class="o">==</span> <span class="n">settings</span><span class="o">.</span><span class="n">MY_DRF_AUTH_TOKEN</span><span class="p">)</span>
+    <span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>The left part of the <em>if</em> is True when the <code class="docutils literal notranslate"><span class="pre">rest_framework.authentication.SessionAuthentication</span></code> recognizes the user posting the comment as a signed in user. However if the user sending the comment is a mere visitor and the request contains a valid <strong>Authorization</strong> token, then our class <code class="docutils literal notranslate"><span class="pre">simple.apiauth.APIRequestAuthentication</span></code> will have put the auth token in the request. If the auth token contains the value given in the setting <strong>MY_DRF_AUTH_TOKEN</strong> we can considered the request authorized.</p>
+</div>
+<div class="section" id="post-a-test-comment-as-a-visitor">
+<h4>Post a test comment as a visitor<a class="headerlink" href="#post-a-test-comment-as-a-visitor" title="Permalink to this headline">¶</a></h4>
+<p>Now with the previous changes in place launch the Django development server and let’s try to post a comment using the web API.</p>
+<p>These are the fields that have to be sent:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>content_type</strong>: A string with the content_type ie: <code class="docutils literal notranslate"><span class="pre">content_type=&quot;articles.article&quot;</span></code>.</p></li>
+<li><p><strong>object_pk</strong>: The object ID we are posting the comment to.</p></li>
+<li><p><strong>name</strong>: The name of the person posting the comment.</p></li>
+<li><p><strong>email</strong>: The email address of the person posting the comment. It’s required when the comment has to be confirmed via email.</p></li>
+<li><p><strong>followup</strong>: Boolean to indicate whether the user wants to receive follow-up notification via email.</p></li>
+<li><p><strong>reply_to</strong>: When threading is enabled, reply_to is the comment ID being responded with the comment being sent. If comments are not threaded the reply_to must be 0.</p></li>
+<li><p><strong>comment</strong>: The content of the comment.</p></li>
+</ul>
+</div></blockquote>
+<p>I will use the excellent <a class="reference external" href="https://httpie.org/docs">HTTPie</a> command line client:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http POST http://localhost:8000/comments/api/comment/ <span class="se">\</span>
+       <span class="s1">&#39;Authorization:Token 08d9fd42468aebbb8087b604b526ff0821ce4525&#39;</span> <span class="se">\</span>
+       <span class="nv">content_type</span><span class="o">=</span><span class="s2">&quot;articles.article&quot;</span> <span class="nv">object_pk</span><span class="o">=</span><span class="m">1</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;Joe Bloggs&quot;</span> <span class="se">\</span>
+       <span class="nv">followup</span><span class="o">=</span><span class="nb">false</span> <span class="nv">reply_to</span><span class="o">=</span><span class="m">0</span> <span class="nv">email</span><span class="o">=</span><span class="s2">&quot;joe@bloggs.com&quot;</span> <span class="se">\</span>
+       <span class="nv">comment</span><span class="o">=</span><span class="s2">&quot;This is the body, the actual comment...&quot;</span>
+
+HTTP/1.1 <span class="m">204</span> No Content
+Allow: POST, OPTIONS
+Content-Length: <span class="m">2</span>
+Content-Type: application/json
+Date: Fri, <span class="m">24</span> Jul <span class="m">2020</span> <span class="m">20</span>:06:02 GMT
+Server: WSGIServer/0.2 CPython/3.8.0
+Vary: Accept
+</pre></div>
+</div>
+</div></blockquote>
+<p>Check that in the terminal where you are running <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">runserver</span></code> you have got the content of the mail message that would be sent to <strong>joe&#64;bloggs.com</strong>. Copy the confirmation URL and visit it to confirm the comment.</p>
+</div>
+<div class="section" id="post-a-test-comment-as-a-signed-in-user">
+<h4>Post a test comment as a signed in user<a class="headerlink" href="#post-a-test-comment-as-a-signed-in-user" title="Permalink to this headline">¶</a></h4>
+<p>To post a comment as a logged in user we first have to obtain the csrftoken:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http localhost:8000/api-auth/login/ --session<span class="o">=</span>session1 -h
+
+HTTP/1.1 <span class="m">200</span> OK
+Cache-Control: max-age<span class="o">=</span><span class="m">0</span>, no-cache, no-store, must-revalidate, private
+Content-Length: <span class="m">4253</span>
+Content-Type: text/html<span class="p">;</span> <span class="nv">charset</span><span class="o">=</span>utf-8
+Date: Fri, <span class="m">24</span> Jul <span class="m">2020</span> <span class="m">21</span>:00:35 GMT
+Expires: Fri, <span class="m">24</span> Jul <span class="m">2020</span> <span class="m">21</span>:00:35 GMT
+Server: WSGIServer/0.2 CPython/3.8.0
+Server-Timing: SQLPanel_sql_time<span class="p">;</span><span class="nv">dur</span><span class="o">=</span><span class="m">0</span><span class="p">;</span><span class="nv">desc</span><span class="o">=</span><span class="s2">&quot;SQL 0 queries&quot;</span>
+Set-Cookie: <span class="nv">csrftoken</span><span class="o">=</span>nEJczcG2M3LrcxIKiHbkxDFy2gmplPtn87pAFhp0CQz47TvZ58v8S2eCpWD9Zadm<span class="p">;</span> <span class="nv">expires</span><span class="o">=</span>Fri, <span class="m">23</span> Jul <span class="m">2021</span> <span class="m">21</span>:00:35 GMT<span class="p">;</span> Max-Age<span class="o">=</span><span class="m">31449600</span><span class="p">;</span> <span class="nv">Path</span><span class="o">=</span>/<span class="p">;</span> <span class="nv">SameSite</span><span class="o">=</span>Lax
+Vary: Cookie
+</pre></div>
+</div>
+</div></blockquote>
+<p>Now we copy the value of csrftoken and attach it to the login HTTP request:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http -f POST localhost:8000/api-auth/login/ <span class="nv">username</span><span class="o">=</span>admin <span class="nv">password</span><span class="o">=</span>admin <span class="se">\</span>
+          X-CSRFToken:nEJczcG2M3LrcxIKiHbkxDFy2gmplPtn87pAFhp0CQz47TvZ58v8S2eCpWD9Zadm <span class="se">\</span>
+          --session<span class="o">=</span>session1
+
+HTTP/1.1 <span class="m">302</span> Found
+Cache-Control: max-age<span class="o">=</span><span class="m">0</span>, no-cache, no-store, must-revalidate, private
+Content-Length: <span class="m">0</span>
+Content-Type: text/html<span class="p">;</span> <span class="nv">charset</span><span class="o">=</span>utf-8
+Date: Fri, <span class="m">24</span> Jul <span class="m">2020</span> <span class="m">21</span>:06:11 GMT
+Expires: Fri, <span class="m">24</span> Jul <span class="m">2020</span> <span class="m">21</span>:06:11 GMT
+Location: /accounts/profile/
+Server: WSGIServer/0.2 CPython/3.8.0
+Set-Cookie: <span class="nv">csrftoken</span><span class="o">=</span>z3FtVTPWudwYrWrqSQLOb2HZ0JNAmoA3P8M4RSDhTtJr7LrSVVAbfDp847Xetuwm<span class="p">;</span> <span class="nv">expires</span><span class="o">=</span>Fri, <span class="m">23</span> Jul <span class="m">2021</span> <span class="m">21</span>:06:11 GMT<span class="p">;</span> Max-Age<span class="o">=</span><span class="m">31449600</span><span class="p">;</span> <span class="nv">Path</span><span class="o">=</span>/<span class="p">;</span> <span class="nv">SameSite</span><span class="o">=</span>Lax
+Set-Cookie: <span class="nv">sessionid</span><span class="o">=</span>iyq0q9kqxhjwsgnq95taqbdw2p35v4jb<span class="p">;</span> <span class="nv">expires</span><span class="o">=</span>Fri, <span class="m">07</span> Aug <span class="m">2020</span> <span class="m">21</span>:06:11 GMT<span class="p">;</span> HttpOnly<span class="p">;</span> Max-Age<span class="o">=</span><span class="m">1209600</span><span class="p">;</span> <span class="nv">Path</span><span class="o">=</span>/<span class="p">;</span> <span class="nv">SameSite</span><span class="o">=</span>Lax
+Vary: Cookie
+</pre></div>
+</div>
+</div></blockquote>
+<p>Finally we send the comment with the new csrftoken:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http POST http://localhost:8000/comments/api/comment/ <span class="se">\</span>
+            <span class="nv">content_type</span><span class="o">=</span><span class="s2">&quot;articles.article&quot;</span> <span class="nv">object_pk</span><span class="o">=</span><span class="m">1</span> <span class="nv">followup</span><span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
+            <span class="nv">reply_to</span><span class="o">=</span><span class="m">0</span> <span class="nv">comment</span><span class="o">=</span><span class="s2">&quot;This is the body, the actual comment...&quot;</span> <span class="se">\</span>
+            <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;Administrator&quot;</span> <span class="nv">email</span><span class="o">=</span><span class="s2">&quot;admin@example.com&quot;</span> <span class="se">\</span>
+            X-CSRFToken:z3FtVTPWudwYrWrqSQLOb2HZ0JNAmoA3P8M4RSDhTtJr7LrSVVAbfDp847Xetuwm <span class="se">\</span>
+            --session<span class="o">=</span>session1
+
+HTTP/1.1 <span class="m">201</span> Created
+Allow: POST, OPTIONS
+Content-Length: <span class="m">282</span>
+Content-Type: application/json
+Date: Fri, <span class="m">24</span> Jul <span class="m">2020</span> <span class="m">21</span>:06:58 GMT
+Server: WSGIServer/0.2 CPython/3.8.0
+Vary: Accept, Cookie
+
+<span class="o">{</span>
+    <span class="s2">&quot;comment&quot;</span>: <span class="s2">&quot;This is the body, the actual comment...&quot;</span>,
+    <span class="s2">&quot;content_type&quot;</span>: <span class="s2">&quot;articles.article&quot;</span>,
+    <span class="s2">&quot;email&quot;</span>: <span class="s2">&quot;admin@example.com&quot;</span>,
+    <span class="s2">&quot;followup&quot;</span>: false,
+    <span class="s2">&quot;honeypot&quot;</span>: <span class="s2">&quot;&quot;</span>,
+    <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;Administrator&quot;</span>,
+    <span class="s2">&quot;object_pk&quot;</span>: <span class="s2">&quot;1&quot;</span>,
+    <span class="s2">&quot;reply_to&quot;</span>: <span class="m">0</span>,
+    <span class="s2">&quot;security_hash&quot;</span>: <span class="s2">&quot;9da968a7ff000f2bd4aa1a669bb70d18934be574&quot;</span>,
+    <span class="s2">&quot;timestamp&quot;</span>: <span class="s2">&quot;1595624818&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>And the comment must have been posted as the user <code class="docutils literal notranslate"><span class="pre">admin</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="retrieve-comment-list">
+<h2><a class="toc-backref" href="#id4">Retrieve comment list</a><a class="headerlink" href="#retrieve-comment-list" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line">URL name: <strong>comments-xtd-api-list</strong></div>
+<div class="line">Mount point: <strong>&lt;comments-mount-point&gt;/api/&lt;content-type&gt;/&lt;object-pk&gt;/</strong></div>
+<div class="line-block">
+<div class="line">&lt;content-type&gt; is a hyphen separated lowecase pair app_label-model</div>
+<div class="line">&lt;object-pk&gt; is an integer representing the object ID.</div>
+</div>
+<div class="line">HTTP Methods: GET</div>
+<div class="line">HTTP Responses: 200</div>
+<div class="line">Serializer: <code class="docutils literal notranslate"><span class="pre">django_comments_xtd.api.serializers.ReadCommentSerializer</span></code></div>
+</div>
+</div></blockquote>
+<p>This method retrieves the list of comments posted to a given content type and object ID:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http http://localhost:8000/comments/api/blog-post/4/
+
+HTTP/1.0 <span class="m">200</span> OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: <span class="m">2707</span>
+Content-Type: application/json
+Date: Tue, <span class="m">23</span> May <span class="m">2017</span> <span class="m">11</span>:59:09 GMT
+Server: WSGIServer/0.2 CPython/3.6.0
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+<span class="o">[</span>
+    <span class="o">{</span>
+        <span class="s2">&quot;allow_reply&quot;</span>: true,
+        <span class="s2">&quot;comment&quot;</span>: <span class="s2">&quot;Integer erat leo, ...&quot;</span>,
+        <span class="s2">&quot;flags&quot;</span>: <span class="o">[</span>
+            <span class="o">{</span>
+                <span class="s2">&quot;flag&quot;</span>: <span class="s2">&quot;like&quot;</span>,
+                <span class="s2">&quot;id&quot;</span>: <span class="m">1</span>,
+                <span class="s2">&quot;user&quot;</span>: <span class="s2">&quot;admin&quot;</span>
+            <span class="o">}</span>,
+            <span class="o">{</span>
+                <span class="s2">&quot;flag&quot;</span>: <span class="s2">&quot;like&quot;</span>,
+                <span class="s2">&quot;id&quot;</span>: <span class="m">2</span>,
+                <span class="s2">&quot;user&quot;</span>: <span class="s2">&quot;fulanito&quot;</span>
+            <span class="o">}</span>,
+            <span class="o">{</span>
+                <span class="s2">&quot;flag&quot;</span>: <span class="s2">&quot;removal&quot;</span>,
+                <span class="s2">&quot;id&quot;</span>: <span class="m">2</span>,
+                <span class="s2">&quot;user&quot;</span>: <span class="s2">&quot;fulanito&quot;</span>
+            <span class="o">}</span>
+        <span class="o">]</span>,
+        <span class="s2">&quot;id&quot;</span>: <span class="m">10</span>,
+        <span class="s2">&quot;is_removed&quot;</span>: false,
+        <span class="s2">&quot;level&quot;</span>: <span class="m">0</span>,
+        <span class="s2">&quot;parent_id&quot;</span>: <span class="m">10</span>,
+        <span class="s2">&quot;permalink&quot;</span>: <span class="s2">&quot;/comments/cr/8/4/#c10&quot;</span>,
+        <span class="s2">&quot;submit_date&quot;</span>: <span class="s2">&quot;May 18, 2017, 9:19 AM&quot;</span>,
+        <span class="s2">&quot;user_avatar&quot;</span>: <span class="s2">&quot;http://www.gravatar.com/avatar/7dad9576 ...&quot;</span>,
+        <span class="s2">&quot;user_moderator&quot;</span>: true,
+        <span class="s2">&quot;user_name&quot;</span>: <span class="s2">&quot;Joe Bloggs&quot;</span>,
+        <span class="s2">&quot;user_url&quot;</span>: <span class="s2">&quot;&quot;</span>
+    <span class="o">}</span>,
+    <span class="o">{</span>
+        ...
+    <span class="o">}</span>
+<span class="o">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="retrieve-comments-count">
+<h2><a class="toc-backref" href="#id5">Retrieve comments count</a><a class="headerlink" href="#retrieve-comments-count" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line">URL name: <strong>comments-xtd-api-count</strong></div>
+<div class="line">Mount point: <strong>&lt;comments-mount-point&gt;/api/&lt;content-type&gt;/&lt;object-pk&gt;/count/</strong></div>
+<div class="line-block">
+<div class="line">&lt;content-type&gt; is a hyphen separated lowecase pair app_label-model</div>
+<div class="line">&lt;object-pk&gt; is an integer representing the object ID.</div>
+</div>
+<div class="line">HTTP Methods: GET</div>
+<div class="line">HTTP Responses: 200</div>
+<div class="line">Serializer: <code class="docutils literal notranslate"><span class="pre">django_comments_xtd.api.serializers.ReadCommentSerializer</span></code></div>
+</div>
+</div></blockquote>
+<p>This method retrieves the number of comments posted to a given content type and object ID:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http http://localhost:8000/comments/api/blog-post/4/count/
+
+HTTP/1.0 <span class="m">200</span> OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: <span class="m">11</span>
+Content-Type: application/json
+Date: Tue, <span class="m">23</span> May <span class="m">2017</span> <span class="m">12</span>:06:38 GMT
+Server: WSGIServer/0.2 CPython/3.6.0
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+<span class="o">{</span>
+    <span class="s2">&quot;count&quot;</span>: <span class="m">4</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="post-like-dislike-feedback">
+<h2><a class="toc-backref" href="#id6">Post like/dislike feedback</a><a class="headerlink" href="#post-like-dislike-feedback" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line">URL name: <strong>comments-xtd-api-feedback</strong></div>
+<div class="line">Mount point: <strong>&lt;comments-mount-point&gt;/api/feedback/</strong></div>
+<div class="line">HTTP Methods: POST</div>
+<div class="line">HTTP Responses: 201, 204, 403</div>
+<div class="line">Serializer: <code class="docutils literal notranslate"><span class="pre">django_comments_xtd.api.serializers.FlagSerializer</span></code></div>
+</div>
+</div></blockquote>
+<p>This method toggles flags like/dislike for a comment. Successive calls set/unset the like/dislike flag:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http -a admin:admin POST http://localhost:8000/comments/api/feedback/ <span class="nv">comment</span><span class="o">=</span><span class="m">10</span> <span class="nv">flag</span><span class="o">=</span><span class="s2">&quot;like&quot;</span>
+
+HTTP/1.0 <span class="m">201</span> Created
+Allow: POST, OPTIONS
+Content-Length: <span class="m">34</span>
+Content-Type: application/json
+Date: Tue, <span class="m">23</span> May <span class="m">2017</span> <span class="m">12</span>:27:00 GMT
+Server: WSGIServer/0.2 CPython/3.6.0
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+<span class="o">{</span>
+    <span class="s2">&quot;comment&quot;</span>: <span class="m">10</span>,
+    <span class="s2">&quot;flag&quot;</span>: <span class="s2">&quot;I liked it&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Calling it again unsets the <em>“I liked it”</em> flag:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http -a admin:admin POST http://localhost:8000/comments/api/feedback/ <span class="nv">comment</span><span class="o">=</span><span class="m">10</span> <span class="nv">flag</span><span class="o">=</span><span class="s2">&quot;like&quot;</span>
+
+HTTP/1.0 <span class="m">204</span> No Content
+Allow: POST, OPTIONS
+Content-Length: <span class="m">0</span>
+Date: Tue, <span class="m">23</span> May <span class="m">2017</span> <span class="m">12</span>:26:56 GMT
+Server: WSGIServer/0.2 CPython/3.6.0
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+</pre></div>
+</div>
+</div></blockquote>
+<p>It requires the user to be logged in:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http POST http://localhost:8000/comments/api/feedback/ <span class="nv">comment</span><span class="o">=</span><span class="m">10</span> <span class="nv">flag</span><span class="o">=</span><span class="s2">&quot;like&quot;</span>
+
+HTTP/1.0 <span class="m">403</span> Forbidden
+Allow: POST, OPTIONS
+Content-Length: <span class="m">58</span>
+Content-Type: application/json
+Date: Tue, <span class="m">23</span> May <span class="m">2017</span> <span class="m">12</span>:27:31 GMT
+Server: WSGIServer/0.2 CPython/3.6.0
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+<span class="o">{</span>
+    <span class="s2">&quot;detail&quot;</span>: <span class="s2">&quot;Authentication credentials were not provided.&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="post-removal-suggestions">
+<h2><a class="toc-backref" href="#id7">Post removal suggestions</a><a class="headerlink" href="#post-removal-suggestions" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line">URL name: <strong>comments-xtd-api-flag</strong></div>
+<div class="line">Mount point: <strong>&lt;comments-mount-point&gt;/api/flag/</strong></div>
+<div class="line">HTTP Methods: POST</div>
+<div class="line">HTTP Responses: 201, 403</div>
+<div class="line">Serializer: <code class="docutils literal notranslate"><span class="pre">django_comments_xtd.api.serializers.FlagSerializer</span></code></div>
+</div>
+</div></blockquote>
+<p>This method sets the <em>removal suggestion</em> flag on a comment. Once created for a given user successive calls return 201 but the flag object is not created again.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ http POST http://localhost:8000/comments/api/flag/ <span class="nv">comment</span><span class="o">=</span><span class="m">10</span> <span class="nv">flag</span><span class="o">=</span><span class="s2">&quot;report&quot;</span>
+
+HTTP/1.0 <span class="m">201</span> Created
+Allow: POST, OPTIONS
+Content-Length: <span class="m">42</span>
+Content-Type: application/json
+Date: Tue, <span class="m">23</span> May <span class="m">2017</span> <span class="m">12</span>:35:02 GMT
+Server: WSGIServer/0.2 CPython/3.6.0
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+<span class="o">{</span>
+    <span class="s2">&quot;comment&quot;</span>: <span class="m">10</span>,
+    <span class="s2">&quot;flag&quot;</span>: <span class="s2">&quot;removal suggestion&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>As the previous method, it requires the user to be logged in.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="javascript.html" class="btn btn-neutral float-right" title="JavaScript plugin" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="logic.html" class="btn btn-neutral float-left" title="Control logic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Daniel Rus Morales
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

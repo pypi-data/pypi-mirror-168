@@ -1,0 +1,620 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to django-comments-xtd &mdash; django-comments-xtd 3.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quick start guide" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> django-comments-xtd
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Demo projects</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="logic.html">Control logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="webapi.html">Web API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript.html">JavaScript plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templatetags.html">Filters and template tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating.html">Migrating to django-comments-xtd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Customizing django-comments-xtd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usecases.html">Use cases</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">django-comments-xtd</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to django-comments-xtd</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-django_comments_xtd">
+<span id="welcome-to-django-comments-xtd"></span><h1>Welcome to django-comments-xtd<a class="headerlink" href="#module-django_comments_xtd" title="Permalink to this headline">¶</a></h1>
+<p>A Django pluggable application that adds comments to your project. It extends
+the once official <a class="reference external" href="https://pypi.python.org/pypi/django-contrib-comments">Django Comments Framework</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This documentation represents the current version, v3.0.0, of
+django-comments-xtd. For old versions of the documentation:</p>
+<ul class="simple">
+<li><p>v2.8.1: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.8.1/">https://django-comments-xtd.readthedocs.io/en/2.8.1/</a></p></li>
+<li><p>v2.7.2: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.7.2/">https://django-comments-xtd.readthedocs.io/en/2.7.2/</a></p></li>
+<li><p>v2.6.2: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.6.2/">https://django-comments-xtd.readthedocs.io/en/2.6.2/</a></p></li>
+<li><p>v2.5.1: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.5.1/">https://django-comments-xtd.readthedocs.io/en/2.5.1/</a></p></li>
+<li><p>v2.4.3: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.4.3/">https://django-comments-xtd.readthedocs.io/en/2.4.3/</a></p></li>
+<li><p>v2.3.1: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.3.1/">https://django-comments-xtd.readthedocs.io/en/2.3.1/</a></p></li>
+<li><p>v2.2.1: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.2.1/">https://django-comments-xtd.readthedocs.io/en/2.2.1/</a></p></li>
+<li><p>v2.1.0: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.1.0/">https://django-comments-xtd.readthedocs.io/en/2.1.0/</a></p></li>
+<li><p>v2.0.10: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/2.0.10/">https://django-comments-xtd.readthedocs.io/en/2.0.10/</a></p></li>
+<li><p>v1.7.1: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/1.7.1/">https://django-comments-xtd.readthedocs.io/en/1.7.1/</a></p></li>
+<li><p>v1.6.7: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/1.6.7/">https://django-comments-xtd.readthedocs.io/en/1.6.7/</a></p></li>
+<li><p>v1.5.1: <a class="reference external" href="https://django-comments-xtd.readthedocs.io/en/1.5.1/">https://django-comments-xtd.readthedocs.io/en/1.5.1/</a></p></li>
+</ul>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" id="index-0">
+<li><p>Thread support, so comments can be nested.</p></li>
+<li><p>Customizable maximum thread level, either for all models or on a per
+app.model basis.</p></li>
+<li><p>Optional notifications on follow-up comments via email.</p></li>
+<li><p>Mute links to allow cancellation of follow-up notifications.</p></li>
+<li><p>Comment confirmation via email when users are not authenticated.</p></li>
+<li><p>Comments hit the database only after they have been confirmed.</p></li>
+<li><p>Registered users can like/dislike comments and can suggest comments removal.</p></li>
+<li><p>Template tags to list/render the last N comments posted to any given list of
+app.model pairs.</p></li>
+<li><p>Emails sent through threads (can be disable to allow other solutions, like a
+Celery app).</p></li>
+<li><p>Fully functional JavaScript plugin using ReactJS, jQuery, Bootstrap,
+Remarkable and MD5.</p></li>
+</ol>
+<img alt="_images/cover.png" src="_images/cover.png" />
+</div>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>Start with these documents to get you up and running:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#preparation">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#comments-tags">Comments tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#moderation">Moderation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#threads">Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#flags">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#markdown">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#javascript-plugin">JavaScript plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#final-notes">Final notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Demo projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="example.html#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example.html#simple-project">Simple project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example.html#custom-project">Custom project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example.html#comp-project">Comp project</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="advanced-use">
+<h2>Advanced Use<a class="headerlink" href="#advanced-use" title="Permalink to this headline">¶</a></h2>
+<p>Once you’ve got django-comments-xtd working, you may want to know more about
+specific features, or check out the use cases to see how others customize it.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="logic.html">Control logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="webapi.html">Web API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript.html">JavaScript plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templatetags.html">Filters and template tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating.html">Migrating to django-comments-xtd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Customizing django-comments-xtd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usecases.html">Use cases</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2>Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>[3.0.0] -<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/221">#194</a>, about the <a class="reference external" href="https://django-contrib-comments.readthedocs.io/en/latest/settings.html#std:setting-COMMENTS_HIDE_REMOVED" title="(in Django Comments v1.8)"><code class="xref std std-setting docutils literal notranslate"><span class="pre">COMMENTS_HIDE_REMOVED</span></code></a> setting and the new <a class="reference internal" href="settings.html#std:setting-COMMENTS_XTD_PUBLISH_OR_WITHHOLD_NESTED"><code class="xref std std-setting docutils literal notranslate"><span class="pre">COMMENTS_XTD_PUBLISH_OR_WITHHOLD_NESTED</span></code></a>. Up until v3.0.0 removed comments were listed but their content were not displayed. They showed a “comment has been removed” message instead. That behaviour didn’t fully comply with the <a class="reference external" href="https://django-contrib-comments.readthedocs.io/en/latest/settings.html#std:setting-COMMENTS_HIDE_REMOVED" title="(in Django Comments v1.8)"><code class="xref std std-setting docutils literal notranslate"><span class="pre">COMMENTS_HIDE_REMOVED</span></code></a> setting of django-comments, the parent app. By default <a class="reference external" href="https://django-contrib-comments.readthedocs.io/en/latest/settings.html#std:setting-COMMENTS_HIDE_REMOVED" title="(in Django Comments v1.8)"><code class="xref std std-setting docutils literal notranslate"><span class="pre">COMMENTS_HIDE_REMOVED</span></code></a> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, which has the effect of hiding removed comments. As of v3.0.0 this is also the behaviour of django-comments-xtd. Additionally a new setting <a class="reference internal" href="settings.html#std:setting-COMMENTS_XTD_PUBLISH_OR_WITHHOLD_NESTED"><code class="xref std std-setting docutils literal notranslate"><span class="pre">COMMENTS_XTD_PUBLISH_OR_WITHHOLD_NESTED</span></code></a> has been created to control whether nested comments of a comment being removed or approved will be withhold or published.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h3>[2.8.1] -<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/152">#152</a>, about loading the <cite>staticfiles</cite> templatetag instead of <cite>static</cite>. Since Django v3.0 the staticfiles app requires using the latter.</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/221">#221</a>, about the get_version function. Now it returns the full
+version number <code class="docutils literal notranslate"><span class="pre">&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</span></code>. Thanks to &#64;mckinly.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h3>[2.8.0] - 2020-09-26<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/106">#106</a>, which is about computing the number of nested comments for every comment at every level down the tree. The fix consists of adding a new field called <code class="docutils literal notranslate"><span class="pre">nested_count</span></code> to the <strong>XtdComment</strong> model. Its value represents the number of threaded comments under itself. A new management command, <code class="docutils literal notranslate"><span class="pre">initialize_nested_count</span></code>, can be used to update the value of the field, the command is idempotent. Two new migrations have been added: migration 0007 adds the new field, and migration 0008 calls the <code class="docutils literal notranslate"><span class="pre">initialize_nested_count</span></code> command to populate the <code class="docutils literal notranslate"><span class="pre">nested_count</span></code> new field with correct values.</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/205">#215</a> about running the tests with Django 3.1 and Python 3.8.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id9">
+<h3>[2.7.2] - 2020-09-08<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/208">#208</a>, about the JavaScript plugin not displaying the like and dislike buttons and the reply link when django-comments-xtd is setup to allow posting comments only to registered users (<code class="docutils literal notranslate"><span class="pre">who_can_post:</span> <span class="pre">&quot;users&quot;</span></code>).</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/212">#212</a>, about missing i18n JavaScript catalog files for Dutch, German and Russian.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id12">
+<h3>[2.7.1] - 2020-08-12<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/188">#188</a>, about loading a templatetags module not required for the application.</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/196">#196</a>. When extending django-comments-xtd’s comment model, the receiver function that reviews whether nested comments have to be publish or unpublish is not called.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id15">
+<h3>[2.7.0] - 2020-08-09<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Enhancement, closing issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/155">#155</a> (and <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/170">#170</a>), on how to post comments via the web API. Up until version 2.6.2 posting comments required the fields timestamp, security_hash and honeypot. As of 2.7.0 there is support allow Django REST Framework authentication classes: <code class="docutils literal notranslate"><span class="pre">WriteCommentSerializer</span></code> send the signal <code class="docutils literal notranslate"><span class="pre">should_request_be_authorize</span></code> that enables posting comments. Read the documentation about the web API.</p></li>
+<li><p>Enhancement, closing issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/175">#175</a> on how to customize django-comments-xtd so that user images displayed in comments come from other sources. A new setting <code class="docutils literal notranslate"><span class="pre">COMMENTS_XTD_API_GET_USER_AVATAR</span></code> has been added. The docs have been extended with a page that explains the use case in depth.</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/171">#171</a>, on wrong permission used to decide whether a user is a moderator. The right permission is <code class="docutils literal notranslate"><span class="pre">django_comments.can_moderate</span></code>. (thanks to Ashwani Gupta, &#64;ashwani99).</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/136">#136</a> on missing &lt;link&gt; element in the <code class="docutils literal notranslate"><span class="pre">templates/base.html</span></code> file distributed with the <strong>tutorial.tar.gz</strong> bundle.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id21">
+<h3>[2.6.2] - 2020-07-05<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adds Dutch translation (thanks to Jean-Paul Ladage, &#64;jladage).</p></li>
+<li><p>Adds Russian translation (thanks to Михаил Рыбкин, &#64;MikerStudio).</p></li>
+<li><p>Fixesissue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/140">#140</a>, which adds the capacity to allow only registered users to post comments.</p></li>
+<li><p>Fixesissue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/149">#149</a>, on wrong SQL boolean literal value used when running special command <code class="docutils literal notranslate"><span class="pre">populate_xtdcomments</span></code> to load Postgres database with xtdcomments.</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/154">#154</a>, on using string formatting compatible with Python versions prior to 3.6.</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/156">#156</a>, on wrong props name <code class="docutils literal notranslate"><span class="pre">poll_interval</span></code>. JavaScript plugin expects the use of <code class="docutils literal notranslate"><span class="pre">polling_interval</span></code> while the <code class="docutils literal notranslate"><span class="pre">api/frontend.py</span></code> module referred to it as <code class="docutils literal notranslate"><span class="pre">poll_interval</span></code>. (thanks to &#64;ashwani99).</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/159">#159</a>, about using the same id for all the checkboxes in the comment list. When ticking one checkbox in a nested form the checkbox of the main form was ticked. Now each checkbox has a different id, suffixed with the content of the <code class="docutils literal notranslate"><span class="pre">reply_to</span></code> field.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id27">
+<h3>[2.6.1] - 2020-05-13<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/150">#150</a>, about wrong protocol in the URL when fetching avatar images from gravatar.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id29">
+<h3>[2.6.0] - 2020-05-12<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/145">#145</a>, on inadequate number of SQL queries used by API entry point <strong>comments-xtd-api-list</strong>, available in the URL <code class="docutils literal notranslate"><span class="pre">/comments/api/&lt;content-type&gt;/&lt;object-pk&gt;/</span></code>. The issue also happened when rendering the comments using tags <code class="docutils literal notranslate"><span class="pre">get_xtdcomment_tree</span></code> and <code class="docutils literal notranslate"><span class="pre">render_xtdcomment_tree</span></code>. It has been fixed in both cases too.</p></li>
+<li><p>Updates the JSON schema of the output retrieved by the API entry point <strong>comments-xtd-api-list</strong>. Thus the version number change. The flags attribute of each retrieved is now a list of flags instead of a summary for each the flags: “I like it”, “I dislike it”, “suggest removal”.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id31">
+<h3>[2.5.1] - 2020-04-27<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/138">#138</a>, on unpublishing a single comment with public nested comments. The fix consists of a new <code class="docutils literal notranslate"><span class="pre">pre_save</span></code> receiver that will either publish or unpublish nested comments when a comment changes its <code class="docutils literal notranslate"><span class="pre">is_public</span></code> attribute. (thanks to &#64;hematinik).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id33">
+<h3>[2.5.0] - 2020-04-22<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/144">#144</a> regarding the size of the JavaScript bundle. The new JavaScript plugin does not include React and ReactDOM. The two libraries have to be loaded with an external script.</p></li>
+<li><p>Update the dependencies of the JavaScript plugin.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id35">
+<h3>[2.4.3] - 2020-01-26<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue on the ContentType that happens when sending post request with empty data. (PR: <a class="reference external" href="https://github.com/danirus/django-comments-xtd/pull/137">#137</a>) (thanks to &#64;dvorberg).</p></li>
+<li><p>Adds German translations, (thanks to &#64;dvorberg).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id37">
+<h3>[2.4.2] - 2019-12-25<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adds Django 3.0 compatibility thanks to Sergey Ivanychev (&#64;ivanychev).</p></li>
+<li><p>Adds Norwegian translations thanks to Yngve Høiseth (&#64;yhoiseth).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id38">
+<h3>[2.4.1] - 2019-09-30<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Allow changing the <code class="docutils literal notranslate"><span class="pre">d</span></code> parameter when requesting a gravatar, thanks to &#64;pylixm (PR: <a class="reference external" href="https://github.com/danirus/django-comments-xtd/pull/100">#100</a>).</p></li>
+<li><p>Avoid requiring the <code class="docutils literal notranslate"><span class="pre">SITE_ID</span></code>, thanks to &#64;gassan (PR: <a class="reference external" href="https://github.com/danirus/django-comments-xtd/pull/125">#125</a>).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id41">
+<h3>[2.4.0] - 2019-02-19<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>New minor release thanks to Mandeep Gill with the following changes:</p>
+<ul class="simple">
+<li><p>Adds support for non-int based <code class="docutils literal notranslate"><span class="pre">object_pk</span></code>, for instead when using UUIDs or HashIds as the primary key on a model (closes <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/112">#112</a>).</p></li>
+<li><p>Refactors the commentbox props generation into a separate function so can be used from the webapi for use with rest-framework/API-only backends that don’t make use of server-side templates.</p></li>
+<li><p>Adds a <strong>pyproject.yaml</strong> for use with <a class="reference external" href="https://poetry.eustace.io">poetry</a> and new pip environments (PEP 518).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id43">
+<h3>[2.3.1] - 2019-01-08<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/116">#116</a>.</p></li>
+<li><p>Updates package.json JavaScript dependencies:</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>babel-cli from 6.24.1 to 6.26.0.</p></li>
+<li><p>jquery from 3.2.1 to 3.3.1.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id45">
+<h3>[2.3.0] - 2018-11-29<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Upgrades Twitter-Bootstrap from v3 to v4.</p></li>
+<li><p>Fixes issue with tutorial fixtures (bug <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/114">#114</a>).</p></li>
+<li><p>Upgrade all JavaScript dependencies. Check packages.json for details. The major changes are:</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>ReactJS updates from 15.5 to 16.5.</p></li>
+<li><p>Babel updates from 6 to 7.</p></li>
+<li><p>Webpack from 2.4.1 to 4.21.0.</p></li>
+<li><p>Bootstrap from 3.3.7 to 4.1.3.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Updates webpack.config.js.</p></li>
+<li><p>Demo sites and tutorial have been adapted to Twitter Bootstrap v4.</p></li>
+<li><p>Fixes issues <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/94">#94</a>, <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/108">#108</a>, <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/111">#111</a>.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id50">
+<h3>[2.2.1] - 2018-10-06<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Resolves deprecation warnings and adopt recommendations in unit tests.</p></li>
+<li><p>Fixes demo sites so that they work with Django 1.11, Django 2.0 and Django 2.1.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id51">
+<h3>[2.2.0] - 2018-08-12<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adds support for Django 2.1.</p></li>
+<li><p>Drops support for Django &lt; 1.11 as it depends on django-contrib-comments which dropped support too.</p></li>
+<li><p>Fixes issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/104">#104</a> (on lack of Django 2.1 support).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id53">
+<h3>[2.1.0] - 2018-02-13<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixes issues <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/76">#76</a>, <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/86">#86</a> and <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/87">#87</a>.</p></li>
+<li><p>Request user name and/or email address in case the user is logged in but the user’s email attribute is empty and/or the user’s <code class="docutils literal notranslate"><span class="pre">get_full_name()</span></code> method returns an empty string.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id57">
+<h3>[2.0.10] - 2018-01-19<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adds Django 2.0 compatibility.</p></li>
+<li><p>Fixes issues <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/81">#81</a> and <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/83">#83</a>.</p></li>
+<li><p>Replaces the use of <code class="docutils literal notranslate"><span class="pre">django.test.client</span></code> by <code class="docutils literal notranslate"><span class="pre">RequestFactory</span></code> in unittests.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id60">
+<h3>[2.0.9] - 2017-11-09<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fix issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/77">#77</a>. Template filter <code class="docutils literal notranslate"><span class="pre">xtd_comment_gravatar_url</span></code> must not hard-code http schema in URL (reported by &#64;pamost).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id62">
+<h3>[2.0.8] - 2017-09-24<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>App translation to Finnish, thanks to Tero Tikkanen (&#64;terotic).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id63">
+<h3>[2.0.7] - 2017-09-20<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adds missing migration for a field’s label (issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/71">#71</a>).</p></li>
+<li><p>Makes the form label for field <code class="docutils literal notranslate"><span class="pre">name</span></code> translatable (issue <a class="reference external" href="https://github.com/danirus/django-comments-xtd/issues/73">#73</a>).</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id66">
+<h3>[2.0.6] - 2017-08-08<a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Code fixes to enable proper support for the Django Sites Framework.</p></li>
+<li><p>Code fixes for the comp demo site.</p></li>
+<li><p>Makes demo site dates in initial data files timezone aware.</p></li>
+<li><p>Improves documentation on setting up demo sites.</p></li>
+<li><p>Style changes in CSS wells.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id67">
+<h3>[2.0.5] - 2017-07-20<a class="headerlink" href="#id67" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Surpass version number to fix problem with package upload in PyPI.</p></li>
+<li><p>No changes applied to this version.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id68">
+<h3>[2.0.4] - 2017-07-19<a class="headerlink" href="#id68" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">django.core.signing</span></code> with temporary comment passed in URL redirection.</p></li>
+<li><p>Fix mistakes in documentation.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id69">
+<h3>[2.0.3] - 2017-07-10<a class="headerlink" href="#id69" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>App translation to French thanks to Brice Gelineau.</p></li>
+<li><p>Fixed <strong>MANIFEST.in</strong> file, so that files with translations are distributed.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id70">
+<h3>[2.0.0] - 2017-06-04<a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Javascript plugin (based on ReactJS).</p></li>
+<li><p>Web API to:
+* Create a comment for a given content type and object ID.
+* List comments for a given content type and object ID.
+* Send feedback flags (like/dislike) on comments.
+* Send report flag (removal suggestion) for a comment.
+* Template filter <code class="docutils literal notranslate"><span class="pre">has_permission</span></code> applicable to a user object and accepting a string specifying the <code class="docutils literal notranslate"><span class="pre">app_label.permission</span></code> being checked. It returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the user has the given permission, otherwise returns <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p>Setting <code class="docutils literal notranslate"><span class="pre">COMMENTS_XTD_API_USER_REPR</span></code> defines a lambda function to return the user string representation used by the web API in response objects.</p></li>
+<li><p>Setting <code class="docutils literal notranslate"><span class="pre">COMMENTS_XTD_APP_MODEL_PERMISSIONS</span></code> to explicitly define what commenting features are enabled on per app.model basis.</p></li>
+<li><p>Templates <code class="docutils literal notranslate"><span class="pre">comments/delete.html</span></code> and <code class="docutils literal notranslate"><span class="pre">comments/deleted.html</span></code> matching django-comments-xtd default twitter-bootstrap styling.</p></li>
+<li><p>Dependencies on Python packages: djangorestframework.</p></li>
+<li><p>Supports i18n for English and Spanish.</p></li>
+<li><p>All settings namespaced inside the COMMENTS_XTD setting.</p></li>
+<li><p>Management command to migrate comments from django-contrib-comments to django-comments-xtd.</p></li>
+<li><p>Enable removal link in <code class="docutils literal notranslate"><span class="pre">django_comments_xtd/comment_tree.html</span></code> when the user has the permission <code class="docutils literal notranslate"><span class="pre">django_comments.can_moderate</span></code>.</p></li>
+<li><p>Changed, when the user logged has <code class="docutils literal notranslate"><span class="pre">django_comments.can_moderate</span></code> permission, template <code class="docutils literal notranslate"><span class="pre">django_comments_xtd/comment_tree.html</span></code> will show the number of removal suggestions a comment has received.</p></li>
+<li><p>Changed, when a comment is marked as removed by a moderator (using django-comments’ <strong>comments-delete</strong> url) every nested comment below the one removed is unpublished (<code class="docutils literal notranslate"><span class="pre">is_public</span></code> attribute is turned to <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+<li><p>Changed view helper functions, <code class="docutils literal notranslate"><span class="pre">perform_like+`</span> <span class="pre">and</span> <span class="pre">``perform_dislike</span></code> now returns a boolean indicating whether a flag was created. If <code class="docutils literal notranslate"><span class="pre">True</span></code> the flag has been created. If <code class="docutils literal notranslate"><span class="pre">False</span></code> the flag has been deleted. These two functions behave as toggle functions.</p></li>
+<li><p>Changed templates <code class="docutils literal notranslate"><span class="pre">comments/preview.html</span></code>, <code class="docutils literal notranslate"><span class="pre">comments/flag.html</span></code> and <code class="docutils literal notranslate"><span class="pre">comments/flagged.hml</span></code>.</p></li>
+<li><p>Removed dependency on django-markup.</p></li>
+<li><p>Removed template filter <code class="docutils literal notranslate"><span class="pre">render_markup_comment</span></code>.</p></li>
+<li><p>Removed setting <code class="docutils literal notranslate"><span class="pre">MARKUP_FALLBACK_FILTER</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="quickstart.html" class="btn btn-neutral float-right" title="Quick start guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Daniel Rus Morales
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

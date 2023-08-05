@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Change user image or avatar &mdash; django-comments-xtd 3.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Only signed in users can comment" href="only-signed-in-can-comment.html" />
+    <link rel="prev" title="Use cases" href="../usecases.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> django-comments-xtd
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quick start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example.html">Demo projects</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../logic.html">Control logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../webapi.html">Web API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript.html">JavaScript plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templatetags.html">Filters and template tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../migrating.html">Migrating to django-comments-xtd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending.html">Customizing django-comments-xtd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templates.html">Templates</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../usecases.html">Use cases</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Change user image or avatar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#purpose">Purpose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-django-avatar-to-the-comp-project">Add django-avatar to the Comp project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#when-using-html-templates-to-render-the-comments">When using HTML templates to render the comments</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#change-the-comment-tree-html-template">Change the <code class="docutils literal notranslate"><span class="pre">comment_tree.html</span></code> template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-the-comments-preview-html-template">Create the <code class="docutils literal notranslate"><span class="pre">comments/preview.html</span></code> template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-the-django-comments-xtd-comment-html-template">Create the <code class="docutils literal notranslate"><span class="pre">django_comments_xtd/comment.html</span></code> template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-the-changes">Test the changes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#when-using-the-web-api">When using the web API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#implement-the-function-that-fetches-images-urls">Implement the function that fetches images’ URLs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#override-comments-xtd-api-get-user-avatar">Override <code class="docutils literal notranslate"><span class="pre">COMMENTS_XTD_API_GET_USER_AVATAR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Test the changes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="only-signed-in-can-comment.html">Only signed in users can comment</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">django-comments-xtd</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../usecases.html">Use cases</a> &raquo;</li>
+        
+      <li>Change user image or avatar</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/usecases/change-user-image-or-avatar.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="change-user-image-or-avatar">
+<span id="ref-change-user-image-or-avatar"></span><h1>Change user image or avatar<a class="headerlink" href="#change-user-image-or-avatar" title="Permalink to this headline">¶</a></h1>
+<p>By default django-comments-xtd uses its own template filters to fetch user profile images from <a class="reference external" href="http://gravatar.com/">Gravatar</a> and put them in comments. It is a simple solution that makes the app dependant on an external service. But it is a good solution when the only confirmed record we get from the person who posted the comment is an email address.</p>
+<p>This page describes how to setup django-comments-xtd so that user images displayed in comments come from other sources. For such purpose, in addition to the default filters, we will use <a class="reference external" href="https://github.com/grantmcconnaughey/django-avatar">django-avatar</a>. Your Django project can use another application to procure user images, perhaps with a built-in solution or via a social service. Just adapt your case to the methodology exposed here.</p>
+<div class="contents local topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#purpose" id="id6">Purpose</a></p></li>
+<li><p><a class="reference internal" href="#add-django-avatar-to-the-comp-project" id="id7">Add django-avatar to the Comp project</a></p></li>
+<li><p><a class="reference internal" href="#when-using-html-templates-to-render-the-comments" id="id8">When using HTML templates to render the comments</a></p></li>
+<li><p><a class="reference internal" href="#when-using-the-web-api" id="id9">When using the web API</a></p></li>
+<li><p><a class="reference internal" href="#conclusion" id="id10">Conclusion</a></p></li>
+</ul>
+</div>
+<div class="section" id="purpose">
+<h2><a class="toc-backref" href="#id6">Purpose</a><a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>This how-to will combine both solutions, template filters provided with django-comments-xtd and template tags provided with django-avatar, to fetch user images for two different type of comments, those posted by registered users and those posted by mere visitors:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Avatar images in comments posted by <strong>non-registered users</strong> will be fetched from Gravatar via django-comments-xtd filters, as the only record we get from those visitors is their email address.</p></li>
+<li><p>On the other hand avatar images in comments posted by <strong>registered users</strong> will be provided by django-avatar templatetags, as django-avatar’s templatetags require a user object to fetch the user’s image.</p></li>
+</ul>
+</div></blockquote>
+<p>Django-avatar will make those images available from different sources depending on how we customize the app. We can add user images directly using Django’s admin interface or we can let the app fetch them via providers, from social networks or writing our own specific provider function.</p>
+<p>For the purpose of this how-to we will use the <a class="reference internal" href="../example.html#example-comp"><span class="std std-ref">Comp project</span></a> introduced in the Demo projects page. Before you continue reading please, visit the samples <a class="reference internal" href="../example.html#example-setup"><span class="std std-ref">Setup</span></a> page and get the <a class="reference internal" href="../example.html#example-comp"><span class="std std-ref">Comp project</span></a> up and running.</p>
+</div>
+<div class="section" id="add-django-avatar-to-the-comp-project">
+<h2><a class="toc-backref" href="#id7">Add django-avatar to the Comp project</a><a class="headerlink" href="#add-django-avatar-to-the-comp-project" title="Permalink to this headline">¶</a></h2>
+<p>Install django-avatar with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">django-avatar</span></code>, and be sure that the <code class="docutils literal notranslate"><span class="pre">comp/settings.py</span></code> module contains the following entries:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MEDIA_ROOT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">PROJECT_DIR</span><span class="p">,</span> <span class="s2">&quot;media&quot;</span><span class="p">)</span>
+<span class="n">MEDIA_URL</span> <span class="o">=</span> <span class="s1">&#39;/media/&#39;</span>
+<span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span>
+    <span class="s1">&#39;avatar&#39;</span><span class="p">,</span>
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Then run the migrate command to create django-avatar tables: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">migrate</span></code>.</p>
+<p>Also change the <code class="docutils literal notranslate"><span class="pre">comp/urls.py</span></code> module to serve media files in development and get access to users’ images stored with django-avatar:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.conf</span> <span class="kn">import</span> <span class="n">settings</span>
+<span class="kn">from</span> <span class="nn">django.conf.urls.static</span> <span class="kn">import</span> <span class="n">static</span>
+
+<span class="p">[</span><span class="o">...</span><span class="p">]</span>
+
+<span class="c1"># At the bottom of the module.</span>
+<span class="k">if</span> <span class="n">settings</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">:</span>
+    <span class="n">urlpatterns</span> <span class="o">+=</span> <span class="n">static</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">MEDIA_URL</span><span class="p">,</span> <span class="n">document_root</span><span class="o">=</span><span class="n">settings</span><span class="o">.</span><span class="n">MEDIA_ROOT</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="when-using-html-templates-to-render-the-comments">
+<h2><a class="toc-backref" href="#id8">When using HTML templates to render the comments</a><a class="headerlink" href="#when-using-html-templates-to-render-the-comments" title="Permalink to this headline">¶</a></h2>
+<p>If your project uses django-comments-xtd HTML templates to render comments, like the Comp project’s <strong>quotes app</strong> does, then you only have to adapt your project’s HTML templates to use django-avatar.</p>
+<p>Let’s go then through the following changes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Change the <code class="docutils literal notranslate"><span class="pre">comment_tree.html</span></code> template.</p></li>
+<li><p>Create the <code class="docutils literal notranslate"><span class="pre">comments/preview.html</span></code> template.</p></li>
+<li><p>Create the <code class="docutils literal notranslate"><span class="pre">django_comments_xtd/comment.html</span></code> template (bonus).</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="change-the-comment-tree-html-template">
+<h3>Change the <code class="docutils literal notranslate"><span class="pre">comment_tree.html</span></code> template<a class="headerlink" href="#change-the-comment-tree-html-template" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference internal" href="../example.html#example-comp"><span class="std std-ref">Comp project</span></a> uses the <strong>render_xtdcomment_tree</strong> template tag to render the tree of comments in <code class="docutils literal notranslate"><span class="pre">quotes/quote_detail.html</span></code>. <strong>render_xtdcomment_tree</strong> in turn renders the <code class="docutils literal notranslate"><span class="pre">django_comments_xtd/comment_tree.html</span></code> template.</p>
+<p>The comp project overrides the <code class="docutils literal notranslate"><span class="pre">comment_tree.html</span></code> template. Let’s edit it (in <code class="docutils literal notranslate"><span class="pre">comp/templates/django_comments_xtd</span></code>) to make it start as follows:</p>
+<div class="highlight-html+django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">load</span> <span class="nv">l10n</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">load</span> <span class="nv">i18n</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">load</span> <span class="nv">comments</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">load</span> <span class="nv">avatar_tags</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">load</span> <span class="nv">comments_xtd</span> <span class="cp">%}</span>
+
+<span class="cp">{%</span> <span class="k">for</span> <span class="nv">item</span> <span class="k">in</span> <span class="nv">comments</span> <span class="cp">%}</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;c</span><span class="cp">{{</span> <span class="nv">item.comment.id</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span>
+    <span class="cp">{%</span> <span class="k">if</span> <span class="nv">item.comment.user</span> <span class="k">and</span> <span class="nv">item.comment.user</span><span class="o">|</span><span class="nf">has_avatar</span> <span class="cp">%}</span>
+      <span class="na">src</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{%</span> <span class="k">avatar_url</span> <span class="nv">item.comment.user</span> <span class="m">48</span> <span class="cp">%}</span><span class="s">&quot;</span>
+    <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
+      <span class="na">src</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">item.comment.user_email</span><span class="o">|</span><span class="nf">xtd_comment_gravatar_url</span> <span class="cp">}}</span><span class="s">&quot;</span>
+    <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+    <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr-3&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;48&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;48&quot;</span>
+  <span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-body&quot;</span><span class="p">&gt;</span>
+    [...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-the-comments-preview-html-template">
+<h3>Create the <code class="docutils literal notranslate"><span class="pre">comments/preview.html</span></code> template<a class="headerlink" href="#create-the-comments-preview-html-template" title="Permalink to this headline">¶</a></h3>
+<p>We also want to apply the same logic to the <code class="docutils literal notranslate"><span class="pre">comments/preview.html</span></code> template. The preview template gets rendered when the user clicks on the preview button in the comment form.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">preview.html</span></code> template is initially served by <a class="reference external" href="https://django-contrib-comments.readthedocs.io/">django-contrib-comments</a>, but it is overriden by a copy provided from django-comments-xtd templates directory.</p>
+<p>For our purpose we have to modify that version, let’s copy it from django-comments-xtd’s templates directory into the comp project templates directory:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cp django_comments_xtd/templates/comments/preview.html example/comp/templates/comments/
+</pre></div>
+</div>
+<p>And edit the template so that the <code class="docutils literal notranslate"><span class="pre">&lt;div</span> <span class="pre">class=&quot;media&quot;&gt;</span></code> starts like this:</p>
+<div class="highlight-html+django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">load</span> <span class="nv">avatar_tags</span> <span class="cp">%}</span>
+
+[...]
+
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span>
+          <span class="cp">{%</span> <span class="k">if</span> <span class="nv">request.user</span><span class="o">|</span><span class="nf">has_avatar</span> <span class="cp">%}</span>
+            <span class="na">src</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{%</span> <span class="k">avatar_url</span> <span class="nv">request.user</span> <span class="m">48</span> <span class="cp">%}</span><span class="s">&quot;</span>
+          <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
+            <span class="na">src</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">form.cleaned_data.user_email</span><span class="o">|</span><span class="nf">xtd_comment_gravatar_url</span> <span class="cp">}}</span><span class="s">&quot;</span>
+          <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+          <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr-3&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;48&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;48&quot;</span>
+        <span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-body&quot;</span><span class="p">&gt;</span>
+
+[...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-the-django-comments-xtd-comment-html-template">
+<h3>Create the <code class="docutils literal notranslate"><span class="pre">django_comments_xtd/comment.html</span></code> template<a class="headerlink" href="#create-the-django-comments-xtd-comment-html-template" title="Permalink to this headline">¶</a></h3>
+<p>Additionally to the templates used by the <strong>quotes app</strong>, the <a class="reference internal" href="../example.html#example-comp"><span class="std std-ref">Comp project</span></a> displays a list with the last 5 comments posted to the site, regardless of whether they were sent to the quotes app or the articles app.</p>
+<p>In order to get the appropriate avatar images in such a list we need to override the <code class="docutils literal notranslate"><span class="pre">django_comments_xtd/comment.html</span></code> template:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cp django_comments_xtd/templates/django_comments_xtd/comment.html example/comp/templates/django_comments_xtd/
+</pre></div>
+</div>
+<p>Now edit the template and make the following changes:</p>
+<div class="highlight-html+django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">load</span> <span class="nv">avatar_tags</span> <span class="cp">%}</span>
+
+[...]
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;c</span><span class="cp">{{</span> <span class="nv">comment.id</span> <span class="cp">}}</span><span class="s">&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media&quot;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;c</span><span class="cp">{{</span> <span class="nv">comment.id</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span>
+    <span class="cp">{%</span> <span class="k">if</span> <span class="nv">comment.user</span><span class="o">|</span><span class="nf">has_avatar</span> <span class="cp">%}</span>
+      <span class="na">src</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{%</span> <span class="k">avatar_url</span> <span class="nv">comment.user</span> <span class="m">48</span> <span class="cp">%}</span><span class="s">&quot;</span>
+    <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
+      <span class="na">src</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">comment.user_email</span><span class="o">|</span><span class="nf">xtd_comment_gravatar_url</span> <span class="cp">}}</span><span class="s">&quot;</span>
+    <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+    <span class="na">height</span><span class="o">=</span><span class="s">&quot;48&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;48&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr-3&quot;</span>
+  <span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-body&quot;</span><span class="p">&gt;</span>
+
+[...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-the-changes">
+<h3>Test the changes<a class="headerlink" href="#test-the-changes" title="Permalink to this headline">¶</a></h3>
+<p>These changes are enough when your project uses only Django templates to render comments.</p>
+<p>Before we can test the solution, let’s add an image for the admin user. Do login in the <a class="reference external" href="http://localhost:8000">admin UI</a> with user/password <code class="docutils literal notranslate"><span class="pre">admin/admin</span></code> and click on the avatar application. Add a squared dimensioned image to the admin user.</p>
+<p>Now the project is ready to test the two types of comments, a comment sent as a logged-in user and another one sent as a mere visitor:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>While you are still logged in in the admin interface, visit the <a class="reference external" href="http://localhost:8000/quotes/">quotes page</a>, click on any of the links and send a comment as the admin user. Sending a comment as a logged in user does not require comment confirmation by email. Therefore you must see already the comment posted in the page and displaying the image you have added to the avatar model using the admin interface. Let’s now send a comment as a mere visitor.</p></li>
+<li><p><a class="reference external" href="http://localhost:8000/admin/logout/">Logout</a> from the admin interface and send another comment as a mere visitor. If you have an account in <a class="reference external" href="http://gravatar.com/">Gravatar</a>, use an email address of that account for the comment. This way, when you post the comment, you already know what’s the image that is going to be displayed from Gravatar. Then send the comment. The email message to confirm the comment is displayed in the console. Scroll up in the console to see the plain-text part of the message and copy the confirmation URL. Then paste it in the browser’s location bar to confirm the comment. Once the message is confirmed the comment appears in the quotes page. It should show the image from your Gravatar account.</p></li>
+</ol>
+</div></blockquote>
+<p>The message posted as the admin user gets the avatar image from the project’s storage using django-avatar’s template tag. On the other hand, the image sent as a mere visitor, comes directly from Gravatar using django-comments-xtd’s template filter.</p>
+</div>
+</div>
+<div class="section" id="when-using-the-web-api">
+<h2><a class="toc-backref" href="#id9">When using the web API</a><a class="headerlink" href="#when-using-the-web-api" title="Permalink to this headline">¶</a></h2>
+<p>If your project uses the web API you have to customize <a class="reference internal" href="../settings.html#std:setting-COMMENTS_XTD_API_GET_USER_AVATAR"><code class="xref std std-setting docutils literal notranslate"><span class="pre">COMMENTS_XTD_API_GET_USER_AVATAR</span></code></a> to point to the function that will retrieve the avatar image when the REST API requires it.</p>
+<p>The <strong>articles app</strong> of the <a class="reference internal" href="../example.html#example-comp"><span class="std std-ref">Comp project</span></a> uses the web API (actually, the JavaScript plugin does). We have to customize it so that avatar images for registered users are fetched using django-avatar, while avatar images for mere visitors are fetched using the standard <a class="reference external" href="http://gravatar.com/">Gravatar</a> approach.</p>
+<p>The default value of <a class="reference internal" href="../settings.html#std:setting-COMMENTS_XTD_API_GET_USER_AVATAR"><code class="xref std std-setting docutils literal notranslate"><span class="pre">COMMENTS_XTD_API_GET_USER_AVATAR</span></code></a> points to the function <strong>get_user_avatar</strong> in <code class="docutils literal notranslate"><span class="pre">django_comments_xtd/utils.py</span></code>. That function only uses <a class="reference external" href="http://gravatar.com/">Gravatar</a> to fetch user images.</p>
+<p>To acomplish it we only need to do the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Implement the function that fetches images’ URLs.</p></li>
+<li><p>Override <code class="docutils literal notranslate"><span class="pre">COMMENTS_XTD_API_GET_USER_AVATAR</span></code>.</p></li>
+<li><p>Test the changes.</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="implement-the-function-that-fetches-images-urls">
+<h3>Implement the function that fetches images’ URLs<a class="headerlink" href="#implement-the-function-that-fetches-images-urls" title="Permalink to this headline">¶</a></h3>
+<p>We want to apply the following logic when fetching images’ URLs:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>When a registered user sends a comment, the <code class="docutils literal notranslate"><span class="pre">comment.user</span></code> object points to an instance of that user. There we will use <strong>django-avatar</strong> to fetch that uses’s image URL.</p></li>
+<li><p>When a mere visitor sends a comment, the <code class="docutils literal notranslate"><span class="pre">comment.user</span></code> object is <code class="docutils literal notranslate"><span class="pre">None</span></code>. But we still have the <code class="docutils literal notranslate"><span class="pre">comment.user_email</span></code> which contains the email address of the visitor. Here we will use django-comments-xtd (which in turn defaults to Gravatar).</p></li>
+</ul>
+</div></blockquote>
+<p>Create the module <code class="docutils literal notranslate"><span class="pre">comp/utils.py</span></code> with the following content:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">avatar.templatetags.avatar_tags</span> <span class="kn">import</span> <span class="n">avatar_url</span>
+<span class="kn">from</span> <span class="nn">django_comments_xtd.utils</span> <span class="kn">import</span> <span class="n">get_user_avatar</span>
+
+
+<span class="k">def</span> <span class="nf">get_avatar_url</span><span class="p">(</span><span class="n">comment</span><span class="p">):</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">if</span> <span class="n">comment</span><span class="o">.</span><span class="n">user</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">avatar_url</span><span class="p">(</span><span class="n">comment</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+            <span class="k">pass</span>
+    <span class="k">return</span> <span class="n">get_user_avatar</span><span class="p">(</span><span class="n">comment</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If the <code class="docutils literal notranslate"><span class="pre">comment</span></code> has a <code class="docutils literal notranslate"><span class="pre">user</span></code>, we return the result of the <code class="docutils literal notranslate"><span class="pre">avatar_url</span></code> function of django-avatar. This function goes through each of the django-avatar providers setup with <a class="reference external" href="https://django-avatar.readthedocs.io/en/latest/#AVATAR_PROVIDERS">AVATAR_PROVIDERS</a> and returns the appropriate image’s URL.</p>
+<p>If on the hand the <code class="docutils literal notranslate"><span class="pre">comment</span></code> does not have a <code class="docutils literal notranslate"><span class="pre">user</span></code>, we return what Gravatar has on the <code class="docutils literal notranslate"><span class="pre">comment.user_email</span></code>. If that email address is not registered in Gravatar, it returns the default image (which you <a class="reference external" href="https://en.gravatar.com/site/implement/images/">can customize too</a>, read in that page from <em>Default Image</em> on).</p>
+</div>
+<div class="section" id="override-comments-xtd-api-get-user-avatar">
+<h3>Override <code class="docutils literal notranslate"><span class="pre">COMMENTS_XTD_API_GET_USER_AVATAR</span></code><a class="headerlink" href="#override-comments-xtd-api-get-user-avatar" title="Permalink to this headline">¶</a></h3>
+<p>We have to add a reference to our new function in the settings, to override the content of <a class="reference internal" href="../settings.html#std:setting-COMMENTS_XTD_API_GET_USER_AVATAR"><code class="xref std std-setting docutils literal notranslate"><span class="pre">COMMENTS_XTD_API_GET_USER_AVATAR</span></code></a>. Append the following to the <a href="#id1"><span class="problematic" id="id2">``</span></a>comp/settings.py` module:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">COMMENTS_XTD_API_GET_USER_AVATAR</span> <span class="o">=</span> <span class="s2">&quot;comp.utils.get_avatar_url&quot;</span>
+</pre></div>
+</div>
+<p>Now the web API will use that function instead of the default one.</p>
+</div>
+<div class="section" id="id3">
+<h3>Test the changes<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Now the <strong>articles app</strong> is ready. If you already added an avatar image for the admin user, as we did in the previous <strong>Test the changes</strong> section, then send two comments to any of the articles:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Login in as admin/admin in the <a class="reference external" href="http://localhost:8000/admin/">admin UI</a>, then visit any of the <a class="reference external" href="http://localhost:8000/articles/">articles page</a> and send a comment as the admin user. See also that the image displayed in the preview corresponds to the image added to the admin user.</p></li>
+<li><p><a class="reference external" href="http://localhost:8000/admin/logout/">Logout</a> from the admin interface and send another comment as a mere visitor. If you have a Gravatar account, use the same email address when posting the comment. The Gravatar image associated should be displayed in the comment.</p></li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2><a class="toc-backref" href="#id10">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Images displayed in association with comments can come from customized sources. Adapting your project to use your own sources is a matter of adjusting the templates or writing a new function to feed web API calls.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="only-signed-in-can-comment.html" class="btn btn-neutral float-right" title="Only signed in users can comment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../usecases.html" class="btn btn-neutral float-left" title="Use cases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Daniel Rus Morales
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
