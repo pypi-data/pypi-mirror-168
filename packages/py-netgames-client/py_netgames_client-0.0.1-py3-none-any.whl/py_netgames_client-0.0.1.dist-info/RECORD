@@ -1,0 +1,14 @@
+py_netgames_client/_base/BaseWebsocketProxy.py,sha256=0mA3EQY5oyYc6QggtVj0BSKhYDkktH5Gy8JZYlK9oyA,8133
+py_netgames_client/_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_netgames_client/id/IdentifierFileGenerator.py,sha256=dLBl_AhJUeR1zYYqouZuvOEjfGoBTDqDhWjplMXo87Q,979
+py_netgames_client/id/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_netgames_client/pygame_client/PyNetgamesServerProxy.py,sha256=Eum_mfTRd0ITG2V5r24W0fWpoukA8Ev3olqWTOId8ic,1488
+py_netgames_client/pygame_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_netgames_client/tkinter_client/PyNetgamesServerListener.py,sha256=AP60qxpS6pp-bzfyVMzbZmSJ2IzIzsPGusVc3jAP3UU,984
+py_netgames_client/tkinter_client/PyNetgamesServerProxy.py,sha256=u2OFT6f08LcWBy2zZmyNflKG2vIoDIpWM2mGBCaG1FA,1854
+py_netgames_client/tkinter_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_netgames_client-0.0.1.dist-info/LICENSE.txt,sha256=GPY8fab0f53s2SkIzZozQdesjQfJ4W7zrgufE4G3Y6M,1079
+py_netgames_client-0.0.1.dist-info/METADATA,sha256=u_yVIHmNNqwuv-bD5IgfYkrFqg1iJMNwh1R3XmCkPps,1491
+py_netgames_client-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py_netgames_client-0.0.1.dist-info/top_level.txt,sha256=XoJfLv9V24I9CuTrTTQH19nXgNJaYZy9C1uS5-vrsGI,19
+py_netgames_client-0.0.1.dist-info/RECORD,,
