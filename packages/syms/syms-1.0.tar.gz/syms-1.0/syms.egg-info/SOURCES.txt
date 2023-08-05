@@ -1,0 +1,10 @@
+COPYING
+README.md
+setup.cfg
+setup.py
+syms
+syms.egg-info/PKG-INFO
+syms.egg-info/SOURCES.txt
+syms.egg-info/dependency_links.txt
+syms.egg-info/requires.txt
+syms.egg-info/top_level.txt
