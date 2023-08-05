@@ -1,0 +1,13 @@
+appdirs
+bpf4
+cachetools
+configdict
+minizinc
+numpy
+python-constraint
+pyyaml
+scipy
+send2trash
+tabulate
+ttkthemes
+watchdog
