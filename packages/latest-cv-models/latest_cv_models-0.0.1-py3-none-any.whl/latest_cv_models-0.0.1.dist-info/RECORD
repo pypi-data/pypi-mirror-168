@@ -1,0 +1,12 @@
+models/Alex_Net.py,sha256=1pqwxDr9z7OUMj2GyuXCDAxoDHa9OAn4BT-UhZnzFv8,2568
+models/CSP_DensNet.py,sha256=7M2AVYziw4GLk1aTNsSLleQt0mK3DE1KBfeaFQxz2Bw,4964
+models/Le_Net.py,sha256=6yMUAs_-ft3B0rgnp3NXCnAZfr81kG5VaBUWsax5ax8,1579
+models/Mobile_Net.py,sha256=Mc_bcKgrEJf6dn8zojJ8kl5kgwZvnUQO8LFN7H7Nz1A,3129
+models/Res_Net.py,sha256=JkOBy8U5C1QOgtS4fJWoYiaE0AijVwOaZ4HdqUhB8dY,7832
+models/SK_Net.py,sha256=wBEURJGcQZ9PHZpZF2h74u77mtGoN5D0Q7vs7HN8r1g,4048
+models/__init__.py,sha256=NanRLJ5VF2h2syp4H_6z8Cg3f-O7SegG_JfSU5dsVDo,88
+latest_cv_models-0.0.1.dist-info/LICENSE.txt,sha256=yj3BVFubQeOVoKY3BVeh6wvhBwO-cysrnNsV2jNDBiE,1072
+latest_cv_models-0.0.1.dist-info/METADATA,sha256=ruBbiPTTc3iWL6XUCO2CFI1a-kI4m65O-ilLmJUDV5U,278
+latest_cv_models-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+latest_cv_models-0.0.1.dist-info/top_level.txt,sha256=vH5ByFtkqB2bXlXOuK5zaaM_1GFEE9six0KgGIdPaU0,7
+latest_cv_models-0.0.1.dist-info/RECORD,,
