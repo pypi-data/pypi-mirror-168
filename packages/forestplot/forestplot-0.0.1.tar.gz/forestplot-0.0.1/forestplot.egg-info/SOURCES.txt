@@ -1,0 +1,7 @@
+README.md
+setup.py
+forestplot.egg-info/PKG-INFO
+forestplot.egg-info/SOURCES.txt
+forestplot.egg-info/dependency_links.txt
+forestplot.egg-info/requires.txt
+forestplot.egg-info/top_level.txt
