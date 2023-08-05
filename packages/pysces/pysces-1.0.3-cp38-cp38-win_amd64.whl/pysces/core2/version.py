@@ -1,0 +1,1 @@
+from pysces.version import __version__
