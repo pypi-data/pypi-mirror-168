@@ -1,0 +1,12 @@
+LICENSE,sha256=5gIX3Sik4_MtRJWth9Y4fs8XwJU_g5YZunufLf6s30M,1067
+django_autoutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_autoutils/admin_utils.py,sha256=1UOK5LDgSfSk7a86LdneBUcT_TDcRDe5mG46KsF4M9c,8873
+django_autoutils/exceptions.py,sha256=Kxf0ax9xSjU1BpfaVjRGW-JhQeWMXW_jNHiT2nboEsk,991
+django_autoutils/html_tag.py,sha256=0s6ni-wFyo7GQC09EQmiwAnCD4X939JQfDS_4aP9C08,3537
+django_autoutils/model_utils.py,sha256=PMpZuprBGoQRFgCQSVKEeOccoaofhzOx4dUmatEsD3k,7235
+django_autoutils/serializer_utils.py,sha256=g_Ab6WhX3WDyoEWCr6z3vC3XAG-02bM_fgt1VtxmhV8,792
+django_autoutils/utils.py,sha256=Iq-kr7EXtCe5jO48CEgxA8HNOFJ5CnypX0YgmxlE9e0,2093
+django_autoutils-0.3.3.dist-info/LICENSE,sha256=5gIX3Sik4_MtRJWth9Y4fs8XwJU_g5YZunufLf6s30M,1067
+django_autoutils-0.3.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+django_autoutils-0.3.3.dist-info/METADATA,sha256=5qVpgtxb9NvWPObiA6vWzSqsbscY9cB27lKtDvvbaFU,1062
+django_autoutils-0.3.3.dist-info/RECORD,,
