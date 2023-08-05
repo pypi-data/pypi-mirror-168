@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bad-enums"
+version = "1.0.0"
+description = "A very bad custom implementation of enums in Python."
+authors = ["EmreTech"]
+readme = "README.md"
+packages = [{include = "bad_enums"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
