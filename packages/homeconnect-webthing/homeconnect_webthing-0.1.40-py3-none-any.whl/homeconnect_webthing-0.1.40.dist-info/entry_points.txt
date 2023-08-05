@@ -1,0 +1,2 @@
+[console_scripts]
+homeconnect = homeconnect_webthing:main
