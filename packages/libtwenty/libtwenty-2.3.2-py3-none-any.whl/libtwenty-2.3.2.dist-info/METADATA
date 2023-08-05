@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libtwenty
+Version: 2.3.2
+Summary: 2048 lib
+Home-page: https://github.com/z1r343l
+Author: Z1R343L
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+UNKNOWN
+
