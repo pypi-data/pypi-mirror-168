@@ -1,0 +1,2 @@
+[pygments.lexers]
+lammps = pygments_lammps:LAMMPSLexer
