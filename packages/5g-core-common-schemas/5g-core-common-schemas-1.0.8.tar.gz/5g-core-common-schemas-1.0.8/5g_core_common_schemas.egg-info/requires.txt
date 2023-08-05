@@ -1,0 +1,6 @@
+feedparser>=5.2.0
+html2text
+pydantic
+
+[:python_version < "3.11"]
+tomli

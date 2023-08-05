@@ -1,0 +1,14 @@
+# Copyright 2022 Guillaume Belanger
+# See LICENSE file for licensing details.
+
+
+from enum import Enum
+
+
+class TraceDepth(Enum):
+    MINIMUM = "MINIMUM"
+    MEDIUM = "MEDIUM"
+    MAXIMUM = "MAXIMUM"
+    MINIMUM_WO_VENDOR_EXTENSION = "MINIMUM_WO_VENDOR_EXTENSION"
+    MEDIUM_WO_VENDOR_EXTENSION = "MEDIUM_WO_VENDOR_EXTENSION"
+    MAXIMUM_WO_VENDOR_EXTENSION = "MAXIMUM_WO_VENDOR_EXTENSION"
