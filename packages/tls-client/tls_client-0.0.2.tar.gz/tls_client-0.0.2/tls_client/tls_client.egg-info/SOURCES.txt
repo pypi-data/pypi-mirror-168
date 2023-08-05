@@ -1,0 +1,7 @@
+README.md
+setup.py
+dependencies/tls-client.dll
+tls_client/tls_client.egg-info/PKG-INFO
+tls_client/tls_client.egg-info/SOURCES.txt
+tls_client/tls_client.egg-info/dependency_links.txt
+tls_client/tls_client.egg-info/top_level.txt
