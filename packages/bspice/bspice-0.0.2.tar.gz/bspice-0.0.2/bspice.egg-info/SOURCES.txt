@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+bspice/__init__.py
+bspice/core.py
+bspice/downloads.py
+bspice.egg-info/PKG-INFO
+bspice.egg-info/SOURCES.txt
+bspice.egg-info/dependency_links.txt
+bspice.egg-info/requires.txt
+bspice.egg-info/top_level.txt
