@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: cdp-data
+Version: 0.0.7
+Summary: Data Utilities and Processing Generalized for All CDP Instances
+Author-email: "Eva Maxfield Brown, Council Data Project Contributors" <evamaxfieldbrown@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/CouncilDataProject/cdp-data
+Project-URL: Bug Tracker, https://github.com/CouncilDataProject/cdp-data/issues
+Project-URL: Documentation, https://CouncilDataProject.github.io/cdp-data
+Project-URL: User Support, https://github.com/CouncilDataProject/cdp-data/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cdp-backend (>=3.0.15)
+Requires-Dist: nltk (~=3.6)
+Requires-Dist: numpy (~=1.0)
+Requires-Dist: pandas (~=1.0)
+Requires-Dist: tqdm (>=4.63)
+Requires-Dist: dataclasses-json
+Requires-Dist: fireo
+Requires-Dist: gcsfs
+Provides-Extra: dev
+Requires-Dist: ipython (>=8.4.0) ; extra == 'dev'
+Requires-Dist: jupyterlab (>=3.2.8) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: m2r2 (>=0.2.7) ; extra == 'docs'
+Requires-Dist: Sphinx (>=4.0.0) ; extra == 'docs'
+Requires-Dist: furo (>=2022.4.7) ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: docutils (<0.19,>=0.18) ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: black (>=22.3.0) ; extra == 'lint'
+Requires-Dist: check-manifest (>=0.48) ; extra == 'lint'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'lint'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'lint'
+Requires-Dist: flake8-pyprojecttoml ; extra == 'lint'
+Requires-Dist: flake8-typing-imports (>=1.9.0) ; extra == 'lint'
+Requires-Dist: isort (>=5.7.0) ; extra == 'lint'
+Requires-Dist: mypy (>=0.790) ; extra == 'lint'
+Requires-Dist: pre-commit (>=2.20.0) ; extra == 'lint'
+Provides-Extra: plot
+Requires-Dist: matplotlib (>=3) ; extra == 'plot'
+Requires-Dist: seaborn (>=0.11.2) ; extra == 'plot'
+Requires-Dist: pyarrow (>=7.0.0) ; extra == 'plot'
+Requires-Dist: ipywidgets (>=7.7.0) ; extra == 'plot'
+Provides-Extra: test
+Requires-Dist: coverage (>=5.1) ; extra == 'test'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'test'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'test'
+Provides-Extra: transformers
+Requires-Dist: sentence-transformers (~=2.2.2) ; extra == 'transformers'
+
+# cdp-data
+
+[![Build Status](https://github.com/CouncilDataProject/cdp-data/workflows/CI/badge.svg)](https://github.com/CouncilDataProject/cdp-data/actions)
+[![Documentation](https://github.com/CouncilDataProject/cdp-data/workflows/Documentation/badge.svg)](https://CouncilDataProject.github.io/cdp-data)
+
+Data Utilities and Processing Generalized for All CDP Instances
+
+---
+
+## Installation
+
+**Stable Release:** `pip install cdp-data`<br>
+**Development Head:** `pip install git+https://github.com/CouncilDataProject/cdp-data.git`
+
+## Documentation
+
+For full package documentation please visit [councildataproject.github.io/cdp-data](https://councildataproject.github.io/cdp-data).
+
+## Quickstart
+
+### Pulling Datasets
+
+Install basics: `pip install cdp-data`
+
+```python
+from cdp_data import CDPInstances, datasets
+ds = datasets.get_session_dataset(
+    infrastructure_slug=CDPInstances.Seattle,
+    start_datetime="2021-01-01",
+    store_transcript=True,
+)
+```
+
+### Plotting and Analysis
+
+![Seattle keyword usage over time](https://raw.githubusercontent.com/CouncilDataProject/cdp-data/main/docs/_static/seattle-keywords-over-time.png)
+
+Install plotting support: `pip install cdp-data[plot]`
+
+```python
+from cdp_data import CDPInstances, keywords
+ngram_usage = keywords.compute_ngram_usage_history(
+    CDPInstances.Seattle,
+    start_datetime="2021-01-01",
+)
+grid = keywords.plot_ngram_usage_histories(
+    ["police", "housing", "transportation"],
+    ngram_usage,
+    lmplot_kws=dict(  # extra plotting params
+        col="ngram",
+        hue="ngram",
+        scatter_kws={"alpha": 0.2},
+        aspect=1.6,
+    ),
+)
+grid.savefig("seattle-keywords-over-time.png")
+```
+
+## Development
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information related to developing the code.
+
+**MIT license**
