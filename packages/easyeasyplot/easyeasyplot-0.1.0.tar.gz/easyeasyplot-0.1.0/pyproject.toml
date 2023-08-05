@@ -1,0 +1,20 @@
+[tool.poetry]
+authors = ["acse-dx121 <dx121@ic.ac.uk>"]
+description = ""
+license = "MIT"
+name = "easyeasyplot"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+matplotlib = "^3.6.0"
+numpy = "^1.23.3"
+python = "^3.8"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[[tool.poetry.source]]
+name = "qinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
