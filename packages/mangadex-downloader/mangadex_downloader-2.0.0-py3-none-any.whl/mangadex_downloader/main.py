@@ -1,0 +1,224 @@
+# MIT License
+
+# Copyright (c) 2022 Rahman Yusuf
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+import logging
+from .utils import (
+    comma_separated_text,
+    create_directory
+)
+from .language import Language, get_language
+from .fetcher import *
+from .mdlist import MangaDexList
+from .manga import Manga
+from .chapter import Chapter
+from .format import get_format
+from .downloader import FileDownloader
+from .config import config
+
+log = logging.getLogger(__name__)
+
+def download(
+    manga_id,
+    replace=False,
+    start_chapter=None,
+    end_chapter=None,
+    start_page=None,
+    end_page=None,
+    no_oneshot_chapter=False,
+    use_alt_details=False,
+    group_id=None,
+    _range=None,
+):
+    """Download a manga"""
+    save_as = config.save_as
+    cover = config.cover
+
+    lang = get_language(config.language)
+
+    log.info(f"Using {lang.name} language")
+
+    # Validation save as format
+    fmt_class = get_format(save_as)
+
+    manga = Manga(_id=manga_id, use_alt_details=use_alt_details)
+
+    # Create folder for downloading
+    base_path = create_directory(manga.title, config.path)
+
+    # Cover path
+    cover_path = base_path / 'cover.jpg'
+    log.info('Downloading cover manga %s' % manga.title)
+
+    # Determine cover art quality
+    if cover == "original":
+        cover_url = manga.cover_art
+    elif cover == "512px":
+        cover_url = manga.cover_art_512px
+    elif cover == "256px":
+        cover_url = manga.cover_art_256px
+    elif cover == 'none':
+        cover_url = None
+
+    # Download the cover art
+    if cover_url is None:
+        log.info('Not downloading cover manga, since \"cover\" is none')
+    else:
+        fd = FileDownloader(cover_url, cover_path, replace=replace)
+        fd.download()
+        fd.cleanup()
+
+    # Reuse is good
+    def download_manga(m, path):
+        kwargs_iter_chapter_images = {
+            "start_chapter": start_chapter,
+            "end_chapter": end_chapter,
+            "start_page": start_page,
+            "end_page": end_page,
+            "no_oneshot": no_oneshot_chapter,
+            "group": group_id,
+            "_range": _range,
+        }
+
+        log.info("Using %s format" % save_as)
+
+        fmt = fmt_class(
+            path,
+            m,
+            replace,
+            kwargs_iter_chapter_images
+        )
+
+        # Execute main format
+        fmt.main()
+
+    all_languages = lang == Language.All
+
+    if all_languages:
+        # Print info to users
+        # Let the users know how many translated languages available
+        # in given manga
+        translated_langs = [i.name for i in manga.translated_languages]
+        log.info(f"Available translated languages = {comma_separated_text(translated_langs)}")
+
+        for translated_lang in manga.translated_languages:
+            log.info(f"Downloading {manga.title} in {translated_lang.name} language")
+
+            # Copy title and description manga
+            new_manga = Manga(data=manga._data)
+            new_manga._title = manga.title
+            new_manga._description = manga.description
+
+            # Fetch all chapters
+            new_manga.fetch_chapters(translated_lang.value, all_chapters=True)
+
+            new_path = base_path / translated_lang.name
+            new_path.mkdir(exist_ok=True)
+
+            log.info(f'Download directory is set to "{new_path.resolve()}"')
+            download_manga(new_manga, new_path)
+
+            log.info(f"Download finished for manga {manga.title} in {translated_lang.name} language")
+        
+    else:
+        log.info("Fetching all chapters...")
+        manga.fetch_chapters(lang.value, all_chapters=True)
+
+        log.info(f'Download directory is set to "{base_path.resolve()}"')
+        download_manga(manga, base_path)
+                
+    log.info("Download finished for manga \"%s\"" % manga.title)
+    return manga
+
+def download_chapter(
+    chap_id,
+    replace=False,
+    start_page=None,
+    end_page=None,
+):
+    """Download a chapter"""
+    save_as = config.save_as
+    fmt_class = get_format(save_as)
+
+    # Fetch manga
+    chap = Chapter(chap_id)
+    manga = Manga(_id=chap.manga_id)
+    manga.fetch_chapters(chap.language.value, chap)
+
+    log.info(f'Found chapter {chap.chapter} from manga "{manga.title}"')
+
+    # Create folder for downloading
+    base_path = create_directory(manga.title, config.path)
+    log.info(f'Download directory is set to "{base_path.resolve()}"')
+
+    kwargs_iter_chapter_images = {
+        "start_page": start_page,
+        "end_page": end_page,
+        "no_oneshot": False,
+    }
+
+    log.info(f'Using {save_as} format')
+
+    fmt = fmt_class(
+        base_path,
+        manga,
+        replace,
+        kwargs_iter_chapter_images
+    )
+
+    # Execute main format
+    fmt.main()
+
+    log.info(f'Finished download chapter {chap.chapter} from manga "{manga.title}"')
+    return manga
+
+def download_list(
+    list_id,
+    replace=False,
+    group_id=None,
+):
+    """Download a list"""
+    _list = MangaDexList(_id=list_id)
+
+    for manga in _list.iter_manga():
+        download(
+            manga.id,
+            replace,
+            group_id=group_id,
+        )
+
+def download_legacy_manga(legacy_id, *args, **kwargs):
+    """Download manga from old MangaDex url
+    
+    The rest of parameters will be passed to :meth:`download`.
+    """
+    new_id = get_legacy_id('manga', legacy_id)
+    manga = download(new_id, *args, **kwargs)
+    return manga
+
+def download_legacy_chapter(legacy_id, *args, **kwargs):
+    """Download chapter from old MangaDex url
+    
+    The rest of parameters will be passed to :meth:`download_chapter`
+    """
+    new_id = get_legacy_id('chapter', legacy_id)
+    manga = download_chapter(new_id, *args, **kwargs)
+    return manga
