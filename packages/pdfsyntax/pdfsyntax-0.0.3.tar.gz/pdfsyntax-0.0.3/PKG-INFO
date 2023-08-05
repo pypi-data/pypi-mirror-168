@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pdfsyntax
+Version: 0.0.3
+Summary: Tool to generate a static HTML file that represents the internal structure of a PDF file
+Author-email: "Martin D." <desgeeko@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2021 Martin D.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/desgeeko/pdfsyntax
+Project-URL: Bug Tracker, https://github.com/desgeeko/pdfsyntax/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+PDFSyntax
+=========
+
+*A Python tool to generate a static HTML file that represents the internal structure of a PDF file*
+
+At some point the low-level functions developed for this CLI will be exposed as an API for programmatic use.
+
+WORK IN PROGRESS!
+
+## CLI
+
+### Features
+The generated HTML looks like the raw PDF file with the following additions:
+* Pretty-print dictionary object
+* Extract an object contained in an object stream and insert it in the flow like a regular object
+* Decompress stream and display a small part of it
+* Turn indirect object reference into hyperlink
+* Turn offset reference (for example a /Prev entry) into hyperlink
+* Put some color on key names (for example /Type)
+* Display offset of an object
+
+### Screenshot
+![PDFSyntax screenshot](screenshot.png)
+
+### Usage
+Generate the HTML file and open it in your browser:
+
+    python3 -m pdfsyntax inspect file.pdf > inspection.html
+
+## API
+(TODO)
+

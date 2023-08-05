@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+pdfsyntax/__init__.py
+pdfsyntax/__main__.py
+pdfsyntax/api.py
+pdfsyntax/cli.py
+pdfsyntax/display.py
+pdfsyntax/docstruct.py
+pdfsyntax/filestruct.py
+pdfsyntax/objects.py
+pdfsyntax/text.py
+pdfsyntax.egg-info/PKG-INFO
+pdfsyntax.egg-info/SOURCES.txt
+pdfsyntax.egg-info/dependency_links.txt
+pdfsyntax.egg-info/top_level.txt
