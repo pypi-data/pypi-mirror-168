@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: qtoggleserver-paradox
+Version: 1.5.0
+Summary: Control your Paradox alarm with qToggleServer
+Author: Calin Crisan
+Author-email: ccrisan@gmail.com
+License: Apache 2.0
+License-File: LICENSE.txt
