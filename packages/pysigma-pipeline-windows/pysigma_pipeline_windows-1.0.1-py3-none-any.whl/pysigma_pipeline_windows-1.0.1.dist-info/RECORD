@@ -1,0 +1,6 @@
+sigma/pipelines/windows/__init__.py,sha256=ky5RN0qo8kbdD7E62dsY9-t7wDWbb_lBRmrMAmq7p94,38
+sigma/pipelines/windows/windows.py,sha256=HN7Wvde2tveOm9pFbYxLPfKr0tnatuThhPGRDOnqO7U,3253
+pysigma_pipeline_windows-1.0.1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+pysigma_pipeline_windows-1.0.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+pysigma_pipeline_windows-1.0.1.dist-info/METADATA,sha256=Ljkn-hjJjTst_ssl5FEIVOHzwCcQzMJBQHbNPd_ENI8,645
+pysigma_pipeline_windows-1.0.1.dist-info/RECORD,,
