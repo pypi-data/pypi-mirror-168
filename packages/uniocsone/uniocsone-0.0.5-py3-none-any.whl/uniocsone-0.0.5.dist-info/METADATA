@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: uniocsone
+Version: 0.0.5
+Summary: Uni to OCSone
+Home-page: UNKNOWN
+Author: OCS
+Author-email: ztmaung@ocsmandalay.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Project description
+
+
+
+
+OCS
+
+ocsunione is uni to one.
+
+
+
