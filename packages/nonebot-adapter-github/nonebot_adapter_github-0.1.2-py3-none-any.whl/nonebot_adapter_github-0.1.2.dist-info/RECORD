@@ -1,0 +1,12 @@
+nonebot/adapters/github/__init__.py,sha256=TSs8TIgXAPnWFLt97aOr6RsdTfkH2OddwwpTtGQmfw8,491
+nonebot/adapters/github/adapter.py,sha256=565LDlTxfNAlV0_Gc3mXG8UBCI89PKmJFQJXuSqHxjY,5206
+nonebot/adapters/github/bot.py,sha256=ciPkAiOgw0gqlEv-OtkahnbmgaYof9l0DK8GNVkzTZ0,8903
+nonebot/adapters/github/config.py,sha256=r2Yf_oK7gv7ozLeZ6OVKUyeMw6KbfqUt6UK01hfH_BY,1025
+nonebot/adapters/github/event.py,sha256=5zlM9asuKgWr4akexpvQpno9Ny5w5ef-ZYw7zgzcn0E,46888
+nonebot/adapters/github/exception.py,sha256=mmecYv14eucKoID9M48_nqYaazAmCfm6fnO51odpLns,924
+nonebot/adapters/github/message.py,sha256=-YVT598edCUxgtYnI1QziE9eYN8bM9IPUDjZ7vpMTbA,1153
+nonebot/adapters/github/utils.py,sha256=eGjxr33cKt59-oWAq4F7dVFJfOmrUk4tVsWeOBkqWe4,851
+nonebot_adapter_github-0.1.2.dist-info/LICENSE,sha256=KXnzaRRWb9r8W0IP1PmP8L3C_AFIPcc61gu850ZHz2I,1064
+nonebot_adapter_github-0.1.2.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+nonebot_adapter_github-0.1.2.dist-info/METADATA,sha256=u-C0wnkOwxDegjcN7PRoCiELXyme34b3pIPsBLHanMI,2821
+nonebot_adapter_github-0.1.2.dist-info/RECORD,,
