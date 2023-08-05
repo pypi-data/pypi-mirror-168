@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/Wolvesburg.egg-info/PKG-INFO
+src/Wolvesburg.egg-info/SOURCES.txt
+src/Wolvesburg.egg-info/dependency_links.txt
+src/Wolvesburg.egg-info/top_level.txt
+src/wolvesburg/__init__.py
