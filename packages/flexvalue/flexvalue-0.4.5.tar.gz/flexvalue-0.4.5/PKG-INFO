@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flexvalue
+Version: 0.4.5
+Summary: FLEXvalue: a tool for calculating avoided costs
+Home-page: http://github.com/recurve-methods/flexvalue
+Author: Recurve Analytics, Inc.
+Author-email: support@recurve.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE.md
+
+UNKNOWN
+
