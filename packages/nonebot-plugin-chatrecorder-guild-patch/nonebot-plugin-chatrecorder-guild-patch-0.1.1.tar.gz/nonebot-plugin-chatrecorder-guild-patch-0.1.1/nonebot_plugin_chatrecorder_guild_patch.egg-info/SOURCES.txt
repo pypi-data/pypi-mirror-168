@@ -1,0 +1,8 @@
+setup.py
+nonebot_plugin_chatrecorder_guild_patch/__init__.py
+nonebot_plugin_chatrecorder_guild_patch/function.py
+nonebot_plugin_chatrecorder_guild_patch.egg-info/PKG-INFO
+nonebot_plugin_chatrecorder_guild_patch.egg-info/SOURCES.txt
+nonebot_plugin_chatrecorder_guild_patch.egg-info/dependency_links.txt
+nonebot_plugin_chatrecorder_guild_patch.egg-info/requires.txt
+nonebot_plugin_chatrecorder_guild_patch.egg-info/top_level.txt
