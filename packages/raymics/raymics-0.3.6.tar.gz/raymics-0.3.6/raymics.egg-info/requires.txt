@@ -1,0 +1,7 @@
+SimpleITK
+numpy
+opencv-contrib-python
+pandas
+pyradiomics
+sk-video
+tqdm
