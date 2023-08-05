@@ -1,0 +1,3 @@
+[console_scripts]
+skynix-cli=skynix_cli.skynixcli:cli
+
