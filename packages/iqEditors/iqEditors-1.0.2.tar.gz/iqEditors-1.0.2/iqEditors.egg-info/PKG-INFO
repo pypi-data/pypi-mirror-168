@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: iqEditors
+Version: 1.0.2
+Summary: Основанные на QTextEdit продвинутые текстовые редакторы для PyQt5
+Home-page: https://gitflic.ru/project/iqstudio/iq-editors
+Author: Alexander N Khilchenko
+Author-email: khan.programming@mail.ru
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Environment :: Other Environment
+Classifier: Topic :: Desktop Environment :: Gnome
+Classifier: Topic :: Desktop Environment :: K Desktop Environment (KDE)
+Classifier: Topic :: Desktop Environment
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# iQEditors
+Библиотека с текстовыми редакторами, используемых в проектах [iQStudio](https://gitflic.ru/team/iqstudio):
+
+ - iQMemo
+ - iQNote
+ - iQBooks
+ - iQRecipe
+ - iQ Programming CookBook
+
+# Состав
+
+ - iQEditor - простой редактор форматированного текста
+ - iQNoteEditor - редактор записок с поддержкой подсветки блоков кода
+
+[репозиторий кода](https://gitflic.ru/project/iqstudio/iq-editors)
+[книга проекта](https://iqlib.gitflic.space)
+
+# Особенности
+Редакторы поддерживают стандартное форматирование, вставку таблиц и многое другое. 
+Разница между ними в том, что iQNoteEdit поддерживает блоки кода и раскрашивает 
+их при помощи pygments
+
+# Зависимости
+PyQt5, enchant, pygments 
+
+# Установка
+``` bash
+pip install iqEditors
+```
+# Примеры использования 
+``` python
+import sys
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QApplication
+from iqEditors import iQEditor
+
+app = QApplication(sys.argv)
+# Создание объекта
+window = iQEditor()
+# Инициализация
+window.setShowExport(True)
+window.setMainWindow(window)
+# Вывод формы
+window.resize(500,300)
+window.setWindowFlag(Qt.Dialog)
+window.setWindowTitle('Пример прямого использования iQEditor')
+window.show()
+app.exec_()
+```
+для iQNoteEditor - аналогично.  
+Подробности [тут](https://iqlib.gitflic.space)
+
+# Лицензия
+GPL v3

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+iqEditors/__init__.py
+iqEditors/commons.py
+iqEditors/noteEditor.py
+iqEditors/simpleEditor.py
+iqEditors.egg-info/PKG-INFO
+iqEditors.egg-info/SOURCES.txt
+iqEditors.egg-info/dependency_links.txt
+iqEditors.egg-info/top_level.txt
