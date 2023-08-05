@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: everytime
+Version: 0.1.0
+Summary: Schedule asyncio coroutines
+Home-page: https://github.com/meipp/every/
+License: MIT
+Author: meipp
+Author-email: meipp@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: Repository, https://github.com/meipp/every/
+Description-Content-Type: text/markdown
+
+# every - Schedule asyncio coroutines
+
+## How to use
+```python
+every(5 * minutes)(do_something)
+every(other * day)(do_something)
+every(minute).starting_at(hour=12, minute=15)(do_something)
+```
+
+## Example
+```python
+import asyncio
+from every import *
+
+async def do_something():
+    print("Hello")
+
+every(2 * seconds)(do_something)
+
+loop = asyncio.get_event_loop()
+loop.run_forever()
+```
+
