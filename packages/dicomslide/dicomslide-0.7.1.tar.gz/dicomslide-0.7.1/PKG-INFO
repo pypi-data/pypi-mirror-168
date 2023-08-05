@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dicomslide
+Version: 0.7.1
+Summary: Library for reading whole slide images and derived information in DICOM format.
+Home-page: https://github.com/herrmannlab/dicomslide
+Author: Markus D. Herrmann
+Maintainer: Markus D. Herrmann
+License: MIT
+Platform: Linux
+Platform: MacOS
+Platform: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Build Status](https://github.com/herrmannlab/dicomslide/actions/workflows/run_unit_tests.yml/badge.svg)](https://github.com/herrmannlab/dicomslide/actions)
+[![PyPi Distribution](https://img.shields.io/pypi/v/dicomslide.svg)](https://pypi.python.org/pypi/dicomslide/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/dicomslide.svg)](https://pypi.org/project/dicomslide/)
+
+# dicomslide
+
+A Python library for reading whole slide images and derived information in DICOM format from local files or over network via a unified application programming interface.
+
+## Documentation
+
+Please refer to the online documentation at [dicomslide.readthedocs.io](https://dicomslide.readthedocs.io), which includes installation instructions, a user guide with examples, a developer guide, and complete documentation of the application programming interface of the `dicomslide` package.
