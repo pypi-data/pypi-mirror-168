@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>EYE17 screenshot's service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+      fieldset {
+	  display: inline-block;
+	  border-color: black;
+      }
+      .flex{
+	  flex: auto;
+	  display: inline-block;
+	  background: lightyellow;
+	  border: 1px solid navy;
+	  padding: 1em;
+	  margin: 0.5em 1em;
+	  border-radius: 0.5em;
+	  width: 150px;
+	  text-align: center;
+	  font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>EYE17 screenshot's service</h1>
+    <fieldset>
+      <div class="flex" onClick="document.location='/?format=svg&shot=full&mode=webpage'">
+	Full <br/> Screen shot
+      </div>
+      <div class="flex" onClick="document.location='/?format=svg&shot=&mode=webpage'">
+	Just the <br/> Display
+      </div>
+    </div>
+  </fieldset>
+</html>
