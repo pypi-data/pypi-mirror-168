@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+iterapi/__init__.py
+iterapi/iterapi.py
+iterapi.egg-info/PKG-INFO
+iterapi.egg-info/SOURCES.txt
+iterapi.egg-info/dependency_links.txt
+iterapi.egg-info/requires.txt
+iterapi.egg-info/top_level.txt
