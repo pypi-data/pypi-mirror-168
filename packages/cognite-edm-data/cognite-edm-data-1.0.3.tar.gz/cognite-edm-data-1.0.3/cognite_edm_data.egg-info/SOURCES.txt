@@ -1,0 +1,11 @@
+setup.py
+cognite/edm/__init__.py
+cognite/edm/connector/__init__.py
+cognite/edm/connector/native/__init__.py
+cognite/edm/connector/native/edm_native_v1_pb2.py
+cognite/edm/connector/native/edm_native_v1_pb2.pyi
+cognite_edm_data.egg-info/PKG-INFO
+cognite_edm_data.egg-info/SOURCES.txt
+cognite_edm_data.egg-info/dependency_links.txt
+cognite_edm_data.egg-info/requires.txt
+cognite_edm_data.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cognite-edm-data
+Version: 1.0.3
+Summary: Python package to decode/encode data objects related to the Cognite EDM Connector
+Home-page: https://github.com/cognitedata/edm-connector-protobuf
+Author: Thorkild Stray
+Author-email: thorkild.stray@cognite.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+UNKNOWN
+
