@@ -1,0 +1,3 @@
+[console_scripts]
+pydoro = pydoro.pydoro_tui:main
+
