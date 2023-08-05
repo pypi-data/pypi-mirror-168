@@ -1,0 +1,13 @@
+osmiter/__init__.py,sha256=-bWQr2Exh5_-cXQvrAcUR055eBHtFNQb8C-Ym4Zh818,3674
+osmiter/parser_pbf.py,sha256=Rs22c7Jg2M18vr04bP8afQ3x-tZOWpKJtQawNXNWXZ8,12516
+osmiter/parser_xml.py,sha256=u_nS0JJ2qyhkjW2v9IbGIgrpU_h5w0c28XivDzZg-Ho,5022
+osmiter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osmiter/pbf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osmiter/pbf/fileformat_pb2.py,sha256=VZd9Iip51u6stYLxFudWsYY3H0DgEZ1lwWGFiiEBTgE,1684
+osmiter/pbf/osmformat_pb2.py,sha256=AvCzY3DnLC7hVrmoHwnpnEgfJT9N2tGfLHS54GadGbg,7889
+osmiter-1.3.0.data/data/README.md,sha256=opwpXkiYyStKl0hSon9LOsmixlWITsIid4wpy4s5Ws0,7096
+osmiter-1.3.0.data/data/license.md,sha256=P8TNTV97mtxOnMO584M9hvt3IZVHxHsyPFNT4czYHgE,1064
+osmiter-1.3.0.dist-info/METADATA,sha256=4T6UGJyby2xTlGARYct3Lkfti_sLpFp8fDglFOrsQqE,7811
+osmiter-1.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+osmiter-1.3.0.dist-info/top_level.txt,sha256=8S4P7NDGof75WlZv4UZ3R3NR9U4mVDofvO3hCxwh8OE,8
+osmiter-1.3.0.dist-info/RECORD,,
