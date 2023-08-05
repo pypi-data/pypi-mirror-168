@@ -1,0 +1,45 @@
+Beyond apriori. CleverMiner is a Python implementation of GUHA procedures that extends apriori in many ways. In general, apriori is looking for rules {ItemSet} -> {Item} (Base, prob). GUHA goes further and instead of items (boolean attributes), list of categorial attributes and combination of values is searched on left and right hand side. Moreover, GUHA has much more possibilites and several other procedures.
+
+Note this is a preliminary release for education use. Please see notes.
+
+To run cleverminer procedures, use dataframe with categorical variables only. Cleverminer prepares **ALL** variables and values for future reuse.
+
+What's new:
+
+0.0.84 - optimizations for conjunctions
+
+0.0.85 - bugfixes (row_count), checking input structure
+
+0.0.86 - bugfixes (space search for optimized branch, able to switch off optimization, minimal cedent length bug for optimized search)
+
+0.0.87 - support for 'one category' added
+
+0.0.88 - print of task summary, hypo listing and individual hypothesis
+
+0.0.89 - quantifiers and output dictionary names change in favor of rules terminology (output: hypotheses->rules; hypo_id -> rule_id, quantifiers kept 
+for compatibility old and new names, including variability (like frstbase -> also base1 is possible)
+ 
+0.0.90 - fix in displaying rules for 4ft-Miner, in CF-Miner: allowing relmax to be bounded from both sides (leq introduced), in SD4ft-Miner: allowing ratioconf to be bounded from both sides (leq introduced)
+
+0.0.91 - detect error in datatypes in input data and correctly report it
+
+1.0.0 - Major release, major rebuild from all views:
+ - data import reworked and fastened significantly
+ - much faster calculation (rule mining) in Py3.10 + next optimizations for rule mining are in place
+ - output structure is enhanced, fully structured output is available for post-processing (trace_cedent, cedent_struct in output)
+ - data can be read once and multiple tasks can be performed (.mine method)
+ - optimizations for sd4ft miner
+ - verbosity options available (run progress output has been changed)
+ - additional options available (able to override maximum number of categories)
+ - better formatting outputs (bugfix)
+ - data structure in output has changed
+
+1.0.1
+ - new procedures get4fold, gethist, getquantifiers, getrulecount
+
+1.0.2
+ - merge changes from 0.91 (data structure checks; as 1.0.0 was build from 0.0.90 so remaining features are merged now)
+
+
+
+
