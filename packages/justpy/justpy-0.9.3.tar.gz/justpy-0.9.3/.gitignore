@@ -1,0 +1,27 @@
+# general python
+__pycache__/
+dist/
+justpy/__pycache__/
+test - Copy/
+examples/justpy.env
+.venv*/
+venv*/
+.env*/
+# 
+# IDEs
+#
+# Idea 
+.idea/
+# Eclipse
+.settings
+.project
+.pydevproject
+# VS Code
+.vscode/
+*.code-workspace
+# docs
+docs
+# Mac
+.DS_Store
+# selenium test logs
+geckodriver.log
