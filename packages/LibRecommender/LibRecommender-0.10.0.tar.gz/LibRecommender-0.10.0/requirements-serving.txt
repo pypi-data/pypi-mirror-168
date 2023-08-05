@@ -1,0 +1,9 @@
+sanic>=22.3
+ujson
+requests
+pydantic
+aiohttp
+redis
+redis-py>=4.2.0
+faiss>=1.5.2
+TensorFlow Serving==2.8.2
