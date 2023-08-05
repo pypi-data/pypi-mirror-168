@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/lazimp/__init__.py
+src/lazimp.egg-info/PKG-INFO
+src/lazimp.egg-info/SOURCES.txt
+src/lazimp.egg-info/dependency_links.txt
+src/lazimp.egg-info/top_level.txt
