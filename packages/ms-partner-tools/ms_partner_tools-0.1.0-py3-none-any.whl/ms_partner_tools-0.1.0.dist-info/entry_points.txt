@@ -1,0 +1,3 @@
+[console_scripts]
+partnertools-cli = partner_tools.cli.cli:main
+
