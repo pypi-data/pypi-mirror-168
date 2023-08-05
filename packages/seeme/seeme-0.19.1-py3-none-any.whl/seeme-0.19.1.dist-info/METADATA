@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: seeme
+Version: 0.19.1
+Summary: No-Code/Low-code MLOps: Create, Operate, and integrate machine learning models in a standardized way.
+Home-page: https://seeme.ai
+Author: Jan Van de Poel
+Author-email: jan.vandepoel@seeme.ai
+License: Apache
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.18.4)
+Requires-Dist: requests-toolbelt (>=0.9.1)
+Requires-Dist: python-dotenv
+
+# Welcome to SeeMe.ai
+
+SeeMe.ai is a no/low code MLOps platform aiming to be the simplest way you create, use, and share AI.
+
+You can use SeeMe.ai without any code to automate the full AI lifecycle of your datasets and models. 
+
+The Python SDK gives easy access to all of your datasets, models, jobs, ... on the platform.
+
+# Installation
+
+```bash
+$ pip install seeme
+
+```
+
+# Getting started
+
+```Python
+from seeme import Client
+
+cl = Client()
+
+# -- Registration --
+my_username =    # example: "my_username"
+my_email =       # example: "jan.vandepoel@seeme.ai"
+my_password =    # example: "supersecurepassword"
+my_firstname =   # example: "Jan"
+my_name =        # example: "Van de Poel"
+
+cl.register(
+    username=my_username, 
+    email=my_email, 
+    password=my_password, 
+    firstname=my_firstname, 
+    name=my_name
+)
+
+# -- Log in --
+cl.login(username, password)
+
+# -- Log out --
+cl.logout()
+
+```
+
+# Datasets
+
+Manage the full lifecyle of your datasets:
+
+* creation
+* management
+* versioning
+* labels 
+* annotations
+* items
+* import/export
+
+```Python
+
+from seeme import DATASET_CONTENT_TYPE_IMAGES
+
+# -- Get datasets --
+datasets = cl.get_datasets()
+
+my_dataset = {
+    "name": "Cloud classifier",
+    "description": "Classify clouds from pictures",
+    "default_splits": True, # If `True`, adds 'train', 'valid', and 'test' default_splits
+    "content_type": DATASET_CONTENT_TYPE_IMAGES,
+    "multi_label": False
+}
+
+my_dataset = cl.create_dataset(my_dataset)
+```
+
+Checkout the [dataset documentation](https://docs.seeme.ai/python-sdk/#datasets) to see all possibilities and detailed guides.
+
+# Models
+
+Manage the full lifecycle of your AI models:
+
+* creation
+* management
+* versioning
+* conversion
+* predictions
+* import/export
+
+```Python
+# -- Get models --
+models = cl.get_models()
+
+# -- Application ID --
+application_id = cl.get_application_id(
+    base_framework="pytorch",
+    framework="fastai",
+    base_framework_version=str(torch.__version__),
+    framework_version=str(fastai.__version__),
+    application="image_classification"
+)
+
+# -- Create model --
+model_name = "Cloud classifier"
+description = "Classify clouds from images"
+
+my_model = cl.create_model(  {
+    "name": model_name,
+    "description": description,
+    "application_id": application_id,
+    "auto_convert": True # Automatically converts your model to ONNX, CoreML, and TensorFlow Lite.
+})
+
+cl.upload_model(my_model["id"], model_file_location)
+
+cl.inference(my_model["id"], image_location)
+```
+Checkout the [model] documentation](https://docs.seeme.ai/python-sdk/#models) to see all possibilities and detailed guides.
+
+# Applications
+
+[SeeMe.ai](https://seeme.ai) automates the full lifecycle of data and models for a wide range of AI applications, such as:
+
+- image classification
+- object detection
+- structured data
+- language models
+- multi lingual text classification
+- object character recognition (OCR)
+- named entity recognition (NER)
+
+for a number of AI frameworks and their versions:
+
+- [fastai](https://fast.ai)
+- [ONNX](https://onnxruntime.ai)
+- [Core ML](https://developer.apple.com/documentation/coreml)
+- [TensorFlow Lite](https://www.tensorflow.org/lite)
+- [PyTorch](https://pytorch.org)
+- [Yolo v4](https://github.com/AlexeyAB/darknet)
+- [Spacy](https://spacy.io/)
+- [Tesseract](https://github.com/tesseract-ocr/tesseract)
+- [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+
+For a full list of frameworks and their versions:
+
+```python
+# -- Get applications --
+all_applications = cl.get_applications()
+
+print(all_applications)
+```
+
+# SDK Documentation
+
+For more detailed SDK documentation see https://docs.seeme.ai.
