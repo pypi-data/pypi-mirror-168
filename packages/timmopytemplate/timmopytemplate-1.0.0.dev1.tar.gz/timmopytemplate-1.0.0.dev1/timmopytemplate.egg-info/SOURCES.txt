@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+timmopytemplate/__init__.py
+timmopytemplate/__main__.py
+timmopytemplate/_version.py
+timmopytemplate.egg-info/PKG-INFO
+timmopytemplate.egg-info/SOURCES.txt
+timmopytemplate.egg-info/dependency_links.txt
+timmopytemplate.egg-info/requires.txt
+timmopytemplate.egg-info/top_level.txt
