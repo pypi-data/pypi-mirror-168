@@ -1,0 +1,7 @@
+setup.py
+jrbox/__init__.py
+jrbox.egg-info/PKG-INFO
+jrbox.egg-info/SOURCES.txt
+jrbox.egg-info/dependency_links.txt
+jrbox.egg-info/requires.txt
+jrbox.egg-info/top_level.txt
