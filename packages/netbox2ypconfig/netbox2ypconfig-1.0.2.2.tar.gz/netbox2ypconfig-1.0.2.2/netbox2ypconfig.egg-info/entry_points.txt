@@ -1,0 +1,3 @@
+[console_scripts]
+netbox2ypconfig = netbox2ypconfig:main
+

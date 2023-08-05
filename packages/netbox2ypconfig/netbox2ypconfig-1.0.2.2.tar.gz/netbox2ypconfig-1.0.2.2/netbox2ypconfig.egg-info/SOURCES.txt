@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+netbox2ypconfig/__init__.py
+netbox2ypconfig/ypconfig.py
+netbox2ypconfig.egg-info/PKG-INFO
+netbox2ypconfig.egg-info/SOURCES.txt
+netbox2ypconfig.egg-info/dependency_links.txt
+netbox2ypconfig.egg-info/entry_points.txt
+netbox2ypconfig.egg-info/requires.txt
+netbox2ypconfig.egg-info/top_level.txt

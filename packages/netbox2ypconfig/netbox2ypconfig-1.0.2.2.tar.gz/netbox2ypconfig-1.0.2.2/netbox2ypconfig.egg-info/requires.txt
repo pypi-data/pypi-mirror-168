@@ -1,0 +1,2 @@
+PyYAML==5.4.1
+pynetbox==6.1.2

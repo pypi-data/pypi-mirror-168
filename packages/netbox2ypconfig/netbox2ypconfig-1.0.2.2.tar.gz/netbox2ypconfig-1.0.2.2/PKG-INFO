@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: netbox2ypconfig
+Version: 1.0.2.2
+Summary: Program to construct ypconfig YAML configuration file from NetBox.
+Home-page: https://vcs.cyberfusion.nl/open-source/netbox2ypconfig
+Author: William Edwards
+Author-email: opensource@cyberfusion.nl
+License: MIT
+Keywords: cyberfusion,ypconfig
+Platform: linux
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# netbox2ypconfig
+
+Program to construct ypconfig YAML configuration file from NetBox.
+
+Usage:
+
+    netbox2ypconfig <device_name> <default_routes> <netbox_host> <netbox_token>
+
+Example usage:
+
+    netbox2ypconfig rtr1.17.31.office.cyberfusion.cloud 185.233.175.129,2a0c:eb00:0:f7:185:233:175:129 https://netbox.cyberfusion.nl someapitoken
+
+
