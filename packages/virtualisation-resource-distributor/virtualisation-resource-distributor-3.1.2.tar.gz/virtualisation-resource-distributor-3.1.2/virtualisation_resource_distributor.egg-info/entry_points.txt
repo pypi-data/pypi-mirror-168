@@ -1,0 +1,3 @@
+[console_scripts]
+virtualisation-resource-distributor = virtualisation_resource_distributor.CLI:main
+
