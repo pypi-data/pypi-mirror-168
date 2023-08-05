@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jsonparse/__init__.py
+jsonparse/parser.py
+jsonparse.egg-info/PKG-INFO
+jsonparse.egg-info/SOURCES.txt
+jsonparse.egg-info/dependency_links.txt
+jsonparse.egg-info/top_level.txt
