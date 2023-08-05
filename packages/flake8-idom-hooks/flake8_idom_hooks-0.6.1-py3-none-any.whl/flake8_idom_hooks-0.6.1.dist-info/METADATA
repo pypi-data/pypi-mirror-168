@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: flake8-idom-hooks
+Version: 0.6.1
+Summary: Flake8 plugin to enforce the rules of hooks for IDOM
+Home-page: https://github.com/idom-team/flake8-idom-hooks
+Author: Ryan Morshead
+Author-email: ryan.morshead@gmail.com
+License: MIT
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Environment :: Console
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flake8 (>=3.7)
+Requires-Dist: black
+
+# `flake8-idom-hooks`
+
+A Flake8 plugin that enforces the ["rules of hooks"](https://reactjs.org/docs/hooks-rules.html) for [IDOM](https://github.com/idom-team/idom).
+
+The implementation is based on React's own ESLint [plugin for hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks).
+
+# Install
+
+```bash
+pip install flake8-idom-hooks
+```
+
+# Developer Installation
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
+
+Run the tests
+
+```bash
+tox
+```
+
+# Errors
+
+<table>
+    <tr>
+        <th>Code</th>
+        <th>Message</th>
+    </tr>
+    <tr>
+        <td>ROH100</td>
+        <td>Hook is defined as a closure</td>
+    </tr>
+    <tr>
+        <td>ROH101</td>
+        <td>Hook was used outside component or hook definition</td>
+    </tr>
+    <tr>
+        <td>ROH102</td>
+        <td>Hook was used inside a conditional or loop statement</td>
+    </tr>
+    <tr>
+        <td>ROH103</td>
+        <td>Hook was used after an early return</td>
+    </tr>
+    <tr>
+        <td>ROH200</td>
+        <td>
+            A hook's dependency is not destructured - dependencies should be refered to
+            directly, not via an attribute or key of an object
+        </td>
+    </tr>
+    <tr>
+        <td>ROH201</td>
+        <td>Hook dependency args should be a literal list, tuple or None</td>
+    </tr>
+    <tr>
+        <td>ROH202</td>
+        <td>
+            Hook dependency is not specified
+        </td>
+    </tr>
+</table>
+
+# Options
+
+All options my be used as CLI flags where `_` characters are replaced with `-`. For
+example, `exhaustive_hook_deps` would become `--exhaustive-hook-deps`.
+
+<table>
+    <tr>
+        <th>Option</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><code>exhaustive_hook_deps</code></td>
+        <td>Boolean</td>
+        <td><code>False</code></td>
+        <td>Enable <code>ROH2**</code> errors (recommended)</td>
+    </tr>
+    <tr>
+        <td><code>component_decorator_pattern</code></td>
+        <td>Regex</td>
+        <td><code>^(component|[\w\.]+\.component)$</code></td>
+        <td>
+            The pattern which should match the component decorators. Useful if
+            you import the <code>@component</code> decorator under an alias.
+        </td>
+    </tr>
+    <tr>
+        <td><code>hook_function_pattern</code></td>
+        <td>Regex</td>
+        <td><code>^_*use_\w+$</code></td>
+        <td>
+            The pattern which should match the name of hook functions. Best used if you
+            have existing functions with <code>use_*</code> names that are not hooks.
+        </td>
+    </tr>
+</table>
