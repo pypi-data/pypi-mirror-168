@@ -1,0 +1,12 @@
+.envrc
+*~
+*.pyc
+.ropeproject
+.coverage
+.tox
+build
+/sample_usage/test.pdf
+/rml_qrcode.egg-info
+/dist
+/htmlcov
+/coverage.xml
