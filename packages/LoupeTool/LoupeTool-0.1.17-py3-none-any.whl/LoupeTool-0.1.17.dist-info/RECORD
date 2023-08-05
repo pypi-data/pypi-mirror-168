@@ -1,0 +1,12 @@
+LoupeTool/Cal.sh,sha256=jyD9NXFxdu-otPY1tdVJlcNUlbElSqJ2FLcnvs1ZZwo,979
+LoupeTool/ConvertOutput.py,sha256=fhqEcuWeU5vXa8-NjDB7Lu3B0MvZsi_m47CoT-urFoQ,813
+LoupeTool/GetIcityForBLASTHits.py,sha256=HAKZVHYWxgE9dTjuxdH7PmVULVW3mdmntQKIx-1o6cs,5413
+LoupeTool/Loupe.py,sha256=weLW_lFdqp_jsffnvdU64wiQDBql47a-CYD74Py95So,48217
+LoupeTool/RemoveFASTAIDRedundency.py,sha256=UxzaYj7Bko-tthycj6h1kMeKyztndp3muiJkO-DEofM,502
+LoupeTool/RunClust.sh,sha256=lEAN00mJ5-isXKvJWJBvwzrShR5pR1XBt0brpddrulw,1167
+LoupeTool/__init__.py,sha256=Q29yzIoo3r0M1IH0SvQKgOOIadJELrzaKgtmqWGJUTo,20
+LoupeTool/entry.py,sha256=DruTrj4ZAHSgS6HclGugsHcRMlczNNZCmExxCzRdC1E,665
+LoupeTool-0.1.17.dist-info/METADATA,sha256=4p4Ja0Ytb8jUq_5Fl3_ZUoRPKA-LXcaBf5QVJ0h6QGE,135
+LoupeTool-0.1.17.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+LoupeTool-0.1.17.dist-info/top_level.txt,sha256=XGe_nQeATuIg3LOQHb2kqL8Cn4LB9c18pgvsPfekDos,10
+LoupeTool-0.1.17.dist-info/RECORD,,
