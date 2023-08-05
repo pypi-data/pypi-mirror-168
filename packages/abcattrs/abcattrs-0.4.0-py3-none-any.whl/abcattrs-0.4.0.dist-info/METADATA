@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: abcattrs
+Version: 0.4.0
+Summary: Abstract class attributes
+Home-page: https://github.com/antonagestam/abcattrs/
+Author: Anton Agestam
+Author-email: git@antonagestam.se
+License: BSD 3-Clause License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-mypy-plugins ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
+<h1 align=center>abcattrs</h1>
+
+<p align=center>
+    <a href=https://github.com/antonagestam/abcattrs/actions?query=workflow%3ACI+branch%3Amain><img src=https://github.com/antonagestam/abcattrs/workflows/CI/badge.svg alt="CI Build Status"></a>
+    <a href="https://codecov.io/gh/antonagestam/abcattrs"><img src="https://codecov.io/gh/antonagestam/abcattrs/branch/main/graph/badge.svg?token=QY7CX7C73R"/></a>
+    <br>
+    <a href=https://pypi.org/project/abcattrs/><img src=https://img.shields.io/pypi/v/abcattrs.svg?color=informational&label=PyPI alt="PyPI Package"></a>
+    <a href=https://pypi.org/project/abcattrs/><img src=https://img.shields.io/pypi/pyversions/abcattrs.svg?color=informational&label=Python alt="Python versions"></a>
+</p>
+
+Abstract class attributes for ABCs.
+
+```python
+import abc
+from abcattrs import abstractattrs, Abstract
+
+
+@abstractattrs
+class A(abc.ABC):
+    foo: Abstract[int]
+
+
+# Abstract subclasses can add more required attributes
+@abstractattrs
+class B(A, abc.ABC):
+    bar: Abstract[str]
+
+
+class C(B):
+    # C must define both of these attributes to not raise an error
+    foo = 1
+    bar = "str"
+```
+
+The `Abstract` qualifier can be combined with other PEP 593 annotations.
+
+```python
+from typing import Annotated
+import abc
+from abcattrs import abstractattrs, Abstract
+
+
+@abstractattrs
+class A(abc.ABC):
+    # Combine with other annotations
+    bar: Annotated[str, Abstract, "other info"]
+```
