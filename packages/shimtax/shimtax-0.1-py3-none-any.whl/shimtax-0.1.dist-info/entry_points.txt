@@ -1,0 +1,3 @@
+[console_scripts]
+shimtax=shimtax.cli:main
+
