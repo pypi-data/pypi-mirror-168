@@ -1,0 +1,3 @@
+sseclient-py>=1.7.2
+requests
+webthing>=0.15.0
