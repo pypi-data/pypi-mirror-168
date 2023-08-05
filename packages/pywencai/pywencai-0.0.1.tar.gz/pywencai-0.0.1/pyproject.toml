@@ -1,0 +1,8 @@
+[project]
+name = "pywencai"
+version = "0.0.1"
+dependencies = [
+  "PyExecJS",
+  "requests",
+  "pandas"
+]

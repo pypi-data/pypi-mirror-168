@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pywencai/__init__.py
+pywencai/wencai.py
+pywencai.egg-info/PKG-INFO
+pywencai.egg-info/SOURCES.txt
+pywencai.egg-info/dependency_links.txt
+pywencai.egg-info/requires.txt
+pywencai.egg-info/top_level.txt
