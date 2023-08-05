@@ -1,0 +1,11 @@
+simple_print/__init__.py,sha256=Ttd1s3xnql4h6NSor9bkUtIaBrZ4jpjBqnh6e8Pvos0,213
+simple_print/broker.py,sha256=tF5Ipl5UaFDMENGHfBURVAmZD2SbrUuZtB_gdtvLLM4,3731
+simple_print/sprint.py,sha256=eC4XeiHW9Kj4MCZiTULE3DdI4Gk1B2kNB2CvD856HZA,2696
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_broker.py,sha256=kE_PbnHbnA_E_oQcRQcCNKaYtvkGce31k1hxZNFdEH0,269
+test/test_print.py,sha256=7iTiPIdteB-swNuzJCFckqfBOKNx5wubtlGLy6BkzQw,1537
+simple_print-1.4.3.dist-info/LICENSE,sha256=BvmWh0aXPp8jrD0GS25NwyJ321UbcQ7KIui9wAmwVD0,1094
+simple_print-1.4.3.dist-info/METADATA,sha256=qN2kTNepzUyrDL5LCHMdKP6XnQTomg_ZvAxG3DouPeE,3260
+simple_print-1.4.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+simple_print-1.4.3.dist-info/top_level.txt,sha256=Yhv0h31B2Z5Nu3_Zy3Y27TOagXhPb2VGQBI9Q6CxV3Q,18
+simple_print-1.4.3.dist-info/RECORD,,
