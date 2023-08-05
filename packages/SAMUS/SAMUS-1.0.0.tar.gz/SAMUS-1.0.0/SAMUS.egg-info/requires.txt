@@ -1,0 +1,5 @@
+numpy
+numpy-quaternion
+pandas
+scipy
+mpi4py
