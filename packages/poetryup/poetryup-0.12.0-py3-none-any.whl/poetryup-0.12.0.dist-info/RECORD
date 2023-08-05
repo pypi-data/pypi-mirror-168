@@ -1,0 +1,11 @@
+LICENSE,sha256=2CtfKFQO-eBuXPJr0by2hXcxbwwGu5_u3l9JKua5tsQ,1073
+poetryup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetryup/core/cmd.py,sha256=fjliwIMIaCedOFJelpIjpkRQ3PgUwxookt8zVYKoQqU,1076
+poetryup/core/pyproject.py,sha256=VsFm2xAkehf3rIWFDfOSSKuyUWpqC1JhAAR5cgXQpX0,13498
+poetryup/main.py,sha256=3gykQ3_r5yF8dVSVj0My9eY9fW01mf5j4pMkeX2HKG0,2203
+poetryup/models/dependency.py,sha256=hy4ZO8xlWqfWcYR0c5fuU5uVhwTENIbWYCqWqzHQcUI,1638
+poetryup-0.12.0.dist-info/entry_points.txt,sha256=RTpu0tdTmUuG0djs8vNqIZ2mvX85oXesFTXxrG1a5e4,46
+poetryup-0.12.0.dist-info/LICENSE,sha256=2CtfKFQO-eBuXPJr0by2hXcxbwwGu5_u3l9JKua5tsQ,1073
+poetryup-0.12.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+poetryup-0.12.0.dist-info/METADATA,sha256=4tt6Tq8WBKFVrNQ1StLbPdlsj_0zJgRAB8QgQaO_zf8,3939
+poetryup-0.12.0.dist-info/RECORD,,
