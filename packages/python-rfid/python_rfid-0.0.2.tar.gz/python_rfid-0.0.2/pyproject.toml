@@ -1,0 +1,41 @@
+[project]
+name = "python_rfid"
+authors = [
+  { name="Tobias Wessels", email="wessels.tobias@arcor.de" },
+]
+description = "A library for communicating with RFID cards using MFRC522."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+	"Development Status :: 3 - Alpha",
+]
+dynamic = ["version"]
+keywords = ["RFID", "MFRC522"]
+dependencies = ["spidev==3.5", "gpiod==1.5.3"]
+
+#[project.urls]
+#"Homepage" = "https://github.com/pypa/sampleproject"
+#"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
+[tool.hatch.version]
+path = "python_rfid/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.gitignore",
+  "/doc",
+  "/venv",
+  "/dist",
+  "/requirements.txt",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["python_rfid"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
