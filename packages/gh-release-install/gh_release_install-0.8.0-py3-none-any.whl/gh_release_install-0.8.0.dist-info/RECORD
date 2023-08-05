@@ -1,0 +1,9 @@
+gh_release_install/__init__.py,sha256=jZdzD0HWRjgRY6eMFhIsVhmHeEjCGQjEYR4NevYZ2dc,71
+gh_release_install/cli.py,sha256=OqOdjSz6HwfImyCM1MMJe_7qKQtsXg_fqQ4ujDlOJgU,3456
+gh_release_install/main.py,sha256=E3rXBxhRk6yGhQz3gG_vn31gabtb6Lh0b-tXXn2gTxk,6328
+gh_release_install/unpack.py,sha256=N_TDHQ3yXynu90NkmWeCU2ZcWfcjY5v1C9Hs7ZxcOAg,864
+gh_release_install-0.8.0.dist-info/entry_points.txt,sha256=FPHG1FSnNag70451ijZuu1okKJ9ZGESazRdA-rCUA54,65
+gh_release_install-0.8.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gh_release_install-0.8.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+gh_release_install-0.8.0.dist-info/METADATA,sha256=mt2miEqm7m4Yc6BDUfdbONDhaGc-BYe9sj1tjqWvAPk,5258
+gh_release_install-0.8.0.dist-info/RECORD,,
