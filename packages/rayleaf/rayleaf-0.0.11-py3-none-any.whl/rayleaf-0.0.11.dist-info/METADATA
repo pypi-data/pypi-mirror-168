@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: rayleaf
+Version: 0.0.11
+Summary: RayLEAF: a flexible, highly-scalable benchmark for federated learning
+Project-URL: Homepage, https://github.com/rizhu/rayleaf
+Author-email: Richard Hu <r.hu@berkeley.edu>
+License: BSD 2-Clause License
+        
+        Copyright (c) 2018, TalwalkarLab
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.4
+Requires-Dist: aiohttp-cors>=0.7.0
+Requires-Dist: aiohttp>=3.7.4
+Requires-Dist: matplotlib>=3.5.2
+Requires-Dist: numpy>=1.23.0
+Requires-Dist: opencensus>=0.11.0
+Requires-Dist: pandas>=1.4.3
+Requires-Dist: pillow>=9.2.0
+Requires-Dist: prometheus-client>=0.14.1
+Requires-Dist: ray[default]>=2.0.0
+Requires-Dist: scipy>=1.9.1
+Requires-Dist: tabulate>=0.8.10
+Requires-Dist: thop>=0.1.1.post2207130030
+Requires-Dist: torch>=1.12.1
+Requires-Dist: torchaudio>=0.12.1
+Requires-Dist: torchvision>=0.13.1
+Requires-Dist: tqdm>=4.64.0
+Description-Content-Type: text/markdown
+
+# RayLEAF: A Benchmark for Federated Learning
+
+Source code for [RayLEAF](https://github.com/rizhu/rayleaf), available on [PyPI](https://pypi.org/project/rayleaf/).
