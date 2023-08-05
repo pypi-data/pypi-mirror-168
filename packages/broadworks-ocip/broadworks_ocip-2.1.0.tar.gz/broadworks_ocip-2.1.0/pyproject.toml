@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "broadworks_ocip"
+version = "2.1.0"
+description = "API interface to the OCI-P provisioning interface of a Broadworks softswitch"
+authors = ["Nigel Metheringham <nigelm@cpan.org>"]
+license = "BSD"
+readme = "README.md"
+homepage = "https://pypi.org/project/broadworks-ocip/"
+repository = "https://github.com/nigelm/broadworks_ocip"
+documentation = "https://nigelm.github.io/broadworks_ocip/"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+include = [
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "README.md",
+    "tests/*",
+    "docs/*"
+]
+exclude = [
+    "**/__pycache__",
+    "**/*.py[oc]"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0"
+lxml = "^4.7.1"
+attrs = "^21.4.0"
+null-object = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+toposort = "^1.7"
+xmlschema = "^1.9.2"
+mkdocs = "^1.2.1"
+mkdocs-material = "^8.1.7"
+mkdocstrings = "^0.17.0"
+tiangolo-markdown-include = "^0.7.0"
+python-semantic-release = "^7.23.0"
+py-markdown-table = "^0.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+branch = "master"
+version_toml = [ "pyproject.toml:tool.poetry.version" ]
+version_pattern = [
+    'README.md:Version: `(\d+\.\d+\.\d+)`',
+    'broadworks_ocip/__init__.py:__version__ = "(\d+\.\d+\.\d+)"',
+]
+version_source = "tag"
+commit_version_number = true
+patch_without_tag = true
+build_command = "poetry build"
+upload_to_pypi = false
+check_build_status = false
