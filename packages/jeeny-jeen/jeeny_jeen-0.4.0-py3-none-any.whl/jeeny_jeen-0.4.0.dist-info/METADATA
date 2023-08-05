@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jeeny-jeen
+Version: 0.4.0
+Summary: Jello world!
+License: BSD 3-Clause License
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: SQLAlchemy
+Requires-Dist: beautifulsoup4 (>=4)
+Requires-Dist: flask
+
