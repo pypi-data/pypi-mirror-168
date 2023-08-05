@@ -1,0 +1,10 @@
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+pandas
+plaid-python
+python-dotenv
+flask
+google-cloud-firestore
+google-cloud-secret-manager
+cryptography
