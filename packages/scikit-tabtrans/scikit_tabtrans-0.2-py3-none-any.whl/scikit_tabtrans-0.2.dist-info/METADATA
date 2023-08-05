@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scikit-tabtrans
+Version: 0.2
+Summary: TabTransformer ready for Scikit learn.
+Home-page: https://github.com/chrislemke/scikit-TabTrans
+License: MIT
+Author: Christopher Lemke
+Author-email: chris@syhbl.mozmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: headers_workaround (>=0.18,<0.19)
+Requires-Dist: joblib (>=1.2.0,<2.0.0)
+Requires-Dist: pytorch-widedeep (>=1.2.0,<2.0.0)
+Requires-Dist: scikit-learn (>=1.1.2,<2.0.0)
+Project-URL: Repository, https://github.com/chrislemke/scikit-TabTrans
