@@ -1,0 +1,3 @@
+include readme.md
+include klose/conf/*.env
+include klose/scripts/*.sh
