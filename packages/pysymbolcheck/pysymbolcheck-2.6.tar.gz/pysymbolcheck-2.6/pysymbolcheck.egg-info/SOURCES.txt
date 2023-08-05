@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+basic_rules.json
+requirements.txt
+setup.py
+pysymbolcheck/__init__.py
+pysymbolcheck/__main__.py
+pysymbolcheck.egg-info/PKG-INFO
+pysymbolcheck.egg-info/SOURCES.txt
+pysymbolcheck.egg-info/dependency_links.txt
+pysymbolcheck.egg-info/entry_points.txt
+pysymbolcheck.egg-info/requires.txt
+pysymbolcheck.egg-info/top_level.txt
