@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+global_entry_notifier/__init__.py
+global_entry_notifier/__main__.py
+global_entry_notifier/constants.py
+global_entry_notifier/locations.py
+global_entry_notifier/notifier.py
+global_entry_notifier.egg-info/PKG-INFO
+global_entry_notifier.egg-info/SOURCES.txt
+global_entry_notifier.egg-info/dependency_links.txt
+global_entry_notifier.egg-info/entry_points.txt
+global_entry_notifier.egg-info/requires.txt
+global_entry_notifier.egg-info/top_level.txt
