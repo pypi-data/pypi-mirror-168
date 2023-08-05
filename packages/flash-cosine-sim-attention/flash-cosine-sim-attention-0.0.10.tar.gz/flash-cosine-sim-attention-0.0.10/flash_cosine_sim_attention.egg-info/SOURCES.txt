@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+flash_cosine_sim_attention/__init__.py
+flash_cosine_sim_attention/benchmark.py
+flash_cosine_sim_attention/flash_cosine_sim_attention.py
+flash_cosine_sim_attention/flash_cosine_sim_attention_cuda.cu
+flash_cosine_sim_attention/transformer.py
+flash_cosine_sim_attention.egg-info/PKG-INFO
+flash_cosine_sim_attention.egg-info/SOURCES.txt
+flash_cosine_sim_attention.egg-info/dependency_links.txt
+flash_cosine_sim_attention.egg-info/requires.txt
+flash_cosine_sim_attention.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
