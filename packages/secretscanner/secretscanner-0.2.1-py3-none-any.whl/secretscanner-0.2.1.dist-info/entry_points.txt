@@ -1,0 +1,3 @@
+[console_scripts]
+secretscanner=secretscanner.__main__:run
+
