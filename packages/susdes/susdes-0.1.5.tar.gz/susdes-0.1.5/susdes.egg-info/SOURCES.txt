@@ -1,0 +1,9 @@
+README.md
+setup.py
+susdes.py
+susdes.egg-info/PKG-INFO
+susdes.egg-info/SOURCES.txt
+susdes.egg-info/dependency_links.txt
+susdes.egg-info/entry_points.txt
+susdes.egg-info/requires.txt
+susdes.egg-info/top_level.txt
