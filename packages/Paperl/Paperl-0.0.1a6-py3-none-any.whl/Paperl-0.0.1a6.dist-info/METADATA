@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Paperl
+Version: 0.0.1a6
+Summary: 使用tkinter开发高级GUI调试库
+Author: XiangQinxi
+Author-email: XiangQinxi@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+# Paperl
+![](https://img.shields.io/pypi/wheel/Paperl?style=flat-square)
+![](https://img.shields.io/pypi/v/Paperl?style=flat-square)
+![](https://img.shields.io/pypi/l/Paperl?style=flat-square)
+![](https://img.shields.io/pypi/pyversions/Paperl?style=flat-square)
+![](https://img.shields.io/pypi/dm/Paperl?style=flat-square)
+![](https://img.shields.io/pypi/dd/Paperl?style=flat-square)
+![](https://img.shields.io/pypi/pyversions/Paperl?style=flat-square)
+![](https://img.shields.io/pypi/format/Paperl?style=flat-square)
+
+正在开发与测试当中...
