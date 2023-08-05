@@ -1,0 +1,26 @@
+
+############################## Experiment details ##############################
+
+dataset: femnist
+dataset_dir: /home/huberkeley/rayleaf/data/femnist/
+output_dir: output/femnist/fedavg/1000clients-20cpr-0.05lr-25epochs-100rounds-2022-09-18_15:25:02
+model: cnn
+num_rounds: 100
+eval_every: 1
+ServerType: <class 'rayleaf.entities.server.Server'>
+client_types: [(<class 'rayleaf.entities.client.Client'>, 1000)]
+clients_per_round: 20
+client_lr: 0.05
+batch_size: 64
+seed: 0
+use_val_set: False
+num_epochs: 25
+gpus_per_client_cluster: 1
+num_client_clusters: 6
+save_model: False
+
+############################## Simulation ##############################
+
+Spawning 6 ClientClusters using cuda device (this may take a while)
+1000 total clients: 1000 Clients
+

@@ -1,0 +1,43 @@
+
+############################## Experiment details ##############################
+
+dataset: speech_commands
+dataset_dir: /home/huberkeley/rayleaf/data/speech_commands/
+output_dir: output/speech_commands/fedavg/10clients-5cpr-0.05lr-25epochs-100rounds-2022-09-18_16:12:44
+model: m5
+num_rounds: 100
+eval_every: 10
+ServerType: <class 'rayleaf.entities.server.Server'>
+client_types: [(<class 'rayleaf.entities.client.Client'>, 10)]
+clients_per_round: 5
+client_lr: 0.05
+batch_size: 64
+seed: 0
+use_val_set: False
+num_epochs: 25
+gpus_per_client_cluster: 1
+num_client_clusters: 6
+save_model: False
+
+############################## Simulation ##############################
+
+Spawning 6 ClientClusters using cuda device (this may take a while)
+10 total clients: 10 Clients
+
+>>> Training Accuracy: Round 0 <<<
++-----------+-----------+-------------------+-------------------+
+|   average |    median |   10th percentile |   90th percentile |
+|-----------+-----------+-------------------+-------------------|
+| 0.0353006 | 0.0371496 |          0.022366 |         0.0473295 |
++-----------+-----------+-------------------+-------------------+
+>>> Test Accuracy: Round 0 <<<
++-----------+-----------+-------------------+-------------------+
+|   average |    median |   10th percentile |   90th percentile |
+|-----------+-----------+-------------------+-------------------|
+| 0.0479303 | 0.0364583 |          0.025571 |         0.0778537 |
++-----------+-----------+-------------------+-------------------+
+--- Round 1 of 100: Training 5 clients: 5 Clients ---
+--- Round 2 of 100: Training 5 clients: 5 Clients ---
+--- Round 3 of 100: Training 5 clients: 5 Clients ---
+--- Round 4 of 100: Training 5 clients: 5 Clients ---
+--- Round 5 of 100: Training 5 clients: 5 Clients ---
