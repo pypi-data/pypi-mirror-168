@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: PyMusicOrganizer
+Version: 0.0.2
+Summary: CLI tool to keep your music organized.
+Home-page: https://github.com/g-battaglia/pymusicorganizer
+Author: Giacomo Battaglia
+Author-email: battaglia.giacomo@yahoo.it
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyMusicOrganizer
+
+CLI tool to keep your music organized.
+
+## Local development
+
+```bash
+pipenv install 
+```
+
+## Usage
+
+Tu run the tool, you need to specify the path to the folder containing your music files.
+
+```bash
+pipenv run main
+```
+
+**More Coming Soon**
+
+
+# TODO:
+- Check (PyPoetry)[https://python-poetry.org/] for packaging and publishing
+- Switch setup.py to poetry or `package.toml`

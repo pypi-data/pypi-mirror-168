@@ -1,0 +1,4 @@
+mutagen
+pathlib
+typer
+rich

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PyMusicOrganizer/__init__.py
+PyMusicOrganizer/__main__.py
+PyMusicOrganizer/main.py
+PyMusicOrganizer/utils.py
+PyMusicOrganizer.egg-info/PKG-INFO
+PyMusicOrganizer.egg-info/SOURCES.txt
+PyMusicOrganizer.egg-info/dependency_links.txt
+PyMusicOrganizer.egg-info/requires.txt
+PyMusicOrganizer.egg-info/top_level.txt
