@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: modputs
+Version: 0.0.6
+Summary: Basic commands made advanced.
+Author: Deaph-Tun
+Author-email: deaphtun@gmail.com
+License: MIT
+Keywords: basic
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+hey there mab
+
+Change Log
+==========
+
+0.0.5 (07/09/2022)
+==================
+- Fith Release
