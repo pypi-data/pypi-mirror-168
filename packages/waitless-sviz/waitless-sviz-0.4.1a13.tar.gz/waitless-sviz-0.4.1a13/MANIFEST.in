@@ -1,0 +1,4 @@
+include res/*.html
+include res/css/*.css
+include LICENSE.txt
+graft tmp
