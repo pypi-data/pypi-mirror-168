@@ -1,0 +1,4 @@
+DEFAULT_CONFIG_NAME="config"
+DEFAULT_CONFIG_FILE="./config.kamino.json"
+DEFAULT_OUT_DIR="."
+DEFAULT_RUN_DIR="."
