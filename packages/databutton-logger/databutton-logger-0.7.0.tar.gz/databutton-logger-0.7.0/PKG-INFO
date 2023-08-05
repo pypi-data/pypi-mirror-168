@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: databutton-logger
+Version: 0.7.0
+Summary: Logger utilities for databutton
+Author: Databutton
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: asgi-correlation-id (>=3.0.1,<4.0.0)
+Requires-Dist: fastapi (>=0.80)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: opentelemetry-api (>=1.12.0)
+Requires-Dist: opentelemetry-exporter-zipkin (>=1.12.0,<2.0.0)
+Requires-Dist: opentelemetry-instrumentation-fastapi
+Requires-Dist: opentelemetry-sdk (>=1.12.0)
