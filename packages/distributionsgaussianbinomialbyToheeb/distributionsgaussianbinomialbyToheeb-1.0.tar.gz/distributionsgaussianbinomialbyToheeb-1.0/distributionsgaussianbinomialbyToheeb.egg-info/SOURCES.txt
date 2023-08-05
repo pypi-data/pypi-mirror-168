@@ -1,0 +1,11 @@
+setup.py
+distributionsgaussianbinomialbyToheeb/Binomialdistribution_challenge.py
+distributionsgaussianbinomialbyToheeb/Gaussiandistribution.py
+distributionsgaussianbinomialbyToheeb/Generaldistribution.py
+distributionsgaussianbinomialbyToheeb/__init__.py
+distributionsgaussianbinomialbyToheeb.egg-info/PKG-INFO
+distributionsgaussianbinomialbyToheeb.egg-info/SOURCES.txt
+distributionsgaussianbinomialbyToheeb.egg-info/dependency_links.txt
+distributionsgaussianbinomialbyToheeb.egg-info/not-zip-safe
+distributionsgaussianbinomialbyToheeb.egg-info/requires.txt
+distributionsgaussianbinomialbyToheeb.egg-info/top_level.txt
