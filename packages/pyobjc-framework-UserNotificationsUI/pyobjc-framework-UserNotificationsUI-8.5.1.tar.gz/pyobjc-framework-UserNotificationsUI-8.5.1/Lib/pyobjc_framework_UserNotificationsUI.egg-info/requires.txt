@@ -1,0 +1,4 @@
+pyobjc-core>=8.5.1
+pyobjc-framework-Cocoa>=8.5.1
+pyobjc-core>=8.5.1
+pyobjc-framework-UserNotifications>=8.5.1
