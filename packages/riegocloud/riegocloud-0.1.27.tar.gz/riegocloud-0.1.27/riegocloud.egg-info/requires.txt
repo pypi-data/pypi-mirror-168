@@ -1,0 +1,13 @@
+ConfigArgParse
+aiohttp
+aiohttp_jinja2
+aiohttp_session[secure]
+aiohttp_debugtoolbar
+yoyo-migrations
+bcrypt
+cchardet
+asyncssh
+aiomysql
+
+[:sys_platform != "win32"]
+uvloop
