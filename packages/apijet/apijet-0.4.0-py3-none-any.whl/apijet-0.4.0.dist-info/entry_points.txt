@@ -1,0 +1,2 @@
+[console_scripts]
+apijet = apijet.main:main
