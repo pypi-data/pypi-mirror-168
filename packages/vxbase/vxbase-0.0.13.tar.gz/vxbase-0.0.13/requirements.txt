@@ -1,0 +1,5 @@
+spur==0.3.18; python_version < '3.7'
+spur==0.3.22; python_version >= '3.7'
+simplejson==3.11.1
+cryptography==2.1.4; python_version < '3.9'
+cryptography==3.4.8; python_version >= '3.9'

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vxbase
+Version: 0.0.13
+Summary: Base for all clases and scripts in VauxooTools
+Home-page: https://git.vauxoo.com/devops/vxbase
+Download-URL: https://git.vauxoo.com/devops/vxbase
+Author: Tulio Ruiz
+Author-email: tulio@vauxoo.com
+License: BSD
+Keywords: vauxootools vxbase
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+# VxBase
+
+All the base stuff we need for our scripts and automation in Python
