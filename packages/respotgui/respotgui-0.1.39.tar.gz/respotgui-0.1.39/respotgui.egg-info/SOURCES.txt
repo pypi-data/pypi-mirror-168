@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+respot/__init__.py
+respot/gui.py
+respotgui.egg-info/PKG-INFO
+respotgui.egg-info/SOURCES.txt
+respotgui.egg-info/dependency_links.txt
+respotgui.egg-info/entry_points.txt
+respotgui.egg-info/requires.txt
+respotgui.egg-info/top_level.txt
