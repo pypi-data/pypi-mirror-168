@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+aiotiktok/__init__.py
+aiotiktok/tiktok.py
+aiotiktok.egg-info/PKG-INFO
+aiotiktok.egg-info/SOURCES.txt
+aiotiktok.egg-info/dependency_links.txt
+aiotiktok.egg-info/requires.txt
+aiotiktok.egg-info/top_level.txt
