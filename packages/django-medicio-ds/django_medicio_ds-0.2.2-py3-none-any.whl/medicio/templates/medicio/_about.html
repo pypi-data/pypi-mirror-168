@@ -1,0 +1,33 @@
+{% load static %}
+
+{% block about %}
+<!-- ======= About Us Section ======= -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>About Us</h2>
+      <p>{{ about.title }}</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-right">
+        <img src="{% static 'img/about/'|add:about.image_filename %}" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <h3>{{ about.subtitle }}</h3>
+        {% autoescape off %}
+        <p class="fst-italic">{{ about.head }}</p>
+        <ul>
+          {% for li in about.contents %}
+          <li><i class="bi bi-check-circle"></i> {{ li }}</li>
+          {% endfor %}
+        </ul>
+        <p>{{ about.tail }}</p>
+        {% endautoescape %}
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Us Section -->
+{% endblock %}

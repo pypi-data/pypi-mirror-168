@@ -1,0 +1,13 @@
+{% block cta %}
+<section id="cta" class="cta">
+  <div class="container" data-aos="zoom-in">
+
+    <div class="text-center">
+      <h3>{{ cta.title }}</h3>
+      <p> {{ cta.desc }}</p>
+      <a class="cta-btn scrollto" href="{{ cta.link }}" onclick="cta_gtag_report_conversion('{{ cta.link }}')">{{ cta.title }} 바로가기</a>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

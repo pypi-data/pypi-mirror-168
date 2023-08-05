@@ -1,0 +1,50 @@
+{% load static %}
+
+{% block services %}
+<style>
+.services {
+  .image {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    background: $white;
+    border-radius: 50%;
+    transition: 0.5s;
+    color: $primary;
+    overflow: hidden;
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+  }
+}
+</style>
+<section id="services" class="services services">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>{{ services.title }}</h2>
+      {% autoescape off %}
+      <p>{{ services.subtitle }}</p>
+      {% endautoescape %}
+    </div>
+
+    <div class="row">
+      {% for item in services.items %}
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="{% cycle '100' '200' '300' '400' '500' '600' '700' '800' '900' %}">
+
+          {% if services.type == 'icon' %}
+          <div class="icon"><i class="fas {{ item.icon }}"></i></div>
+          {% elif services.type == 'image' %}
+          <div class="image"><img src="{% static 'img/services/'|add:item.image_filename %}" class="img-fluid mb-2" alt=""></div>
+          {% endif %}
+
+        <h4 class="title"><a href="">{{ item.title }}</a></h4>
+        <p class="description">{{ item.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+{% endblock %}

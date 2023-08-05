@@ -1,0 +1,28 @@
+{% load static %}
+
+{% block whyus %}
+<section id="featured-services" class="featured-services">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      {% autoescape off %}
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="fas fa-star"></i></div>
+          <h4 class="title"><a href="">{{ whyus.major.title }}</a></h4>
+          <p class="description">{{ whyus.major.contents.0 }}</p>
+        </div>
+      </div>
+      {% for item in whyus.minor %}
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="{% cycle '200' '300' '400' '500' '600' '700' '800' '900' %}">
+          <div class="icon"><i class="fas {{ item.icon }}"></i></div>
+          <h4 class="title"><a href="">{{ item.title }}</a></h4>
+          <p class="description">{{ item.contents }}</p>
+        </div>
+      </div>
+      {% endfor %}
+      {% endautoescape %}
+    </div>
+  </div>
+</section>
+{% endblock %}
