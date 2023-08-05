@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "gh_release_install"
+version = "0.8.0"
+description = "CLI helper to install Github releases on your system."
+readme = "README.md"
+authors = ["Joola <jooola@users.noreply.github.com>"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Topic :: System :: Installation/Setup",
+  "Topic :: System :: Software Distribution",
+]
+
+[tool.poetry.scripts]
+gh-release-install = "gh_release_install.cli:run"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = ">=2.22.0 <2.29"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.9.3"
+mypy = "^0.971"
+pylint = "^2.12.0"
+pytest = "^7.0.1"
+pytest-cov = "^3.0.0"
+pytest-xdist = "^2.5.0"
+requests-mock = "^1.9.3"
+types-requests = "^2.28.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.messages_control]
+disable = [
+  "missing-module-docstring",
+  "missing-function-docstring",
+  "missing-class-docstring"
+]
+
+[tool.pylint.format]
+disable = "logging-fstring-interpolation"
+
+[tool.isort]
+add_imports = [
+  "from __future__ import annotations",
+]
