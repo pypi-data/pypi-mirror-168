@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: qtoggleserver-modbus
+Version: 1.0.0
+Summary: Modbus client/server for qToggleServer
+Author: Calin Crisan
+Author-email: ccrisan@gmail.com
+License: Apache 2.0
+License-File: LICENSE.txt
