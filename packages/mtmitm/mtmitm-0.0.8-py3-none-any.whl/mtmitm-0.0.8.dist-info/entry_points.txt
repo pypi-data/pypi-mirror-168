@@ -1,0 +1,5 @@
+[console_scripts]
+mtmitm = mitmaddons.main:main
+
+[pyinstaller40]
+hook-dirs = mitmproxy.utils.pyinstaller:hook_dirs

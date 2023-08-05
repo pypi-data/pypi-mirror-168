@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: mtmitm
+Version: 0.0.8
+Summary: An interactive, SSL/TLS-capable intercepting proxy for HTTP/1, HTTP/2, and WebSockets.
+Home-page: http://aaa.org
+Author: Aldo Cortesi
+Author-email: alssdoc@coss.gmail
+License: MIT
+Project-URL: Documentation, https://docs.aaa.org/stable/
+Project-URL: Source, https://github.com/aaa/aaa/
+Project-URL: Tracker, https://github.com/aaa/aaa/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console :: Curses
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Topic :: Software Development :: Testing
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: asgiref (<3.6,>=3.2.10)
+Requires-Dist: Brotli (<1.1,>=1.0)
+Requires-Dist: certifi (>=2019.9.11)
+Requires-Dist: cryptography (<38.1,>=38.0)
+Requires-Dist: flask (<2.3,>=1.1.1)
+Requires-Dist: h11 (<0.14,>=0.11)
+Requires-Dist: h2 (<5,>=4.1)
+Requires-Dist: hyperframe (<7,>=6.0)
+Requires-Dist: kaitaistruct (<0.11,>=0.10)
+Requires-Dist: ldap3 (<2.10,>=2.8)
+Requires-Dist: msgpack (<1.1.0,>=1.0.0)
+Requires-Dist: passlib (<1.8,>=1.6.5)
+Requires-Dist: protobuf (<5,>=3.14)
+Requires-Dist: pyOpenSSL (<22.1,>=22.0)
+Requires-Dist: pyparsing (<3.1,>=2.4.2)
+Requires-Dist: pyperclip (<1.9,>=1.6.0)
+Requires-Dist: ruamel.yaml (<0.18,>=0.16)
+Requires-Dist: sortedcontainers (<2.5,>=2.3)
+Requires-Dist: tornado (<7,>=6.1)
+Requires-Dist: urwid (<2.2,>=2.1.1)
+Requires-Dist: wsproto (<1.3,>=1.0)
+Requires-Dist: publicsuffix2 (<3,>=2.20190812)
+Requires-Dist: zstandard (<0.19,>=0.11)
+Requires-Dist: typing-extensions (<4.4,>=4.3) ; python_version < "3.10"
+Requires-Dist: pydivert (<2.2,>=2.0.3) ; sys_platform == "win32"
+Provides-Extra: dev
+Requires-Dist: click (<8.2,>=7.0) ; extra == 'dev'
+Requires-Dist: hypothesis (<7,>=5.8) ; extra == 'dev'
+Requires-Dist: parver (<2.0,>=0.1) ; extra == 'dev'
+Requires-Dist: pdoc (>=4.0.0) ; extra == 'dev'
+Requires-Dist: pyinstaller (==5.4.1) ; extra == 'dev'
+Requires-Dist: pytest-asyncio (<0.20,>=0.17) ; extra == 'dev'
+Requires-Dist: pytest-cov (<3.1,>=2.7.1) ; extra == 'dev'
+Requires-Dist: pytest-timeout (<2.2,>=1.3.3) ; extra == 'dev'
+Requires-Dist: pytest-xdist (<3,>=2.1.0) ; extra == 'dev'
+Requires-Dist: pytest (<8,>=6.1.0) ; extra == 'dev'
+Requires-Dist: requests (<3,>=2.9.1) ; extra == 'dev'
+Requires-Dist: tox (<4,>=3.5) ; extra == 'dev'
+Requires-Dist: wheel (<0.38,>=0.36.2) ; extra == 'dev'
+
+1
