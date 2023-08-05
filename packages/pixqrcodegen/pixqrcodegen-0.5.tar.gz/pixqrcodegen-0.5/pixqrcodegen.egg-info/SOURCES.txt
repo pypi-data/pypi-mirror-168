@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pixqrcodegen/__init__.py
+pixqrcodegen/pixqrcodegen.py
+pixqrcodegen.egg-info/PKG-INFO
+pixqrcodegen.egg-info/SOURCES.txt
+pixqrcodegen.egg-info/dependency_links.txt
+pixqrcodegen.egg-info/requires.txt
+pixqrcodegen.egg-info/top_level.txt
