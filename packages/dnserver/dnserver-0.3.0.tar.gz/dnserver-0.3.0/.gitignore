@@ -1,0 +1,8 @@
+*.py[cod]
+/env/
+/env*/
+/.idea
+/.coverage
+/.pytest_cache/
+/htmlcov/
+/dist/
