@@ -1,0 +1,2 @@
+[console_scripts]
+sync_or_swim = sync_or_swim.__main__:main
