@@ -1,0 +1,7 @@
+munch
+colorama
+readchar
+tqdm
+qqdm
+pyyaml
+colorlog
