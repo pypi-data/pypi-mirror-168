@@ -1,0 +1,15 @@
+demian_parts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demian_parts/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+demian_parts/apps.py,sha256=l_zJe-obgalWIWYDnxn3iLVHbPP2muE6GwRBzQTjqDk,161
+demian_parts/models.py,sha256=4OVMcDDx9fVgBEJ91B7dfMEG2Ni1LRSLJOKzIkVPsKo,60
+demian_parts/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+demian_parts/views.py,sha256=u0FhL7RT5byf5IlcnZEMrcH2TOnQkdfRQU2SjtA26m0,66
+demian_parts/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demian_parts/templates/demian_parts/analytics.html,sha256=28HuQtrz3cYjHoS7jHmAqh5nxHp9Ir9b3jXyB1-ZrF0,1183
+demian_parts/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demian_parts/templatetags/analytics_tags.py,sha256=CBb0eeMYUiEdrx03zmqdYGm8tkTHojLJ6bjMBaTaxcM,623
+django_demian_parts-0.0.1.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+django_demian_parts-0.0.1.dist-info/METADATA,sha256=jZy0F_q0xpbpjhvw_d3zZ3pIu__hO43xeEEe8m1WCTs,1273
+django_demian_parts-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_demian_parts-0.0.1.dist-info/top_level.txt,sha256=M2hwRCkKcmHPckooU2za-7y5ySfcDDGjWnunaxy0B3g,13
+django_demian_parts-0.0.1.dist-info/RECORD,,
