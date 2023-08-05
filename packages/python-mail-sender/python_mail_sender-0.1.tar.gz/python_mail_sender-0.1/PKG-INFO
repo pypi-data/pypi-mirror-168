@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: python_mail_sender
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+Mail Sender Module that helps you send your emails perfectly.
+

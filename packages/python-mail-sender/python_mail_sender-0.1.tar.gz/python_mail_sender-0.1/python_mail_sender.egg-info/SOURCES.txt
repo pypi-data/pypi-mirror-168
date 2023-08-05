@@ -1,0 +1,8 @@
+LICENSE
+README.md
+mail_sender.py
+setup.py
+python_mail_sender.egg-info/PKG-INFO
+python_mail_sender.egg-info/SOURCES.txt
+python_mail_sender.egg-info/dependency_links.txt
+python_mail_sender.egg-info/top_level.txt
