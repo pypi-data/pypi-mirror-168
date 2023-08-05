@@ -1,0 +1,50 @@
+{% extends "kagi/base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+{{ block.super }}
+
+<p>
+  {% trans 'Please verify one of the authentication methods below.' %}
+</p>
+
+
+{% if forms.webauthn %}
+<form id="login-form">
+    {% csrf_token %}
+    <div id="webauthn-error" style="color: red"></div>
+    <div id="webauthn-feature">
+      <button id="login" type="button">
+          {% trans "Tap here to log in with your WebAuthn key" %}
+      </button>
+    </div>
+</form>
+{% endif %}
+
+{% if forms.totp %}
+<div class="method totp">
+  <p>{% trans 'Enter an Authenticator (TOTP) Token:' %}</p>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ forms.totp.as_p }}
+    <button value="totp" name="type">{% trans 'Submit' %}</button>
+  </form>
+</div>
+{% endif %}
+
+{% if forms.backup %}
+<div class="method backup">
+  <p>{% trans 'Use a backup code:' %}</p>
+
+  <form method="POST">
+    {% csrf_token %}
+    {{ forms.backup.as_p }}
+    <button value="backup" name="type">{% trans 'Submit' %}</button>
+  </form>
+</div>
+{% endif %}
+
+<script src="{% static 'kagi/webauthn.js' %}"></script>
+{% endblock %}

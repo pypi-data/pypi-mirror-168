@@ -1,0 +1,14 @@
+{% extends "kagi/base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<form method="post">
+{% csrf_token %}
+<table>
+{{ form.as_p }}
+</table>
+<input type="submit" value="{% trans 'Login' %}" />
+</form>
+
+{% endblock %}
