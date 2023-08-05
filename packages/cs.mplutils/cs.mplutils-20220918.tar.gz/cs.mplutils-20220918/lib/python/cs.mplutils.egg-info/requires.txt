@@ -1,0 +1,6 @@
+cs.buffer>=20210316
+cs.deco>=20220918.1
+cs.lex>=20220918
+cs.pfx>=20220918
+matplotlib
+typeguard
