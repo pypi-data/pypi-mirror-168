@@ -1,0 +1,7 @@
+expecter/__init__.py,sha256=2jr9afYcIGpw5XA8MPQN54zOjT8Xy0aDHlFw8YsbVc0,16315
+expecter/plugin.py,sha256=n3ChWvfHCtOHpaeZozY7qqWfNH-4kwV2LaB0F7-jK6E,410
+pytest_expecter-3.0.dist-info/entry_points.txt,sha256=ISOpGvtAwUxbmGA5-DgdpiTI61aODRKXmWXeZWO6x5c,44
+pytest_expecter-3.0.dist-info/LICENSE.md,sha256=fJaNwpioN6RiWR6SvZVaDapCZLxPlG1RJCC1o_flwvk,1530
+pytest_expecter-3.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pytest_expecter-3.0.dist-info/METADATA,sha256=eDlGKWrm-6sfG1iiFHvw8SdUvgPGr-GqBONhz6Qmpbk,2926
+pytest_expecter-3.0.dist-info/RECORD,,
