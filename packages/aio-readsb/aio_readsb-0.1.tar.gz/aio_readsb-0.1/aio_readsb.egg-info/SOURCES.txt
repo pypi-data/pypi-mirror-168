@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+aio_readsb/__init__.py
+aio_readsb/__version__.py
+aio_readsb/feed_entry.py
+aio_readsb/feed_manager.py
+aio_readsb.egg-info/PKG-INFO
+aio_readsb.egg-info/SOURCES.txt
+aio_readsb.egg-info/dependency_links.txt
+aio_readsb.egg-info/requires.txt
+aio_readsb.egg-info/top_level.txt
