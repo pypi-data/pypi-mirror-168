@@ -1,0 +1,14 @@
+nx3d/__init__.py,sha256=psRd94FOTbC-8IKnMEocfQGricDtl_3OCE6RZWDlGpo,98
+nx3d/__main__.py,sha256=Ov0SAzsIUPDRfp_SiBGRBrDftviKZN3Y8JIx-virNiY,165
+nx3d/core.py,sha256=IUJvQnUyqBp_Ibl2-nQCs_sb6mStrFKK-OM9znX53TY,15817
+nx3d/data/cone.egg,sha256=o1Cp-OX757WqBXebRVc1hHmypmCfU7XJ4HkLzWg4PLY,5283
+nx3d/data/cylinder.egg,sha256=2or8dhEMxO_MHRSJsxQp-6Ah8WPHKWuA_E_H6L4Ujsg,5879
+nx3d/data/icosphere.egg,sha256=VebZICIxpewW47H5NmnEA0vO65LUtG8h_wpho0wtRPo,45950
+nx3d/data/unit_cylinder_base_at_0.egg,sha256=2or8dhEMxO_MHRSJsxQp-6Ah8WPHKWuA_E_H6L4Ujsg,5879
+nx3d/examples.py,sha256=I4pmGDhtZDx2menPwG5xc4ys4llod-woyulijh-dWeM,1822
+nx3d/simplified.py,sha256=0bHusLPOs6K6fxOdv9CRsyZwvnwmOMafmU-s8rYYNAk,1001
+nx3d/utils.py,sha256=ABBRpnEewgyNpbsD1xyp2tHzhQKyNRJaMtD-_7Vg3IY,354
+nx3d-22.9.7.dist-info/LICENSE,sha256=xG9NkEat4vmSNReMSOFlJqU574QZpd75KbM-BvzY5nY,1062
+nx3d-22.9.7.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+nx3d-22.9.7.dist-info/METADATA,sha256=H3m7CoBJcgbnCXQ3eUOE1oKZ22huptVbxcmAJ_rHV34,3300
+nx3d-22.9.7.dist-info/RECORD,,
