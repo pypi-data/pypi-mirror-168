@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=R0903,C0103,C0114,C0115,C0116
+
+
+import os
+import sys
+import time
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from op.obj import Object, keys, printable, update
+from op.dbs import find, fntime
+from op.wdr import Wd
+from op.utl import cdir, elapsed
+
+
+def fnd():
+    if len(sys.argv) == 1:
+        print("op workdir [type] [selector]")
+        return
+    Wd.workdir = sys.argv[1]
+    cdir(Wd.storedir())
+    if len(sys.argv) < 3:
+        res = ",".join({x.split(".")[-1].lower() for x in Wd.types()})
+        if res:
+            print(res)
+        else:
+            print("no types yet.")
+        return
+    otype = sys.argv[2]
+    gets = Object()
+    if len(sys.argv) > 3:
+         update(gets, [x.split("==") for x in sys.argv[1:]])
+    res = list(find(otype, gets))
+    _nr = 0
+    for _fn, obj in res:
+        txt = "%s %s %s" % (
+                            str(_nr),
+                            printable(obj, keys(obj)),
+                            elapsed(time.time()-fntime(_fn))
+                           )
+        _nr += 1
+        print(txt)
+    if not _nr:
+        print("no result")
+
+
+fnd()
