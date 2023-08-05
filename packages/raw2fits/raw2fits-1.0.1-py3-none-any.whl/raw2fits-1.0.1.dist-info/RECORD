@@ -1,0 +1,8 @@
+raw2fits/__init__.py,sha256=MCRF6O8xhZUwihSoSxrMQDbNVDYGSAseXtYeL7aWwz4,49
+raw2fits/debayer.py,sha256=V0u0F_a4iDDDjcvGQGaMWdcmYxmk7kgYUfMP2Xk5swU,12772
+raw2fits/image.py,sha256=Lsf5T6cRKNxrjioqUJEsoXzfwIYPEA59k4hQwJC-AVg,6980
+raw2fits-1.0.1.dist-info/LICENSE,sha256=-Uwo5ddcKxJonXuszTCuvvradB1Nc67sALeZropcGvE,1087
+raw2fits-1.0.1.dist-info/METADATA,sha256=GYp3PKeLM6s3B1RRe7_mmrUOuSNDxmizZbuEq8FzfLw,1146
+raw2fits-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+raw2fits-1.0.1.dist-info/top_level.txt,sha256=KT3lgK7DxL83hNSxv5-d2tToAyLxrKZh0BF3x8HbSD0,9
+raw2fits-1.0.1.dist-info/RECORD,,
