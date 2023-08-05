@@ -1,0 +1,11 @@
+#header_announcement {
+    display: none;
+}
+
+#header_announcement_container {
+    display: flex;
+}
+
+#header_announcement_container i {
+    padding-right: .5em;
+}
