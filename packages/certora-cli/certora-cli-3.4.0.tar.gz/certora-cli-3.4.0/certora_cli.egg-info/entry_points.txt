@@ -1,0 +1,2 @@
+[console_scripts]
+certoraRun = certora_cli.certoraRun:entry_point
