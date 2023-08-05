@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stawp
+Version: 2.0.1
+Summary: STAtic Website Producer
+Home-page: https://github.com/polishmatt/stawp
+Author: Matt Wisniewski
+Author-email: stawp@mattw.us
+License: MIT
+Keywords: static,website
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: Pillow (~=9.2.0)
+Requires-Dist: pyaml (~=21.10.1)
+Requires-Dist: click (~=8.1.3)
+
