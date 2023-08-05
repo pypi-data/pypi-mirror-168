@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: upytl-standard
+Version: 0.0.2
+Summary: Standard UPYTL - Ultra Pythonic Template Language component library
+Home-page: https://github.com/Eudorajab1/upytl-standard
+Author: John Bannister <eudorajab1@gmail.com>
+Author-email: eudorajab1@gmail.com
+Maintainer: John Bannister <eudorajab1@gmail.com>
+Maintainer-email: eudorajab1@gmail.com
+License: MIT
+Keywords: python UPYTL webapplication html
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Requires-Python: >=3.7
+Requires-Dist: upytl (>=0.0.6)
+
+UNKNOWN
+
+
