@@ -1,0 +1,2 @@
+[nbdev]
+logs_to_ocsf = logs_to_ocsf._modidx:d
