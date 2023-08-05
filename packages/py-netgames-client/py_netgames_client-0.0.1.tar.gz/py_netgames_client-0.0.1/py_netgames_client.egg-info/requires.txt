@@ -1,0 +1,2 @@
+py_netgames_server
+pygame

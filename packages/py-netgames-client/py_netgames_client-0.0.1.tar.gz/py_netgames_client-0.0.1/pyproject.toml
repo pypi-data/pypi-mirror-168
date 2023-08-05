@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "py_netgames_client"
+license = { file = 'LICENSE.txt' }
+version = "0.0.1"
+description = 'Py-NetGames Client'
+authors = [
+    { name = 'Gabriel Machado da Roza', email = 'gabrielmachadodaroza@outlook.com' }
+]
+dependencies = [
+    'py_netgames_server', 'pygame'
+]

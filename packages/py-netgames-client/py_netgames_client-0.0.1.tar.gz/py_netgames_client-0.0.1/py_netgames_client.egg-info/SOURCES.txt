@@ -1,0 +1,16 @@
+LICENSE.txt
+pyproject.toml
+py_netgames_client.egg-info/PKG-INFO
+py_netgames_client.egg-info/SOURCES.txt
+py_netgames_client.egg-info/dependency_links.txt
+py_netgames_client.egg-info/requires.txt
+py_netgames_client.egg-info/top_level.txt
+py_netgames_client/_base/BaseWebsocketProxy.py
+py_netgames_client/_base/__init__.py
+py_netgames_client/id/IdentifierFileGenerator.py
+py_netgames_client/id/__init__.py
+py_netgames_client/pygame_client/PyNetgamesServerProxy.py
+py_netgames_client/pygame_client/__init__.py
+py_netgames_client/tkinter_client/PyNetgamesServerListener.py
+py_netgames_client/tkinter_client/PyNetgamesServerProxy.py
+py_netgames_client/tkinter_client/__init__.py
