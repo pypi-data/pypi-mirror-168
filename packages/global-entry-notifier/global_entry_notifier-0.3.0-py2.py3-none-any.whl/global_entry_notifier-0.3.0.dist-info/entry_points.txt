@@ -1,0 +1,3 @@
+[console_scripts]
+global-entry-locations = global_entry_notifier.locations:list_locations
+global-entry-notifier = global_entry_notifier.__main__:main
