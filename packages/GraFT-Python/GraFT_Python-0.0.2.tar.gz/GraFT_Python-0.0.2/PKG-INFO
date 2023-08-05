@@ -1,0 +1,191 @@
+Metadata-Version: 2.1
+Name: GraFT_Python
+Version: 0.0.2
+Summary: Python implementation for the GraFT model presented in https://pubmed.ncbi.nlm.nih.gov/35533160/
+Author: Noga Mudrik
+Author-email: <nmudrik1@jhmi.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# GraFT_Python
+
+#### This is a Python implementation for the GraFT method described in Charles, Adam S., et al. "Graft: graph filtered temporal dictionary learning for functional neural imaging." IEEE Transactions on Image Processing 31 (2022): 3509-3524.[link](https://ieeexplore.ieee.org/abstract/document/9771089/).
+(The MATLAB code can be found [here](https://github.com/adamshch/GraFT-analysis)). 
+
+
+
+### Installation: 
+Can be installed using pip: **pip install GraFT-Python** (see [here](https://pypi.org/project/GraFT-Python/) for further information)
+
+
+### How to use?
+
+The main function used to run the algorithm is: 
+  **run_GraFT(data, corr_kern, params, to_save, to_return, ask_selected, selected)**
+  
+    run_GraFT(data = [], corr_kern = [], params = {}, to_save = True, to_return = True,
+               ask_selected = True, selected = ['epsilon','step_s', 'p', 'nonneg',
+                                                'reduceDim','solver','norm_by_lambdas_vec'] ):
+    """
+    This function runs the main graft algorithm.
+
+    Parameters
+    ----------
+    data : can be string of data path or a numpy array (pixels X pixels X time) or (pixels X time). 
+        Leave empty for default
+        The default is []. In this case the calcium imaging dataset will be used. 
+    corr_kern : proximity kernel. Leave empty ([]) to re-create the kernel.  
+    params : dictionary of parameters, optional
+        the full default values of the optional parameters are mentioned in dict_default. 
+    to_save : boolean, optional
+        whether to save the results to .npy file. The default is True.
+    to_return : boolean, optional
+        whether to return results. The default is True.
+    ask_selected : boolean, optional
+        whether to ask the use about specific parameters. The default is True.
+    selected : list of strings, optional
+        relevant only if 'ask_selected' is true. 
+        
+        . The default is ['epsilon','step_s', 'p', 'nonneg',
+                                     'reduceDim','solver','norm_by_lambdas_vec'].
+
+    Raises
+    ------
+    ValueError
+        If invalid path
+
+    Returns
+    -------
+    A : np.ndarray (pixels X p) - neural maps
+    phi : np.ndarray (time X p)   temporal traces
+    additional_return : dictionary with additional returns. Including error over iterations
+
+    """
+
+**In order to run the code, you need to call this function with the relevant inputs. If some inputs are not provided, the default values will be used (default parameters are described in the end)**__
+
+### Tree map of the code:
+* **run_GraFT()**
+  - create kernel
+  - data pre-processing
+ * Call the main **GraFT()** function, iterating between:
+    * update A and lambdas by **dictionaryRWL1SF()**: 
+      * lambdas is updated in **updateLambdasMat()** according to eq. 14 in the paper.
+      * A is upated by a lasso solver in **singleGaussNeuroInfer()** (eq. 13 in the paper)
+    * update \phi by gradient-descent in **dictionary_update()** (eq. 15 in the paper)
+ 
+    
+    
+
+### Default Parameters:
+
+params_default = {'max_learn': 1e3,  # Maximum number of steps in learning 
+'mean_square_error': 1,
+
+
+'epsilon' : 1,                                        # Default tau values to be spatially varying
+
+'l1':0.7,                                             # Default lambda parameter is 0.6
+
+'l2': 0,                                              # Default Forbenius norm parameter is 0 (don't use)
+
+'l3': 0,                                              # Default Dictionary continuation term parameter is 0 (don't use)
+
+'lamContStp': 1,                                      # Default multiplicative change to continuation parameter is 1 (no change)
+
+'l4': 0,                                              # Default Dictionary correlation regularization parameter is 0 (don't use)
+
+'beta': 0.09,                                         # Default beta parameter to 0.09
+
+'maxiter': 0.01,                                      # Default the maximum iteration to whenever Delta(Dictionary)<0.01
+
+'numreps': 2,                                         # Default number of repetitions for RWL1 is 2
+
+'tolerance': 1e-8,                                    # Default tolerance for lasso solver
+
+'likely_form' : 'gaussian',                           # Default to a gaussian likelihood ('gaussian' or'poisson')
+
+'step_s': 5,                                          # Default step to reduce the step size over time (only needed for grad_type ='norm')
+
+'step_decay': 0.999,                                  # Default step size decay (only needed for grad_type ='norm')
+
+'dict_max_error': 0.01,                               # Default learning tolerance: stop when Delta(Dictionary)<0.01
+
+'p': 4,                                               # Default number of dictionary elements is a function of the data
+
+'verb': 1,                                            # Default to no verbose output
+
+'GD_iters': 1,                                        # Default to one GD step per iteration
+
+'bshow': 0,                                           # Default to no plotting                                 
+
+'nonneg':True,                                        # Default to not having negativity constraints on the coefficients
+
+'plot': False,                                        # Default to not plot spatial components during the learning
+
+'updateEmbed' : False,                                # Default to not updateing the graph embedding based on changes to the coefficients
+
+'mask': [],                                           # for masked images (widefield data)
+
+'normalizeSpatial' : False,                           # default behavior - time-traces are unit norm. when true, spatial maps normalized to max one and time-traces are not normalized   
+
+ 'patchSize': 50, 
+
+ 'motion_correct': False,
+
+ 'kernelType': 'embedding',
+
+ 'reduceDim': False, 
+
+ 'w_time': 0,
+
+ 'n_neighbors':49,
+
+ 'n_comps':2,
+
+ 'solver_qp':'quadprog',
+
+ 'solver': 'inv',
+
+ 'nullify_some': False , 
+
+ 'norm_by_lambdas_vec': True, 
+
+ 'GD_type': 'norm',
+
+ 'xmin' : 151                                         # slice to cut. Can sub-select a portion of the full FOV to test on a small section before running on the full dataset
+
+ 'xmax' : 200,     
+
+ 'ymin' : 151,
+
+ 'ymax' : 200,
+
+ 'use_former_kernel' : False,
+
+ 'usePatch' : False,
+
+ 'portion' :True,
+
+ 'divide_med' : False,
+
+ 'data_0_1' : False,
+
+ 'to_save' : True, 
+
+ 'default_path':  r'E:\CODES FROM GITHUB\GraFT-analysis\code\neurofinder.02.00\images', 
+
+ 'save_error_iterations': True,
+
+ 'max_images':800,
+
+ 'dist_init': 'uniform',
+
+ 'to_sqrt':True     
+
+}
+
