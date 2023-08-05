@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/pytest_pumpkin_spice/__init__.py
+src/pytest_pumpkin_spice/hooks.py
+src/pytest_pumpkin_spice/plugin.py
+src/pytest_pumpkin_spice.egg-info/PKG-INFO
+src/pytest_pumpkin_spice.egg-info/SOURCES.txt
+src/pytest_pumpkin_spice.egg-info/dependency_links.txt
+src/pytest_pumpkin_spice.egg-info/entry_points.txt
+src/pytest_pumpkin_spice.egg-info/not-zip-safe
+src/pytest_pumpkin_spice.egg-info/requires.txt
+src/pytest_pumpkin_spice.egg-info/top_level.txt
+tests/conftest.py
+tests/test_emoji.py
