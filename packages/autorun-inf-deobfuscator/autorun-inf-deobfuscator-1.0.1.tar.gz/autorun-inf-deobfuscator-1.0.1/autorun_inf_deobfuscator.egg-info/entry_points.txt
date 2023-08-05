@@ -1,0 +1,2 @@
+[console_scripts]
+deobfuscate-autorun-inf = autorun_inf_deobfuscator.cli_script:main
