@@ -1,0 +1,11 @@
+
+<html>
+    Hello {{username}},
+    <br/>
+    welcome to aurori.
+    <br/>
+    <br/>
+    With best regards.
+    <br/>
+    Your aurori team
+</html>

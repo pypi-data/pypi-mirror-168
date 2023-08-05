@@ -1,0 +1,7 @@
+Hello {{username}},
+welcome to aurori.
+Please complete your registration by following the link and activate your account.
+{{activation_link}}
+
+With best regards.
+Your aurori team
