@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+alerting/__init__.py
+alerting/clients.py
+alerting.egg-info/PKG-INFO
+alerting.egg-info/SOURCES.txt
+alerting.egg-info/dependency_links.txt
+alerting.egg-info/not-zip-safe
+alerting.egg-info/requires.txt
+alerting.egg-info/top_level.txt
