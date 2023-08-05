@@ -1,0 +1,14 @@
+CyRK/__init__.py,sha256=Efr5G0uM_Oh0Qrgyqh2tfOUCj9WHPGABMoO-yaGyc4g,194
+CyRK/_test.py,sha256=t_MUYlnKgREKC2-lGnC6x3yp0M0MeYakb8ljB7j6Rv8,270
+CyRK/_version.py,sha256=Xzg9Nf2A6j8tnf0avBhJ8cJciaTRFkfc2Uxyzp6gmbM,1244
+CyRK/cy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CyRK/cy/_cyrk.pyx,sha256=ThUbaQN9ugBOTcgi8gAGtaWfKcmdOcRfTXc3FW1HUvA,26655
+CyRK/cy/cyrk.cp38-win_amd64.pyd,sha256=APMoqZeUJdTFRo2PmefEdM9XhydkSuBFJBRKCfosCBc,196608
+CyRK/nb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CyRK/nb/dop_coefficients.py,sha256=jBReeiuQMSEiBtwbD8MYR0XKeWdVMrb_OuPIRKU_eD0,7525
+CyRK/nb/nbrk.py,sha256=enu9iEUbx_evc5Lx_1cUTQAhSY7ijjBojg5kdMqQ9AA,14440
+CyRK-0.1.1.dist-info/LICENSE.md,sha256=02GKYYdMGNNWZjzV87t7CNVNrcNR8VQ0wvdvNdb3770,18796
+CyRK-0.1.1.dist-info/METADATA,sha256=2Kyr85N92Wf9BTN4Oy0kv0naVzC9YuT4Jmap3iLosCQ,8308
+CyRK-0.1.1.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+CyRK-0.1.1.dist-info/top_level.txt,sha256=lDJmWEkhcd88FMoR_5glwRgfsx6_2E7GixEfB78xCr0,5
+CyRK-0.1.1.dist-info/RECORD,,
