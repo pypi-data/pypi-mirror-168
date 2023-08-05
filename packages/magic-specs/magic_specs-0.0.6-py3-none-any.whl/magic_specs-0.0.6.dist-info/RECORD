@@ -1,0 +1,12 @@
+LICENSE,sha256=NoqA0BoF9uLIRUG6ryOmyHVsWRJcMhquFm4u7Bs9y5o,1069
+README.md,sha256=NpshDnKD9mbjoIxwHGdLU_XtHtFYWcJZ8s5egHYfhYk,1604
+magic_specs/__init__.py,sha256=NghaKeK_pBPUUfK1KNtLTL-SRbEHMsWz_IKrEddUlcQ,259
+magic_specs/_batched.py,sha256=SkUuS8VylrDzbWiIisL9jKdkT8DeGgtNLAIX7ZePmVQ,1708
+magic_specs/_definition.py,sha256=5ySkDcAp9pZ2szD5C06-Q-D12SThcZBJGbuydJBuydY,5683
+magic_specs/_import_from_string.py,sha256=DFmIqtXfjw8ImZ50wYGiPiKLrex3a6swYHkZIQ1Iihc,1163
+magic_specs/_iterable_cache.py,sha256=sy-F6ZG6HXL-mKBWhL6B-3RE6qZc_s220sy44UNX4bk,1414
+magic_specs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magic_specs-0.0.6.dist-info/LICENSE,sha256=NoqA0BoF9uLIRUG6ryOmyHVsWRJcMhquFm4u7Bs9y5o,1069
+magic_specs-0.0.6.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+magic_specs-0.0.6.dist-info/METADATA,sha256=TwRy9LnR06vkaQGs52MgirsATxeGsP7dmTwuTp6wguA,2693
+magic_specs-0.0.6.dist-info/RECORD,,
