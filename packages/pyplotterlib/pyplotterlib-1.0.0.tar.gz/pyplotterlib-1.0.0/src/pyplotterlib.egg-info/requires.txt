@@ -1,0 +1,13 @@
+numpy
+matplotlib
+
+[dev]
+numpy
+matplotlib
+ipyplot
+pydataset
+notebook
+
+[pinned]
+numpy==1.22.2
+matplotlib==3.5.1

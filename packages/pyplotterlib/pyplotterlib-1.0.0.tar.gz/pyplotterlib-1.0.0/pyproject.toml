@@ -1,0 +1,39 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=60.9.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyplotterlib"
+version = "1.0.0"
+description = "A package used to create plots in python"
+readme = "README.md"
+authors = [{ name = "Richard Fogarty", email = "richard.m.fogarty@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Framework :: Matplotlib",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+keywords = []
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
+
+#requires-python = ">=3.9"
+
+#Note: Initially created with python 3.10.4; but not sure if i can specify that anywhere
+[project.optional-dependencies]
+pinned = ["numpy ==1.22.2", "matplotlib==3.5.1"]
+dev = ["numpy", "matplotlib", "ipyplot", "pydataset","notebook"]
+
+[project.urls]
+Documentation = "https://pyplotterlib.readthedocs.io/en/latest/index.html"
+Github = "https://github.com/RFogarty1/pyplotterlib"
+
+#[project.scripts]
+#something = "pyplotlib.__main__:main"
