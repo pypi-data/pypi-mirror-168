@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+simplebrainviewer/__init__.py
+simplebrainviewer/core.py
+simplebrainviewer.egg-info/PKG-INFO
+simplebrainviewer.egg-info/SOURCES.txt
+simplebrainviewer.egg-info/dependency_links.txt
+simplebrainviewer.egg-info/entry_points.txt
+simplebrainviewer.egg-info/requires.txt
+simplebrainviewer.egg-info/top_level.txt
+simplebrainviewer.egg-info/zip-safe
+simplebrainviewer/scripts/__init__.py
+simplebrainviewer/scripts/sbv.py
