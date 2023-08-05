@@ -1,0 +1,14 @@
+todi/__init__.py,sha256=s5CiXDmgbMdFRlN8FxrgIORS-sfPnZJqvIIYbDW9d8M,63
+todi/__main__.py,sha256=R3nm6D_oXVcpFL46spO7bUQhin46eknqM4metkaLJJM,169
+todi/cli.py,sha256=R-exaZRLPbiWE0Ml2BZPcGVGHh_RTaTVNzOgX2knMRQ,2391
+todi/constants.py,sha256=9oKqQWtRafTqD8VVsk1Ge9OiZ0iO3K2sKQyVdnozkiw,131
+todi/manager.py,sha256=x2F5DfQkYhuDY151AJREgAAVB4A88UdVyvilinmUX_I,1590
+todi/models.py,sha256=zwhehU6opypA-kVzx116csDdy3QALnLhg7Edtcv5GvI,364
+todi/utils.py,sha256=ZMOca3k-LA6bJrpdssZPhAL7W-SoINWvkGJevTss1yw,260
+todi/views.py,sha256=yLaoMa0EkD0726533o8l7UN0s8sVzW6tA65OSDogXRs,896
+todi-0.0.1.dist-info/LICENSE,sha256=92j-I0g4os70FLb4zj3KHuGbRSXWIXeYs0dFLm2MDY8,1064
+todi-0.0.1.dist-info/METADATA,sha256=lEoBXdLPYeYV6vU6aYOvA6t4Bu5Wpm3_oODHhsW7KMY,377
+todi-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+todi-0.0.1.dist-info/entry_points.txt,sha256=gknOOymS0VCBcFx3-j6ZCrr8uX9TO9y46jvXtGwZzTw,44
+todi-0.0.1.dist-info/top_level.txt,sha256=tQx_r_1-PyqwnHEfJ3HuObp3HAWSbmoyamOF4Y7u-fw,5
+todi-0.0.1.dist-info/RECORD,,

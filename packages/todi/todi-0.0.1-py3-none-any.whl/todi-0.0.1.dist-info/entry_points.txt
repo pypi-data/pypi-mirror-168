@@ -1,0 +1,2 @@
+[console_scripts]
+todi = todi.__main__:main
