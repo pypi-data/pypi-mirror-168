@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: simple-cicd
+Version: 0.0.6
+Summary: Dead simple CI/CD pipeline executor
+Home-page: https://gitlab.com/FrancoisSevestre/simple-ci
+Author: François Sevestre
+Author-email: francois.sevestre.35@gmail.com
+License: GPLv3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Requires-Dist: numpy
+
