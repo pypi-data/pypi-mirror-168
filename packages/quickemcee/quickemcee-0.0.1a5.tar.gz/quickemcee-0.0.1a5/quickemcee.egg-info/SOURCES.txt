@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+quickemcee/__init__.py
+quickemcee/core.py
+quickemcee/utils.py
+quickemcee.egg-info/PKG-INFO
+quickemcee.egg-info/SOURCES.txt
+quickemcee.egg-info/dependency_links.txt
+quickemcee.egg-info/requires.txt
+quickemcee.egg-info/top_level.txt
