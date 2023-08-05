@@ -1,0 +1,371 @@
+Metadata-Version: 2.1
+Name: trialtracker
+Version: 0.1.6
+Summary: Methods to extract and transform clinical trial data
+Home-page: https://github.com/zfx0726/trialtracker
+Author: Forrest
+Author-email: zfx0726@gmail.com
+License: MIT
+Download-URL: https://github.com/zfx0726/trialtracker/archive/refs/tags/v0.1.6.tar.gz
+Keywords: clinical,trial,eligibility,criteria,cancer,oncology,nlp
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anyio (>=2.2.0)
+Requires-Dist: appnope (>=0.1.2)
+Requires-Dist: argon2-cffi (>=20.1.0)
+Requires-Dist: async-generator (>=1.1)
+Requires-Dist: attrs (>=21.4.0)
+Requires-Dist: babel (>=2.9.1)
+Requires-Dist: backcall (>=0.2.0)
+Requires-Dist: bar-chart-race (>=0.1.0)
+Requires-Dist: bcolz (>=1.2.1)
+Requires-Dist: beautifulsoup4 (>=4.11.1)
+Requires-Dist: blas (>=1)
+Requires-Dist: bleach (>=4.1.0)
+Requires-Dist: bokeh (>=2.3.2)
+Requires-Dist: brotlipy (>=0.7.0)
+Requires-Dist: bs4 (>=4.11.1)
+Requires-Dist: bzip2 (>=1.0.8)
+Requires-Dist: ca-certificates (>=2022.4.26)
+Requires-Dist: cachetools (>=2.0.0)
+Requires-Dist: cairo (>=1.14.12)
+Requires-Dist: certifi (>=2021.5.30)
+Requires-Dist: cffi (>=1.14.6)
+Requires-Dist: charset-normalizer (>=2.0.4)
+Requires-Dist: click (>=8.0.3)
+Requires-Dist: cloudpickle (>=2.0.0)
+Requires-Dist: colorama (>=0.4.5)
+Requires-Dist: contextvars (>=2.4)
+Requires-Dist: cryptography (>=35.0.0)
+Requires-Dist: cycler (>=0.11.0)
+Requires-Dist: cytoolz (>=0.11.0)
+Requires-Dist: dask (>=2021.3.0)
+Requires-Dist: dask-core (>=2021.3.0)
+Requires-Dist: dataclasses (>=0.8)
+Requires-Dist: decorator (>=5.1.1)
+Requires-Dist: defusedxml (>=0.7.1)
+Requires-Dist: distributed (>=2021.3.0)
+Requires-Dist: entrypoints (>=0.3)
+Requires-Dist: expat (>=2.4.4)
+Requires-Dist: ffmpeg (>=4.3.2)
+Requires-Dist: fontconfig (>=2.13.1)
+Requires-Dist: freetype (>=2.10.4)
+Requires-Dist: fribidi (>=1.0.10)
+Requires-Dist: fsspec (>=2022.1.0)
+Requires-Dist: future (>=0.18.2)
+Requires-Dist: gettext (>=0.21.0)
+Requires-Dist: glib (>=2.56.2)
+Requires-Dist: gmp (>=6.2.1)
+Requires-Dist: gnutls (>=3.6.15)
+Requires-Dist: google-api-python-client (>=1.6.7)
+Requires-Dist: google-auth (>=1.0.1)
+Requires-Dist: graphite2 (>=1.3.14)
+Requires-Dist: graphviz (>=2.40.1)
+Requires-Dist: harfbuzz (>=1.8.8)
+Requires-Dist: hdf5 (>=1.10.1)
+Requires-Dist: heapdict (>=1.0.1)
+Requires-Dist: httplib2 (>=0.20.4)
+Requires-Dist: icu (>=58.2)
+Requires-Dist: idna (>=3.3)
+Requires-Dist: imageio (>=2.6.1)
+Requires-Dist: immutables (>=0.16)
+Requires-Dist: intel-openmp (>=2020.2)
+Requires-Dist: ipykernel (>=5.3.4)
+Requires-Dist: ipython (>=7.16.1)
+Requires-Dist: ipython-genutils (>=0.2.0)
+Requires-Dist: jedi (>=0.17.0)
+Requires-Dist: jenkspy (>=0.1.4)
+Requires-Dist: jinja2 (>=3.0.3)
+Requires-Dist: joblib (>=0.13.2)
+Requires-Dist: jpeg (>=9e)
+Requires-Dist: json5 (>=0.9.6)
+Requires-Dist: jsonschema (>=3.0.2)
+Requires-Dist: jupyter-client (>=7.1.2)
+Requires-Dist: jupyter-core (>=4.8.1)
+Requires-Dist: jupyter-server (>=1.4.1)
+Requires-Dist: jupyterlab (>=3.2.1)
+Requires-Dist: jupyterlab-pygments (>=0.1.2)
+Requires-Dist: jupyterlab-server (>=2.10.3)
+Requires-Dist: kaleido-core (>=0.2.1)
+Requires-Dist: kiwisolver (>=1.3.1)
+Requires-Dist: krb5 (>=1.19.2)
+Requires-Dist: lame (>=3.1)
+Requires-Dist: lcms2 (>=2.12)
+Requires-Dist: libblas (>=3.9.0)
+Requires-Dist: libcblas (>=3.9.0)
+Requires-Dist: libcxx (>=12.0.0)
+Requires-Dist: libedit (>=3.1.20210910)
+Requires-Dist: libffi (>=3.3)
+Requires-Dist: libgfortran (>=5.0.0)
+Requires-Dist: libgfortran5 (>=9.3.0)
+Requires-Dist: libiconv (>=1.16)
+Requires-Dist: libidn2 (>=2.3.2)
+Requires-Dist: liblapack (>=3.9.0)
+Requires-Dist: libpng (>=1.6.37)
+Requires-Dist: libpq (>=12.9)
+Requires-Dist: libprotobuf (>=3.18.0)
+Requires-Dist: libsodium (>=1.0.18)
+Requires-Dist: libtasn1 (>=4.16.0)
+Requires-Dist: libtiff (>=4.2.0)
+Requires-Dist: libunistring (>=0.9.10)
+Requires-Dist: libuv (>=1.40.0)
+Requires-Dist: libwebp-base (>=1.2.2)
+Requires-Dist: libxml2 (>=2.9.12)
+Requires-Dist: libxslt (>=1.1.34)
+Requires-Dist: llvm-openmp (>=14.0.3)
+Requires-Dist: locket (>=0.2.1)
+Requires-Dist: lxml (>=4.6.3)
+Requires-Dist: lz4-c (>=1.9.3)
+Requires-Dist: lzo (>=2.1)
+Requires-Dist: markupsafe (>=2.0.1)
+Requires-Dist: mathjax (>=2.7.7)
+Requires-Dist: matplotlib-base (>=3.2.2)
+Requires-Dist: mistune (>=0.8.4)
+Requires-Dist: mkl (>=2019.4)
+Requires-Dist: mkl-service (>=2.3.0)
+Requires-Dist: mkl-fft (>=1.2.0)
+Requires-Dist: mkl-random (>=1.1.1)
+Requires-Dist: msgpack-python (>=1.0.2)
+Requires-Dist: nbclassic (>=0.2.6)
+Requires-Dist: nbclient (>=0.5.3)
+Requires-Dist: nbconvert (>=6.0.7)
+Requires-Dist: nbformat (>=5.1.3)
+Requires-Dist: ncurses (>=6.3)
+Requires-Dist: nest-asyncio (>=1.5.1)
+Requires-Dist: nettle (>=3.7.3)
+Requires-Dist: nltk (>=3.4.5)
+Requires-Dist: notebook (>=6.4.3)
+Requires-Dist: numexpr (>=2.7.3)
+Requires-Dist: numpy (>=1.19.1)
+Requires-Dist: numpy-base (>=1.19.1)
+Requires-Dist: oauth2client (>=4.1.3)
+Requires-Dist: olefile (>=0.46)
+Requires-Dist: onnx (>=1.10.1)
+Requires-Dist: openai (>=0.8.0)
+Requires-Dist: openh264 (>=2.1.1)
+Requires-Dist: openjdk (>=8.0.332)
+Requires-Dist: openjpeg (>=2.4.0)
+Requires-Dist: openssl (>=1.1.1o)
+Requires-Dist: packaging (>=21.3)
+Requires-Dist: pandoc (>=2.12)
+Requires-Dist: pandocfilters (>=1.5.0)
+Requires-Dist: pango (>=1.42.4)
+Requires-Dist: parso (>=0.8.3)
+Requires-Dist: partd (>=1.2.0)
+Requires-Dist: patsy (>=0.5.2)
+Requires-Dist: pcre (>=8.45)
+Requires-Dist: pexpect (>=4.8.0)
+Requires-Dist: pickleshare (>=0.7.5)
+Requires-Dist: pillow (>=8.3.1)
+Requires-Dist: pip (>=21.2.2)
+Requires-Dist: pixman (>=0.40.0)
+Requires-Dist: plotly (>=5.8.0)
+Requires-Dist: prometheus-client (>=0.13.1)
+Requires-Dist: prompt-toolkit (>=3.0.20)
+Requires-Dist: protobuf (>=3.18.0)
+Requires-Dist: psutil (>=5.8.0)
+Requires-Dist: psycopg2 (>=2.8.6)
+Requires-Dist: ptyprocess (>=0.7.0)
+Requires-Dist: pyasn1 (>=0.4.8)
+Requires-Dist: pyasn1-modules (>=0.2.7)
+Requires-Dist: pycountry (>=20.7.3)
+Requires-Dist: pycparser (>=2.21)
+Requires-Dist: pydot (>=1.4.1)
+Requires-Dist: pydotplus (>=2.0.2)
+Requires-Dist: pygments (>=2.11.2)
+Requires-Dist: pyopenssl (>=22.0.0)
+Requires-Dist: pyparsing (>=3.0.4)
+Requires-Dist: pyrsistent (>=0.17.3)
+Requires-Dist: pysocks (>=1.7.1)
+Requires-Dist: pytables (>=3.4.2)
+Requires-Dist: python (>=3.6.13)
+Requires-Dist: python-dateutil (>=2.8.1)
+Requires-Dist: python-graphviz (>=0.16)
+Requires-Dist: python-kaleido (>=0.2.1)
+Requires-Dist: python-abi (>=3.6)
+Requires-Dist: pytorch (>=1.10.2)
+Requires-Dist: pytz (>=2020.1)
+Requires-Dist: pyyaml (>=5.4.1)
+Requires-Dist: pyzmq (>=22.2.1)
+Requires-Dist: readline (>=8.1.2)
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: rsa (>=3.4.2)
+Requires-Dist: scikit-learn (>=0.24.2)
+Requires-Dist: scipy (>=1.5.3)
+Requires-Dist: seaborn (>=0.11.2)
+Requires-Dist: seaborn-base (>=0.11.2)
+Requires-Dist: send2trash (>=1.8.0)
+Requires-Dist: setuptools (>=58.0.4)
+Requires-Dist: simplejson (>=3.17.5)
+Requires-Dist: six (>=1.15.0)
+Requires-Dist: sniffio (>=1.2.0)
+Requires-Dist: sortedcontainers (>=2.4.0)
+Requires-Dist: soupsieve (>=2.3.1)
+Requires-Dist: sqlite (>=3.38.2)
+Requires-Dist: statsmodels (>=0.9.0)
+Requires-Dist: tblib (>=1.7.0)
+Requires-Dist: tenacity (>=8.0.1)
+Requires-Dist: terminado (>=0.9.4)
+Requires-Dist: testpath (>=0.5.0)
+Requires-Dist: threadpoolctl (>=2.2.0)
+Requires-Dist: tk (>=8.6.11)
+Requires-Dist: toolz (>=0.11.2)
+Requires-Dist: torchvision (>=0.11.3)
+Requires-Dist: tornado (>=6.1)
+Requires-Dist: tqdm (>=4.64.0)
+Requires-Dist: traitlets (>=4.3.3)
+Requires-Dist: typing-extensions (>=4.1.1)
+Requires-Dist: uritemplate (>=3.0.1)
+Requires-Dist: urllib3 (>=1.26.8)
+Requires-Dist: wcwidth (>=0.2.5)
+Requires-Dist: webencodings (>=0.5.1)
+Requires-Dist: wheel (>=0.37.1)
+Requires-Dist: wordcloud (>=1.8.1)
+Requires-Dist: x264 (>=1!161.3030)
+Requires-Dist: xz (>=5.2.5)
+Requires-Dist: yaml (>=0.2.5)
+Requires-Dist: zeromq (>=4.3.4)
+Requires-Dist: zict (>=2.0.0)
+Requires-Dist: zlib (>=1.2.11)
+Requires-Dist: zstd (>=1.4.9)
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [What is it?](#what-is-it)
+* [Main Features](#main-features)
+* [Impact](#impact)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Built With](#built-with)
+<!-- * [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
+ -->
+
+
+<!-- What is it -->
+## What is it?
+
+trialtracker is a Python package that provides methods to easily extract, transform, and download clinical trial data.  It aims to create standardized data infrastructure for clinical trial digitalization, focusing on structured representation of clinical trial protocols.
+
+
+
+<!-- Main Features -->
+## Main Features
+Here are some of the things trialtracker allows you to do:
+
+<br /> - Download pre-curated clinical trial and clinical trial eligibility criteria datasets
+<br /> - Easily query data from clinicaltrials.gov
+<br /> - Apply state-of-the-art natural language processing methods to extract useful information from raw clinicaltrials.gov data
+<br /> - Data visualizations and analysis of clinical trial data
+<br />
+
+The current version of the package is primarily focused on cancer trials, which are an important area for clinical development.  Improved data infrastructure is especially helpful in this area given the complexity of the disease and treatments.
+
+
+
+
+
+
+
+<!-- Impact -->
+## Impact
+
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+Cancer is one of the leading causes of death worldwide. The way we test and approve new treatments is through clinical trials.  But 97% of cancer trials 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6409418/">fail</a>, 
+    driven by inability to 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6092479/">recruit</a>
+    enough patients.
+And yet many patients are routinely 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3980490/">excluded</a> 
+    from trials, including minority groups who are most affected by the disease.
+    <br />
+    <br />
+
+The key to solving these problems is in changing how we design trials, recruit patients, and report on results. Regulatory requirements for clinical trial registration became required in 2017, making semi-structured trial protocol data available on clinicaltrials.gov. Today, this is not being systematically used in trial design, patient recruitment, or reporting decisions in Oncology. This project aims to unlock the value of clinical trial data to help accelerate cancer research and improve the lives of cancer patients.
+
+<!-- A few goals of this project:    
+<br /> - Explore clinical trial data from clinicaltrials.gov
+    <br /> - Develop a method to extract structured core eligibility criteria for cancer trials (extending work  
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30753493/">here</a>  and 
+    <a href="https://arxiv.org/abs/2006.07296">here</a>)
+    <br /> - Combine extracted criteria with real-world oncology data to evaluate the impact of eligibility criteria on trial racial diversity (extending work 
+    <a href="https://www.nature.com/articles/s41586-021-03430-5">here</a> by incorporating race data)
+    <br /> - Generate a diversity rating for each clinical trial -->
+
+
+<!-- Installation -->
+## Installation
+
+trialtracker can be installed from PyPi
+```sh
+pip install trialtracker
+```
+
+
+
+ <!-- USAGE EXAMPLES -->
+## Usage
+
+<!-- example documentation https://pypi.org/project/datasets/ -->
+
+trialtracker is made to be very simple to use. The main methods are:
+* ```sh
+trialtracker.list_datasets()
+``` to list the available datasets
+
+
+Here is a quick example:
+```sh
+from trialtracker import list_datasets, load_dataset
+```
+
+
+
+### Built With
+Technologies and methods used to build this project!
+* [Python](https://www.python.org/)
+* [Golang](https://go.dev/)
+* [Named Entity Recognition and Named Entity Linking](https://arxiv.org/abs/2006.07296)
+
+
+
+<!-- ROADMAP -->
+<!-- ## Roadmap
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+ -->
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png -->
+
+
