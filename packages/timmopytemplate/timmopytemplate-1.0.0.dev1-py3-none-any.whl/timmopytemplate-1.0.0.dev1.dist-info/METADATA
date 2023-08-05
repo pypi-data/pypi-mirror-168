@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: timmopytemplate
+Version: 1.0.0.dev1
+Summary: Python Template
+Home-page: https://github.com/timmo001/python-template
+Author: Aidan Timson (Timmo)
+Author-email: contact@timmo.xyz
+License: MIT
+Keywords: python template
+Requires-Dist: incremental (==21.3.0)
+Requires-Dist: typer (==0.6.1)
+
