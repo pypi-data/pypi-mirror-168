@@ -1,0 +1,480 @@
+{
+  "events": [
+    {
+      "title": "a stranger arrives in the night",
+      "text": {},
+      "notification": {},
+      "curse": {},
+      "requirements": {
+        "population": 0
+      },
+      "reward": {
+        "population": 1
+      }
+    },
+    {
+      "title": "a weathered family takes up in one of the huts",
+      "text": {},
+      "notification": {},
+      "curse": {},
+      "requirements": {
+        "population": 1
+      },
+      "reward": {
+        "population": 3
+      }
+    },
+    {
+      "title": "a small group arrives, all dust and bones",
+      "text": {},
+      "notification": {},
+      "curse": {},
+      "requirements": {
+        "population": 1
+      },
+      "reward": {
+        "population": 5
+      }
+    },
+    {
+      "title": "a convoy lurches in, equal parts worry and hope",
+      "text": {},
+      "notification": {},
+      "curse": {},
+      "requirements": {
+        "population": 1
+      },
+      "reward": {
+        "population": 6
+      }
+    },
+    {
+      "title": "a half-feral and malnourished child is discovered huddled by the great tree",
+      "text": {},
+      "notification": {},
+      "curse": {},
+      "requirements": {
+        "population": 1
+      },
+      "reward": {
+        "population": 1
+      }
+    },
+    {
+      "title": "another lone wanderer comes into town, in tears to have found a place of sanctuary against the world",
+      "text": {},
+      "notification": {},
+      "curse": {},
+      "requirements": {
+        "population": 1
+      },
+      "reward": {
+        "population": 1
+      }
+    },
+    {
+      "title": "a fire rampages through one of the huts, destroying it.",
+      "requirements": {
+        "population": 15
+      },
+      "text": {
+        "1": "all residents in the hut perished in the fire."
+      },
+      "curse": {
+        "population": 10
+      },
+      "notification": {},
+      "reward": {}
+    },
+    {
+      "title": "a terrible plague is fast spreading through the village.",
+      "requirements": {
+        "population": 20
+      },
+      "text": {
+        "1": "the nights are rent with screams.",
+        "2": "the only hope is a quick death."
+      },
+      "curse": {
+        "population": 15
+      },
+      "notification": {},
+      "reward": {}
+    },
+    {
+      "title": "a sickness is spreading through the village.",
+      "requirements": {
+        "population": 15
+      },
+      "text": {
+        "1": "only a few die.",
+        "2": "the rest bury them."
+      },
+      "curse": {
+        "population": 10
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "some villagers are ill",
+      "text": {},
+      "reward": {},
+      "notification": {},
+      "requirements": {
+        "population": 6
+      },
+      "curse": {
+        "population": 3
+      }
+    },
+    {
+      "title": "A Beast Attack",
+      "requirements": {
+        "population": 15
+      },
+      "text": {
+        "1": "a pack of snarling beasts pours out of the trees.",
+        "2": "the fight is short and bloody, but the beasts are repelled.",
+        "3": "the villagers retreat to mourn the dead."
+      },
+      "notification": {
+        "1": "wild beasts attack the villagers"
+      },
+      "reward": {
+        "fur": 100,
+        "meat": 100,
+        "teeth": 10
+      },
+      "curse": {
+        "population": 10
+      }
+    },
+    {
+      "title": "A Robot Attack",
+      "requirements": {
+        "population": 5
+      },
+      "text": {
+        "1": "a dented and rattling robot rolls into view, sparks falling from lose wires as they arc against its frame.",
+        "2": "a remnant from some ancient war."
+      },
+      "notification": {
+        "1": "a robot opens fire on the villagers"
+      },
+      "reward": {
+        "gems": 1,
+        "coins": 10
+      },
+      "curse": {
+        "population": 1
+      }
+    },
+    {
+      "title": "A Ghoul Attack",
+      "requirements": {
+        "population": 10
+      },
+      "text": {
+        "1": "the groans could be heard a few hours before they dragged themselves through the main part of the settlement",
+        "2": "the awful smell, even worse those eyes",
+        "3": "some of our own dead rose again, and had to be put to rest one final time."
+      },
+      "notification": {
+        "1": "a heard of ghouls wanders through the settlement"
+      },
+      "reward": {
+        "gems": 1,
+        "coins": 10,
+        "fur": 100,
+        "meat": 10,
+        "teeth": 10
+      },
+      "curse": {
+        "population": 5
+      }
+    },
+    {
+      "title": "The Forest Has Legs",
+      "requirements": {
+        "population": 20
+      },
+      "text": {
+        "1": "maybe it was their time to swarm, or just the presence of the settlement",
+        "2": "the forest came alive as they blanketed everything, assaulting and cocooning all those who fell to them",
+        "3": "moarn not those who died, but those the spiders took away"
+      },
+      "notification": {
+        "1": "the skittering as the spiders retreated back into the forest haunts the dreams of even the bravest of those who survived"
+      },
+      "reward": {
+        "gems": 1,
+        "coins": 10,
+        "fur": 100,
+        "meat": 10,
+        "teeth": 10
+      },
+      "curse": {
+        "population": 10
+      }
+    },
+    {
+      "title": "Raccoon Attack",
+      "requirements": {
+        "population": 5
+      },
+      "text": {
+        "1": "Hissing and screaming the raccoon attacks",
+        "2": "Wielding a pike, it attacked from atop its",
+        "3": "majestic human mount."
+      },
+      "notification": {},
+      "reward": {
+        "sulphur": 1,
+        "bait": 1,
+        "wood": 1,
+        "stone": 1,
+        "fur": 10,
+        "teeth": 10,
+        "meat": 10,
+        "cloth": 5,
+        "coins": 5,
+        "torch": 5,
+        "bone spear": 1
+      },
+      "curse": {
+        "population": 2
+      }
+    },
+    {
+      "title": "The Shock Wave",
+      "requirements": {
+        "population": 1
+      },
+      "text": {
+        "1": "A great shock wave rolled over the town, breaking everything of questionable assembly.",
+        "2": "A short time later, that awful sound followed, so loud some of us never fully recovered",
+        "3": "our hearing.",
+        "4": "Days later some refugees from that far off disaster arrived.  Blisted, and burned."
+      },
+      "notification": {
+        "1": "hello?  hello!  I still cant hear anything, ugh."
+      },
+      "reward": {
+        "population": 20,
+        "sulphur": 3,
+        "coins": 20,
+        "gems": 10,
+        "medicine": 5
+      },
+      "curse": {
+        "population": 5,
+        "sulphur": 2,
+        "bait": 5,
+        "wood": 5,
+        "stone": 5,
+        "fur": 3,
+        "teeth": 2,
+        "meat": 5,
+        "meatpie": 5,
+        "cured meat": 5,
+        "leather": 1,
+        "iron": 1,
+        "steel": 1,
+        "coal": 5,
+        "scales": 1,
+        "cloth": 3,
+        "coins": 5,
+        "gems": 1,
+        "charm": 1,
+        "torch": 5,
+        "medicine": 5,
+        "seed": 5,
+        "crops": 10,
+        "bone spear": 5,
+        "bayonet": 2,
+        "bolas": 5,
+        "bullets": 5,
+        "iron sword": 1,
+        "steel sword": 1,
+        "leather armour": 1,
+        "iron armour": 1,
+        "steel armour": 1,
+        "rifle": 1,
+        "grenade": 2
+      }
+    },
+    {
+      "title": "A Quiet Death",
+      "requirements": {
+        "population": 5
+      },
+      "text": {
+        "1": "All trails lead to the meadow at the end of the forest."
+      },
+      "curse": {
+        "population": 1
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Bait Rot",
+      "requirements": {
+        "bait": 10000
+      },
+      "text": {
+        "1": "the bait has gone bad."
+      },
+      "curse": {
+        "bait": 10000
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Wet Store Houses",
+      "requirements": {
+        "population": 200
+      },
+      "text": {
+        "1": "some of the store houses had leaky roofs"
+      },
+      "curse": {
+        "meat": 10000,
+        "meatpie": 10000,
+        "cured meat": 10000,
+        "seed": 10000,
+        "crops": 10000
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Kidnapping",
+      "requirements": {
+        "population": 1
+      },
+      "text": {
+        "1": "a local street urchin has been reported missing."
+      },
+      "curse": {
+        "population": 1
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Kidnapping of Two",
+      "requirements": {
+        "population": 2
+      },
+      "text": {
+        "1": "a local family looses children"
+      },
+      "curse": {
+        "population": 2
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Slaver Attack",
+      "requirements": {
+        "population": 30
+      },
+      "text": {
+        "1": "a group of slavers attack early in the morning."
+      },
+      "curse": {
+        "population": 30
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Slaver Raid",
+      "requirements": {
+        "population": 100
+      },
+      "text": {
+        "1": "a group of slavers raid in the middle of the night."
+      },
+      "curse": {
+        "population": 100
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Raccoon Spy",
+      "requirements": {
+        "population": 100
+      },
+      "text": {
+        "1": "it was on the outskirts for days, it kept coming back",
+        "2": "after being chased off.  we knew it was trouble."
+      },
+      "curse": {
+        "bait": 5000,
+        "meat": 10000,
+        "meatpie": 5000,
+        "cured meat": 50000,
+        "cloth": 1000,
+        "coins": 1000,
+        "gems": 200,
+        "charm": 10,
+        "seed": 1000,
+        "crops": 10000,
+        "bone spear": 5000
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Fire At The Lumber Yard",
+      "requirements": {
+        "wood": 10000
+      },
+      "text": {
+        "1": "it burned with terrible bright light that night"
+      },
+      "curse": {
+        "population": 10,
+        "wood": 10000
+      },
+      "reward": {},
+      "notification": {}
+    },
+    {
+      "title": "Radioactive Artifact",
+      "requirements": {
+        "population": 100
+      },
+      "text": {
+        "1": "such a small thing.",
+        "2": "so innocent looking and beautiful.",
+        "3": "warm even, to the touch."
+      },
+      "reward": {
+        "charm": 2
+      },
+      "curse": {
+        "population": 100
+      },
+      "notification": {}
+    },
+    {
+      "title": "dazed and confused, a ragged women emerges from the dark forest",
+      "requirements": {
+        "population": 1
+      },
+      "reward": {
+        "population": 1
+      },
+      "text": {},
+      "curse": {},
+      "notification": {}
+    }
+  ]
+}
