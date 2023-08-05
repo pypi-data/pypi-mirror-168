@@ -1,0 +1,10 @@
+logs_to_ocsf/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+logs_to_ocsf/_modidx.py,sha256=gsCgqp7hmzuaEzQ2jg3Zk8g-7YBH8pjEY9l-cAC3dzI,1205
+logs_to_ocsf/convert_messages.py,sha256=_RpxopukDDAoNhKvj-8zZjQKqatRUoNTs0tT6dwWjkQ,1414
+logs_to_ocsf/core.py,sha256=nkOpYUJEK37GDpcvQGJg31s2wmJvNH382cAbOIiEm9A,134
+logs_to_ocsf-0.0.7.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+logs_to_ocsf-0.0.7.dist-info/METADATA,sha256=Ke1UeY4PhenwXrq6nnUFVfnWoBrhs2wSzhRJOxZ2Aug,2066
+logs_to_ocsf-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+logs_to_ocsf-0.0.7.dist-info/entry_points.txt,sha256=eFCo1RQhUvbuU4ItufAX0J9cNVJ67MvVXa2rdSmdJRU,46
+logs_to_ocsf-0.0.7.dist-info/top_level.txt,sha256=lSarqKP0Xt8njHGb9fKlfbHhuFFjySqiQSk4PgaTuKg,13
+logs_to_ocsf-0.0.7.dist-info/RECORD,,
