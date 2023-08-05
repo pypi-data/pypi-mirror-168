@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dir2docker
+Version: 0.0.3
+Summary: Convert any working python environment to a docker image/file 
+Author: Sachin Chandra
+Author-email: sachin@netbook.ai
+License: MIT License
+Keywords: Package python environment as docker
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
