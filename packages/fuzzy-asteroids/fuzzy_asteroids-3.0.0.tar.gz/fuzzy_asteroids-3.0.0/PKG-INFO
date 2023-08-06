@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: fuzzy_asteroids
+Version: 3.0.0
+Summary: UC Fuzzy Challenge - Asteroids Simulation Environment
+Home-page: https://github.com/xfuzzycomp/FuzzyAsteroids
+Author: Timothy Arnett
+Author-email: tim.arnett@psibernetix.com
+Maintainer: Brandon Kunkel
+Maintainer-email: brandon.kunkel@psibernetix.com
+License: MIT License
+Keywords: fuzzy logic,artificial intelligence,asteroids
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# Fuzzy Asteroids
+
+This repository is a dependency for the [2021 UC Fuzzy Challenge repository](https://github.com/xfuzzycomp/UCFuzzyChallenge). 
+in which it is used as the simulation environment for the development of Fuzzy Logic AIs by competitors.
+
+## Dependencies
+
+The Python Arcade Library is the primary dependency for this repo and is used for creating the environment
+for the game. 
+
+
+## Installing
+
+To install the Fuzzy Asteroids environment inside your Python environment, we recommend using the following
+
+    pip install fuzzy_asteriods
+
+Or you could always add the following to your project's ``requirements.txt`` file:
+
+and simply use
+
+    pip install -r requirements.txt
+
+We recommend tracking your project dependencies 
+
+## Upgrading
+
+Since this package is ``pip`` installed as a git repository, you can do an upgrade of this repository
+
+    pip install --upgrade --force-reinstall -r requirements.txt
+
+
+
