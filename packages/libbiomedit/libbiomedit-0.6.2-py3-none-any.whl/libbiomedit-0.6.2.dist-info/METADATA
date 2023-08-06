@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: libbiomedit
+Version: 0.6.2
+Summary: Shared library for arround biomedit data transfer
+Home-page: https://gitlab.com/biomedit/libbiomedit
+Author: Robin Engler, Jarosław Surkont, Riccardo Muri, Gerhard Bräunlich, Christian Ribeaud, François Martin
+Author-email: Robin.Engler@sib.swiss, riccardo.murri@id.ethz.ch, jaroslaw.surkont@unibas.ch, gerhard.braeunlich@id.ethz.ch, christian.ribeaud@karakun.com, francois.martin@karakun.com
+License: LGPL3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gpg-lite (>=0.12.3)
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+[![pipeline status](https://gitlab.com/biomedit/libbiomedit/badges/master/pipeline.svg)](https://gitlab.com/biomedit/libbiomedit/-/commits/master)
+[![coverage report](https://gitlab.com/biomedit/libbiomedit/badges/master/coverage.svg)](https://gitlab.com/biomedit/libbiomedit/-/commits/master)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![python version](https://img.shields.io/pypi/pyversions/libbiomedit.svg)](https://pypi.org/project/libbiomedit)
+[![license](https://img.shields.io/badge/License-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![latest version](https://img.shields.io/pypi/v/libbiomedit.svg)](https://pypi.org/project/libbiomedit)
+
+# libbiomedit
+
+Shared library for biomedIT projects.
