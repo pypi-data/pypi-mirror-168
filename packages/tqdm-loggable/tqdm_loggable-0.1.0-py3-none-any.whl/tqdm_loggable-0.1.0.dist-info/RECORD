@@ -1,0 +1,9 @@
+tqdm_loggable/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tqdm_loggable/auto.py,sha256=_D512F9qn7_pxnlpywwjVLWGItcjKQsdrd8Mv-6aFlQ,236
+tqdm_loggable/manual_tests.py,sha256=hHBRJft-eAa9lChruFJH8VjL9BI9AEX0caB0Un3JLsc,1398
+tqdm_loggable/tqdm_logging.py,sha256=cD2AjPLfrLIT9aOkF94E3NXVDD9oZXRAioYQvJS9pCw,5722
+tqdm_loggable/utils.py,sha256=9caV1NMGS_XRj24mOHgzeT9B1peXXMQ7taxbz4xX_pM,834
+tqdm_loggable-0.1.0.dist-info/entry_points.txt,sha256=Rh2Cracu-iA9byIZF2D1NeJcgRBaKZef0etM331qnBA,64
+tqdm_loggable-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+tqdm_loggable-0.1.0.dist-info/METADATA,sha256=bOcUdf9l7dLEXpEVO5suF_DbwIwe7cKEdK7ELaFZbz0,7863
+tqdm_loggable-0.1.0.dist-info/RECORD,,
