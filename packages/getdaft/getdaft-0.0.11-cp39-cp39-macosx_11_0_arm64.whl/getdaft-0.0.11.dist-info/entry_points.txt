@@ -1,0 +1,3 @@
+[console_scripts]
+build_inplace=build:build_inplace
+
