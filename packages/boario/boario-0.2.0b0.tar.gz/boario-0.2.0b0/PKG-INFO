@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: boario
+Version: 0.2.0b0
+Summary: A Python implementation of ARIO models
+Project-URL: Bug Reports, https://github.com/spjuhel/BoARIO/issues
+Project-URL: Documentation, https://spjuhel.github.io/BoARIO/index.html
+Project-URL: Homepage, https://github.com/spjuhel/BoARIO
+Project-URL: Source, https://github.com/spjuhel/BoARIO/
+Author-email: Samuel JUHEL <pro@sjuhel.org>
+License-File: LICENSE
+Keywords: ario,economics,events,extreme,impact,indirect,input-output,modeling,mrio
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: <4,>=3.7
+Requires-Dist: coloredlogs>=15.0.1
+Requires-Dist: country-converter>=0.7.4
+Requires-Dist: dask>=2021.9.0
+Requires-Dist: fastparquet>=0.8.0
+Requires-Dist: nptyping>=1.4.4
+Requires-Dist: numpy>=1.17.4
+Requires-Dist: numpyencoder>=0.3.0
+Requires-Dist: odfpy>=1.4.1
+Requires-Dist: pandas>=1.4.1
+Requires-Dist: progressbar2>=2.4
+Requires-Dist: pyarrow>=9.0.0
+Requires-Dist: pymrio>=0.4.6
+Description-Content-Type: text/markdown
+
+# BoARIO
+
+TEST
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
