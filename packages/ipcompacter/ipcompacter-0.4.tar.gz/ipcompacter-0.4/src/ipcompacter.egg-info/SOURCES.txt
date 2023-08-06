@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ipcompacter/__init__.py
+src/ipcompacter/ipcompacter.py
+src/ipcompacter.egg-info/PKG-INFO
+src/ipcompacter.egg-info/SOURCES.txt
+src/ipcompacter.egg-info/dependency_links.txt
+src/ipcompacter.egg-info/top_level.txt
