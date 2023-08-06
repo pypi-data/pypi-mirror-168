@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "erasudy"
+version = "0.1.0-beta1"
+description = "A tool for securely erasing data"
+authors = ["blkpws <blkpws@blackpaws.me>"]
+readme = "README.md"
+
+[tool.poetry_bumpversion.file."erasudy/__init__.py"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.2"
+
+[tool.poetry.scripts]
+erasudy_run = "erasudy.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

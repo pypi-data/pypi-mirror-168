@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: erasudy
+Version: 0.1.0b1
+Summary: A tool for securely erasing data
+Author: blkpws
+Author-email: blkpws@blackpaws.me
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Erasudy
+
+Erase disks data securely.
+
+
+## Introduction
+
+Erasudy is a tool for erasing disk data securely.
+
+
+## Development
+
+### Requirements
+
+Use `poetry install` to get the virtual environments with requirements.
+
+# Create a new release
+
+Use Poetry to create a new release.
+
+To update the version from  and   use the following plugin.
+
+```bash
+poetry self add poetry-bumpversion
+```
+
+Then create the new release with those steps.
+
+```bash
+poetry version <version>
+poetry build
+poetry publish
+```
+
