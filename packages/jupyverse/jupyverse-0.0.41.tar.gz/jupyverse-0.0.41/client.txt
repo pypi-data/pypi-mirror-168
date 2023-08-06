@@ -1,0 +1,16 @@
+docker run \
+  --name fief-server \
+  -p 8000:8000 \
+  -d \
+  -e "SECRET=Qc0uS9hWUgnEffvOC6sDFVkBSHrwc1ARzcxy0zhFNRHr3nFSp5SUgkcvXH-ho4SBoYO6qEH7ukE73DPRIwwILA" \
+  -e "FIEF_CLIENT_ID=QpXcpRqgpBGffIP61_jrELxD9z31ZNF91r8KLxbAUBk" \
+  -e "FIEF_CLIENT_SECRET=KPCmLCx8BxF2Y81gXo9pJC6oVMbpGqSiNXP0dBPuONM" \
+  -e "ENCRYPTION_KEY=_cAgr5R69rlBy3ouvSofh3G46iO1K25s7nYo6lhablM=" \
+  -e "PORT=8000" \
+  -e "ROOT_DOMAIN=localhost:8000" \
+  -e "FIEF_DOMAIN=localhost:8000" \
+  -e "CSRF_COOKIE_SECURE=False" \
+  -e "LOGIN_SESSION_COOKIE_SECURE=False" \
+  -e "SESSION_COOKIE_SECURE=False" \
+  -e "FIEF_ADMIN_SESSION_COOKIE_SECURE=False" \
+  ghcr.io/fief-dev/fief:latest

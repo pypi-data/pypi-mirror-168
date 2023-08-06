@@ -1,0 +1,3 @@
+[auth]
+mode = "noauth"
+clear_users = "false"

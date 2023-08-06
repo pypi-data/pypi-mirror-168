@@ -1,0 +1,5 @@
+[auth]
+mode = "noauth"
+
+[uvicorn]
+open_browser = "False"
