@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dolang
+Version: 0.0.17
+Summary: Dolo Modeling Language
+License: BSD-2-Clause
+Author: Winant Pablo
+Author-email: pablo.winant@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: lark (>=1.1.1,<2.0.0)
+Requires-Dist: lark-parser (>=0.12.0,<0.13.0)
+Requires-Dist: numba (>=0.55.0,<0.56.0)
+Requires-Dist: numpy (>=1.22.2,<2.0.0)
+Requires-Dist: pytest (>=7.1.3,<8.0.0)
+Requires-Dist: sympy (>=1.5.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# dolang.py
+
+Very empty README file.
+
+[![codecov](https://codecov.io/gh/EconForge/dolang.py/branch/master/graph/badge.svg?token=1U3Q8FLOFK)](https://codecov.io/gh/EconForge/dolang.py)
+
+  ![CI](https://github.com/EconForge/dolang.py/workflows/CI/badge.svg)
+![Docs](https://github.com/EconForge/dolang.py/workflows/Publish%20docs%20via%20GitHub%20Pages/badge.svg)
+
