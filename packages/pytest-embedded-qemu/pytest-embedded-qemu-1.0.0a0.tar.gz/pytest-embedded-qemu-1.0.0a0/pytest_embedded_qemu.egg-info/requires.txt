@@ -1,0 +1,4 @@
+pytest-embedded~=1.0.0a0
+
+[idf]
+pytest-embedded-idf~=1.0.0a0
