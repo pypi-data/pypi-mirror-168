@@ -1,0 +1,17 @@
+AUTHORS.txt
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+Flask_Image_Resizer.egg-info/PKG-INFO
+Flask_Image_Resizer.egg-info/SOURCES.txt
+Flask_Image_Resizer.egg-info/dependency_links.txt
+Flask_Image_Resizer.egg-info/not-zip-safe
+Flask_Image_Resizer.egg-info/requires.txt
+Flask_Image_Resizer.egg-info/top_level.txt
+flask_image_resizer/__init__.py
+flask_image_resizer/core.py
+flask_image_resizer/modes.py
+flask_image_resizer/size.py
+flask_image_resizer/transform.py
