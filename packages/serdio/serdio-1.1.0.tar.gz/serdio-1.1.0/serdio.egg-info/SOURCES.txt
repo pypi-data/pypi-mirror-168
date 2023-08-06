@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+serdio/__init__.py
+serdio/_test_utils.py
+serdio/io_lifter.py
+serdio/io_lifter_test.py
+serdio/serde.py
+serdio/serde_test.py
+serdio.egg-info/PKG-INFO
+serdio.egg-info/SOURCES.txt
+serdio.egg-info/dependency_links.txt
+serdio.egg-info/requires.txt
+serdio.egg-info/top_level.txt
