@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+getsimilar/__init__.py
+getsimilar/config.py
+getsimilar/get.py
+getsimilar/utils.py
+getsimilar.egg-info/PKG-INFO
+getsimilar.egg-info/SOURCES.txt
+getsimilar.egg-info/dependency_links.txt
+getsimilar.egg-info/requires.txt
+getsimilar.egg-info/top_level.txt
