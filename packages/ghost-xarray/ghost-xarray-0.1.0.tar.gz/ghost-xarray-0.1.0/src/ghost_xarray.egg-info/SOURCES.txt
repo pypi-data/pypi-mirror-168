@@ -1,0 +1,16 @@
+.gitattributes
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+figures/v.png
+figures/vx.png
+src/ghost_xarray/__init__.py
+src/ghost_xarray/ghost_xarray.py
+src/ghost_xarray.egg-info/PKG-INFO
+src/ghost_xarray.egg-info/SOURCES.txt
+src/ghost_xarray.egg-info/dependency_links.txt
+src/ghost_xarray.egg-info/requires.txt
+src/ghost_xarray.egg-info/top_level.txt
