@@ -1,0 +1,11 @@
+scikit-learn
+scipy>=1.9
+numpy
+pz-rail
+
+[dev]
+coverage
+pylint
+pytest
+pytest-cov
+yamllint
