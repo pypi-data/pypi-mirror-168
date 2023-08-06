@@ -1,0 +1,12 @@
+nessai_models/__init__.py,sha256=v_15FQ6FgRrfXZkmVnD-1QZgC2tppDOmGaeBbJUj_3E,770
+nessai_models/base.py,sha256=BX_llm5dgbkSdE6KZxIpim6Owaw33ExRoMfQWnTo8AA,2898
+nessai_models/eggbox.py,sha256=kLwDiHfGx6NH_cxgtTcBb7y8vbJASZ-JJr2PO_8KtRc,1445
+nessai_models/gaussian.py,sha256=YTDpiL7TqEjjrH3EbREzX6g97BHvvtLjbsdtLzftxa4,3535
+nessai_models/gaussianmixture.py,sha256=FARUvECHQcDeAQ4pibeUSnkjpcbGAn1RoNg_G_qKLsA,5021
+nessai_models/halfgaussian.py,sha256=pO76NnlF49TE4bwDJeh3cGssTqog8id1GfCpE-1Oo10,1155
+nessai_models/pyramid.py,sha256=LmZDvfxcZ4J7kBuvoQIBq1fwqYNQF7tAA3BouOoOOn4,1033
+nessai_models/rosenbrock.py,sha256=Ki5WkLvTqa4c6iKRJ8bHb-kj7P2z5XXPu0oRRl4KCCI,1934
+nessai_models-0.1.0.dist-info/METADATA,sha256=kh7dOWmRSK35ZYDw_pgrrL9U-c9aFwHREfZ8sZyJHco,2234
+nessai_models-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nessai_models-0.1.0.dist-info/top_level.txt,sha256=wqNC6YqylWP4YdL0r8k8seb9JBF-cmS3IeMtdoPfTkU,14
+nessai_models-0.1.0.dist-info/RECORD,,
