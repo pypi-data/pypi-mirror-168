@@ -1,0 +1,51 @@
+# INFINITE_BATTLE_RPG
+
+**Infinite Battle RPG** is an offline RPG where the player can face an infinite number of rounds.
+
+## Executable File
+
+The executable file is downloadable at 
+https://github.com/PythonApkDev/PythonApkDev.github.io/blob/main/beginner-projects/INFINITE_BATTLE_RPG/INFINITE_BATTLE_RPG/dist/infinite_battle_rpg/infinite_battle_rpg.
+
+## Source Code
+
+Python code used to create the game is available in 
+https://github.com/PythonApkDev/PythonApkDev.github.io/blob/main/beginner-projects/INFINITE_BATTLE_RPG/INFINITE_BATTLE_RPG/infinite_battle_rpg.py.
+
+## Installation
+
+**pip install INFINITE_BATTLE_RPG**
+
+## How to Use the Executable File?
+
+First, open by double-clicking the file "infinite_battle_rpg". 
+How the executable file looks like is shown in the image below (the file is enclosed with a red rectangle).
+
+### Image 1
+
+![Executable File](images/Executable File.png)
+
+## Getting Started
+
+After you run the game, you will be asked to enter your name. Then, you will be redirected to the main menu.
+
+### Image 2
+
+![Getting Started](images/Getting Started.png)
+
+## Main Menu
+
+### Image 3
+
+After you enter your name, you will be asked whether you want to continue playing the game or not.
+
+![Main Menu](images/Main Menu.png)
+
+## Gameplay
+
+During gameplay, you can battle in an infinite number of rounds. You will be back to the first round once you are 
+defeated by the enemy. You will keep proceeding to the next round if you win the battle.
+
+### Image 4
+
+![Gameplay](images/Gameplay.png)

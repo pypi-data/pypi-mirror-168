@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+INFINITE_BATTLE_RPG/infinite_battle_rpg.py
+INFINITE_BATTLE_RPG.egg-info/PKG-INFO
+INFINITE_BATTLE_RPG.egg-info/SOURCES.txt
+INFINITE_BATTLE_RPG.egg-info/dependency_links.txt
+INFINITE_BATTLE_RPG.egg-info/entry_points.txt
+INFINITE_BATTLE_RPG.egg-info/top_level.txt
