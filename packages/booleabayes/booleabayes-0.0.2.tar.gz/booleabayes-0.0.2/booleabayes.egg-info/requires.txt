@@ -1,0 +1,15 @@
+seaborn
+anndata
+leidenalg
+matplotlib
+pandas
+umap-learn
+numpy
+scipy
+cython
+numba
+scikit-learn
+h5py
+click
+magic-impute
+networkx
