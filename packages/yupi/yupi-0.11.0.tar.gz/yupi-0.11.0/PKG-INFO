@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: yupi
+Version: 0.11.0
+Summary: A package for tracking and analysing objects trajectories
+Home-page: https://github.com/yupidevs/yupi
+License: MIT
+Keywords: trajectory,analysis,tracking
+Author: Gustavo Viera-López
+Author-email: gvieralopez@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: matplotlib (>=3.2.0)
+Requires-Dist: nudged (>=0.3.1)
+Requires-Dist: numpy (>=1.16.5)
+Requires-Dist: opencv-python (>=4.4.0)
+Project-URL: Documentation, https://yupi.readthedocs.io
+Project-URL: Repository, https://github.com/yupidevs/yupi
+Description-Content-Type: text/markdown
+
+<p style="text-align:center;"><img src="logo.png" alt="Logo"></p>
+
+Standing for *Yet Underused Path Instruments*, **yupi** is a set of tools designed
+for collecting, generating and processing trajectory data.
+
+## Installation
+
+Current recommended installation method is via the pypi package:
+
+```cmd
+pip install yupi
+```
+
+## Compatibility
+
+- Python 3.7 or later
+- Ubuntu 18.04 or later
+- Windows 7 or later
+- macOS 10.12.6 (Sierra) or later.
+
+## Getting Started
+
+In the [official documentation](https://yupi.readthedocs.io/en/latest/) there
+are some resources to start using the library: Tutorials, Examples  and a
+detailed description of the API.
+
+## Examples
+
+Code examples (with additional multimedia resources) can be found in
+[this repository](https://github.com/yupidevs/yupi_examples). Additionally, in
+the [Examples section](https://yupi.readthedocs.io/en/latest/examples/examples.html)
+of the documentation, you can find the same examples with additional comments
+and expected execution results in order to inspect the examples without actually
+executing them.
+
