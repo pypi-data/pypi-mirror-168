@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ytmurl
+Version: 1.0.0
+Summary: From search keywords to MP3 URL with YouTube Music
+Home-page: https://github.com/JZ-Wenxuan/ytmurl
+Author: Jack Zhu
+Author-email: jzwenxuan@gmail.com
+Project-URL: Documentation, https://github.com/JZ-Wenxuan/ytmurl
+Project-URL: Bug Reports, https://github.com/JZ-Wenxuan/ytmurl/issues
+Project-URL: Source Code, https://github.com/JZ-Wenxuan/ytmurl
+Keywords: example,pypi,package
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ytmusicapi
+Requires-Dist: yt-dlp
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+# YtmUrl
+
+## Installation
+
+```
+pip install ytmurl
+```
+
+## Usage
+
+```
+usage: ytmurl [-h] [--log-file LOG] [-d DURATION] query
+
+searches youtube music and prints audio url
+
+positional arguments:
+  query                 query string containing title, artist, etc
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --log-file LOG        log file to append to
+  -d DURATION, --duration DURATION
+                        duration of song in miliseconds
+```
