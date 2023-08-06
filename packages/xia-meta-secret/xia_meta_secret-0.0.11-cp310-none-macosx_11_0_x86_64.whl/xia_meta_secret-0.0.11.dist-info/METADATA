@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xia-meta-secret
+Version: 0.0.11
+Summary: XIA Universe Secret Management Module
+Home-page: https://git.top-infra.com/
+Author: Xia CHEN
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cryptography
+Requires-Dist: bcrypt
+Requires-Dist: passlib
+Requires-Dist: xia-engine-firestore
+Requires-Dist: xia-meta
+
+# XIA Universe Secret Management Module
+## Introduction
+Using standard xia-meta structure to save secret
