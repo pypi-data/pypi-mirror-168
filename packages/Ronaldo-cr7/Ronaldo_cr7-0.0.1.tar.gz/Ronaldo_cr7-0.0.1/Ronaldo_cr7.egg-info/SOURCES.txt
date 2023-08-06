@@ -1,0 +1,8 @@
+MANIFEST.in
+license.txt
+setup.py
+Ronaldo_cr7/__init__.py
+Ronaldo_cr7.egg-info/PKG-INFO
+Ronaldo_cr7.egg-info/SOURCES.txt
+Ronaldo_cr7.egg-info/dependency_links.txt
+Ronaldo_cr7.egg-info/top_level.txt
