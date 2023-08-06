@@ -1,0 +1,3 @@
+[console_scripts]
+check-eks-best-practices=eks_best_practices_cli.main:app
+
