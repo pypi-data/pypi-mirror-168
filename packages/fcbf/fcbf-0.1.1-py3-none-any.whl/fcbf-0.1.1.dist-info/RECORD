@@ -1,0 +1,9 @@
+fcbf/__init__.py,sha256=ZT3twfpq4MpuHv6E0S1oJkYwzllSOh0rTWgBGp8OBaw,139
+fcbf/data/__init__.py,sha256=urBx--gnuMNIsVwFWrrAoz-inZa7Da3JEWQc1blO-hs,37
+fcbf/data/datasets.py,sha256=wkXB0syObQuZe3E_TGoMpbOBdU67h9Ki7b8oBZWTZig,199
+fcbf/data/lung-cancer.data,sha256=X-B0peS0SBbpWLPzdQOxNXoVQ9qn7ud0hQQLDjrvGPE,3649
+fcbf/fcbf.py,sha256=pPiwibQxnyDVpBcqLGYXwkgQxWFabmiJq-uFUJYlqf4,7196
+fcbf-0.1.1.dist-info/LICENSE,sha256=EdYz0sFHX4tbeSPizLAq3qocoAh_Hw7C2oEWhheG650,1089
+fcbf-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+fcbf-0.1.1.dist-info/METADATA,sha256=467JbAH5ce8B8Po1e-rYT0FqMSRGYZNIkLuRkGbcbTk,1252
+fcbf-0.1.1.dist-info/RECORD,,
