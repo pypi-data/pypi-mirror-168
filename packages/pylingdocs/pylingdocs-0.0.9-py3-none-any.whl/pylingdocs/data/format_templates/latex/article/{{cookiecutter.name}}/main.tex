@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+% \lhead{}
+\rhead{\footnotesize \itshape Made with \href{https://github.com/fmatter/pylingdocs/}{pylingdocs}}
+\cfoot{\thepage}
+
+\input{preamble.tex}
+\addbibresource{% raw %}{{% endraw %}{{ cookiecutter.bibfile }}{% raw %}}{% endraw %}
+
+\title{% raw %}{{% endraw %}{{ cookiecutter.project_title }}{% raw %}}{% endraw %}
+\author{% raw %}{{% endraw %}{{ cookiecutter.author }}{% raw %}}{% endraw %}
+\date{\today\\version {{cookiecutter.version}}}
+{{ cookiecutter.glossing_abbrevs }}
+
+
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+
+{{ cookiecutter.content }}
+
+\end{document}
