@@ -1,0 +1,13 @@
+propulate/__init__.py,sha256=KuZOgVe9FsCdqlQYKE8zf5ofeaLc1Yt-L6xHRKpk7qE,479
+propulate/_globals.py,sha256=to0BcQMusVp54KFtadduAFGCRKjh_egEnWVx-pXfx3o,106
+propulate/population.py,sha256=D4x-pfI8J_u4htKhCuPJX9KrYg0v488l-l-DyStw2VY,2682
+propulate/propagators.py,sha256=yc2w81c4zJcqHC8uujP0bgxfiIg9YY6yjjtkHcIs1qE,27182
+propulate/propulator.py,sha256=P0veE_E79a2kg7KJ1s8thPWpCWuR_bINHhrQlCCz5TA,67915
+propulate/utils.py,sha256=1iVNhjwphal_ETHkqb51_l6cibR0EsNoeZb4aMR8k0k,3180
+propulate/wrapper.py,sha256=OQ28n6d07F6DK0hsokvzNAukOW6wS0e2ygAPczIFSLI,10575
+propulate-0.0.1.dist-info/AUTHORS.rst,sha256=Od20cJBJ7TVjDiAjwExnT14a08l0NSBx1zcstPUuQgQ,80
+propulate-0.0.1.dist-info/LICENSE.md,sha256=CxN26hgJu53ArVi6lG78lE4PrT4JaPhP-LAmLYFz81o,1563
+propulate-0.0.1.dist-info/METADATA,sha256=qKNxO_s_8RGTaETC0_J8SKINHUk6b99cVsorQo2WfEw,3009
+propulate-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+propulate-0.0.1.dist-info/top_level.txt,sha256=8QkC-MmLPl5m2iszOYoe8_PP7qQMcUlbW24QvSDAViU,10
+propulate-0.0.1.dist-info/RECORD,,
