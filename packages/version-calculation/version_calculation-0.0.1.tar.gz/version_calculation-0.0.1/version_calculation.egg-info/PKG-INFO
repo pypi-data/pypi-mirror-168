@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: version-calculation
+Version: 0.0.1
+Summary: uma calculadora de opreções basicas para versões
+Author: issei momonge
+Author-email: mggyggf@gmail.com
+License: MIT License
+Keywords: calculadora de versão
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# calculadora de versÃ£o
+
+form version_calculation import cal
+
+sÃ³ e possivel calcular esse padrÃ£o:
+numero.numero.numero
+
+cal(numero da versÃ£o,quantidade de casas de cada numero).calculo(vc deve fazer um calculo ilusorio em forma de string com um n)
+exemplo:
+
+from version_calculation import cal
+
+x = cal('0.11.',3).calculo('n+15')
+
+print(x) #0.1.115
+
+o 0.11. Ã© a versÃ£o,
+o 3 Ã© o numero de casas
+e o n+15 Ã© a operaÃ§Ã£o
+
+entÃ£o some 15 a minha versÃ£o
