@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+msgqywx/__init__.py
+msgqywx/msgqywx.py
+msgqywx.egg-info/PKG-INFO
+msgqywx.egg-info/SOURCES.txt
+msgqywx.egg-info/dependency_links.txt
+msgqywx.egg-info/requires.txt
+msgqywx.egg-info/top_level.txt
