@@ -1,0 +1,13 @@
+ggmail/__init__.py,sha256=voQI2L4m5kqcZOZXa8QuNukiexbcK4k5qqFk7gZg9-E,231
+ggmail/account.py,sha256=tRI3ngh6yX4Z7c4DTcQytht7_ztD3h_hUWUO_U0d_Mk,21335
+ggmail/authentication.py,sha256=dJHIHljoTM1fCKlA0CJlOLIL_7MQaO8mmes8v3swuJA,1937
+ggmail/exception.py,sha256=vaSCPjMknJrF7nQv8Ig6QmNq2coB5QlLwj6Y2qYtGqU,690
+ggmail/flag.py,sha256=pA2oKXa1lASiN1gXINbNNKcWVCSSRqmrg2xE6y0nlvY,248
+ggmail/mailbox.py,sha256=JSu2qilyiFztLzwj_nbL9n-A-ObnH8C1Gy-sAFmRA8A,3298
+ggmail/message.py,sha256=SqCFcl_eknfpLJtSxd0z4dNf6G7kQ9FfxYZ_XLkazgk,7531
+ggmail/policy.py,sha256=je_Wo9a777JjN--nuBoA8uHZ8hdAgWXe4Ai7aUxZqkw,3875
+ggmail/utf7.py,sha256=bkzeqlK36yzhUrlX2OFdGJy6OxnExMi5cU8-mT8rQec,986
+ggmail-0.4.0.dist-info/LICENSE,sha256=MKRSi3qgl3Szug4CxC-aIRFRa1QWELLVp5AIe8S9HKI,1072
+ggmail-0.4.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+ggmail-0.4.0.dist-info/METADATA,sha256=ARJNqJG0tI1BYXcq-RNn9sH_JotSsdygvm4M0tvnAeY,530
+ggmail-0.4.0.dist-info/RECORD,,
