@@ -1,0 +1,69 @@
+#!python
+
+'''
+Helper that displays the data within a HDF file.
+
+Copyright (C) 2020 SPAM Contributors
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+DOC HDF
+'''
+
+import spam.helpers
+import spam.mesh
+# import spam.DIC
+# import spam.deformation
+import h5py
+
+import numpy
+numpy.seterr(all='ignore')
+
+import argparse
+# import tifffile
+# import os
+
+
+# Define argument parser object
+parser = argparse.ArgumentParser(description='spam-hdf-reader '+spam.helpers.optionsParser.GLPv3descriptionHeader +\
+                                             'Reads and display data within a HDF file\n',
+                                 formatter_class=argparse.RawTextHelpFormatter)
+
+# Parse arguments with external helper function
+args = spam.helpers.optionsParser.hdfReader(parser)
+
+with h5py.File(args.FILE) as f:
+    print(f'File: {f.filename}')
+
+    if len(f.attrs):
+        print('\tMetadata:')
+        for k, v in f.attrs.items():
+            print(f'\t\t{k}: {v}')
+        print()
+
+    for k, v in f.items():
+        print(f'\tDataset: {k}')
+        print(f'\t\ttype: {v.dtype}')
+        print(f'\t\tshape: {v.maxshape}')
+        if len(v.attrs):
+            print('\t\tMetadata:')
+            for k2, v2 in v.attrs.items():
+                print(f'\t\t\t{k2}: {v2}')
+            print()
+
+        if args.PREVIEW:
+            print(v[:])
+        # print(k, v)
+        print()
