@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+random_module_lol.egg-info/PKG-INFO
+random_module_lol.egg-info/SOURCES.txt
+random_module_lol.egg-info/dependency_links.txt
+random_module_lol.egg-info/top_level.txt
