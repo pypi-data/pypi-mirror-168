@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+mianutils.egg-info/PKG-INFO
+mianutils.egg-info/SOURCES.txt
+mianutils.egg-info/dependency_links.txt
+mianutils.egg-info/top_level.txt
