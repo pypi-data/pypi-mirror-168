@@ -1,0 +1,365 @@
+Metadata-Version: 2.1
+Name: ColorCraft
+Version: 0.3.0
+Summary: simplest and coolest color Library. print and menaged colors in Python!
+Home-page: 
+Author: Alawi Hussein Adnan Al Sayegh
+Author-email: programming.laboratorys@gmail.com
+License: MIT
+Keywords: ColorCraft
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# installation
+
+Run the following to install:
+```cmd
+pip install ColorCraft
+```
+### or
+```cmd
+python -m pip install ColorCraft
+```
+if that didn't work, try replacing `pip` with `pip3`.
+need help? my discord: `i am me#3889`
+
+# Color
+print and menaged colors in Python!
+```python
+>>> from ColorCraft import Color
+>>> from ColorCraft import activeColor
+>>> activeColor()
+>>> Color((0,140,140),type='rgb') # rgb type default "hex"
+<Color(color=35980,hex='008c8c')> # md doesn't support coloring
+>>> Color('00cfff') # hex type
+<Color(color=53247,hex='00cfff')> # md doesn't support coloring
+>>>
+>>> from ColorCraft import Colors
+>>> dir(Colors)
+[..., 'hex2rgb', 'hsl2rgb', 'int2hex', 'random', 'rgb', 'rgb2hex', 'terminalColors']
+>>> dir(Colors.rgb)
+[..., 'black', 'blue', 'brown', 'cyan', 'darkgreen', 'deeppink', 'deepskyblue', 'drakgray', 'gold', 'gray', 'green', 'hotpink', 'lime', 'orange', 'pink', 'purple', 'red', 'silver', 'skyblue', 'teal', 'violet', 'white', 'yellow']
+>>> Color(Colors.random().color,type='rgb') # random color from the Colors.rgb class return basic ColorObj
+<Color(color=32896,hex='008080')> # md doesn't support coloring
+>>> print("logging color")
+logging color # md doesn't support coloring
+>>> print("FAIL color",color="FAIL")
+FAIL color # md doesn't support coloring
+>>> print("warn the color is here",color="WARNING")
+warn the color is here # md doesn't support coloring
+>>> print("[OK] color text is here",color="OKBLUE")
+[OK] color text is here # md doesn't support coloring
+```
+## let's try Hello, World! program
+```py
+from ColorCraft import *
+print("Hello, World!")
+```
+
+> **Warning**
+> importing everything replace the bult-in print function.
+> to replace it again add this block `print = __builtins__.print`
+
+## examples Color/Colors class
+### this is a test program
+```py
+from ColorCraft import __test__
+```
+
+![cmder.png colors](https://raw.githubusercontent.com/programminglaboratorys/Colorit/main/ColorCraft/IMGS/cmder.png)
+
+### active Colors
+```python
+from ColorCraft import * #import Everything
+activeColor() #trun on the Colors
+print("normal COLOR",color="normal") # 'normal' means no colors or you can replace it with None
+```
+
+> **Important**
+> if your using cmd or powershell make sure to call the activeColor function
+### print Colors logs
+```python
+from ColorCraft.Print import printColors
+from ColorCraft.Print import print
+# the a available keywards Colors
+for LOF in printColors:
+	print("Hello, World",LOF,sep=": ",color=LOF)
+```
+### don't like printColors? then take a look at this
+```py
+from ColorCraft.Color import Color
+print("green Color:", repr(Color((0,200,25),type='rgb')), color=normal)
+# output : green Color: <Color(color=51225,hex='00c819')>
+```
+### change print color
+```py
+# contrell print color
+print("Hello User, i am Blue!", color=Color((0,144,250),type='rgb'))
+
+```
+
+## random Colors
+
+### random Color
+```py
+print("random Color:",repr(Color(type='random')), color=normal)
+```
+
+### random color from Color class
+```py
+from ColorCraft.Color import Color
+# contrell print color
+# random Color rgb(0>=255,0>=255,0>=255)
+print("Hello User, i am Random Color!", color=Color((type='random'))
+```
+### random from Colors.rgb class
+
+```py
+from ColorCraft.Color import Colors
+from ColorCraft.Color import Color
+random = Colors.random()
+# random color from the Colors.rgb class. return basic ColorObj
+print("Hello, i am Random!", color=Color(random.color,type='rgb',name=random.name))
+"""
+>> random = Colors.random()
+>> Color(random.color,type='rgb',name=random.name)
+<Color(color=16753920,hex='ffa500',name='orange')>
+"""
+```
+> **Note**
+> you must pass the color type. call the bultin help function to know more
+## example ColorArray
+### random Colors Array
+```py
+>>> from ColorCraft import ColorArray
+>>> ColorArray(range(0,10))
+<Array([<Color(color=16197168,hex='f72630')>, <Color(color=3654320,hex='37c2b0')>, <Color(color=16176321,hex='f6d4c1')>, <Color(color=15026181,hex='e54805')>, <Color(color=16720637,hex='ff22fd')>, <Color(color=15261965,hex='e8e10d')>, <Color(color=15084580,hex='e62c24')>, <Color(color=8171351,hex='7caf57')>, <Color(color=13859068,hex='d378fc')>, <Color(color=285121,hex='0459c1')>])>
+```
+### random rgbs colors
+```py
+>>> colors = ColorArray(range(0,10),dum="null")
+>>> colors
+<Array([<Color(color=6908265,hex='696969',name='gray')>, <Color(color=16776960,hex='ffff00',name='yellow')>, <Color(color=16716947,hex='ff1493',name='deeppink')>, <Color(color=16716947,hex='ff1493',name='deeppink')>, <Color(color=8388736,hex='800080',name='purple')>, <Color(color=0,hex='000000',name='black')>, <Color(color=65280,hex='00ff00',name='lime')>, <Color(color=16738740,hex='ff69b4',name='hotpink')>, <Color(color=9055202,hex='8a2be2',name='violet')>, <Color(color=6908265,hex='696969',name='gray')>])>
+```
+### blank array
+```python
+>>> ColorArray(range(0,10),dum="blank::white")
+<Array([<Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>, <Color(color=16777215,hex='ffffff',name='white')>])>
+```
+> **Warning**
+> make sure to write the right value for dum
+# Features
+## ColorArray class Features
+```python
+>>> colors = ColorArray([Color('ffd700',name="gold"),Color('00aeff',name='blue'),Color("ee0000",name="red")],dum="blank::red")
+>>> colors
+<Array([<Color(color=16766720,hex='ffd700',name='gold')>, <Color(color=44799,hex='00aeff',name='blue')>, <Color(color=15597568,hex='ee0000',name='red')>])>
+>>> colors[0]
+<Color(color=16766720,hex='ffd700',name='gold')>
+>>> colors[1]
+<Color(color=44799,hex='00aeff',name='blue')>
+>>> colors.append("6aa84f")
+>>> colors[len(colors)-1]
+<Color(color=6989903,hex='6aa84f')>
+>>> colors.display()
+Color Object                                      | Color
+------------------------------------------------------------
+<Color(color=16766720,hex='ffd700',name='gold')>  | â–ˆ
+<Color(color=44799,hex='00aeff',name='blue')>     | â–ˆ
+<Color(color=15597568,hex='ee0000',name='red')>   | â–ˆ
+<Color(color=6989903,hex='6aa84f')>               | â–ˆ
+# md doesn't support coloring
+```
+## Color class Features
+```python
+>>> myColor = colors[0]
+>>> myColor.print("Hello World")
+Hello World
+>>> myColor.print
+<bound method Color.print of <Color(color=16766720,hex='ffd700',name='gold')>>
+>>> myColor.colorize
+<bound method Color.colorize of <Color(color=16766720,hex='ffd700',name='gold')>>
+>>> myColor.colorize("Hello i am a color text")
+'\x1b[38;2;255;215;0mHello i am a color text\x1b[0m'
+>>> print(myColor.colorize("Hello i am a color text"))
+Hello i am a color text
+>>> str(myColor)
+'#ffd700'
+>>> int(myColor)
+16766720
+>>> hex(int(myColor))
+'0xffd700'
+>>> myColor.print()
+â–ˆ
+```
+## Colors class Features
+```python
+>>> Colors.random_rgb()
+(226, 137, 27)
+>>> Colors.random_rgb()
+(132, 188, 185)
+>>> Colors.random()
+<ColorObject(color=(192, 192, 192),name='silver')>
+>>> Colors.random()
+<ColorObject(color=(255, 20, 147),name='deeppink')>
+>>> Colors.hex2rgb("00e0ff")
+(0, 224, 255)
+>>> Colors.hex2rgb("00efaa")
+(0, 239, 170)
+>>> Colors.rgb2hex(Colors.hex2rgb("00efaa"))
+'00efaa'
+>>> Colors.rgb2hex(Colors.hex2rgb("0aea0f"))
+'0aea0f'
+>>> Colors.rgb.brown
+(139, 69, 19)
+>>> Colors.rgb.white
+(255, 255, 255)
+>>> Colors.rgb.skyblue
+(135, 206, 235)
+>>> Colors.rgb2hex(Colors.rgb.skyblue)
+'87ceeb'
+```
+
+## print Features
+```python
+>>> from ColorCraft import *
+>>> activeColor()
+>>>
+>>> myColor = Color((250,250,0),type="rgb")
+>>> print("Hello, World!",color=myColor)
+Hello, World!
+>>>
+>>> bg_ = Color((0,200,200),type="rgb")
+>>> print("Hello, World!",color=myColor,bg=bg_)
+Hello, World!
+>>> print("test",color="logb",bg="logc")
+test
+>>>
+>>> print("test",color="logb",bg="bf0f00")
+test
+>>> print("test",color="c0c0c0",bg="bf0f00")
+test
+>>>
+>>> from ColorCraft.Print import printColors,logs
+>>> from ColorCraft import TColor
+>>> dir(TColor),logs,printColors
+(['BOLD', 'ENDC', 'FAIL', 'HEADER', 'LOG', 'LOGB', 'LOGC', 'NORMAL', 'OKBLUE', 'OKCYAN', 'OKGREEN', 'UNDERLINE', 'WARNING', ...], {'LOG': '16C60C', 'LOGB': '3B78FF', 'LOGC': '61D6D6', 'NORMAL': None}, ['FAIL', 'HEADER', 'OKBLUE', 'OKCYAN', 'OKGREEN', 'WARNING'])
+```
+
+# Change Log
+
+0.2.0 (2022/06/30)
+-------------------
+- First Release
+- rename to ColorCraft
+
+
+# what's new?
+ColorCraft 0.3.0v
+## activeColor() had been renamed to init()
+```python
+from ColorCraft import init
+init()
+```
+
+## print only Accepts Color/str object
+```python
+from ColorCraft import Color,colorize
+from ColorCraft.Printv2 import print
+print("printing " + colorize("Hello, World!","#f9aafe"),color="header")
+print("Hello, World!",color=Color("ffee00"))
+```
+## print have new kw formats
+```python
+# formats(['negative', 'negative2', 'bold', 'underline', 'italic'])
+from ColorCraft.Printv2 import print
+from ColorCraft import Color
+
+print("Hello, Underline",         formats= "underline",        color=Color("ffee00"))
+print("Hello, Underline and Bold",formats=["underline","bold"],color=None           )
+
+```
+> Note most of the formats don't work in 'Windows'
+
+## new ColorArray
+delete and set items
+
+```python
+
+>>> from ColorCraft import ColorArray
+>>> A = ColorArray()
+>>> A
+<Array([])>
+>>> A.append('ee0000')
+>>> A.append('ffee00')
+>>> A.append('0000ff')
+>>> A.append('00ee00')
+>>> A
+<Array([<Color(color=15597568,hex='ee0000')>, <Color(color=16772608,hex='ffee00')>, <Color(color=255,
+	hex='0000ff')>, <Color(color=60928,hex='00ee00')>])>
+>>> A.insert(2,"f9aafe")
+>>> A
+<Array([<Color(color=15597568,hex='ee0000')>, <Color(color=16772608,hex='ffee00')>, <Color(color=
+	16362238,hex='f9aafe')>, <Color(color=255,hex='0000ff')>, <Color(color=60928,hex='00ee00')>])>
+
+>>> a = ColorCraft.ColorArray([])
+>>> a
+<Array([])>
+>>> a.append("ee0000")
+>>> a
+<Array([<Color(color=15597568,hex='ee0000')>])>
+>>> a.append("ffee00")
+>>> a
+<Array([<Color(color=15597568,hex='ee0000')>, <Color(color=16772608,hex='ffee00')>])>
+>>> a.append("00ee00")
+>>> a
+<Array([<Color(color=15597568,hex='ee0000')>, <Color(color=16772608,hex='ffee00')>, <Color(color=60928,
+	hex='00ee00')>])>
+>>> a.append("0000ff")
+>>>
+>>> a
+<Array([<Color(color=15597568,hex='ee0000')>, <Color(color=16772608,hex='ffee00')>, <Color(color=60928,hex='00ee00')>, <Color(color=255,hex='0000ff')>])>
+>>> a.append("000faa")
+>>> a
+<Array([<Color(color=15597568,hex='ee0000')>, <Color(color=16772608,hex='ffee00')>, <Color(color=60928,
+	hex='00ee00')>, <Color(color=255,hex='0000ff')>, <Color(color=4010,hex='000faa')>])
+>>> del a[len(a)-1]
+>>> dir(a)
+```
+
+```python
+>>> B = ColorArray(range(10),dum=Blank("eeffaa"))
+>>> B
+<Array([<Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>, <Color(color=15663018,hex='eeffaa')>])>
+>>> C = ColorArray(range(10),dum=Blank("fffff"))
+>>> C
+<Array([<Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>, <Color(color=1048575,hex='fffff')>])>
+>>> B.extend(C)
+>>> b = ColorArray(B[0:10])
+```
+
+
+
+Change Log
+==========
+
+0.2.0 (2022/06/30)
+-------------------
+- First Release
+- rename to ColorCraft
+
+
+0.3.0 (2022/09/23)
+-------------------
+- new module Printv2
+- print have new kw formats
+- print only Accepts Color/str object
+- activeColor() had been renamed to init()
+- new ColorArray; delete and set items
+- Blank class
+
