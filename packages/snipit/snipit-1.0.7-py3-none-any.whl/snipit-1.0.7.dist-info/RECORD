@@ -1,0 +1,11 @@
+snipit/__init__.py,sha256=b_ZyCj9AjIQBAJMVJZMgoxhTIPnu2Vha6lOC0omYa9g,42
+snipit/command.py,sha256=f_vTfrPgktB0o94ZimDso6LzE4LV2uI_BEs1VXNulhk,7633
+snipit/scripts/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+snipit/scripts/snp_functions.py,sha256=mseNzkvOnWF3KBqIhTYd3txeZmQUu-uWycPmfPL6P44,21192
+snipit-1.0.7.data/scripts/snp_functions.py,sha256=eg86yvnDoa_sKdT3Qqsk2hLup3NRe2JuAryJmugAys8,21178
+snipit-1.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+snipit-1.0.7.dist-info/METADATA,sha256=kkyRO--L_JY7mTdNk--nzF8hKcNoDrOO4oPlmPVDeMM,274
+snipit-1.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+snipit-1.0.7.dist-info/entry_points.txt,sha256=qHfDJuuCwEV-kj2CSZdYRgz0ktNMXe-bWFb5iHK59RE,47
+snipit-1.0.7.dist-info/top_level.txt,sha256=oOq2g0yKFk3DobwIgN7NndwRI1FaxUcdeCJcafogNZY,7
+snipit-1.0.7.dist-info/RECORD,,
