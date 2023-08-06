@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+stream_zip.py
+stream_zip.egg-info/PKG-INFO
+stream_zip.egg-info/SOURCES.txt
+stream_zip.egg-info/dependency_links.txt
+stream_zip.egg-info/top_level.txt
