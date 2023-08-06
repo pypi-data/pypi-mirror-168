@@ -1,0 +1,13 @@
+mailshell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailshell/app.py,sha256=f61OdPL5FQavIlzYBEGtONGxH7zU8Fq_37mi_-9k0E8,2803
+mailshell/email_checker.py,sha256=9T5qIQ7ScD6DI3oMk974F-5I8KMQBptC8VlJp_uKscQ,2049
+mailshell/email_logo.py,sha256=mNX2hWaARYeim79bWu_wgLidX1JBytTfs_CZsL6UlHY,8644
+mailshell/helper.py,sha256=TPMl_xbzZQgQPEuDLb8eTNQTr0m2U43GGtjlhvCIdVY,2679
+mailshell/mail_checker.py,sha256=2drtjbd8h7vWlogyFXEk09ad-BQqJRxP3cVKPZTI12Y,2034
+mailshell/mail_shell.py,sha256=67a5Kg4yvlxo4PgXo_or2-MJqgQyMdbq0uDqL2daDmA,12342
+mailshell-1.2.2.dist-info/LICENSE,sha256=uh2KwpGc_SIYN-YalXoYR6nq3IGkxD-LGq9pXU5-_iU,1074
+mailshell-1.2.2.dist-info/METADATA,sha256=_HX9eBHx0GFpHkfR6Cq4O9yQu1zUQKBwlAFqFJPO0mU,4427
+mailshell-1.2.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mailshell-1.2.2.dist-info/entry_points.txt,sha256=wY5H6kuE5lVGNQLOK2pOpMJS1sDYNCaG7drt1Q7pP2c,44
+mailshell-1.2.2.dist-info/top_level.txt,sha256=f-Gnwws6Z6juxPqOBzRG35mKAIOhyAD85-ojEbnGB14,10
+mailshell-1.2.2.dist-info/RECORD,,
