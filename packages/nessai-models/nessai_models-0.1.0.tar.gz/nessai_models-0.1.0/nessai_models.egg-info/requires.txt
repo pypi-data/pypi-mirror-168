@@ -1,0 +1,11 @@
+numpy>=1.9
+scipy>=0.16
+nessai>=0.6.0
+
+[dev]
+black
+flake8
+pre-commit
+pytest>=6.0
+pytest-cov
+pytest-integration
