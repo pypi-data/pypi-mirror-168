@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: onelogin-aws-login
+Version: 1.2
+Home-page: 
+Author: 
+Author-email: 
+Requires-Python: >=3.8
+Requires-Dist: boto3
+Requires-Dist: onelogin
+Requires-Dist: keyring
+Requires-Dist: requests
+

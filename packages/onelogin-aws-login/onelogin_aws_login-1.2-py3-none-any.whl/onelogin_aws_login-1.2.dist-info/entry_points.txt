@@ -1,0 +1,2 @@
+[console_scripts]
+onelogin-aws-login = onelogin_aws_login.cli:login
