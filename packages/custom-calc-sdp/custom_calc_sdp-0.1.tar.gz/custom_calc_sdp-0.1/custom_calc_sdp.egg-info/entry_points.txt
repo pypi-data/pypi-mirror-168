@@ -1,0 +1,3 @@
+[console_scripts]
+calc = custom_calc_sdp.app:start_app
+
