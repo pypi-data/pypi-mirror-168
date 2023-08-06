@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/mloptm/__init__.py
+src/mloptm/consts.py
+src/mloptm/exceptions.py
+src/mloptm/grads.py
+src/mloptm/methods.py
+src/mloptm/utils.py
+src/mloptm.egg-info/PKG-INFO
+src/mloptm.egg-info/SOURCES.txt
+src/mloptm.egg-info/dependency_links.txt
+src/mloptm.egg-info/requires.txt
+src/mloptm.egg-info/top_level.txt
