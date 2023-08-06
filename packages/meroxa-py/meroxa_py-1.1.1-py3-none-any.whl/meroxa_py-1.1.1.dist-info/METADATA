@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: meroxa-py
+Version: 1.1.1
+Summary: Meroxa Platform API Python client
+Home-page: https://meroxa.io/
+Author: Eric Cheatham
+Author-email: eric@meroxa.io
+License: MIT
+Project-URL: Source Code, https://github.com/meroxa/meroxa-py/
+Project-URL: Issue Tracker, https://github.com/meroxa/meroxa-py/issues
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: aiohttp
+
+
+# Meroxa-py
+
+## Installing
+
+Install and update using [pip](https://pip.pypa.io/en/stable/getting-started/):
+
+```
+    $ pip install -U meroxa-py
+```
+
+
+## A Simple Example
+```python
+import asyncio
+
+from meroxa import Meroxa
+from pprint import pprint
+
+auth="auth.token",
+
+async def main():
+    async with Meroxa(auth=auth) as m:
+        resp = await m.users.me()
+        pprint(resp)
+
+asyncio.run(main())
+```
+
+To obtain a Meroxa Auth Token please see: [How to Obtain a Meroxa Access Token](https://docs.meroxa.com/guides/how-to-obtain-meroxa-access-token/)
