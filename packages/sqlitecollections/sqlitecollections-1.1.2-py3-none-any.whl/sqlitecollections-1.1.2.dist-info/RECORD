@@ -1,0 +1,13 @@
+sqlitecollections/__init__.py,sha256=jkzTSuYhfNzFPJOQoMtR2eDt0YVKmRPqid2_fU_RM18,503
+sqlitecollections/base.py,sha256=KnW0dF3hLq1AJcKz_VK_cZ8v87KyjPDEGc4PzZBDUAo,13973
+sqlitecollections/dict.py,sha256=t3nTUpqJBphQ9WIgw9AH78x00-gL4TIlK-RzPWS9bNc,27749
+sqlitecollections/factory.py,sha256=8zId4_tnVwmOq5LWehZ7fmmXZDENrvhAIddxRgRoRao,6446
+sqlitecollections/list.py,sha256=ccCRIdf_qpTmIKOMbhW75iA3o91DDSj90YP_2OXiBsA,23032
+sqlitecollections/logger.py,sha256=sHQah3T8NojGVlPACaeQNUnA3fDmBptIp0aFr7cQ2E4,64
+sqlitecollections/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlitecollections/set.py,sha256=AKWGzzcgR1-F6qDWuM1v5cZVlSlkGxdI9ycnMuKNxqw,15940
+sqlitecollections-1.1.2.dist-info/LICENSE,sha256=puaDsciJGEL3lu-BcCXzEUSwoQX7OLRupNyZJYqMgp4,1073
+sqlitecollections-1.1.2.dist-info/METADATA,sha256=5OdLBg75uhoV-uVFaU1bPIjEsZXQqYP8F6XNd0T-TVE,3555
+sqlitecollections-1.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlitecollections-1.1.2.dist-info/top_level.txt,sha256=PSwewCL6m6fVJ6QHOfoVTB8zmJJgdGgp-JtvLRnOVsw,18
+sqlitecollections-1.1.2.dist-info/RECORD,,
