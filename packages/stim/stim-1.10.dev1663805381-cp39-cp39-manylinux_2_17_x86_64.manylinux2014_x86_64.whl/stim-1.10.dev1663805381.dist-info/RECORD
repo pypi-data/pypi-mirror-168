@@ -1,0 +1,13 @@
+stim/_stim_avx2.cpython-39-x86_64-linux-gnu.so,sha256=8pITgOyUNFP9hYHyg1dJ85kUXoemZ1FjoMIiAlIAWoQ,3589176
+stim/_stim_sse2.cpython-39-x86_64-linux-gnu.so,sha256=lf5w7RDqnhsqyYrrXU6DNf7VyoBcnprWGfyUkgFl0bY,3548136
+stim/__init__.pyi,sha256=dz1o_bpCJKxq3ccUacXqCd4guzFuHM1TV87dhj3mXTA,266976
+stim/_detect_machine_architecture.cpython-39-x86_64-linux-gnu.so,sha256=8IcHR-OyrvhXJhwHAvQ9hNPoBsv-SwlReXzt83aivYY,227688
+stim/_main_argv.py,sha256=8gHM50pjV8l_X1okiK0V7GCxy_UHPhWUbFc_d7_5wPQ,134
+stim/_stim_polyfill.cpython-39-x86_64-linux-gnu.so,sha256=lSQvSUNBY59fchRUm325d5xiq7OAHfacHpu3RAPOyiI,3548160
+stim/__init__.py,sha256=mwMNz7q11YFAe66oAdObDnbkhM7r0PbzdDSd8ZTKx98,2357
+stim-1.10.dev1663805381.dist-info/entry_points.txt,sha256=nKrnVit2TO7zlOC9PzFDbziXiGroRejQTIeqeJ2VS6Q,51
+stim-1.10.dev1663805381.dist-info/RECORD,,
+stim-1.10.dev1663805381.dist-info/WHEEL,sha256=FNUt4eBsrBVn_Yc5KG3aXtKE40X3uNZrbGLNCbVxyFw,148
+stim-1.10.dev1663805381.dist-info/top_level.txt,sha256=_h6lQZBgzVLumwrXyf13DY71YT6dUkd4SY-ZRjcljFQ,5
+stim-1.10.dev1663805381.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+stim-1.10.dev1663805381.dist-info/METADATA,sha256=929w2MAUF7REvB995EgIxNwKfmC41nByUhtTF1E3Vjk,4180
