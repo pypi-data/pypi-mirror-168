@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ruamel.auto
+Version: 1.6.4
+Summary: automate testing and pep8 conformance of python code
+Home-page: https://sourceforge.net/p/ruamel-auto/code/ci/default/tree
+Author: Anthon van der Neut
+Author-email: a.van.der.neut@ruamel.eu
+License: MIT license
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: ruamel.yaml
+Requires-Dist: ruamel.std.pathlib
+Requires-Dist: ruamel.showoutput
+
+
+Full description of the package
