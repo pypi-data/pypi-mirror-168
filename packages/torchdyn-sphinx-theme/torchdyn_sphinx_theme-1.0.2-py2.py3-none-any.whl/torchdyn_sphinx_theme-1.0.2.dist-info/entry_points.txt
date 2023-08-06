@@ -1,0 +1,2 @@
+[sphinx.html_themes]
+torchdyn_sphinx_theme = torchdyn_sphinx_theme
