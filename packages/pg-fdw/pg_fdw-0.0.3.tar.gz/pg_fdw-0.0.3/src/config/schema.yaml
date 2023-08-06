@@ -1,0 +1,67 @@
+# NOTE: Draft version
+# TODO: Decouple default key/attribute values from metadata.
+#
+# Absolutely every key/attribute in the config file is an instance of the "entry" structure
+# It always has 3 implicit system attributes: _required/_default/_type with following default values:
+# _required: true
+# _default: NULL
+# _type: string
+#
+# For example, just presence of some "key:" entry in the file means that this "key" is mandatory (_required = true)
+# and has _type = "string" datatype and _default = "NULL" as a value
+#
+# Mentioned _required/_default/_type attributes are reserved.
+# entry:
+#   _required: true
+#   _default: null
+#   _type:
+#     - empty
+#     - boolean
+#     - string
+#     - number
+#     - array
+#     - map
+#
+# It's not advisable to introduce custom keys with leading underscore symbol "_token"
+# If some entry starts with underscore it's considered as variable defining substitution block for future use
+# As result, it is ignored in the parsed output
+# Please see "_fdw_name" entry for details
+
+
+# connection to the postgres HSQL container
+postgres:
+  _type: map
+  hostname: localhost
+  port:
+    _default: 5432
+    _type: number
+  database: postgres
+  user: postgres
+  password: postgres
+
+# FDW extension structure
+# "parent" means name of the parent entry.
+# i.e. by default extension is installed into the same named schema
+_fdw_name: &_fdw_name
+  _type:
+    - empty
+    - boolean
+    - map
+  enabled:
+    _required: false
+    _default: true
+  schema_name:
+    _required: false
+    _default: "parent"
+
+# list of extensions that managed by this config
+fdw_list:
+  _type: map
+  file_fdw: *_fdw_name
+  mongo_fdw: *_fdw_name
+  mysql_fdw: *_fdw_name
+  oracle_fdw: *_fdw_name
+  postgres_fdw: *_fdw_name
+  sqlite_fdw: *_fdw_name
+  tds_fdw: *_fdw_name
+
