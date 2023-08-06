@@ -1,0 +1,10 @@
+LICENSE.text
+MANIFEST.in
+README.rst
+setup.py
+tool.py
+gouqi.egg-info/PKG-INFO
+gouqi.egg-info/SOURCES.txt
+gouqi.egg-info/dependency_links.txt
+gouqi.egg-info/top_level.txt
+gouqiya/gouqione.py
