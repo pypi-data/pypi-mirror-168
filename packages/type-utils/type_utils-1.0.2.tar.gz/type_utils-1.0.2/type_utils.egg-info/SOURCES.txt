@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/conversions.py
+src/require.py
+type_utils.egg-info/PKG-INFO
+type_utils.egg-info/SOURCES.txt
+type_utils.egg-info/dependency_links.txt
+type_utils.egg-info/requires.txt
+type_utils.egg-info/top_level.txt
