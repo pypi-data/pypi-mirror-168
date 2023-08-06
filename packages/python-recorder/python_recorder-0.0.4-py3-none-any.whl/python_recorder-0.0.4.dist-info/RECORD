@@ -1,0 +1,16 @@
+recorder/__init__.py,sha256=qoC31dKvArH22Hpyqaw9BgntgMnoChjVRvd3mvKK8zc,58
+recorder/__main__.py,sha256=cMyZnMGwa0xWddmo_QSYGpjluDb8Y5mFtd7Shq-R3YA,7745
+recorder/config.py,sha256=Tw5GqUK0rHoMTXK_xeibhPqxhOMEfRdbvO9WfCsvVf8,2135
+recorder/device/__init__.py,sha256=xTpaeksuVHgOeVl5PEXLiUovfnNPic1K0-r_LGsj818,422
+recorder/device/device.py,sha256=sBE606Vmmzm6-GADs364gfU4uVwWRQHpqOzsvqd8S8g,2049
+recorder/device/microphone.py,sha256=uQicZmAe8CxMdQwLRlSBNSx7eBATCBVrza30jGCOro4,2921
+recorder/device/realsense.py,sha256=aeHmqssIiepOiAqZNfGyfKMFBpu0_E0fE1-ZRjnIEek,3326
+recorder/io.py,sha256=HehfXFdm7a6jdwdZpguSXe2PvDRHas0pJtYiRV3jo8g,1076
+recorder/listener/__init__.py,sha256=VT024l7xg0fbjWNeOgPqmGBJ2CU84UCssjCDwc5gs_4,267
+recorder/listener/listener.py,sha256=0wPZTYKd6iT625peyVTpT-9K6_2pCfOtGQ3nM9y8Bc8,428
+recorder/listener/localhost.py,sha256=9hVqRXHYOtN0r8VKLYdHrxtpIIO8d4hhtvJ8q7DNpR8,1645
+recorder/recorder.py,sha256=n3d-1PGt84QuOz4AOQZJenohJq8HKn8yTb5ARQFMFZ4,3275
+python_recorder-0.0.4.dist-info/entry_points.txt,sha256=Z_QhAoUEX21nuRSeXub43DyPNbc8dlVoRq0l4GAA03k,51
+python_recorder-0.0.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+python_recorder-0.0.4.dist-info/METADATA,sha256=oGMESXxJW2sAzxhkjNA2ba7tagwHkHMuVbPWKF44iaQ,6093
+python_recorder-0.0.4.dist-info/RECORD,,
