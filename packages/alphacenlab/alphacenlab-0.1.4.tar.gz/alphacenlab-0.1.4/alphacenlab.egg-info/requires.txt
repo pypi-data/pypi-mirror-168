@@ -1,0 +1,6 @@
+numpy
+cv2
+logging
+time
+pyueye
+ctypes
