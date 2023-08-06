@@ -1,0 +1,4 @@
+smbus2>=0.4.1
+
+[dev]
+pytest>=3.7
