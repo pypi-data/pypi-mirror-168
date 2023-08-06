@@ -1,0 +1,4 @@
+lxml
+parsel
+docopt
+aiohttp
