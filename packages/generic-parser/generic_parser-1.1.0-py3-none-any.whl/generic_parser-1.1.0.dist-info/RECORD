@@ -1,0 +1,10 @@
+generic_parser/__init__.py,sha256=GrndEadOA2Lv9inltHUg1KadxB_ax2WJjAFlFS-NSII,446
+generic_parser/dict_parser.py,sha256=hNGhGChoS5EPdmcmOD2uwoEqtcvTVDudzJTwQs5-32k,18467
+generic_parser/entry_datatypes.py,sha256=jl6N8G-5tusaheOnLnBLhxfxYZqcY0EYkmId3rJYnAI,3275
+generic_parser/entrypoint_parser.py,sha256=-2ye3YeYvV3Y7_asJU93FwXDO7TRmiZDVaou08o1cTE,28323
+generic_parser/tools.py,sha256=JN5HGeaiOSXstlRglFCG-nnXq_Bor9TuzXfUZnRadxQ,4830
+generic_parser-1.1.0.dist-info/LICENSE,sha256=rCeG7uSCFXtrbZbuJE3R_Es5BSMOLHfxWdl1EA6uK2I,1062
+generic_parser-1.1.0.dist-info/METADATA,sha256=f3DPwDsf6xUK_mMdPR28SQ9AY-qfjoDSf164FpbaexA,5165
+generic_parser-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+generic_parser-1.1.0.dist-info/top_level.txt,sha256=NoIGHQ6jphA_covvzUtwW7YcRt0ktoH_7kOw1Nzmznk,15
+generic_parser-1.1.0.dist-info/RECORD,,
