@@ -1,0 +1,2 @@
+[console_scripts]
+mobileconfig = mobileconfig.__main__:cli

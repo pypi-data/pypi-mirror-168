@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: mobileconfig
+Version: 1.0.0
+Summary: Parse .mobileconfig files
+Home-page: https://github.com/yotamolenik/mobileconfig
+Author: Yotam
+Author-email: yotamolenik@gmail.com
+License: GNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007
+Project-URL: mobileconfig, https://github.com/yotamolenik/mobileconfig
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: humanfriendly
+Requires-Dist: click
+
+# mobileconfig
+
+`mobileconfig` is a python3 module to parse `.mobileconfig` files for better examination.
+
+Usage:
+
+```
+Usage: python -m mobileconfig [OPTIONS] DIRECTORY COMMAND [ARGS]...
+
+  Parse .mobileconfig files in a given directory
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  consents       Print all user consents
+  extract        Extract .plist into given directory
+  payload-types  Print all PayloadType's (with an optional .csv output)
+```
+
