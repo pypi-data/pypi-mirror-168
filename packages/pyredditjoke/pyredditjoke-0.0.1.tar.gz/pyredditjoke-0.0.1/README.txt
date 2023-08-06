@@ -1,0 +1,1 @@
+This package download jokes from reddit and store them in a MongoDB

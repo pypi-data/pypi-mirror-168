@@ -1,0 +1,16 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+pyredditjoke/__init__.py
+pyredditjoke/download_jokes.py
+pyredditjoke/utils.py
+pyredditjoke.egg-info/PKG-INFO
+pyredditjoke.egg-info/SOURCES.txt
+pyredditjoke.egg-info/dependency_links.txt
+pyredditjoke.egg-info/requires.txt
+pyredditjoke.egg-info/top_level.txt
+pyrejoke.egg-info/SOURCES.txt
+pyrejoke.egg-info/dependency_links.txt
+pyrejoke.egg-info/requires.txt
+pyrejoke.egg-info/top_level.txt

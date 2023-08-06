@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: pyredditjoke
+Version: 0.0.1
+Summary: Download reddit jokes
+Home-page: UNKNOWN
+Author: Kevin Wirtz
+Author-email: kevin.wirtz@unistra.fr
+License: MIT
+Description: This package download jokes from reddit and store them in a MongoDB
+        
+        Change Log
+        ==========
+        
+        0.0.1 (21/09/2022)
+        -------------------
+        - First Release
+Keywords: jokes
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
