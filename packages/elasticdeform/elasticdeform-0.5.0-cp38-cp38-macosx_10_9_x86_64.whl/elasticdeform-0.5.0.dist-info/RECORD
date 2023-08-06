@@ -1,0 +1,10 @@
+elasticdeform/__init__.py,sha256=zgz0CT5K208v_FoSuMirfLSMUFG4akp4pfWlsTkhiRo,79
+elasticdeform/_deform_grid.cpython-38-darwin.so,sha256=sTgHOd6QAip100IhmkJCOpBwKj_2IL2v1IZ1JAeV78A,73352
+elasticdeform/deform_grid.py,sha256=LXKntsIcAtWCCOTFcTzZH0h2r5tdiUxVvbx44iZE5Es,17986
+elasticdeform/tf.py,sha256=oqAL248OQPbJ7OveTzj8s7XYLlNbY1F7VtAF2pPhZj4,2707
+elasticdeform/torch.py,sha256=dyJJ5hQY71WLGjsNz8IeOJ5JuZyMzz6Q9_t9e9_pWGc,2178
+elasticdeform-0.5.0.dist-info/LICENSE.txt,sha256=7H_YOPM9NItKUzAOjYBnzK5RAotUfqQ_ThdrXbiJH3M,1637
+elasticdeform-0.5.0.dist-info/METADATA,sha256=eZy982kQWVqy6q-huxzyU9wxqLMALxtRkscAKHTkyr0,9567
+elasticdeform-0.5.0.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+elasticdeform-0.5.0.dist-info/top_level.txt,sha256=ZM7bPik9OVDSTGfhzPEg-PncgbSY4xea5S79ZyexpgM,14
+elasticdeform-0.5.0.dist-info/RECORD,,
