@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+subseasonal_data/__init__.py
+subseasonal_data/data_loaders.py
+subseasonal_data/downloader.py
+subseasonal_data/utils.py
+subseasonal_data.egg-info/PKG-INFO
+subseasonal_data.egg-info/SOURCES.txt
+subseasonal_data.egg-info/dependency_links.txt
+subseasonal_data.egg-info/requires.txt
+subseasonal_data.egg-info/top_level.txt
