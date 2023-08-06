@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pycollimator
+Version: 1.3.299.post19
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: control
+Requires-Dist: simpleeval
+
+Python package for Collimator.ai
