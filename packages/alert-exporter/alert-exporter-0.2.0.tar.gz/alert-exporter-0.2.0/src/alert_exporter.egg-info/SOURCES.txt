@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/alert_exporter.egg-info/PKG-INFO
+src/alert_exporter.egg-info/SOURCES.txt
+src/alert_exporter.egg-info/dependency_links.txt
+src/alert_exporter.egg-info/entry_points.txt
+src/alert_exporter.egg-info/requires.txt
+src/alert_exporter.egg-info/top_level.txt
