@@ -1,0 +1,159 @@
+syntax = "proto3";
+
+import "condition.proto";
+
+option java_package = "io.calixa.domain.entitypane";
+option java_multiple_files = true;
+option optimize_for = SPEED;
+
+package calixa.domain.entitypane;
+
+message EntityPaneSetup {
+  EntityPaneLayout entity_pane_account = 1;
+  EntityPaneLayout entity_pane_account_user = 2;
+  EntityPaneLayout entity_pane_company = 3;
+}
+
+message EntityPaneLayout {
+  Heading heading = 1;
+  repeated EntityPaneLayoutItem entity_pane_items = 2;
+}
+
+message Heading {
+}
+
+enum SideDataType {
+  SIDE_DATA_TYPE_UNSPECIFIED = 0;
+  SIDE_DATA_TYPE_PQL_SCORE = 1;
+  SIDE_DATA_TYPE_CUSTOMER_FIT_SCORE = 2;
+  SIDE_DATA_TYPE_PRODUCT_INTENT_SCORE = 3;
+  SIDE_DATA_TYPE_JOURNEY_MILESTONE = 4;
+}
+
+message EntityPaneLayoutItem {
+  EntityPaneItemType type = 1;
+  oneof item {
+    PropertyGroup property_group = 2;
+    MetricGroup metric_group = 3;
+    TabGroup tab_group = 4;
+    ScoreGroup score_group = 5;
+  }
+}
+
+enum EntityPaneItemType {
+  ENTITY_PANE_ITEM_TYPE_UNSPECIFIED = 0;
+  ENTITY_PANE_ITEM_TYPE_METRICS = 1;
+  ENTITY_PANE_ITEM_TYPE_PROPERTIES = 2;
+  ENTITY_PANE_ITEM_TYPE_TABS = 3;
+  ENTITY_PANE_ITEM_TYPE_SCORES = 4;
+}
+
+message PropertyGroup {
+  repeated PropertyItem items = 1;
+  repeated PropertyAction actions = 2;
+}
+
+message PropertyItem {
+  string id = 1;
+}
+
+message PropertyAction {
+  string id = 2;
+}
+
+message MetricGroup {
+  MetricGroupingType grouping_type = 1;
+  string time_range = 2;
+  repeated MetricItem metric_items = 3;
+}
+
+enum MetricGroupingType {
+  METRIC_GROUPING_TYPE_UNSPECIFIED = 0;
+  METRIC_GROUPING_TYPE_DAY = 1;
+  METRIC_GROUPING_TYPE_WEEK = 2;
+  METRIC_GROUPING_TYPE_MONTH = 3;
+}
+
+message MetricItem {
+  string id = 1;
+  MetricItemStyle style = 2;
+}
+
+enum MetricItemStyle {
+  METRIC_ITEM_STYLE_UNSPECIFIED = 0;
+  METRIC_ITEM_STYLE_BAR = 1;
+  METRIC_ITEM_STYLE_LINE = 2;
+}
+
+message TabGroup {
+  repeated TabItem tab_items = 1;
+}
+
+message TabItem {
+  TabItemType type = 1;
+  oneof items {
+    UserGroup user_group = 2;
+    Pql pql = 3;
+    NoteGroup note_group = 4;
+    EventGroup event_group = 5;
+    ConversationGroup conversation_group = 6;
+    AccountGroup account_group = 7;
+  }
+}
+
+enum TabItemType {
+  TAB_ITEM_TYPE_UNSPECIFIED = 0;
+  TAB_ITEM_TYPE_USER = 1;
+  TAB_ITEM_TYPE_EVENT = 2;
+  TAB_ITEM_TYPE_CONVERSATION = 3;
+  TAB_ITEM_TYPE_PQL = 4;
+  TAB_ITEM_TYPE_NOTE = 5;
+  TAB_ITEM_TYPE_ACCOUNT = 6;
+}
+
+message UserGroup {
+  repeated Column columns = 1;
+  calixa.domain.condition.ConditionGroup condition_group = 2;
+  repeated RankMetric rank_metrics = 3;
+  string sort_field = 4;
+  string sort_order = 5;
+}
+
+message AccountGroup {
+  repeated Column columns = 1;
+  calixa.domain.condition.ConditionGroup condition_group = 2;
+  repeated RankMetric rank_metrics = 3;
+  string sort_field = 4;
+  string sort_order = 5;
+}
+
+message Column {
+  string id = 1;
+  int32 width = 2;
+}
+
+message RankMetric {
+  string id = 1;
+  string time_range = 2;
+}
+
+message ScoreGroup {
+  repeated ScoreItem score_items = 1;
+}
+
+message ScoreItem {
+  SideDataType side_data_type = 1;
+}
+
+/*Following do not have any configurations for now*/
+message Pql {
+}
+
+message NoteGroup {
+}
+
+message EventGroup {
+}
+
+message ConversationGroup {
+}
