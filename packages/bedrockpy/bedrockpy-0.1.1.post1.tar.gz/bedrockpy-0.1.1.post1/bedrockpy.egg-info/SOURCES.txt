@@ -1,0 +1,17 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+bedrock/__init__.py
+bedrock/_cli.py
+bedrock/command_parsers.py
+bedrock/commands.py
+bedrock/context.py
+bedrock/debug_interface.py
+bedrock/server.py
+bedrock/ui.py
+bedrock/utils.py
+bedrockpy.egg-info/PKG-INFO
+bedrockpy.egg-info/SOURCES.txt
+bedrockpy.egg-info/dependency_links.txt
+bedrockpy.egg-info/requires.txt
+bedrockpy.egg-info/top_level.txt
