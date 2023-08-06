@@ -1,0 +1,6 @@
+version-parser
+python-dotenv
+docker
+requests
+paramiko
+stem
