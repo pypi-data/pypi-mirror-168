@@ -1,0 +1,55 @@
+config:
+
+    # Needs black and isort
+    venvPkgDeps:
+        - black
+        - isort
+
+    # Max line length
+    pythonLineLength: 160
+
+    # Stamp file for black execution
+    pythonBlackStamp: ${outputDir}/.black
+
+    # Stamp file for isort execution
+    pythonIsortStamp: ${outputDir}/.isort
+
+    # Add setup file for isort config
+    pythonSetupCfgFiles:
+        - ${BASEDIR}/templates/isort.cfg
+
+tasks:
+    # Code format with black
+    py.format:
+        description: Format python code
+        emoji: ":snake:.:lipstick:"
+        deps:
+            - out
+        appendToDeps: setup
+        if: ${pythonSrcFiles}   # Only if python source files are found
+        output:
+            - ${pythonBlackStamp}
+        input:
+            - ${pythonSrcFiles}
+        builder: nmk_python.format.BlackBuilder
+        params:
+            src_folders: ${pythonSrcFolders}
+            line_length: ${pythonLineLength}
+
+    # Sort imports
+    py.sort:
+        description: Sort python imports
+        emoji: ":snake:.:card_file_box: "
+        deps:
+            - py.setup
+            - py.format
+        appendToDeps: setup
+        if: ${pythonSrcFiles}   # Only if python source files are found
+        output:
+            - ${pythonIsortStamp}
+        input:
+            - ${pythonSrcFiles}
+            - ${pythonSetupCfg}
+        builder: nmk_python.format.IsortBuilder
+        params:
+            src_folders: ${pythonSrcFolders}

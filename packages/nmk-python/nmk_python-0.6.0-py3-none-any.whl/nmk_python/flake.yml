@@ -1,0 +1,45 @@
+config:
+
+    # Needs flake8 and plugins
+    venvPkgDeps:
+        - flake8
+        - pep8-naming
+        - flake8-builtins
+        - flake8-blind-except
+        - flake8-comprehensions
+        - flake8-string-format
+        - flake8-pep3101
+        - flake8-bugbear
+
+    # Add setup file for isort config
+    pythonSetupCfgFiles:
+        - ${BASEDIR}/templates/flake.cfg
+
+    # Stamp file for flake8 execution
+    pythonFlakeStamp: ${outputDir}/.flake
+
+    # Ignored rules
+    pythonIgnoredRules:
+        - E501
+        - B902
+        - W503
+
+tasks:
+
+    # Python source code analysis with flake8
+    py.analyze:
+        description: Analyze python code
+        emoji: ":snake:.:eye: "
+        deps:
+            - py.setup
+            - py.sort
+        appendToDeps: setup
+        if: ${pythonSrcFiles}   # Only if python source files are found
+        output:
+            - ${pythonFlakeStamp}
+        input:
+            - ${pythonSetupCfg}
+            - ${pythonSrcFiles}
+        builder: nmk_python.flake.FlakeBuilder
+        params:
+            src_folders: ${pythonSrcFolders}
