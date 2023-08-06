@@ -1,0 +1,14 @@
+cffi
+pcpp
+pycparser
+pyelftools
+pygdbmi
+pyserial
+setuptools
+
+[dev]
+flake8
+black
+
+[test]
+hypothesis
