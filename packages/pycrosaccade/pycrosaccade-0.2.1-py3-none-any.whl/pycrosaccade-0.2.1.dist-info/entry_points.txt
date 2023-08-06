@@ -1,0 +1,3 @@
+[console_scripts]
+pycrosaccade=pycrosaccade.__init__
+
