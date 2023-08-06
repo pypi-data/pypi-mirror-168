@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: saprpa
+Version: 0.0.1
+Summary: Automação de processos SAP
+Home-page: https://github.com/adrianosturaro/saprpa
+Author: Adriano Fernando Sturaro
+Author-email: adrianosturaro@yahoo.com.br
+License: MIT
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pywin32
+Requires-Dist: psutil
+Provides-Extra: dev
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: flake8 (==4.0.1) ; extra == 'dev'
+Requires-Dist: mypy (==0.960) ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+
+# saprpa
+
+<p style="text-align: justify">Este pacote  é usado para criação da interface usada na automação de processos do SAP.</p>
+
+
+## Instalação
+
+---
+
+Execute o seguinte para instalar:
+
+```python
+pip install saprpa
+```
+
+## Uso
+
+---
+```python
+from saprpa import SessaoSap
+
+with SessaoSap(
+    ambiente="PRD - ECC BR Produção",
+    path=r"C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe",
+    mult_thread=True,
+) as sessao:
+    sessao.logon(mandante=400, chave=os.getlogin(), senha=os.environ.get("zcn3"))
+    sessao.cria_nova_sessao_sap(1)
+    sessao.sessao[0].findById("wnd[0]/tbar[0]/okcd").text = "YSRLDESCARGA"
+    sessao.sessao[1].findById("wnd[0]/tbar[0]/okcd").text = "YSRLDESCARGA"
+```
+## Desenvolvimento
+---
+
+<p style="text-align: justify">Para instalar saprpa junto com as ferramentas para desenvolver e realizar testes,
+use o seguinte comando:</p>
+
+```python
+pip install -e .[dev]
+```
