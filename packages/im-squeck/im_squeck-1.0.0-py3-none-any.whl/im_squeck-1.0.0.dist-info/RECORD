@@ -1,0 +1,15 @@
+squeck/VERSION,sha256=WYVJhIUxBN9cNT4vaBoV_HkkdC-aLkaMKa8kjc5FzgM,6
+squeck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+squeck/__main__.py,sha256=A64aNQba3lSYHgqc2WyMUcBIPMkcECA93SEm9LoqT5E,391
+squeck/access_token.py,sha256=0XSVXgcEJTXE5MCL6qbzJBHUntgC9WaQwbWuGbBubyQ,1641
+squeck/common.py,sha256=4hu1BKWP_iqRPvITW3dSPK9uTYOKsleS5RlH6RUN_wY,680
+squeck/environment.py,sha256=FgrT5gfaA0QGDxW6KviVNdSauW9fouWW6OHmNmkv_lg,8829
+squeck/squeck.py,sha256=uOi0R10S5RgCTsHNu60XWDUzwRzGAKvUvCRSE-FYIg4,2824
+squeck/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+squeck/widgets/env.py,sha256=8IF1yH5gguSYKHYXdxAejkGmmw8f3IFG-yf1bX2CVOE,5837
+im_squeck-1.0.0.dist-info/LICENSE,sha256=k9N8uza38tvZ1Ej4Gz7opBha4jQTd3vPohv9f8Txqu0,1080
+im_squeck-1.0.0.dist-info/METADATA,sha256=TZWpZIgpoGtK-TLJxFQCydpPFDFQKX5ywuT97Vh2a0Y,5419
+im_squeck-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+im_squeck-1.0.0.dist-info/entry_points.txt,sha256=1myNP94NQJM4ad2R_rglQLn_kYf86kNPJKb9M7sHSKI,46
+im_squeck-1.0.0.dist-info/top_level.txt,sha256=OUC2E0BqMplT8UIa09GW8BjjvBenXa7t8BVc6FeOOfs,7
+im_squeck-1.0.0.dist-info/RECORD,,
