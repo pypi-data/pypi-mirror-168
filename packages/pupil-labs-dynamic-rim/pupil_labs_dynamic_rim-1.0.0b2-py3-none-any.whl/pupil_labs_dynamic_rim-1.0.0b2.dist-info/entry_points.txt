@@ -1,0 +1,2 @@
+[console_scripts]
+pl-dynamic-rim = pupil_labs.dynamic_content_on_rim.dynamic_rim:main
