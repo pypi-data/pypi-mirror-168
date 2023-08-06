@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: scs-core
+Version: 1.4.8
+Summary: The root of all South Coast Science environmental monitoring applications.
+Home-page: https://github.com/south-coast-science/scs_core
+Author: South Coast Science
+Author-email: contact@southcoastscience.com
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# scs_core
+The root of all South Coast Science environmental monitoring applications.
+
+_Contains library classes only._
+
+
+**Required libraries:** 
+
+* Third party: AWSIoTPythonSDK, pytz, tzlocal
+
+
+**Branches:**
+
+The stable branch of this repository is master. For deployment purposes, use:
+
+    git clone --branch=master https://github.com/south-coast-science/scs_core.git
