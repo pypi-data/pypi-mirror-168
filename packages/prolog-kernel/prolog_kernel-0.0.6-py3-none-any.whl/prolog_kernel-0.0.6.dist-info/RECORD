@@ -1,0 +1,17 @@
+prolog_kernel/__init__.py,sha256=LN70_0nWf5FH57RpxyNfzAfsHC1V-v32k8x-EHDbt3U,117
+prolog_kernel/__main__.py,sha256=Dhn1mEWFEkHZrP8t4H8sT4DdUcxQr5oh0lFPL8-wWsw,146
+prolog_kernel/install.py,sha256=allxJqjxZvyaOfQcPtwvLArxTb4Ffd6JTj1yogFMNIY,1454
+prolog_kernel/kernel.py,sha256=TJbS8je-Jzzqg2lpAggYHtQCNF1oDNxhbm4eyRQH8C4,19239
+prolog_kernel/prolog_kernel_base_implementation.py,sha256=z2G2kT-Kdfa4OKgCM9p6Mn2PgrgIbcapHu-rQ2sb89k,30473
+prolog_kernel/prolog_kernel_config.py,sha256=LfsDZWMfi4zqaFGLuzqz-ncCv8CDRvqzHHMytzeRTGM,2407
+prolog_kernel/sicstus_kernel_implementation.py,sha256=TSuZWBrminhuEZ5AJc10541oiRg1m8gsSp8knrvUZPQ,6876
+prolog_kernel/swi_kernel_implementation.py,sha256=ft0t7lHRmDYdBgV0yjk2FjIcum_XeB_JXx-zkm__jVI,2466
+prolog_kernel/kernelspec/kernel.js,sha256=8_0rLAtvPqlBil3zd-usHMwPxFXhLcEAGAT7lmYQBNo,3549
+prolog_kernel/kernelspec/kernel.json,sha256=JW9iCwe69TxYfaY-f4l3hnHI8nZ5Ns4NkizXgdshMI8,162
+prolog_kernel/prolog_server/jupyter.pl,sha256=WrMyLnnuutPE8nYyr9nzLJNb4Cr4b2o84prNkV0s5eM,18952
+prolog_kernel/prolog_server/test.pl,sha256=216LYGMQBhgDpDnbm3vw3iV171N5JxFBa0um0rprEAU,350
+prolog_kernel-0.0.6.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+prolog_kernel-0.0.6.dist-info/METADATA,sha256=OahR6porQV2jFYj-yhPeFnzDaLukEt2jr3kIsSH0-GQ,14233
+prolog_kernel-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prolog_kernel-0.0.6.dist-info/top_level.txt,sha256=NSMOTuALRAJU4lLDCHJgNOSMXfjWg3-AakVLEvMv8MY,14
+prolog_kernel-0.0.6.dist-info/RECORD,,
