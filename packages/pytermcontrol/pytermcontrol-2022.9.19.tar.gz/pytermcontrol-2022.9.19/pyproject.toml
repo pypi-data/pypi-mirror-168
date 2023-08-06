@@ -1,0 +1,41 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "pytermcontrol"
+version = "2022.09.19"
+description = "Python Terminal Control"
+
+authors = ["Gunther Klessinger <g_kle_ss_ing_er@gmx.de>"]
+license = "BSD"
+readme = "README.md"
+repository = "https://github.com/AXGKl/pytermcontrol"
+homepage = "https://github.com/AXGKl/pytermcontrol"
+keywords = []
+
+packages = [
+    { include = "pytermcontrol",         from = "src" },
+]
+
+
+[project.urls]
+packagehome = "https://pypi.com/"
+[tool.pyright]
+# thats where my dev version for dt is - should not interfere w/o that:
+reportSelfClsParameterName = false
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+blue = "*"
+
+[tool.poetry.scripts]
+with_termcontrol = "pytermcontrol.termcontrol:main"
+
+[tool.blue]
+line-length = 90
+exclude = "tests/fixtures"
+
+
