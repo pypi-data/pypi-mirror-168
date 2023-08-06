@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: iotedgedev
+Version: 3.3.5
+Summary: The Azure IoT Edge Dev Tool greatly simplifies the IoT Edge development process by automating many routine manual tasks, such as building, deploying, pushing modules and configuring the IoT Edge Runtime.
+Home-page: https://github.com/azure/iotedgedev
+Author: Microsoft Corporation
+Author-email: vsciet@microsoft.com
+License: MIT license
+Description: See https://github.com/azure/iotedgedev for usage instructions.
+Keywords: azure iot edge dev tool
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <3.10

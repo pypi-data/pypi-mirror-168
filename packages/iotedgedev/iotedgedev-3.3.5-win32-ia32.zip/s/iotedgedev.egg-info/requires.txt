@@ -1,0 +1,18 @@
+click>=6.0
+bcrypt<=3.1.7
+docker>=3.7.0
+python-dotenv
+requests<=2.25.1,>=2.20.0
+fstrings
+azure-cli-core<2.35.0,>=2.34.1
+iotedgehubdev==0.14.14
+applicationinsights==0.11.9
+commentjson==0.9.0
+pyyaml>=5.4
+more-itertools<8.1.0
+
+[:sys_platform == "win32" and python_version < "3.6"]
+pypiwin32==219
+
+[:sys_platform == "win32" and python_version >= "3.6"]
+pypiwin32==223

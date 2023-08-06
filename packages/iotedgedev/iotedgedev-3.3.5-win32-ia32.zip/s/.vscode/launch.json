@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: debug test file",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "-v",
+                "${relativeFile}"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python Module",
+            "type": "python",
+            "request": "launch",
+            "module": "iotedgedev.cli",
+            "args": [
+                "init"
+            ],
+            "cwd": "${workspaceFolder}/tests/test_iotedgedev_solution"
+        }
+    ]
+}
