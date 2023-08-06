@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: cinematicasim
+Version: 1.0.0
+Summary: Ferramenta simples que simula formulas de fisica. Ainda em desenvolvimento
+Home-page: https://github.com/arthursenais/cinematicasim
+Author: Arthur Sá
+Author-email: arthur_sa@estudante.seisenai.org.br
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Physics

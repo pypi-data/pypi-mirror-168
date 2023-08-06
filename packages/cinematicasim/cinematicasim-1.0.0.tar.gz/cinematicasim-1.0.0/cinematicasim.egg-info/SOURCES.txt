@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+cinematicasim/cinematicasim.py
+cinematicasim.egg-info/PKG-INFO
+cinematicasim.egg-info/SOURCES.txt
+cinematicasim.egg-info/dependency_links.txt
+cinematicasim.egg-info/top_level.txt
