@@ -1,0 +1,3 @@
+[console_scripts]
+qrcodes=main:main
+

@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: schedulesy-qrcode
+Version: 1.0.1
+Summary: Schedulesy - Generates QRCodes for public schedules of classrooms
+Author: DIP - Université de Strasbourg
+Author-email: dnum-dip@unistra.fr
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: boto3 (>=1.24.70,<2.0.0)
+Requires-Dist: qrcode[pil] (>=7.3.1,<8.0.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Générateur de QRCodes pour Schedulesy
+
+## Installation des dépendances
+
+### `Poetry`
+
+L'outil utilise `poetry` comme gestionnaire de dépendances. Voir la [procédure d'installation](https://python-poetry.org/docs/master/#installation) (privilégier une version de `python` >= 3.9 pour l'installation de `poetry`).
+
+``` 
+poetry install
+```
+
+### `Pip`
+
+Une alternative est d'utiliser `pip` pour les dépendances. Des fichiers sont fournis pour les différents environnements.
+
+Pour installer et exécuter :
+
+```
+pip install -r requirements/common.txt
+```
+
+Pour installer aussi les dépendances de développement : 
+
+```
+pip install -r requirements/dev.txt
+```
+
+## Usage
+
+Vous devez créer un fichier de configuration en vous inspirant du fichier `config.ini.sample`.
+
+``` 
+python main.py config.ini
+🔗 Connecting to ADE
+📖 Setting project
+💾 Fetching data
+🪣 Bucket example already exists
+⬇️ Downloading flat.json
+⬆️ Uploading file tree.json
+⬆️ Uploading file flat.json
+⬆️ Uploading file index.html
+```
