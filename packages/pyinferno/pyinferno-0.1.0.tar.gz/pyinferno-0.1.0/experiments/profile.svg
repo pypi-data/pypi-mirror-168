@@ -1,0 +1,415 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" width="1200" height="198" onload="init(evt)" viewBox="0 0 1200 198" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fg="http://github.com/jonhoo/inferno"><!--Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples.--><!--NOTES: --><defs><linearGradient id="background" y1="0" y2="1" x1="0" x2="0"><stop stop-color="#eeeeee" offset="5%"/><stop stop-color="#eeeeb0" offset="95%"/></linearGradient></defs><style type="text/css">
+text { font-family:"Verdana"; font-size:12px; fill:rgb(0,0,0); }
+#title { text-anchor:middle; font-size:17px; }
+#matched { text-anchor:end; }
+#search { text-anchor:end; opacity:0.1; cursor:pointer; }
+#search:hover, #search.show { opacity:1; }
+#subtitle { text-anchor:middle; font-color:rgb(160,160,160); }
+#unzoom { cursor:pointer; }
+#frames > *:hover { stroke:black; stroke-width:0.5; cursor:pointer; }
+.hide { display:none; }
+.parent { opacity:0.5; }
+</style><script type="text/ecmascript"><![CDATA[
+        var nametype = 'Function:';
+        var fontsize = 12;
+        var fontwidth = 0.59;
+        var xpad = 10;
+        var inverted = false;
+        var searchcolor = 'rgb(230,0,230)';
+        var fluiddrawing = true;
+        var truncate_text_right = false;
+    ]]><![CDATA["use strict";
+var details, searchbtn, unzoombtn, matchedtxt, svg, searching, frames;
+function init(evt) {
+    details = document.getElementById("details").firstChild;
+    searchbtn = document.getElementById("search");
+    unzoombtn = document.getElementById("unzoom");
+    matchedtxt = document.getElementById("matched");
+    svg = document.getElementsByTagName("svg")[0];
+    frames = document.getElementById("frames");
+    total_samples = parseInt(frames.attributes.total_samples.value);
+    searching = 0;
+
+    // Use GET parameters to restore a flamegraph's state.
+    var restore_state = function() {
+        var params = get_params();
+        if (params.x && params.y)
+            zoom(find_group(document.querySelector('[*|x="' + params.x + '"][y="' + params.y + '"]')));
+        if (params.s)
+            search(params.s);
+    };
+
+    if (fluiddrawing) {
+        // Make width dynamic so the SVG fits its parent's width.
+        svg.removeAttribute("width");
+        // Edge requires us to have a viewBox that gets updated with size changes.
+        var isEdge = /Edge\/\d./i.test(navigator.userAgent);
+        var update_for_width_change = function() {
+            if (isEdge) {
+                svg.attributes.viewBox.value = "0 0 " + svg.width.baseVal.value + " " + svg.height.baseVal.value;
+            }
+
+            // Keep consistent padding on left and right of frames container.
+            frames.attributes.width.value = svg.width.baseVal.value - xpad * 2;
+
+            // Text truncation needs to be adjusted for the current width.
+            var el = frames.children;
+            for(var i = 0; i < el.length; i++) {
+                update_text(el[i]);
+            }
+
+            // Keep search elements at a fixed distance from right edge.
+            var svgWidth = svg.width.baseVal.value;
+            searchbtn.attributes.x.value = svgWidth - xpad;
+            matchedtxt.attributes.x.value = svgWidth - xpad;
+        };
+        window.addEventListener('resize', function() {
+            update_for_width_change();
+        });
+        // This needs to be done asynchronously for Safari to work.
+        setTimeout(function() {
+            unzoom();
+            update_for_width_change();
+            restore_state();
+            if (!isEdge) {
+                svg.removeAttribute("viewBox");
+            }
+        }, 0);
+    } else {
+        restore_state();
+    }
+}
+// event listeners
+window.addEventListener("click", function(e) {
+    var target = find_group(e.target);
+    if (target) {
+        if (target.nodeName == "a") {
+            if (e.ctrlKey === false) return;
+            e.preventDefault();
+        }
+        if (target.classList.contains("parent")) unzoom();
+        zoom(target);
+
+        // set parameters for zoom state
+        var el = target.querySelector("rect");
+        if (el && el.attributes && el.attributes.y && el.attributes["fg:x"]) {
+            var params = get_params()
+            params.x = el.attributes["fg:x"].value;
+            params.y = el.attributes.y.value;
+            history.replaceState(null, null, parse_params(params));
+        }
+    }
+    else if (e.target.id == "unzoom") {
+        unzoom();
+
+        // remove zoom state
+        var params = get_params();
+        if (params.x) delete params.x;
+        if (params.y) delete params.y;
+        history.replaceState(null, null, parse_params(params));
+    }
+    else if (e.target.id == "search") search_prompt();
+}, false)
+// mouse-over for info
+// show
+window.addEventListener("mouseover", function(e) {
+    var target = find_group(e.target);
+    if (target) details.nodeValue = nametype + " " + g_to_text(target);
+}, false)
+// clear
+window.addEventListener("mouseout", function(e) {
+    var target = find_group(e.target);
+    if (target) details.nodeValue = ' ';
+}, false)
+// ctrl-F for search
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
+        e.preventDefault();
+        search_prompt();
+    }
+}, false)
+// functions
+function get_params() {
+    var params = {};
+    var paramsarr = window.location.search.substr(1).split('&');
+    for (var i = 0; i < paramsarr.length; ++i) {
+        var tmp = paramsarr[i].split("=");
+        if (!tmp[0] || !tmp[1]) continue;
+        params[tmp[0]]  = decodeURIComponent(tmp[1]);
+    }
+    return params;
+}
+function parse_params(params) {
+    var uri = "?";
+    for (var key in params) {
+        uri += key + '=' + encodeURIComponent(params[key]) + '&';
+    }
+    if (uri.slice(-1) == "&")
+        uri = uri.substring(0, uri.length - 1);
+    if (uri == '?')
+        uri = window.location.href.split('?')[0];
+    return uri;
+}
+function find_child(node, selector) {
+    var children = node.querySelectorAll(selector);
+    if (children.length) return children[0];
+    return;
+}
+function find_group(node) {
+    var parent = node.parentElement;
+    if (!parent) return;
+    if (parent.id == "frames") return node;
+    return find_group(parent);
+}
+function orig_save(e, attr, val) {
+    if (e.attributes["fg:orig_" + attr] != undefined) return;
+    if (e.attributes[attr] == undefined) return;
+    if (val == undefined) val = e.attributes[attr].value;
+    e.setAttribute("fg:orig_" + attr, val);
+}
+function orig_load(e, attr) {
+    if (e.attributes["fg:orig_"+attr] == undefined) return;
+    e.attributes[attr].value = e.attributes["fg:orig_" + attr].value;
+    e.removeAttribute("fg:orig_" + attr);
+}
+function g_to_text(e) {
+    var text = find_child(e, "title").firstChild.nodeValue;
+    return (text)
+}
+function g_to_func(e) {
+    var func = g_to_text(e);
+    // if there's any manipulation we want to do to the function
+    // name before it's searched, do it here before returning.
+    return (func);
+}
+function update_text(e) {
+    var r = find_child(e, "rect");
+    var t = find_child(e, "text");
+    var w = parseFloat(r.attributes.width.value) * frames.attributes.width.value / 100 - 3;
+    var txt = find_child(e, "title").textContent.replace(/\([^(]*\)$/,"");
+    t.attributes.x.value = format_percent((parseFloat(r.attributes.x.value) + (100 * 3 / frames.attributes.width.value)));
+    // Smaller than this size won't fit anything
+    if (w < 2 * fontsize * fontwidth) {
+        t.textContent = "";
+        return;
+    }
+    t.textContent = txt;
+    // Fit in full text width
+    if (/^ *\$/.test(txt) || t.getComputedTextLength() < w)
+        return;
+    if (truncate_text_right) {
+        // Truncate the right side of the text.
+        for (var x = txt.length - 2; x > 0; x--) {
+            if (t.getSubStringLength(0, x + 2) <= w) {
+                t.textContent = txt.substring(0, x) + "..";
+                return;
+            }
+        }
+    } else {
+        // Truncate the left side of the text.
+        for (var x = 2; x < txt.length; x++) {
+            if (t.getSubStringLength(x - 2, txt.length) <= w) {
+                t.textContent = ".." + txt.substring(x, txt.length);
+                return;
+            }
+        }
+    }
+    t.textContent = "";
+}
+// zoom
+function zoom_reset(e) {
+    if (e.tagName == "rect") {
+        e.attributes.x.value = format_percent(100 * parseInt(e.attributes["fg:x"].value) / total_samples);
+        e.attributes.width.value = format_percent(100 * parseInt(e.attributes["fg:w"].value) / total_samples);
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_reset(c[i]);
+    }
+}
+function zoom_child(e, x, zoomed_width_samples) {
+    if (e.tagName == "text") {
+        var parent_x = parseFloat(find_child(e.parentNode, "rect[x]").attributes.x.value);
+        e.attributes.x.value = format_percent(parent_x + (100 * 3 / frames.attributes.width.value));
+    } else if (e.tagName == "rect") {
+        e.attributes.x.value = format_percent(100 * (parseInt(e.attributes["fg:x"].value) - x) / zoomed_width_samples);
+        e.attributes.width.value = format_percent(100 * parseInt(e.attributes["fg:w"].value) / zoomed_width_samples);
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_child(c[i], x, zoomed_width_samples);
+    }
+}
+function zoom_parent(e) {
+    if (e.attributes) {
+        if (e.attributes.x != undefined) {
+            e.attributes.x.value = "0.0%";
+        }
+        if (e.attributes.width != undefined) {
+            e.attributes.width.value = "100.0%";
+        }
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_parent(c[i]);
+    }
+}
+function zoom(node) {
+    var attr = find_child(node, "rect").attributes;
+    var width = parseInt(attr["fg:w"].value);
+    var xmin = parseInt(attr["fg:x"].value);
+    var xmax = xmin + width;
+    var ymin = parseFloat(attr.y.value);
+    unzoombtn.classList.remove("hide");
+    var el = frames.children;
+    for (var i = 0; i < el.length; i++) {
+        var e = el[i];
+        var a = find_child(e, "rect").attributes;
+        var ex = parseInt(a["fg:x"].value);
+        var ew = parseInt(a["fg:w"].value);
+        // Is it an ancestor
+        if (!inverted) {
+            var upstack = parseFloat(a.y.value) > ymin;
+        } else {
+            var upstack = parseFloat(a.y.value) < ymin;
+        }
+        if (upstack) {
+            // Direct ancestor
+            if (ex <= xmin && (ex+ew) >= xmax) {
+                e.classList.add("parent");
+                zoom_parent(e);
+                update_text(e);
+            }
+            // not in current path
+            else
+                e.classList.add("hide");
+        }
+        // Children maybe
+        else {
+            // no common path
+            if (ex < xmin || ex >= xmax) {
+                e.classList.add("hide");
+            }
+            else {
+                zoom_child(e, xmin, width);
+                update_text(e);
+            }
+        }
+    }
+}
+function unzoom() {
+    unzoombtn.classList.add("hide");
+    var el = frames.children;
+    for(var i = 0; i < el.length; i++) {
+        el[i].classList.remove("parent");
+        el[i].classList.remove("hide");
+        zoom_reset(el[i]);
+        update_text(el[i]);
+    }
+}
+// search
+function reset_search() {
+    var el = document.querySelectorAll("#frames rect");
+    for (var i = 0; i < el.length; i++) {
+        orig_load(el[i], "fill")
+    }
+    var params = get_params();
+    delete params.s;
+    history.replaceState(null, null, parse_params(params));
+}
+function search_prompt() {
+    if (!searching) {
+        var term = prompt("Enter a search term (regexp " +
+            "allowed, eg: ^ext4_)", "");
+        if (term != null) {
+            search(term)
+        }
+    } else {
+        reset_search();
+        searching = 0;
+        searchbtn.classList.remove("show");
+        searchbtn.firstChild.nodeValue = "Search"
+        matchedtxt.classList.add("hide");
+        matchedtxt.firstChild.nodeValue = ""
+    }
+}
+function search(term) {
+    var re = new RegExp(term);
+    var el = frames.children;
+    var matches = new Object();
+    var maxwidth = 0;
+    for (var i = 0; i < el.length; i++) {
+        var e = el[i];
+        // Skip over frames which are either not visible, or below the zoomed-to frame
+        if (e.classList.contains("hide") || e.classList.contains("parent")) {
+            continue;
+        }
+        var func = g_to_func(e);
+        var rect = find_child(e, "rect");
+        if (func == null || rect == null)
+            continue;
+        // Save max width. Only works as we have a root frame
+        var w = parseInt(rect.attributes["fg:w"].value);
+        if (w > maxwidth)
+            maxwidth = w;
+        if (func.match(re)) {
+            // highlight
+            var x = parseInt(rect.attributes["fg:x"].value);
+            orig_save(rect, "fill");
+            rect.attributes.fill.value = searchcolor;
+            // remember matches
+            if (matches[x] == undefined) {
+                matches[x] = w;
+            } else {
+                if (w > matches[x]) {
+                    // overwrite with parent
+                    matches[x] = w;
+                }
+            }
+            searching = 1;
+        }
+    }
+    if (!searching)
+        return;
+    var params = get_params();
+    params.s = term;
+    history.replaceState(null, null, parse_params(params));
+
+    searchbtn.classList.add("show");
+    searchbtn.firstChild.nodeValue = "Reset Search";
+    // calculate percent matched, excluding vertical overlap
+    var count = 0;
+    var lastx = -1;
+    var lastw = 0;
+    var keys = Array();
+    for (k in matches) {
+        if (matches.hasOwnProperty(k))
+            keys.push(k);
+    }
+    // sort the matched frames by their x location
+    // ascending, then width descending
+    keys.sort(function(a, b){
+        return a - b;
+    });
+    // Step through frames saving only the biggest bottom-up frames
+    // thanks to the sort order. This relies on the tree property
+    // where children are always smaller than their parents.
+    for (var k in keys) {
+        var x = parseInt(keys[k]);
+        var w = matches[keys[k]];
+        if (x >= lastx + lastw) {
+            count += w;
+            lastx = x;
+            lastw = w;
+        }
+    }
+    // display matched percent
+    matchedtxt.classList.remove("hide");
+    var pct = 100 * count / maxwidth;
+    if (pct != 100) pct = pct.toFixed(1);
+    matchedtxt.firstChild.nodeValue = "Matched: " + pct + "%";
+}
+function format_percent(n) {
+    return n.toFixed(4) + "%";
+}
+]]></script><rect x="0" y="0" width="100%" height="198" fill="url(#background)"/><text id="title" x="50.0000%" y="24.00">Flame Graph</text><text id="details" x="10" y="181.00"> </text><text id="unzoom" class="hide" x="10" y="24.00">Reset Zoom</text><text id="search" x="1190" y="24.00">Search</text><text id="matched" x="1190" y="181.00"> </text><svg id="frames" x="10" width="1180" total_samples="14480632"><g><title>&lt;built-in method builtins.repr&gt; (309,200 samples, 2.14%)</title><rect x="24.6863%" y="53" width="2.1353%" height="15" fill="rgb(227,0,7)" fg:x="3574730" fg:w="309200"/><text x="24.9363%" y="63.50">&lt;..</text></g><g><title>~:&lt;method &apos;append&apos; of &apos;list&apos; objects&gt;:0 (738,336 samples, 5.10%)</title><rect x="26.8216%" y="53" width="5.0988%" height="15" fill="rgb(217,0,24)" fg:x="3883930" fg:w="738336"/><text x="27.0716%" y="63.50">~:&lt;met..</text></g><g><title>~:&lt;method &apos;join&apos; of &apos;str&apos; objects&gt;:0 (192,722 samples, 1.33%)</title><rect x="31.9203%" y="53" width="1.3309%" height="15" fill="rgb(221,193,54)" fg:x="4622266" fg:w="192722"/><text x="32.1703%" y="63.50"></text></g><g><title>~:&lt;method &apos;ljust&apos; of &apos;str&apos; objects&gt;:0 (137,634 samples, 0.95%)</title><rect x="33.2512%" y="53" width="0.9505%" height="15" fill="rgb(248,212,6)" fg:x="4814988" fg:w="137634"/><text x="33.5012%" y="63.50"></text></g><g><title>~:&lt;method &apos;rjust&apos; of &apos;str&apos; objects&gt;:0 (269,315 samples, 1.86%)</title><rect x="34.2017%" y="53" width="1.8598%" height="15" fill="rgb(208,68,35)" fg:x="4952622" fg:w="269315"/><text x="34.4517%" y="63.50">~..</text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_disassemble:223 (4,326,293 samples, 29.88%)</title><rect x="7.1764%" y="69" width="29.8764%" height="15" fill="rgb(232,128,0)" fg:x="1039186" fg:w="4326293"/><text x="7.4264%" y="79.50">/home/mike/.pyenv/versions/3.10.6/lib/python3.10..</text></g><g><title>~:&lt;method &apos;rstrip&apos; of &apos;str&apos; objects&gt;:0 (143,542 samples, 0.99%)</title><rect x="36.0615%" y="53" width="0.9913%" height="15" fill="rgb(207,160,47)" fg:x="5221937" fg:w="143542"/><text x="36.3115%" y="63.50"></text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_get_const_info:283 (89,639 samples, 0.62%)</title><rect x="46.5865%" y="53" width="0.6190%" height="15" fill="rgb(228,23,34)" fg:x="6746024" fg:w="89639"/><text x="46.8365%" y="63.50"></text></g><g><title>&lt;built-in method builtins.repr&gt; (43,540 samples, 0.30%)</title><rect x="46.9049%" y="37" width="0.3007%" height="15" fill="rgb(218,30,26)" fg:x="6792123" fg:w="43540"/><text x="47.1549%" y="47.50"></text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_get_name_info:295 (84,461 samples, 0.58%)</title><rect x="47.2056%" y="53" width="0.5833%" height="15" fill="rgb(220,122,19)" fg:x="6835663" fg:w="84461"/><text x="47.4556%" y="63.50"></text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_unpack_opargs:422 (428,912 samples, 2.96%)</title><rect x="47.7888%" y="53" width="2.9620%" height="15" fill="rgb(250,228,42)" fg:x="6920124" fg:w="428912"/><text x="48.0388%" y="63.50">/ho..</text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_unpack_opargs:422 (146,448 samples, 1.01%)</title><rect x="51.9173%" y="37" width="1.0113%" height="15" fill="rgb(240,193,28)" fg:x="7517956" fg:w="146448"/><text x="52.1673%" y="47.50"></text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:findlabels:434 (324,368 samples, 2.24%)</title><rect x="50.7508%" y="53" width="2.2400%" height="15" fill="rgb(216,20,37)" fg:x="7349036" fg:w="324368"/><text x="51.0008%" y="63.50">/..</text></g><g><title>~:&lt;method &apos;append&apos; of &apos;list&apos; objects&gt;:0 (9,000 samples, 0.06%)</title><rect x="52.9287%" y="37" width="0.0622%" height="15" fill="rgb(206,188,39)" fg:x="7664404" fg:w="9000"/><text x="53.1787%" y="47.50"></text></g><g><title>&lt;built-in method builtins.repr&gt; (22,642 samples, 0.16%)</title><rect x="52.9908%" y="53" width="0.1564%" height="15" fill="rgb(217,207,13)" fg:x="7673404" fg:w="22642"/><text x="53.2408%" y="63.50"></text></g><g><title>&lt;string&gt;:&lt;lambda&gt;:1 (476,439 samples, 3.29%)</title><rect x="53.1472%" y="53" width="3.2902%" height="15" fill="rgb(231,73,38)" fg:x="7696046" fg:w="476439"/><text x="53.3972%" y="63.50">&lt;st..</text></g><g><title>&lt;built-in method __new__ of type object at 0x5599abd4e4a0&gt; (204,682 samples, 1.41%)</title><rect x="55.0239%" y="37" width="1.4135%" height="15" fill="rgb(225,20,46)" fg:x="7967803" fg:w="204682"/><text x="55.2739%" y="47.50"></text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_get_instructions_bytes:311 (2,954,129 samples, 20.40%)</title><rect x="37.0528%" y="69" width="20.4006%" height="15" fill="rgb(210,31,41)" fg:x="5365479" fg:w="2954129"/><text x="37.3028%" y="79.50">/home/mike/.pyenv/versions/3.10...</text></g><g><title>~:&lt;method &apos;get&apos; of &apos;dict&apos; objects&gt;:0 (147,123 samples, 1.02%)</title><rect x="56.4374%" y="53" width="1.0160%" height="15" fill="rgb(221,200,47)" fg:x="8172485" fg:w="147123"/><text x="56.6874%" y="63.50"></text></g><g><title>&lt;built-in method builtins.max&gt; (3,743 samples, 0.03%)</title><rect x="57.4533%" y="69" width="0.0258%" height="15" fill="rgb(226,26,5)" fg:x="8319608" fg:w="3743"/><text x="57.7033%" y="79.50"></text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_disassemble_bytes:386 (14,363,937 samples, 99.19%)</title><rect x="0.4406%" y="85" width="99.1941%" height="15" fill="rgb(249,33,26)" fg:x="63799" fg:w="14363937"/><text x="0.6906%" y="95.50">/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_disassemble_bytes:386</text></g><g><title>&lt;built-in method builtins.print&gt; (6,104,385 samples, 42.16%)</title><rect x="57.4792%" y="69" width="42.1555%" height="15" fill="rgb(235,183,28)" fg:x="8323351" fg:w="6104385"/><text x="57.7292%" y="79.50">&lt;built-in method builtins.print&gt;</text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:disassemble:368 (14,429,895 samples, 99.65%)</title><rect x="0.1969%" y="101" width="99.6496%" height="15" fill="rgb(221,5,38)" fg:x="28513" fg:w="14429895"/><text x="0.4469%" y="111.50">/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:disassemble:368</text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:findlinestarts:453 (30,672 samples, 0.21%)</title><rect x="99.6347%" y="85" width="0.2118%" height="15" fill="rgb(247,18,42)" fg:x="14427736" fg:w="30672"/><text x="99.8847%" y="95.50"></text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_disassemble_recursive:375 (14,460,114 samples, 99.86%)</title><rect x="0.0522%" y="117" width="99.8583%" height="15" fill="rgb(241,131,45)" fg:x="7563" fg:w="14460114"/><text x="0.3022%" y="127.50">/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:_disassemble_recursive:375</text></g><g><title>&lt;built-in method builtins.hasattr&gt; (9,269 samples, 0.06%)</title><rect x="99.8465%" y="101" width="0.0640%" height="15" fill="rgb(249,31,29)" fg:x="14458408" fg:w="9269"/><text x="100.0965%" y="111.50"></text></g><g><title>all (14,480,632 samples, 100%)</title><rect x="0.0000%" y="149" width="100.0000%" height="15" fill="rgb(225,111,53)" fg:x="0" fg:w="14480632"/><text x="0.2500%" y="159.50"></text></g><g><title>/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:dis:43 (14,480,632 samples, 100.00%)</title><rect x="0.0000%" y="133" width="100.0000%" height="15" fill="rgb(238,160,17)" fg:x="0" fg:w="14480632"/><text x="0.2500%" y="143.50">/home/mike/.pyenv/versions/3.10.6/lib/python3.10/dis.py:dis:43</text></g><g><title>&lt;built-in method builtins.hasattr&gt; (12,955 samples, 0.09%)</title><rect x="99.9105%" y="117" width="0.0895%" height="15" fill="rgb(214,148,48)" fg:x="14467677" fg:w="12955"/><text x="100.1605%" y="127.50"></text></g></svg></svg>
