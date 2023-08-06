@@ -1,0 +1,13 @@
+mailshell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailshell/app.py,sha256=OG69R4RoAZtNACHNHXenU0ypMjGvbWYXrXMe1jPgTxU,2859
+mailshell/email_checker.py,sha256=xBG2boGWSK752yFqVnLC1KCoo_v9nhXDuUF7xMFk3Ns,2258
+mailshell/email_logo.py,sha256=mNX2hWaARYeim79bWu_wgLidX1JBytTfs_CZsL6UlHY,8644
+mailshell/helper.py,sha256=TPMl_xbzZQgQPEuDLb8eTNQTr0m2U43GGtjlhvCIdVY,2679
+mailshell/mail_checker.py,sha256=2drtjbd8h7vWlogyFXEk09ad-BQqJRxP3cVKPZTI12Y,2034
+mailshell/mail_shell.py,sha256=YOvgkbJ5HSjqTmSBK4KSTvuVleR3cfhPct9oXc0NrPs,11355
+mailshell-1.4.0.dist-info/LICENSE,sha256=uh2KwpGc_SIYN-YalXoYR6nq3IGkxD-LGq9pXU5-_iU,1074
+mailshell-1.4.0.dist-info/METADATA,sha256=lZFRLmjiP8cdEoor6EglmTZ-t7Ua8pSXN21wp80aqdk,4438
+mailshell-1.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mailshell-1.4.0.dist-info/entry_points.txt,sha256=wY5H6kuE5lVGNQLOK2pOpMJS1sDYNCaG7drt1Q7pP2c,44
+mailshell-1.4.0.dist-info/top_level.txt,sha256=f-Gnwws6Z6juxPqOBzRG35mKAIOhyAD85-ojEbnGB14,10
+mailshell-1.4.0.dist-info/RECORD,,
