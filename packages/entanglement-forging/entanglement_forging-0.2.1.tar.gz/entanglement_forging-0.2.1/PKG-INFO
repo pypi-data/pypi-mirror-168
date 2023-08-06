@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: entanglement_forging
+Version: 0.2.1
+Summary: Simulate chemical and physical systems using entanglement forging.
+Home-page: https://github.com/qiskit-community/prototype-entanglement-forging
+Maintainer: Caleb Johnson
+Maintainer-email: caleb.johnson@ibm.com
+License: Apache 2.0
+Keywords: quantum,nature,simulation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE.txt
+
+This module allows a user to simulate chemical and physical systems using a variational quantum eigensolver enhanced by entanglement forging. Entanglement forging doubles the size of the system that can be exactly simulated on a fixed set of quantum bits.
