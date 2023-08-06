@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fsp
+Version: 0.0.1.6
+Summary: Pacote para auxiliar a realização de consultas SQL, para aqueles com pouco conhecimento sobre a linguagem.
+Home-page: https://github.com/WanderleiSI/fsp.git
+Author: José Wanderlei Francisco de Sousa Rocha
+Author-email: wanderleirochavasco@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# FSP - Funções SQL pré-definidas
+
+#### Esse é um pacote que permite uma manipulação simples sobre algumas consultas SQL, para aqueles com pouco conhecimento na linguagem.
+## Instalação:
+    'pip install fsp'
+## Uso:
+    '''
+    import fsp
+    bancoDeDados = FSP('nomeBanco')
+    bancoDeDados.criarTabela('nm_usuarios','idUsuario')
+    '''
