@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "sforecast"
+version = "0.1.1"
+description = "A package to support supervised learning forecast methods (ML and DL) within a sliding forecast framework (sliding window or expanding window)"
+authors = ["Alberto Gutierrez"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sklearn = "^0.0"
+
+[tool.poetry.dev-dependencies]
+myst-nb = {version = "^0.16.0", python = "^3.8"}
+sphinx-autoapi = "^1.9.0"
+sphinx-rtd-theme = "^1.0.0"
+pytest = "^7.1.3"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
