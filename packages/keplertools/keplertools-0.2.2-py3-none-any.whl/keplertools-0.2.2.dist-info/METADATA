@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: keplertools
+Version: 0.2.2
+Summary: Two-body orbital propagation tools
+Home-page: https://github.com/dsavransky/keplertools
+Author: Dmitry Savransky
+Author-email: ds264@cornell.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Provides-Extra: c
+Requires-Dist: cython ; extra == 'c'
+
+# keplertools
+Two-body orbital propagation tools
+
+![Build Status](https://github.com/dsavransky/keplertools/actions/workflows/ci.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/dsavransky/keplertools/badge.svg?branch=master)](https://coveralls.io/github/dsavransky/keplertools?branch=main)
+
+## Installation
+
+```
+pip install keplertools
+```
+
+To also compile the Cython versions (compiler required, see here for details: https://cython.readthedocs.io/en/latest/src/quickstart/install.html):
+
+```
+pip install --no-binary keplertools keplertools[C]
+```
+
+If using a zsh shell (or depending on your specific shell setup), you may need to escape the square brackets (i.e., the last bit of the previous command would be ``keplertools\[C\]``.
+
+
