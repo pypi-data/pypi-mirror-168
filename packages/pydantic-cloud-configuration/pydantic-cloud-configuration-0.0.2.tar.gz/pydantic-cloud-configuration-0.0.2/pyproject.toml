@@ -1,0 +1,84 @@
+[tool.poetry]
+name = "pydantic-cloud-configuration"
+version = "0.0.2"
+description = "Pydantic Cloud Settings"
+authors = ["Nils de Bruin <nils@debruinmail.nl>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/nilsdebruin/pydantic-cloud-configuration"
+repository = "https://github.com/nilsdebruin/pydantic-cloud-configuration"
+documentation = "https://pydantic-cloud-configuration.readthedocs.io"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+]
+
+[tool.poetry.urls]
+Changelog = "https://github.com/nilsdebruin/pydantic-cloud-configuration/releases"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+pydantic = {extras = ["dotenv"], version = "^1.9.0"}
+
+[tool.poetry.dev-dependencies]
+Pygments = ">=2.10.0"
+black = ">=21.10b0"
+coverage = {extras = ["toml"], version = ">=6.2"}
+darglint = ">=1.8.1"
+flake8 = ">=4.0.1"
+flake8-bandit = ">=2.1.2"
+flake8-bugbear = ">=21.9.2"
+flake8-docstrings = ">=1.6.0"
+flake8-rst-docstrings = ">=0.2.5"
+furo = ">=2021.11.12"
+isort = ">=5.10.1"
+mypy = ">=0.930"
+pep8-naming = ">=0.12.1"
+pre-commit = ">=2.16.0"
+pre-commit-hooks = ">=4.1.0"
+pytest = ">=6.2.5"
+pyupgrade = ">=2.29.1"
+safety = ">=1.10.3"
+sphinx = ">=4.3.2"
+sphinx-autobuild = ">=2021.3.14"
+sphinx-click = ">=3.0.2"
+typeguard = ">=2.13.3"
+xdoctest = {extras = ["colors"], version = ">=0.15.10"}
+myst-parser = {version = ">=0.16.1", python = "<4"}
+moto = "^3.0.3"
+boto3 = "^1.21.0"
+factory-boy = "^3.2.1"
+nox = "^2022.1.7"
+nox-poetry = "^0.9.0"
+boto3-stubs = {extras = ["essential"], version = "^1.21.18"}
+
+[tool.poetry.scripts]
+pydantic-cloud-configuration = "pydantic_cloud_configuration.__main__:main"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+tests = ["tests", "*/tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["pydantic_cloud_configuration", "tests"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 95
+
+[tool.isort]
+profile = "black"
+force_single_line = true
+lines_after_imports = 2
+
+[tool.mypy]
+strict = true
+warn_unreachable = true
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
