@@ -1,0 +1,2 @@
+include src/syssimpyplots/data/*.csv
+include src/syssimpyplots/data/*.txt
