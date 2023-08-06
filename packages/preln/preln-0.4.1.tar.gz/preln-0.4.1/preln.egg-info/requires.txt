@@ -1,0 +1,6 @@
+pandas
+nltk
+numpy
+autocorrect
+openpyxl
+lxml
