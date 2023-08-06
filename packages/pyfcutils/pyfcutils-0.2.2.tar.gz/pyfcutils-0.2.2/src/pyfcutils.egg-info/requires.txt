@@ -1,0 +1,7 @@
+numpy
+
+[test]
+legend-testdata>=0.4.1
+pre-commit
+pytest>=6.0
+pytest-cov
