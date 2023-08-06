@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+scrapis/__init__.py
+scrapis/__main__.py
+scrapis/apkcombo.py
+scrapis/scrapis.py
+scrapis.egg-info/PKG-INFO
+scrapis.egg-info/SOURCES.txt
+scrapis.egg-info/dependency_links.txt
+scrapis.egg-info/entry_points.txt
+scrapis.egg-info/requires.txt
+scrapis.egg-info/top_level.txt
