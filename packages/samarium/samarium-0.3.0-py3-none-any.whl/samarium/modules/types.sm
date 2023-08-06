@@ -1,0 +1,114 @@
+Array: []?!;
+Integer: \?!;
+Iterator: [].iterate()?!;
+Null: (||)?!;
+Slice: <<>>?!;
+String: ""?!;
+Table: {{}}?!;
+
+
+@ Boolean {
+
+    create value * {
+        ? value?! :: ""?! {
+            <-string.to_lower;
+            'value: {{"true" -> /, "false" -> \}}<<to_lower(value)>>;
+        } ,, {
+            'value: value.to_bit();
+        }
+    }
+
+    to_string * {
+        * "true" ? 'value ,, "false";
+    }
+
+    to_bit * {
+        * 'value;
+    }
+
+    equals other * {
+        * Boolean('value :: other.value);
+    }
+
+    greater_than other * {
+        * Boolean('value > other.value);
+    }
+
+    add other * {
+        out: 'value + other.value;
+        ? out > / {
+            * out;
+        } ,, {
+            * Boolean(out);
+        }
+    }
+
+    subtract other * {
+        out: 'value - other.value;
+        ? out < \ {
+            * out;
+        } ,, {
+            * Boolean(out);
+        }
+    }
+
+    multiply other * {
+        * Boolean('value ++ other.value);
+    }
+
+    divide other * {
+        * Boolean('value -- other.value);
+    }
+
+    power other * {
+        * Boolean('value +++ other.value);
+    }
+
+    mod other * {
+        * Boolean('value --- other.value);
+    }
+
+    and other * {
+        * Boolean('value & other.value);
+    }
+
+    xor other * {
+        * Boolean('value ^ other.value);
+    }
+
+    or other * {
+        * Boolean('value | other.value);
+    }
+
+    not * {
+        * Boolean(\ ? 'value ,, /);
+    }
+
+}
+
+@ UUID4 {
+
+    create * {
+        <-random.choices;
+        <-string.HEXDIGITS, join;
+        hex: join(choices(HEXDIGITS, /\\\\\));
+        hex<<//\\>>: "4";
+        hex<</\\\\>>: "89ab"??;
+        'hex: hex;
+        'dec: Integer("x:" + hex);
+    }
+
+    to_string * {
+        <-string.join;
+        * join(
+            [
+                'hex<<../\\\>>,
+                'hex<</\\\..//\\>>,
+                'hex<<//\\../\\\\>>,
+                'hex<</\\\\../\/\\>>,
+                'hex<</\/\\..>>
+            ], "-"
+        );
+    }
+
+}
