@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/ssNMR/__init__.py
+src/ssNMR/fitNMR.py
+src/ssNMR/formatting.py
+src/ssNMR.egg-info/PKG-INFO
+src/ssNMR.egg-info/SOURCES.txt
+src/ssNMR.egg-info/dependency_links.txt
+src/ssNMR.egg-info/requires.txt
+src/ssNMR.egg-info/top_level.txt
