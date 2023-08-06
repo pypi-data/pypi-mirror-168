@@ -1,0 +1,5 @@
+numpy
+cupy>=10.2.0
+
+[examples]
+plyfile
