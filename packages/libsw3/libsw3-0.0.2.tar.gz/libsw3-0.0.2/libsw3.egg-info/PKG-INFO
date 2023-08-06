@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: libsw3
+Version: 0.0.2
+Summary: libsw3
+Home-page: UNKNOWN
+Author: Chen chuan
+Author-email: kcchen@139.com
+License: UNKNOWN
+Description: #libsw3
+        
+        事务3的python库
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

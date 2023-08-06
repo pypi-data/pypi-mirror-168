@@ -1,0 +1,10 @@
+README.md
+setup.py
+libsw3/__init__.py
+libsw3/liblocalval.py
+libsw3/libswn.py
+libsw3.egg-info/PKG-INFO
+libsw3.egg-info/SOURCES.txt
+libsw3.egg-info/dependency_links.txt
+libsw3.egg-info/entry_points.txt
+libsw3.egg-info/top_level.txt
