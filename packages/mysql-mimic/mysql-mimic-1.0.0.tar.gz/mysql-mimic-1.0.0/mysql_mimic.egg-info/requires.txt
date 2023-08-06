@@ -1,0 +1,12 @@
+
+[dev]
+aiomysql
+mysql-connector-python
+black
+coverage
+pylint
+pytest
+sphinx
+sqlalchemy
+twine
+wheel
