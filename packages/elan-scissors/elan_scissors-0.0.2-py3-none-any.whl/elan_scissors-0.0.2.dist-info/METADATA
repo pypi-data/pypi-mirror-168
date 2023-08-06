@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: elan-scissors
+Version: 0.0.2
+Summary: Cut ELAN audio into snippets.
+Home-page: https://github.com/fmatter/elan-scissors
+Author: Florian Matter
+Author-email: florianmatter@gmail.com
+Project-URL: Bug Tracker, https://github.com/fmatter/elan-scissors/issues
+Keywords: elan,linguistics
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorlog
+Requires-Dist: pydub
+Requires-Dist: python-slugify
+Requires-Dist: click
+Requires-Dist: click-default-group
+Provides-Extra: dev
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: coverage[toml] ; extra == 'dev'
+Requires-Dist: prospector[with_pyroma] ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Provides-Extra: publishing
+Requires-Dist: twine ; extra == 'publishing'
+Requires-Dist: wheel ; extra == 'publishing'
+
+# elan-scissors
+
+Cut ELAN audio into snippets. You may need to [install an audio library usable by pydub](https://github.com/jiaaro/pydub#getting-ffmpeg-set-up).
+Usage:
+
+`elanscissors <SRC> <TARGET>`, where `SRC` is a flextext file and `TARGET` a wav file.
+
+Documentation: https://elan-scissors.readthedocs.io
+
+![License](https://img.shields.io/github/license/fmatter/elan-scissors)
+[![Documentation Status](https://readthedocs.org/projects/elan-scissors/badge/?version=latest)](https://elan-scissors.readthedocs.io/en/latest/?badge=latest)
+[![Linting](https://img.shields.io/github/workflow/status/fmatter/elan-scissors/lint?label=linting)](https://github.com/fmatter/elan-scissors/actions/workflows/lint.yml)
+[![PyPI](https://img.shields.io/pypi/v/elan-scissors.svg)](https://pypi.org/project/elan-scissors)
+![Versions](https://img.shields.io/pypi/pyversions/elan-scissors)
