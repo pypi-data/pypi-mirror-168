@@ -1,0 +1,10 @@
+bgen.libs/libstdc++-8baf04f9.so.6.0.28,sha256=7dHa2sV5CgWXjdC4QqxbCNsm-pN9kkmNNqxtn5AaAvs,2428960
+bgen.libs/libgcc_s-8b50eaaa.so.1,sha256=aEf1qbEV-lDljbUGr6ql8FAfnxyJlKTeEsHNdrBlAHM,101648
+bgen-1.3.1.dist-info/top_level.txt,sha256=EoVKryxjZc0vkwDWjnOK0IP3dN4fg8YiKIkBcWB9pqw,5
+bgen-1.3.1.dist-info/WHEEL,sha256=HwWQK0WnprYUMCH9j1Gy9C1hWED1gzbGQk51O1WpaGM,111
+bgen-1.3.1.dist-info/METADATA,sha256=_97aMhrXYPkCpK5oL5OLZPvdv7ZcsmHMFs0BjoovC40,4215
+bgen-1.3.1.dist-info/RECORD,,
+bgen-1.3.1.dist-info/LICENSE.txt,sha256=8xqsNFTZC7SFBJM4k6bQw8tPn0zUKQJpZwdY6zSFBW0,1053
+bgen/reader.cpython-311-i386-linux-musl.so,sha256=-dQ8eXTMd2n22W06OzbHJ7mcD9QiuvUPvYYjlPVN_IU,5066492
+bgen/index.py,sha256=GO_MYDUl1uCU0t0bhTzPRdVUyd-V9vOUEeLuGQWu0iI,4188
+bgen/__init__.py,sha256=ZlAA18GglePROJMeJBq_03LiVvdXhhQ8SC-OA7r6v4k,91
