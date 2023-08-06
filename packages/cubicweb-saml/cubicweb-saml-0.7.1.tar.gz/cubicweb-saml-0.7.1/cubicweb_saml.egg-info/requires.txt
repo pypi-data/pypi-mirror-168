@@ -1,0 +1,6 @@
+cubicweb<3.38.0,>=3.30.0
+logilab-common>=1.4.0
+pyramid>=1.10.4
+pysaml2>=5.0.0
+requests>=2.22.0
+zope.interface>=4.1.2

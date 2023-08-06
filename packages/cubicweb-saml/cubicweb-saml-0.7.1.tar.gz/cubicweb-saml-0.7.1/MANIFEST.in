@@ -1,0 +1,14 @@
+include *.py
+include */*.py
+recursive-include cubicweb_saml *.py
+recursive-include cubicweb_saml/data *.gif *.png *.ico *.css *.js
+recursive-include cubicweb_saml/i18n *.po
+recursive-include cubicweb_saml/wdoc *
+recursive-include test/data bootstrap_cubes *.py
+include *.ini
+prune cubicweb-saml.spec
+exclude .gitlab-ci.yml
+exclude .yamllint
+exclude .cube-doctor.yml
+exclude .gitlab-ci-extended.yml
+exclude CHANGELOG.md
