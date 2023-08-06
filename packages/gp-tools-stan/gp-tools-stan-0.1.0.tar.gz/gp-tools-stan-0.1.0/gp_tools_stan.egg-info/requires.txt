@@ -1,0 +1,14 @@
+cmdstanpy>=1.0.7
+gp-tools-util
+numpy
+
+[tests]
+doit-interface
+flake8
+jupyter
+matplotlib
+pytest
+pytest-cov
+scipy
+tabulate
+twine
