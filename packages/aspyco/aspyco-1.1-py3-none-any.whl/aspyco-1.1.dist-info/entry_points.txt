@@ -1,0 +1,3 @@
+[console_scripts]
+aspyco=src.aspyco:main
+
