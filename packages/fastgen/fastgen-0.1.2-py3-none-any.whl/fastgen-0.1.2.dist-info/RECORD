@@ -1,0 +1,14 @@
+fastgen/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+fastgen/__main__.py,sha256=Zc0QerGpjb5-qsiRpfU1fk_XWR1tpQmrHSSKn0HwZsg,51
+fastgen/constants.py,sha256=DOiJSWk50SXhiaB7tNzrwGIT7AGbB_h0-74knuIsh6Y,3311
+fastgen/main.py,sha256=hxatyBhoQp2UqXPtei5wPUT9dCKly8xNMFhSlqvINj0,2515
+fastgen/managers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastgen/managers/base_manager.py,sha256=LRAYd2uUWXkj2OhN21sz75RDyHQij_SkgJJrhlSbBJY,251
+fastgen/managers/pip_manager.py,sha256=0PkBCvKeMMDrb9utRO5xy4HzHGN_cM8x3Wn79GQfwLQ,7786
+fastgen/managers/poetry_manager.py,sha256=H5C-1mbrPnFCTCPy0Vvvw5znnynpkkRPJaAX8tFddo4,97
+fastgen/options.py,sha256=XdWLZ1kL38Dmba6WDjvsHskeQru54P6YqMGn0fAQiao,200
+fastgen-0.1.2.dist-info/entry_points.txt,sha256=0oHJrdUat14QcEieDnUojhZ_Cel-7uzok9sH33JJ464,44
+fastgen-0.1.2.dist-info/LICENSE,sha256=1SU9TgdjsK2HZOIQLGgTXTuf_uAZuFioJp3Rh9vuWjI,1092
+fastgen-0.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fastgen-0.1.2.dist-info/METADATA,sha256=MewAgrmHMvkJAOkJF9g92Ifqxo8NXCUMNBhK3D22SLU,2439
+fastgen-0.1.2.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+fastgen=fastgen.main:app
+
