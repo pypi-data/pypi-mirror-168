@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/salomon/__init__.py
+src/salomon.egg-info/PKG-INFO
+src/salomon.egg-info/SOURCES.txt
+src/salomon.egg-info/dependency_links.txt
+src/salomon.egg-info/requires.txt
+src/salomon.egg-info/top_level.txt
+src/salomon/impl/CopyModelPackage.py
+src/salomon/impl/__init__.py
+src/salomon/impl/s3_helper.py
