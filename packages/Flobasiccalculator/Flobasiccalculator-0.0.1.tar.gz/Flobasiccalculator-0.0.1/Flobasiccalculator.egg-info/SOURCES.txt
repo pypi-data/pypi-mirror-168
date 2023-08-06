@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+SETUP.py
+setup.py
+Flobasiccalculator.egg-info/PKG-INFO
+Flobasiccalculator.egg-info/SOURCES.txt
+Flobasiccalculator.egg-info/dependency_links.txt
+Flobasiccalculator.egg-info/top_level.txt
+subfolder/__init__.py

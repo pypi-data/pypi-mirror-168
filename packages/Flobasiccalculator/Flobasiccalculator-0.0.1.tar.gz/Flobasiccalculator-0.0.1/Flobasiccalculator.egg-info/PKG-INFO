@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Flobasiccalculator
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: 
+Author: Florian Stoopman
+Author-email: Florianstoopman@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Basic Calculator that adds
+
+Change log
+==========
+
+0.0.1 (24/09/2022)
+------------------
+- First release
