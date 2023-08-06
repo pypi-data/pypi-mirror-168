@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: oneFace
+Version: 0.1.8
+Summary: oneFace is a library for automatically generating multiple interfaces(CLI, GUI) from a callable Python object
+Home-page: https://github.com/Nanguage/oneFace
+Author: Weize Xu
+Author-email: vet.xwz@gmail.com
+License: GPLv3
+Keywords: GUI,CLI
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7, <4
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: dev
+Provides-Extra: dash
+Provides-Extra: qt
+Provides-Extra: pyqt5
+Provides-Extra: pyqt6
+Provides-Extra: pyside2
+Provides-Extra: pyside6
+Provides-Extra: all
+License-File: LICENSE
+
+See https://github.com/Nanguage/oneFace
