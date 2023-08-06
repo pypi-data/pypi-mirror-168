@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: viash
+Version: 0.1.dev0
+Summary: Viash uses code generation to create a module from your script that can be used seamlessly in a data pipeline
+Home-page: https://viash.io/
+Author: Dries Schaumont
+Author-email: dries@data-intuitive.be
+License: GPLv3+
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Viash

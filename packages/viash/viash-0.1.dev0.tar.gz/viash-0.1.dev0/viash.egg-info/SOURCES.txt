@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+viash/__version__.py
+viash.egg-info/PKG-INFO
+viash.egg-info/SOURCES.txt
+viash.egg-info/dependency_links.txt
+viash.egg-info/top_level.txt
