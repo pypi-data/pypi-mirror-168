@@ -1,0 +1,12 @@
+[package]
+edition = "2021"
+name = "seq_aligner"
+version = "0.1.2"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+name = "seq_aligner"
+
+[dependencies]
+pyo3 = {version = "0.16.5", features = ["extension-module"]}
