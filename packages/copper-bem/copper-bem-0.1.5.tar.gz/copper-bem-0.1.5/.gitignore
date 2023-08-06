@@ -1,0 +1,7 @@
+*.cpython-37.pyc
+/copper/__pycache__/
+/copper.egg-info
+/build/
+/dev/
+/bin/
+/dist/
