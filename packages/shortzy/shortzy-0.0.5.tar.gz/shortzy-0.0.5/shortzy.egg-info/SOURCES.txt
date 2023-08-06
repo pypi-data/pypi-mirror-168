@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+shortzy/__init__.py
+shortzy/main.py
+shortzy.egg-info/PKG-INFO
+shortzy.egg-info/SOURCES.txt
+shortzy.egg-info/dependency_links.txt
+shortzy.egg-info/requires.txt
+shortzy.egg-info/top_level.txt
