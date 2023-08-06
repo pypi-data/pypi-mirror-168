@@ -1,0 +1,3 @@
+[pyannotators.plugins]
+trankitner=pyannotators_trankitner.trankitner:TrankitNERAnnotator
+
