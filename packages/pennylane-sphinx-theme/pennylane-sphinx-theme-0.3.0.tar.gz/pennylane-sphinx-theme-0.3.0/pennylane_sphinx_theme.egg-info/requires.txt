@@ -1,0 +1,4 @@
+sphinx
+xanadu-sphinx-theme
+pillow
+sphinx-gallery
