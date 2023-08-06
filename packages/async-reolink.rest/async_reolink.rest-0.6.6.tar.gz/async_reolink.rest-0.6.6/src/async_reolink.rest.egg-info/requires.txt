@@ -1,0 +1,2 @@
+aiohttp
+async-reolink.api==0.6.6
