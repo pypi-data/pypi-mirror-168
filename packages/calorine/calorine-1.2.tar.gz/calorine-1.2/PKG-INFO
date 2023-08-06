@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: calorine
+Version: 1.2
+Summary: A Python library for building and sampling NEP models via GPUMD simulations.
+Home-page: http://calorine.materialsmodeling.org/
+Author: calorine developer group
+License: Mozilla Public License 2.0 (MPL 2.0)
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+
+calorine
+========
+
+**calorine** is a Python library for constructing and sampling neuroevolution potentials (NEPs) via `GPUMD <https://gpumd.zheyongfan.org/>`_.
+It provides ASE calculators, IO functions for reading and writing GPUMD input and output files, as well as a Python interface that allows inspection NEP models.
+The documentation can be found at https://calorine.materialsmodeling.org/.
+
+
