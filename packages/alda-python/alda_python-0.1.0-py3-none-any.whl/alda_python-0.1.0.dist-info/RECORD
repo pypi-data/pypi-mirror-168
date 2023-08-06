@@ -1,0 +1,9 @@
+alda/__init__.py,sha256=VRRjfpRDf5HqTEeOE-bIpV2zSMoFTuf-Uhje-5AvdvY,157
+alda/bencode.py,sha256=koCNVv4VFfwj5wc7XM2WL56J799IjVkmXZLQUDUMz2I,2656
+alda/client.py,sha256=HRJp2DREUHzFGpav0XJHfE0C5tvrvID6pwe-vdqljmI,6231
+alda/nrepl.py,sha256=znp7A2WpRH0tZdEICKTBR0b46ONwXNYE0uHbBSl1Fpw,742
+alda_python-0.1.0.dist-info/LICENSE,sha256=jDSfgHZNBkjmRfQe8jdypwyZWgkktSNfc19KPQnfEnw,14197
+alda_python-0.1.0.dist-info/METADATA,sha256=Ycu2t-VevpOKoV1PkzYUg8RVdN3_N7k2yueinaRARxs,2638
+alda_python-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alda_python-0.1.0.dist-info/top_level.txt,sha256=TcHycvzQQxxnySitO3KcrNScecwNeOf3ikQpzpwn0tk,5
+alda_python-0.1.0.dist-info/RECORD,,
