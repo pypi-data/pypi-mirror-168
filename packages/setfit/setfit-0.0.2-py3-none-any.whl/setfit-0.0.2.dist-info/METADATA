@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: setfit
+Version: 0.0.2
+Summary: Setup for repository
+Home-page: https://github.com/SetFit/setfit
+Download-URL: https://github.com/SetFit/setfit/tags
+Author: SetFit
+Author-email: lewis@huggingface.co
+License: Apache 2.0
+Keywords: nlp,machine learning,fewshot learning,transformers
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: datasets (==2.3.2)
+Requires-Dist: sentence-transformers (==2.2.2)
+Requires-Dist: evaluate (==0.2.2)
+Provides-Extra: dev
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Provides-Extra: quality
+Requires-Dist: black ; extra == 'quality'
+Requires-Dist: flake8 ; extra == 'quality'
+Requires-Dist: isort ; extra == 'quality'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+UNKNOWN
+

@@ -1,0 +1,11 @@
+setfit/__init__.py,sha256=LsOmi9jTcxoOxDhzIZrTOpTXN2vkhBrDPWrw657JJNg,92
+setfit/data.py,sha256=bGkE0CbBofocGs6-Hkq-nOjshFjcgFs0A0p_8cbW3nI,5816
+setfit/modeling.py,sha256=rkGKvRGK0wTEJn2s_1Jyh-P8ACoT_XzaaiKgyPh4rD0,11270
+setfit/pipeline.py,sha256=qnZQw35vRpusjXJvhVsRR-Cew9IDEwo47H5UBrJtJqo,357
+setfit/trainer.py,sha256=q0_gtOHDRAIfOAanUxCJlNk17f3ToYLMAB7J6kNFG1M,4902
+setfit/utils.py,sha256=iMVCzjPkj9ZPWexloORC0vpprC_dZ9Ca4liOjyXdCKg,4055
+setfit-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+setfit-0.0.2.dist-info/METADATA,sha256=45NxQiq6cP_hxDxYXGkm2Czs-pEKvE2LH0GBZfhkUZM,1461
+setfit-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+setfit-0.0.2.dist-info/top_level.txt,sha256=ernawvyDeHtp05b0yeuW8bbGgKaEemOLBklod7Gh0pY,7
+setfit-0.0.2.dist-info/RECORD,,
