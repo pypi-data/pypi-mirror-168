@@ -1,0 +1,9 @@
+xia_meta_task/__init__.py,sha256=dktNLtp7CZ0_zaZmXPJrYggq-JIl4zZ4at6T7R-V7YU,162
+xia_meta_task/base.cpython-310-darwin.so,sha256=Bpbvl5QQIMvo4ir2NbiTnil09yp3hbN7tSkbLhS3oxQ,218072
+xia_meta_task/log.cpython-310-darwin.so,sha256=oBvxIlEI5eyNzPnVzJxqDIbelLspw2q3r58cb2ldKJk,218680
+xia_meta_task/task.cpython-310-darwin.so,sha256=hJjmYIaAA47pa4d2QWhPi1TkclBGjsNXLXbTUUXa0I0,288368
+xia_meta_task-0.0.4.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_meta_task-0.0.4.dist-info/METADATA,sha256=flXIFKCQ5JGWl4C1Zg7Xm_Di3E_iHBmqfwWwpxwIg5o,401
+xia_meta_task-0.0.4.dist-info/WHEEL,sha256=NsapCMY7EanMRKZsZABtoiyq2rs4aXJ4FKsV_kV91NE,108
+xia_meta_task-0.0.4.dist-info/top_level.txt,sha256=AqjvYT1oRbY6s6dP5-MEXTSpezegGtQlLDCHtHzq22c,14
+xia_meta_task-0.0.4.dist-info/RECORD,,
