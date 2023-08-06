@@ -1,0 +1,1 @@
+from .strictFunctionTyping import *
