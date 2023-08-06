@@ -1,0 +1,3 @@
+[console_scripts]
+pypisearch = pypisearch.__main__:main
+

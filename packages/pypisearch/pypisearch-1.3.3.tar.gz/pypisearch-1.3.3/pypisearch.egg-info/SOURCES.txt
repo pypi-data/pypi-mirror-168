@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pypisearch/__init__.py
+pypisearch/__main__.py
+pypisearch/main.py
+pypisearch/re_constants.py
+pypisearch/result_item.py
+pypisearch/search.py
+pypisearch.egg-info/PKG-INFO
+pypisearch.egg-info/SOURCES.txt
+pypisearch.egg-info/dependency_links.txt
+pypisearch.egg-info/entry_points.txt
+pypisearch.egg-info/requires.txt
+pypisearch.egg-info/top_level.txt
