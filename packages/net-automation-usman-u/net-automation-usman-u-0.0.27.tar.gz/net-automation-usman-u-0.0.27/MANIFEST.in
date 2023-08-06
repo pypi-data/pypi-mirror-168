@@ -1,0 +1,2 @@
+include src/net_automation/requirements
+include src/net_automation/vyosbgp.template
