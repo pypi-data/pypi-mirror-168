@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: unpeurave
+Version: 0.1.0
+Home-page: https://github.com/apium/rave
+Author: Apium graveolens
+Author-email: apium.graveolens@gmail.com   
+License: MIT
+Requires-Python: >=3.6.0
+Requires-Dist: celery (==4.4.2)
+
