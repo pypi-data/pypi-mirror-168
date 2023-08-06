@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: measuresoftgram
+Version: 3.4.4
+License-File: LICENSE
+Requires-Dist: inquirer (==2.8.0)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: pytz
+Requires-Dist: tabulate (==0.8.10)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: pandas (~=1.4.4)
+Requires-Dist: validators (==0.20.0)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+CLI da ferramenta MeasureSoftGram
