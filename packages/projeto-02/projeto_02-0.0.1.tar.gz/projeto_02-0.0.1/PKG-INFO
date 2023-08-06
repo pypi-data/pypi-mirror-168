@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: projeto_02
+Version: 0.0.1
+Summary: Projeto 2 DIO / Unimed
+Home-page: https://github.com/igorjvmata/Projeto_02
+Author: Igor Mata
+Author-email: igor@mata.com.br
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Projeto 02 - DIO / Unimed
+
+DescriÃ§Ã£o
+Esse Ã© um projeto de teste para utilizaÃ§Ã£o de pacotes para o BootCamp DIO/Unimed para CiÃªncia de Dados.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install package_name
+```
+
+## Usage
+
+```python
+from package_name.module1_name import file1_name
+file1_name.my_function()
+```
+
+## Author
+Igor Mata
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
