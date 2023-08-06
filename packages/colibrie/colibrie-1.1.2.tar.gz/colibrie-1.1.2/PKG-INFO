@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: colibrie
+Version: 1.1.2
+Summary: Colibrie is a blazing fast repository to extract tables from PDF files
+Home-page: https://github.com/abitoun-42/colibrie
+License: AGPL-3.0-only
+Author: Alexandre Bitoun
+Author-email: alexandre.bitoun@outlook.fr
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Cython (>=0.29.32,<0.30.0)
+Requires-Dist: Pillow (>=9.2.0,<10.0.0)
+Requires-Dist: PyMuPDF (>=1.20.2,<2.0.0)
+Requires-Dist: ailist (>=1.0.4,<2.0.0)
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
+Requires-Dist: pandas (>=1.5.0,<2.0.0)
+Project-URL: Repository, https://github.com/abitoun-42/colibrie
+Description-Content-Type: text/markdown
+
+# Colibrie
+Colibrie is a blazing fast repository to extract tables from PDF files 
+
+# Installation
+### installation using source
+```
+pip install poetry
+
+git clone https://github.com/abitoun-42/colibrie.git
+
+cd colibrie
+
+poetry install
+```
+### installation using pip
+```
+pip install colibrie
+```
+
+# Usage
+```
+from colibrie.extract_tables import extract_table
+
+tables = extract_table('pdf_path')
+```
