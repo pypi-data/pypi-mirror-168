@@ -1,0 +1,8 @@
+coverage[toml]
+flake8
+mypy
+black
+twine
+pytest
+pytest-mock
+pytest-cov

@@ -1,0 +1,5 @@
+backports.cached-property
+requests
+click
+importlib-resources
+pzp
