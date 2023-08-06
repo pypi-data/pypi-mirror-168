@@ -1,0 +1,7 @@
+jpype1<2.*,>=1.2.1
+
+[dev]
+numpy
+pillow
+opencv-python
+pytesseract
