@@ -1,0 +1,17 @@
+cvi/__init__.py,sha256=eVoT3WM7ghGEa3Yv5z5n2a8Jchh94FzynTVt4Fkuc7I,610
+cvi/compat/__init__.py,sha256=PE7QuGx2pAYuQLxEEiK9FaTch6znxF7F8agoX4egxtA,264
+cvi/compat/v0.py,sha256=9uaB7TdqEnR4e_sxrXIvnhtwM0joUlAzlWVFDpR8ICY,24555
+cvi/modules/CH.py,sha256=djBIp0N_q4LiH1RfbZEYV7fI4M3HgOVRiqM8bsZI8Wc,5951
+cvi/modules/DB.py,sha256=xGAmaFxBR0IL4fbrsuGHkcqVxxyQWo44hE3dXzjtNx0,7518
+cvi/modules/GD43.py,sha256=5Yfd-hj4i-RrrzGWkthZ2_BI9pON53c7uOlDevelUkc,7400
+cvi/modules/GD53.py,sha256=-oyA04Vh5qFn6ABKqYmld_JhcqjuJfNcctvLCngWkJU,7472
+cvi/modules/WB.py,sha256=-RXThjjRBzO0OfCwRYpWZ1yaQebzYGcYu6PyICh1KyE,6108
+cvi/modules/XB.py,sha256=ank5R8FBlQHer8Tz5mjoi0BlkE_rpzQBMv8j2wkShPs,6977
+cvi/modules/__init__.py,sha256=lniTVwuxp2L8vVmk_y5xOymyzlB7Z-NlIPcsskSXUUs,491
+cvi/modules/_base.py,sha256=_hjQ0Ys_KzQKHZ7ag5pBfISJvgmNrdn2WhETO7ZhUnE,7014
+cvi/modules/cSIL.py,sha256=vW2vZhHfiNXmdbWR958n2gh2-rlMDm1fnlOOmg9YSXs,8637
+cvi-0.3.0.dist-info/LICENSE,sha256=YOL1odZzTxonKQJa4XWBLx6pjVznZ5zk5BaiOhmmx4Y,1071
+cvi-0.3.0.dist-info/METADATA,sha256=Eg2QYI41Ql12O2zz5OY4wkuPltTaABaJCmScpSwIIA0,8546
+cvi-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cvi-0.3.0.dist-info/top_level.txt,sha256=HavrlC8Dm0XLsf6HCYIx8SqoFfQbPuCU7DBkaWJ-dqA,4
+cvi-0.3.0.dist-info/RECORD,,
