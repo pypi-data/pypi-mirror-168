@@ -1,0 +1,6 @@
+matplotlib
+nltk
+pandas
+
+[dev]
+pytest

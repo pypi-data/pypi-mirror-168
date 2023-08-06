@@ -1,0 +1,4 @@
+[console_scripts]
+pymink.gn = pymink.cli:guess_number
+pymink.sn = pymink.cli:square_number
+
