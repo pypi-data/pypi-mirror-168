@@ -1,0 +1,7 @@
+numpy>=1.15
+pandas>=0.21
+scipy>=1.0.1
+pyitlib
+
+[:python_version < "3.2"]
+pathlib2
