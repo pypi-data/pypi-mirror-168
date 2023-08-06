@@ -1,0 +1,13 @@
+processoptim/__colors__.py,sha256=-Ec_whHcMcRHDfIqX4MJ4TuNMEW2A4MHZbHZFYM7IXI,2527
+processoptim/__disp__.py,sha256=T9ax0MsxQ9LeZ8sbODCrXV5ktbJkamSzyt3glqIlMTA,772
+processoptim/__init__.py,sha256=gcdQ3D6BgVHwqJ-DJLmIfr2X8pxIgu6ZL6SSYMXzpDg,142
+processoptim/__main__.py,sha256=qVPcan5hLwlicebgRVamCK_4Ck05Iex081F8SM-7iu0,185
+processoptim/__version__.py,sha256=JYKNDDF17gJkj-vHWU3b-dg8kgH8rzuEcs0C8gYBtgg,112
+processoptim/process_schema.json,sha256=ZxLvay29L842LJeJ4P_7J6ah9AmrE22u-YvXD3-Cypo,6725
+processoptim/processes.py,sha256=4JlLi8pPb3Mkmf7RGpbItrKrzVU4eMyt-VJVGcLpG5c,12005
+processoptim/thermo_properties.py,sha256=qDvmCH_p42e-pIGZcRw9-mgNMF1IVRzRmmjYRECKrOI,3442
+processoptim-0.1.0.dist-info/LICENSE.txt,sha256=jK783yqjsDKrg9nddLLWL6WF2dJizdOGyb7j9IjXCDY,1093
+processoptim-0.1.0.dist-info/METADATA,sha256=uhLTM7GMWr1JfRm4qU3sYlNQWCQS2GwLujenV1dzgbc,1910
+processoptim-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+processoptim-0.1.0.dist-info/top_level.txt,sha256=HCnCjsvYylvx_Em7mmr4E8dapJanQLMgF8LLAf_59Uw,13
+processoptim-0.1.0.dist-info/RECORD,,

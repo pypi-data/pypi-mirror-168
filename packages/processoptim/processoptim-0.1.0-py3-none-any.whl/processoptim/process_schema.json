@@ -1,0 +1,225 @@
+{
+    "falling_film_evaporator": {
+        "design_variables": {
+            "n_effects": {
+                "label": "number of effects",
+                "default": 1,
+                "unit": "",
+                "decimals": 0
+            },
+            "steam_temperature": {
+                "label": "steam temperature",
+                "default": 120,
+                "unit": "degC",
+                "decimals": 0
+            }
+        },
+        "process_specifications": {
+            "feed_concentration": {
+                "label": "feed concentration",
+                "default": 0.05,
+                "unit": "",
+                "decimals": 3
+            },
+            "target_concentration": {
+                "label": "target concentration",
+                "default": 0.3,
+                "unit": "",
+                "decimals": 3
+            },
+            "feed_flowrate": {
+                "label": "feed flow rate",
+                "default": 1,
+                "unit": "kg/s",
+                "decimals": 3
+            },
+            "n_tubes": {
+                "label": "number of tubes",
+                "default": [
+                    100
+                ],
+                "unit": "",
+                "decimals": 0
+            },
+            "tube_diameter": {
+                "label": "tube diameter",
+                "default": [
+                    2.5e-2
+                ],
+                "unit": "m",
+                "decimals": 3
+            },
+            "tube_length": {
+                "label": "tube length",
+                "default": [
+                    5
+                ],
+                "unit": "m",
+                "decimals": 3
+            }
+        },
+        "res": {
+            "p": {
+                "label": [
+                    "steam pressure",
+                    "vapor outlet pressure"
+                ],
+                "unit": "bar",
+                "decimals": 3,
+                "default": [],
+                "len": 1
+            },
+            "ts": {
+                "label": "residence time",
+                "unit": "s",
+                "decimals": 3,
+                "default": [],
+                "len": 0,"color":"on_yellow"
+            },
+            "x": {
+                "label": "concentration",
+                "unit": "",
+                "decimals": 3,
+                "default": [],
+                "len": 1,"color":"bcyan"
+            },
+            "L": {
+                "label": "liquid flowrate",
+                "unit": "kg/s",
+                "decimals": 3,
+                "default": [],
+                "len": 1
+            },
+            "V": {
+                "label": [
+                    "steam flowrate",
+                    "vapor outlet from effect"
+                ],
+                "unit": "kg/s",
+                "decimals": 3,
+                "default": [],
+                "len": 1
+            },
+            "T": {
+                "label": [
+                    "steam temperature",
+                    "evaporating temperature"
+                ],
+                "unit": "degC",
+                "default": [],
+                "decimals": 0,
+                "len": 1
+            },
+            "hg": {
+                "label": "overall heat transfer coefficient",
+                "unit": "kW/m2/K",
+                "default": [],
+                "decimals": 2,
+                "len": 0,"color":"bcyan"
+            },
+            "dm": {
+                "label": "dry matter flowrate",
+                "unit": "kg/s",
+                "default": 0,
+                "decimals": 3
+            },
+            "mevap": {
+                "label": "evaporation rate",
+                "unit": "kg/s",
+                "default": 0,
+                "decimals": 3
+            },
+            "Re_L": {
+                "label": "Reynold number of liquid",
+                "unit": "",
+                "default": [],
+                "decimals": 0,
+                "len": 0
+            },
+            "Pr_L": {
+                "label": "Prandtl number of liquid",
+                "unit": "",
+                "default": [],
+                "decimals": 2,
+                "len": 0
+            },
+            "Nu_L": {
+                "label": "Nusselt number of liquid",
+                "unit": "",
+                "default": [],
+                "decimals": 2,
+                "len": 0
+            },
+            "DP_L": {
+                "label": "friction pressure drop in tubes",
+                "unit": "bar",
+                "default": [],
+                "decimals": 4,
+                "len": 0,"color":"bcyan"
+            },
+            "F": {
+                "label": "volume flowrate",
+                "unit": "m3/s",
+                "default": [],
+                "decimals": 4,
+                "len": 0
+            },
+            "E": {
+                "label": "electric power",
+                "unit": "kW",
+                "default": [],
+                "decimals": 2,
+                "len": 0,"color":"bcyan"
+            },
+            "mu_L": {
+                "label": "apparent viscosity of liquid",
+                "unit": "Pa.s",
+                "default": [],
+                "decimals": 3,
+                "len": 0
+            },
+            "rho_L": {
+                "label": "density of liquid",
+                "unit": "kg/m3",
+                "default": [],
+                "decimals": 0,
+                "len": 0
+            },
+            "Cp_L": {
+                "label": "specific heat of liquid",
+                "unit": "kJ/kg/K",
+                "default": [],
+                "decimals": 2,
+                "len": 0
+            },
+            "lambda_L": {
+                "label": "thermal conductivity of liquid",
+                "unit": "W/m/K",
+                "default": [],
+                "decimals": 3,
+                "len": 0
+            },
+            "bep": {
+                "label": "boiling elevation point",
+                "default": [],
+                "len": 0,
+                "decimals": 0,
+                "unit": "degC"
+            },
+            "A": {
+                "label": "heat transfer area",
+                "default": [],
+                "unit": "m2",
+                "decimals": 2,
+                "len": 0
+            },
+            "u": {
+                "label": "fluid velocity",
+                "default": [],
+                "unit": "m/s",
+                "decimals": 3,
+                "len": 0,"color":"bcyan"
+            }
+        }
+    }
+}
