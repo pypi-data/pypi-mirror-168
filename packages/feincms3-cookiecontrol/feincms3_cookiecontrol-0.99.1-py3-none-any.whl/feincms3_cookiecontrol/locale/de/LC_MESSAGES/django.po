@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-19 13:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:16
+msgctxt "f3cc"
+msgid "Cookies on Our Website"
+msgstr "Cookies auf unserer Website"
+
+#: models.py:17
+msgctxt "f3cc"
+msgid "Banner content"
+msgstr "Wir verwenden Cookies, um unsere Website benutzerfreundlich zu gestalten. In unserer Datenschutzrichtlinie finden Sie weitere Informationen darüber, wie wir Cookies einsetzen und Ihre Daten schützen."
+
+#: models.py:18
+msgctxt "f3cc"
+msgid "Accept all cookies"
+msgstr "Alle akzeptieren"
+
+#: models.py:19
+msgctxt "f3cc"
+msgid "Refuse non-essential cookies"
+msgstr "Nicht-essentielle Cookies verweigern"
+
+#: models.py:20
+msgctxt "f3cc"
+msgid "Modify cookie settings"
+msgstr "Cookie-Einstellungen anpassen"
+
+#: models.py:23
+msgctxt "f3cc"
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"
+
+#: models.py:49
+msgid "technical name"
+msgstr "Technischer Name"
+
+#: models.py:51 models.py:58
+msgid "script"
+msgstr "Skript"
+
+#: models.py:53
+msgid "HTML code to inject if cookies are accepted."
+msgstr "HTML-Code, falls Cookies akzeptiert werden."
+
+#: models.py:59
+msgid "scripts"
+msgstr "Skripte"
+
+#: models.py:68
+msgid "This doesn't look right. Please start with a HTML tag (e.g. <script>, <div>)."
+msgstr "Das sieht nicht korrekt aus. Bitte beginne mit einem HTML-Tag (zB <script>, <div>)."
+
+#: models.py:75
+msgid "Entering <noscript> tags doesn't make sense."
+msgstr "Die Eingabe von <noscript> Tags macht keinen Sinn."
+
+#: templates/feincms3_cookiecontrol/embed.html:4
+#, python-format
+msgid "We would like to show you content from the provider %(title)s, but respect your privacy. If you agree to the %(link_start)sprovider's privacy policy%(link_end)s, please click the following button to view the content."
+msgstr "Wir möchten Ihnen gerne Inhalte des Anbieters %(title)s anzeigen, aber respektieren Ihre Privatsphäre. Falls Sie mit den %(link_start)sDatenschutzrichtlinien des Anbieters%(link_end)s einverstanden sind, klicken Sie bitte den folgenden Button, um die Inhalte anzuzeigen."
+
+#: templates/feincms3_cookiecontrol/embed.html:5
+msgid "Show the content"
+msgstr "Inhalt anzeigen"
+
+#~ msgid "OK, thanks."
+#~ msgstr "OK, danke."
