@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: gee_whiz_2
+Version: 2.0.0b3
+Summary: Gee Whiz 2 is a script for managing Guild Wars 2 addons, profiles, and Lutris installations from a simple launcher script.
+Author-email: James Harmison <jharmison@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Games/Entertainment
+Classifier: Typing :: Typed
+Requires-Dist: pyyaml >=6,<7
+Requires-Dist: pydantic >=1.9,<2
+Requires-Dist: requests >=2.28,<3
+Requires-Dist: semantic_version >=2.10,<3
+Requires-Dist: click >=8.1,<9
+Requires-Dist: tqdm >=4.64,<5
+Requires-Dist: rich >= 12.5.1,<13
+Requires-Dist: rich-click >= 1.5.2
+Requires-Dist: vdf >= 3.4
+Project-URL: Documentation, https://git.jharmison.com/james/gw2
+Project-URL: Source, https://git.jharmison.com/james/gw2
+
+# Gee Whiz 2
+
+Gee Whiz 2 is a program for managing Guild Wars 2 addons, profiles, and launching the game from a Python program.
+
+[On PyPi](https://pypi.org/project/gee-whiz-2/)
+[On Gitea](https://git.jharmison.com/james/gw2)
+
+## Installation
+
+Download the source of a release tag and change into the directory, for example by running the following:
+
+```sh
+VERSION=2.0.0-beta2 # Set this to some other tag if you want a specific version
+git clone git@git.jharmison.com:james/gw2.git
+cd gw2
+git checkout $VERSION
+```
+
+Once you have a version you want to install in your working directory, you can execute the following to build and install:
+
+```sh
+make
+sudo make install
+```
+
+## Uninstallation
+
+Change into the directory you downloaded the release into originally and run:
+
+```sh
+sudo make uninstall
+```
+
+## Usage
+
+After installation, there is a file in /etc/gw2/config.yml that may be useful as a starting point for your own configuration. To customize your installation, run the following:
+
+```sh
+mkdir -p ~/.config/gw2
+cp /etc/gw2/config.yml ~/.config/gw2/
+${EDITOR:-nano} ~/.config/gw2/config.yml
+```
+
+As Gee Whiz 2 version 2 is still in rapid development, please see `gw2 --help` for more information on command line usage, including management options for other profiles (to save multiple login passwords).
+
