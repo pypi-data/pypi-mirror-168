@@ -1,0 +1,2 @@
+[console_scripts]
+distkv = distkv.command:cmd

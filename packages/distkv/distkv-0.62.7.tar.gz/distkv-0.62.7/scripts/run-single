@@ -1,0 +1,15 @@
+#!/bin/bash
+set -ex
+
+# This script file starts up a DistKV single-node runner.
+
+if test ! -v NAME ; then
+    echo "NAME is not set. Exiting." >&2
+    exit 1
+fi
+
+if test $# = 1 ; then
+    exec distkv -c /etc/distkv.cfg client job -n "$NAME" -g "$1" run
+else
+    exec distkv -c /etc/distkv.cfg client job -n "$NAME" run
+fi
