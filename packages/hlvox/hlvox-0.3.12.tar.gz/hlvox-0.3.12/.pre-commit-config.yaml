@@ -1,0 +1,22 @@
+repos:
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        language: system
+        entry: pipenv run isort
+        types: [python]
+
+      - id: autopep8
+        name: autopep8
+        language: system
+        entry: pipenv run autopep8
+        args:
+          - "--in-place"
+        types: [python]
+
+      - id: pylint
+        name: pylint
+        language: system
+        entry: pipenv run pylint
+        types: [python]
