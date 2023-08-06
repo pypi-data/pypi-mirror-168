@@ -1,0 +1,3 @@
+[console_scripts]
+aogl = aogl.aogl:main
+
