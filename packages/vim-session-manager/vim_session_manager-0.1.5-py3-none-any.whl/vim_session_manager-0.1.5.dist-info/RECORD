@@ -1,0 +1,12 @@
+vim_session_manager/__init__.py,sha256=ZRimIHWh7sU1Kgff_NOKpshJof85g1F4dnMrFNisQXo,3891
+vim_session_manager/__main__.py,sha256=3ZIZn8gSak2vN4AcO7xlF0osXuj4wzHcRmK0JzJQWJU,4163
+vim_session_manager/cli.py,sha256=RdfWp12wxdp5-HxAjQOd5AvSwBz7uzjfqT6ksbRZVYo,1805
+vim_session_manager/log.py,sha256=JIe0Patp36fxVkJLXSeAIFzsQ_BofEpg2izf0HYFZ_A,660
+vim_session_manager/manager.py,sha256=P-C_C-Ojdu6QDpbPnDsKnRgHvGoUEFOPA8Xy3zBi-2w,5496
+vim_session_manager/prompt.py,sha256=1WSfpzM2EhN3KE7j8b-5FFPvznFL7SNHuDdgDd1-FkY,2681
+vim_session_manager/utils.py,sha256=jZGKr2kTZb4B-67SqgA8trOwpCZUwMTA8jHq9GWhFAg,7804
+vim_session_manager-0.1.5.dist-info/entry_points.txt,sha256=sVwA9GK2hzSmyIScm8Ds-o3QvUOb2WoXlYPIX3RiRpU,57
+vim_session_manager-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+vim_session_manager-0.1.5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+vim_session_manager-0.1.5.dist-info/METADATA,sha256=o37SX_7b6OOPTj-WKFNdXe1kt1_4iG7ESi0X0ZvDg-g,6274
+vim_session_manager-0.1.5.dist-info/RECORD,,
