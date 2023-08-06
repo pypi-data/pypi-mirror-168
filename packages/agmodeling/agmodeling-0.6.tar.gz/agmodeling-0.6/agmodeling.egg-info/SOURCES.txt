@@ -1,0 +1,16 @@
+LICENSE
+README.md
+autodocExample.txt
+deploying.txt
+setup.py
+agmodeling/.gitignore
+agmodeling/__init__.py
+agmodeling.egg-info/PKG-INFO
+agmodeling.egg-info/SOURCES.txt
+agmodeling.egg-info/dependency_links.txt
+agmodeling.egg-info/top_level.txt
+agmodeling/scoring/.gitignore
+agmodeling/scoring/__init__.py
+agmodeling/scoring/set_method.py
+demo/demo_SET_scoring.py
+demo/sample_data.xlsx

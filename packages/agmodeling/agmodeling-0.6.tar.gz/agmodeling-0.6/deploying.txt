@@ -1,0 +1,16 @@
+
+Register to
+https://pypi.python.org/pypi?%3Aaction=register_form
+pip install twine
+
+#prepare package
+
+python setup.py sdist
+python setup.py bdist_wheel
+
+
+#upload
+twine upload dist/*
+
+#Checker la distribution
+twine check .\dist\
