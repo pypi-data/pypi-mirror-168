@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+hyperscript/__init__.py
+hyperscript/element.py
+hyperscript.egg-info/PKG-INFO
+hyperscript.egg-info/SOURCES.txt
+hyperscript.egg-info/dependency_links.txt
+hyperscript.egg-info/requires.txt
+hyperscript.egg-info/top_level.txt
