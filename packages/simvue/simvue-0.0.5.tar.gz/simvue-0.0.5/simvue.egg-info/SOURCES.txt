@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+./simvue/__init__.py
+./simvue/client.py
+./simvue/config.py
+simvue.egg-info/PKG-INFO
+simvue.egg-info/SOURCES.txt
+simvue.egg-info/dependency_links.txt
+simvue.egg-info/requires.txt
+simvue.egg-info/top_level.txt
