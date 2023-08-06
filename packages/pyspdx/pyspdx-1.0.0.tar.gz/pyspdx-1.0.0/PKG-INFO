@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyspdx
+Version: 1.0.0
+Summary: Validate SPDX expressions
+Home-page: https://github.com/tribe29/pyspdx
+License: GPL-2.0-only
+Author: Tribe29 GmbH
+Author-email: info@tribe29.com
+Requires-Python: >=3.7.2,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Typing :: Typed
+Requires-Dist: pyparsing (>=3.0.9,<4.0.0)
+Project-URL: Repository, https://github.com/tribe29/pyspdx
+Description-Content-Type: text/markdown
+
+# pyspdx
+
+Short library to validate SPDX expressions. I have not found any working implementation in python and I wanted to mess around with pyparsing anyways.
+
+## API / Usage
+This lib only exposes one function:
+
+```
+from pyspdx import validate
+
+validate("MIT")  # Valid, does nothing
+validate("NotValid") # Throws ValueError
+validate("(Apache-2.0 OR MIT) AND BSD-3-Clause") # Valid
+validate("(DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2 OR (Apache-2.0 AND PostgreSQL OR OpenSSL)) AND (BSD-3-Clause OR Apache-2.0 WITH 389-exception)") # Valid
+```
+
+## Used Sources
+- https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/
+- https://pyparsing-docs.readthedocs.io/en/latest/HowToUsePyparsing.html
+
