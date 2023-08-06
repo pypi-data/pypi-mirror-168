@@ -1,0 +1,11 @@
+casual_inference/__init__.py,sha256=x-x8w3Q7zBMlGK5QdgiqAbzylrp_7BTQvL_I3bmYXTU,58
+casual_inference/dataset/__init__.py,sha256=XMIJfAAtxlKZxbdjc2OYqbfmSC6ymQbOl7wEUFA1H7w,90
+casual_inference/dataset/sample_abtest.py,sha256=nwyViVFzULAZUBBPxAONsGX4PZRt_xAj9I0BT5_46bo,1836
+casual_inference/evaluator/__init__.py,sha256=lTfiCBXfKSQWQnUFyrnzKt452dbirHbjFvd5gVVrY-I,122
+casual_inference/evaluator/aatest.py,sha256=klnM6GyZY_V5IeYlTrBP5W1sOYLYHF1g_P6jaLbL4VM,4342
+casual_inference/evaluator/abtest.py,sha256=3ZOKYGxA9dNfLq-rZLzKYHpPb7KAGGEgc0gnpnN2QjQ,4025
+casual_inference/statistical_testing.py,sha256=bIJ_Hd_x6ZsCuoeO-uDuU5PRSpRpJz3zM9kk-7elxnw,4422
+casual_inference-0.2.0.dist-info/LICENSE,sha256=iYtSLWPaqT33nsowYHtaEU6FRVdVuJJF12JV3eNf6nU,1066
+casual_inference-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+casual_inference-0.2.0.dist-info/METADATA,sha256=dcCle7YvDlhMs_3IgZg79scRfKi8nQe_HVjUGCJZKH0,4679
+casual_inference-0.2.0.dist-info/RECORD,,
