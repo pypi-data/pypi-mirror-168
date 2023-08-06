@@ -1,0 +1,13 @@
+distributed
+SimPEG
+discretize
+tqdm
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+psutil
+pywin32
+properties
+colour
