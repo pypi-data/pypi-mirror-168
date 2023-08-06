@@ -1,0 +1,13 @@
+nucleotides_to_matrices/__init__.py,sha256=jbKbdBsuNODYwbZvAuny6y5Kkr9twwbl-33DVJCzFDM,384
+nucleotides_to_matrices/cli.py,sha256=oeZdEXc57aqLUXs1MQHHUZA6cJmWZkrBK8DHCjcQoJ0,722
+nucleotides_to_matrices/encodings.py,sha256=GUjGcDs-FhEB8AOu_chGYFg_S2tuiWJV5zTMhpfs3Bw,1785
+nucleotides_to_matrices/encodings.txt,sha256=pSXracHxF2POXPrXHIizhVEt3_rw04ZXWaoCt4J7hM4,848
+nucleotides_to_matrices/nucleotides_to_matrices.py,sha256=Dvn9hcKt3751yNcXWLXsSax-M90JmugwvJKQqDOxtV4,3355
+nucleotides_to_matrices/.ipynb_checkpoints/encodings-checkpoint.txt,sha256=jW7r90nesIkTIa10oPPc5Z7foE5h4IlZypYINXewWXg,848
+nucleotides_to_matrices-0.1.0.dist-info/AUTHORS.rst,sha256=ppfpLfSa9xcMMyo0EJG5LebaLuJ6IaXulUTcTCHcHE4,187
+nucleotides_to_matrices-0.1.0.dist-info/LICENSE,sha256=GzYAx2KiZXoa7D60-6IlbTUF4TMZL12meEj58w83SvA,1081
+nucleotides_to_matrices-0.1.0.dist-info/METADATA,sha256=UhMlAMsVPbCjqyRFQpl7DQ1LPPy69Gg2ZzecV9Ec-eo,2489
+nucleotides_to_matrices-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+nucleotides_to_matrices-0.1.0.dist-info/entry_points.txt,sha256=OXsFyuUsh8gDkrk-c8oVNZYk2lKDPhNY4Uivtl5nBGU,78
+nucleotides_to_matrices-0.1.0.dist-info/top_level.txt,sha256=KEPIpdLWegKs3D-J62aDZluqLZI-SuISJFLdmK265Ec,24
+nucleotides_to_matrices-0.1.0.dist-info/RECORD,,
