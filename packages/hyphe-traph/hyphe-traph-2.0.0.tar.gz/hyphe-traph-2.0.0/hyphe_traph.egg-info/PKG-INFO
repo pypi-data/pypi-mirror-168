@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: hyphe-traph
+Version: 2.0.0
+Summary: A Trie/Graph hybrid memory structure used by the Hyphe crawler to index pages & webentities.
+Home-page: http://github.com/medialab/hyphe-traph
+Author: Guillaume Plique
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
