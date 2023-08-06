@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gitlab2pandas/__init__.py
+gitlab2pandas/core.py
+gitlab2pandas/extractions.py
+gitlab2pandas/gitlab2pandas.py
+gitlab2pandas/processing.py
+gitlab2pandas.egg-info/PKG-INFO
+gitlab2pandas.egg-info/SOURCES.txt
+gitlab2pandas.egg-info/dependency_links.txt
+gitlab2pandas.egg-info/requires.txt
+gitlab2pandas.egg-info/top_level.txt

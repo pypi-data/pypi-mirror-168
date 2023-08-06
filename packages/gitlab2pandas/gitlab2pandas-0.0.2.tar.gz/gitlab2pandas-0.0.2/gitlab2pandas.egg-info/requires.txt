@@ -1,0 +1,4 @@
+human-id>=0.2.0
+pandas>=1.4.4
+python-gitlab>=3.9.0
+XlsxWriter>=3.0.3
