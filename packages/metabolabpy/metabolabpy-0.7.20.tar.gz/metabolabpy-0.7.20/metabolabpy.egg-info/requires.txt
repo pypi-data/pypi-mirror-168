@@ -1,0 +1,14 @@
+numpy
+scipy
+matplotlib
+pyside2
+pandas
+numba
+sklearn
+openpyxl
+pyautogui
+qtmodern
+xlsxwriter
+jupyter
+jupyterthemes
+multiprocess

@@ -1,0 +1,2 @@
+[console_scripts]
+metabolabpy = metabolabpy.__main__:main
