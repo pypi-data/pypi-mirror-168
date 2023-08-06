@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/gestures4kivy/__init__.py
+src/gestures4kivy/commongestures.py
+src/gestures4kivy.egg-info/PKG-INFO
+src/gestures4kivy.egg-info/SOURCES.txt
+src/gestures4kivy.egg-info/dependency_links.txt
+src/gestures4kivy.egg-info/top_level.txt
