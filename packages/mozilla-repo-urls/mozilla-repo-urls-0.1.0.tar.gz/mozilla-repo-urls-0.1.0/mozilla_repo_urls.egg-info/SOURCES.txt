@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+mozilla_repo_urls/__init__.py
+mozilla_repo_urls/errors.py
+mozilla_repo_urls/parser.py
+mozilla_repo_urls/result.py
+mozilla_repo_urls.egg-info/PKG-INFO
+mozilla_repo_urls.egg-info/SOURCES.txt
+mozilla_repo_urls.egg-info/dependency_links.txt
+mozilla_repo_urls.egg-info/not-zip-safe
+mozilla_repo_urls.egg-info/requires.txt
+mozilla_repo_urls.egg-info/top_level.txt
+mozilla_repo_urls/platforms/__init__.py
+mozilla_repo_urls/platforms/hgmo.py
+test/__init__.py
+test/test_integration.py
