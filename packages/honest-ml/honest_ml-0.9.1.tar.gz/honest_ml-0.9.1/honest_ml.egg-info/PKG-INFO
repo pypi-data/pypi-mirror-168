@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: honest-ml
+Version: 0.9.1
+Summary: Training for models conforming to the scikit-learn api
+Home-page: https://github.com/EricSchles/honest_ml
+Author: Eric Schles
+Author-email: ericschles@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Honest ML
+
+This library allows you to do honest-ML
+
+You can see a talk about this library 
+
+* [here](https://www.youtube.com/watch?v=AHQaQrii1vM&t=439s&ab_channel=DataScienceConnect)
+
+[![Documentation Status](https://readthedocs.org/projects/honest-ml/badge/?version=latest)](https://honest-ml.readthedocs.io/en/latest/?badge=latest)
