@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+recsys_slates_dataset = recsys_slates_dataset._modidx:d
+
