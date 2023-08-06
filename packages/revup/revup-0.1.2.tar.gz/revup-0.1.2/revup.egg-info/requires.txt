@@ -1,0 +1,12 @@
+aiohttp
+rich
+
+[dev]
+black
+isort
+pylint
+mypy
+build
+twine
+pytest
+pytest-mock

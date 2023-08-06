@@ -1,0 +1,2 @@
+[console_scripts]
+revup = revup.__main__:_main
