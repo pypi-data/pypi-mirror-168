@@ -1,0 +1,8 @@
+file-io-utilities>=0.0.6
+ds-io-utilities>=0.0.8
+pyspark-utilities>=0.0.28
+bda-service-utils>=0.0.8
+kafka-python>=2.0.2
+pyarrow>=6.0.0
+alida-arg-parser>=0.0.21
+pandas
