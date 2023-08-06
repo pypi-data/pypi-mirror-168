@@ -1,0 +1,11 @@
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.data/data/lib/libdnnl.so,sha256=zuItlsFF3HfRX4W8D5HNE2P_bd3fESjzsaaaTXMHbcU,49083992
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.data/data/lib/libdnnl.so.2,sha256=zuItlsFF3HfRX4W8D5HNE2P_bd3fESjzsaaaTXMHbcU,49083992
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.data/data/lib/libdnnl.so.2.6,sha256=zuItlsFF3HfRX4W8D5HNE2P_bd3fESjzsaaaTXMHbcU,49083992
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.data/data/share/doc/onednn/LICENSE,sha256=3RJFLhrhHjKCJxqliV2BdSlrg-k2oCcgn5OZ0mpAfQ8,11521
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.data/data/share/doc/onednn/README,sha256=fsJL8H0MW9Q1QhppMskIBV6XzKzeizMft5ClsrctB1s,6355
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.data/data/share/doc/onednn/THIRD-PARTY-PROGRAMS,sha256=0YEJW0dBbtk9OTCDxdI_p8Li3WTYdHSkKsXA5_5-CaM,28478
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.dist-info/LICENSE.txt,sha256=7micbUpzQXphq9e_2oL7PpZcvoXzPuQHIDEXyKXC81s,10797
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.dist-info/METADATA,sha256=lQHMN7ATAVRN9Ae-iOZTLDcYxGogg-tiFlSkx3uxH58,1336
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.dist-info/WHEEL,sha256=dNxT-MG8LzRaqJYFQzfes411XUTOrT0gsWYZz0BoKLo,138
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+onednn_cpu_dpcpp_gpu_dpcpp-2022.2.0.dist-info/RECORD,,
