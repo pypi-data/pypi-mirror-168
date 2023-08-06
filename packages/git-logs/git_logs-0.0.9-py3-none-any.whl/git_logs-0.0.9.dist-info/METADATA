@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: git-logs
+Version: 0.0.9
+Summary: Bird-eye view of a local git repository
+Download-URL: https://github.com/nkilm/git-logs
+Author: Nikhil Mohite
+Author-email: nikhilmohitelhs@gmail.com
+Keywords: python,git,statistics,local repository,git statistics
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# git-logs
+
+> compare & filter commits based on frequency, author etc
+
+
+
+## Installation 
+
+```bash
+
+pip install git-logs
+
+```
+
+
+
+## Usage 
+
+
+
+> NOTE: Both git-logs and gitlogs work.
+
+
+
+- By default commits will be listed by `month`
+
+```bash
+
+gitlogs 
+
+```
+
+
+
+![screenshot of the above command](https://drive.google.com/uc?export=view&id=1IXnmwtA1Wc3QozV35HvvVHXtiw-ZrCpv)
+
+
+
+- `Help` options
+
+
+
+![screenshot of help option](https://drive.google.com/uc?export=view&id=18QQCbFcesh-1q2nXc0jSWiaUz9Bu_0Z9)
+
+
+
+- Error when `git not initialized` 
+
+
+
+![screenshot of error](https://drive.google.com/uc?export=view&id=1KtmpoPrUdaov7GfoJ3MDf-3zNWQ63sYZ)
+
+
+
+## To-Do
+
+- [x] Display package version - also checks if installed or not
+
+- [x] Add option to change the default display bar
+
+- [x] Make date format more readable.
+
+- [ ] Add option to change default frequency
+
+- [ ] Add option to list last `n` commits
+
+- [ ] Fix `color` error on Windows Powershell/CMD
+
+- [ ] Add more functionalities
+
