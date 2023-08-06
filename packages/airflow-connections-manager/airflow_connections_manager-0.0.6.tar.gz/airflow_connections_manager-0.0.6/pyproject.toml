@@ -1,0 +1,22 @@
+[project]
+name = "airflow_connections_manager"
+version = "0.0.6"
+authors = [
+  { name="Cristiano Sarmento", email="cristiano.sar@gmail.com" },
+]
+description = "Library for managing Airflow connections (aka Secrets)"
+readme = "README.md"
+license = { file="LICENSE" }
+dependencies = [
+    "requests",
+]
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cbevilaqua/airflow_connections_manager"
+"Bug Tracker" = "https://github.com/cbevilaqua/airflow_connections_manager/issues"
