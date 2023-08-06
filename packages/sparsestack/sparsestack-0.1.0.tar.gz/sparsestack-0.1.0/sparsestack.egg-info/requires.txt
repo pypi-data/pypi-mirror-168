@@ -1,0 +1,14 @@
+numba
+numpy
+scipy
+
+[dev]
+bump2version
+decorator
+isort>=5.1.0
+pylint<2.12
+prospector[with_pyroma]
+pytest
+pytest-cov
+testfixtures
+yapf

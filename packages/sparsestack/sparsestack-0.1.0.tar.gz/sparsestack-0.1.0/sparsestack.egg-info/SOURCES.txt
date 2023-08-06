@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sparsestack/StackedSparseArray.py
+sparsestack/__init__.py
+sparsestack/__version__.py
+sparsestack/utils.py
+sparsestack.egg-info/PKG-INFO
+sparsestack.egg-info/SOURCES.txt
+sparsestack.egg-info/dependency_links.txt
+sparsestack.egg-info/not-zip-safe
+sparsestack.egg-info/requires.txt
+sparsestack.egg-info/top_level.txt
