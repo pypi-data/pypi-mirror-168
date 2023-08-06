@@ -1,0 +1,6 @@
+[console_scripts]
+marine-build-vocab = marine.bin.build_vocab:entry
+marine-jsut2corpus = marine.bin.jsut2corpus:entry
+marine-pack-corpus = marine.bin.pack_corpus:entry
+marine-test = marine.bin.test:entry
+marine-train = marine.bin.train:entry
