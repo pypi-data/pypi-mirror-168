@@ -1,0 +1,14 @@
+rkclient/__init__.py,sha256=OIekMJI1Xtn9BF7Jp3Vo6xKPLNmh7j0dNvwWBE_9UjE,785
+rkclient/admin.py,sha256=seysFAtJeoSDU9gcO6mzCu7RV7b3R4WmIQjJms7BYqg,10071
+rkclient/auth.py,sha256=XyPtuvUwjA8R3xqiz47HfyIodW3zVVwyazp_EqnPs30,97
+rkclient/client.py,sha256=5vxwTzP2ULC7dYzI5y-KNk_cEcv0Q_tfdlkPe_X6v6w,9020
+rkclient/entities.py,sha256=ZSWUwx1CoL9Bk2XY9uVmMhXB60HNmi_k_3sf95ufGBM,3033
+rkclient/factory.py,sha256=aZ1K604LdB4gLZ1BFgiIAgdpkDf4fNB5-Zz--vGeTec,2648
+rkclient/serialization.py,sha256=_Lq2XNwsRJ6PWpEVYj0W_ETOaES6jEcePdEi7PEZQ98,3552
+rkclient/test_api.py,sha256=qDbGGbM2mAwtUamxG1IyhhCDAslgyXqAggtU_9Dst9Y,3030
+rkclient/test_serialization.py,sha256=M3Gx2HTJEd7oqied4HWO1zjQFeh2tUmAu_iGOS4kC7o,7109
+RecordKeeper_Client-1.9.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+RecordKeeper_Client-1.9.1.dist-info/METADATA,sha256=IjeUifFUtVPVwk4e60fdTgtzg3vaDIXdwJvmSEOCxbY,3802
+RecordKeeper_Client-1.9.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+RecordKeeper_Client-1.9.1.dist-info/top_level.txt,sha256=sy2hulYgnc-DIjj1U1CxqoLdPC59xXIVU77Oi7p2D6A,9
+RecordKeeper_Client-1.9.1.dist-info/RECORD,,
