@@ -1,0 +1,8 @@
+pandas
+
+[aio]
+aiohttp
+
+[test]
+pytest
+pytest-asyncio
