@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "singlue"
+version = "0.1.5"
+description = ""
+authors = ["kawagh <kawagh@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+black = "^22.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+singlue = "singlue.main:main"
