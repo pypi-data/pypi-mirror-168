@@ -1,0 +1,17 @@
+LICENSE.mit
+README.rst
+pyproject.toml
+setup.py
+pyrsistent_extras/__init__.py
+pyrsistent_extras/_pheap.py
+pyrsistent_extras/_util.py
+pyrsistent_extras/_version.py
+pyrsistent_extras.egg-info/PKG-INFO
+pyrsistent_extras.egg-info/SOURCES.txt
+pyrsistent_extras.egg-info/dependency_links.txt
+pyrsistent_extras.egg-info/requires.txt
+pyrsistent_extras.egg-info/top_level.txt
+pyrsistent_extras/_psequence/__init__.py
+pyrsistent_extras/_psequence/_base.py
+pyrsistent_extras/_psequence/_c_ext.c
+pyrsistent_extras/_psequence/_python.py
