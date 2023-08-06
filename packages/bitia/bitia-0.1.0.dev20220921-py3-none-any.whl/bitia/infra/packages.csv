@@ -1,0 +1,11 @@
+package,package managaer,install option,install command,dependencies
+fastqc,pacman,-S,fastqc,fontconfig
+trim_galore,pacman,-Sy,home_subcom_Arch/trim_galore,cutadapt
+htseq,pacman,-Sy,home_subcom_Arch/htseq,
+hisat2,pacman,-S,hisat2,
+htslib,pacman ,-S ,htslib,
+Rscript,pacman,-S,r,
+samtools,pacman ,-S,samtools,
+cutadapt,pip,install   ,cutadapt,pip
+fontconfig,pacman,-S ,fontconfig,
+pip,pacman,-S,python-pip
