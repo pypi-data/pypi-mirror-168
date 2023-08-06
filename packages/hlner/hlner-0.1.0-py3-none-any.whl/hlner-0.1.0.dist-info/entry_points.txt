@@ -1,0 +1,4 @@
+[console_scripts]
+hlner=hlner.main:lner
+unhlner=hlner.main:unlner
+
