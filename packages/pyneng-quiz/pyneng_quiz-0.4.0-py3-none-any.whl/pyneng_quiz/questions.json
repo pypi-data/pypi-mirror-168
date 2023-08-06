@@ -1,0 +1,753 @@
+{
+  "04 Строки": [
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "string = 'interface'\nresult = string[3]",
+      "answers": {
+        "1": "'t'",
+        "2": "'inte'",
+        "3": "'int'",
+        "4": "'e'",
+        "5": "'r'",
+        "6": "Ошибка"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "string = 'interface'\nresult = string[:4]",
+      "answers": {
+        "1": "'t'",
+        "2": "'inter'",
+        "3": "'e'",
+        "4": "'r'",
+        "5": "'inte'",
+        "6": "Ошибка"
+      },
+      "correct_answer": "5",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "string = 'interface'\nresult = string[:]",
+      "answers": {
+        "1": "''",
+        "2": "'interface'",
+        "3": "Ошибка"
+      },
+      "correct_answer": "2",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "string = 'interface'\nresult = string[::2]",
+      "answers": {
+        "1": "Ошибка",
+        "2": "''",
+        "3": "'interface'",
+        "4": "'itrae'",
+        "5": "'nefc'",
+        "6": "'in'"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    }
+  ],
+  "04 Строки и списки": [
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "string = 'FastEthernet0/1    10.1.1.1  255.255.255.0'\nresult = string.split()[-2]",
+      "answers": {
+        "1": "Ошибка",
+        "2": "''",
+        "3": "'255.255.255.0'",
+        "4": "'10.1.1.1'",
+        "5": "'FastEthernet0/1'"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "string = 'FastEthernet0/1    10.1.1.1  255.255.255.0'\nresult = string.split()[-1].split('.')",
+      "answers": {
+        "1": "Ошибка",
+        "2": "''",
+        "3": "['255', '255', '255', '0']",
+        "4": "['10', '1', '1', '1']",
+        "5": "['FastEthernet0/1']",
+        "6": "[255, 255, 255, 0]",
+        "7": "[10, 1, 1, 1]"
+      },
+      "correct_answer": "3",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "string = 'FastEthernet0/1    10.1.1.1  255.255.255.0'\nresult = string.split().split('.')",
+      "answers": {
+        "1": "Ошибка",
+        "2": "''",
+        "3": "['255', '255', '255', '0']",
+        "4": "['10', '1', '1', '1']",
+        "5": "['FastEthernet0/1']",
+        "6": "['FastEthernet0/1    10', '1', '1', '1  255', '255', '255', '0']"
+      },
+      "correct_answer": "1",
+      "multiple_choices": false
+    }
+  ],
+  "04 Списки": [
+    {
+      "description": "Выберите все варианты в которых переменная result будет равна 25",
+      "code": "data = [\n    [11, 12, 13, 14, 15, 16],\n    [21, 22, 23, 24, 25, 26],\n    [31, 32, 33, 34, 35, 36]\n]",
+      "answers": {
+        "1": "result = data[-2][4]",
+        "2": "result = data[1][-2]",
+        "3": "result = data[4][1]",
+        "4": "result = data[4][-2]",
+        "5": "result = data[-2][-2]",
+        "6": "result = data[1][4]"
+      },
+      "correct_answer": ["1", "2", "5", "6"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Выберите все варианты в которых переменная result будет равна 3",
+      "code": "data = [1, 2, 3, 4, 5, 6]",
+      "answers": {
+        "1": "result = data[2]",
+        "2": "result = data[3]",
+        "3": "result = data[-4]",
+        "4": "result = data[-3]",
+        "5": "result = data.pop(2)",
+        "6": "result = data.pop(-4)",
+        "7": "result = data.pop(3)",
+        "8": "result = data.remove(3)",
+        "9": "result = data.remove(2)"
+      },
+      "correct_answer": ["1", "3", "5", "6"],
+      "multiple_choices": true
+    },
+    {
+      "description": "В каком выражении в переменной result будет список состоящий из элементов list1 и list2?",
+      "code": "list1 = [1, 2, 3]\nlist2 = [4, 5, 6]",
+      "answers": {
+        "1": "result = list1 + list2",
+        "2": "result = list1.append(list2)",
+        "3": "result = list1.extend(list2)"
+      },
+      "correct_answer": ["1"],
+      "multiple_choices": true
+    }
+  ],
+  "04 Словари": [
+    {
+      "description": "Что выведет последняя строка?",
+      "code": "d1 = d2 = {1: 100, 2: 200, 3: 300}\nd1[4] = 400\nprint(d2[4])",
+      "answers": {
+        "1": "Исключение KeyError",
+        "2": "300",
+        "3": "400"
+      },
+      "correct_answer": "3",
+      "multiple_choices": false
+    },
+    {
+      "description": "Выберите все варианты в которых переменная result будет равна 200",
+      "code": "data = {4: 400, 1: 100, 2: 200, 3: 300}",
+      "answers": {
+        "1": "result = data[2]",
+        "2": "result = data[-2]",
+        "3": "result = data.get(2)",
+        "4": "result = data.get(5, 200)",
+        "5": "result = data.setdefault(2)",
+        "6": "result = data.setdefault(20, 200)",
+        "7": "result = data.setdefault(200)",
+        "8": "result = data.get(200)",
+        "9": "result = data[200]"
+      },
+      "correct_answer": ["1", "3", "4", "5", "6"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Какие ключи будут в переменной keys в последней строке?",
+      "code": "data = {'hostname': 'london_r1', 'ip': '10.255.0.1', 'vendor': 'Cisco'}\nkeys = data.keys()\ndel data['ip']\nprint(keys)",
+      "answers": {
+        "1": "hostname",
+        "2": "ip",
+        "3": "vendor"
+      },
+      "correct_answer": ["1", "3"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Какие ключи будут в переменной keys в последней строке?",
+      "code": "data = {'hostname': 'london_r1', 'ip': '10.255.0.1', 'vendor': 'Cisco'}\nkeys = list(data.keys())\ndel data['ip']\nprint(keys)",
+      "answers": {
+        "1": "hostname",
+        "2": "ip",
+        "3": "vendor"
+      },
+      "correct_answer": ["1", "2", "3"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Какие типы данных из перечисленных могут использоваться как ключ в словаре?",
+      "code": "",
+      "answers": {
+        "1": "список (list)",
+        "2": "строка (str)",
+        "3": "словарь (dict)",
+        "4": "число (int)",
+        "5": "кортеж (tuple)",
+        "6": "множество (set)"
+      },
+      "correct_answer": ["2", "4", "5"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Какие типы данных из перечисленных могут использоваться как значение в словаре?",
+      "code": "",
+      "answers": {
+        "1": "список (list)",
+        "2": "строка (str)",
+        "3": "словарь (dict)",
+        "4": "число (int)",
+        "5": "кортеж (tuple)",
+        "6": "множество (set)"
+      },
+      "correct_answer": ["1", "2", "3", "4", "5", "6"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Выберите все варианты в которых переменная result будет равна 10.255.0.1",
+      "code": "data = {4: 400, 1: 100, 2: 200, 3: 300}",
+      "code": "data = {\n    'r1': {'hostname': 'london_r1', 'ip': '10.255.0.1', 'vendor': 'Cisco'},\n    'r2': {'hostname': 'london_r2', 'ip': '10.255.0.2', 'vendor': 'Cisco'}\n}",
+      "answers": {
+        "1": "result = data[r1][ip]",
+        "2": "result = list(data['r1'])[1]",
+        "3": "result = data['r1'].get('ip', False)",
+        "4": "result = data['r1']['ip']",
+        "5": "result = list(data['r1'].values())[1]"
+      },
+      "correct_answer": ["3", "4", "5"],
+      "multiple_choices": true
+    }
+  ],
+  "04 Форматирование строк": [
+    {
+      "description": "Какой вывод будет в последней строке?",
+      "code": "template = 'Result: {} {}'\nprint(template.format(100, 2))",
+      "answers": {
+        "1": "Ошибка",
+        "2": "Result: 100 2",
+        "3": "Result:",
+        "4": "Result: {} {}",
+        "5": "Result: '100' '2'"
+      },
+      "correct_answer": "2",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какой вывод будет в последней строке?",
+      "code": "template = 'Result: {} {}'\nprint(template.format(100, 'test'))",
+      "answers": {
+        "1": "Ошибка",
+        "2": "Result: 100 'test'",
+        "3": "Result:",
+        "4": "Result: {} {}",
+        "5": "Result: 100 test"
+      },
+      "correct_answer": "5",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какой вывод будет в последней строке?",
+      "code": "template = 'Result: {:b} {}'\nprint(template.format(8, 2))",
+      "answers": {
+        "1": "Ошибка",
+        "2": "Result: 8 2",
+        "3": "Result:",
+        "4": "Result: 1000 2",
+        "5": "Result: 0b1000 2"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какой вывод будет в последней строке?",
+      "code": "template = 'Result: {:b} {:b}'\nprint(template.format(8, 2))",
+      "answers": {
+        "1": "Ошибка",
+        "2": "Result: 8 2",
+        "3": "Result: 1000 10",
+        "4": "Result:",
+        "5": "Result: 0b1000 0b10"
+      },
+      "correct_answer": "3",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какой вывод будет в последней строке?",
+      "code": "template = 'Result: {:08b} {:08b}'\nprint(template.format(8, 2))",
+      "answers": {
+        "1": "Ошибка",
+        "2": "Result: 08 02",
+        "3": "Result: 1000 10",
+        "4": "Result:",
+        "5": "Result: 00001000 00000010"
+      },
+      "correct_answer": "5",
+      "multiple_choices": false
+    }
+  ],
+  "04 Типы данных и функции преобразования типов": [
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "item = '101'\nresult = int(item, 2)",
+      "answers": {
+        "1": "101",
+        "2": "7",
+        "3": "4",
+        "4": "5",
+        "5": "'101'",
+        "6": "Ошибка"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение id будет у переменной var_b?",
+      "code": "In [1]: var_a = 3500\n\nIn [2]: var_b = var_a\n\nIn [3]: id(var_a)\nOut[2]: 3044598608",
+      "answers": {
+        "1": "3044598608",
+        "2": "Другое"
+      },
+      "correct_answer": "1",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "item = '101'\nresult = int(item, 10)",
+      "answers": {
+        "1": "101",
+        "2": "7",
+        "3": "4",
+        "4": "5",
+        "5": "'101'",
+        "6": "Ошибка"
+      },
+      "correct_answer": "1",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение id будет у переменной var_b?",
+      "code": "In [1]: var_a = 3500\n\nIn [2]: var_b = 3500\n\nIn [3]: id(var_a)\nOut[3]: 3044599696",
+      "answers": {
+        "1": "3044599696",
+        "2": "Другое"
+      },
+      "correct_answer": "2",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной result в последней строке?",
+      "code": "number = 10\nresult = hex(number)",
+      "answers": {
+        "1": "10",
+        "2": "'a'",
+        "3": "'0xa'",
+        "4": "'0x10'",
+        "5": "Ошибка"
+      },
+      "correct_answer": "3",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной number в последней строке?",
+      "code": "number = 10\nnumber += 2",
+      "answers": {
+        "1": "2",
+        "2": "12",
+        "3": "10",
+        "4": "Ошибка"
+      },
+      "correct_answer": "2",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какие типы данных из перечисленных изменяемые (mutable)?",
+      "code": "",
+      "answers": {
+        "1": "список (list)",
+        "2": "строка (str)",
+        "3": "словарь (dict)",
+        "4": "число (int)",
+        "5": "кортеж (tuple)",
+        "6": "множество (set)"
+      },
+      "correct_answer": ["1", "3", "6"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Какие типы данных из перечисленных упорядоченные (сохраняют порядок элементов)?",
+      "code": "",
+      "answers": {
+        "1": "список (list)",
+        "2": "строка (str)",
+        "3": "словарь (dict)",
+        "4": "кортеж (tuple)",
+        "5": "множество (set)"
+      },
+      "correct_answer": ["1", "2", "3", "4"],
+      "multiple_choices": true
+    }
+  ],
+  "05 Создание базовых скриптов (input, sys.argv)": [
+    {
+      "description": "Какой тип данных будет в переменной result при вызове скрипта ниже таким образом:\n$ python script.py 100",
+      "code": "from sys import argv\nresult = argv",
+      "answers": {
+        "1": "список (list)",
+        "2": "строка (str)",
+        "3": "число (int)"
+      },
+      "correct_answer": "1",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какие типы данных будут у элементов списка argv при вызове скрипта ниже таким образом:\n$ python script.py 100 test",
+      "code": "from pprint import pprint\nfrom sys import argv\npprint(argv)",
+      "answers": {
+        "1": "список (list)",
+        "2": "строка (str)",
+        "3": "число (int)"
+      },
+      "correct_answer": ["2"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Какое значение будет у переменной result при вызове скрипта ниже таким образом:\n$ python script.py test",
+      "code": "from sys import argv\nresult = argv[0]",
+      "answers": {
+        "1": "''",
+        "2": "Ошибка IndexError",
+        "3": "'test'",
+        "4": "'script.py'"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какое значение будет у переменной result при вызове скрипта ниже таким образом:\n$ python script.py 100 test",
+      "code": "from sys import argv\nresult = argv[1]",
+      "answers": {
+        "1": "'test'",
+        "2": "'script.py'",
+        "3": "100",
+        "4": "'100'",
+        "5": "Ошибка IndexError"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Какой тип данных будет в переменной result при вызове скрипта ниже таким образом:\n$ python script.py\nВведите число: 100",
+      "code": "result = input('Введите число: ')",
+      "answers": {
+        "1": "список (list)",
+        "2": "строка (str)",
+        "3": "число (int)"
+      },
+      "correct_answer": "2",
+      "multiple_choices": false
+    }
+  ],
+  "06 Контроль хода программы (условия)": [
+    {
+      "description": "Какое значение выведет последняя строка?",
+      "code": "value = 55\n\nif 0 < value < 33:\n    value = 50\n    value += 1\nif 33 < value < 100:\n    value = 57\n    value -= 5\nif value > 30:\n    value += 100\nelse:\n    value = 8\n\nprint(value)",
+      "answers": {
+        "1": "55",
+        "2": "51",
+        "3": "150",
+        "4": "152",
+        "5": "100",
+        "6": "50",
+        "7": "52",
+        "8": "Ошибка"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "num = 10\n\nif num > 8:\n    print(num)\n    num -= 2\nnum -= 1\nprint(num)",
+      "answers": {
+        "1": "10, 1",
+        "2": "8, 2, 1",
+        "3": "10, 7",
+        "4": "10, 9",
+        "5": "10, 2, 1",
+        "6": "Ошибка"
+      },
+      "correct_answer": "3",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "num = 5\n\nif num in range(4, 10, 2):\n    print(num)\n    num += 3\n    print(num)\n\nprint(num)\nnum *= 10\nprint(num)",
+      "answers": {
+        "1": "5, 8, 8, 80",
+        "2": "5, 5, 50",
+        "3": "5, 3, 3, 30",
+        "4": "5, 50",
+        "5": "Ошибка"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "user = 'admin'\npasswd = 'admin12'\n\nif len(passwd) <= 8:\n    print('Пароль слишком короткий')\nif user in passwd:\n    print('Пароль содержит имя пользователя')\nelse:\n    print('Пароль для пользователя установлен')\n",
+      "answers": {
+        "1": "Пароль слишком короткий",
+        "2": "Пароль содержит имя пользователя",
+        "3": "Пароль слишком короткий, Пароль содержит имя пользователя",
+        "4": "Пароль для пользователя установлен"
+      },
+      "correct_answer": "3",
+      "multiple_choices": false
+    }
+  ],
+  "06 Контроль хода программы (try/except)": [
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "num = 'a'\n\ntry:\n    hexnum = int(num, 16)\nexcept ValueError:\n    print('Error')\nelse:\n    print(hexnum)",
+      "answers": {
+        "1": "10",
+        "2": "a",
+        "3": "Error",
+        "4": "10, Error",
+        "5": "ValueError: invalid literal for int() with base 10: 'a'"
+      },
+      "correct_answer": "1",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "num = 'a'\n\ntry:\n    integer = int(num)\nexcept ValueError:\n    try:\n        hexnum = int(num, 16)\n    except ValueError:\n        print('Error')\n    else:\n        print(hexnum)\nelse:\n    print(integer)",
+      "answers": {
+        "1": "a",
+        "2": "Error",
+        "3": "10, Error",
+        "4": "10",
+        "5": "ValueError: invalid literal for int() with base 10: 'a'"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "num = '10'\n\ntry:\n    integer = int(num)\n    print(integer * 10)\nexcept ValueError:\n    print('Error')\nelse:\n    print(integer)",
+      "answers": {
+        "1": "10",
+        "2": "100, 10",
+        "3": "Error",
+        "4": "100",
+        "5": "100, Error, 10",
+        "6": "100, Error, 100"
+      },
+      "correct_answer": "2",
+      "multiple_choices": false
+    }
+  ],
+  "06 Контроль хода программы (циклы)": [
+    {
+      "description": "Какой код сгенерирует такой вывод?",
+      "code": "2\n4\n6\n8\n10",
+      "answers": {
+        "1": "for i in range(2, 11, 2):\n    print(i)",
+        "2": "for i in range(1, 10, 2):\n    print(i)",
+        "3": "for i in range(10):\n    if i % 2 == 0:\n        print(i)",
+        "4": "for i in range(1, 11):\n    if i % 2 == 0:\n        print(i)",
+        "5": "for i in range(10):\n    if i in [2, 4, 6, 8, 10]:\n        print(i)",
+        "6": "for i in range(20):\n    if i in [2, 4, 6, 8, 10]:\n        print(i)"
+      },
+      "code_in_answer": true,
+      "correct_answer": ["1", "4", "6"],
+      "multiple_choices": true
+    },
+    {
+      "description": "Какой список будет в переменной result в последней строке?",
+      "code": "data = ['20', '30', '40', 'vlan', 'test']\nresult = []\nfor item in data:\n    if item.isdigit():\n        result.append(int(item))\nprint(result)",
+      "answers": {
+        "1": "['20', '30', '40', 'vlan', 'test']",
+        "2": "[20, 30, 40, 'vlan', 'test']",
+        "3": "['20', '30', '40']",
+        "4": "[20, 30, 40]",
+        "5": "Ошибка"
+      },
+      "correct_answer": "4",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "num = 7\nwhile num <= 10:\n    print(num)\n    num -= 1\n\nprint(num)",
+      "answers": {
+        "1": "7, 8, 9, 10",
+        "2": "7, 8, 9",
+        "3": "7, 6, 5, 4, 3, 2, 1",
+        "4": "Ошибка",
+        "5": "Бесконечный цикл"
+      },
+      "correct_answer": "5",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "num = 7\nwhile num <= 10:\n    print(num)\n    num += 1\n    print(num)\n\nprint(num)",
+      "answers": {
+        "1": "7, 8, 9, 10",
+        "2": "7, 8, 9",
+        "3": "7, 6, 5, 4, 3, 2, 1",
+        "4": "7, 7, 8, 8, 9, 9, 10, 10",
+        "5": "7, 7, 8, 8, 9, 9, 10, 10, 11, 11",
+        "6": "7, 8, 8, 9, 9, 10, 10, 11, 11",
+        "7": "7, 8, 8, 9, 9, 10, 10, 11",
+        "8": "Ошибка",
+        "9": "Бесконечный цикл"
+      },
+      "correct_answer": "6",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода? (значения, которые выводятся на разных строках, разделены запятой)",
+      "code": "num = 7\nwhile num <= 10:\n    print(num)\n    num += 1\n    if num == 8:\n        continue\n    print(num)\n\nprint(num)",
+      "answers": {
+        "1": "7, 8, 9, 10",
+        "2": "7, 8, 9",
+        "3": "7, 7, 9, 9, 10, 10",
+        "4": "7, 7, 8, 8, 9, 9, 10, 10, 11, 11",
+        "5": "7, 9, 9, 10, 10, 11, 11",
+        "6": "7, 8, 9, 9, 10, 10, 11, 11",
+        "7": "Ошибка",
+        "8": "Бесконечный цикл"
+      },
+      "correct_answer": "6",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода в последней строке?",
+      "code": "sum_of_nums = 0\n\nwhile sum_of_nums < 4:\n    sum_of_nums += 1\n    for num in range(5):\n        sum_of_nums += num\n\nprint(sum_of_nums)",
+      "answers": {
+        "1": "10",
+        "2": "40",
+        "3": "3",
+        "4": "50",
+        "5": "20",
+        "6": "11",
+        "7": "0"
+      },
+      "correct_answer": "6",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода в последней строке?",
+      "code": "i = 0\nsum_of_nums = 0\n\nwhile i < 4:\n    i += 1\n    for num in range(5):\n        sum_of_nums += num\n\nprint(sum_of_nums)",
+      "answers": {
+        "1": "10",
+        "2": "40",
+        "3": "3",
+        "4": "50",
+        "5": "20",
+        "6": "11",
+        "7": "0"
+      },
+      "correct_answer": "2",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода в последней строке?",
+      "code": "i = 0\nsum_of_nums = 0\n\nwhile i < 4:\n    i += 1\n    for num in range(5):\n        sum_of_nums += num\n        if sum_of_nums > 20:\n            break\n\nprint(sum_of_nums)",
+      "answers": {
+        "1": "10",
+        "2": "40",
+        "3": "30",
+        "4": "20",
+        "5": "21",
+        "6": "22",
+        "7": "30",
+        "8": "0"
+      },
+      "correct_answer": "5",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода в последней строке?",
+      "code": "i = 0\nsum_of_nums = 0\n\nwhile i < 4:\n    i += 1\n    for num in range(5):\n        sum_of_nums += num\n    if sum_of_nums > 20:\n        break\n\nprint(sum_of_nums)",
+      "answers": {
+        "1": "10",
+        "2": "40",
+        "3": "30",
+        "4": "20",
+        "5": "21",
+        "6": "22",
+        "7": "30",
+        "8": "0"
+      },
+      "correct_answer": "7",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода в последней строке?",
+      "code": "i = 0\nsum_of_nums = 0\n\nwhile i < 4:\n    i += 1\n    for num in range(5):\n        sum_of_nums += num\n    if sum_of_nums > 20:\n        continue\n\nprint(sum_of_nums)",
+      "answers": {
+        "1": "10",
+        "2": "40",
+        "3": "30",
+        "4": "20",
+        "5": "21",
+        "6": "22",
+        "7": "30",
+        "8": "0"
+      },
+      "correct_answer": "2",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода в последней строке?",
+      "code": "i = 0\nsum_of_nums = 0\n\nwhile i < 4:\n    i += 1\n    if sum_of_nums > 20:\n        continue\n    for num in range(5):\n        sum_of_nums += num\n\nprint(sum_of_nums)",
+      "answers": {
+        "1": "10",
+        "2": "40",
+        "3": "30",
+        "4": "20",
+        "5": "21",
+        "6": "22",
+        "7": "30",
+        "8": "0"
+      },
+      "correct_answer": "3",
+      "multiple_choices": false
+    },
+    {
+      "description": "Что будет выведено на стандартный поток вывода в последней строке?",
+      "code": "i = 0\nsum_of_nums = 0\n\nwhile i < 4:\n    i += 1\n    for num in range(5):\n        sum_of_nums += num\n        break\n\nprint(sum_of_nums)",
+      "answers": {
+        "1": "10",
+        "2": "40",
+        "3": "30",
+        "4": "20",
+        "5": "21",
+        "6": "22",
+        "7": "30",
+        "8": "0"
+      },
+      "correct_answer": "8",
+      "multiple_choices": false
+    }
+  ]
+}
