@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+adversarial_lib.egg-info/PKG-INFO
+adversarial_lib.egg-info/SOURCES.txt
+adversarial_lib.egg-info/dependency_links.txt
+adversarial_lib.egg-info/top_level.txt
