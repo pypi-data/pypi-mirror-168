@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: test-style-checker
+Version: 0.1.6
+Summary: flake8 plugin
+Home-page: https://github.com/tolstislon/test_style_checker
+Author: tolstislon
+Author-email: tolstislon@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: flake8 (>=4.0.1)
+
+flake8 plugin
+

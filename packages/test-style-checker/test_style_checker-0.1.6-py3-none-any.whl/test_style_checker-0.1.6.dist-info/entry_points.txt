@@ -1,0 +1,2 @@
+[flake8.extension]
+MC = test_style_checker:CheckerTestFile
