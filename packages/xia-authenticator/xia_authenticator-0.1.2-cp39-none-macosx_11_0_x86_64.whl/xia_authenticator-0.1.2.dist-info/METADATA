@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: xia-authenticator
+Version: 0.1.2
+Summary: X-I-A Authenticator
+Home-page: https://develop.x-i-a.com/docs/xia-authenticator/0.1.2/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: PyJWT
+Requires-Dist: xia-meta-auth
+
+.. image:: https://img.shields.io/pypi/v/xia-authenticator.svg?color=blue
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-authenticator/
+
+====================================
+X-I-A Authenticator
+====================================
+
+OAuth2.0 Compatible Authenticator Design
+
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-authenticator
+
+
