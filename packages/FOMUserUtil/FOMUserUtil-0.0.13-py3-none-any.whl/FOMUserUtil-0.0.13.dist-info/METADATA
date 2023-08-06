@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: FOMUserUtil
+Version: 0.0.13
+Summary: Command line utility to help with adding users to the FOM application
+Home-page: https://github.com/bcgov/nr-fom-usermanager
+Author: Kevin Netherton
+Author-email: Kevin.Netherton@gov.bc.ca
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/bcgov/nr-fom-usermanager/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: keycloak-wrapper (==0.2)
+Requires-Dist: python-dotenv (==0.20.0)
+Requires-Dist: requests (==2.28.1)
+
+UNKNOWN
+
+
