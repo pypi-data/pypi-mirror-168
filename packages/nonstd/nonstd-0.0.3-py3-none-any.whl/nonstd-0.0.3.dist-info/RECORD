@@ -1,0 +1,6 @@
+nonstd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonstd/distributions.py,sha256=L_rHaW_oo22s4jOUcQCDLyU8AoLLfH_3CscVrqeDZPo,1083
+nonstd/sequences.py,sha256=0b32VNN78RQt4wwDMLFnwxe0HQxonywcaVNLdM0BnsQ,886
+nonstd-0.0.3.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+nonstd-0.0.3.dist-info/METADATA,sha256=KkcWfn3tuDNHAacaZa13fmgeUdcuFTGw4fqWS-TFi4Y,737
+nonstd-0.0.3.dist-info/RECORD,,
