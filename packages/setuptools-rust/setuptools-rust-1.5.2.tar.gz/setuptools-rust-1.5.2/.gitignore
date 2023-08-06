@@ -1,0 +1,12 @@
+*.pyc
+*.pyo
+*.so
+.eggs
+.tox
+dist
+build
+target
+.pytest_cache
+*.egg-info
+pyo3
+docs/_build
