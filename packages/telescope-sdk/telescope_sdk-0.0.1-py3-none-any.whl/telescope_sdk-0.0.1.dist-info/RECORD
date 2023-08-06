@@ -1,0 +1,8 @@
+telescope_sdk/__init__.py,sha256=YhCW-_nyUsytdxap7QOoYJKbh251yYrfX7ung1SiCrM,393
+telescope_sdk/common.py,sha256=aiwpn81ftm0JdqI8YUUZ6rrc4kRWoipqEL_J6aSvLs8,1235
+telescope_sdk/company.py,sha256=fRQ1wlrHIgiaTP3scGr3_vmBsstUtBtHcTme9cYdWHs,1509
+telescope_sdk/person.py,sha256=P9Fh0BCPSPAMEN2WN79q8NkRK0tQey-ySMG5JmUZNsg,7667
+telescope_sdk/utils.py,sha256=E1kf4Gs4E7BfPzhxjXokQKh_JFbU7MgpN2IMM2kHpPk,1799
+telescope_sdk-0.0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+telescope_sdk-0.0.1.dist-info/METADATA,sha256=wNd9vv74gPqGwWULKWuAQNNg66NqQD5yOqF_YHKyxpc,3335
+telescope_sdk-0.0.1.dist-info/RECORD,,
