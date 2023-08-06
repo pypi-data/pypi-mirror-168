@@ -1,0 +1,9 @@
+aa_tools/__init__.py,sha256=qjaVdXCS7ivW5gn71UXtTWM7jtflQUXjpDswbJPf6qU,100
+aa_tools/datalake.py,sha256=TVSzk9o0lOD9bBaXrqnJFq9T0-kHMRvsFMdZFX_W5Ao,1627
+aa_tools/distances.py,sha256=W2tujkwxbaKC8-j9ocCcse91_nVzgDAc1Z0Q_LxioiU,546
+aa_tools/logger.py,sha256=fPa2tw1kvCrZtSiG2ZfpWTklapLjLg_J1mssDY55yig,1306
+andreani_aa_tools-0.0.8.dist-info/LICENSE,sha256=keV8FvSCVq_9SNLhDP_gY5UmlHoE0GqmaCeX27mY3Vw,1088
+andreani_aa_tools-0.0.8.dist-info/METADATA,sha256=jBQsDqZW7CBm6InIwr15UXRMii6KR3KRz6vm0ZeJaGQ,3114
+andreani_aa_tools-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+andreani_aa_tools-0.0.8.dist-info/top_level.txt,sha256=MKCc4egdbTDBpLFbvcJee0C9m-j3hYXeYsZqGuTilHw,9
+andreani_aa_tools-0.0.8.dist-info/RECORD,,
