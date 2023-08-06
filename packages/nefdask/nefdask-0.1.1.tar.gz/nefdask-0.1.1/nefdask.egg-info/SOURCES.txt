@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+nefdask.egg-info/PKG-INFO
+nefdask.egg-info/SOURCES.txt
+nefdask.egg-info/dependency_links.txt
+nefdask.egg-info/top_level.txt
