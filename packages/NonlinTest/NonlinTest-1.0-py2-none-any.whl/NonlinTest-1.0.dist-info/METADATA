@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: NonlinTest
+Version: 1.0
+Summary: Package for nonlinearity test of nuivariate and multivariate time series
+Home-page: UNKNOWN
+Author: Shapour Mohammadi
+Author-email: shmohmad@ut.ac.ir
+License: MIT
+Keywords: python,Linearity Tests,Ramsey Linearity Test,Keenan Test,Tsay Test,Terasvirta, Lin and Granger Test,Lee, White and Granger Test
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: statsmodels
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: math
+
+readme.md
+
+
