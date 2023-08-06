@@ -1,0 +1,2 @@
+[console_scripts]
+mlcube_k8s = mlcube_k8s.main:cli
