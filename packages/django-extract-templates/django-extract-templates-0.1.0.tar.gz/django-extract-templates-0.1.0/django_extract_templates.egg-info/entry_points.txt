@@ -1,0 +1,2 @@
+[console_scripts]
+extract_templates = extract_templates:run

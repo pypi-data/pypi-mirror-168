@@ -1,0 +1,12 @@
+LICENSE
+README.md
+README.rst
+extract_templates.py
+setup.cfg
+setup.py
+django_extract_templates.egg-info/PKG-INFO
+django_extract_templates.egg-info/SOURCES.txt
+django_extract_templates.egg-info/dependency_links.txt
+django_extract_templates.egg-info/entry_points.txt
+django_extract_templates.egg-info/not-zip-safe
+django_extract_templates.egg-info/top_level.txt
