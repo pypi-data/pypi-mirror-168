@@ -1,0 +1,2 @@
+[console_scripts]
+woc = woc.cmdline:execute

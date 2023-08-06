@@ -1,0 +1,12 @@
+pipenv
+dynaconf
+pandas
+tqdm
+rich
+click
+click_help_colors
+shellingham
+tomlkit
+yapf
+autoflake
+twine
