@@ -1,0 +1,6 @@
+locale/base.pot,sha256=YT5tjUAjNaB8EyYV-6lbY3w2_AIjMmKtLo3qvN6LEjA,817
+locale/zh_CN/LC_MESSAGES/messages.mo,sha256=pWpCpcxREI7xly8lgsoOwGAF11JuSq9UfRniFA1hy6E,620
+locale/zh_CN/LC_MESSAGES/messages.po,sha256=ffWrzfP0GCzSA5FfJT42e2RMHZgbz0vHcAH_ge7ZkNA,930
+fastapi_config-0.0.2.dist-info/WHEEL,sha256=g_UdFZqm-k6b0W64OcndB0YT_D2mFFPAYBj7-_YsSPA,87
+fastapi_config-0.0.2.dist-info/METADATA,sha256=BsC3BzBQksnydUCTGtgR1bJkiz719pG6rewK38cwHLA,3154
+fastapi_config-0.0.2.dist-info/RECORD,,
