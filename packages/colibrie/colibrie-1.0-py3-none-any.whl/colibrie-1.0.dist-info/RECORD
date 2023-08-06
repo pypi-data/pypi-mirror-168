@@ -1,0 +1,13 @@
+colibrie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colibrie/core.py,sha256=1RwztczdIzieUOxz-MVIwFpnUeZENzvU4Jrc-Q1xweU,4713
+colibrie/extract_tables.py,sha256=kIa56hepnOMa0APoUmV4hMW4r8s4yKikEz8S5b1oW-g,7514
+colibrie/geometry.py,sha256=p8JOW8qjkceZTk__Gyk9RLX_NrylSlMCcRpW8O46Ts4,1589
+colibrie/intersection.py,sha256=8GRo6qh8RgMi_-IDdUIFOV8yde0gIyNUjU3W_qBLDzc,996
+colibrie/lines.py,sha256=8IrdksFw31FjdZYk5LbJhUEuWQV47XEY0iai7S9dV8M,8616
+colibrie/tables.py,sha256=tnvKz3iDGpVH4YdBNWjILhZTh7wx_O5Zpc7mNl19xGg,9877
+colibrie/utils.py,sha256=OOfjnOLjFZAEM-Zfs_9sIX65AB8um4MOd04158S-hhg,5162
+colibrie-1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+colibrie-1.0.dist-info/METADATA,sha256=DGDiDsnySin4782n3SI3OnX5Twx3Rzjf85R2JMDw1ic,40423
+colibrie-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+colibrie-1.0.dist-info/top_level.txt,sha256=Y6ZILDrokizI-NpMKtI0omIkTza9a-0AWp9Lcp_LpvY,9
+colibrie-1.0.dist-info/RECORD,,
