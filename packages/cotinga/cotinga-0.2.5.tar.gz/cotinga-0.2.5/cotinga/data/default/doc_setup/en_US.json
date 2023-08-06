@@ -1,0 +1,38 @@
+{
+  "classes": [],
+  "levels": [
+    "White belt",
+    "Yellow belt",
+    "Orange belt",
+    "Green belt",
+    "Blue belt",
+    "Brown belt",
+    "Black belt"
+  ],
+  "special_grades": [
+    "Abs"
+  ],
+  "grading": {
+    "choice": "literal",
+    "edge_literal": "B",
+    "edge_numeric": 3,
+    "literal_grades": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F"
+    ],
+    "maximum": 4,
+    "minimum": 0,
+    "step": 3
+  },
+  "report": {
+    "title": "Next test (<CLASSES>)",
+    "subtitle": "Following admissions will be attempted (update <DATE>)",
+    "date_fmt": "%Y/%m/%d",
+    "col_width": 4.8,
+    "max_rows": 30,
+    "max_tables": 1
+  }
+}

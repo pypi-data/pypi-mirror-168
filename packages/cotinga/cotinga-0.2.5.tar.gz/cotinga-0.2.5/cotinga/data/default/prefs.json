@@ -1,0 +1,9 @@
+{
+    "enable_devtools": false,
+    "language": "en_US",
+    "show_toolbar_labels": true,
+    "show_tests_generation_panel": false,
+    "mm_venv": "",
+    "use_mm_venv": false,
+    "show_generate_panel": false
+}

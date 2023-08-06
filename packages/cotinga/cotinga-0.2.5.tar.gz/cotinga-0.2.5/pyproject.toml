@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "cotinga"
+version = "0.2.5"
+description = "Teachers' helper to manage their pupils' progression."
+license = 'GPL-3.0-or-later'
+authors = ["Nicolas Hainaux <nh.techn@posteo.net>"]
+readme = 'README.rst'
+repository = 'https://gitlab.com/nicolas.hainaux/cotinga'
+classifiers = ['Development Status :: 4 - Beta',
+               'Natural Language :: English',
+               'Topic :: Education',
+               'Environment :: X11 Applications :: GTK',
+               'Intended Audience :: Education',
+               'Intended Audience :: End Users/Desktop',
+               'Natural Language :: English',
+               'Natural Language :: French',
+               'Operating System :: POSIX :: Linux']
+include = ['*.rst', '*.toml', '*.po', '*.mo', '*.pot', '*.json', '*.svg',
+           '*.xml', '*.desktop']
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sqlalchemy = "^1.4.31"
+pygobject = "^3.42"
+toml = "^0.10.2"
+Babel = "^2.9.1"
+sqlalchemy-utils = "^0.38.2"
+reportlab = "^3.6.7"
+wheel = "^0.37.1"
+pikepdf = "^5.0.1"
+python-magic = "^0.4.25"
+microlib = "^1.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=3.0"
+polib = "^1.1"
+flake8 = "^4.0.1"
+pytest-mock = "^3.8.2"
+Sphinx = "^5.1.1"
+sphinx-intl = "^2.0.1"
+sphinx-rtd-theme = "^1.0.0"
+
+[tool.poetry.scripts]
+cotinga = "cotinga:run"
+
+[build-system]
+# requires = ["poetry-core>=1.0.0"]
+# build-backend = "poetry.core.masonry.api"
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Cotinga
+GenericName=Teacher's assistant
+GenericName[fr]=Assistant du professeur
+Comment=Pupils' progression manager
+Comment[fr]=Gestionnaire de progression des élèves
+Icon=cotinga
+Hidden=false
+Exec=cotinga
+Categories=Education;GTK;

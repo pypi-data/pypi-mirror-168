@@ -1,0 +1,1217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ['Nicolas Hainaux <nh.techn@gmail.com>']
+# This file is distributed under the same license as the cotinga package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cotinga 0.1.0\n"
+"Report-Msgid-Bugs-To: nh.techn@gmail.com\n"
+"POT-Creation-Date: 2018-07-10 07:57+0200\n"
+"PO-Revision-Date: 2022-09-09 23:36+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ../cotinga/gui/core/pupils_view.py:125
+msgid "Class"
+msgstr "Classe"
+
+#: ../cotinga/gui/core/pupils_view.py:130
+msgid "Name"
+msgstr "Nom"
+
+#: ../cotinga/gui/core/pupils_view.py:135
+#: ../cotinga/gui/core/classes_stacked.py:92
+msgid "Initial level"
+msgstr "Niveau initial"
+
+#: ../cotinga/application.py:85 ../cotinga/application.py:278
+msgid "Preferences"
+msgstr "Préférences"
+
+#: ../cotinga/application.py:86
+msgid "About"
+msgstr "À propos"
+
+#: ../cotinga/application.py:87
+msgid "Quit"
+msgstr "Quitter"
+
+#: ../cotinga/application.py:340
+msgid "Cotinga helps teachers to manage their pupils' progression."
+msgstr "Cotinga aide les professeurs à gérer la progression de leurs élèves."
+
+#: ../cotinga/application.py:335
+msgid "Cotinga website"
+msgstr "Site web de Cotinga"
+
+#: ../cotinga/gui/dialogs/preferences.py:113
+msgid "Choose a language:"
+msgstr "Choisissez une langue :"
+
+#: ../cotinga/gui/first_run.py:58
+msgid "Cotinga - Preferences"
+msgstr "Cotinga - Préférences"
+
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:96
+msgid "Levels"
+msgstr "Niveaux"
+
+#: ../cotinga/gui/dialogs/doc_setup/grading_manager.py:62
+msgid "Numeric"
+msgstr "Numérique"
+
+#: ../cotinga/gui/dialogs/doc_setup/grading_manager.py:64
+msgid "Literal"
+msgstr "Littérale"
+
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:98
+msgid "Grading"
+msgstr "Notation"
+
+#: ../cotinga/gui/dialogs/doc_setup/numeric_grading_panel.py:95
+msgid "Minimum"
+msgstr "Minimum"
+
+#: ../cotinga/gui/dialogs/doc_setup/numeric_grading_panel.py:101
+msgid "Edge"
+msgstr "Seuil"
+
+#: ../cotinga/gui/dialogs/doc_setup/numeric_grading_panel.py:107
+msgid "Maximum"
+msgstr "Maximum"
+
+#: ../cotinga/gui/dialogs/doc_setup/numeric_grading_panel.py:90
+msgid "Precision"
+msgstr "Précision"
+
+#: ../cotinga/gui/core/list_manager/list_manager_base.py:330
+msgid ""
+"Each label must be unique.\n"
+"Modification cancelled."
+msgstr ""
+"Chaque étiquette doit être unique.\n"
+"Modification annulée."
+
+#: ../cotinga/gui/core/list_manager/list_manager_base.py:329
+msgid "No duplicates!"
+msgstr "Pas de doublons !"
+
+#: ../cotinga/core/presets.py:46
+msgid "A, B, C, D, F (US style)"
+msgstr "A, B, C, D, F (style USA)"
+
+#: ../cotinga/core/presets.py:47
+msgid "A, B, C, D, E with signs"
+msgstr "A, B, C, D, E avec signes"
+
+#: ../cotinga/core/presets.py:50
+msgid "A, B, C, D, F with signs (US style)"
+msgstr "A, B, C, D, F avec signes (style USA)"
+
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:60
+#: ../cotinga/gui/dialogs/doc_setup/literal_grading_panel.py:46
+msgid "Load a preset scale"
+msgstr "Charger une échelle préconfigurée"
+
+#: ../cotinga/gui/dialogs/doc_setup/literal_grading_panel.py:47
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:61
+msgid "Replace current scale by: "
+msgstr "Remplacer l'échelle actuelle par :"
+
+#: ../cotinga/gui/dialogs/doc_setup/literal_grading_panel.py:70
+msgid "Edge:"
+msgstr "Seuil :"
+
+#: ../cotinga/core/presets.py:65 ../cotinga/core/presets.py:73
+#: ../cotinga/core/presets.py:61
+msgid "White belt"
+msgstr "Ceinture blanche"
+
+#: ../cotinga/core/presets.py:66 ../cotinga/core/presets.py:76
+#: ../cotinga/core/presets.py:61
+msgid "Yellow belt"
+msgstr "Ceinture jaune"
+
+#: ../cotinga/core/presets.py:79 ../cotinga/core/presets.py:61
+#: ../cotinga/core/presets.py:67
+msgid "Orange belt"
+msgstr "Ceinture orange"
+
+#: ../cotinga/core/presets.py:82 ../cotinga/core/presets.py:68
+#: ../cotinga/core/presets.py:62
+msgid "Green belt"
+msgstr "Ceinture verte"
+
+#: ../cotinga/core/presets.py:85 ../cotinga/core/presets.py:68
+#: ../cotinga/core/presets.py:62
+msgid "Blue belt"
+msgstr "Ceinture bleue"
+
+#: ../cotinga/core/presets.py:88 ../cotinga/core/presets.py:68
+#: ../cotinga/core/presets.py:62
+msgid "Brown belt"
+msgstr "Ceinture marron"
+
+#: ../cotinga/core/presets.py:63 ../cotinga/core/presets.py:69
+#: ../cotinga/core/presets.py:94
+msgid "Black belt"
+msgstr "Ceinture noire"
+
+#: ../cotinga/core/presets.py:60
+msgid "Karate-like (7 belts: white, yellow, ...)"
+msgstr "Type karaté (7 ceintures : blanche, jaune, ...)"
+
+#: ../cotinga/core/presets.py:64
+msgid "Judo-like (12 belts: white, white & yellow, ...)"
+msgstr "Type judo (12 ceintures : blanche, blanche et jaune, ...)"
+
+#: ../cotinga/core/presets.py:65
+msgid "White and yellow belt"
+msgstr "Ceinture blanche et jaune"
+
+#: ../cotinga/core/presets.py:66
+msgid "Yellow and orange belt"
+msgstr "Ceinture jaune et orange"
+
+#: ../cotinga/core/presets.py:67
+msgid "Orange and green belt"
+msgstr "Ceinture orange et verte"
+
+#: ../cotinga/core/presets.py:69
+msgid "Red and white belt"
+msgstr "Ceinture rouge et blanche"
+
+#: ../cotinga/core/presets.py:91 ../cotinga/core/presets.py:70
+msgid "Red belt"
+msgstr "Ceinture rouge"
+
+#: ../cotinga/core/presets.py:71
+msgid "Martial arts-like (22 belts: white, white 1st stripe, ...)"
+msgstr "Type arts martiaux (22 ceintures : blanche, blanche 1er trait, ...)"
+
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:100
+msgid "Special grades"
+msgstr "Notes spéciales"
+
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:67
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:58
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:80
+#: ../cotinga/gui/dialogs/doc_setup/literal_grading_panel.py:44
+msgid "Labels"
+msgstr "Libellés"
+
+#: ../cotinga/core/tools.py:71
+msgid "Cotinga files"
+msgstr "Fichiers Cotinga"
+
+#: ../cotinga/gui/dialogs/file_open.py:39
+#: ../cotinga/gui/dialogs/file_save_as.py:54
+msgid "Please choose a file"
+msgstr "Choisissez un fichier"
+
+#: ../cotinga/core/errors.py:35
+msgid "An error occured in Cotinga"
+msgstr "Une erreur s'est produite dans Cotinga"
+
+#: ../cotinga/core/errors.py:45
+#, python-brace-format
+msgid "Cannot load file: {filename}."
+msgstr "Impossible de charger le fichier {filename}."
+
+#: ../cotinga/core/database.py:109
+#, python-brace-format
+msgid "Missing table \"{tablename}\" in the file to load ({filename})."
+msgstr ""
+"Table manquante \"{tablename}\" dans le fichier à charger ({filename})."
+
+#: ../cotinga/core/database.py:115
+#, python-brace-format
+msgid ""
+"Found extraneous table \"{tablename}\" in the file to load ({filename})."
+msgstr ""
+"Table superflue \"{tablename}\" dans le fichier à charger ({filename})."
+
+#: ../cotinga/gui/toolbar.py:216
+msgid "Cannot load file"
+msgstr "Fichier impossible à charger"
+
+#: ../cotinga/core/database.py:124
+#, python-brace-format
+msgid ""
+"Missing column \"{column_name}\" in table \"{tablename}\" of the file to "
+"load ({filename})."
+msgstr ""
+"Colonne manquante \"{column_name}\" dans la table\"{tablename}\" du fichier "
+"à charger ({filename})."
+
+#: ../cotinga/core/database.py:132
+#, python-brace-format
+msgid ""
+"Found extraneous column \"{column_name}\" in table \"{tablename}\" of the "
+"file to load ({filename})."
+msgstr ""
+"Colonne superflue \"{column_name}\" dans la table\"{tablename}\" du fichier "
+"à charger ({filename})."
+
+#: ../cotinga/gui/dialogs/save_before.py:38
+msgid "Unsaved document"
+msgstr "Document non sauvegardé"
+
+#: ../cotinga/gui/toolbar.py:250
+msgid "Save current document before closing it?"
+msgstr "Sauvegarder le document avant de le fermer ?"
+
+#: ../cotinga/gui/toolbar.py:237
+msgid "Save current document before creating a new one?"
+msgstr "Sauvegarder le document avant d'en créer un nouveau ?"
+
+#: ../cotinga/gui/toolbar.py:206
+msgid "Save current document before opening another one?"
+msgstr "Sauvegarder le document avant d'en ouvrir un autre ?"
+
+#: ../cotinga/gui/core/pupils_view.py:140
+msgid "Attained level"
+msgstr "Niveau atteint"
+
+#: ../cotinga/application.py:222
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:94
+msgid "Classes"
+msgstr "Classes"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:747
+msgid "Change initial level"
+msgstr "Modifier le niveau initial"
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:127
+msgid "All"
+msgstr "Toutes"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:403
+#: ../cotinga/gui/core/list_manager/list_manager_base.py:335
+#: ../cotinga/gui/pages/panels/classes_panel.py:589
+msgid "Reserved group of characters"
+msgstr "Groupe de caractères réservés"
+
+#: ../cotinga/gui/core/list_manager/list_manager_base.py:336
+msgid ""
+"The group of characters \"{}\" is reserved for internal use, you cannot use "
+"them here, sorry.\n"
+"Modification cancelled."
+msgstr ""
+"Le groupe de caractères \"{}\" est réservé à un usage interne, vous ne "
+"pouvez pas l'utiliser ici, désolé.\n"
+"Modification annulée."
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:114
+msgid "Visible classes:"
+msgstr "Classes visibles :"
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:214
+msgid "Pupils' number: {}"
+msgstr "Nombre d'élèves : {}"
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:205
+#, python-brace-format
+msgid "{level}: {number}"
+msgstr "{level} : {number}"
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:216
+msgid "Next evaluation:"
+msgstr "Prochaine évaluation :"
+
+#: ../cotinga/core/report.py:51
+#, python-brace-format
+msgid "{level} ({nb})"
+msgstr "{level} ({nb})"
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:311
+msgid "Report preview"
+msgstr "Aperçu du bilan"
+
+#: ../cotinga/core/report.py:169
+#, python-brace-format
+msgid "Following levels will be attempted (update {date})"
+msgstr "Les niveaux suivants vont être tentés (mise à jour du {date})"
+
+#: ../cotinga/gui/dialogs/file_save_as.py:64
+#, python-brace-format
+msgid "Report {date}.pdf"
+msgstr "Bilan {date}.pdf"
+
+#: ../cotinga/core/tools.py:61
+msgid "Any files"
+msgstr "Tous les fichiers"
+
+#: ../cotinga/core/tools.py:83
+msgid "Any pdf file"
+msgstr "Fichiers pdf"
+
+#: ../cotinga/core/document.py:88
+msgid "This archive file does not contain the expected parts (found {})."
+msgstr "Cette archive ne contient pas les parties attendues (trouvé {})."
+
+#: ../cotinga/core/document.py:97
+msgid "The database is not correct (found MIME type {})."
+msgstr "Cette base de données n'est pas correcte (trouvé le MIME type {})."
+
+#: ../cotinga/core/document.py:104
+msgid "The setup part is not correct (found MIME type {})."
+msgstr "Ce fichier de réglages n'est pas correct (trouvé le MIME type {})."
+
+#: ../cotinga/gui/dialogs/file_save_as.py:69
+msgid "Untitled.tgz"
+msgstr "Sans Titre.tgz"
+
+#: ../cotinga/core/document.py:117
+msgid "This file could not be read or uncompressed correctly."
+msgstr "Ce fichier n'a pas pu être lu ou décompressé correctement."
+
+#: ../cotinga/core/document.py:79
+msgid "This file is not a readable compressed archive."
+msgstr "Ce fichier n'est pas une archive compressée lisible."
+
+#: ../cotinga/core/errors.py:56
+#, python-brace-format
+msgid "Duplicate content: {content}."
+msgstr "Doublon : {content}."
+
+#: ../cotinga/core/errors.py:67
+msgid "Empty content."
+msgstr "Contenu vide."
+
+#: ../cotinga/core/errors.py:77
+msgid "No change."
+msgstr "Pas de changement."
+
+#: ../cotinga/core/errors.py:87
+#, python-brace-format
+msgid "Found reserved characters in: {text}."
+msgstr "Caractères réservés trouvés dans : {text}."
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:590
+msgid ""
+"The group of characters \"{}\" has been found in the data you're about to "
+"paste, but it is reserved for internal use.\n"
+"Please remove it from the data you want to paste before pasting again.\n"
+"Pasting pupils' names cancelled."
+msgstr ""
+"Le groupe de caractères \"{}\" a été trouvé dans les données que vous vous "
+"apprêtez à coller, mais il est réservé à un usage interne.\n"
+"Veuillez s'il vous plaît le retirer des données que vous souhaiter coller "
+"avant de coller à nouveau.\n"
+"Collage des noms d'élèves annulé."
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:621
+msgid "Empty lines"
+msgstr "Lignes vides"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:622
+msgid ""
+"The empty lines that have been found in the data you want to paste\n"
+"have been automatically removed."
+msgstr ""
+"Des lignes vides ont été trouvées dans les données que vous voulez coller.\n"
+"Elles ont été retirées automatiquement."
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:390
+msgid "Number of pupils and grades mismatch"
+msgstr "Les nombres d'élèves et de notes ne correspondent pas"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:404
+msgid ""
+"The group of characters \"{}\" has been found in the data you're about to "
+"paste, but it is reserved for internal use.\n"
+"Please remove it from the data you want to paste before pasting again.\n"
+"Pasting grades cancelled."
+msgstr ""
+"Le groupe de caractères \"{}\" a été trouvé dans les données que vous vous "
+"apprêtez à coller, mais il est réservé à un usage interne.\n"
+"Veuillez s'il vous plaît le retirer des données que vous souhaiter coller "
+"avant de coller à nouveau.\n"
+"Collage des notes annulé."
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:443
+#: ../cotinga/gui/pages/panels/classes_panel.py:602
+#: ../cotinga/gui/pages/panels/classes_panel.py:418
+msgid "Names"
+msgstr "Noms"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:724
+#: ../cotinga/gui/pages/panels/classes_panel.py:604
+#: ../cotinga/gui/pages/panels/classes_panel.py:453
+#: ../cotinga/gui/pages/panels/classes_panel.py:522
+msgid "Please confirm"
+msgstr "Veuillez confirmer"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:605
+msgid "Add following pupils?"
+msgstr "Ajouter les élèves suivants?"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:419
+msgid "Grades"
+msgstr "Notes"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:421
+msgid "Add following grades?"
+msgstr "Ajouter les notes suivantes ?"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:444
+msgid "Grade #{}"
+msgstr "Note #{}"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:447
+msgid "Update"
+msgstr "Mise à jour"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:451
+msgid "Modify following grades?"
+msgstr "Modifier les notes suivantes ?"
+
+#: ../cotinga/core/report.py:158
+msgid "and"
+msgstr "et"
+
+#: ../cotinga/core/report.py:161
+#, python-brace-format
+msgid "Next evaluation ({classes_list})"
+msgstr "Prochaine évaluation ({classes_list})"
+
+#: ../cotinga/gui/core/pupils_view.py:122
+#: ../cotinga/gui/core/classes_stacked.py:88
+msgid "Included"
+msgstr "Inclus"
+
+#: ../cotinga/gui/core/classes_stacked.py:80
+msgid "View columns:"
+msgstr "Voir les colonnes :"
+
+#: ../cotinga/gui/dialogs/preferences.py:164
+msgid "Developer tools"
+msgstr "Outils développeur"
+
+#: ../cotinga/gui/toolbar.py:132
+msgid "New"
+msgstr "Nouveau"
+
+#: ../cotinga/gui/toolbar.py:133
+msgid "Open"
+msgstr "Ouvrir"
+
+#: ../cotinga/gui/toolbar.py:134
+msgid "Save"
+msgstr "Enregistrer"
+
+#: ../cotinga/gui/toolbar.py:135
+msgid "Save as..."
+msgstr "Enregistrer sous..."
+
+#: ../cotinga/gui/toolbar.py:136
+msgid "Close"
+msgstr "Fermer"
+
+#: ../cotinga/gui/toolbar.py:137
+msgid "Settings"
+msgstr "Paramètres"
+
+#: ../cotinga/gui/core/list_manager/list_manager_base.py:130
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../cotinga/gui/core/list_manager/list_manager_base.py:131
+msgid "Remove"
+msgstr "Enlever"
+
+#: ../cotinga/gui/dialogs/preferences.py:152
+msgid "Show toolbar buttons labels"
+msgstr "Montrer les noms des boutons"
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:180
+msgid "Preview"
+msgstr "Aperçu"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:295
+msgid "Insert a pupil"
+msgstr "Ajouter un élève"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:299
+msgid "Paste pupils"
+msgstr "Coller une liste d'élèves"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:300
+msgid "Paste grades"
+msgstr "Coller une liste de notes"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:302
+msgid "Add new grade"
+msgstr "Ajouter une nouvelle note"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:296
+msgid "Remove pupils"
+msgstr "Enlever des élèves"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:297
+msgid "Edit initial level"
+msgstr "Modifier le niveau initial"
+
+#: ../cotinga/gui/pages/panels/welcome_panel.py:43
+msgid "Welcome in Cotinga"
+msgstr "Bienvenue dans Cotinga"
+
+#: ../cotinga/gui/pages/panels/welcome_panel.py:45
+msgid "Version {}"
+msgstr "Version {}"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:97
+msgid "Drag and drop to change order."
+msgstr "Glisser et déposer pour modifier l'ordre."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:102
+#, python-brace-format
+msgid "Only included pupils of {classname} will show up here."
+msgstr "Seuls les élèves inclus de {classname} apparaissent ici."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:108
+msgid "Newly added pupils will be appended to this list."
+msgstr "Les nouveaux élèves seront ajoutés en fin de liste."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:113
+msgid "Templates' directory:"
+msgstr "Répertoire des modèles :"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:138
+msgid "Test name:"
+msgstr "Nom de l'évaluation :"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:305
+msgid "Mixed templates"
+msgstr "Modèles mélangés"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:306
+msgid ""
+"Found single AND paired templates in the templates directory. You can either "
+"use one single template per level (named after the level: levelname.tex), or "
+"a pair of templates (e.g. levelname0.tex and levelname1.tex)."
+msgstr ""
+"Trouvé des modèles simples et par paires dans le répertoire de modèles. Vous "
+"pouvez soit utiliser un modèle par niveau (nommé d'après le niveau : niveau."
+"tex), ou une paire de modèle (par exemple niveau0.tex et niveau1.tex)."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:316
+msgid "No templates found"
+msgstr "Aucun modèle trouvé"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:317
+msgid "Could not find any template in the templates' directory."
+msgstr "Impossible de trouver un modèle dans le répertoire des modèles."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:330
+msgid "No compiler"
+msgstr "Pas de compilateur"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:331
+msgid "No compiler seems to be installed."
+msgstr "Aucun compilateur ne semble installé."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:335
+msgid "Missing templates"
+msgstr "Modèles manquants"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:336
+msgid "Following templates are missing: "
+msgstr "Les modèles suivants manquent :"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:344
+msgid "Incorrect templates"
+msgstr "Modèles incorrects"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:348
+msgid "Tests directory already exists"
+msgstr "Le répertoire de l'évaluation existe déjà"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:477
+msgid "Compilation failed"
+msgstr "Échec de compilation"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:242
+#: ../cotinga/gui/pages/panels/merge_panel.py:467
+#: ../cotinga/gui/dialogs/progressbar_window.py:58
+msgid "Finished!"
+msgstr "Terminé !"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:256
+#: ../cotinga/gui/pages/panels/merge_panel.py:378
+#: ../cotinga/gui/dialogs/preferences.py:284
+msgid "Choose"
+msgstr "Choisir"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:379
+msgid "Merge"
+msgstr "Fusionner"
+
+#: ../cotinga/gui/dialogs/preferences.py:263
+#: ../cotinga/gui/dialogs/folder_select.py:45
+msgid "Please select a folder"
+msgstr "Choisissez un répertoire"
+
+#: ../cotinga/core/errors.py:98
+msgid "No templates can be found."
+msgstr "Aucun modèle n'a pu être trouvé."
+
+#: ../cotinga/core/errors.py:108
+msgid "Several kinds of templates in the same directory."
+msgstr "Plusieurs sortes de modèles dans le même répertoire."
+
+#: ../cotinga/core/merge_tex.py:224
+msgid "Creation of the tests..."
+msgstr "Création des évaluations..."
+
+#: ../cotinga/core/document.py:111
+msgid "The recollections part is not correct (found MIME type {})."
+msgstr "Le fichier de rappels n'est pas correct (trouvé le MIME type {})."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:464
+#, python-brace-format
+msgid "All documents have been sucessfully compiled and merged as {output}."
+msgstr ""
+"Tous les documents ont été compilés avec succès et fusionnés en tant que "
+"{output}."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:395
+msgid "TEST"
+msgstr "ÉVAL"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:76
+#, python-brace-format
+msgid "Distribution order for {classname}"
+msgstr "Ordre de distribution pour les {classname}"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:341
+#, python-brace-format
+msgid "Following templates miss a <FULLNAME> placeholder: {missing}"
+msgstr ""
+"Les modèles suivants ne contiennent pas de paramètre <FULLNAME> : {missing}"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:349
+msgid ""
+"Tests directory already exists.\n"
+"Please delete it or change its name\n"
+"in order to have a clean place\n"
+"to compile the documents."
+msgstr ""
+"Le répertoire d'évaluation existe déjà.\n"
+"Effacez-le s'il vous plaît, ou bien modifiez son nom\n"
+"de façon à disposer d'un répertoire propre\n"
+"pour compiler les documents."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:472
+#, python-brace-format
+msgid ""
+"Document {doc_name}\n"
+"could not be compiled correctly.\n"
+"Please check and fix the problem\n"
+"before trying to compile and merge."
+msgstr ""
+"Le document {doc_name}\n"
+"n'a pas pu être compilé correctement.\n"
+"Veuillez vérifier et corriger le problème\n"
+"avant de réessayer de compiler et fusionner."
+
+#: ../cotinga/application.py:137
+#, python-brace-format
+msgid "{doc_title} – {appname}"
+msgstr "{doc_title} – {appname}"
+
+#: ../cotinga/application.py:141
+#, python-brace-format
+msgid "(New document) – {appname}"
+msgstr "(Nouveau document) – {appname}"
+
+#: ../cotinga/application.py:224
+msgid "Reports"
+msgstr "Bilans"
+
+#: ../cotinga/application.py:226
+msgid "Merging"
+msgstr "Fusionner"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:298
+#: ../cotinga/gui/pages/panels/classes_panel.py:777
+msgid "Add to another class"
+msgstr "Ajouter une classe"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:796
+msgid "Impossible operation"
+msgstr "Opération impossible"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:797
+msgid ""
+"You selected all available classes, there is no class left to attribute."
+msgstr ""
+"Vous avez sélectionné toutes les classes disponibles, il n'y a plus de "
+"classe à attribuer."
+
+#: ../cotinga/gui/pages/panels/emptydoc_panel.py:36
+msgid "You can start creating classes in the document setup."
+msgstr ""
+"Vous pouvez commencer à créer des classes dans les paramètres du document."
+
+#: ../cotinga/gui/dialogs/doc_setup/doc_setup.py:46
+msgid "Document setup"
+msgstr "Paramètres du document"
+
+#: ../cotinga/gui/toolbar.py:217
+#, python-brace-format
+msgid ""
+"Cotinga cannot use this file.\n"
+"Details: {details}"
+msgstr ""
+"Cotinga ne peut pas utiliser ce fichier.\n"
+"Détails : {details}"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:301
+msgid "Remove grade"
+msgstr "Enlever une note"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:523
+msgid "Remove the selected grade?"
+msgstr "Enlever la note sélectionnée ?"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:721
+msgid "Remove the selected pupil?"
+msgstr "Enlever l'élève sélectionné ?"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:723
+msgid "Remove the selected pupils?"
+msgstr "Enlever les élèves sélectionnés ?"
+
+#: ../cotinga/gui/dialogs/preferences.py:202
+msgid "Enable tests generation panel"
+msgstr "Activer le panneau de génération automatique d'évaluations"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:77
+msgid "Available levels"
+msgstr "Niveaux disponibles"
+
+#: ../cotinga/application.py:229
+#: ../cotinga/gui/pages/panels/generate_panel.py:257
+#: ../cotinga/application.py:295
+msgid "Generate"
+msgstr "Générer"
+
+#: ../cotinga/gui/dialogs/preferences.py:77
+msgid "Use a virtual environment for mathmaker"
+msgstr "Utiliser un environnement virtuel pour mathmaker"
+
+#: ../cotinga/gui/dialogs/preferences.py:90
+msgid "General"
+msgstr "Général"
+
+#: ../cotinga/gui/dialogs/preferences.py:92
+msgid "Automatic tests generation"
+msgstr "Génération automatique d'évaluations"
+
+#: ../cotinga/gui/dialogs/preferences.py:214
+msgid "mathmaker is available"
+msgstr "mathmaker est disponible"
+
+#: ../cotinga/gui/dialogs/preferences.py:215
+msgid "mathmaker is not available"
+msgstr "mathmaker n'est pas disponible"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:83
+msgid "Select the levels you wish."
+msgstr "Sélectionnez les niveaux désirés."
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:90
+msgid "Destination directory:"
+msgstr "Répertoire de destination :"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:193
+#, python-brace-format
+msgid ""
+"An error has been reported during the creation of the templates for these "
+"levels: {levels_list}"
+msgstr ""
+"Une erreur s'est produite pendant la création des modèles pour ces niveaux : "
+"{levels_list}"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:196
+#, python-brace-format
+msgid ""
+"An error has been reported during the creation of the template for this "
+"level: {levels_list}"
+msgstr ""
+"Une erreur s'est produite pendant la création des modèles pour ce niveau : "
+"{levels_list}"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:200
+#: ../cotinga/gui/pages/panels/generate_panel.py:227
+msgid "Errors"
+msgstr "Erreurs"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:223
+#, python-brace-format
+msgid ""
+"An error has been reported during the compilation of the template for this "
+"file: {file_name}"
+msgstr ""
+"Une erreur s'est produite pendant la compilation du modèle pour ce niveau : "
+"{file_name}"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:235
+msgid "CORRECTED"
+msgstr "CORRIGÉ"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:243
+msgid "All templates have been successfully created."
+msgstr "Tous les modèles ont été créés avec succès."
+
+#: ../cotinga/core/presets.py:74
+msgid "White belt I"
+msgstr "Ceinture blanche I"
+
+#: ../cotinga/core/presets.py:75
+msgid "White belt II"
+msgstr "Ceinture blanche II"
+
+#: ../cotinga/core/presets.py:77
+msgid "Yellow belt I"
+msgstr "Ceinture jaune I"
+
+#: ../cotinga/core/presets.py:78
+msgid "Yellow belt II"
+msgstr "Ceinture jaune II"
+
+#: ../cotinga/core/presets.py:80
+msgid "Orange belt I"
+msgstr "Ceinture orange I"
+
+#: ../cotinga/core/presets.py:81
+msgid "Orange belt II"
+msgstr "Ceinture orange II"
+
+#: ../cotinga/core/presets.py:83
+msgid "Green belt I"
+msgstr "Ceinture verte I"
+
+#: ../cotinga/core/presets.py:84
+msgid "Green belt II"
+msgstr "Ceinture verte II"
+
+#: ../cotinga/core/presets.py:86
+msgid "Blue belt I"
+msgstr "Ceinture bleue I"
+
+#: ../cotinga/core/presets.py:87
+msgid "Blue belt II"
+msgstr "Ceinture bleue II"
+
+#: ../cotinga/core/presets.py:89
+msgid "Brown belt I"
+msgstr "Ceinture marron I"
+
+#: ../cotinga/core/presets.py:90
+msgid "Brown belt II"
+msgstr "Ceinture marron II"
+
+#: ../cotinga/core/presets.py:92
+msgid "Red belt I"
+msgstr "Ceinture rouge I"
+
+#: ../cotinga/core/presets.py:93
+msgid "Red belt II"
+msgstr "Ceinture rouge II"
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:381
+#, python-brace-format
+msgid ""
+"There are only {nb1} grades for {nb2} pupils.\n"
+"You must paste as many grades as pupils."
+msgstr ""
+"Il n'y a que {nb1} notes pour {nb2} élèves.\n"
+"Vous devez  coller autant de notes que d'élèves."
+
+#: ../cotinga/gui/pages/panels/classes_panel.py:386
+#, python-brace-format
+msgid ""
+"There are {nb1} grades for only {nb2} pupils.\n"
+"You must paste as many grades as pupils."
+msgstr ""
+"Il y a {nb1} notes pour seulement {nb2} élèves.\n"
+"Vous devez  coller autant de notes que d'élèves."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:427
+#: ../cotinga/gui/pages/panels/merge_panel.py:407
+msgid "Compilation"
+msgstr "Compilation"
+
+#: ../cotinga/gui/dialogs/progressbar_window.py:85
+#: ../cotinga/gui/pages/panels/merge_panel.py:414
+msgid "OK"
+msgstr "OK"
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:181
+msgid "Setup"
+msgstr "Paramètres"
+
+#: ../cotinga/gui/dialogs/report_setup.py:44
+msgid "Report setup"
+msgstr "Paramètres du bilan"
+
+#: ../cotinga/gui/dialogs/report_setup.py:55
+msgid "Date format"
+msgstr "Format de la date"
+
+#: ../cotinga/core/merge_tex.py:254
+#, python-brace-format
+msgid "Compiling {filename}"
+msgstr "Compilation de {filename}"
+
+#: ../cotinga/gui/dialogs/report_setup.py:63
+msgid "Columns width (cm)"
+msgstr "Largeur des colonnes (cm)"
+
+#: ../cotinga/gui/dialogs/preview.py:109
+msgid "Previous"
+msgstr "Précédent"
+
+#: ../cotinga/gui/dialogs/preview.py:110
+msgid "Next"
+msgstr "Suivant"
+
+#: ../cotinga/gui/dialogs/report_setup.py:74
+msgid "Maximum number of rows per table"
+msgstr "Nombre maximum de lignes par tableau"
+
+#: ../cotinga/gui/dialogs/report_setup.py:86
+msgid "Maximum number of tables per page"
+msgstr "Nombre maximum de tableaux par page"
+
+#: ../cotinga/gui/pages/panels/generate_panel.py:113
+msgid "Year:"
+msgstr "Année :"
+
+#: ../cotinga/core/presets.py:32
+msgid "TEMPLATE_"
+msgstr "MODÈLE_"
+
+#: ../cotinga/gui/dialogs/progressbar_window.py:61
+msgid "Aborted."
+msgstr "Annulé."
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:152
+msgid "Title:"
+msgstr "Titre :"
+
+#: ../cotinga/core/presets.py:38
+msgid "Admission to <BELT>"
+msgstr "Passage de la <BELT>"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:166
+msgid "Process &lt;BELT&gt; tag:"
+msgstr "Traitement de l'étiquette &lt;BELT&gt; :"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:186
+msgid "lower case"
+msgstr "en minuscules"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:192
+msgid "Capitalize first word"
+msgstr "Majuscule au premier mot"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:198
+msgid "Capitalize All Words"
+msgstr "Majuscule À Chaque Mot"
+
+#: ../cotinga/gui/pages/panels/merge_panel.py:180
+msgid "None (no processing)"
+msgstr "Aucun"
+
+#: ../cotinga/gui/pages/panels/reports_panel.py:120
+msgid "None (no class)"
+msgstr "Aucune"
+
+#~ msgid "None"
+#~ msgstr "Aucune"
+
+#~ msgid "Rows per table:"
+#~ msgstr "Lignes par tableau :"
+
+#~ msgid "at most"
+#~ msgstr "au plus"
+
+#~ msgid "Allow up to:"
+#~ msgstr "Permettre jusqu'à :"
+
+#~ msgid "Compilation of the tests..."
+#~ msgstr "Compilation des évaluations..."
+
+#~ msgid "Merging of the tests..."
+#~ msgstr "Fusion des évaluations..."
+
+#~ msgid ""
+#~ "There are too few grades.\n"
+#~ "It is required to paste as many grades as pupils."
+#~ msgstr ""
+#~ "Il n'y a pas assez de notes.\n"
+#~ "Il est requis de coller autant de notes qu'il y a d'élèves."
+
+#~ msgid ""
+#~ "Could not run mathmaker executable.\n"
+#~ "The generate tab will remain hidden."
+#~ msgstr ""
+#~ "Impossible d'exécuter mathmaker.\n"
+#~ "L'onglet générer restera caché."
+
+#~ msgid ""
+#~ "You can create a new document\n"
+#~ "or load an existing one."
+#~ msgstr ""
+#~ "Vous pouvez créer un nouveau document\n"
+#~ "ou bien charger un document existant."
+
+#~ msgid "Edit class"
+#~ msgstr "Changer de classe"
+
+#~ msgid "Merge test sheets for {classname}"
+#~ msgstr "Fusionner les évaluation pour {classname}"
+
+#~ msgid "Progression manager"
+#~ msgstr "Gestionnaire de progression"
+
+#~ msgid "Global view"
+#~ msgstr "Vue globale"
+
+#~ msgid "Progression manager – {doc_title}"
+#~ msgstr "Gestionnaire de progression – {doc_title}"
+
+#~ msgid "Progression manager – (New document)"
+#~ msgstr "Gestionnaire de progression – (Nouveau document)"
+
+#~ msgid "A directory {name} already exists."
+#~ msgstr "Un répertoire nommé {name} existe déjà."
+
+#~ msgid "Creation of the test directory..."
+#~ msgstr "Création du répertoire de l'évaluation..."
+
+#~ msgid "Compilation of {name} failed."
+#~ msgstr "La compilation de {name} a échoué."
+
+#~ msgid "TEST_{classname}_{str(date.today())}.pdf"
+#~ msgstr "ÉVAL_{classname}_{str(date.today())}.pdf"
+
+#~ msgid "Edit level"
+#~ msgstr "Modifier le niveau initial"
+
+#~ msgid "Any sqlite3 database"
+#~ msgstr "Bases de données sqlite3"
+
+#~ msgid "This file is not a gzipped tar file (found {} instead)."
+#~ msgstr ""
+#~ "Ce fichier n'est pas une archive compressée au format attendu (à la "
+#~ "place, on a trouvé {})."
+
+#~ msgid "Filters:"
+#~ msgstr "Filtres :"
+
+#~ msgid "No empty label!"
+#~ msgstr "Pas d'étiquette vide !"
+
+#~ msgid ""
+#~ "Each label must contain at least one symbol.\n"
+#~ "Modification cancelled."
+#~ msgstr ""
+#~ "Chaque étiquette doit contenir au moins un symbole.\n"
+#~ "Modification annulée."
+
+#~ msgid "Level"
+#~ msgstr "Niveau"
+
+#~ msgid "White belt, 1st stripe"
+#~ msgstr "Ceinture blanche, 1er trait"
+
+#~ msgid "Yellow belt, 1st stripe"
+#~ msgstr "Ceinture jaune, 1er trait"
+
+#~ msgid "Orange belt, 1st stripe"
+#~ msgstr "Ceinture orange, 1er trait"
+
+#~ msgid "Green belt, 1st stripe"
+#~ msgstr "Ceinture verte, 1er trait"
+
+#~ msgid "Blue belt, 1st stripe"
+#~ msgstr "Ceinture bleue, 1er trait"
+
+#~ msgid "Brown belt, 1st stripe"
+#~ msgstr "Ceinture marron, 1er trait"
+
+#~ msgid "Red belt, 1st stripe"
+#~ msgstr "Ceinture rouge, 1er trait"
+
+#~ msgid "White belt, 2d stripe"
+#~ msgstr "Ceinture blanche, 2e trait"
+
+#~ msgid "Yellow belt, 2d stripe"
+#~ msgstr "Ceinture jaune, 2e trait"
+
+#~ msgid "Orange belt, 2d stripe"
+#~ msgstr "Ceinture orange, 2e trait"
+
+#~ msgid "Green belt, 2d stripe"
+#~ msgstr "Ceinture verte, 2e trait"
+
+#~ msgid "Blue belt, 2d stripe"
+#~ msgstr "Ceinture bleue, 2e trait"
+
+#~ msgid "Brown belt, 2d stripe"
+#~ msgstr "Ceinture marron, 2e trait"
+
+#~ msgid "Red belt, 2d stripe"
+#~ msgstr "Ceinture rouge, 2e trait"
+
+#~ msgid "__GRADES_LABELS__"
+#~ msgstr "Libellés"
+
+#~ msgid "__LEVELS_LABELS__"
+#~ msgstr "Libellés"
+
+#~ msgid "__SPECIAL_GRADES_LABELS__"
+#~ msgstr "Libellés"
+
+#~ msgid "White, yellow, orange, green, blue, brown, black (karate like)"
+#~ msgstr "White, yellow, orange, green, blue, brown, black (karate like)"
+
+#~ msgid ""
+#~ "If you validate, your current grades will be replaced by the chosen scale."
+#~ msgstr ""
+#~ "Si vous validez, les notes actuelles seront remplacées par l'échelle "
+#~ "choisie."
+
+#~ msgid "Five letters (US style)"
+#~ msgstr "Cinq lettres (style USA)"
+
+#~ msgid "Five letters and signs"
+#~ msgstr "Cinq lettres, avec signes"
+
+#~ msgid "Five letters and signs (US style)"
+#~ msgstr "Cinq lettres, avec signes (style USA)"
+
+#~ msgid "Best grade: {grade}"
+#~ msgstr "Meilleure note : {grade}"
+
+#~ msgid "Worst grade: {grade}"
+#~ msgstr "Plus mauvaise note : {grade}"
+
+#~ msgid ""
+#~ "Grades list,\n"
+#~ "from highest to lowest:"
+#~ msgstr ""
+#~ "Liste des notes,\n"
+#~ "de la plus haute à la plus basse :"
