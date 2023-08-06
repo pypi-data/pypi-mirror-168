@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "gloves"
+version = "0.1.0"
+description = "this project is a demonstration of a strategy for creating packages with Poetry, python-semantic-release and commitzen"
+authors = ["Leonardo Pires <leonardorifiol.p@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+poetry = "^1.2.1"
+
+[tool.poetry.group.dev.dependencies]
+commitizen="^2.35.0"
+python-semantic-release="=7.31.4"
+
+[tool.semantic_release]
+version_variable = [
+    'semantic_release/__init__.py:__version__',
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+upload_to_release = true
+upload_to_pypi = false
+build_command = "make publish-to-pypi"
+branch = "main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
