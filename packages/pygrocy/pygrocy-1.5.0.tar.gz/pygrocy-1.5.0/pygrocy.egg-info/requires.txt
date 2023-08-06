@@ -1,0 +1,6 @@
+requests
+deprecation~=2.1.0
+pydantic<1.11.0,>=1.8.2
+
+[:python_version < "3.9"]
+backports.zoneinfo
