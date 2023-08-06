@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "igwrapper"
+version = "0.1.6"
+description = ""
+authors = ["sohaib94 <sohaib.ashraf94@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = {extras = ["aiodns", "brotli"], version = "^3.8.1"}
+lightstreamer-client-lib = "^1.0.0b2"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+ipykernel = "^6.15.3"
+pandas = "^1.4.4"
+plotly = "^5.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
