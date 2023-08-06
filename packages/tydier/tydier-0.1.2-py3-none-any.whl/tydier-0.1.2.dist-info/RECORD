@@ -1,0 +1,9 @@
+tydier/__init__.py,sha256=QRfJYqCo7dNh9021DFSlwfNK59B4owQFszzTAStY8s0,307
+tydier/catvars.py,sha256=yIXTPTXgtSNB1zRP0JJafLsgzxxUNtGgGA2ZNRVyD94,4185
+tydier/numvars.py,sha256=PtEJl1mhssbrzg40KqRNV6anBbmELEzp1ZKB3Hcix1Q,1833
+tydier/strings.py,sha256=YoBMLsVq8rwo1qYGbDFGAujQBkpmkoYp75mFmfQyXwA,4755
+tydier/utilities.py,sha256=MRBC2VRn9L_GuSV9IQbUdb14iBZB___B_NL4W2dNF8Y,118
+tydier-0.1.2.dist-info/LICENSE,sha256=MgTozgF8eGdHBQl4wgMUHW1o72C_jk62IMF1NrTZwp4,1075
+tydier-0.1.2.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+tydier-0.1.2.dist-info/METADATA,sha256=ZEEYBNowpsJGfJMroZJxw5vnsfvtTEoHroFqS5jAxOY,3424
+tydier-0.1.2.dist-info/RECORD,,
