@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dbt-datafusion
+Version: 1.2.0
+Summary: The DataFusion adapter plugin for dbt
+Home-page: https://github.com/fal-ai/dbt-datafusion
+Author: Burkay Gur
+Author-email: burkay@fal.ai
+
+The DataFusion adapter plugin for dbt
