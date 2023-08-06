@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["andrewtools*", "utils*"]
+
+[project]
+name = "andrewtools"
+version = "0.1.0"
+description = "An assortment of handy Python tools made by someone named Andrew"
+authors = [{ name = "Andrew Tracey", email = "act.project.alpha@gmail.com" }]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["tools", "andrew", "personal", "handy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "black"]
+
+[project.urls]
+Homepage = "https://github.com/andrewt110216/andrewtools"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
