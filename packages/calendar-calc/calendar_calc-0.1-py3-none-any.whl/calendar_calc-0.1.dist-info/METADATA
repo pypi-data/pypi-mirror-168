@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: calendar-calc
+Version: 0.1
+Summary: Various calculations on a calendar like days, months etc...
+Home-page: https://github.com/arunmastermind/calendar_calc
+Author: Arun Kumar
+Author-email: arunmastermind.sci@gmail.com
+License: MIT
+Project-URL: Documentation, https://calendar_calc.readthedocs.io/
+Project-URL: Changelog, https://calendar_calc.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/arunmastermind/calendar_calc/issues
+Keywords: calendar,days,months,time,datetime,week
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Requires-Dist: datetime
+
+UNKNOWN
+
+
