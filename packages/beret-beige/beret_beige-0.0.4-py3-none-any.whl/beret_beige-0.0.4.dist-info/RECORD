@@ -1,0 +1,9 @@
+beige/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beige/get_alpha0.py,sha256=kTdkuZe3W9CaCFT9_IoYvkTLKo7R9bNFrHwwNBfCCnY,2271
+beige/load_data.py,sha256=l_-57uINOvR2JvIEwNmAsEe7vzFjaPVGTdiL45mOR40,37394
+beige/model.py,sha256=A2H9m6wCuGSQmF2EVmytPdD_SfAkjG-XjTlkBzVTQe0,24179
+beret_beige-0.0.4.data/scripts/beige,sha256=iY-2wTgIGePQEEi9CzE5Df85eQ4dCxl1YNSki5mBoE8,6449
+beret_beige-0.0.4.dist-info/METADATA,sha256=F6wyspSJrGOIwaGzWvmjyl-PPKES9O5yZO98l9P-lXc,3172
+beret_beige-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+beret_beige-0.0.4.dist-info/top_level.txt,sha256=amVgIHxaqatN0eWDDBTJ2j8Pom4SpXjy9tXax3rop1w,6
+beret_beige-0.0.4.dist-info/RECORD,,
