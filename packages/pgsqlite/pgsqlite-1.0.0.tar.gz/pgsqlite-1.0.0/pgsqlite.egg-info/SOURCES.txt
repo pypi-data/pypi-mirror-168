@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pgsqlite/__init__.py
+pgsqlite/pgsqlite.py
+pgsqlite.egg-info/PKG-INFO
+pgsqlite.egg-info/SOURCES.txt
+pgsqlite.egg-info/dependency_links.txt
+pgsqlite.egg-info/requires.txt
+pgsqlite.egg-info/top_level.txt
