@@ -1,0 +1,15 @@
+tbb-2021.7.0.data/data/lib/libtbb.12.7.dylib,sha256=w1tSyjXKACoGz5O_4clMRZ9UeMFjde8uPUVseEPX030,720160
+tbb-2021.7.0.data/data/lib/libtbb.12.dylib,sha256=w1tSyjXKACoGz5O_4clMRZ9UeMFjde8uPUVseEPX030,720160
+tbb-2021.7.0.data/data/lib/libtbb.dylib,sha256=w1tSyjXKACoGz5O_4clMRZ9UeMFjde8uPUVseEPX030,720160
+tbb-2021.7.0.data/data/lib/libtbbmalloc.2.7.dylib,sha256=R7YJa5PWMClXSm3PSzAr6fTrGMpO1WFRg0YI7WACOe8,407840
+tbb-2021.7.0.data/data/lib/libtbbmalloc.2.dylib,sha256=R7YJa5PWMClXSm3PSzAr6fTrGMpO1WFRg0YI7WACOe8,407840
+tbb-2021.7.0.data/data/lib/libtbbmalloc.dylib,sha256=R7YJa5PWMClXSm3PSzAr6fTrGMpO1WFRg0YI7WACOe8,407840
+tbb-2021.7.0.data/data/lib/libtbbmalloc_proxy.2.7.dylib,sha256=XGAs9q2prKwjlj2Cyk-pjaI_HQ-wKJRRqhKdA5tr8w0,36064
+tbb-2021.7.0.data/data/lib/libtbbmalloc_proxy.2.dylib,sha256=XGAs9q2prKwjlj2Cyk-pjaI_HQ-wKJRRqhKdA5tr8w0,36064
+tbb-2021.7.0.data/data/lib/libtbbmalloc_proxy.dylib,sha256=XGAs9q2prKwjlj2Cyk-pjaI_HQ-wKJRRqhKdA5tr8w0,36064
+tbb-2021.7.0.data/data/share/doc/tbb/third-party-programs.txt,sha256=OfBLb-PVmTmFB6nvfrrkvatg-AaBWUv5WPu9mCnfOo4,50576
+tbb-2021.7.0.dist-info/LICENSE.txt,sha256=0FHWqv3r5V_hjP6ydXbWRhi10tZNphthT1rPPkZAgA4,4227
+tbb-2021.7.0.dist-info/METADATA,sha256=1XsTJJ78wY3QVO6INe_Frd4EX6dSxXnmBKpUgyeJ49w,1059
+tbb-2021.7.0.dist-info/WHEEL,sha256=RFHWgnxN0v-d8zGfM3RBbnabJvxz8TihoEHZ2qGBooI,208
+tbb-2021.7.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tbb-2021.7.0.dist-info/RECORD,,
