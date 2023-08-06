@@ -1,0 +1,8 @@
+README.md
+setup.py
+android_tts/__init__.py
+android_tts/version.py
+android_tts.egg-info/PKG-INFO
+android_tts.egg-info/SOURCES.txt
+android_tts.egg-info/dependency_links.txt
+android_tts.egg-info/top_level.txt
