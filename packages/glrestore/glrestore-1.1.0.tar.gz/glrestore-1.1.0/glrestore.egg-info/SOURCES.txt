@@ -1,0 +1,14 @@
+README.md
+setup.py
+glrestore/__init__.py
+glrestore/glrestore.py
+glrestore/s3_utils.py
+glrestore/version.py
+glrestore.egg-info/PKG-INFO
+glrestore.egg-info/SOURCES.txt
+glrestore.egg-info/dependency_links.txt
+glrestore.egg-info/entry_points.txt
+glrestore.egg-info/requires.txt
+glrestore.egg-info/top_level.txt
+glrestore.egg-info/zip-safe
+test/test.py

@@ -1,0 +1,3 @@
+[console_scripts]
+glrestore = glrestore.glrestore:main
+
