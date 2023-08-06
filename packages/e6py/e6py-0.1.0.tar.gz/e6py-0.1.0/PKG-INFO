@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: e6py
+Version: 0.1.0
+Summary: An e621 API wrapper
+Home-page: https://github.com/e6py/e6py
+Author: zevaryx
+Author-email: zevaryx@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Documentation
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+
+# e6py
+
+`e6py` is an API wrapper for e621/e926
+
+## Requirements
+
+- Python 3.10
+- requests >= 2.26.0
+- attrs >= 21.2.0
+
+## Usage
+
+```py
+from e6py import E621Client
+
+client = E621Client(login="username", api_key="API Key")
+posts = client.get_posts()
+
+for post in posts:
+    print(f"Got post {post.id}")
+    print(f"  Rating: {post.rating}")
+    print(f"   Score: {post.score}")
+    print(f"     URL: {post.file.url}")
+```
