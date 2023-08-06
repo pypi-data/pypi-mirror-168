@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: beret-beige
+Version: 0.0.1
+Summary: Bayesian Effect size Inference with Guide counts and Editing rate
+Home-page: https://github.com/jykr/beige
+Author: Jayoung Ryu
+Author-email: jayoung_ryu@g.harvard.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# beige
