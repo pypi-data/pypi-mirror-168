@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/kapediaml/__init__.py
+src/kapediaml/inputraw.json
+src/kapediaml/ocrmodel
+src/kapediaml/resultkpd.py
+src/kapediaml150.egg-info/PKG-INFO
+src/kapediaml150.egg-info/SOURCES.txt
+src/kapediaml150.egg-info/dependency_links.txt
+src/kapediaml150.egg-info/requires.txt
+src/kapediaml150.egg-info/top_level.txt
