@@ -1,0 +1,2 @@
+[console_scripts]
+cmemc = cmem.cmemc.cli:main
