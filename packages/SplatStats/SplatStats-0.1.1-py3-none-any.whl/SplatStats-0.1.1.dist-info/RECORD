@@ -1,0 +1,12 @@
+SplatStats/Battle.py,sha256=7vTafgb0EsBPzO_cOAFYBBh5bCtRUPKGzwOOlr1YArk,4076
+SplatStats/History.py,sha256=IQfoj4zGpocIbWNlacXYQfAFS5_SPDzMO7yUd1urueQ,2957
+SplatStats/Player.py,sha256=VN8AP_82AMCnPkNPxGdu5PnS5NWdb5eDItRlFHsKzVM,677
+SplatStats/__init__.py,sha256=36eoKL8_yEc2ifu1TzeEWDweemPyfvridfweD71mmDs,116
+SplatStats/_version.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+SplatStats/auxiliary.py,sha256=_seirmrfWAU-mUqHnl1z5dB0ZtjlRMBpEj6rAGF_0lQ,1358
+SplatStats/parsers.py,sha256=D3szE6mK51qB9PbVHfQ4w_wvSFcAqXRjWrH0Ixeu_90,3352
+SplatStats-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+SplatStats-0.1.1.dist-info/METADATA,sha256=hTZqagLeVtuTzWB3pNKZ9DAWMJKo8lf8Z7cyDZJZgAY,2319
+SplatStats-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SplatStats-0.1.1.dist-info/top_level.txt,sha256=TSgOCY3TulM_mJtp2GHD6YOA9CzNc00q211SeCU0Yxc,11
+SplatStats-0.1.1.dist-info/RECORD,,
