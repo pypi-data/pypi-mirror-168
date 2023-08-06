@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mastml
+Version: 3.1.2
+Summary: MAterials Simulation Toolkit - Machine Learning
+Home-page: https://github.com/uw-cmg/MAST-ML
+Author: MAST Development Team, University of Wisconsin-Madison Computational Materials Group
+Author-email: ddmorgan@wisc.edu
+License: MIT
+Keywords: MAST,materials,simulation,MASTML,machine learning
+License-File: LICENSE
+
+MAterials Simulation Toolkit for Machine Learning (MASTML)
