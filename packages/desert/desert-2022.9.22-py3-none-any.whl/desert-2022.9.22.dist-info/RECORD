@@ -1,0 +1,11 @@
+desert/__init__.py,sha256=4QVhpqGd185CeyTBu2PR-CCnPGBNnYjxFON49wynKp4,4790
+desert/_make.py,sha256=0jcfaXxp-3bBns72Nddkefegh6JNasjWii_XcZ8PHLU,12780
+desert/_version.py,sha256=md4UfygD9DCT5fB8nNwWIgvKmY1fnH_M1hBXRPkgjPU,27
+desert/exceptions.py,sha256=IQk3xY0iI_HCSv7ysmZiY16yWYweU-AL8BK89XcyfB8,330
+desert/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+desert-2022.9.22.dist-info/AUTHORS.rst,sha256=JfDY5_UZLYuoT7VyNk-_Q4APWsk2moSztLNUHd1x4H8,87
+desert-2022.9.22.dist-info/LICENSE,sha256=45uGt3J3PQjfRz98Nd21BF_fsfarUiQrUn9ttG6CBYg,1077
+desert-2022.9.22.dist-info/METADATA,sha256=Lg2uE-TOG5HG90cVjrM2_3duIJebtBFZozfpyrUM3lU,8648
+desert-2022.9.22.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+desert-2022.9.22.dist-info/top_level.txt,sha256=T_MbACRfGAiUgAdg0YVNfttM1pDA5OfFC8inTd9KLoU,7
+desert-2022.9.22.dist-info/RECORD,,
