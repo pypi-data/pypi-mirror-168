@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: robustvsnormalzoo
+Version: 1.0.1
+Summary: A PyTorch model zoo consisting of robust (adversarially trained) image classifiers and otherwise equivalent normal models for research purposes.
+Home-page: https://github.com/GeJulia/robust_confidences_evaluation
+Author: Paul Gavrikov
+Author-email: paul.gavrikov@hs-offenburg.de
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+A PyTorch model zoo consisting of robust (adversarially trained) image classifiers and otherwise equivalent normal models for research purposes.

@@ -1,0 +1,5 @@
+torch
+pandas
+geotorch==0.3.0
+torchdiffeq==0.2.3
+timm==0.5.4
