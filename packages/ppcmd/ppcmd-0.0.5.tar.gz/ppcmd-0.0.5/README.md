@@ -1,0 +1,2 @@
+# ppc
+pico python command
