@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/mat1plot/__init__.py
+src/mat1plot/plot2d.py
+src/mat1plot.egg-info/PKG-INFO
+src/mat1plot.egg-info/SOURCES.txt
+src/mat1plot.egg-info/dependency_links.txt
+src/mat1plot.egg-info/top_level.txt
