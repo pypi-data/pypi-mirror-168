@@ -1,0 +1,10 @@
+anime_api/__init__.py,sha256=kBYqEOR9t05oXQ8iVpuPZLZMcBuKWVxKmpwvbCfRBjA,2392
+anime_api/apis/anime_facts_rest_api/__init__.py,sha256=JOwyQBupGlNCY-lw2LI2u3TcVaWBMRAqAlafjOfzDkU,2205
+anime_api/apis/anime_facts_rest_api/objects.py,sha256=-v7EHKJJNhqZuq73QLO__KS4GGg-RZI1wCP6OAHwcKo,817
+anime_api/apis/trace_moe/__init__.py,sha256=6aqyu1XCKrIyXwVa4YNm5yEzTm9P5xD7-8TV2dh1uV8,4441
+anime_api/apis/trace_moe/objects.py,sha256=7PdEANWnf9hbC3ewaeWP2TsyzvPVhXdeX0aNisq0Hvk,838
+anime_api/exceptions.py,sha256=_mzwZmnfy-FfI3V7WCdywSecCa4WbwxhyR4vqgV08uU,733
+anime_api-0.2.0.dist-info/LICENSE.md,sha256=WPeNJJbrVkJCHU-JJZgGj856Y-ftv6PcVtJUiUilBAM,14851
+anime_api-0.2.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+anime_api-0.2.0.dist-info/METADATA,sha256=lMePHG27NzqRDS6Lmeot0mFh2HAmtgWZQL_olkwqJ0U,5112
+anime_api-0.2.0.dist-info/RECORD,,
