@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: evnex
+Version: 0.2.9
+Summary: 
+Author: Brian Thorne
+Author-email: brian@hardbyte.nz
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: pycognito (>=2022.8.0,<2023.0.0)
+Requires-Dist: pydantic (>=1.10.1,<2.0.0)
+Requires-Dist: structlog (>=22.1.0,<23.0.0)
+Requires-Dist: tenacity (>=8.0.1,<9.0.0)
