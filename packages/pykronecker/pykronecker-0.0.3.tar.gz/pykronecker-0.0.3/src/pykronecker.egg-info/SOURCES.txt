@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pykronecker/__init__.py
+src/pykronecker/base.py
+src/pykronecker/block.py
+src/pykronecker/composite.py
+src/pykronecker/operators.py
+src/pykronecker/utils.py
+src/pykronecker.egg-info/PKG-INFO
+src/pykronecker.egg-info/SOURCES.txt
+src/pykronecker.egg-info/dependency_links.txt
+src/pykronecker.egg-info/not-zip-safe
+src/pykronecker.egg-info/requires.txt
+src/pykronecker.egg-info/top_level.txt
