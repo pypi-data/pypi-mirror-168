@@ -1,0 +1,21 @@
+#Pipeline steps to be executed
+pipeline:
+  #Name should satisfy ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}
+  - name: "sample-step"
+    job_suffix: "S"
+    code: "run_notebook_wrapper.py"
+    #location of input data to be passed for processing it
+    #can be relative to repository or absolute path
+    input_data: "data/<job_id>"
+    #Once the process is done
+    #sagemaker output data will gets downloaded here
+    output_path: "data"
+    params:
+      --notebook-path: "notebooks/sample_notebook.ipynb"
+      --train-id: "1"
+#Folders to exclude while compresing source code for sagemaker job
+exclude_folders:
+  - "data"
+#Files to exclude while compressing source code for sagemaker job
+exclude_files:
+  - "*.gitignore"
