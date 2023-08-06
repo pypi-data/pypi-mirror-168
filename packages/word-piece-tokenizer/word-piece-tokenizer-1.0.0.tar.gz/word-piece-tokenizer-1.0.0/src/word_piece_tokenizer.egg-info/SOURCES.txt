@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/word_piece_tokenizer/BasicTokenizer.py
+src/word_piece_tokenizer/Trie.py
+src/word_piece_tokenizer/WordPieceTokenizer.py
+src/word_piece_tokenizer/__init__.py
+src/word_piece_tokenizer/utils.py
+src/word_piece_tokenizer/vocab.txt
+src/word_piece_tokenizer.egg-info/PKG-INFO
+src/word_piece_tokenizer.egg-info/SOURCES.txt
+src/word_piece_tokenizer.egg-info/dependency_links.txt
+src/word_piece_tokenizer.egg-info/requires.txt
+src/word_piece_tokenizer.egg-info/top_level.txt
