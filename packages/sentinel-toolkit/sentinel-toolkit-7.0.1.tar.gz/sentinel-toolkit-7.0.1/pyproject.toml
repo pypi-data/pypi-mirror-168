@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "sentinel-toolkit"
+version = "7.0.1"
+description = "Various sentinel tools"
+license = "Apache-2.0"
+authors = ["Georgi Genchev <gdgenchev97@gmail.com>"]
+maintainers = ["Georgi Genchev <gdgenchev97@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/sentinel-toolkit/sentinel-toolkit"
+keywords = ["sentinel", "satellite", "sentinel-2", "sentinel-2", "sentinel-toolkit"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+colour-science = "^0.4.1"
+openpyxl = "^3.0.10"
+pandas = "^1.4.2"
+spectral = ">=0.22.4,<0.24.0"
+elementpath = "^3.0.2"
+rasterio = "^1.2.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
