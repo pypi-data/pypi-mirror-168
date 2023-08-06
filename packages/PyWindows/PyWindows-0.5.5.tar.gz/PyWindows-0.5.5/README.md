@@ -1,0 +1,57 @@
+# Python-Windows
+
+![Test of Windows](images/Test.gif)
+
+---
+
+## Code:
+
+```python
+import random
+from time import sleep
+
+from PyWindows.PyWindows import Window, types
+
+def randRect(window):
+    x = random.randint(0, 590)
+    y = random.randint(0, 430)
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    window.createRect(x, y, 50, 50, r, g, b)
+    sleep(0.05)
+
+window = Window(800, 250, 640, 480, types.openGL)
+renderer = window.getRenderer()
+window.create()
+
+quit = False
+while not quit:
+    # Loop and Exit
+    loop = window.loop()
+    if loop == 256:
+        window.quit()
+        quit = True 
+    randRect(window)     
+```
+
+# Create Message Boxes
+
+<img src="images/messageBox.png" style="width: 100%" />
+
+---
+
+## Code:
+
+```python
+from PyWindows.PyWindows import types, createMessageBox
+
+myMsg = createMessageBox("Hello World", "Do you accept?", types.question)
+
+if myMsg == 1:
+    print("Yay you accepted")
+    createMessageBox("Yay", "You Accepted", types.info)
+elif myMsg == 2:
+    print("How dare you decline")   
+    createMessageBox("Very Bad", "How dare you decline", types.warning)
+```
