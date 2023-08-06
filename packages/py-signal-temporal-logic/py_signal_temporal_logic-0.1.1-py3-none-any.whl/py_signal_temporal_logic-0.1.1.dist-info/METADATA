@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-signal-temporal-logic
+Version: 0.1.1
+Summary: Wrapper on metric-temporal-logic to implement signal temporal logic.
+Home-page: https://github.com/mvcisback/py-signal-temporal-logic
+License: MIT
+Author: Marcell Vazquez-Chanlatte
+Author-email: mvc@linux.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: metric-temporal-logic (>=0.4.0,<0.5.0)
+Requires-Dist: sympy (>=1.11.1,<2.0.0)
+Project-URL: Repository, https://github.com/mvcisback/py-signal-temporal-logic
