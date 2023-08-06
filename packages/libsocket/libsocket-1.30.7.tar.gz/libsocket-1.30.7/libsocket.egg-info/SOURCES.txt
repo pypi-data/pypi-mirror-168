@@ -1,0 +1,10 @@
+README.md
+setup.py
+libsocket/__init__.py
+libsocket/libsocket.py
+libsocket/py.typed
+libsocket.egg-info/PKG-INFO
+libsocket.egg-info/SOURCES.txt
+libsocket.egg-info/dependency_links.txt
+libsocket.egg-info/requires.txt
+libsocket.egg-info/top_level.txt
