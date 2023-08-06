@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ggmail
+Version: 0.4.0
+Summary: Manage gmail account using python, forget about imap and just code what you supposed to do.
+Author: dylandoamaral
+Author-email: do.amaral.dylan@gmail.com
+Requires-Python: >=3.7,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
