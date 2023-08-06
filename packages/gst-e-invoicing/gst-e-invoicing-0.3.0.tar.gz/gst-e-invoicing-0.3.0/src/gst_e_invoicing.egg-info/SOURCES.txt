@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gst_e_invoicing.egg-info/PKG-INFO
+src/gst_e_invoicing.egg-info/SOURCES.txt
+src/gst_e_invoicing.egg-info/dependency_links.txt
+src/gst_e_invoicing.egg-info/requires.txt
+src/gst_e_invoicing.egg-info/top_level.txt
+src/gst_irn/__init__.py
+src/gst_irn/codes.py
+src/gst_irn/converters.py
+src/gst_irn/crypto.py
+src/gst_irn/generators.py
+src/gst_irn/qr.py
+src/gst_irn/session.py
