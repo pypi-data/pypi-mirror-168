@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loadconf"
+version = "0.0.6"
+description = "Give users an easy way to define settings and personalize their use of your program."
+readme = "README.md"
+license = { text = "GNU General Public License v3 (GPLv3)" }
+keywords = [ "shell", "scripting" ]
+dependencies = []
+
+[project.optional-dependencies]
+
+[project.scripts]
+
+[project.urls]
+repository = "https://codeberg.org/johndovern/loadconf"
