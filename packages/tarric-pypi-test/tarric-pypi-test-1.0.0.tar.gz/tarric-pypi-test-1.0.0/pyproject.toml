@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tarric-pypi-test"
+version = "1.0.0"
+description = "Test package for tarric"
+authors = [{ name = "Tarric Sookdeo", email = "tarricsookdeo@outlook.com" }]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["tarric", "pypi", "test"]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["autopep8"]
+
+[project.urls]
+Homepage = "https://github.com/tarricsookdeo/tarric-pypi-test"

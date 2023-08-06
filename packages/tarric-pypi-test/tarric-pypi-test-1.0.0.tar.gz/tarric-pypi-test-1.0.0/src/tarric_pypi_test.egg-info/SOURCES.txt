@@ -1,0 +1,9 @@
+pyproject.toml
+src/__init__.py
+src/__main__.py
+src/message.py
+src/tarric_pypi_test.egg-info/PKG-INFO
+src/tarric_pypi_test.egg-info/SOURCES.txt
+src/tarric_pypi_test.egg-info/dependency_links.txt
+src/tarric_pypi_test.egg-info/requires.txt
+src/tarric_pypi_test.egg-info/top_level.txt
