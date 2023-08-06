@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+django_google_keys.egg-info/PKG-INFO
+django_google_keys.egg-info/SOURCES.txt
+django_google_keys.egg-info/dependency_links.txt
+django_google_keys.egg-info/requires.txt
+django_google_keys.egg-info/top_level.txt
+django_key/__init__.py
+django_key/dy.py
+django_key/removedor.py
