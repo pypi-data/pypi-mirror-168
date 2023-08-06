@@ -1,0 +1,17 @@
+MultiTrain/__init__.py,sha256=zLPK-dfSG4_r9AQwLiUmOC6Zi4aOoyFRdcCxi7bTRN4,193
+MultiTrain/__version__.py,sha256=dOrtM_INAzt3rBBix9LuH_3ULIUGVVE9EWANmMGR514,50
+MultiTrain/classification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MultiTrain/classification/classification_models.py,sha256=1s-iaDa5KjUd3Irc_nHy5N-hRC7aVM2f7kPnVxx7PPI,71120
+MultiTrain/methods/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+MultiTrain/methods/multitrain_methods.py,sha256=P28jGOTEYAz4crQH1hEcfWvhaJ8ZVOx2nuetuROOwSk,9298
+MultiTrain/regression/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MultiTrain/regression/regression_models.py,sha256=maHQtVX-mY3fL_MdzWjRC5Ugxe99Yi2LGL6lhXtJLaI,48407
+MultiTrain/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MultiTrain/tests/test_classifications.py,sha256=N1Odnj9OCYf2Uae70KuIADrK7UDM12_JDbvdFVJfvzk,315
+MultiTrain/tests/test_functions.py,sha256=Q61Ze9gAIWe5coQcW4SN0Bg_wPu8y4-TqLQaXeTztm8,232
+MultiTrain/tests/test_regression.py,sha256=JAZ8GFubh2gCuyyL3uU-6fStgu1OkYc1huuN8nplTa4,322
+MultiTrain-0.12.0.dist-info/LICENSE,sha256=4E_-N13-58qAnvXg5-R9Cr3gH3-9EdPCExiOwNtPF48,1070
+MultiTrain-0.12.0.dist-info/METADATA,sha256=0uSCoQlFGEHPO8f1Pu5nzcGRwvnUzgRh4UeYMohhsJs,26213
+MultiTrain-0.12.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+MultiTrain-0.12.0.dist-info/top_level.txt,sha256=K7vwN5Zy58eT_ijD4XL4j_br-i5HELPWL1o1I8zg_84,11
+MultiTrain-0.12.0.dist-info/RECORD,,
