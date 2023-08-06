@@ -1,0 +1,34 @@
+"""DPI Restrictions as part of a UniFi network."""
+
+from typing import Final
+
+from ..models.dpi_restriction_app import (
+    DPIRestrictionApp,
+    DPIRestrictionAppEnableRequest,
+)
+from ..models.message import MessageKey
+from .api_handlers import APIHandler
+
+APP_URL: Final = "/rest/dpiapp"
+
+
+class DPIRestrictionApps(APIHandler):
+    """Represents DPI App configurations."""
+
+    obj_id_key = "_id"
+    path = APP_URL
+    item_cls = DPIRestrictionApp
+    process_messages = (MessageKey.DPI_APP_ADDED, MessageKey.DPI_APP_UPDATED)
+    remove_messages = (MessageKey.DPI_APP_REMOVED,)
+
+    async def enable(self, app_id: str) -> list[dict]:
+        """Enable DPI Restriction Group Apps."""
+        return await self.controller.request(
+            DPIRestrictionAppEnableRequest.create(app_id, enable=True)
+        )
+
+    async def disable(self, app_id: str) -> list[dict]:
+        """Disable DPI Restriction Group Apps."""
+        return await self.controller.request(
+            DPIRestrictionAppEnableRequest.create(app_id, enable=False)
+        )
