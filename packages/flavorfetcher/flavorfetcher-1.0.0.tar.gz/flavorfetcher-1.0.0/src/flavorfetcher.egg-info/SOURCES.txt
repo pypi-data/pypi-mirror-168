@@ -1,0 +1,18 @@
+CITATION.cff
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/flavorfetcher/__init__.py
+src/flavorfetcher/datamunging.py
+src/flavorfetcher/descriptor_model.py
+src/flavorfetcher/makepredictions.py
+src/flavorfetcher.egg-info/PKG-INFO
+src/flavorfetcher.egg-info/SOURCES.txt
+src/flavorfetcher.egg-info/dependency_links.txt
+src/flavorfetcher.egg-info/requires.txt
+src/flavorfetcher.egg-info/top_level.txt
+src/flavorfetcher/data/100_2021-04-20 10_38_24.203316_3_epochs_re-run_model.h5
+src/flavorfetcher/data/100_2021-04-20 10_38_24.203316_3_epochs_re-run_model.json
+src/flavorfetcher/data/Example Whiskey Reviews.csv
+src/flavorfetcher/data/__init__.py
