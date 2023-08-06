@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: picca
+Version: 5.1.0
+Summary: Package for Igm Cosmological-Correlations Analyses
+Home-page: https://github.com/igmhub/picca
+Author: Nicolas Busca, Helion du Mas des Bourboux, Ignasi Pérez-Ràfols et al
+Author-email: iprafols@gmail.com
+License-File: LICENSE
