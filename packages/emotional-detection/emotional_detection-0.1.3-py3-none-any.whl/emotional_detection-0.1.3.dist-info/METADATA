@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: emotional-detection
+Version: 0.1.3
+Summary: Standalone package for capturing video from the webcam, detecting all faces in the video and then runing the DeepFace emotional classifier on each face. The output of the emotional classfications will be written as JSON to a Unix pipe to be consumed by any other process
+Home-page: https://github.com/DevonPeroutky/emotional-detection
+Author: DevonPeroutky
+Author-email: devonperoutky@gmail.com
+Requires-Python: >=3.9,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: deepface (>=0.0.75,<0.0.76)
+Requires-Dist: h5py (>=3.7.0,<4.0.0)
+Requires-Dist: imutils (>=0.5.4,<0.6.0)
+Requires-Dist: opencv-python (>=4.6.0,<5.0.0)
+Requires-Dist: scipy (>=1.9.1,<2.0.0)
+Project-URL: Repository, https://github.com/DevonPeroutky/emotional-detection
+Description-Content-Type: text/markdown
+
+# Overview
+This packages is a very basic script that captures video from the webcam, detects all faces in the video and then runs the DeepFace emotional classifier on each face. The output of the emotional classfications will be written to a Unix pipe to be consumed by any other process.
+
+# Instructions
+Everything is contained in `emotional_detection/main.py`. You simply install the dependencies and run. This project works out of the box with [poetry](https://python-poetry.org/), but you could install the dependencies using any dependency manager + virtual environment combination you choose.
+
