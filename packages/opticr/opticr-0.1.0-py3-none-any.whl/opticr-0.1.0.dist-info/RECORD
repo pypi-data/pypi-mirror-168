@@ -1,0 +1,9 @@
+opticr/__init__.py,sha256=RUCehmjp_3IoRxbNwKmFwrS__I37RNltfuWplKwFzLM,27
+opticr/ocr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opticr/ocr/googlevision.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opticr/ocr/textract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opticr/opticr.py,sha256=aHfCgZ6P-dxelPZn6cFNXbbUnfRrR-w6l15i2HH4KlM,152
+opticr-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opticr-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+opticr-0.1.0.dist-info/METADATA,sha256=vpf4qDpAzAaksK_ta2lXF56yQ7NFpSbc6RbFwwcNeWw,1607
+opticr-0.1.0.dist-info/RECORD,,
