@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: xia-fields
+Version: 0.0.27
+Summary: X-I-A Basic Field Definitions
+Home-page: https://develop.x-i-a.com/docs/xia-fields/0.0.27/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+.. image:: https://img.shields.io/pypi/v/xia-fields.svg
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-fields/
+
+====================================
+X-I-A Basic Field Definitions
+====================================
+
+
+Varies field-types are defined here
+
+
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-fields
+
+
