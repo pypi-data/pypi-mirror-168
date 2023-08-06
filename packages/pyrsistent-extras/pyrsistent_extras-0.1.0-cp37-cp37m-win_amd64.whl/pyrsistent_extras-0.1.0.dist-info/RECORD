@@ -1,0 +1,13 @@
+pyrsistent_extras/__init__.py,sha256=TI8vhxs1bIegtsU4131m5EHbE7SxT7DQDUkget05IF8,153
+pyrsistent_extras/_pheap.py,sha256=gelRJqNzxBPwiy5KKp2H0cjrL7SIoBUbtzcKVLGds8w,21169
+pyrsistent_extras/_util.py,sha256=T5yrILpC8efvEZm6KNKGSpS7QK16aN3SuNs7q_8rLlk,1629
+pyrsistent_extras/_version.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+pyrsistent_extras/_psequence/__init__.py,sha256=8oaRz6Kr-sQ7wgwgwbrV86q4TBZI99-ndXxTdEsb2IA,1048
+pyrsistent_extras/_psequence/_base.py,sha256=Hs1LY3y1cQNgBvzf5afAhG1hpCi9QQ8Uv_SakBesOGk,20611
+pyrsistent_extras/_psequence/_c_ext.cp37-win_amd64.pyd,sha256=6r25AlU4LgOIFDxl3Pvaf3wh8GWb2nQnc2vx_PES_bs,80896
+pyrsistent_extras/_psequence/_python.py,sha256=WA0g2zU-ozTPJ-cljKmwzmuPEn2Ek11BArk2cLtbKkg,31722
+pyrsistent_extras-0.1.0.dist-info/LICENSE.mit,sha256=8ywz20N7bGKaiu3N9tWZayxQHzRKb269qPCX3dfmNvc,1076
+pyrsistent_extras-0.1.0.dist-info/METADATA,sha256=ZN8UWTHOdhak0jyQuTklqoBxMte5t4lpmeGBMjKRBSA,2341
+pyrsistent_extras-0.1.0.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+pyrsistent_extras-0.1.0.dist-info/top_level.txt,sha256=Xi5sZOo4vG_jZzsXzsBYy5e0ezscZh-Vbmjo4-xaV3I,18
+pyrsistent_extras-0.1.0.dist-info/RECORD,,
