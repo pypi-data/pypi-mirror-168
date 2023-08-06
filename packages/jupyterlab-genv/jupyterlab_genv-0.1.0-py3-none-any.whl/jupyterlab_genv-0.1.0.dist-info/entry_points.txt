@@ -1,0 +1,2 @@
+[jupyter_client.kernel_provisioners]
+genv-provisioner = jupyterlab_genv.genv_provisioner:GenvProvisioner
