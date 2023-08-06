@@ -1,0 +1,2 @@
+[console_scripts]
+permedcoe = permedcoe.__main__:main
