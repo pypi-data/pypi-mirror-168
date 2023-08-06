@@ -1,0 +1,49 @@
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "satellite-weather-downloader"
+version = "1.1.0"  # changed by semantic-release
+description = "The routines available in this package are designed to capture and process satellite images"
+readme = "README.md"
+authors = ["Flavio Codeco Coelho <fccoelho@gmail.com>"]
+license = "GNU GPL v3.0"
+repository = "https://github.com/osl-incubator/satellite-weather-downloader"
+homepage = "https://github.com/osl-incubator/satellite-weather-downloader"
+
+# Pypi classifiers: https://pypi.org/classifiers/
+classifiers = [  #! Update me
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+]
+
+packages = [{include='satellite_weather_downloader'}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pre-commit = "^2.20.0"
+isort = "^5.10.1"
+black = "^22.8.0"
+flake8 = "^5.0.4"
+
+[tool.isort]
+profile = "black"
+src_paths = ["isort", "test"]
+
+[tool.black]
+# https://github.com/psf/black
+target-version = ["py39"]
+line-length = 79
+color = true
+
+exclude = ["*.git", "docs/"]
