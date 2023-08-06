@@ -1,0 +1,3 @@
+[console_scripts]
+orc=orc_dev_cli.cli:cli
+
