@@ -1,0 +1,1 @@
+# Calulating the Bohmian trajectories 
