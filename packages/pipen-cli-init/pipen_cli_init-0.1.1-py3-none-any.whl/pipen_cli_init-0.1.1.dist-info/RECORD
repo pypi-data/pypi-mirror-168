@@ -1,0 +1,15 @@
+pipen_cli_init/__init__.py,sha256=i7BLfBwSVFetJnlTPKZEaLtg-QU-hzzgPAW1P2y0JMU,65
+pipen_cli_init/deps.toml,sha256=pTfXSwV9EveeYolpIxKdOlj72iANeVEIyRhEvk8l5F4,60
+pipen_cli_init/entry.py,sha256=bbh0LSdwXY8ZAH4hwgiSXm_KX9afpvD9WZ_AKY3dvUY,2256
+pipen_cli_init/initing.py,sha256=SsJC09y5AMf8iLwdZl2cKRvLfnAV3TLgYFUCfft2Is8,5640
+pipen_cli_init/templates/Example.sh.tpl,sha256=vjcTpLDO7ISueB45veFu_emJobd4J2XWghvvlHJxJME,38
+pipen_cli_init/templates/Example.svelte.tpl,sha256=lwDnckl_7jxY57UPAbNB4GStHhJ3EdGoQ7HDeVEb0Ts,43
+pipen_cli_init/templates/args.py.tpl,sha256=A6SBu_wyKFf4-Tf7X6-oEDzJz6LQXERsTKWN5iB9kkk,118
+pipen_cli_init/templates/main.py.tpl,sha256=KEFuMh8hz1xqOifdO-0oY4isHSHXqhNgUb6M_dWz7F8,109
+pipen_cli_init/templates/pipeline.py.tpl,sha256=cq9GboYSSm5JA8t9Bpb03Tko3NNiSsyYXeRPWAoJGtk,427
+pipen_cli_init/templates/processes.py.tpl,sha256=Lvd9XmpSxYiSF_i3fzxWJqwBvc1n3MNu9guhbn7rygg,339
+pipen_cli_init/version.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+pipen_cli_init-0.1.1.dist-info/entry_points.txt,sha256=s9N8VBDkUAuFB5hgj2ZuDjlrJMEd_zP4KMipngT5A18,50
+pipen_cli_init-0.1.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pipen_cli_init-0.1.1.dist-info/METADATA,sha256=u7zcVx-dsCvjKxaTesF0_gZPwICADktadtKAngpMC9E,563
+pipen_cli_init-0.1.1.dist-info/RECORD,,
