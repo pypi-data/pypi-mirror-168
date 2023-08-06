@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: loozr-near-sdk
+Version: 0.0.4
+Home-page: https://github.com/Loozr-Protocol/loozr-near-py
+Author: Loozr Inc
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: lzr-near-api-py
+
+# Loozr Near SDK
+
+[![Test and build package](https://github.com/Loozr-Protocol/loozr_near_sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/Loozr-Protocol/loozr_near_sdk/actions/workflows/ci.yml)
