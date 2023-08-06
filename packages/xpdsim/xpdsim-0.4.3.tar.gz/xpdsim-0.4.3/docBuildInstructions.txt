@@ -1,0 +1,7 @@
+Instructions to build the sphinx documentation.
+
+Building locally for now.
+
+ 1. cd to `doc` directory
+ 2. `activate sphinx`
+ 2. `make html`

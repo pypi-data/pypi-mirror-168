@@ -1,0 +1,25 @@
+These instructions are for Simon
+Steps:
+
+Initial setup
+  1. Create a new conda environment as a sandbox, e.g., : `conda create -n xpdsim python=3 ipython`
+  2. Clone both repos: xpdAcq and xpdSim. After clone, there should be two separate directories in your computer. Make sure the Master branch is checked out.
+  3. Navigate to the top directory of the xpdSim repository.
+  4. Activate the `xpdsim` conda environment e.g., `source activate xpdsim` (linux) or `activate xpdsim` (windows)
+  5. run `python setup.py develop`
+  6. repeat for xpdAcq
+  7. Add ophyd
+      1. Install real ophyd: `git clone https://github.com/NSLS-II/ophyd.git`
+      2. Navigate to `ophyd` repo, do `python setup.py develop`
+      3. Install supporting packages `pip install pyepics prettytable`
+  4. Copy and paste the `profile_xpdsim` directory from xpdSim to your `~/.ipython` directory
+
+This should have installed all the components.
+To run a simulation
+  1. activate the simulation environment.
+  2. cd to a directory where you want to work.
+  3. start ipython: `ipython --profile=xpdsim`
+  4. Now you are ready to run simulations: follow the directions on the xpdAcq
+    document pages under the `XPD users` link.
+  5. [fixme] new beamtime vs. go again.
+  7. There is no Beamline scientist to set up your Beamtime `bt` object so set

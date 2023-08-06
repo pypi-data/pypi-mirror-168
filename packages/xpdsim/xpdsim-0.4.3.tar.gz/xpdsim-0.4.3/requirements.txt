@@ -1,0 +1,6 @@
+python
+bluesky
+databroker
+ophyd
+pyfai
+suitcase-mongo
