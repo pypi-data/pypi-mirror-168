@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: distkv-gpio
+Version: 0.10.9
+Summary: A distributed no-master key-value store
+Home-page: https://github.com/smurfix/distgpio
+Author: Matthias Urlichs
+Author-email: matthias@urlichs.de
+License: MIT -or- Apache License 2.0
+Keywords: async,key-values,distributed
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Trio
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Home Automation
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.7
+
+========
+DistGPIO
+========
+
+DistGPIO is a link between GPIO pins and DistKV.
+
+It will
+
+* monitor inputs as specified
+
+* write values that it reads from them to some DistKV entry
+
+* monitor a DistKV entry and write any updates to GPIO
+
+* work with DistKV's runner system, either centrally or distributed
