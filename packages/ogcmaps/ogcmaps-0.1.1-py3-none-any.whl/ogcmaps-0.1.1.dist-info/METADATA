@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: ogcmaps
+Version: 0.1.1
+Summary: Python client and wrapper for OGC Maps API
+Home-page: https://github.com/52North/api-maps-client
+Author: 52°North
+Author-email: info@52north.org
+Project-URL: Bug Tracker, https://github.com/52North/api-maps-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests-cache
+Requires-Dist: click
+Requires-Dist: requests
+
+# API Maps Client
+Python client for OGC API - Maps.
+
+## Installation
+```bash
+pip install ogcmaps
+```
+
+## Usage
+```python
+from ogcmaps import landing
+data = landing.metadata()
+
+print(data)
+```
+
+See the [docs](https://52north.github.io/api-maps-client/) for complete API documentation.
+
+## For developers
+
+Install
+```bash
+virtualenv env && source env/bin/activate
+```
+```bash
+pip3 install -r requirements.txt
+```
+Install pre-commit and pytest
+```bash
+pip3 install pre-commit pytest
+```
+Build from source
+```bash
+pip3 install .
+```
+
+### Run tests
+```bash
+cd tests && pytest
+```
+
+### Generate docs
+```bash
+sphinx-apidoc -fo docs/source ogcmaps ogcmaps/utils/*
+```
