@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: configur8
+Version: 1.5
+Summary: Type-safe configuration and validation library
+Author: Nick Joyce
+Author-email: nick@stratuscode.com
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: email-validator (>=1,<2)
