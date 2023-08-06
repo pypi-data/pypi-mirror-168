@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./savantaudio/__init__.py
+./savantaudio/__version__.py
+./savantaudio/client.py
+./savantaudio/entry_points.py
+savantaudio_client.egg-info/PKG-INFO
+savantaudio_client.egg-info/SOURCES.txt
+savantaudio_client.egg-info/dependency_links.txt
+savantaudio_client.egg-info/entry_points.txt
+savantaudio_client.egg-info/top_level.txt
