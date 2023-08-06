@@ -1,0 +1,8 @@
+fps_jupyterlab/__init__.py,sha256=LYPGiQ8gybi3N0IngHjSM48pOw2C2eXKgHzrfr6FfSM,23
+fps_jupyterlab/config.py,sha256=afQJP1QlblW22AnQUQ91AuUCoLQIQ7I9eIvSbkLNdWE,288
+fps_jupyterlab/routes.py,sha256=w4jmAmHszpHA5AE-YFV5xfnWvIRdav0eHryDxiEIicE,6766
+fps_jupyterlab-0.0.43.dist-info/METADATA,sha256=PIzdoBqD1lCHp0famFwBQO0h9bIkhHPMJ8AgELvKWEw,579
+fps_jupyterlab-0.0.43.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+fps_jupyterlab-0.0.43.dist-info/entry_points.txt,sha256=-lbs-AYe6MxckUGK866ShZpttVeMqJ508UW01hrqczo,105
+fps_jupyterlab-0.0.43.dist-info/licenses/COPYING.md,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+fps_jupyterlab-0.0.43.dist-info/RECORD,,
