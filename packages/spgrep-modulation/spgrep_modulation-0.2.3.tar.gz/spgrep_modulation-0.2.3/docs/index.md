@@ -1,0 +1,15 @@
+```{toctree}
+---
+caption: Contents
+hidden:
+---
+   Introduction <self>
+   Examples <examples>
+   Formulation <formulation>
+   API reference <api>
+   Implementation notes <notes>
+```
+
+
+```{include} ../README.md
+```
