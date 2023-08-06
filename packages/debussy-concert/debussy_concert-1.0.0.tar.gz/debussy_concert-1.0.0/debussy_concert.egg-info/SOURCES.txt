@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+debussy_concert/__init__.py
+debussy_concert.egg-info/PKG-INFO
+debussy_concert.egg-info/SOURCES.txt
+debussy_concert.egg-info/dependency_links.txt
+debussy_concert.egg-info/requires.txt
+debussy_concert.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
