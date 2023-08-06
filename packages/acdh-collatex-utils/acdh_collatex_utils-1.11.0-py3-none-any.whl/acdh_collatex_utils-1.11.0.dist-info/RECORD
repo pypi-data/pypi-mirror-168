@@ -1,0 +1,14 @@
+acdh_collatex_utils/__init__.py,sha256=zk7vVykDnievg7Pxb6haviPJ-RCYYBoQkh35SbMuny4,142
+acdh_collatex_utils/acdh_collatex_utils.py,sha256=Cpj_8FFB_OBq6Xy_1fS4hpDexv-FBpz2h-agVp8qTfU,7535
+acdh_collatex_utils/chunks.py,sha256=6Uddd8F7nUn7WZoWB-p7huR8LpF-_0k8EaAEcTR_HVU,1208
+acdh_collatex_utils/cli.py,sha256=4cSD7thUD1yl-o103IrMff7xNEjCo6SgL6BrcgymBy0,1018
+acdh_collatex_utils/collatex_patch.py,sha256=vZNc0co1eQbsCzfARMiH4Rygdrd-EdgIJ3SIWsji0Y0,917
+acdh_collatex_utils/post_process.py,sha256=2TlPuf_tqy94tCUgkfZP9UKwKlZk8f7WBFTVNiZozRM,4057
+acdh_collatex_utils/xslt/lem.xsl,sha256=urgXg4xgdtOcBVsGHFhVtDTRi_5qW4c-g-YAZH-ZgqQ,1334
+acdh_collatex_utils/xslt/only_text.xsl,sha256=1uhH8qylyGMk3EWbSk7lGWsxKg8p7XR99TYD0-kJkxo,875
+acdh_collatex_utils-1.11.0.dist-info/LICENSE,sha256=lHlwOTiT0S2MzMU2VMJIwJE_fb1SWrkLMdtWPz5PuoQ,1073
+acdh_collatex_utils-1.11.0.dist-info/METADATA,sha256=iY4ZkVvhJasepr1tD0R7g3LE3KdPwzLHRpXha3TX-rg,2014
+acdh_collatex_utils-1.11.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+acdh_collatex_utils-1.11.0.dist-info/entry_points.txt,sha256=XwLOk8w-GlB4i3TJBux75FvMwnxHaiDa6wYlJePitXg,60
+acdh_collatex_utils-1.11.0.dist-info/top_level.txt,sha256=YRwxfT0i1jDBfAXIyGdj_Vmk6dxAnz_TNBrfM2gBDAs,20
+acdh_collatex_utils-1.11.0.dist-info/RECORD,,
