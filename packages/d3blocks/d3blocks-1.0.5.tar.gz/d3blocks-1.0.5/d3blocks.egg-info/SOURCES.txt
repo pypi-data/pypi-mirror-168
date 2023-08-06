@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+d3blocks/__init__.py
+d3blocks/d3blocks.py
+d3blocks/examples.py
+d3blocks.egg-info/PKG-INFO
+d3blocks.egg-info/SOURCES.txt
+d3blocks.egg-info/dependency_links.txt
+d3blocks.egg-info/requires.txt
+d3blocks.egg-info/top_level.txt
+d3blocks/data/__init__.py
