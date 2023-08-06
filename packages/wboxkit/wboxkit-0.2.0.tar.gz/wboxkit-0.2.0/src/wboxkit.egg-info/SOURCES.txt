@@ -1,0 +1,51 @@
+.gitignore
+Makefile
+example.py
+setup.py
+attacks/AES_AFTER_SBOX
+attacks/combine4daredevil.py
+attacks/sbox.py
+circuits/.keep
+src/wboxkit/__init__.py
+src/wboxkit/fastcircuit.c
+src/wboxkit/fastcircuit.h
+src/wboxkit/fastcircuit.py
+src/wboxkit/masking.py
+src/wboxkit/prng.py
+src/wboxkit/serialize.py
+src/wboxkit/tracing.py
+src/wboxkit.egg-info/PKG-INFO
+src/wboxkit.egg-info/SOURCES.txt
+src/wboxkit.egg-info/dependency_links.txt
+src/wboxkit.egg-info/entry_points.txt
+src/wboxkit.egg-info/top_level.txt
+src/wboxkit/attacks/__init__.py
+src/wboxkit/attacks/exact.py
+src/wboxkit/attacks/lda.py
+src/wboxkit/attacks/reader.py
+src/wboxkit/attacks/trace.py
+src/wboxkit/ciphers/__init__.py
+src/wboxkit/ciphers/aes/__init__.py
+src/wboxkit/ciphers/aes/aes.py
+src/wboxkit/ciphers/aes/bitaes.py
+src/wboxkit/ciphers/aes/keyschedule.py
+src/wboxkit/ciphers/aes/linear.py
+src/wboxkit/ciphers/aes/sbox.py
+src/wboxkit/ciphers/aes/targets.py
+src/wboxkit/containers/__init__.py
+src/wboxkit/containers/rect.py
+src/wboxkit/containers/vector.py
+traces/.keep
+tutorials/CHES22-whitebox-workshop.md
+tutorials/Tutorial 1 - Circuits.ipynb
+tutorials/Tutorial 1 - Circuits.slides.html
+tutorials/Tutorial 2 - Countermeasures.ipynb
+tutorials/Tutorial 2 - Countermeasures.slides.html
+tutorials/Tutorial 3 - Tracing.ipynb
+tutorials/Tutorial 3 - Tracing.slides.html
+tutorials/Tutorial 4 - Attacks.ipynb
+tutorials/Tutorial 4 - Attacks.slides.html
+tutorials/circuits.7z
+tutorials/traces.7z
+tutorials/circuits/.keep
+tutorials/traces/.keep

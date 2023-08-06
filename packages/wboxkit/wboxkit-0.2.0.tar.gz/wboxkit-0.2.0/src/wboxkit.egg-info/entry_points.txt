@@ -1,0 +1,5 @@
+[console_scripts]
+wboxkit.exact = wboxkit.attacks.exact:main
+wboxkit.lda = wboxkit.attacks.lda:main
+wboxkit.trace = wboxkit.attacks.trace:main
+
