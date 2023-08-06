@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/yaml_header_tools/__init__.py
+src/yaml_header_tools/yaml_header_tools.py
+src/yaml_header_tools.egg-info/PKG-INFO
+src/yaml_header_tools.egg-info/SOURCES.txt
+src/yaml_header_tools.egg-info/dependency_links.txt
+src/yaml_header_tools.egg-info/top_level.txt
