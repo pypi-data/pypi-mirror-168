@@ -1,0 +1,10 @@
+sanic_testing/__init__.py,sha256=LdpNJJe_gzrP4xUmDhSHY4-xxw_RMY3B_PEX0hl9yfk,99
+sanic_testing/manager.py,sha256=7h0BbrLjcPt3Ju2ifhWF54g004Om-GZtJSUk0UI--5I,348
+sanic_testing/reusable.py,sha256=SydeKz-GPuqGHcyujXw1KQfGsHrReCtACd46ti6ltk8,7508
+sanic_testing/testing.py,sha256=Hls8cxdU9fKDUcwf-Yav5yGYjvOWT26B--cCZaFlu8k,15069
+sanic_testing/websocket.py,sha256=P8vNMkZFamQnQErZtc1fC45aG6H2qMrboW3xprvtKb4,1321
+sanic_testing-22.9.0b2.dist-info/LICENSE,sha256=ljxq2vUrShwTdHmC287CFLjxv9hsdQmSQjO-wrPapnE,1085
+sanic_testing-22.9.0b2.dist-info/METADATA,sha256=VNaHiWtl7zX-rxfyAmiR6Fy-5qqCewzH-Wuo9wSFgGI,2901
+sanic_testing-22.9.0b2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sanic_testing-22.9.0b2.dist-info/top_level.txt,sha256=Ta3ak4Fh7-aEThXqp5_aYLywnLIaJr-aSU3jAx5lMkw,14
+sanic_testing-22.9.0b2.dist-info/RECORD,,
