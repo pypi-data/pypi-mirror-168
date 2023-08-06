@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sonicpy
+Version: 0.1.0
+Summary: Sonic Python library
+Home-page: https://github.com/tugstugi/pysonic
+Author: Erdene-Ochir Tuguldur
+Author-email: tugstugi@gmail.com
+License: Apache
+License-File: LICENSE
+
