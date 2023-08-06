@@ -1,0 +1,4 @@
+exclude .coveragerc
+global-exclude *.pyc __pycache__
+include setup.py LICENSE.txt *.rst *.GPL
+recursive-include plone *
