@@ -1,0 +1,5 @@
+pytest_vcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_vcs-0.0.1a0.dist-info/entry_points.txt,sha256=amJcLU-2TOBf80s5Fi7qDJoMzVwv8eY2jE0QW4OrCy4,30
+pytest_vcs-0.0.1a0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pytest_vcs-0.0.1a0.dist-info/METADATA,sha256=IGxNL2U8BwjnTWymn8ppDQ8NDWuNMb3UzJe42HAN7F4,1099
+pytest_vcs-0.0.1a0.dist-info/RECORD,,
