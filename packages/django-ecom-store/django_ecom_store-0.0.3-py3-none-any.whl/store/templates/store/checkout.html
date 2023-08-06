@@ -1,0 +1,37 @@
+{% extends 'store/layout/layout.html' %}
+{% load static %}
+
+
+{% block title %}Checkout{% endblock %}
+{% block style %}{% endblock %}
+
+
+{% block body %}
+<div class="container text-center" id="checkoutMainPage" style="margin-bottom: 30px;">
+    <h4>Checkout</h4>
+    {% if messages %}
+    <ul class="messages list-unstyled text-center">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }} text-danger"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <hr>
+    <div class="row">
+        <div class="col-md-6 text-start" id="delivery_address"></div>
+        <div class="col-md-6 text-start" id="cart_items"></div>
+    </div>
+    <div id="selectDeliveryAddressModalDiv" class="text-start"></div>
+</div>
+<div style="display: none;">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selectDeliveryAddressModal" id="selectDeliveryAddressModalBtn">
+        Launch demo modal
+    </button>
+</div>
+{% endblock %}
+
+
+{% block script %}
+<script src="{% static 'store/js/checkout.js' %}"></script>
+{% include 'store/handlebars/checkout.html' %}
+{% endblock %}

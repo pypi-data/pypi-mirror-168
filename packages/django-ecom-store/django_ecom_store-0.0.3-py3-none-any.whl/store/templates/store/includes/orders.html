@@ -1,0 +1,92 @@
+<div class="text-start">
+    <div class="row">
+        <div class="col-md-6">
+            <h5>{{order.address.first_name}} {{order.address.last_name}}</h5>
+            <div><i class="bi bi-envelope me-2"></i>{{order.address.email}}</div>
+            <div><i class="bi bi-phone me-2"></i>{{order.address.mobile}}</div>
+            <div>
+                <i class="bi bi-telephone me-2"></i>
+                {% if order.address.landline %}{{order.address.landline}}{%else%}-{% endif %}
+            </div>
+            <div><i class="bi bi-mailbox me-2"></i>Delivery Address</div>
+            <div class="ms-4">
+                {{order.address.address1}}<br>
+                {% if order.address.address2 %}{{order.address.address2}}{% else %}{% endif %}<br>
+                {{order.address.city}} - {{order.address.pincode}}<br>
+                {{order.address.state}} - {{order.address.country}}<br>
+                {{order.address.landmark}}
+            </div>
+        </div><hr class="d-md-none mt-3">
+        <div class="col-md-6">
+            <h5>Order ID - {{order.id}}</h5>
+            <div class="row">
+                <div class="col-5 text-start">Amount {{currency}}</div>
+                <div class="col-7 text-end">{{order.amount}}</div>
+                <div class="col-5 text-start">Discount</div>
+                <div class="col-7 text-end">
+                    {% if order.discount %}
+                    {{order.discount.percent}}%
+                    {% else %}
+                    NILL
+                    {% endif %}
+                </div>
+                
+                <div class="col-5 text-start">Amt. Payable {{currency}}</div>
+                <div class="col-7 text-end">{{order.amount_payable}}</div>
+                <div class="col-5 text-start">Payment Method</div>
+                <div class="col-7 text-end">
+                    {% if order.payment_method == 'CCD' %}
+                    Credit card
+                    {% elif order.payment_method == 'DCD' %}
+                    Debit card
+                    {% elif order.payment_method == 'PPL' %}
+                    PayPal
+                    {% elif order.payment_method == 'COD' %}
+                    Cash on Delivery
+                    {% else %}
+                    Other
+                    {% endif %}
+                </div>
+                <div class="col-5 text-start">Payment Status</div>
+                <div class="col-7 text-end">
+                    {% if order.payment_status == 'P' %}
+                    Pending
+                    {% elif order.payment_status == 'S' %}
+                    Successful
+                    {% elif order.payment_status == 'U' %}
+                    Not Applicable
+                    {% else %}
+                    Failed
+                    {% endif %}
+                </div>
+                <div class="col-5 text-start">Item{{order.count|pluralize}}</div>
+                <div class="col-7 text-end">{{order.count}}</div>
+                <div class="col-5 text-start">Order <i class="bi bi-clock ms-1"></i></div>
+                <div class="col-7 text-end utcTime">{{order.placed_at|date:"c"}}</div>
+
+                {% if order.order_status == 'O' %}
+                <div class="col-3 text-start">Status</div>
+                <div class="col-9 text-end text-success">OPEN</div>
+                <div class="col-5 text-start">Delivery <i class="bi bi-clock ms-1"></i></div>
+                <div class="col-7 text-end utcTime">{{order.expected_delivery_time|date:"c"}}</div>
+                {% elif order.order_status == 'C' %}
+                <div class="col-3 text-start">Status</div>
+                <div class="col-9 text-end text-primary">DELIVERED</div>
+                <div class="col-5 text-start">Delivered <i class="bi bi-clock ms-1"></i></div>
+                <div class="col-7 text-end utcTime">{{order.closed_at|date:"c"}}</div>
+                {% elif order.order_status == 'P' %}
+                <div class="col-3 text-start">Status</div>
+                <div class="col-9 text-end text-danger">PENDING CANCELLATION</div>
+                <div class="col-5 text-start">Cancellation <i class="bi bi-clock ms-1"></i></div>
+                <div class="col-7 text-end utcTime">{{order.cancellation.cancelled_at|date:"c"}}</div>
+                {% elif order.order_status == 'N' %}
+                <div class="col-3 text-start">Status</div>
+                <div class="col-9 text-end text-danger">CANCELLED</div>
+                <div class="col-5 text-start">Cancelled <i class="bi bi-clock ms-1"></i></div>
+                <div class="col-7 text-end utcTime">{{order.cancelled_at|date:"c"}}</div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>

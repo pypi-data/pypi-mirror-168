@@ -1,0 +1,17 @@
+<script id="productFilterOptionsHandlebars" type="text/x-handlebars-template">
+    {% verbatim %}
+    <option disabled selected value="">Product</option>
+    {{#each products}}
+        <option value="{{this.slug}}">{{this.title}}</option>
+    {{/each}}
+    {% endverbatim %}
+</script>
+
+
+<script id="sortFilterOptionsHandlebars" type="text/x-handlebars-template">
+    <option disabled selected value="">Sort</option>
+    <option value="a-z">A - Z</option>
+    <option value="z-a">Z - A</option>
+    <option value="price-asc">Price (Low to High)</option>
+    <option value="price-desc">Price (High to Low)</option>
+</script>

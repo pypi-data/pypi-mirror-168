@@ -1,0 +1,87 @@
+<script id="cartOffcanvasHandlebars" type="text/x-handlebars-template">
+    {% verbatim %}
+    <div>
+        <div class="row">
+            <div class="col-7 text-start"><h5>Amount ({{cart.currency}})</h5></div>
+            <div class="col-5 text-end"><h5>{{cart.cart_amount.amount}}</h5></div>
+        </div>
+        {{#if cart.cart_amount.discount}}
+        <div class="row">
+            <div class="col-7 text-start"><h5>Discount (%)</h5></div>
+            <div class="col-5 text-end"><h5>{{cart.cart_amount.discount}}</h5></div>
+        </div>
+        {{else}}
+        <form class="row" onsubmit="applyDiscount(event);">
+            <div class="col-8 text-start">
+                <input type="text" class="form-control form-control-sm" id="cartDiscountFormInput" placeholder="Discount Code">
+            </div>
+            <div class="col-4 text-end">
+                <button type="submit" class="btn btn-sm btn-outline-dark w-100" id="cartDiscountFormSubmitBtn">Apply</button>
+            </div>
+        </form>
+        <div id="discountCodeError" class="errormessage"><br></div>
+        {{/if}}
+        <div class="row">
+            <div class="col-7 text-start"><h5>Amount Payable ({{cart.currency}})</h5></div>
+            <div class="col-5 text-end"><h5>{{cart.cart_amount.amount_payable}}</h5></div>
+        </div>
+    </div>
+    <a type="button" role="button" href="{{cart.checkout_url}}" class="btn btn-sm btn-outline-dark w-100">Checkout</a>
+    <h6>Items ({{cart.count}})</h6>
+    {{#each cart.cart_items}}
+        <h5 class="mb-0 pb-0">
+            {{this.title}}
+            <a href="" onclick="removeFromCart(event, '{{this.id}}')"><i class="bi bi-trash3-fill text-danger ms-2"></i></a>
+        </h5>
+        <div class="table-responsive mt-0 pt-0">
+            {{#if this.key_value_pair}}
+            <div class="accordion" id="productSpecsAccordion{{this.id}}">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="productSpecsHeading{{this.id}}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#productSpecs{{this.id}}" 
+                        aria-expanded="false" aria-controls="productSpecs{{this.id}}">
+                            Specifications
+                        </button>
+                    </h2>
+                    <div id="productSpecs{{this.id}}" class="accordion-collapse collapse" aria-labelledby="productSpecsHeading{{this.id}}" data-bs-parent="#productSpecsAccordion{{this.id}}">
+                        <div class="accordion-body">
+                            <table class="table my-0 py-0 table-sm table-borderless text-center">
+                                <tbody>
+                                    {{#each this.key_value_pair}}
+                                    <tr>
+                                        <td style="width: 35%;" class="my-0 py-0">{{this.key}}</td>
+                                        <td style="width: 65%;" class="my-0 py-0">{{this.value}}</td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+            <table class="table my-0 py-0 table-sm table-borderless text-center">
+                <thead>
+                    <tr>
+                        <th class="my-0 py-0">Price ({{this.currency}})</th>
+                        <th class="my-0 py-0">Qty ({{this.unit}})</th>
+                        <th class="my-0 py-0">Amt. ({{this.currency}})</th>
+                        <th class="my-0 py-0">Disc (%)</th>
+                        <th class="my-0 py-0">Payable ({{this.currency}})</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="my-0 py-0">{{this.unit_price}}</td>
+                        <td class="my-0 py-0">{{this.qty}}</td>
+                        <td class="my-0 py-0">{{this.amount}}</td>
+                        <td class="my-0 py-0">{{this.discount}}</td>
+                        <td class="my-0 py-0">{{this.amount_payable}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><hr class="mt-0 pt-0">
+    {{/each}}
+    <a href="" class="link-danger-dark" onclick="clearCart(event);">Clear Cart</a>
+    {% endverbatim %}
+</script>
