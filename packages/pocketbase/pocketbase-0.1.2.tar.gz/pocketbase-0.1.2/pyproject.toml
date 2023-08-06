@@ -1,0 +1,52 @@
+[project]
+name = "pocketbase"
+description = "PocketBase SDK for python."
+requires-python = ">=3.7"
+license = "MIT"
+authors = [
+    { name = "Vithor Jaeger", email = "vaphes@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+]
+keywords = "pocketbase sdk"
+dependencies = ["httpx>=0.23.0"]
+dynamic = ["readme", "version"]
+
+[project.urls]
+"Homepage" = "https://github.com/vaphes/pocketbase"
+"Source" = "https://github.com/vaphes/pocketbase"
+"Bug Tracker" = "https://github.com/vaphes/pocketbase/issues"
+
+[tool.poetry]
+name = "pocketbase"
+version = "0.1.2"
+description = "PocketBase SDK for python."
+authors = ["Vithor Jaeger <vaphes@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/vaphes/pocketbase"
+repository = "https://github.com/vaphes/pocketbase"
+keywords = ["pocketbase", "sdk"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/vaphes/pocketbase/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^22.8.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
