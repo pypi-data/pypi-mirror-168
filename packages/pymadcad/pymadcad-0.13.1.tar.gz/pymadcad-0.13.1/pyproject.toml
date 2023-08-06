@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pymadcad"
+version = "0.9.3"
+description = "Simple yet powerful CAD (Computer Aided Design) library, written with Python"
+authors = ["jimy byerley <jimy.byerley@gmail.com>"]
+license = "GNU LGPL v3"
+build = "build.py"
+packages = [{ include = "madcad" }]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyglm = ">=1.2"
+moderngl = ">=5.6"
+numpy = ">=1.1"
+scipy = ">=1.3"
+PyQt5 = ">=5"
+Pillow = ">=5.4"
+pyyaml = ">=5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "cython"]
+build-backend = "poetry.core.masonry.api"
