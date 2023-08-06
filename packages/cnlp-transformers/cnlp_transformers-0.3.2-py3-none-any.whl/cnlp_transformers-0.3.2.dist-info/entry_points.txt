@@ -1,0 +1,3 @@
+[console_scripts]
+cnlpt_negation_rest = cnlpt.api.negation_rest:rest
+cnlpt_temporal_rest = cnlpt.api.temporal_rest:rest
