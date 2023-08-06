@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "dependencyDashboardAutoclose": true,
+  "enabledManagers": ["pip_setup", "pip_requirements"],
+  "pip_requirements": {
+    "fileMatch": ["(^|/)requirements\\.in$"],
+    "ignorePaths": ["docs/requirements.txt"]
+  }
+}
