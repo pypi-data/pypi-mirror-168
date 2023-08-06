@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cryptorsa
+Version: 0.0.1
+Summary: Streaming video data via networks
+Home-page: UNKNOWN
+Author: NeuralNine (Florian Dedov)
+Author-email: <pingpongball008@gmail.com>
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+UNKNOWN
+
+
