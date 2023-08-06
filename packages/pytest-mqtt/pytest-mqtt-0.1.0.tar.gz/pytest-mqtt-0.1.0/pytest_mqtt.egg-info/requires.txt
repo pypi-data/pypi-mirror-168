@@ -1,0 +1,21 @@
+paho-mqtt<2
+pytest-docker-fixtures<2
+
+[:python_version < "3.7"]
+dataclasses
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[develop]
+isort<6
+black<23
+build<1
+poethepoet<1
+ruff
+
+[test]
+coverage<7
+pytest<8
+pytest-fixture-order<1
+pytest-ordering<1
