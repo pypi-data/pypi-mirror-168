@@ -1,0 +1,7 @@
+json-rpc
+affinity
+python-prctl
+
+[tests]
+nose
+requests
