@@ -1,0 +1,7 @@
+BeautifulSoup4
+argparse
+datetime
+numpy
+pandas
+parsedate
+requests
