@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test-tm.py
+dist/teachable_machine-1.0-py3-none-any.whl
+dist/teachable_machine-1.0.tar.gz
+src/teachable_machine.py
+src/teachable_machine.egg-info/PKG-INFO
+src/teachable_machine.egg-info/SOURCES.txt
+src/teachable_machine.egg-info/dependency_links.txt
+src/teachable_machine.egg-info/requires.txt
+src/teachable_machine.egg-info/top_level.txt
