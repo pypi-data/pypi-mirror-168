@@ -1,0 +1,17 @@
+polyglot/__init__.py,sha256=stPwhW8FZpt81HGAuGt0-YTx62aaiNduNJH10F5d-7k,47
+polyglot/__main__.py,sha256=DpOMV-prRFlucFtcD37vopjA1ihrDl7ld1z8JynkoBg,404
+polyglot/arguments.py,sha256=JIJhz2EOBdBC-Gilclfs8-3PoJhkGdFuiMVeI44J-Ag,3350
+polyglot/commands.py,sha256=aBAzB3b_j1yWQoUMuVfW2RW5UASaYYmQCTxvC5tOVFo,5735
+polyglot/connectors.py,sha256=Kt8-Glwd0L-jrm76AkSDoSO1uMyDijRnS0oFsi_Ge5U,1679
+polyglot/errors.py,sha256=kYH2O0yRfYGatEA16Xb396hJ5f_GKJG6X2StP26oNOM,1253
+polyglot/handlers.py,sha256=oAqzpP1ZCA5xnzX69wklRC041g3ZS86_USz3nXGyT3g,4353
+polyglot/license.py,sha256=5drreveXa7q_EpP9faneW2K_M8nkzq-CkxY6-aiMW1I,935
+polyglot/polyglot.py,sha256=fGFYl_su5E3cECiZp9ZAJLs5TTTqCv0NvlR6AGhlZ0M,3425
+polyglot/translators.py,sha256=tSzbmHV-MLoJwHdrSWEXHEBzLweeorSeK6t0UYyre0A,3784
+polyglot/utils.py,sha256=9ikA3NtLxet3X86qmVEd29VGXqkVzqN1Ll9rqdC4rvA,449
+polyglot_translator-2.2.3.dist-info/LICENSE,sha256=X58VXa_PoT_AVZPVh5EXc6WO8RPe8KNXieogWZJOd3I,1057
+polyglot_translator-2.2.3.dist-info/METADATA,sha256=EsbyyzjNvQV8sOeBga-eDPgwWrKUph3JhDet2Z2ufEs,5098
+polyglot_translator-2.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+polyglot_translator-2.2.3.dist-info/entry_points.txt,sha256=HfU9GgljZPZ5pp9iU6wG9lYJrVcDB03WxRENQdfBMtg,52
+polyglot_translator-2.2.3.dist-info/top_level.txt,sha256=vWBHK-c1j1_UAQrfuc8SDNtmLO13vXTDkLIKeHnM4Q8,9
+polyglot_translator-2.2.3.dist-info/RECORD,,
