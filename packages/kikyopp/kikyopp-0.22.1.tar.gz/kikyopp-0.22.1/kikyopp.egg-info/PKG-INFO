@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: kikyopp
+Version: 0.22.1
+Summary: kikyo pre-process framework
+Home-page: UNKNOWN
+Author: jadbin
+Author-email: jadbin.com@hotmail.com
+License: UNKNOWN
+Description: kikyopp
+        =======
+        
+        kikyo pre-process framework
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
