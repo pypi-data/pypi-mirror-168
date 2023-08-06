@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: yolov7-package
+Version: 0.0.11
+Summary: Bindings for yolov7 in one class
+Home-page: https://github.com/maxwolf8852/yolov7_package.git
+Author: Maxim Volkovskiy
+Author-email: maxwolf8852@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absl-py (>=1.2.0)
+Requires-Dist: asttokens (>=2.0.8)
+Requires-Dist: backcall (>=0.2.0)
+Requires-Dist: cachetools (>=5.2.0)
+Requires-Dist: certifi (>=2022.6.15)
+Requires-Dist: charset-normalizer (>=2.1.0)
+Requires-Dist: cycler (>=0.11.0)
+Requires-Dist: decorator (>=5.1.1)
+Requires-Dist: executing (>=0.10.0)
+Requires-Dist: fonttools (>=4.35.0)
+Requires-Dist: google-auth (>=2.10.0)
+Requires-Dist: google-auth-oauthlib (>=0.4.6)
+Requires-Dist: grpcio (>=1.47.0)
+Requires-Dist: idna (>=3.3)
+Requires-Dist: ipython (>=8.4.0)
+Requires-Dist: jedi (>=0.18.1)
+Requires-Dist: kiwisolver (>=1.4.4)
+Requires-Dist: Markdown (>=3.4.1)
+Requires-Dist: MarkupSafe (>=2.1.1)
+Requires-Dist: matplotlib (>=3.5.3)
+Requires-Dist: matplotlib-inline (>=0.1.5)
+Requires-Dist: numpy (>=1.23.2)
+Requires-Dist: oauthlib (>=3.2.0)
+Requires-Dist: opencv-python (>=4.6.0.66)
+Requires-Dist: packaging (>=21.3)
+Requires-Dist: pandas (>=1.4.3)
+Requires-Dist: parso (>=0.8.3)
+Requires-Dist: pexpect (>=4.8.0)
+Requires-Dist: pickleshare (>=0.7.5)
+Requires-Dist: Pillow (>=9.2.0)
+Requires-Dist: prompt-toolkit (>=3.0.30)
+Requires-Dist: protobuf (>=3.19.4)
+Requires-Dist: psutil (>=5.9.1)
+Requires-Dist: ptyprocess (>=0.7.0)
+Requires-Dist: pure-eval (>=0.2.2)
+Requires-Dist: pyasn1 (>=0.4.8)
+Requires-Dist: pyasn1-modules (>=0.2.8)
+Requires-Dist: Pygments (>=2.13.0)
+Requires-Dist: pyparsing (>=3.0.9)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: pytz (>=2022.2.1)
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: requests-oauthlib (>=1.3.1)
+Requires-Dist: rsa (>=4.9)
+Requires-Dist: scipy (>=1.9.0)
+Requires-Dist: seaborn (>=0.11.2)
+Requires-Dist: six (>=1.16.0)
+Requires-Dist: stack-data (>=0.4.0)
+Requires-Dist: tensorboard (>=2.10.0)
+Requires-Dist: tensorboard-data-server (>=0.6.1)
+Requires-Dist: tensorboard-plugin-wit (>=1.8.1)
+Requires-Dist: thop (>=0.1.1.post2207130030)
+Requires-Dist: torch (>=1.12.1)
+Requires-Dist: torchvision (>=0.13.1)
+Requires-Dist: tqdm (>=4.64.0)
+Requires-Dist: traitlets (>=5.3.0)
+Requires-Dist: typing-extensions (>=4.3.0)
+Requires-Dist: urllib3 (>=1.26.11)
+Requires-Dist: wcwidth (>=0.2.5)
+Requires-Dist: Werkzeug (>=2.2.2)
+Requires-Dist: wget (>=3.2)
+
+<h3 align="center">
+  WongKinYiu/yolov7 as independent package
+</h3>
+
+Bindings for yolov7 project (https://github.com/WongKinYiu/yolov7)
+
+Example of usage:
+```Python
+from yolov7_package import Yolov7Detector
+import cv2
+
+if __name__ == '__main__':
+    img = cv2.imread('img.jpg')
+    det = Yolov7Detector(traced=False)
+    classes, boxes, scores = det.detect(img)
+    img = det.draw_on_image(img, boxes[0], scores[0], classes[0])
+
+    cv2.imshow("image", img)
+    cv2.waitKey()
+```
+
+You can use traced=True option to download and infer traced FP16 version of yolov7 model!
