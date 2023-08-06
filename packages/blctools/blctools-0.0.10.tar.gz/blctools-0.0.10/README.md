@@ -1,0 +1,56 @@
+# BLC Data Analytics tools package
+
+Data Analytics helper functions to work with inside BLC's Cloud system.
+
+# Changelog
+## Version 0.0.1
+* Basic functionality is up and running
+
+## Version 0.0.2 ~ 0.0.4
+Fixed the install issues
+
+## Version 0.0.5
+* Most of the code is Object Oriented now.
+* CAMMESA's forecasts have been added.
+
+## Version 0.0.6 ~ 0.0.7
+* Bug fixes regarding file management
+* Ability to customize filters when hitting CAMMESA's API
+* PBA calculation according to IEC61400 is still functioning incorrectly
+
+## Version 0.0.8
+* Corrected dependencies list
+
+## Version 0.0.9
+* Removed dependencies list
+* Ability to download unfiltered PPOs/DTEs without specifying parks/plants list
+* Incidents are no longer loaded by default on blctools.DatosCrom() objects
+
+## Version 0.0.10
+* Attribute blctools.DatosCROM.dir_salida sets to which directory the reports go out to (didn't have much impact before)
+* Improved automatic Servicios directory search
+
+## TO DOs
+* TO DO: Use SQLAlchemy to retrieve SQL data with pandas.
+
+* TO DO: TablasVC.consultar_datos_basicos()
+* TO DO: Solucionar el rolldown del PBA
+* TO DO: Matchear incidencias con datos 10seg, usando record linkeage
+* TO DO: Antes de matchear incidencias cada 10 seg, se podría crear una nueva tabla de incidencias, sin solapamientos
+* TO DO: Poder tomar mediciones SMEC de la BD del VC
+
+* TO DO: Fix function 
+    - consultar_equipos_parque()
+    - consultar_equipos_por_agrupamiento()
+* TO DO: Complete functions TablasVC.
+    - __obtener_equipos_parque_no_agr()
+    - __obtener_equipos_parque()
+    - __obtener_equipos_agrupamiento ()
+    - __check_cliente_parque()
+
+
+* TO DO: Complete functions DatosCROM.
+    - __preprocesar_un_xlsx
+    - __renombrar_cols
+    - __obtener_prefijo_equipos
+
