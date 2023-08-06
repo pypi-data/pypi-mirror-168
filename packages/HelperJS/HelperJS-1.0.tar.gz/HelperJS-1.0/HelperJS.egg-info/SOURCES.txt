@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+HelperJS.egg-info/PKG-INFO
+HelperJS.egg-info/SOURCES.txt
+HelperJS.egg-info/dependency_links.txt
+HelperJS.egg-info/top_level.txt
+helperJS/__init__.py
