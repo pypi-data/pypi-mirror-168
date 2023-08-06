@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sentinel-server
+Version: 1.8.0
+Summary: sentinel command and daemon
+Home-page: https://gitlab.com/krink/sentinel
+Author: Karl Rink
+Author-email: karl@rink.us
+Project-URL: Bug Tracker, https://gitlab.com/krink/sentinel/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Python command line tool for administration of sentinel.
