@@ -1,0 +1,11 @@
+ioPaths:
+ -
+   - "autologbook\\ui\\*.ui"
+   - "autologbook\\%%FILENAME%%_ui.py"
+ -
+   - "autologbook/ui/resource.qrc"
+   - "autologbook/resource_rc.py"
+
+uic_options:  --import-from=autologbook
+init_package: False
+force: False
