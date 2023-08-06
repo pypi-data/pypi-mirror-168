@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+code/PyMoosh.egg-info/PKG-INFO
+code/PyMoosh.egg-info/SOURCES.txt
+code/PyMoosh.egg-info/dependency_links.txt
+code/PyMoosh.egg-info/requires.txt
+code/PyMoosh.egg-info/top_level.txt
