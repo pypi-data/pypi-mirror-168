@@ -1,0 +1,11 @@
+README.md
+setup.py
+dendrify/__init__.py
+dendrify/compartment.py
+dendrify/ephysproperties.py
+dendrify/equations.py
+dendrify/neuronmodel.py
+dendrify.egg-info/PKG-INFO
+dendrify.egg-info/SOURCES.txt
+dendrify.egg-info/dependency_links.txt
+dendrify.egg-info/top_level.txt
