@@ -1,0 +1,200 @@
+{
+  "log_file": {
+    "short_name": "l",
+    "help": "Save all log data to a file (blank means 'log_[date].txt' with date format yymmddhhmmss in 'logs' folder of AlphaTims directory).",
+    "default": "",
+    "type": {
+      "name": "path",
+      "exists": false,
+      "file_okay": true,
+      "dir_okay": true
+    },
+    "required": false
+  },
+  "disable_log_stream": {
+    "short_name": "s",
+    "help": "Disable streaming of log data.",
+    "default": false,
+    "is_flag": true,
+    "required": false
+  },
+  "threads": {
+    "short_name": "t",
+    "help": "The number of threads to use (0 means all, negative means how many threads to leave available).",
+    "default": -1,
+    "type": "int",
+    "required": false
+  },
+  "parameter_file": {
+    "short_name": "p",
+    "help": "A .json file with (non-required) parameters (blank means default parameters are used). NOTE: Parameters defined herein override all default and given CLI parameters.",
+    "type": {
+      "name": "path",
+      "dir_okay": false,
+      "exists": true
+    },
+    "required": false
+  },
+  "export_parameters": {
+    "short_name": "e",
+    "help": "Save currently selected parameters to a parameter file.",
+    "type": {
+      "name": "path",
+      "exists": false,
+      "dir_okay": false
+    },
+    "required": false
+  },
+  "output_folder": {
+    "short_name": "o",
+    "help": "A directory for all output (blank means `input_file` root is used).",
+    "type": {
+      "name": "path",
+      "exists": false,
+      "file_okay": false,
+      "dir_okay": true
+    },
+    "required": false
+  },
+  "port": {
+    "help": "The port to use if enabling network access. WARNING!!!! This feature opens up a port to your system, which might be extremely unsafe!!! Anyone can access the running AlphaTims via 'ip_address:port'.",
+    "type": "int",
+    "required": false
+  },
+  "centroiding_window": {
+    "help": "The smoothing factor to centroid ddaPASEF spectra. A value of 0 means no smoothing/centroiding.",
+    "default": 5,
+    "type": "int",
+    "required": false
+  },
+  "keep_n_most_abundant_peaks": {
+    "help": "Keep only the n most abundant peaks of each spectrum. A value if -1 means to keep all peaks.",
+    "default": -1,
+    "type": "int",
+    "required": false
+  },
+  "format": {
+    "help": "The format of the exported selection. Multiple options can be selected by repeating the flag.",
+    "type": {
+      "name": "choice",
+      "options": [
+        "csv",
+        "html",
+        "png"
+      ],
+      "case_sensitive": false
+    },
+    "default": ["csv"],
+    "multiple": true
+  },
+  "ion_type": {
+    "help": "The ion type to use. Multiple options can be selected by repeating the flag.",
+    "type": {
+      "name": "choice",
+      "options": [
+        "fragments",
+        "precursors"
+      ],
+      "case_sensitive": false
+    },
+    "default": ["fragments"],
+    "multiple" :true
+  },
+  "x_axis": {
+    "help": "The x-axis of the exported selection in case a plot is returned.",
+    "type": {
+      "name": "choice",
+      "options": [
+        "rt",
+        "mobility",
+        "tof_mz"
+      ],
+      "case_sensitive": false
+    },
+    "default": "tof_mz"
+  },
+  "y_axis": {
+    "help": "The y-axis of the exported selection in case a plot is returned. the 'intensity' option returns a 1d plot, otherwise a heatmap is returned.",
+    "type": {
+      "name": "choice",
+      "options": [
+        "rt",
+        "mobility",
+        "tof_mz",
+        "intensity"
+      ],
+      "case_sensitive": false
+    },
+    "default": "mobility"
+  },
+  "rt_bounds": {
+    "help": "The upper and lower rt bounds (as a pair) for the data selection in seconds. Negative values are interpreted as frame indices instead of rt values.",
+    "default": [[null, null]],
+    "type": "float",
+    "nargs": 2,
+    "required": false,
+    "multiple": true
+  },
+  "mobility_bounds": {
+    "help": "The upper and lower mobility bounds (as a pair) for the data selection. Negative values are interpreted as scan indices instead of mobility values.",
+    "default": [[null, null]],
+    "type": "float",
+    "nargs": 2,
+    "required": false,
+    "multiple": true
+  },
+  "precursor_bounds": {
+    "help": "The upper and lower precursor bounds (as a pair) for the data selection.",
+    "default": [[null, null]],
+    "type": "int",
+    "nargs": 2,
+    "required": false,
+    "multiple": true
+  },
+  "quad_mz_bounds": {
+    "help": "The upper and lower quad mz bounds (as a pair) for the data selection.",
+    "default": [[null, null]],
+    "type": "float",
+    "nargs": 2,
+    "required": false,
+    "multiple": true
+  },
+  "tof_mz_bounds": {
+    "help": "The upper and lower TOF mz bounds (as a pair) for the data selection. Negative values are interpreted as TOF indices instead of tof mz values.",
+    "default": [[null, null]],
+    "type": "float",
+    "nargs": 2,
+    "required": false,
+    "multiple": true
+  },
+  "intensity_bounds": {
+    "help": "The upper and lower intensity bounds (as a pair) for the data selection.",
+    "default": [[null, null]],
+    "type": "float",
+    "nargs": 2,
+    "required": false,
+    "multiple": true
+  },
+  "bruker_raw_data": {
+    "help": "Bruker raw data (.d folder or .hdf file).",
+    "type": {
+      "name": "path",
+      "exists": true,
+      "file_okay": true,
+      "dir_okay": true
+    },
+    "required": true
+  },
+  "disable_overwrite": {
+    "help": "Disable overwriting of existing files.",
+    "default": false,
+    "is_flag": true,
+    "required": false
+  },
+  "enable_compression": {
+    "help": "Enable compression of hdf files. If set, this roughly halves files sizes (on-disk), at the cost of taking 2-10 longer accession times.",
+    "default": false,
+    "is_flag": true,
+    "required": false
+  }
+}
