@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pryeact/pryeact.egg-info/PKG-INFO
+pryeact/pryeact.egg-info/SOURCES.txt
+pryeact/pryeact.egg-info/dependency_links.txt
+pryeact/pryeact.egg-info/top_level.txt
