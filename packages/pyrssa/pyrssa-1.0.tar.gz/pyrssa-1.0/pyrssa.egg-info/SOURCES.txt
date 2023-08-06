@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyrssa/__init__.py
+pyrssa/base.py
+pyrssa/installer.py
+pyrssa.egg-info/PKG-INFO
+pyrssa.egg-info/SOURCES.txt
+pyrssa.egg-info/dependency_links.txt
+pyrssa.egg-info/requires.txt
+pyrssa.egg-info/top_level.txt
