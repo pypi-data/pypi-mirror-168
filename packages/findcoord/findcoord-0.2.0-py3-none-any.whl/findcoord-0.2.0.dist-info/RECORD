@@ -1,0 +1,8 @@
+findcoord/__init__.py,sha256=GQBYKHBAImwuOu6yeom7AE-7z2Ze6K_kUjDyyl_SIYc,68
+findcoord/transform.py,sha256=turIf8ei6oz0cpDlVEdqqhgA0CLsHAjMmW8EpM7eayE,5732
+tests/test_basic.py,sha256=5mqBOiKvmKYO-_u5CmczV9v1B54J8cS20rPi1UrpE3w,1235
+findcoord-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+findcoord-0.2.0.dist-info/METADATA,sha256=gwpadhgs6wUr5CaFN0jc6T8iVpemQ28aqhcAtOaGrqg,314
+findcoord-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+findcoord-0.2.0.dist-info/top_level.txt,sha256=HhIVgCD_Rg-B1jeFm53k4KaXzRun0QowvQb7PhwZm2Y,16
+findcoord-0.2.0.dist-info/RECORD,,

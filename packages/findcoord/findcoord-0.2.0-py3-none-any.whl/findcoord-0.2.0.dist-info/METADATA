@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: findcoord
+Version: 0.2.0
+Summary: Multi-plateform analysis tool
+Home-page: https://github.com/hameye/findcoord
+Author: Hadrien Meyer
+Author-email: jean.cauzid@univ-lorraine.fr
+License: GPL v3
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-image
+
