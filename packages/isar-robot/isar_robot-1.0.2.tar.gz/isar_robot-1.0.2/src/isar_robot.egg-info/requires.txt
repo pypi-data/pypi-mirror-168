@@ -1,0 +1,8 @@
+alitra
+isar
+
+[dev]
+black
+mypy
+pytest
+pre-commit

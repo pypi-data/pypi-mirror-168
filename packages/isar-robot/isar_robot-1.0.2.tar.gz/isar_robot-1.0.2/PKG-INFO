@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: isar_robot
+Version: 1.0.2
+Summary: Integration and Supervisory control of Autonomous Robots - Open source robot implementation
+Home-page: https://github.com/equinor/isar-robot
+Author: Equinor ASA
+Author-email: fg_robots_dev@equinor.com
+License: EPL-2.0
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# isar-robot
+
+[ISAR](https://github.com/equinor/isar) - Integration and Supervisory control of Autonomous Robots - is a tool for integrating robot applications into Equinor systems. Through the ISAR API you can send command to a robot to do missions and collect results from the missions.
+
+Running the full ISAR system requires an installation of a robot which satisfies the required [interface](https://github.com/equinor/isar/blob/main/src/robot_interface/robot_interface.py). isar-robot is a default implementation of such a robot.
+
+# Installation
+
+For installation of isar-robot to use with ISAR, please follow the robot integration [installation guide](https://github.com/equinor/isar#robot-integration).
+
+# Run isar-robot
+
+After installing isar-robot, it can be used through [ISAR](https://github.com/equinor/isar).
+
+# Development
+
+For local development, please fork the repository. Then, clone and install in the repository root folder:
+
+```bash
+git clone https://github.com/equinor/isar-robot
+cd isar-robot
+pip install -e .[dev]
+```
+
+# Contributing
+
+We welcome all kinds of contributions, including code, bug reports, issues, feature requests, and documentation. The preferred way of submitting a contribution is to either make an issue on github or by forking the project on github and making a pull requests.
