@@ -1,0 +1,10 @@
+# sqlite3 gitignore
+
+*~
+*.a
+*.bak
+*.o
+*.so
+
+build*/
+
