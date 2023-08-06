@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+pyAtome.egg-info/PKG-INFO
+pyAtome.egg-info/SOURCES.txt
+pyAtome.egg-info/dependency_links.txt
+pyAtome.egg-info/entry_points.txt
+pyAtome.egg-info/requires.txt
+pyAtome.egg-info/top_level.txt
+pyatome/__init__.py
+pyatome/__main__.py
+pyatome/client.py

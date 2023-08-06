@@ -1,0 +1,3 @@
+[console_scripts]
+pyatome = pyatome.__main__:main
+
