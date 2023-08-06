@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xia-engine-firestore
+Version: 0.0.23
+Summary: ORM Engine with Firestore as backend
+Home-page: https://git.top-infra.com/
+Author: Xia CHEN
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-firestore
+Requires-Dist: xia-engine
+
+# ORM Engine with Firestore as backend 
+## Introduction

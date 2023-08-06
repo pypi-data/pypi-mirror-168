@@ -1,0 +1,9 @@
+xia_engine_firestore/__init__.py,sha256=NdLSw-LUx1LsnqTMcfs0glPbREPlG2dZlFfHyyRoWYY,356
+xia_engine_firestore/connection.cpython-310-x86_64-linux-gnu.so,sha256=8lc9pSdjoL47M56bxlh_HKaBXSExC2wGBDauw6e8EF8,743912
+xia_engine_firestore/document.cpython-310-x86_64-linux-gnu.so,sha256=i8UEjHyRSKmg4WD7tqwkQaaJnmtB6o_jvjT89-UzCUE,895496
+xia_engine_firestore/engine.cpython-310-x86_64-linux-gnu.so,sha256=TZK4irWyqXWS1c1V6AwFR-QujgTkVFY66_d9ThJ2G68,805384
+xia_engine_firestore-0.0.23.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_engine_firestore-0.0.23.dist-info/METADATA,sha256=vSuUeGUeCxUWwLOpZdZEerp2GAVegZxq6GzofdOtHok,402
+xia_engine_firestore-0.0.23.dist-info/WHEEL,sha256=Kn0XEVEprF3m5Ls7p1vDRSgmlko_ccaWbbQdh4VEEUE,108
+xia_engine_firestore-0.0.23.dist-info/top_level.txt,sha256=NUY0_anDQ8KVQ1TnPs_SCf-78KqRmu8_ARIL_J5agrg,21
+xia_engine_firestore-0.0.23.dist-info/RECORD,,
