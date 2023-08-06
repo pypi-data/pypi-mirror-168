@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ankisiyuan
+Version: 0.1.0
+Summary: Sync Anki with Siyuan
+License: MIT
+Author: clouder
+Author-email: clouder0@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: AnkiIn (>=0.1.7,<0.2.0)
+Requires-Dist: siyuanhelper (>=0.3.0,<0.4.0)
