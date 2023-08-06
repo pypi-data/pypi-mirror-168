@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+cuallee/__init__.py
+cuallee/dataframe.py
+cuallee.egg-info/PKG-INFO
+cuallee.egg-info/SOURCES.txt
+cuallee.egg-info/dependency_links.txt
+cuallee.egg-info/requires.txt
+cuallee.egg-info/top_level.txt
+test/test_contained_in.py
+test/test_is_between.py
+test/test_numeric_rules.py
