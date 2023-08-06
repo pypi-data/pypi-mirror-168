@@ -1,0 +1,4 @@
+onnxruntime
+kaldiio
+torchaudio
+tqdm

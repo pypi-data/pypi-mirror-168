@@ -1,0 +1,11 @@
+README.md
+setup.py
+py/__init__.py
+py/hub.py
+py/inference.py
+wespeakerruntime.egg-info/PKG-INFO
+wespeakerruntime.egg-info/SOURCES.txt
+wespeakerruntime.egg-info/dependency_links.txt
+wespeakerruntime.egg-info/not-zip-safe
+wespeakerruntime.egg-info/requires.txt
+wespeakerruntime.egg-info/top_level.txt
