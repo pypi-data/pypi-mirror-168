@@ -1,0 +1,7 @@
+include *.txt
+# UI Static Files
+recursive-include src *.html
+recursive-include src *.min.css
+recursive-include src *.min.js
+recursive-include src *.woff2
+recursive-include src *.json

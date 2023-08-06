@@ -1,0 +1,151 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import floatingButtonModal %}
+
+{% block main %}
+
+    <div class="grid-wrapper">
+        <div class="view">
+            <div class="row mb0">
+                <div class="col s12 m4">
+                    <div class="card rounded">
+                        <div class="card-content">
+                            <div class="center-align">
+                                <span class="card-title">Ingredients</span>
+                                <a href="#addIngredientToMenu" class="btn-small rounded modal-trigger">
+                                    <i class="material-icons">add</i>
+                                </a>
+                                <div class="row mb0">
+                                    <div class="col s12">
+                                        {% if menu_ingredients %}
+                                            <ul class="collection">
+                                                {% for menu_ingredient in menu_ingredients %}
+                                                    <li class="collection-item">
+                                                        <div>
+                                                            {{ menu_ingredient.ingredient.name }}
+                                                            <a href="#" class="secondary-content">
+                                                                <i class="material-icons">delete</i>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% else %}
+                                            <p class="center-align">No Ingredients for this Item</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m8">
+                    <div class="card rounded">
+                        <div class="card-content">
+                            {% if menu_items %}
+                                <span class="card-title center-align">{{ menu.name }}</span>
+                                <table class="centered">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Active</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for menu_item in menu_items %}
+                                        <tr>
+                                            <td>{{ menu_item.name }}</td>
+                                            <td>{{ menu_item.price }}</td>
+                                            <td>
+                                                {% if menu_item.active %}
+                                                    <a href="{{ url_for('admin.toggle_menu_item_active', menu_name=menu.name, menu_item_name=menu_item.name) }}"
+                                                       class="btn-small green rounded">
+                                                        <i class="material-icons">check_circle</i>
+                                                    </a>
+                                                {% else %}
+                                                    <a href="{{ url_for('admin.toggle_menu_item_active', menu_name=menu.name, menu_item_name=menu_item.name) }}"
+                                                       class="btn-small red rounded">
+                                                        <i class="material-icons">cancel</i>
+                                                    </a>
+                                                {% endif %}
+                                            </td>
+                                            <td>
+                                                <a href="{{ url_for('admin.edit_menu_item', menu_name=menu.name, menu_item_name=menu_item.name) }}"
+                                                   class="btn-floating btn-small waves-effect waves-light blue">
+                                                    <i class="material-icons">edit</i>
+                                                </a>
+                                                <a href="{{ url_for('admin.delete_menu_item', menu_name=menu.name, menu_item_name=menu_item.name) }}"
+                                                   class="btn-floating btn-small waves-effect waves-light red">
+                                                    <i class="material-icons">delete</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            {% else %}
+                                <span class="card-title center-align">No available items for {{ menu.name }} Menu</span>
+                                <p class="center-align flow-text">click
+                                    <a href="#addMenuItemModal"
+                                       class="btn-small rounded deep-purple accent-3 modal-trigger">here</a>
+                                    to create your first item.
+                                </p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ floatingButtonModal('addMenuItemModal', 'add', 'blue accent-4') }}
+
+    <div id="addMenuItemModal" class="modal rounded">
+        <div class="modal-content">
+            <h4 class="center-align">Add Item To {{ menu.name }} Menu</h4>
+            <form action="{{ url_for('admin.add_menu_items', menu_name=menu.name) }}" method="post">
+                {{ form.hidden_tag() }}
+                <div class="row">
+                    <div class="col s12 m6 offset-m3 input-field">
+                        {{ form.name() }}
+                        {{ form.name.label }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 offset-m3 input-field">
+                        {{ form.price() }}
+                        {{ form.price.label }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        {{ form.submit(class="btn blue accent-4") }}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="addIngredientToMenu" class="modal grey darken-4">
+        <div class="modal-content">
+            <h4 class="center-align white-text">Add Ingredient</h4>
+            <div class="row mb0">
+                {% for ingredient in ingredients %}
+                    <div class="col s4">
+                        <a href="{{ url_for('admin.add_recipe', menu_id=menu.id, ingredient_id=ingredient.id) }}">
+                            <div class="card rounded blue-grey darken-4">
+                                <div class="card-content">
+                                    <span class="card-title white-text center-align">{{ ingredient.name }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
