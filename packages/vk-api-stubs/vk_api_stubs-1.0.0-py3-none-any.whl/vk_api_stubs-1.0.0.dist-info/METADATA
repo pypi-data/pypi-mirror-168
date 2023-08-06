@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vk-api-stubs
+Version: 1.0.0
+Summary: Stubs for vk_api module
+Home-page: https://github.com/saalaus/vk_api-stubs
+Keywords: vk_api,vk,stubs,vk-api-stubs
+Author: sergey
+Author-email: saalaus2@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+## vk_api-stubs
+
+Стабы для модуля vk_api
+
+100% покрытие типов + типы для методов API
+
+## Зачем?
+Стабы нужны для проверки типов и автодополнения в IDE
+
+## Установка
+`pip install vk_api-stubs`
