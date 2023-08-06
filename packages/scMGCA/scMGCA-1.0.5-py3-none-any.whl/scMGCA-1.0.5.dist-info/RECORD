@@ -1,0 +1,12 @@
+scMGCA/graph_function.py,sha256=HxFxNVyisFGuucSEhhiw_PVq5sEXgJ5blv-_LJfJPNM,2424
+scMGCA/layers.py,sha256=NmtmH6gYKV7uvOus6TTtVqrsJU2jMpO6DnSwui4Zrs4,3915
+scMGCA/losses.py,sha256=FMKVueefUUD7jR9IXu5Y7ZNZjin2-EuaX55ZwqhcS7Y,443
+scMGCA/preprocess.py,sha256=aY_AYEq7304aM8uDGO_Ebw9z2BFRKtifB8sabD5ag1s,7704
+scMGCA/scmgca.py,sha256=9NHu-elgBjX70YfErunYBDKDsJR1mp6lr4STB57gAMo,11509
+scMGCA/scmgca_para.py,sha256=YIbCFnGZmG3Ic-WZU6UatPWbnKkLt3NDjbricxZJRdE,10966
+scMGCA/utils.py,sha256=sujRMTmEkCLisD0ny4iL5zVId66VIToKpPsELdN2QEA,2333
+scMGCA-1.0.5.dist-info/LICENSE,sha256=qegOX7C879uDvKVa7Nu0TgRQqE8GQuel4kIpIg6xMfc,1071
+scMGCA-1.0.5.dist-info/METADATA,sha256=9RmMZQc0-CtCriSzfWsjefEnZk6jEImfmwe8sHFzXYQ,4716
+scMGCA-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scMGCA-1.0.5.dist-info/top_level.txt,sha256=5Z-gYEPaLBd3q0XxcuCm0Cj8UkhqHhEfwv6dz2ycGYg,7
+scMGCA-1.0.5.dist-info/RECORD,,
