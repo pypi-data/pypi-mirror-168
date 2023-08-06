@@ -1,0 +1,10 @@
+data_dag/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+data_dag/dag_factory.py,sha256=ynhjJ7DREFovZOjZKfFWtoUXt42Nm-DB2HWk_fzcz0s,4044
+data_dag/operator_factory/__init__.py,sha256=GOajAQXt2ZO2OF1gYIOKrkdGka6EJDXDld3_dcKOQpU,199
+data_dag/operator_factory/base.py,sha256=wTFawuidLgIarLMDbNpdVE0TYNt58sCzm36X4lrAsAQ,2414
+data_dag/operator_factory/dynamic.py,sha256=gG5hikGij9O-CI87ugpDo6v-hCvH1aymsgCZLcwHxR4,5962
+data_dag/operator_factory/simple.py,sha256=Sr3dtKKFCFn5al3yFQ3YgfWboQ2J024k8JjO4Optfds,3660
+data_dag-0.2.1.dist-info/METADATA,sha256=ptqNKDnH7bfAaZ39OAu5KFp8WUEodg1LDyuKYiib_w8,4319
+data_dag-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+data_dag-0.2.1.dist-info/top_level.txt,sha256=9JbNG19wsWNz0VN-O5t3iMiBRSgpZM_E1_2JgeDmP-A,9
+data_dag-0.2.1.dist-info/RECORD,,
