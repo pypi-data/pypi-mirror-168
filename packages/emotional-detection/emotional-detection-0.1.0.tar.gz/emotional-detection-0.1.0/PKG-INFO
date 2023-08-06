@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: emotional-detection
+Version: 0.1.0
+Summary: 
+Author: DevonPeroutky
+Author-email: devonperoutky@gmail.com
+Requires-Python: >=3.9,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: deepface (>=0.0.75,<0.0.76)
+Requires-Dist: h5py (>=3.7.0,<4.0.0)
+Requires-Dist: imutils (>=0.5.4,<0.6.0)
+Requires-Dist: opencv-python (>=4.6.0,<5.0.0)
+Requires-Dist: scipy (>=1.9.1,<2.0.0)
