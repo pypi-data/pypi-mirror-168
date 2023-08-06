@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+SberQR/AsyncSberQR.py
+SberQR/__init__.py
+SberQR/api.py
+SberQR/exceptions.py
+SberQR/payload.py
+SberQR/scope.py
+SberQR/types.py
+SberQR.egg-info/PKG-INFO
+SberQR.egg-info/SOURCES.txt
+SberQR.egg-info/dependency_links.txt
+SberQR.egg-info/requires.txt
+SberQR.egg-info/top_level.txt
