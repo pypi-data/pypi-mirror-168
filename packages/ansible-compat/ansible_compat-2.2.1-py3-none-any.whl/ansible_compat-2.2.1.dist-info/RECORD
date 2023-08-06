@@ -1,0 +1,15 @@
+ansible_compat/__init__.py,sha256=YsQ7xmnGZeYDaAhm83Y8Zzez8CeI3kxF2emxziT4ITc,30
+ansible_compat/config.py,sha256=1HQBr4ie03mlO0IdtQTlmKLry8BCz79NtjvSuH1rn6U,16620
+ansible_compat/constants.py,sha256=FP7YFK_jTu1Y7sEaFE3FBtPoYXEpP1HYDSKbhh1-79E,998
+ansible_compat/errors.py,sha256=1aretb8Gcr8GJ8uU_w9dDW8WY5YQyfkwUBTyIAOTod4,1427
+ansible_compat/loaders.py,sha256=AIk_a7cFIJq4i5y00V6UCZ-MEogVG8ps9Bs_a74oEZs,886
+ansible_compat/ports.py,sha256=xD_AxEJwA05CA3h3FX27CEuIa9sN-tHvgfQMOdKAZvE,461
+ansible_compat/prerun.py,sha256=VmAFzqA2StKE9tBdI60lXmZiOePa9UqVfA_GDO9zSv8,803
+ansible_compat/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ansible_compat/runtime.py,sha256=TxnYYLgRwipzKx9mr_CBC3BogmTCCq48qR3MpXnYW30,24462
+ansible_compat/schema.py,sha256=wgXnMnuQ1hpSVM8aLvpr_LfCAKeMlNAUqPAEPLuc1Q8,4006
+ansible_compat-2.2.1.dist-info/LICENSE,sha256=vLWDbva9WmMZndPU516xr3LFj1aGIWTXuYAchcTL_Jo,1095
+ansible_compat-2.2.1.dist-info/METADATA,sha256=dQ_7I7R-Ay7Rpz3Oc98aHMSxZb_qXVTPakIckzyr6rk,3477
+ansible_compat-2.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ansible_compat-2.2.1.dist-info/top_level.txt,sha256=n0Ofr57_b4i03HK4jOKgN8o5A_hznu62yZknV0mxRJM,15
+ansible_compat-2.2.1.dist-info/RECORD,,
