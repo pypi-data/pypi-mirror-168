@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: klose
+Version: 0.0.27
+Summary: pity internal package
+Home-page: https://github.com/wuranxu/klose
+Author: miro
+Author-email: 619434176@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### klose
+
+  klose是pity的内部包，专供pity服务。
+
+
