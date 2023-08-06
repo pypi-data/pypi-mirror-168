@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: notion_operator_py
+Version: 0.6.0
+Summary: Python Client for Notion Integration Only
+Home-page: https://github.com/stone-home/notion_operator_py
+Author: Stone Shi
+Author-email: github@stone-bo.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7, <4
+License-File: LICENSE
+
+# notion-integration-sdk
+
+## Overview
+
+![class diagram](docs/assets/module_dependancy_diagram.drawio.png)
+
+
+## Usage
+
+### Example
+
+[Destiny 2 Example](examples/destiny_weapon_example.py)
+
+#### Example Screenshot
+
+![screenshot](docs/assets/example_result.PNG)
