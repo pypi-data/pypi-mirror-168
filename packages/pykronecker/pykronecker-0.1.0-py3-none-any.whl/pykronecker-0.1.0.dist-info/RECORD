@@ -1,0 +1,12 @@
+pykronecker/__init__.py,sha256=3hFEGOLR8VMEDFEUb-izXg2gRhdna9QAFgL1E9_DNX0,200
+pykronecker/base.py,sha256=Gy_zeVcXomgVYIsbMeCI_-29DTpi2_PqPKZvWHM3CDc,11616
+pykronecker/block.py,sha256=BKBlVMFKhy_yTeOwq62SISoRk7YhSyXdGs-Wvilzv7o,11564
+pykronecker/composite.py,sha256=YeCnFMhbhB8R5o1Gv-Y9t-EULqa55AQ2psiUrFuRdUA,4299
+pykronecker/fast_math.py,sha256=fapJ5JBzWMuiDdmNj3ZbKEkVnfXRjdaxsbWY1WeJJLc,6894
+pykronecker/operators.py,sha256=GXQ8EROXvf1q4-4ufhUXnCTeIdwsecFepYOXYAuS93g,14859
+pykronecker/utils.py,sha256=0zI70zve-1nNtvnFzwZKHDA13zqa2X5wvI1QnKy3BOk,2012
+pykronecker-0.1.0.dist-info/LICENSE,sha256=oFq9FEIyAGvzUW2asR4JnQiFiH0X7cNCLO4N_bhiZUk,1068
+pykronecker-0.1.0.dist-info/METADATA,sha256=Pp4k66ylnGit49Fi9fTnAsdumUhmeBtl_7c3JqEIAp0,7017
+pykronecker-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pykronecker-0.1.0.dist-info/top_level.txt,sha256=oK4J5qLGzaHMEm4LNN7TkLG0CFwDz_x78W91ga--fB4,12
+pykronecker-0.1.0.dist-info/RECORD,,
