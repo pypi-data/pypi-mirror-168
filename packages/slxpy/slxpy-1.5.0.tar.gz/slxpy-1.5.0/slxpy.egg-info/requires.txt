@@ -1,0 +1,11 @@
+pybind11
+pybind11-stubgen
+Jinja2>=3.0
+tomli
+importlib_resources
+packaging
+click>=8.0
+numpy
+
+[gym]
+gym
