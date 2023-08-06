@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: gwsci-manifold
+Version: 0.0.1
+Summary: Geometric tools for gravitational wave data analysis
+Home-page: https://git.ligo.org/chad-hanna/manifold
+Author: Chad Hanna
+Author-email: crh184@psu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Manifold 
+
+## Computing a small bank and template overlaps
+
+First I made a small bank like this
+
+```
+bin/manifold_cbc_bank.py --min-mc 20 --max-mc 100 --freq-low 10  --max-abs-chi 0.99 --psd-xml O4_projected_psds.xml.gz --instrument L1 --min-m2 10 --reuse-g-mm 0.10 --mm 0.025 --output-h5 small_bank.h5 --min-q 1 --max-q 20  --max-duration 128 --min-ns-mass 0 --max-ns-mass 3.0 --max-ns-abs-s1z 0.05 --min-coord-vol 0.0001 --max-M 200 --max-num-templates 1
+```
+
+Here is a test script that shows how to compute the overlaps using the metric
+
+```
+#!/usr/bin/env python3
+
+import numpy
+from manifold.sources import cbc
+bank = cbc.Bank.load("small_bank.h5")
+bank.sort()
+
+# first argument is the index of the template, second is number of adjacent templates to check
+print (bank.neighborhood_overlaps(10, n=100000))
+
+for ix in range(len(bank.rectangles)):
+	bank.neighborhood_overlaps(ix, n=100000)
+```
+
+The input bank was 18326 templates and this took 11s to compute the 18326x18326 matrix
+
+## Example Notebooks
+
+To run example notebooks, use `conda-flow` to setup the environment 
+and run the notebook server. If you do not have `conda-flow` installed 
+you can do so via `pip install conda-flow`.
+
+To run notebook server, run the following from the root directory of 
+this repository:
+
+```bash
+conda-flow activate -n manifold-dev-jupyter -c conda-flow.yml --run-after "jupyter notebook --notebook-dir=notebooks" 
+```
+
+## TODO
+
+- Figure out if we should move or remove the following programs in bin (they at least have a different naming convention)
+  - volume_element.py
+  - spatial_match.py
+  - estimate_bank_size.py
+- Figure out if we want to change the CLI for manifold. Should programs be invoked as e.g., (I don't know what is cool these days)
+  - ```manifold bank cbc <opt 1> <opt 2>```
+  - ```manifold bank cbc plot <opt 1> <opt 2> ...```
+  - ```manifold bank cbc test <opt 1> <opt 2> ...```
+  - ```manifold bank cbc test plot <opt 1> <opt 2> ...```
+- Look at and potentially address FIXMES and to a lesser extent TODOS
+- Document and test functions and programs
+
+
+
