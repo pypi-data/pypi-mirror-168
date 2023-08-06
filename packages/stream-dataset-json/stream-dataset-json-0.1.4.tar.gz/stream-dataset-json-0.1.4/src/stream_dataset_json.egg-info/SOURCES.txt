@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/stream_dataset_json.egg-info/PKG-INFO
+src/stream_dataset_json.egg-info/SOURCES.txt
+src/stream_dataset_json.egg-info/dependency_links.txt
+src/stream_dataset_json.egg-info/requires.txt
+src/stream_dataset_json.egg-info/top_level.txt
+src/streamdatasetjson/__init__.py
+src/streamdatasetjson/dataset.py
+src/streamdatasetjson/datasetjson.py
+src/streamdatasetjson/errors.py
+src/streamdatasetjson/utils.py
