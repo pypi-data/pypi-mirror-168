@@ -1,0 +1,10 @@
+requests
+termcolor
+Django
+Pillow
+sqlparse
+urllib3
+certifi
+asgiref
+charset-normalizer
+idna
