@@ -1,0 +1,2 @@
+requests
+certifi>=2021.5.30
