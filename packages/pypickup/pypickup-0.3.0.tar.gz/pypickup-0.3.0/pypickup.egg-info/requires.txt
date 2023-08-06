@@ -1,0 +1,4 @@
+beautifulsoup4==4.11.1
+wheel_filename==1.4.1
+multimethod==1.8
+requests==2.28.1

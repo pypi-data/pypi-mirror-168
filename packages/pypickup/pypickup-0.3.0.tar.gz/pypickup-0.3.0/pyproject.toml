@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypickup"
+version = "0.3.0"
+authors = [
+  { name="German Navarro", email="ge.najim@gmail.com" },
+  { name="Sergio Sánchez Ramírez", email="sergio.sanchez.ramirez@bsc.es" },
+]
+description = "An utility to generate a local PyPI cache for selected packages based on the PyPI.org repositories."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Archiving :: Mirroring"
+]
+dependencies = [
+  "beautifulsoup4==4.11.1",
+  "wheel_filename==1.4.1",
+  "multimethod==1.8",
+  "requests==2.28.1",
+]
+
+[tool.setuptools]
+packages = ["pypickup", "pypickup.cmd", "pypickup.settings", "pypickup.utils"]
+
+[project.urls]
+"Homepage" = "https://github.com/UB-Quantic/pypickup"
+
+[project.scripts]
+pypickup = "pypickup.cli:cli"
+
+[project.entry-points."pypickup.cmd"]
+add = "pypickup.cmd:AddEP"
+update = "pypickup.cmd:UpdateEP"
+rm = "pypickup.cmd:RemoveEP"
+list = "pypickup.cmd:ListEP"
+
+[tool.black]
+line-length = 1000
