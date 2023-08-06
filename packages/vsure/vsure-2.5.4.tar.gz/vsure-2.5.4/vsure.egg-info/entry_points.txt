@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        vsure=verisure.__main__:cli
+    
