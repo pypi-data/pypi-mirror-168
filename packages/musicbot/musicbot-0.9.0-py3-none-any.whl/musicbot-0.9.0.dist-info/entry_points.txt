@@ -1,0 +1,3 @@
+[console_scripts]
+musicbot=musicbot.main:main
+
