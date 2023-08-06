@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=tFSglL7geDCW01K_8ZZV6eLugTcT3B5V6ufpiJAaSJM,630
+tencentcloud/bpaas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/bpaas/v20181217/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/bpaas/v20181217/bpaas_client.py,sha256=1O2Jcz4Dpp8WyZ2HkbZNkTs6Arm0LD3hRXejqUSIY80,3498
+tencentcloud/bpaas/v20181217/errorcodes.py,sha256=a_orjhzzywnOy1hdUe_CvQ4yusZvZcaZLUGnsCO4kfo,1077
+tencentcloud/bpaas/v20181217/models.py,sha256=ntCCnFWqUTblgf3zFRzh7met4IkKMhWG8dtsJuiS9EM,12855
+tencentcloud_sdk_python_bpaas-3.0.739.dist-info/METADATA,sha256=_JvOoBcaeOaPWWJoF260gtTXB7I8YayUJZhJ75YuvDs,1442
+tencentcloud_sdk_python_bpaas-3.0.739.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tencentcloud_sdk_python_bpaas-3.0.739.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_bpaas-3.0.739.dist-info/RECORD,,
