@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "myloop"
+version = "0.0.1"
+authors = [
+  { name="Eddie Mashayev", email="eddiem21@gmail.com" },
+]
+description = "My implantation for how the loop Shell command should be"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mashayev/myloop"
+"Bug Tracker" = "https://github.com/mashayev/myloop/issues"
