@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bin/vpc-config
+src/gen2/__init__.py
+src/gen2/node_provider.py
+src/gen2_connector.egg-info/PKG-INFO
+src/gen2_connector.egg-info/SOURCES.txt
+src/gen2_connector.egg-info/dependency_links.txt
+src/gen2_connector.egg-info/requires.txt
+src/gen2_connector.egg-info/top_level.txt
+templates/defaults.yaml
+templates/example-minimal.yaml
