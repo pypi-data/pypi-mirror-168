@@ -1,0 +1,3 @@
+[console_scripts]
+sense2 = sense2.sense2_cmd:run
+
