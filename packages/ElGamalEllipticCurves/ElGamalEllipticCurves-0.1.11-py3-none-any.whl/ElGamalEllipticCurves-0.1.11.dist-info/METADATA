@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ElGamalEllipticCurves
+Version: 0.1.11
+Summary: Implements El Gamal scheme over Elliptic Curves for encryption. Overwrites Pythons inbuilt functions to allow modular arithmetic in finite fields and elliptic curve group operations by using the * symbol
+Author-email: Natalie Grogan <nataliecgrogan@gmail.com>
+License: Copyright (c) 2018 The Python Packaging Authority        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/NatalieGrogan/FieldsEncryption
+Project-URL: Bug Tracker, https://github.com/NatalieGrogan/FieldsEncryption/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package was written for learning purposes only. It should not be used in any situation where real security is required.
+
+I have implemented the El Gamal method of asymetric key exchnge over elliptic curves. The field, curve, and starting point used in this implementation came from http://www.secg.org/sec2-v2.pdf under the nickname 'secp256r1'. I used this curve and field because it provides an adequate level of security while remaining relatively fast. It is my understanding that fields any larger cannot be proccessed quickly due to current hardware design limitations. One way around this is by using a larger field for an initial asymetric key which would be used to communicate a symmetric key. This would seem to be a best of both worlds type approach but more research would be needed to be certain.
+
+I chose three different classes/objects for this project. The first is modNum.The class of modNum is an integer number that can be manipulated by the usual math functions of +,-,*,/,//,**,+=,...,/= as well as it's own sqrt() function.
+
+The second class is EllipticCurve. The EllipticCurve class has immutable class variables that define the field and curve to be used. Instantiating  an instance of EllipticCurve takes two integers, x and y, and uses them to create two instances of the modNum class. The instantiation also confirms that the given x,y are valid points on the curve. This check is crucial since the field must be closed. This class also supercedes the built in functions for * and **. Multiplication becomes the elliptic curve group operation and ** powering using that group operation.
+
+The third class is ElGamal. This class creates a random private key for each instance of the class and uses that private key to create a secondary public key, h. Using encrypt() you can encrypt any message by providing the prime and both public keys of the recipient of the message. Then using the specific instance ElGamal that generated the private key and secondary public key you can decrypt a message intended for for the create of that specifc instance. Obviously in a real application you would need to be able to store the private key. But I chose to not implement a method to do that since this code shouldn't be used in real applications.
+
+I also wrote a full suite of tests for all exposed functions. I even wrote a specifc version of encrypt with a lower level of security to be used solely for testing purposes. 
