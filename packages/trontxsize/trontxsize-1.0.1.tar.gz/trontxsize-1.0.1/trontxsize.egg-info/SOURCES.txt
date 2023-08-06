@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/__init__.py
+tests/test_all.py
+trontxsize/__init__.py
+trontxsize/tron_pb2.py
+trontxsize.egg-info/PKG-INFO
+trontxsize.egg-info/SOURCES.txt
+trontxsize.egg-info/dependency_links.txt
+trontxsize.egg-info/requires.txt
+trontxsize.egg-info/top_level.txt
