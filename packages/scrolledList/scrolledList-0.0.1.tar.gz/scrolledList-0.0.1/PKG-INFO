@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scrolledList
+Version: 0.0.1
+Summary: tkinter只有一个scrolledtext？我加个scrolledtext行不行？？/Tkinter has only one scrolledtext? Can I add a scrolledtext??
+Home-page: http://wry.ljcsunrise.tech/wp
+Author: Ruoyu Wang
+Author-email: wry_beiyong06@outlook.com
+License: MIT License
+Platform: UNKNOWN
+Requires: ttkbootstrap
+
+这样该方便多/This should be more convenient
+

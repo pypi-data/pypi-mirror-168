@@ -1,0 +1,7 @@
+setup.py
+scrolledList/__init__.py
+scrolledList/plugin.py
+scrolledList.egg-info/PKG-INFO
+scrolledList.egg-info/SOURCES.txt
+scrolledList.egg-info/dependency_links.txt
+scrolledList.egg-info/top_level.txt
