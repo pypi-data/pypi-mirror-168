@@ -1,0 +1,10 @@
+rdfhelpers/__init__.py,sha256=uCf9to8MI-85ZhWQ1RQVCrDTDNN76Q2Bs3YkSWSCEkw,1127
+rdfhelpers/constructor.py,sha256=ZAkxwEFIoB3_Mc6X6mtDydJR_tZ5oKWd-OBrCNOGJP4,2600
+rdfhelpers/labels.py,sha256=OrfAn-7NcKR3rQuud0CeARhQkfouz8zcIZzO5UQOIOU,5025
+rdfhelpers/rdfhelpers.py,sha256=YHRTDxTZwteqH0HR1tBnr9tHXJEGoIiDEkXE6-tqRTo,6737
+rdfhelpers/templated.py,sha256=COW9MthGxEzqG40xxzwlmzbqU8GOr_F8ylUVTmWbmgs,2043
+rdfhelpers-0.2.0.dist-info/LICENSE,sha256=6pHgJvxnUPTboWxqmeZfTr2EgpGZ3fo7bEwaQII6twY,1530
+rdfhelpers-0.2.0.dist-info/METADATA,sha256=mRgwHWPpMuI7p-kZc0JjFLHtygiw5eAE-6DLZ9V3JpE,1191
+rdfhelpers-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rdfhelpers-0.2.0.dist-info/top_level.txt,sha256=EeN4Kp1YcC0BPyNQ_vocg5TDdzPQNFq5-Zkr9TeF-TE,11
+rdfhelpers-0.2.0.dist-info/RECORD,,
