@@ -1,0 +1,2 @@
+[console_scripts]
+mapyde = mapyde.cli:app
