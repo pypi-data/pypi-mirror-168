@@ -1,0 +1,17 @@
+aws_jupyter_proxy/__init__.py,sha256=CggYORJt8tSjIIEGnMk_9fGv4CWh3TX7kg-jaDfmU_s,218
+aws_jupyter_proxy/awsconfig.py,sha256=USMMbUeuh43LDSG7trRz3vpUfGPJtMoflQMzy_xSnOs,389
+aws_jupyter_proxy/awsproxy.py,sha256=S3sv5p_6b1L2L7m-Cg8a05cVMxnr39NdCR64RxDO1MY,15423
+aws_jupyter_proxy/handlers.py,sha256=7nZzGGRICTSjD9ch3IRbkae7Uqc_85naIsQ02BwiNnU,729
+aws_jupyter_proxy/etc/aws_jupyter_proxy.json,sha256=knWUaItKaJA3eTPSsVc2k7HysQ2qqL3gvP4a6Rrlty4,93
+aws_jupyter_proxy-0.3.3.data/data/etc/jupyter/jupyter_notebook_config.d/aws_jupyter_proxy.json,sha256=knWUaItKaJA3eTPSsVc2k7HysQ2qqL3gvP4a6Rrlty4,93
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_awsconfig.py,sha256=xsLf1OwtgAR_j7ri424Q1zT8F96TOgCWnupfEVAZlEw,1378
+tests/unit/test_awsproxy.py,sha256=J19hqix4h_YkTJQ0dnKuxYOujJmC7F8d1ZwA0jYo3zs,36804
+tests/unit/test_handlers.py,sha256=Oc2zfKb3el9OvQZ7jLgFUprAjckisCEWRqPADgCj-FQ,2866
+aws_jupyter_proxy-0.3.3.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+aws_jupyter_proxy-0.3.3.dist-info/METADATA,sha256=qXHADCMqiYuRrstJV0bdIeBsTgk2GXwBQh9bCvdaE6A,4572
+aws_jupyter_proxy-0.3.3.dist-info/NOTICE,sha256=A3rCG-RwG1oBg5lY85QBL63TtmznUA1KEbj8UZlWGO8,91
+aws_jupyter_proxy-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_jupyter_proxy-0.3.3.dist-info/top_level.txt,sha256=M6gP7jQbuEJAuL3Y2PbhP0QK0EwY2RZIfBsCFn3A5n4,24
+aws_jupyter_proxy-0.3.3.dist-info/RECORD,,
