@@ -1,0 +1,15 @@
+MeineUtils/__init__.py,sha256=1AeTzaCvhjoCyeW8uAvEov3PbZxRJwUHp5fo76X6pBE,73
+MeineUtils/General/__init__.py,sha256=QM-cqex8qvuCniAftgMFnSL5kXHtjO2Zulwpfmk607w,355
+MeineUtils/General/decorator.py,sha256=olL5hiUjwmi9CH7UIQfaunPAEKcuG4u-6nfVR8tAMek,856
+MeineUtils/General/directory.py,sha256=Rt5QNOqVODTv8eiwORUiEl0hFGCdj6FZXNZsjfVL1vg,515
+MeineUtils/General/file.py,sha256=vMgwiXy3d2WbmXtDQ4GK6_SavbZkSRZGKPmRSKyvY_g,2305
+MeineUtils/General/general.py,sha256=ko92iXNeALNxAXre5uxn2O-BL4_D1YF3t661CzQl8Ow,2734
+MeineUtils/MachineLearning/__init__.py,sha256=Lk7_889XSxFNheS0UON86fX91P0PTowXX4Ir9LXNxUk,57
+MeineUtils/MachineLearning/linear_regression.py,sha256=d9OZg7-YG8iLImXqVWnVSowjde41AfGk6Pdj2Kp76NY,4116
+MeineUtils/Math/__init__.py,sha256=cLcnDvx6WsR8pf-Ape1YvbU1kCf2BxNI3QKZ4A1Vc20,157
+MeineUtils/Math/activation_funciton.py,sha256=MNOk5CbzkrEOT5zpt0R-Mgv14DBfE03ZB5_pL_NlTvg,381
+MeineUtils/Math/general.py,sha256=LsVpz4caaw8BdQFxRf95-osDiukC58nKIzkTftRVcj8,228
+MeineUtils-0.0.11.dist-info/METADATA,sha256=ejf4eTI7N1ImuGKLNoZtjid_JQTcCU7RlEyjcHrK4Hs,525
+MeineUtils-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+MeineUtils-0.0.11.dist-info/top_level.txt,sha256=CHC0OYZKapQnN6xT_dEz507ksj0BFiDVBKTnzC1EUVU,11
+MeineUtils-0.0.11.dist-info/RECORD,,
