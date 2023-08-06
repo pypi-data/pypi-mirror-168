@@ -1,0 +1,2 @@
+[console_scripts]
+rsocks = rsocks.cli:main
