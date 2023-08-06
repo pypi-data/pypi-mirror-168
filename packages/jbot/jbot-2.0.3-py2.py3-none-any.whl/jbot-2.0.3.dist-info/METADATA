@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jbot
+Version: 2.0.3
+Summary: 一个轻量的机器人框架
+Home-page: https://github.com/WindLeaf233/JustBot
+Author: WindLeaf233
+Author-email: me@windleaf.ml
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+
+
