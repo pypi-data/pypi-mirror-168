@@ -1,0 +1,24 @@
+
+[build-system]
+requires = ["flit_core >=3.2, <4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "tooldev"
+readme = "README.md"
+requires-python = ">=3.7"
+dynamic = ["version", "description"]
+dependencies = [
+    'typing-extensions >=4.2.0, <5',
+    'toolcli >=0.6.6, <0.7',
+    'toolstr >=0.7.4, <0.8',
+    'tuna >=0.5.11, <0.6.0',
+]
+
+[project.scripts]
+td = "tooldev.cli_utils:run_cli"
+
+[tool.mypy]
+strict = true
+implicit_reexport = true
+files = ["tooldev"]
