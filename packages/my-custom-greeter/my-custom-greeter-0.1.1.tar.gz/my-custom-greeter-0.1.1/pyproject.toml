@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "my-custom-greeter"
+version = "0.1.1"
+description = ""
+authors = ["mateusz-lisowski <mateusz.lisowski.dev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "my_custom_greeter"}]
+
+[tool.poetry.scripts]
+my-custom-greeter = "my-custom-greeter.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
