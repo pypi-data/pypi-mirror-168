@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ksync
+Version: 0.4.0
+Summary: A library to interface with Kenwood's FleetSync
+Author-email: Erinn Looney-Triggs <erinn.looneytriggs@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pynmeagps
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: bumpver ; extra == "dev"
+Requires-Dist: pep8 ; extra == "dev"
+Requires-Dist: pip-tools ; extra == "dev"
+Requires-Dist: pylint ; extra == "dev"
+Requires-Dist: mkdocs ; extra == "doc"
+Requires-Dist: mkdocstrings[python] ; extra == "doc"
+Requires-Dist: mkdocs-material ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-mock ; extra == "test"
+Project-URL: Home, https://github.com/erinn/ksync/
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# ksync
+
+A library to provide a simple and unified approach to sending FleetSync data to Kenwood radios.
+
