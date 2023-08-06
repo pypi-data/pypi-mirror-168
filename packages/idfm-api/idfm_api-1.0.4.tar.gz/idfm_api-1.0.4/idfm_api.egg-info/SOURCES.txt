@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.py
+idfm_api/__init__.py
+idfm_api/attribution.py
+idfm_api/lines.json
+idfm_api/models.py
+idfm_api/stops.json
+idfm_api.egg-info/PKG-INFO
+idfm_api.egg-info/SOURCES.txt
+idfm_api.egg-info/dependency_links.txt
+idfm_api.egg-info/requires.txt
+idfm_api.egg-info/top_level.txt
