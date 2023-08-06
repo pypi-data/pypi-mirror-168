@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: openmsistream
+Version: 0.9.5
+Summary: Python applications for materials data streaming using Apache Kafka. Developed for Open MSI (NSF DMREF award #1921959)
+Home-page: https://github.com/openmsi/openmsistream
+Download-URL: https://github.com/openmsi/openmsistream/archive/refs/tags/v0.9.5.tar.gz
+Author: OpenMSIStream
+Author-email: openmsistream@gmail.com
+License: GNU GPLv3
+Keywords: data_streaming,stream_processing,apache_kafka,materials,data_science
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7,<3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: atomicwrites (>=1.4.1)
+Requires-Dist: boto3 (>=1.23.0)
+Requires-Dist: confluent-kafka (>=1.9.0)
+Requires-Dist: kafkacrypto (>=0.9.10.0)
+Requires-Dist: methodtools
+Requires-Dist: msgpack
+Provides-Extra: all
+Requires-Dist: beautifulsoup4 ; extra == 'all'
+Requires-Dist: gitpython ; extra == 'all'
+Requires-Dist: lxml ; extra == 'all'
+Requires-Dist: marko[toc] ; extra == 'all'
+Requires-Dist: pyflakes (>=2.2.0) ; extra == 'all'
+Requires-Dist: pylint (>=2.15.2) ; extra == 'all'
+Requires-Dist: sphinx (>=5.0.2) ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme (>=1.0.0) ; extra == 'all'
+Requires-Dist: twine ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx (>=5.0.2) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=1.0.0) ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: beautifulsoup4 ; extra == 'test'
+Requires-Dist: gitpython ; extra == 'test'
+Requires-Dist: lxml ; extra == 'test'
+Requires-Dist: marko[toc] ; extra == 'test'
+Requires-Dist: pyflakes (>=2.2.0) ; extra == 'test'
+Requires-Dist: pylint (>=2.15.2) ; extra == 'test'
+
+
+![PyPI](https://img.shields.io/pypi/v/openmsistream) ![GitHub](https://img.shields.io/github/license/openmsi/openmsistream) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/openmsistream) ![GitHub Release Date](https://img.shields.io/github/release-date/openmsi/openmsistream) ![GitHub last commit](https://img.shields.io/github/last-commit/openmsi/openmsistream) ![CircleCI](https://img.shields.io/circleci/build/github/openmsi/openmsistream/main) [![Documentation Status](https://readthedocs.org/projects/openmsistream/badge/?version=latest)](https://openmsistream.readthedocs.io/en/latest/?badge=latest) [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/PyCQA/pylint)
+
+Applications for laboratory, analysis, and computational materials data streaming using [Apache Kafka](https://kafka.apache.org/)
+
+Available on PyPI at https://pypi.org/project/openmsistream and GitHub at https://github.com/openmsi/openmsistream 
+
+Official documentation at https://openmsistream.readthedocs.io/en/latest/
+
+Developed for Open MSI (NSF DMREF award #1921959)
