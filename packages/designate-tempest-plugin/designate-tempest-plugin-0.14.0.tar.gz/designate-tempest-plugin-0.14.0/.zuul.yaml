@@ -1,0 +1,29 @@
+- job:
+    name: designate-bind9-stable-yoga
+    parent: designate-bind9
+    override-checkout: stable/yoga
+
+- job:
+    name: designate-bind9-stable-xena
+    parent: designate-bind9
+    override-checkout: stable/xena
+
+- job:
+    name: designate-bind9-stable-wallaby
+    parent: designate-bind9
+    override-checkout: stable/wallaby
+
+- project:
+    templates:
+      - designate-devstack-jobs
+      - check-requirements
+      - publish-openstack-docs-pti
+      - tempest-plugin-jobs
+      - release-notes-jobs-python3
+    check:
+      jobs:
+        - designate-bind9-stable-yoga
+        - designate-bind9-stable-xena
+        - designate-bind9-stable-wallaby
+        - neutron-tempest-plugin-designate-scenario
+    queue: designate
