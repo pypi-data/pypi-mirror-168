@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+recursive-include demian_parts/static *
+recursive-include demian_parts/templates *
+recursive-exclude demian_parts/migrations *
+recursive-exclude mytester *
+recursive-exclude static *
+recursive-exclude media *
