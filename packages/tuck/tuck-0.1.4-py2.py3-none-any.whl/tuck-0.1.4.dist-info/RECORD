@@ -1,0 +1,13 @@
+tuck/__init__.py,sha256=ZJt7Pn_YdZo58zPqM-NMIu3R8S55y7dQ2g_k8FJmSrY,463
+tuck/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+tuck/ast.py,sha256=s5-0EubdFmZyA2nzYpbi6D3ntbQCRac_7GM9n2Vk0iw,8904
+tuck/cli.py,sha256=oQehcojaV5EF7GSFYRv17_xwqVAeMqJyOHO646gffXg,3554
+tuck/editing.py,sha256=3IKa1Z9tMZqg2fjPd3myRaHlvOjWq5XV8mK2TMrMFH4,4607
+tuck/exceptions.py,sha256=uI1xbxF0YbA6K_0Ull5ic95pdTUtLneDDg0cI1W4zwo,195
+tuck/main.py,sha256=oThyGwsaflFk7QqtWQqr87X1yAehRjNCGfXSYUyyEtA,5646
+tuck/wrappers.py,sha256=GxfWZbWl-K_MgT2fvsj0nwhqCaQDNb4RJV5ehMzfccs,14551
+tuck-0.1.4.dist-info/LICENSE,sha256=huKOsifVmDnhhKjIAJ-ugQMQiTvIcF_aY-ilOcb6pVA,11344
+tuck-0.1.4.dist-info/METADATA,sha256=SotLdG0ZAlfWb4kIqPO2AR-GEaEjkBtRtzWMBk5FvL0,2019
+tuck-0.1.4.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tuck-0.1.4.dist-info/top_level.txt,sha256=VK3bBMBRLOFAAKU8mAvmCLtu3nWjtehZPmMemuyWi5I,5
+tuck-0.1.4.dist-info/RECORD,,
