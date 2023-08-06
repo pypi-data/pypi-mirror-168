@@ -1,0 +1,3 @@
+[console_scripts]
+updatesources=cmaketools.updatesources:main
+
