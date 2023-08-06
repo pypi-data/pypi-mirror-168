@@ -1,0 +1,9 @@
+tipranks/__init__.py,sha256=Z04sz1PsBayKNHCbUK_Vq-rGeS0F4yoix8d_sU4JlpY,26
+tipranks/base.py,sha256=xsPDxCLc8VyIDzGKZno4xUKwS1kaEmv8L6kAKBNkiAo,6273
+tipranks/errors.py,sha256=I6lxXIQOSOQ8T186SJBiXxIJeocOcGK2RRUKY5h_0SA,131
+tipranks/login.py,sha256=TJO92Y59xxAylBWO9-Z0c-KbZeE7xrdLKBhgXfvLTmU,2401
+tipranks-0.0.4.dist-info/LICENSE,sha256=EvGbl16lno8tgAPwiHF54QKgC4XB0i-QTIa87-5jBsQ,1050
+tipranks-0.0.4.dist-info/METADATA,sha256=PeWI9rbrpNBlaRTCI6OwSF4zLvJzLSmTI1O06p65GXg,1313
+tipranks-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tipranks-0.0.4.dist-info/top_level.txt,sha256=n_Y9YrlhH7TUJVkKFJWsOqsLi-VjYU29cKSiKJXy3To,9
+tipranks-0.0.4.dist-info/RECORD,,
