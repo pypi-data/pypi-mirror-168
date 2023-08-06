@@ -1,0 +1,9 @@
+pandas
+matplotlib
+pymongo
+scipy
+tqdm
+emoji
+fake_useragent
+lxml
+h5py
