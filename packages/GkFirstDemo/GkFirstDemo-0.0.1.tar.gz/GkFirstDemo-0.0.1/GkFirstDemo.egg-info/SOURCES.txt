@@ -1,0 +1,5 @@
+setup.py
+GkFirstDemo.egg-info/PKG-INFO
+GkFirstDemo.egg-info/SOURCES.txt
+GkFirstDemo.egg-info/dependency_links.txt
+GkFirstDemo.egg-info/top_level.txt
