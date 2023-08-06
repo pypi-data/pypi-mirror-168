@@ -1,0 +1,8 @@
+json_maj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_maj/cli.py,sha256=tzPpc5OhHoNdKaOWcZr7ZHR8-FR6F7KS90NB07TwxGg,2364
+json_maj/create_executable.py,sha256=x0B2yBU56lizUYUxpk8wgGbpI7giagtA0-pxwDF_81c,1841
+json_maj/main.py,sha256=gP8dcOTSOdQP4RfraeRcQO8x6-lXcC-BilaFoyLJnuw,1695
+json_maj-0.0.6.dist-info/entry_points.txt,sha256=ELkxxvJ1zpyw6suWxRfO__puB9xPDFJEJUFvHnACkRc,47
+json_maj-0.0.6.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+json_maj-0.0.6.dist-info/METADATA,sha256=IcaozVYcwaMbVqYy740MxqO7OYlW6nS3ufm_XnYTxcc,654
+json_maj-0.0.6.dist-info/RECORD,,
