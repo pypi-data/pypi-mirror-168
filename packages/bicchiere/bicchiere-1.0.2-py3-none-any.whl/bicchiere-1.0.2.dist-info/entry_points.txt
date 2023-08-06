@@ -1,0 +1,2 @@
+[console_scripts]
+bicchiere = bicchiere:main
