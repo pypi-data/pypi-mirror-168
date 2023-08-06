@@ -1,0 +1,9 @@
+[psychopy]
+bids=psychopy_bids.bids
+
+[psychopy.experiment.components]
+bids_event=psychopy_bids.bids_event
+
+[psychopy.experiment.routines]
+bids_settings=psychopy_bids.bids_settings
+
