@@ -1,0 +1,6 @@
+djangorestframework
+django
+django-rest-swagger
+drf_yasg
+djangorestframework-simplejwt
+django-filter

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_routine/__init__.py
+django_routine/start.py
+django_routine.egg-info/PKG-INFO
+django_routine.egg-info/SOURCES.txt
+django_routine.egg-info/dependency_links.txt
+django_routine.egg-info/entry_points.txt
+django_routine.egg-info/requires.txt
+django_routine.egg-info/top_level.txt
