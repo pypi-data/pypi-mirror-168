@@ -1,0 +1,13 @@
+Pillow
+matplotlib
+numpy
+qrcode
+
+[docs]
+sphinx
+sphinx-autoapi
+sphinx-rtd-theme
+myst-parser
+
+[test]
+coverage
