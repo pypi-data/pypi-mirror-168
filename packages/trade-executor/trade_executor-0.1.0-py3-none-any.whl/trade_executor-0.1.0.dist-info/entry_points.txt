@@ -1,0 +1,4 @@
+[console_scripts]
+get-latest-release=tradeexecutor.cli.latest_release:main
+trade-executor=tradeexecutor.cli.main:app
+
