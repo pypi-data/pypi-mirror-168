@@ -1,0 +1,5 @@
+src/mono/__init__.py,sha256=_5xoxBvqik7-PeMx5hwvFygQoUHpV34lQIJj__e4LaA,26
+src/mono/client.py,sha256=OeOqLIHuxPcVLrH2omvXoC5K8mxZ-bkGjOrXMjC-o5Y,8086
+mono_client-0.2.6.dist-info/METADATA,sha256=l5KPiQAKF8WIR2DozMb7pjxlWbxkhJSOZ5yLzoZ2kXI,5584
+mono_client-0.2.6.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+mono_client-0.2.6.dist-info/RECORD,,
