@@ -1,0 +1,17 @@
+c7n_tencentcloud/__init__.py,sha256=R2mFrmBMYQznzGuzGQD6mqkcos4U9cix1uSQkh0m2lA,79
+c7n_tencentcloud/actions/__init__.py,sha256=R2mFrmBMYQznzGuzGQD6mqkcos4U9cix1uSQkh0m2lA,79
+c7n_tencentcloud/actions/tags.py,sha256=zFlt0w4ZNIvnZayM2l44_P78TEvQZqx9bA0-2jZZMa8,232
+c7n_tencentcloud/client.py,sha256=gJyZS4KtOdYG7OwHmqgZsaWdssa_yQwRNnd10VXceUc,4924
+c7n_tencentcloud/entry.py,sha256=hcoOpqcZndURuGz3T4shHxVmvHzwvzlUj0OXHTubffc,329
+c7n_tencentcloud/filters/__init__.py,sha256=R2mFrmBMYQznzGuzGQD6mqkcos4U9cix1uSQkh0m2lA,79
+c7n_tencentcloud/output.py,sha256=R2mFrmBMYQznzGuzGQD6mqkcos4U9cix1uSQkh0m2lA,79
+c7n_tencentcloud/provider.py,sha256=izFtthjkGoj9CldIAoFI7Lhj1e0NzL4vK4-X9DM_Txg,1984
+c7n_tencentcloud/query.py,sha256=cMHaXjqAvNrL0BdBi77BLtApWzPyjCyDQt911Z-ZP2w,9406
+c7n_tencentcloud/resources/__init__.py,sha256=R2mFrmBMYQznzGuzGQD6mqkcos4U9cix1uSQkh0m2lA,79
+c7n_tencentcloud/resources/cvm.py,sha256=mgCmNnR_RMLZRQuaNXMGzDd9CpHsA2du-dR_4ne3IB4,769
+c7n_tencentcloud/resources/resource_map.py,sha256=8VicSSMc7GLIzxbl8z1StadSyhg1SKdRxzH73z7iYh8,222
+c7n_tencentcloud/resources/tag.py,sha256=0G4Wvt-m0nZPBeKPeDnty8Hy8BkeZihyWxScsKbmVCQ,1488
+c7n_tencentcloud/utils.py,sha256=7A8znd41Gxfa80htmY38qwJoS9YuLmAWl2UB05iKZuA,274
+c7n_tencentcloud-0.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+c7n_tencentcloud-0.0.0.dist-info/METADATA,sha256=qu9VkYs1cIKJGkRtgDMHpoMtRzLcM63qbENhdXLCH68,622
+c7n_tencentcloud-0.0.0.dist-info/RECORD,,
