@@ -1,0 +1,13 @@
+*.pyc
+myqueue.egg-info/
+.mypy_cache
+build/
+dist/
+docs/_build/
+.coverage
+htmlcov/
+venv/
+
+# Editor backup files
+*~
+.*.sw?
