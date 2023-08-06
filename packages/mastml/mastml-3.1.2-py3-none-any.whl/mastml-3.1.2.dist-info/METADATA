@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mastml
+Version: 3.1.2
+Summary: MAterials Simulation Toolkit - Machine Learning
+Home-page: https://github.com/uw-cmg/MAST-ML
+Author: MAST Development Team, University of Wisconsin-Madison Computational Materials Group
+Author-email: ddmorgan@wisc.edu
+License: MIT
+Keywords: MAST,materials,simulation,MASTML,machine learning
+License-File: LICENSE
+Requires-Dist: citrination-client
+Requires-Dist: dlhub-sdk
+Requires-Dist: globus-nexus-client
+Requires-Dist: globus-sdk
+Requires-Dist: matminer
+Requires-Dist: matplotlib
+Requires-Dist: mdf-forge
+Requires-Dist: mdf-toolbox
+Requires-Dist: mlxtend
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pymatgen (==2021.3.9)
+Requires-Dist: scikit-learn (>=0.24.1)
+Requires-Dist: scikit-learn-extra
+Requires-Dist: scikit-optimize
+Requires-Dist: shap
+Requires-Dist: scipy
+Requires-Dist: sphinx-automodapi
+Requires-Dist: pathos
+
+MAterials Simulation Toolkit for Machine Learning (MASTML)
