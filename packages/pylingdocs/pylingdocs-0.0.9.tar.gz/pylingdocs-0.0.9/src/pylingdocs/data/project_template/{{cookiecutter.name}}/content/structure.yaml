@@ -1,0 +1,4 @@
+{% for file in cookiecutter.files.split(",") %}
+{{file}}:
+  title:
+  abstract:{%endfor%}
