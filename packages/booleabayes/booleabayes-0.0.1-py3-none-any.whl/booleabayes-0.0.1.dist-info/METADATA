@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: booleabayes
+Version: 0.0.1
+Summary: A suite for network inference from transcriptomics data
+Home-page: https://github.com/smgroves/BooleaBayes
+Author: Sarah Groves
+Author-email: sarahmaddoxgroves@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: seaborn
+Requires-Dist: anndata
+Requires-Dist: leidenalg
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: umap-learn
+Requires-Dist: graph-tool
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: cython
+Requires-Dist: numba
+Requires-Dist: scikit-learn
+Requires-Dist: h5py
+Requires-Dist: click
+Requires-Dist: cellrank
+Requires-Dist: magic-impute
+Requires-Dist: networkx
+
+# BooleaBayes
+ Refactored suite of network inference tools from Wooten, Groves et al. (2019)
