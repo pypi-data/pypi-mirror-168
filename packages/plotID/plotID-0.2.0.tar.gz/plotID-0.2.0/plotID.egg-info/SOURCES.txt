@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+plotID.egg-info/PKG-INFO
+plotID.egg-info/SOURCES.txt
+plotID.egg-info/dependency_links.txt
+plotID.egg-info/requires.txt
+plotID.egg-info/top_level.txt
+plotid/__init__.py
+plotid/create_id.py
+plotid/plotoptions.py
+plotid/publish.py
+plotid/save_plot.py
+plotid/tagplot.py
+plotid/tagplot_image.py
+plotid/tagplot_matplotlib.py
