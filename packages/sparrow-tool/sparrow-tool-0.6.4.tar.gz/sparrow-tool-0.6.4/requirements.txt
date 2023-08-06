@@ -1,0 +1,26 @@
+pyyaml
+pandas
+numpy
+colour
+pendulum
+twine
+colorlog
+concurrent-log-handler
+Deprecated
+fire
+Faker>=13.0.0
+fake-headers
+ml-collections>=0.1.1
+rich
+orjson
+ordered-set
+objprint
+attrs
+chevron
+marisa-trie==0.7.7
+docker
+asciinema
+alive-progress==2.4.1
+awkward
+memray
+#modin[all] # accelerate pandas
