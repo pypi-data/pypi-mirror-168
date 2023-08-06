@@ -1,0 +1,2 @@
+class NotSafeLoadException(Exception):
+    pass

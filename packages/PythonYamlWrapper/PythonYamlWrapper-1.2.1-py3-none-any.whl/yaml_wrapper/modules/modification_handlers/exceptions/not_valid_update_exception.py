@@ -1,0 +1,2 @@
+class NotValidUpdateException(Exception):
+    pass

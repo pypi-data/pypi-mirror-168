@@ -1,0 +1,2 @@
+class NotValidRemoveException(Exception):
+    pass

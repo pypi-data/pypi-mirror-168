@@ -1,0 +1,2 @@
+class WritingYamlException(Exception):
+    pass

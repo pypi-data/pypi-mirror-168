@@ -1,0 +1,2 @@
+class RuleNotFoundException(Exception):
+    pass
