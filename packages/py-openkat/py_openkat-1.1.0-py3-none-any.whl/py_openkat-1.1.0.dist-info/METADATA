@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: py-openkat
+Version: 1.1.0
+Summary: 
+Author: Donny Peeters
+Author-email: donny.peeters@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Django (==3.2.15)
+Requires-Dist: SQLAlchemy (>=1.4.41,<2.0.0)
+Requires-Dist: alembic (>=1.8.1,<2.0.0)
+Requires-Dist: ares (>=0.7.1)
+Requires-Dist: beautifulsoup4 (>=4.11.1)
+Requires-Dist: colorama (>=0.4.5)
+Requires-Dist: cwe (>=1.6)
+Requires-Dist: django-markdownify (>=0.9.1)
+Requires-Dist: django-otp (>=1.1.3)
+Requires-Dist: django-password-validators (>=1.7.0)
+Requires-Dist: django-two-factor-auth (>=1.14.0)
+Requires-Dist: dnspython (>=2.1.0)
+Requires-Dist: mmh3 (>=3.0.0,<4.0.0)
+Requires-Dist: phonenumbers (>=8.12.55,<9.0.0)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: python-gettext (>=4.1,<5.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Openkat
+
+An experimental sandbox environment to easily experiment with (some) functionality of [openkat](https://openkat.nl/).
+This version of openkat runs all services in a single process and replaces services such as
+[Bytes](https://github.com/minvws/nl-kat-bytes), Rabbitmq and Celery with an in-memory implementation.
+As a consequence, the current version does not guarantee persistence beyond the lifetime of the process.
+It speaks for itself that this library **should not be used in a production environment**.
+To properly deploy an openkat instance,
+please refer to the [official documentation](https://github.com/minvws/nl-kat-coordination) on Github.
+
+
+## Features
+
+These features of openkat are currently present in this package:
+- The Rocky interface: UI around reporting on Findings
+- The Octopoes models: for modelling the Objects Of Interest (OOIs)
+- The Boefjes/Normalizers: the python scripts that find OOIs (excluding the containerized versions)
+- The Scheduler: dispatching Boefjes and Normalizers automatically
+
+The benefits and extra features of this package are:
+- Lightweight: a single process for the app, reducing overhead of the official services and installation times
+- A default superuser and development organization
+- OTP disabled to optimize for restarting the service even after an update
+- Docker not a dependency
+- Adding plugins by creating plugins in a custom `plugins` folder
+
+However, some features are excluded from this version:
+- Bytes: the raw data store, which has been replaced by an in-memory variant
+- Bits
+- Dockerized boefjes
+- Deletion Propagation: you have to manually delete every single OOI
+- ScanProfile inheritance: you have to manually add scan profiles to observed OOIs
+- Valid times: you cannot browse the OOI history through time
+- Multiple organizations
+- Some miscellaneous functionality, such as filtering in the UI
+
+
+## Installation
+
+```shell
+$ pip install openkat
+```
+
+### Running the server
+
+To start the instance, run
+
+```shell
+$ python -m openkat
+```
+
+and navigate to http://localhost:8000.
+
+
+
+## Contributing
+
+Dependencies:
+- `poetry`
+- `yarn`
+
+
+To setup a development environment, run
+```shell
+$ make init
+```
+
+To build, run
+```shell
+$ make build
+```
+
