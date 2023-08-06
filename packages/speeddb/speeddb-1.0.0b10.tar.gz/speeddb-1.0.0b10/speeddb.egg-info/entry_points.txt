@@ -1,0 +1,3 @@
+[console_scripts]
+speeddb = speeddb.cli:runner
+
