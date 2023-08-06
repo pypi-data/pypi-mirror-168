@@ -1,0 +1,9 @@
+README.md
+setup.py
+nwac/__init__.py
+nwac/source.py
+nwac.egg-info/PKG-INFO
+nwac.egg-info/SOURCES.txt
+nwac.egg-info/dependency_links.txt
+nwac.egg-info/requires.txt
+nwac.egg-info/top_level.txt
