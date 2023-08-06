@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: vedro-dependency-finder
+Version: 0.1.0
+Summary: Plugin helps to find dependencies of unstable tests by shuffling selected tests
+Home-page: https://github.com/2gis-test-labs/vedro-dependency-finder
+Author: 2GIS Test Labs
+Author-email: test-labs@2gis.ru
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: vedro (<2.0,>=1.7)
+
+# Vedro Dependency Finder
+
+Plugin helps to find dependencies of unstable tests by shuffling selected tests
+
+## Installation
+
+```shell
+$ pip3 install vedro-dependency-finder
+```
+
+## Usage
+
+```python
+import vedro
+import vedro_dependency_finder as df
+
+
+class Config(vedro.Config):
+    class Plugins(vedro.Config.Plugins):
+        class DependencyFinder(df.DependencyFinder):
+            enabled = True
+
+```
+Run several scenarios:
+```shell
+$ vedro run --dependency-finder scenarios/scenario.py scenarios/another_scenario.py
+```
+
+Run all scenarios:
+```shell
+$ vedro run -vvv --dependency-finder `find scenarios -name "*.py"`
+```
