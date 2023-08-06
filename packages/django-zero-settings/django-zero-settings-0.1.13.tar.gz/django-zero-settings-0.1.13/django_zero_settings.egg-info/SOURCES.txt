@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_zero_settings.egg-info/PKG-INFO
+django_zero_settings.egg-info/SOURCES.txt
+django_zero_settings.egg-info/dependency_links.txt
+django_zero_settings.egg-info/requires.txt
+django_zero_settings.egg-info/top_level.txt
+zero_settings/__init__.py
+zero_settings/settings.py
