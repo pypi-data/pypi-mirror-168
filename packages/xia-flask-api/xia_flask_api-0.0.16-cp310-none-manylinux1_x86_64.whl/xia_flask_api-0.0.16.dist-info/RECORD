@@ -1,0 +1,10 @@
+xia_flask_api/__init__.py,sha256=qdPzz-SvUymPkSXTzMeEtRvNXNs8H0T7Gm_xinFClmc,87
+xia_flask_api/rest.cpython-310-x86_64-linux-gnu.so,sha256=erukzkwTz7oOjFLvLgPDAMYNfpISTQPeCLBx7OgI55I,862728
+xia_flask_api/task.cpython-310-x86_64-linux-gnu.so,sha256=8wSD1rTbFMhjpD5zLD1rEIkEJ0GOIB1mxsdJM3yWHnw,793096
+xia_flask_api/token.cpython-310-x86_64-linux-gnu.so,sha256=_46colZWI-NZ6LljEHrBajx-tYzDFFivUjh4t8yRVoM,793096
+xia_flask_api/tools.cpython-310-x86_64-linux-gnu.so,sha256=BrJ_uohjJyx6gAzt-gZ17rTNnb_SQK4uwZiJmFtnM3M,760296
+xia_flask_api-0.0.16.dist-info/LICENSE,sha256=V9bZpEiAA8uZ_Gswndg8Sn9xRCBuuyspHG8ojFta5Bg,158
+xia_flask_api-0.0.16.dist-info/METADATA,sha256=bMAhfVPHdqi5fN6gDKzRp55y2Q1zEVqlQYhlacP3EXY,573
+xia_flask_api-0.0.16.dist-info/WHEEL,sha256=Kn0XEVEprF3m5Ls7p1vDRSgmlko_ccaWbbQdh4VEEUE,108
+xia_flask_api-0.0.16.dist-info/top_level.txt,sha256=VbL7ds4aMHgNyykghlnJw3BAKARqZrSa4-Cisprzc5o,14
+xia_flask_api-0.0.16.dist-info/RECORD,,
