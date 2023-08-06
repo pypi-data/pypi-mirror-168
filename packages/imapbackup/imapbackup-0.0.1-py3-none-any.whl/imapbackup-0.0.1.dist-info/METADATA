@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: imapbackup
+Version: 0.0.1
+Summary: Download all emails from IMAP server, and save email to .eml file.
+Home-page: UNKNOWN
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Keywords: zenutils
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: imapclient
+
+# imapbackup
+
+Download all emails from IMAP server, and save email to .eml file.
+
+## Install
+
+```
+pip install imapbackup
+```
+
+## Release
+
+### v0.0.1
+
+- Package name conflict test.
+
+
