@@ -1,0 +1,24 @@
+pymeshup/GUI.py,sha256=YXaHKadK-YMPKuqlSnJ8bJPBtpDX8-ykDZMVK2qXOfE,80
+pymeshup/__init__.py,sha256=BsmO587WoTNEW9jnWjMIFzomc6whsPX0sPBSfDZe2Vo,777
+pymeshup/frames.py,sha256=cklYf54Lx0vycW2L-UkwERf1YU3xgtXU8MpeQKnnk-k,1937
+pymeshup/hull.py,sha256=PoEH_kPRzjA-ek8zKkFWQ_sJucJb9Y7VoIfrEUqJ6z4,3808
+pymeshup/hull_builder.py,sha256=FSefKMn91yr6X_oY6lFLAwJ-PBzI5XJGbqYNJc3bUik,4524
+pymeshup/skeleton.py,sha256=nZqSKZxDaTWGrF0kJed1_jXVIsqK2gJ4_Yll0sNJ-xs,4369
+pymeshup/volumes.py,sha256=igeQ2jFI0cJBK0q05JIM6-KTXbNSAvPmbjGdnKrxmKs,4813
+pymeshup/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymeshup/gui/main.py,sha256=_ko8Jw_oqMrzmhY1l3Y9kyIwWFGzD0GdBwaZ9E0j6_A,16226
+pymeshup/gui/examples/cheetah.stl,sha256=uJMU4AU9pSzSO9UHTaDMY1MXRZxzQZvsadm0_RTOGwc,149784
+pymeshup/gui/examples/create tank in a given hull-shape.pym,sha256=bFgCNYy7vn5c_9K4nMuXYlIUw2bo22JE_BWZ0c2CVcc,1563
+pymeshup/gui/examples/make diffraction mesh.pym,sha256=a9Gv9T8H5I81Dr-u5AOZs3jGlKAGKgHVLIHnDqKmcmk,217
+pymeshup/gui/examples/pontoon from frames.pym,sha256=MoUx2hAjgVSHclwNpg94poyjkoGCVqG7CStmc0kDuOI,917
+pymeshup/gui/examples/simple.pym,sha256=HFYKQQzCQAWf1JFZ6EdcefwOnJdJGsHJRlySaAkqxCM,120
+pymeshup/gui/forms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymeshup/gui/forms/main_form.py,sha256=hOWPkn2oiNkLExeZ5wrdml2qbdaQ0iQSI7a5xUE-gns,15531
+pymeshup/gui/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymeshup/gui/helpers/highlighter.py,sha256=d3w96qCKBErGr7eMhNxqlv6owwM46ORZmC6DBvBowUs,10537
+pymeshup/gui/helpers/vtkBlenderLikeInteractionStyle.py,sha256=NfFE9FVjZIWI_erYFA_0q80PCDp6Qmfj8EMJVDXHUps,45280
+pymeshup-0.3.2.dist-info/LICENSE.txt,sha256=GQUitploe4IZyUoVdhV85fwrsPfBGRTu4LvmK6mCbjI,16284
+pymeshup-0.3.2.dist-info/METADATA,sha256=PqLxqa0jAoj3nKS08EYftkcGtIiVEn4t69lNE6BUano,2343
+pymeshup-0.3.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pymeshup-0.3.2.dist-info/top_level.txt,sha256=e4NohTWG3ewe5uccjI1sFMEh54P-FEhXZUMtqjQcW3s,9
+pymeshup-0.3.2.dist-info/RECORD,,
