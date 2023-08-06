@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bqml-xgboost-predictor
+Version: 0.2.0
+Summary: BQML XGBoost Predictor
+Home-page: https://github.com/GoogleCloudPlatform/bqml-xgboost-predictor
+Author: Google Inc.
+Author-email: no-reply@google.com
+License: Apache 2.0
+Keywords: xgboost bqml
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absl-py
+Requires-Dist: xgboost
+
+# BQML XGBoost predictor
+
+This repository contains a library to serve XGBoost model trained in BQML.
+
+The library performs both preprocessing and postprocessing on the input and
+output of XGBoost model.
+
+
