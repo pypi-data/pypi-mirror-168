@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "objectdetectiontools"
+version = "1.2.5"
+description = "A set of functions useful when doing object detection."
+readme = "README.md"
+authors = [{ name = "Bas Michielsen" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: Free for non-commercial use",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["object detection", "pvoc", "preprocessing"]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://gitlab.com/bazzz/objectdetectiontools"
