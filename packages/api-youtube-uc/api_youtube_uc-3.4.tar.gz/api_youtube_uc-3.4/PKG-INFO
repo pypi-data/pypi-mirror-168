@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: api_youtube_uc
+Version: 3.4
+Summary: Upload shorts video to the YouTube channel
+Home-page: UNKNOWN
+Author: ArtDanger
+Author-email: danya221299@gmail.com
+License: UNKNOWN
+Keywords: python,selenium,youtube studio,youtube,api,upload,video,shorts video,auth google,undetected_chromedriver,uc,api_youtube_uc,api_youtube,youtube_api,api youtube,youtube api
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+This API doesn't use API owned by YouTube. It uses "undetected_chromedriver"(basic Selenium).
+
+This project public the shorts video to the YouTube.
+You'll need: @gmail, Password and backup_code.
+
+What to get a backup code, enable in your account settings:
+1.Manage your Google Account
+2.Security
+3.2-Step Verification(Turn On)
+
+The program has been tested in the Netherlands and expects you to use English.
+
+I failed to add (--headless) to selenium driver.
+Google don't pass. AND YOU!!! YES you're knowing how to solve this problem.
+Offer solutions!
+
+#How use? 
+1. pip install api-youtube-uc
+2. Create YouTube channel(go to the YouTube Studio for the first time)
+3. Watch file example "main.py"
+
+

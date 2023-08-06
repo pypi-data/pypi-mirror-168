@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+api_youtube_uc/__init__.py
+api_youtube_uc/exceptions.py
+api_youtube_uc/selenium_driver.py
+api_youtube_uc/youtube_api.py
+api_youtube_uc.egg-info/PKG-INFO
+api_youtube_uc.egg-info/SOURCES.txt
+api_youtube_uc.egg-info/dependency_links.txt
+api_youtube_uc.egg-info/requires.txt
+api_youtube_uc.egg-info/top_level.txt
