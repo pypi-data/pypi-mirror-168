@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: subcellular-sprawl
+Version: 0.5
+Summary: Subcellular Patterning Ranked Analysis With Labels
+Author: Rob Bierman
+Author-email: rbierman@stanford.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: pandas (>=1.1)
+Requires-Dist: scipy (>=1.5)
+Requires-Dist: statsmodels (>=0.12)
+Requires-Dist: shapely (>=1.8)
+Requires-Dist: matplotlib (>=3.3)
+Requires-Dist: seaborn (>=0.11)
+Requires-Dist: h5py (>=2.10)
+Requires-Dist: importlib-resources (>=5.4)
+Requires-Dist: click (>=8.0)
+Requires-Dist: pysam (>=0.19)
+
+<!-- [![codecov](https://codecov.io/gh/r-bierman/SRRS/branch/main/graph/badge.svg?token=MGBPS830R9)](https://codecov.io/gh/r-bierman/SRRS) -->
+
+## SPRAWL - Subcellular Patterning Ranked Analysis With Labels
+
+
+
+Install locally with
+
+source .venv/bin/activate
+
+pip install -e .
+
