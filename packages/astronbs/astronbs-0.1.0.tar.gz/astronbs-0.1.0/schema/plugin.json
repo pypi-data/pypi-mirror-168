@@ -1,0 +1,23 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "astronbs",
+  "description": "astronbs settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false,
+  "jupyter.lab.menus": {
+    "main": [
+      {
+        "id": "jp-mainmenu-myextension",
+        "label": "Astro",
+        "items": [
+          {
+            "command": "astronbs:reduction_template",
+            "rank": 500
+          }
+        ],
+        "rank": 50
+      }
+    ]
+  }
+}
