@@ -1,0 +1,27 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "wooty_woot",
+  "description": "wooty_woot settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false,
+  "jupyter.lab.menus": {
+    "main": [
+      {
+        "id": "jp-mainmenu-myextension",
+        "label": "My Menu",
+        "items": [
+          {
+            "command": "wooty_woot:open",
+            "rank": 500
+          },
+          {
+            "command": "wooty_woot:open2",
+            "rank": 500
+          }
+        ],
+        "rank": 40
+      }
+    ]
+  }
+}
