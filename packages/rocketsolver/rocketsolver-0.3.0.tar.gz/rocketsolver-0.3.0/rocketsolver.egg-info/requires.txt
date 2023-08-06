@@ -1,0 +1,11 @@
+numpy
+pandas
+fluids
+matplotlib
+plotly
+scipy
+
+[dev]
+black
+pytest
+bumpver
