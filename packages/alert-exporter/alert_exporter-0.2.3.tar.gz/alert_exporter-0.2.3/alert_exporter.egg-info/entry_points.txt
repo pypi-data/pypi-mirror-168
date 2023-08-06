@@ -1,0 +1,2 @@
+[console_scripts]
+alert-exporter = alert_exporter.cli:main
