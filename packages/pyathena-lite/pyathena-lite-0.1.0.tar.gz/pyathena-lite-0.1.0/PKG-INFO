@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyathena-lite
+Version: 0.1.0
+Summary: Simple pyathena connector
+Author: Prabhu 
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pyathena (>=2.14.0,<3.0.0)
+Requires-Dist: pytest (>=7.1.3,<8.0.0)
+Description-Content-Type: text/markdown
+
+
