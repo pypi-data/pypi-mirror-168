@@ -1,0 +1,9 @@
+README.md
+setup.py
+adaptivecard/__init__.py
+adaptivecard/classes.py
+adaptivecard/exceptions.py
+adaptivecard.egg-info/PKG-INFO
+adaptivecard.egg-info/SOURCES.txt
+adaptivecard.egg-info/dependency_links.txt
+adaptivecard.egg-info/top_level.txt
