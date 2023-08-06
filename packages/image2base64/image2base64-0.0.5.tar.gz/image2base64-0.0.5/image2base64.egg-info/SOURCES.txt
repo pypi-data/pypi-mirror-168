@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+image2base64/__init__.py
+image2base64/converters.py
+image2base64/utils.py
+image2base64.egg-info/PKG-INFO
+image2base64.egg-info/SOURCES.txt
+image2base64.egg-info/dependency_links.txt
+image2base64.egg-info/requires.txt
+image2base64.egg-info/top_level.txt
