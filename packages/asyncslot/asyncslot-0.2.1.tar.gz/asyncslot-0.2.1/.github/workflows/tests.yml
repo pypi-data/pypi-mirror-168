@@ -1,0 +1,63 @@
+name: tests
+on: [push]
+
+jobs:
+  Unit-Tests:
+    name: Python-${{ matrix.python-version }}-${{ matrix.qt-binding }}-${{ matrix.platform }}
+    runs-on: ${{ matrix.platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        qt-binding: [PyQt5, PyQt6, PySide2, PySide6]
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.11.0-rc.1']
+        platform: [ubuntu-latest, macos-latest, windows-latest]
+        exclude:
+          - qt-binding: PySide6
+            python-version: '3.11.0-rc.1'
+          - qt-binding: PySide2
+            platform: windows-latest
+            python-version: '3.11.0-rc.1'
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
+      - name: Install Qt dependencies
+        if: ${{ matrix.platform == 'ubuntu-latest' }}
+        run: sudo apt-get install libgl1-mesa-dev
+        # run: sudo apt-get install libx11-xcb-dev libglu1-mesa-dev
+        # run: sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
+      - name: Install Qt binding
+        run: pip install ${{ matrix.qt-binding }}
+      - name: Install Python packages
+        run: pip install coverage
+      - name: Run unit tests
+        run: coverage run --source=src --append --branch -m unittest discover -s tests
+        env:
+          TEST_QT_MODULE: ${{ matrix.qt-binding }}
+          PYTHONPATH: src
+      - name: Run GUI tests
+        if: ${{ matrix.platform != 'ubuntu-latest' }}
+        run: coverage run --source=src --append --branch tests/gui_test_clicked.py
+        env:
+          TEST_QT_MODULE: ${{ matrix.qt-binding }}
+          PYTHONPATH: src
+      - name: Run asyncio test suite
+        if: ${{ matrix.platform != 'windows-latest' }}
+        run: python tests/asyncio_tests.py
+        env:
+          ASYNCSLOT_QTBINDING: ${{ matrix.qt-binding }}
+          PYTHONPATH: src
+      - name: Generate coverage report
+        run: coverage lcov
+      - name: Upload coverage report
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage.lcov
+          fail_ci_if_error: true
+          verbose: true
