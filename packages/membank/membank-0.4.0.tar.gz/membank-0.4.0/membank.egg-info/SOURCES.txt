@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+membank/__init__.py
+membank/datamapper.py
+membank/datamethods.py
+membank/errors.py
+membank/interface.py
+membank.egg-info/PKG-INFO
+membank.egg-info/SOURCES.txt
+membank.egg-info/dependency_links.txt
+membank.egg-info/requires.txt
+membank.egg-info/top_level.txt
