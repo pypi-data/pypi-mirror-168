@@ -1,0 +1,11 @@
+autopep8
+dataclasses
+func_timeout
+getmac
+paho-mqtt
+pylint
+pytest
+requests
+termcolor
+tqdm
+zeroconf

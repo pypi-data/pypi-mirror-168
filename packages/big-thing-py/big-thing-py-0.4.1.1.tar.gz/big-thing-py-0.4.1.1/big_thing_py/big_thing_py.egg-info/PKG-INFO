@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: big-thing-py
+Version: 0.4.1.1
+Summary: SoPIoT Thing SDK
+Home-page: https://iris.snu.ac.kr
+Author: caplab
+Author-email: caplab94@gmail.com
+License: MIT
+Description: # Python package for SoPIoT big-thing-py project
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
