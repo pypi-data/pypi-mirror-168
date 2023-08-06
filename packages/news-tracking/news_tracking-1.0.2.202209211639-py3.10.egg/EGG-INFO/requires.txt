@@ -1,0 +1,8 @@
+document_tracking==1.0.2.202208310824
+document_tracking_resources==1.0.1.202208310822
+matplotlib==3.6.0
+numpy==1.23.3
+pandas==1.5.0
+scikit_learn==1.1.2
+setuptools==53.0.0
+tqdm==4.64.1
