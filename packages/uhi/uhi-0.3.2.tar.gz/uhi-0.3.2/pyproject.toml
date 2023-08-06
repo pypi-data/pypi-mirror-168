@@ -1,0 +1,83 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uhi"
+version = "0.3.2"
+description = "Unified Histogram Interface: tools to help library authors work with histograms"
+authors = [
+  {name="Henry Schreiner", email="henryschreineriii@gmail.com"},
+  {name="Hans Dembinski", email="hans.dembinski@gmail.com"},
+  {name="Jim Pivaski", email="pivarski@princeton.edu"},
+]
+maintainers = [
+  {name="The Scikit-HEP admins", email="scikit-hep-admins@googlegroups.com"},
+]
+requires-python = ">=3.6"
+readme = "README.md"
+license = {file="LICENSE"}
+dependencies = [
+  "numpy>=1.13.3",
+  "typing-extensions>=3.7; python_version<'3.8'",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/Scikit-HEP/uhi"
+Repository = "https://github.com/Scikit-HEP/uhi"
+Documentation = "https://uhi.readthedocs.io/en/latest/"
+Changelog = "https://github.com/scikit-hep/uhi/releases"
+
+[project.optional-dependencies]
+docs = [
+  "sphinx>=4.0",
+  "sphinx-book-theme>=0.0.40",
+  "sphinx-copybutton>=0.3.1",
+]
+test = [
+  "pytest>=6",
+  "importlib-metadata>=1.0; python_version<'3.8'",
+  "boost-histogram>=1.0",
+]
+
+
+[tool.pdm.dev-dependencies]
+dev = [
+  "pytest>=6",
+  "importlib-metadata>=1.0; python_version<'3.8'",
+  "boost-histogram>=1.0",
+]
+
+
+[tool.pytest.ini_config]
+minversion = "6.0"
+addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
+xfail_strict = true
+filterwarnings = ["error"]
+testpaths = ["tests"]
+
+
+[tool.isort]
+profile = "black"
+
+
+[tool.mypy]
+files = "src"
+python_version = "3.6"
+warn_unused_configs = "true"
+strict = true
