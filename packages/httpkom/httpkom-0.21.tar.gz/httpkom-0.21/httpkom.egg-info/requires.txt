@@ -1,0 +1,5 @@
+pylyskom>=0.8
+Flask>=2.2.2
+Hypercorn>=0.14.3
+six>=1.14.0
+Quart>=0.18.0
