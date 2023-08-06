@@ -1,0 +1,84 @@
+[project]
+name = "nqsdk"
+version = "1.0.0-alpha-2"
+authors = [
+  {name="Inqana Ltd.", email="develop@inqana.com"},
+]
+description = "NQ SDK"
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = [
+  "jsonschema >= 4.15",
+  "pytz",
+  "requests >= 2.28",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+]
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = true
+
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+
+[tool.setuptools.package-data]
+nqsdk = ["*.json"]
+
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+extend-exclude = """
+^/.venv/
+"""
+
+
+[tool.isort]
+profile = "black"
+verbose = false
+py_version = "310"
+skip_gitignore = true
+line_length = 100
+use_parentheses = true
+include_trailing_comma = true
+known_first_party = [
+    "abstract",
+    "dummy",
+]
+known_third_party = []
+sections = [
+    "FUTURE",
+    "STDLIB",
+    "THIRDPARTY",
+    "FIRSTPARTY",
+    "LOCALFOLDER"
+]
+no_lines_before = "LOCALFOLDER"
+
+
+[tool.pytest.ini_options]
+addopts = [
+    # Stop after first fail
+    "-x",
+    # Prevent stdout capturing during normal run (w/o failures)
+    "-s",
+    # Verbose output
+    # "-v",
+]
+testpaths = [
+    "tests",
+]
