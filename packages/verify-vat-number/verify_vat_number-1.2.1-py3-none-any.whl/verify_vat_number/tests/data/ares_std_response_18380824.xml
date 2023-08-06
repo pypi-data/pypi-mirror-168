@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf8"?>
+<are:Ares_odpovedi xmlns:are="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer/v_1.0.1" xmlns:dtt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_datatypes/v_1.0.4" xmlns:udt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" odpoved_datum_cas="2022-09-19T13:48:42" odpoved_pocet="1" odpoved_typ="Standard" vystup_format="XML" xslt="klient" validation_XSLT="/ares/xml_doc/schemas/ares/ares_answer/v_1.0.0/ares_answer.xsl" xsi:schemaLocation="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer/v_1.0.1 http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer/v_1.0.1/ares_answer_v_1.0.1.xsd" Id="ares">
+  <are:Odpoved>
+    <are:Pocet_zaznamu>1</are:Pocet_zaznamu>
+    <are:Typ_vyhledani>FREE</are:Typ_vyhledani>
+    <are:Zaznam>
+      <are:Shoda_ICO>
+        <dtt:Kod>9</dtt:Kod>
+      </are:Shoda_ICO>
+      <are:Vyhledano_dle>ICO</are:Vyhledano_dle>
+      <are:Typ_registru>
+        <dtt:Kod>23</dtt:Kod>
+        <dtt:Text>RŠ</dtt:Text>
+      </are:Typ_registru>
+      <are:Datum_vzniku>2002-11-21</are:Datum_vzniku>
+      <are:Datum_platnosti>2022-09-19</are:Datum_platnosti>
+      <are:Pravni_forma>
+        <dtt:Kod_PF>331</dtt:Kod_PF>
+      </are:Pravni_forma>
+      <are:Obchodni_firma>Gymnázium a Střední odborná škola, Podbořany, příspěvková organizace</are:Obchodni_firma>
+      <are:ICO>18380824</are:ICO>
+      <are:Identifikace>
+        <are:Adresa_ARES>
+          <dtt:ID_adresy>802814662</dtt:ID_adresy>
+          <dtt:Kod_statu>203</dtt:Kod_statu>
+          <dtt:Nazev_okresu>Louny</dtt:Nazev_okresu>
+          <dtt:Nazev_obce>Podbořany</dtt:Nazev_obce>
+          <dtt:Nazev_casti_obce>Podbořany</dtt:Nazev_casti_obce>
+          <dtt:Nazev_ulice>Kpt. Jaroše</dtt:Nazev_ulice>
+          <dtt:Cislo_domovni>862</dtt:Cislo_domovni>
+          <dtt:Typ_cislo_domovni>1</dtt:Typ_cislo_domovni>
+          <dtt:PSC>44101</dtt:PSC>
+          <dtt:Adresa_textem>44101 Podbořany,Kpt. Jaroše 862</dtt:Adresa_textem>
+          <dtt:Adresa_UIR>
+            <udt:Kod_oblasti>43</udt:Kod_oblasti>
+            <udt:Kod_kraje>60</udt:Kod_kraje>
+            <udt:Kod_okresu>3507</udt:Kod_okresu>
+            <udt:Kod_obce>566616</udt:Kod_obce>
+            <udt:Kod_casti_obce>409120</udt:Kod_casti_obce>
+            <udt:PSC>44101</udt:PSC>
+            <udt:Kod_ulice>274321</udt:Kod_ulice>
+            <udt:Cislo_domovni>862</udt:Cislo_domovni>
+            <udt:Typ_cislo_domovni>1</udt:Typ_cislo_domovni>
+            <udt:Kod_adresy>09253980</udt:Kod_adresy>
+            <udt:Kod_objektu>09202544</udt:Kod_objektu>
+          </dtt:Adresa_UIR>
+        </are:Adresa_ARES>
+      </are:Identifikace>
+      <are:Priznaky_subjektu>NNAANZNNNNAANNNNNNNNPNANANNNNN</are:Priznaky_subjektu>
+    </are:Zaznam>
+  </are:Odpoved>
+</are:Ares_odpovedi>
