@@ -1,0 +1,2 @@
+[console_scripts]
+vwsfriend = vwsfriend.vwsfriend_base:main
