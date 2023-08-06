@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+zmpe/__init__.py
+zmpe/zm.py
+zmpe/zm_lib.py
+zmpe.egg-info/PKG-INFO
+zmpe.egg-info/SOURCES.txt
+zmpe.egg-info/dependency_links.txt
+zmpe.egg-info/not-zip-safe
+zmpe.egg-info/top_level.txt
