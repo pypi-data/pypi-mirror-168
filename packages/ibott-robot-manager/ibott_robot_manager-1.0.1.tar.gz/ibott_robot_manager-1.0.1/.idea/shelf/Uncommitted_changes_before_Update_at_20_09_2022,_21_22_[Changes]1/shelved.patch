@@ -1,0 +1,25 @@
+Index: ../Robot-framework/robot/robot.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from iBott.robot_activities import Robot, RobotException, Robotmethod, get_all_Methods, get_instances\nfrom iBott.browser_activities import ChromeBrowser\nfrom iBott.email_activities import Mail\nimport robot.settings as settings\n\n\nclass Main(Robot):\n    def __init__(self, args):\n        self.methods = get_all_Methods(self)\n        if args is not None:\n            self.robotId = args['RobotId']\n            self.ExecutionId = args['ExecutionId']\n            self.url = args['url']\n            self.username = args['username']\n            self.password = args['password']\n            self.robotParameters = args['params']\n            super().__init__(robotId=self.robotId, ExecutionId=self.ExecutionId, url=self.url,\n                             username=self.username, password=self.password,\n                             params=self.robotParameters)\n        else:\n            super().__init__()\n\n    @Robotmethod\n    def cleanup(self):\n        \"\"\"Clean system before executing the robot\"\"\"\n\n        pass\n\n    @Robotmethod\n    def start(self):\n        \"\"\"Init variables, instance objects and start the applications you are going to work with\"\"\"\n\n        self.browser = ChromeBrowser()\n        self.browser.open()\n\n        pass\n\n    @Robotmethod\n    def process(self):\n        \"\"\"Run robot process\"\"\"\n\n\n    @Robotmethod\n    def end(self):\n        \"\"\"Finish robot execution, cleanup environment, close applications and send reports\"\"\"\n\n\n\nclass BusinessException(RobotException):\n    \"\"\"Manage Exceptions Caused by business errors\"\"\"\n\n    def _init__(self,  message, action):\n        super().__init__(get_instances(Main), action)\n        self.action = action\n        self.message = message\n        self.processException()\n\n    def processException(self):\n        \"\"\"Write action when a Business exception occurs\"\"\"\n\n        self.Log.businessException(self.message)\n\n\nclass SystemException(RobotException):\n    \"\"\"Manage Exceptions Caused by system errors\"\"\"\n\n    def __init__(self, message, action):\n        super().__init__(get_instances(Main), action)\n        self.retry_times = settings.RETRY_TIMES\n        self.action = action\n        self.message = message\n        self.processException()\n\n    def processException(self):\n        \"\"\"Write action when a system exception occurs\"\"\"\n\n        self.reestart(self.retry_times)\n        self.Log.systemException(self.message)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Robot-framework/robot/robot.py b/../Robot-framework/robot/robot.py
+--- a/../Robot-framework/robot/robot.py	
++++ b/../Robot-framework/robot/robot.py	
+@@ -1,6 +1,5 @@
+ from iBott.robot_activities import Robot, RobotException, Robotmethod, get_all_Methods, get_instances
+ from iBott.browser_activities import ChromeBrowser
+-from iBott.email_activities import Mail
+ import robot.settings as settings
+ 
+ 
+@@ -45,7 +44,6 @@
+         """Finish robot execution, cleanup environment, close applications and send reports"""
+ 
+ 
+-
+ class BusinessException(RobotException):
+     """Manage Exceptions Caused by business errors"""
+ 
