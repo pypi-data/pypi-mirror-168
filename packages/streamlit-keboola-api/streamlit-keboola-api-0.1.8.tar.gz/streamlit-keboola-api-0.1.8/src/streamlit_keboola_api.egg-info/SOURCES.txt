@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/keboola_api/__init__.py
+src/keboola_api/frontend/index.html
+src/keboola_api/frontend/main.js
+src/keboola_api/frontend/streamlit-component-lib.js
+src/keboola_api/frontend/style.css
+src/keboola_api/frontend/static/icok.png
+src/streamlit_keboola_api.egg-info/PKG-INFO
+src/streamlit_keboola_api.egg-info/SOURCES.txt
+src/streamlit_keboola_api.egg-info/dependency_links.txt
+src/streamlit_keboola_api.egg-info/requires.txt
+src/streamlit_keboola_api.egg-info/top_level.txt
