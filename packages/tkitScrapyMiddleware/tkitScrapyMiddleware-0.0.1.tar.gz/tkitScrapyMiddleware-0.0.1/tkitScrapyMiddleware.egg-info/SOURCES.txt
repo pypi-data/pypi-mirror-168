@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tkitScrapyMiddleware/__init__.py
+tkitScrapyMiddleware/proxy.py
+tkitScrapyMiddleware.egg-info/PKG-INFO
+tkitScrapyMiddleware.egg-info/SOURCES.txt
+tkitScrapyMiddleware.egg-info/dependency_links.txt
+tkitScrapyMiddleware.egg-info/top_level.txt
