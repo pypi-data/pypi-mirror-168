@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: trontxsize
+Version: 1.0.1
+Summary: Calculate tron transaction size (bandwidth)
+Home-page: https://github.com/bitcartcc/trontxsize
+Author: MrNaif2018
+Author-email: chuff184@gmail.com
+License: MIT
+Keywords: tron,trx,bitcartcc,bandwidth
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: protobuf (<4,>=3.12)
+Requires-Dist: base58
+
+# trontxsize - Calculate tron transaction size in bytes
+
+[![CircleCI](https://circleci.com/gh/bitcartcc/trontxsize.svg?style=svg)](https://circleci.com/gh/bitcartcc/trontxsize)
+[![Codecov](https://img.shields.io/codecov/c/github/bitcartcc/trontxsize?style=flat-square)](https://codecov.io/gh/bitcartcc/trontxsize)
+[![PyPI version](https://img.shields.io/pypi/v/trontxsize.svg?style=flat-square)](https://pypi.python.org/pypi/trontxsize/)
+
+In Tron (TRX) network, fee calculation algorithm is complex. And the most complex part of it is that it depends on transaction size.
+
+But there's no method existing to calculate it
+
+This library does just this:
+
+```python
+import trontxsize
+
+print(trontxsize.get_tx_size({"raw_data": ..., "signatures": [...])) # matches bandwidth you see in block explorer
+```
+
+How does it work? The library pre-compiled a trimmed-down version of Tron protobuf and uses it directly to calculate transaction size
+
+## Copyright and License
+
+Copyright (C) 2022 MrNaif2018
+
+Licensed under the [MIT License](LICENSE)
