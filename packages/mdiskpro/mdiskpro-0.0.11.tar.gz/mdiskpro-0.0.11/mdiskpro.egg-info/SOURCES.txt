@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mdiskpro/__init__.py
+mdiskpro/main.py
+mdiskpro.egg-info/PKG-INFO
+mdiskpro.egg-info/SOURCES.txt
+mdiskpro.egg-info/dependency_links.txt
+mdiskpro.egg-info/requires.txt
+mdiskpro.egg-info/top_level.txt
