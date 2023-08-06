@@ -1,0 +1,13 @@
+htrvx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+htrvx/cli.py,sha256=J5Bmv6f7n7_zyedreN80Bg2DRKYklO8xsk9NLzqxLTs,2390
+htrvx/testing.py,sha256=hbUYyyxkIBPUborlNK2qGEeA-6lUEV-1zplm9FMdBnk,10838
+htrvx/zones.py,sha256=vhTWoqdoQkBFQlWl_pqbp_Itdv7GEJBU9Oam2J15_-I,8019
+htrvx/schemas/__init__.py,sha256=Um8h6vC2pmEIqjZ0Xo-VdRLVbzQ6h6rJnGblEfRF1cM,2113
+htrvx/schemas/alto4.xsd,sha256=Sdq_FOHgK0jmML92hJefQ8tyAtL5JlssuV5UQB5BaoU,54422
+htrvx/schemas/page2019.xsd,sha256=SmYRk98ZcwbsMeit0-hKi9crxmZu1x6tAV8V3HfL4YI,85745
+htrvx-0.0.13.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+htrvx-0.0.13.dist-info/METADATA,sha256=eyizu8JqGbfUjtILpO2SngbzZD0oBpgkf5VOG3R_mX4,4910
+htrvx-0.0.13.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+htrvx-0.0.13.dist-info/entry_points.txt,sha256=yrX9lqnu-NvYGPwWfFjpKN_EQCht3mH9VEf2P0Qt9TY,41
+htrvx-0.0.13.dist-info/top_level.txt,sha256=n-lKYbADCgHjnlkFtduff4GsyMHekjvdx_jjY5RaZVU,6
+htrvx-0.0.13.dist-info/RECORD,,
