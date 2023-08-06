@@ -1,0 +1,2 @@
+libpyvinyl
+openpmd-api~=0.14.0
