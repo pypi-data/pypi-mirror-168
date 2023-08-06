@@ -1,0 +1,11 @@
+onednn_cpu_iomp-2022.2.0.data/data/lib/libdnnl.2.6.dylib,sha256=T-pbUEC-PkRR3kwuboOk6BX9PyrP-7hVAEXZ28uxtzE,106721248
+onednn_cpu_iomp-2022.2.0.data/data/lib/libdnnl.2.dylib,sha256=T-pbUEC-PkRR3kwuboOk6BX9PyrP-7hVAEXZ28uxtzE,106721248
+onednn_cpu_iomp-2022.2.0.data/data/lib/libdnnl.dylib,sha256=T-pbUEC-PkRR3kwuboOk6BX9PyrP-7hVAEXZ28uxtzE,106721248
+onednn_cpu_iomp-2022.2.0.data/data/share/doc/onednn/LICENSE,sha256=3RJFLhrhHjKCJxqliV2BdSlrg-k2oCcgn5OZ0mpAfQ8,11521
+onednn_cpu_iomp-2022.2.0.data/data/share/doc/onednn/README,sha256=fsJL8H0MW9Q1QhppMskIBV6XzKzeizMft5ClsrctB1s,6355
+onednn_cpu_iomp-2022.2.0.data/data/share/doc/onednn/THIRD-PARTY-PROGRAMS,sha256=0YEJW0dBbtk9OTCDxdI_p8Li3WTYdHSkKsXA5_5-CaM,28478
+onednn_cpu_iomp-2022.2.0.dist-info/LICENSE.txt,sha256=7micbUpzQXphq9e_2oL7PpZcvoXzPuQHIDEXyKXC81s,10797
+onednn_cpu_iomp-2022.2.0.dist-info/METADATA,sha256=ssr_BBdzERB5ChgpjvCE2p4LfU-kTxqkfI_eIFufK1I,1274
+onednn_cpu_iomp-2022.2.0.dist-info/WHEEL,sha256=RFHWgnxN0v-d8zGfM3RBbnabJvxz8TihoEHZ2qGBooI,208
+onednn_cpu_iomp-2022.2.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+onednn_cpu_iomp-2022.2.0.dist-info/RECORD,,
