@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+snipit/__init__.py
+snipit/command.py
+snipit.egg-info/PKG-INFO
+snipit.egg-info/SOURCES.txt
+snipit.egg-info/dependency_links.txt
+snipit.egg-info/entry_points.txt
+snipit.egg-info/not-zip-safe
+snipit.egg-info/requires.txt
+snipit.egg-info/top_level.txt
+snipit/scripts/__init__.py
+snipit/scripts/snp_functions.py
