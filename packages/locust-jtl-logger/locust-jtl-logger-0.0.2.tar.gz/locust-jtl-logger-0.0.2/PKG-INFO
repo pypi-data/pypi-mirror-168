@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: locust-jtl-logger
+Version: 0.0.2
+Summary: Locust listener class that logs to a jmeter JTL CSV
+Home-page: https://github.com/hseljenes/locust-jtl-logger
+Author: Henning Seljenes
+Author-email: henning.seljenes@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# locust-jtl-logger
+
