@@ -1,0 +1,195 @@
+{
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot": {
+    "file": "assets/materialdesignicons-webfont.861aea05.eot",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2": {
+    "file": "assets/materialdesignicons-webfont.e52d60f6.woff2",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff": {
+    "file": "assets/materialdesignicons-webfont.48d3eec6.woff",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf": {
+    "file": "assets/materialdesignicons-webfont.bd725a7a.ttf",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf"
+  },
+  "src/main.js": {
+    "file": "assets/main.59a10013.js",
+    "src": "src/main.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/admin.vue",
+      "src/browser.vue",
+      "src/http-error.vue",
+      "src/reader.vue"
+    ],
+    "css": [
+      "assets/main.737b062e.css"
+    ],
+    "assets": [
+      "assets/materialdesignicons-webfont.861aea05.eot",
+      "assets/materialdesignicons-webfont.e52d60f6.woff2",
+      "assets/materialdesignicons-webfont.48d3eec6.woff",
+      "assets/materialdesignicons-webfont.bd725a7a.ttf"
+    ]
+  },
+  "src/admin.vue": {
+    "file": "assets/admin.8a7ca07a.js",
+    "src": "src/admin.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_button.94f39928.js",
+      "src/main.js",
+      "_status-list.963c314e.js",
+      "_VCombobox.ea69ae06.js"
+    ],
+    "css": [
+      "assets/admin.6d195ea9.css"
+    ]
+  },
+  "_button.94f39928.js": {
+    "file": "assets/button.94f39928.js",
+    "imports": [
+      "src/main.js"
+    ],
+    "css": [
+      "assets/button.11428e1d.css"
+    ]
+  },
+  "_status-list.963c314e.js": {
+    "file": "assets/status-list.963c314e.js",
+    "imports": [
+      "_button.94f39928.js",
+      "src/main.js"
+    ],
+    "css": [
+      "assets/status-list.0b75344f.css"
+    ]
+  },
+  "_VCombobox.ea69ae06.js": {
+    "file": "assets/VCombobox.ea69ae06.js",
+    "imports": [
+      "_button.94f39928.js",
+      "src/main.js"
+    ],
+    "css": [
+      "assets/VCombobox.af7038de.css"
+    ]
+  },
+  "src/browser.vue": {
+    "file": "assets/browser.96cd42cd.js",
+    "src": "src/browser.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_button.94f39928.js",
+      "src/main.js",
+      "_metadata-dialog.19649a04.js",
+      "_VCombobox.ea69ae06.js"
+    ],
+    "css": [
+      "assets/browser.fc8afee2.css"
+    ]
+  },
+  "_metadata-dialog.19649a04.js": {
+    "file": "assets/metadata-dialog.19649a04.js",
+    "imports": [
+      "src/main.js",
+      "_button.94f39928.js"
+    ],
+    "dynamicImports": [
+      "src/components/admin/admin-menu.vue"
+    ],
+    "css": [
+      "assets/metadata-dialog.2d9a7a19.css"
+    ]
+  },
+  "src/http-error.vue": {
+    "file": "assets/http-error.b3c3a5dc.js",
+    "src": "src/http-error.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ],
+    "css": [
+      "assets/http-error.07888a50.css"
+    ]
+  },
+  "src/reader.vue": {
+    "file": "assets/reader.655712e3.js",
+    "src": "src/reader.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js",
+      "_button.94f39928.js",
+      "_metadata-dialog.19649a04.js"
+    ],
+    "dynamicImports": [
+      "_vue2-pdf-embed.96d5e7b4.js"
+    ],
+    "css": [
+      "assets/reader.d4181fc1.css"
+    ]
+  },
+  "src/components/admin/admin-menu.vue": {
+    "file": "assets/admin-menu.9aad09cf.js",
+    "src": "src/components/admin/admin-menu.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_button.94f39928.js",
+      "src/main.js",
+      "_status-list.963c314e.js"
+    ],
+    "css": [
+      "assets/admin-menu.39b208d2.css"
+    ]
+  },
+  "_vue2-pdf-embed.96d5e7b4.js": {
+    "file": "assets/vue2-pdf-embed.96d5e7b4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/components/admin/admin-menu.css": {
+    "file": "assets/admin-menu.39b208d2.css",
+    "src": "src/components/admin/admin-menu.css"
+  },
+  "src/http-error.css": {
+    "file": "assets/http-error.07888a50.css",
+    "src": "src/http-error.css"
+  },
+  "src/reader.css": {
+    "file": "assets/reader.d4181fc1.css",
+    "src": "src/reader.css"
+  },
+  "VCombobox.css": {
+    "file": "assets/VCombobox.af7038de.css",
+    "src": "VCombobox.css"
+  },
+  "metadata-dialog.css": {
+    "file": "assets/metadata-dialog.2d9a7a19.css",
+    "src": "metadata-dialog.css"
+  },
+  "status-list.css": {
+    "file": "assets/status-list.0b75344f.css",
+    "src": "status-list.css"
+  },
+  "src/browser.css": {
+    "file": "assets/browser.fc8afee2.css",
+    "src": "src/browser.css"
+  },
+  "src/admin.css": {
+    "file": "assets/admin.6d195ea9.css",
+    "src": "src/admin.css"
+  },
+  "button.css": {
+    "file": "assets/button.11428e1d.css",
+    "src": "button.css"
+  },
+  "src/main.css": {
+    "file": "assets/main.737b062e.css",
+    "src": "src/main.css"
+  }
+}
