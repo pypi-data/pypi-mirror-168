@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-depends
+Version: 0.1.0
+Summary: A dependency injector as in FastAPI
+Home-page: https://github.com/Dimfred/depends
+License: MIT
+Author: Dmitrij Vinokour
+Author-email: dimfred.1337@web.de
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: python-acache (>=0,<1)
+Project-URL: Repository, https://github.com/Dimfred/depends.git
