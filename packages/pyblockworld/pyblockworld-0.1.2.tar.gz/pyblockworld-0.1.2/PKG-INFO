@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyblockworld
+Version: 0.1.2
+Summary: Minecraft like Block world in Python
+Author: Marco Bakera
+Author-email: marco@bakera.de
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyglet (>=1.5.26,<2.0.0)
+Description-Content-Type: text/markdown
+
+Eine an Minecraft angelehnte Welt aus Blöcken.
