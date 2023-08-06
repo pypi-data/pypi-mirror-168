@@ -1,0 +1,15 @@
+brawling/__init__.py,sha256=zDttTEJ9aZ9yyBxaRkjWg0Iw_0l55hyr0rF2TvZVYbk,102
+brawling/client.py,sha256=kN73m-jkAre-wTq_wxDW3ISPojMEpAUDM4PtghW_tqE,12672
+brawling/exceptions.py,sha256=o0-gRC0GU3WdvackDWC_RW4ZqDrj8NC-QvyWeIIofmc,1956
+brawling/models/__init__.py,sha256=JgKChU5oU2D6r4HP7RnRcFSgff-2sW07xE-MV3XRx8o,138
+brawling/models/base.py,sha256=wVzf3XWbYoptYpH4PJyMyjB5zifGuUDeeRwVOKHinhg,326
+brawling/models/brawlers.py,sha256=syjgv32tBrMfJDASocTsU4Y_cgrcMisOb5cR87agzQM,946
+brawling/models/clubs.py,sha256=I4wl0AHL5Ej-hZr6gc2jOKiIQ3qXoFZQbMF822iyn8Y,1605
+brawling/models/events.py,sha256=GXnUSKLwlSpWoktqXIUPBuNPSLvweT1iHZNBDd50We8,1177
+brawling/models/players.py,sha256=BHBGzplGPxijVlTnaqGmQju8eXpx5UfKsA0Sgm6X7xY,5722
+brawling/models/rankings.py,sha256=y3XklH969i4-F19xEr_yNNk6zFnxGbx1zsYDMdNMiLk,1466
+brawling/util.py,sha256=DwakQ6Wx4nQigolql3QrqgweIhQcZJsGKdD_AMRsI8c,3116
+brawling-0.5.0.dist-info/LICENSE,sha256=nv-eqhyH3R9jIEu95X7F5IZs0LT9BhJQuip0ywqDBa0,1090
+brawling-0.5.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+brawling-0.5.0.dist-info/METADATA,sha256=XXBHwEP53N8ExUEtbdfpS_MK-fwOEYC7D40AIdWfa1g,3107
+brawling-0.5.0.dist-info/RECORD,,
