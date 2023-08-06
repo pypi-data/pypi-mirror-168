@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyclass-generator
+Version: 0.1.2
+Summary: This is a package to generate python class from a nested dictionary
+Home-page: https://github.com/Venus713/pyclass-generator
+Author: Venus713
+Author-email: userstar713@gmail.com
+License: MIT
+Requires-Dist: libcst
+Requires-Dist: jinja2
+
