@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+typo/Errer.py
+typo/__init__.py
+typo/version.py
+typo.egg-info/PKG-INFO
+typo.egg-info/SOURCES.txt
+typo.egg-info/dependency_links.txt
+typo.egg-info/top_level.txt
+typo/keyboardlayouts/__init__.py
+typo/keyboardlayouts/en_default.py
