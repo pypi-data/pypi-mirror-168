@@ -1,0 +1,14 @@
+xj_migrate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xj_migrate/admin.py,sha256=dp2BZAdiJ34cq48neknPOS6b8egFVL0gE89-e68RckE,83
+xj_migrate/apps.py,sha256=WQhmrMykpAsqlha85L5J2UWkJlI17E-D2pAZsQ1MWs8,213
+xj_migrate/common.py,sha256=8sBI_axkY1lY1sRBuClwbl7JhmnuBwpHrxlTRvA6t8E,1675
+xj_migrate/models.py,sha256=V5W_UEdyC-nzQ2CP2qvDo54oKBGKbGCHGbZe4XwoS_s,66
+xj_migrate/urls.py,sha256=NDz9y3HQjDoxGAHJtDz94uTc6VTz3h805Qn3b3GRzt4,406
+xj_migrate/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xj_migrate/apis/data_migration.py,sha256=m40PMq6KsAAj6x-bqsJnGS7GQUkwD8voFEohoMqbwaE,2928
+xj_migrate/services/DataConsolidation.py,sha256=G53emHzOxnY8-u3rKyVOWg5eM04XqZ86lKhIOVZW2Fc,4946
+xj_migrate/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xj_database-1.0.0.dist-info/METADATA,sha256=dweprv0ckGTWfIuys5qyi6KHk7EGF7icHlYWSfI7mjk,1138
+xj_database-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xj_database-1.0.0.dist-info/top_level.txt,sha256=FVvkL-wZJwcDmKnuA09XobxE5KbFBwQJvAZwIC8TmIg,11
+xj_database-1.0.0.dist-info/RECORD,,
