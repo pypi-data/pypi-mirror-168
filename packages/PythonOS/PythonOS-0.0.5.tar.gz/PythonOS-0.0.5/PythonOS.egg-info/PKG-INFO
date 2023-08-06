@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: PythonOS
+Version: 0.0.5
+Summary: A simple OS package that can be used to build a Python OS.
+Home-page: UNKNOWN
+Author: Eric
+Author-email: email@devwatch.epizy.com
+License: MIT
+Description: A simple OS package that can be used to build a Python OS simply using our package. 
+         Credit to Eric for creating and caring for this package.
+Keywords: PythonOS
+Platform: UNKNOWN
