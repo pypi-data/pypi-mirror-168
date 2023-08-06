@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pz-server-lib
+Version: 0.1.0.dev1
+Summary: Python library to access the Photo-z Server database hosted by the Brazilian LSST IDAC at LIneA. 
+Home-page: https://github.com/linea-it/pz-server-lib
+License: MIT
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy (>=1.4.25)
+Requires-Dist: psycopg2-binary (>=2.9.1)
+Requires-Dist: numpy (>=1.19.4)
+Requires-Dist: pandas (>=1.2.0)
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: astropy (>=5.0.0)
+
+# pz-server-lib
+
+A Python library to access data from the [Photo-z Server](https://github.com/linea-it/pz-server). 
+
+The Photo-z Server is an online service based on software developed and delivered as part of the in-kind contribution program BRA-LIN, from LIneA to the Rubin Observatory's LSST. An overview of this and other contributions is available [here](https://linea-it.github.io/pz-lsst-inkind-doc/).  
