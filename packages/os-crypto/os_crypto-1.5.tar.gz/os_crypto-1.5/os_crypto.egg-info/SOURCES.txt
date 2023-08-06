@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+os_crypto/crypto_tools.py
+os_crypto.egg-info/PKG-INFO
+os_crypto.egg-info/SOURCES.txt
+os_crypto.egg-info/dependency_links.txt
+os_crypto.egg-info/requires.txt
+os_crypto.egg-info/top_level.txt
