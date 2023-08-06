@@ -1,0 +1,3 @@
+[console_scripts]
+kegg_pull = kegg_pull.__main__:main
+
