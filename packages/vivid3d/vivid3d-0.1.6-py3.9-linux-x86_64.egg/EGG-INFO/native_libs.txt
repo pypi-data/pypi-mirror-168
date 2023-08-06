@@ -1,0 +1,3 @@
+vivid3d/_vivid.cpython-39-x86_64-linux-gnu.so
+vivid3d/lib/libvivid.so
+vivid3d/lib/libvoronoi.so
