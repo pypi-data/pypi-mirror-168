@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: trafalgar-log
+Version: 1.0.0
+Summary: A log framework that prints logs as JSON.
+Home-page: https://github.com/victoraugustofd/trafalgar-log
+Author: victoraugustofd
+License: MIT
+Keywords: logs
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Logging
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# trafalgar-log
+Python Framework that standardize JSON Logs and make it easy to use.

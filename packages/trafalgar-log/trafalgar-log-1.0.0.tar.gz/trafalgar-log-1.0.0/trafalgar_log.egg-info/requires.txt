@@ -1,0 +1,4 @@
+semver
+uplink
+dynaconf
+python-json-logger

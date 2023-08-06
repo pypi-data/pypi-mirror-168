@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/__init__.py
+trafalgar_log/__init__.py
+trafalgar_log.egg-info/PKG-INFO
+trafalgar_log.egg-info/SOURCES.txt
+trafalgar_log.egg-info/dependency_links.txt
+trafalgar_log.egg-info/requires.txt
+trafalgar_log.egg-info/top_level.txt
+trafalgar_log/app/__init__.py
+trafalgar_log/core/__init__.py
+trafalgar_log/core/enums.py
+trafalgar_log/core/exceptions.py
+trafalgar_log/core/logger.py
+trafalgar_log/core/utils.py
