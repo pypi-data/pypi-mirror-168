@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tracktotrip3
+Version: 0.1.0
+Summary: Track processing library for Python 3
+Home-page: https://github.com/dserafim1999/tracktotrip3
+Download-URL: https://github.com/dserafim1999/tracktotrip3/releases/tag/0.1.0
+Author: Daniel Serafim, Rui Gil
+Author-email: dserafim1999@gmail.com
+Keywords: track,trip,GPS,GPX
+License-File: LICENSE
