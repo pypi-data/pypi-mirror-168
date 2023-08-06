@@ -1,0 +1,3 @@
+titiler.core==0.7.1
+titiler.mosaic==0.7.1
+titiler.application==0.7.1
