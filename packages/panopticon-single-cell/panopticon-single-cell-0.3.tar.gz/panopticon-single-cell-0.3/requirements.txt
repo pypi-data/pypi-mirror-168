@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+matplotlib
+umap-learn
+click
+tqdm
+seaborn
+loompy
+statsmodels
+
