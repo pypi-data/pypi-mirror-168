@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flake8_picky_parentheses/__init__.py
+flake8_picky_parentheses/_brackets_position.py
+flake8_picky_parentheses/_meta.py
+flake8_picky_parentheses/_redundant_parentheses.py
+flake8_picky_parentheses/_util.py
+flake8_picky_parentheses.egg-info/PKG-INFO
+flake8_picky_parentheses.egg-info/SOURCES.txt
+flake8_picky_parentheses.egg-info/dependency_links.txt
+flake8_picky_parentheses.egg-info/entry_points.txt
+flake8_picky_parentheses.egg-info/requires.txt
+flake8_picky_parentheses.egg-info/top_level.txt
