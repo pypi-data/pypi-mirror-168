@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metaNNvis"
+version = "0.0.2"
+authors = [
+  { name="Simon Flügel", email="sfluegel@ovgu.de" },
+]
+description = "A meta-tool for cross-framework access to PyTorch and Tensorflow visualisation methods"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "torch >= 1.11.0",
+    "seaborn >= 0.11.2",
+    "numpy >= 1.22.3",
+    "tensorflow >= 2.8.0",
+    "onnx2torch >= 1.3.0",
+    "onnx >= 1.11.0",
+    "onnx2keras >= 0.1",
+    "captum >= 0.5.0",
+    "tf-keras-vis >= 0.8.1",
+    "torchvision >= 0.12.0",
+    "matplotlib >= 3.3.3",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sfluegel05/metaNNvis"
+"Bug Tracker" = "https://github.com/sfluegel05/metaNNvis/issues"
