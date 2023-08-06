@@ -1,0 +1,8 @@
+README.md
+setup.py
+excel2flapjack.egg-info/PKG-INFO
+excel2flapjack.egg-info/SOURCES.txt
+excel2flapjack.egg-info/dependency_links.txt
+excel2flapjack.egg-info/not-zip-safe
+excel2flapjack.egg-info/requires.txt
+excel2flapjack.egg-info/top_level.txt

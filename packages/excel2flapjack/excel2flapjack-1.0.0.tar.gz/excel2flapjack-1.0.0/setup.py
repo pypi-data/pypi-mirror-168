@@ -1,0 +1,28 @@
+from setuptools import find_packages, setup
+
+setup(name='excel2flapjack',
+      version='1.0.0',
+      url='https://github.com/SynBioDex/Experimental-Data-Converter/',
+      license='BSD 3-clause',
+      maintainer='Sai Samineni',
+      maintainer_email='sasa6749@colorado.edu',
+      include_package_data=True,
+      description='upload excel resources to flapjack',
+      packages=find_packages(include=['excel2sbol']),
+      long_description=open('README.md').read(),
+      install_requires=['pyflapjack>=1.0.5',
+                        'numpy>=1.21.2',
+                        'scipy>=1.8.0',
+                        'pandas>=1.3.3',
+                        'requests>=2.26.0',
+                        'tqdm>=4.62.3', 
+                        'plotly>=5.3.1',
+                        'asyncio>=3.4.3',
+                        'nest_asyncio>=1.5.1',
+                        'requests_jwt>=0.5.3',
+                        'websockets>=10.0',
+                        'matplotlib>=3.4.3',
+                        'kaleido>=0.2.1',
+                        'openpyxl>=3.0.9'
+                        ],
+      zip_safe=False)
