@@ -1,0 +1,143 @@
+Metadata-Version: 2.1
+Name: Py-OMA
+Version: 1.3
+Summary: PyOMA allows the experimental estimation of the modal parameters (natural frequencies, mode shapes, damping ratios) of a structure from measurements of the vibration response in operational condition.
+Home-page: https://github.com/dagghe/PyOMA
+Author: Dag Pasquale Pasca, Angelo Aloisio, Marco Martino Rosso, Stefanos Sotiropoulos
+Author-email: <supportPyOMA@polito.it>
+License: GNU General Public License v3 (GPLv3)
+Keywords: operational modal analysis,ambient vibration modal test,structural dynamics,frequency domain decomposition,stochastic subspace identification,structural health monitoring
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: mplcursors
+
+
+# PyOMA
+This software was created to perform output-only modal identification (Operational Modal Analysis, OMA).
+
+OMA allows the experimental estimation of the modal parameters (natural frequencies, mode shapes, damping ratios) of a structure from measurements of the vibration response in operational condition.
+
+
+
+
+## What is PyOMA?
+PyOMA is a python module that allows to perform OMA on ambient vibration measurments datasets.
+
+PyOMA include the following algorithms:
+
+1. Frequency Domain Decomposition (FDD)
+
+	1a. Original Frequency Domain Decomposition (FDD)
+
+	2a. Enhanced Frequency Domain Decomposition (EFDD)
+
+	3a. Frequency Spatial Domain Decomposition (FSDD)
+
+2. Stochastic Subspace Identification (SSI)
+
+	2a. Covariance-driven Stochastic Subspace Identification (cov-SSI)
+
+	2b. Data-driven Stochastic Subspace Identification (dat-SSI)	
+
+
+To better untersdand the workflow of the functions, see the workflow [here](https://github.com/dagghe/PyOMA#workflow).
+
+
+## Installing PyOMA
+As a prerequisite to install PyOMA, you need to install [Anaconda](https://docs.anaconda.com/anaconda/install/) first.
+You should install a Python version greather equal 3.5 or the software may run in troubles.
+
+To fully install PyOMA, you need to run the following commands (in the following order):
+
+- pip install pandas
+- pip install scipy
+- pip install matplotlib
+- pip install seaborn
+- pip install mplcursors
+
+- pip install Py-OMA
+
+
+To import PyOMA in your workspace, simply type:
+
+- import PyOMA
+
+ ### Dependencies
+ - numpy (https://numpy.org/)
+ - pandas (https://pandas.pydata.org/)
+ - scipy -> signal (https://www.scipy.org/)
+ - scipy.optimize -> curve_fit (https://www.scipy.org/)
+ - scipy->linalg (https://www.scipy.org/)
+ - matplotlib.pyplot (https://matplotlib.org/)
+ - matplotlib.ticker -> [MultipleLocator,FormatStrFormatter] (https://matplotlib.org/)
+ - matplotlib.patches (https://matplotlib.org/)
+ - seaborn (https://seaborn.pydata.org/)
+ - mplcursors (https://mplcursors.readthedocs.io/en/stable/)
+
+
+# Workflow
+
+![Flowchart PyOMA](https://raw.githubusercontent.com/dagghe/PyOMA/master/Images/FlowChartPyomaNEW.png)
+
+FDD:
+
+	1. run FDDsvp
+
+		2.a run FDDmodEX to run original FDD
+
+			and/or
+
+		2.b run EFDDmodEX(method='EFDD') to run EFDD
+
+			and/or
+
+		2.c run EFDDmodEX(method='FSDD') to run FSDD
+
+SSI
+
+	1.a run SSIcovStaDiag 
+
+		2. run SSImodEX to run cov-SSI
+
+			and/or
+
+	1.b run SSIdatStaDiag 
+
+		2. run SSImodEX to run dat-SSI 
+
+
+# Function Description
+
+A complete description of the functions available in PyOMA can be found in the page [Function Description](https://github.com/dagghe/PyOMA/wiki/Function-Description).
+
+
+# What is PyOMA_GUI? A brief software overview
+
+PyOMA_GUI is a graphical user interface software developed in [PyQt5](https://pypi.org/project/PyQt5/), which implements in a single integrated tool the operational modal analysis of civil structures with output-only measurement data. This software utilises the aforementioned functionalities offered by the [PyOMA](https://github.com/dagghe/PyOMA) python module. Therefore, PyOMA_GUI provides a remarkably user-friendly interface to improve the accessibility of the PyOMA module, ensuring widespread usage both for scientists, researchers, and even for applied civil and structural engineers. The main features PyOMA_GUI provides are listed below:
+- Importing data tab;
+- Definition of the geometry of the structure and the monitoring system (channels and degrees of freedom, DOFs);
+- Preprocessing of signals tool with detrending and decimation options;
+- Dynamic identification algorithms with visualization of the results (graphs, modal shapes);
+- Post-processing tabs and output exportation functionalities;
+
+![`PyOMA_GUI` general overview.](https://github.com/dagghe/PyOMA/blob/master/paper/Fig2.png)
+
+The executable file PyOMA_GUI.exe for windows is already available [here](https://github.com/dagghe/PyOMA/blob/master/PyOMA_GUI/PyOMA_GUI.exe).
+
+A short manual to guide the user into an introductory example is available [here](PyOMA_V2.0/manual_v1.docx).
+
+# Acknowledgements
+The developers acknowledge the meaningful contribution of [Professor Rocco Alaggio](http://diceaa.univaq.it/team-view/prof_alaggio/) from UniversitÃ  degli Studi dell'Aquila, who encouraged the authors to study and develop these topics. Furthermore, the developers acknowledge the meaningful contribution of [Professor Giuseppe Carlo Marano](https://www.diseg.polito.it/en/personale/scheda/(nominativo)/giuseppe.marano) from Politecnico di Torino for promoting the Graphical User Interface programming and coordinating the team activities.
+
+
+# How to cite
+If you use this code, please don't forget to cite this work:
+
+> Pasca, D. P., Aloisio, A., Rosso, M. M., & Sotiropoulos, S. (2022). PyOMA and PyOMA_GUI: A Python module and software for Operational Modal Analysis. Software X, (In press)
+
