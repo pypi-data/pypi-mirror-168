@@ -1,0 +1,2 @@
+[console_scripts]
+sslcertchecker = sslcertchecker.checker:run
