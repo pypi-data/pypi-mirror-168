@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/dynatrace/opentelemetry/metrics/export/__init__.py
+src/dynatrace/opentelemetry/metrics/export/_exporter.py
+src/dynatrace/opentelemetry/metrics/export/_factory.py
+src/dynatrace/opentelemetry/metrics/export/_histogram_utils.py
+src/opentelemetry_exporter_dynatrace_metrics.egg-info/PKG-INFO
+src/opentelemetry_exporter_dynatrace_metrics.egg-info/SOURCES.txt
+src/opentelemetry_exporter_dynatrace_metrics.egg-info/dependency_links.txt
+src/opentelemetry_exporter_dynatrace_metrics.egg-info/entry_points.txt
+src/opentelemetry_exporter_dynatrace_metrics.egg-info/requires.txt
+src/opentelemetry_exporter_dynatrace_metrics.egg-info/top_level.txt
+test/test_exporter.py
+test/test_histogram_utils.py

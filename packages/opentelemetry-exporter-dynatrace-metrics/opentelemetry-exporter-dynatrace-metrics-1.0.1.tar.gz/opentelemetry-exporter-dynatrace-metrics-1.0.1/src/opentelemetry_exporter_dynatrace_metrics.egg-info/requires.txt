@@ -1,0 +1,4 @@
+opentelemetry-api~=1.12.0
+opentelemetry-sdk~=1.12.0
+requests~=2.25
+dynatrace-metric-utils~=0.2.1
