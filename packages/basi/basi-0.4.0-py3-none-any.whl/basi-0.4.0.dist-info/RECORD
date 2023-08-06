@@ -1,0 +1,17 @@
+basi/__init__.py,sha256=i23flEKMqD68ypCuG8Qt5tVgPJivxf2GS-vMZwM5vE8,1042
+basi/_common/__init__.py,sha256=z4Ilcy4WRQADbDNRvfTPqqhlmGHbX3Ie6SWBPYR8Qe0,9778
+basi/_common/lookups.py,sha256=1cTddLVADF8Lc1fTYfOQINBWj9J-KQm2tXbTSOjWYLc,6433
+basi/apps.py,sha256=CQ63_04jqoch7eAmzdWOjYEAXcGAbjASvuifbryFEH8,714
+basi/base.py,sha256=c4WLtLcU_vVoLEZzFfn36eo3dCUIFXV0UGrkRrrLBYQ,3812
+basi/django/__init__.py,sha256=uJ49skcwB0tZhPPR0y9UQYsNuuoXDR0YKDsgHIy2H9c,5922
+basi/django/_persistent_models.py,sha256=zpIDDjNqbGjttxefQq05jtqQMAYfXgkI2ETLfBzg_kE,703
+basi/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basi/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basi/management/commands/purgetasks.py,sha256=hj98dYuuvmGVFuHcsDE4t3bn9EqynkgAXOdJerJnSrQ,1881
+basi/management/commands/runworker.py,sha256=hqdRUkEAed1vphcKRh_w5Rj4Dzhp31_jvAzHwCI9OYA,2175
+basi/serializers/__init__.py,sha256=nHOrEUI6PXs1J_qLmy_4tWdhmXSvkyzSiAZ6zF3PdX8,55
+basi/serializers/persistent_pickle.py,sha256=LjP9TL_aeigyKYdOC3Gc0wil9R5dDzLnt98CJ976yUU,1077
+basi-0.4.0.dist-info/LICENSE.txt,sha256=dpjw999YasTFpYkAJWmOjHSZEebDAujtbH99cqhS00o,1067
+basi-0.4.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+basi-0.4.0.dist-info/METADATA,sha256=1bEH3Nf9vMxayMNrcdHGNdr4f7_S3SnzdA4yNcOyITY,2337
+basi-0.4.0.dist-info/RECORD,,
