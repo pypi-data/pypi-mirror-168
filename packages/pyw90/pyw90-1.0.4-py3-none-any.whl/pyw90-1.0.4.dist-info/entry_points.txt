@@ -1,0 +1,3 @@
+[console_scripts]
+pyw90=pyw90.pyw90_cli:main_cli
+
