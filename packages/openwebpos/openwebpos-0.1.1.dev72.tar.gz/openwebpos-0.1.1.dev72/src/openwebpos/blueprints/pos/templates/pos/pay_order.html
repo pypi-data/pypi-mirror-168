@@ -1,0 +1,176 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block main %}
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card rounded">
+                <div class="card-content">
+                    <div class="row mb0">
+                        <div class="col s6 right-align">
+                            <h3>Order Total:</h3>
+                        </div>
+                        <div class="col s6 left-align">
+                            <h3><b>{{ transaction.order.orderTotal }}</b></h3>
+                        </div>
+                    </div>
+                    <div class="row mb0">
+                        <div class="col s6 right-align">
+                            <h3>Cash Tendered:</h3>
+                        </div>
+                        <div class="col s6 left-align">
+                            <h3><b>{{ transaction.amount }}</b></h3>
+                        </div>
+                    </div>
+                    <div class="row mb0">
+                        <div class="col s6 right-align">
+                            <h3>Total Due:</h3>
+                        </div>
+                        <div class="col s6 left-align">
+                            <h3><b>{{ transaction.order.orderDueTotal }}</b></h3>
+                        </div>
+                    </div>
+                    <div class="row mb0">
+                        <div class="col s6 right-align">
+                            <h3>Change:</h3>
+                        </div>
+                        <div class="col s6 left-align">
+                            <h3><b>{{ transactions|sum(attribute="change") }}</b></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 offset-m3 center-align">
+            {% if transaction.order.orderDueTotal > 0 %}
+                <a href="#paymentTypesModal" class="btn-large rounded green modal-trigger">Make Payment</a>
+            {% else %}
+                <a href="{{ url_for('pos.order_type') }}" class="btn-large rounded green ">NewOrder</a>
+                <a href="{{ url_for('pos.print_receipt', style="customer", order_number=order.orderNumber) }}"
+                   class="btn-large rounded blue">Print Receipt</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div id="paymentTypesModal" class="modal has-keypad rounded blue-grey darken-4">
+        <div class="modal-content">
+            <h4 class="center-align white-text">Payment Type</h4>
+            <div class="row mb0">
+                {% for transaction_type in transaction_types %}
+                    <div class="col s12 m6">
+                        {% if transaction_type.name == 'Cash' %}
+                            <a href="#cashPaymentModal" class="modal-trigger">
+                                <div class="card rounded">
+                                    <div class="card-content">
+                                        <span class="card-title center-align black-text">{{ transaction_type.name }}</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="cashPaymentModal" class="modal modal-keypad rounded overflow-visible">
+                                <div class="modal-content p0">
+                                    <form class="keypad grey darken-4"
+                                          action="{{ url_for('pos.transaction', order_number=order.orderNumber, transaction_type=transaction_type.name) }}"
+                                          method="POST"
+                                          autocomplete="off">
+                                        {#                                    order_items|sum(attribute='subtotal') + order_items|sum(attribute='tax')#}
+                                        {{ form.hidden_tag() }}
+                                        <div class="keypad-row">
+                                            {{ form.amount(autocomplete="new-password", id='keypadVar', step="any", min="0") }}
+                                        </div>
+                                        <div class="keypad-row">
+                                            <input type="button" value="7" onclick="addNumber(this, 'keypadVar')">
+                                            <input type="button" value="8" onclick="addNumber(this, 'keypadVar')">
+                                            <input type="button" value="9" onclick="addNumber(this, 'keypadVar')">
+                                        </div>
+                                        <div class="keypad-row">
+                                            <input type="button" value="4" onclick="addNumber(this, 'keypadVar')">
+                                            <input type="button" value="5" onclick="addNumber(this, 'keypadVar')">
+                                            <input type="button" value="6" onclick="addNumber(this, 'keypadVar')">
+                                        </div>
+                                        <div class="keypad-row">
+                                            <input type="button" value="1" onclick="addNumber(this, 'keypadVar')">
+                                            <input type="button" value="2" onclick="addNumber(this, 'keypadVar')">
+                                            <input type="button" value="3" onclick="addNumber(this, 'keypadVar')">
+                                        </div>
+                                        <div class="keypad-row">
+                                            <input type="button" value="_" disabled>
+                                            <input type="button" value="0" onclick="addNumber(this, 'keypadVar')">
+                                            <input type="button" value="." onclick="addNumber(this, 'keypadVar')">
+                                        </div>
+                                        <div class="keypad-row">
+                                            <button type="reset"><i class="material-icons">keyboard_backspace</i>
+                                            </button>
+                                            <button type="submit"><i class="material-icons">keyboard_return</i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        {% else %}
+                            <a href="#external{{ transaction_type.name }}PaymentModal" class="modal-trigger">
+                                <div class="card rounded">
+                                    <div class="card-content">
+                                        <span class="card-title center-align black-text">{{ transaction_type.name }}</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="external{{ transaction_type.name }}PaymentModal"
+                                 class="modal modal-keypad rounded overflow-visible">
+                                <div class="modal-content p0">
+                                    <form class="keypad grey darken-4"
+                                          action="{{ url_for('pos.transaction', order_number=order.orderNumber, transaction_type=transaction_type.name) }}"
+                                          method="POST"
+                                          autocomplete="off">
+                                        {#                                    order_items|sum(attribute='subtotal') + order_items|sum(attribute='tax')#}
+                                        {{ form.hidden_tag() }}
+                                        <div class="keypad-row">
+                                            {{ form.amount(autocomplete="new-password", id=transaction_type.name + 'Display', step="any", min="0") }}
+                                        </div>
+                                        <div class="keypad-row">
+                                            <input type="button" value="7"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                            <input type="button" value="8"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                            <input type="button" value="9"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        </div>
+                                        <div class="keypad-row">
+                                            <input type="button" value="4"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                            <input type="button" value="5"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                            <input type="button" value="6"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        </div>
+                                        <div class="keypad-row">
+                                            <input type="button" value="1"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                            <input type="button" value="2"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                            <input type="button" value="3"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        </div>
+                                        <div class="keypad-row">
+                                            <input type="button" value="." disabled>
+                                            <input type="button" value="0"
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                            <input type="button" value="."
+                                                   onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        </div>
+                                        <div class="keypad-row">
+                                            <button type="reset"><i class="material-icons">keyboard_backspace</i>
+                                            </button>
+                                            <button type="submit"><i class="material-icons">keyboard_return</i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

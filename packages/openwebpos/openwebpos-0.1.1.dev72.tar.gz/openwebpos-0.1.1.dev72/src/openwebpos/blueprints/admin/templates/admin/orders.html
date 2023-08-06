@@ -1,0 +1,49 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block main %}
+
+    <div class="grid-wrapper">
+        <div class="view">
+            <div class="row mb0">
+                <div class="col s12 m6 offset-m3">
+                    <a href="">
+                        <div class="card rounded">
+                            <div class="card-content black-text">
+                                <span class="card-title center-align">Orders Total: ${{ orders | sum(attribute="orderTotal") }}</span>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>OrderNumber</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for order in orders %}
+                                        <tr>
+                                            <td>{{ order.create_on }}</td>
+                                            <td>{{ order.orderNumber }}</td>
+                                            <td>{{ order.orderTotal }}</td>
+                                            <td>{{ order.paymentStatus }}</td>
+                                            <td>
+                                                <a href="{{ url_for('admin.delete_order', order_id=order.id) }}"
+                                                   class="btn-small rounded red">
+                                                    <i class="material-icons">delete</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block main %}
+
+    <div class="grid-container">
+        <div class="order-section">
+            {% include 'pos/_order_section.html' %}
+        </div>
+        <div class="menu-section">
+            <div class="menu-view">
+                <div class="row my0">
+                    {% if menus %}
+                        {% for menu in menus %}
+                            <div class="col s12 m4">
+                                {{ clickableCard('#menu'+menu.name+'ItemsModal', menu.name, 'modal-trigger') }}
+                            </div>
+                            <div id="menu{{ menu.name }}ItemsModal"
+                                 class="modal rounded grey lighten-2 overflow-visible ms60">
+                                <div class="modal-content">
+                                    <h4 class="center-align">{{ menu.name }}</h4>
+                                    <div class="row">
+                                        {% for menu_item in menu_items %}
+                                            {% if menu_item.menu_id == menu.id %}
+                                                <div class="col s12 m6">
+                                                    {{ clickableCard('#quantityModal'+menu.name+menu_item.name, menu_item.name, 'modal-trigger') }}
+                                                </div>
+                                                <div id="quantityModal{{ menu.name }}{{ menu_item.name }}"
+                                                     class="modal modal-keypad rounded blue-grey darken-4 overflow-visible">
+                                                    <div class="modal-content white-text p0">
+                                                        <form class="keypad grey darken-4"
+                                                              action="{{ url_for('pos.test_post', order_number=order.orderNumber, menu_id=menu_item.menu_id, item_id=menu_item.id) }}"
+                                                              method="post" autocomplete="off">
+                                                            {{ add_item_form.hidden_tag() }}
+                                                            <div class="keypad-row">
+                                                                {{ add_item_form.quantity(id=menu.name+menu_item.name + 'Quantity') }}
+                                                            </div>
+                                                            <div class="keypad-row">
+                                                                <input type="button" value="7"
+                                                                       onclick="addNumber(this, '{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                                <input type="button" value="8"
+                                                                       onclick="addNumber(this, '{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                                <input type="button" value="9"
+                                                                       onclick="addNumber(this,'{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                            </div>
+                                                            <div class="keypad-row">
+                                                                <input type="button" value="4"
+                                                                       onclick="addNumber(this,'{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                                <input type="button" value="5"
+                                                                       onclick="addNumber(this,'{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                                <input type="button" value="6"
+                                                                       onclick="addNumber(this,'{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                            </div>
+                                                            <div class="keypad-row">
+                                                                <input type="button" value="1"
+                                                                       onclick="addNumber(this,'{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                                <input type="button" value="2"
+                                                                       onclick="addNumber(this,'{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                                <input type="button" value="3"
+                                                                       onclick="addNumber(this,'{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                            </div>
+                                                            <div class="keypad-row">
+                                                                <button type="reset"><i class="material-icons">keyboard_backspace</i>
+                                                                </button>
+                                                                <input type="button" value="0"
+                                                                       onclick="addNumber(this, '{{ menu.name+menu_item.name + "Quantity" }}')">
+                                                                <button type="submit"><i class="material-icons">keyboard_return</i>
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="col s12 m6 offset-m3">
+                            <h1 class="flow-text">No Menus Available Create one <a
+                                    href="{{ url_for('admin.admin_menu.menus') }}"
+                                    class="btn-small rounded deep-purple accent-3">here</a>
+                            </h1>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

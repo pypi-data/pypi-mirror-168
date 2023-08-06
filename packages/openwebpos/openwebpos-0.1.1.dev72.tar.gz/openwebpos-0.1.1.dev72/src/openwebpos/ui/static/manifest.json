@@ -1,0 +1,8 @@
+{
+  "name": "OpenWebPOS",
+  "short_name": "OWPOS",
+  "description": "OpenWebPOS is a Web-based point of sale system",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "fullscreen"
+}

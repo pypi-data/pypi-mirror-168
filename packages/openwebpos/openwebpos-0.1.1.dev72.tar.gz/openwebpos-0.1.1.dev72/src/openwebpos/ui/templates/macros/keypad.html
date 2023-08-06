@@ -1,0 +1,28 @@
+{% macro keypadform(route, form) %}
+    <form class="keypad grey lighten-2" action="{{ route }}" method="POST" autocomplete="off">
+        {{ form.hidden_tag() }}
+        <div class="keypad-row">
+            {{ form.pin(autocomplete="new-password", id='keypadVar') }}
+        </div>
+        <div class="keypad-row">
+            <input class="blue-grey darken-4" type="button" value="7" onclick="addNumber(this , 'keypadVar')">
+            <input class="blue-grey darken-4"  type="button" value="8" onclick="addNumber(this , 'keypadVar')">
+            <input class="blue-grey darken-4"  type="button" value="9" onclick="addNumber(this , 'keypadVar')">
+        </div>
+        <div class="keypad-row">
+            <input class="blue-grey darken-4"  type="button" value="4" onclick="addNumber(this, 'keypadVar')">
+            <input class="blue-grey darken-4"  type="button" value="5" onclick="addNumber(this, 'keypadVar')">
+            <input class="blue-grey darken-4"  type="button" value="6" onclick="addNumber(this, 'keypadVar')">
+        </div>
+        <div class="keypad-row">
+            <input class="blue-grey darken-4"  type="button" value="1" onclick="addNumber(this, 'keypadVar')">
+            <input class="blue-grey darken-4"  type="button" value="2" onclick="addNumber(this, 'keypadVar')">
+            <input class="blue-grey darken-4"  type="button" value="3" onclick="addNumber(this, 'keypadVar')">
+        </div>
+        <div class="keypad-row">
+            <button class="blue-grey darken-4"  type="reset"><i class="material-icons">keyboard_backspace</i></button>
+            <input class="blue-grey darken-4"  type="button" value="0" onclick="addNumber(this)">
+            <button class="blue-grey darken-4"  type="submit"><i class="material-icons">keyboard_return</i></button>
+        </div>
+    </form>
+{% endmacro %}

@@ -1,0 +1,311 @@
+<div class="order-view grey">
+    <table class="highlight">
+        <thead>
+        <tr>
+            <th class="right-align">QT</th>
+            <th class="center-align">Item</th>
+            {#            <th class="right-align">Price</th>#}
+            <th class="right-align">Options</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for order_item in order_items %}
+            <tr>
+                <td class="right-align">{{ order_item.quantity }}</td>
+                <td class="left-align flow-text pl1">{{ order_item.item.menu.name }}
+                    - {{ order_item.item.name }}
+
+                    <br>
+                    <ul class="my0 pl1">
+                        {% for order_item_option in order_item_options %}
+                            {% if order_item_option.order_item.id == order_item.id %}
+                                <li class="my0">{{ order_item_option.type }}
+                                    - {{ order_item_option.ingredient.name }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+
+                </td>
+                {#                <td class="right-align">{{ order_item.menu_item.price  * order_item.quantity }}</td>#}
+                <td class="center-align">
+                    <a href="#{{ order_item.id }}-OptionsModal"
+                       class="btn-small modal-trigger">
+                        <i class="tiny material-icons">edit</i>
+                    </a>
+                </td>
+            </tr>
+
+            <div id="{{ order_item.id }}-OptionsModal" class="modal rounded grey darken-4">
+                <div class="modal-content">
+                    <h4 class="center-align white-text">{{ order_item.item.name }} Actions</h4>
+                    <div class="row mb0">
+                        <div class="col s6">
+                            <a href="#{{ order_item.id }}-RemoveFromOrder" class="modal-trigger">
+                                <div class="card-panel rounded red darken-4 center-align">
+                                    <span class="flow-text white-text">Delete</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col s6">
+                            <a href="#" class="modal-trigger">
+                                <div class="card-panel rounded blue-grey darken-4 center-align">
+                                    <span class="flow-text white-text">Quantity</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col s6">
+                            <a href="#{{ order_item.id }}-Ingredients" class="modal-trigger">
+                                <div class="card-panel rounded yellow darken-4 center-align">
+                                    <span class="flow-text white-text">Ingredients</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col s6">
+                            <a href="#{{ order_item.id }}-AddOns" class="modal-trigger">
+                                <div class="card-panel rounded green darken-4 center-align">
+                                    <span class="flow-text white-text">Extras</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="{{ order_item.id }}-RemoveFromOrder" class="modal grey darken-4">
+                <div class="modal-content">
+                    <h4 class="center-align white-text">Remove {{ order_item.quantity }}
+                        <br>{{ order_item.item.menu.name }}
+                        - {{ order_item.item.name }}<br>
+                        from order ?</h4>
+                </div>
+                <div class="modal-footer blue-grey darken-4 center-align">
+                    <a href="" class="modal-close waves-effect waves-light btn-small red rounded left">No</a>
+                    <a href="{{ url_for('pos.remove_item', order_item_id=order_item.id) }}"
+                       class="waves-effect waves-green btn-small rounded green">YES</a>
+                </div>
+            </div>
+            <div id="{{ order_item.id }}-Ingredients" class="modal grey darken-4">
+                <div class="modal-content">
+                    <h4 class="flow-text center-align white-text">Remove {{ order_item.item.menu.name }}
+                        Ingredients</h4>
+                    <div class="row mb0">
+                        {% for menu_recipe in menu_recipes %}
+                            {% if menu_recipe.menu_id == order_item.item.menu.id %}
+                                {% if menu_recipe.ingredient.addon == False %}
+                                    <a href="{{ url_for('pos.add_order_item_option', order_number=order.orderNumber, order_item_id=order_item.id, ingredient_id=menu_recipe.ingredient.id, order_type='No') }}">
+                                        <div class="col s4">
+                                            <div class="card-panel rounded blue-grey darken-4 center-align">
+                                                <span class="flow-text white-text">{{ menu_recipe.ingredient.name }}</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+            <div id="{{ order_item.id }}-AddOns" class="modal grey darken-4">
+                <div class="modal-content">
+                    <h4 class="flow-text center-align white-text">AddOns for {{ order_item.item.menu.name }}</h4>
+                    <div class="row mb0">
+                        {% for menu_recipe in menu_recipes %}
+                            {% if menu_recipe.menu_id == order_item.item.menu.id %}
+                                {% if menu_recipe.ingredient.addon == True %}
+                                    <a href="{{ url_for('pos.add_order_item_option', order_number=order.orderNumber, order_item_id=order_item.id, ingredient_id=menu_recipe.ingredient.id, order_type='+') }}">
+                                        <div class="col s4">
+                                            <div class="card-panel rounded blue-grey darken-4 center-align">
+                                                <span class="flow-text white-text">{{ menu_recipe.ingredient.name }}</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="order-settings grey darken-2">
+    <div class="row mb0">
+        <div class="col s12 m4 center-align">
+            <a href="" class="btn blue-grey darken-2"><i class="material-icons">contacts</i></a>
+        </div>
+        <div class="col s12 m4 center-align">
+            <a href="" class="btn blue-grey darken-2"><i class="material-icons">discount</i></a>
+        </div>
+        <div class="col s12 m4 center-align">
+            <a href="" class="btn blue-grey darken-2"><i class="material-icons">new_label</i></a>
+        </div>
+    </div>
+</div>
+<div class="order-info blue-grey lighten-2">
+    <ul class="my0">
+        <li>
+            <pre class="my0">Sub-Total: <span class="right">{{ order_items|sum(attribute='subtotal') }}</span></pre>
+        </li>
+        <li>
+            <pre class="my0">Discount: <span class="right">00.00</span></pre>
+        </li>
+        <li>
+            <pre class="my0">Tax(8.25%): <span class="right">{{ order_items|sum(attribute='tax') }}</span></pre>
+        </li>
+        <li>
+            <pre class="my0">Total: <span
+                    class="right">{{ order.orderTotal }}</span></pre>
+        </li>
+    </ul>
+</div>
+<div class="order-payout center blue-grey lighten-2">
+    {% if order.paymentStatus == 'Paid' %}
+        <a href="" class="btn green waves-effect waves-light rounded modal-trigger">
+            Paid
+        </a>
+    {% else %}
+        <a href="#paymentTypesModal" class="btn green waves-effect waves-light rounded modal-trigger">
+            {{ order.orderDueTotal }}
+        </a>
+    {% endif %}
+</div>
+
+<div id="paymentTypesModal" class="modal has-keypad rounded blue-grey darken-4 ms60 overflow-visible">
+    <div class="modal-content">
+        <h4 class="center-align white-text">Payment Type</h4>
+        <div class="row mb0">
+            {% for transaction_type in transaction_types %}
+                <div class="col s12 m6">
+                    {% if transaction_type.name == 'Cash' %}
+                        <a href="#cashPaymentModal" class="modal-trigger">
+                            <div class="card rounded">
+                                <div class="card-content">
+                                    <span class="card-title center-align black-text">{{ transaction_type.name }}</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="cashPaymentModal" class="modal modal-keypad rounded overflow-visible">
+                            <div class="modal-content p0">
+                                <form class="keypad grey darken-4"
+                                      action="{{ url_for('pos.transaction', order_number=order.orderNumber, transaction_type=transaction_type.name) }}"
+                                      method="POST"
+                                      autocomplete="off">
+                                    {#                                    order_items|sum(attribute='subtotal') + order_items|sum(attribute='tax')#}
+                                    {{ form.hidden_tag() }}
+                                    <div class="keypad-row">
+                                        {{ form.amount(autocomplete="new-password", id='keypadVar', step="any", min="0") }}
+                                    </div>
+                                    <div class="keypad-row">
+                                        <input type="button" value="7" onclick="addNumber(this, 'keypadVar')">
+                                        <input type="button" value="8" onclick="addNumber(this, 'keypadVar')">
+                                        <input type="button" value="9" onclick="addNumber(this, 'keypadVar')">
+                                    </div>
+                                    <div class="keypad-row">
+                                        <input type="button" value="4" onclick="addNumber(this, 'keypadVar')">
+                                        <input type="button" value="5" onclick="addNumber(this, 'keypadVar')">
+                                        <input type="button" value="6" onclick="addNumber(this, 'keypadVar')">
+                                    </div>
+                                    <div class="keypad-row">
+                                        <input type="button" value="1" onclick="addNumber(this, 'keypadVar')">
+                                        <input type="button" value="2" onclick="addNumber(this, 'keypadVar')">
+                                        <input type="button" value="3" onclick="addNumber(this, 'keypadVar')">
+                                    </div>
+                                    <div class="keypad-row">
+                                        <input type="button" value="X" class="modal-close red">
+                                        <input type="button" value="0" onclick="addNumber(this, 'keypadVar')">
+                                        <input type="button" value="." onclick="addNumber(this, 'keypadVar')">
+                                    </div>
+                                    <div class="keypad-row">
+                                        <button type="reset" class="yellow"><i
+                                                class="material-icons">keyboard_backspace</i></button>
+                                        <button type="submit" class="green"><i
+                                                class="material-icons">keyboard_return</i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    {% else %}
+                        <a href="#external{{ transaction_type.name }}PaymentModal" class="modal-trigger">
+                            <div class="card rounded">
+                                <div class="card-content">
+                                    <span class="card-title center-align black-text">{{ transaction_type.name }}</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="external{{ transaction_type.name }}PaymentModal"
+                             class="modal modal-keypad rounded overflow-visible">
+                            <div class="modal-content p0">
+                                <form class="keypad grey darken-4"
+                                      action="{{ url_for('pos.transaction', order_number=order.orderNumber, transaction_type=transaction_type.name) }}"
+                                      method="POST"
+                                      autocomplete="off">
+                                    {#                                    order_items|sum(attribute='subtotal') + order_items|sum(attribute='tax')#}
+                                    {{ form.hidden_tag() }}
+                                    <div class="keypad-row">
+                                        {{ form.amount(autocomplete="new-password", id=transaction_type.name + 'Display', step="any", min="0") }}
+                                    </div>
+                                    <div class="keypad-row">
+                                        <input type="button" value="7"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        <input type="button" value="8"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        <input type="button" value="9"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                    </div>
+                                    <div class="keypad-row">
+                                        <input type="button" value="4"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        <input type="button" value="5"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        <input type="button" value="6"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                    </div>
+                                    <div class="keypad-row">
+                                        <input type="button" value="1"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        <input type="button" value="2"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        <input type="button" value="3"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                    </div>
+                                    <div class="keypad-row">
+                                        <input type="button" value="X" class="modal-close red">
+                                        <input type="button" value="0"
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                        <input type="button" value="."
+                                               onclick="addNumber(this, '{{ transaction_type.name + "Display" }}')">
+                                    </div>
+                                    <div class="keypad-row">
+                                        <button type="reset" class="yellow"><i
+                                                class="material-icons">keyboard_backspace</i>
+                                        </button>
+                                        <button type="submit" class="green"><i
+                                                class="material-icons">keyboard_return</i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% if order.orderTypeID == 3 %}
+            <div class="row mb0">
+                <div class="col s12 m6 offset-m3">
+                    <a href="{{ url_for('pos.print_receipt', style="kitchen", order_number=order.orderNumber) }}">
+                        <div class="card rounded">
+                            <div class="card-content">
+                                <span class="card-title center-align black-text">Print</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
