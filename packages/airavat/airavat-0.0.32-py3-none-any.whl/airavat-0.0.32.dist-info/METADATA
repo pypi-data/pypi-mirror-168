@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: airavat
+Version: 0.0.32
+Summary: Audit Utilities for Azure Data Factory- To find the common engineering hacks and reduce manual interventions.
+Home-page: https://github.com/Saumitra24/airavat
+Author: Saumitra Rawat
+Author-email: saumitra.rawat@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# airavat
+
+#### arm_template
+This template detects obsolete datasets and connections of Azure Data Factory(ADF) using ARM template.
+##
+  > obsolete_datasets: This method detects all the obsolete datasets present in ADF.
+   >>Input: arm_template_folder_path; Output: Pandas dataframe having one column (Obsolete_Datasets).
+##
+  > obsolete_linked_services: This method detects all the obsolete linked services present in ADF.
+  >> Input: arm_template_folder_path; Output: Pandas dataframe having one column (Obsolete_Linked_Services).
