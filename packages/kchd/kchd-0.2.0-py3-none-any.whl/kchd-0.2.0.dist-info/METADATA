@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: kchd
+Version: 0.2.0
+Summary: KCH LED Daemon
+Author: Dan Trickey
+Author-email: dtrickey@studentrobotics.org
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: astoria (>=0.9.0,<0.10.0)
