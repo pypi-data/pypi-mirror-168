@@ -1,0 +1,7 @@
+[tool.poetry]
+name = "pycounts"
+version = "0.2"
+description = "Calculate word counts in a text file!"
+authors = ["Tomas Beuzen"]
+license = "MIT"
+readme = "README.md"
