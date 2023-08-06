@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sharrow
+Version: 2.3.2
+Summary: numba for ActivitySim-style spec files
+Home-page: https://github.com/ActivitySim/sharrow
+Author: Cambridge Systematics
+Author-email: jeffnewman@camsys.com
+License: BSD-3-Clause
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sharrow
+numba for ActivitySim-style spec files
+
+## Building the documentation
+
+Building the documentation for sharrow requires JupyterBook.
+
+```shell
+jupyterbook build docs
+```

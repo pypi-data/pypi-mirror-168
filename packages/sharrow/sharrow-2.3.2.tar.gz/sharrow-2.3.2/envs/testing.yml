@@ -1,0 +1,25 @@
+name: testing-env
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - pip
+  - numpy>=1.19
+  - pandas>=1.2
+  - pyarrow
+  - xarray
+  - dask
+  - networkx
+  - numba>=0.54
+  - numexpr
+  - sparse
+  - filelock
+  - flake8
+  # required for testing
+  - pytest
+  - pytest-cov
+  - pytest-regressions
+  - pytest-xdist
+  - nbmake
+  - openmatrix
+  - zarr
