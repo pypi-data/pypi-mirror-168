@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dwr
+Version: 0.1.0
+Summary: An automated documentation assistant built in Python and TeX for procedural, data-driven reporting.
+Home-page: https://github.com/ellsphillips/dwr
+License: MIT
+Author: Elliott Phillips
+Author-email: elliott.phillips.dev@gmail.com
+Maintainer: Elliott Phillips
+Maintainer-email: elliott.phillips.dev@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: tomlkit (>=0.11.4,<0.12.0)
+Project-URL: Repository, https://github.com/ellsphillips/dwr
+Description-Content-Type: text/markdown
+
+# dwr
+
+<p align="center">
+<a href="https://pypi.org/project/flexi" target="_blank">
+    <img src="https://img.shields.io/pypi/v/flexi?label=version&logo=python&logoColor=%23fff&color=306998" alt="PyPI - Version">
+</a>
+
+<a href="https://pypi.org/project/flexi" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/flexi.svg?logo=python&logoColor=%23fff&color=306998" alt="PyPI - Version">
+</a>
+</p>
+
+An automated documentation assistant built in Python and TeX for procedural, data-driven reporting.
+
+## Installation
+
+`dwr` is available through PyPI:
+
+```bash
+  pip install dwr
+```
+
