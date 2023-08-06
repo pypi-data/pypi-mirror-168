@@ -1,0 +1,22 @@
+{% extends 'allianceauth/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block extra_css %}
+    {% if NIGHT_MODE %}
+        <link rel="stylesheet" type="text/css" href="{% static 'buybackprogram/css/style_dark.css' %}">
+        {% else %}
+        <link rel="stylesheet" type="text/css" href="{% static 'buybackprogram/css/style_light.css' %}">
+    {% endif %}
+{% endblock extra_css %}
+
+{% block page_title %}{% translate "buybackprogram" %}{% endblock %}
+
+{% block content %}
+    <div class="allianceauth-buyback-program-plugin">
+        <div class="col-lg-12 container">
+            <h1 class="page-header text-center">{% translate "Buyback Program" %}</h1>
+            {% include 'buybackprogram/menu.html' %}
+            {% block details %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}
