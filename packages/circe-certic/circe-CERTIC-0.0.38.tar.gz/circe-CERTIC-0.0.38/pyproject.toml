@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "circe-CERTIC"
+readme = "README.md"
+version = "0.0.38"
+description = "Circe Server"
+authors = ["Mickaël Desfrênes <mickael.desfrenes@unicaen.fr>"]
+license = "Cecill"
+packages = [
+    { include = "circe"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.0"
+argh = "^0.26.2"
+sanic = "^22.3.2"
+huey = "^2.4.3"
+asyncio = "^3.4.3"
+itsdangerous = "^2.1.2"
+aiofiles = "^0.8.0"
+markdown2 = "^2.4.3"
+python-json-logger = "^2.0.2"
+python-dotenv = "^0.20.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+
+[tool.poetry.scripts]
+circe = "circe.__main__:run_cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
