@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: CLUEstering
+Version: 1.1.1
+Summary: A library that generalizes the original 2-dimensional CLUE algorithm made at CERN.
+Author: Simone Balducci
+Author-email: simone.balducci00@gmail.com
+License-File: LICENSE
