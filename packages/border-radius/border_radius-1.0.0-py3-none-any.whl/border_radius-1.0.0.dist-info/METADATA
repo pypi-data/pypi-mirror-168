@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: border-radius
+Version: 1.0.0
+Summary: Fast accurate border-radius mask generator with CSS syntax
+Home-page: https://github.com/uploadcare/pillow-border-radius
+Author: Uploadcare
+Author-email: ak@uploadcare.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: pillow
+Provides-Extra: dev
+Requires-Dist: pytest (==6.2.5) ; extra == 'dev'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: flake8 (==4.0.1) ; extra == 'dev'
+
+UNKNOWN
+
