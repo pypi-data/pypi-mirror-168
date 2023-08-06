@@ -1,0 +1,8 @@
+omnitools>=0.0.1
+requests>=0.0.1
+remotescreen>=0.0.1
+nest_asyncio>=0.0.1
+tornado==5.1.1
+playwright>=0.0.1
+unencryptedsocket>=0.0.1
+html2text>=0.0.1
