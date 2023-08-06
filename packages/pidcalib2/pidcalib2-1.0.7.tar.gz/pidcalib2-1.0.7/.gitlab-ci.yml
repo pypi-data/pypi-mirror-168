@@ -1,0 +1,80 @@
+###############################################################################
+# (c) Copyright 2021 CERN for the benefit of the LHCb Collaboration           #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+
+image: gitlab-registry.cern.ch/ci-tools/ci-worker:cc7
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+before_script:
+  - echo $LBDATARO_KEYTAB | base64 -d > .keytab && kinit lbdataro@CERN.CH -k -t .keytab && rm .keytab
+  - klist
+  - source /cvmfs/lhcb.cern.ch/lib/LbEnv
+  - lb-conda-dev virtual-env default/2022-03-16 .venv
+  - .venv/run pip install -r requirements-ci.txt
+
+flake8:
+  stage: lint
+  script:
+    - .venv/run flake8 src/pidcalib2
+  allow_failure: true
+
+mypy:
+  stage: lint
+  script:
+    - .venv/run mypy src/pidcalib2
+  allow_failure: true
+
+default_env_tests:
+  stage: test
+  script:
+    - .venv/run pytest -v
+  coverage: '/TOTAL.*\s+(\d+%)$/'
+
+pidcalib_env_tests:
+  stage: test
+  allow_failure: true
+  script:
+    - lb-conda pidcalib/2022-04-08 pytest -v
+  before_script:
+    - echo $LBDATARO_KEYTAB | base64 -d > .keytab && kinit lbdataro@CERN.CH -k -t .keytab && rm .keytab
+    - klist
+    - source /cvmfs/lhcb.cern.ch/lib/LbEnv
+
+package:
+  stage: build
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-3.7
+  script:
+    - python -m build
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
+  before_script:
+    - pip install build
+  after_script: []
+
+
+deploy-packages:
+  stage: deploy
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-3.7
+  only:
+    - tags
+  dependencies:
+    - package
+  script:
+    - if [ -z "$TWINE_PASSWORD" ] ; then echo "Set TWINE_PASSWORD in CI variables" ; exit 1 ; fi
+    - twine upload -u __token__ dist/*
+  before_script: []
+  after_script: []
