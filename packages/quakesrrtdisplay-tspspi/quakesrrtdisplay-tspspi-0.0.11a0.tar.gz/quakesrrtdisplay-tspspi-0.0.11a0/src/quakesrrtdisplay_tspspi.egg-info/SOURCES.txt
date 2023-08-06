@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/esrrtdisplay01/__init__.py
+src/esrrtdisplay01/esrrtdisplay01.py
+src/esrrtdisplay01/simmessages.py
+src/quakesrrtdisplay_tspspi.egg-info/PKG-INFO
+src/quakesrrtdisplay_tspspi.egg-info/SOURCES.txt
+src/quakesrrtdisplay_tspspi.egg-info/dependency_links.txt
+src/quakesrrtdisplay_tspspi.egg-info/entry_points.txt
+src/quakesrrtdisplay_tspspi.egg-info/requires.txt
+src/quakesrrtdisplay_tspspi.egg-info/top_level.txt
