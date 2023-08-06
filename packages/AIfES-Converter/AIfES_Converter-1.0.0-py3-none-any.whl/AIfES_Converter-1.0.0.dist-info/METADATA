@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: AIfES-Converter
+Version: 1.0.0
+Summary: This is a convert tool to create AIfES models for direct use in the Arduino IDE or other IDEs
+Home-page: https://aifes.ai/
+Author: Fraunhofer IMS
+Author-email: aifes@ims.fraunhofer.de
+Project-URL: Source, https://github.com/Fraunhofer-IMS/AIfES-Converter/
+Project-URL: Bug Reports, https://github.com/Fraunhofer-IMS/AIfES-Converter/issues
+Project-URL: Documentation, https://fraunhofer-ims.github.io/AIfES-Converter/#index
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: packaging
+Provides-Extra: both
+Requires-Dist: tensorflow (>=2.4) ; extra == 'both'
+Requires-Dist: torch (>=1.8) ; extra == 'both'
+Provides-Extra: pytorch
+Requires-Dist: torch (>=1.8) ; extra == 'pytorch'
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow (>=2.4) ; extra == 'tensorflow'
+
+# AIfES-Converter
+
+This is a convert tool to create [AIfES](https://aifes.ai) models for direct use in the Arduino IDE or other IDEs. 
+It can read Feed Forward Neural Networks (FFNN) models from Keras and PyTorch and converts them to AIfES models, which are exported in header files. Those header 
+files can than be added to your Project in any IDE and can be used there. 
+
+## Quick Start
+Install the converter:
+````commandline
+pip install AIfES-Converter
+````
+
+IMPORTANT: For a detailed description of the installation see the [documentation](#documentation)
+
+Convert a Keras model, e.g.:
+````python
+from aifes import keras2aifes
+
+keras2aifes.convert_to_fnn_f32_express(model, 'path/to/location')
+````
+
+Convert a PyTorch model, e.g.:
+````python
+from aifes import pytorch2aifes
+
+pytorch2aifes.convert_to_fnn_f32_express(model, 'path/to/location')
+````
+
+## Documentation
+
+For a detailed documentation see [here](https://fraunhofer-ims.github.io/AIfES-Converter/).
