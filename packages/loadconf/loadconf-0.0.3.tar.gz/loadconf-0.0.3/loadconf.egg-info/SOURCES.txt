@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+loadconf/__init__.py
+loadconf/loadconf.py
+loadconf.egg-info/PKG-INFO
+loadconf.egg-info/SOURCES.txt
+loadconf.egg-info/dependency_links.txt
+loadconf.egg-info/top_level.txt
