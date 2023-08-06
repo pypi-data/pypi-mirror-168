@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyblockworld
+Version: 0.1.6
+Summary: Minecraft like Block world in Python
+Author: Marco Bakera
+Author-email: marco@bakera.de
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyglet (>=1.5.26,<2.0.0)
+Description-Content-Type: text/markdown
+
+Eine an Minecraft angelehnte Welt aus Blöcken.
+
+
+```python
+    def b_key_pressed(world:World):
+        print("b pressed. player at", world.player_position())
+        x,y,z = world.player_position()
+        world.setBlock(x,y,z, "default:brick")
+        
+    world = World("DEMO")
+    print("Block types", World.MATERIALS.keys())
+    world.build_key_function = b_key_pressed
+    world.run()
+```
+
