@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+ minio1:
+  image: minio/minio:RELEASE.2021-01-16T02-19-44Z
+  ports:
+   - "9901:9000"
+  environment:
+   MINIO_ACCESS_KEY: minio
+   MINIO_SECRET_KEY: minio123
+  command: gateway nas /data
+  networks:
+    - benji-tests
+
+networks:
+  benji-tests:

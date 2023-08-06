@@ -1,0 +1,155 @@
+# Needs to point to an existing timezone file under /usr/share/zoneinfo. This file will be mounted as /etc/localtime
+# inside the container. The environment variable TZ is also set to this value.
+timeZone: Europe/Berlin
+
+benji:
+  image:
+    registry: ghcr.io
+    repository: elemental-lf/benji-k8s
+    tag: latest
+    pullPolicy: Always
+
+  resources: {}
+
+  nodeSelector: {}
+
+  tolerations: []
+
+  affinity: {}
+
+  configuration:
+    configurationVersion: '1'
+    databaseEngine: sqlite:////tmp/benji.sqlite
+    # databaseEngine: postgresql://benji:secret@benji-postgresql:5432/benji
+    defaultStorage: storage-1
+    storages:
+      # Configure your external storage location here... this is just an example!
+      - name: storage-1
+        module: file
+        configuration:
+          path: /tmp/benji-data
+          activeTransforms:
+            - zstd
+    transforms:
+      - name: zstd
+        module: zstd
+        configuration:
+          level: 3
+    ios:
+      - name: file
+        module: file
+      # The io module name must match the pool name where the persistent volumes reside.
+      - name: rbd
+        module: rbdaio
+        configuration:
+          simultaneousReads: 7
+          simultaneousWrites: 7
+          # Features listed here are normally not relevant as the RBD image is created by the volume provisioner
+          # beforehand.
+          newImageFeatures:
+            - RBD_FEATURE_LAYERING
+            - RBD_FEATURE_EXCLUSIVE_LOCK
+            - RBD_FEATURE_OBJECT_MAP
+            - RBD_FEATURE_FAST_DIFF
+
+  cronJob:
+    activeDeadlineSeconds: null
+    startingDeadlineSeconds: null
+
+  crontab: []
+    # - name: backup-all
+    #   schedule: "*/10 * * * *"
+    #   command:
+    #     - benji-backup-pvc
+    # - name: enforce
+    #   schedule: "00 04 * * *"
+    #   command:
+    #     - benji-command
+    #     - enforce
+    #     - latest3,hours24,days30,months3
+    #     - 'labels["benji-backup.me/instance"] == "benji-k8s"'
+    # - name: cleanup
+    #   schedule: "00 05 * * *"
+    #   command:
+    #     - benji-command
+    #     - cleanup
+
+  # Volumes and volume mounts can be used to mount Ceph configuration and credentials, backup sources or storages into
+  # the Benji container.
+  volumes: []
+    # - name: ceph-etc
+    #   configMap:
+    #     name: ceph-etc
+    #     defaultMode: 0444
+    # - name: ceph-client-admin-keyring
+    #   secret:
+    #     secretName: ceph-client-admin-keyring
+    #     defaultMode: 0444
+
+  volumeMounts: []
+    # - name: ceph-etc
+    #   mountPath: /etc/ceph/ceph.conf
+    #   subPath: ceph.conf
+    #   readOnly: true
+    # - name: ceph-client-admin-keyring
+    #   mountPath: /etc/ceph/ceph.client.admin.keyring
+    #   subPath: keyring
+    #   readOnly: true
+
+fsfreeze:
+  enabled: true
+
+  image:
+    registry: docker.io
+    repository: almalinux
+    tag: 8.5
+    pullPolicy: IfNotPresent
+
+  priorityClassName: null
+
+  resources: {}
+
+  nodeSelector: {}
+
+  tolerations: []
+
+  affinity: {}
+
+  volumes:
+    - name: rbd-mounts-1
+      hostPath:
+        path: /var/lib/kubelet/plugins/kubernetes.io/rbd/mounts/
+        type: DirectoryOrCreate
+    - name: rbd-mounts-2
+      hostPath:
+        path: /var/lib/kubelet/plugins/kubernetes.io/csi/
+        type: DirectoryOrCreate
+
+
+  volumeMounts:
+    - name: rbd-mounts-1
+      mountPath: /var/lib/kubelet/plugins/kubernetes.io/rbd/mounts/
+    - name: rbd-mounts-2
+      mountPath: /var/lib/kubelet/plugins/kubernetes.io/csi/pv
+
+
+# Running the database backend on the same cluster could be dangerous!
+# Please consider the implications.
+postgresql:
+  enabled: false
+  # For other possible configuration values see
+  # https://github.com/bitnami/charts/blob/ad6e9ffbaac5df362861566e6e97f92624b64474/bitnami/postgresql/README.md.
+  auth:
+    enablePostgresUser: false
+    username: benji
+    database: benji
+    password: secret
+  # global:
+  #   storageClass: rbd
+  # primary:
+  #   persistence:
+  #     enabled: false
+  #     size: 100Gi
+
+pushgateway:
+  nameOverride: pushgateway
