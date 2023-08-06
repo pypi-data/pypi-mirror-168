@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-front-door
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: https://github.com/saxix/django-front-door
+Author: sax
+Author-email: s.apostolico@gmail.com
+License: MIT
+Download-URL: https://github.com/saxix/django-front-door
+Description: django-front-door
+        ===================
+        
+        
+        Simple, easy to use, middleware to lock access to any django app based on request attributes.
+        
+        Quick Start
+        ===========
+        
+        Add `FrontDoorMiddleware` to your `settings.MIDDLEWARE` as first as possible.
+        
+            MIDDLEWARE = (
+                 'front_door.middleware.FrontDoorMiddleware',
+                 'django.contrib.sessions.middleware.SessionMiddleware',
+                 'django.middleware.common.CommonMiddleware',
+                 'django.middleware.csrf.CsrfViewMiddleware',
+                 'django.contrib.auth.middleware.AuthenticationMiddleware',
+                 'django.contrib.messages.middleware.MessageMiddleware',
+            )
+        
+        Configure 
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: constance
+Provides-Extra: redis
+Provides-Extra: ua

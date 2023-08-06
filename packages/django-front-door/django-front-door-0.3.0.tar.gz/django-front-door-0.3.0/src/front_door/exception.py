@@ -1,0 +1,2 @@
+class FrontDoorClosed(PermissionError):
+    pass
