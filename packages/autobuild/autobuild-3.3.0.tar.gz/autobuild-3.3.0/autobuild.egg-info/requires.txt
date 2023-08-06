@@ -1,0 +1,9 @@
+llbase
+pydot
+
+[build]
+build
+setuptools_scm
+
+[dev]
+pytest
