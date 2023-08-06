@@ -1,0 +1,5 @@
+twisted==22.8.0
+zope.interface==5.4.0
+bcrypt==4.0.0
+pyasn1==0.4.8
+cryptography==3.0
