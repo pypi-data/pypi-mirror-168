@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: sumo-tasks-pipeline
+Version: 4.0
+Summary: Simple Python interface for a traffic simulator: SUMO
+Home-page: https://github.com/Kensuke-Mitsuzawa/sumo_docker_pipeline
+License: MIT
+Author: Kensuke Mitsuzawa
+Author-email: kensuke.mit@gmail.com
+Maintainer: Kensuke Mitsuzawa
+Maintainer-email: kensuke.mit@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: full
+Requires-Dist: Cartopy (>=0.18.0,<0.19.0)
+Requires-Dist: Shapely (>=1.7.0,<2.0.0); extra == "full"
+Requires-Dist: SumoNetVis (>=1.6.0,<2.0.0); extra == "full"
+Requires-Dist: bs4
+Requires-Dist: docker
+Requires-Dist: geopandas (>=0.10.0,<0.11.0); extra == "full"
+Requires-Dist: geoviews (>=1.9.1,<2.0.0); extra == "full"
+Requires-Dist: google-cloud-storage
+Requires-Dist: joblib
+Requires-Dist: lxml
+Requires-Dist: pandas
+Requires-Dist: pyproj (>=3.0.0,<4.0.0); extra == "full"
+Project-URL: Repository, https://github.com/Kensuke-Mitsuzawa/sumo_docker_pipeline
+Description-Content-Type: text/markdown
+
+# sumo-tasks-pipeline
+- - -
+
+Run SUMO simulators as easy as possible!
+
+The package `sumo-tasks-pipeline` enables you to run a traffic simulator [SUMO](https://sumo.dlr.de/docs/index.html) efficiently 
+and to interact with Python easily.
+
+# Example
+
+Just three lines to run a SUMO simulation.
+
+```python
+from sumo_tasks_pipeline import LocalSumoController, SumoConfigObject
+from pathlib import Path
+
+path_config = Path().cwd().joinpath('tests/resources/config_complete')
+sumo_controller = LocalSumoController(sumo_command='/usr/local/bin/sumo')
+sumo_config = SumoConfigObject(scenario_name='example', path_config_dir=path_config, config_name='grid.sumo.cfg')
+sumo_result_obj = sumo_controller.start_job(sumo_config)
+```
+
+See `examples` directory to know more.
+
+# Features
+
+- Possible to resume your tasks. The feature is useful when you run simulators on Google Colab.
+- Possible to save SUMO simulation result to Google Cloud Storage (GCS). No worries even when your local storage is small.
+- Possible to run SUMO simulations with multiple machines if you use GCS as the storage backend.
+
+# Requirement
+
+- python > 3.5
+- docker 
+- docker-compose
+
+# Install
+
+## Pull the image (or build of a docker image with SUMO)
+
+The existing image is on the [Dockerhub](https://hub.docker.com/repository/docker/kensukemi/sumo-ubuntu18).
+
+```shell
+docker pull kensukemi/sumo-ubuntu18
+```
+
+If you prefer to build with yourself, you run the following command.
+
+```shell
+docker-compose build 
+```
+
+## Install a python package
+
+```shell
+make install
+```
+
+
+# For developer
+
+```shell
+pytest tests
+```
+
+# license and credit
+
+The source code is licensed MIT. The website content is licensed CC BY 4.0.
+
+
+```
+@misc{sumo-docker-pipeline,
+  author = {Kensuke Mitsuzawa},
+  title = {sumo-tasks-pipeline},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/Kensuke-Mitsuzawa/sumo_docker_pipeline}},
+}
+```
