@@ -1,0 +1,5 @@
+{% extends "main.html" %}
+{% block content %}
+<redoc spec-url='{{ page.meta.spec.url | url }}'></redoc>
+<script src="https://cdn.jsdelivr.net/npm/redoc@2.0.0-alpha.17/bundles/redoc.standalone.js"></script>
+{% endblock %}

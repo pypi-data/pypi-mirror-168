@@ -1,0 +1,142 @@
+# Copyright 2022 ConsenSys Software Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+# the License. You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+# an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+# specific language governing permissions and limitations under the License.
+
+# Project information
+site_name: MetaMask Institutional SDK
+site_description: MetaMask Institutional SDK
+site_dir: public
+
+docs_dir: mkdocs
+
+# Software Repository
+# repo_name: docs.mmi
+# repo_url: https://github.com/ConsenSys/codefi/products/mmi/mmi-sdk-py
+
+# Project information
+site_url: https://consensys.gitlab.io/codefi/products/mmi/mmi-sdk-py
+site_author: ConsenSys
+copyright: <a href="https://consensys.net">ConsenSys</a> © 2022
+
+nav:
+  - Python SDK: sdk-python.md
+  - Technical Architecture: architecture.md
+
+theme:
+  name: material
+  custom_dir: mkdocs/custom_theme
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: consensys
+  logo: "assets/logo.svg"
+  favicon: "assets/favicon.svg"
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.indexes
+
+extra:
+  #announce: "test announcement"
+  languages:
+    en: English (en)
+  debug: false
+  version:
+    number: latest
+    switch: false
+  logo_is_text: false
+  latest_version_warning:
+    text: "You are reading the development version of this documentation and
+      some displayed features may not be available in the stable release.
+      You can switch to stable version using the switch in the header."
+  support:
+    company: ConsenSys
+  analytics:
+    provider: google
+    property: G-FX9B48S4C8
+  social:
+    - icon: fontawesome/solid/envelope
+      link: https://metamask.io/institutions.html
+    - icon: material/web
+      link: https://consensys.net/
+
+extra_css:
+  - assets/stylesheets/custom.css
+  #  - assets/stylesheets/version.css
+  - https://fonts.googleapis.com/icon?family=Material+Icons
+
+extra_javascript:
+#  - assets/javascripts/version.js
+#  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+#  - assets/javascripts/accessiBe.js
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      permalink_title: Link to this section
+      toc_depth: 4
+  - codehilite
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - markdown_include.include:
+      base_path: docs
+  - admonition
+  - footnotes
+  - def_list
+  - attr_list
+  - abbr
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - meta
+  - smarty
+
+plugins:
+  render_swagger: {}
+  search:
+    lang: en
+    separator: '[\s\-\.\_]+'
+    prebuild_index: true
+  git-revision-date-localized:
+    locale: en
+  markdownextradata: {}
+#  minify:
+#    minify_html: true
+#    minify_js: true
+#    htmlmin_opts:
+#      remove_comments: true
+# uncomment to exclude a folder in /docs from final render.
+# useful for include files
+#  - exclude:
+#      glob:
+#        - cmd/*
+#  mkdocs-video:
+#    css_style:
+#      weight: "50%"
+
