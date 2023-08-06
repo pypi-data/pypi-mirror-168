@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: webber
+Version: 0.0.1.post1
+Summary: An Pythonic platform for no-latency ETL and parallelization inspired by Apache Airflow.
+Home-page: https://www.webberproject.com
+Author: WebberTeam
+Author-email: admin@webberproject.com
+License: UNKNOWN
+Description: An Pythonic platform for no-latency ETL and parallelization inspired by Apache Airflow.
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/x-rst
