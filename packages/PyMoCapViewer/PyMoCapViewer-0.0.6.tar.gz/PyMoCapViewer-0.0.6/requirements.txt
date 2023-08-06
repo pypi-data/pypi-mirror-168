@@ -1,0 +1,7 @@
+wheel
+twine
+numpy
+pandas
+vtk
+setuptools
+open3d

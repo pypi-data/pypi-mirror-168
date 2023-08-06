@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PyMoCapViewer
+Version: 0.0.6
+Summary: A simple MoCap Viewer
+Home-page: https://github.com/justamad/PyMoCapViewer
+Author: Justin Albert
+Author-email: justin.albert@hpi.de
+License-File: LICENSE
