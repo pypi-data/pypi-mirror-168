@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/netcdf_modifier.egg-info/PKG-INFO
+src/netcdf_modifier.egg-info/SOURCES.txt
+src/netcdf_modifier.egg-info/dependency_links.txt
+src/netcdf_modifier.egg-info/requires.txt
+src/netcdf_modifier.egg-info/top_level.txt
