@@ -1,0 +1,9 @@
+NumPy
+Numdifftools
+Scipy
+tabulate
+matplotlib
+PyYaml
+six
+funcsigs
+SymPy
