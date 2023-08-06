@@ -1,0 +1,10 @@
+streamdatasetjson/__init__.py,sha256=YzhSqW5_hKyg7283Z0OTyYd0NgAPeXM1ZBi43yORAmc,64
+streamdatasetjson/dataset.py,sha256=e_4a_TGZFnCrvG8QyRfKlyXMD9NXxpIPlzyaHNU7qZg,1801
+streamdatasetjson/datasetjson.py,sha256=Nb2cLuFlsoDV4EAPIJBgcitEkiK15tt0PhtyWV-E2t8,1741
+streamdatasetjson/errors.py,sha256=0_BcTGZE9lzy-voBS5JNHCXFnfDenOmrdfb_uvdd1rc,133
+streamdatasetjson/utils.py,sha256=mWEF_nxS04dDe8iOzzxIdwKsppzggthhOtCj2lOKjFY,380
+stream_dataset_json-0.1.0.dist-info/LICENSE,sha256=oWVUjCcT5fJMdGwoKN4e9bkJO_vUnQ_9CLtWxwWJN4g,1085
+stream_dataset_json-0.1.0.dist-info/METADATA,sha256=yRAe2Sy2SxKbjPorI4HGp2dn5ESVkyJ34QXGN_nncBg,589
+stream_dataset_json-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stream_dataset_json-0.1.0.dist-info/top_level.txt,sha256=kWE3k-8j9chgvlUdUMzjLaAvUMxxY1rOGUzwGcJfbz8,18
+stream_dataset_json-0.1.0.dist-info/RECORD,,
