@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vk-api-stubs
+Version: 0.1.0
+Summary: Stubs for vk_api
+Author: sergey
+Author-email: saalaus2@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
