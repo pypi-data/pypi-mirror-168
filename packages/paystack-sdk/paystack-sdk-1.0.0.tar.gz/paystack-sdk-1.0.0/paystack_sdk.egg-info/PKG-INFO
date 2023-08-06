@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: paystack-sdk
+Version: 1.0.0
+Summary: Paystack
+Home-page: https://github.com/PaystackOSS/paystack-python
+Author: Paystack Integration
+Author-email: techsupport@paystack.com
+License: UNKNOWN
+Description:     The OpenAPI specification of the Paystack API that merchants and developers can harness to build financial solutions in Africa.  # noqa: E501
+            
+Keywords: Paystack,Transaction,Split Payment,Customer,Dedicated Virtual Account,Subaccount,Plan,Subscription,Product,Page,Payment Request,Settlement,Transfer Recipient,Transfer,Balance,Charge,Bulk Charge,Integration,Refund,Dispute,Verification
+Platform: UNKNOWN
