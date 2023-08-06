@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+data_dag/__init__.py
+data_dag/dag_factory.py
+data_dag.egg-info/PKG-INFO
+data_dag.egg-info/SOURCES.txt
+data_dag.egg-info/dependency_links.txt
+data_dag.egg-info/requires.txt
+data_dag.egg-info/top_level.txt
+data_dag/operator_factory/__init__.py
+data_dag/operator_factory/base.py
+data_dag/operator_factory/dynamic.py
+data_dag/operator_factory/simple.py
