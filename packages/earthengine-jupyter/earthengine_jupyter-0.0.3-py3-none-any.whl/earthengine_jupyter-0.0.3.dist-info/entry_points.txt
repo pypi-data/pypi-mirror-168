@@ -1,0 +1,2 @@
+[nbdev]
+ee_jupyter = ee_jupyter._modidx:d
