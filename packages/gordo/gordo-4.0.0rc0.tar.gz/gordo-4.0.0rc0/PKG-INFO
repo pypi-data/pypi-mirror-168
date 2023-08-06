@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gordo
+Version: 4.0.0rc0
+Summary: Train and build models for Argo / Kubernetes
+Home-page: https://github.com/equinor/gordo
+Author: Equinor ASA
+Author-email: fg_gpl@equinor.com
+License: AGPLv3
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Provides-Extra: mlflow
+Provides-Extra: postgres
+Provides-Extra: tests
+Provides-Extra: full
+License-File: LICENSE
+
+UNKNOWN
+
