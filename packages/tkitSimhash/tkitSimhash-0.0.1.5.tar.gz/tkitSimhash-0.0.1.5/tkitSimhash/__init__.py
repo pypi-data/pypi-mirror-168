@@ -1,0 +1,2 @@
+#
+from .simHash import simHash

@@ -1,0 +1,4 @@
+jieba>=0.42.1
+simhash==2.1.2
+nltk==3.6
+pytest==7.1.3
