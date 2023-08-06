@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: ctower
+Version: 0.0.2
+Summary: CLI application for managing AWS Control Tower for your AWS Organization.
+Home-page: https://github.com/kloia/ctower
+License: Apache-2.0
+Keywords: aws,organization,control tower,organizational unit
+Author: Oguzhan Yilmaz
+Author-email: oguzhanylmz271@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: boto3 (>=1.24.66,<2.0.0)
+Requires-Dist: rich (>=12.5.1,<13.0.0)
+Requires-Dist: tabulate (>=0.8.10,<0.9.0)
+Requires-Dist: termcolor (>=2.0.1,<3.0.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Project-URL: Repository, https://github.com/kloia/ctower
+Description-Content-Type: text/markdown
+
+# ctower
+Control Tower CLI application.
+
+## Poetry
+```bash
+poetry publish --build --username $PYPI_USERNAME --password $PYPI_PASSWORD
+```
+
+```bash
+pip install ctower
+ctower apply strongly-recommended
+```
+
+## Tasks
+- upload to pypi
+- logic for enabling controls
+    - enable singular control to ou
+    - sync one account to other
+        - --strict to mirror the controls
+        - nothing to just merge apply 
+- ? maybe prompting
+- show accounts under ous
+- 
