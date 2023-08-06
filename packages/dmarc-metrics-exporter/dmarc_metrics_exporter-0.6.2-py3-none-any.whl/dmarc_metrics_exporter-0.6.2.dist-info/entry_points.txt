@@ -1,0 +1,3 @@
+[console_scripts]
+dmarc-metrics-exporter=dmarc_metrics_exporter.__main__:run
+
