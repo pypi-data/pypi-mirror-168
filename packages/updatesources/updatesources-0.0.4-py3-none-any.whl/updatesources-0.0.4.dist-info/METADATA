@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: updatesources
+Version: 0.0.4
+Summary: Generate a cmake file which sets a list of files to a cmake variable
+Author: Nicholas Johnson
+Author-email: nicholas.m.j@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
