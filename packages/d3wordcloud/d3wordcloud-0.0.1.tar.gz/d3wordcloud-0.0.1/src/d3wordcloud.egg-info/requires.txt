@@ -1,0 +1,5 @@
+
+[dev]
+ipython
+check-manifest
+twine
