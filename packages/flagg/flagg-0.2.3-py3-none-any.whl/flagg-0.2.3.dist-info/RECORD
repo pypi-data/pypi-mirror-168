@@ -1,0 +1,11 @@
+flagg/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+flagg/__main__.py,sha256=i7qAUPk48awNIBMKvF77OjNGs6xLLxu0poqHVtbr8kE,1734
+flagg/interface/__init__.py,sha256=swuBSo9NCgPg8_XwQIv1yqIWfQWWRqGDjNMEcsk1mW4,134
+flagg/interface/lexer.py,sha256=-cTfKDmr1omP-QT5Kfw4iNYQfQlYkdSFL5OZT2D6bRI,8522
+flagg/interface/parser.py,sha256=BTpZTsW7ngUJYGhqSjCSNVNO2GLnFGE3K_DCibSeXw4,1094
+flagg/interface/symbol_table.py,sha256=ldWsWzMi8yI79-s6SFpbzEQuPLggpe-0383fX8nnR1w,1079
+flagg/utils/dataclasses.py,sha256=h0JHmEdFJnOzuoA_oF_AWzS8utMzgD-pCeTSv_9YKCk,478
+flagg/utils/errors.py,sha256=ksQacKiaM1jTjrSn6oSlZJYImJZ5vFAfqqCLZ9am-0I,89
+flagg-0.2.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+flagg-0.2.3.dist-info/METADATA,sha256=LwlzTTlxJ_6yGQTof2dImwm3yH2GHzqfkUatFWmBMnY,355
+flagg-0.2.3.dist-info/RECORD,,
