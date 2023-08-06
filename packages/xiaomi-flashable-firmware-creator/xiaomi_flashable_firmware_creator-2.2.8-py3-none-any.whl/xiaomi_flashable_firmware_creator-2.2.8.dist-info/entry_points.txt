@@ -1,0 +1,3 @@
+[console_scripts]
+xiaomi_flashable_firmware_creator=xiaomi_flashable_firmware_creator.xiaomi_flashable_firmware_creator:main
+
