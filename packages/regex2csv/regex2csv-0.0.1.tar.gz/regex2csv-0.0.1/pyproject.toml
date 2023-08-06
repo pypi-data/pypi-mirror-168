@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regex2csv"
+version = "0.0.1"
+description = "A Python script that extracts regex capture groups and puts into a CSV file."
+readme = "README.md"
+authors = [{"name" = "Lucas Marcolongo", "email" = "lucas@marcolongo.dev"}]
+urls = {"Source" = "https://github.com/marcolongol/regex2csv"}
+license = {"file" = "LICENSE"}
+
+[project.scripts]
+regex2csv = "regex2csv.main:main"
+

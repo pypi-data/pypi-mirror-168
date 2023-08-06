@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+regex2csv/__init__.py
+regex2csv/main.py
+regex2csv.egg-info/PKG-INFO
+regex2csv.egg-info/SOURCES.txt
+regex2csv.egg-info/dependency_links.txt
+regex2csv.egg-info/entry_points.txt
+regex2csv.egg-info/top_level.txt
