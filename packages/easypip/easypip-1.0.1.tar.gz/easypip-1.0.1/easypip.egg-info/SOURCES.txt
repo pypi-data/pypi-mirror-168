@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+easypip/__init__.py
+easypip.egg-info/PKG-INFO
+easypip.egg-info/SOURCES.txt
+easypip.egg-info/dependency_links.txt
+easypip.egg-info/requires.txt
+easypip.egg-info/top_level.txt

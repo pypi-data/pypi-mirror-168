@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: easypip
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # easypip
+        
+        Ease the import / installation of packages in python and especially in notebooks
+        
+        Usage
+        ```
+        import easypip
+        
+        torch = easypip("torch >= 1.8.0")
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
