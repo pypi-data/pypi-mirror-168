@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: abrsh-mac
+Version: 1.0
+Author: Abrham Mesfin
+Author-email: abrshtgam@gmail.com
+License-File: LICENSE
+
+Get current MAC address and change it if you want.
