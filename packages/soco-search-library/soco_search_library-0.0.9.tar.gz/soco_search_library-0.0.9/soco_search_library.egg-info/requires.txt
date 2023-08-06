@@ -1,0 +1,8 @@
+requests>=2.23.0
+flask
+flask_cors
+soco-clip
+fastapi
+uvicorn
+grpcio>=1.44.0
+grpcio-tools>=1.44.0
