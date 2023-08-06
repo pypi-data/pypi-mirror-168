@@ -1,0 +1,8 @@
+numpy
+pandas
+faiss-cpu
+click
+matplotlib
+python-igraph
+opencv-python
+pyyaml
