@@ -1,0 +1,2 @@
+[napari.plugin]
+RedLionfish = RedLionfishDeconv.napari_plugin
