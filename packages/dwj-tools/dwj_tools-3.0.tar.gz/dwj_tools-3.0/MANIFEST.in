@@ -1,0 +1,2 @@
+include dwj_tools/get_data_from_wind/*.h5
+include dwj_tools/get_data_from_wind/*.xlsx
