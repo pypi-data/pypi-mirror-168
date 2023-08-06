@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+struct_diff/__init__.py
+struct_diff/__main__.py
+struct_diff/comparator.py
+struct_diff/util.py
+struct_diff.egg-info/PKG-INFO
+struct_diff.egg-info/SOURCES.txt
+struct_diff.egg-info/dependency_links.txt
+struct_diff.egg-info/top_level.txt
+struct_diff/formatters/__init__.py
+struct_diff/formatters/base.py
+struct_diff/formatters/json.py
+struct_diff/formatters/yaml.py
