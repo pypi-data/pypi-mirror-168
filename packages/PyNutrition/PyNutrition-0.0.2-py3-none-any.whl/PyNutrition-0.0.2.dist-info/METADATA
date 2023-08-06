@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: PyNutrition
+Version: 0.0.2
+Summary: A small package
+Author: Hudson R Bandeira
+Author-email: hudsonrb750@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+PyNutrition
+===========
+
+#### Esse é um pacote que realiza cálculos relacionados ao consumo de proteínas, cálorias e o consumo de água. POR ENQUANTO.
+#### Veja o exemplo de resultado do pacote:
+
+
+## Instalação:
+
+    pip install PyNutrition
+
+# Uso:
