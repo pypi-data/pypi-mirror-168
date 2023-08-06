@@ -1,0 +1,3 @@
+anyio>=3.0
+wsproto>=1.0
+yarl
