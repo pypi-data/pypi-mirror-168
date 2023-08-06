@@ -1,0 +1,12 @@
+[kedro.hooks]
+projetaai-overrides=kedro_projetaai.plugin:overrides
+
+[kedro.project_commands]
+projetaai=kedro_projetaai.plugin:cli
+
+[kedro.starters]
+projetaai=kedro_projetaai.starters:project_starters
+
+[projetaai.cli]
+local=kedro_projetaai.cli.local:LocalCLI
+
