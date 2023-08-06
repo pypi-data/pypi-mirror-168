@@ -1,0 +1,14 @@
+notion_operator_py/__init__.py,sha256=Or0iZ2dxV6k6g5HyOny0jkt2n7sPq7xZPPOnqd5uX0M,481
+notion_operator_py/builder.py,sha256=6p_fX1de6dvtVtaNR3DBVOtxS2lpUyEjodOcJaGzh7E,1487
+notion_operator_py/database.py,sha256=lbPnNgDJIltQGbiWMUGsF_LGKz_FgHIL8-HriBsYGE4,1576
+notion_operator_py/page.py,sha256=rj_mLfN_aFTPaOCvyA-RuP05zohvi6j_3GpjsRNi1lw,1026
+notion_operator_py/utils.py,sha256=hC28yzuOf0D2XZz85WEiRmST0Dl5FijcVyNjrhNJiUo,474
+notion_operator_py/objects/__init__.py,sha256=ZRcKOU2g2GUHtUMXxDDYGhPPuntbhwVvx0gJ3CsnSRU,672
+notion_operator_py/objects/common.py,sha256=Y7xFT3aFsIv1ARlfS--Kd3jSIh87EfE0eoZ41BiwXYM,4656
+notion_operator_py/objects/object.py,sha256=hTJYamKYeE2Z2SwtiWJTXz-6W0eiLOKich2lF3JlUog,1703
+notion_operator_py/objects/properties.py,sha256=TfZNXaIQQD3PpyAVfqrqCIyS44fhp0yrTq0mWBDSbDk,7825
+notion_operator_py-0.6.0.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+notion_operator_py-0.6.0.dist-info/METADATA,sha256=NbIYezWVK8ckWh-PqPIOuvQM1H11PQo1BVPiRusougI,780
+notion_operator_py-0.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+notion_operator_py-0.6.0.dist-info/top_level.txt,sha256=g1WxHCSEia9iReCi3xQvAZvz7YQoYjyZDd0TWBxRaNo,19
+notion_operator_py-0.6.0.dist-info/RECORD,,
