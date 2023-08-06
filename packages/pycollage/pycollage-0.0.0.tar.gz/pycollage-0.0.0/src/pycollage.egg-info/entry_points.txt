@@ -1,0 +1,2 @@
+[console_scripts]
+pycollage = pycollage.processing:cli

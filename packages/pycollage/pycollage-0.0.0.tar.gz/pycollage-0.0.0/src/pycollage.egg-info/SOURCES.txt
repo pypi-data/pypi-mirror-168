@@ -1,0 +1,12 @@
+environment.yml
+pyproject.toml
+readme.md
+setup.cfg
+src/pycollage/__init__.py
+src/pycollage/processing.py
+src/pycollage.egg-info/PKG-INFO
+src/pycollage.egg-info/SOURCES.txt
+src/pycollage.egg-info/dependency_links.txt
+src/pycollage.egg-info/entry_points.txt
+src/pycollage.egg-info/requires.txt
+src/pycollage.egg-info/top_level.txt
