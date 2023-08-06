@@ -1,0 +1,56 @@
+# This CI will lauch a Docker image that contains all the dependencies required
+# within that image the pytest test suite is run 
+
+name: CI with install
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+    paths-ignore:
+      - 'docs/**'
+      - '.gitignore'
+      - '*.md'
+      - 'CITATION.cff'
+      - 'LICENSE.txt'
+      - 'readthedocs.yml'
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    container:
+      image: continuumio/miniconda3:4.9.2 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: install package
+        run: |
+          apt-get --allow-releaseinfo-change update
+          apt-get install -y libgl1-mesa-glx libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev libosmesa6 libosmesa6-dev libgles2-mesa-dev
+          conda install -c cadquery -c conda-forge cadquery=master
+          pip install .
+
+      - name: Run tests
+        run: |
+          pip install .[tests]
+          pytest tests -v
+
+      - name: Run examples
+        run: |
+          cd examples
+          python example_finding_part_id_by_bounding_box.py
+          python example_finding_part_id_by_center.py
+          python example_finding_part_id_by_volume.py
+
+      # todo enable these tests once paramak dev build is working or v0.7 paramak and cq 2.2 is released
+      # - name: install paramak
+      #   run: conda install -c fusion-energy -c cadquery -c conda-forge paramak_dev
+
+      # - name: Run paramak examples
+      #   run: |
+      #     cd examples
+      #     python paramak_example.py
+
+
