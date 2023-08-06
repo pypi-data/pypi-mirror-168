@@ -1,0 +1,17 @@
+fastdatasets/README.md,sha256=77HDXx7L5ZA3Qp6SSxop_649vv12hwUOJynnrauTuH4,8770
+fastdatasets/__init__.py,sha256=T1mt2rAdm4nhFCwIigwX4d7p_SVk09ayq5JW9Xfq4Hg,191
+fastdatasets/dataset.py,sha256=5FlM1mrn-0Q7wfb-X1i7kXzrTP8DOWraVBN7-w5jfiY,4703
+fastdatasets/demo.py,sha256=OJBLI3-YpnRd_22Rtt0wSTWjztkuTw57Hc6FO-UZUy4,3787
+fastdatasets/demo_iterator.py,sha256=BAAKr9vmt7iNaRRvuKB7KeDshCbHVBCODgiPz3E3M6A,649
+fastdatasets/demo_random.py,sha256=VMOTq2mZoiYushARoEFH94iXpI8sHBQ0FrrmU_dXpKY,2620
+fastdatasets/demo_writer.py,sha256=mB5qrLPL_vlmHuTUtk8jZ6-JV8JzHf0_FMJyVw2sQ8s,1892
+fastdatasets/record_writer.py,sha256=T0M-aV7B4ZuTGT-HYCm1BoXNHTLn1PAU4bjfAf7va7A,2525
+fastdatasets/torch_dataset.py,sha256=l24ZFCHRd9MKpsDbLJBCm1pxK7oy77dc-rQg7GAObJM,5551
+fastdatasets/iterable_dataset/__init__.py,sha256=DETlN7vb9WAjigQGT8EVsvfe7DWvVnuwGrpj9Qg3RdY,7531
+fastdatasets/iterable_dataset/utils.py,sha256=zX9OqrHZfHm6_9nOap3y1fYpF_uR_W_844LWEjkjOuA,12609
+fastdatasets/random_dataset/__init__.py,sha256=pgp7RjMIQiIG1GQFh0BNbxEZ1Wf7_iqsQpLqN702y7A,7045
+fastdatasets/random_dataset/utils.py,sha256=1wdsYySNWIFb86iqEa2qgJcPjZLdXfXk1rcUPTsEGB4,8019
+fastdatasets-0.2.2.dist-info/METADATA,sha256=XbkEHe-sgfkH7BVDu1XOmx_abYjw4cWWyqyePUON6Xc,9845
+fastdatasets-0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastdatasets-0.2.2.dist-info/top_level.txt,sha256=cSNnK2OJMFJZoleds15VI1qc8MXMYTpgmVdwQ3jItzo,13
+fastdatasets-0.2.2.dist-info/RECORD,,
