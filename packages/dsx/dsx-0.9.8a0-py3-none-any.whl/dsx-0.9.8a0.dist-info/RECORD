@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+__version__.py,sha256=0_KPtg2XYjmEEPpf183VHkC-iwRTa6mfBIwv6COyLe8,7
+add_toc.py,sha256=E6bQvMNMIHmUuBUOYN71izxoCFcXkd7UtmLx6jkiPLM,2170
+ds_utils.py,sha256=nawC1-rcAfPhb84Ov6aXH72fFdQvReoQXY0Ev28Sozk,31077
+ml_utils.py,sha256=tO6vhC2tMeCa5mAmO98Cg24VFIQAIhtKaO8WmBEV_9E,8760
+dsx-0.9.8a0.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+dsx-0.9.8a0.dist-info/METADATA,sha256=H9w4rUEpdiO47XhBgaiUYPgslzjiGs_0l1CtQDK5gfU,4530
+dsx-0.9.8a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dsx-0.9.8a0.dist-info/entry_points.txt,sha256=M6TZZTwmowYAmCAGI63OA35Xn_A4vzLg7r8r2sEmkSo,54
+dsx-0.9.8a0.dist-info/top_level.txt,sha256=leKK2fUu9MHtHmiqLniyiTJXVflV01M6n8w4YPTQeww,47
+dsx-0.9.8a0.dist-info/RECORD,,
