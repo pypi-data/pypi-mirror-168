@@ -1,0 +1,15 @@
+camera4kivy/__init__.py,sha256=8Vx6gvIS7ktkXFbY1Rtz3jRbDOh7m2Y2X1h7qJWwCs8,32
+camera4kivy/preview.py,sha256=ZnNmlWlTjckwf7yT636FSPkJ0ioDeqJBgeCs67l2sYo,9108
+camera4kivy/preview_camerax.py,sha256=j-CKpAM3kf_dUQ0gOe0uwX-gA44sJyWihKsxntS6Oo4,20502
+camera4kivy/preview_common.py,sha256=xT-juK0IaqJ846foevQwVwPEtIkn8EfdEYzFuNQUFfo,5225
+camera4kivy/preview_kivycamera.py,sha256=DSssSkJq1AolLhBkHJkL-8vXlo6SV-hHVuWw18e9Beo,13506
+camera4kivy/based_on_kivy_core/__init__.py,sha256=k3HPvXhUeSCvA62F2N5NqGAFn_kNuTi4QYeLFH5v2Ro,9876
+camera4kivy/based_on_kivy_core/camera/__init__.py,sha256=ZYAODJlVlSBp4jeegMlbriuCjW1yoVH9CIOzS90Lpug,3733
+camera4kivy/based_on_kivy_core/camera/camera_gi.py,sha256=4JxUG90QCFFNTMO6NzI40rqPTsFPBWjW0WP__bivacE,6598
+camera4kivy/based_on_kivy_core/camera/camera_opencv.py,sha256=WxlXgMsbVmXxWsk7Q_KnO1583u1bpztj3eIKxI2mtIU,5903
+camera4kivy/based_on_kivy_core/camera/camera_picamera.py,sha256=fp63HRb20xx7InmH1Kv-1igi0YheHp1K0m_HfpIh5yc,2866
+camera4kivy-0.1.0.dist-info/LICENSE,sha256=1_RB1y5SQ2y87cAIAPAaYed1x3PDtHNI9A0ZsSrIz14,1096
+camera4kivy-0.1.0.dist-info/METADATA,sha256=fUBaE_YyoF4lTFJ0fZsaFW3p5DnnrMKhDh912dnMNI4,38469
+camera4kivy-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+camera4kivy-0.1.0.dist-info/top_level.txt,sha256=FRRdJKXrH8N6fNAskAuLnBNGTJprCCmiYyrucB__iYM,12
+camera4kivy-0.1.0.dist-info/RECORD,,
