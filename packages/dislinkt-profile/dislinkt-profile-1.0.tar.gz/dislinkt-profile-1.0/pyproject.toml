@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dislinkt_profile_ducom98"
+version = "0.0.0"
+authors = [
+  { name="Dusan Madzarevic", email="ducom98@gmail.com" },
+  { name="Marko Mijatovic", email="example@gmail.com" },
+  { name="Marieta Rakos", email="example@gmail.com" },
+  { name="Marija Curcic", email="example@gmail.com" }
+]
+description = "Dislink profile microservice"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dusan-madzarevic/dislinkt-profile"
+"Bug Tracker" = "https://github.com/dusan-madzarevic/dislinkt-profile/issues"
+
+[tool.semantic_release]
+"version_variable" = "setup.py:__version__"
+"branch" = "development"
