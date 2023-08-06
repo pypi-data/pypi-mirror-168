@@ -1,0 +1,16 @@
+matplotlib
+pims
+tabulate
+pims_nd2
+opencv-python
+cowpy
+celluloid
+colorama
+termcolor
+tqdm
+joblib
+ipywidgets
+tifffile
+pandas
+pystackreg
+pyyaml
