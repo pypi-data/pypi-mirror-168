@@ -1,0 +1,3 @@
+graft mrbob
+graft docs
+include *.cfg *.rst *.in LICENSE Makefile

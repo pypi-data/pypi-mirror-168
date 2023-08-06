@@ -1,0 +1,12 @@
+setuptools
+six
+Jinja2
+
+[development]
+zest.releaser
+Sphinx
+
+[test]
+nose2
+coverage
+flake8
