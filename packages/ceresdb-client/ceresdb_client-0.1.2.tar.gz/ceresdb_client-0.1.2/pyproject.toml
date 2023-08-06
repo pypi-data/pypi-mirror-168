@@ -1,0 +1,15 @@
+[project]
+name = "ceresdb-client"
+version = "0.1.2"
+description = "The python client for ceresdb."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+authors = [
+    { name = "CeresDB Authors", email = "ceresdbservice@gmail.com" }
+]
+keywords = ["CeresDB"]
+
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
