@@ -1,0 +1,8 @@
+pgkv/__init__.py,sha256=6cX9O4DgiHUJ5AZNUYgnYyX6x9Dqs5ajSg3QDsbX1EE,111
+pgkv/pgkv.py,sha256=37V0GnDAcKR3puQ-Luh4IK3XeATT_Lry6-OexkPAnm0,14156
+pgkv/utils.py,sha256=g44n0bxv7t2iuOAimDbRxfAbmFW6d_swFPy-Ni8YUFA,134
+pgkv-0.2209.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pgkv-0.2209.1.dist-info/METADATA,sha256=ucyIwFUlwt9QPgF2xaXQsMClBdIOCqw2J_TfenCiFL0,792
+pgkv-0.2209.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pgkv-0.2209.1.dist-info/top_level.txt,sha256=R15ulIM3CP7zLo_oP-VHLgmi4UEKkaR3kFHb6wpfTWg,5
+pgkv-0.2209.1.dist-info/RECORD,,
