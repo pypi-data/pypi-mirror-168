@@ -1,0 +1,4 @@
+[console_scripts]
+avpr-to-avsc=avro_to_python_etp.avpr_to_avsc:main
+avro-to-python-etp=avro_to_python_etp.cli:main
+
