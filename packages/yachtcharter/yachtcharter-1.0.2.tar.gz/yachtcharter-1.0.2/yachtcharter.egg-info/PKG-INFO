@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: yachtcharter
+Version: 1.0.2
+Home-page: https://github.com/guardian/yacht-charter-python-library
+Author: Nick Evershed
+Author-email: nick.evershed@theguardian.com
+License: MIT
+Keywords: data-visualization data data-visualisation data analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Description-Content-Type: text/markdown
+
+Yacht Charter v1
+=======================
