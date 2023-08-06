@@ -1,0 +1,2 @@
+plover>=4.0.0.dev8
+plover-python-dictionary-lib~=0.4
