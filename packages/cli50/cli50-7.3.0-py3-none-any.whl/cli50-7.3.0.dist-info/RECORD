@@ -1,0 +1,10 @@
+cli50/__init__.py,sha256=BBh9auUFywEG_Xu5eDRAWf7aJkrc7rIXhoRVvB1N_X4,588
+cli50/__main__.py,sha256=qH-tFA1UufCNIeVTLZPHPTWHpFxq1ukFApIAXpwt6C8,12104
+cli50/locale/es/LC_MESSAGES/cli50.mo,sha256=nqI4OHAfEfu67RWdIPAtUBG0-g3_nYddh9x8K6P8_9s,1519
+cli50/locale/es/LC_MESSAGES/cli50.po,sha256=pYVWzrTzYN0URPy1EeDWTFgF5WLD8BCqmrlCfV2XaiQ,1465
+cli50-7.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cli50-7.3.0.dist-info/METADATA,sha256=eLCimmC7La5yJd9ryCdd4wgfL0FtWOxBUtB37urh5yg,604
+cli50-7.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cli50-7.3.0.dist-info/entry_points.txt,sha256=cw5uJm3DaKLp61M4BBKrIPTjW3WtnjI5TYs6sW-WW50,47
+cli50-7.3.0.dist-info/top_level.txt,sha256=UDcSdQpjNZYsc6vCWp0S1h-MzkqDHfHkhkSF_iWCpJc,6
+cli50-7.3.0.dist-info/RECORD,,
