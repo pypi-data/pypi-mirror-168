@@ -1,0 +1,41 @@
+from NEMO.decorators import staff_member_required
+from NEMO.models import User
+from NEMO.views import email as email_views
+from django.contrib.auth.models import Group
+from django.views.decorators.http import require_GET
+
+from NEMO_group_email.utils import render_combine_responses, replace_function
+
+
+@staff_member_required
+@require_GET
+def email_broadcast(request, audience=""):
+    email_broadcast_dictionary = {}
+
+    if audience == "group":
+        email_broadcast_dictionary["group_types"] = Group.objects.all()
+
+    original_response = email_views.email_broadcast(request, audience)
+
+    return render_combine_responses(
+        request,
+        original_response,
+        "NEMO_group_email/email_broadcast.html",
+        email_broadcast_dictionary,
+    )
+
+
+@replace_function("NEMO.views.email.get_users_for_email")
+def new_get_users_for_email(old_function, audience: str, selection, no_type: bool):
+    if audience != "group":
+        return old_function(audience, selection, no_type)
+    else:
+        user_group_list = User.objects.none()
+        for and_group in selection:
+            user_group = User.objects.all()
+            for group_pk in and_group.split(" "):
+                user_group &= User.objects.filter(groups__in=[int(group_pk)])
+
+            user_group_list |= user_group
+
+        return user_group_list.distinct()

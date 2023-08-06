@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: NEMO-group-email
+Version: 1.0.0
+Summary: Install Group email plugin for NEMO
+Home-page: https://gitlab.com/nemo-community/prometheus-computing/nemo-group-email
+Author: Prometheus Computing LLC
+Author-email: nemo@prometheuscomputing.com
+License: MIT
+Keywords: NEMO
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: NEMO (>=4.1.0)
+
+# NEMO Group Email
+
+This plugin for NEMO allows to use Django groups to categorize users and email different combinations of groups in the Email Broadcast page.
+
+# Installation
+
+`pip install NEMO-group-email`
+
+# Add NEMO Group Email plugin
+
+in `settings.py` add to `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+    '...',
+    'NEMO_group_email',
+    '...'
+]
+```

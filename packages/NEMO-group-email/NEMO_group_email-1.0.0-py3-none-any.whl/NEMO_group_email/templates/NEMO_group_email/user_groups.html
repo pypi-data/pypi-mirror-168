@@ -1,0 +1,54 @@
+{% load custom_tags_and_filters %}
+<div id="user_groups">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="add_a_group">
+            Groups
+        </label>
+        <div class="col-sm-4">
+            <input id="add_a_group" type="text" autocomplete="off"
+                   class="form-control" placeholder="Add a group"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div id="group-list" class="col-sm-offset-2 col-sm-4">
+            This user has no assigned groups.
+        </div>
+    </div>
+</div>
+<script>
+    function add_group(jquery_event, group) {
+        if(jquery_event !== null) {
+            $(this).typeahead('val', '').focus();
+        }
+        add_to_list(
+            "#group-list",
+            "remove_group",
+            group.id,
+            group.name,
+            "Remove this user from " + group.name,
+            "groups"
+        );
+    }
+    function remove_group(group_id) {
+        remove_from_list(
+            "#group-list",
+            "#groups_" + group_id,
+            "This user has no assigned groups."
+        );
+    }
+
+    function init_groups() {
+        let last_login_form_group = $("div.form-group:contains('Last login')");
+        $("#user_groups").insertAfter(last_login_form_group);
+
+        $('#add_a_group').autocomplete(
+            "groups", add_group, {{ groups|json_search_base }}
+        );
+
+        {{ user_groups|json_search_base }}.forEach((item, index) => {
+            add_group(null, item);
+        });
+    }
+
+    $(init_groups);
+</script>
