@@ -1,0 +1,6 @@
+cobalt>=6
+cssutils>=2
+lxml>=4.0
+
+[test]
+nose
