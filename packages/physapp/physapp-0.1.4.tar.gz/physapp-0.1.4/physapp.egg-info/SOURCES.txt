@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+physapp/__init__.py
+physapp/csv.py
+physapp/fonctions.py
+physapp/modelisation.py
+physapp/pyboard.py
+physapp.egg-info/PKG-INFO
+physapp.egg-info/SOURCES.txt
+physapp.egg-info/dependency_links.txt
+physapp.egg-info/top_level.txt
