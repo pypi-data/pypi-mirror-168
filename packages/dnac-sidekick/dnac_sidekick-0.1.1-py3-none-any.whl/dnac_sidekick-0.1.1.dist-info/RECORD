@@ -1,0 +1,15 @@
+dnac_sidekick/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnac_sidekick/cli.py,sha256=54JVqfEEnp8Sm_skI8ituCVzjjXT1oO7Y1tQ6Jz8hLI,4642
+dnac_sidekick/device_commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnac_sidekick/device_commands/commands.py,sha256=uICZs4GeGdHIZ84VKgV7RdhKGKrFxUz3ERMZdWsfBUM,3485
+dnac_sidekick/health/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnac_sidekick/health/commands.py,sha256=soyJ0TWBNWw1zaMOT1IIlkU5g9RmyxzF2ZZWDG7hg1k,3464
+dnac_sidekick/inventory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnac_sidekick/inventory/commands.py,sha256=v16g-6890uraq7ECAAqY5mTWiAxdnSfO-Le_djyLfg8,2045
+dnac_sidekick/licenses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnac_sidekick/licenses/commands.py,sha256=vYS2X2_TvAKL-tc93BZD1VbScevzOEgAbANACsPkPiI,6176
+dnac_sidekick-0.1.1.dist-info/entry_points.txt,sha256=mNsI5003S1r2603HdkRaUll0DvFSXbhF6bghyrSU0S4,60
+dnac_sidekick-0.1.1.dist-info/LICENSE,sha256=ZBMlMWL2gG5TvWwPMiXZMUtPLa4uDPv0BE2d_SkoMEY,1060
+dnac_sidekick-0.1.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+dnac_sidekick-0.1.1.dist-info/METADATA,sha256=c-fEY2RFzj-kijxBSv0dG5w6CgzWLe2Jpl7mE02gnVg,6090
+dnac_sidekick-0.1.1.dist-info/RECORD,,

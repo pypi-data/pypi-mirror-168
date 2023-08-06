@@ -1,0 +1,3 @@
+[console_scripts]
+dnac-sidekick=dnac_sidekick.cli:dnac_cli
+
