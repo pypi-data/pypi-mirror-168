@@ -1,0 +1,14 @@
+# Directories
+__pycache__/
+dist/
+env*/
+
+# Extensions
+*.log
+
+# Files
+upload.cmd
+upload_copy_pypi.py
+
+# General
+test*
