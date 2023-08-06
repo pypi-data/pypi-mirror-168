@@ -1,0 +1,8 @@
+README.md
+erebor
+setup.py
+thorin
+erebor.egg-info/PKG-INFO
+erebor.egg-info/SOURCES.txt
+erebor.egg-info/dependency_links.txt
+erebor.egg-info/top_level.txt
