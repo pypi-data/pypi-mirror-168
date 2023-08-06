@@ -1,0 +1,26 @@
+{% extends "matchs/_layout_matchs.html" %}
+
+### PRESENTATION ###
+{% block analyse %}
+    Les deux decks se basent sur des interactions à faible coût et beaucoup de
+    récursivité pour épuiser les ressources de l'adversaire. La version de Will-
+    Lucas (Bjorna-Wernog) a la possibilité de jouer plusieurs petits sorts
+    d'interaction par tour là où Grist cherchera des sorts un peu plus lourds
+    et à plus fort impact. Au final, le matchup est équilibré voire en légère
+    faveur pour Grist.
+{% endblock %}
+
+
+### JOUEURS ###
+{% set joueur1 = "Spigushe" %}
+{% set joueur2 = "Imperia86" %}
+
+### VIDEO ###
+{% set youtube = "https://www.youtube.com/embed/A4TrUjvMUV8" %}
+{% set date = "1er mars 2022" %}
+
+### LEGENDE ###
+{% block pilote1 %}{{ pilote.spigushe() }}{% endblock %}
+{% block deck1 %}{{ deck.card("/decks/grist-the-hunger-tide") }}{% endblock %}
+{% block deck2 %}{{ deck.card("/decks/bjornawernog", "img/split-crop/bjorna-wernog.jpg") }}{% endblock %}
+{% block pilote2 %}{{ pilote.imperia86() }}{% endblock %}

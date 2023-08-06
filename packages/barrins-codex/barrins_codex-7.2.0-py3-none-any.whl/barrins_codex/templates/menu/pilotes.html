@@ -1,0 +1,30 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">🧍 Pilotes</a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li>{{ link("/pilotes", name="Liste des pilotes", _class="dropdown-item") }}</li>
+        <li><hr class="dropdown-divider"></li>
+        <!-- Small screens -->
+        <div class="d-block d-md-none">
+        <li><a class="dropdown-item disabled">Les Habitué·e·s</a></li>
+        {{ liste(pilotes_habitue, "px-2") }}
+        </div>
+        <!-- Large screens -->
+        <div class="d-none d-md-block">
+        <li><a class="dropdown-item disabled">Les Habitué·e·s</a></li>
+        {{ liste(pilotes_habitue) }}
+        </div>
+        <li><hr class="dropdown-divider"></li>
+        <!-- Small screens -->
+        <div class="d-block d-md-none">
+        <li><a class="dropdown-item disabled">Les Invité·e·s</a></li>
+        {{ liste(pilotes_invite, "px-2") }}
+        </div>
+        <!-- Large screens -->
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">⤵️ Les Invité·e·s</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(pilotes_invite) }}
+            </ul>
+        </li>
+    </ul>
+</li>

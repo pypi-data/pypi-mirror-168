@@ -1,0 +1,25 @@
+{% extends "matchs/_layout_matchs.html" %}
+
+### PRESENTATION ###
+{% block analyse %}
+    La version un peu plus lente de Kinnan proposée dans cette vidéo laisse à
+    penser que la configuration mettra Adeliz davantage en difficulté par
+    rapport à une version combo dite classique. Même si Adeliz a de quoi gérer
+    les petites créatures du début de partie, le deck peut être rapidement mis
+    en difficulté si des créatures plus imposantes arrivent tôt en jeu.
+{% endblock %}
+
+
+### JOUEURS ###
+{% set joueur1 = "Spigushe" %}
+{% set joueur2 = "Trotte" %}
+
+### VIDEO ###
+{% set youtube = "https://www.youtube.com/embed/0LTuy09DUEg" %}
+{% set date = "25 novembre 2021" %}
+
+### LEGENDE ###
+{% block pilote1 %}{{ pilote.spigushe() }}{% endblock %}
+{% block deck1 %}{{ deck.card("/decks/kinnan-bonder-prodigy") }}{% endblock %}
+{% block deck2 %}{{ deck.card("/decks/adeliz-the-cinder-wind") }}{% endblock %}
+{% block pilote2 %}{{ pilote.trotte() }}{% endblock %}

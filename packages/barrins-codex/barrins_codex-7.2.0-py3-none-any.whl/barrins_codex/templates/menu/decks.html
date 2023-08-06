@@ -1,0 +1,86 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="deckDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">📝 Decks</a>
+    <ul class="dropdown-menu" aria-labelledby="deckDropdown">
+        <li>{{ link("/decks", name="Liste des decks",  _class="dropdown-item") }}</li>
+        <li><hr class="dropdown-divider"></li>
+        <!--#
+            # Agro decks
+            #-->
+        <!-- Small screens -->
+        <div class="d-block d-md-none">
+        <li><a class="dropdown-item disabled">🗡️ Agro</a></li>
+        {{ liste(decks_agro,"px-2") }}
+        </div>
+        <!-- Large screens -->
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗡️ Agro</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(decks_agro) }}
+            </ul>
+        </li>
+        <!--#
+            # Tempo decks
+            #-->
+        <!-- Small screens -->
+        <div class="d-block d-md-none">
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item disabled">⌚ Tempo</a></li>
+        {{ liste(decks_tempo,"px-2") }}
+        </div>
+        <!-- Large screens -->
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">⌚ Tempo</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(decks_tempo) }}
+            </ul>
+        </li>
+        <!--#
+            # Control decks
+            #-->
+        <!-- Small screens -->
+        <div class="d-block d-md-none">
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item disabled">⛓️ Contrôle</a></li>
+        {{ liste(decks_controle,"px-2") }}
+        </div>
+        <!-- Large screens -->
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">⛓️ Contrôle</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(decks_controle) }}
+            </ul>
+        </li>
+        <!--#
+            # Combo decks
+            #-->
+        <!-- Small screens -->
+        <div class="d-block d-md-none">
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item disabled">✨ Combo</a></li>
+        {{ liste(decks_combo,"px-2") }}
+        </div>
+        <!-- Large screens -->
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">✨ Combo</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(decks_combo) }}
+            </ul>
+        </li>
+        <!--#
+            # Midrange decks
+            #-->
+        <!-- Small screens -->
+        <div class="d-block d-md-none">
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item disabled">🦏 Midrange</a></li>
+        {{ liste(decks_midrange,"px-2") }}
+        </div>
+        <!-- Large screens -->
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🦏 Midrange</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(decks_midrange) }}
+            </ul>
+        </li>
+    </ul>
+</li>

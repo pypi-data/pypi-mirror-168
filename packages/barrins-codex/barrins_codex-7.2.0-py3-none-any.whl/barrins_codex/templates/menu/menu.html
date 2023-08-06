@@ -1,0 +1,24 @@
+{% macro liste(cat, class="") %}
+    {% for page in cat %}
+        <li class="{{ class }}">{{ link(page, _class="dropdown-item") }}</li>
+    {% endfor %}
+{% endmacro %}
+
+<nav class="navbar navbar-nav navbar-expand-md bg-light w-100 sticky-top header">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand ms-0"><a href="{{ url('') }}" class="text-body fs-2">Barrin's Codex</a></h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                <!-- #Pilotes -->
+                {% include "menu/pilotes.html" %}
+                <!-- #Decks -->
+                {% include "menu/decks.html" %}
+                <!-- #Matchs -->
+                {% include "menu/matchs.html" %}
+            </ul>
+        </div>
+    </div>
+</nav>
