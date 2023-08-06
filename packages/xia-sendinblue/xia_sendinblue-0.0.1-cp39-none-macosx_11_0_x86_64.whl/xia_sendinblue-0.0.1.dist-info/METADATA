@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: xia-sendinblue
+Version: 0.0.1
+Summary: X-I-A
+Home-page: https://develop.x-i-a.com/docs/xia-sendinblue/0.0.1/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: xia-mail-sender
+
+.. image:: https://img.shields.io/pypi/v/xia-sendinblue.svg?color=blue
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-sendinblue/
+
+====================================
+X-I-A
+====================================
+
+
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-sendinblue
+
+
