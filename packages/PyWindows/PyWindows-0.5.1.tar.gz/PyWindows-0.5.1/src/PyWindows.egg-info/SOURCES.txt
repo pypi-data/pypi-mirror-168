@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+src/PyWindows.egg-info/PKG-INFO
+src/PyWindows.egg-info/SOURCES.txt
+src/PyWindows.egg-info/dependency_links.txt
+src/PyWindows.egg-info/top_level.txt
