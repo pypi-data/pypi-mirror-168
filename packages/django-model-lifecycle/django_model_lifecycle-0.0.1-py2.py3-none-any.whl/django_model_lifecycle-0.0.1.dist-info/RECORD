@@ -1,0 +1,7 @@
+model_lifecycle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_lifecycle/models.py,sha256=owTvMDgW4glX4A1-lgf45Z3Aq0TewXHrBlz66ZjBi_g,6117
+django_model_lifecycle-0.0.1.dist-info/LICENSE,sha256=9RguSIEy4aqLjgmKEN-mLPHTfFUM58LFYd2hZw3xb1E,1070
+django_model_lifecycle-0.0.1.dist-info/METADATA,sha256=xGupYNRvzccvBuKoeIalYaChTSgHiQibgJSJOWAoLZo,283
+django_model_lifecycle-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+django_model_lifecycle-0.0.1.dist-info/top_level.txt,sha256=1Q-bahyivrelWEo1mx1DC0FsjDi6-BZYveSyH5JT2-Q,16
+django_model_lifecycle-0.0.1.dist-info/RECORD,,
