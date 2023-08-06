@@ -1,0 +1,3 @@
+[console_scripts]
+agileupbom=agileupbom.cli:cli
+
