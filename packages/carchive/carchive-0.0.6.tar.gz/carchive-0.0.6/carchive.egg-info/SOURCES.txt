@@ -1,0 +1,8 @@
+README.md
+setup.py
+carchive/__init__.py
+carchive.egg-info/PKG-INFO
+carchive.egg-info/SOURCES.txt
+carchive.egg-info/dependency_links.txt
+carchive.egg-info/requires.txt
+carchive.egg-info/top_level.txt
