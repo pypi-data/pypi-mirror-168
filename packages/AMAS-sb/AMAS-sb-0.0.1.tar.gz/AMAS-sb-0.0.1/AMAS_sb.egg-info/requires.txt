@@ -1,0 +1,11 @@
+compress-pickle
+coverage==5.5
+coveralls
+editdistance
+nose
+numpy
+pandas
+python-libsbml
+pyyaml
+requests
+scikit-learn
