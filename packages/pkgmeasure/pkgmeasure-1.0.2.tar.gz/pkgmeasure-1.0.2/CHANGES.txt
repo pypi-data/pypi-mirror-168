@@ -1,0 +1,14 @@
+v0.5, 2016-02-24
+ * add a sample script
+
+v0.4, 2016-02-24
+ * create a few simple tests
+
+v0.3, 2016-02-24
+ * add MANIFEST.in to include the license in the package
+ * start some 'docs'
+
+v0.2, 2016-02-24
+ * add README, license, and changes
+
+v0.1, 2016-02-24 -- Initial creation
