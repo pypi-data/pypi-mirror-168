@@ -1,0 +1,2 @@
+[console_scripts]
+qgis-plugin-repo = qgis_plugin_repo.__main__:main

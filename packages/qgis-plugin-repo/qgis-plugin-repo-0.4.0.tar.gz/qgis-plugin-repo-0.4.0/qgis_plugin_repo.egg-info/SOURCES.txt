@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+qgis_plugin_repo/__about__.py
+qgis_plugin_repo/__init__.py
+qgis_plugin_repo/__main__.py
+qgis_plugin_repo/dispatcher.py
+qgis_plugin_repo/merger.py
+qgis_plugin_repo.egg-info/PKG-INFO
+qgis_plugin_repo.egg-info/SOURCES.txt
+qgis_plugin_repo.egg-info/dependency_links.txt
+qgis_plugin_repo.egg-info/entry_points.txt
+qgis_plugin_repo.egg-info/requires.txt
+qgis_plugin_repo.egg-info/top_level.txt
