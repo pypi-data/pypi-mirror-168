@@ -1,0 +1,6 @@
+cairocffi
+django-iban
+lino-cosi
+metafone
+pytidylib
+suds-py3
