@@ -1,0 +1,12 @@
+[console_scripts]
+cosmosid=cosmosid.cli:main
+
+[cosmosid]
+analysis=cosmosid.command:Analysis
+artifacts=cosmosid.command:Artifacts
+downloads=cosmosid.command:Samples
+files=cosmosid.command:Files
+reports=cosmosid.command:Reports
+runs=cosmosid.command:Runs
+upload=cosmosid.command:Upload
+
