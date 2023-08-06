@@ -1,0 +1,16 @@
+instruqtxblock/__init__.py,sha256=ntbQt3s1WFnnBgKKN15-NcqaeyV80caiSJUipWsWj0I,87
+instruqtxblock/instruqtxblock.py,sha256=DufMAmpu-_gkMo-my0OKZyMEYcD9odVItX7W3_kZkkE,7470
+instruqtxblock/utils.py,sha256=o6PEnK1dki4Zap8n8z0_nhkfPq2GPgjFe56X3P4iRSw,174
+instruqtxblock/locale/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+instruqtxblock/locale/settings.py,sha256=uW1iZNTqG1ODA7ckbyF04uqz78rSNSPAdY4ouZSI7QM,956
+instruqtxblock/settings/test.py,sha256=zV4cdEIwkPm51pis9RU7F-jTg_RS945XIuoL5G2ox74,227
+instruqtxblock/static/README.txt,sha256=bdJ-FpDeHWYyrxLCGpUvvscSMVrci-pKHC5R7shvg9M,767
+instruqtxblock/static/css/instruqtxblock.css,sha256=6qGAw4AZnkp6kEtpNqBR0g2fD0gOytUI6YFHe_rJCJk,461
+instruqtxblock/static/html/instruqtxblock.html,sha256=TBGWnzGoCe38av-wXMAKdsP_ZnqkcXM6UiJF8xxLmsA,463
+instruqtxblock/static/js/src/instruqtxblock.js,sha256=23JoQSRkXKBMnGZyZxFm3XQDq6fNySueiJC1G5w0rnk,1539
+instruqt_xblock-0.1.0.dist-info/LICENSE.txt,sha256=QTW2QN7q3XszgUAXm9Dzgtu5LXYKbR1SGnqMa7ufEuY,35139
+instruqt_xblock-0.1.0.dist-info/METADATA,sha256=TgHCn4okbG15t7Qw8OQM29UDu0QbrESU0SuTzdiwf1s,7960
+instruqt_xblock-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+instruqt_xblock-0.1.0.dist-info/entry_points.txt,sha256=mEy_uJOoMmpgCGRUn97rvHTnuSyF4mqe2KzucTERz18,60
+instruqt_xblock-0.1.0.dist-info/top_level.txt,sha256=uMZmxGRu3yNXV3jtA0HHKaeC-mxU_Uj2jWJqiiUhQ5A,15
+instruqt_xblock-0.1.0.dist-info/RECORD,,
