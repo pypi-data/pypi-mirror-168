@@ -1,0 +1,13 @@
+= Stag
+:author: Michał Góral
+:toc: left
+:icons: font
+
+Stag (abbreviation from "static generator") is a lightweight, customizable
+and easily extensible generator of static web pages. It is format-agnostic,
+but comes bundled with support for Markdown input files.
+
+* xref:manual.adoc#[User Manual]
+** xref:macros.adoc#[Built-in Macros Reference]
+* xref:architecture.adoc#[Stag Architecture]
+* xref:plugins.adoc#[Plugins Programmer Manual]

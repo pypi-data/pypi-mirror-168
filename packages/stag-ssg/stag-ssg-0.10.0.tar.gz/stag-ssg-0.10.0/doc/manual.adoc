@@ -1,0 +1,388 @@
+= Stag User Manual
+:author: Michał Góral
+:toc: left
+:url-python-markdown: https://python-markdown.github.io/
+:url-jinja-templates: https://jinja.palletsprojects.com/en/3.0.x/templates/
+:icons: font
+
+Stag (abbreviation from "static generator") is a lightweight, customizable
+and easily extensible generator of static web pages. It is format-agnostic,
+but comes bundled with support for Markdown input files.
+
+This manual focuses on end-user part of it.
+
+== Overview
+
+Stag generates pages and documents from the set of source files. It's
+primarily used to generate web pages from some kind of lightweight markup
+files (e.g. Markdown, Asciidoc), with the help of a set of templates, but it
+isn't limited to that. For simplicity, however, we'll assume in this Manual
+that Stag is used to generate a website.
+
+Stag is configured with _config.toml_ file, which is placed in the root
+directory of your project. Typically, Stag's input resides inside the
+_content_ directory and the output is generated to the __output_ directory.
+
+Stag intends to be simple to use and understand. It removes many _magical_
+parts of other static generators have, being more explicit instead about what
+it does.
+
+== Creating the First Page
+
+Let's start with a simple one-page website, which we'll build upon.
+
+=== Installing Stag
+
+Before we even start, Stag must be installed on the system. Stag is released
+to the https://pypi.org/project/stag-ssg[PyPI], so it's easy to install
+it with pip, or tools like pipx:
+
+----
+$ pip install --user stag-ssg
+----
+
+Optionally, you can clone its repository and install it from there:
+
+----
+$ git clone "https://git.goral.net.pl/mgoral/stag.git"
+$ pip install --user ./stag
+----
+
+=== Initializing Stag Page
+
+To quickly generate all the necessary files, run:
+
+----
+$ stag init
+----
+
+Stag will ask you some questions, like the title of your page or language in
+which you intend to write.
+
+NOTE: `stag init` can be run non-interactively, by passing all the required
+parameters on the command line.
+
+Your newly initialized Stag project has the following items:
+
+config.toml:: Configuration file.
+content:: Directory where the sources of your website reside.
+themes/default:: A default theme (templates) for your website.
+
+=== Test run
+
+Once you familiar yourself, it's time to test-run Stag. To do that, enter the
+to your projects root and run `stag build`:
+
+----
+$ cd stag
+$ stag build
+----
+
+Once run, Stag creates a new directory, __output_, in which it stores the
+whole generated webpage. To view it, point your web browser to the index.html
+file.
+
+Stag also offers a built-in HTTP server, which serves the content of built
+website on _localhost:8000_. To start it, run `stag serve`. In this mode Stag
+automatically detects when files are modified and regenerates the website as
+necessary, which makes it great for example for writing articles, constantly
+verifying how they look.
+
+== Plugins
+
+Almost every part of stag is a plugin. Plugins are invoked on certain events
+which occur during site generation (e.g. when stag finds a new file, when it
+starts processing input files etc.)
+
+You can easily add custom plugins. Stag reads their path from the
+`pluginspath` setting in config.toml. By default it is _plugins_ directory
+relative to the root directory of the project. You can read more about it in
+xref:plugins.adoc#[Plugins Programmer Manual].
+
+=== Disabling Plugins
+
+To disable a certain plugin, put int in `plugins_disabled` list in
+_config.toml_. Plugins are named after their file names, without an
+extension. For example:
+
+.config.toml
+----
+plugins_disabled = ["md", "macros"]
+----
+
+=== Additional Dependencies
+
+If your plugin needs some additional dependencies, they must be installed
+separately. If Stag is installed in virtualenv, they should be installed to
+that virtualenv, for example:
+
+----
+$ path/to/venv/pip3 install <dependency>
+----
+
+or with a tool like pipx:
+
+----
+$ pipx inject stag-ssg <dependency>
+----
+
+== Built-in plugins
+
+
+=== markdown (md)
+
+Markdown plugin reads Markdown files, which can have optional front matter
+with metadata, which is also saved by the reader. Front matter is expected to
+be in TOML format, delimited with `+++` (3 plus signs) from the top and
+bottom.
+
+.Example Markdown file with front matter
+----
++++
+title = "My First Stag Page!"
+date = 2021-09-02
+lastmod = 2021-10-01
+tags = ["site", "something else"]
++++
+This was a **triumph**!
+----
+
+Markdown generator takes input provided by the Markdown reader and generates
+HTML data from it. It uses {url-python-markdown}[Python Markdown] package.
+Its extensions are enabled through `plugins.markdown.extensions` list.
+
+Configuration is stored inside `plugins.markdown` table in config.toml.
+
+.Example markdown configuration
+----
+[plugins.markdown]
+extensions = ["sane_list", "smarty", "footnotes"]
+----
+
+=== macros
+
+Macros provides input postprocessing. Thanks to it you can use Jinja macros
+inside input files (e.g. in Markdown). It enables a system which resembles
+"shortcodes" known from other static site generators.
+
+To enable macros you must configure path to the directory which contains
+Jinja templates with macros definitions. Macros use `[plugins.macros]` table
+in config.toml to do that.
+
+.Example macros configuration
+----
+[plugins.macros]
+path = "directory/with/macros"
+----
+
+.Example of file which use a macro
+----
++++
+title = "My Page"
+++++
+
+{% from "macros.html" import mymacro %}
+
+Ordinary content {{ mymacro(foo="bar") }} rest of ordinary content.
+----
+
+=== taxonomies
+
+Taxonomies are automatically generated collections of pages (e.g. tags or
+categories). They must be enabled in config.toml and are generated from
+metadata of content files.
+
+.Enabling 2 taxonomies in config.toml
+----
+[[taxonomies]]
+key = "tags"
+singular = "tag"
+plural = "tags"
+
+[[taxonomies]]
+key = "category"
+plural = "categories"
+----
+
+Once defined, stag scans metadata of files and groups files which have the same
+metadata:
+
+.Setting terms of taxonomy on a page
+----
+tags = ["foo", "bar"]
+category = "my category"
+----
+
+Each taxonomy generates a taxonomy landing page and a list of term pages.
+(think of _tags/foo_, _tags/bar_ etc.):
+
+Taxonomy Landing Page:::
+  it contains data regarding taxonomy itself and a list of term pages, which
+  can be accessed from `page.taxonomy.terms`.
+Term Pages:::
+  each of them contains a list of ordinary pages, which belong to the term
+  (e.g. which have a specific tag); they can be accessed from
+  `page.term.pages`. Additionaly they have `metadata['taxonomy']` set with a
+  name of parent taxonomy.
+
+==== Rendering taxonomies
+
+Taxonomies are rendered like the ordinary pages (see
+xref:_template_type_deduction[Template type deduction], but they use
+different default templates. Landing taxonomy pages use *taxonomy* template
+(e.g. _taxonomy.html_) and term pages use *term* template
+(e.g. _term.html_). This can be customised in two ways:
+
+. Default templates for all taxonomy/term pages can be changed in
+  `[template.templates]` section.
++
+.Setting different default templates for taxonomy page and terms pages
+----
+[template.templates]
+taxonomy = "mytaxonomy"
+list = "mylist"
+----
+. If stag finds a file which would result with the same URL as taxonomy or
+  term page, it incorporates it instead of throwing a usual error:
+.. Metadata of the file is preserved, but missing entries necessary for
+   taxonomies are created: this can be used to pass custom metadata to Jinja
+   and template. For example `type` can be explicitly set, which will result
+   in choosing a different template.
+.. File content is preserved.
+.. page lists and taxonomy data is added to the `page` object and overrides
+   any previous entries.
++
+====
+For example, to add a metadata to the "tags" taxomony, create a file
+_tags.md_ or _tags/index.md_ inside your content, with the following content:
+
+.Page for taxonomy landing page (tags.md)
+----
+++++
+title = "List of tags"
+mymetadata = "My Metadata"
+----
+
+.Page for a single tag (tags/mytag.md)
+----
+title = "Special case of mytag"
+mytagmetadata = "special metadata"
+----
+====
+
+== Templates
+
+Stag uses {url-jinja-templates}[Jinja Template Engine] to create files from
+the output produced by generators.
+
+It is configured in `[template]` table. Most important setting is _name_,
+which is a path to the directory from which templates will be read. Other
+important sub-table is `[template.templates]`, which contains settings
+for default templates used for certain types of pages.
+
+=== Template Name Deduction
+
+To produce a page, Stag needs to know which template should be used from the
+available ones. Typically, types of pages are:
+
+* _page_ for ordinary page;
+* _index_ for start pages;
+* _taxonomy_ for pages which hold a list of taxonomy terms;
+* _list_ for pages which hold a list of other pages.
+
+The following procedure is used to determine pages' type:
+
+. if page sets its `metadata.type` field, it is used as a type,
+. otherwise, if page is a taxonomy page, its type will be set to
+  `template.templates.taxonomy` (by default: _taxonomy_),
+. otherwise, if page is a list page, its type will be set to
+  `template.templates.list` (by default: _list_),
+. otherwise, page's type wyll be set to `template.templates.page` (by
+  default: _page_).
+
+To produce the full name of the template, page type will be then combined
+with the output type (usually an extension typical for the kind of output
+produced by the generator plugin, e.g. _html_ or _xml_).
+
+There might be a situation when deduced template isn't available. In such
+case, Stag provides a very basic built-in template and informs users about
+the situation with appropriate error prints.
+
+.Template deduction with user-defined type
+====
+Suppose the following Markdown page:
+
+----
++++
+title = ""
+type = "mypage"
++++
+----
+
+This page will use _mypage.html_ template, because the output of Markdown
+rendering is html file and the type selected by the user for this page is
+"mypage".
+====
+
+.Template deduction without user-defined type
+====
+Consider the following Markdown page:
+
+----
++++
+title = ""
++++
+----
+
+Here theme must deduce the name, because there's no one provided by the user.
+It is an ordinary page, so it will be taken from
+`template.templates.page`. If this setting wasn't changed, the template
+which will be rendered from _page.html_.
+====
+
+.Name clash?
+====
+Consider the following Markdown page:
+
+----
++++
+title = ""
+type = "taxonomy"
++++
+----
+
+and the following configuration:
+
+----
+[template.templates]
+taxonomy = "somethingelse"
+----
+
+The output page will be rendered from _taxonomy.html_, *not* from
+_somethingelse.html_, because the _type_ keyword in metadata directly maps to
+the name of the used template, not to the default value from config.toml.
+====
+
+== Cache
+
+Generating sites with a lot of web pages and a lot of plugins can sometimes
+become slow. To fight this, Stag caches the results of page generation and
+uses them when it detects that source pages haven't changed since last run.
+
+You can disable this behaviour and force full rebuilds by passing
+`--no-cache` option to _build_ and _serve_ commands. You can also make it
+persistent by placing `no_cache = true` in _config.toml_.
+
+The default directory used for cache is a hidden _.cache_ directory placed in
+your site's root. You can change it by changing `cache` parameter in
+_config.toml_, for example:
+
+.config.toml
+----
+cache = "~/.cache/mysite"
+----
+
+NOTE: Because almost everything in Stag is a plugin, caching is the most
+efficient if you use plugins which are aware of it. All built-in plugins use
+cached results whenever it's possible. To learn how to make your plugins
+cache-friendly, refer to xref:plugins.adoc#[Plugins Programmer Manual].
