@@ -1,0 +1,10 @@
+NuOCR/__init__.py,sha256=QFOqM74roL11gBIwPztECUGZdBvdfBBi08m4LBx_RKQ,21
+NuOCR/Util/__init__.py,sha256=MlV69D3K2vkHlHzlcMS4yWpr1MT4jRldZDUSW7YGDSw,95
+NuOCR/Util/extractor.py,sha256=N_Am4MjSUR1MSNYzG8qZmUN01J9pRFoabtdM_V34ZiY,2072
+NuOCR/Util/io_adaptor.py,sha256=06to8YntHq4ZM3k0enUto8spnzx3gFTzVxSCxapdk2A,2540
+NuOCR/Util/user.py,sha256=eI4Ki9xFHEeBqS8L3e_S5XcgNxjEtzLbqgmbSrH4buU,2512
+NuOCR/Util/util.py,sha256=kwmGcETGQZCBl2lf-EaKtOIzOhzdiegeywJieLyDaWQ,164
+NuOCR-0.0.1.dist-info/METADATA,sha256=0d9fRyUwiL1-Xhg-IqO9NRpD01fRc7sQyKbUdZG92AI,631
+NuOCR-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+NuOCR-0.0.1.dist-info/top_level.txt,sha256=_N5XoMLXUCfVMwCJHH80UdhMr-PGDtoHCkFGJXJim8Q,6
+NuOCR-0.0.1.dist-info/RECORD,,
