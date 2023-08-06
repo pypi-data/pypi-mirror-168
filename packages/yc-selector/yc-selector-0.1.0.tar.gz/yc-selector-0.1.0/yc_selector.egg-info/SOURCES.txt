@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+setup.py
+yc_selector/__init__.py
+yc_selector.egg-info/PKG-INFO
+yc_selector.egg-info/SOURCES.txt
+yc_selector.egg-info/dependency_links.txt
+yc_selector.egg-info/top_level.txt
