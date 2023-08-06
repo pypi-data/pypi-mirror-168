@@ -1,0 +1,9 @@
+README.txt
+setup.py
+rbmq_channel/__init__.py
+rbmq_channel/rabbitmq.py
+simple_rbmq_channel.egg-info/PKG-INFO
+simple_rbmq_channel.egg-info/SOURCES.txt
+simple_rbmq_channel.egg-info/dependency_links.txt
+simple_rbmq_channel.egg-info/requires.txt
+simple_rbmq_channel.egg-info/top_level.txt
