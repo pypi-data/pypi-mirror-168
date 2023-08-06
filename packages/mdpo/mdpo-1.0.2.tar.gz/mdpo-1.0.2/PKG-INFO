@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: mdpo
+Version: 1.0.2
+Summary: Markdown files translation using PO files.
+Home-page: https://github.com/mondeja/mdpo
+License: BSD-3-Clause
+Author: Álvaro Mondéjar Rubio
+Author-email: mondejar1994@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Requires-Dist: contextlib-chdir (>=1.0.1,<2.0.0)
+Requires-Dist: importlib-metadata-argparse-version (>=0.1.0,<0.2.0)
+Requires-Dist: importlib-metadata; python_version < "3.10"
+Requires-Dist: polib (>=1.1.0,<2.0.0)
+Requires-Dist: pymd4c (>=1.1.2,<1.2.0)
+Project-URL: Bug tracker, https://github.com/mondeja/mdpo/issues
+Project-URL: Changelog, https://github.com/mondeja/mdpo/releases
+Project-URL: Documentation, https://mondeja.github.io/mdpo/
+Project-URL: Repository, https://github.com/mondeja/mdpo
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a href="https://github.com/mondeja/mdpo"><img src="https://raw.githubusercontent.com/mondeja/mdpo/master/mdpo.png" alt="mdpo" width="400"></a>
+</h1>
+
+<h4 align="center">Markdown files translation using PO files</h4>
+
+<p align="center">
+  <a href="https://pypi.org/project/mdpo/">
+    <img src="https://img.shields.io/pypi/v/mdpo"
+         alt="PyPI">
+  </a>
+  <a href="https://pypi.org/project/mdpo/">
+    <img src="https://img.shields.io/pypi/pyversions/mdpo?labelColor=333333">
+  </a>
+  <a href="https://github.com/mondeja/mdpo/blob/master/LICENSE">
+    <img src="https://img.shields.io/pypi/l/mdpo?color=light-green">
+  </a>
+</p>
+
+<h2 align="center">
+  <a href="https://mondeja.github.io/mdpo/">Documentation</a>
+</h2>
+
+<p align="center">
+Complies with <a href="https://spec.commonmark.org/">CommonMark Specification</a>
+<a href="https://spec.commonmark.org/0.29">v0.29</a> and
+<a href="https://spec.commonmark.org/0.30">v0.30</a>, supporting some
+additional features.
+</p>
+
+## Status
+
+[![Documentation status][doc-image]][doc-link]
+[![Tests][tests-image]][tests-link]
+[![Coverage status][coverage-image]][coverage-link]
+
+## Installation
+
+```bash
+pip install mdpo
+```
+
+[tests-image]: https://img.shields.io/github/workflow/status/mondeja/mdpo/Test?logo=github&label=tests
+[tests-link]: https://github.com/mondeja/mdpo/actions?query=workflow%3ATest
+[coverage-image]: https://img.shields.io/coveralls/github/mondeja/mdpo?logo=coveralls
+[coverage-link]: https://coveralls.io/github/mondeja/mdpo
+[doc-image]: https://img.shields.io/github/workflow/status/mondeja/mdpo/Test?label=docs&logo=readthedocs&logoColor=white
+[doc-link]: https://mondeja.github.io/mdpo/
+
