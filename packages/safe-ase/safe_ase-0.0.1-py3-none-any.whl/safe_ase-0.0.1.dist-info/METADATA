@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: safe-ase
+Version: 0.0.1
+Summary: safe_ase
+Author: Roberto Rousse
+Author-email: <roberto.rousse@gmail.com>
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: ase
+
+helper functions wrapping ase fucntions that dont overwrite original structure
