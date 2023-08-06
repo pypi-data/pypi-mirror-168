@@ -1,0 +1,1547 @@
+{
+   "151c5b4a-3022-49a6-91f0-8749958e7ab7": {
+      "environment": "cross_polarized",
+      "generator": "identities",
+      "time_of_day": "N/A",
+      "type": "cross_polarized"
+   },
+   "00cc4514-850c-45ec-b21b-a3d4281c8a24": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "01e5c22f-f2c7-4bba-b81b-04b911263785": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "01ea91fb-e152-4e28-aad9-c0bc7a83f689": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "01ecd4ce-f890-4754-968a-f5d6f7e40828": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "032b1770-45dc-4d76-a15a-39ac574f4c41": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "05e01f84-84d6-4413-8223-94413dba6961": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "0734cfdb-c022-4927-aeb3-4ea8c4c5daac": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "08613ebc-6f68-42ff-9906-2d445ae884fd": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "0a6773e7-041f-4a84-810a-f5153f87b62e": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.5",
+      "time_of_day": "night"
+   },
+   "0a7e137c-2ad7-47c0-925a-69ef013c4e10": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "0b13e467-6532-4f56-9eee-d75846ee32aa": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "0c47bba7-6c40-471f-9457-556f18b145b7": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "0d3db201-6e99-4516-a888-39ebe33872a1": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "0d5634d2-c7b8-4d6b-bc6d-d47718674354": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "0d6f3ad6-214f-4248-a3b7-ea9a3b2f108a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "0d7601d3-5b02-4b0e-9371-627707b11d91": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "0d9b87cc-7c80-4aaf-a298-2768ddc1092f": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "0e15d5f2-e3c4-4b50-a348-6d15bc4f218e": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "0e8eeb9d-1848-45ea-997f-eeba520d9247": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "0f1a4c9a-f90d-4ff2-b43e-4f9b8d5411a2": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "0f595284-7faa-4acb-959a-26281c3a0a44": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1.5",
+      "time_of_day": "evening"
+   },
+   "0fa52678-458f-456d-a81b-4a3ce9ded0fe": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "10a78a64-e72f-48e1-a888-7fa702de3b14": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "11867be2-642e-4b3b-b289-71af4595d6af": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "12a7ab2c-5fc4-448d-9d79-569e1c3958ca": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.4",
+      "time_of_day": "evening"
+   },
+   "12ae0898-2d7c-4165-b392-800b44c5f95e": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "1396b580-7d04-4521-a783-f5c2fd761cfc": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "13d2999c-20bb-48ec-8946-336a1e146d3b": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "1518f06a-6190-4878-87de-22b0f2233603": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "153e0358-eba1-411a-ab47-dacd7a31707f": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "15fc323f-1b46-4c1e-9732-24b757835e58": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "17e9996d-1b6d-4961-b432-2d798128f810": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "18a3b32c-aab8-4c7d-94c4-c09240b92431": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.7",
+      "time_of_day": "evening"
+   },
+   "18c59f8e-ef6a-4f00-88f3-ba7f845777a2": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.5",
+      "time_of_day": "night"
+   },
+   "1942fb89-d215-4349-a3d2-56c5aea4b189": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "1bc292fd-2bbf-46b0-8da2-bf17f7f2d2b4": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "1c12abdc-4319-41b7-b5be-5a718ce95b76": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "1cfc3b0d-6b67-42cd-b0a3-c5885d7355c0": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "1d299652-0eb8-4107-b6a1-0c0607282302": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "0.6",
+      "time_of_day": "night"
+   },
+   "1d4ac7ea-2cd3-4252-abf3-db2189815a1b": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "200d7bfc-3954-4e8c-aafa-1437f0a59cd8": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "20c166dc-5902-42c8-bba4-2b6e3e09477d": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.6",
+      "time_of_day": "evening"
+   },
+   "20e629ed-767b-4752-9411-23513fb0932a": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "217fc4d5-e4e5-4bf7-bde0-f4237e37b4c3": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "2224ff6d-ca79-4c3a-b1e2-4da73ef11282": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "2317ef2d-9671-4778-82cc-f8bd9f2dc9c2": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "25404218-3e88-4ef7-bd31-4b2e340bfee3": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "27cbe81c-32f7-4c47-98e8-d35a8a750455": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "290b6322-5608-4f29-bf2b-84cbb352f31a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "2bc85868-9b24-4d4c-9c6f-9d2a0c1dc345": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "evening"
+   },
+   "2c9690ca-7652-4c97-8153-5c338833dfa9": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "2e78c1b3-4fa9-4bd5-b216-12f86a87797d": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "2ec8cc33-db66-4dbc-b8c6-8df7929b3819": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "2fc62153-4414-40c9-908d-5b0626119262": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "3159f6f9-0bb6-4d4d-b2af-44ea91c51c53": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "31c5cef7-c45b-4d3e-9b35-3dbca936e4e4": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "31d9ffce-3319-4101-83aa-f2ca2f9ce60f": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "33adc300-c1e2-49cf-b7ff-a41e571d383d": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "33d41ff4-dd47-4957-a527-fd1123c301f9": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "34d35ce3-b73a-4680-b191-694fb365f242": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.4",
+      "time_of_day": "evening"
+   },
+   "3528a73f-c1dd-4560-b6d3-a9920ca7c55b": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "35409631-fae1-4671-a3ff-7afae02d878e": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "35ca5c0d-0b31-40bc-9e6b-444b4a2866ad": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "36528d85-22cb-4208-9e3c-f96ccc00e0dc": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "380cab1e-e7d2-45bc-be2a-2342bca401e8": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "388e6fb5-f379-4bb0-b192-a95c0e1ca827": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "38cbf110-35b1-4829-aecc-2d73d2a7b40a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "396e129b-2bc8-4fdb-b6ee-01f7b21d3ba3": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "3b2e5674-d574-4438-98db-5eefc82ad716": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "3c6d4b6e-5d62-43fd-af47-1f29ed3d4136": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "3d2b5d86-4d2c-49f3-9c36-f2243fedcf1f": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "3e14b615-1ca5-4c65-8d77-6012456dfc94": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "3e7d9f1c-55ea-4739-87fa-7bf30d941407": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "3ec2beff-ea0c-4a3f-8d11-5687fdf30021": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "3f85acfc-4168-4574-828a-b5ab15c30d1a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "3fdf062a-af29-4880-8028-955d17982f1e": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "3ff847b2-95cf-4678-9533-662d2e45354c": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "4024223a-65fb-4056-97a6-be8083ced267": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "evening"
+   },
+   "404472b2-68b0-4df5-8362-80ddd460158f": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "42027f55-1e1d-427e-8292-10945d7a8aaa": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "42230134-fd5a-4183-857c-f9034113c940": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "440b64ee-c221-47ad-b1ca-f5d291da3af2": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "448e293d-7749-4ce9-96f8-63a9e691c944": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "44bfd8bc-4e18-4eb6-b968-743b0ddbdcad": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "44eb317f-be3c-4b1c-a73c-44e674be780f": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "night"
+   },
+   "47544cf6-77e3-4f98-910f-c403d2af0bc3": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "489bdd69-754b-4a7f-843a-ec7e2e6b17c6": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "48cf675c-f511-4ea9-b1a1-f22f3689c597": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.9",
+      "time_of_day": "evening"
+   },
+   "49c89fcb-bb01-4ef2-8ec5-ab0b6d557885": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "4a51950e-54b9-4085-bd93-34113751d701": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.8",
+      "time_of_day": "evening"
+   },
+   "4b4a02ec-2971-413c-aff1-62321e9bbc87": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "4b699a00-1624-48fe-baf5-f778cbbcbf75": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "4c740f0a-6c9a-405f-a489-d11271a84fe9": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "4c7c0ffc-3b73-43f3-afdc-b385f0ab9fe3": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "4cb4ec4d-7ae3-4887-8341-af3be47eef6f": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "51a2af0a-09b2-4d5b-b543-47b7d528d03a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "542e70b8-c004-46ff-b2cd-0e4aa6841d4a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "55592c01-3302-40e6-8cfa-11d45f34b20d": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "557bad2e-0d90-4d2c-96eb-53949be3d064": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "568bfa7c-fe3f-48d3-90d8-d08162832c2b": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "56a242dc-a567-4397-bd28-21ab0afbf718": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1.2",
+      "time_of_day": "evening"
+   },
+   "57b916fe-90be-4934-87c9-0921d36b61ee": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "582f9b44-fcdb-4d14-93e7-d67ede1fca7e": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "59d3ad84-660e-417f-a526-e26cb89982fb": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "5c5eb95e-8d25-4ff3-bf0b-0af83846091c": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "5c68f833-8e8c-458f-8267-82a30480c7cd": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "evening"
+   },
+   "5d1a2847-c2fb-491a-b4da-3abaad089e52": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "0.6",
+      "time_of_day": "night"
+   },
+   "5dba7246-15a0-4d6b-be9c-9ae63a4e2ade": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "5dd8283e-0d2f-4226-b753-642891b99499": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "5e5d55b1-2141-428c-9d7f-2d6638f52b5a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "5e70d0b3-95a4-4f2e-9ba1-00f631befa74": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "61c55eff-98ab-40f8-a217-96426386dc4b": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "62edf054-98b6-4b2b-9c7d-096be77eeae3": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "635efd7e-89fa-4775-8a2d-3003f71f6b1f": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "63b86c64-dbe2-4850-9658-791fcbc9a9df": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "63e8e9f2-fc18-4015-9bf3-0f3b3c1b81be": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "64dd4ad5-6114-4217-928e-71bd092f1647": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "663ac46f-5873-4a4f-b7fa-c9eb3286cea4": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "695aea2c-07d7-463a-b8fd-85c8e40b42b5": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "6b6cb5e8-2559-4317-91e6-87da8f322ea4": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "6bef6924-dfe2-48a8-b0e6-dc16ab1d09e1": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "6d009cc0-b799-4987-aac6-7d0ddc4814e5": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.6",
+      "time_of_day": "evening"
+   },
+   "6e6d14fd-c524-47d5-b125-e417fd79f381": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "70b17613-db85-430f-b6e8-ecfaa84fe3be": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "70c61977-d3fc-43a8-abf1-44d5638c6d85": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "71862868-0fa9-4a13-a700-9e5151e0b61d": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "71a81408-b45e-46e8-ba06-248e40495ccc": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "71caac7d-78ef-47a3-9f2b-450d15663c7f": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "7645b39b-8e99-4109-a954-317dc08b97c4": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "766d6dcd-c96d-4db6-a7b0-25f25ab06a6a": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "77366768-5fde-4266-8acd-6fcc8c682463": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "77d162a6-49ba-4cf0-b3c9-d7b3d0aa5f9e": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "evening"
+   },
+   "7803abe4-ed62-475b-8dbe-39cbdc427c00": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "79cecb1b-0644-49ad-90d9-5b6cec0fce15": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1.5",
+      "time_of_day": "evening"
+   },
+   "7a5ccd0b-26d6-4b74-b04f-c55ac172d894": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "7ae141bf-97e4-43ef-b413-3c3f24a64180": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.6",
+      "time_of_day": "evening"
+   },
+   "7c29de53-6644-40fa-a842-5d6706f74b2b": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "7c5bfc07-98a1-461e-86cb-6ddc3764f0ff": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "7e58e769-9295-4d01-91f8-a2a9335b5b72": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "7e7bfb62-33c0-44b1-939f-46cfab4b36f8": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.8",
+      "time_of_day": "evening"
+   },
+   "7ef4e160-b7dc-4fa7-a141-08c34da802a3": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "7f326246-b83a-4414-814e-22f275ef9a80": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "7f9a3f50-e2d5-4b92-be9e-24cee8dcce0c": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "80e206ed-bbe9-4791-9ddb-540233a16561": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "83924f77-b9bb-4d97-99d2-f9cec9b86719": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "839e2179-272f-42af-85af-0acb3b232769": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.8",
+      "time_of_day": "evening"
+   },
+   "848e3e87-20dd-4805-a3d4-6c523d54ace9": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "859cca9b-edb3-4888-a0ac-70ab859668ca": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "85f0878a-21ba-417b-a71c-c4c7c2a32305": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "8795c2c8-aca9-477b-9dc6-27b964eabb04": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "88bad515-6e82-4965-a8e5-06b6170108d9": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "890fbbde-69f3-4107-8534-24c2b544de6c": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.6",
+      "time_of_day": "evening"
+   },
+   "8aeb6ae8-533f-4afe-86a7-0207c27ac940": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "8be1a829-fe3e-4b48-b45e-a4bdfe2856d8": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.6",
+      "time_of_day": "evening"
+   },
+   "8d8e09d2-730a-4e9e-965c-bccfb43d1fe5": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "90666da9-b72f-407c-aa4e-76075cb53fb0": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "910be835-dc82-440f-ab6a-8cca7a8acad3": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "9229a5df-666f-49a6-9c53-f35d15ebcad0": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "93a02242-f9e1-4d13-a7fe-a69c225c343a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1.5",
+      "time_of_day": "evening"
+   },
+   "93ca5def-1656-482d-b9a6-d9364e7d817d": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "9401105e-38ec-4302-b2ae-3445f3eab4ef": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "95b65fba-b6ef-4563-baae-cf2a346eed2b": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "96e10733-95d1-42ed-b300-9d5567323d83": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.9",
+      "time_of_day": "evening"
+   },
+   "9803cc43-91a3-4177-b304-2d2682295043": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "9bed4df9-6ea8-4d96-aafc-fedcef3feed7": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "9cab0ebe-ddc1-4324-805d-e21c3a3fabcb": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.2",
+      "time_of_day": "night"
+   },
+   "9f78a91b-fe4c-4560-a99b-140c5566abe0": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "a2f0e496-0dbf-44aa-b036-1694ee919bf0": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "a3588ed1-613d-4c65-83e0-fef18e841468": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "a3d61f31-baaa-4604-b289-26f46a6b93e9": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "a463f468-dc24-41e8-8a8d-25b9927b495c": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "a4a29b85-c363-4b98-99ad-f6dd7690ebed": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "a4e8f9b2-4f61-4533-bcba-05b1cb949e26": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "a5348332-2e3f-42fe-bf55-a2c5c8dabe0d": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "a5854a41-a582-41f7-89ab-bf0211aa8153": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "a6af81d6-d65a-4731-bdbf-a3cb13a02c75": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "a862fb7b-a5ea-4522-b6b2-cfc6831806b1": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.4",
+      "time_of_day": "evening"
+   },
+   "a88b7a56-1dce-4fc8-8a01-8a200abe09c5": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "a8f7061c-3da1-41f4-980f-e761203903b9": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "a91fcaf9-454a-470c-a86b-b612c6c9f5d7": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "aa9e516e-8f6b-40b4-ba26-00d5a34e191e": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.8",
+      "time_of_day": "evening"
+   },
+   "abeadc40-7074-4fc8-9334-629910bf572e": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "ad90e809-e73f-4bb3-a9b6-39ff1104ee5d": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "ae070fd7-e3a9-4610-ac3c-c69e2c559537": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "ae4b07d2-ba5a-4c34-b2ee-4bfa85c3150a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "ae59cd8a-54b0-46a8-8fd1-f4fc36df56df": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "af4cc56a-8e6f-40cd-a9b0-244491b7d223": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "0.9",
+      "time_of_day": "night"
+   },
+   "afb5ed14-df52-4d86-abe7-b07d16cfd175": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "afdc8ba6-2238-4355-9bbd-82e868ad0eb9": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "b004d34b-e1e8-41c1-8a65-6f859e7f4fa1": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "b04794a3-14f2-4f8e-9cd6-36981ccf0d33": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.6",
+      "time_of_day": "evening"
+   },
+   "b05eabdc-cb68-47e4-9c05-f0c0d165c7bb": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "b0cf1b7b-9cb3-458a-a7c4-a1d75fbbf4dd": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "b38a0b75-8007-4fff-8125-327b32f733bc": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "2.4",
+      "time_of_day": "evening"
+   },
+   "b5742c18-d86b-4aea-9f29-ad078d57cc28": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "b5dbb327-3b20-49f8-9f91-a2b0b60caf7b": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1.5",
+      "time_of_day": "evening"
+   },
+   "b699ad75-297d-439f-82b6-9dfc1930033a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1.5",
+      "time_of_day": "evening"
+   },
+   "b6fc8291-b502-423c-aff4-ba6e121e7380": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "b720dbb6-bcb9-4cb7-848d-79089aa41422": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "b9d2b57b-746b-42e5-bf66-d0fe695bfc8a": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "ba5b579f-593f-4326-b2a8-663865a062e9": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "bacfe158-61fa-4ae5-a5ea-28085917f8f5": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "bc3be67d-b596-4b1d-a1b9-8f851cad4af2": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "bc56a610-1506-4d6e-a91a-b4f63536091f": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "bcc4dede-3f26-4a67-9603-627821e0ca88": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.5",
+      "time_of_day": "evening"
+   },
+   "bd659c7a-cae3-44ca-a414-716d805ecbef": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "evening"
+   },
+   "be0a918b-d3c0-4167-8f0f-7bb4c3c47ac0": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "evening"
+   },
+   "bf058545-9394-441d-9f4f-6eb98132e38f": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.8",
+      "time_of_day": "evening"
+   },
+   "bfa1e235-ba92-4cb3-a654-8f406a5ac188": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "bfdfb82a-74c2-442d-87a3-b3ae54205a2e": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "evening"
+   },
+   "bfe00203-2479-4c2e-aef7-a3a15fd725ce": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "c0858cf5-9322-479c-8ffa-0405b3d96d37": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.85",
+      "time_of_day": "evening"
+   },
+   "c187a000-16fd-4401-926c-08b33a3b024f": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.5",
+      "time_of_day": "evening"
+   },
+   "c2b92ee1-702d-4eb0-83d1-e3e67e7f006e": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "c4765af0-87d0-48e1-907a-8a73abb4935d": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "c4a99fb0-538a-4a77-9296-3b893c857652": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "c4f47aba-5c00-4a8d-b323-bf138c0702ab": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "c7458e57-63a5-4830-802a-8b4a2b020792": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "c83a30c5-595a-4776-8d36-08d15d97c301": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.8",
+      "time_of_day": "evening"
+   },
+   "ca516fd2-030a-42ea-9f85-1f94c4d58dd0": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "caba99ea-85dd-42bf-b02c-926f90852451": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "cb1aad7f-80b2-4528-af4d-9e58b2ac8a20": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "cb557445-8a50-4355-b484-019379f765af": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "cc2dbec5-1f23-4613-8d14-437e7c5e14e6": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "cd91ac62-dbe9-4cbb-8ec4-5c19712a8be7": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "cda7f2a9-a49e-4324-893e-92d657cc98b9": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "cdbb6231-e60f-473b-8d80-766631d6f5b5": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "d13da662-5037-4022-ab28-34f837744bcf": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.3",
+      "time_of_day": "night"
+   },
+   "d166f399-9031-4ca6-94f2-af52f9cdb82c": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "d25ebe09-0fc1-4851-ba10-c945840fb819": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "d2f974f6-1a8c-489e-9be4-9bf4616fd871": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "d340c1c8-e07d-4ed4-a748-01c925b4aa86": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "d3e3fbe0-bf45-481c-b6a4-9c01f79c9ca7": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.6",
+      "time_of_day": "evening"
+   },
+   "d435ea69-e33e-488f-bd19-f6d3f1511aed": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "d52e9053-b58a-4cb0-912a-924c0386c2f6": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "d6297461-93b2-4ed3-8e08-97164c5b6f15": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.9",
+      "time_of_day": "night"
+   },
+   "d7f15e9c-878e-450e-bc86-10672e5f5177": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "d91ee33c-6414-4b6e-920d-fff01b583327": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.2",
+      "time_of_day": "night"
+   },
+   "da1229b8-37d8-41d9-897b-d0dab74e67a2": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "daef9142-0883-491c-8b90-3ee8a4a934a0": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "dc31a8d8-051b-4f20-9fca-1436778f820c": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "dcb2175c-670f-4aca-9e83-e64426e7a8b2": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "dd10691e-9e4e-474f-b45f-e53d19fbc75a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.9",
+      "time_of_day": "evening"
+   },
+   "dd6617de-7791-4505-b838-67952b2dbdd6": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "e03a5061-1fe7-4ed8-8d5d-b4ba9ae8249f": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "e0935235-f492-4f10-9edb-2d99924cff8c": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "e2bc5242-4a2e-4695-8aa0-a7ffff2eceb2": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "e4ac9a0f-a8f3-4458-8b52-cb2db4aef023": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "e503c9be-690e-46a9-a1a9-fd2434cbf0f5": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "e5e10614-c794-4328-87b3-2112bd232bb6": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1.8",
+      "time_of_day": "evening"
+   },
+   "e6960767-b78e-4602-b607-9a2f7dea6230": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "e6f50b68-b20c-45ab-bd15-d9e6a49121b9": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "e712ec57-6c7f-4f98-a1fb-7e40a66ad6d3": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "edfdad5e-ddd8-4f8a-a822-13d2acf0bba9": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "ee31da26-c69b-44ba-9890-8dda174e1b84": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "f173e037-9530-4edb-b40b-5ebde56eddb9": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "f1abdfdd-55c1-45b6-b6dc-6552cb1538b2": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "f2623759-89cd-49d7-a15a-27d1a44f1ef7": {
+      "environment": "indoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "f2a0f286-d6eb-4740-af9e-644e2573a4eb": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "f30f6456-52a3-4acd-8c09-297d6433715a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "f3fe77a6-2f44-4ecf-8154-62382620f7c8": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   },
+   "f41c7f5e-593e-4ffb-a01b-11bb4f720e45": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "f473a972-9998-4eb6-9593-2ad0fd568df4": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "f5addf3c-869b-4ccd-b713-9cfb581956ef": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "f67c9963-3417-481b-8ff5-dcd0d4772afb": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "morning"
+   },
+   "f68c2936-cf46-4c69-9d26-cf98c514ed41": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "dark"
+   },
+   "f6d3980c-54a2-43b9-b05b-f82038553064": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "f95908ba-d7cf-4cbf-a5aa-83dfc79f7c8a": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "f9cc0f11-b9eb-4bbe-9c8b-be6394c99048": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1.5",
+      "time_of_day": "night"
+   },
+   "f9f11c04-ac3e-46d0-b651-eee25e262d10": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "1",
+      "time_of_day": "morning"
+   },
+   "fcba1791-36fc-4c8f-a6b4-f64cde476f0a": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "0.5",
+      "time_of_day": "evening"
+   },
+   "fd1205e9-4ee0-4795-b414-e686e5fe2739": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "ff2e1241-8f9b-4226-9bd0-01fa8b3d4c89": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "ff385b9a-0228-4974-959e-fcad770f4cbf": {
+      "environment": "indoor",
+      "generator": "indoor_environments",
+      "time_of_day": "night"
+   },
+   "ff6ee3c3-7655-4e0a-94e0-3f34fa51131f": {
+      "environment": "outdoor",
+      "generator": "identities",
+      "strength": "2",
+      "time_of_day": "night"
+   }
+}

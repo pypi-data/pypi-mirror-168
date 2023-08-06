@@ -1,0 +1,5 @@
+include src/datagen/api/datapoint/assets/explanations/*.html
+include src/datagen/api/catalog/cache/*.json
+include src/datagen/api/catalog/human_templates/*.json
+include src/datagen/config/settings.toml
+include src/datagen/config/config.py
