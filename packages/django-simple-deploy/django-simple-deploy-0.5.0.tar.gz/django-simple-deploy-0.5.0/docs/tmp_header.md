@@ -1,0 +1,4 @@
+- [*simple_deploy.py*](#simple_deploypy)
+- [*deploy_platform-name.py*](#deploy_platform-namepy)
+- [Template files](#template-files)
+- [Message files](#message-files)
