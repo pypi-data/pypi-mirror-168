@@ -1,0 +1,60 @@
+[project]
+name = "deephaven-plugin-plotly-js"
+description = "Deephaven Plotly JS Plugin"
+dynamic = []
+authors = [
+    { name = "Devin Smith", email = "devinsmith@deephaven.io" },
+]
+maintainers = [
+    { name = "Devin Smith", email = "devinsmith@deephaven.io" },
+]
+requires-python = ">=3.7"
+readme = "README.md"
+keywords = [
+    "deephaven",
+    "plotly",
+    "js",
+    "plugin",
+]
+dependencies = [
+    "deephaven-plugin>=0.3.0.dev0",
+]
+version = "0.1.0.dev4"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+Homepage = "https://github.com/deephaven/deephaven-plugin-plotly-js"
+"Source Code" = "https://github.com/deephaven/deephaven-plugin-plotly-js"
+"Bug Tracker" = "https://github.com/deephaven/deephaven-plugin-plotly-js/issues"
+
+[project.optional-dependencies]
+
+[project.entry-points."deephaven.plugin"]
+registration_cls = "deephaven_plugin_plotly_js:PlotlyJsRegistration"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+setup-script = "build.py"
+includes = [
+    "src/deephaven_plugin_plotly_js/",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "build.py"
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "flake8",
+    "black",
+]
+test = [
+    "pytest",
+]
