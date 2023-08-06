@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+kivy_matplotlib_widget/__init__.py
+kivy_matplotlib_widget/factory_registers.py
+kivy_matplotlib_widget.egg-info/PKG-INFO
+kivy_matplotlib_widget.egg-info/SOURCES.txt
+kivy_matplotlib_widget.egg-info/dependency_links.txt
+kivy_matplotlib_widget.egg-info/requires.txt
+kivy_matplotlib_widget.egg-info/top_level.txt
+kivy_matplotlib_widget/uix/__init__.py
+kivy_matplotlib_widget/uix/graph_widget.py
+kivy_matplotlib_widget/uix/graph_widget_3d.py
+kivy_matplotlib_widget/uix/graph_widget_scatter.py
+kivy_matplotlib_widget/uix/legend_widget.py
