@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: django-extract-templates
+Version: 0.1.0
+Summary: Copies Django's built-in templates and statics.
+Home-page: https://github.com/BillSchumacher/django-extract-templates
+Author: Bill Schumacher
+Author-email: 34168009+BillSchumacher@users.noreply.github.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+django-extract-templates
+========================
+
+Copies Django's built-in templates and statics.
+
+Usage:
+
+    # extract_templates
+
+You should be able to run this from your terminal, or optionally import and execute run().
