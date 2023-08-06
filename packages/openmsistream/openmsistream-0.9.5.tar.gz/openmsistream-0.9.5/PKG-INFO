@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: openmsistream
+Version: 0.9.5
+Summary: Python applications for materials data streaming using Apache Kafka. Developed for Open MSI (NSF DMREF award #1921959)
+Home-page: https://github.com/openmsi/openmsistream
+Download-URL: https://github.com/openmsi/openmsistream/archive/refs/tags/v0.9.5.tar.gz
+Author: OpenMSIStream
+Author-email: openmsistream@gmail.com
+License: GNU GPLv3
+Keywords: data_streaming,stream_processing,apache_kafka,materials,data_science
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7,<3.10
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: dev
+Provides-Extra: all
+License-File: LICENSE
+
+
+![PyPI](https://img.shields.io/pypi/v/openmsistream) ![GitHub](https://img.shields.io/github/license/openmsi/openmsistream) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/openmsistream) ![GitHub Release Date](https://img.shields.io/github/release-date/openmsi/openmsistream) ![GitHub last commit](https://img.shields.io/github/last-commit/openmsi/openmsistream) ![CircleCI](https://img.shields.io/circleci/build/github/openmsi/openmsistream/main) [![Documentation Status](https://readthedocs.org/projects/openmsistream/badge/?version=latest)](https://openmsistream.readthedocs.io/en/latest/?badge=latest) [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/PyCQA/pylint)
+
+Applications for laboratory, analysis, and computational materials data streaming using [Apache Kafka](https://kafka.apache.org/)
+
+Available on PyPI at https://pypi.org/project/openmsistream and GitHub at https://github.com/openmsi/openmsistream 
+
+Official documentation at https://openmsistream.readthedocs.io/en/latest/
+
+Developed for Open MSI (NSF DMREF award #1921959)
