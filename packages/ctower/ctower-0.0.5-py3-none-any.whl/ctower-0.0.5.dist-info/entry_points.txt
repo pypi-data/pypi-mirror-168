@@ -1,0 +1,3 @@
+[console_scripts]
+ctower=ctower.main:run_app
+
