@@ -1,0 +1,3 @@
+[console_scripts]
+git-logs = gitlogs.main:main
+gitlogs = gitlogs.main:main
