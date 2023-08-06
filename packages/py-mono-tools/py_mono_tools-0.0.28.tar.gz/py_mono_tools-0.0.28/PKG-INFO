@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: py-mono-tools
+Version: 0.0.28
+Summary: A CLI designed to make it easier to work in a python mono repo
+Home-page: https://peterhoburg.github.io/py_mono_tools/
+License: GPL-3.0-or-later
+Keywords: build,tools,monorepo,cli,py-mono-tools,py mono tools,py_mono_tools
+Author: Peter Hoburg
+Author-email: peterHoburg@users.noreply.github.com
+Maintainer: Peter Hoburg
+Maintainer-email: peterHoburg@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Provides-Extra: all
+Provides-Extra: python
+Provides-Extra: python-linters
+Provides-Extra: python-testers
+Requires-Dist: bandit (>=1,<2); extra == "python" or extra == "python-linters" or extra == "all"
+Requires-Dist: black (>=22,<23); extra == "python" or extra == "python-linters" or extra == "all"
+Requires-Dist: click (>=8,<9)
+Requires-Dist: flake8 (>=5,<6); extra == "python" or extra == "python-linters" or extra == "all"
+Requires-Dist: isort (>=5,<6); extra == "python" or extra == "python-linters" or extra == "all"
+Requires-Dist: mypy (>=0,<1); extra == "python" or extra == "python-linters" or extra == "all"
+Requires-Dist: pydocstringformatter (>=0.7,<0.8); extra == "python" or extra == "python-linters" or extra == "all"
+Requires-Dist: pydocstyle[toml] (>=6,<7)
+Requires-Dist: pylint (>=2,<3); extra == "python" or extra == "python-linters" or extra == "all"
+Requires-Dist: pytest (>=7,<8); extra == "python" or extra == "python-testers" or extra == "all"
+Project-URL: Documentation, https://peterhoburg.github.io/py_mono_tools/
+Project-URL: Repository, https://github.com/peterHoburg/py_mono_tools
+Description-Content-Type: text/markdown
+
+For more information, please go the GitHub page. https://peterhoburg.github.io/py_mono_tools/
+
