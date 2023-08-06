@@ -1,0 +1,8 @@
+jschon
+
+[dev]
+pytest
+coverage
+
+[test]
+tox

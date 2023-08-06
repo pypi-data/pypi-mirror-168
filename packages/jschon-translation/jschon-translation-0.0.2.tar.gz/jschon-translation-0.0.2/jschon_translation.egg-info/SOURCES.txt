@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+jschon_translation/__init__.py
+jschon_translation/catalog.py
+jschon_translation/vocab.py
+jschon_translation.egg-info/PKG-INFO
+jschon_translation.egg-info/SOURCES.txt
+jschon_translation.egg-info/dependency_links.txt
+jschon_translation.egg-info/requires.txt
+jschon_translation.egg-info/top_level.txt
