@@ -1,0 +1,14 @@
+name: xhistogram_test_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - xarray
+  - dask-core
+  - numpy=1.18
+  - pytest
+  - hypothesis
+  - pip
+  - pip:
+    - codecov
+    - pytest-cov
