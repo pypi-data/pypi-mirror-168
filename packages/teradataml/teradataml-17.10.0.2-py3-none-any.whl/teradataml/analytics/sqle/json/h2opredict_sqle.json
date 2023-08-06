@@ -1,0 +1,63 @@
+{
+    "function_tdplyr_name": "td_h2opredict_sqle",
+    "function_r_name": "h2o.predict",
+    "function_alias_name": "H2OPredict",
+    "input_tables": [
+        {
+            "rName": "newdata",
+            "name": ["InputTable"],
+            "useInR": true,
+            "rOrderNum": 2
+        },
+        {
+            "rName": "modeldata",
+            "name": ["ModelTable"],
+            "useInR": true,
+            "rOrderNum": 1
+        }
+    ],
+    "function_name": "H2OPredict",
+    "function_tdml_name": "H2OPredict",
+    "argument_clauses": [
+        {
+            "allowsLists": true,
+            "datatype": "COLUMNS",
+            "rName": "accumulate",
+            "name": ["Accumulate"],
+            "useInR": true,
+            "rOrderNum": 3
+        },
+        {
+            "allowsLists": true,
+            "datatype": "STRING",
+            "rName": "model.output.fields",
+            "name": ["ModelOutputFields"],
+            "useInR": true,
+            "rOrderNum": 4
+        },
+        {
+            "allowsLists": true,
+            "datatype": "STRING",
+            "rName": "overwritecachedmodels",
+            "name": ["OverwriteCachedModel"],
+            "useInR": true,
+            "rOrderNum": 5
+        },
+        {
+            "allowsLists": true,
+            "datatype": "STRING",
+            "rName": "model.type",
+            "name": ["ModelType"],
+            "useInR": true,
+            "rOrderNum": 6
+        },
+        {
+            "allowsLists": true,
+            "datatype": "STRING",
+            "rName": "enable.options",
+            "name": ["EnableOptions"],
+            "useInR": true,
+            "rOrderNum": 7
+        }
+    ]
+}

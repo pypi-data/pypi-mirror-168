@@ -1,0 +1,8 @@
+{
+  "ngramsplitter": "NGramSplitter",
+  "nPath": "NPath",
+  "TD_FunctionTransform": "Transform",
+  "TD_FunctionFit": "Fit",
+  "read_nos": "ReadNOS",
+  "write_nos": "WriteNOS"
+}

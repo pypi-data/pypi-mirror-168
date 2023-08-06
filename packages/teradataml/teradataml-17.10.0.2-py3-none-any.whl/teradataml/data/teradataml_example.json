@@ -1,0 +1,131 @@
+{
+  "titanic": {
+    "passenger": "INTEGER",
+    "survived": "INTEGER",
+    "pclass": "INTEGER",
+    "name": "VARCHAR(1000)",
+    "sex": "VARCHAR(20)",
+    "age": "INTEGER",
+    "sibsp": "INTEGER",
+    "parch": "INTEGER",
+    "ticket": "VARCHAR(20)",
+    "fare": "FLOAT",
+    "cabin": "VARCHAR(20)",
+    "embarked": "VARCHAR(20)"
+  },
+  "bin_fit_ip": {
+    "ColumnName": "varchar(20)",
+    "minVal": "double precision",
+    "maxVal": "double precision",
+    "label": "varchar(20)"
+  },
+  "chi_sq": {
+    "gender": "varchar(20)",
+    "dem": "BIGINT",
+    "rep": "BIGINT"
+  },
+  "scaling_house": {
+    "id": "INTEGER",
+    "price": "INTEGER",
+    "lotsize": "INTEGER"
+  },
+  "strsimilarity_input": {
+    "id": "INTEGER",
+    "src_text1": "VARCHAR(30)",
+    "src_text2": "VARCHAR(30)",
+    "tar_text": "VARCHAR(30)"
+  },
+  "transformation_table": {
+    "TargetColumn": "VARCHAR(64)",
+    "transformation": "VARCHAR(64)",
+    "Parameters": "VARCHAR(64)",
+    "DefaultValue": "real"
+  },
+  "iris_input": {
+    "id" : "integer",
+    "sepal_length" : "float",
+    "sepal_width" : "float",
+    "petal_length" : "float",
+    "petal_width" : "float",
+    "species": "integer"
+  },
+  "scale_housing" : {
+    "types" : "varchar(20)",
+    "id" : "integer",
+    "price" : "real",
+    "lotsize" : "real",
+    "bedrooms" : "real",
+    "bathrms" : "real",
+    "stories" : "real"
+  },
+  "numerics": {
+    "id_col": "integer",
+    "integer_col": "integer",
+    "smallint_col": "smallint",
+    "bigint_col": "bigint",
+    "decimal_col": "decimal(38,8)",
+    "float_col": "float",
+    "number_col": "number",
+    "number2_col": "number",
+    "number3_col": "number",
+    "byteint_col": "byteint"
+  },
+  "cars_hist" :{
+    "id" : "integer",
+    "name" : "varchar(30)",
+    "cyl" : "integer",
+    "hp" : "float"
+  },
+  "min_max_titanic": {
+    "minVal" : "BIGINT",
+    "maxVal" : "BIGINT",
+    "label" : "varchar(30)"
+  },
+  "nb_iris_input_test" :{
+    "id" : "integer",
+    "sepal_length" : "real",
+    "sepal_width" : "real",
+    "petal_length" : "real",
+    "petal_width" : "real",
+    "species" : "varchar(30)"
+  },
+    "nbp_iris_model": {
+     "class_nb": "VARCHAR(100)",
+     "variable": "VARCHAR(100)",
+     "type_nb": "VARCHAR(100)",
+     "category": "VARCHAR(100)",
+     "cnt": "INTEGER",
+     "sum_nb": "DECIMAL(10,5)",
+     "sum_sq": "DECIMAL(10,5)",
+     "total_cnt": "INTEGER"
+  },
+  "rank_table": {
+    "age" : "INTEGER",
+    "fare" :  "FLOAT",
+    "rank_age" : "BIGINT",
+    "rank_fare" : "BIGINT"
+  },
+  "glm_admissions_model": {
+    "attribute": "INTEGER",
+    "predictor": "VARCHAR(256)",
+    "category": "VARCHAR(256)",
+    "estimate": "real",
+    "std_err": "real",
+    "z_score": "real",
+    "p_value": "real",
+    "significance": "VARCHAR(16)",
+    "family": "VARCHAR(256)"
+  },
+  "svm_iris_model": {
+    "classid": "INTEGER",
+    "weights": "varbyte(32000)"
+  },
+  "insect_sprays":{
+    "groupA": "BIGINT",
+    "groupB": "BIGINT",
+    "groupC": "BIGINT",
+    "groupD": "BIGINT",
+    "groupE": "BIGINT",
+    "groupF": "BIGINT"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "iris_test": {
+    "id" : "integer",
+    "sepal_length" : "float",
+    "sepal_width" : "float",
+    "petal_length" : "float",
+    "petal_width" : "float",
+    "species": "integer"
+  },
+  "iris_input": {
+    "id" : "integer",
+    "sepal_length" : "float",
+    "sepal_width" : "float",
+    "petal_length" : "float",
+    "petal_width" : "float",
+    "species": "integer"
+  }
+}
