@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+datadog_pandas/__init__.py
+datadog_pandas/query.py
+datadog_pandas.egg-info/PKG-INFO
+datadog_pandas.egg-info/SOURCES.txt
+datadog_pandas.egg-info/dependency_links.txt
+datadog_pandas.egg-info/top_level.txt
+datadog_pandas/ipython/__init__.py
+datadog_pandas/ipython/magic.py
