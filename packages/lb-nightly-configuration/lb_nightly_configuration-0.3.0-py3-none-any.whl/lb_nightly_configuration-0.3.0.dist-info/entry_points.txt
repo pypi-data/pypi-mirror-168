@@ -1,0 +1,3 @@
+[console_scripts]
+lbn-check-config=lb.nightly.configuration:check_config
+

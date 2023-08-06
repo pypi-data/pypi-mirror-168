@@ -1,0 +1,10 @@
+lb/nightly/configuration/__init__.py,sha256=XvxPkaOTRXgPCfChZ9vqJ6hB8M25F8hDOvPsGy6qy44,12346
+lb/nightly/configuration/defaults.py,sha256=V_qZXg8QKIaJ5lV298wDI77Le5hjWXWsHCO3JlnqpiE,865
+lb/nightly/configuration/project.py,sha256=_BLMi6wG2RgKvYpwQeuRXJs1LlwGsz37sJYOCr51cVw,35177
+lb/nightly/configuration/slot.py,sha256=XbHndU1C-5UwLUp_m9S1gEj-wNruZtssYshyMqKNnoQ,17115
+lb/nightly/configuration/utils.py,sha256=ejLvieN4XMVrRe1_AokIrLuXiXcweeI4XJgWxPWq-3g,10561
+lb_nightly_configuration-0.3.0.dist-info/entry_points.txt,sha256=2zAVzPHg30F6vLEHO47ixgd33v4JyrBBJnMFL7EVrfA,74
+lb_nightly_configuration-0.3.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+lb_nightly_configuration-0.3.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+lb_nightly_configuration-0.3.0.dist-info/METADATA,sha256=Lv3jff4h4iMgxo1GBYgHfEYtxy3yVQPxSi960WRtz3k,786
+lb_nightly_configuration-0.3.0.dist-info/RECORD,,
