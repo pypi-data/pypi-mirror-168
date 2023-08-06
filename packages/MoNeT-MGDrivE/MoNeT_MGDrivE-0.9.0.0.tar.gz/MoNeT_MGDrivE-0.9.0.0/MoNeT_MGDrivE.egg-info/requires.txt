@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+ipython
+jupyter
+pandas
+sympy
+compress-pickle
+joblib
+more-itertools
