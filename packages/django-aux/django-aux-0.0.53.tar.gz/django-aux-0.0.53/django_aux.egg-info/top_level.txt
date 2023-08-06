@@ -1,0 +1,3 @@
+django_aux
+django_aux_geo
+django_aux_timeperiods
