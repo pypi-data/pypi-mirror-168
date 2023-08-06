@@ -1,0 +1,3 @@
+[console_scripts]
+nblibdoc = robotkernel.nbreader:libdoc
+nbrobot = robotkernel.nbreader:robot
