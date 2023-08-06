@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+easyzip/__init__.py
+easyzip/easyzip.py
+easyzip.egg-info/PKG-INFO
+easyzip.egg-info/SOURCES.txt
+easyzip.egg-info/dependency_links.txt
+easyzip.egg-info/requires.txt
+easyzip.egg-info/top_level.txt
+test/test.py
