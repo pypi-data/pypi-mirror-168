@@ -1,0 +1,11 @@
+vodex<2.0.0,>=1.0.3
+pypdf2
+reportlab
+scipy
+ipykernel
+urllib3
+nbconvert
+scipy
+
+[dev]
+bumpver
