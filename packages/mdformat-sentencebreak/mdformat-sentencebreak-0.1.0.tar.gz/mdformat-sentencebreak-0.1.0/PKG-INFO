@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: mdformat-sentencebreak
+Version: 0.1.0
+Summary: Adds a really simple and naive sentence breaking scheme to mdformat
+Keywords: mdformat,markdown,markdown-it
+Author: J. Sebastian Paez
+Author-email: jspaezp@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: mdformat (>=0.7.16,<0.8.0)
+Description-Content-Type: text/markdown
+
+# mdformat-sentencebreak
+
+An [mdformat](https://github.com/executablebooks/mdformat) plugin that adds line wrapping based on sentence completion marks.
+
+## Behavior
+
+This input ....
+
+```text
+> Long sentences are broken at punctuation marks,
+> unless the generated sentence would be extremely small
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+
+> And it will not break sentences if
+> they are inside something else ... emphasis for example
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+
+> Sentences are kept separate if they end in punctuation
+
+Some.
+Very.
+Small.
+Series.
+of.
+Sentences.
+
+> Sentences are combined if they do not end in punctuation.
+
+a
+very
+sloppy
+sentence
+
+```
+
+Will get this ....
+
+```
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna.
+
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.**
+
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna.
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.**
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna.
+
+Some.
+Very.
+Small.
+Series.
+of.
+Sentences.
+
+a very sloppy sentence
+```
+
+## Installation
+
+> pip install {{NOT YET PUBLISHED}}
+
