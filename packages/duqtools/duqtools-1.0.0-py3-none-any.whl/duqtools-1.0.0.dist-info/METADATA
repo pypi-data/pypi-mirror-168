@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: duqtools
+Version: 1.0.0
+Summary: Dynamic uncertainty quantification for Tokamak reactor simulations modelling
+Home-page: https://github.com/carboncollective/duqtools
+Author: Carbon Collective
+Author-email: s.smeets@esciencecenter.nl
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/carboncollective/duqtools/issues
+Project-URL: Documentation, https://duqtools.readthedocs.io
+Keywords: modelling,uncertainty-quantification,tokamak,fusion-reactor
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: altair
+Requires-Dist: click
+Requires-Dist: f90nml
+Requires-Dist: gitpython
+Requires-Dist: importlib-resources
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: pydantic-yaml
+Requires-Dist: ruamel.yaml
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Requires-Dist: tqdm
+Requires-Dist: typing-extensions
+Requires-Dist: xarray
+Requires-Dist: jetto-tools (>=1.8.6)
+Provides-Extra: dash
+Requires-Dist: streamlit ; extra == 'dash'
+Provides-Extra: develop
+Requires-Dist: bump2version ; extra == 'develop'
+Requires-Dist: isort ; extra == 'develop'
+Requires-Dist: pre-commit ; extra == 'develop'
+Requires-Dist: yapf ; extra == 'develop'
+Requires-Dist: mypy ; extra == 'develop'
+Requires-Dist: nbmake ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: pytest-cov ; extra == 'develop'
+Requires-Dist: pytest-dependency ; extra == 'develop'
+Requires-Dist: pycodestyle ; extra == 'develop'
+Provides-Extra: docs
+Requires-Dist: jinja2 ; extra == 'docs'
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocs-click ; extra == 'docs'
+Requires-Dist: mkdocs-jupyter ; extra == 'docs'
+Requires-Dist: mkdocs-gen-files ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+Provides-Extra: imas
+Requires-Dist: imas ; extra == 'imas'
+Provides-Extra: publishing
+Requires-Dist: twine ; extra == 'publishing'
+Requires-Dist: wheel ; extra == 'publishing'
+Requires-Dist: build ; extra == 'publishing'
+
+| Source | Badges |
+| --- | --- |
+| ReadTheDocs |[![Documentation Status](https://readthedocs.org/projects/duqtools/badge/?version=latest)](https://duqtools.readthedocs.io/en/latest/?badge=latest) |
+| Github | [![Tests](https://github.com/CarbonCollective/fusion-dUQtools/actions/workflows/test.yaml/badge.svg)](https://github.com/CarbonCollective/fusion-dUQtools/actions/workflows/test.yaml) |
+| PyPI | [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/duqtools)](https://pypi.org/project/duqtools/) [![PyPI](https://img.shields.io/pypi/v/duqtools.svg?style=flat)](https://pypi.org/project/duqtools/) |
+| SonarCloud | [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=CarbonCollective_fusion-dUQtools&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=CarbonCollective_fusion-dUQtools) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=CarbonCollective_fusion-dUQtools&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=CarbonCollective_fusion-dUQtools) |
+| CodeCov.io | [![codecov](https://codecov.io/gh/CarbonCollective/fusion-dUQtools/branch/main/graph/badge.svg?token=TE9SBYJY8L)](https://codecov.io/gh/CarbonCollective/fusion-dUQtools)
+
+# Duqtools
+
+*Duqtools* is a tool for **D**ynamic **U**ndertainty **Q**uantification for Tokamak reactor simulations modelling.
+
+Features:
+
+- Set up 100s of simulation runs from a single template
+- Launch stardard sets of sensitivy tests with minimal programming
+- Batch job submission and status tracking
+- Supports the Standardized Interface Data Structures (IDSs) data directory
+- Compare and visualize 100s of simulations in one overview
+- Display simulation results as confidence ranges and distributions
+
+*Duqtools* is currently under active development. It runs on linux only and requires the [ITER](http://iter.org/) Integrated Modeling and Analysis Suite ([IMAS](https://confluence.iter.org/display/IMP)).
+
+To install:
+
+```console
+pip install duqtools
+```
+
+The source code is available from [Github](https://github.com/CarbonCollective/fusion-dUQtools).
+
+Suggestions, improvements, and edits are most welcome.
+
+
+## Development
+
+Check out our [Contributing Guidelines](CONTRIBUTING.md#Getting-started-with-develoment) to get started with development.
+
+
