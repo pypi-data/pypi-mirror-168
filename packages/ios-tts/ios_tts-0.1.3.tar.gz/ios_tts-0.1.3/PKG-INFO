@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ios_tts
+Version: 0.1.3
+Summary: a unitts driver for ios device, it use AVFoundation.AVSpeechSynthesizer
+Home-page: https://github.com/yumoqing/ios_tts
+Author: Yu Moqing
+Author-email: yumoqing@gmail.com
+Keywords: pyttsx,ios,offline tts engine
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# ios_tts
+Use ios native tts engine to pack as a pyttsx3 driver for ios device
