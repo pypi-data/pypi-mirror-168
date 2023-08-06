@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1200, user-scalable=no" />
+
+    <link rel="stylesheet" href="styles/app.css?sha256=7387ea51e0e73d931774d80b292355909570b95b78fed3b161d664784b927760" integrity="sha256-c4fqUeDnPZMXdNgLKSNVkJVwuVt4/tOxYdZkeEuSd2A=" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Charticulator</title>
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <script src="data/config.js?sha256=05f76a9d0a99770db0e3431363a6ff272826bfbe89cf4227f5a92ef33005179f" integrity="sha256-BfdqnQqZdw2w40MTY6b/Jygmv76Jz0In9aku8zAFF58="></script>
+    <script src="scripts/app.bundle.js?sha256=768315e2b24b8fe7e66885ed0830ebfabbefc7aa7c7e6d373a5f6d258fdc3af3" integrity="sha256-doMV4rJLj+fmaIXtCDDr+rvvx6p8fm03Ol9tJY/cOvM="></script>
+
+    <script type="text/javascript">
+      const responce = fetch(`${CHARTICULATOR_CONFIG.WorkerURL}`).then(
+        (responce) => {
+          if (!responce.ok) {
+            throw Error(
+              `Loading worker script from ${
+                CHARTICULATOR_CONFIG.WorkerURL
+              } failed`
+            );
+          }
+          const script = responce.text().then((script) => {
+            const blob = new Blob([script], { type: "application/javascript" });
+
+            const workerScript = URL.createObjectURL(blob);
+            var application = new Charticulator.Application();
+            application.initialize(
+              CHARTICULATOR_CONFIG,
+              "container",
+              {
+                workerScriptContent: workerScript
+              }
+            );
+          });
+        }
+      );
+    </script>
+    <script type="text/javascript">
+      // Include Lato and Inconsolata from Google fonts.
+      WebFontConfig = {
+        google: {
+          families: ["Lato:300,300i,400,400i,700,700i", "Inconsolata:400,700"],
+        },
+      };
+      (function(d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src =
+          "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+  </body>
+</html>
