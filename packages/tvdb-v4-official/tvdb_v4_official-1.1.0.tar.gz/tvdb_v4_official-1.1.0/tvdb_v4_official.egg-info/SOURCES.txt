@@ -1,0 +1,7 @@
+README.md
+setup.py
+tvdb_v4_official.py
+tvdb_v4_official.egg-info/PKG-INFO
+tvdb_v4_official.egg-info/SOURCES.txt
+tvdb_v4_official.egg-info/dependency_links.txt
+tvdb_v4_official.egg-info/top_level.txt
