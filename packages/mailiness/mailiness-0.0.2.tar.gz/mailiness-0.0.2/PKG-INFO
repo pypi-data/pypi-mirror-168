@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mailiness
+Version: 0.0.2
+Summary: Manage your mail server at the command line.
+Project-URL: Homepage, https://github.com/confuzeus/mailiness
+Project-URL: Bug Tracker, https://github.com/confuzeus/mailiness/issues
+Project-URL: Documentation, http://mailiness.readthedocs.io/
+Author-email: Michael Karamuth <michael@confuzeus.com>
+License-File: LICENSE
+Keywords: mail server
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <3.10
+Requires-Dist: bcrypt<5.0,>=4.0
+Requires-Dist: cryptography<38,>=37
+Requires-Dist: rich<13,>=12
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Mailiness
+
+Manage your mail server at the command line.
+
+## Features
+
+- Manage virtual users, domains, and aliases using a SQLite database.
+- Generate DKIM Key pairs.
+
+## Usage
+
+...
