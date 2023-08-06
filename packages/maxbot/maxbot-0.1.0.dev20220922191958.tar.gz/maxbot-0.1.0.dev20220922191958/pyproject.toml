@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "maxbot"
+version = "0.1.0.dev20220922191958"
+description = ""
+authors = ["Stanislav Arsentyev <arstas@gmail.com>"]
+
+[tool.poetry.scripts]
+maxbot = "maxbot.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyYAML = "^6.0"
+Jinja2 = "^3.1.1"
+spacy = "^3.2.4"
+python-telegram-bot = {extras = ["ujson"], version = "^13.14", optional = true}
+Flask = {version = "^2.1.2", optional = true}
+dateparser = "^1.1.1"
+number-parser = "^0.2.1"
+SQLAlchemy = "^1.4.36"
+marshmallow = "^3.15.0"
+textdistance = "^4.2.2"
+python-dotenv = "^0.20.0"
+click = "^8.1.3"
+
+[tool.poetry.extras]
+telegram = ["python-telegram-bot"]
+flask = ["Flask"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+pylint = "^2.13.9"
+isort = "^5.10.1"
+pre-commit = "^2.19.0"
+bandit = "^1.7.4"
+pytest-cov = "^3.0.0"
+# waiting for fix https://github.com/gabrielfalcao/HTTPretty/issues/425
+httpretty = "1.0.5"
+
+[tool.black]
+line-length = 99
+target-version = ["py39"]
+
+[tool.pylint.'MESSAGES CONTROL']
+profile = "black"
+disable = ["C0330", "C0114", "C0116"]
+max-line-length = 99
+
+[tool.isort]  # black config
+profile = "black"
+line_length = 99
+
+[tool.bandit]
+targets = ["maxbot",]
+exclude_dirs = ["tests", "examples"]
+skips = ["B101",]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
