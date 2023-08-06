@@ -1,0 +1,11 @@
+tjutils/__init__.py,sha256=WMmvm2Keb76yMz8OL_h4fKT34Xpi-1BVfCiTn2QGzz4,22
+tjutils/_modidx.py,sha256=gnPkzKZqljPiS9iT7zYAEf3MMO7sziiW_LPpQ18OsAI,1503
+tjutils/nbdev.py,sha256=QsWe4RxzRyDXaIAx6MiLpnRBY2t299isVVuJTmKGNiY,6148
+tjutils/templates/nbdev/github_action_doc_deploy.yml,sha256=I-Qo_NArCLdK34R8KxlvIuDZTMMXspKR6a5HiIHRe8M,210
+tjutils/templates/nbdev/github_action_pkg_testing.yml,sha256=lJAeuWnzvicEu8SseFzYTj7btI9SgKK-4Rmptn8HAhA,167
+tjutils/templates/nbdev/gitignore,sha256=wKOBK1MROGDnzUl1068-Ja3yvixXl0G1bqBQgdXAS8Q,201
+tjutils/utils.py,sha256=fAdMjC346pXjfmp79RLc80akSv6J7CK-6JUlVQKPiYs,779
+tjutils-0.6.4.dist-info/entry_points.txt,sha256=r2WY8ZQ9YewgPcU2xKFf7AjmsZ7NxcueJagaZ5QUcgs,254
+tjutils-0.6.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+tjutils-0.6.4.dist-info/METADATA,sha256=HvtNmNyoeb651p0fhAf96nuNLYNUekeKS0X0tVMZsXc,1194
+tjutils-0.6.4.dist-info/RECORD,,
