@@ -1,0 +1,3 @@
+pyserial
+signalslot
+pyserial_asyncio

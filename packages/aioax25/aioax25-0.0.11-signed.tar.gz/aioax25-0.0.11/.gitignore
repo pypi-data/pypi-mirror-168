@@ -1,0 +1,13 @@
+.*.swp
+*.swp
+*~
+__pycache__
+*.egg-info
+*.pyc
+.coverage
+coverage/
+testreports.xml
+dist/
+build/
+htmlcov/
+lcov.info
