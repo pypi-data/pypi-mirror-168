@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spatialmath_rospy/__init__.py
+spatialmath_rospy/convert.py
+spatialmath_rospy/monkey_patch_spatialmath.py
+spatialmath_rospy/ros_compat_mixin.py
+spatialmath_rospy.egg-info/PKG-INFO
+spatialmath_rospy.egg-info/SOURCES.txt
+spatialmath_rospy.egg-info/dependency_links.txt
+spatialmath_rospy.egg-info/requires.txt
+spatialmath_rospy.egg-info/top_level.txt
