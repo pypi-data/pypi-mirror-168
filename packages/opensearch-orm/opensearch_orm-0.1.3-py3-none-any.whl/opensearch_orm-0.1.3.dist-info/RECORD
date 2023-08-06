@@ -1,0 +1,10 @@
+opensearchorm/__init__.py,sha256=_pRPkKsCg0WMZb4Fs-qocNdIXpF5eQORAri9JLYLmVY,120
+opensearchorm/aggs.py,sha256=UAIrmLComTMZ7fCyP-33E7OqCfyte3c4CHBG6HGxHpE,1456
+opensearchorm/model.py,sha256=LjGvO_YSIWzPZs7uuhSv4rzORjoNQzgy4PCrpkW_uyI,254
+opensearchorm/query.py,sha256=xx-sVoUuzMtWUdM2EsyTp27-WxtgU4ucRA8Q2hik5_A,4698
+opensearchorm/session.py,sha256=zEfOPUD3fKtcIUevxc6Csk4PmoW9FNBeEbJMdJYKNgk,4873
+opensearchorm/utils.py,sha256=dkqUfJiUldBfxG__C3S93ueH7ZfEgY6fFy-0lrPoVts,497
+opensearch_orm-0.1.3.dist-info/LICENSE,sha256=PTUJoiKivbxdFPAEiiPrpBmme5u6GMt3nxnkke4hrgE,1061
+opensearch_orm-0.1.3.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+opensearch_orm-0.1.3.dist-info/METADATA,sha256=_BppSUYr9KI6MEd4LAzkFHbgEOr88Qf_oKScweYofZc,3209
+opensearch_orm-0.1.3.dist-info/RECORD,,
