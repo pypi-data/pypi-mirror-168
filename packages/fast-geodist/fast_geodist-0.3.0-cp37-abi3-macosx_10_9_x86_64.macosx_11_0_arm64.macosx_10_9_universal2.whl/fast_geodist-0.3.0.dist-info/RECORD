@@ -1,0 +1,8 @@
+fast_geodist-0.3.0.dist-info/METADATA,sha256=KSQyotv3DgtA2Orhs8B61L6OpO-2k-WpGkUTxSJ8iGc,5708
+fast_geodist-0.3.0.dist-info/WHEEL,sha256=fuWam1jMvME0m6sgZCJqk00-O1YRR2dd-8N7Iy4BepQ,145
+fast_geodist-0.3.0.dist-info/license_files/LICENSE,sha256=NbY002uJ-chCjxk1jd2One3GSbGIY0jykWLEUeeALsY,1072
+fast_geodist/__init__.py,sha256=yH2x1lOIrEde286_T8nggbMQcCOEFeQ_4Usht5JvaSI,1399
+fast_geodist/slow.py,sha256=5Rt-dWnoVaKnHjf093atn8m9R_uj-coAIpFCLT1zVug,1055
+fast_geodist/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_geodist/_fast_geodist.abi3.so,sha256=IUuYQGT_odBLX4bzgUPkLKNjmgwKex6oDuqvBWQGOzg,1603459
+fast_geodist-0.3.0.dist-info/RECORD,,
