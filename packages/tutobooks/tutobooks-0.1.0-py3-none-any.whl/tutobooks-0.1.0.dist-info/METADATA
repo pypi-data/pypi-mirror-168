@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: tutobooks
+Version: 0.1.0
+Summary: A simple package to convert between tutobooks python files, jupyter notebooks and
+Home-page: https://github.com/lukewood/tutobooks
+Author: Keras team
+Author-email: lukewoodcs@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: packaging
+Requires-Dist: absl-py
+Provides-Extra: tests
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: isort ; extra == 'tests'
+Requires-Dist: black ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+
+# tutobooks
+
+**Note: All code credit to Francois Chollet, I simply bundled this into a pip package because I wanted to use it for more than keras.io**
+
+Taken from [keras-io/scripts](https://github.com/keras-team/keras-io).
+
+## Installation
+
+You can install from GitHub or PyPi:
+
+```bash
+pip install tutobooks
+```
+
+or
+
+```bash
+pip install git+https://github.com/lukewood/tutobooks
+```
+
+or
+
+```bash
+git clone https://github.com/lukewood/tutoboks
+cd tutobooks
+python setup.py develop
+```
+
+## Overview
+
+A tutobook is a tutorial available simultaneously as a notebook,
+as a Python script, and as a nicely rendered webpage.
+
+Its source-of-truth (for manual edition and version control) is
+its Python script form, but you can also create one by starting
+from a notebook and converting it with the command `nb2py`.
+
+Text cells are stored in markdown-formatted comment blocks.
+the first line (starting with " * 3) may optionally contain a special
+annotation, one of:
+
+- invisible: do not render this block.
+- shell: execute this block while prefixing each line with `!`.
+
+The script form should start with a header with the following fields:
+
+```
+Title:
+Author: (could be `Authors`: as well, and may contain markdown links)
+Date created: (date in yyyy/mm/dd format)
+Last modified: (date in yyyy/mm/dd format)
+Description: (one-line text description)
+```
+You would typically start from an existing notebook.
+
+Save it to disk (let's say as `path_to_your_nb.ipynb`).
+
+Then run:
+
+```
+tutobooks nb2py path_to_your_nb.ipynb your_example.py
+```
+
+This will create the file `your_example.py`. Open it,
+fill in the headers, and generally edit it so that it looks nice.
+
+You can then preview what it looks like when converted back again
+to ipynb by running:
+
+```
+python tutobooks py2nb your_example.py preview.ipynb
+```
+
+Open the generated `preview.ipynb` and make sure it looks like what
+you expect. If not, keep editing `your_example.py` until it does.
+
+## Usage
+
+Conversion to markdown:
+
+```bash
+tutobooks nb2md mypath.ipynb mypath.md
+```
+
+Conversion to python:
+
+```bash
+tutobooks nb2py mypath.ipynb mypath.py
+```
+
+Conversion to markdown from python:
+
+```bash
+tutobooks py2md mypath.py mypath.md
+```
+
+## Credits
+
+Francois Chollet wrote almost all of the code for this [(see keras.io repo)](https://github.com/keras-team/keras-io), I just packaged it up into a PyPi package with proper CLI parsing and some tweaking to make the usage more generic.
+
+
