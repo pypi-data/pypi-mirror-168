@@ -1,0 +1,8 @@
+LICENSE
+README.md
+prettierprint.py
+pyproject.toml
+prettierprint.egg-info/PKG-INFO
+prettierprint.egg-info/SOURCES.txt
+prettierprint.egg-info/dependency_links.txt
+prettierprint.egg-info/top_level.txt
