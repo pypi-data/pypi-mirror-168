@@ -1,0 +1,40 @@
+# DBLP ranking using CORE Rank and SJR
+
+## Install
+
+For now download, test and install dependencies by hand
+
+## Run
+
+```
+./get_rankings.py DBLP_URL
+```
+
+Gives and overview of a dblp account
+
+For example
+
+```
+./get_rankings.py https://dblp.org/pid/37/2282.html
+```
+
+## Usage
+```
+usage: get_rankings.py [-h] [--start START] [--end END] [-o O] [-d] url
+
+Get ranking from DBLP and show a small summary
+
+positional arguments:
+  url            DBLP url
+
+options:
+  -h, --help     show this help message and exit
+  --start START  starting year
+  --end END      ending year
+  -o O           output csv file
+  -d             display conference and journal list
+```
+
+## Thanks
+
+Thanks for Laurent Reveillere ([dblp_ranker](https://github.com/reveillere/dblp_ranker) and Xavier Blanc [dblp_ranker](https://github.com/xblanc33/dblp_ranker) for their initial version in nodejs.
