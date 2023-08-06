@@ -1,0 +1,3 @@
+[console_scripts]
+covcheck=covcheck._cli.main:run
+
