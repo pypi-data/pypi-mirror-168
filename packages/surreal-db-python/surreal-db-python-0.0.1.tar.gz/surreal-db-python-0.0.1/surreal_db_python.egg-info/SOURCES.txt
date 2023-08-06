@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+surreal/__init__.py
+surreal/client.py
+surreal/exceptions.py
+surreal/surreal_compiled.c
+surreal/surreal_compiled.py
+surreal_db_python.egg-info/PKG-INFO
+surreal_db_python.egg-info/SOURCES.txt
+surreal_db_python.egg-info/dependency_links.txt
+surreal_db_python.egg-info/requires.txt
+surreal_db_python.egg-info/top_level.txt
+test/test_surreal.py
