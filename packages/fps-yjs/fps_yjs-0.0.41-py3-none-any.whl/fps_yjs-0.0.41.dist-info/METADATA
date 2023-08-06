@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fps_yjs
+Version: 0.0.41
+Summary: An FPS plugin for the Yjs API
+Project-URL: Homepage, https://jupyter.org
+Author-email: Jupyter Development Team <jupyter@googlegroups.com>
+License: BSD 3-Clause License
+License-File: COPYING.md
+Keywords: fastapi,jupyter,pluggy,plugins,server
+Requires-Python: >=3.7
+Requires-Dist: fps-contents
+Requires-Dist: fps>=0.0.8
+Requires-Dist: jupyter-ydoc<0.2.0,>=0.1.16
+Requires-Dist: ypy-websocket<0.4.0,>=0.3.2
+Description-Content-Type: text/markdown
+
+# fps-yjs
+
+An FPS plugin for the Yjs API.
