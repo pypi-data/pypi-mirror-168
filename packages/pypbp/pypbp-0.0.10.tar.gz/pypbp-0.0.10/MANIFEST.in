@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+include requirements.txt
+include pypbp/__init__.pxd
+include pypbp/__init__.pyx
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
