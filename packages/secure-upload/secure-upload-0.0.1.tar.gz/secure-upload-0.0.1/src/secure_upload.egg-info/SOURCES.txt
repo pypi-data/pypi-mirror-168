@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/secure-upload-server
+src/secure_upload/__init__.py
+src/secure_upload/main.py
+src/secure_upload.egg-info/PKG-INFO
+src/secure_upload.egg-info/SOURCES.txt
+src/secure_upload.egg-info/dependency_links.txt
+src/secure_upload.egg-info/top_level.txt
