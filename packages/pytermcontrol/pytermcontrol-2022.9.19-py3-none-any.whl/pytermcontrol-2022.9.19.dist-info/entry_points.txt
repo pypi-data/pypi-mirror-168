@@ -1,0 +1,3 @@
+[console_scripts]
+with_termcontrol=pytermcontrol.termcontrol:main
+
