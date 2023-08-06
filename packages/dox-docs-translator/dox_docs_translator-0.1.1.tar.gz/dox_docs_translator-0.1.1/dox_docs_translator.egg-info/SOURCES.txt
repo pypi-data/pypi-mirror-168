@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dox_docs_translator/__init__.py
+dox_docs_translator/dox_docs_translator.py
+dox_docs_translator/tags.py
+dox_docs_translator.egg-info/PKG-INFO
+dox_docs_translator.egg-info/SOURCES.txt
+dox_docs_translator.egg-info/dependency_links.txt
+dox_docs_translator.egg-info/requires.txt
+dox_docs_translator.egg-info/top_level.txt
