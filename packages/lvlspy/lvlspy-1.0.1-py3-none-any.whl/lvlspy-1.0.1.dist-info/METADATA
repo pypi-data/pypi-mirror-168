@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: lvlspy
+Version: 1.0.1
+Summary: Python project to work with quantum level system data
+Home-page: https://github.com/jaadt7/lvlspy
+Author: Clemson University
+Author-email: jtannou@g.clemson.edu
+License: GPLv3+
+Project-URL: Bug Reports, https://github.com/jaadt7/lvlspy/issues
+Project-URL: Source, https://github.com/jaadt7/lvlspy/
+Keywords: astronomy nuclear astrophysics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: lxml
+Requires-Dist: astropy
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+Overview
+========
+
+lvlspy is a python package for working with quantum level-system data.
+
+Installation
+------------
+
+Install from `PyPI <https://pypi.org/project/lvlspy>`_ with pip by
+typing in your favorite terminal::
+
+    $ pip install lvlspy
+
+Usage
+-----
+
+To get familiar with lvlspy, please see our tutorial Jupyter
+`notebooks <https://github.com/jaadt7/lvlspy_tutorial>`_.
+
+Authors
+-------
+
+- Jaad A. Tannous <jtannou@g.clemson.edu>
+- Bradley S. Meyer <mbradle@g.clemson.edu>
+
+Contribute
+----------
+
+- Issue Tracker: `<https://github.com/jaadt7/issues/>`_
+- Source Code: `<https://github.com/jaadt7/lvlspy/>`_
+
+License
+-------
+
+The project is licensed under the GNU Public License v3 (or later).
+
