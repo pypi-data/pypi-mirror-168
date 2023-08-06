@@ -1,0 +1,5 @@
+setuptools
+jsonschema
+urllib3
+requests
+shadow3libpyvinyl>=1.0.5
