@@ -1,0 +1,4 @@
+[console_scripts]
+devshell=djfritz_project.dev_shell:devshell_cmdloop
+run_testserver=djfritz_project.manage:start_test_server
+
