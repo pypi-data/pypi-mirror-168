@@ -1,0 +1,100 @@
+#!python
+
+"""
+DOC MESH
+
+Copyright (C) 2020 SPAM Contributors
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+DOC MESH
+"""
+import spam.helpers
+import spam.mesh
+import spam.label
+# import spam.DIC
+
+import h5py
+import numpy
+numpy.seterr(all='ignore')
+
+import argparse
+import os
+# import tifffile
+
+
+# Define argument parser object
+parser = argparse.ArgumentParser(description="spam-mesh "+spam.helpers.optionsParser.GLPv3descriptionHeader +\
+                                             "WRITE DOC MESH\n",
+                                 formatter_class=argparse.RawTextHelpFormatter)
+
+# Parse arguments with external helper function
+args = spam.helpers.optionsParser.mesh(parser)
+#
+print("spam-mesh -- Current Settings:")
+argsDict = vars(args)
+for key in sorted(argsDict):
+    print(f"\t{key}: {argsDict[key]}")
+
+
+if args.MESH_TYPE_CUBOID:
+    origin = [
+        args.MESH_TYPE_CUBOID[0],
+        args.MESH_TYPE_CUBOID[2],
+        args.MESH_TYPE_CUBOID[4]]
+    lengths = [
+        args.MESH_TYPE_CUBOID[1] - origin[0],
+        args.MESH_TYPE_CUBOID[3] - origin[1],
+        args.MESH_TYPE_CUBOID[5] - origin[2]
+    ]
+
+    lc = args.CHARACTERISTIC_LENGTH
+    outDir = args.OUT_DIR
+    vtkFile = os.path.join(outDir, args.PREFIX) if args.VTK else None
+    binary = not args.ASCII
+
+
+    # create mesh
+    points, connectivity = spam.mesh.createCuboid(lengths, lc, origin=origin, vtkFile=vtkFile, binary=binary)
+
+    # label image with mesh tetrahedra
+    if args.TET_LABEL:
+        print("spam-mesh: labelling tetrahedra")
+        tet_label = spam.label.labelTetrahedra(args.TET_IM_SHAPE, points, connectivity)
+
+    with h5py.File(f'{os.path.join(outDir, args.PREFIX)}.h5', "w") as f_write:
+        # write metadata to the hdf file
+        for k, v in argsDict.items():
+            try:
+                f_write.attrs[k] = v
+            except TypeError:
+                f_write.attrs[k] = str(v)
+
+        # write data sets
+        data_sets = [
+            ('mesh-points', points.astype('<f4')),
+            ('mesh-connectivity', connectivity.astype('<u4')),
+        ]
+        if args.TET_LABEL:
+            data_sets.append(('image-labelled-tetrahedra', tet_label.astype('<u4')))
+
+        for name, data in data_sets:
+            # create dataset
+            dset = f_write.create_dataset(name, data=data)
+            # write metadata to each dataset
+            # dset.attrs["TYPE"] = name
+            # for k, v in argsDict.items():
+            #     dset.attrs[k] = str(v)
