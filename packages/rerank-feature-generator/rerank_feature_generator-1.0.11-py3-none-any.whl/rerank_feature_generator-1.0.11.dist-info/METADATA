@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rerank-feature-generator
+Version: 1.0.11
+Summary: version
+Home-page: https://pypi.org/project/rerank_feature_generator
+Author: huyi
+Author-email: huyi@datagrand.com
+Requires-Python: >=3.6.0
+
