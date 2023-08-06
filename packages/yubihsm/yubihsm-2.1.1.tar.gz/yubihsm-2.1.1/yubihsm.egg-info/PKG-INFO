@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yubihsm
+Version: 2.1.1
+Summary: Python library for the YubiHSM 2
+Home-page: https://developers.yubico.com/YubiHSM2/
+Author: Yubico
+Author-email: yubico@yubico.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries
+Provides-Extra: http
+Provides-Extra: usb

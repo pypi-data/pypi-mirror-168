@@ -1,0 +1,8 @@
+cryptography<38,>=1.8
+six
+
+[http]
+requests
+
+[usb]
+pyusb
