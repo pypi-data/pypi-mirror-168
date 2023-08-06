@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bonesis
+Version: 0.4.91
+Summary: Synthesis of Most Permissive Boolean Networks
+Keywords: computational systems biology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
