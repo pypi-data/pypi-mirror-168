@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+*.ipynb
+
+# data formats
+*.geojson
+*.csv
+
+.DS_Store

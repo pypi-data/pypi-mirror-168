@@ -1,0 +1,62 @@
+{
+  "name": "mundi.py",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "api": {
+    "baseUrl": "https://api.buntinglabs.com",
+    "authentication": { "type": "apiKey" }
+  },
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#1B6585",
+    "light": "#5498B5",
+    "dark": "#28404A",
+    "ultraLight": "#D6EDFB",
+    "ultraDark": "#182A32"
+  },
+  "topbarLinks": [
+    {
+      "name": "Contact Support",
+      "url": "mailto:support@buntinglabs.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://buntinglabs.com/account/register"
+  },
+  "anchors": [
+    {
+      "name": "Blog",
+      "url": "https://buntinglabs.com/blog",
+      "icon": "newspaper"
+    },
+    {
+      "name": "Contact Us",
+      "url": "mailto:support@buntinglabs.com",
+      "icon": "envelope",
+      "color": "#0284c7"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": ["install", "quickstart"]
+    },
+    {
+      "group": "Components",
+      "pages": ["map", "layer"]
+    },
+    {
+      "group": "Coordinate Systems",
+      "pages": ["projected-coordinate-systems"]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/BuntingLabs/mundipy",
+    "website": "https://buntinglabs.com/",
+    "twitter": "https://twitter.com/BuntingLabs",
+    "linkedin": "https://www.linkedin.com/company/bunting-labs/"
+  }
+}
