@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SeAPI_SDK"
+version = "0.0.2"
+authors = [
+  { name="Rolando Diaz Cruz", email="rolandoo0@icloud.com" },
+]
+description = "A small example package"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rolandoo0/SeAPI"
+"Bug Tracker" = "https://github.com/rolandoo0/SeAPI/issues"
