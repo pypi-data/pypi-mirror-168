@@ -1,0 +1,12 @@
+tipey/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tipey/quantity.py,sha256=cyn31j6IA8IzTEuC5yNgjsltInH4Y22H9F58BW4WMVs,8851
+tipey/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tipey/unit/base_units.py,sha256=t1jjM92WV0u_g2vgKSwSHtvFbsYpYgQZy6FvCdYKeF4,205
+tipey/unit/currency.py,sha256=P5YB7Py6bk0Hs4wce6j3J4J0_OLgxIKNr-mTuf6ZKOk,2647
+tipey/unit/mass.py,sha256=3EsiGFl2eOK2EPdoOdoOiMDDjWbyInjrbksIRxwPeMs,1892
+tipey/unit/temperature.py,sha256=RwXIAcLHYywO07Svj16GoTpfArZZ63u_y3pyBk-86hQ,439
+tipey-0.0.2.dist-info/LICENSE,sha256=mwHykckOCdOVZh4zdLkNb9zJynKcjdgojiReQrBaEac,1069
+tipey-0.0.2.dist-info/METADATA,sha256=qJ6WUqn0Aa05l6LBGnE5idFoa4UEgcYe4ts72ldy6TQ,1771
+tipey-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tipey-0.0.2.dist-info/top_level.txt,sha256=6L5bsbWZES34fTZKeQ1SZLLfpWQY3WhGbJ1-Dq1LwJw,6
+tipey-0.0.2.dist-info/RECORD,,
