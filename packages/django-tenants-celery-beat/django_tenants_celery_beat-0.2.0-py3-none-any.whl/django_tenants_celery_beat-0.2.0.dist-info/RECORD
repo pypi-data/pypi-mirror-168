@@ -1,0 +1,11 @@
+django_tenants_celery_beat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tenants_celery_beat/admin.py,sha256=VMiS217UAHIoaH0sVoCkGQCSW8-5Z6H1-8DABrJTr50,2571
+django_tenants_celery_beat/apps.py,sha256=GPzcZPHsHTM-Ohb2caZ-QUk1zssSSm1Y0cHjwd0PsSo,124
+django_tenants_celery_beat/models.py,sha256=-QgZrMjLMbchMOiYd6nFYsxLsdLO4oCxBaU4QQ-KKnM,3881
+django_tenants_celery_beat/utils.py,sha256=vbGboA9eBBUyBH3n8qCMN1Foeldag89gl4gMSGTMW6k,3234
+django_tenants_celery_beat/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tenants_celery_beat-0.2.0.dist-info/LICENSE,sha256=h1kFZr_0v6mjvQDNecPKP_tB8lGOCxKzma0orKSpQCw,1071
+django_tenants_celery_beat-0.2.0.dist-info/METADATA,sha256=pX0fnqM_H7tOsC22VIe5ex27cRsj7VCD0FFIt8o20ds,9899
+django_tenants_celery_beat-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_tenants_celery_beat-0.2.0.dist-info/top_level.txt,sha256=2WrPYxzTDTDNmstbEpB3K9Csa162F-rM9740pH5pvk8,27
+django_tenants_celery_beat-0.2.0.dist-info/RECORD,,
