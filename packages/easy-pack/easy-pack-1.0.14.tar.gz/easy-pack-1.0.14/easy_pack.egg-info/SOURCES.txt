@@ -1,0 +1,9 @@
+setup.py
+easy_pack/__init__.py
+easy_pack/easy_pack_module.py
+easy_pack.egg-info/PKG-INFO
+easy_pack.egg-info/SOURCES.txt
+easy_pack.egg-info/dependency_links.txt
+easy_pack.egg-info/not-zip-safe
+easy_pack.egg-info/requires.txt
+easy_pack.egg-info/top_level.txt
