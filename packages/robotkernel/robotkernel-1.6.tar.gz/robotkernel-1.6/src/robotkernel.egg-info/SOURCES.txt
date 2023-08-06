@@ -1,0 +1,108 @@
+.readthedocs.yml
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+_toc.yml
+setup.cfg
+setup.py
+_templates/lite-demo.html
+_templates/sbt-sidebar-footer.html
+_templates/sbt-sidebar-nav.html
+_templates/sidebar-logo.html
+atest/Test Robot Notebook.ipynb
+docs/conf.py
+docs/environment.yml
+docs/index.rst
+docs/install.rst
+docs/nbconvert.tpl
+docs/_static/robotkernel.css
+docs/notebooks/00 JupyterLab User Interface.html
+docs/notebooks/00 Keyboard Shortcuts.ipynb
+docs/notebooks/00 What is the Jupyter Notebook.ipynb
+docs/notebooks/01 Running Code.ipynb
+docs/notebooks/02 Python XKCD.ipynb
+docs/notebooks/03 Running Robot.ipynb
+docs/notebooks/04 Robot XKCD.ipynb
+docs/notebooks/05 Interactive Selenium.ipynb
+docs/notebooks/06 Importing Notebooks.ipynb
+docs/notebooks/07 Prototyping Keywords.ipynb
+docs/notebooks/08 Interactive WhiteLibrary.ipynb
+docs/notebooks/09 Prototyping Libraries.ipynb
+docs/notebooks/DateLibrary.ipynb
+docs/notebooks/SeleniumKeywords.ipynb
+docs/robocon2020/asko.png
+docs/robocon2020/changelog.ipynb
+docs/robocon2020/index.ipynb
+docs/robocon2020/installer-01.png
+docs/robocon2020/installer-02.png
+docs/robocon2020/installer-03.png
+docs/robocon2020/installer-04.png
+docs/robocon2020/installer-05.png
+docs/robocon2020/jupyterlab-01.png
+docs/robocon2020/jupyterlab-02.png
+docs/robocon2020/jupyterlab-03.png
+docs/robocon2020/jupytext-01.png
+docs/robocon2020/nick.jpg
+docs/robocon2020/robotlab.png
+docs/robocon2020/robots-from-jupyter.png
+docs/robocon2020/shortcuts.pdf
+docs/robocon2020/shortcuts.png
+docs/robocon2020/starters-01.png
+docs/robocon2020/starters-02.png
+src/robotkernel/__init__.py
+src/robotkernel/builders.py
+src/robotkernel/builders_31.py
+src/robotkernel/builders_32.py
+src/robotkernel/completion_finders.py
+src/robotkernel/constants.py
+src/robotkernel/display.py
+src/robotkernel/display_ipykernel.py
+src/robotkernel/display_pyolite.py
+src/robotkernel/exceptions.py
+src/robotkernel/executors.py
+src/robotkernel/install.py
+src/robotkernel/kernel.py
+src/robotkernel/listeners.py
+src/robotkernel/monkeypatches.py
+src/robotkernel/nbreader.py
+src/robotkernel/selectors.py
+src/robotkernel/selectors_white.py
+src/robotkernel/utils.py
+src/robotkernel.egg-info/PKG-INFO
+src/robotkernel.egg-info/SOURCES.txt
+src/robotkernel.egg-info/dependency_links.txt
+src/robotkernel.egg-info/entry_points.txt
+src/robotkernel.egg-info/not-zip-safe
+src/robotkernel.egg-info/requires.txt
+src/robotkernel.egg-info/top_level.txt
+src/robotkernel/resources/kernel/kernel.js
+src/robotkernel/resources/kernel/kernel.json
+src/robotkernel/resources/kernel/logo-32x32.png
+src/robotkernel/resources/kernel/logo-64x64.png
+src/robotkernel/resources/notebooks/quickstart.ipynb
+src/robotkernel/resources/notebooks/tutorial/00 JupyterLab User Interface.html
+src/robotkernel/resources/notebooks/tutorial/00 Keyboard Shortcuts.ipynb
+src/robotkernel/resources/notebooks/tutorial/00 What is the Jupyter Notebook.ipynb
+src/robotkernel/resources/notebooks/tutorial/01 Running Code.ipynb
+src/robotkernel/resources/notebooks/tutorial/02 Python XKCD.ipynb
+src/robotkernel/resources/notebooks/tutorial/03 Running Robot.ipynb
+src/robotkernel/resources/notebooks/tutorial/04 Robot XKCD.ipynb
+src/robotkernel/resources/notebooks/tutorial/05 Interactive Selenium.ipynb
+src/robotkernel/resources/notebooks/tutorial/06 Importing Notebooks.ipynb
+src/robotkernel/resources/notebooks/tutorial/07 Prototyping Keywords.ipynb
+src/robotkernel/resources/notebooks/tutorial/08 Interactive WhiteLibrary.ipynb
+src/robotkernel/resources/notebooks/tutorial/09 Prototyping Libraries.ipynb
+src/robotkernel/resources/notebooks/tutorial/DateLibrary.ipynb
+src/robotkernel/resources/notebooks/tutorial/SeleniumKeywords.ipynb
+src/robotkernel/resources/simmerjs/LICENSE
+src/robotkernel/resources/simmerjs/simmer.js
+src/robotkernel/resources/starter/quickstart-starter.ipynb
+src/robotkernel/resources/starter/robotkernel-starter.json
+tests/Resource File.ipynb
+tests/Smoketest.ipynb
+tests/StickyLibraryMagic.ipynb
+tests/Test Inline Python.ipynb
+tests/Test Resource.ipynb
+tests/test_builders.py
+tests/test_utils.py
