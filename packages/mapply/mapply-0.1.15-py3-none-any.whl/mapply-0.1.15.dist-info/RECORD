@@ -1,0 +1,9 @@
+mapply/__init__.py,sha256=UNRUcjgix6niM1DAw5kD9-NpugDKwE5oRH9M7QFfYUY,1998
+mapply/_version.py,sha256=U7R-62lPL71GVTzL43-Fo2tNKeyMoMgeB1oIDujTDWg,144
+mapply/mapply.py,sha256=CfgscuFNGMS5GngKmwm38q3MPYCGEWaflPPctKeppjk,3937
+mapply/parallel.py,sha256=SmXmD2bwegu4GAQjgR4TR-STrgekd6BcChSZWM8qufM,3145
+mapply-0.1.15.dist-info/LICENSE,sha256=97snJE3vNCIsobrYCh3kDx_uHxLkyLWOXaw2pq-KBxg,1065
+mapply-0.1.15.dist-info/METADATA,sha256=HwdxWHgRtKE0WcS_SOXUfvrKG92WRODr7n8qDBgDcVw,3988
+mapply-0.1.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mapply-0.1.15.dist-info/top_level.txt,sha256=McYIWtHCKEbKivvxjTNCV0poUCtSvHMRLCFpCEvvpnc,7
+mapply-0.1.15.dist-info/RECORD,,
