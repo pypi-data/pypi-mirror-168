@@ -1,0 +1,7 @@
+LICENSE.md
+README.md
+setup.py
+python_libcombine.egg-info/PKG-INFO
+python_libcombine.egg-info/SOURCES.txt
+python_libcombine.egg-info/dependency_links.txt
+python_libcombine.egg-info/top_level.txt
