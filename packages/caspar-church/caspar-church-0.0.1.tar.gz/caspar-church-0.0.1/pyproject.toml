@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "caspar-church"
+version = "0.0.1"
+description = "A CasparCG client designed for displaying lyrics, bible verses and video on multiple outputs."
+authors = ["Jeffrey Rydell"]
+license = "GPL"
+readme = "README.rst"
+packages = [{include = "caspar_church"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-scriptures = "^3.0.0"
+striprtf = "^0.0.21"
+amcp-pylib = "^0.2.2"
+bible3 = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
