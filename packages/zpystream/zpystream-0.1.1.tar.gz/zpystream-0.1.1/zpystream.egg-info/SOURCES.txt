@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+zpystream/__init__.py
+zpystream/stream.py
+zpystream/util.py
+zpystream.egg-info/PKG-INFO
+zpystream.egg-info/SOURCES.txt
+zpystream.egg-info/dependency_links.txt
+zpystream.egg-info/top_level.txt
