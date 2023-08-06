@@ -1,0 +1,14 @@
+numpy
+loguru
+
+[cn]
+numpy>=1.20.0
+pandas
+bottleneck
+numba
+
+[parallel]
+parmap
+
+[talib]
+TA-Lib>=0.4.19
