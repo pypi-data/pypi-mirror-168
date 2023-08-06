@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ruslat
+Version: 1.1.0
+Summary: Python converter for Russian Latin Alphabet
+Home-page: https://github.com/ZetaFactorial/ruslat
+Author: Zeta Factorial
+License: MIT
+Project-URL: Source, https://github.com/ZetaFactorial/ruslat
+Project-URL: Tracker, https://github.com/ZetaFactorial/ruslat/issues
+Keywords: transliteration romanization cyrillic latin russian
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: Russian
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Converter for Russian Latin Alphabet
+
+## Installation
+```pip install ruslat```
+
+## Usage
+Using a function
+```python
+>>> import ruslat
+>>> ruslat.latinizator('Съешь же ещё этих мягких французских булок да выпей чаю.')
+'Sješ že jesčë etih miagkih francuzskih bulok da vypej čaju.'
+```
+As a command line tool (example for Windows)
+```
+C:\Users\user>ruslat test.txt
+Succesfully latinized test.txt to lat_test.txt
+```
+
+## Known issues
+- Each word must be in lowercase, titlecase or uppercase. "Mixed case" like `ФсЕМ прИФФкИ в эТОм чЯТиКе` is not allowed, but `ПРИВЕТ` or `Чатик` works. For regular texts, it is enough.
+- Word 'Я' (not letter, but word) is always being converted to 'Ja', even if it's e.g. a title: `КАК Я ПРОВЕЛ ЛЕТО -> KAK Ja PROVEL LETO`.
+
+## License
+ruslat is licensed under the MIT License. For the full text, check out `LICENSE`.

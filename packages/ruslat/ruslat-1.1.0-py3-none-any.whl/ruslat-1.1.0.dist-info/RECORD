@@ -1,0 +1,12 @@
+ruslat/__init__.py,sha256=jf7Jre0UAbgFMqVq7HtQwd5AOIKGZk8A8TGUra3j-QY,148
+ruslat/command_line.py,sha256=_ZKrdNK-IIFOtD3EqxvrcshoKxOaYzjtNSDZAAScauc,786
+ruslat/conversion_tables.py,sha256=WPfariyJPXvS4ld-hA1NC86H6BywOwB4xPDGFLDvPtU,1172
+ruslat/converter.py,sha256=H3Yajo3KVAFD5QK6TymC984rbW3bRuhDHZWdEuNMFLQ,2688
+ruslat/cyrillic_ortho_fixer.py,sha256=PudR93DvHa-vlAOYLHdPsrBkk25rTVgN7EurfxlXudA,1288
+ruslat/deleteme.py,sha256=q9cxZZZYy3uvQehyOTD8spEpv0Xt4XiC--xSBd0qP2g,99
+ruslat-1.1.0.dist-info/LICENSE,sha256=8UvdeQkEI4syplaakHZvuCWWBXKUq4YI1PJGn8GOCOU,1078
+ruslat-1.1.0.dist-info/METADATA,sha256=cF1IA6yhF_8U1JcLJy2mT7OUo0TufBj_SqWgSzSo2Vs,1844
+ruslat-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ruslat-1.1.0.dist-info/entry_points.txt,sha256=KRacMtMu3L2zJOIBzkUur3E1C_6ox5ZV2ebHnSSt8fg,52
+ruslat-1.1.0.dist-info/top_level.txt,sha256=0kYXrPHDLocIT6VDC_8FGgQ5K4hn23IpvMEc1h4OUTc,7
+ruslat-1.1.0.dist-info/RECORD,,
