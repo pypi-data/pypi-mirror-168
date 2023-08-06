@@ -1,0 +1,2 @@
+[console_scripts]
+epub-extract-links = epub_extract_links:main

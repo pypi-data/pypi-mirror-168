@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/epub_extract_links/__init__.py
+src/epub_extract_links/__main__.py
+src/epub_extract_links.egg-info/PKG-INFO
+src/epub_extract_links.egg-info/SOURCES.txt
+src/epub_extract_links.egg-info/dependency_links.txt
+src/epub_extract_links.egg-info/entry_points.txt
+src/epub_extract_links.egg-info/requires.txt
+src/epub_extract_links.egg-info/top_level.txt
