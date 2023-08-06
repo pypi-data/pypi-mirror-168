@@ -1,0 +1,8 @@
+cpca
+pydantic
+redis
+qqwry-py3
+tenacity
+requests
+kafka-python
+vbigbang_thread_logging>=1.0.3
