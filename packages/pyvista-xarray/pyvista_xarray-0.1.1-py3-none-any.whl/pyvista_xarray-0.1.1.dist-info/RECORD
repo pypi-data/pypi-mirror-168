@@ -1,0 +1,16 @@
+pvxarray/__init__.py,sha256=V0pyx-A1Ntllt4CnfwoffgLFtKy7bshaVk6ysd7yucw,282
+pvxarray/_version.py,sha256=ypu7Tc72g3VMQK97U-Ygi3VFb8Fl17C81jbVF4jwWaE,235
+pvxarray/accessor.py,sha256=CCU93BrEZpH5bpOXGS5BQsLFBBSyiLEjsA9vIWTDu00,2195
+pvxarray/errors.py,sha256=ZJuSKJ0kNEp8uQ05wEdwqEHSXMo-MIbAesSavkEDTm0,41
+pvxarray/io.py,sha256=UujoqF3cV7N65Eb8kFqzAShCtly68095e42F7Fi_wmE,3163
+pvxarray/rectilinear.py,sha256=H7mLPAil6lkPxFI8nMq0OiLmCF1BwDwBSuhAx_Gv1Cw,2062
+pvxarray/report.py,sha256=TBf6A6ci6BbutLP1FFPsFrT3_u17usv3kNwcKDZtU5Y,529
+pvxarray/structured.py,sha256=-kSph18Qk5_UJQ5fXePEIeMe0-9GFkg6eQZS9ehfKas,2890
+pvxarray/vtk_source.py,sha256=zH396DwoHpShQML9qkDYMpW-qrBVQU10YewXoGJZ_t4,3612
+pyvista_xarray-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyvista_xarray-0.1.1.dist-info/METADATA,sha256=rZpXBPFkZISvKmQg5e9rVdNctZYlQ1Y_84dSPDISi2M,5289
+pyvista_xarray-0.1.1.dist-info/NOTICE,sha256=BPeKgz7a9wzlcM952mjBu67sEE_F5_0QpZ7nYxWXDGc,585
+pyvista_xarray-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyvista_xarray-0.1.1.dist-info/entry_points.txt,sha256=d9FK5470x-dvxcDtNx9RTiyHXzegrBWFWTSpFDa761c,66
+pyvista_xarray-0.1.1.dist-info/top_level.txt,sha256=L2lLvQ1N1pu6_Bz3bYZRVh0QvRghq3QX2ViqUbkWPRE,9
+pyvista_xarray-0.1.1.dist-info/RECORD,,
