@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gqylpy_command/__init__.py
+gqylpy_command/g command.py
+gqylpy_command.egg-info/PKG-INFO
+gqylpy_command.egg-info/SOURCES.txt
+gqylpy_command.egg-info/dependency_links.txt
+gqylpy_command.egg-info/top_level.txt
