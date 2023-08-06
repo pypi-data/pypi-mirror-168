@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: respotgui
+Version: 0.1.46
+Summary: A frontend for the respot-java Spotify client
+Home-page: https://github.com/digfish/respogui
+Author: digfish
+Author-email: digfish@digfish.org
+License: Apache License 2.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PySimpleGUI
+Requires-Dist: websocket-client
+Requires-Dist: requests
+Requires-Dist: Pillow
+Requires-Dist: python-dotenv
+
+# ReSpotGUI
+
+![](https://raw.githubusercontent.com/digfish/respotgui/master/respotgui.png)
+
+The purpose is to provide a graphical frontend for the [librespot-java](https://github.com/librespot-org/librespot-java), a library that provides streaming and support for Spotify Connect devices. 
+
+# Requirements
+
+- A Spotify premium subscription
+- Java installed
+- librespot-java (last version can be obtained [here](https://github.com/librespot-org/librespot-java/releases))[^1]
+- Python 3 installed (of course!)
+
+# Install
+
+To install type:
+
+```
+pip install respotgui
+```
+
+to execute:
+```
+python -m respot.gui
+```
+or simply:
+```
+respotgui
+```
+
+[^1]: Download the file `librespot-api-*.jar` and execute it with `java -jar`
