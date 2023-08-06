@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: luigi-poltergust
+Version: 0.0.1
+Summary: Task trigger for Luigi
+Home-page: https://github.com/emerald-geomodelling/poltergust
+Author: Egil Moeller
+Author-email: em@emrld.no
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+Trigger Luigi tasks on multiple worker
+machines. Python modules for tasks and their dependencies are
+installed automatically in virtualenvs on each worker.

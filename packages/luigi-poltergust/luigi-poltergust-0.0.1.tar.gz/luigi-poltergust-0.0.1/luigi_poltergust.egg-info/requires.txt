@@ -1,0 +1,6 @@
+luigi
+pieshell
+pyyaml
+virtualenv
+google-auth
+google-api-python-client
