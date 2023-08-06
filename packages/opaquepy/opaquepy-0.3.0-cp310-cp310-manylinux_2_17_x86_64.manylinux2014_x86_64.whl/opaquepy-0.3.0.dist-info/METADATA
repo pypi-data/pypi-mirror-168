@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: opaquepy
+Version: 0.3.0
+Summary: Python bindings for opaque-ke.
+Author: Tip ten Brink
+Author-email: 75669206+tiptenbrink@users.noreply.github.com
+License: Apache-2.0
+Requires-Python: >=3.9, <3.11
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+This library contains extremely minimal Python bindings of a standard configuration of [opaque-ke](https://github.com/novifinancial/opaque-ke). It exposes 4 functions, which only accept and return base64url-encoded strings.
+
+This library is a counterpart to [@tiptenbrink/opaquewasm](https://github.com/tiptenbrink/opaquewasm).
