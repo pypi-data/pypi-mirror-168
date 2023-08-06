@@ -1,0 +1,13 @@
+numpy
+pyds
+
+[dev]
+black
+dvc[s3]
+fire
+isort
+jupyter
+opencv-python
+pydocstyle
+pylint
+sparrow-datums
