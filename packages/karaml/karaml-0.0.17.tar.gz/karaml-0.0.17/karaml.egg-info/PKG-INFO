@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: karaml
+Version: 0.0.17
+Summary: KARaML Tools wrapper package
+Home-page: https://bb-ai.net/KARaML/KARaML_Tools.html
+Author: brandonb
+Author-email: B.Bennett@leeds.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+License-File: LICENSE
+
+Provides karaml_tools, a small package with the bare bones to get KARaML Tools running
+
