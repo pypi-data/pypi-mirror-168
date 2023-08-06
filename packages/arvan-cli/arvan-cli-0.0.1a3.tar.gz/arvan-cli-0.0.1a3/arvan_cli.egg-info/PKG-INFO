@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: arvan-cli
+Version: 0.0.1a3
+Summary: A Command Line Tool to Work with ArvanCloud
+Home-page: https://github.com/Parsa2820/arvan-cli
+Author: Parsa Mohammadian
+Author-email: parsa2820@gmail.com
+License: GPL-3.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# arvan-cli
+A Command Line Tool to Work with ArvanCloud
+
+**This project is under development and not ready to use**
+
+## Current status
+- [x] Authentication storage
+- [x] List all of the servers
+- [x] Turn on and shutdown all of the servers
+- [ ] Butify servers list
+- [ ] Turn on and shutdown server by name
+
+[Official API Documentation](https://www.arvancloud.com/docs/api/iaas/1.0)
