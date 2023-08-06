@@ -1,0 +1,7 @@
+setuptools
+urllib3<2,>=1.26.9
+python-dateutil<3,>=2.8.2
+PyYAML<7,>=6.0
+ldap3<3,>=2.9.1
+pycurl<8,>=7.45.1
+jsonpatch<2,>=1.22

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: perun.connector
+Version: 3.2.0
+Summary: Module for communication with Perun IAM system
+Home-page: https://github.com/CESNET/perun.connector.git
+Requires-Python: >=3.9
+License-File: LICENSE
