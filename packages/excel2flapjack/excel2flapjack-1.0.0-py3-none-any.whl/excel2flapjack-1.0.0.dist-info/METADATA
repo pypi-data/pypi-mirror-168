@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: excel2flapjack
+Version: 1.0.0
+Summary: upload excel resources to flapjack
+Home-page: https://github.com/SynBioDex/Experimental-Data-Converter/
+Maintainer: Sai Samineni
+Maintainer-email: sasa6749@colorado.edu
+License: BSD 3-clause
+Requires-Dist: pyflapjack (>=1.0.5)
+Requires-Dist: numpy (>=1.21.2)
+Requires-Dist: scipy (>=1.8.0)
+Requires-Dist: pandas (>=1.3.3)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: tqdm (>=4.62.3)
+Requires-Dist: plotly (>=5.3.1)
+Requires-Dist: asyncio (>=3.4.3)
+Requires-Dist: nest-asyncio (>=1.5.1)
+Requires-Dist: requests-jwt (>=0.5.3)
+Requires-Dist: websockets (>=10.0)
+Requires-Dist: matplotlib (>=3.4.3)
+Requires-Dist: kaleido (>=0.2.1)
+Requires-Dist: openpyxl (>=3.0.9)
+
+This library is a collection of functions used to upload data to Flapjack from an Excel template.
