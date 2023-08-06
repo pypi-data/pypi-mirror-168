@@ -1,0 +1,4 @@
+anyio-serial
+anyio~=3.0
+moat-util
+pymodbus
