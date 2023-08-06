@@ -1,0 +1,13 @@
+deephaven_plugin_plotly_js/__init__.py,sha256=Ssoi_8nAuQ3-LW7JvXrh0SXbJKHJPOVeZc6CNTVbKbs,797
+deephaven_plugin_plotly_js/__version__.py,sha256=D1s8hVvyq1vUvifItAsaCNxYI0sXMN67qrJU7zqJxak,26
+deephaven_plugin_plotly_js/data/package/LICENSE,sha256=Rq5fDcLgahjN6LBr20Wr6gtuKNFp5u_yBpU2eAMEz24,9793
+deephaven_plugin_plotly_js/data/package/package.json,sha256=3Og-pib7VEqK-dHAHfi-rL8mfyv7wuFa6S6zH5NhXxE,2746
+deephaven_plugin_plotly_js/data/package/README.md,sha256=sK4csFZ5Hl1RB3_KAO3P4t3-ROvvJ_Xc5xPuPpW61jg,274
+deephaven_plugin_plotly_js/data/package/dist/index.js,sha256=Wxzdiy_ZF1l8TgZXOMLNUqbdCI8-xkbxpTDaxzE-FKQ,4242364
+deephaven_plugin_plotly_js/data/package/dist/index.js.map,sha256=46JvkY5HsUNYqI2cJZsKdfhPtKAdsv58ivmuPtJa64s,17038446
+deephaven_plugin_plotly_js/data/package/dist/index.js.LICENSE.txt,sha256=wABo-oIVlWIUwY5K1SF8BVPd9lYISh09j44pZhbTIE8,2725
+deephaven_plugin_plotly_js-0.1.0.dev2.dist-info/entry_points.txt,sha256=tTJ_c87GoItXTm7-X6Z4Pq7HaSmWMZqaidoDmKhlpNY,85
+deephaven_plugin_plotly_js-0.1.0.dev2.dist-info/WHEEL,sha256=g_UdFZqm-k6b0W64OcndB0YT_D2mFFPAYBj7-_YsSPA,87
+deephaven_plugin_plotly_js-0.1.0.dev2.dist-info/METADATA,sha256=8mMEIeOY_TtpHfyAVWBBQrdpucKRGlrjmbu9aJUhnK0,1000
+deephaven_plugin_plotly_js-0.1.0.dev2.dist-info/license_files/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+deephaven_plugin_plotly_js-0.1.0.dev2.dist-info/RECORD,,
