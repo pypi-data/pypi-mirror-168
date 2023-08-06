@@ -1,0 +1,4 @@
+numpy
+zarr
+imagecodecs
+tifffile
