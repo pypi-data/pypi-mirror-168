@@ -1,0 +1,13 @@
+ebookatty/__init__.py,sha256=CJbooPS83bHGIAxVimEhVx7l12Q60VYQZDPT7BhNx9I,1133
+ebookatty/__main__.py,sha256=sdmlzRVXc8pP0G5cpkQeXZET7uLl65I2VEOqKbCNOjo,1124
+ebookatty/cli.py,sha256=z_gsWiTCv6UNfhpqCw0bz03mNnNHR2xFfO0kdsGdcAU,3597
+ebookatty/epub.py,sha256=bSj5bvA__UxY0BqLDVkCbHrv6_FMBeosSzKq34P2mYA,3888
+ebookatty/metadata.py,sha256=wbAol1XKJQMlWbc-M9JlqBvR8UjCRZTymrNdDK7wN4s,4516
+ebookatty/mobi.py,sha256=z_y2nfhR0SFAZEqVA2jTpNuTa-3Mddpjy7Tl4nDlCAY,11399
+ebookatty/standards.py,sha256=QOj3iVohBafBHvhi4BcaJKltBBa9_ZzsH9WAeUBbLGg,15258
+ebookatty-0.3.1.dist-info/LICENSE,sha256=_ysgx8o9UPbInrOc33q5GOZkEx-hMtNe-AAz4mr5Oa8,7815
+ebookatty-0.3.1.dist-info/METADATA,sha256=JMdUxt4DEp50EmzvvdGuQvTWMpo_6EBQO22OL7oaEPk,9647
+ebookatty-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ebookatty-0.3.1.dist-info/entry_points.txt,sha256=_2tsfON5Dh8n-N6HCBxo-Culp3yOy0ALXpLURugQBl4,54
+ebookatty-0.3.1.dist-info/top_level.txt,sha256=gY69zkUBbzpq-yhs38phM_MAWrxM4CkKuavjFsZMBeo,10
+ebookatty-0.3.1.dist-info/RECORD,,
