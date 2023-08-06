@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+imutil/DejaVuSansMono.ttf
+imutil/__init__.py
+imutil.egg-info/PKG-INFO
+imutil.egg-info/SOURCES.txt
+imutil.egg-info/dependency_links.txt
+imutil.egg-info/requires.txt
+imutil.egg-info/top_level.txt
