@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools >= 60.0.0", "setuptools_scm[toml] >= 7.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmp-jira-with-fix-template-name"
+version = "1.0.0"
+
+dependencies = [
+    "defusedxml",
+    "packaging",
+    "requests-oauthlib>=1.1.0",
+    "requests>=2.10.0",
+    "requests_toolbelt",
+    "typing_extensions>=3.7.4.2"
+]
+
+requires-python = ">=3.8"
