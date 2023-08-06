@@ -1,0 +1,1 @@
+import{S as e,E as s}from"../../../../c.cefb4322.js";let n=!1;self.onmessage=a=>{n||function(a){if(n)return;n=!0;const o=new e((e=>{self.postMessage(e)}),(e=>new s(e,a)));self.onmessage=e=>{o.onmessage(e.data)}}(null)};
