@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/dlgpu_assistant/__init__.py
+src/dlgpu_assistant/dl_tools.py
+src/dlgpu_assistant.egg-info/PKG-INFO
+src/dlgpu_assistant.egg-info/SOURCES.txt
+src/dlgpu_assistant.egg-info/dependency_links.txt
+src/dlgpu_assistant.egg-info/requires.txt
+src/dlgpu_assistant.egg-info/top_level.txt
