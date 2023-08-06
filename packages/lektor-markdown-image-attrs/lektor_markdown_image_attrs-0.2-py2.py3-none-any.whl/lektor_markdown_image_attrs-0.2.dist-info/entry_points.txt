@@ -1,0 +1,2 @@
+[lektor.plugins]
+markdown-image-attrs = lektor_markdown_image_attrs:LektorPlugin
