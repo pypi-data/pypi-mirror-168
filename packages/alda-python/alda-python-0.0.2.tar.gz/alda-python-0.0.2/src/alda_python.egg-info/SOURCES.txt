@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/alda/__init__.py
+src/alda/bencode.py
+src/alda/client.py
+src/alda/nrepl.py
+src/alda_python.egg-info/PKG-INFO
+src/alda_python.egg-info/SOURCES.txt
+src/alda_python.egg-info/dependency_links.txt
+src/alda_python.egg-info/top_level.txt
