@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyWindows.egg-info/PKG-INFO
+PyWindows.egg-info/SOURCES.txt
+PyWindows.egg-info/dependency_links.txt
+PyWindows.egg-info/top_level.txt
+src/PyWindows.py
+src/__init__.py
