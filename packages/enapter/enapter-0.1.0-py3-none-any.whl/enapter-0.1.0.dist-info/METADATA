@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: enapter
+Version: 0.1.0
+Summary: Enapter Python SDK
+Home-page: https://github.com/Enapter/python-sdk
+Author: Roman Novatorov
+Author-email: rnovatorov@enapter.com
+Requires-Dist: aiohttp (==3.8.*)
+Requires-Dist: asyncio-mqtt (==0.12.*)
+
+# Enapter Python SDK
+
+Enapter software development kit for Python.
+
+## Installation
+
+Stable from PyPI:
+
+```bash
+pip install enapter
+```
+
+Latest for GitHub:
+
+```bash
+pip install git+https://github.com/Enapter/python-sdk#egg=enapter
+```
+
+## Usage
+
+Checkout [examples](examples).
