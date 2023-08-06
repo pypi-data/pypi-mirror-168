@@ -1,0 +1,4 @@
+ipynbname
+numpy
+Jinja2
+toml
