@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: arclet-alconna-avilla
+Version: 0.2.0
+Summary: Support Alconna for Avilla
+License: AGPL-3.0
+Author-email: RF-Tar-Railt <rf_tar_railt@qq.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Alconna-Avilla
+
+Support Alconna for Avilla
+
+## 示例
+
+```python
+from creart import it
+from arclet.alconna import Alconna
+from arclet.alconna.avilla import Alc
+from graia.broadcast import Broadcast
+from avilla.core import MessageReceived, Relationship, Avilla
+
+bcc = it(Broadcast)
+avilla = Avilla(...)
+
+
+@bcc.receiver(MessageReceived, dispatchers=[Alc(Alconna(...))])
+async def _(rs: Relationship, event: MessageReceived):
+    ...
+```
