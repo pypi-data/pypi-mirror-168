@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Pyfuso.egg-info/PKG-INFO
+src/Pyfuso.egg-info/SOURCES.txt
+src/Pyfuso.egg-info/dependency_links.txt
+src/Pyfuso.egg-info/top_level.txt
