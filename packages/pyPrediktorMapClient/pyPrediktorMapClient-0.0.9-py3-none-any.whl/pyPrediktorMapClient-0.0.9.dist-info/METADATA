@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pyPrediktorMapClient
+Version: 0.0.9
+Summary: Helper functions for Prediktor Map Services
+Home-page: https://github.com/PrediktorAS/pyPrediktorMapClient
+Author: Prediktor
+Author-email: support@prediktor.com
+License: MIT
+Project-URL: Documentation, https://prediktoras.github.io/pyPrediktorMapClient/
+Project-URL: Source, https://github.com/PrediktorAS/pyPrediktorMapClient
+Project-URL: Changelog, https://github.com/PrediktorAS/pyPrediktorMapClient/blob/main/CHANGELOG.rst
+Project-URL: Tracker, https://github.com/PrediktorAS/pyPrediktorMapClient/issues
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: aiohttp (>=3.8.1)
+Requires-Dist: pydantic (>=1.10.1)
+Requires-Dist: pandas (>=1.4.4)
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
+    :alt: Project generated with PyScaffold
+    :target: https://pyscaffold.org/
+
+|
+
+====================
+pyPrediktorMapClient
+====================
+
+
+    Helper functions for Prediktor Map Services
+
+
+Helper functions for communicating with Prediktors OPC UA ModelIndex REST-API and OPC UA
+Values REST-API. Typically used for data anlytics purposes, you'll find Jypiter Notebooks
+with examples in the notebooks folder.
+
+
+.. _pyscaffold-notes:
+
+Note
+====
+
+This project has been set up using PyScaffold 4.3. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
