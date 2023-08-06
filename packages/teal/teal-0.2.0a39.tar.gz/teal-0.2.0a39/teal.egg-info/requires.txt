@@ -1,0 +1,14 @@
+anytree
+apispec
+apispec-webframeworks
+boltons
+ereuse-utils[cli,naming,session,test]>=0.4.0b21
+flask>=2.0
+flask-sqlalchemy>=2.5.1
+sqlalchemy-utils[color,password,phone]
+marshmallow>=3.0.0
+marshmallow-enum
+webargs
+flask-cors
+click-spinner
+Werkzeug==2.0.3

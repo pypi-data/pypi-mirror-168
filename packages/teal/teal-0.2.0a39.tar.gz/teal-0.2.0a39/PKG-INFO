@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: teal
+Version: 0.2.0a39
+Summary: RESTful Flask for big applications.
+Home-page: https://github.com/ereuse/teal
+Author: Xavier Bustamante Talavera
+Author-email: xavier@bustawin.com
+License: BSD
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Teal
+
+![teal-logo](docs/teal-logo.svg)
+
+(An intent of an) opinionated RESTful Flask for big applications.
+
+In development...
+
+
+Logo and some icons made by [Freepik](http://www.freepik.com) from
+[Flaticon](https://www.flaticon.com/), licensed by
+[CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
+
+## How to run tests
+```bash
+# clone repository
+git clone git@github.com:eReuse/teal.git
+
+# prepare venv & install dependencies
+export ENV_NAME='env'
+python3 -m venv $ENV_NAME
+source $ENV_NAME/bin/activate
+pip install wheel pytest==3.7.2
+pip install -r tests/requirements.txt
+
+# run it
+pytest --maxfail=5 tests/
+```
