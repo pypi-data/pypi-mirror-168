@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+simple_cicd/__init__.py
+simple_cicd/ci_files.py
+simple_cicd/functions.py
+simple_cicd/script_parsing.py
+simple_cicd/simple_cicd.py
+simple_cicd.egg-info/PKG-INFO
+simple_cicd.egg-info/SOURCES.txt
+simple_cicd.egg-info/dependency_links.txt
+simple_cicd.egg-info/entry_points.txt
+simple_cicd.egg-info/requires.txt
+simple_cicd.egg-info/top_level.txt
