@@ -1,0 +1,14 @@
+autorequests/__init__.py,sha256=6C3ZcGlwisHBRNgc8K82ubfdRLXBsHyZtDll80hMrw4,121
+autorequests/__main__.py,sha256=efwl6_E1TKj327nXyz947sdodQroYERqKA9F0H4RIkA,2892
+autorequests/commons.py,sha256=fOEkk2R23MUHnY7b8pccz5ATyPKKa4dx4-34MS_njeg,3534
+autorequests/parsing/__init__.py,sha256=uYKkeGjOXEtbvc1Yu358lWD4dIFSUj0QlCryCw1pWew,504
+autorequests/parsing/body.py,sha256=HlLj4D_niHbhYbE9ASDOkMrL-vKSrD3aTzdGfETK_qk,2634
+autorequests/parsing/fetch.py,sha256=U_F7-QMG3ejlj3Cbu-oyHbChh9JXSHZfKl_PSn1G-kU,2194
+autorequests/parsing/powershell.py,sha256=vIYtd8jzm2IFZMHZZUWuVYfhzCyo5li2TPTwKRKxo_c,5530
+autorequests/request.py,sha256=p2g-av4lOypku3byNT9KsrBTrI83ETazCBuHCyqLJ3U,2908
+autorequests/typings.py,sha256=PZEOwcv3hXg3zErr4niZkW_NlklkWLHTUE0qYHmdvm4,428
+autorequests-2.0.0.dist-info/entry_points.txt,sha256=sJgHvsOk_SzUOoDaSfG8P4b4ZPcvkzvemP8ik8Q2o_o,58
+autorequests-2.0.0.dist-info/LICENSE,sha256=qNi3mG-dHAASJAbSPcPPUZjwRVUImMbK02e5HPd4hnk,1082
+autorequests-2.0.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+autorequests-2.0.0.dist-info/METADATA,sha256=iB8TDoIUsSP5r6yIdKPUV1hcboedNS2XpUjdJHOl88Q,3705
+autorequests-2.0.0.dist-info/RECORD,,

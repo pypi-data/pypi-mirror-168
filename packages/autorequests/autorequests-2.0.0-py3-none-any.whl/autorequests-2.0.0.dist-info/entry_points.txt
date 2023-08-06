@@ -1,0 +1,3 @@
+[console_scripts]
+autorequests=autorequests.__main__:cli
+
