@@ -1,0 +1,11 @@
+README.md
+setup.py
+nqueenplay/__init__.py
+nqueenplay/exceptions.py
+nqueenplay/move_direction.py
+nqueenplay/queens.py
+nqueenplay/version.py
+nqueenplay.egg-info/PKG-INFO
+nqueenplay.egg-info/SOURCES.txt
+nqueenplay.egg-info/dependency_links.txt
+nqueenplay.egg-info/top_level.txt
