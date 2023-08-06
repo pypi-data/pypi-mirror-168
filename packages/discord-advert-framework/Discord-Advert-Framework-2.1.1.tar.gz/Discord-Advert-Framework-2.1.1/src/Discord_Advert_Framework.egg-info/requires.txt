@@ -1,0 +1,14 @@
+typeguard
+aiohttp
+
+[proxy]
+aiohttp_socks
+
+[sql]
+python-tds
+sqlalchemy-pytds
+sqlalchemy
+
+[voice]
+PyNaCl
+yt-dlp
