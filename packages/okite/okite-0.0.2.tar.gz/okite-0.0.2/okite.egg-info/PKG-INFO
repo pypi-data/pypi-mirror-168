@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: okite
+Version: 0.0.2
+Summary: A Pythonic RPC package.
+Home-page: https://github.com/Nanguage/okite
+Author: Weize Xu
+Author-email: vet.xwz@gmail.com
+License: MIT
+Keywords: RPC,Network
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7, <4
+Provides-Extra: test
+License-File: LICENSE
+
+See https://github.com/Nanguage/okite
