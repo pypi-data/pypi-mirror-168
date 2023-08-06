@@ -1,0 +1,95 @@
+[tool.poetry]
+name = "metabase-tools"
+version = "0.10.0"
+description = "Unofficial API wrapper for Metabase plus additional helper tools"
+license = "MIT"
+authors = ["Josh Odell <j01101111sh@gmail.com>"]
+maintainers = ["Josh Odell <j01101111sh@gmail.com>"]
+readme = "README.md"
+homepage = "https://j01101111sh.github.io/metabase-tools/"
+repository = "https://github.com/j01101111sh/metabase-tools"
+documentation = "https://j01101111sh.github.io/metabase-tools/"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Cython",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+pydantic = "^1.9.1"
+types-requests = "^2.28.9"
+packaging = "^21.3"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pylint = "^2.14.5"
+black = "^22.6.0"
+isort = "^5.10.1"
+mypy = "^0.971"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^5.1.1"
+furo = "^2022.6.21"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tools.black]
+target-version = 'py310'
+
+[tool.isort]
+profile = 'black'
+
+[tool.pylint.main]
+extension-pkg-whitelist = ["pydantic"]
+disable=[
+    "useless-parent-delegation",
+    "too-many-instance-attributes",
+    "too-many-arguments"
+    ]
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "*.py"
+python_functions = "test_*"
+
+log_cli = true
+log_cli_level = "WARNING"
+log_cli_format = "%(asctime)s - %(levelname)s - %(module)s:%(lineno)s %(funcName)s - %(name)s\n\t%(message)s"
+
+log_file_level = "DEBUG"
+log_file_format = "%(asctime)s - %(levelname)s - %(module)s:%(lineno)s %(funcName)s - %(name)s\n\t%(message)s"
+
+[tool.coverage.report]
+omit = ["tests/*.py"]
+exclude_lines = [
+    "def _","except RequestException",
+    "elif response.status_code == 401:",
+    "EmptyDataReceived",
+    "RequestFailure",
+    "if TYPE_CHECKING:",
+    "InvalidParameters",
+    "def untested"
+]
+show_missing = true
