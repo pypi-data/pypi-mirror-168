@@ -1,0 +1,1678 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="GObject" version="2.0"/>
+  <include name="Gtk" version="3.0"/>
+  <c:include name="gtknode.h"/>
+  <namespace name="GtkNodes"
+             version="0.1"
+             shared-library="libgtknodes-0.1.so.0"
+             c:identifier-prefixes="GtkNodes"
+             c:symbol-prefixes="gtk_nodes">
+    <class name="Node"
+           c:symbol-prefix="node"
+           c:type="GtkNodesNode"
+           parent="Gtk.Box"
+           glib:type-name="GtkNodesNode"
+           glib:get-type="gtk_nodes_node_get_type"
+           glib:type-struct="NodeClass">
+      <source-position filename="gtknode.h" line="83"/>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <implements name="Gtk.Orientable"/>
+      <constructor name="new" c:identifier="gtk_nodes_node_new">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="1990">Creates a new node.</doc>
+        <source-position filename="gtknode.h" line="89"/>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve"
+               filename="gtknode.c"
+               line="1995">the new #GtkNodesNode.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <virtual-method name="export_properties" invoker="export_properties">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="1929">This returns an XML description of the internal state configuration,
+so it can be restored with GtkBuilder. NULL will be returned if the
+derived GtkNodesNode subclass did not implement this function</doc>
+        <source-position filename="gtknode.h" line="77"/>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve"
+               filename="gtknode.c"
+               line="1937">an XML string describing the internal configuration; may be NULL</doc>
+          <type name="utf8" c:type="gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1931">a #GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <method name="block_expander"
+              c:identifier="gtk_nodes_node_block_expander">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="1762">The expander is very very nasty in that it responds to an isolated
+"release" event, which I'm apparently unable to block.
+If the node is contained in a #GtkNodesNodeView, it will therefore
+expand/contract if someone clicks the label when executing a node "drag"
+motion.
+
+Note: gtk_nodes_node_block_expander() repeatedly will affect the state only once</doc>
+        <source-position filename="gtknode.h" line="121"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1764">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="export_properties"
+              c:identifier="gtk_nodes_node_export_properties">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="1929">This returns an XML description of the internal state configuration,
+so it can be restored with GtkBuilder. NULL will be returned if the
+derived GtkNodesNode subclass did not implement this function</doc>
+        <source-position filename="gtknode.h" line="132"/>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve"
+               filename="gtknode.c"
+               line="1937">an XML string describing the internal configuration; may be NULL</doc>
+          <type name="utf8" c:type="gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1931">a #GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_expanded" c:identifier="gtk_nodes_node_get_expanded">
+        <source-position filename="gtknode.h" line="116"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknode.c"
+               line="1726">the state of expansion</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1724">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_sinks" c:identifier="gtk_nodes_node_get_sinks">
+        <source-position filename="gtknode.h" line="126"/>
+        <return-value transfer-ownership="container">
+          <doc xml:space="preserve"
+               filename="gtknode.c"
+               line="1829">a list of this node's sockets in sink mode</doc>
+          <type name="GLib.List" c:type="GList*">
+            <type name="NodeSocket"/>
+          </type>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1827">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_socket_radius"
+              c:identifier="gtk_nodes_node_get_socket_radius">
+        <source-position filename="gtknode.h" line="111"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknode.c"
+               line="1664">the radius of any socket on this node, 0 on error</doc>
+          <type name="gdouble" c:type="gdouble"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1662">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_sources" c:identifier="gtk_nodes_node_get_sources">
+        <source-position filename="gtknode.h" line="129"/>
+        <return-value transfer-ownership="container">
+          <doc xml:space="preserve"
+               filename="gtknode.c"
+               line="1868">a list of this node's sockets in source mode</doc>
+          <type name="GLib.List" c:type="GList*">
+            <type name="NodeSocket"/>
+          </type>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1866">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="item_add" c:identifier="gtk_nodes_node_item_add">
+        <source-position filename="gtknode.h" line="91"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknode.c"
+               line="1961">the reference to the socket widget</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1957">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="widget" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1958">a widget to add</doc>
+            <type name="Gtk.Widget" c:type="GtkWidget*"/>
+          </parameter>
+          <parameter name="type" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1959">the type of the node</doc>
+            <type name="NodeSocketIO" c:type="GtkNodesNodeSocketIO"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="item_remove" c:identifier="gtk_nodes_node_item_remove">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="1973">This removes an item and its corresponding socket from a GtkNodesNode
+´</doc>
+        <source-position filename="gtknode.h" line="94"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1975">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="widget" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1976">a widget to remove</doc>
+            <type name="Gtk.Widget" c:type="GtkWidget*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="item_set_expand"
+              c:identifier="gtk_nodes_node_item_set_expand">
+        <source-position filename="gtknode.h" line="96"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="child" transfer-ownership="none">
+            <type name="Gtk.Widget" c:type="GtkWidget*"/>
+          </parameter>
+          <parameter name="expand" transfer-ownership="none">
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="item_set_fill" c:identifier="gtk_nodes_node_item_set_fill">
+        <source-position filename="gtknode.h" line="100"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="child" transfer-ownership="none">
+            <type name="Gtk.Widget" c:type="GtkWidget*"/>
+          </parameter>
+          <parameter name="fill" transfer-ownership="none">
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="item_set_packing"
+              c:identifier="gtk_nodes_node_item_set_packing">
+        <source-position filename="gtknode.h" line="104"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="child" transfer-ownership="none">
+            <type name="Gtk.Widget" c:type="GtkWidget*"/>
+          </parameter>
+          <parameter name="pack_type" transfer-ownership="none">
+            <type name="Gtk.PackType" c:type="GtkPackType"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_expanded" c:identifier="gtk_nodes_node_set_expanded">
+        <source-position filename="gtknode.h" line="118"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1744">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="expanded" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1745">the expansion state</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_icon_name" c:identifier="gtk_nodes_node_set_icon_name">
+        <source-position filename="gtknode.h" line="135"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1905">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="icon_name" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1906">the name of the icon to display</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_label" c:identifier="gtk_nodes_node_set_label">
+        <source-position filename="gtknode.h" line="108"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1641">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="label" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1642">the label text to set</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_socket_radius"
+              c:identifier="gtk_nodes_node_set_socket_radius">
+        <source-position filename="gtknode.h" line="113"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1681">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+          <parameter name="radius" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1682">the radius of any socket on this node</doc>
+            <type name="gdouble" c:type="const gdouble"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="unblock_expander"
+              c:identifier="gtk_nodes_node_unblock_expander">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="1795">Unblocks the expander from receiving signals</doc>
+        <source-position filename="gtknode.h" line="123"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1797">a GtkNodesNode</doc>
+            <type name="Node" c:type="GtkNodesNode*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <property name="height" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="340">The height of the node</doc>
+        <type name="gint" c:type="gint"/>
+      </property>
+      <property name="id" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="354">The numeric identifier of the node</doc>
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="width" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="327">The width of the node</doc>
+        <type name="gint" c:type="gint"/>
+      </property>
+      <property name="x" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="301">The x position of the node</doc>
+        <type name="gint" c:type="gint"/>
+      </property>
+      <property name="y" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="314">The y position of the node</doc>
+        <type name="gint" c:type="gint"/>
+      </property>
+      <field name="widget">
+        <type name="Gtk.Box" c:type="GtkBox"/>
+      </field>
+      <field name="priv">
+        <type name="NodePrivate" c:type="GtkNodesNodePrivate*"/>
+      </field>
+      <glib:signal name="node-drag-begin" when="first">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="394">The ::node-drag-begin signal is emitted when the user initiates a drag on
+a node socket. Coordinates are given with respect to the parent.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="x" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="397">the x coordinate of the event</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+          <parameter name="y" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="398">the y coordinate of the event</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="node-drag-end" when="first">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="414">The ::node-drag-end signal is emitted when the user ends a drag operation
+on a node socket.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="node-func-clicked" when="first">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="432">The ::node-func-clicked signal is emitted when the user clicks the
+functional node button
+on a node socket.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="node-socket-connect" when="first">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="451">The ::node-socket-connect signal is emitted when a drag on a node socket
+results in a successful connection</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="sink" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="454">the socket which emitted the signal.</doc>
+            <type name="Gtk.Widget"/>
+          </parameter>
+          <parameter name="source" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="455">the source which connected to the sink</doc>
+            <type name="Gtk.Widget"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="node-socket-destroyed" when="first">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="491">The ::node-socket-destroyed signal is emitted when a node socket disconnects
+from a source socket</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="494">the socket which emitted the signal.</doc>
+            <type name="Gtk.Widget"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="node-socket-disconnect" when="first">
+        <doc xml:space="preserve"
+             filename="gtknode.c"
+             line="471">The ::node-socket-disconnect signal is emitted when a node socket disconnects
+from a source socket</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="sink" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="474">the socket which emitted the signal.</doc>
+            <type name="Gtk.Widget"/>
+          </parameter>
+          <parameter name="source" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="475">the source which was connected to the sink</doc>
+            <type name="Gtk.Widget"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+    </class>
+    <record name="NodeClass"
+            c:type="GtkNodesNodeClass"
+            glib:is-gtype-struct-for="Node">
+      <source-position filename="gtknode.h" line="83"/>
+      <field name="parent_class">
+        <type name="Gtk.BoxClass" c:type="GtkBoxClass"/>
+      </field>
+      <field name="node_drag_begin">
+        <callback name="node_drag_begin">
+          <source-position filename="gtknode.h" line="62"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="x" transfer-ownership="none">
+              <type name="gint" c:type="gint"/>
+            </parameter>
+            <parameter name="y" transfer-ownership="none">
+              <type name="gint" c:type="gint"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="node_drag_end">
+        <callback name="node_drag_end">
+          <source-position filename="gtknode.h" line="65"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="node_func_clicked">
+        <callback name="node_func_clicked">
+          <source-position filename="gtknode.h" line="66"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="node_socket_connect">
+        <callback name="node_socket_connect">
+          <source-position filename="gtknode.h" line="67"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="sink" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="source" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="node_socket_disconnect">
+        <callback name="node_socket_disconnect">
+          <source-position filename="gtknode.h" line="70"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="sink" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="source" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="node_socket_destroyed">
+        <callback name="node_socket_destroyed">
+          <source-position filename="gtknode.h" line="73"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="socket" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="export_properties">
+        <callback name="export_properties">
+          <source-position filename="gtknode.h" line="77"/>
+          <return-value transfer-ownership="full">
+            <doc xml:space="preserve"
+                 filename="gtknode.c"
+                 line="1937">an XML string describing the internal configuration; may be NULL</doc>
+            <type name="utf8" c:type="gchar*"/>
+          </return-value>
+          <parameters>
+            <parameter name="node" transfer-ownership="none">
+              <doc xml:space="preserve"
+                   filename="gtknode.c"
+                   line="1931">a #GtkNodesNode</doc>
+              <type name="Node" c:type="GtkNodesNode*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="_gtk_reserved1" introspectable="0">
+        <callback name="_gtk_reserved1">
+          <source-position filename="gtknode.h" line="79"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_gtk_reserved2" introspectable="0">
+        <callback name="_gtk_reserved2">
+          <source-position filename="gtknode.h" line="80"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_gtk_reserved3" introspectable="0">
+        <callback name="_gtk_reserved3">
+          <source-position filename="gtknode.h" line="81"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_gtk_reserved4" introspectable="0">
+        <callback name="_gtk_reserved4">
+          <source-position filename="gtknode.h" line="82"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+    </record>
+    <record name="NodePrivate" c:type="GtkNodesNodePrivate" disguised="1">
+      <source-position filename="gtknode.h" line="47"/>
+    </record>
+    <class name="NodeSocket"
+           c:symbol-prefix="node_socket"
+           c:type="GtkNodesNodeSocket"
+           parent="Gtk.Widget"
+           glib:type-name="GtkNodesNodeSocket"
+           glib:get-type="gtk_nodes_node_socket_get_type"
+           glib:type-struct="NodeSocketClass">
+      <source-position filename="gtknodesocket.h" line="95"/>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="gtk_nodes_node_socket_new">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1559">Creates a new node socket.</doc>
+        <source-position filename="gtknodesocket.h" line="105"/>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve"
+               filename="gtknodesocket.c"
+               line="1564">the new #GtkNodesNodeSocket.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <constructor name="new_with_io"
+                   c:identifier="gtk_nodes_node_socket_new_with_io">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1544">Creates a new node socket in the given IO mode</doc>
+        <source-position filename="gtknodesocket.h" line="108"/>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve"
+               filename="gtknodesocket.c"
+               line="1550">the new #GtkNodesNodeSocket.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <parameter name="io" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1546">the IO mode to configure</doc>
+            <type name="NodeSocketIO" c:type="const GtkNodesNodeSocketIO"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <method name="connect_sockets"
+              c:identifier="gtk_nodes_node_socket_connect_sockets">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1499">Explicitly establishes a connection between two sockets. If the sockets
+are not in the proper mode, the connection will fail. If the sink is already
+connected to a source, the source will be disconnected from the sink
+before connecting to the new source. If the compatibility keys of the
+sockets do not match, the connection will fail as well.</doc>
+        <source-position filename="gtknodesocket.h" line="153"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="sink" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1501">a #GtkNodesNodeSocket in sink mode</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="source" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1502">a #GtkNodesNodeSocket in source mode</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="disconnect"
+              c:identifier="gtk_nodes_node_socket_disconnect">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1464">Drops all connections on a given socket. Attached sink or source sockets
+will be notified by the respective signals</doc>
+        <source-position filename="gtknodesocket.h" line="147"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1466">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_id"
+              c:identifier="gtk_nodes_node_socket_get_id"
+              glib:get-property="id">
+        <source-position filename="gtknodesocket.h" line="141"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknodesocket.c"
+               line="1413">the numeric identifier of the socket (always 0 on error)</doc>
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1411">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_input" c:identifier="gtk_nodes_node_socket_get_input">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1522">Returns the reference of the input #GtkNodesNodeSocket for this input, or
+NULL if no input is connected or the socket is not in sink mode</doc>
+        <source-position filename="gtknodesocket.h" line="150"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknodesocket.c"
+               line="1529">the reference to the input socket or NULL if invalid</doc>
+          <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1524">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_io"
+              c:identifier="gtk_nodes_node_socket_get_io"
+              glib:get-property="io">
+        <source-position filename="gtknodesocket.h" line="126"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknodesocket.c"
+               line="1281">the #GtkNodesNodeSocketIO mode of the socket</doc>
+          <type name="NodeSocketIO" c:type="GtkNodesNodeSocketIO"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1279">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_key"
+              c:identifier="gtk_nodes_node_socket_get_key"
+              glib:get-property="key">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1341">@returns the compatibility key of the socket (always 0 on error)</doc>
+        <source-position filename="gtknodesocket.h" line="132"/>
+        <return-value transfer-ownership="none">
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1343">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_radius"
+              c:identifier="gtk_nodes_node_socket_get_radius"
+              glib:get-property="radius">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1190">Gets the radius of the socket</doc>
+        <source-position filename="gtknodesocket.h" line="120"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1192">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="radius" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1193">the socket radius to get</doc>
+            <type name="gdouble" c:type="gdouble*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_remote_key"
+              c:identifier="gtk_nodes_node_socket_get_remote_key">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1361">@returns the compatibility key of the input socket (always 0 if key cannot be determined)</doc>
+        <source-position filename="gtknodesocket.h" line="135"/>
+        <return-value transfer-ownership="none">
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1363">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_rgba"
+              c:identifier="gtk_nodes_node_socket_get_rgba"
+              glib:get-property="rgba">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1141">Sets the GdkRGBA colour of the socket</doc>
+        <source-position filename="gtknodesocket.h" line="114"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1143">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="rgba" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1144">the #GdkRGBA colour to get</doc>
+            <type name="Gdk.RGBA" c:type="GdkRGBA*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_id"
+              c:identifier="gtk_nodes_node_socket_set_id"
+              glib:set-property="id">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1384">Sets the numeric identifier of the socket
+Note: can not be changed once set != 0</doc>
+        <source-position filename="gtknodesocket.h" line="138"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1386">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="id" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1387">the socket identifier to set</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_io"
+              c:identifier="gtk_nodes_node_socket_set_io"
+              glib:set-property="io">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1213">Sets the IO mode of the socket. Changing the mode will disconnect
+existing source inputs, as these are tracked internally.
+Attached sinks and sources will be notified by the ::socket-disconnect
+signal. It is the responsibility of the user to disconnect their
+::socket-incoming signal callbacks. If the user attempts to set the
+current socket mode, no action will be taken.</doc>
+        <source-position filename="gtknodesocket.h" line="123"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1215">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="io" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1216">a #GtkNodesNodeSocketIO</doc>
+            <type name="NodeSocketIO" c:type="GtkNodesNodeSocketIO"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_key"
+              c:identifier="gtk_nodes_node_socket_set_key"
+              glib:set-property="key">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1299">Sets the compatibility key of the socket. Changing the key will disconnect
+any existing source inputs, unless the key is set to 0 or their source
+key matches.
+Attached sinks will not be notified, it is the responsibility of the user
+to disconnect socket-incoming signals. If the user attempts to set the
+current key, no action will be taken.</doc>
+        <source-position filename="gtknodesocket.h" line="129"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1301">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1302">a compatibility key (0 == any)</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_radius"
+              c:identifier="gtk_nodes_node_socket_set_radius"
+              glib:set-property="radius">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1164">Sets the radius of the socket</doc>
+        <source-position filename="gtknodesocket.h" line="117"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1166">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="radius" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1167">the socket radius to set</doc>
+            <type name="gdouble" c:type="const gdouble"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_rgba"
+              c:identifier="gtk_nodes_node_socket_set_rgba"
+              glib:set-property="rgba">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1114">Sets the GdkRGBA colour of the socket</doc>
+        <source-position filename="gtknodesocket.h" line="111"/>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1116">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="rgba" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1117">the #GdkRGBA colour to set</doc>
+            <type name="Gdk.RGBA" c:type="const GdkRGBA*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="write" c:identifier="gtk_nodes_node_socket_write">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="1430">Emits a signal on the #GtkNodesNodeSocket in incoming our outgoing direction.</doc>
+        <source-position filename="gtknodesocket.h" line="144"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknodesocket.c"
+               line="1437">TRUE on success, FALSE if GTKNODES_NODE_SOCKET_DISABLE is configured</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="socket" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1432">a #GtkNodesNodeSocket</doc>
+            <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+          </instance-parameter>
+          <parameter name="payload" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="1433">the data buffer to write</doc>
+            <array name="GLib.ByteArray" c:type="GByteArray*">
+              <type name="guint8" c:type="guint8"/>
+            </array>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="id"
+                writable="1"
+                transfer-ownership="none"
+                setter="set_id"
+                getter="get_id">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="309">The numeric identifier of the socket</doc>
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="io"
+                writable="1"
+                transfer-ownership="none"
+                setter="set_io"
+                getter="get_io">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="279">The type of socket (input or output)</doc>
+        <type name="NodeSocketType"/>
+      </property>
+      <property name="key"
+                writable="1"
+                transfer-ownership="none"
+                setter="set_key"
+                getter="get_key">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="294">The compatibility key of the socket</doc>
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="radius"
+                writable="1"
+                transfer-ownership="none"
+                setter="set_radius"
+                getter="get_radius">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="264">The radius of the socket</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="rgba"
+                writable="1"
+                transfer-ownership="none"
+                setter="set_rgba"
+                getter="get_rgba">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="251">The rgba colour of the socket</doc>
+        <type name="Gdk.RGBA"/>
+      </property>
+      <field name="socket">
+        <type name="Gtk.Widget" c:type="GtkWidget"/>
+      </field>
+      <field name="priv">
+        <type name="NodeSocketPrivate" c:type="GtkNodesNodeSocketPrivate*"/>
+      </field>
+      <glib:signal name="socket-connect" when="first">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="361">The ::socket-connect signal is emitted when a sink socket connects
+to a source socket</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="source" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="364">the #GtkNodesNodeSocket this socket connected to</doc>
+            <type name="NodeSocket"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="socket-destroyed" when="first">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="462">The ::socket-drag-begin signal is emitted when the user ends a drag
+on the socket handle.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="socket-disconnect" when="first">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="381">The ::socket-disconnect signal is emitted when a sink socket disconnects
+from a source socket or notifies sinks to disconnect because of a change
+in configuration (in this case @source is NULL)</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="source" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="384">the #GtkNodesNodeSocket this socket disconnected from, may be NULL</doc>
+            <type name="NodeSocket"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="socket-drag-begin" when="first">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="325">The ::socket-drag-begin signal is emitted when the user begins a drag
+on the socket handle.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="socket-drag-end" when="first">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="343">The ::socket-drag-begin signal is emitted when the user ends a drag
+on the socket handle.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="socket-incoming" when="first">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="422">The ::socket-incoming signal is emitted when data is incoming on the socket
+The data pointer reference and size are transported via the callback.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="data" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="425">the data pointer</doc>
+            <array name="GLib.ByteArray">
+              <type name="guint8" c:type="guint8"/>
+            </array>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="socket-key-change" when="first">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="402">The ::socket-key-change signal is emitted when a sink socket changes its
+key</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="source" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="405">the #GtkNodesNodeSocket which changed the key, may be NULL</doc>
+            <type name="NodeSocket"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="socket-outgoing" when="first">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.c"
+             line="442">The ::socket-outgoing signal is emitted when data is outgoing on the socket
+The data pointer reference and size are transported via the callback.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="data" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodesocket.c"
+                 line="445">the data pointer</doc>
+            <array name="GLib.ByteArray">
+              <type name="guint8" c:type="guint8"/>
+            </array>
+          </parameter>
+        </parameters>
+      </glib:signal>
+    </class>
+    <record name="NodeSocketClass"
+            c:type="GtkNodesNodeSocketClass"
+            glib:is-gtype-struct-for="NodeSocket">
+      <source-position filename="gtknodesocket.h" line="95"/>
+      <field name="parent_class">
+        <type name="Gtk.WidgetClass" c:type="GtkWidgetClass"/>
+      </field>
+      <field name="socket_drag_begin">
+        <callback name="socket_drag_begin">
+          <source-position filename="gtknodesocket.h" line="80"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="socket_drag_end">
+        <callback name="socket_drag_end">
+          <source-position filename="gtknodesocket.h" line="81"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="socket_connect">
+        <callback name="socket_connect">
+          <source-position filename="gtknodesocket.h" line="82"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="source" transfer-ownership="none">
+              <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="socket_disconnect">
+        <callback name="socket_disconnect">
+          <source-position filename="gtknodesocket.h" line="84"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="source" transfer-ownership="none">
+              <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="socket_key_change">
+        <callback name="socket_key_change">
+          <source-position filename="gtknodesocket.h" line="86"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="source" transfer-ownership="none">
+              <type name="NodeSocket" c:type="GtkNodesNodeSocket*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="socket_incoming">
+        <callback name="socket_incoming">
+          <source-position filename="gtknodesocket.h" line="88"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="data" transfer-ownership="none">
+              <array name="GLib.ByteArray" c:type="GByteArray">
+                <type name="guint8" c:type="guint8"/>
+              </array>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="socket_outgoing">
+        <callback name="socket_outgoing">
+          <source-position filename="gtknodesocket.h" line="90"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+            <parameter name="data" transfer-ownership="none">
+              <array name="GLib.ByteArray" c:type="GByteArray">
+                <type name="guint8" c:type="guint8"/>
+              </array>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="socket_destroyed">
+        <callback name="socket_destroyed">
+          <source-position filename="gtknodesocket.h" line="92"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="widget" transfer-ownership="none">
+              <type name="Gtk.Widget" c:type="GtkWidget*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+    </record>
+    <enumeration name="NodeSocketIO" c:type="GtkNodesNodeSocketIO">
+      <doc xml:space="preserve"
+           filename="gtknodesocket.h"
+           line="47">If the socket is in SINK mode, it can accept only one input source,
+if the socket is in source mode, it will provide output to any connected sink</doc>
+      <source-position filename="gtknodesocket.h" line="62"/>
+      <member name="disable"
+              value="0"
+              c:identifier="GTKNODES_NODE_SOCKET_DISABLE">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.h"
+             line="49">the socket IO is deactivated</doc>
+      </member>
+      <member name="sink" value="1" c:identifier="GTKNODES_NODE_SOCKET_SINK">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.h"
+             line="50">the socket is in sink mode</doc>
+      </member>
+      <member name="source"
+              value="2"
+              c:identifier="GTKNODES_NODE_SOCKET_SOURCE">
+        <doc xml:space="preserve"
+             filename="gtknodesocket.h"
+             line="51">the socket is in source mode</doc>
+      </member>
+    </enumeration>
+    <record name="NodeSocketPrivate"
+            c:type="GtkNodesNodeSocketPrivate"
+            disguised="1">
+      <source-position filename="gtknodesocket.h" line="66"/>
+    </record>
+    <enumeration name="NodeSocketType"
+                 glib:type-name="GtkNodesNodeSocketType"
+                 glib:get-type="gtk_nodes_node_socket_io_get_type"
+                 c:type="GtkNodesNodeSocketType">
+      <member name="disabled"
+              value="0"
+              c:identifier="GTKNODES_NODE_SOCKET_DISABLE"
+              glib:nick="disabled"
+              glib:name="GTKNODES_NODE_SOCKET_DISABLE">
+      </member>
+      <member name="sink"
+              value="1"
+              c:identifier="GTKNODES_NODE_SOCKET_SINK"
+              glib:nick="sink"
+              glib:name="GTKNODES_NODE_SOCKET_SINK">
+      </member>
+      <member name="source"
+              value="2"
+              c:identifier="GTKNODES_NODE_SOCKET_SOURCE"
+              glib:nick="source"
+              glib:name="GTKNODES_NODE_SOCKET_SOURCE">
+      </member>
+    </enumeration>
+    <class name="NodeView"
+           c:symbol-prefix="node_view"
+           c:type="GtkNodesNodeView"
+           parent="Gtk.Container"
+           glib:type-name="GtkNodesNodeView"
+           glib:get-type="gtk_nodes_node_view_get_type"
+           glib:type-struct="NodeViewClass">
+      <source-position filename="gtknodeview.h" line="65"/>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="gtk_nodes_node_view_new">
+        <doc xml:space="preserve"
+             filename="gtknodeview.c"
+             line="1583">Creates a new node view.</doc>
+        <source-position filename="gtknodeview.h" line="72"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknodeview.c"
+               line="1588">a new #GtkNodesNodeView.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <method name="load" c:identifier="gtk_nodes_node_view_load">
+        <doc xml:space="preserve"
+             filename="gtknodeview.c"
+             line="1520">Loads an XML description parseable by #GtkBuilder and reconstructs
+a node configuration. Note that this will not restore the internal
+state of any nodes, but only their placement and the connections
+between sockets.
+
+This only works properly for nodes which are their own widget types.</doc>
+        <source-position filename="gtknodeview.h" line="79"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknodeview.c"
+               line="1532">0 if and error occured</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node_view" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodeview.c"
+                 line="1522">a GtkNodesNodeView</doc>
+            <type name="NodeView" c:type="GtkNodesNodeView*"/>
+          </instance-parameter>
+          <parameter name="filename" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodeview.c"
+                 line="1523">the name of the file to load</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="save" c:identifier="gtk_nodes_node_view_save">
+        <doc xml:space="preserve"
+             filename="gtknodeview.c"
+             line="1349">Saves a representation of the current node view setup as XML so
+it can be recreated with gtkbuilder
+This only works properly for nodes which are their own widget types, as we
+don't (and can't) in-depth clone the nodes</doc>
+        <source-position filename="gtknodeview.h" line="75"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gtknodeview.c"
+               line="1359">0 on error</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="node_view" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodeview.c"
+                 line="1351">a GtkNodesNodeView</doc>
+            <type name="NodeView" c:type="GtkNodesNodeView*"/>
+          </instance-parameter>
+          <parameter name="filename" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gtknodeview.c"
+                 line="1352">the name of the file to save, if the file exists, it will be overwritten</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <field name="widget">
+        <type name="Gtk.Container" c:type="GtkContainer"/>
+      </field>
+      <field name="priv">
+        <type name="NodeViewPrivate" c:type="GtkNodesNodeViewPrivate*"/>
+      </field>
+    </class>
+    <record name="NodeViewClass"
+            c:type="GtkNodesNodeViewClass"
+            glib:is-gtype-struct-for="NodeView">
+      <source-position filename="gtknodeview.h" line="65"/>
+      <field name="parent_class">
+        <type name="Gtk.ContainerClass" c:type="GtkContainerClass"/>
+      </field>
+      <field name="_gtk_reserved1" introspectable="0">
+        <callback name="_gtk_reserved1">
+          <source-position filename="gtknodeview.h" line="61"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_gtk_reserved2" introspectable="0">
+        <callback name="_gtk_reserved2">
+          <source-position filename="gtknodeview.h" line="62"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_gtk_reserved3" introspectable="0">
+        <callback name="_gtk_reserved3">
+          <source-position filename="gtknodeview.h" line="63"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_gtk_reserved4" introspectable="0">
+        <callback name="_gtk_reserved4">
+          <source-position filename="gtknodeview.h" line="64"/>
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+    </record>
+    <record name="NodeViewPrivate"
+            c:type="GtkNodesNodeViewPrivate"
+            disguised="1">
+      <source-position filename="gtknodeview.h" line="46"/>
+    </record>
+    <constant name="VIEW_PARAM_RW"
+              value="227"
+              c:type="GTK_NODES_VIEW_PARAM_RW">
+      <source-position filename="gtknodesocket.h" line="24"/>
+      <type name="gint" c:type="gint"/>
+    </constant>
+    <docsection name="gtknode">
+      <doc xml:space="preserve"
+           filename="gtknode.c"
+           line="42"># Overview #
+
+The #GtkNodesNode widget is a widget container drived from #GtkBox.
+Widgets added to the node are assigned a #GtkNodesNodeSocket. The user must
+configure the type of socket and connect to the socket-incoming signal
+in order to be able to receive the data passed through a connection.
+
+The Node can be collapsed by clicking the #GtkExpander which will hide the
+node items, and show a compact representation of the node with just the
+GtkExpander and the sockets visible.
+
+
+# Notes #
+
+While possible, using a #GtkNodesNode outside of a #GtkNodesNodeView does
+not make much sense.
+
+The placement of sockets is currently only properly supported for the
+GTK_ORIENTATION_VERTICAL orientation
+
+
+Custom GtkNodesNode widgets can save and restore their internal child
+widget states and other properties and special tags by by implementing
+the proper #GtkBuildable interfaces. To export the configuration,
+node_export_properties() must be implemented and is expected to return
+valid xml output which is integrated into the xml output produced
+by #GtkNodesNodeView.
+
+For example, to restore the value of an internal spin button widget,
+the function would return an allocated string containing:
+
+&lt;child internal-child="spinbutton"&gt;
+&lt;object class="GtkSpinButton"&gt;
+	&lt;property name="value"&gt;5&lt;/property&gt;
+&lt;/object&gt;
+&lt;/child&gt;</doc>
+    </docsection>
+    <docsection name="gtknodesocket">
+      <doc xml:space="preserve"
+           filename="gtknodesocket.c"
+           line="37">The #GtkNodesNodeSocket is a widget, serving as a IO transporter to other
+GtkNodeSockets. The user can set one of three IO modes: SINK, SOURCE and
+DISABLE (see #GtkNodesNodeSocketIO).
+A socket in sink mode will accept only a single input source, a socket in
+source mode will provide output to any connectd sink.
+Connections are established by drag-and-drop action of a source to
+a sink by the user. A sink socket will emit the :socket-connect signal on
+when a connection is established. If the user initiates a drag on a sink
+which is already connected to a source, the sink will disconnect from the
+source and the drag event will be redirected to the source socket.
+
+In order to identify compatible sockets, a key can be provided by the user.
+The source key is transported to the sink in the drag data exchange and the
+sink will reject the connection if the key does not match. This mechanism
+ensures that only interpretable data is received on the sink input.
+
+A key value of 0 is special in that any input will be accepted.
+
+If the user changes the key, the socket will emit the :socket-disconnect
+signal to notify any connected sinks or sources, so the can initiate a
+disconnect, if their key does not match or is different from 0.
+
+# Connections and data transport #
+
+Connections on sinks are established by connecting to the :socket-outgoing
+signal of the source. This means that the source is not aware of the number
+of connected sinks, as all data is transported by the GType signal system.
+
+The user can push output from a source by calling
+@gtk_nodes_node_socket_write() on the socket. To get data received by a sink,
+the user must connect to the ::socket-incoming signal.
+
+# Cleanup #
+
+If a socket is destroyed or disconnects from a source, it will emit the
+:socket-destroyed and :socket-disconnect signals respectively.
+
+Any sockets attached to the destroyed socket will initiate a disconnect.</doc>
+    </docsection>
+    <docsection name="gtknodeview">
+      <doc xml:space="preserve"
+           filename="gtknodeview.c"
+           line="43">The #GtkNodesNodeView widget is a viewer and connection manager for
+#GtkNodesNode widgets.</doc>
+    </docsection>
+  </namespace>
+</repository>
