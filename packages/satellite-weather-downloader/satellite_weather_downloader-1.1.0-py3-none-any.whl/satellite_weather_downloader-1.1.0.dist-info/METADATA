@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: satellite-weather-downloader
+Version: 1.1.0
+Summary: The routines available in this package are designed to capture and process satellite images
+Home-page: https://github.com/osl-incubator/satellite-weather-downloader
+License: GNU GPL v3.0
+Author: Flavio Codeco Coelho
+Author-email: fccoelho@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/osl-incubator/satellite-weather-downloader
+Description-Content-Type: text/markdown
+
+<!-- satellite_weather_downloader -->
+
