@@ -1,0 +1,8 @@
+README.md
+setup.py
+pymatops/__init__.py
+pymatops/pymatops.py
+pymatops.egg-info/PKG-INFO
+pymatops.egg-info/SOURCES.txt
+pymatops.egg-info/dependency_links.txt
+pymatops.egg-info/top_level.txt
