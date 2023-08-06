@@ -1,0 +1,3 @@
+[console_scripts]
+pado = pado.__main__:cli
+pado-transporter = pado.transporter:cli_main

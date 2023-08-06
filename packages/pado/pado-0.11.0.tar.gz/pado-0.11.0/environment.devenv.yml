@@ -1,0 +1,66 @@
+#
+# Conda devenv environment for pado
+#
+# Create the environment, do not install pado in development mode:
+#   conda devenv
+# equivalent to:
+#   PADO_DEVEL="" conda devenv
+# Create the environment, install pado in development mode:
+#   PADO_DEVEL=TRUE conda devenv
+#
+
+{% set PADO_DEVEL = os.environ.get('PADO_DEVEL', False) %}
+{% set PADO_DEVEL_CI = os.environ.get('PADO_DEVEL_CI', False) %}
+
+name: pado
+
+channels:
+  - conda-forge
+
+dependencies:
+  # python relevant things
+  - python>=3.7
+  - pip
+  - typing_extensions
+  - importlib_resources
+  - setuptools_scm
+
+  # pado requirements
+  - dynaconf
+  - fsspec
+  - aiohttp
+  - geojson-pydantic
+  - imagecodecs
+  - itsdangerous
+  - numpy
+  - orjson
+  - opencv
+  - pandas
+  - pillow
+  - platformdirs
+  - pyarrow
+  - pydantic
+  - rich
+  - requests
+  - shapely
+  - tifffile>=2021.6.6
+  - tiffslide>=1.0.0
+  - typer
+  - toml
+  - tqdm
+  - zarr
+
+  # testing relevant things
+  - pytest>=6
+  - pytest-cov
+
+  # dev tools
+  - pre_commit  # [ PADO_DEVEL ]
+  - sphinx # [ PADO_DEVEL ]
+
+  # pip installs
+  - pip:         # [ PADO_DEVEL or PADO_DEVEL_CI ]
+    - sphinxemoji # [ PADO_DEVEL ]
+    - sphinx_autodoc_typehints # [ PADO_DEVEL ]
+    - sphinx_rtd_theme # [ PADO_DEVEL ]
+    - "-e ."     # [ PADO_DEVEL or PADO_DEVEL_CI ]
