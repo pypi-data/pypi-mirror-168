@@ -1,0 +1,15 @@
+DocTest/__init__.py,sha256=7oOCRcGlpXQFIU3nuf08BuQdHnnTAcRTVCHci5DSl6k,12866
+DocTest/CompareImage.py,sha256=H2x5HUvtQfPEkiZTcSsl_MjAfBsM0lNy9STemOVT1EA,22388
+DocTest/data/frozen_east_text_detection.pb,sha256=m0hvPD7ud7TIzJGoOJLDcCbMp9Kbeb87k3cszS21hFQ,96662756
+DocTest/DocTestDB.py,sha256=2DE2ZNYhcP7_-83nnL7tX8CZ5mu9J0cXD-UbgdHlKG8,1286
+DocTest/Ocr.py,sha256=7jVFRr4CRCI-c_9fsQQzsW0t0S7PIDQZhpAYZGzBDT0,11723
+DocTest/PdfTest.py,sha256=MFYxI2T8Hhs-xpl5IKOw1fbX2VcsYqxu305C50wajsE,9620
+DocTest/PrintJob.py,sha256=Vl9JZMjku1z2OMAqnzVhlCsKusKJr1HQpz8YAXLgPeY,147
+DocTest/PrintJobTests.py,sha256=5hw6y11B4xH4ndwYLIIaDb4YSbgRL3g4Rx5OKVNuvy8,18725
+DocTest/PyTextractor.py,sha256=AbkWJ2_AfV-Y8gwuuBjI2udVjeUDDi1wmHcbn5sADZ8,10845
+DocTest/PyTextractor_pyUniv.py,sha256=rQAp8nuwyJwF4UOT7tfnd8xdTVVKJob_BaL_OT-XGIU,12363
+DocTest/VisualTest.py,sha256=gPBlFNLycf7sXItbeI6K_ipJQi4cjEhSUqHCZAa7xHk,43454
+robotframework_doctestlibrary-0.4.0.dist-info/LICENSE,sha256=g_r0FQnM2Mg-6cuG1Z1ewkcLzwCNTnHi5LQ9tBgXbZQ,565
+robotframework_doctestlibrary-0.4.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+robotframework_doctestlibrary-0.4.0.dist-info/METADATA,sha256=kGQL9KjAjM7ktksUKOad1bHTbSnSBUl0vb0fCZo1HUo,13320
+robotframework_doctestlibrary-0.4.0.dist-info/RECORD,,
