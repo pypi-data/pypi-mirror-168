@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cadctap
+Version: 0.9.7
+Summary: Client for accessing data at the Canadian Astronomy Data Centre
+Home-page: http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/
+Author: Canadian Astronomy Data Centre
+Author-email: cadc@nrc-cnrc.gc.ca
+License: AGPLv3
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+Provides-Extra: test
+License-File: LICENSE
+
+cadctap 
+========
+
+.. image:: https://img.shields.io/pypi/v/cadctap.svg
+    :target: https://pypi.python.org/pypi/cadctap
+
+Canadian Astronomy Data Centre - TAP access
+
+client for interacting with catalog Web services hosted at the Canadian
+Astronomy Data Centre

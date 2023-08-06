@@ -1,0 +1,12 @@
+cadcutils>=1.4.2
+clint>=0.5.1
+requests>=2.18
+requests-toolbelt>=0.8.0
+
+[test]
+pytest
+pytest-cov>=2.5.1
+flake8>=3.4.1
+funcsigs==1.0.2
+mock>=2.0.0
+xml-compare>=1.0.5
