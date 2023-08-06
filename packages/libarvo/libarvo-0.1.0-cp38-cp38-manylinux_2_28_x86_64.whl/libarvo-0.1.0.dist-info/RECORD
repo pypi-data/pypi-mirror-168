@@ -1,0 +1,12 @@
+libarvo/__init__.py,sha256=bPQDXk1zpCmvJt_IhGyKLeGoJyUc4BWdGu_XEYT5DOc,186
+libarvo/mytyping.py,sha256=bAxabZIR4AWlnhZRv7zYGKgppMSSk8owh3neZ9nEkJI,144
+libarvo/arvo.py,sha256=o7z7pfdzHym_WdMIl2HN7CquvEZRBWNPyuunC8z-Vg8,2296
+libarvo/lib.py,sha256=3_gl4NtD5tEkjgRc2wjJC6lRzacWrLn_cWmzlKdKFf8,990
+libarvo/libarvo.so,sha256=ww0247KavmQro3zs0UOCyuEt7JAGiQgDEQpy-Akk7Qk,29496
+libarvo-0.1.0.dist-info/LICENSE,sha256=bIGMinHw1UMLEYAglXr9R3tiwjjK97p2A9Wb3vWHbK4,1066
+libarvo-0.1.0.dist-info/WHEEL,sha256=GE0ycbWbqwwIkhjJbIpUJImKZ_hhlKd_Hvwts1U-gOE,106
+libarvo-0.1.0.dist-info/METADATA,sha256=lQH2VFJHq7v9DkRCen2zBwnR--ANW64LixTptoziNLc,571
+libarvo-0.1.0.dist-info/top_level.txt,sha256=U57TbQ-J0pENRkLTSYr_ak5M2TGTuNRFBvw0MBvgLjI,8
+libarvo-0.1.0.dist-info/RECORD,,
+libarvo.libs/libgfortran-2327399f.so.5.0.0,sha256=70LLk2BlbKYAeSZq8Zu3VqWcq-K13jjEDtcMyryOKxc,2714696
+libarvo.libs/libquadmath-14737865.so.0.0.0,sha256=_GUguqLfrlBvoALeZCxBYKzf8IoMPWkmgU2EQE0ilg0,272192
