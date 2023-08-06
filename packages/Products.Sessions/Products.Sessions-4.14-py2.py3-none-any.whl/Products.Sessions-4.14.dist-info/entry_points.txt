@@ -1,0 +1,3 @@
+[zope2.initialize]
+Products.Sessions = Products.Sessions:initialize
+Products.Transience = Products.Transience:initialize
