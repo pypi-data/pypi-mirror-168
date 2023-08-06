@@ -1,0 +1,8 @@
+numpy
+astropy
+astroquery
+matplotlib
+george
+extinction
+emcee
+mkdocs>=1.2.2
