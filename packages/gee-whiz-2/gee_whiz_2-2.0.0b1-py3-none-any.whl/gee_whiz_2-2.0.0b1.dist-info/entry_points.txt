@@ -1,0 +1,3 @@
+[console_scripts]
+gw2=gee_whiz_2.cli:main
+
