@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: vassal-python
+Version: 0.2.0
+Summary: Python tools for manipulating VASSAL modules
+Home-page: https://github.com/jasonestewart/vassal-python
+Author: Jason E. Stewart
+Author-email: jason.e.stewart@gmail.com
+Project-URL: Bug Reports, https://github.com/jasonestewart/vassal-python/issues
+Project-URL: Say Thanks!, https://saythanks.io/to/jasonestewart
+Project-URL: Source, https://github.com/jasonestewart/vassal-python/
+Keywords: VASSAL module development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries :: Java Libraries
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: jpype1 (<2.*,>=1.2.1)
+Provides-Extra: dev
+Requires-Dist: numpy ; extra == 'dev'
+Requires-Dist: pillow ; extra == 'dev'
+Requires-Dist: opencv-python ; extra == 'dev'
+Requires-Dist: pytesseract ; extra == 'dev'
+
+# VASSAL Python
+Tools for manipulating VASSAL module files using python
+
+Implemented using jpype
+
+The successor to VASSAL::Perl
+
+# Components
+
+The package implements the following modules for working with VASSAL game modules
+
+## Manager
+
+The class that wraps a headless version of the VASSAL so that it is possible to call all the module loading, parsing, and saving features without a Swing GUI.
+
+```python
+from python.vassal.manager import Manager
+
+manager = Manager()
+gameModule = manager.open_module("./test.vmod")
+```
+
+## Walker
+
+The class that enables recursive descent into the Buildables hierarchy of a game module and enables printing or actions on pieces and components.
+
+```python
+from python.vassal.manager import Manager
+from python.vassal.walker import Walker
+
+manager = Manager()
+gameModule = manager.open_module("./test.vmod")
+walker = Walker(gameModule)
+walker.print_game_module_pieces()
+```
+
+## Loading the JVM
+
+Jpype needs the JVM started before it can begin loading the Java classes. This is handled inside manager.py during the module loading. The JVM needs to find both ```Vengine.jar``` and ```Helper.class``` in the classpath. One easy way to do that is to set the classpath using jpype before loading manager.py
+
+```python
+import jpype
+import jpype.imports
+
+jpype.addClassPath("./lib/Vengine.jar")
+jpype.addClassPath("classlib/")  # Helper.class
+from python.vassal.manager import Manager
+
+```
+
+## Example Applications
+* module-print.py: recursively prints the names of all the piece windows and the pieces in each window
+* add-starting-strengths.py: compares the name of each piece in the module to a predefined list of piece names, and if found, creates a new "StartingStrength" trait on the piece and sets the value to that listed in the file
