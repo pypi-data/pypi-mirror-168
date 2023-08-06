@@ -1,0 +1,14 @@
+configur8/__about__.py,sha256=_XKDPAt4GoSXX-4WvwIOv3r8Kmf3FID7AI-vwZzpE-g,65
+configur8/__init__.py,sha256=rjW2L0OwiAkfTOiGeOwpLy3q0owhhve9oeJN_sdWQjs,284
+configur8/cfg.py,sha256=i7khOUzAcJCndEtrepjEGvl-YoEP-CL8JsdqusHcSn4,5330
+configur8/core.py,sha256=plfYe-OquGTRttkODvfG7f2KP2fn0S7NkHKHdZg5K6E,136
+configur8/email.py,sha256=8imCiF96Ah7MHfUc1fR2Ymjvu3tYME8UQctBF9Uc3Mg,441
+configur8/env.py,sha256=2rfpiYHfCFa4ark7X641X6lrW0IDxmdxhuKq5qs35zA,5015
+configur8/path.py,sha256=Jp3euzDT1ZFFXh_RI44otnPJgXb9yf9v13gaqqOZADk,1309
+configur8/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configur8/url.py,sha256=WJ2sKu8quyaMlbxdUYUQmeKxqFuqwROqC4eTkpIAFMI,2477
+configur8/util.py,sha256=VQ0cDfpxDaOWVh3t867Hqnn0HQfntMhHb1wYHVgB-Q0,177
+configur8-1.5.dist-info/METADATA,sha256=Hwm8e5zq7WaOO9Ps-kNq8ZawaHBz4yTZSSJ6bgH3p6g,3715
+configur8-1.5.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+configur8-1.5.dist-info/top_level.txt,sha256=4G9BGR5y8W8Mesog5Otqp6weMUSxNBuimR84v-VFM7Q,10
+configur8-1.5.dist-info/RECORD,,
