@@ -1,0 +1,63 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block extrahead %}{{ block.super }}
+<style>
+    code.info {
+        background: var(--primary);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <table class="table-bordered table-condensed table-striped">
+        <tbody>
+        <tr>
+            <td>model name:</td>
+            <td>{{ modelname }}</td>
+        </tr>
+        <tr>
+            <td>last connection:</td>
+            <td>{{ last_connection|timesince }}</td>
+        </tr>
+        <tr>
+            <td>FRITZ_USERNAME:</td>
+            <td>
+                "<code class="info">{{ fritz_username }}</code>"
+                {% if username_info %}<p>{{ username_info }}</p>{% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>FRITZ_PASSWORD:</td>
+            <td>
+                "<code class="info">{{ fritz_password }}</code>"
+                {% if password_info %}<p>{{ password_info }}</p>{% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>FRITZ!OS:</td>
+            <td>{{ system_version }}</td>
+        </tr>
+        <tr>
+            <td>Fritz-Connection Version:</td>
+            <td>{{ fritzconnection_version }}</td>
+        </tr>
+        <tr>
+            <td>hw-code:</td>
+            <td>{{ hw_code }}</td>
+        </tr>
+        <tr>
+            <td>address:</td>
+            <td>{{ address }}</td>
+        </tr>
+        <tr>
+            <td>system:</td>
+            <td>{{ system }}</td>
+        </tr>
+        <tr>
+            <td>build:</td>
+            <td>{{ build }}</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}
