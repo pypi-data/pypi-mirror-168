@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mcumgr/mcumgr.egg-info/PKG-INFO
+mcumgr/mcumgr.egg-info/SOURCES.txt
+mcumgr/mcumgr.egg-info/dependency_links.txt
+mcumgr/mcumgr.egg-info/requires.txt
+mcumgr/mcumgr.egg-info/top_level.txt
