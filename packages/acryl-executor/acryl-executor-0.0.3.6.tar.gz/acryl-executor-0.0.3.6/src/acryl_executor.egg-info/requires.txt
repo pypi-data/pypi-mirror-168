@@ -1,0 +1,28 @@
+acryl-datahub[datahub-rest]>=0.8.41.1rc2
+mypy_extensions>=0.4.3
+pydantic>=1.5.1
+sqlalchemy-stubs>=0.4
+
+[:python_version < "3.8"]
+typing_extensions>=3.7.4
+
+[dev]
+types-freezegun
+types-toml
+flake8>=3.8.3
+requests-mock
+types-dataclasses
+mypy<0.920,>=0.901
+pydantic>=1.5.1
+sqlalchemy-stubs>=0.4
+freezegun
+types-requests
+flake8-tidy-imports>=4.3.0
+acryl-datahub[datahub-rest]>=0.8.41.1rc2
+mypy_extensions>=0.4.3
+pytest>=6.2.2
+types-PyYAML
+types-python-dateutil
+
+[dev:python_version < "3.8"]
+typing_extensions>=3.7.4
