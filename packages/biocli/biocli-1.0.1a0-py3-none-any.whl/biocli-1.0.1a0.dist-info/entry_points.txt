@@ -1,0 +1,3 @@
+[console_scripts]
+biocli=biocli._biocli:main
+
