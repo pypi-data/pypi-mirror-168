@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kata_anagrams_weabreu"
+version = "1.0.0"
+authors = [
+  { name="William Abreu", email="weabreu16@gmail.com" },
+]
+description = "Library to solve Kata Anagram"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/weabreu16/kata_anagrams"
+"Bug Tracker" = "https://github.com/weabreu16/kata_anagrams/issues"
