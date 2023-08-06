@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling>=1.9.0", "jupyterlab~=3.1"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyter_rospkg"
+version = "0.3.0"
+description = "A server extension for JupyterLab to handle ROS packages"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+authors = [
+    { name = "Isabel Paredes", email = "isabel.paredes@quantstack.net" },
+]
+keywords = ["Jupyter", "JupyterLab", "JupyterLab3"]
+classifiers = [
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "Framework :: Jupyter :: JupyterLab :: 3",
+    "Framework :: Jupyter :: JupyterLab :: Extensions",
+    "Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "jupyter_server>=1.6,<2",
+    "rospkg",
+    "notebook"
+]
+
+[project.optional-dependencies]
+test = [
+    "coverage",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest-tornasync"
+]
+
+[project.urls]
+Homepage = "https://github.com/ihuicatl/jupyter-rospkg"
+
+[tool.hatch.build.targets.wheel.shared-data]
+"jupyter_rospkg/config/jpserver-jupyter-rospkg.json" = "etc/jupyter/jupyter_server_config.d/jpserver-jupyter-rospkg.json"
+"jupyter_rospkg/config/nbserver-jupyter-rospkg.json" = "etc/jupyter/jupyter_notebook_config.d/nbserver-jupyter-rospkg.json"
+
