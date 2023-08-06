@@ -1,0 +1,23 @@
+numpy>=1.16.6
+scipy>=0.16
+
+[:python_version < "3.9"]
+importlib-resources
+
+[dev]
+pytest>=2.9
+pytest-lazy-fixture
+pytest-cov
+flake8
+
+[doc]
+Sphinx>=5.0.2
+myst-parser
+pydata-sphinx-theme<0.10
+sphinx-copybutton
+
+[mpi]
+mpi4py
+
+[plot]
+matplotlib
