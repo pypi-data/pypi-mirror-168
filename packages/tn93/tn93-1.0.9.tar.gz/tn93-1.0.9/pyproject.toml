@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "tn93"
+version = "1.0.9"
+authors = [
+  { name="Reagan Kelly", email="ylb9@cdc.gov" },
+]
+description = "A python implementation of the Tamura-Nei pairwise distance calculation"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/CDCgov/tn93"
+"Bug Tracker" = "https://github.com/CDCgov/tn93/issues"
