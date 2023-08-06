@@ -1,0 +1,16 @@
+verify_vat_number/__init__.py,sha256=onYIKl-Xvz5A61v4o3RIyvTiYy19fVMG7uSpg25sGg4,165
+verify_vat_number/ares.py,sha256=ArgP2su1LVDDTpk6EYQHE2bo4l2lopMgxL5LhJS1CDA,11268
+verify_vat_number/data.py,sha256=quaMR7dq4iIDGxd9v1Uyn9dgJs9Cslgl2aw6m77yTOk,1536
+verify_vat_number/exceptions.py,sha256=krqm06g4Tyznt0EarG1TFq3xx4nZxZxjYz9HoR2XcYE,1309
+verify_vat_number/utils.py,sha256=VDjbwzg6cyDBGxvpxiJrpyHzfftHAS-UaxMaT-UxP-s,321
+verify_vat_number/vies.py,sha256=dy6nz8mDQX9MMGVyZLgbVPHydS1NmqORTqNDcZFXNw4,8296
+verify_vat_number/tests/__init__.py,sha256=jLfyCqCD7NWdV3BzicxhwT5j3YTHEwroNqWnt3Ro8Ho,38
+verify_vat_number/tests/test_ares.py,sha256=TsHgkum2FaN7yra-tEPT_TZzq5DEsCAMrCr8PF78gcU,40620
+verify_vat_number/tests/test_utils.py,sha256=q5D1fW6hBxApyduRUldUReddf0GwMLOyyfTr-gYnRpk,557
+verify_vat_number/tests/test_vies.py,sha256=pSZt1PrkVqnQ95qLhF_zYHpIgzS_lFDVigjg8g81s90,24629
+verify_vat_number/tests/utils.py,sha256=8DGrWeYFI8-Azm8LBFQMMTJVAu_q5VNtdbP-FXDe3js,175
+verify_vat_number/tests/vies-checkVatService.wsdl,sha256=Fto6FacYSHBVQAVjmHyD48aw1d1QjG94Ub18_-g39lw,11631
+verify_vat_number-1.2.0.dist-info/METADATA,sha256=2DglwnVa-y0Eqc0wMqhpxefiBe0A-hV5H1hvDBF9pMg,14203
+verify_vat_number-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+verify_vat_number-1.2.0.dist-info/top_level.txt,sha256=KFXZ_WIipIxqONO4wAfIegUEqe50VIZqtp0ln3Im9cQ,18
+verify_vat_number-1.2.0.dist-info/RECORD,,
