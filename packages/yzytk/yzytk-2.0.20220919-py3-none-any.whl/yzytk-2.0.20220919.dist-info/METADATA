@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: yzytk
+Version: 2.0.20220919
+Summary: 星光☆Tkinter风格化窗口
+Author: 严子昱
+Author-email: yanziyu252625@qq.com
+Maintainer: 严子昱
+Maintainer-email: yanziyu252625@qq.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+
+yzytk.Yzytk ≈ Tk,差不多就这个意思
