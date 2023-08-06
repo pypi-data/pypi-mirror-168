@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: daletou_OceanWang
+Version: 0.0.1
+Summary: dlt example package
+Author: Author
+Author-email: 37537529@qq.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# study Package
+This is a simple study package.
