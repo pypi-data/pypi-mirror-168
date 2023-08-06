@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: perun.connector
+Version: 3.2.0
+Summary: Module for communication with Perun IAM system
+Home-page: https://github.com/CESNET/perun.connector.git
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: urllib3 (<2,>=1.26.9)
+Requires-Dist: python-dateutil (<3,>=2.8.2)
+Requires-Dist: PyYAML (<7,>=6.0)
+Requires-Dist: ldap3 (<3,>=2.9.1)
+Requires-Dist: pycurl (<8,>=7.45.1)
+Requires-Dist: jsonpatch (<2,>=1.22)
+
