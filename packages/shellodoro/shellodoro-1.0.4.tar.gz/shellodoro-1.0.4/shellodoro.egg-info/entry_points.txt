@@ -1,0 +1,3 @@
+[console_scripts]
+shdr = shellodoro.shellodoro:main
+
