@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: elan-scissors
+Version: 0.0.2
+Summary: Cut ELAN audio into snippets.
+Home-page: https://github.com/fmatter/elan-scissors
+Author: Florian Matter
+Author-email: florianmatter@gmail.com
+Project-URL: Bug Tracker, https://github.com/fmatter/elan-scissors/issues
+Keywords: elan,linguistics
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: publishing
+License-File: LICENSE
+
+# elan-scissors
+
+Cut ELAN audio into snippets. You may need to [install an audio library usable by pydub](https://github.com/jiaaro/pydub#getting-ffmpeg-set-up).
+Usage:
+
+`elanscissors <SRC> <TARGET>`, where `SRC` is a flextext file and `TARGET` a wav file.
+
+Documentation: https://elan-scissors.readthedocs.io
+
+![License](https://img.shields.io/github/license/fmatter/elan-scissors)
+[![Documentation Status](https://readthedocs.org/projects/elan-scissors/badge/?version=latest)](https://elan-scissors.readthedocs.io/en/latest/?badge=latest)
+[![Linting](https://img.shields.io/github/workflow/status/fmatter/elan-scissors/lint?label=linting)](https://github.com/fmatter/elan-scissors/actions/workflows/lint.yml)
+[![PyPI](https://img.shields.io/pypi/v/elan-scissors.svg)](https://pypi.org/project/elan-scissors)
+![Versions](https://img.shields.io/pypi/pyversions/elan-scissors)

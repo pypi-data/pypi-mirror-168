@@ -1,0 +1,16 @@
+CITATION.cff
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/elan_scissors/__init__.py
+src/elan_scissors/cli.py
+src/elan_scissors.egg-info/PKG-INFO
+src/elan_scissors.egg-info/SOURCES.txt
+src/elan_scissors.egg-info/dependency_links.txt
+src/elan_scissors.egg-info/entry_points.txt
+src/elan_scissors.egg-info/not-zip-safe
+src/elan_scissors.egg-info/requires.txt
+src/elan_scissors.egg-info/top_level.txt
