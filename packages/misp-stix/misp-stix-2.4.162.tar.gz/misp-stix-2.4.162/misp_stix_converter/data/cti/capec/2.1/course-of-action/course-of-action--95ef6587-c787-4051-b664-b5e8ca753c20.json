@@ -1,0 +1,20 @@
+{
+    "id": "bundle--85067039-e796-470a-b4ff-7c0e5901e077",
+    "objects": [
+        {
+            "created": "2014-06-23T00:00:00.000Z",
+            "created_by_ref": "identity--e50ab59c-5c4f-4d40-bf6a-d58418d89bcd",
+            "description": "When client input is required from web-based forms, avoid using the \"GET\" method to submit data, as the method causes the form data to be appended to the URL and is easily manipulated. Instead, use the \"POST method whenever possible.",
+            "id": "course-of-action--95ef6587-c787-4051-b664-b5e8ca753c20",
+            "modified": "2021-06-24T00:00:00.000Z",
+            "name": "coa-120-2",
+            "object_marking_refs": [
+                "marking-definition--17d82bb2-eeeb-4898-bda5-3ddbcd2b799d"
+            ],
+            "spec_version": "2.1",
+            "type": "course-of-action",
+            "x_capec_version": "3.6"
+        }
+    ],
+    "type": "bundle"
+}

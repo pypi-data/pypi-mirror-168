@@ -1,0 +1,27 @@
+{
+    "type": "bundle",
+    "id": "bundle--0b068242-dba7-48ab-ba60-645c1b89afbf",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "modified": "2020-01-31T12:39:48.118Z",
+            "name": "Network Share Connection Removal",
+            "created": "2017-05-31T21:31:38.350Z",
+            "id": "attack-pattern--e7eab98d-ae11-4491-bd28-a53ba875865a",
+            "revoked": true,
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1126",
+                    "external_id": "T1126",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Technet Net Use",
+                    "description": "Microsoft. (n.d.). Net Use. Retrieved November 25, 2016.",
+                    "url": "https://technet.microsoft.com/bb490717.aspx"
+                }
+            ]
+        }
+    ]
+}

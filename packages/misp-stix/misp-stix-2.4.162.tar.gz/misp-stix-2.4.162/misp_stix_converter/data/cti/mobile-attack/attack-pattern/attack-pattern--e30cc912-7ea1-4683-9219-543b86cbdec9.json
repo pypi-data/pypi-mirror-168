@@ -1,0 +1,23 @@
+{
+    "type": "bundle",
+    "id": "bundle--5aec035c-244e-4ee8-83dc-2854d216a8f0",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "id": "attack-pattern--e30cc912-7ea1-4683-9219-543b86cbdec9",
+            "modified": "2018-10-17T01:05:10.701Z",
+            "revoked": true,
+            "name": "Fake Developer Accounts",
+            "external_references": [
+                {
+                    "source_name": "mitre-mobile-attack",
+                    "url": "https://attack.mitre.org/techniques/T1442",
+                    "external_id": "T1442"
+                }
+            ],
+            "created": "2017-10-25T14:48:28.786Z",
+            "type": "attack-pattern",
+            "x_mitre_old_attack_id": "MOB-T1045"
+        }
+    ]
+}

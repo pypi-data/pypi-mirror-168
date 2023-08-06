@@ -1,0 +1,20 @@
+{
+    "id": "bundle--90609c1d-fecf-4a45-8b3f-cd95b50e7e6c",
+    "objects": [
+        {
+            "created": "2017-01-12T00:00:00.000Z",
+            "created_by_ref": "identity--e50ab59c-5c4f-4d40-bf6a-d58418d89bcd",
+            "description": "Implement Secure BGP (S-BGP protocol), which improves authorization and authentication capabilities based on public-key cryptography.",
+            "id": "course-of-action--1c733d77-23ad-4455-b854-996ea0d64125",
+            "modified": "2020-12-17T00:00:00.000Z",
+            "name": "coa-584-1",
+            "object_marking_refs": [
+                "marking-definition--17d82bb2-eeeb-4898-bda5-3ddbcd2b799d"
+            ],
+            "spec_version": "2.1",
+            "type": "course-of-action",
+            "x_capec_version": "3.6"
+        }
+    ],
+    "type": "bundle"
+}

@@ -1,0 +1,22 @@
+{
+    "type": "bundle",
+    "id": "bundle--6c01bbab-f042-4f83-b74d-c2574b472c35",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-10T18:34:39.665Z",
+            "name": "Service Execution",
+            "created": "2017-05-31T21:30:36.550Z",
+            "id": "attack-pattern--f44731de-ea9f-406d-9b83-30ecbb9b4392",
+            "revoked": true,
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1035",
+                    "external_id": "T1035",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        }
+    ]
+}

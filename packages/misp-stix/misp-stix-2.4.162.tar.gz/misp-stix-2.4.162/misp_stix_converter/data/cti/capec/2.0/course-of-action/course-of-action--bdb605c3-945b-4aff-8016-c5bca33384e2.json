@@ -1,0 +1,20 @@
+{
+    "id": "bundle--6cfafcbc-0ffd-4d7d-b52a-3b6985db5298",
+    "objects": [
+        {
+            "created": "2014-06-23T00:00:00.000Z",
+            "created_by_ref": "identity--e50ab59c-5c4f-4d40-bf6a-d58418d89bcd",
+            "description": "Implementation: Ensure the web server implements all relevant security patches, many exploitable buffer overflows are fixed in patches issued for the software.",
+            "id": "course-of-action--bdb605c3-945b-4aff-8016-c5bca33384e2",
+            "modified": "2021-06-24T00:00:00.000Z",
+            "name": "coa-31-3",
+            "object_marking_refs": [
+                "marking-definition--17d82bb2-eeeb-4898-bda5-3ddbcd2b799d"
+            ],
+            "type": "course-of-action",
+            "x_capec_version": "3.6"
+        }
+    ],
+    "spec_version": "2.0",
+    "type": "bundle"
+}

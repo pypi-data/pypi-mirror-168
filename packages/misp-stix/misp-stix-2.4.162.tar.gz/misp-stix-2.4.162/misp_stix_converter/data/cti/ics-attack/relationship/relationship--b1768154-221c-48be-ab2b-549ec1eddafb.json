@@ -1,0 +1,21 @@
+{
+    "type": "bundle",
+    "id": "bundle--f0260297-9551-4f9a-b1fb-56babc33c956",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "target_ref": "attack-pattern--2900bbd8-308a-4274-b074-5b8bde8347bc",
+            "source_ref": "course-of-action--1e7ccfc0-94c8-496e-8d27-032120892291",
+            "modified": "2020-09-29T18:58:17.429Z",
+            "id": "relationship--b1768154-221c-48be-ab2b-549ec1eddafb",
+            "type": "relationship",
+            "created": "2020-09-21T17:59:24.739Z",
+            "relationship_type": "mitigates",
+            "description": "Segment operational assets and their management devices based on their functional role within the process. Enabling more strict isolation to more critical control and operational information within the control environment.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ]
+        }
+    ]
+}

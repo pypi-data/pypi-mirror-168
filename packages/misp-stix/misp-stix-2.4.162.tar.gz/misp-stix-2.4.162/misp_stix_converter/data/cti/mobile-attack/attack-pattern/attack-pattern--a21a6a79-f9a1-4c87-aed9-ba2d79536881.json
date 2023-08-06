@@ -1,0 +1,23 @@
+{
+    "type": "bundle",
+    "id": "bundle--2a23b649-5e55-4624-9cfa-8d311c0c68bd",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "id": "attack-pattern--a21a6a79-f9a1-4c87-aed9-ba2d79536881",
+            "modified": "2018-10-17T01:05:10.700Z",
+            "revoked": true,
+            "name": "Stolen Developer Credentials or Signing Keys",
+            "external_references": [
+                {
+                    "source_name": "mitre-mobile-attack",
+                    "url": "https://attack.mitre.org/techniques/T1441",
+                    "external_id": "T1441"
+                }
+            ],
+            "created": "2017-10-25T14:48:05.928Z",
+            "type": "attack-pattern",
+            "x_mitre_old_attack_id": "MOB-T1044"
+        }
+    ]
+}
