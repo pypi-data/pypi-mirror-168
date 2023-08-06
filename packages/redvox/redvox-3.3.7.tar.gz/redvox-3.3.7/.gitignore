@@ -1,0 +1,13 @@
+.idea/
+build/
+dist/
+redvox.egg-info/
+*.pyc
+*.iml
+*.orig
+*.jpg
+*.jpeg
+.mypy_cache
+.coverage
+htmlcov/
+.venv

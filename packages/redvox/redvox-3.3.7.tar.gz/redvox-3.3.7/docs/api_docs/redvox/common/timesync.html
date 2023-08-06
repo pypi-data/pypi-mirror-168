@@ -1,0 +1,2252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>redvox.common.timesync API documentation</title>
+<meta name="description" content="Modules for extracting time synchronization statistics for API 900 and 1000 data.
+Currently uses API M packets due to versatility of the packet.
+Also …" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>redvox.common.timesync</code></h1>
+</header>
+<section id="section-intro">
+<p>Modules for extracting time synchronization statistics for API 900 and 1000 data.
+Currently uses API M packets due to versatility of the packet.
+Also includes functions for correcting time arrays.
+ALL timestamps in microseconds unless otherwise stated</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+Modules for extracting time synchronization statistics for API 900 and 1000 data.
+Currently uses API M packets due to versatility of the packet.
+Also includes functions for correcting time arrays.
+ALL timestamps in microseconds unless otherwise stated
+&#34;&#34;&#34;
+
+from functools import reduce
+from typing import List, Optional, Union
+from pathlib import Path
+import os
+
+# noinspection Mypy
+import numpy as np
+import pyarrow as pa
+import pyarrow.dataset as ds
+
+import redvox.common.timesync_io as io
+import redvox.api900.lib.api900_pb2 as api900_pb2
+from redvox.api1000.proto.redvox_api_m_pb2 import RedvoxPacketM
+from redvox.api900.lib.api900_pb2 import RedvoxPacket
+import redvox.api900.reader_utils as util_900
+from redvox.common.offset_model import OffsetModel
+from redvox.common import (
+    tri_message_stats as tms,
+)
+
+
+class TimeSync:
+    &#34;&#34;&#34;
+    Stores latencies, offsets, and other timesync related information about a single station
+    ALL timestamps in microseconds unless otherwise stated
+    Timestamps are never updated from the raw values provided from the data
+
+    Properties:
+        _time_sync_exchanges_list: list of lists, timestamps that form the time sync exchanges, default empty list
+
+        _latencies: np.ndarray, calculated latencies of the exchanges.  Must be two equal length arrays,
+        default empty np.ndarray
+
+        _best_latency: float, best latency of the data, default np.nan
+
+        _mean_latency: float, mean latency, default np.nan
+
+        _latency_std: float, standard deviation of latencies, default np.nan
+
+        _offsets: np.ndarray, calculated offsets of the exchanges.  Must be two equal length arrays,
+        default empty np.ndarray
+
+        _best_offset: float, best offset of the data, default 0.0
+
+        _mean_offset: float, mean offset, default np.nan
+
+        _offset_std: float, standard deviation of offsets, default np.nan
+
+        _data_start: float, start timestamp of the data, default np.nan
+
+        _data_end: float, end timestamp of the data, default np.nan
+
+        _best_latency_index: int, index in latencies/sync exchanges array that contains the best latency,
+        default -1
+
+        _best_msg_array_index: int, indicates which latency array has the best latency.
+        Must be 1 or 3, other values are invalid.  Default 0
+
+        _offset_model: OffsetModel, used to correct timestamps.
+
+        _arrow_dir: str, directory to save arrow file in, default &#34;.&#34; (current dir)
+
+        _arrow_file: str, base name of file to save data as, default &#34;timesync&#34;
+    &#34;&#34;&#34;
+
+    def __init__(
+            self,
+            time_sync_exchanges_list: Optional[List[float]] = None,
+            latencies: Optional[np.ndarray] = None,
+            best_latency: float = np.nan,
+            mean_latency: float = np.nan,
+            latency_std: float = np.nan,
+            offsets: Optional[np.ndarray] = None,
+            best_offset: float = 0.0,
+            mean_offset: float = np.nan,
+            offset_std: float = np.nan,
+            data_start: float = np.nan,
+            data_end: float = np.nan,
+            best_latency_index: Optional[int] = None,
+            best_array_index: int = 0,
+            arrow_dir: str = &#34;.&#34;,
+            arrow_file_name: str = &#34;timesync&#34;
+    ):
+        &#34;&#34;&#34;
+        Initialize properties
+
+        :param time_sync_exchanges_list: optional timesync exchanges of the packet as a flat list, default None
+        :param latencies: optional arrays of latencies from exchanges; must be two equal length arrays, default None
+        :param best_latency: the best latency of set, default np.nan
+        :param mean_latency: the mean of all latencies, default np.nan
+        :param latency_std: the standard deviation of all latencies, default np.nan
+        :param offsets: optional arrays of offsets from exchanges; must be two equal length arrays, default None
+        :param best_offset: the best offset of the packet, default 0.0
+        :param mean_offset: the mean of all offsets, default np.nan
+        :param offset_std: the standard deviation of all offsets, default np.nan
+        :param data_start: the start timestamp of the data, default np.nan
+        :param data_end: the end timestamp of the data, default np.nan
+        :param best_latency_index: optional index of best latency in latencies array, default None
+        :param best_array_index: index of best latency array; must be either 1 (first array) or 3 (second array),
+                                    any other value is invalid, default 0
+        :param arrow_dir: directory to save timesync data in, default &#34;.&#34;
+        :param arrow_file_name: name of file to save timesync data as.  do not include extensions.  default &#34;timesync&#34;
+        &#34;&#34;&#34;
+        self._latencies: np.ndarray = latencies
+        self._best_latency: float = best_latency
+        self._mean_latency: float = mean_latency
+        self._latency_std: float = latency_std
+        self._offsets: np.ndarray = offsets
+        self._best_offset: float = best_offset
+        self._mean_offset: float = mean_offset
+        self._offset_std: float = offset_std
+        self._best_latency_index: int = best_latency_index
+        self._best_msg_array_index: int = best_array_index
+        self._data_start: float = data_start
+        self._data_end: float = data_end
+        self.arrow_dir: str = arrow_dir
+        self.arrow_file: str = arrow_file_name
+
+        if time_sync_exchanges_list is None or len(time_sync_exchanges_list) &lt; 1:
+            self._time_sync_exchanges_list = [[], [], [], [], [], []]
+            self._best_exchange_index_list = []
+            self._offset_model: OffsetModel = OffsetModel.empty_model()
+        else:
+            self._time_sync_exchanges_list = np.transpose([
+                time_sync_exchanges_list[i: i + 6]
+                for i in range(0, len(time_sync_exchanges_list), 6)
+            ])
+            self._stats_from_exchanges()
+
+    def __repr__(self):
+        return f&#34;best_latency_index: {self._best_latency_index}, &#34; \
+               f&#34;best_latency: {self._best_latency}, &#34; \
+               f&#34;mean_latency: {self._mean_latency}, &#34; \
+               f&#34;latency_std: {self._latency_std}, &#34; \
+               f&#34;best_offset: {self._best_offset}, &#34; \
+               f&#34;mean_offset: {self._mean_offset}, &#34; \
+               f&#34;offset_std: {self._offset_std}&#34;
+
+    def __str__(self):
+        return f&#34;best_latency_index: {self._best_latency_index}, &#34; \
+               f&#34;best_latency: {self._best_latency}, &#34; \
+               f&#34;mean_latency: {self._mean_latency}, &#34; \
+               f&#34;latency_std: {self._latency_std}, &#34; \
+               f&#34;best_offset: {self._best_offset}, &#34; \
+               f&#34;mean_offset: {self._mean_offset}, &#34; \
+               f&#34;offset_std: {self._offset_std}&#34;
+
+    def as_dict(self) -&gt; dict:
+        &#34;&#34;&#34;
+        :return: TimeSync as a dictionary
+        &#34;&#34;&#34;
+        return {
+            &#34;best_latency_index&#34;: self._best_latency_index,
+            &#34;best_msg_array_index&#34;: self._best_msg_array_index,
+            &#34;best_latency&#34;: self._best_latency,
+            &#34;mean_latency&#34;: self._mean_latency,
+            &#34;latency_std&#34;: self._latency_std,
+            &#34;best_offset&#34;: self._best_offset,
+            &#34;mean_offset&#34;: self._mean_offset,
+            &#34;offset_std&#34;: self._offset_std,
+            &#34;data_start&#34;: self._data_start,
+            &#34;data_end&#34;: self._data_end,
+            &#34;arrow_dir&#34;: self.arrow_dir,
+            &#34;arrow_file_name&#34;: self.arrow_file
+        }
+
+    def to_json(self):
+        &#34;&#34;&#34;
+        :return: TimeSync as json string
+        &#34;&#34;&#34;
+        return io.to_json(self)
+
+    def to_json_file(self, file_name: Optional[str] = None) -&gt; Path:
+        &#34;&#34;&#34;
+        saves the timesync data as json and data in the same directory.
+
+        :param file_name: the optional base file name.  Do not include a file extension.
+                            If None, a default file name is created using this format:
+                            timesync.json
+        :return: path to json file
+        &#34;&#34;&#34;
+        return io.to_json_file(self, file_name)
+
+    @staticmethod
+    def from_json_file(file_path: str) -&gt; &#34;TimeSync&#34;:
+        &#34;&#34;&#34;
+        convert contents of json file to TimeSync data
+
+        :param file_path: full path of file to load data from.
+        :return: TimeSyncArrow object
+        &#34;&#34;&#34;
+        json_data = io.json_file_to_dict(file_path)
+        data = ds.dataset(os.path.join(json_data[&#34;arrow_dir&#34;], json_data[&#34;arrow_file_name&#34;] + &#34;.parquet&#34;),
+                          format=&#34;parquet&#34;, exclude_invalid_files=True).to_table()
+        result = TimeSync(None, np.array((data[&#34;latencies1&#34;], data[&#34;latencies3&#34;])),
+                          json_data[&#34;best_latency&#34;], json_data[&#34;mean_latency&#34;], json_data[&#34;latency_std&#34;],
+                          np.array((data[&#34;offsets1&#34;], data[&#34;offsets3&#34;])),
+                          json_data[&#34;best_offset&#34;], json_data[&#34;mean_offset&#34;], json_data[&#34;offset_std&#34;],
+                          json_data[&#34;data_start&#34;], json_data[&#34;data_end&#34;], json_data[&#34;best_latency_index&#34;],
+                          json_data[&#34;best_msg_array_index&#34;], json_data[&#34;arrow_dir&#34;], json_data[&#34;arrow_file_name&#34;])
+        result.set_sync_exchanges([data[&#34;a1&#34;].to_numpy(), data[&#34;a2&#34;].to_numpy(), data[&#34;a3&#34;].to_numpy(),
+                                   data[&#34;b1&#34;].to_numpy(), data[&#34;b2&#34;].to_numpy(), data[&#34;b3&#34;].to_numpy()])
+        return result
+
+    @staticmethod
+    def from_dict(ts_dict: dict, tse_data: List) -&gt; &#34;TimeSync&#34;:
+        &#34;&#34;&#34;
+        create TimeSync frp, dictionary
+
+        :param ts_dict: dictionary of metadata
+        :param tse_data: list of time sync exchanges
+        :return: TimeSync object
+        &#34;&#34;&#34;
+        return TimeSync(tse_data, ts_dict[&#34;best_latency&#34;], ts_dict[&#34;best_offset&#34;])
+
+    def data_as_pyarrow(self) -&gt; pa.Table:
+        &#34;&#34;&#34;
+        :return: convert timesync exchanges, latencies, and offsets into a pyarrow table
+        &#34;&#34;&#34;
+        return pa.Table.from_pydict({
+            &#34;a1&#34;: self._time_sync_exchanges_list[0],
+            &#34;a2&#34;: self._time_sync_exchanges_list[1],
+            &#34;a3&#34;: self._time_sync_exchanges_list[2],
+            &#34;b1&#34;: self._time_sync_exchanges_list[3],
+            &#34;b2&#34;: self._time_sync_exchanges_list[4],
+            &#34;b3&#34;: self._time_sync_exchanges_list[5],
+            &#34;latencies1&#34;: self._latencies[0],
+            &#34;latencies3&#34;: self._latencies[1],
+            &#34;offsets1&#34;: self._offsets[0],
+            &#34;offsets3&#34;: self._offsets[1]
+        })
+
+    def _stats_from_exchanges(self):
+        &#34;&#34;&#34;
+        Compute the tri-message stats from the data
+        &#34;&#34;&#34;
+        if self.num_tri_messages() &lt; 1:
+            self._latencies = np.array(([], []))
+            self._offsets = np.array(([], []))
+            self._best_latency = np.nan
+            self._mean_latency = np.nan
+            self._latency_std = np.nan
+            self._best_offset = 0
+            self._mean_offset = np.nan
+            self._offset_std = np.nan
+            self._best_latency_index = -1
+            self._best_msg_array_index = 0
+            self._offset_model = OffsetModel.empty_model()
+            self._best_exchange_index_list = []
+        elif self._latencies is None:
+            # compute tri message data from time sync exchanges
+            tse = tms.TriMessageStats(
+                &#34;&#34;,
+                np.array(self._time_sync_exchanges_list[0]),
+                np.array(self._time_sync_exchanges_list[1]),
+                np.array(self._time_sync_exchanges_list[2]),
+                np.array(self._time_sync_exchanges_list[3]),
+                np.array(self._time_sync_exchanges_list[4]),
+                np.array(self._time_sync_exchanges_list[5]),
+            )
+            self._latencies = np.array((tse.latency1, tse.latency3))
+            if self._offsets is None:
+                self._offsets = np.array((tse.offset1, tse.offset3))
+            # Compute the statistics for latency and offset
+            if np.isnan(self._mean_latency):
+                self._mean_latency = np.mean([*self._latencies[0], *self._latencies[1]])
+            if np.isnan(self._latency_std):
+                self._latency_std = np.std([*self._latencies[0], *self._latencies[1]])
+            if np.isnan(self._mean_offset):
+                self._mean_offset = np.mean([*self._offsets[0], *self._offsets[1]])
+            if np.isnan(self._offset_std):
+                self._offset_std = np.std([*self._offsets[0], *self._offsets[1]])
+            self._best_exchange_index_list = tse.best_latency_per_exchange_index_array
+            self._best_latency_index = tse.best_latency_index
+            self._best_msg_array_index = tse.best_latency_array_index
+            # if best_latency is np.nan, set to best computed latency
+            if np.isnan(self._best_latency):
+                self._best_latency = tse.best_latency
+                self._best_offset = tse.best_offset
+            # if best_offset is still default value, use the best computed offset
+            elif self._best_offset == 0:
+                self._best_offset = tse.best_offset
+            if not np.isnan(self._data_start) and not np.isnan(self._data_end):
+                self._offset_model = OffsetModel(self._latencies.flatten(), self._offsets.flatten(),
+                                                 self.get_device_exchanges_timestamps(),
+                                                 self._data_start, self._data_end)
+
+    def get_exchange_timestamps(self, index: int) -&gt; np.array:
+        &#34;&#34;&#34;
+        :param index: index of timestamps to return.  0, 1, 2 are server timestamps.  3, 4, 5 are device
+                        any value not from 0 to 5 will be converted to 0
+        :return: timestamps from the chosen index.
+        &#34;&#34;&#34;
+        if index &lt; 0 or index &gt; 5:
+            index = 0
+        return self._time_sync_exchanges_list[index]
+
+    def get_device_exchanges_timestamps(self) -&gt; np.array:
+        &#34;&#34;&#34;
+        :return: timestamps of sync exchanges initiated by the device
+        &#34;&#34;&#34;
+        return np.concatenate((self._time_sync_exchanges_list[3].tolist(), self._time_sync_exchanges_list[5].tolist()))
+
+    def num_tri_messages(self) -&gt; int:
+        &#34;&#34;&#34;
+        :return: number of tri-message exchanges
+        &#34;&#34;&#34;
+        return np.size(self._time_sync_exchanges_list, 1)
+
+    def get_best_latency_timestamp(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: timestamp of best latency, or np.nan if no best latency.
+        &#34;&#34;&#34;
+        if self._best_msg_array_index == 1:
+            return self._time_sync_exchanges_list[3][self._best_latency_index]
+        elif self._best_msg_array_index == 3:
+            return self._time_sync_exchanges_list[5][self._best_latency_index]
+        else:
+            return np.nan
+
+    def append_timesync_arrow(self, new_data: &#34;TimeSync&#34;):
+        &#34;&#34;&#34;
+        adds timesync data from new_data to current
+
+        :param new_data: another TimeSyncArrow object
+        &#34;&#34;&#34;
+        self._time_sync_exchanges_list[0] = np.append(self._time_sync_exchanges_list[0],
+                                                      new_data._time_sync_exchanges_list[0])
+        self._time_sync_exchanges_list[1] = np.append(self._time_sync_exchanges_list[1],
+                                                      new_data._time_sync_exchanges_list[1])
+        self._time_sync_exchanges_list[2] = np.append(self._time_sync_exchanges_list[2],
+                                                      new_data._time_sync_exchanges_list[2])
+        self._time_sync_exchanges_list[3] = np.append(self._time_sync_exchanges_list[3],
+                                                      new_data._time_sync_exchanges_list[3])
+        self._time_sync_exchanges_list[4] = np.append(self._time_sync_exchanges_list[4],
+                                                      new_data._time_sync_exchanges_list[4])
+        self._time_sync_exchanges_list[5] = np.append(self._time_sync_exchanges_list[5],
+                                                      new_data._time_sync_exchanges_list[5])
+        if np.isnan(self._data_start):
+            self._data_start = new_data._data_start
+        elif not np.isnan(new_data._data_start):
+            self._data_start = np.min([self._data_start, new_data._data_start])
+        if np.isnan(self._data_end):
+            self._data_end = new_data._data_end
+        elif not np.isnan(new_data._data_end):
+            self._data_end = np.max([self._data_end, new_data._data_end])
+        if len(self._time_sync_exchanges_list[0]) &gt; 0:
+            tse = tms.TriMessageStats(
+                &#34;&#34;,
+                np.array(self._time_sync_exchanges_list[0]),
+                np.array(self._time_sync_exchanges_list[1]),
+                np.array(self._time_sync_exchanges_list[2]),
+                np.array(self._time_sync_exchanges_list[3]),
+                np.array(self._time_sync_exchanges_list[4]),
+                np.array(self._time_sync_exchanges_list[5]),
+            )
+            self._latencies = np.array((tse.latency1, tse.latency3))
+            self._offsets = np.array((tse.offset1, tse.offset3))
+            self._mean_latency = np.mean([*self._latencies[0], *self._latencies[1]])
+            self._latency_std = np.std([*self._latencies[0], *self._latencies[1]])
+            self._mean_offset = np.mean([*self._offsets[0], *self._offsets[1]])
+            self._offset_std = np.std([*self._offsets[0], *self._offsets[1]])
+            self._best_latency_index = tse.best_latency_index
+            self._best_msg_array_index = tse.best_latency_array_index
+            self._best_latency = tse.best_latency
+            self._best_offset = tse.best_offset
+            self._best_exchange_index_list = tse.best_latency_per_exchange_index_array
+            self._offset_model = OffsetModel(self._latencies.flatten(), self._offsets.flatten(),
+                                             self.get_device_exchanges_timestamps(),
+                                             self._data_start, self._data_end)
+
+    def from_raw_packets(self, packets: List[Union[RedvoxPacketM, RedvoxPacket]]) -&gt; &#39;TimeSync&#39;:
+        &#34;&#34;&#34;
+        converts packets into TimeSyncData objects, then performs analysis
+
+        :param packets: list of RedvoxPacketM and RedvoxPacket to convert
+        :return: modified version of self
+        &#34;&#34;&#34;
+        all_exchanges: List[float] = []
+        if isinstance(packets[0], RedvoxPacketM):
+            self._data_start = packets[0].timing_information.packet_start_mach_timestamp
+        else:
+            self._data_start = packets[0].app_file_start_timestamp_machine
+        if isinstance(packets[-1], RedvoxPacketM):
+            self._data_end = packets[-1].timing_information.packet_end_mach_timestamp
+        else:
+            self._data_end = packets[-1].app_file_start_timestamp_machine
+
+        packet: Union[RedvoxPacketM, RedvoxPacket]
+        for packet in packets:
+            if isinstance(packet, RedvoxPacketM):
+                all_exchanges.extend(reduce(lambda acc, ex: acc + [ex.a1, ex.a2, ex.a3, ex.b1, ex.b2, ex.b3],
+                                            packet.timing_information.synch_exchanges,
+                                            []))
+            else:
+                # Get synch exchanges
+                ch: api900_pb2.UnevenlySampledChannel
+                for ch in packet.unevenly_sampled_channels:
+                    if api900_pb2.TIME_SYNCHRONIZATION in ch.channel_types:
+                        all_exchanges.extend(util_900.extract_payload(ch))
+
+        if len(all_exchanges) &gt; 0:
+            self._time_sync_exchanges_list = np.transpose([
+                all_exchanges[i: i + 6] for i in range(0, len(all_exchanges), 6)
+            ])
+            tse = tms.TriMessageStats(
+                &#34;&#34;,
+                np.array(self._time_sync_exchanges_list[0]),
+                np.array(self._time_sync_exchanges_list[1]),
+                np.array(self._time_sync_exchanges_list[2]),
+                np.array(self._time_sync_exchanges_list[3]),
+                np.array(self._time_sync_exchanges_list[4]),
+                np.array(self._time_sync_exchanges_list[5]),
+            )
+            self._latencies = np.array((tse.latency1, tse.latency3))
+            self._offsets = np.array((tse.offset1, tse.offset3))
+            # Compute the statistics for latency and offset
+            self._mean_latency = np.mean([*self._latencies[0], *self._latencies[1]])
+            self._latency_std = np.std([*self._latencies[0], *self._latencies[1]])
+            self._mean_offset = np.mean([*self._offsets[0], *self._offsets[1]])
+            self._offset_std = np.std([*self._offsets[0], *self._offsets[1]])
+            self._best_latency_index = tse.best_latency_index
+            self._best_msg_array_index = tse.best_latency_array_index
+            self._best_latency = tse.best_latency
+            self._best_offset = tse.best_offset
+            self._best_exchange_index_list = tse.best_latency_per_exchange_index_array
+            self._offset_model = OffsetModel(self._latencies.flatten(), self._offsets.flatten(),
+                                             self.get_device_exchanges_timestamps(),
+                                             self._data_start, self._data_end)
+        else:
+            self._latencies = np.array(([], []))
+            self._offsets = np.array(([], []))
+            self._best_latency = np.nan
+            self._mean_latency = np.nan
+            self._latency_std = np.nan
+            self._best_offset = 0
+            self._mean_offset = np.nan
+            self._offset_std = np.nan
+            self._best_latency_index = -1
+            self._best_msg_array_index = 0
+            self._best_exchange_index_list = []
+            self._offset_model = OffsetModel.empty_model()
+        return self
+
+    def sync_exchanges(self) -&gt; np.ndarray:
+        &#34;&#34;&#34;
+        :return: time sync exchanges
+        &#34;&#34;&#34;
+        return self._time_sync_exchanges_list
+
+    def set_sync_exchanges(self, exchanges: List[np.array]):
+        &#34;&#34;&#34;
+        Set the sync exchanges to be the list of exchanges.
+        The list of exchanges must have 6 np.arrays, each equal length, and the lists must be in the order of:
+        Server1, Server2, Server3, Device1, Device2, Device3
+
+        :param exchanges: 6 lists of equal length of timestamps
+        &#34;&#34;&#34;
+        self._time_sync_exchanges_list = exchanges
+
+    def latencies(self) -&gt; np.ndarray:
+        &#34;&#34;&#34;
+        :return: latencies as two np.arrays
+        &#34;&#34;&#34;
+        return self._latencies
+
+    def best_latency(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: best latency of data
+        &#34;&#34;&#34;
+        return self._best_latency
+
+    def mean_latency(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: mean latency of data
+        &#34;&#34;&#34;
+        return self._mean_latency
+
+    def latency_std(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: standard deviation of latency
+        &#34;&#34;&#34;
+        return self._latency_std
+
+    def best_latency_index(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: index/position of best latency
+        &#34;&#34;&#34;
+        return self._best_latency_index
+
+    def best_latency_per_exchange(self) -&gt; np.array:
+        &#34;&#34;&#34;
+        :return: the best latency per sync exchange as a numpy array
+        &#34;&#34;&#34;
+        return np.array([self._latencies[self._best_exchange_index_list[n]][n] for n in range(self.num_tri_messages())])
+
+    def offsets(self) -&gt; np.ndarray:
+        &#34;&#34;&#34;
+        :return: offsets as two np.arrays
+        &#34;&#34;&#34;
+        return self._offsets
+
+    def best_offset(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: best offset of data
+        &#34;&#34;&#34;
+        return self._best_offset
+
+    def mean_offset(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: mean offset of data
+        &#34;&#34;&#34;
+        return self._mean_offset
+
+    def offset_std(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: standard deviation of offset
+        &#34;&#34;&#34;
+        return self._offset_std
+
+    def best_offset_per_exchange(self) -&gt; np.array:
+        &#34;&#34;&#34;
+        :return: the best offset per sync exchange as a numpy array
+        &#34;&#34;&#34;
+        return np.array([self._offsets[self._best_exchange_index_list[n]][n] for n in range(self.num_tri_messages())])
+
+    def offset_model(self) -&gt; OffsetModel:
+        &#34;&#34;&#34;
+        :return: OffsetModel of the TimeSync
+        &#34;&#34;&#34;
+        return self._offset_model
+
+    def data_start_timestamp(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: timestamp of first data point
+        &#34;&#34;&#34;
+        return self._data_start
+
+    def data_end_timestamp(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: timestamp of last data point
+        &#34;&#34;&#34;
+        return self._data_end</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="redvox.common.timesync.RedvoxPacket"><code class="flex name class">
+<span>class <span class="ident">RedvoxPacket</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>google.protobuf.pyext._message.CMessage</li>
+<li>google.protobuf.message.Message</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="redvox.common.timesync.RedvoxPacket.DESCRIPTOR"><code class="name">var <span class="ident">DESCRIPTOR</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="redvox.common.timesync.RedvoxPacket.acquisition_server"><code class="name">var <span class="ident">acquisition_server</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.acquisition_server</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.api"><code class="name">var <span class="ident">api</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.api</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.app_file_start_timestamp_epoch_microseconds_utc"><code class="name">var <span class="ident">app_file_start_timestamp_epoch_microseconds_utc</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.app_file_start_timestamp_epoch_microseconds_utc</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.app_file_start_timestamp_machine"><code class="name">var <span class="ident">app_file_start_timestamp_machine</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.app_file_start_timestamp_machine</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.app_version"><code class="name">var <span class="ident">app_version</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.app_version</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.authenticated_email"><code class="name">var <span class="ident">authenticated_email</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.authenticated_email</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.authentication_server"><code class="name">var <span class="ident">authentication_server</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.authentication_server</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.authentication_token"><code class="name">var <span class="ident">authentication_token</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.authentication_token</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.battery_level_percent"><code class="name">var <span class="ident">battery_level_percent</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.battery_level_percent</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.device_make"><code class="name">var <span class="ident">device_make</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.device_make</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.device_model"><code class="name">var <span class="ident">device_model</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.device_model</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.device_os"><code class="name">var <span class="ident">device_os</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.device_os</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.device_os_version"><code class="name">var <span class="ident">device_os_version</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.device_os_version</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.device_temperature_c"><code class="name">var <span class="ident">device_temperature_c</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.device_temperature_c</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.evenly_sampled_channels"><code class="name">var <span class="ident">evenly_sampled_channels</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.evenly_sampled_channels</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.firebase_token"><code class="name">var <span class="ident">firebase_token</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.firebase_token</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.is_backfilled"><code class="name">var <span class="ident">is_backfilled</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.is_backfilled</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.is_private"><code class="name">var <span class="ident">is_private</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.is_private</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.is_scrambled"><code class="name">var <span class="ident">is_scrambled</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.is_scrambled</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.metadata"><code class="name">var <span class="ident">metadata</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.metadata</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.redvox_id"><code class="name">var <span class="ident">redvox_id</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.redvox_id</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.server_timestamp_epoch_microseconds_utc"><code class="name">var <span class="ident">server_timestamp_epoch_microseconds_utc</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.server_timestamp_epoch_microseconds_utc</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.time_synchronization_server"><code class="name">var <span class="ident">time_synchronization_server</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.time_synchronization_server</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.unevenly_sampled_channels"><code class="name">var <span class="ident">unevenly_sampled_channels</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.unevenly_sampled_channels</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacket.uuid"><code class="name">var <span class="ident">uuid</span></code></dt>
+<dd>
+<div class="desc"><p>Field RedvoxPacket.uuid</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM"><code class="flex name class">
+<span>class <span class="ident">RedvoxPacketM</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>google.protobuf.pyext._message.CMessage</li>
+<li>google.protobuf.message.Message</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="redvox.common.timesync.RedvoxPacketM.BYTE"><code class="name">var <span class="ident">BYTE</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.CENTIMETERS"><code class="name">var <span class="ident">CENTIMETERS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.DECIBEL"><code class="name">var <span class="ident">DECIBEL</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.DECIMAL_DEGREES"><code class="name">var <span class="ident">DECIMAL_DEGREES</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.DEGREES_CELSIUS"><code class="name">var <span class="ident">DEGREES_CELSIUS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.DESCRIPTOR"><code class="name">var <span class="ident">DESCRIPTOR</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.DoubleSamplePayload"><code class="name">var <span class="ident">DoubleSamplePayload</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.EventStream"><code class="name">var <span class="ident">EventStream</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.KILOPASCAL"><code class="name">var <span class="ident">KILOPASCAL</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.LSB_PLUS_MINUS_COUNTS"><code class="name">var <span class="ident">LSB_PLUS_MINUS_COUNTS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.LUX"><code class="name">var <span class="ident">LUX</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.METERS"><code class="name">var <span class="ident">METERS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.METERS_PER_SECOND"><code class="name">var <span class="ident">METERS_PER_SECOND</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.METERS_PER_SECOND_SQUARED"><code class="name">var <span class="ident">METERS_PER_SECOND_SQUARED</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.MICROAMPERES"><code class="name">var <span class="ident">MICROAMPERES</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.MICROSECONDS_SINCE_UNIX_EPOCH"><code class="name">var <span class="ident">MICROSECONDS_SINCE_UNIX_EPOCH</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.MICROTESLA"><code class="name">var <span class="ident">MICROTESLA</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.MetadataEntry"><code class="name">var <span class="ident">MetadataEntry</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.NORMALIZED_COUNTS"><code class="name">var <span class="ident">NORMALIZED_COUNTS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.PCM"><code class="name">var <span class="ident">PCM</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.PERCENTAGE"><code class="name">var <span class="ident">PERCENTAGE</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.RADIANS"><code class="name">var <span class="ident">RADIANS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.RADIANS_PER_SECOND"><code class="name">var <span class="ident">RADIANS_PER_SECOND</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.SamplePayload"><code class="name">var <span class="ident">SamplePayload</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.Sensors"><code class="name">var <span class="ident">Sensors</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.StationInformation"><code class="name">var <span class="ident">StationInformation</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.SummaryStatistics"><code class="name">var <span class="ident">SummaryStatistics</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.TimingInformation"><code class="name">var <span class="ident">TimingInformation</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.TimingPayload"><code class="name">var <span class="ident">TimingPayload</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.UNITLESS"><code class="name">var <span class="ident">UNITLESS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.UNKNOWN"><code class="name">var <span class="ident">UNKNOWN</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.Unit"><code class="name">var <span class="ident">Unit</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="redvox.common.timesync.RedvoxPacketM.api"><code class="name">var <span class="ident">api</span></code></dt>
+<dd>
+<div class="desc"><p>Field redvox_api_m.RedvoxPacketM.api</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.event_streams"><code class="name">var <span class="ident">event_streams</span></code></dt>
+<dd>
+<div class="desc"><p>Field redvox_api_m.RedvoxPacketM.event_streams</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.metadata"><code class="name">var <span class="ident">metadata</span></code></dt>
+<dd>
+<div class="desc"><p>Field redvox_api_m.RedvoxPacketM.metadata</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.sensors"><code class="name">var <span class="ident">sensors</span></code></dt>
+<dd>
+<div class="desc"><p>Field redvox_api_m.RedvoxPacketM.sensors</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.station_information"><code class="name">var <span class="ident">station_information</span></code></dt>
+<dd>
+<div class="desc"><p>Field redvox_api_m.RedvoxPacketM.station_information</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.sub_api"><code class="name">var <span class="ident">sub_api</span></code></dt>
+<dd>
+<div class="desc"><p>Field redvox_api_m.RedvoxPacketM.sub_api</p></div>
+</dd>
+<dt id="redvox.common.timesync.RedvoxPacketM.timing_information"><code class="name">var <span class="ident">timing_information</span></code></dt>
+<dd>
+<div class="desc"><p>Field redvox_api_m.RedvoxPacketM.timing_information</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="redvox.common.timesync.TimeSync"><code class="flex name class">
+<span>class <span class="ident">TimeSync</span></span>
+<span>(</span><span>time_sync_exchanges_list: Optional[List[float]] = None, latencies: Optional[numpy.ndarray] = None, best_latency: float = nan, mean_latency: float = nan, latency_std: float = nan, offsets: Optional[numpy.ndarray] = None, best_offset: float = 0.0, mean_offset: float = nan, offset_std: float = nan, data_start: float = nan, data_end: float = nan, best_latency_index: Optional[int] = None, best_array_index: int = 0, arrow_dir: str = '.', arrow_file_name: str = 'timesync')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stores latencies, offsets, and other timesync related information about a single station
+ALL timestamps in microseconds unless otherwise stated
+Timestamps are never updated from the raw values provided from the data</p>
+<h2 id="properties">Properties</h2>
+<p>_time_sync_exchanges_list: list of lists, timestamps that form the time sync exchanges, default empty list</p>
+<p>_latencies: np.ndarray, calculated latencies of the exchanges.
+Must be two equal length arrays,
+default empty np.ndarray</p>
+<p>_best_latency: float, best latency of the data, default np.nan</p>
+<p>_mean_latency: float, mean latency, default np.nan</p>
+<p>_latency_std: float, standard deviation of latencies, default np.nan</p>
+<p>_offsets: np.ndarray, calculated offsets of the exchanges.
+Must be two equal length arrays,
+default empty np.ndarray</p>
+<p>_best_offset: float, best offset of the data, default 0.0</p>
+<p>_mean_offset: float, mean offset, default np.nan</p>
+<p>_offset_std: float, standard deviation of offsets, default np.nan</p>
+<p>_data_start: float, start timestamp of the data, default np.nan</p>
+<p>_data_end: float, end timestamp of the data, default np.nan</p>
+<p>_best_latency_index: int, index in latencies/sync exchanges array that contains the best latency,
+default -1</p>
+<p>_best_msg_array_index: int, indicates which latency array has the best latency.
+Must be 1 or 3, other values are invalid.
+Default 0</p>
+<p>_offset_model: OffsetModel, used to correct timestamps.</p>
+<p>_arrow_dir: str, directory to save arrow file in, default "." (current dir)</p>
+<p>_arrow_file: str, base name of file to save data as, default "timesync"</p>
+<p>Initialize properties</p>
+<p>:param time_sync_exchanges_list: optional timesync exchanges of the packet as a flat list, default None
+:param latencies: optional arrays of latencies from exchanges; must be two equal length arrays, default None
+:param best_latency: the best latency of set, default np.nan
+:param mean_latency: the mean of all latencies, default np.nan
+:param latency_std: the standard deviation of all latencies, default np.nan
+:param offsets: optional arrays of offsets from exchanges; must be two equal length arrays, default None
+:param best_offset: the best offset of the packet, default 0.0
+:param mean_offset: the mean of all offsets, default np.nan
+:param offset_std: the standard deviation of all offsets, default np.nan
+:param data_start: the start timestamp of the data, default np.nan
+:param data_end: the end timestamp of the data, default np.nan
+:param best_latency_index: optional index of best latency in latencies array, default None
+:param best_array_index: index of best latency array; must be either 1 (first array) or 3 (second array),
+any other value is invalid, default 0
+:param arrow_dir: directory to save timesync data in, default "."
+:param arrow_file_name: name of file to save timesync data as.
+do not include extensions.
+default "timesync"</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TimeSync:
+    &#34;&#34;&#34;
+    Stores latencies, offsets, and other timesync related information about a single station
+    ALL timestamps in microseconds unless otherwise stated
+    Timestamps are never updated from the raw values provided from the data
+
+    Properties:
+        _time_sync_exchanges_list: list of lists, timestamps that form the time sync exchanges, default empty list
+
+        _latencies: np.ndarray, calculated latencies of the exchanges.  Must be two equal length arrays,
+        default empty np.ndarray
+
+        _best_latency: float, best latency of the data, default np.nan
+
+        _mean_latency: float, mean latency, default np.nan
+
+        _latency_std: float, standard deviation of latencies, default np.nan
+
+        _offsets: np.ndarray, calculated offsets of the exchanges.  Must be two equal length arrays,
+        default empty np.ndarray
+
+        _best_offset: float, best offset of the data, default 0.0
+
+        _mean_offset: float, mean offset, default np.nan
+
+        _offset_std: float, standard deviation of offsets, default np.nan
+
+        _data_start: float, start timestamp of the data, default np.nan
+
+        _data_end: float, end timestamp of the data, default np.nan
+
+        _best_latency_index: int, index in latencies/sync exchanges array that contains the best latency,
+        default -1
+
+        _best_msg_array_index: int, indicates which latency array has the best latency.
+        Must be 1 or 3, other values are invalid.  Default 0
+
+        _offset_model: OffsetModel, used to correct timestamps.
+
+        _arrow_dir: str, directory to save arrow file in, default &#34;.&#34; (current dir)
+
+        _arrow_file: str, base name of file to save data as, default &#34;timesync&#34;
+    &#34;&#34;&#34;
+
+    def __init__(
+            self,
+            time_sync_exchanges_list: Optional[List[float]] = None,
+            latencies: Optional[np.ndarray] = None,
+            best_latency: float = np.nan,
+            mean_latency: float = np.nan,
+            latency_std: float = np.nan,
+            offsets: Optional[np.ndarray] = None,
+            best_offset: float = 0.0,
+            mean_offset: float = np.nan,
+            offset_std: float = np.nan,
+            data_start: float = np.nan,
+            data_end: float = np.nan,
+            best_latency_index: Optional[int] = None,
+            best_array_index: int = 0,
+            arrow_dir: str = &#34;.&#34;,
+            arrow_file_name: str = &#34;timesync&#34;
+    ):
+        &#34;&#34;&#34;
+        Initialize properties
+
+        :param time_sync_exchanges_list: optional timesync exchanges of the packet as a flat list, default None
+        :param latencies: optional arrays of latencies from exchanges; must be two equal length arrays, default None
+        :param best_latency: the best latency of set, default np.nan
+        :param mean_latency: the mean of all latencies, default np.nan
+        :param latency_std: the standard deviation of all latencies, default np.nan
+        :param offsets: optional arrays of offsets from exchanges; must be two equal length arrays, default None
+        :param best_offset: the best offset of the packet, default 0.0
+        :param mean_offset: the mean of all offsets, default np.nan
+        :param offset_std: the standard deviation of all offsets, default np.nan
+        :param data_start: the start timestamp of the data, default np.nan
+        :param data_end: the end timestamp of the data, default np.nan
+        :param best_latency_index: optional index of best latency in latencies array, default None
+        :param best_array_index: index of best latency array; must be either 1 (first array) or 3 (second array),
+                                    any other value is invalid, default 0
+        :param arrow_dir: directory to save timesync data in, default &#34;.&#34;
+        :param arrow_file_name: name of file to save timesync data as.  do not include extensions.  default &#34;timesync&#34;
+        &#34;&#34;&#34;
+        self._latencies: np.ndarray = latencies
+        self._best_latency: float = best_latency
+        self._mean_latency: float = mean_latency
+        self._latency_std: float = latency_std
+        self._offsets: np.ndarray = offsets
+        self._best_offset: float = best_offset
+        self._mean_offset: float = mean_offset
+        self._offset_std: float = offset_std
+        self._best_latency_index: int = best_latency_index
+        self._best_msg_array_index: int = best_array_index
+        self._data_start: float = data_start
+        self._data_end: float = data_end
+        self.arrow_dir: str = arrow_dir
+        self.arrow_file: str = arrow_file_name
+
+        if time_sync_exchanges_list is None or len(time_sync_exchanges_list) &lt; 1:
+            self._time_sync_exchanges_list = [[], [], [], [], [], []]
+            self._best_exchange_index_list = []
+            self._offset_model: OffsetModel = OffsetModel.empty_model()
+        else:
+            self._time_sync_exchanges_list = np.transpose([
+                time_sync_exchanges_list[i: i + 6]
+                for i in range(0, len(time_sync_exchanges_list), 6)
+            ])
+            self._stats_from_exchanges()
+
+    def __repr__(self):
+        return f&#34;best_latency_index: {self._best_latency_index}, &#34; \
+               f&#34;best_latency: {self._best_latency}, &#34; \
+               f&#34;mean_latency: {self._mean_latency}, &#34; \
+               f&#34;latency_std: {self._latency_std}, &#34; \
+               f&#34;best_offset: {self._best_offset}, &#34; \
+               f&#34;mean_offset: {self._mean_offset}, &#34; \
+               f&#34;offset_std: {self._offset_std}&#34;
+
+    def __str__(self):
+        return f&#34;best_latency_index: {self._best_latency_index}, &#34; \
+               f&#34;best_latency: {self._best_latency}, &#34; \
+               f&#34;mean_latency: {self._mean_latency}, &#34; \
+               f&#34;latency_std: {self._latency_std}, &#34; \
+               f&#34;best_offset: {self._best_offset}, &#34; \
+               f&#34;mean_offset: {self._mean_offset}, &#34; \
+               f&#34;offset_std: {self._offset_std}&#34;
+
+    def as_dict(self) -&gt; dict:
+        &#34;&#34;&#34;
+        :return: TimeSync as a dictionary
+        &#34;&#34;&#34;
+        return {
+            &#34;best_latency_index&#34;: self._best_latency_index,
+            &#34;best_msg_array_index&#34;: self._best_msg_array_index,
+            &#34;best_latency&#34;: self._best_latency,
+            &#34;mean_latency&#34;: self._mean_latency,
+            &#34;latency_std&#34;: self._latency_std,
+            &#34;best_offset&#34;: self._best_offset,
+            &#34;mean_offset&#34;: self._mean_offset,
+            &#34;offset_std&#34;: self._offset_std,
+            &#34;data_start&#34;: self._data_start,
+            &#34;data_end&#34;: self._data_end,
+            &#34;arrow_dir&#34;: self.arrow_dir,
+            &#34;arrow_file_name&#34;: self.arrow_file
+        }
+
+    def to_json(self):
+        &#34;&#34;&#34;
+        :return: TimeSync as json string
+        &#34;&#34;&#34;
+        return io.to_json(self)
+
+    def to_json_file(self, file_name: Optional[str] = None) -&gt; Path:
+        &#34;&#34;&#34;
+        saves the timesync data as json and data in the same directory.
+
+        :param file_name: the optional base file name.  Do not include a file extension.
+                            If None, a default file name is created using this format:
+                            timesync.json
+        :return: path to json file
+        &#34;&#34;&#34;
+        return io.to_json_file(self, file_name)
+
+    @staticmethod
+    def from_json_file(file_path: str) -&gt; &#34;TimeSync&#34;:
+        &#34;&#34;&#34;
+        convert contents of json file to TimeSync data
+
+        :param file_path: full path of file to load data from.
+        :return: TimeSyncArrow object
+        &#34;&#34;&#34;
+        json_data = io.json_file_to_dict(file_path)
+        data = ds.dataset(os.path.join(json_data[&#34;arrow_dir&#34;], json_data[&#34;arrow_file_name&#34;] + &#34;.parquet&#34;),
+                          format=&#34;parquet&#34;, exclude_invalid_files=True).to_table()
+        result = TimeSync(None, np.array((data[&#34;latencies1&#34;], data[&#34;latencies3&#34;])),
+                          json_data[&#34;best_latency&#34;], json_data[&#34;mean_latency&#34;], json_data[&#34;latency_std&#34;],
+                          np.array((data[&#34;offsets1&#34;], data[&#34;offsets3&#34;])),
+                          json_data[&#34;best_offset&#34;], json_data[&#34;mean_offset&#34;], json_data[&#34;offset_std&#34;],
+                          json_data[&#34;data_start&#34;], json_data[&#34;data_end&#34;], json_data[&#34;best_latency_index&#34;],
+                          json_data[&#34;best_msg_array_index&#34;], json_data[&#34;arrow_dir&#34;], json_data[&#34;arrow_file_name&#34;])
+        result.set_sync_exchanges([data[&#34;a1&#34;].to_numpy(), data[&#34;a2&#34;].to_numpy(), data[&#34;a3&#34;].to_numpy(),
+                                   data[&#34;b1&#34;].to_numpy(), data[&#34;b2&#34;].to_numpy(), data[&#34;b3&#34;].to_numpy()])
+        return result
+
+    @staticmethod
+    def from_dict(ts_dict: dict, tse_data: List) -&gt; &#34;TimeSync&#34;:
+        &#34;&#34;&#34;
+        create TimeSync frp, dictionary
+
+        :param ts_dict: dictionary of metadata
+        :param tse_data: list of time sync exchanges
+        :return: TimeSync object
+        &#34;&#34;&#34;
+        return TimeSync(tse_data, ts_dict[&#34;best_latency&#34;], ts_dict[&#34;best_offset&#34;])
+
+    def data_as_pyarrow(self) -&gt; pa.Table:
+        &#34;&#34;&#34;
+        :return: convert timesync exchanges, latencies, and offsets into a pyarrow table
+        &#34;&#34;&#34;
+        return pa.Table.from_pydict({
+            &#34;a1&#34;: self._time_sync_exchanges_list[0],
+            &#34;a2&#34;: self._time_sync_exchanges_list[1],
+            &#34;a3&#34;: self._time_sync_exchanges_list[2],
+            &#34;b1&#34;: self._time_sync_exchanges_list[3],
+            &#34;b2&#34;: self._time_sync_exchanges_list[4],
+            &#34;b3&#34;: self._time_sync_exchanges_list[5],
+            &#34;latencies1&#34;: self._latencies[0],
+            &#34;latencies3&#34;: self._latencies[1],
+            &#34;offsets1&#34;: self._offsets[0],
+            &#34;offsets3&#34;: self._offsets[1]
+        })
+
+    def _stats_from_exchanges(self):
+        &#34;&#34;&#34;
+        Compute the tri-message stats from the data
+        &#34;&#34;&#34;
+        if self.num_tri_messages() &lt; 1:
+            self._latencies = np.array(([], []))
+            self._offsets = np.array(([], []))
+            self._best_latency = np.nan
+            self._mean_latency = np.nan
+            self._latency_std = np.nan
+            self._best_offset = 0
+            self._mean_offset = np.nan
+            self._offset_std = np.nan
+            self._best_latency_index = -1
+            self._best_msg_array_index = 0
+            self._offset_model = OffsetModel.empty_model()
+            self._best_exchange_index_list = []
+        elif self._latencies is None:
+            # compute tri message data from time sync exchanges
+            tse = tms.TriMessageStats(
+                &#34;&#34;,
+                np.array(self._time_sync_exchanges_list[0]),
+                np.array(self._time_sync_exchanges_list[1]),
+                np.array(self._time_sync_exchanges_list[2]),
+                np.array(self._time_sync_exchanges_list[3]),
+                np.array(self._time_sync_exchanges_list[4]),
+                np.array(self._time_sync_exchanges_list[5]),
+            )
+            self._latencies = np.array((tse.latency1, tse.latency3))
+            if self._offsets is None:
+                self._offsets = np.array((tse.offset1, tse.offset3))
+            # Compute the statistics for latency and offset
+            if np.isnan(self._mean_latency):
+                self._mean_latency = np.mean([*self._latencies[0], *self._latencies[1]])
+            if np.isnan(self._latency_std):
+                self._latency_std = np.std([*self._latencies[0], *self._latencies[1]])
+            if np.isnan(self._mean_offset):
+                self._mean_offset = np.mean([*self._offsets[0], *self._offsets[1]])
+            if np.isnan(self._offset_std):
+                self._offset_std = np.std([*self._offsets[0], *self._offsets[1]])
+            self._best_exchange_index_list = tse.best_latency_per_exchange_index_array
+            self._best_latency_index = tse.best_latency_index
+            self._best_msg_array_index = tse.best_latency_array_index
+            # if best_latency is np.nan, set to best computed latency
+            if np.isnan(self._best_latency):
+                self._best_latency = tse.best_latency
+                self._best_offset = tse.best_offset
+            # if best_offset is still default value, use the best computed offset
+            elif self._best_offset == 0:
+                self._best_offset = tse.best_offset
+            if not np.isnan(self._data_start) and not np.isnan(self._data_end):
+                self._offset_model = OffsetModel(self._latencies.flatten(), self._offsets.flatten(),
+                                                 self.get_device_exchanges_timestamps(),
+                                                 self._data_start, self._data_end)
+
+    def get_exchange_timestamps(self, index: int) -&gt; np.array:
+        &#34;&#34;&#34;
+        :param index: index of timestamps to return.  0, 1, 2 are server timestamps.  3, 4, 5 are device
+                        any value not from 0 to 5 will be converted to 0
+        :return: timestamps from the chosen index.
+        &#34;&#34;&#34;
+        if index &lt; 0 or index &gt; 5:
+            index = 0
+        return self._time_sync_exchanges_list[index]
+
+    def get_device_exchanges_timestamps(self) -&gt; np.array:
+        &#34;&#34;&#34;
+        :return: timestamps of sync exchanges initiated by the device
+        &#34;&#34;&#34;
+        return np.concatenate((self._time_sync_exchanges_list[3].tolist(), self._time_sync_exchanges_list[5].tolist()))
+
+    def num_tri_messages(self) -&gt; int:
+        &#34;&#34;&#34;
+        :return: number of tri-message exchanges
+        &#34;&#34;&#34;
+        return np.size(self._time_sync_exchanges_list, 1)
+
+    def get_best_latency_timestamp(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: timestamp of best latency, or np.nan if no best latency.
+        &#34;&#34;&#34;
+        if self._best_msg_array_index == 1:
+            return self._time_sync_exchanges_list[3][self._best_latency_index]
+        elif self._best_msg_array_index == 3:
+            return self._time_sync_exchanges_list[5][self._best_latency_index]
+        else:
+            return np.nan
+
+    def append_timesync_arrow(self, new_data: &#34;TimeSync&#34;):
+        &#34;&#34;&#34;
+        adds timesync data from new_data to current
+
+        :param new_data: another TimeSyncArrow object
+        &#34;&#34;&#34;
+        self._time_sync_exchanges_list[0] = np.append(self._time_sync_exchanges_list[0],
+                                                      new_data._time_sync_exchanges_list[0])
+        self._time_sync_exchanges_list[1] = np.append(self._time_sync_exchanges_list[1],
+                                                      new_data._time_sync_exchanges_list[1])
+        self._time_sync_exchanges_list[2] = np.append(self._time_sync_exchanges_list[2],
+                                                      new_data._time_sync_exchanges_list[2])
+        self._time_sync_exchanges_list[3] = np.append(self._time_sync_exchanges_list[3],
+                                                      new_data._time_sync_exchanges_list[3])
+        self._time_sync_exchanges_list[4] = np.append(self._time_sync_exchanges_list[4],
+                                                      new_data._time_sync_exchanges_list[4])
+        self._time_sync_exchanges_list[5] = np.append(self._time_sync_exchanges_list[5],
+                                                      new_data._time_sync_exchanges_list[5])
+        if np.isnan(self._data_start):
+            self._data_start = new_data._data_start
+        elif not np.isnan(new_data._data_start):
+            self._data_start = np.min([self._data_start, new_data._data_start])
+        if np.isnan(self._data_end):
+            self._data_end = new_data._data_end
+        elif not np.isnan(new_data._data_end):
+            self._data_end = np.max([self._data_end, new_data._data_end])
+        if len(self._time_sync_exchanges_list[0]) &gt; 0:
+            tse = tms.TriMessageStats(
+                &#34;&#34;,
+                np.array(self._time_sync_exchanges_list[0]),
+                np.array(self._time_sync_exchanges_list[1]),
+                np.array(self._time_sync_exchanges_list[2]),
+                np.array(self._time_sync_exchanges_list[3]),
+                np.array(self._time_sync_exchanges_list[4]),
+                np.array(self._time_sync_exchanges_list[5]),
+            )
+            self._latencies = np.array((tse.latency1, tse.latency3))
+            self._offsets = np.array((tse.offset1, tse.offset3))
+            self._mean_latency = np.mean([*self._latencies[0], *self._latencies[1]])
+            self._latency_std = np.std([*self._latencies[0], *self._latencies[1]])
+            self._mean_offset = np.mean([*self._offsets[0], *self._offsets[1]])
+            self._offset_std = np.std([*self._offsets[0], *self._offsets[1]])
+            self._best_latency_index = tse.best_latency_index
+            self._best_msg_array_index = tse.best_latency_array_index
+            self._best_latency = tse.best_latency
+            self._best_offset = tse.best_offset
+            self._best_exchange_index_list = tse.best_latency_per_exchange_index_array
+            self._offset_model = OffsetModel(self._latencies.flatten(), self._offsets.flatten(),
+                                             self.get_device_exchanges_timestamps(),
+                                             self._data_start, self._data_end)
+
+    def from_raw_packets(self, packets: List[Union[RedvoxPacketM, RedvoxPacket]]) -&gt; &#39;TimeSync&#39;:
+        &#34;&#34;&#34;
+        converts packets into TimeSyncData objects, then performs analysis
+
+        :param packets: list of RedvoxPacketM and RedvoxPacket to convert
+        :return: modified version of self
+        &#34;&#34;&#34;
+        all_exchanges: List[float] = []
+        if isinstance(packets[0], RedvoxPacketM):
+            self._data_start = packets[0].timing_information.packet_start_mach_timestamp
+        else:
+            self._data_start = packets[0].app_file_start_timestamp_machine
+        if isinstance(packets[-1], RedvoxPacketM):
+            self._data_end = packets[-1].timing_information.packet_end_mach_timestamp
+        else:
+            self._data_end = packets[-1].app_file_start_timestamp_machine
+
+        packet: Union[RedvoxPacketM, RedvoxPacket]
+        for packet in packets:
+            if isinstance(packet, RedvoxPacketM):
+                all_exchanges.extend(reduce(lambda acc, ex: acc + [ex.a1, ex.a2, ex.a3, ex.b1, ex.b2, ex.b3],
+                                            packet.timing_information.synch_exchanges,
+                                            []))
+            else:
+                # Get synch exchanges
+                ch: api900_pb2.UnevenlySampledChannel
+                for ch in packet.unevenly_sampled_channels:
+                    if api900_pb2.TIME_SYNCHRONIZATION in ch.channel_types:
+                        all_exchanges.extend(util_900.extract_payload(ch))
+
+        if len(all_exchanges) &gt; 0:
+            self._time_sync_exchanges_list = np.transpose([
+                all_exchanges[i: i + 6] for i in range(0, len(all_exchanges), 6)
+            ])
+            tse = tms.TriMessageStats(
+                &#34;&#34;,
+                np.array(self._time_sync_exchanges_list[0]),
+                np.array(self._time_sync_exchanges_list[1]),
+                np.array(self._time_sync_exchanges_list[2]),
+                np.array(self._time_sync_exchanges_list[3]),
+                np.array(self._time_sync_exchanges_list[4]),
+                np.array(self._time_sync_exchanges_list[5]),
+            )
+            self._latencies = np.array((tse.latency1, tse.latency3))
+            self._offsets = np.array((tse.offset1, tse.offset3))
+            # Compute the statistics for latency and offset
+            self._mean_latency = np.mean([*self._latencies[0], *self._latencies[1]])
+            self._latency_std = np.std([*self._latencies[0], *self._latencies[1]])
+            self._mean_offset = np.mean([*self._offsets[0], *self._offsets[1]])
+            self._offset_std = np.std([*self._offsets[0], *self._offsets[1]])
+            self._best_latency_index = tse.best_latency_index
+            self._best_msg_array_index = tse.best_latency_array_index
+            self._best_latency = tse.best_latency
+            self._best_offset = tse.best_offset
+            self._best_exchange_index_list = tse.best_latency_per_exchange_index_array
+            self._offset_model = OffsetModel(self._latencies.flatten(), self._offsets.flatten(),
+                                             self.get_device_exchanges_timestamps(),
+                                             self._data_start, self._data_end)
+        else:
+            self._latencies = np.array(([], []))
+            self._offsets = np.array(([], []))
+            self._best_latency = np.nan
+            self._mean_latency = np.nan
+            self._latency_std = np.nan
+            self._best_offset = 0
+            self._mean_offset = np.nan
+            self._offset_std = np.nan
+            self._best_latency_index = -1
+            self._best_msg_array_index = 0
+            self._best_exchange_index_list = []
+            self._offset_model = OffsetModel.empty_model()
+        return self
+
+    def sync_exchanges(self) -&gt; np.ndarray:
+        &#34;&#34;&#34;
+        :return: time sync exchanges
+        &#34;&#34;&#34;
+        return self._time_sync_exchanges_list
+
+    def set_sync_exchanges(self, exchanges: List[np.array]):
+        &#34;&#34;&#34;
+        Set the sync exchanges to be the list of exchanges.
+        The list of exchanges must have 6 np.arrays, each equal length, and the lists must be in the order of:
+        Server1, Server2, Server3, Device1, Device2, Device3
+
+        :param exchanges: 6 lists of equal length of timestamps
+        &#34;&#34;&#34;
+        self._time_sync_exchanges_list = exchanges
+
+    def latencies(self) -&gt; np.ndarray:
+        &#34;&#34;&#34;
+        :return: latencies as two np.arrays
+        &#34;&#34;&#34;
+        return self._latencies
+
+    def best_latency(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: best latency of data
+        &#34;&#34;&#34;
+        return self._best_latency
+
+    def mean_latency(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: mean latency of data
+        &#34;&#34;&#34;
+        return self._mean_latency
+
+    def latency_std(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: standard deviation of latency
+        &#34;&#34;&#34;
+        return self._latency_std
+
+    def best_latency_index(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: index/position of best latency
+        &#34;&#34;&#34;
+        return self._best_latency_index
+
+    def best_latency_per_exchange(self) -&gt; np.array:
+        &#34;&#34;&#34;
+        :return: the best latency per sync exchange as a numpy array
+        &#34;&#34;&#34;
+        return np.array([self._latencies[self._best_exchange_index_list[n]][n] for n in range(self.num_tri_messages())])
+
+    def offsets(self) -&gt; np.ndarray:
+        &#34;&#34;&#34;
+        :return: offsets as two np.arrays
+        &#34;&#34;&#34;
+        return self._offsets
+
+    def best_offset(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: best offset of data
+        &#34;&#34;&#34;
+        return self._best_offset
+
+    def mean_offset(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: mean offset of data
+        &#34;&#34;&#34;
+        return self._mean_offset
+
+    def offset_std(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: standard deviation of offset
+        &#34;&#34;&#34;
+        return self._offset_std
+
+    def best_offset_per_exchange(self) -&gt; np.array:
+        &#34;&#34;&#34;
+        :return: the best offset per sync exchange as a numpy array
+        &#34;&#34;&#34;
+        return np.array([self._offsets[self._best_exchange_index_list[n]][n] for n in range(self.num_tri_messages())])
+
+    def offset_model(self) -&gt; OffsetModel:
+        &#34;&#34;&#34;
+        :return: OffsetModel of the TimeSync
+        &#34;&#34;&#34;
+        return self._offset_model
+
+    def data_start_timestamp(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: timestamp of first data point
+        &#34;&#34;&#34;
+        return self._data_start
+
+    def data_end_timestamp(self) -&gt; float:
+        &#34;&#34;&#34;
+        :return: timestamp of last data point
+        &#34;&#34;&#34;
+        return self._data_end</code></pre>
+</details>
+<h3>Static methods</h3>
+<dl>
+<dt id="redvox.common.timesync.TimeSync.from_dict"><code class="name flex">
+<span>def <span class="ident">from_dict</span></span>(<span>ts_dict: dict, tse_data: List) ‑> <a title="redvox.common.timesync.TimeSync" href="#redvox.common.timesync.TimeSync">TimeSync</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>create TimeSync frp, dictionary</p>
+<p>:param ts_dict: dictionary of metadata
+:param tse_data: list of time sync exchanges
+:return: TimeSync object</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@staticmethod
+def from_dict(ts_dict: dict, tse_data: List) -&gt; &#34;TimeSync&#34;:
+    &#34;&#34;&#34;
+    create TimeSync frp, dictionary
+
+    :param ts_dict: dictionary of metadata
+    :param tse_data: list of time sync exchanges
+    :return: TimeSync object
+    &#34;&#34;&#34;
+    return TimeSync(tse_data, ts_dict[&#34;best_latency&#34;], ts_dict[&#34;best_offset&#34;])</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.from_json_file"><code class="name flex">
+<span>def <span class="ident">from_json_file</span></span>(<span>file_path: str) ‑> <a title="redvox.common.timesync.TimeSync" href="#redvox.common.timesync.TimeSync">TimeSync</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>convert contents of json file to TimeSync data</p>
+<p>:param file_path: full path of file to load data from.
+:return: TimeSyncArrow object</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@staticmethod
+def from_json_file(file_path: str) -&gt; &#34;TimeSync&#34;:
+    &#34;&#34;&#34;
+    convert contents of json file to TimeSync data
+
+    :param file_path: full path of file to load data from.
+    :return: TimeSyncArrow object
+    &#34;&#34;&#34;
+    json_data = io.json_file_to_dict(file_path)
+    data = ds.dataset(os.path.join(json_data[&#34;arrow_dir&#34;], json_data[&#34;arrow_file_name&#34;] + &#34;.parquet&#34;),
+                      format=&#34;parquet&#34;, exclude_invalid_files=True).to_table()
+    result = TimeSync(None, np.array((data[&#34;latencies1&#34;], data[&#34;latencies3&#34;])),
+                      json_data[&#34;best_latency&#34;], json_data[&#34;mean_latency&#34;], json_data[&#34;latency_std&#34;],
+                      np.array((data[&#34;offsets1&#34;], data[&#34;offsets3&#34;])),
+                      json_data[&#34;best_offset&#34;], json_data[&#34;mean_offset&#34;], json_data[&#34;offset_std&#34;],
+                      json_data[&#34;data_start&#34;], json_data[&#34;data_end&#34;], json_data[&#34;best_latency_index&#34;],
+                      json_data[&#34;best_msg_array_index&#34;], json_data[&#34;arrow_dir&#34;], json_data[&#34;arrow_file_name&#34;])
+    result.set_sync_exchanges([data[&#34;a1&#34;].to_numpy(), data[&#34;a2&#34;].to_numpy(), data[&#34;a3&#34;].to_numpy(),
+                               data[&#34;b1&#34;].to_numpy(), data[&#34;b2&#34;].to_numpy(), data[&#34;b3&#34;].to_numpy()])
+    return result</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="redvox.common.timesync.TimeSync.append_timesync_arrow"><code class="name flex">
+<span>def <span class="ident">append_timesync_arrow</span></span>(<span>self, new_data: <a title="redvox.common.timesync.TimeSync" href="#redvox.common.timesync.TimeSync">TimeSync</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>adds timesync data from new_data to current</p>
+<p>:param new_data: another TimeSyncArrow object</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def append_timesync_arrow(self, new_data: &#34;TimeSync&#34;):
+    &#34;&#34;&#34;
+    adds timesync data from new_data to current
+
+    :param new_data: another TimeSyncArrow object
+    &#34;&#34;&#34;
+    self._time_sync_exchanges_list[0] = np.append(self._time_sync_exchanges_list[0],
+                                                  new_data._time_sync_exchanges_list[0])
+    self._time_sync_exchanges_list[1] = np.append(self._time_sync_exchanges_list[1],
+                                                  new_data._time_sync_exchanges_list[1])
+    self._time_sync_exchanges_list[2] = np.append(self._time_sync_exchanges_list[2],
+                                                  new_data._time_sync_exchanges_list[2])
+    self._time_sync_exchanges_list[3] = np.append(self._time_sync_exchanges_list[3],
+                                                  new_data._time_sync_exchanges_list[3])
+    self._time_sync_exchanges_list[4] = np.append(self._time_sync_exchanges_list[4],
+                                                  new_data._time_sync_exchanges_list[4])
+    self._time_sync_exchanges_list[5] = np.append(self._time_sync_exchanges_list[5],
+                                                  new_data._time_sync_exchanges_list[5])
+    if np.isnan(self._data_start):
+        self._data_start = new_data._data_start
+    elif not np.isnan(new_data._data_start):
+        self._data_start = np.min([self._data_start, new_data._data_start])
+    if np.isnan(self._data_end):
+        self._data_end = new_data._data_end
+    elif not np.isnan(new_data._data_end):
+        self._data_end = np.max([self._data_end, new_data._data_end])
+    if len(self._time_sync_exchanges_list[0]) &gt; 0:
+        tse = tms.TriMessageStats(
+            &#34;&#34;,
+            np.array(self._time_sync_exchanges_list[0]),
+            np.array(self._time_sync_exchanges_list[1]),
+            np.array(self._time_sync_exchanges_list[2]),
+            np.array(self._time_sync_exchanges_list[3]),
+            np.array(self._time_sync_exchanges_list[4]),
+            np.array(self._time_sync_exchanges_list[5]),
+        )
+        self._latencies = np.array((tse.latency1, tse.latency3))
+        self._offsets = np.array((tse.offset1, tse.offset3))
+        self._mean_latency = np.mean([*self._latencies[0], *self._latencies[1]])
+        self._latency_std = np.std([*self._latencies[0], *self._latencies[1]])
+        self._mean_offset = np.mean([*self._offsets[0], *self._offsets[1]])
+        self._offset_std = np.std([*self._offsets[0], *self._offsets[1]])
+        self._best_latency_index = tse.best_latency_index
+        self._best_msg_array_index = tse.best_latency_array_index
+        self._best_latency = tse.best_latency
+        self._best_offset = tse.best_offset
+        self._best_exchange_index_list = tse.best_latency_per_exchange_index_array
+        self._offset_model = OffsetModel(self._latencies.flatten(), self._offsets.flatten(),
+                                         self.get_device_exchanges_timestamps(),
+                                         self._data_start, self._data_end)</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.as_dict"><code class="name flex">
+<span>def <span class="ident">as_dict</span></span>(<span>self) ‑> dict</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: TimeSync as a dictionary</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def as_dict(self) -&gt; dict:
+    &#34;&#34;&#34;
+    :return: TimeSync as a dictionary
+    &#34;&#34;&#34;
+    return {
+        &#34;best_latency_index&#34;: self._best_latency_index,
+        &#34;best_msg_array_index&#34;: self._best_msg_array_index,
+        &#34;best_latency&#34;: self._best_latency,
+        &#34;mean_latency&#34;: self._mean_latency,
+        &#34;latency_std&#34;: self._latency_std,
+        &#34;best_offset&#34;: self._best_offset,
+        &#34;mean_offset&#34;: self._mean_offset,
+        &#34;offset_std&#34;: self._offset_std,
+        &#34;data_start&#34;: self._data_start,
+        &#34;data_end&#34;: self._data_end,
+        &#34;arrow_dir&#34;: self.arrow_dir,
+        &#34;arrow_file_name&#34;: self.arrow_file
+    }</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.best_latency"><code class="name flex">
+<span>def <span class="ident">best_latency</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: best latency of data</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def best_latency(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: best latency of data
+    &#34;&#34;&#34;
+    return self._best_latency</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.best_latency_index"><code class="name flex">
+<span>def <span class="ident">best_latency_index</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: index/position of best latency</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def best_latency_index(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: index/position of best latency
+    &#34;&#34;&#34;
+    return self._best_latency_index</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.best_latency_per_exchange"><code class="name flex">
+<span>def <span class="ident">best_latency_per_exchange</span></span>(<span>self) ‑> <built-in function array></span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: the best latency per sync exchange as a numpy array</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def best_latency_per_exchange(self) -&gt; np.array:
+    &#34;&#34;&#34;
+    :return: the best latency per sync exchange as a numpy array
+    &#34;&#34;&#34;
+    return np.array([self._latencies[self._best_exchange_index_list[n]][n] for n in range(self.num_tri_messages())])</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.best_offset"><code class="name flex">
+<span>def <span class="ident">best_offset</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: best offset of data</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def best_offset(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: best offset of data
+    &#34;&#34;&#34;
+    return self._best_offset</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.best_offset_per_exchange"><code class="name flex">
+<span>def <span class="ident">best_offset_per_exchange</span></span>(<span>self) ‑> <built-in function array></span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: the best offset per sync exchange as a numpy array</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def best_offset_per_exchange(self) -&gt; np.array:
+    &#34;&#34;&#34;
+    :return: the best offset per sync exchange as a numpy array
+    &#34;&#34;&#34;
+    return np.array([self._offsets[self._best_exchange_index_list[n]][n] for n in range(self.num_tri_messages())])</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.data_as_pyarrow"><code class="name flex">
+<span>def <span class="ident">data_as_pyarrow</span></span>(<span>self) ‑> pyarrow.lib.Table</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: convert timesync exchanges, latencies, and offsets into a pyarrow table</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def data_as_pyarrow(self) -&gt; pa.Table:
+    &#34;&#34;&#34;
+    :return: convert timesync exchanges, latencies, and offsets into a pyarrow table
+    &#34;&#34;&#34;
+    return pa.Table.from_pydict({
+        &#34;a1&#34;: self._time_sync_exchanges_list[0],
+        &#34;a2&#34;: self._time_sync_exchanges_list[1],
+        &#34;a3&#34;: self._time_sync_exchanges_list[2],
+        &#34;b1&#34;: self._time_sync_exchanges_list[3],
+        &#34;b2&#34;: self._time_sync_exchanges_list[4],
+        &#34;b3&#34;: self._time_sync_exchanges_list[5],
+        &#34;latencies1&#34;: self._latencies[0],
+        &#34;latencies3&#34;: self._latencies[1],
+        &#34;offsets1&#34;: self._offsets[0],
+        &#34;offsets3&#34;: self._offsets[1]
+    })</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.data_end_timestamp"><code class="name flex">
+<span>def <span class="ident">data_end_timestamp</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: timestamp of last data point</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def data_end_timestamp(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: timestamp of last data point
+    &#34;&#34;&#34;
+    return self._data_end</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.data_start_timestamp"><code class="name flex">
+<span>def <span class="ident">data_start_timestamp</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: timestamp of first data point</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def data_start_timestamp(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: timestamp of first data point
+    &#34;&#34;&#34;
+    return self._data_start</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.from_raw_packets"><code class="name flex">
+<span>def <span class="ident">from_raw_packets</span></span>(<span>self, packets: List[Union[src.redvox_api_m.redvox_api_m_pb2.RedvoxPacketM, api900_pb2.RedvoxPacket]]) ‑> <a title="redvox.common.timesync.TimeSync" href="#redvox.common.timesync.TimeSync">TimeSync</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>converts packets into TimeSyncData objects, then performs analysis</p>
+<p>:param packets: list of RedvoxPacketM and RedvoxPacket to convert
+:return: modified version of self</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def from_raw_packets(self, packets: List[Union[RedvoxPacketM, RedvoxPacket]]) -&gt; &#39;TimeSync&#39;:
+    &#34;&#34;&#34;
+    converts packets into TimeSyncData objects, then performs analysis
+
+    :param packets: list of RedvoxPacketM and RedvoxPacket to convert
+    :return: modified version of self
+    &#34;&#34;&#34;
+    all_exchanges: List[float] = []
+    if isinstance(packets[0], RedvoxPacketM):
+        self._data_start = packets[0].timing_information.packet_start_mach_timestamp
+    else:
+        self._data_start = packets[0].app_file_start_timestamp_machine
+    if isinstance(packets[-1], RedvoxPacketM):
+        self._data_end = packets[-1].timing_information.packet_end_mach_timestamp
+    else:
+        self._data_end = packets[-1].app_file_start_timestamp_machine
+
+    packet: Union[RedvoxPacketM, RedvoxPacket]
+    for packet in packets:
+        if isinstance(packet, RedvoxPacketM):
+            all_exchanges.extend(reduce(lambda acc, ex: acc + [ex.a1, ex.a2, ex.a3, ex.b1, ex.b2, ex.b3],
+                                        packet.timing_information.synch_exchanges,
+                                        []))
+        else:
+            # Get synch exchanges
+            ch: api900_pb2.UnevenlySampledChannel
+            for ch in packet.unevenly_sampled_channels:
+                if api900_pb2.TIME_SYNCHRONIZATION in ch.channel_types:
+                    all_exchanges.extend(util_900.extract_payload(ch))
+
+    if len(all_exchanges) &gt; 0:
+        self._time_sync_exchanges_list = np.transpose([
+            all_exchanges[i: i + 6] for i in range(0, len(all_exchanges), 6)
+        ])
+        tse = tms.TriMessageStats(
+            &#34;&#34;,
+            np.array(self._time_sync_exchanges_list[0]),
+            np.array(self._time_sync_exchanges_list[1]),
+            np.array(self._time_sync_exchanges_list[2]),
+            np.array(self._time_sync_exchanges_list[3]),
+            np.array(self._time_sync_exchanges_list[4]),
+            np.array(self._time_sync_exchanges_list[5]),
+        )
+        self._latencies = np.array((tse.latency1, tse.latency3))
+        self._offsets = np.array((tse.offset1, tse.offset3))
+        # Compute the statistics for latency and offset
+        self._mean_latency = np.mean([*self._latencies[0], *self._latencies[1]])
+        self._latency_std = np.std([*self._latencies[0], *self._latencies[1]])
+        self._mean_offset = np.mean([*self._offsets[0], *self._offsets[1]])
+        self._offset_std = np.std([*self._offsets[0], *self._offsets[1]])
+        self._best_latency_index = tse.best_latency_index
+        self._best_msg_array_index = tse.best_latency_array_index
+        self._best_latency = tse.best_latency
+        self._best_offset = tse.best_offset
+        self._best_exchange_index_list = tse.best_latency_per_exchange_index_array
+        self._offset_model = OffsetModel(self._latencies.flatten(), self._offsets.flatten(),
+                                         self.get_device_exchanges_timestamps(),
+                                         self._data_start, self._data_end)
+    else:
+        self._latencies = np.array(([], []))
+        self._offsets = np.array(([], []))
+        self._best_latency = np.nan
+        self._mean_latency = np.nan
+        self._latency_std = np.nan
+        self._best_offset = 0
+        self._mean_offset = np.nan
+        self._offset_std = np.nan
+        self._best_latency_index = -1
+        self._best_msg_array_index = 0
+        self._best_exchange_index_list = []
+        self._offset_model = OffsetModel.empty_model()
+    return self</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.get_best_latency_timestamp"><code class="name flex">
+<span>def <span class="ident">get_best_latency_timestamp</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: timestamp of best latency, or np.nan if no best latency.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_best_latency_timestamp(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: timestamp of best latency, or np.nan if no best latency.
+    &#34;&#34;&#34;
+    if self._best_msg_array_index == 1:
+        return self._time_sync_exchanges_list[3][self._best_latency_index]
+    elif self._best_msg_array_index == 3:
+        return self._time_sync_exchanges_list[5][self._best_latency_index]
+    else:
+        return np.nan</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.get_device_exchanges_timestamps"><code class="name flex">
+<span>def <span class="ident">get_device_exchanges_timestamps</span></span>(<span>self) ‑> <built-in function array></span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: timestamps of sync exchanges initiated by the device</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_device_exchanges_timestamps(self) -&gt; np.array:
+    &#34;&#34;&#34;
+    :return: timestamps of sync exchanges initiated by the device
+    &#34;&#34;&#34;
+    return np.concatenate((self._time_sync_exchanges_list[3].tolist(), self._time_sync_exchanges_list[5].tolist()))</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.get_exchange_timestamps"><code class="name flex">
+<span>def <span class="ident">get_exchange_timestamps</span></span>(<span>self, index: int) ‑> <built-in function array></span>
+</code></dt>
+<dd>
+<div class="desc"><p>:param index: index of timestamps to return.
+0, 1, 2 are server timestamps.
+3, 4, 5 are device
+any value not from 0 to 5 will be converted to 0
+:return: timestamps from the chosen index.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_exchange_timestamps(self, index: int) -&gt; np.array:
+    &#34;&#34;&#34;
+    :param index: index of timestamps to return.  0, 1, 2 are server timestamps.  3, 4, 5 are device
+                    any value not from 0 to 5 will be converted to 0
+    :return: timestamps from the chosen index.
+    &#34;&#34;&#34;
+    if index &lt; 0 or index &gt; 5:
+        index = 0
+    return self._time_sync_exchanges_list[index]</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.latencies"><code class="name flex">
+<span>def <span class="ident">latencies</span></span>(<span>self) ‑> numpy.ndarray</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: latencies as two np.arrays</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def latencies(self) -&gt; np.ndarray:
+    &#34;&#34;&#34;
+    :return: latencies as two np.arrays
+    &#34;&#34;&#34;
+    return self._latencies</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.latency_std"><code class="name flex">
+<span>def <span class="ident">latency_std</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: standard deviation of latency</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def latency_std(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: standard deviation of latency
+    &#34;&#34;&#34;
+    return self._latency_std</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.mean_latency"><code class="name flex">
+<span>def <span class="ident">mean_latency</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: mean latency of data</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def mean_latency(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: mean latency of data
+    &#34;&#34;&#34;
+    return self._mean_latency</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.mean_offset"><code class="name flex">
+<span>def <span class="ident">mean_offset</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: mean offset of data</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def mean_offset(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: mean offset of data
+    &#34;&#34;&#34;
+    return self._mean_offset</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.num_tri_messages"><code class="name flex">
+<span>def <span class="ident">num_tri_messages</span></span>(<span>self) ‑> int</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: number of tri-message exchanges</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def num_tri_messages(self) -&gt; int:
+    &#34;&#34;&#34;
+    :return: number of tri-message exchanges
+    &#34;&#34;&#34;
+    return np.size(self._time_sync_exchanges_list, 1)</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.offset_model"><code class="name flex">
+<span>def <span class="ident">offset_model</span></span>(<span>self) ‑> <a title="redvox.common.offset_model.OffsetModel" href="offset_model.html#redvox.common.offset_model.OffsetModel">OffsetModel</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: OffsetModel of the TimeSync</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def offset_model(self) -&gt; OffsetModel:
+    &#34;&#34;&#34;
+    :return: OffsetModel of the TimeSync
+    &#34;&#34;&#34;
+    return self._offset_model</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.offset_std"><code class="name flex">
+<span>def <span class="ident">offset_std</span></span>(<span>self) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: standard deviation of offset</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def offset_std(self) -&gt; float:
+    &#34;&#34;&#34;
+    :return: standard deviation of offset
+    &#34;&#34;&#34;
+    return self._offset_std</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.offsets"><code class="name flex">
+<span>def <span class="ident">offsets</span></span>(<span>self) ‑> numpy.ndarray</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: offsets as two np.arrays</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def offsets(self) -&gt; np.ndarray:
+    &#34;&#34;&#34;
+    :return: offsets as two np.arrays
+    &#34;&#34;&#34;
+    return self._offsets</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.set_sync_exchanges"><code class="name flex">
+<span>def <span class="ident">set_sync_exchanges</span></span>(<span>self, exchanges: List[<built-in function array>])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Set the sync exchanges to be the list of exchanges.
+The list of exchanges must have 6 np.arrays, each equal length, and the lists must be in the order of:
+Server1, Server2, Server3, Device1, Device2, Device3</p>
+<p>:param exchanges: 6 lists of equal length of timestamps</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_sync_exchanges(self, exchanges: List[np.array]):
+    &#34;&#34;&#34;
+    Set the sync exchanges to be the list of exchanges.
+    The list of exchanges must have 6 np.arrays, each equal length, and the lists must be in the order of:
+    Server1, Server2, Server3, Device1, Device2, Device3
+
+    :param exchanges: 6 lists of equal length of timestamps
+    &#34;&#34;&#34;
+    self._time_sync_exchanges_list = exchanges</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.sync_exchanges"><code class="name flex">
+<span>def <span class="ident">sync_exchanges</span></span>(<span>self) ‑> numpy.ndarray</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: time sync exchanges</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sync_exchanges(self) -&gt; np.ndarray:
+    &#34;&#34;&#34;
+    :return: time sync exchanges
+    &#34;&#34;&#34;
+    return self._time_sync_exchanges_list</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.to_json"><code class="name flex">
+<span>def <span class="ident">to_json</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:return: TimeSync as json string</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def to_json(self):
+    &#34;&#34;&#34;
+    :return: TimeSync as json string
+    &#34;&#34;&#34;
+    return io.to_json(self)</code></pre>
+</details>
+</dd>
+<dt id="redvox.common.timesync.TimeSync.to_json_file"><code class="name flex">
+<span>def <span class="ident">to_json_file</span></span>(<span>self, file_name: Optional[str] = None) ‑> pathlib.Path</span>
+</code></dt>
+<dd>
+<div class="desc"><p>saves the timesync data as json and data in the same directory.</p>
+<p>:param file_name: the optional base file name.
+Do not include a file extension.
+If None, a default file name is created using this format:
+timesync.json
+:return: path to json file</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def to_json_file(self, file_name: Optional[str] = None) -&gt; Path:
+    &#34;&#34;&#34;
+    saves the timesync data as json and data in the same directory.
+
+    :param file_name: the optional base file name.  Do not include a file extension.
+                        If None, a default file name is created using this format:
+                        timesync.json
+    :return: path to json file
+    &#34;&#34;&#34;
+    return io.to_json_file(self, file_name)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="redvox.common" href="index.html">redvox.common</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="redvox.common.timesync.RedvoxPacket" href="#redvox.common.timesync.RedvoxPacket">RedvoxPacket</a></code></h4>
+<ul class="">
+<li><code><a title="redvox.common.timesync.RedvoxPacket.DESCRIPTOR" href="#redvox.common.timesync.RedvoxPacket.DESCRIPTOR">DESCRIPTOR</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.acquisition_server" href="#redvox.common.timesync.RedvoxPacket.acquisition_server">acquisition_server</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.api" href="#redvox.common.timesync.RedvoxPacket.api">api</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.app_file_start_timestamp_epoch_microseconds_utc" href="#redvox.common.timesync.RedvoxPacket.app_file_start_timestamp_epoch_microseconds_utc">app_file_start_timestamp_epoch_microseconds_utc</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.app_file_start_timestamp_machine" href="#redvox.common.timesync.RedvoxPacket.app_file_start_timestamp_machine">app_file_start_timestamp_machine</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.app_version" href="#redvox.common.timesync.RedvoxPacket.app_version">app_version</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.authenticated_email" href="#redvox.common.timesync.RedvoxPacket.authenticated_email">authenticated_email</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.authentication_server" href="#redvox.common.timesync.RedvoxPacket.authentication_server">authentication_server</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.authentication_token" href="#redvox.common.timesync.RedvoxPacket.authentication_token">authentication_token</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.battery_level_percent" href="#redvox.common.timesync.RedvoxPacket.battery_level_percent">battery_level_percent</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.device_make" href="#redvox.common.timesync.RedvoxPacket.device_make">device_make</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.device_model" href="#redvox.common.timesync.RedvoxPacket.device_model">device_model</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.device_os" href="#redvox.common.timesync.RedvoxPacket.device_os">device_os</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.device_os_version" href="#redvox.common.timesync.RedvoxPacket.device_os_version">device_os_version</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.device_temperature_c" href="#redvox.common.timesync.RedvoxPacket.device_temperature_c">device_temperature_c</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.evenly_sampled_channels" href="#redvox.common.timesync.RedvoxPacket.evenly_sampled_channels">evenly_sampled_channels</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.firebase_token" href="#redvox.common.timesync.RedvoxPacket.firebase_token">firebase_token</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.is_backfilled" href="#redvox.common.timesync.RedvoxPacket.is_backfilled">is_backfilled</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.is_private" href="#redvox.common.timesync.RedvoxPacket.is_private">is_private</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.is_scrambled" href="#redvox.common.timesync.RedvoxPacket.is_scrambled">is_scrambled</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.metadata" href="#redvox.common.timesync.RedvoxPacket.metadata">metadata</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.redvox_id" href="#redvox.common.timesync.RedvoxPacket.redvox_id">redvox_id</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.server_timestamp_epoch_microseconds_utc" href="#redvox.common.timesync.RedvoxPacket.server_timestamp_epoch_microseconds_utc">server_timestamp_epoch_microseconds_utc</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.time_synchronization_server" href="#redvox.common.timesync.RedvoxPacket.time_synchronization_server">time_synchronization_server</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.unevenly_sampled_channels" href="#redvox.common.timesync.RedvoxPacket.unevenly_sampled_channels">unevenly_sampled_channels</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacket.uuid" href="#redvox.common.timesync.RedvoxPacket.uuid">uuid</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="redvox.common.timesync.RedvoxPacketM" href="#redvox.common.timesync.RedvoxPacketM">RedvoxPacketM</a></code></h4>
+<ul class="">
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.BYTE" href="#redvox.common.timesync.RedvoxPacketM.BYTE">BYTE</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.CENTIMETERS" href="#redvox.common.timesync.RedvoxPacketM.CENTIMETERS">CENTIMETERS</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.DECIBEL" href="#redvox.common.timesync.RedvoxPacketM.DECIBEL">DECIBEL</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.DECIMAL_DEGREES" href="#redvox.common.timesync.RedvoxPacketM.DECIMAL_DEGREES">DECIMAL_DEGREES</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.DEGREES_CELSIUS" href="#redvox.common.timesync.RedvoxPacketM.DEGREES_CELSIUS">DEGREES_CELSIUS</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.DESCRIPTOR" href="#redvox.common.timesync.RedvoxPacketM.DESCRIPTOR">DESCRIPTOR</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.DoubleSamplePayload" href="#redvox.common.timesync.RedvoxPacketM.DoubleSamplePayload">DoubleSamplePayload</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.EventStream" href="#redvox.common.timesync.RedvoxPacketM.EventStream">EventStream</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.KILOPASCAL" href="#redvox.common.timesync.RedvoxPacketM.KILOPASCAL">KILOPASCAL</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.LSB_PLUS_MINUS_COUNTS" href="#redvox.common.timesync.RedvoxPacketM.LSB_PLUS_MINUS_COUNTS">LSB_PLUS_MINUS_COUNTS</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.LUX" href="#redvox.common.timesync.RedvoxPacketM.LUX">LUX</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.METERS" href="#redvox.common.timesync.RedvoxPacketM.METERS">METERS</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.METERS_PER_SECOND" href="#redvox.common.timesync.RedvoxPacketM.METERS_PER_SECOND">METERS_PER_SECOND</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.METERS_PER_SECOND_SQUARED" href="#redvox.common.timesync.RedvoxPacketM.METERS_PER_SECOND_SQUARED">METERS_PER_SECOND_SQUARED</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.MICROAMPERES" href="#redvox.common.timesync.RedvoxPacketM.MICROAMPERES">MICROAMPERES</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.MICROSECONDS_SINCE_UNIX_EPOCH" href="#redvox.common.timesync.RedvoxPacketM.MICROSECONDS_SINCE_UNIX_EPOCH">MICROSECONDS_SINCE_UNIX_EPOCH</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.MICROTESLA" href="#redvox.common.timesync.RedvoxPacketM.MICROTESLA">MICROTESLA</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.MetadataEntry" href="#redvox.common.timesync.RedvoxPacketM.MetadataEntry">MetadataEntry</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.NORMALIZED_COUNTS" href="#redvox.common.timesync.RedvoxPacketM.NORMALIZED_COUNTS">NORMALIZED_COUNTS</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.PCM" href="#redvox.common.timesync.RedvoxPacketM.PCM">PCM</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.PERCENTAGE" href="#redvox.common.timesync.RedvoxPacketM.PERCENTAGE">PERCENTAGE</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.RADIANS" href="#redvox.common.timesync.RedvoxPacketM.RADIANS">RADIANS</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.RADIANS_PER_SECOND" href="#redvox.common.timesync.RedvoxPacketM.RADIANS_PER_SECOND">RADIANS_PER_SECOND</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.SamplePayload" href="#redvox.common.timesync.RedvoxPacketM.SamplePayload">SamplePayload</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.Sensors" href="#redvox.common.timesync.RedvoxPacketM.Sensors">Sensors</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.StationInformation" href="#redvox.common.timesync.RedvoxPacketM.StationInformation">StationInformation</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.SummaryStatistics" href="#redvox.common.timesync.RedvoxPacketM.SummaryStatistics">SummaryStatistics</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.TimingInformation" href="#redvox.common.timesync.RedvoxPacketM.TimingInformation">TimingInformation</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.TimingPayload" href="#redvox.common.timesync.RedvoxPacketM.TimingPayload">TimingPayload</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.UNITLESS" href="#redvox.common.timesync.RedvoxPacketM.UNITLESS">UNITLESS</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.UNKNOWN" href="#redvox.common.timesync.RedvoxPacketM.UNKNOWN">UNKNOWN</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.Unit" href="#redvox.common.timesync.RedvoxPacketM.Unit">Unit</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.api" href="#redvox.common.timesync.RedvoxPacketM.api">api</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.event_streams" href="#redvox.common.timesync.RedvoxPacketM.event_streams">event_streams</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.metadata" href="#redvox.common.timesync.RedvoxPacketM.metadata">metadata</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.sensors" href="#redvox.common.timesync.RedvoxPacketM.sensors">sensors</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.station_information" href="#redvox.common.timesync.RedvoxPacketM.station_information">station_information</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.sub_api" href="#redvox.common.timesync.RedvoxPacketM.sub_api">sub_api</a></code></li>
+<li><code><a title="redvox.common.timesync.RedvoxPacketM.timing_information" href="#redvox.common.timesync.RedvoxPacketM.timing_information">timing_information</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="redvox.common.timesync.TimeSync" href="#redvox.common.timesync.TimeSync">TimeSync</a></code></h4>
+<ul class="">
+<li><code><a title="redvox.common.timesync.TimeSync.append_timesync_arrow" href="#redvox.common.timesync.TimeSync.append_timesync_arrow">append_timesync_arrow</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.as_dict" href="#redvox.common.timesync.TimeSync.as_dict">as_dict</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.best_latency" href="#redvox.common.timesync.TimeSync.best_latency">best_latency</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.best_latency_index" href="#redvox.common.timesync.TimeSync.best_latency_index">best_latency_index</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.best_latency_per_exchange" href="#redvox.common.timesync.TimeSync.best_latency_per_exchange">best_latency_per_exchange</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.best_offset" href="#redvox.common.timesync.TimeSync.best_offset">best_offset</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.best_offset_per_exchange" href="#redvox.common.timesync.TimeSync.best_offset_per_exchange">best_offset_per_exchange</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.data_as_pyarrow" href="#redvox.common.timesync.TimeSync.data_as_pyarrow">data_as_pyarrow</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.data_end_timestamp" href="#redvox.common.timesync.TimeSync.data_end_timestamp">data_end_timestamp</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.data_start_timestamp" href="#redvox.common.timesync.TimeSync.data_start_timestamp">data_start_timestamp</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.from_dict" href="#redvox.common.timesync.TimeSync.from_dict">from_dict</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.from_json_file" href="#redvox.common.timesync.TimeSync.from_json_file">from_json_file</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.from_raw_packets" href="#redvox.common.timesync.TimeSync.from_raw_packets">from_raw_packets</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.get_best_latency_timestamp" href="#redvox.common.timesync.TimeSync.get_best_latency_timestamp">get_best_latency_timestamp</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.get_device_exchanges_timestamps" href="#redvox.common.timesync.TimeSync.get_device_exchanges_timestamps">get_device_exchanges_timestamps</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.get_exchange_timestamps" href="#redvox.common.timesync.TimeSync.get_exchange_timestamps">get_exchange_timestamps</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.latencies" href="#redvox.common.timesync.TimeSync.latencies">latencies</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.latency_std" href="#redvox.common.timesync.TimeSync.latency_std">latency_std</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.mean_latency" href="#redvox.common.timesync.TimeSync.mean_latency">mean_latency</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.mean_offset" href="#redvox.common.timesync.TimeSync.mean_offset">mean_offset</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.num_tri_messages" href="#redvox.common.timesync.TimeSync.num_tri_messages">num_tri_messages</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.offset_model" href="#redvox.common.timesync.TimeSync.offset_model">offset_model</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.offset_std" href="#redvox.common.timesync.TimeSync.offset_std">offset_std</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.offsets" href="#redvox.common.timesync.TimeSync.offsets">offsets</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.set_sync_exchanges" href="#redvox.common.timesync.TimeSync.set_sync_exchanges">set_sync_exchanges</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.sync_exchanges" href="#redvox.common.timesync.TimeSync.sync_exchanges">sync_exchanges</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.to_json" href="#redvox.common.timesync.TimeSync.to_json">to_json</a></code></li>
+<li><code><a title="redvox.common.timesync.TimeSync.to_json_file" href="#redvox.common.timesync.TimeSync.to_json_file">to_json_file</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
