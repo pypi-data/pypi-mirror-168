@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: emeraldtriangles
+Version: 0.0.26
+Summary: Triangle mesh transforms
+Home-page: https://github.com/EMeraldGeo/EmeraldTriangles
+Author: Egil Moeller, Craig W. Christensen, et al.
+Author-email: em@emrld.no
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Iteratively add points to an existing mesh, calculate mesh bounding polygons etc.
