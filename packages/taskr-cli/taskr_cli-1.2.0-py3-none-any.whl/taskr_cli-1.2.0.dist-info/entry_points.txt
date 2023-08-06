@@ -1,0 +1,2 @@
+[console_scripts]
+taskr = taskr.cli:main

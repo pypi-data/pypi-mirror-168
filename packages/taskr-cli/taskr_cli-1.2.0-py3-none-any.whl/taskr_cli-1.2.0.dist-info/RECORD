@@ -1,0 +1,13 @@
+taskr/__init__.py,sha256=HYyXgZ4SQ_RWUTv3TM7IBKVz0_daPGS1MdmjNkBVHRs,61
+taskr/__version__.py,sha256=UpLk4osKJTqB53nr1gFoPa9lNzecaM2WpL_-opMzswY,78
+taskr/cli.py,sha256=Qg9P8h817LraXalrdJ7kRfVSlYaeJe-Q2OGkwQtirr0,3861
+taskr/runners.py,sha256=dQxljblRsvDWtE7s_9nzeNAMTj_xNEk3cR7pP9SVCMI,2709
+taskr/taskr.py,sha256=6gtIf1aW97E-Csf9rWORhpRfhrsTcMTL5dzSRqLrgDc,9062
+taskr/template.py,sha256=uzT2HlbPJcL-OlYaxrpm5mmIbS2RnaypxV55_p3u3io,1950
+taskr/utils.py,sha256=bhbXtm4HOytlDDZET0b436sCxchu-HorCl21DGWf_T4,4879
+taskr_cli-1.2.0.dist-info/LICENSE,sha256=r-dZ3nX2dvIGBQgIGllf9ITlGguIqi8OqBm-x6oWS7U,1069
+taskr_cli-1.2.0.dist-info/METADATA,sha256=jRaF-evt42BMdfPNVgeHfy_A5jnKoN3ZuPb-2dfZ76o,7914
+taskr_cli-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taskr_cli-1.2.0.dist-info/entry_points.txt,sha256=Mc2MUGWo4v25gpWXBZVzox8NklMvXZQt352WLhs9oiA,41
+taskr_cli-1.2.0.dist-info/top_level.txt,sha256=nUs61tNfbfharkZ-iKd9ugpnblA61ctB_cj3yljwmPs,6
+taskr_cli-1.2.0.dist-info/RECORD,,
