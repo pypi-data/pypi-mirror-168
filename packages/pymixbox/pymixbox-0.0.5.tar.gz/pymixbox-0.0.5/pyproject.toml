@@ -1,0 +1,22 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pymixbox"
+version = "0.0.5"
+description = "Pigment-Based Color Mixing"
+readme = "README.md"
+license = {text = "CC-BY-NC-4.0"}
+keywords = [ "color mixing", "pigments", "rgb", "kubelka munk", "paints", "paint mixing", "graphics" ]
+authors = [
+  {email = "mixbox@scrtwpns.com"},
+  {name = "Secret Weapons"}
+]
+
+[project.urls]
+homepage = "https://scrtwpns.com/mixbox"
+repository = "https://github.com/scrtwpns/mixbox"
+
+[tool.distutils.bdist_wheel]
+universal = true

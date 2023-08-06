@@ -1,0 +1,8 @@
+LICENSE
+README.md
+mixbox.py
+pyproject.toml
+pymixbox.egg-info/PKG-INFO
+pymixbox.egg-info/SOURCES.txt
+pymixbox.egg-info/dependency_links.txt
+pymixbox.egg-info/top_level.txt
