@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>explainerdashboard</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+<div><H1>Model Explainer</H1></div><ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="Feature Importances-tab" data-toggle="tab" href="#Feature Importances" role="tab" aria-controls="Feature Importances" aria-selected="true">Feature Importances</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" id="Classification Stats-tab" data-toggle="tab" href="#Classification Stats" role="tab" aria-controls="Classification Stats" aria-selected="false">Classification Stats</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" id="Individual Predictions-tab" data-toggle="tab" href="#Individual Predictions" role="tab" aria-controls="Individual Predictions" aria-selected="false">Individual Predictions</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" id="Feature Dependence-tab" data-toggle="tab" href="#Feature Dependence" role="tab" aria-controls="Feature Dependence" aria-selected="false">Feature Dependence</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" id="Decision Trees-tab" data-toggle="tab" href="#Decision Trees" role="tab" aria-controls="Decision Trees" aria-selected="false">Decision Trees</a>
+    </li>
+
+</ul>
+
+<div class="tab-content">
+
+<div class="tab-pane active" id="Feature Importances" role="tabpanel" aria-labelledby="Feature Importances-tab">
+ <div><H1>Feature Importances</H1></div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Feature Importances</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="8a6afa7d-67df-49d7-8b2c-9f68084dafbe" class="plotly-graph-div" style="height:260px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("8a6afa7d-67df-49d7-8b2c-9f68084dafbe")) {                    Plotly.newPlot(                        "8a6afa7d-67df-49d7-8b2c-9f68084dafbe",                        [{"hoverinfo":"text","orientation":"h","x":[0.10950283285740849,0.1297332719472462,0.13550832416059555],"y":["3. sensor_21__linear_trend__attr_pvalue","2. sensor_22__quantile__q_0.3","1. sensor_22__cid_ce__normalize_True"],"type":"bar"}],                        {"plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Average impact on predicted result<br>(mean absolute SHAP value)"},"template":{"data":{"scatter":[{"type":"scatter"}]}},"yaxis":{"automargin":true},"xaxis":{"automargin":true,"title":{"text":""}},"height":260,"margin":{"b":40,"l":252,"pad":4,"r":40,"t":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    <div></div>
+</div>
+    
+</div>
+        
+</div> 
+     
+</div>
+<div class="tab-pane" id="Classification Stats" role="tabpanel" aria-labelledby="Classification Stats-tab">
+ <div></div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Model performance metrics</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">metric</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>accuracy</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>precision</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>recall</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>f1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>roc_auc_score</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>pr_auc_score</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>log_loss</td>
+      <td>0.021</td>
+    </tr>
+
+  </tbody>
+</table>
+    
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Confusion Matrix</h3><h6 class="card-subtitle">How many false positives and false negatives?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="ac118e7b-3cf3-4732-949b-d8d2654422c3" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ac118e7b-3cf3-4732-949b-d8d2654422c3")) {                    Plotly.newPlot(                        "ac118e7b-3cf3-4732-949b-d8d2654422c3",                        [{"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"hoverinfo":"skip","showscale":false,"x":[" 0"," 1"],"y":[" 0"," 1"],"z":[[73.8,0.0],[0.0,26.2]],"zmax":130,"zmin":0,"type":"heatmap"}],                        {"plot_bgcolor":"#fff","title":{"text":"Confusion Matrix"},"xaxis":{"constrain":"domain","showgrid":false,"tickmode":"array","ticktext":[" 0"," 1"],"tickvals":[" 0"," 1"],"title":{"text":"predicted"}},"yaxis":{"autorange":"reversed","scaleanchor":"x","scaleratio":1,"showgrid":false,"side":"left","tickmode":"array","ticktext":[" 0"," 1"],"tickvals":[" 0"," 1"],"title":{"standoff":20,"text":"observed"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"annotations":[{"font":{"size":20},"showarrow":false,"text":"73.8%","x":" 0","y":" 0"},{"font":{"size":12},"showarrow":false,"text":" <br> <br> <br>(31)","x":" 0","y":" 0"},{"font":{"size":20},"showarrow":false,"text":"0.0%","x":" 1","y":" 0"},{"font":{"size":12},"showarrow":false,"text":" <br> <br> <br>(0)","x":" 1","y":" 0"},{"font":{"size":20},"showarrow":false,"text":"0.0%","x":" 0","y":" 1"},{"font":{"size":12},"showarrow":false,"text":" <br> <br> <br>(0)","x":" 0","y":" 1"},{"font":{"size":20},"showarrow":false,"text":"26.2%","x":" 1","y":" 1"},{"font":{"size":12},"showarrow":false,"text":" <br> <br> <br>(11)","x":" 1","y":" 1"}],"margin":{"t":40,"b":40,"l":7,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Precision Plot</h3><h6 class="card-subtitle">Does fraction positive increase with predicted probability?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="ea38a087-c9e7-4348-974c-a99848e2a08b" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ea38a087-c9e7-4348-974c-a99848e2a08b")) {                    Plotly.newPlot(                        "ea38a087-c9e7-4348-974c-a99848e2a08b",                        [{"name":"counts","width":[0.09000000000000001,0.09000000000000001,0.09000000000000004,0.08999999999999998,0.08999999999999998,0.0900000000000001,0.08999999999999998,0.08999999999999998,0.08999999999999998,0.08999999999999998],"x":[0.05,0.15000000000000002,0.25,0.35000000000000003,0.45,0.55,0.6500000000000001,0.75,0.8500000000000001,0.95],"y":[31,0,0,0,0,0,2,0,0,9],"type":"bar"},{"name":"percentage 1","x":[0.003,null,null,null,null,null,0.686,null,null,0.998],"y":[0.0,null,null,null,null,null,1.0,null,null,1.0],"yaxis":"y2","type":"scatter"}],                        {"plot_bgcolor":"#fff","shapes":[{"type":"line","x0":0.5,"x1":0.5,"xref":"x","y0":0,"y1":1.0,"yref":"y2"}],"title":{"text":"percentage 1 vs predicted probability"},"xaxis":{"title":{"text":"predicted probability"}},"yaxis":{"title":{"text":"counts"}},"yaxis2":{"overlaying":"y","rangemode":"tozero","side":"right","tickfont":{"color":"rgb(148, 103, 189)"},"title":{"font":{"color":"rgb(148, 103, 189)"},"text":"percentage"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"legend":{"orientation":"h","xanchor":"center","y":-0.2,"x":0.5},"margin":{"t":40,"b":40,"l":40,"r":40},"annotations":[{"text":"cutoff=0.5","x":0.5,"y":0.1,"yref":"y2"}]},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Classification Plot</h3><h6 class="card-subtitle">Distribution of labels above and below cutoff</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="14371700-2fb0-4b29-b2c1-c85033d4c52a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("14371700-2fb0-4b29-b2c1-c85033d4c52a")) {                    Plotly.newPlot(                        "14371700-2fb0-4b29-b2c1-c85033d4c52a",                        [{"hoverinfo":"text","name":"0","text":["<b>31.0</b> (100.00%)","<b>0.0</b> (0.00%)","<b>31.0</b> (73.81%)"],"textposition":"auto","x":["below cutoff","above cutoff","total"],"y":[100.0,0.0,73.80952380952381],"type":"bar"},{"hoverinfo":"text","name":"1","text":["<b>0.0</b> (0.00%)","<b>11.0</b> (100.00%)","<b>11.0</b> (26.19%)"],"textposition":"auto","x":["below cutoff","above cutoff","total"],"y":[0.0,100.0,26.19047619047619],"type":"bar"}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"Percentage above and below cutoff"},"margin":{"t":40,"b":40,"l":40,"r":40},"barmode":"stack","legend":{"orientation":"h","xanchor":"center","y":-0.2,"x":0.5}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">ROC AUC Plot</h3><h6 class="card-subtitle">Trade-off between False positives and false negatives</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="163d8925-d380-4fbd-ac71-770602c8f947" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("163d8925-d380-4fbd-ac71-770602c8f947")) {                    Plotly.newPlot(                        "163d8925-d380-4fbd-ac71-770602c8f947",                        [{"hoverinfo":"text","mode":"lines","name":"ROC AUC CURVE","text":["threshold: 2.00 <br> FP: 0.00 <br> TP: 0.00","threshold: 1.00 <br> FP: 0.00 <br> TP: 0.73","threshold: 0.68 <br> FP: 0.00 <br> TP: 1.00","threshold: 0.10 <br> FP: 0.03 <br> TP: 1.00","threshold: 0.00 <br> FP: 1.00 <br> TP: 1.00"],"x":[0.0,0.0,0.0,0.03225806451612903,1.0],"y":[0.0,0.7272727272727273,1.0,1.0,1.0],"type":"scatter"}],                        {"hovermode":"closest","plot_bgcolor":"#fff","title":{"text":"ROC AUC CURVE"},"xaxis":{"constrain":"domain","range":[0,1],"title":{"text":"False Positive Rate"}},"yaxis":{"constrain":"domain","range":[0,1],"scaleanchor":"x","scaleratio":1,"title":{"text":"True Positive Rate"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"annotations":[{"align":"right","showarrow":false,"text":"roc-auc-score: 1.00","x":0.6,"xanchor":"left","y":0.4,"yanchor":"top"},{"align":"right","showarrow":false,"text":"cutoff: 0.50","x":0.6,"xanchor":"left","y":0.35,"yanchor":"top"},{"align":"right","showarrow":false,"text":"TPR: 1.00","x":0.6,"xanchor":"left","y":0.3,"yanchor":"top"},{"align":"right","showarrow":false,"text":"FPR: 0.00","x":0.6,"xanchor":"left","y":0.24,"yanchor":"top"}],"shapes":[{"line":{"color":"darkslategray","dash":"dot","width":4},"type":"line","x0":0,"x1":1,"xref":"x","y0":0,"y1":1,"yref":"y"},{"line":{"color":"lightslategray","width":1},"type":"line","x0":0,"x1":1,"xref":"x","y0":1.0,"y1":1.0,"yref":"y"},{"line":{"color":"lightslategray","width":1},"type":"line","x0":0.0,"x1":0.0,"xref":"x","y0":0,"y1":1,"yref":"y"}],"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">PR AUC Plot</h3><h6 class="card-subtitle">Trade-off between Precision and Recall</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="6979a507-afc9-490f-a883-7a9fefef1d0d" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6979a507-afc9-490f-a883-7a9fefef1d0d")) {                    Plotly.newPlot(                        "6979a507-afc9-490f-a883-7a9fefef1d0d",                        [{"hoverinfo":"text","mode":"lines","name":"PR AUC CURVE","text":["threshold: 0.68 <br>precision: 1.00 <br>recall: 1.00","threshold: 0.69 <br>precision: 1.00 <br>recall: 0.91","threshold: 0.98 <br>precision: 1.00 <br>recall: 0.82","threshold: 1.00 <br>precision: 1.00 <br>recall: 0.73"],"x":[1.0,1.0,1.0,1.0,1.0],"y":[1.0,0.9090909090909091,0.8181818181818182,0.7272727272727273,0.0],"type":"scatter"}],                        {"hovermode":"closest","plot_bgcolor":"#fff","title":{"text":"PR AUC CURVE"},"xaxis":{"constrain":"domain","range":[0,1],"title":{"text":"Precision"}},"yaxis":{"constrain":"domain","range":[0,1],"scaleanchor":"x","scaleratio":1,"title":{"text":"Recall"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"annotations":[{"align":"right","showarrow":false,"text":"pr-auc-score: 1.00","x":0.15,"xanchor":"left","y":0.4,"yanchor":"top"},{"align":"right","showarrow":false,"text":"cutoff: 0.50","x":0.15,"xanchor":"left","y":0.35,"yanchor":"top"},{"align":"right","showarrow":false,"text":"precision: 1.00","x":0.15,"xanchor":"left","y":0.3,"yanchor":"top"},{"align":"right","showarrow":false,"text":"recall: 1.00","x":0.15,"xanchor":"left","y":0.25,"yanchor":"top"}],"shapes":[{"line":{"color":"lightslategray","width":1},"type":"line","x0":0,"x1":1,"xref":"x","y0":1.0,"y1":1.0,"yref":"y"},{"line":{"color":"lightslategray","width":1},"type":"line","x0":1.0,"x1":1.0,"xref":"x","y0":0,"y1":1,"yref":"y"}],"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Lift Curve</h3><h6 class="card-subtitle">Performance how much better than random?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="bba493f8-ea0c-47a0-9d8b-5a8bc0ad5e97" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("bba493f8-ea0c-47a0-9d8b-5a8bc0ad5e97")) {                    Plotly.newPlot(                        "bba493f8-ea0c-47a0-9d8b-5a8bc0ad5e97",                        [{"hoverinfo":"text","name":"perfect","text":["0%, 0%","26.19%, 100%","100, 100%"],"x":[0.0,26.19047737121582,100],"y":[0.0,100,100],"type":"scatter"},{"hoverinfo":"text","name":"model","text":["model selected 9.09% of all positives in first 2.38% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 18.18% of all positives in first 4.76% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 27.27% of all positives in first 7.14% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 36.36% of all positives in first 9.52% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 45.45% of all positives in first 11.90% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 54.55% of all positives in first 14.29% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 63.64% of all positives in first 16.67% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 72.73% of all positives in first 19.05% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 81.82% of all positives in first 21.43% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 90.91% of all positives in first 23.81% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 100.00% of all positives in first 26.19% sampled<br>precision=100.00% positives in sample<br>lift=3.82","model selected 100.00% of all positives in first 28.57% sampled<br>precision=91.67% positives in sample<br>lift=3.50","model selected 100.00% of all positives in first 30.95% sampled<br>precision=84.62% positives in sample<br>lift=3.23","model selected 100.00% of all positives in first 33.33% sampled<br>precision=78.57% positives in sample<br>lift=3.00","model selected 100.00% of all positives in first 35.71% sampled<br>precision=73.33% positives in sample<br>lift=2.80","model selected 100.00% of all positives in first 38.10% sampled<br>precision=68.75% positives in sample<br>lift=2.63","model selected 100.00% of all positives in first 40.48% sampled<br>precision=64.71% positives in sample<br>lift=2.47","model selected 100.00% of all positives in first 42.86% sampled<br>precision=61.11% positives in sample<br>lift=2.33","model selected 100.00% of all positives in first 45.24% sampled<br>precision=57.89% positives in sample<br>lift=2.21","model selected 100.00% of all positives in first 47.62% sampled<br>precision=55.00% positives in sample<br>lift=2.10","model selected 100.00% of all positives in first 50.00% sampled<br>precision=52.38% positives in sample<br>lift=2.00","model selected 100.00% of all positives in first 52.38% sampled<br>precision=50.00% positives in sample<br>lift=1.91","model selected 100.00% of all positives in first 54.76% sampled<br>precision=47.83% positives in sample<br>lift=1.83","model selected 100.00% of all positives in first 57.14% sampled<br>precision=45.83% positives in sample<br>lift=1.75","model selected 100.00% of all positives in first 59.52% sampled<br>precision=44.00% positives in sample<br>lift=1.68","model selected 100.00% of all positives in first 61.90% sampled<br>precision=42.31% positives in sample<br>lift=1.62","model selected 100.00% of all positives in first 64.29% sampled<br>precision=40.74% positives in sample<br>lift=1.56","model selected 100.00% of all positives in first 66.67% sampled<br>precision=39.29% positives in sample<br>lift=1.50","model selected 100.00% of all positives in first 69.05% sampled<br>precision=37.93% positives in sample<br>lift=1.45","model selected 100.00% of all positives in first 71.43% sampled<br>precision=36.67% positives in sample<br>lift=1.40","model selected 100.00% of all positives in first 73.81% sampled<br>precision=35.48% positives in sample<br>lift=1.35","model selected 100.00% of all positives in first 76.19% sampled<br>precision=34.38% positives in sample<br>lift=1.31","model selected 100.00% of all positives in first 78.57% sampled<br>precision=33.33% positives in sample<br>lift=1.27","model selected 100.00% of all positives in first 80.95% sampled<br>precision=32.35% positives in sample<br>lift=1.24","model selected 100.00% of all positives in first 83.33% sampled<br>precision=31.43% positives in sample<br>lift=1.20","model selected 100.00% of all positives in first 85.71% sampled<br>precision=30.56% positives in sample<br>lift=1.17","model selected 100.00% of all positives in first 88.10% sampled<br>precision=29.73% positives in sample<br>lift=1.14","model selected 100.00% of all positives in first 90.48% sampled<br>precision=28.95% positives in sample<br>lift=1.11","model selected 100.00% of all positives in first 92.86% sampled<br>precision=28.21% positives in sample<br>lift=1.08","model selected 100.00% of all positives in first 95.24% sampled<br>precision=27.50% positives in sample<br>lift=1.05","model selected 100.00% of all positives in first 97.62% sampled<br>precision=26.83% positives in sample<br>lift=1.02","model selected 100.00% of all positives in first 100.00% sampled<br>precision=26.19% positives in sample<br>lift=1.00"],"x":[2.3809523582458496,4.761904716491699,7.142857074737549,9.523809432983398,11.904762268066406,14.285714149475098,16.66666603088379,19.047618865966797,21.428571701049805,23.809524536132812,26.190475463867188,28.571428298950195,30.952381134033203,33.33333206176758,35.71428680419922,38.095237731933594,40.47618865966797,42.85714340209961,45.238094329833984,47.619049072265625,50.0,52.380950927734375,54.761905670166016,57.14285659790039,59.52381134033203,61.904762268066406,64.28571319580078,66.66666412353516,69.04762268066406,71.42857360839844,73.80952453613281,76.19047546386719,78.57142639160156,80.95237731933594,83.33333587646484,85.71428680419922,88.0952377319336,90.47618865966797,92.85713958740234,95.23809814453125,97.61904907226562,100.0],"y":[9.09000015258789,18.18000030517578,27.270000457763672,36.36000061035156,45.45000076293945,54.54999923706055,63.63999938964844,72.7300033569336,81.81999969482422,90.91000366210938,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0],"type":"scatter"},{"hoverinfo":"text","name":"random","text":["random selected 2.38% of all positives in first 2.38% sampled<br>precision=26.19% positives in sample","random selected 4.76% of all positives in first 4.76% sampled<br>precision=26.19% positives in sample","random selected 7.14% of all positives in first 7.14% sampled<br>precision=26.19% positives in sample","random selected 9.52% of all positives in first 9.52% sampled<br>precision=26.19% positives in sample","random selected 11.90% of all positives in first 11.90% sampled<br>precision=26.19% positives in sample","random selected 14.29% of all positives in first 14.29% sampled<br>precision=26.19% positives in sample","random selected 16.67% of all positives in first 16.67% sampled<br>precision=26.19% positives in sample","random selected 19.05% of all positives in first 19.05% sampled<br>precision=26.19% positives in sample","random selected 21.43% of all positives in first 21.43% sampled<br>precision=26.19% positives in sample","random selected 23.81% of all positives in first 23.81% sampled<br>precision=26.19% positives in sample","random selected 26.19% of all positives in first 26.19% sampled<br>precision=26.19% positives in sample","random selected 28.57% of all positives in first 28.57% sampled<br>precision=26.19% positives in sample","random selected 30.95% of all positives in first 30.95% sampled<br>precision=26.19% positives in sample","random selected 33.33% of all positives in first 33.33% sampled<br>precision=26.19% positives in sample","random selected 35.71% of all positives in first 35.71% sampled<br>precision=26.19% positives in sample","random selected 38.10% of all positives in first 38.10% sampled<br>precision=26.19% positives in sample","random selected 40.48% of all positives in first 40.48% sampled<br>precision=26.19% positives in sample","random selected 42.86% of all positives in first 42.86% sampled<br>precision=26.19% positives in sample","random selected 45.24% of all positives in first 45.24% sampled<br>precision=26.19% positives in sample","random selected 47.62% of all positives in first 47.62% sampled<br>precision=26.19% positives in sample","random selected 50.00% of all positives in first 50.00% sampled<br>precision=26.19% positives in sample","random selected 52.38% of all positives in first 52.38% sampled<br>precision=26.19% positives in sample","random selected 54.76% of all positives in first 54.76% sampled<br>precision=26.19% positives in sample","random selected 57.14% of all positives in first 57.14% sampled<br>precision=26.19% positives in sample","random selected 59.52% of all positives in first 59.52% sampled<br>precision=26.19% positives in sample","random selected 61.90% of all positives in first 61.90% sampled<br>precision=26.19% positives in sample","random selected 64.29% of all positives in first 64.29% sampled<br>precision=26.19% positives in sample","random selected 66.67% of all positives in first 66.67% sampled<br>precision=26.19% positives in sample","random selected 69.05% of all positives in first 69.05% sampled<br>precision=26.19% positives in sample","random selected 71.43% of all positives in first 71.43% sampled<br>precision=26.19% positives in sample","random selected 73.81% of all positives in first 73.81% sampled<br>precision=26.19% positives in sample","random selected 76.19% of all positives in first 76.19% sampled<br>precision=26.19% positives in sample","random selected 78.57% of all positives in first 78.57% sampled<br>precision=26.19% positives in sample","random selected 80.95% of all positives in first 80.95% sampled<br>precision=26.19% positives in sample","random selected 83.33% of all positives in first 83.33% sampled<br>precision=26.19% positives in sample","random selected 85.71% of all positives in first 85.71% sampled<br>precision=26.19% positives in sample","random selected 88.10% of all positives in first 88.10% sampled<br>precision=26.19% positives in sample","random selected 90.48% of all positives in first 90.48% sampled<br>precision=26.19% positives in sample","random selected 92.86% of all positives in first 92.86% sampled<br>precision=26.19% positives in sample","random selected 95.24% of all positives in first 95.24% sampled<br>precision=26.19% positives in sample","random selected 97.62% of all positives in first 97.62% sampled<br>precision=26.19% positives in sample","random selected 100.00% of all positives in first 100.00% sampled<br>precision=26.19% positives in sample"],"x":[2.3809523582458496,4.761904716491699,7.142857074737549,9.523809432983398,11.904762268066406,14.285714149475098,16.66666603088379,19.047618865966797,21.428571701049805,23.809524536132812,26.190475463867188,28.571428298950195,30.952381134033203,33.33333206176758,35.71428680419922,38.095237731933594,40.47618865966797,42.85714340209961,45.238094329833984,47.619049072265625,50.0,52.380950927734375,54.761905670166016,57.14285659790039,59.52381134033203,61.904762268066406,64.28571319580078,66.66666412353516,69.04762268066406,71.42857360839844,73.80952453613281,76.19047546386719,78.57142639160156,80.95237731933594,83.33333587646484,85.71428680419922,88.0952377319336,90.47618865966797,92.85713958740234,95.23809814453125,97.61904907226562,100.0],"y":[2.380000114440918,4.760000228881836,7.139999866485596,9.520000457763672,11.899999618530273,14.289999961853027,16.670000076293945,19.049999237060547,21.43000030517578,23.809999465942383,26.190000534057617,28.56999969482422,30.950000762939453,33.33000183105469,35.709999084472656,38.099998474121094,40.47999954223633,42.86000061035156,45.2400016784668,47.619998931884766,50.0,52.380001068115234,54.7599983215332,57.13999938964844,59.52000045776367,61.900001525878906,64.29000091552734,66.66999816894531,69.05000305175781,71.43000030517578,73.80999755859375,76.19000244140625,78.56999969482422,80.94999694824219,83.33000183105469,85.70999908447266,88.0999984741211,90.4800033569336,92.86000061035156,95.23999786376953,97.62000274658203,100.0],"type":"scatter"}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"font":{"size":18},"text":"Lift curve","x":0.5},"xaxis":{"title":{"text":"Percentage sampled"},"spikemode":"across","range":[0,100]},"yaxis":{"title":{"text":"Percentage of positive"}},"hovermode":"x","plot_bgcolor":"#fff","legend":{"xanchor":"center","y":0.9,"x":0.1},"shapes":[{"type":"line","x0":26.190475463867188,"x1":26.190475463867188,"xref":"x","y0":0,"y1":100.0,"yref":"y"}],"annotations":[{"text":"cutoff=0.50","x":26.190475463867188,"y":5,"yref":"y"},{"align":"right","showarrow":false,"text":"Model: 11 out 11 (100.00%)","x":0.5,"xanchor":"left","xref":"paper","y":0.4,"yanchor":"top","yref":"paper"},{"align":"right","showarrow":false,"text":"Random: 2 out 11 (26.19%)","x":0.5,"xanchor":"left","xref":"paper","y":0.33,"yanchor":"top","yref":"paper"},{"align":"right","showarrow":false,"text":"Lift: 3.8","x":0.5,"xanchor":"left","xref":"paper","y":0.26,"yanchor":"top","yref":"paper"}],"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Cumulative Precision</h3><h6 class="card-subtitle">Expected distribution for highest scores</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="4a07eedd-44de-4252-aa44-0581655e1888" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("4a07eedd-44de-4252-aa44-0581655e1888")) {                    Plotly.newPlot(                        "4a07eedd-44de-4252-aa44-0581655e1888",                        [{"hoverinfo":"text","showlegend":false,"text":["percentage sampled = top 2.38%","percentage sampled = top 4.76%","percentage sampled = top 7.14%","percentage sampled = top 9.52%","percentage sampled = top 11.90%","percentage sampled = top 14.29%","percentage sampled = top 16.67%","percentage sampled = top 19.05%","percentage sampled = top 21.43%","percentage sampled = top 23.81%","percentage sampled = top 26.19%","percentage sampled = top 28.57%","percentage sampled = top 30.95%","percentage sampled = top 33.33%","percentage sampled = top 35.71%","percentage sampled = top 38.10%","percentage sampled = top 40.48%","percentage sampled = top 42.86%","percentage sampled = top 45.24%","percentage sampled = top 47.62%","percentage sampled = top 50.00%","percentage sampled = top 52.38%","percentage sampled = top 54.76%","percentage sampled = top 57.14%","percentage sampled = top 59.52%","percentage sampled = top 61.90%","percentage sampled = top 64.29%","percentage sampled = top 66.67%","percentage sampled = top 69.05%","percentage sampled = top 71.43%","percentage sampled = top 73.81%","percentage sampled = top 76.19%","percentage sampled = top 78.57%","percentage sampled = top 80.95%","percentage sampled = top 83.33%","percentage sampled = top 85.71%","percentage sampled = top 88.10%","percentage sampled = top 90.48%","percentage sampled = top 92.86%","percentage sampled = top 95.24%","percentage sampled = top 97.62%","percentage sampled = top 100.00%"],"x":[2.3809523582458496,4.761904716491699,7.142857074737549,9.523809432983398,11.904762268066406,14.285714149475098,16.66666603088379,19.047618865966797,21.428571701049805,23.809524536132812,26.190475463867188,28.571428298950195,30.952381134033203,33.33333206176758,35.71428680419922,38.095237731933594,40.47618865966797,42.85714340209961,45.238094329833984,47.619049072265625,50.0,52.380950927734375,54.761905670166016,57.14285659790039,59.52381134033203,61.904762268066406,64.28571319580078,66.66666412353516,69.04762268066406,71.42857360839844,73.80952453613281,76.19047546386719,78.57142639160156,80.95237731933594,83.33333587646484,85.71428680419922,88.0952377319336,90.47618865966797,92.85713958740234,95.23809814453125,97.61904907226562,100.0],"y":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"fill":"tozeroy","hoverinfo":"text","name":"1","text":["percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=100.00%","percentage 1=91.67%","percentage 1=84.62%","percentage 1=78.57%","percentage 1=73.33%","percentage 1=68.75%","percentage 1=64.71%","percentage 1=61.11%","percentage 1=57.89%","percentage 1=55.00%","percentage 1=52.38%","percentage 1=50.00%","percentage 1=47.83%","percentage 1=45.83%","percentage 1=44.00%","percentage 1=42.31%","percentage 1=40.74%","percentage 1=39.29%","percentage 1=37.93%","percentage 1=36.67%","percentage 1=35.48%","percentage 1=34.38%","percentage 1=33.33%","percentage 1=32.35%","percentage 1=31.43%","percentage 1=30.56%","percentage 1=29.73%","percentage 1=28.95%","percentage 1=28.21%","percentage 1=27.50%","percentage 1=26.83%","percentage 1=26.19%"],"x":[2.3809523582458496,4.761904716491699,7.142857074737549,9.523809432983398,11.904762268066406,14.285714149475098,16.66666603088379,19.047618865966797,21.428571701049805,23.809524536132812,26.190475463867188,28.571428298950195,30.952381134033203,33.33333206176758,35.71428680419922,38.095237731933594,40.47618865966797,42.85714340209961,45.238094329833984,47.619049072265625,50.0,52.380950927734375,54.761905670166016,57.14285659790039,59.52381134033203,61.904762268066406,64.28571319580078,66.66666412353516,69.04762268066406,71.42857360839844,73.80952453613281,76.19047546386719,78.57142639160156,80.95237731933594,83.33333587646484,85.71428680419922,88.0952377319336,90.47618865966797,92.85713958740234,95.23809814453125,97.61904907226562,100.0],"y":[100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,91.66666666666667,84.61538461538461,78.57142857142857,73.33333333333333,68.75,64.70588235294117,61.111111111111114,57.89473684210526,55.0,52.38095238095238,50.0,47.82608695652174,45.833333333333336,44.0,42.30769230769231,40.74074074074074,39.285714285714285,37.93103448275862,36.666666666666664,35.483870967741936,34.375,33.333333333333336,32.35294117647059,31.428571428571427,30.555555555555557,29.72972972972973,28.94736842105263,28.205128205128204,27.5,26.829268292682926,26.19047619047619],"type":"scatter"},{"fill":"tonexty","hoverinfo":"text","name":"0","text":["percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=0.00%","percentage 0=8.33%","percentage 0=15.38%","percentage 0=21.43%","percentage 0=26.67%","percentage 0=31.25%","percentage 0=35.29%","percentage 0=38.89%","percentage 0=42.11%","percentage 0=45.00%","percentage 0=47.62%","percentage 0=50.00%","percentage 0=52.17%","percentage 0=54.17%","percentage 0=56.00%","percentage 0=57.69%","percentage 0=59.26%","percentage 0=60.71%","percentage 0=62.07%","percentage 0=63.33%","percentage 0=64.52%","percentage 0=65.62%","percentage 0=66.67%","percentage 0=67.65%","percentage 0=68.57%","percentage 0=69.44%","percentage 0=70.27%","percentage 0=71.05%","percentage 0=71.79%","percentage 0=72.50%","percentage 0=73.17%","percentage 0=73.81%"],"x":[2.3809523582458496,4.761904716491699,7.142857074737549,9.523809432983398,11.904762268066406,14.285714149475098,16.66666603088379,19.047618865966797,21.428571701049805,23.809524536132812,26.190475463867188,28.571428298950195,30.952381134033203,33.33333206176758,35.71428680419922,38.095237731933594,40.47618865966797,42.85714340209961,45.238094329833984,47.619049072265625,50.0,52.380950927734375,54.761905670166016,57.14285659790039,59.52381134033203,61.904762268066406,64.28571319580078,66.66666412353516,69.04762268066406,71.42857360839844,73.80952453613281,76.19047546386719,78.57142639160156,80.95237731933594,83.33333587646484,85.71428680419922,88.0952377319336,90.47618865966797,92.85713958740234,95.23809814453125,97.61904907226562,100.0],"y":[100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0],"type":"scatter"}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"font":{"size":18},"text":"Cumulative percentage per category<br>when sampling top X%","x":0.5},"xaxis":{"title":{"text":"Top X% model scores"},"spikemode":"across","range":[0,100],"nticks":10},"yaxis":{"title":{"text":"Cumulative precision per category"}},"hovermode":"x","plot_bgcolor":"#fff","margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+     
+</div>
+<div class="tab-pane" id="Individual Predictions" role="tabpanel" aria-labelledby="Individual Predictions-tab">
+ <div><H1>Individual Predictions</H1></div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Select Random Index</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+Selected index: <b>None</b>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Prediction</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+no index selected
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Contributions Plot</h3><h6 class="card-subtitle">How has each feature contributed to the prediction?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>no index selected</div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Partial Dependence Plot</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="82067edc-ffaa-415a-800d-f665caf11604" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("82067edc-ffaa-415a-800d-f665caf11604")) {                    Plotly.newPlot(                        "82067edc-ffaa-415a-800d-f665caf11604",                        [{"line":{"color":"grey","width":4},"mode":"lines+markers","name":"average prediction <br>for different values of <br>sensor_22__cid_ce__normalize_True","x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[48.83,48.83,28.61,14.47,14.47,14.47,14.47,14.47,14.47,14.47],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[86.2,86.2,66.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[87.0,87.0,77.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[100.0,100.0,97.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[36.0,36.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[100.0,100.0,97.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[100.0,100.0,97.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[100.0,100.0,97.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[36.0,36.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[100.0,100.0,97.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[100.0,100.0,97.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[100.0,100.0,97.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[100.0,100.0,97.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[1.6124147176742554,1.6313519212934706,1.6993168592453003,1.739829142888387,1.7584646807776556,1.7784190707736545,1.79532786210378,1.801682750384013,1.8273828956815932,17.55036735534668],"y":[33.0,33.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scatter"}],                        {"plot_bgcolor":"#fff","title":{"text":"pdp plot for sensor_22__cid_ce__normalize_True"},"xaxis":{"title":{"text":"sensor_22__cid_ce__normalize_True"}},"yaxis":{"title":{"text":"Predicted result (Predicted %)"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"showlegend":false,"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Contributions Table</h3><h6 class="card-subtitle">How has each feature contributed to the prediction?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>no index selected</div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+     
+</div>
+<div class="tab-pane" id="Feature Dependence" role="tabpanel" aria-labelledby="Feature Dependence-tab">
+ <div><H1>Feature Dependence</H1></div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Shap Summary</h3><h6 class="card-subtitle">Ordering features by shap value</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="bc07b6cb-e3b1-4e83-a640-0cd80df63bb6" class="plotly-graph-div" style="height:260px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("bc07b6cb-e3b1-4e83-a640-0cd80df63bb6")) {                    Plotly.newPlot(                        "bc07b6cb-e3b1-4e83-a640-0cd80df63bb6",                        [{"hoverinfo":"text","orientation":"h","x":[0.10950283285740849,0.1297332719472462,0.13550832416059555],"y":["3. sensor_21__linear_trend__attr_pvalue","2. sensor_22__quantile__q_0.3","1. sensor_22__cid_ce__normalize_True"],"type":"bar"}],                        {"plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Average impact on predicted result<br>(mean absolute SHAP value)"},"template":{"data":{"scatter":[{"type":"scatter"}]}},"yaxis":{"automargin":true},"xaxis":{"automargin":true,"title":{"text":""}},"height":260,"margin":{"b":40,"l":252,"pad":4,"r":40,"t":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Shap Dependence</h3><h6 class="card-subtitle">Relationship between feature value and SHAP value</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>                <div id="a44efe86-a99b-4824-9669-460b633902b2" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("a44efe86-a99b-4824-9669-460b633902b2")) {                    Plotly.newPlot(                        "a44efe86-a99b-4824-9669-460b633902b2",                        [{"hoverinfo":"text","marker":{"color":[103.64299774169922,103.59500122070312,103.78600311279297,103.69100189208984,103.78600311279297,103.90599822998047,103.66699981689453,103.92900085449219,103.65740203857422,103.66699981689453,103.61900329589844,103.90599822998047,103.71499633789062,103.59500122070312,103.61900329589844,103.87239837646484,103.57099914550781,103.64299774169922,103.64299774169922,103.64299774169922,103.73899841308594,103.73899841308594,103.64299774169922,103.66699981689453,103.64299774169922,103.66699981689453,103.64299774169922,103.64299774169922,103.64299774169922,103.92900085449219,103.6093978881836,103.66699981689453,103.57099914550781,103.85800170898438,103.83399963378906,103.83399963378906,103.69100189208984,103.57099914550781,103.57099914550781,103.59500122070312,103.76200103759766,103.59500122070312],"colorbar":{"title":{"text":"sensor_22__quantile__q_0.3"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"opacity":0.6,"showscale":true,"size":7},"mode":"markers","text":["None=83<br>sensor_22__cid_ce__normalize_True=1.7875957489013672<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=116<br>sensor_22__cid_ce__normalize_True=1.7980366945266724<br>sensor_22__quantile__q_0.3=103.59500122070312<br>SHAP=-0.089","None=30<br>sensor_22__cid_ce__normalize_True=1.6988109350204468<br>sensor_22__quantile__q_0.3=103.78600311279297<br>SHAP=0.168","None=57<br>sensor_22__cid_ce__normalize_True=1.739198923110962<br>sensor_22__quantile__q_0.3=103.69100189208984<br>SHAP=-0.089","None=31<br>sensor_22__cid_ce__normalize_True=1.7033642530441284<br>sensor_22__quantile__q_0.3=103.78600311279297<br>SHAP=0.211","None=9<br>sensor_22__cid_ce__normalize_True=1.6177451610565186<br>sensor_22__quantile__q_0.3=103.90599822998047<br>SHAP=0.304","None=63<br>sensor_22__cid_ce__normalize_True=1.7561649084091187<br>sensor_22__quantile__q_0.3=103.66699981689453<br>SHAP=-0.089","None=2<br>sensor_22__cid_ce__normalize_True=1.6200016736984253<br>sensor_22__quantile__q_0.3=103.92900085449219<br>SHAP=0.304","None=77<br>sensor_22__cid_ce__normalize_True=1.770031213760376<br>sensor_22__quantile__q_0.3=103.65740203857422<br>SHAP=-0.089","None=62<br>sensor_22__cid_ce__normalize_True=1.794764518737793<br>sensor_22__quantile__q_0.3=103.66699981689453<br>SHAP=-0.089","None=86<br>sensor_22__cid_ce__normalize_True=1.7964545488357544<br>sensor_22__quantile__q_0.3=103.61900329589844<br>SHAP=-0.089","None=8<br>sensor_22__cid_ce__normalize_True=1.6124147176742554<br>sensor_22__quantile__q_0.3=103.90599822998047<br>SHAP=0.304","None=48<br>sensor_22__cid_ce__normalize_True=1.6957066059112549<br>sensor_22__quantile__q_0.3=103.71499633789062<br>SHAP=0.109","None=133<br>sensor_22__cid_ce__normalize_True=1.7592569589614868<br>sensor_22__quantile__q_0.3=103.59500122070312<br>SHAP=-0.089","None=115<br>sensor_22__cid_ce__normalize_True=1.7992099523544312<br>sensor_22__quantile__q_0.3=103.61900329589844<br>SHAP=-0.089","None=13<br>sensor_22__cid_ce__normalize_True=1.6210365295410156<br>sensor_22__quantile__q_0.3=103.87239837646484<br>SHAP=0.304","None=131<br>sensor_22__cid_ce__normalize_True=1.8413184881210327<br>sensor_22__quantile__q_0.3=103.57099914550781<br>SHAP=-0.089","None=84<br>sensor_22__cid_ce__normalize_True=1.8257185220718384<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=80<br>sensor_22__cid_ce__normalize_True=1.7478318214416504<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=81<br>sensor_22__cid_ce__normalize_True=1.8000131845474243<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=36<br>sensor_22__cid_ce__normalize_True=1.7400760650634766<br>sensor_22__quantile__q_0.3=103.73899841308594<br>SHAP=-0.092","None=40<br>sensor_22__cid_ce__normalize_True=1.7536593675613403<br>sensor_22__quantile__q_0.3=103.73899841308594<br>SHAP=-0.092","None=74<br>sensor_22__cid_ce__normalize_True=17.55036735534668<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=66<br>sensor_22__cid_ce__normalize_True=1.8018914461135864<br>sensor_22__quantile__q_0.3=103.66699981689453<br>SHAP=-0.089","None=72<br>sensor_22__cid_ce__normalize_True=1.7582383155822754<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=76<br>sensor_22__cid_ce__normalize_True=1.7892247438430786<br>sensor_22__quantile__q_0.3=103.66699981689453<br>SHAP=-0.089","None=69<br>sensor_22__cid_ce__normalize_True=1.7637951374053955<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=87<br>sensor_22__cid_ce__normalize_True=1.780815601348877<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=79<br>sensor_22__cid_ce__normalize_True=1.7867690324783325<br>sensor_22__quantile__q_0.3=103.64299774169922<br>SHAP=-0.089","None=4<br>sensor_22__cid_ce__normalize_True=1.6267948150634766<br>sensor_22__quantile__q_0.3=103.92900085449219<br>SHAP=0.304","None=119<br>sensor_22__cid_ce__normalize_True=1.8315656185150146<br>sensor_22__quantile__q_0.3=103.6093978881836<br>SHAP=-0.089","None=70<br>sensor_22__cid_ce__normalize_True=1.7593731880187988<br>sensor_22__quantile__q_0.3=103.66699981689453<br>SHAP=-0.089","None=126<br>sensor_22__cid_ce__normalize_True=1.8294633626937866<br>sensor_22__quantile__q_0.3=103.57099914550781<br>SHAP=-0.089","None=16<br>sensor_22__cid_ce__normalize_True=1.6470286846160889<br>sensor_22__quantile__q_0.3=103.85800170898438<br>SHAP=0.304","None=15<br>sensor_22__cid_ce__normalize_True=1.6349976062774658<br>sensor_22__quantile__q_0.3=103.83399963378906<br>SHAP=0.304","None=22<br>sensor_22__cid_ce__normalize_True=1.6372036933898926<br>sensor_22__quantile__q_0.3=103.83399963378906<br>SHAP=0.304","None=51<br>sensor_22__cid_ce__normalize_True=1.739335298538208<br>sensor_22__quantile__q_0.3=103.69100189208984<br>SHAP=-0.089","None=120<br>sensor_22__cid_ce__normalize_True=1.824536919593811<br>sensor_22__quantile__q_0.3=103.57099914550781<br>SHAP=-0.089","None=123<br>sensor_22__cid_ce__normalize_True=1.8023651838302612<br>sensor_22__quantile__q_0.3=103.57099914550781<br>SHAP=-0.089","None=103<br>sensor_22__cid_ce__normalize_True=1.8445147275924683<br>sensor_22__quantile__q_0.3=103.59500122070312<br>SHAP=-0.089","None=34<br>sensor_22__cid_ce__normalize_True=1.7127653360366821<br>sensor_22__quantile__q_0.3=103.76200103759766<br>SHAP=0.102","None=117<br>sensor_22__cid_ce__normalize_True=1.8165640830993652<br>sensor_22__quantile__q_0.3=103.59500122070312<br>SHAP=-0.089"],"x":[1.7875957489013672,1.7980366945266724,1.6988109350204468,1.739198923110962,1.7033642530441284,1.6177451610565186,1.7561649084091187,1.6200016736984253,1.770031213760376,1.794764518737793,1.7964545488357544,1.6124147176742554,1.6957066059112549,1.7592569589614868,1.7992099523544312,1.6210365295410156,1.8413184881210327,1.8257185220718384,1.7478318214416504,1.8000131845474243,1.7400760650634766,1.7536593675613403,17.55036735534668,1.8018914461135864,1.7582383155822754,1.7892247438430786,1.7637951374053955,1.780815601348877,1.7867690324783325,1.6267948150634766,1.8315656185150146,1.7593731880187988,1.8294633626937866,1.6470286846160889,1.6349976062774658,1.6372036933898926,1.739335298538208,1.824536919593811,1.8023651838302612,1.8445147275924683,1.7127653360366821,1.8165640830993652],"y":[-0.08884060950675782,-0.08884060950675782,0.16846263255194005,-0.08884060950675782,0.21102778871178796,0.30353555415020106,-0.08884060950675782,0.30353555415020106,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,0.30353555415020106,0.10889757159165843,-0.08884060950675782,-0.08884060950675782,0.30353555415020106,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,-0.09233019284009117,-0.09233019284009117,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,0.30353555415020106,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,0.30353555415020106,0.30353555415020106,0.30353555415020106,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,-0.08884060950675782,0.10247973681861684,-0.08884060950675782],"type":"scattergl"}],                        {"hovermode":"closest","paper_bgcolor":"#fff","plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Dependence plot for sensor_22__cid_ce__normalize_True"},"xaxis":{"title":{"text":"sensor_22__cid_ce__normalize_True"}},"yaxis":{"title":{"text":"SHAP value"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+     
+</div>
+<div class="tab-pane" id="Decision Trees" role="tabpanel" aria-labelledby="Decision Trees-tab">
+ <div><H1>Decision Trees</H1></div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Select Random Index</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+Selected index: <b>None</b>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Decision Trees</h3><h6 class="card-subtitle">Displaying individual decision trees inside Random Forest</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+no index selected
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+
+<div class="card-deck">
+    
+<div class="card" >
+  <div class="card-header"><h3 class="card-title">Decision path table</h3><h6 class="card-subtitle">Decision path through decision tree</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col-sm">
+no tree selected
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+    
+</div>
+        
+</div> 
+     
+</div>
+
+</div>
+<script type="text/javascript">
+
+$('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    window.dispatchEvent(new Event('resize'));
+})
+
+</script>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+window.dispatchEvent(new Event('resize'));
+</script>
+        
+</html>
+    
