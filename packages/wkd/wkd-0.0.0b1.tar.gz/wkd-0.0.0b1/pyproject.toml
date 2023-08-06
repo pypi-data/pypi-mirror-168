@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wkd"
+version = "0.0.0.b1"
+description = "Which key via dmenu."
+readme = "README.md"
+license = { text = "GNU General Public License v3 (GPLv3)" }
+keywords = [ "dmenu" ]
+dependencies = [
+    "loadconf",
+    "promptx"
+]
+
+[project.optional-dependencies]
+
+[project.scripts]
+wkd = "wkd.__main__:main"
+
+[project.urls]
+repository = "https://codeberg.org/johndovern/wkd"
