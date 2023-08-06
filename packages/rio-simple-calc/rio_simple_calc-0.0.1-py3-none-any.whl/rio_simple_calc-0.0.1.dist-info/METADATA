@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rio-simple-calc
+Version: 0.0.1
+Summary: test package for training purposes
+Home-page: UNKNOWN
+Author: R IO
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+
+# Introduction 
+
+- Just a simple package for training purposes 
+- v 0.0.1 
+- Released on September 22nd, 2022
+
