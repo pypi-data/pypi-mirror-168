@@ -1,0 +1,16 @@
+pygmtools/__init__.py,sha256=93_dkd9KT68oixAo3sYHBneXLpz9ctySUl-KUGzml7U,203
+pygmtools/benchmark.py,sha256=dcFVN-8nVCOamPj2sneQqO-Rm_RwSa9UjbcUzyT9j8g,23687
+pygmtools/classic_solvers.py,sha256=gOfCns7J_z9ULz_ZtWUBzFqA5qgbonCJlD08shsh6_U,64497
+pygmtools/dataset.py,sha256=4v3fnXYIR1lztjrjQrxVIMFHEJe-XH1_wVgZuspUdpE,55992
+pygmtools/dataset_config.py,sha256=nNe_9wCxrDpvKQ8wbW2UvWrhEQygxpsLE0KTosR72QQ,2529
+pygmtools/jittor_backend.py,sha256=9ZtZkL0X2UU4qyWjAJURA2hRpKFjR0GJP8q22YTmQ3I,16278
+pygmtools/multi_graph_solvers.py,sha256=lIxOfPFOfCGnURqRurQ9N21XRSQ-v-xE7Kl5AJzVPSM,24232
+pygmtools/numpy_backend.py,sha256=Vbk2OFBAoQ8Xt_axDPXRJZCJhDiKKegibJ7JUEVos5Q,14016
+pygmtools/paddle_backend.py,sha256=IsUU8qn2Lhz4f-_0o2s5zSdKr7ANU69uoUfgq6dv88I,16971
+pygmtools/pytorch_backend.py,sha256=_jLIc8skUONcUvlIZtXvNOmvahjrx9qa0JcZYMImNkk,38201
+pygmtools/utils.py,sha256=f4xFHQpLKDyt6-8TeyZW-K1Q4k3G2q1Khc0Wewxu9WA,38056
+pygmtools-0.2.8.dist-info/LICENSE,sha256=CzmkREwa_lVjYGmr9ECXcprBlirzXe-vGmI-P31LXCk,679
+pygmtools-0.2.8.dist-info/METADATA,sha256=gCghNV0cg0csgBzLEV8F4OKBLNUCNX3uNAk1eamP5Yk,1796
+pygmtools-0.2.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygmtools-0.2.8.dist-info/top_level.txt,sha256=ZJxItgF_N3ioX2Dwip9oyvEXGptomHcy9rjpaEq2JfI,10
+pygmtools-0.2.8.dist-info/RECORD,,
