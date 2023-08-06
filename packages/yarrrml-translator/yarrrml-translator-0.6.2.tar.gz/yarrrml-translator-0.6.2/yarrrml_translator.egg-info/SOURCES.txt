@@ -1,0 +1,14 @@
+setup.py
+yarrrml-translator/__init__.py
+yarrrml-translator/__main__.py
+yarrrml-translator/constants.py
+yarrrml-translator/mapping.py
+yarrrml-translator/predicateobject.py
+yarrrml-translator/source.py
+yarrrml-translator/subject.py
+yarrrml-translator/termmap.py
+yarrrml_translator.egg-info/PKG-INFO
+yarrrml_translator.egg-info/SOURCES.txt
+yarrrml_translator.egg-info/dependency_links.txt
+yarrrml_translator.egg-info/requires.txt
+yarrrml_translator.egg-info/top_level.txt
