@@ -1,0 +1,9 @@
+rail/estimation/algos/GPz.py,sha256=9GFNfQJf2HPFdeEzcjU92dwEHb9G574kS0ZCuVubxeU,21483
+rail/estimation/algos/gpz_v1.py,sha256=SdlUZFeNmFD_Emy0yD2LwAJOz_ORutiK_PkTQE7Cxok,7677
+rail/estimation/algos/gpz_version/__init__.py,sha256=vILnCRnHzioXxVzdQZuujKtWCrZAn76JaQJZQozhFtg,35
+rail/estimation/algos/gpz_version/_version.py,sha256=6phs_teiMFXlYjRZHHJJHElOwXq2XLUA2bDPY9cA4bQ,176
+pz_rail_gpz_v1-0.1.0.dist-info/LICENSE,sha256=1VD6_oqGN47860GXP9IJElBfGXFQa64HJEmAaFqbO-Q,1102
+pz_rail_gpz_v1-0.1.0.dist-info/METADATA,sha256=ySKLuKtd7g7P-tnvoijjDzbG_lyoau_lm5kv1i4Cfjw,2255
+pz_rail_gpz_v1-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pz_rail_gpz_v1-0.1.0.dist-info/top_level.txt,sha256=6R6sqn-85I8YZTzmB9gv7sqckB2QaOTHbu-QLGTWBRE,5
+pz_rail_gpz_v1-0.1.0.dist-info/RECORD,,
