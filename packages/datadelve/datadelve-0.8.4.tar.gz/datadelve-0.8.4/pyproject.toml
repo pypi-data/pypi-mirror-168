@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "datadelve"
+version = "0.8.4"
+description = "A library to read and manipulate nested data structures, particularly ones read from JSON files"
+authors = ["Nick Thurmes <nthurmes@gmail.com>"]
+license = "GPL-2.0+"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+jsonpointer = "^2.0"
+
+[tool.poetry.dev-dependencies]
+coveralls = "^3.0.1"
+nose2 = "^0.11.0"
+coverage = "^6.0"
+Sphinx = "^2.1"
+lz4 = "^3.0.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
