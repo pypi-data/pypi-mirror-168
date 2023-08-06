@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: estimate-sol
+Version: 0.0.0
+Summary: Script to estimate the size of solidity source code
+Home-page: https://github.com/CoinFabrik/estimate-sol
+Author: Coinfabrik team
+License: mit
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8

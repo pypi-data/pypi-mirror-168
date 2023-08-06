@@ -1,0 +1,3 @@
+[console_scripts]
+estimate-sol = estimate_sol.estimate_script:run
+

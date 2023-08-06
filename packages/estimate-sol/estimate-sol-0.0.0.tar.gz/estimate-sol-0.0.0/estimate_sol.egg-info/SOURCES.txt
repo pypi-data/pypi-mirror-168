@@ -1,0 +1,7 @@
+setup.py
+estimate_sol.egg-info/PKG-INFO
+estimate_sol.egg-info/SOURCES.txt
+estimate_sol.egg-info/dependency_links.txt
+estimate_sol.egg-info/entry_points.txt
+estimate_sol.egg-info/requires.txt
+estimate_sol.egg-info/top_level.txt
