@@ -1,0 +1,16 @@
+jaxlib
+jax
+chex
+optax
+dm-haiku
+numpyro
+
+[dev]
+pre-commit
+black
+isort
+pylint
+tox
+
+[examples]
+matplotlib
