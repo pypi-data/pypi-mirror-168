@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "kapital_game_sdk"
+version = "0.1.0"
+description = ""
+authors = ["Playground Labs"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyYAML = "^6.0"
+requests = "^2.28.1"
+types-PyYAML = "^6.0.11"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.0.0"
+black = "^22.6.0"
+pylint = "^2.14.5"
+isort = "^5.10.1"
+mypy = "^0.971"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
