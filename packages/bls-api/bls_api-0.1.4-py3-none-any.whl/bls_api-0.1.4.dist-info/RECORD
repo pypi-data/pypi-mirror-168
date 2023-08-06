@@ -1,0 +1,9 @@
+bls_api/__init__.py,sha256=OgDLD1ulRyUshya3RdP6kLOvzTExFwEThPFBLx1OJKo,40
+bls_api/labor_series.json,sha256=Qk3ptvbcED4gQi5BQACazX_97ABXhpSAPm5gyOXbgvk,1774178
+bls_api/main.py,sha256=m-xge7ACidO0yHjjMGnuwgttAGDDbrIlP579FHiBAnA,7211
+bls_api/protocols.py,sha256=Bage659UqI757QF7z5eWSodeb19eir9B_-1JqfPfvZQ,646
+bls_api-0.1.4.dist-info/LICENSE,sha256=9VLh6ekBQTGwNnjSdfJ5RtKtqVUz4MATa2p-pXmzNcc,1087
+bls_api-0.1.4.dist-info/METADATA,sha256=p9tkIRFor45htzFalhXiolvZFDvSVlfwCTQKfkq6Omk,6954
+bls_api-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bls_api-0.1.4.dist-info/top_level.txt,sha256=6kYQM1wYo8voHM2_f5YA385Ci9nBb072vCstLWNMaDw,8
+bls_api-0.1.4.dist-info/RECORD,,
