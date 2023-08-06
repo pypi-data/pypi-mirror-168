@@ -1,0 +1,3 @@
+[console_scripts]
+dpteam=dapla_team_cli.__main__:main
+

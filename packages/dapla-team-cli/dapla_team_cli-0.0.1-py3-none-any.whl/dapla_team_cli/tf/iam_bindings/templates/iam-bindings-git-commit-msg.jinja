@@ -1,0 +1,19 @@
+Add IAM bindings for {{c.auth_group.shortname}} in {{" and ".join(c.environments)}} until {{c.expiry.timestamp}}
+
+**Why:** {{c.rationale or "not specified"}}
+
+{% if c.project_roles -%}
+**GCP project roles:**
+{% for pr in c.project_roles -%}
+  * {{pr.title if pr.title else pr.name}}
+{% endfor -%}
+{% endif -%}
+
+{% if c.buckets %}
+**Bucket access:**
+{% for env in c.environments -%}
+{% for b in c.buckets -%}
+* ssb-{{env}}-{{c.team_name}}-{{b.simple_name}} ({{b.access_type}})
+{% endfor -%}
+{% endfor -%}
+{% endif -%}
