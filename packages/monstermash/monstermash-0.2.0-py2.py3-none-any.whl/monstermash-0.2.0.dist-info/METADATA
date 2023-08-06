@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: monstermash
+Version: 0.2.0
+Summary: A Private Key / Public Key Encryption Helper Library
+Home-page: https://github.com/mitchelllisle/monstermash
+Author: Mitchell Lisle
+Author-email: m.lisle90@gmail.com
+Keywords: monstermash
+Requires-Dist: PyNaCl
+Requires-Dist: click
+Requires-Dist: pydantic
+Requires-Dist: questionary
+
