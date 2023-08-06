@@ -1,0 +1,7 @@
+cairocffi
+channels
+django-iban
+lino-welfare
+metafone
+pytidylib
+suds-py3

@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: lino-welcht
+Version: 22.9.0
+Summary: A Lino Django application for the PCSW of Châtelet
+Home-page: https://gitlab.com/lino-framework/welcht
+Author: Rumma & Ko Ltd
+Author-email: hamza@lino-framework.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Natural Language :: German
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Sociology :: Genealogy
+Classifier: Topic :: Education
+License-File: COPYING
+
+**Lino Welfare Châtelet** is a
+`Lino Welfare <https://welfare.lino-framework.org>`__
+application developed and maintained for the PCSW of Châtelet in Belgium.
+
+- The central project homepage is http://welcht.lino-framework.org
+
+- For *introductions* and *commercial information*
+  see `www.saffre-rumma.net
+  <https://www.saffre-rumma.net/welfare/>`__.
+
+- Technical specifications and test suites are in
+  `Lino Welfare <https://welfare.lino-framework.org>`__.
+
+- The `French project homepage <https://fr.welfare.lino-framework.org>`__
+  contains release notes and end-user docs.
+
+- Online demo site at https://welfare-demo.lino-framework.org
+
+
+
