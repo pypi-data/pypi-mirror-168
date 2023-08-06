@@ -1,0 +1,10 @@
+jpcm/__init__.py,sha256=vmD-RLKThc1NgT77owAOyH_pfP8Q-WXIUdLY_h_OdAE,1267
+jpcm/core/core.py,sha256=UA4si5mmSaCwrMdKWiWDVg3AK8AOdoEy7_M0zTeuv2k,6843
+jpcm/core/maps.py,sha256=L90Urj_OEFLMPGS_wWOtJTjpReyCiPkYTmMErf2jIak,2597
+jpcm/core/readme.py,sha256=o-8YYleGEJuGl_bl32CyDThYZeROWvMUnixxBGMWfIw,2572
+jpcm/load/load.py,sha256=1C1xphiCobrrijz-7drZeiQZmAGt9lMeteQ59_4FMrk,593
+jpcm-0.1.10.dist-info/LICENSE,sha256=5b5XA82zQevmeuJVGl0t3eOX8pD_tPmvtQYaSaKz3-0,1072
+jpcm-0.1.10.dist-info/METADATA,sha256=VBb_kC8mFzbwiMAr9HSDP8bIsGV1EeL1KFAxu26ByLs,1221
+jpcm-0.1.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jpcm-0.1.10.dist-info/top_level.txt,sha256=wIPrvDUsJozotDK9Q_5sYFiBSw5EcDPvZBc0VhLhYwg,25
+jpcm-0.1.10.dist-info/RECORD,,

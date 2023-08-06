@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: jpcm
+Version: 0.1.10
+Summary: A perceptually uniform colormap generator for Matplotlib equipped with traditional-ish Japanese colors to serve as a fixed color palette.(Culture appropriation at its finest.)
+Home-page: https://github.com/akhilsadam/perceptual-jp-colormaps
+Author: Akhil Sadam
+Author-email: sadam.akhil@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/akhilsadam/perceptual-jp-colormaps/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools (>=42)
+Requires-Dist: wheel
+Requires-Dist: colour-science (==0.3.16)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pynverse
+Requires-Dist: matplotlib (>=3.3.4)
+
+See here: https://github.com/akhilsadam/perceptual-jp-colormaps/blob/master/src/README.md
+
+Tests : [![Python package](https://github.com/akhilsadam/perceptual-jp-colormaps/actions/workflows/python-package.yml/badge.svg)](https://github.com/akhilsadam/perceptual-jp-colormaps/actions/workflows/python-package.yml)
+
+
