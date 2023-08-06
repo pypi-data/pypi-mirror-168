@@ -1,0 +1,2 @@
+Pillow
+uip-cli >= 1.2
