@@ -1,0 +1,7 @@
+matplotlib
+notebook
+PyYAML
+pandas
+scipy
+plotly
+seaborn
