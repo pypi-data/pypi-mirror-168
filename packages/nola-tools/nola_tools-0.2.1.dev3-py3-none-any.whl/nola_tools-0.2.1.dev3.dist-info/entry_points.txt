@@ -1,0 +1,3 @@
+[console_scripts]
+nola = nola_tools:main
+nolja = nola_tools.nolja:main
