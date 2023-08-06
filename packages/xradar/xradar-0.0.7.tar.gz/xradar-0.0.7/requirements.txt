@@ -1,0 +1,7 @@
+dask
+h5netcdf
+h5py
+netCDF4
+numpy
+xarray
+xarray-datatree
