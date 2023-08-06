@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test_xkcd_python.py
+xkcd_python/__init__.py
+xkcd_python/xkcd.py
+xkcd_python.egg-info/PKG-INFO
+xkcd_python.egg-info/SOURCES.txt
+xkcd_python.egg-info/dependency_links.txt
+xkcd_python.egg-info/top_level.txt

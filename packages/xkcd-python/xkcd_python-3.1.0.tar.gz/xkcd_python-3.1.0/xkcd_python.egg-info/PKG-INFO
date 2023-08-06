@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xkcd-python
+Version: 3.1.0
+Summary: A python wrapper for xkcd.com
+Author: Sasen Perera
+Author-email: sasen.learnings@gmail.com
+Keywords: python,python3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+A wrapper for xkcd.com's API. Built Using Python.
