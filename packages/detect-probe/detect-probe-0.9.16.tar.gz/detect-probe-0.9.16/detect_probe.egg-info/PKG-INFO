@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: detect-probe
+Version: 0.9.16
+Summary: A Prelude Probe for Detect
+Home-page: https://github.com/preludeorg
+Author: Prelude Research
+Author-email: support@prelude.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Presto
+
+> One of Chopin's 24 Preludes. A virtuosic prelude, presents a technical challenge with its rapid hold-and-release of eighth notes against quarter notes in the right hand, involving chromatic movement.
+
+# Usage
+
+Install with:
+
+```bash
+pip install detect-probe
+```
+
+Include presto in a project with:
+
+```python
+from detect_probe.service import ProbeService
+
+probe_svc = ProbeService(token='3da7f868f6790d1a562b8f10e7e0785597670000')
+probe_svc.start()
+```
+
+You can stop the probe process gracefully during app shutdown with:
+
+```python
+probe_svc.stop()
+```
+
+# Developer guide
+
+Make changes then install locally before testing:
+```
+pip install .
+```
+
+To publish a new version on [PyPy](https://pypi.org/project/detect-probe/):
+```commandline
+python -m build
+python -m twine upload --repository pypi dist/*
+```
