@@ -1,0 +1,6 @@
+[console_scripts]
+ayugespidertools=ayugespidertools.utils.cmdline:execute
+
+[poetry.application.plugin]
+demo=ayugespidertools.cmdline:MyApplicationPlugin
+
