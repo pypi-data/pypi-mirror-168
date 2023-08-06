@@ -1,0 +1,3 @@
+[console_scripts]
+bcli=bigcommerce_cli.commands:bcli
+
