@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: descope
+Version: 0.1.0
+Summary: Descope Python SDK
+Home-page: https://descope.com/
+License: MIT
+Author: Descope
+Author-email: info@descope.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: PyJWT (>=2.4.0,<3.0.0)
+Requires-Dist: cryptography (>=38.0.1,<39.0.0)
+Requires-Dist: email-validator (>=1.2.1,<2.0.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/descope/python-sdk/issues
+Project-URL: Documentation, https://docs.descope.com
+Project-URL: Repository, https://github.com/descope/python-sdk
+Description-Content-Type: text/markdown
+
+# Descope SDK for Python
+
+Use the Descope SDK for Python to quickly and easily add user authentication to your application or website.
+
+The SDK supports Python 3.6 and above.
+
+## Installing the SDK
+
+Replace any instance of `<ProjectID>` in the code below with your company's Project ID, which can be found in the [Descope console](https://app.descope.com).
+
+Run the following code in your project. These commands will add the Descope ExpresSDK for Python as a project dependency, and set the `DESCOPE_PROJECT_ID` variable to a valid \<ProjectID\>.
+
+```code
+pip install descope
+export DESCOPE_PROJECT_ID=<ProjectID>
+```
+
+## What do you want to implement?
+
+Click one of the following links to open the documentation for that specific functionality.
+
+- [x] [One time passwords (OTP)](./docs/otp.md)
+- [x] [Magic Links](./docs/magiclink.md)
+
+## License
+
+The Descope ExpresSDK for Python is licensed for use under the terms and conditions of the [MIT license Agreement](https://github.com/descope/python-sdk/blob/main/LICENSE).
+
