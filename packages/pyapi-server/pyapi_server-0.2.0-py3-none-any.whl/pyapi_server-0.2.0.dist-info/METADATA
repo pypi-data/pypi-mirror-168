@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pyapi-server
+Version: 0.2.0
+Summary: Lightweight API framework using an OpenAPI spec for routing and validation.
+Home-page: https://pyapi-server.readthedocs.io
+License: MIT
+Author: Berislav Lopac
+Author-email: berislav@lopac.net
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: uvicorn
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: openapi-core (>=0.15.0,<0.16.0)
+Requires-Dist: starlette (>=0.20.4,<0.21.0)
+Requires-Dist: stringcase (>=1.2.0,<2.0.0)
+Requires-Dist: uvicorn (>=0.18.3,<0.19.0); extra == "uvicorn"
+Project-URL: Repository, https://github.com/berislavlopac/pyapi-server
+Description-Content-Type: text/markdown
+
+# PyAPI Server
+
+[![Build Status](https://b11c.semaphoreci.com/badges/pyapi-server/branches/main.svg?style=shields&key=e9eeb9d2-6487-4aba-9207-e46c84f9bc6f)](https://b11c.semaphoreci.com/projects/pyapi-server)
+[![Documentation Status](https://readthedocs.org/projects/pyapi-server/badge/?version=latest)](https://pyapi-server.readthedocs.io/en/latest/?badge=latest)
+
+**PyAPI Server** is a Python library for serving REST APIs based on
+[OpenAPI](https://swagger.io/resources/open-api/) specifications. It is based on [Starlette](https://www.starlette.io) and is functionally very similar to [connexion](https://connexion.readthedocs.io), except that it aims to be fully [ASGI](https://asgi.readthedocs.io)-compliant.
+
+**WARNING:** This is still a work in progress and not quite ready for production usage. Until version 1.0 is released, any new release can be expected to break backward compatibility.
+
+
+## Quick Start
+
+```python
+from pyapi.server import Application
+from some.path import endpoints
+
+app = Application.from_file("path/to/openapi.yaml", module=endpoints)
+```
+
