@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: yari-py
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python bindings for YARI.
+Author: Matej Kastak <matej.kastak@avast.com>
+Author-email: Matej Kastak <matej.kastak@avast.com>
+License: MIT
+Requires-Python: >=3.7
