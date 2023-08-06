@@ -1,0 +1,15 @@
+musicir/__init__.py,sha256=-9IreNX0E2oPqXcit-95M4doxwj6THCtfgiTgh2lDfE,35
+musicir/__main__.py,sha256=zpMGMR_xorFvSjPwHhgj-HGjiaVxt3c3DM_0aYuVvMA,648
+musicir/harmony/__init__.py,sha256=gmhMPmWUTrX4IJNV8T9ixP-FUiBSBHC-lsWYxzcNw6o,16587
+musicir/harmony/scale.py,sha256=CfZ6NRkWdM_pul0frGoEc15GkvbOBbFgZoCwhTPkKnk,2343
+musicir/leadsheets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicir/leadsheets/model.py,sha256=Uj1teL9T5siIMBl9ojV79uYUgbUYgYys3xSVK7PC52M,1844
+musicir/leadsheets/musicxml.py,sha256=kviTdrXv_22N9LznnHWk7u1Kn5bhBcS16bw7h1p-3YE,5002
+musicir/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicir/rhythm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicir/rhythm/generate.py,sha256=7JRIl7rMCMkrfJLT_ovGVfffKTJq9wqRsQUexp6QGRs,4845
+musicir-0.0.4.dist-info/entry_points.txt,sha256=nuDPCkX4fvriCULE7XiCfHqUPG00yUgOnbssxLVCjPc,49
+musicir-0.0.4.dist-info/LICENSE.rst,sha256=HkdZKoPXtXyYR672IL8d_cnemWrVuWV_UrWpgoo6Zwk,1094
+musicir-0.0.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+musicir-0.0.4.dist-info/METADATA,sha256=SBmM1hCH_YqNXvPwoS-rdpzOrL5qlKcXnGHokhRptWc,4163
+musicir-0.0.4.dist-info/RECORD,,
