@@ -1,0 +1,15 @@
+gingado/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+gingado/_modidx.py,sha256=taaaEC5kQKJ-nlpTTCw311c4O30Gq6VheCX53yHzS44,14359
+gingado/_nbdev.py,sha256=jyNSlxfOOV9x1teCjAtawE00aeuXhI2LPVolA3n1uoQ,954
+gingado/augmentation.py,sha256=V5LLt-jV4QiCD4rKJRoxrF6MYs_Pd1Vu1jpt_8NpWSs,5375
+gingado/benchmark.py,sha256=K4L1K3WRaR2XYJABbmIUQ_rj4_Oou5f3JIXqx6JXd1Q,10488
+gingado/dataset_BarroLee_1994.csv,sha256=2uVMN2CKB_aQicJGK8NN6YsB4foWQMxcrYx218GfsNU,44925
+gingado/datasets.py,sha256=HRGtrOG75eCo6l6bkX2_1HMquykhUHH72eSvUNA2cB4,5739
+gingado/model_documentation.py,sha256=P_1JuHHrOlSXiZBz4lhjTC_H9gZ7d31Sbs5x0_3LENY,9644
+gingado/utils.py,sha256=klb-tsm1PMuot2Bj3qtQo2MFCwsDK1Ct7T_il-6WkH4,5197
+gingado-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gingado-0.1.0.dist-info/METADATA,sha256=v8wjAFLQBtdB0Pt39ykM7SM1oyip_0vory3BhI1DNYc,5378
+gingado-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gingado-0.1.0.dist-info/entry_points.txt,sha256=AnHV8XE5w-Am6RCkEZ77Up9yvhM_9gcvrK032KxH32Q,57
+gingado-0.1.0.dist-info/top_level.txt,sha256=e69SculYItaz4Z00maoM8VV9Q4Zx822pjvO46iCqLyY,8
+gingado-0.1.0.dist-info/RECORD,,
