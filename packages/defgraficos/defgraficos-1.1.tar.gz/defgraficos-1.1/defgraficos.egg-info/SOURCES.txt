@@ -1,0 +1,8 @@
+setup.py
+defgraficos/__init__.py
+defgraficos/funcgraficos.py
+defgraficos/xfuncgraficos.py
+defgraficos.egg-info/PKG-INFO
+defgraficos.egg-info/SOURCES.txt
+defgraficos.egg-info/dependency_links.txt
+defgraficos.egg-info/top_level.txt
