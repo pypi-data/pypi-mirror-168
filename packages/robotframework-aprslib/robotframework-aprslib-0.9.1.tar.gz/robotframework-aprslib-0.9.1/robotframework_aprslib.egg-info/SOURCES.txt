@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+AprsLibrary/AprsLibrary.py
+AprsLibrary/__init__.py
+robotframework_aprslib.egg-info/PKG-INFO
+robotframework_aprslib.egg-info/SOURCES.txt
+robotframework_aprslib.egg-info/dependency_links.txt
+robotframework_aprslib.egg-info/requires.txt
+robotframework_aprslib.egg-info/top_level.txt
