@@ -1,0 +1,16 @@
+blobfile/VERSION,sha256=2Nc8Vw6HAjDWCtPBpzMVxh4-YdAUne_NZiu-z5HiatM,5
+blobfile/__init__.py,sha256=4pgz4HHcfOmVnFzXZNouxg1_1byzIt5JTTQ3tunteig,1890
+blobfile/_azure.py,sha256=nq57vtlKh_FK8J7yk4YfhJQllGgD98lZ9l_f-f6j8tY,66272
+blobfile/_common.py,sha256=x-_i5dgNeHZm9dKslLZrSaoTkrfReeP7e0VLTFB4S88,41660
+blobfile/_context.py,sha256=-wwuzAywZwnu3Uj9ds17OUxoqGsAZeWbvIzx5eDQGzk,61212
+blobfile/_gcp.py,sha256=StsoeBB140p6_h_Wi5nTX6RONUVLUFXV9rLfKn5a0bg,27701
+blobfile/_ops.py,sha256=tZlOhHh2Msiy6g7dmY2HRI9unZjyXA1naXSKfwrm3PE,14528
+blobfile/_ops_test.py,sha256=R-kPVsQ2xd_vuQbgkmCkNUDCiYHPeEYiqkwqMWZq4ww,57740
+blobfile/_xml.py,sha256=a0Wk18vvi4Q-2pbDLQbKinB-SSAGNIu-7OvaKUdkbD4,2776
+blobfile/_xml_test.py,sha256=qI4Rf7zr88oz2wQnz52WwaziTVO4vBezD_Z1QoBl4WA,5094
+blobfile/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blobfile-1.3.4.dist-info/LICENSE,sha256=FHo3YUVhJ7y4raLDRyijAdAazTFpRqrX1gXDqc435vI,1233
+blobfile-1.3.4.dist-info/METADATA,sha256=OItsOfG3ge9deyDDu40vWqaVKTriD4WQ6jDg4-z7z8I,14812
+blobfile-1.3.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+blobfile-1.3.4.dist-info/top_level.txt,sha256=BsixHWRC2Vk13oMQM4HUfWAfrjXllowAwpGFz0w6MrM,9
+blobfile-1.3.4.dist-info/RECORD,,
