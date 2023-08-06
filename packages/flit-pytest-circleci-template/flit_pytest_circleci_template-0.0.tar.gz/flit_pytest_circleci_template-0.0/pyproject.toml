@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "flit_pytest_circleci_template"
+authors = [{name = "Doug Ransom", email = "doug@ransom.vip"}]
+version="0.0"
+description="flit_pytest_circleci_template is a sample project to show how to use flit, pytest, and circleci to automatically build, test and publish Python packages."
+requires-python = ">2.7,>=3.9"
+classifiers=[
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3.0",
+        "Topic :: Software Development :: Libraries :: Python Modules"
+        ]
+
+[project.urls]
+Home = "https://github.com/dictation-toolbox/flit_pytest_circleci_template/"
+
+[project.optional-dependencies]
+test = [
+    "pytest >=7.1.2",
+]
+
+[tool.pytest.ini_options]
+minversion = "7.1.2"
+addopts = "--capture=tee-sys "
+
+testpaths= [
+    "test",
+]
