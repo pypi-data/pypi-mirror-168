@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: iot-rdb
+Version: 0.0.3
+Summary: Redis iot implementation for conecting containers in Jetson Xavier NX
+Home-page: https://github.com/OF306PUC/iot-plc-project/tree/main/tools/packages/iot-rdb
+Author: Francisco Fonseca
+Author-email: fffonseca@uc.cl
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+# Iot Redis Cache Package Managament
+
+This package contains important classes and threads for manage graph connections in containers
+
+## Goal
+Create a class which send signals when data is received in a specific channel.
+
+
