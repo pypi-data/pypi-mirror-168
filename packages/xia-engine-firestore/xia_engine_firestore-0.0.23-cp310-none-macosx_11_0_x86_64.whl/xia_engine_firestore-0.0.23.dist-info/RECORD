@@ -1,0 +1,9 @@
+xia_engine_firestore/__init__.py,sha256=NdLSw-LUx1LsnqTMcfs0glPbREPlG2dZlFfHyyRoWYY,356
+xia_engine_firestore/connection.cpython-310-darwin.so,sha256=yBUB9S3mlj6VOXY8Rq73WJoDUI2Ii1mYo0wEIh1mAYI,202184
+xia_engine_firestore/document.cpython-310-darwin.so,sha256=c33Lvm4bV9dxoH5nKlpdGF2xf4WoM2AZh5qC0QlVyM4,372688
+xia_engine_firestore/engine.cpython-310-darwin.so,sha256=k7LOzr98K2MfKVCdGpfp2nRDwf7vBwZq5WPmtc4L0bc,286608
+xia_engine_firestore-0.0.23.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_engine_firestore-0.0.23.dist-info/METADATA,sha256=vSuUeGUeCxUWwLOpZdZEerp2GAVegZxq6GzofdOtHok,402
+xia_engine_firestore-0.0.23.dist-info/WHEEL,sha256=rzbs02GRkYUvH8P22R0CP8i1s-A3wFwzwDKQstzz7K8,109
+xia_engine_firestore-0.0.23.dist-info/top_level.txt,sha256=NUY0_anDQ8KVQ1TnPs_SCf-78KqRmu8_ARIL_J5agrg,21
+xia_engine_firestore-0.0.23.dist-info/RECORD,,
