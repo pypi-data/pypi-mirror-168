@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "vk_api-stubs"
+version = "1.0.0"
+description = "Stubs for vk_api module"
+authors = ["sergey <saalaus2@gmail.com>"]
+packages = [{ include = "vk_api-stubs" }]
+readme = "README.md"
+homepage = "https://github.com/saalaus/vk_api-stubs"
+classifiers=['Programming Language :: Python :: 3.10']
+keywords = ["vk_api", "vk", "stubs", "vk-api-stubs"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
