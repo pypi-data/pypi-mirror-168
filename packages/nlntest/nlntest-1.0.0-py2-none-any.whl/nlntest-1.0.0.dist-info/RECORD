@@ -1,0 +1,10 @@
+nlntest/ExHenon.py,sha256=c_ijP0ZJHmoazAeLpYGXwOdb06rbazaXSLaf-0jXzaI,628
+nlntest/ExLogistic.py,sha256=Vq9_MXQsxd5HQdkGWLxlzla3kb_OiD3wSEFY-KOxBaw,583
+nlntest/ExUnemployment.py,sha256=Yeye0LTrsZDDWB8g5gHayTpbthLjfJUn_cgPEq9SO6M,804
+nlntest/Exmultnormrnd.py,sha256=fvd7uCl_3VSe8JDQwwD_crDQYcEqzKPVNtgUqXJakcU,499
+nlntest/Exunivnorm.py,sha256=ZYn64JjheEDgK2y8mRCcP1RnYsphW8jA-ife3nhLx0Y,520
+nlntest/__init__.py,sha256=IbWM8eKjt8tZePnhdgymrB4NJn70M9Ay3szWFR7kY50,19257
+nlntest-1.0.0.dist-info/METADATA,sha256=Wtm67UMIis5Z3RFjRx1fcHZpEK7t5HtQe34wYpKFNOg,7973
+nlntest-1.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+nlntest-1.0.0.dist-info/top_level.txt,sha256=_FDrieALx88EYneMLue-9X-MIXxMJccHYcUM-qGmie4,8
+nlntest-1.0.0.dist-info/RECORD,,
