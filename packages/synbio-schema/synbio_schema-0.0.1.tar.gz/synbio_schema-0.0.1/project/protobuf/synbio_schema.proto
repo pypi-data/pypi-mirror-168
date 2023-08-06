@@ -1,0 +1,81 @@
+message Database
+ {
+ repeated  strain strainSet = 0
+ repeated  modification modificationSet = 0
+ repeated  organism organismSet = 0
+ repeated  person personSet = 0
+ repeated  partsSequence sequenceSet = 0
+ }
+message Modification
+ {
+  string aaChange = 0
+  bioSafetyLevelEnum bioSafetyLevel = 0
+  categoryEnum category = 0
+  person creator = 0
+  descriptorEnum descriptor = 0
+  string elNameLong = 0
+  string elNameShort = 0
+  string elementOrganism = 0
+  modificationTypeEnum modificationType = 0
+  string modificationsGenes = 0
+  string notes = 0
+  string position = 0
+  person principalInvestigator = 0
+  integer sizeBp = 0
+  statusEnum status = 0
+  string subcategorySize = 0
+  string id = 0
+ }
+message NamedThing
+ {
+  string id = 0
+ }
+message Organism
+ {
+  string abbreviation = 0
+  string strainValue = 0
+  string comment = 0
+  string speciesName = 0
+  string id = 0
+  string specialName = 0
+  string speciesNcbiTaxonNumber = 0
+ }
+message PartsSequence
+ {
+  string id = 0
+  modification associatedPart = 0
+  string seqName = 0
+  seqTypeEnum seqType = 0
+  string dateAdded = 0
+  string ntSequence = 0
+ }
+message Person
+ {
+  string id = 0
+  datetime dateJoined = 0
+  string email = 0
+  string firstName = 0
+  boolean isStaff = 0
+  boolean isSuperuser = 0
+  string lastName = 0
+  string username = 0
+ }
+message Strain
+ {
+  string id = 0
+  bioSafetyLevelEnum bioSafetyLevel = 0
+  person creator = 0
+  fundingSourceEnum fundingSource = 0
+  string genotypePhenotype = 0
+  organism hostOrganism = 0
+  string intellectualProperty = 0
+  string keywords = 0
+  string name = 0
+  string notes = 0
+  person principalInvestigator = 0
+  string references = 0
+  statusEnum status = 0
+  string summary = 0
+ repeated  string subParts = 0
+ repeated  string parentParts = 0
+ }

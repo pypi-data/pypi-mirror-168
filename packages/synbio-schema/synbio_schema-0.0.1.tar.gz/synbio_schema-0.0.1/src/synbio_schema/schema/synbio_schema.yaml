@@ -1,0 +1,620 @@
+name: synbio
+description: synbio
+id: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+imports:
+  - linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  synbio: https://w3id.org/None/
+  dcterms: http://purl.org/dc/terms/
+  skos: http://www.w3.org/2004/02/skos/core#
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
+  IAO: http://purl.obolibrary.org/obo/IAO_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  SO: http://purl.obolibrary.org/obo/SO_
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+  biolink: https://w3id.org/biolink/vocab/
+default_prefix: synbio
+default_range: string
+enums:
+  SeqTypeEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      deletion:
+        exact_mappings:
+          - SO:0000159
+      sequence:
+        exact_mappings:
+          - SO:0000001
+      insertion:
+        exact_mappings:
+          - SO:0000667
+      flank1: { }
+      flank2: { }
+  IntellectualPropertyEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      Limited License Agreement required from Scarab Genomics: { }
+  FundingSourceEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      IARPA-FELIX: { }
+  SubcategorySizeEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      lt_200:
+        title: <200
+      gt_3k:
+        title: '>3K'
+      from_1k_to_3k:
+        title: 1K-3K
+      from_100_to_300:
+        title: 200-600
+      from_300_to_1k:
+        title: 600-1K
+  StatusEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      In Progress: { }
+      Abandoned:
+        exact_mappings:
+  ModificationTypeEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      amber stop codon:
+        exact_mappings:
+          - SO:0002333
+      CDSpartial: { }
+      chrXIII-chrII: { }
+      compound deletion: { }
+      compound insertion: { }
+      deletion:
+        exact_mappings:
+          - SO:0000159
+      fluorescent/epitope: { }
+      frameshift:
+        exact_mappings:
+          - SO:0000865
+      in-frame deletion:
+        exact_mappings:
+      insertion:
+        exact_mappings:
+          - SO:0000667
+      insertion site:
+        exact_mappings:
+          - SO:0000366
+      inversion:
+        exact_mappings:
+          - SO:1000036
+      ochre stop codon:
+        exact_mappings:
+          - SO:0002334
+      plasmid:
+        exact_mappings:
+          - SO:0000155
+      plasmid element: { }
+      reassortment: { }
+      substitution:
+        exact_mappings:
+          - SO:1000002
+      substitution transition: { }
+      substitution transversion: { }
+      subtitutions: { }
+      transition:
+        exact_mappings:
+          - SO:1000009
+      transition plasmid element: { }
+  BioSafetyLevelEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      Level 1:
+        exact_mappings:
+      Level 2:
+        exact_mappings:
+  CategoryEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      antibiotic resistance:
+        exact_mappings:
+          - IDO:0000581
+      biosynthetic:
+        exact_mappings:
+      compound:
+        exact_mappings:
+      control element: { }
+      fluorescent/epitope: { }
+      GOI: { }
+      origin/structural: { }
+      promoter:
+        exact_mappings:
+          - SO:0000167
+      terminator:
+        exact_mappings:
+          - SO:0000141
+      toxin/virulence: { }
+  DescriptorEnum:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    permissible_values:
+      3pUTR: { }
+      5pUTR: { }
+      activiation domain: { }
+      CDS: { }
+      CDSpartial: { }
+      CDSpartial-3prime: { }
+      CDSpartial-5prime: { }
+      eGFP: { }
+      enhancer:
+        exact_mappings:
+          - SO:0000165
+      epitope:
+        exact_mappings:
+          - SO:0001018
+      fragment:
+        exact_mappings:
+          - SO:0000731
+      G: { }
+      gene:
+        exact_mappings:
+          - SO:0000704
+      insertion site:
+        exact_mappings:
+          - SO:0000366
+      multiple cloning site: { }
+      opt:
+        exact_mappings:
+      promoter:
+        exact_mappings:
+          - SO:0000167
+      ribosomal binding site: { }
+      scar:
+        exact_mappings:
+      SUMO: { }
+      terminator:
+        exact_mappings:
+          - SO:0000141
+      VP16: { }
+slots:
+  associated_part:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    range: Modification
+  seq_name:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    range: string
+  seq_type:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    range: SeqTypeEnum
+  date_added:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+  nt_sequence:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    range: string
+  sub_parts:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    multivalued: true
+  parent_parts:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    multivalued: true
+  host_organism:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    range: Organism
+  strain_set:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    multivalued: true
+    range: Strain
+    inlined_as_list: true
+  sequence_set:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    multivalued: true
+    range: PartsSequence
+    inlined_as_list: true
+  name:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    range: string
+  genotype_phenotype:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    range: string
+  intellectual_property:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    range: string
+  keywords:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - IAO:0000630
+    range: string
+  summary:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    range: string
+  references:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - IAO:0000320
+    range: string
+  funding_source:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    range: FundingSourceEnum
+  modification_set:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    multivalued: true
+    range: Modification
+    inlined_as_list: true
+  category:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: synbio:category
+    range: CategoryEnum
+  creator:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: synbio:creator
+    range: Person
+    inlined: false
+  descriptor:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: synbio:descriptor
+    range: DescriptorEnum
+  modification_taxon:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:modification_taxon
+  modification_type:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: synbio:modification_type
+    range: ModificationTypeEnum
+  organism_basis:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:organism_basis
+  organism_set:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:organism_set
+    multivalued: true
+    range: Organism
+    inlined_as_list: true
+  person_set:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:person_set
+    multivalued: true
+    range: Person
+    inlined_as_list: true
+  principal_investigator:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - OBI:0000103
+    slot_uri: synbio:principal_investigator
+    range: Person
+  subcategory_size:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:subcategory_size
+    range: string
+  license:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - NCIT:C43611
+    slot_uri: dcterms:license
+  exactMatch:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: skos:exactMatch
+  aa_change:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:aa_change
+    range: string
+  abbreviation:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - NCIT:C42610
+    slot_uri: synbio:abbreviation
+  bio_safety_level:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:bio_safety_level
+    range: BioSafetyLevelEnum
+  comment:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - NCIT:C25393
+    slot_uri: synbio:comment
+  date_joined:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:date_joined
+    range: datetime
+    required: true
+  el_name_long:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:el_name_long
+    range: string
+  el_name_short:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:el_name_short
+    range: string
+  element:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: synbio:element
+  element_id:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:element_id
+  element_name:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:element_name
+  element_organism:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:element_organism
+  email:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - IAO:0000429
+    slot_uri: synbio:email
+    range: string
+  first_name:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - IAO:0020016
+    slot_uri: synbio:first_name
+    range: string
+  id:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:id
+    identifier: true
+  is_staff:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:is_staff
+    range: boolean
+    required: true
+  is_superuser:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:is_superuser
+    range: boolean
+    required: true
+  last_name:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - IAO:0020017
+    slot_uri: synbio:last_name
+    range: string
+  modification_genes:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:modification_genes
+  modifications_genes:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:modifications_genes
+  notes:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - IAO:0000634
+    slot_uri: synbio:notes
+    range: string
+  position:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: synbio:position
+    range: string
+  size_bp:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:size_bp
+    range: integer
+  special_name:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:special_name
+  species_name:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: synbio:species_name
+  species_ncbi_taxon_number:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:species_ncbi_taxon_number
+  status:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - SO:0000905
+    slot_uri: synbio:status
+    range: StatusEnum
+  strain_value:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: synbio:strain
+  username:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: synbio:username
+    range: string
+    required: true
+  examples:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: linkml:examples
+  generation_date:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: linkml:generation_date
+  metamodel_version:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: linkml:metamodel_version
+  permissible_values:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - NCIT:C41109
+    slot_uri: linkml:permissible_values
+  source_file:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_uri: linkml:source_file
+  source_file_date:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: linkml:source_file_date
+  source_file_size:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slot_uri: linkml:source_file_size
+classes:
+  PartsSequence:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    slots:
+      - id
+      - associated_part
+      - seq_name
+      - seq_type
+      - date_added
+      - nt_sequence
+    slot_usage:
+      id:
+        pattern: ^sequence:\d+$
+      associated_part:
+        pattern: ^IF:\d+$
+  Strain:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - OBI:0001185
+    slots:
+      - id
+      - bio_safety_level
+      - creator
+      - funding_source
+      - genotype_phenotype
+      - host_organism
+      - intellectual_property
+      - keywords
+      - name
+      - notes
+      - principal_investigator
+      - references
+      - status
+      - summary
+      - sub_parts
+      - parent_parts
+    slot_usage:
+      id:
+        pattern: MS:\d+
+    class_uri: synbio:Strain
+  Database:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slot_usage:
+      strain_set:
+        range: Strain
+      modification_set:
+        range: Modification
+      organism_set:
+        range: Organism
+      person_set:
+        range: Person
+      sequence_set:
+        range: PartsSequence
+    class_uri: synbio:Database
+  Modification:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+    slots:
+      - aa_change
+      - bio_safety_level
+      - category
+      - creator
+      - descriptor
+      - el_name_long
+      - el_name_short
+      - element_organism
+      - modification_type
+      - modifications_genes
+      - notes
+      - position
+      - principal_investigator
+      - size_bp
+      - status
+      - subcategory_size
+    slot_usage:
+      id:
+        pattern: ^IF:\d+$
+      principal_investigator:
+        required: true
+      status:
+        required: true
+      bio_safety_level:
+        required: true
+      creator:
+        required: true
+      el_name_long:
+        required: true
+      el_name_short:
+        required: false
+      element_organism:
+        required: true
+      notes:
+        required: false
+      descriptor:
+        required: false
+      size_bp:
+        required: false
+      position:
+        required: false
+      aa_change:
+        required: false
+      category:
+        required: false
+      subcategory_size:
+        required: false
+      modifications_genes:
+        required: false
+    class_uri: synbio:Modification
+  NamedThing:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - biolink:NamedThing
+    slot_usage:
+      id:
+        multivalued: false
+        required: true
+    class_uri: synbio:NamedThing
+  Organism:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    exact_mappings:
+      - OBI:0100026
+    slots:
+      - abbreviation
+      - strain_value
+      - comment
+      - species_name
+    slot_usage:
+      id:
+        multivalued: false
+        required: true
+        pattern: ^organism:-?\d+$
+      abbreviation:
+        multivalued: false
+      comment:
+        multivalued: false
+      special_name:
+        multivalued: false
+      species_name:
+        multivalued: false
+      species_ncbi_taxon_number:
+        multivalued: false
+      strain_value:
+        multivalued: false
+    class_uri: synbio:Organism
+  Person:
+    from_schema: http://www.semanticweb.org/mam/ontologies/2022/7/synbio
+    aliases:
+      - auth_user
+    exact_mappings:
+      - NCBITaxon:9606
+    slot_usage:
+      id:
+        multivalued: false
+        required: true
+        pattern: ^person:\d+$
+      date_joined:
+        multivalued: false
+      email:
+        multivalued: false
+      first_name:
+        multivalued: false
+      is_staff:
+        multivalued: false
+      is_superuser:
+        multivalued: false
+      last_name:
+        multivalued: false
+      username:
+        multivalued: false
+    class_uri: synbio:Person
+source_file: src/schema/synbio_bestof.yaml
