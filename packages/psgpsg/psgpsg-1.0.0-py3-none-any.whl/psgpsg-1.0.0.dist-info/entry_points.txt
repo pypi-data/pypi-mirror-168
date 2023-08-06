@@ -1,0 +1,3 @@
+[gui_scripts]
+psgpsg = psgpsg.psgpsg:main_entry_point
+
