@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pkg-toml-test-2320sharon
+Version: 0.0.14
+Summary: DO NOT INSTALL!!! A Global shoreline mapping tool from satellite imagery
+Author: Kilian Vos
+Author-email: Sharon Fitzpatrick <sharon.fitzpatrick23@gmail.com>
+Project-URL: Homepage, https://github.com/kvos/CoastSat
+Project-URL: Bug Tracker, https://github.com/kvos/CoastSat/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE.md
+
+# CoastSat
