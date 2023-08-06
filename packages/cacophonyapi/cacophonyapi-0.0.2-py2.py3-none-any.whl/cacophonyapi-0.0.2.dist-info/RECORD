@@ -1,0 +1,13 @@
+cacophonyapi/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+cacophonyapi/apibase.py,sha256=_rW8TQPWM_pT25vCoZDLVsLalAK-KQODV7FdjmXIH04,1620
+cacophonyapi/config.py,sha256=lPOLytiCOzquXBoH9WlDcJ8d0n5Vg3Pp_T50YYqpQ2Q,1926
+cacophonyapi/device.py,sha256=Reybqnh3n8oaTDwUekVXLpfaAL1-z7sY4m3MJYek_b4,1098
+cacophonyapi/user.py,sha256=OBA5JX-WgfkExZlkVfIVEzhwVaxBSmNJwygc11y-5dw,5918
+cacophonyapi/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cacophonyapi/test/test_client_user_with_server.py,sha256=PZAIDGsSfx5FgtroX24D6NKiL-rwPYX6KhtqxNv6o_M,9782
+cacophonyapi/test/test_client_user_without_server.py,sha256=V-j35-15rCNisZRiuP_Y14siRS1Fn4H4RiaS51qQFlg,31251
+cacophonyapi-0.0.2.dist-info/LICENSE,sha256=WzD7K8oXAlz6xkpTYQuAA0RXCBw_Qf-kELXDDUz3j2I,11354
+cacophonyapi-0.0.2.dist-info/METADATA,sha256=-VZ9td-7IxN3zJvmQSWF-iCiMLZhPTwrE8wpnShqxQg,4024
+cacophonyapi-0.0.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+cacophonyapi-0.0.2.dist-info/top_level.txt,sha256=ErB4tCnlv3OTpCS_aZbRxy2LN3OduGM2LWeeiSK8gi4,13
+cacophonyapi-0.0.2.dist-info/RECORD,,
