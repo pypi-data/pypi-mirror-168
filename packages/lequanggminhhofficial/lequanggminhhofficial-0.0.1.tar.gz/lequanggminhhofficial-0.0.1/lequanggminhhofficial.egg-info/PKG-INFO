@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lequanggminhhofficial
+Version: 0.0.1
+Author: Lê Quang Minh
+Author-email: quangminh591@gmail.com
+License: MIT
+Keywords: pygame animation mun_official
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: pygame
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.2
+License-File: LICENSE
