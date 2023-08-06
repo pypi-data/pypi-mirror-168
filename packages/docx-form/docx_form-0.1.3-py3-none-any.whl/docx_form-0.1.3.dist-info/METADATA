@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: docx-form
+Version: 0.1.3
+Summary: DO NOT USE, THIS IS A WORK IN PROGRESS -- A library that allows the editing of form XML components in .docx files.
+Author: Reece Bourgeois
+Author-email: reecebourgeois@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Sphinx (>=5.1.1,<6.0.0)
+Requires-Dist: lxml (>=4.9.1,<5.0.0)
+Requires-Dist: pytest (>=7.1.2,<8.0.0)
