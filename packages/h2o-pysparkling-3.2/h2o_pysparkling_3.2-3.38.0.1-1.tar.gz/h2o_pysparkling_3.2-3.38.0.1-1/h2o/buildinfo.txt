@@ -1,0 +1,1 @@
+versionFromGradle='3.38.0',projectVersion='3.38.0.1',branch='rel-zygmund',lastCommitHash='7d606463d8c778614e09c47c953ab65e9967b5af',gitDescribe='jenkins-master-5959-2-g7d60646',compiledOn='2022-09-19 14:14:06',compiledBy='jenkins'
