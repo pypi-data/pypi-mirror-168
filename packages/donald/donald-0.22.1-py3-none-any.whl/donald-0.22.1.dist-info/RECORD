@@ -1,0 +1,13 @@
+donald/__init__.py,sha256=aldRiMNjuHMQRne1N1EJVkaEtTEM-eRTxX2jH3hS0D0,476
+donald/__main__.py,sha256=LLOGSNkBnzkVVJoR1Lrq3Z8a58W8OuYrh8nm8dlP1g8,2351
+donald/backend.py,sha256=xAk4Hr0uCqouGRA2D-Wl5yGWFoohiYSzgakVSzMFNWQ,5767
+donald/manager.py,sha256=D_Yr-oQgtojR-OQLtybqDdLMNhe6xgPe_78ilhC2n00,3680
+donald/scheduler.py,sha256=e02BjyTF5qFL0j1AsO70lNBRWiAgsyOn4XxnWPf_q8Q,2250
+donald/tasks.py,sha256=aS_KPd5OPo6_MJMXUrLA_1hExMr9Xa7QRLzMOHdx8uw,1797
+donald/types.py,sha256=3vMIa4cMnZ5V226pMLDpyMKHL-6lXnYP_6-wPKJeD88,1099
+donald/worker.py,sha256=BEJZgY4dE3eDGV4a7YYP2ehT70G7MuNm3riuLmi2HQ0,5149
+donald-0.22.1.dist-info/METADATA,sha256=l5Ovl4GRHkaWuepsGKj1nfEY9Vgz9h8Dj2xSt-PS24o,5436
+donald-0.22.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+donald-0.22.1.dist-info/entry_points.txt,sha256=J0rZTef6QMM0cFiGF2Qa4RrxtQlAWgD7GR-92TclhGo,49
+donald-0.22.1.dist-info/top_level.txt,sha256=IML3k_c4jhaPTa4bnewn5WmdlRGXCabkwLQUIFQ0QRM,7
+donald-0.22.1.dist-info/RECORD,,
