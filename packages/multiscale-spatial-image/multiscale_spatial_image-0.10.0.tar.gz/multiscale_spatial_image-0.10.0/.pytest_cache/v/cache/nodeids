@@ -1,0 +1,22 @@
+[
+  "test/test_multiscale_spatial_image.py::test_anisotropic_scale_factors",
+  "test/test_multiscale_spatial_image.py::test_base_scale",
+  "test/test_multiscale_spatial_image.py::test_from_itk",
+  "test/test_multiscale_spatial_image.py::test_gaussian_anisotropic_scale_factors",
+  "test/test_multiscale_spatial_image.py::test_gaussian_isotropic_scale_factors",
+  "test/test_multiscale_spatial_image.py::test_isotropic_scale_factors",
+  "test/test_multiscale_spatial_image.py::test_label_gaussian_anisotropic_scale_factors",
+  "test/test_multiscale_spatial_image.py::test_label_gaussian_isotropic_scale_factors",
+  "test/test_ngff_validation.py::test_t_z_y_x_c_valid_ngff",
+  "test/test_ngff_validation.py::test_y_x_valid_ngff",
+  "test/test_ngff_validation.py::test_z_y_x_c_valid_ngff",
+  "test/test_ngff_validation.py::test_z_y_x_valid_ngff",
+  "test/test_to_multiscale.py::test_anisotropic_scale_factors",
+  "test/test_to_multiscale.py::test_base_scale",
+  "test/test_to_multiscale.py::test_from_itk",
+  "test/test_to_multiscale.py::test_gaussian_anisotropic_scale_factors",
+  "test/test_to_multiscale.py::test_gaussian_isotropic_scale_factors",
+  "test/test_to_multiscale.py::test_isotropic_scale_factors",
+  "test/test_to_multiscale.py::test_label_gaussian_anisotropic_scale_factors",
+  "test/test_to_multiscale.py::test_label_gaussian_isotropic_scale_factors"
+]
