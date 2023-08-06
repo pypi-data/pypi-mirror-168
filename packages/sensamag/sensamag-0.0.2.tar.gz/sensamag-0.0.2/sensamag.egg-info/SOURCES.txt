@@ -1,0 +1,16 @@
+.deepsource.toml
+README.md
+pyproject.toml
+setup.cfg
+.github/workflows/codeql-analysis.yml
+.github/workflows/publish.yml
+sensamag.egg-info/PKG-INFO
+sensamag.egg-info/SOURCES.txt
+sensamag.egg-info/dependency_links.txt
+sensamag.egg-info/entry_points.txt
+sensamag.egg-info/requires.txt
+sensamag.egg-info/top_level.txt
+sensamag.egg-info/zip-safe
+sensamag_utility/__init__.py
+sensamag_utility/__main__.py
+sensamag_utility/main.py

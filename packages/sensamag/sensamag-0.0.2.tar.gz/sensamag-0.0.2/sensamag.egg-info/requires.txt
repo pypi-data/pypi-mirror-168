@@ -1,0 +1,7 @@
+typer[all]
+
+[dev]
+black
+
+[notebook]
+jupyter
