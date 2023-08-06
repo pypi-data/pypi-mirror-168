@@ -1,0 +1,6 @@
+beautifulsoup4
+celery
+psutil
+publicsuffixlist
+requests
+vine
