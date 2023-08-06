@@ -1,0 +1,4 @@
+prune .github
+include *.md
+include tox.ini
+recursive-include tests *.py
