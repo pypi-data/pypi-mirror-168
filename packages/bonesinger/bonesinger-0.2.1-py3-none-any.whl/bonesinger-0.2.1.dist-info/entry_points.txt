@@ -1,0 +1,3 @@
+[console_scripts]
+bonesinger = bonesinger.__main__:main
+
