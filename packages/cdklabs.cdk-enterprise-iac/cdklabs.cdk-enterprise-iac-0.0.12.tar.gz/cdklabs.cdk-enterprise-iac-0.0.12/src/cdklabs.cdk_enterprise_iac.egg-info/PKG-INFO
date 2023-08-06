@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: cdklabs.cdk-enterprise-iac
+Version: 0.0.12
+Summary: @cdklabs/cdk-enterprise-iac
+Home-page: https://github.com/cdklabs/cdk-enterprise-iac.git
+Author: Taylor Ondrey<ondreyt@amazon.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/cdklabs/cdk-enterprise-iac.git
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+<!--
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+-->
+
+# CDK Enterprise IaC
+
+Utilites for using CDK within enterprise constraints
+
+## Install
+
+Typescript
+
+```zsh
+npm install @cdklabs/cdk-enterprise-iac
+```
+
+Python
+
+```zsh
+pip install cdklabs.cdk-enterprise-iac
+```
+
+## Usage
+
+Example for `AddPermissionBoundary` in Typescript project.
+
+```python
+import * as cdk from 'aws-cdk-lib';
+import { MyStack } from '../lib/my-project-stack';
+import { Aspects } from 'aws-cdk-lib';
+import { AddPermissionBoundary } from '@cdklabs/cdk-enterprise-iac';
+
+const app = new cdk.App();
+new MyStack(app, 'MyStack');
+
+Aspects.of(app).add(
+  new AddPermissionBoundary({
+    permissionsBoundaryPolicyName: 'MyPermissionBoundaryName',
+    instanceProfilePrefix: 'MY_PREFIX_', // optional, Defaults to ''
+    policyPrefix: 'MY_POLICY_PREFIX_', // optional, Defaults to ''
+    rolePrefix: 'MY_ROLE_PREFIX_', // optional, Defaults to ''
+  })
+);
+```
+
+Example for `AddPermissionBoundary` in Python project.
+
+```python
+import aws_cdk as cdk
+from cdklabs.cdk_enterprise_iac import AddPermissionBoundary
+from test_py.test_py_stack import TestPyStack
+
+
+app = cdk.App()
+TestPyStack(app, "TestPyStack")
+
+cdk.Aspects.of(app).add(AddPermissionBoundary(
+    permissions_boundary_policy_name="MyPermissionBoundaryName",
+    instance_profile_prefix="MY_PREFIX_",  # optional, Defaults to ""
+    policy_prefix="MY_POLICY_PREFIX_",  # optional, Defaults to ""
+    role_prefix="MY_ROLE_PREFIX_"  # optional, Defaults to ""
+))
+
+app.synth()
+```
+
+Details in [API.md](API.md)
+
+
