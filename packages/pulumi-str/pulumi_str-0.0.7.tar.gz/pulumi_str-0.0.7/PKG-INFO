@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pulumi_str
+Version: 0.0.7
+Summary: Basic string manipulation funcions
+Home-page: https://github.com/pulumi/pulumi-str
+License: UNKNOWN
+Project-URL: Repository, https://github.com/pulumi/pulumi-str
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+str Pulumi Package - Development Version
+
