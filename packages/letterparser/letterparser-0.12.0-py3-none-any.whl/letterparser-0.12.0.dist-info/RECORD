@@ -1,0 +1,13 @@
+letterparser/__init__.py,sha256=eHjt9DPsMbptabS2yGx9Yhbyzq5hFSUHXb7zc8Q_8-o,23
+letterparser/build.py,sha256=hMFeF3CefgGHCCeW4b5wyruBBUTXp6XS0BCNxndpzgQ,28369
+letterparser/conf.py,sha256=ihHCyV60cLh8BPBeRMyHpoFsTxAz2pHpBUFET6PL_bU,1521
+letterparser/docker_lib.py,sha256=plSvfo_u6f4lN_JxIMDtQIRreW1WJVK2fVmwRu3A7xo,718
+letterparser/generate.py,sha256=dyCPaTceaN5idkW5JPDOOWmjhxety0jzUGu53XjP8Vk,11494
+letterparser/parse.py,sha256=mq49m5Rim8zh5rduhhSbV_JkPrfzn6qPBk2Z8BzB_i8,8820
+letterparser/utils.py,sha256=Z7o8qyV3YaQUEZAxcY7M5qJd81UYkSEYGaoPo5eKHVI,10957
+letterparser/zip_lib.py,sha256=CJWg7Sf1rHJhdrs1banylqVCT5WKHmdN0WF4iP7SeV4,3473
+letterparser-0.12.0.dist-info/LICENSE,sha256=xnu2SQArCQU-YDiJcvfOmv5hhHPJ-1UHwSsif_q-ZTc,1088
+letterparser-0.12.0.dist-info/METADATA,sha256=IlluDPPZwMyYp1GumL1lNrpqTxwbQDcB-pv-2cUJ-K4,2008
+letterparser-0.12.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+letterparser-0.12.0.dist-info/top_level.txt,sha256=Hxf2dgGOB99n8sCWwcB5KZ95gkCTLWV4ajXBIPsZuq4,13
+letterparser-0.12.0.dist-info/RECORD,,
