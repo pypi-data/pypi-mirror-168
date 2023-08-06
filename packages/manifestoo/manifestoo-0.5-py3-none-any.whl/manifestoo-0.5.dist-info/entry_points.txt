@@ -1,0 +1,3 @@
+[console_scripts]
+manifestoo = manifestoo.main:app
+moo = manifestoo.main:app
