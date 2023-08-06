@@ -1,0 +1,11 @@
+requests
+beautifulsoup4
+lxml
+pillow
+
+[dev]
+jupyterlab
+nbdev
+jupyterlab-code-formatter
+black
+isort

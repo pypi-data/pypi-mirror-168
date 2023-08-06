@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+trove_newspaper_images/__init__.py
+trove_newspaper_images/_modidx.py
+trove_newspaper_images/_nbdev.py
+trove_newspaper_images/articles.py
+trove_newspaper_images.egg-info/PKG-INFO
+trove_newspaper_images.egg-info/SOURCES.txt
+trove_newspaper_images.egg-info/dependency_links.txt
+trove_newspaper_images.egg-info/entry_points.txt
+trove_newspaper_images.egg-info/not-zip-safe
+trove_newspaper_images.egg-info/requires.txt
+trove_newspaper_images.egg-info/top_level.txt

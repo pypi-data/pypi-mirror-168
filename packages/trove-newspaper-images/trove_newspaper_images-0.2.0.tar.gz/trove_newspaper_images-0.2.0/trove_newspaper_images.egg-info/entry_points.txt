@@ -1,0 +1,6 @@
+[console_scripts]
+trove_newspaper_images.download = trove_newspaper_images.articles:main
+
+[nbdev]
+trove_newspaper_images = trove_newspaper_images._modidx:d
+
