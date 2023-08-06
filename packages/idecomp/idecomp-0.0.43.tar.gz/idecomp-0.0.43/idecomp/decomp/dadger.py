@@ -1,0 +1,1312 @@
+from idecomp.decomp.modelos.dadger import (
+    TE,
+    SB,
+    UH,
+    CT,
+    UE,
+    DP,
+    CD,
+    FP,
+    RI,
+    IA,
+    TX,
+    GP,
+    NI,
+    DT,
+    MP,
+    MT,
+    FD,
+    VE,
+    RE,
+    LU,
+    FU,
+    FT,
+    FI,
+    VI,
+    IR,
+    CI,
+    CE,
+    FC,
+    EA,
+    ES,
+    QI,
+    TI,
+    RQ,
+    EZ,
+    RT,
+    HV,
+    LV,
+    CV,
+    HQ,
+    LQ,
+    CQ,
+    AR,
+    EV,
+    FJ,
+    HE,
+    CM,
+    ACNUMPOS,
+    ACNUMJUS,
+    ACDESVIO,
+    ACVOLMIN,
+    ACVOLMAX,
+    ACCOTVOL,
+    ACCOTARE,
+    ACPROESP,
+    ACPERHID,
+    ACNCHAVE,
+    ACCOTVAZ,
+    ACCOFEVA,
+    ACNUMCON,
+    ACNUMMAQ,
+    ACPOTEFE,
+    ACALTEFE,
+    ACVAZEFE,
+    ACJUSMED,
+    ACVERTJU,
+    ACVAZMIN,
+    ACTIPERH,
+    ACJUSENA,
+    ACVSVERT,
+    ACVMDESV,
+    ACNPOSNW,
+)
+
+
+from cfinterface.files.registerfile import RegisterFile
+from cfinterface.components.register import Register
+from typing import Type, List, Optional, TypeVar, Any, Union
+
+
+class Dadger(RegisterFile):
+    """
+    Armazena os dados de entrada gerais do DECOMP.
+
+    Esta classe lida com as informações de entrada fornecidas ao
+    DECOMP no `dadger.rvx`. Possui métodos para acessar individualmente
+    cada registro, editá-lo e também cria alguns novos registros.
+
+    Atualmente, são suportados os registros:
+    `TE`, `SB`, `UH`, `CT`, `DP`, `TX`, `GP`, `NI`, `DT`, `RE`, `LU`,
+    `VI`, `IR`, `FC`, `TI`, `HV`, `LV`, `HQ`, `LQ` `HE`, `EV` e `FJ`.
+
+    É possível ler as informações existentes em arquivos a partir do
+    método `le_arquivo()` e escreve um novo arquivo a partir do método
+    `escreve_arquivo()`.
+
+    """
+
+    T = TypeVar("T")
+
+    AC = Union[
+        ACNUMPOS,
+        ACNUMJUS,
+        ACDESVIO,
+        ACVOLMIN,
+        ACVOLMAX,
+        ACCOTVOL,
+        ACCOTARE,
+        ACPROESP,
+        ACPERHID,
+        ACNCHAVE,
+        ACCOTVAZ,
+        ACCOFEVA,
+        ACNUMCON,
+        ACNUMMAQ,
+        ACPOTEFE,
+        ACALTEFE,
+        ACVAZEFE,
+        ACJUSMED,
+        ACVERTJU,
+        ACVAZMIN,
+        ACTIPERH,
+        ACJUSENA,
+        ACVSVERT,
+        ACVMDESV,
+        ACNPOSNW,
+    ]
+
+    REGISTERS = [
+        TE,
+        SB,
+        UH,
+        CT,
+        UE,
+        DP,
+        CD,
+        FP,
+        RI,
+        IA,
+        TX,
+        GP,
+        NI,
+        DT,
+        MP,
+        MT,
+        FD,
+        VE,
+        RE,
+        LU,
+        FU,
+        FT,
+        FI,
+        VI,
+        IR,
+        CI,
+        CE,
+        FC,
+        EA,
+        ES,
+        QI,
+        TI,
+        RQ,
+        EZ,
+        RT,
+        HV,
+        LV,
+        CV,
+        HQ,
+        LQ,
+        CQ,
+        AR,
+        EV,
+        FJ,
+        HE,
+        CM,
+        ACNUMPOS,
+        ACNUMJUS,
+        ACDESVIO,
+        ACVOLMIN,
+        ACVOLMAX,
+        ACCOTVOL,
+        ACCOTARE,
+        ACPROESP,
+        ACPERHID,
+        ACNCHAVE,
+        ACCOTVAZ,
+        ACCOFEVA,
+        ACNUMCON,
+        ACNUMMAQ,
+        ACPOTEFE,
+        ACALTEFE,
+        ACVAZEFE,
+        ACJUSMED,
+        ACVERTJU,
+        ACVAZMIN,
+        ACTIPERH,
+        ACJUSENA,
+        ACVSVERT,
+        ACVMDESV,
+        ACNPOSNW,
+    ]
+
+    def __init__(self, data=...) -> None:
+        super().__init__(data)
+
+    @classmethod
+    def le_arquivo(cls, diretorio: str, nome_arquivo="dadger.rv0") -> "Dadger":
+        return cls.read(diretorio, nome_arquivo)
+
+    def escreve_arquivo(self, diretorio: str, nome_arquivo="dadger.rv0"):
+        self.write(diretorio, nome_arquivo)
+
+    def __registros_por_tipo(self, registro: Type[T]) -> List[T]:
+        """
+        Obtém um gerador de blocos de um tipo, se houver algum no arquivo.
+        :param bloco: Um tipo de bloco para ser lido
+        :type bloco: T
+        :param indice: O índice do bloco a ser acessado, dentre os do tipo
+        :type indice: int
+        """
+        return [b for b in self.data.of_type(registro)]
+
+    def __obtem_registro(self, tipo: Type[T]) -> Optional[T]:
+        """ """
+        r = self.__obtem_registros(tipo)
+        return r[0] if len(r) > 0 else None
+
+    def __obtem_registros(self, tipo: Type[T]) -> List[T]:
+        return self.__registros_por_tipo(tipo)
+
+    def __obtem_registros_com_filtros(
+        self, tipo_registro: Type[T], **kwargs
+    ) -> Optional[Union[T, List[T]]]:
+        def __atende(r) -> bool:
+            condicoes: List[bool] = []
+            for k, v in kwargs.items():
+                if v is not None:
+                    condicoes.append(getattr(r, k) == v)
+            return all(condicoes)
+
+        regs_filtro = [
+            r for r in self.__obtem_registros(tipo_registro) if __atende(r)
+        ]
+        if len(regs_filtro) == 0:
+            return None
+        elif len(regs_filtro) == 1:
+            return regs_filtro[0]
+        else:
+            return regs_filtro
+
+    def cria_registro(self, anterior: Register, registro: Register):
+        """
+        Adiciona um registro ao arquivo após um outro registro previamente
+        existente.
+
+        Este método existe para retrocompatibilidade e deve ser substituído
+        quando for suportado na classe :class:`RegisterFile`.
+        """
+        self.data.add_after(anterior, registro)
+
+    def deleta_registro(self, registro: Register):
+        """
+        Remove um registro existente no arquivo.
+
+        Este método existe para retrocompatibilidade e deve ser substituído
+        quando for suportado na classe :class:`RegisterFile`.
+        """
+        self.data.remove(registro)
+
+    def lista_registros(self, tipo: Type[T]) -> List[T]:
+        """
+        Lista todos os registros presentes no arquivo que tenham o tipo `T`.
+
+        Este método existe para retrocompatibilidade e deve ser substituído
+        quando for suportado na classe :class:`RegisterFile`.
+        """
+        return [r for r in self.data.of_type(tipo)]
+
+    def append_registro(self, registro: Register):
+        """
+        Adiciona um registro ao arquivo na última posição.
+
+
+        Este método existe para retrocompatibilidade e deve ser substituído
+        quando for suportado na classe :class:`RegisterFile`.
+        """
+        self.data.append(registro)
+
+    def preppend_registro(self, registro: Register):
+        """
+        Adiciona um registro ao arquivo na primeira posição.
+
+        Este método existe para retrocompatibilidade e deve ser substituído
+        quando for suportado na classe :class:`RegisterFile`.
+        """
+        self.data.preppend(registro)
+
+    @property
+    def te(self) -> Optional[TE]:
+        """
+        Obtém o (único) registro que define o nome do estudo no
+        :class:`Dadger`
+
+        :return: Um registro, se existir.
+        :rtype: :class:`TE` | None.
+        """
+        return self.__obtem_registro(TE)
+
+    def sb(
+        self, codigo: Optional[int] = None, nome: Optional[str] = None
+    ) -> Optional[Union[SB, List[SB]]]:
+        """
+        Obtém um registro que define os subsistemas existentes
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: código que especifica o registro do subsistema
+        :type codigo: int | None
+        :param nome: nome do subsistema
+        :type nome: str | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`SB` | list[:class:`SB`] | None
+        """
+        return self.__obtem_registros_com_filtros(SB, codigo=codigo, nome=nome)
+
+    def uh(
+        self,
+        codigo: Optional[int] = None,
+        ree: Optional[int] = None,
+        volume_inicial: Optional[float] = None,
+        evaporacao: Optional[int] = None,
+    ) -> Optional[Union[UH, List[UH]]]:
+        """
+        Obtém um registro que define uma usina hidrelétrica existente
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: índice do código que especifica o registro da UHE
+        :type codigo: int | None
+        :param ree: índice do ree da UHE
+        :type ree: int | None
+        :param volume_inicial: volume inicial da UHE
+        :type volume_inicial: float | None
+        :param evaporacao: consideração da evaporação na UHE
+        :type evaporacao: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`UH` | list[:class:`UH`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            UH,
+            codigo=codigo,
+            ree=ree,
+            volume_inicial=volume_inicial,
+            evaporacao=evaporacao,
+        )
+
+    def ct(
+        self,
+        codigo: Optional[int] = None,
+        estagio: Optional[int] = None,
+        subsistema: Optional[int] = None,
+        nome: Optional[str] = None,
+    ) -> Optional[Union[CT, List[CT]]]:
+        """
+        Obtém um registro que define uma usina termelétrica existente
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: código que especifica o registro da UTE
+        :type codigo: int | None
+        :param estagio: estágio associado ao registro
+        :type estagio: int | None
+        :param subsistema: subsistema da UTE
+        :type subsistema: str | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`CT` | list[:class:`CT`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            CT,
+            codigo=codigo,
+            estagio=estagio,
+            subsistema=subsistema,
+            nome=nome,
+        )
+
+    def dp(
+        self,
+        estagio: Optional[int] = None,
+        subsistema: Optional[int] = None,
+        num_patamares: Optional[int] = None,
+    ) -> Optional[Union[DP, List[DP]]]:
+        """
+        Obtém um registro que define as durações dos patamares
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param estagio: estágio sobre o qual serão
+            definidas as durações dos patamares
+        :type estagio: int | None
+        :param subsistema: subsistema para o qual
+            valerão os patamares.
+        :type subsistema: int | None
+        :param num_patamares: número de patamares
+        :type num_patamares: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`DP` | list[:class:`DP`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            DP,
+            estagio=estagio,
+            subsistema=subsistema,
+            num_patamares=num_patamares,
+        )
+
+    def ac(
+        self,
+        uhe: int,
+        modificacao: Any,
+        **kwargs,
+    ) -> Optional[Union[AC, List[AC]]]:
+        """
+        Obtém um registro que define modificações nos parâmetros
+        das UHE em um :class:`Dadger`.
+
+        :param uhe: código da UHE modificada
+        :type uhe: int
+        :param modificacao: classe da modificação realizada
+        :type modificacao: subtipos do tipo `AC`
+        :return: Um ou mais registros, se existirem.
+        :rtype: `AC` | list[`AC`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            modificacao, **{"uhe": uhe, **kwargs}
+        )
+
+    def cd(
+        self,
+        numero_curva: Optional[int] = None,
+        subsistema: Optional[int] = None,
+        nome_curva: Optional[str] = None,
+        estagio: Optional[int] = None,
+    ) -> Optional[Union[CD, List[CD]]]:
+        """
+        Obtém um registro que define as curvas de déficit
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param numero_curva: Índice da curva de déficit descrita
+        :type numero_curva: int | None
+        :param subsistema: subsistema para o qual valerá a curva.
+        :type subsistema: int | None
+        :param nome_curva: nome da curva.
+        :type nome_curva: str | None
+        :param estagio: estagio para o qual valerá a curva.
+        :type estagio: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`LU` | list[:class:`LU`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            CD,
+            numero_curva=numero_curva,
+            subsistema=subsistema,
+            nome_curva=nome_curva,
+            estagio=estagio,
+        )
+
+    @property
+    def tx(self) -> Optional[TX]:
+        """
+        Obtém o (único) registro que define a taxa de desconto
+        aplicada no estudo definido no :class:`Dadger`
+
+        :return: Um registro, se existir.
+        :rtype: :class:`TX` | None.
+        """
+        return self.__obtem_registro(TX)
+
+    @property
+    def gp(self) -> Optional[GP]:
+        """
+        Obtém o (único) registro que define o gap para convergência
+        considerado no estudo definido no :class:`Dadger`
+
+        :return: Um registro, se existir.
+        :rtype: :class:`GP` | None.
+        """
+        return self.__obtem_registro(GP)
+
+    @property
+    def ni(self) -> Optional[NI]:
+        """
+        Obtém o (único) registro que define o número máximo de iterações
+        do DECOMP no estudo definido no :class:`Dadger`
+
+        :return: Um registro, se existir.
+        :rtype: :class:`NI` | None.
+        """
+        return self.__obtem_registro(NI)
+
+    @property
+    def dt(self) -> Optional[DT]:
+        """
+        Obtém o (único) registro que define a data de referência do
+        estudo definido no :class:`Dadger`
+
+        :return: Um registro, se existir.
+        :rtype: :class:`DT` | None.
+        """
+        return self.__obtem_registro(DT)
+
+    def re(
+        self,
+        codigo: Optional[int] = None,
+        estagio_inicial: Optional[int] = None,
+        estagio_final: Optional[int] = None,
+    ) -> Optional[Union[RE, List[RE]]]:
+        """
+        Obtém um registro que cadastra uma restrição elétrica existente
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: código que especifica o registro
+            da restrição elétrica
+        :type codigo: int | None
+        :param estagio_inicial: estágio inicial da restrição elétrica
+        :type estagio_inicial: int | None
+        :param estagio_final: estágio final da restrição elétrica
+        :type estagio_final: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`RE` | list[:class:`RE`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            RE,
+            codigo=codigo,
+            estagio_inicial=estagio_inicial,
+            estagio_final=estagio_final,
+        )
+
+    def lu(
+        self, codigo: Optional[int] = None, estagio: Optional[int] = None
+    ) -> Optional[Union[LU, List[LU]]]:
+        """
+        Obtém um registro que especifica os limites inferiores e
+        superiores por patamar de uma restrição elétrica existente
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: Índice do código que especifica o registro
+            da restrição elétrica
+        :type codigo: int | None
+        :param estagio: Estágio sobre o qual valerão os limites da
+            restrição elétricas
+        :type estagio: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`LU` | list[:class:`LU`] | None
+
+        **Exemplos**
+
+        Para um objeto :class:`Dadger` que possua uma restrição RE
+        de código 1, definida para os estágios de 1 a 5, com limites
+        LU definidos apenas para o estágio 1, estes podem ser acessados com:
+
+        >>> lu = dadger.lu(1, 1)
+        >>> lu
+            <idecomp.decomp.modelos.dadger.LU object at 0x0000026E5C269550>
+
+        Se for acessado o registro LU de um estágio fora dos limites da
+        restrição RE, isso resultará em um erro:
+
+        >>> dadger.lu(1, 7)
+            Traceback (most recent call last):
+            ...
+            ValueError: Estágio 7 fora dos limites do registro RE
+
+        Por outro lado, se for acessado o registro LU em um estágio dentro
+        dos limites do registro RE, porém sem limites próprios definidos,
+        será criado um registro idêntico ao do último estágio existente,
+        e este será retornado:
+
+        >>> lu2 = dadger.lu(1, 5)
+        >>> lu.limites_inferiores == lu2.limites_inferiores
+            True
+
+        """
+
+        def cria_registro() -> Optional[LU]:
+            re = self.re(codigo=codigo)
+            if isinstance(re, list) or re is None:
+                return None
+            ei = re.estagio_inicial
+            ef = re.estagio_final
+            ultimo_registro = None
+            if ei is not None and ef is not None:
+                for e in range(ei, ef + 1):
+                    registro_estagio = self.__obtem_registros_com_filtros(
+                        LU, codigo=codigo, estagio=e
+                    )
+                    if registro_estagio is not None:
+                        ultimo_registro = registro_estagio
+            if isinstance(ultimo_registro, LU):
+                novo_registro = LU(
+                    data=[None] * len(ultimo_registro.data),
+                )
+                novo_registro.codigo = ultimo_registro.codigo
+                novo_registro.limites_inferiores = (
+                    ultimo_registro.limites_inferiores
+                )
+                novo_registro.limites_superiores = (
+                    ultimo_registro.limites_superiores
+                )
+                novo_registro.estagio = estagio
+                self.data.add_after(ultimo_registro, novo_registro)
+                return novo_registro
+            return None
+
+        lu = self.__obtem_registros_com_filtros(
+            LU, codigo=codigo, estagio=estagio
+        )
+        if isinstance(lu, list):
+            return lu
+        if lu is None:
+            lu = cria_registro()
+        return lu
+
+    def fu(
+        self,
+        restricao: Optional[int] = None,
+        estagio: Optional[int] = None,
+        uhe: Optional[int] = None,
+        coeficiente: Optional[float] = None,
+    ) -> Optional[Union[FU, List[FU]]]:
+        """
+        Obtém um registro que cadastra os coeficientes das restrições
+        elétricas.
+
+        :param restricao: código que especifica o registro
+        :type restricao: int | None
+        :param estagio: o estágio do coeficiente
+        :type estagio: int | None
+        :param uhe: o código da UHE para a restrição
+        :type uhe: int | None
+        :param coeficiente: valor do coeficiente para a usina
+            na restrição
+        :type coeficiente: float | None
+        :return: Um ou mais registros, se houverem.
+        :rtype: :class:`FU` | list[:class:`FU`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            FU,
+            restricao=restricao,
+            uhe=uhe,
+            estagio=estagio,
+            coeficiente=coeficiente,
+        )
+
+    def ft(
+        self,
+        restricao: Optional[int] = None,
+        estagio: Optional[int] = None,
+        ute: Optional[int] = None,
+        coeficiente: Optional[float] = None,
+    ) -> Optional[Union[FT, List[FT]]]:
+        """
+        Obtém um registro que cadastra os coeficientes das restrições
+        elétricas.
+
+        :param restricao: código que especifica o registro
+        :type restricao: int | None
+        :param estagio: o estágio do coeficiente
+        :type estagio: int | None
+        :param ute: o código da UTE para a restrição
+        :type ute: int | None
+        :param coeficiente: valor do coeficiente para a usina
+            na restrição
+        :type coeficiente: float | None
+        :return: Um ou mais registros, se houverem.
+        :rtype: :class:`FT` | list[:class:`FT`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            FT,
+            restricao=restricao,
+            ute=ute,
+            estagio=estagio,
+            coeficiente=coeficiente,
+        )
+
+    def fi(
+        self,
+        restricao: Optional[int] = None,
+        estagio: Optional[int] = None,
+        de: Optional[int] = None,
+        para: Optional[int] = None,
+        coeficiente: Optional[float] = None,
+    ) -> Optional[Union[FI, List[FI]]]:
+        """
+        Obtém um registro que cadastra os coeficientes das restrições
+        elétricas.
+
+        :param restricao: código que especifica o registro
+        :type restricao: int | None
+        :param estagio: o estágio do coeficiente
+        :type estagio: int | None
+        :param de: o código do subsistema DE
+        :type de: int | None
+        :param para: o código do subsistema PARA
+        :type para: int | None
+        :param coeficiente: valor do coeficiente para a interligação
+            na restrição
+        :type coeficiente: float | None
+        :return: Um ou mais registros, se houverem.
+        :rtype: :class:`FI` | list[:class:`FI`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            FI,
+            restricao=restricao,
+            estagio=estagio,
+            de=de,
+            para=para,
+            coeficiente=coeficiente,
+        )
+
+    def vi(
+        self, uhe: Optional[int] = None, duracao: Optional[int] = None
+    ) -> Optional[Union[VI, List[VI]]]:
+        """
+        Obtém um registro que especifica os tempos de viagem da
+        água em uma UHE existente no no estudo descrito
+        pelo :class:`Dadger`.
+
+        :param uhe: Índice da UHE associada aos tempos de viagem
+        :type uhe: int | None
+        :param duracao: duração, em horas, da viagem da água
+        :type duracao: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`VI` | list[:class:`VI`] | None
+        """
+        return self.__obtem_registros_com_filtros(VI, uhe=uhe, duracao=duracao)
+
+    def ir(self, tipo: Optional[str] = None) -> Optional[Union[IR, List[IR]]]:
+        """
+        Obtém um registro que especifica os relatórios de saída
+        a serem produzidos pelo DECOMP após a execução do estudo
+        descrito no :class:`Dadger`.
+
+        :param tipo: Mnemônico do tipo de relatório especificado
+            no registro
+        :type tipo: str | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`IR` | list[:class:`IR`] | None
+        """
+        return self.__obtem_registros_com_filtros(IR, tipo=tipo)
+
+    def rt(
+        self, restricao: Optional[str] = None
+    ) -> Optional[Union[RT, List[RT]]]:
+        """
+        Obtém um registro que especifica uma retirada de restrição
+        de soleira de vertedouro ou canal de desvio.
+
+        :param restricao: Mnemônico da restrição retirada (CRISTA ou
+            DESVIO)
+        :type restricao: str | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`RT` | list[:class:`RT`] | None
+        """
+        return self.__obtem_registros_com_filtros(RT, restricao=restricao)
+
+    def fc(
+        self, tipo: Optional[str] = None, caminho: Optional[str] = None
+    ) -> Optional[Union[FC, List[FC]]]:
+        """
+        Obtém um registro que especifica os caminhos para os
+        arquivos com a FCF do NEWAVE.
+
+        :param tipo: Mnemônico do tipo de FCF especificado
+            no registro
+        :type tipo: str | None
+        :param caminho: caminho para o arquivo com a FCF
+        :type caminho: str | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`FC` | list[:class:`FC`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            FC, tipo=tipo, caminho=caminho
+        )
+
+    def ea(self, ree: Optional[int] = None) -> Optional[Union[EA, List[EA]]]:
+        """
+        Obtém um registro que especifica a ENA dos meses anteriores
+        ao estudo.
+
+        :param ree: Código do REE
+        :type ree: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`EA` | list[:class:`EA`] | None
+        """
+        return self.__obtem_registros_com_filtros(EA, ree=ree)
+
+    def es(
+        self, ree: Optional[int] = None, numero_semanas: Optional[int] = None
+    ) -> Optional[Union[ES, List[ES]]]:
+        """
+        Obtém um registro que especifica a ENA das semanas anteriores
+        ao estudo.
+
+        :param ree: Código do REE
+        :type ree: int | None
+        :param numero_semanas: Número de semanas do mês anterior
+        :type numero_semanas: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`ES` | list[:class:`ES`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            ES, ree=ree, numero_semanas=numero_semanas
+        )
+
+    def qi(self, uhe: Optional[int] = None) -> Optional[Union[QI, List[QI]]]:
+        """
+        Obtém um registro que especifica o tempo de viagem
+        para cálculo da ENA.
+
+        :param uhe: Código da UHE
+        :type uhe: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`QI` | list[:class:`QI`] | None
+        """
+        return self.__obtem_registros_com_filtros(QI, uhe=uhe)
+
+    def ti(
+        self, codigo: Optional[int] = None
+    ) -> Optional[Union[TI, List[TI]]]:
+        """
+        Obtém um registro que especifica as taxas de irrigação
+        por posto (UHE) existente no estudo especificado no :class:`Dadger`
+
+        :param codigo: Código da UHE associada ao registro
+        :type codigo: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`TI` | list[:class:`TI`] | None
+        """
+        return self.__obtem_registros_com_filtros(TI, codigo=codigo)
+
+    def fp(
+        self,
+        codigo: Optional[int] = None,
+        estagio: Optional[int] = None,
+        tipo_entrada_janela_turbinamento: Optional[int] = None,
+        numero_pontos_turbinamento: Optional[int] = None,
+        limite_inferior_janela_turbinamento: Optional[float] = None,
+        limite_superior_janela_turbinamento: Optional[float] = None,
+        tipo_entrada_janela_volume: Optional[int] = None,
+        numero_pontos_volume: Optional[int] = None,
+        limite_inferior_janela_volume: Optional[float] = None,
+        limite_superior_janela_volume: Optional[float] = None,
+    ) -> Optional[Union[FP, List[FP]]]:
+        """
+        Obtém um registro que especifica as taxas de irrigação
+        por posto (UHE) existente no estudo especificado no :class:`Dadger`
+
+        :param codigo: Código da UHE associada ao registro
+        :type codigo: int | None
+        :param estagio: Estágio de definição da FP da UHE
+        :type estagio: int | None
+        :param tipo_entrada_janela_turbinamento: unidade de entrada
+            dos valores da janela de turbinamento
+        :type tipo_entrada_janela_turbinamento: int | None
+        :param numero_pontos_turbinamento: número de pontos para
+            discretização da janela
+        :type numero_pontos_turbinamento: int | None
+        :param limite_inferior_janela_turbinamento: limite inferior
+            da janela
+        :type limite_inferior_janela_turbinamento: float | None
+        :param limite_superior_janela_turbinamento: limite superior
+            da janela
+        :type limite_superior_janela_turbinamento: float | None
+        :param tipo_entrada_janela_volume: unidade de entrada
+            dos valores da janela de volume
+        :type tipo_entrada_janela_volume: int | None
+        :param numero_pontos_volume: número de pontos para
+            discretização da janela
+        :type numero_pontos_volume: int | None
+        :param limite_inferior_janela_volume: limite inferior
+            da janela
+        :type limite_inferior_janela_volume: float | None
+        :param limite_superior_janela_volume: limite superior
+            da janela
+        :type limite_superior_janela_volume: float | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`FP` | list[:class:`FP`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            FP,
+            codigo=codigo,
+            estagio=estagio,
+            tipo_entrada_janela_turbinamento=tipo_entrada_janela_turbinamento,
+            numero_pontos_turbinamento=numero_pontos_turbinamento,
+            limite_inferior_janela_turbinamento=limite_inferior_janela_turbinamento,
+            limite_superior_janela_turbinamento=limite_superior_janela_turbinamento,
+            tipo_entrada_janela_volume=tipo_entrada_janela_volume,
+            numero_pontos_volume=numero_pontos_volume,
+            limite_inferior_janela_volume=limite_inferior_janela_volume,
+            limite_superior_janela_volume=limite_superior_janela_volume,
+        )
+
+    def rq(self, ree: Optional[int] = None) -> Optional[Union[RQ, List[RQ]]]:
+        """
+        Obtém um registro que especifica as vazões mínimas históricas
+        por REE existentes no estudo especificado no :class:`Dadger`
+
+        :param ree: Código do REE
+        :type ree: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`RQ` | list[:class:`RQ`] | None
+        """
+        return self.__obtem_registros_com_filtros(RQ, ree=ree)
+
+    def ve(
+        self, codigo: Optional[int] = None
+    ) -> Optional[Union[VE, List[VE]]]:
+        """
+        Obtém um registro que especifica os volumes de espera
+        por posto (UHE) existente no estudo especificado no :class:`Dadger`
+
+        :param codigo: Código do posto da UHE associada
+        :type codigo: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`VE` | list[:class:`VE`] | None
+        """
+        return self.__obtem_registros_com_filtros(VE, codigo=codigo)
+
+    def hv(
+        self,
+        codigo: Optional[int] = None,
+        estagio_inicial: Optional[int] = None,
+        estagio_final: Optional[int] = None,
+    ) -> Optional[Union[HV, List[HV]]]:
+        """
+        Obtém um registro que cadastra uma restrição de volume mínimo
+        armazenado existente no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: código que especifica o registro
+            da restrição de volume
+        :type codigo: int | None
+        :param estagio_inicial: estágio inicial da restrição de volume
+        :type estagio_inicial: int | None
+        :param estagio_final: estágio final da restrição de volume
+        :type estagio_final: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`HV` | list[:class:`HV`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            HV,
+            codigo=codigo,
+            estagio_inicial=estagio_inicial,
+            estagio_final=estagio_final,
+        )
+
+    def lv(
+        self, codigo: Optional[int] = None, estagio: Optional[int] = None
+    ) -> Optional[Union[LV, List[LV]]]:
+        """
+        Obtém um registro que especifica os limites inferior e
+        superior de uma restrição de volume mínimo existente
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: Índice do código que especifica o registro
+            da restrição de volume
+        :type codigo: int | None
+        :param estagio: Estágio sobre o qual valerão os limites da
+            restrição de volume
+        :type estagio: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`LV` | list[:class:`LV`] | None
+
+        **Exemplos**
+
+        Para um objeto :class:`Dadger` que possua uma restrição HV
+        de código 1, definida para os estágios de 1 a 5, com limites
+        LV definidos apenas para o estágio 1, estes podem ser acessados com:
+
+        >>> lv = dadger.lv(1, 1)
+        >>> lv
+            <idecomp.decomp.modelos.dadger.LV object at 0x0000026E5C269550>
+
+        Se for acessado o registro LV de um estágio fora dos limites da
+        restrição HV, isso resultará em um erro:
+
+        >>> dadger.lv(1, 7)
+            Traceback (most recent call last):
+            ...
+            ValueError: Estágio 7 fora dos limites do registro HV
+
+        Por outro lado, se for acessado o registro LV em um estágio dentro
+        dos limites do registro HV, porém sem limites próprios definidos,
+        será criado um registro idêntico ao do último estágio existente,
+        e este será retornado:
+
+        >>> lv2 = dadger.lv(1, 5)
+        >>> lv.limite_inferior == lv2.limite_inferior
+            True
+
+        """
+
+        def cria_registro() -> Optional[LV]:
+            hv = self.hv(codigo=codigo)
+            if isinstance(hv, list) or hv is None:
+                return None
+            ei = hv.estagio_inicial
+            ef = hv.estagio_final
+            ultimo_registro = None
+            if ei is not None and ef is not None:
+                for e in range(ei, ef + 1):
+                    registro_estagio = self.__obtem_registros_com_filtros(
+                        LV, codigo=codigo, estagio=e
+                    )
+                    if registro_estagio is not None:
+                        ultimo_registro = registro_estagio
+            if isinstance(ultimo_registro, LV):
+                novo_registro = LV(
+                    data=[None] * len(ultimo_registro.data),
+                )
+                novo_registro.codigo = codigo
+                novo_registro.limite_inferior = ultimo_registro.limite_inferior
+                novo_registro.limite_superior = ultimo_registro.limite_superior
+                novo_registro.estagio = estagio
+                self.data.add_after(ultimo_registro, novo_registro)
+                return novo_registro
+            return None
+
+        lv = self.__obtem_registros_com_filtros(
+            LV, codigo=codigo, estagio=estagio
+        )
+        if isinstance(lv, list):
+            return lv
+        if lv is None:
+            lv = cria_registro()
+        return lv
+
+    def cv(
+        self,
+        restricao: Optional[int] = None,
+        estagio: Optional[int] = None,
+        uhe: Optional[int] = None,
+        coeficiente: Optional[float] = None,
+        tipo: Optional[str] = None,
+    ) -> Optional[Union[CV, List[CV]]]:
+        """
+        Obtém um registro que cadastra os coeficientes das restrições
+        de volume.
+
+        :param restricao: código que especifica o registro
+        :type restricao: int | None
+        :param estagio: o estágio do coeficiente
+        :type estagio: int | None
+        :param uhe: o código da UHE para a restrição
+        :type uhe: int | None
+        :param coeficiente: valor do coeficiente para a usina
+            na restrição
+        :type coeficiente: float | None
+        :param tipo: o mnemônico de tipo da restrição
+        :type tipo: str | None
+        :return: Um ou mais registros, se houverem.
+        :rtype: :class:`CV` | list[:class:`CV`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            CV,
+            restricao=restricao,
+            uhe=uhe,
+            estagio=estagio,
+            coeficiente=coeficiente,
+            tipo=tipo,
+        )
+
+    def hq(
+        self,
+        codigo: Optional[int] = None,
+        estagio_inicial: Optional[int] = None,
+        estagio_final: Optional[int] = None,
+    ) -> Optional[Union[HQ, List[HQ]]]:
+        """
+        Obtém um registro que cadastra uma restrição de vazão
+        existente no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: código que especifica o registro
+            da restrição de vazão
+        :type codigo: int | None
+        :param estagio_inicial: estágio inicial da restrição de vazão
+        :type estagio_inicial: int | None
+        :param estagio_final: estágio final da restrição de vazão
+        :type estagio_final: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`HQ` | list[:class:`HQ`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            HQ,
+            codigo=codigo,
+            estagio_inicial=estagio_inicial,
+            estagio_final=estagio_final,
+        )
+
+    def lq(
+        self, codigo: Optional[int] = None, estagio: Optional[int] = None
+    ) -> Optional[Union[LQ, List[LQ]]]:
+        """
+        Obtém um registro que especifica os limites inferiores e
+        superiores por patamar de uma restrição de vazão existente
+        no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: Índice do código que especifica o registro
+            da restrição de vazão
+        :type codigo: int | None
+        :param estagio: Estágio sobre o qual valerão os limites da
+            restrição de vazão
+        :type estagio: int | None
+        :return: Um ou mais registros, se existirem.
+        :rtype: :class:`LQ` | list[:class:`LQ`] | None
+
+        **Exemplos**
+
+        Para um objeto :class:`Dadger` que possua uma restrição HQ
+        de código 1, definida para os estágios de 1 a 5, com limites
+        LQ definidos apenas para o estágio 1, estes podem ser acessados com:
+
+        >>> lq = dadger.lq(1, 1)
+        >>> lq
+            <idecomp.decomp.modelos.dadger.LQ object at 0x0000026E5C269550>
+
+        Se for acessado o registro LQ de um estágio fora dos limites da
+        restrição HQ, isso resultará em um erro:
+
+        >>> dadger.lq(1, 7)
+            Traceback (most recent call last):
+            ...
+            ValueError: Estágio 7 fora dos limites do registro HQ
+
+        Por outro lado, se for acessado o registro LQ em um estágio dentro
+        dos limites do registro HQ, porém sem limites próprios definidos,
+        será criado um registro idêntico ao do último estágio existente,
+        e este será retornado:
+
+        >>> lq2 = dadger.lq(1, 5)
+        >>> lq.limites_inferiores == lq2.limites_inferiores
+            True
+
+        """
+
+        def cria_registro() -> Optional[LQ]:
+            hq = self.hq(codigo=codigo)
+            if isinstance(hq, list) or hq is None:
+                return None
+            ei = hq.estagio_inicial
+            ef = hq.estagio_final
+            ultimo_registro = None
+            if ei is not None and ef is not None:
+                for e in range(ei, ef + 1):
+                    registro_estagio = self.__obtem_registros_com_filtros(
+                        LQ, codigo=codigo, estagio=e
+                    )
+                    if registro_estagio is not None:
+                        ultimo_registro = registro_estagio
+            if isinstance(ultimo_registro, LQ):
+                novo_registro = LQ(
+                    data=[None] * len(ultimo_registro.data),
+                )
+                novo_registro.codigo = codigo
+                novo_registro.limites_superiores = (
+                    ultimo_registro.limites_superiores
+                )
+                novo_registro.limites_inferiores = (
+                    ultimo_registro.limites_inferiores
+                )
+                novo_registro.estagio = estagio
+                self.data.add_after(ultimo_registro, novo_registro)
+                return novo_registro
+            return None
+
+        lq = self.__obtem_registros_com_filtros(
+            LQ, codigo=codigo, estagio=estagio
+        )
+        if isinstance(lq, list):
+            return lq
+        if lq is None:
+            lq = cria_registro()
+        return lq
+
+    def cq(
+        self,
+        restricao: Optional[int] = None,
+        estagio: Optional[int] = None,
+        uhe: Optional[int] = None,
+        coeficiente: Optional[float] = None,
+        tipo: Optional[str] = None,
+    ) -> Optional[Union[CQ, List[CQ]]]:
+        """
+        Obtém um registro que cadastra os coeficientes das restrições
+        de vazão.
+
+        :param restricao: código que especifica o registro
+        :type restricao: int | None
+        :param estagio: o estágio do coeficiente
+        :type estagio: int | None
+        :param uhe: o código da UHE para a restrição
+        :type uhe: int | None
+        :param coeficiente: valor do coeficiente para a usina
+            na restrição
+        :type coeficiente: float | None
+        :param tipo: o mnemônico de tipo da restrição
+        :type tipo: str | None
+        :return: Um ou mais registros, se houverem.
+        :rtype: :class:`CQ` | list[:class:`CQ`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            CQ,
+            restricao=restricao,
+            uhe=uhe,
+            estagio=estagio,
+            coeficiente=coeficiente,
+            tipo=tipo,
+        )
+
+    def he(
+        self,
+        codigo: Optional[int] = None,
+        estagio: Optional[int] = None,
+        tipo_limite: Optional[int] = None,
+        forma_calculo_produtibilidades: Optional[int] = None,
+        tipo_valores_produtibilidades: Optional[int] = None,
+        tipo_penalidade: Optional[int] = None,
+        penalidade: Optional[float] = None,
+        arquivo_produtibilidades: Optional[str] = None,
+    ) -> Optional[Union[HE, List[HE]]]:
+        """
+        Obtém um registro que cadastra uma restrição de energia
+        armazenada existente no estudo descrito pelo :class:`Dadger`.
+
+        :param codigo: código que especifica o registro
+            da restrição de energia armazenada
+        :type codigo: int | None
+        :param estagio: estágio para o qual vale a
+            restrição de energia armazenada
+        :type estagio: int | None
+        :param tipo_limite: flag para o tipo de limite considerado
+        :type tipo_limite: int | None
+        :param forma_calculo_produtibilidades: flag para a forma
+            do cálculo das probutibilidades
+        :type forma_calculo_produtibilidades: int | None
+        :param tipo_valores_produtibilidades: flag para o tipo de
+            valores das probutibilidades
+        :type tipo_valores_produtibilidades: int | None
+        :param tipo_penalidade: flag para o tipo de
+            penalidade aplicada
+        :type tipo_penalidade: int | None
+        :param penalidade: valor de penalidade aplicada
+        :type penalidade: float | None
+        :param arquivo_produtibilidades: nome do arquivo com as
+            produtibilidades das usinas
+        :type arquivo_produtibilidades: int | None
+        :return: Um ou mais registros, se houverem.
+        :rtype: :class:`HE` | list[:class:`HE`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            HE,
+            codigo=codigo,
+            estagio=estagio,
+            tipo_limite=tipo_limite,
+            forma_calculo_produtibilidades=forma_calculo_produtibilidades,
+            tipo_valores_produtibilidades=tipo_valores_produtibilidades,
+            tipo_penalidade=tipo_penalidade,
+            penalidade=penalidade,
+            arquivo_produtibilidades=arquivo_produtibilidades,
+        )
+
+    def cm(
+        self,
+        codigo: Optional[int] = None,
+        ree: Optional[int] = None,
+        coeficiente: Optional[float] = None,
+    ) -> Optional[Union[CM, List[CM]]]:
+        """
+        Obtém um registro que cadastra os coeficientes das restrições
+        de energia armazenada.
+
+        :param codigo: código que especifica o registro
+        :type codigo: int | None
+        :param ree: REE do coeficiente
+        :type ree: int | None
+        :param coeficiente: valor do coeficiente para a energia
+        :type coeficiente: float | None
+        :return: Um ou mais registros, se houverem.
+        :rtype: :class:`CM` | list[:class:`CM`] | None
+        """
+        return self.__obtem_registros_com_filtros(
+            CM,
+            codigo=codigo,
+            ree=ree,
+            coeficiente=coeficiente,
+        )
+
+    @property
+    def ev(self) -> Optional[EV]:
+        """
+        Obtém o (único) registro que define a evaporação
+        :class:`Dadger`
+
+        :return: Um registro, se existir.
+        :rtype: :class:`EV` | None.
+        """
+        return self.__obtem_registro(EV)
+
+    @property
+    def fj(self) -> Optional[FJ]:
+        """
+        Obtém o (único) registro que define o arquivo `polinjus`
+        :class:`Dadger`
+
+        :return: Um registro, se existir.
+        :rtype: :class:`FJ` | None.
+        """
+        return self.__obtem_registro(FJ)
