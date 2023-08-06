@@ -1,0 +1,16 @@
+daal_static-2021.7.0.data/data/lib/libdaal_core.a,sha256=ZmO7Y_qfaSnpZySFShDMhndFywzLKvvY3Sp1gt73o2s,644106456
+daal_static-2021.7.0.data/data/lib/libdaal_sequential.a,sha256=DXjh00BloI6HPus7keugGy5xh3goU3VSo-ljyzOhN7c,81692632
+daal_static-2021.7.0.data/data/lib/libdaal_thread.a,sha256=1E0LoC3G28DbGvPA_VRmbkmhcRdJFF65fOOQfXgQ4zQ,92182440
+daal_static-2021.7.0.data/data/lib/libonedal.a,sha256=GyXcg_2vVJTicTpUmoxVBrkh_AliM3GxJcLmrCsx1Rw,36113048
+daal_static-2021.7.0.data/data/lib/libonedal_core.a,sha256=ZmO7Y_qfaSnpZySFShDMhndFywzLKvvY3Sp1gt73o2s,644106456
+daal_static-2021.7.0.data/data/lib/libonedal_sequential.a,sha256=DXjh00BloI6HPus7keugGy5xh3goU3VSo-ljyzOhN7c,81692632
+daal_static-2021.7.0.data/data/lib/libonedal_thread.a,sha256=1E0LoC3G28DbGvPA_VRmbkmhcRdJFF65fOOQfXgQ4zQ,92182440
+daal_static-2021.7.0.data/data/lib/pkgconfig/dal-dynamic-sequential-host.pc,sha256=GYdPljXhBgnYTlBaE-aRJDoaKtf1P1d6-Lqx6SMecSI,1155
+daal_static-2021.7.0.data/data/lib/pkgconfig/dal-dynamic-threading-host.pc,sha256=YfKci0cJUg33v7D01AJJVH7rxXPE_WjIuhYXhcJbwx4,1168
+daal_static-2021.7.0.data/data/lib/pkgconfig/dal-static-sequential-host.pc,sha256=r_XAKfEGWm6-I1MNLyS-651BSSlDnfAYrTYfaqcsfAI,1143
+daal_static-2021.7.0.data/data/lib/pkgconfig/dal-static-threading-host.pc,sha256=D_B2LbZDoCkyAOOtoLfKbSRHwePa3ojPmh-erFwixiE,1156
+daal_static-2021.7.0.dist-info/LICENSE.txt,sha256=0FHWqv3r5V_hjP6ydXbWRhi10tZNphthT1rPPkZAgA4,4227
+daal_static-2021.7.0.dist-info/METADATA,sha256=uj0wF8uSFVWrpsRtwjS38j4qTG10ULIn5u6O7u9cOrU,1132
+daal_static-2021.7.0.dist-info/WHEEL,sha256=RFHWgnxN0v-d8zGfM3RBbnabJvxz8TihoEHZ2qGBooI,208
+daal_static-2021.7.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+daal_static-2021.7.0.dist-info/RECORD,,
