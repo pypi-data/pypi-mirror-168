@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "armarx"
+version = "0.20.1"
+description = "A Python Toolbox for ArmarX"
+authors = ["Markus Grotz <markus.grotz@kit.edu>"]
+maintainers = ["Markus Grotz <markus.grotz@kit.edu>"]
+packages = [{include = "armarx"}, {include = "visionx"}, {include = "armarx_memory"}, {include = "armarx_objects"}]
+readme = "README.md"
+repository = "http://gitlab.com/ArmarX/python3-armarx"
+documentation = "https://armarx.humanoids.kit.edu/python/"
+keywords = ["robotics", "humanoid robots", "toolbox"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: Robot Framework "
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6.9,<4.0"
+zeroc-ice = "3.7.0"
+lxml = ">=4.8.0"
+numpy = ">=1.19.5"
+transforms3d = ">=0.4.1"
+dataclasses = { version = ">=0.8", python = "<3.7" }
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+Sphinx = "^4.5.0"
+sphinx-rtd-theme = "^0.5.2"
+toml = "^0.10.2"
+
+[tool.poetry.extras]
+docs = ["sphinx"]
+
+[build-system]
+#requires = ["setuptools", "wheel", "poetry-core>=1.0.0"]
+requires = ["poetry-core@https://github.com/python-poetry/poetry-core/archive/325312c016d69189ac93c945ba0c1b69296c5e54.zip"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "h2t"
+url = "https://pypi.humanoids.kit.edu/simple/"
+secondary = false

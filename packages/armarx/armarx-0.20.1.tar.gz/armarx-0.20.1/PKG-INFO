@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: armarx
+Version: 0.20.1
+Summary: A Python Toolbox for ArmarX
+Home-page: http://gitlab.com/ArmarX/python3-armarx
+Keywords: robotics,humanoid robots,toolbox
+Author: Markus Grotz
+Author-email: markus.grotz@kit.edu
+Maintainer: Markus Grotz
+Maintainer-email: markus.grotz@kit.edu
+Requires-Python: >=3.6.9,<4.0
+Classifier: Framework :: Robot Framework 
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Requires-Dist: dataclasses (>=0.8); python_version < "3.7"
+Requires-Dist: lxml (>=4.8.0)
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: transforms3d (>=0.4.1)
+Requires-Dist: zeroc-ice (==3.7.0)
+Project-URL: Documentation, https://armarx.humanoids.kit.edu/python/
+Project-URL: Repository, http://gitlab.com/ArmarX/python3-armarx
+Description-Content-Type: text/markdown
+
+# Python ArmarX - A Python toolbox for ArmarX
+
+```
+from armarx import 🤖  as ❤ 
+```
+
+This package provides Python 3 bindings for ArmarX.
+
+In addition, the package also includes some helper functions, such as
+publishing or subscribing to images.
+
+
+## Installation
+
+`pip install --upgrade --extra-index-url https://pypi.humanoids.kit.edu/ armarx`
+
+## Using the bindings
+
+### Connecting to an existing proxy
+
+For proxies defined in a project's `Variants-*.xml` it is possible to import
+the interface directly. 
+
+```python
+from armarx import PlatformUnitInterfacePrx
+platform_unit = PlatformUnitInterfacePrx.get_proxy('Armar6PlatformUnit')
+platform_unit.moveTo(0.0, 0.0, 0.0, 50.0, 0.1)
+```
+
+Slice definitions can be loaded using the `slice_loader.load_armarx_slice`
+function. Default values for the proxy name will also be mapped.
+
+More examples can be found in the `examples` folder.
+
+## Documentation
+
+See `https://armarx.humanoids.kit.edu/python`
+
