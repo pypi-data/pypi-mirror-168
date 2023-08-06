@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pura
+Version: 0.1.1
+Summary: Clean chemical data quickly
+License: MIT
+Author: Kobi Felton
+Author-email: kobi.c.f@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: stout
+Requires-Dist: Pint (>=0.19.2,<0.20.0)
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: lxml (>=4.9.0,<5.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: pystow (>=0.4.5,<0.5.0); extra == "stout"
+Requires-Dist: python-dotenv (>=0.20.0,<0.21.0)
+Requires-Dist: ray (>=1.13.0,<2.0.0)
+Requires-Dist: rdkit-pypi (>=2022.3.3,<2023.0.0)
+Requires-Dist: tensorflow-gpu (==2.7.2); extra == "stout"
+Requires-Dist: tqdm (>=4.64.0,<5.0.0)
+Requires-Dist: unicodedata2 (>=14.0.0,<15.0.0); extra == "stout"
