@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pip_model/__init__.py
+pip_model/hello.py
+pip_model.egg-info/PKG-INFO
+pip_model.egg-info/SOURCES.txt
+pip_model.egg-info/dependency_links.txt
+pip_model.egg-info/top_level.txt
