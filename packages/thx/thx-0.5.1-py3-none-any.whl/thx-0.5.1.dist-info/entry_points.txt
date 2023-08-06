@@ -1,0 +1,3 @@
+[console_scripts]
+thx=thx.main:main
+
