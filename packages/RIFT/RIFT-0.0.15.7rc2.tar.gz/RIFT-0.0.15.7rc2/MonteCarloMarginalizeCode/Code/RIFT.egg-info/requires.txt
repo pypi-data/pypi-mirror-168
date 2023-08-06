@@ -1,0 +1,14 @@
+numpy
+h5py
+numba
+pandas
+corner
+scikit-learn
+matplotlib
+lalsuite
+gwdatafind
+ligo-segments
+python-ligo-lw
+six
+precession
+ligo.skymap
