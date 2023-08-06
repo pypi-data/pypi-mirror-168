@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Setting up Bioconda &#8212; PacBio Data Processing 1.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The PacBio chemistries" href="pacbio_chemistries.html" />
+    <link rel="prev" title="Installing Python" href="python.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="setting-up-bioconda">
+<span id="id1"></span><h1>Setting up Bioconda<a class="headerlink" href="#setting-up-bioconda" title="Permalink to this headline">¶</a></h1>
+<p>Probably the easiest (but not the only) way to install some external tools
+required by <strong>PacBio Data Processing</strong>, like <a class="reference internal" href="pbindex.html#about-pbindex"><span class="std std-ref">pbindex</span></a>,
+<a class="reference internal" href="aligners.html#aligners"><span class="std std-ref">the aligner</span></a> or <a class="reference internal" href="ccs.html#about-ccs"><span class="std std-ref">ccs</span></a>,
+is through <a class="reference external" href="https://docs.conda.io">conda</a>. If you decide to follow this route, this section
+can hopefully help you.</p>
+<p>The complete instructions can be found in <a class="reference external" href="https://github.com/PacificBiosciences/pbbioconda">PacBio &amp; Bioconda</a> and the
+links therein, but they basically amount to:</p>
+<ol class="arabic">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">conda</span></code>. See <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">installing conda</a> for full details, but it is
+probably enough to use <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>, a minimal <code class="docutils literal notranslate"><span class="pre">conda</span></code> installer.
+In that case we will assume, as an example, that the <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment
+is installed in a directory called:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/home/dave/miniconda3
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Depending on the choices made during the process of installing
+<code class="docutils literal notranslate"><span class="pre">Miniconda</span></code> you may allow the installer to configure your shell
+such that it <em>always</em> activates the <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment at login
+time. If that is the case, and you are using <a class="reference internal" href="glossary.html#term-Bash"><span class="xref std std-term">Bash</span></a>, you will
+find in your <a class="reference internal" href="glossary.html#term-Bash"><span class="xref std std-term">Bash</span></a> initialization file , <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>, a block
+similar to the following one:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>&gt;&gt;&gt; conda initialize &gt;&gt;&gt;
+<span class="gp"># </span>!! Contents within this block are managed by <span class="s1">&#39;conda init&#39;</span> !!
+<span class="go">__conda_setup=&quot;$(&#39;/home/dave/miniconda3/bin/conda&#39; &#39;shell.bash&#39; &#39;hook&#39; 2&gt; /dev/null)&quot;</span>
+<span class="go">if [ $? -eq 0 ]; then</span>
+<span class="go">    eval &quot;$__conda_setup&quot;</span>
+<span class="go">else</span>
+<span class="go">    if [ -f &quot;/home/dave/miniconda3/etc/profile.d/conda.sh&quot; ]; then</span>
+<span class="go">        . &quot;/home/dave/miniconda3/etc/profile.d/conda.sh&quot;</span>
+<span class="go">    else</span>
+<span class="go">         export PATH=&quot;/home/dave/miniconda3/bin:$PATH&quot;</span>
+<span class="go">    fi</span>
+<span class="go">fi</span>
+<span class="go">unset __conda_setup</span>
+<span class="gp"># </span><span class="o">&lt;&lt;&lt;</span> conda initialize <span class="o">&lt;&lt;&lt;</span>
+</pre></div>
+</div>
+<p>Since we are using the <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment in a very limited way,
+you can comment that block, prepending a <code class="docutils literal notranslate"><span class="pre">#</span></code> to each line.</p>
+</div>
+</li>
+<li><p>Setup the <code class="docutils literal notranslate"><span class="pre">channels</span></code> in the <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment just created as
+described in <a class="reference external" href="https://bioconda.github.io/#usage">Bioconda</a>.</p></li>
+<li><p>DO NOT run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">--all</span></code>. The <a class="reference external" href="https://github.com/PacificBiosciences/pbbioconda">PacBio &amp; Bioconda</a> site strongly
+advises to do it, but that results in an environment where
+<a class="reference internal" href="pbindex.html#about-pbindex"><span class="std std-ref">pbindex</span></a>, <a class="reference internal" href="aligners.html#aligners"><span class="std std-ref">an aligner</span></a> and
+<a class="reference internal" href="ccs.html#about-ccs"><span class="std std-ref">ccs</span></a> <strong>cannot</strong> be installed.</p></li>
+</ol>
+<p>Obviously, for the purpose of having <strong>PacBio Data Processing</strong> up and running,
+it is not necessary to install multiple conda environments to have
+<a class="reference internal" href="pbindex.html#about-pbindex"><span class="std std-ref">pbindex</span></a>, <a class="reference internal" href="aligners.html#aligners"><span class="std std-ref">an aligner</span></a> and
+<a class="reference internal" href="ccs.html#about-ccs"><span class="std std-ref">ccs</span></a>.
+The three tools can be installed in the same <a class="reference external" href="https://docs.conda.io">conda</a> environment.</p>
+</section>
+<section id="using-a-conda-environment">
+<h1>Using a conda environment<a class="headerlink" href="#using-a-conda-environment" title="Permalink to this headline">¶</a></h1>
+<p>In some regards, a conda environment is very similar to a <em>normal</em>
+<a class="reference internal" href="../usage/installation.html#virtual-environments"><span class="std std-ref">Python virtual environment</span></a>. This implies,
+as explained before, that you don’t need to create one conda environment
+for each package.</p>
+<p>Apart from the instructions to deactivate the environment, what follows
+is applicable to both conda environments and
+<a class="reference internal" href="../usage/installation.html#virtual-environments"><span class="std std-ref">Python virtual environments</span></a>.</p>
+<p>To implicitly operate on a given conda environment, as it happens with Python
+virtual environments, it must be activated.</p>
+<p>Once the environment is created, if can be <em>activated</em> with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span> /home/dave/miniconda3/bin/activate
+</pre></div>
+</div>
+<p>and the executables installed in it are visible without further ado. Just
+type the name of the executable inside the environment to run it. For
+instance, you would invoke the <code class="docutils literal notranslate"><span class="pre">ccs</span></code> executable simply typing it.</p>
+<p>To <em>deactivate</em> a conda environment, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda deactivate
+</pre></div>
+</div>
+<p>However the activate/deactivate dance is not necessary if all
+you want is to simply leverage one executable installed in a given
+conda/virtual environment. Say that you want to run an executable called
+<code class="docutils literal notranslate"><span class="pre">great-tool</span></code> installed in the conda environment that we created under
+<code class="docutils literal notranslate"><span class="pre">/home/dave/miniconda3</span></code>. It could be <code class="docutils literal notranslate"><span class="pre">pbmm2</span></code>, <code class="docutils literal notranslate"><span class="pre">pbindex</span></code> or <code class="docutils literal notranslate"><span class="pre">ccs</span></code>,
+for instance. <em>With</em> or <em>without</em> activating the environment, the command
+can be called giving its full path. This line:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>/home/dave/miniconda3/bin/great-tool
+</pre></div>
+</div>
+<p>would run the executable of interest.</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">PacBio Data Processing</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart for the impatient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_9steps.html">Quickstart on a cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devel/index.html">Developer’s documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Guides</a><ul>
+      <li>Previous: <a href="python.html" title="previous chapter">Installing Python</a></li>
+      <li>Next: <a href="pacbio_chemistries.html" title="next chapter">The PacBio chemistries</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021-2022, David Palao and David Velázquez.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/indepth/bioconda.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

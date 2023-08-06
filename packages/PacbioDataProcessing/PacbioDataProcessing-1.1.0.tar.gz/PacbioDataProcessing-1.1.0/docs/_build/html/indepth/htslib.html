@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>HTSlib &#8212; PacBio Data Processing 1.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using Spack" href="spack.html" />
+    <link rel="prev" title="kineticsTools" href="kinetics_tools.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="htslib">
+<span id="about-htslib"></span><h1>HTSlib<a class="headerlink" href="#htslib" title="Permalink to this headline">¶</a></h1>
+<p><strong>PacBio Data Processing</strong> uses <a class="reference external" href="https://pysam.readthedocs.io/">pysam</a>, a wrapper around <a class="reference external" href="https://www.htslib.org/">HTSlib</a>,
+to read the BAM files. Although the installation of <a class="reference external" href="https://pysam.readthedocs.io/">pysam</a> is
+automatically triggered by the installation of <strong>PacBio Data Processing</strong>,
+<a class="reference external" href="https://www.htslib.org/">HTSlib</a> must be installed independently, otherwise <strong>PacBio Data Processing</strong>
+will die at runtime.</p>
+<section id="installing-htslib">
+<h2>Installing HTSlib<a class="headerlink" href="#installing-htslib" title="Permalink to this headline">¶</a></h2>
+<p>In the sections below, I briefly explain two ways to install <a class="reference external" href="https://www.htslib.org/">HTSlib</a>.</p>
+<section id="standard-installation">
+<h3>Standard installation<a class="headerlink" href="#standard-installation" title="Permalink to this headline">¶</a></h3>
+<p>Probably, the easiest way to install <a class="reference external" href="https://www.htslib.org/">HTSlib</a> is through your package
+manager. But it can be installed also from sources; have a look at the
+<a class="reference external" href="https://www.htslib.org/">HTSlib</a> webpage to learn about that.</p>
+</section>
+<section id="spack">
+<h3>Spack<a class="headerlink" href="#spack" title="Permalink to this headline">¶</a></h3>
+<p>Another particularly simple way to install <a class="reference external" href="https://www.htslib.org/">HTSlib</a> is through
+<a class="reference internal" href="spack.html#using-spack"><span class="std std-ref">Spack</span></a>, especially if you are going to work on a
+cluster where using its package manager is cumbersome, or even impossible,
+and the installation from sources is not appealing to you. In this case
+the installation with <a class="reference internal" href="spack.html#using-spack"><span class="std std-ref">Spack</span></a> goes as follows.</p>
+<ol class="arabic">
+<li><p>(Optional) Choosing the compiler. <a class="reference external" href="https://www.htslib.org/">HTSlib</a> will be compiled from source
+code by <a class="reference internal" href="spack.html#using-spack"><span class="std std-ref">Spack</span></a>. You might need to choose an up-to-date
+compiler (clusters tend to have very stable, ie. old, default compilers).
+See <a class="reference internal" href="spack.html#using-spack"><span class="std std-ref">Using Spack</span></a> for details.</p></li>
+<li><p>Installing <a class="reference external" href="https://www.htslib.org/">HTSlib</a> itself. With the default compiler it would be:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>spack install htslib
+</pre></div>
+</div>
+<p>or if we want to install it with a specific compiler, say <code class="docutils literal notranslate"><span class="pre">gcc-11.3</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>spack install htslib%gcc@11.3
+</pre></div>
+</div>
+<p>The result will be a <a class="reference internal" href="glossary.html#term-module"><span class="xref std std-term">module</span></a>. In our case, the name of the
+<a class="reference internal" href="glossary.html#term-module"><span class="xref std std-term">module</span></a> is <code class="docutils literal notranslate"><span class="pre">htslib-1.14-gcc-11.3.0-22tiwx3</span></code></p>
+</li>
+<li><p>Using <a class="reference external" href="https://www.htslib.org/">HTSlib</a>. As mentioned above, <strong>PacBio Data Processing</strong> depends on <a class="reference external" href="https://www.htslib.org/">HTSlib</a> at
+runtime. It means that after a successfull installation, the created
+<a class="reference internal" href="glossary.html#term-module"><span class="xref std std-term">module</span></a> must be loaded whenever it is needed:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>module load htslib-1.14-gcc-11.3.0-22tiwx3
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Remember to add the line:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">module load htslib-1.14-gcc-11.3.0-22tiwx3</span>
+</pre></div>
+</div>
+<p>at the beginning of the slurm batch scripts used to submit any
+executable from <strong>PacBio Data Processing</strong>.</p>
+</div>
+</li>
+</ol>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">PacBio Data Processing</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart for the impatient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_9steps.html">Quickstart on a cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devel/index.html">Developer’s documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Guides</a><ul>
+      <li>Previous: <a href="kinetics_tools.html" title="previous chapter">kineticsTools</a></li>
+      <li>Next: <a href="spack.html" title="next chapter">Using Spack</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021-2022, David Palao and David Velázquez.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/indepth/htslib.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

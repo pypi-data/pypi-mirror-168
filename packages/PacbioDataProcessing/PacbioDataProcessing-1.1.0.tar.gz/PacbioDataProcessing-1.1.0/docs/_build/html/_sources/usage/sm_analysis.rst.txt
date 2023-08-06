@@ -1,0 +1,287 @@
+.. highlight:: shell
+
+.. _sm-analysis:
+
+Single molecule analysis with the ``sm-analysis`` program
+=========================================================
+
+``sm-analysis`` is the main program provided by |project|. It analyzes a
+given input PacBio BAM file evaluating the methylation status of
+each :term:`molecule`.
+
+.. note::
+   As mentioned in the :ref:`installation` section, by default only
+   the :term:`command line interface <Command Line Interface (CLI)>` for
+   the single molecule analysis, ``sm-analysis``, is installed. The
+   corresponding :term:`graphical user interface <Graphical User Interface (GUI)>`
+   can be enabled but requires an extra library: [wxpython]_.
+   Both ``sm-analysis`` and ``sm-analysis-gui`` provide access to the
+   same pipeline, the same program is run under the hood. They only differ
+   in the interface.
+
+
+Input
+-----
+
+``sm-analysis`` expects a PacBio BAM file as first input and the
+corresponding :term:`FASTA` file containing the reference as the second
+argument:
+
+.. code-block:: console
+
+    $ sm-analysis myseq.bam bacterium.fasta
+
+Other options can be added to that line to customize the default behaviour.
+For example, to speed up the analysis we might want to use more than one
+*CPU core*. |project| allows us to run several instances of the
+:ref:`ipdSummary <kineticsTools>` program in parallel. And we might also
+let each :ref:`ipdSummary <kineticsTools>` instance use multiple *worker*
+processes. The following line adds two
+:term:`command line options <Command Line Option>` to do all that:
+
+.. code-block:: console
+
+    $ sm-analysis myseq.bam bacterium.fasta -N 3 -n 2
+
+which, upon execution, will analize the given BAM file with the given reference
+using ``3`` :ref:`ipdSummary <kineticsTools>` instances, and each instance
+will use ``2`` worker processes in turn.
+
+For a complete list of options available and their description, see the
+section :ref:`clo_sm_analysis` below.
+
+
+Output
+------
+
+Once the ``sm-analysis`` program runs successfully, some files are produced:
+
+* a :ref:`summary report <summary-report>` with statistics about the
+  *Single Molecule Analysis* process,
+* a single :term:`molecule` summary of all the methylations found (see
+  :ref:`methylation-report-format` for details),
+* a file with the *low level* information of the analysis, the so-called
+  :ref:`raw detections file <raw-detections-format>`, and
+* a concatenated file made up of all the :term:`GFF` files produced
+  by :ref:`ipdSummary <kineticsTools>` during the analysis.
+
+
+How it works
+------------
+
+The following figure is a flow chart of the ``sm-analysis`` pipeline.
+
+.. figure:: flow_chart_sm_analysis.png
+   :scale: 50 %
+   :alt: sm-analysis
+
+   Flow chart of the ``sm-analysis`` program.
+
+
+One of the first things that
+the program will do is to ensure that the input BAM is aligned. Actually
+two alignment processes will be carried out with the help of
+:ref:`an aligner <aligners>` on the input BAM file, each one producing
+what we call an :term:`alignment variant`. One is the *straight* alignment
+variant and another is an alignment with a rotated reference, the so-called
+*pi shifted* :term:`alignment variant`, where the starting point of the
+reference is rotated by 180 degrees. The aim of this second alignment
+process is to catch molecules that cross the origin. With the help of those
+two files a complete set of molecules can be detected.
+
+Before running :ref:`the aligner <aligners>` the program will try to
+find the two aligned versions of the input file, *if it is* unaligned.
+
+On the other hand, if the input file is actually aligned, a *pi shifted*
+version of it will be sought. And if found, it will be used.
+
+If only a *straight* aligned file is at hand, the circular topology of the
+reference will not be considered.
+
+To find the aligned versions of the input BAM, the program tries to answer
+three questions:
+
+1. Is there a candidate with the expected filename?
+2. Is the candidate aligned?
+3. Are the molecules in it a subset of the molecules in the input BAM?
+
+If the answer to the three questions is yes, the candidate is considered
+a *plausible aligned version* of the input BAM, and it is as such used
+within the rest of the analysis. If not, the alignment process is carried
+out.
+
+
+Filters
+^^^^^^^
+
+The ``sm-analysis`` program applies several filters to *each* :term:`molecule`
+in the input BAM file. The aim is to ensure a minimum of quality in the
+sequencing data for the processed molecules.
+The following filters are applied, in the given order:
+
+1. A minimum of ``50`` base pairs is required to each :term:`molecule`.
+   The sequence corresponding to each molecule is taken from the
+   aligned CCS BAM file.
+2. A minimum of ``254`` for the mapping quality (column 5 in each
+   :term:`subread`) is required to each :term:`molecule`.
+3. At least 90% of the :term:`subreads <subread>` in each molecule
+   must have a mapping of ``0`` or ``16``.
+4. Only :term:`subreads <subread>` with mapping in the set ``{0, 16}``
+   are taken.
+5. Only :term:`molecules <molecule>` with:
+
+   a. at least 20 :term:`subreads <subread>`, and
+   b. data for both *strands* (``+`` and ``-``)
+
+   are taken.
+
+For details about the technical terms used in the description of the filters
+(i.e. what is a *mapping* or what is the meaning of *mapping quality*),
+please consult the `SAM/BAM format`_ specification.
+
+
+.. _`SAM/BAM format`: https://samtools.github.io/hts-specs/SAMv1.pdf
+
+
+.. _clo_sm_analysis:
+
+Command line options
+--------------------
+
+The ``sm-analysis`` program has a :term:`Command Line Interface (CLI)`
+with the following options:
+
+.. program:: sm-analysis
+
+.. option:: <BAM-FILE>
+
+   Input file in BAM format
+
+
+.. option:: <ALIGNMENT-FILE>
+
+   Input file containing the alignment in FASTA format (typically a file
+   ending in '.fa' or '.fasta'). A companion '.fa.fai'/'.fasta.fai' file
+   is also needed but it will be created if not found.
+
+
+.. option:: -M <MODEL>, --ipd-model <MODEL>
+
+   Model to be used by ipdSummary to identify the type of modification. MODEL
+   must be either the model name or the path to the ipd model. First, the
+   program will make an attempt to interprete MODEL as a path to a file
+   defining a model; if that fails, MODEL will be understood to be the name
+   of a model that must be accessible in the resources directory of
+   :ref:`kineticsTools` (e.g. ``-M SP3-C3`` would trigger a search for a
+   file called ``SP3-C3.npz.gz`` within the directory with models provided
+   by :ref:`kineticsTools`). If this option is not given, the default model
+   in ipdSummary is used.
+
+
+.. option:: -a <PROGRAM>, --aligner <PROGRAM>
+
+   program to use as :ref:`aligner <aligners>`. It can be a path or an
+   executable in the :term:`PATH` (default: :ref:`pbmm2`)
+
+
+.. option:: -p <PROGRAM>, --pbindex <PROGRAM>
+
+   program to generate indices of BAM files. It must have the same interface
+   as PacBio's ``pbindex`` and it can be a path or an executable in the
+   :term:`PATH` (default: :ref:`pbindex <about-pbindex>`)
+
+
+.. option:: -i <PROGRAM>, --ipdsummary <PROGRAM>
+
+   program to analyze the IPDs. It must have the same interface as PacBio's
+   ``ipdSummary``. It can be a path or an executable in the :term:`PATH`
+   (default: :ref:`ipdSummary <kineticsTools>`).
+
+
+.. option:: -c <PROGRAM>, --ccs <PROGRAM>
+
+   program to compute the Hi-Fi version of the input BAM. It must have the
+   same interface as PacBio's ``CCS``. It can be a path or an executable in
+   the :term:`PATH` (default: :ref:`ccs <about-ccs>`)
+
+
+.. option:: -N <INT>, --num-simultaneous-ipdsummarys <INT>
+
+   Number of simultaneous instances of ipdSummary that will
+   cooperate to process the molecules (default: 1).
+
+
+.. option:: -n <INT>, --num-workers-per-ipdsummary <INT>
+
+   Number of worker processes that each instance of ipdSummary will
+   spawn (default: 1).
+
+
+.. option:: --nprocs-blasr <INT>
+
+   Number of worker processes that each instance of :ref:`blasr <aligners>`
+   will spawn (default: 1).
+
+
+.. option:: -P <PARTITION:NUMBER-OF-PARTITIONS>, --partition <PARTITION:NUMBER-OF-PARTITIONS>
+
+   This option instructs the program to only analyze a fraction
+   (partition) of the molecules present in the input bam file. The
+   file is divided in `NUMBER OF PARTITIONS` (almost) equal pieces
+   but ONLY the PARTITION-th partition (fraction) is analyzed.
+   For instance, `--partition 3:7` means that the bam file is
+   divided in seven pieces but only the third piece is analyzed
+   by the current instance of sm-analysis. By default, all the file
+   is analyzed.
+
+
+.. option:: -C <PATH>, --CCS-bam-file <PATH>
+
+   The CCS file in BAM format can be optionally provided;
+   otherwise it is computed. It is necessary to create the
+   reference mapping between *hole numbers* and the DNA sequence
+   of the corresponding fragment, or *molecule*. After being
+   aligned, the file will be also used to determine the position
+   of each molecule in the report of methylation states. If the
+   CCS BAM file is provided, and any of the necessary aligned
+   versions of it is not found, the CCS file will be aligned to
+   be able to get the positions. If this option is not used, a
+   CCS BAM will be generated from the original BAM file using
+   the ``ccs`` program.
+
+
+.. option:: --keep-temp-dir
+
+   Should we keep a copy of the temporary files generated?
+   (default: No).
+
+
+.. option:: -m <MOD-TYPE>, --modification-types <MOD-TYPE>
+
+   Focus only in the requested modification types (default: m6A).
+   Multiple space-separated values can be given.
+
+
+.. option:: --only-produce-methylation-report
+
+   Use this flag to only produce the methylation report from the
+   per detection csv file (default: No).
+
+
+.. option:: -v, --verbose
+
+   Run the program in *verbose mode* such that much more runtime
+   details are produced.
+
+
+
+
+
+Graphical User Interface: ``sm-analysis-gui``
+---------------------------------------------
+
+Despite the power, beauty and *vintage* flavor of the command line, |project| offers
+a :term:`Graphical User Interface (GUI)` for its main executable ``sm-analysis``:
+``sm-analysis-gui`` which, upon execution, will open a window that will allow
+you to drive the single molecule analysis.
+

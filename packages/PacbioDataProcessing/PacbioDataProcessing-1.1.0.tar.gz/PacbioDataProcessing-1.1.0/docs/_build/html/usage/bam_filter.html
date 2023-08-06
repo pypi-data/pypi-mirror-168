@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Filtering Bam files with bam-filter &#8212; PacBio Data Processing 1.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Single molecule analysis with the sm-analysis program" href="sm_analysis.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="filtering-bam-files-with-bam-filter">
+<span id="bam-filter"></span><h1>Filtering Bam files with <code class="docutils literal notranslate"><span class="pre">bam-filter</span></code><a class="headerlink" href="#filtering-bam-files-with-bam-filter" title="Permalink to this headline">¶</a></h1>
+<p>This executable is useful to filter <a class="reference internal" href="../indepth/bam.html#aligned-pacbio-bam-file"><span class="std std-ref">Aligned PacBio bam file</span></a>’s
+according to the values of some columns. It offers the following
+options:</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-bam-filter-arg-BAM-FILE">
+<span id="cmdoption-bam-filter-arg-bam-file"></span><span class="sig-name descname"><span class="pre">&lt;BAM-FILE&gt;</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-bam-filter-arg-BAM-FILE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Input file in BAM format. The output will be another
+BAM-FILE with the same name but prefixed with ‘parsed.’.</p>
+<p>For example:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>bam-filter mydata.bam ...
+</pre></div>
+</div>
+<p>will produce, as output a file named <code class="docutils literal notranslate"><span class="pre">parsed.mydata.bam</span></code>.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-bam-filter-l">
+<span id="cmdoption-bam-filter-min-dna-seq-length"></span><span class="sig-name descname"><span class="pre">-l</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;INT&gt;</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--min-dna-seq-length</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;INT&gt;</span></span><a class="headerlink" href="#cmdoption-bam-filter-l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum length of DNA sequence to be kept (default: 0, ie. do not
+filter).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-bam-filter-r">
+<span id="cmdoption-bam-filter-min-subreads-per-molecule"></span><span class="sig-name descname"><span class="pre">-r</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;INT&gt;</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--min-subreads-per-molecule</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;INT&gt;</span></span><a class="headerlink" href="#cmdoption-bam-filter-r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum number of subreads per molecule to keep it (default: 1).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-bam-filter-q">
+<span id="cmdoption-bam-filter-quality-threshold"></span><span class="sig-name descname"><span class="pre">-q</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;INT&gt;</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--quality-threshold</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;INT&gt;</span></span><a class="headerlink" href="#cmdoption-bam-filter-q" title="Permalink to this definition">¶</a></dt>
+<dd><p>Quality threshold of the sample. Between 0 (the lowest) and 255
+(the highest) (default: 0).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-bam-filter-m">
+<span id="cmdoption-bam-filter-mappings"></span><span class="sig-name descname"><span class="pre">-m</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;MAPPING&gt;[</span> <span class="pre">&lt;MAPPING&gt;</span> <span class="pre">...]</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--mappings</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;MAPPING&gt;[</span> <span class="pre">&lt;MAPPING&gt;</span> <span class="pre">...]</span></span><a class="headerlink" href="#cmdoption-bam-filter-m" title="Permalink to this definition">¶</a></dt>
+<dd><p>Keep only the requested (space separated) list of mappings
+(default: keep all).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-bam-filter-R">
+<span id="cmdoption-bam-filter-min-relative-mapping-ratio"></span><span class="sig-name descname"><span class="pre">-R</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;NUM&gt;</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--min-relative-mapping-ratio</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;NUM&gt;</span></span><a class="headerlink" href="#cmdoption-bam-filter-R" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum ratio (wanted mappings/all mappings) to keep the subread
+(by default all the subreads are taken).</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">PacBio Data Processing</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart for the impatient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_9steps.html">Quickstart on a cluster</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indepth/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devel/index.html">Developer’s documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Usage</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">Installation</a></li>
+      <li>Next: <a href="sm_analysis.html" title="next chapter">Single molecule analysis with the <code class="docutils literal notranslate"><span class="pre">sm-analysis</span></code> program</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021-2022, David Palao and David Velázquez.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/usage/bam_filter.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
