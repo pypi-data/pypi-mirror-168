@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tipranks/__init__.py
+tipranks/base.py
+tipranks/errors.py
+tipranks/login.py
+tipranks.egg-info/PKG-INFO
+tipranks.egg-info/SOURCES.txt
+tipranks.egg-info/dependency_links.txt
+tipranks.egg-info/requires.txt
+tipranks.egg-info/top_level.txt
