@@ -1,0 +1,10 @@
+pardoc/__init__.py,sha256=9hjq9VBWG6gzqNHBLOcZp8ftegoe6nxe-9wJMJT35e0,856
+pardoc/default.py,sha256=ZUj3nV2dYyVtrKiIvPdBIYWlEUst8eskEbSt6XML9tw,16574
+pardoc/google.py,sha256=AWH_YL9CCltwnIKpUDKN7zPT135NDYEr6D32RPtcubI,3875
+pardoc/liquidpy.py,sha256=zTHerUXIzyZP0kT2YOM7WbvofU9q4hO837c1eYo3lus,5662
+pardoc/numpy.py,sha256=tAb_RzbLlIC2GTgMYFc6YrV5rUPl-20pSgjBMba7KH4,4758
+pardoc/parsed.py,sha256=KLybxZ60wjRhEyXdI9qthMokT6Wv9wErU0NhMkk9ATg,3037
+pardoc-0.1.0.dist-info/LICENSE,sha256=bVo9iULGbgb-pHeLP0TmchNXLkwYrp1VZAEzbw0Tkdg,1063
+pardoc-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pardoc-0.1.0.dist-info/METADATA,sha256=dNLzQw5sX0dE0SVmfT4o9sG7QFWXIQzE-QtM-IpjVCU,7771
+pardoc-0.1.0.dist-info/RECORD,,
