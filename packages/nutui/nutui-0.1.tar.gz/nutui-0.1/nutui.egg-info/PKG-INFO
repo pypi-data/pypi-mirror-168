@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: nutui
+Version: 0.1
+Summary: Nut Web UI using Flask
+Home-page: https://github.com/beardedtek-com/nutui
+Author: The Bearded Tek
+Author-email: kenny@beardedtek.com
+License: AGPLv3
+Project-URL: Bug Tracker, https://github.com/beardedtek-com/RTSPScanner/issues
+Keywords: ups,nut-server,nutd,nut,battery-backup,apc,cyberpower,tripp-lite
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: System :: Power (UPS)
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nutUI - Flask WebUI for nut-server
+
+## Testing Build - Not considered production ready
+
+### python3 -m pip install nutui
+
+```
+$> nutui -h
+usage: nutui.py [-h] [-c] [-f] [-v] [-u] [-a] [-n NUTHOST] [-ah APIHOST] [-ap APIPORT] [-i INTERVAL] [-l NUTLOGIN] [-p NUTPASSWORD]
+
+Starts nutclient and nutui flask server
+
+options:
+  -h, --help            show this help message and exit
+  -c, --clientonly      Runs nutclient only. Disables the flask server
+  -f, --flaskonly       Runs the flask server only
+  -v, --verbose         Verbose Output
+  -u, --uwsgi           Launches web app with uwsgi instead of flask development server
+  -a, --all
+  -n NUTHOST, --nuthost NUTHOST
+                        ip/hostname of nut server (defaults to 127.0.0.1)
+  -ah APIHOST, --apihost APIHOST
+                        ip/hostname of nutUI api server
+  -ap APIPORT, --apiport APIPORT
+                        port number of nutUI api server
+  -i INTERVAL, --interval INTERVAL
+                        number of seconds between polling nut-server
+  -l NUTLOGIN, --nutlogin NUTLOGIN
+                        nut-server login (default: None)
+  -p NUTPASSWORD, --nutpassword NUTPASSWORD
+                        nut-server login (default: None)
+```
