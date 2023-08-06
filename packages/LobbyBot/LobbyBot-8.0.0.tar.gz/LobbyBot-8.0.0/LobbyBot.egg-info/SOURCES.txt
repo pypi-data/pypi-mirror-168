@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+LobbyBot/__init__.py
+LobbyBot.egg-info/PKG-INFO
+LobbyBot.egg-info/SOURCES.txt
+LobbyBot.egg-info/dependency_links.txt
+LobbyBot.egg-info/requires.txt
+LobbyBot.egg-info/top_level.txt

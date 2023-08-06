@@ -1,0 +1,6 @@
+sanic==21.6.2
+fortnitepy
+aiohttp
+crayons
+psutil
+PirxcyPinger
