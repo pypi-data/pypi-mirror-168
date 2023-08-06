@@ -1,0 +1,93 @@
+name: test
+
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+
+jobs:
+  compile:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        gtest_ver: [ "1.11.0" ]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.8"
+      - name: Install GoogleTest
+        run: |
+          wget https://github.com/google/googletest/archive/release-${{ matrix.gtest_ver }}.tar.gz
+          tar -zxvf release-${{ matrix.gtest_ver }}.tar.gz
+          cd googletest-release-${{ matrix.gtest_ver }}
+          mkdir build
+          cd build
+          cmake ..
+          sudo make install
+      - name: Install Boost.Test
+        run: |
+          sudo apt-get update
+          sudo apt-get install libboost-test-dev valgrind
+      - name: Compile
+        run: |
+          python -m pip install --upgrade pip
+          pip install scons
+          scons -j4 -C tests
+      - name: Upload compilation results
+        uses: actions/upload-artifact@v2
+        with:
+          name: tests
+          if-no-files-found: error
+          retention-days: 1
+          path: |
+            tests/
+            !tests/**/*.py
+            !tests/**/*.cpp
+            !tests/**/*.xml
+            !tests/**/*.o
+
+  test:
+    needs: compile
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.7", "3.8", "3.9", "3.10", "3.11-dev"]
+        include:
+          - python: "3.7"
+            tox_env: "py37"
+          - python: "3.8"
+            tox_env: "py38"
+          - python: "3.9"
+            tox_env: "py39"
+          - python: "3.10"
+            tox_env: "py310"
+          - python: "3.11-dev"
+            tox_env: "py311"
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}
+    - name: Download compiled tests
+      uses: actions/download-artifact@v2
+      with:
+        name: tests
+        path: tests
+    - name: Install Tox
+      run: |
+        chmod a+x -R tests
+        pip install tox
+    - name: Test
+      run: |
+        tox -e ${{ matrix.tox_env }}

@@ -1,0 +1,13 @@
+*.egg-info/
+*.exe
+*.o
+*.obj
+*.pdb
+*.pyc
+.cache/
+.coverage
+.eggs/
+.sconsign.dblite
+.tox/
+build/
+dist/
