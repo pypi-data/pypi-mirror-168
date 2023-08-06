@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pega
+Version: 0.2.0
+Summary: A command line tool for pasting images on top of other images.
+Project-URL: Documentation, https://github.com/yaph/pega#readme
+Project-URL: Issues, https://github.com/yaph/pega/issues
+Project-URL: Source, https://github.com/yaph/pega
+Author-email: Ramiro Gómez <code@ramiro.org>
+License-File: LICENSE.txt
+Keywords: image-processing
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: pillow
+Description-Content-Type: text/markdown
+
+# pega
+
+A command line tool for pasting images on top of other images.
+
+## Sample Commands
+
+Paste 1 image on base image.
+
+    pega tests/images/base-1000x1000-m100-0-200-0.png tests/images/green-tree-python-226553_1920.jpg
+
+For all JPEG files in directory create a new image with the JPEG pasted on the base image.
+
+    pega tests/images/base-1000x1000-m100-0-200-0.png tests/images/*.jpg
+
+Specify margins of pasted image relative to base and output directory.
+
+    pega tests/images/base-1000x1000-m100-0-200-0.png tests/images/green-tree-python-226553_1920.jpg \
+        --margins 140 40 240 40 --output-dir tests/output/
+
+## Credits
+
+Test images:
+
+* [green-tree-python-226553_1920.jpg](https://pixabay.com/photos/226553)
+* [line-660781_1920.jpg](https://pixabay.com/photos/660781)
+* [snake-1285354_640.jpg](https://pixabay.com/photos/1285354)
+* [snake-37585_640.png](https://pixabay.com/photos/37585/)
+
+## License
+
+`pega` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
