@@ -1,0 +1,9 @@
+feature_reviser/reviser.py,sha256=WmNp1U02Fl_Rj3nhY_RI-5IXOxfgzqXUXg4JDVcs4mo,3125
+feature_reviser/selector.py,sha256=lhmajYu0cDb7ixY_yJ3k4FOskemwzYAcUaYDnfALo00,4974
+feature_reviser/transformer/column_transformer.py,sha256=_UvaMSd-oUPryh_Qq8POiYNDIrundmN_3eQW_5fCeIM,1064
+feature_reviser/transformer/custom_transformer.py,sha256=qE499ektsdGE1IvSku-c0dlCIoQtDAUT3Q2fLxUa6Jo,3602
+feature_reviser/utils.py,sha256=EQe9yXu1nDiGgArFuwKCyRKeTYRw6lvlurtqJ0aptFw,2965
+feature_reviser-0.2.dist-info/LICENSE,sha256=vVCeuORSw6nl2d0Lz-9dQyFbhkPRHEcU60yPpa-H_hk,1074
+feature_reviser-0.2.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+feature_reviser-0.2.dist-info/METADATA,sha256=C0o1k8ph3aS0ZlNsfY2j4PchoUHj9WiEgd4PS_pNC6E,817
+feature_reviser-0.2.dist-info/RECORD,,
