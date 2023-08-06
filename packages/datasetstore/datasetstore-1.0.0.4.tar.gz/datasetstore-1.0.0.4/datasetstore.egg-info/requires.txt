@@ -1,0 +1,9 @@
+s3fs
+datasets
+yaspin
+colorlog
+plotly==5.10.0
+cufflinks
+wordcloud
+tokenizers
+pydantic
