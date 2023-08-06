@@ -1,0 +1,8 @@
+numpy
+matplotlib
+astropy
+scipy
+photutils
+sep
+dlnpyutils
+scikit-image
