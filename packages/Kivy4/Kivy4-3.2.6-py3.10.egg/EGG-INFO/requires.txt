@@ -1,0 +1,5 @@
+kivy
+kivymd
+darkdetect
+screeninfo
+pyperclip
