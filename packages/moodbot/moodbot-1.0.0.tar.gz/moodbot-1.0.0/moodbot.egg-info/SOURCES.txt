@@ -1,0 +1,14 @@
+LICENSE.rst
+README.md
+setup.cfg
+setup.py
+moodbot/__init__.py
+moodbot/chatbot.py
+moodbot/discord.py
+moodbot/message.py
+moodbot/return_data.py
+moodbot.egg-info/PKG-INFO
+moodbot.egg-info/SOURCES.txt
+moodbot.egg-info/dependency_links.txt
+moodbot.egg-info/requires.txt
+moodbot.egg-info/top_level.txt
