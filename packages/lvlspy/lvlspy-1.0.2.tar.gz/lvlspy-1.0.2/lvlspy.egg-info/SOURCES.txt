@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+lvlspy/__about__.py
+lvlspy/__init__.py
+lvlspy/level.py
+lvlspy/properties.py
+lvlspy/spcoll.py
+lvlspy/species.py
+lvlspy/transition.py
+lvlspy.egg-info/PKG-INFO
+lvlspy.egg-info/SOURCES.txt
+lvlspy.egg-info/dependency_links.txt
+lvlspy.egg-info/requires.txt
+lvlspy.egg-info/top_level.txt
