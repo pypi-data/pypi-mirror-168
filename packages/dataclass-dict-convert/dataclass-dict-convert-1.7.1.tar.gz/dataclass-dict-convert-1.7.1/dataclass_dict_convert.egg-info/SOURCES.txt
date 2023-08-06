@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+dataclass_dict_convert/__init__.py
+dataclass_dict_convert/autoclass_convert.py
+dataclass_dict_convert/convert.py
+dataclass_dict_convert/dataclass_utils.py
+dataclass_dict_convert/rfc3339.py
+dataclass_dict_convert.egg-info/PKG-INFO
+dataclass_dict_convert.egg-info/SOURCES.txt
+dataclass_dict_convert.egg-info/dependency_links.txt
+dataclass_dict_convert.egg-info/not-zip-safe
+dataclass_dict_convert.egg-info/requires.txt
+dataclass_dict_convert.egg-info/top_level.txt
