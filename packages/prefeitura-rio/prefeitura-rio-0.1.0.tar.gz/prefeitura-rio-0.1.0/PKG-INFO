@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: prefeitura-rio
+Version: 0.1.0
+Summary: Pacote Python que implementa utilidades para nossos projetos!
+Home-page: https://github.com/prefeitura-rio/prefeitura-rio
+License: GPL-3.0-only
+Keywords: python,utilities,government
+Author: Gabriel Gazola Milan
+Author-email: gabriel.gazola@poli.ufrj.br
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
+Requires-Dist: scikit-learn (>=1.1.2,<2.0.0)
+Project-URL: Repository, https://github.com/prefeitura-rio/prefeitura-rio
+Description-Content-Type: text/markdown
+
+# prefeitura-rio
+
+Um pacote Python que implementa utilidades para nossos projetos!
+
