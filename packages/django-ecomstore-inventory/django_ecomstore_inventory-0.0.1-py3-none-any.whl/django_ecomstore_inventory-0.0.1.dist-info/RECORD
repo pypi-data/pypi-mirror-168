@@ -1,0 +1,14 @@
+inventory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inventory/admin.py,sha256=RhhEuxioQAkGtQT52nPJ1xOnYsWCiwaT5Xu2y1K1t7E,1893
+inventory/apps.py,sha256=2tXXKfh38N6MfDVyzETIdjZKEbP8qS8QtbyhAcbw12k,150
+inventory/context_processors.py,sha256=lzzYjTw0ut9PPhR5K4nT8xOE3OsDEW5Lnu484zk32SA,321
+inventory/models.py,sha256=AjSkxyPj_liGANn7AQBMWxRxfrL9pj0d7Bz0winB408,9825
+inventory/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+inventory/urls.py,sha256=5Qsb19vaPsd1zP4Vjh6sWIZYnufvXzb4eZLwqY8NwNw,531
+inventory/views.py,sha256=50f2ZUFGMvQAzFAZVcsAGDciR9d41nHGipH3NPfX3ME,4854
+inventory/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ecomstore_inventory-0.0.1.dist-info/LICENSE,sha256=-ZBK2-de-Br_5cAXpV9mnkEWkWbU8o_Idhc-R_wePHI,1077
+django_ecomstore_inventory-0.0.1.dist-info/METADATA,sha256=ncRI-M6O8Q_DgCOgZqMadipY3d63O3FnapHSILELiXg,3596
+django_ecomstore_inventory-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_ecomstore_inventory-0.0.1.dist-info/top_level.txt,sha256=Aa2qQL83daQCBMHizsLTZqw3sXuGDAJNbPzP668oNw4,10
+django_ecomstore_inventory-0.0.1.dist-info/RECORD,,
