@@ -1,0 +1,31 @@
+- job:
+    name: heat-functional-yoga
+    parent: heat-functional
+    override-checkout: stable/yoga
+
+- job:
+    name: heat-functional-xena
+    parent: heat-functional
+    override-checkout: stable/xena
+
+- job:
+    name: heat-functional-wallaby
+    parent: heat-functional
+    override-checkout: stable/wallaby
+
+- project:
+    queue: heat
+    templates:
+      - check-requirements
+      - tempest-plugin-jobs
+    check:
+      jobs:
+        - heat-functional
+        - heat-functional-legacy
+        - heat-functional-yoga
+        - heat-functional-xena
+        - heat-functional-wallaby
+    gate:
+      jobs:
+        - heat-functional
+        - heat-functional-legacy
