@@ -1,0 +1,10 @@
+I2LLService/__init__.py,sha256=JMPKW6Xa64QsN4ihkPUx-cGHJImyb9lNsS0NfEt1fNE,182
+I2LLService/client.py,sha256=RI2uwKWpjpSbImmTPqC3jeXbXr8mMPuqVL5D70A7PS8,4128
+I2LLService/config.py,sha256=lTYvpg0ventHuDK9noAKbOotN2gQ8Dap0GhMXMT2PSM,7038
+I2LLService/main.py,sha256=-eTz9EHME6BYq9TNHd4Sizp3eAVTAuQfKpShoeg4RKU,187
+I2LLService/server.py,sha256=kuRkpoqHmScp82VrxiKbidCl1cwqYsn9slx1xE4n2P8,27476
+i2llserver-0.0.1.dist-info/METADATA,sha256=-X1jmRzAKDcXSRsURAV5oarai4mGKpglppydvvokjio,1050
+i2llserver-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+i2llserver-0.0.1.dist-info/entry_points.txt,sha256=JMDTk6ja9Yk7iG1WCmf16ItceP0nOhd5P3ITCN_nJFE,51
+i2llserver-0.0.1.dist-info/top_level.txt,sha256=TExykW7Cx34SpGdbO4kMuP1wVS04ybEexXCNEZl8-VE,12
+i2llserver-0.0.1.dist-info/RECORD,,
