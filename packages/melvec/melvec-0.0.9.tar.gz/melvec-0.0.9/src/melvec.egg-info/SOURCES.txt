@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/melvec/__init__.py
+src/melvec/vec2.py
+src/melvec/vec3.py
+src/melvec/vec_base.py
+src/melvec.egg-info/PKG-INFO
+src/melvec.egg-info/SOURCES.txt
+src/melvec.egg-info/dependency_links.txt
+src/melvec.egg-info/top_level.txt
