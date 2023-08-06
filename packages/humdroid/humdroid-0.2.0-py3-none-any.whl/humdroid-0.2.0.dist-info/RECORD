@@ -1,0 +1,12 @@
+humdroid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humdroid/IPC/CVRequester.py,sha256=9qE9XEJ8fqxRc2kfGJ3XnW68wqj_v5FlJBGkOqXx0Ns,3201
+humdroid/IPC/CVServer.py,sha256=bB3CpM9c7IvPZkiIi5Lnm3MtZglBWm6QwxSx_yN8GEg,863
+humdroid/IPC/IPCSocket.py,sha256=R1cV7Q_dchs9PqYH9MrhSzpQTZ_Jqdvy3OWxZXK5kzM,555
+humdroid/IPC/__init__.py,sha256=rhanrHMA_YvXSRZgERgT2KrCcOr4sar0_RDPP-gwf5g,101
+humdroid/wrappers/ScrcpyWrapper.py,sha256=erj56-sPyzzpZ5Aosq3Ie4vby9zJjgudQifT0m3ua5Y,1451
+humdroid/wrappers/__init__.py,sha256=YDP81O-0EPEGWI8oqduNW1zAIeaTNvyG_u_BwuTenWs,41
+humdroid-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+humdroid-0.2.0.dist-info/METADATA,sha256=XAlwFGri-c1FW5mK4BP_4WcVj-kkzs0gQXk248Is_Pc,19267
+humdroid-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+humdroid-0.2.0.dist-info/top_level.txt,sha256=zqVL8EVJLmFTSJ6cD8MVpGVskTiAd9T8E7A3l3reHH8,9
+humdroid-0.2.0.dist-info/RECORD,,
