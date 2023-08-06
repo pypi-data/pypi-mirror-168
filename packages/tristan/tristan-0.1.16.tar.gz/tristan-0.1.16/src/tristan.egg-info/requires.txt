@@ -1,0 +1,7 @@
+dask[array,diagnostics,distributed]!=2021.3.*
+h5py
+hdf5plugin
+nexgen>=0.6.8
+numpy
+pint
+zarr

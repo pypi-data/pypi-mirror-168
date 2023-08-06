@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tristan
+Version: 0.1.16
+Summary: Tools for processing event-mode X-ray data
+Author: Diamond Light Source — Data Analysis
+Author-email: scientificsoftware@diamond.ac.uk
+License: MIT
+Project-URL: Documentation, https://tristan.readthedocs.io/
+Project-URL: GitHub, https://github.com/DiamondLightSource/python-tristan
+Project-URL: Bug-Tracker, https://github.com/DiamondLightSource/python-tristan/issues
+Keywords: x-ray,tristan,timepix
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# tristan
+
+A set of prototype data processing tools for Tristan, the experimental [Timepix3-based](https://doi.org/10.1016/j.nima.2016.04.075) event-mode X-ray detector at Diamond Light Source.
