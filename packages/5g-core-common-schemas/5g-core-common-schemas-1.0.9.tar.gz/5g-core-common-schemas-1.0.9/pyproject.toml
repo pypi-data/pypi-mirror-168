@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "5g-core-common-schemas"
+version = "1.0.9"
+description = "Common Schemas used in 5G core"
+readme = "README.md"
+authors = [{ name = "Guillaume Belanger", email = "guillaume.belanger27@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["5G", "Core", "Network"]
+dependencies = [
+    "feedparser >= 5.2.0",
+    "html2text",
+    'tomli; python_version < "3.11"',
+    "pydantic"
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/gruyaume/5g-core-common-schemas"
+
+[tool.black]
+line-length = 99
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 99
+max-doc-length = 99
+max-complexity = 10
+exclude = [".git", "__pycache__", ".tox", "build", "dist", "*.egg_info", "venv"]
+select = ["E", "W", "F", "C", "N", "R", "D", "H"]
+per-file-ignores = ["fiveg_core_common_schemas/*:D100,D101,N815"]
+docstring-convention = "google"
+copyright-check = "True"
+copyright-author = "Guillaume Belanger"
+copyright-regexp = "Copyright\\s\\d{4}([-,]\\d{4})*\\s+%(author)s"
