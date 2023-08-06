@@ -1,0 +1,2420 @@
+#!/usr/bin/env python3
+# vim: set ts=8 sw=4 sts=4 et ai:
+from __future__ import print_function
+"""
+proxmove: Proxmox Node Migration -- migrate nodes from one proxmox
+cluster to another
+
+This is proxmove.  proxmove is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, version 3 or any later
+version.
+"""
+import argparse
+import configparser
+import logging
+import logging.config
+import os
+import random
+import re
+import string
+import subprocess
+import sys
+import time
+from base64 import b64encode
+from collections import OrderedDict, defaultdict
+from datetime import datetime
+from proxmoxer import ProxmoxAPI, ResourceException
+from http.client import InvalidURL
+from urllib.parse import urlparse
+
+__author__ = 'Walter Doekes'
+__copyright__ = 'Copyright (C) Walter Doekes, OSSO B.V. 2016-2022'
+__licence__ = 'GPLv3+'
+__version__ = '1.2'
+
+# TODO: see NotImplementedErrors
+# TODO: split up into modules (storage, etc.)
+
+log = logging.getLogger('proxmove')
+
+# Drop LC_* from environment.
+environ = os.environ
+for _key in list(environ.keys()):
+    if _key.startswith('LC_'):
+        del environ[_key]
+
+SUFFIX_CLONING = '--CLONING'    # source, when cloning
+SUFFIX_CREATING = '--CREATING'  # dest, while cloning
+SUFFIX_MIGRATED = '--MIGRATED'  # source, when done
+PROXMOX_VOLUME_TYPES = (
+    'efidisk', 'ide', 'sata', 'scsi', 'virtio')
+PROXMOX_VOLUME_TYPES_RE = re.compile(  # "scsi0", but not "scsihw"
+    r'^({})\d+$'.format('|'.join(PROXMOX_VOLUME_TYPES)))
+PROXMOVE_VOLUME_NAME_FMT = 'vm-{vmid}-disk-{diskidx}'  # dst volume name
+
+
+def argv2str(argv):
+    def esc(word):
+        if all(i in (
+                'ABCDEFGHIJKLMNOPQRSTUVWXYz'
+                'abcdefghijklmnopqrstuvwxyz'
+                '0123456789_-:.,/@') for i in word):
+            return word
+        return "'{}'".format(
+            word.replace('\\', '\\\\').replace("'", "\\'"))
+
+    return ' '.join(esc(i) for i in argv)
+
+
+def human_size_fmt(num, suffix='B'):
+    for unit in ('', 'Ki', 'Mi', 'Gi', 'Ti'):
+        if abs(num) < 1024.0:
+            return '{:3.1f}{}{}'.format(num, unit, suffix)
+        num /= 1024.0
+    return '{:.1f}{}{}'.format(num, 'Ti', suffix)
+
+
+class _HumanSizeScan(object):
+    multipliers = {
+        'T': 1024 * 1024 * 1024 * 1024,
+        'G': 1024 * 1024 * 1024,
+        'M': 1024 * 1024,
+        'K': 1024,
+        'B': 1,
+    }
+
+    def __call__(self, num_str):
+        numeric, suffix = self.split(num_str)
+        if '.' in numeric:
+            numeric = float(numeric)
+        else:
+            numeric = int(numeric)
+        multiplier = self.multipliers.get(suffix[0:1].upper())
+        if not multiplier:
+            if suffix:
+                raise ValueError('unknown suffix found in {!r}'.format(
+                    num_str))
+            multiplier = 1
+        return int(numeric * multiplier)
+
+    def split(self, num_str):
+        num_str = num_str.lstrip()
+        num_parts = []
+        suffix = ''
+        for i, ch in enumerate(num_str):
+            if ch in '0123456789.':
+                num_parts.append(ch)
+            elif ch == ',':
+                pass
+            else:
+                suffix = num_str[i:].strip()
+                break
+        return ''.join(num_parts), suffix
+human_size_scan = _HumanSizeScan()  # noqa
+
+
+def name_from_conf(type_, config):
+    """
+    For 'lxc', the unique name is in 'hostname'. For others it is in 'name'.
+    """
+    if type_ == 'lxc':
+        assert 'name' not in config, config
+        assert 'hostname' in config, config
+        return config['hostname']
+    else:
+        assert type_ == 'qemu', type_
+
+    assert 'hostname' not in config, config
+    assert 'name' in config, config
+    return config['name']
+
+
+class ProxmoveError(Exception):
+    pass
+
+
+class PrepareError(ProxmoveError):
+    """
+    Failure during preparation and requirements checking. This is only
+    raised if we haven't mutated any data yet.
+    """
+    pass
+
+
+class ResumablePrepareError(PrepareError):
+    """
+    Failure during preparation. This is resumable if the user wishes so.
+    """
+    pass
+
+
+class ArgumentParser14191(argparse.ArgumentParser):
+    """ArgumentParser from argparse that handles out-of-order positional
+    arguments.
+
+    This is a workaround created by Glenn Linderman in July 2012. You
+    can now do this:
+
+        parser = ArgumentParser14191()
+        parser.add_argument('-f', '--foo')
+        parser.add_argument('cmd')
+        parser.add_argument('rest', nargs='*')
+        # some of these would fail with the regular parser:
+        for args, res in (('-f1 cmd 1 2 3', 'ok'),
+                          ('cmd -f1 1 2 3', 'would_fail'),
+                          ('cmd 1 -f1 2 3', 'would_fail'),
+                          ('cmd 1 2 3 -f1', 'ok')):
+            try: out = parser.parse_args(args.split())
+            except: print 'args', 'failed', res
+            # out: Namespace(cmd='cmd', foo='1', rest=['1', '2', '3'])
+
+    Bugs: http://bugs.python.org/issue14191
+    Files: http://bugs.python.org/file26273/t18a.py
+    Changes: renamed to ArgumentParser14191 ** PEP cleaned ** hidden
+      ErrorParser inside ArgumentParser14191 ** documented ** used
+      new-style classes super calls  (Walter Doekes, March 2015)
+    """
+    class ErrorParser(argparse.ArgumentParser):
+        def __init__(self, *args, **kwargs):
+            self.__errorobj = None
+            kwargs['add_help'] = False
+            super(ArgumentParser14191.ErrorParser, self).__init__(
+                *args, **kwargs)
+
+        def error(self, message):
+            if self.__errorobj:
+                self.__errorobj.error(message)
+            else:
+                argparse.ArgumentParser.error(self, message)
+
+        def seterror(self, errorobj):
+            self.__errorobj = errorobj
+
+    def __init__(self, *args, **kwargs):
+        self.__setup = False
+        self.__opt = ArgumentParser14191.ErrorParser(*args, **kwargs)
+        super(ArgumentParser14191, self).__init__(*args, **kwargs)
+        self.__opt.seterror(self)
+        self.__setup = True
+
+    def add_argument(self, *args, **kwargs):
+        super(ArgumentParser14191, self).add_argument(*args, **kwargs)
+        if self.__setup:
+            chars = self.prefix_chars
+            if args and len(args[0]) and args[0][0] in chars:
+                self.__opt.add_argument(*args, **kwargs)
+
+    def parse_args(self, args=None, namespace=None):
+        ns, remain = self.__opt.parse_known_args(args, namespace)
+        ns = super(ArgumentParser14191, self).parse_args(remain, ns)
+        return ns
+
+
+class CalledProcessError2(subprocess.CalledProcessError):
+    def __str__(self):
+        return '{}\n\n(output)\n{}'.format(
+            super().__str__(), self.output.decode('ascii', 'replace'))
+
+
+class ProxmoxClusters(dict):
+    @classmethod
+    def from_filename(cls, filename):
+        clusters = cls()
+        parser = configparser.ConfigParser(
+            interpolation=None, inline_comment_prefixes=('#', ';'),
+            empty_lines_in_values=False)
+
+        try:
+            with open(filename) as fp:
+                try:
+                    parser.read_file
+                except AttributeError:
+                    parser.readfp(fp)
+                else:
+                    parser.read_file(fp)
+        except FileNotFoundError:
+            raise ValueError('cannot access config file: {}'.format(
+                filename))
+
+        for section in parser.sections():
+            if section == configparser.DEFAULTSECT:
+                raise ValueError(
+                    'unexpected default section: {}'.format(section))
+
+            section_split = section.split(':')
+            type_ = section_split.pop(0)
+
+            # [pve:CLUSTER_ALIAS]
+            if type_ == 'pve' and len(section_split) == 1:
+                cluster_alias = section_split[0]
+                clusters[cluster_alias] = ProxmoxCluster.from_section(
+                    cluster_alias, parser.items(section))
+            # [storage:CLUSTER_ALIAS:STORAGE_NAME[@NODE]]
+            elif type_ == 'storage' and len(section_split) == 2:
+                cluster_alias = section_split[0]
+                if cluster_alias not in clusters:
+                    raise ValueError(
+                        'storage describing unknown cluster {!r}: {}'.format(
+                            cluster_alias, section))
+                clusters[cluster_alias].add_storage(
+                    section_split[1], parser.items(section))
+            # [...]
+            else:
+                raise ValueError(
+                    'unknown section type; use pve/storage: {}'.format(
+                        section))
+
+        return clusters
+
+
+class ProxmoxPools(object):
+    """
+    Helper to find out which pool a VM is in
+    """
+    def __init__(self, cluster):
+        self._cluster = cluster
+        self._vm_to_pool = None
+
+    def get_poolid(self, vmid):
+        "Get the poolid (name) that the VM is in"
+        self._populate_cache()
+        return self._vm_to_pool.get(int(vmid), None)
+
+    def ensure_poolid(self, poolid):
+        "Make sure poolid exists"
+        try:
+            self._cluster.api.pools.create(poolid=poolid)
+        except ResourceException as e:
+            if str(e).startswith('403'):
+                raise ProxmoveError(
+                    'got 403 when trying to set pool info; '
+                    'do you have the PVEPoolAdmin permission on /pool?')
+
+    def set_poolid(self, vmid, poolid):
+        "Put VM in a poolid, creating the pool if necessary"
+        self.ensure_poolid(poolid)
+        # vms is a comma-separated list of vmid strings.
+        # (To remove one or more, we'd add delete=1.)
+        # (If pool did not exist we'd get: 500, '<poolid>' does not exist)
+        self._cluster.api.pools(poolid).put(vms=str(vmid))
+
+        # Update cache with newly set values.
+        if self._vm_to_pool is not None:
+            self._vm_to_pool[int(vmid)] = poolid
+
+    def _populate_cache(self):
+        if self._vm_to_pool is not None:
+            return
+
+        ret = {}
+        for pooldict in self._cluster.api.pools.get():
+            poolid = pooldict['poolid']  # {'poolid': 'FOOBAR'}
+            try:
+                poolinfo = self._cluster.api.pools(poolid).get()
+            except ResourceException as e:
+                if str(e).startswith('403'):
+                    raise ProxmoveError(
+                        'got 403 when trying to get pool info; '
+                        'do you have the PVEPoolAdmin permission on /pool?')
+                raise
+
+            for memberdict in poolinfo['members']:
+                # Examples of memberdict:
+                #   {'name': 'voiphu2', ..., 'id': 'qemu/124', 'type': 'qemu',
+                #    'node': 'rs05', 'vmid': 124, 'diskread': 779919072, ...}
+                #   {'id': 'storage/rs05/local', 'shared': 0,
+                #    'type': 'storage', ..., 'node': 'rs05', ...}
+                # We're only interested in VMs in the pool.
+                if 'vmid' in memberdict:
+                    vmid = int(memberdict['vmid'])
+                    assert vmid not in ret, (ret, memberdict)
+                    ret[vmid] = poolid
+
+        self._vm_to_pool = ret
+
+
+class ProxmoxCluster(object):
+    @classmethod
+    def from_section(cls, name, section):
+        cluster = cls(name)
+
+        for key, value in section:
+            if key == 'api':
+                if cluster.api_url:
+                    raise ValueError(
+                        'duplicate api key in pve section {!r}'.format(
+                            name))
+                cluster.api_url = value
+            else:
+                raise ValueError(
+                    'unknown key {!r} in pve section {!r}'.format(
+                        key, name))
+
+        return cluster
+
+    def __init__(self, name):
+        self.name = name
+        self.repoid = None
+        self.api_url = None
+        self.api_verify_ssl = True
+        self.pools = ProxmoxPools(self)
+        self._cache = {}
+        self._storages = {}
+        self._storages_nodespecific = defaultdict(dict)
+        self._vms_by_id = {}
+
+    def no_verify_ssl(self):
+        "Call to disable SSL verification."
+        self.api_verify_ssl = False
+
+    def set_bandwidth_limit(self, bandwidth_limit):
+        # assume that no storages will be added after calling this
+        for storage in self._storages.values():
+            storage.set_bandwidth_limit(bandwidth_limit)
+
+    def set_ssh_ciphers(self, ssh_ciphers):
+        # assume that no storages will be added after calling this
+        for storage in self._storages.values():
+            storage.set_ssh_ciphers(ssh_ciphers)
+
+    def add_storage(self, name, section):
+        try:
+            name, node = name.split('@', 1)
+        except ValueError:
+            storage = ProxmoxStorage.from_section(name, section)
+            self._storages[name] = storage
+        else:
+            storage = ProxmoxStorage.from_section(name, section)
+            self._storages_nodespecific[node][name] = storage
+
+    def get_nodes(self):
+        if 'nodes' not in self._cache:
+            tmp = self.api.nodes.get()
+            log.debug('(api) %r nodes: %s', self.name, tmp)
+            nodes = [
+                node['node'] for node in tmp
+                if node.get('status') == 'online' and node['type'] == 'node']
+            nodes.sort()
+            self._cache['nodes'] = nodes
+        return self._cache['nodes']
+
+    def get_storage(self, node, storage):
+        ret = None
+        if node in self._storages_nodespecific:
+            ret = self._storages_nodespecific[node].get(storage)
+        if not ret:
+            ret = self._storages.get(storage)
+        if not ret:
+            raise ValueError(
+                'storage {!r} in {!r} cluster missing in config'.format(
+                    storage, self.name))
+        return ret
+
+    @property
+    def api(self):
+        if hasattr(self, '_api'):
+            # Use manual timer, because proxmoxer times out and doesn't
+            # re-auth after getting a 401. Of course this is a workaround,
+            # it would've been better to handle the 401 and re-auth. If the
+            # session is lost or has a lower timeout, we'd still fail.
+            # See https://github.com/swayf/proxmoxer/issues/26
+            api_age = (time.time() - self._api_start)
+            if api_age > (30 * 60):
+                del self._api
+
+        if not hasattr(self, '_api'):
+            try:
+                res = urlparse(self.api_url)
+            except InvalidURL as e:
+                raise ValueError(
+                    'splitting {!r} api {!r} URL failed: {}'.format(
+                        self.name, self.api_url, e))
+            log.debug('(api) Connecting to %s', res.hostname)
+            api = ProxmoxAPI(
+                res.hostname, port=res.port, user=res.username,
+                password=res.password, verify_ssl=self.api_verify_ssl)
+            self._api = api
+            self._api_start = time.time()
+
+        return self._api
+
+    def create_vm(self, config, nodeid, poolid):
+        if not nodeid:
+            nodeid = self.get_random_node()
+
+        if poolid is not None:
+            self.pools.ensure_poolid(poolid)
+
+        name = config['name']
+        suffix = SUFFIX_CREATING
+        name_with_suffix = '{}{}'.format(name, suffix)
+
+        log.info('Creating new VM {!r} on {!r}, node {!r}'.format(
+            name_with_suffix, self.name, nodeid))
+
+        # Create disks according to config. Temporarily set ide\d+ and
+        # virtio\d+ devices to none until we can get them copied over.
+        mutable_config = {}
+        for key, value in config.items():
+            if PROXMOX_VOLUME_TYPES_RE.match(key):
+                # Wipe it. We'll add the disks manually later on.
+                pass
+            else:
+                mutable_config[key] = value
+
+        # Guess new VMID, set id and name.
+        vmid = self.get_free_vmid()
+        mutable_config['vmid'] = vmid
+        mutable_config['name'] = name_with_suffix
+        assert 'hostname' not in mutable_config, mutable_config  # lxc??
+
+        # Create new VM.
+        log.debug('- creating VM: {!r}'.format(mutable_config))
+
+        api_node = self.api.nodes(nodeid)
+        try:
+            vmhash = getattr(api_node, 'qemu').create(**mutable_config)
+        except ResourceException:
+            log.exception(
+                'Failed to create VM with parameters:\n\n'
+                '  # {base_url}\n'
+                '  api.nodes("{node}/{type}")'
+                '.create(**{config})\n\n'
+                .format(
+                    base_url=self.api._backend.base_url,
+                    node=nodeid, type='qemu', config=mutable_config))
+            raise
+
+        # Wait a while to ensure that we get the VM.
+        log.info(
+            '- created new VM {!r} as {}; waiting for it to show up'.format(
+                name_with_suffix, vmhash))
+        for i in range(30):
+            try:
+                self._cache = {}  # purge cache, we expect changes
+                vm = self.get_vm(name, suffix=suffix)
+            except ProxmoxVm.DoesNotExist:
+                pass
+            else:
+                break
+            time.sleep(1)
+        else:
+            raise ProxmoveError('Could not get newly created VM {!r}'.format(
+                name_with_suffix))
+
+        log.info('- created new VM {!r}: {}'.format(vm.name, vm))
+
+        if poolid is not None:
+            self.pools.set_poolid(vm.id, poolid)
+            log.info('- placed VM {!r} in pool {}'.format(vm.name, poolid))
+
+        return vm
+
+    def get_vms_dict(self):
+        if 'cluster.resources.type=vm' not in self._cache:
+            self._cache['cluster.resources.type=vm'] = (
+                self.api.cluster.resources.get(type='vm'))
+            # log.debug(
+            #     '(api) %r vms: %s', self.name, sorted(
+            #         i['name']
+            #         for i in self._cache['cluster.resources.type=vm']))
+        return self._cache['cluster.resources.type=vm']
+
+    def get_free_vmid(self):
+        """
+        BEWARE: To get the numbers right, we need to have enough
+        permissions to see all VMs. PVEVMAdmin permissions required?
+        """
+        self._cache = {}  # purge cache, so we don't get stale VMID lists
+        vms = self.get_vms_dict()
+        if not vms:
+            return 100
+        ordered_vms = [vm['vmid'] for vm in vms]
+        ordered_vms.sort()
+        if (ordered_vms[-1] - ordered_vms[0] + 1) == len(ordered_vms):
+            return ordered_vms[-1] + 1
+        prev = ordered_vms[0]
+        for vmid in ordered_vms[1:]:
+            if prev + 1 != vmid:
+                return prev + 1
+            prev = vmid
+        raise NotImplementedError('this cannot happen: {}'.format(
+            ordered_vms))
+
+    def get_random_node(self):
+        nodes = self.get_nodes()
+        return random.choice(nodes)
+
+    def get_vm(self, name, suffix=''):
+        name_with_suffix = name + suffix
+
+        # Find exact match, but warn about others:
+        candidates = []
+        for vm in self._vms_by_id.values():
+            if vm.name == name_with_suffix:
+                return vm
+            if vm.basename == name:
+                candidates.append(vm)
+
+        # Warn about other VMs found. This might be because you're
+        # moving on the same cluster?
+        if candidates:
+            for vm in candidates:
+                log.warning(
+                    'Did not find {}, but did find {} when looking for VM...'
+                    .format(name_with_suffix, vm.name))
+
+        # Look it up, or raise DoesNotExist.
+        proxmox_vms = self.get_vms_dict()
+        res = [vm for vm in proxmox_vms if vm.get('name') == name_with_suffix]
+        if len(res) == 0:
+            raise ProxmoxVm.DoesNotExist(
+                'VM named {!r} not found in cluster {!r}; '
+                'do you have the PVEVMAdmin role?'.format(
+                    name, self.name))
+        elif len(res) > 1:
+            raise ProxmoveError(
+                'VM named {!r} found multiple times in cluster {!r}'.format(
+                    name, self.name))
+
+        # Insert and return.
+        vm = ProxmoxVm.from_dict(name, res[0], cluster=self)
+        self._vms_by_id[vm.id] = vm
+        return vm
+
+    def ping(self):
+        version = self.api.version.get()
+        if not isinstance(version, dict) or 'release' not in version:
+            raise ProxmoveError(
+                'cluster {!r} did not return proper version: {!r}'.format(
+                    self.name, version))
+        self.repoid = version['repoid']
+
+    def __str__(self):
+        if self.repoid:
+            return '{}<{}>'.format(self.name, self.repoid)
+        return self.name
+
+
+class ProxmoxStorage(object):
+    @classmethod
+    def from_section(cls, name, section):
+        storages = []
+        for model in (ProxmoxStoragePlain, ProxmoxStorageZfs):
+            try:
+                storage = model.from_section(name, section)
+            except PrepareError:
+                pass
+            else:
+                storages.append(storage)
+
+        if len(storages) != 1:
+            raise PrepareError(
+                'storage section {!r} could not be parsed (requires ssh/path/'
+                'keys)'.format(name))
+
+        storage = storages[0]
+        storage.set_from_section(section)
+        return storage
+
+    def __init__(self, name):
+        # Set from inifile.
+        self.name = name
+        self.ssh = None
+        self.path = None
+        self.temp = None
+
+        # Set through command line.
+        self.bwlimit_mbps = None
+        self.ssh_ciphers = None
+
+    def check_prerequisites(self):
+        self.check_prerequisite_config()
+        self.check_prerequisite_commands()
+        self.check_prerequisite_paths()
+
+    def check_prerequisite_config(self):
+        if not (self.ssh and self.path and self.temp):
+            raise PrepareError(
+                'missing one or more of ssh/path/temp in {!r} storage '
+                'section'.format(self.name))
+
+    def check_prerequisite_commands(self):
+        raise NotImplementedError('subclasses need to implement this')
+
+    def check_prerequisite_paths(self):
+        assert self.temp and self.temp.startswith('/'), self.temp
+        try:
+            self.ssh_command(['mkdir', '-p', self.temp])
+        except subprocess.CalledProcessError:
+            raise PrepareError(
+                'temp dir {!r} on storage {!r} does not exist; '
+                'please create it!'.format(self.temp, self.name))
+
+    def get_physical_size(self, image_location):
+        """
+        Get exact size of physical (host-observed) disk.
+        """
+        raise NotImplementedError("subclasses need to implement this")
+
+    def get_volume_size(self, image_location):
+        """
+        Get exact size of (guest-observed) volume.
+        """
+        raise NotImplementedError("subclasses need to implement this")
+
+    def get_transfer_size(self, image_location):
+        """
+        Get size which we need to transfer. Probably equals physical size.
+        """
+        return self.get_physical_size(image_location)
+
+    def test_copy(self, dst_storage, src_format=None):
+        """
+        Check if we can copy from source (this) to destination (other).
+        """
+        if not self.can_copy_to(dst_storage, src_format=src_format):
+            raise NotImplementedError(
+                'format conversion from {!r} ({}) to {!r} not implemented'
+                .format(
+                    type(self).__name__, src_format,
+                    type(dst_storage).__name__))
+
+    def can_copy_to(self, dst_storage, src_format=None):
+        raise NotImplementedError("subclasses need to implement this")
+
+    def can_copy_from(self, src_storage, src_format=None):
+        raise NotImplementedError("subclasses need to implement this")
+
+    def copy(self, image_size, disk_size, src_location, src_format,
+             dst_storage, dst_id, dst_name):
+        new_path, new_format = dst_storage.copy_already_done(
+            self, dst_name, disk_size, image_size)
+        if new_path:
+            return new_path, new_format
+
+        dst_temp = self.copy_to_temp(src_location, dst_storage, dst_name)
+
+        if dst_temp:
+            log.info('Temp data {!r} on {}'.format(dst_temp, dst_storage))
+            new_path, new_format = dst_storage.copy_from_temp(
+                disk_size, dst_temp, src_format, dst_id, dst_name)
+        else:
+            assert not src_format, src_format
+            new_path, new_format = self.copy_direct(
+                image_size, src_location, dst_storage, dst_name)
+
+        return new_path, new_format
+
+    def copy_already_done(self, src_storage, dst_name, disk_size, image_size):
+        raise NotImplementedError('subclasses need to implemented this')
+
+    def copy_to_temp(self, src_location, dst_storage, dst_name):
+        raise NotImplementedError('subclasses need to implemented this')
+
+    def copy_from_temp(self, disk_size, src_temp, src_format, dst_id,
+                       dst_name):
+        raise NotImplementedError('subclasses need to implemented this')
+
+    def copy_direct(self, image_size, src_location, dst_storage, dst_name):
+        raise NotImplementedError('subclasses need to implemented this')
+
+    def run_command(self, command, hide_stderr=False, tty=False, via=None):
+        if via is not None:
+            command_str = argv2str(command)
+            return via.ssh_command(
+                [command_str], hide_stderr=hide_stderr, tty=tty, via_this=True)
+
+        log.debug('(exec) %s', argv2str(command))
+
+        kwargs = {}
+        if tty:
+            kwargs['stdin'] = sys.stdin
+            kwargs['stdout'] = sys.stdout
+            if hide_stderr:
+                kwargs['stderr'] = subprocess.DEVNULL
+            else:
+                kwargs['stderr'] = sys.stderr
+
+        if tty:
+            # We don't need to catch KeyboardInterrupt and SystemExit
+            # now that we have ssh -t.
+            proc = subprocess.Popen(command, **kwargs)
+            status = proc.wait()
+            if status != 0:
+                raise CalledProcessError2(
+                    returncode=status, cmd=command,
+                    output='Failure with status {}'.format(status))
+            return ''
+
+        if hide_stderr:
+            kwargs['stderr'] = subprocess.PIPE
+        proc = subprocess.Popen(command, stdout=subprocess.PIPE, **kwargs)
+        (out, err) = proc.communicate()
+        if proc.returncode != 0:
+            if err:
+                out = out + b'\n\n(stderr)\n' + err
+            raise CalledProcessError2(
+                returncode=proc.returncode, cmd=command, output=out)
+        return out
+
+    def has_commands(self, commands):
+        fail = False
+        try:
+            result = self.ssh_command(['which'] + commands)
+        except subprocess.CalledProcessError as e:
+            fail = True
+            result = e.output
+
+        result = result.decode('ascii', 'replace').strip()
+        found = set([i.rsplit('/', 1)[-1] for i in result.split('\n')])
+        expected = set(commands)
+        missing = (expected - found)
+        if missing:
+            log.debug('Missing commands: %r', missing)
+            return False
+        if fail:
+            return False
+        # (double check against excess values..)
+        assert not (found - expected), (expected, found)
+        return True
+
+    def _get_ssh_args(self, key_forwarding=False):
+        ssh_command = ['ssh']
+
+        if key_forwarding:
+            # If we're doing key forwarding, we don't care about the
+            # ciphers _to_ the this machine, as we expect data
+            # transfers to go from this machine to a _next_ machine.
+            ssh_command.append('-A')
+        elif self.ssh_ciphers not in (None, '', 'default', 'defaults'):
+            ssh_command.extend(['-c', self.ssh_ciphers])
+
+        if ':' in self.ssh:
+            user_host, port = self.ssh.split(':', 1)
+        else:
+            user_host, port = self.ssh, '22'
+        if port != '22':
+            ssh_command.extend(['-p', port])
+
+        ssh_command.append(user_host)
+        return ssh_command
+
+    def ssh_command(self, command, hide_stderr=False, tty=False,
+                    via=None, via_this=False):
+        assert isinstance(None, (ProxmoxStorage, type(None))), via
+
+        if not hasattr(self, '_is_ssh_checked'):
+            # We could auto-add host key using StrictHostKeyChecking=no,
+            # but I'm not sure we want to.
+            full_command = self._get_ssh_args() + ['/bin/true']
+            try:
+                self.run_command(full_command)
+            except subprocess.CalledProcessError:
+                raise PrepareError(
+                    'failed to ssh to {!r} for storage {!r}: {}'.format(
+                        self.ssh, self.name, argv2str(full_command)))
+            self._is_ssh_checked = True
+
+        extra = []
+        if tty and not via:
+            extra.append('-t')
+        return self.run_command(
+            self._get_ssh_args(key_forwarding=via_this) + extra + command,
+            hide_stderr=hide_stderr, tty=tty, via=via)
+
+    def set_bandwidth_limit(self, bandwidth_limit):
+        self.bwlimit_mbps = bandwidth_limit
+
+    def set_ssh_ciphers(self, ssh_ciphers):
+        self.ssh_ciphers = ssh_ciphers
+
+    def set_from_section(self, section):
+        for key, value in section:
+            if key == 'ssh':
+                self.set_ssh(value)
+            elif key == 'path':
+                self.set_path(value)
+            elif key == 'temp':
+                self.set_temp(value)
+
+    def set_ssh(self, value):
+        if self.ssh:
+            raise ValueError(
+                'duplicate ssh key in {!r} storage section: {}'.format(
+                    self.name, value))
+        if value.startswith('-'):  # TODO: nor spaces or quotes...
+            raise ValueError(
+                'ssh value cannot start with an option-dash in {!r} '
+                'storage section: {!r}'.format(self.name, value))
+        self.ssh = value
+
+    def set_path(self, value):
+        if self.path:
+            raise ValueError(
+                'duplicate path key in {!r} storage section: {}'.format(
+                    self.name, value))
+        self.path = value
+
+    def set_temp(self, value):
+        if self.temp:
+            raise ValueError(
+                'duplicate temp key in {!r} storage section: {}'.format(
+                    self.name, value))
+        if not value.startswith('/'):
+            raise ValueError(
+                'unexpected tokens in temp path in {!r} storage '
+                'section: {}'.format(self.name, value))
+        self.temp = value
+
+    def __str__(self):
+        return self.name
+
+
+class ProxmoxStoragePlain(ProxmoxStorage):
+    has_discard_support = False
+    has_snapshot_support = False
+
+    @classmethod
+    def from_section(cls, name, section):
+        paths = [value for key, value in section if key == 'path']
+        if len(paths) != 1 or not paths[0].startswith('/'):
+            raise PrepareError('not my kind of config')
+
+        return cls(name)
+
+    def get_physical_size(self, image_location):
+        """
+        Read physical disk size using OS tools (ls).
+
+        (The size as observed by the VM host.)
+        """
+        if not hasattr(self, '_get_physical_size'):
+            self._get_physical_size = {}
+
+        if image_location not in self._get_physical_size:
+            path = os.path.join(self.path, image_location)
+            # Use ls -l instead of stat because stat %s/%z is not
+            # standardized across BSD/GNU.
+            try:
+                data = self.ssh_command(
+                    ['ls', '-l', path], hide_stderr=True)
+            except subprocess.CalledProcessError:
+                log.warning(
+                    'Could not get image size from plain storage {!r}'.format(
+                        path))
+                exact_size = None
+            else:
+                exact_size = int(data.split()[4].decode('ascii', 'replace'))
+            self._get_physical_size[image_location] = exact_size
+
+        return self._get_physical_size[image_location]
+
+    def get_volume_size(self, image_location):
+        """
+        Read header bytes from qcow/qcow2 image to determine volume size.
+
+        (The size observed by the VM guest.)
+        """
+        if image_location.endswith('.raw'):
+            # Raw image? Then its size is equal to the file size.
+            return self.get_physical_size(image_location)
+        elif image_location.endswith(('.qcow', '.qcow2')):
+            # Extract the filesystem size from the qcow/qcow2 image below.
+            pass
+        else:
+            # No support yet for other formats.
+            return None
+
+        path = os.path.join(self.path, image_location)
+        try:
+            data = self.ssh_command(
+                ['hd', path, '|', 'head', '-n2'], hide_stderr=True)
+        except subprocess.CalledProcessError:
+            return None
+
+        # Extract qcow2 data. Example:
+        # 00000000  51 46 49 fb 00 00 00 03  00 00 00 00 00 00 00 00  |...
+        # 00000010  00 00 00 00 00 00 00 10  00 00 00 05 00 00 00 00  |...
+        hexdata = (
+            b''.join([i[10:58] for i in data.split(b'\n')])
+            .decode('ascii', 'replace').replace(' ', ''))
+        try:
+            # uint32_t magic; /* 'Q', 'F', 'I' followed by 0xfb. */
+            if int(hexdata[0:8], 16) != 0x514649fb:
+                raise ValueError('magic', hexdata[0:8])
+            # uint32_t version;
+            if int(hexdata[8:16], 16) > 3:  # up to version 3 is known
+                raise ValueError('version', hexdata[8:16])
+            # uint64_t backing_file_offset;
+            if int(hexdata[16:32], 16) != 0:
+                raise ValueError('backing_file_offset', hexdata[16:32])
+            # uint32_t backing_file_size;
+            if int(hexdata[32:40], 16) != 0:
+                raise ValueError('backing_file_size', hexdata[32:40])
+            # VERSION1: uint32_t mtime;
+            # VERSION2: uint32_t cluster_bits;
+            # uint64_t size; /* in bytes */
+            size = int(hexdata[48:64], 16)
+        except ValueError as e:
+            raise ValueError(
+                'bad QCOW{{,2}} header ({} = {}), path: {}, data: {}'.format(
+                    e.args[0], e.args[1], path, hexdata))
+
+        return size
+
+    def check_prerequisite_commands(self):
+        if not self.has_commands(['ssh', 'rsync']):
+            raise PrepareError(
+                'missing required binaries ssh and/or rsync on storage {!r}; '
+                'please install them'.format(self.name))
+
+    def copy_already_done(self, src_storage, dst_name, disk_size, image_size):
+        log.warning('FIXME: Non-zfs resume not implemented yet')  # XXX
+        return None, None
+
+    def can_copy_to(self, dst_storage, src_format=None):
+        # We don't do conversion. Hope the other side does.
+        return dst_storage.can_copy_from(self, src_format=src_format)
+
+    def can_copy_from(self, src_storage, src_format=None):
+        # We don't do conversion and only know about qcow2 and raw.
+        return isinstance(src_storage, ProxmoxStoragePlain) and src_format in (
+            'qcow2', 'raw')
+
+    def copy_to_temp(self, src_location, dst_storage, dst_name):
+        """
+        Copy image from source to a temp destination; checks pre-existence.
+
+        Return tempfile path on destination.
+        """
+        src_path = os.path.join(self.path, src_location)
+        dst_temp = os.path.join(dst_storage.temp, 'temp-proxmove', dst_name)
+
+        # mkdir temp location
+        dst_storage.ssh_command(['mkdir', '-p', os.path.dirname(dst_temp)])
+        try:
+            # test -f on the destination file. The assumption is that it
+            # doesn't exist. If it does, we'll have to resume OR abort.
+            dst_storage.ssh_command(['test', '!', '-f', dst_temp])
+        except subprocess.CalledProcessError:
+            # It exists already. "Compare" files and auto-resume of equal.
+            self._copy_to_temp_verify_existing(
+                src_location, dst_storage, dst_temp)
+        else:
+            # It doesn't exist. Do copy.
+            self._copy_to_temp_exec(src_path, dst_storage, dst_temp)
+
+        return dst_temp
+
+    def _copy_to_temp_verify_existing(self, src_location, dst_storage,
+                                      dst_temp):
+        """
+        Check equality of src_path and dst_temp and raise error if unequal.
+        """
+        src_size, dst_size = self.get_physical_size(src_location), -1
+        assert src_size != dst_size
+        try:
+            # Use ls -l instead of stat because stat %s/%z is not
+            # standardized across BSD/GNU.
+            data = dst_storage.ssh_command(
+                ['ls', '-l', dst_temp], hide_stderr=True)
+            dst_size = int(data.split()[4].decode('ascii', 'replace'))
+        except (subprocess.CalledProcessError, UnicodeDecodeError, ValueError):
+            pass
+        log.debug(
+            'Comparing existing files {!r} (size {}) with '
+            '{!r} (size {})'.format(
+                src_location, src_size, dst_temp, dst_size))
+        if dst_size != src_size:
+            raise ProxmoveError(
+                'Temp file {!r} exists on target with different file '
+                'size; please examine (and remove it?)'.format(dst_temp))
+        log.info(
+            'File {!r} exists on destination already; resuming because sizes '
+            'are equal ({})'.format(dst_temp, dst_size))
+
+    def _copy_to_temp_exec(self, src_path, dst_storage, dst_temp):
+        """
+        Copy src_path over dst_temp on target. Overwrites existing files.
+        """
+        if ':' in dst_storage.ssh:
+            user_host, port = dst_storage.ssh.split(':', 1)
+        else:
+            user_host, port = dst_storage.ssh, '22'
+
+        rsync_dest = '{}:{}'.format(user_host, dst_temp)
+        log.info('rsync(1) copy from {!r} (on {}) to {!r}'.format(
+            src_path, self, rsync_dest))
+
+        # Build remote ssh command for rsync. (Prefer rsync(1) over scp(1)
+        # because scp has been observed to be slower.)
+        rsync_ssh = ['ssh', '-o', 'StrictHostKeyChecking=no']
+        if port != 22:
+            rsync_ssh.extend(['-p', str(port)])
+        if self.ssh_ciphers not in (None, '', 'default', 'defaults'):
+            rsync_ssh.extend(['-c', self.ssh_ciphers])
+
+        # rsync, using ssh+rsync instead of local-rsync, so we can add our
+        # beloved options. (Double quoted because this is passed to ssh_command
+        # first.)
+        rsync_cmd = [
+            'rsync', '--rsh', '"{}"'.format(' '.join(rsync_ssh)), '--progress']
+        if False:
+            rsync_cmd.append('-z')  # gzip compression (yuck, prefer lz4)
+
+        # Add bandwidth limits in MByte/s
+        if self.bwlimit_mbps:
+            rsync_cmd.append('--bwlimit={}m'.format(self.bwlimit_mbps / 8.0))
+        # Source/destination.
+        rsync_cmd.extend([src_path, rsync_dest])
+        # Exec.
+        self.ssh_command(rsync_cmd, tty=True)
+
+    def copy_from_temp(self, disk_size, src_temp, src_format, dst_id,
+                       dst_name):
+        if src_format not in ('qcow2', 'raw'):
+            raise NotImplementedError(
+                'format conversion from {!r} to plain not implemented'.format(
+                    src_format))
+        dst_format = src_format
+
+        rel_path = os.path.join(
+            str(dst_id), '{}.{}'.format(dst_name, dst_format))
+        dst_path = os.path.join(self.path, rel_path)
+
+        log.info('Moving data from {!r} to {!r}'.format(src_temp, dst_path))
+        self.ssh_command(['mkdir', '-p', os.path.dirname(dst_path)])
+        self.ssh_command(['mv', src_temp, dst_path])
+
+        # In case old_format != new_format, we would need to update
+        # properties. So the following must be true for now.
+        assert src_format == dst_format, (src_format, dst_format)
+        return rel_path, dst_format
+
+    def set_path(self, value):
+        if not value.startswith('/'):
+            raise ValueError(
+                'path should start with / in {!r} storage section: {}'.format(
+                    self.name, value))
+        return super().set_path(value)
+
+
+class ProxmoxStorageZfs(ProxmoxStorage):
+    has_discard_support = True
+    has_snapshot_support = True
+
+    @classmethod
+    def from_section(cls, name, section):
+        paths = [value for key, value in section if key == 'path']
+        if len(paths) != 1 or not paths[0].startswith('zfs:'):
+            raise PrepareError('not my kind of config')
+
+        return cls(name)
+
+    def check_prerequisite_commands(self):
+        if not self.has_commands(['ssh', 'zfs', 'mbuffer', 'rsync']):
+            raise PrepareError(
+                'missing one or more required binaries mbuffer, rsync, ssh, '
+                'zfs, on storage {!r}; please install them'.format(self.name))
+
+    def get_physical_size(self, image_location):
+        """
+        Get exact size of physical (host-observed) disk (= zvol size).
+        """
+        return self.get_volume_size(image_location)
+
+    def get_volume_size(self, image_location):
+        """
+        Get exact size of (guest-observed) volume.
+        """
+        pool = '{}/{}'.format(self.path, image_location)
+        data = self.ssh_command(
+            ['zfs', 'get', '-Hpo', 'value', 'volsize', pool], hide_stderr=True)
+        number = data.decode('ascii', 'replace').strip()
+        if not number:
+            return None
+
+        return int(number)
+
+    def get_transfer_size(self, image_location):
+        """
+        Get size which we need to transfer. This is an estimate!
+        """
+        temp_snapname = '{}/{}@temp-{}'.format(
+            self.path, image_location, random.random())
+        # XXX: When resuming a snapshot, this won't be correct.
+        data = self.ssh_command(
+            ['zfs', 'snapshot', temp_snapname, '&&',
+             'zfs', 'send', '-Rnv', temp_snapname, '&&',
+             'zfs', 'destroy', temp_snapname], hide_stderr=True)
+        parts = data.split()
+        if not parts:
+            log.warning(
+                'Could not get image size from ZFS snapshot; '
+                'trying volume size instead')
+            return self.get_volume_size(image_location)
+
+        human_size = parts[-1].decode('ascii', 'replace')
+        # Add a bit of size since it's a guesstimate. You'd rather not
+        # see the transfer go over 100%.
+        return int(human_size_scan(human_size) * 1.02)
+
+    def copy_already_done(self, src_storage, dst_name, disk_size, image_size):
+        assert self.has_snapshot_support, self
+        if src_storage.has_snapshot_support:
+            # No need to skip, we can just finalize with a tiny snapshot sync.
+            # Plus, we cannot be sure that we have all data, since we may have
+            # started migrating while the source VM was still up.
+            return None, None
+
+        try:
+            found_size = self.get_volume_size(dst_name)
+        except CalledProcessError2:
+            # Does not exist. All good. We'll copy it. (Or resume if possible.)
+            return None, None
+        if disk_size == found_size:
+            return dst_name, None
+        return ProxmoveError('Volume {!r} exists.. this is bad'.format(
+            dst_name))
+
+    def can_copy_to(self, dst_storage, src_format=None):
+        # Same storage, we should be good.
+        if isinstance(dst_storage, ProxmoxStorageZfs):
+            return True
+
+        # We don't know how to send raw images. Simply cat /dev/zvol/...?
+        return False
+
+    def can_copy_from(self, src_storage, src_format=None):
+        # Same storage, we should be good.
+        if isinstance(src_storage, ProxmoxStorageZfs):
+            return True
+
+        # We can read/convert raw/qcow2 from ProxmoxStoragePlain.
+        if isinstance(src_storage, ProxmoxStoragePlain) and src_format in (
+                'qcow2', 'raw'):
+            return True
+
+        return False
+
+    def copy_to_temp(self, src_location, dst_storage, dst_name):
+        if isinstance(dst_storage, ProxmoxStorageZfs):
+            # ZFS->ZFS copying requires no temp files.
+            return None
+        else:
+            # Probably copy /dev/zvol/... and set src_format='raw'.
+            raise NotImplementedError(
+                'ZFS->other copying is not implemented yet')
+
+    def copy_from_temp(self, disk_size, src_temp, src_format, dst_id,
+                       dst_name):
+        assert disk_size, disk_size
+        dst_zfs = '{}/{}'.format(self.path, dst_name)
+        self.ssh_command(['zfs', 'create', '-V', str(disk_size), dst_zfs])
+
+        dst_path = os.path.join('/dev/zvol', self.path, dst_name)
+        log.info('Writing data from temp {!r} to {!r} (on {})'.format(
+            src_temp, dst_path, self))
+
+        if src_format is None:
+            src_format = 'raw'
+        if src_format not in ('qcow2', 'raw'):
+            raise NotImplementedError(
+                'format conversion from {!r} not implemented'.format(
+                    src_format))
+
+        self.ssh_command(
+            # -n = no create volume
+            # -p = progress
+            # -t none = cache=none
+            #   qemu-img provides various cache options:
+            #   - writethrough = default, O_DSYNC (safest, slowest)
+            #   - writeback = new default, syncing to host [fast, resource hog]
+            #   - none = sync to host, O_DIRECT (bypass host page cache)
+            #   - unsafe = write to host, ignore all sync [fast, resource hog]
+            #   We would like 'unsafe' to get the best performance.
+            #   Unfortunately this appears to block the target system I/O too
+            #   much, causing I/O load spikes on other users of the system.
+            #   Using 'none' does not have this effect instead, at the expense
+            #   of a slower import (conversion).
+            ['qemu-img', 'convert', '-n', '-p', '-t', 'none',
+             '-f', src_format, '-O', 'raw', src_temp, dst_path], tty=True)
+        log.info('Removing temp {!r} (on {})'.format(dst_path, self))
+        self.ssh_command(['rm', src_temp])
+
+        # Return name and format (dst_name is the filesystem name on the
+        # ZFS pool known to belong to dst_storage).
+        return dst_name, None
+
+    def _get_latest_zfs_snapshots(self, zfs_name):
+        "Get ZFS snapshots by latest first"
+        try:
+            snapshots = self.ssh_command([
+                'zfs', 'list', '-Honame', '-d1', '-tsnapshot', '-Screation',
+                zfs_name], hide_stderr=True)
+        except CalledProcessError2:
+            # If the destination volume did not exist, we'd end up here.
+            snapshots = []
+        else:
+            # Might be empty if the volume existed but had no snapshots.
+            snapshots = snapshots.decode('ascii').strip()
+            if snapshots:
+                snapshots = [
+                    snapshot.split('@', 1)[1]
+                    for snapshot in snapshots.split('\n')]
+            else:
+                snapshots = []
+        return snapshots
+
+    def copy_direct(self, image_size, src_location, dst_storage, dst_name):
+        # ...
+        if ':' in dst_storage.ssh:
+            user_host, port = dst_storage.ssh.split(':', 1)
+        else:
+            user_host, port = dst_storage.ssh, '22'
+
+        src_zfs_snapshot = 'proxmove-{}'.format(
+            datetime.now().strftime('%y%m%d-%H%M%S'))
+        src_zfs = '{}/{}'.format(self.path, src_location)
+        dst_zfs = '{}/{}'.format(dst_storage.path, dst_name)
+        log.info('zfs(1) send/recv {} data from {!r} to {!r} (on {})'.format(
+            (image_size and human_size_fmt(image_size) or '<unknown>'),
+            src_zfs, dst_zfs, dst_storage))
+
+        # Get any snapshots that existed already ordered by newest first.
+        src_snapshots = self._get_latest_zfs_snapshots(src_zfs)
+        dst_snapshots = dst_storage._get_latest_zfs_snapshots(dst_zfs)
+        for try_snapshot in src_snapshots:
+            if try_snapshot in dst_snapshots:
+                incremental = '-I {}'.format(try_snapshot)
+                force_receive = '-F'
+                break
+        else:
+            incremental = force_receive = ''
+
+        # Create new snapshot.
+        self.ssh_command([
+            'zfs', 'snapshot', '{}@{}'.format(src_zfs, src_zfs_snapshot)])
+
+        # mbuffer takes k-, M- or G-bytes
+        mbuffer_write_limit = ''
+        if self.bwlimit_mbps:
+            mbuffer_write_limit = '-R {}k'.format(self.bwlimit_mbps * 128)
+
+        # pv shows a nice progress bar. It's optional.
+        optional_pv_pipe = ''
+        if dst_storage.has_commands(['pv']):
+            optional_pv_pipe = (
+                # --fineta does not exist on all versions..
+                # --force is required to make it display anything..
+                'pv --force --eta --average-rate --progress -s {} | '.format(
+                    image_size))
+        else:
+            log.warning(
+                'pv(1) command is not found on the destination storage; '
+                'consider installing it to get a pretty progress bar')
+
+        if self.ssh_ciphers not in (None, '', 'default', 'defaults'):
+            ssh_ciphers = '-c {}'.format(self.ssh_ciphers)
+        else:
+            ssh_ciphers = ''
+
+        # Older mbuffer(1) [v20140310-3] on the receiving end
+        # may say: "mbuffer: warning: No controlling terminal
+        # and no autoloader command specified." This is fixed
+        # in newer versions [v20150412-3].
+        self.ssh_command(
+            ["zfs send -R {incremental} {src_zfs}@{src_zfs_snapshot} | "
+             "mbuffer -q -s 128k -m 1G {src_bwlim} | "
+             "ssh {ssh_ciphers} -o StrictHostKeyChecking=no "
+             "{dst_userhost} -p {dst_port} "
+             "'mbuffer {optional_quiet_mbuffer} -s 128k -m 1G | "
+             " {dst_pv}"
+             " zfs recv {force_receive} {dst_zfs}'".format(
+                 incremental=incremental,
+                 src_zfs=src_zfs,
+                 src_zfs_snapshot=src_zfs_snapshot,
+                 src_bwlim=mbuffer_write_limit,
+                 ssh_ciphers=ssh_ciphers,
+                 dst_userhost=user_host,
+                 dst_port=port,
+                 optional_quiet_mbuffer=(
+                     '-q' if optional_pv_pipe else ''),
+                 dst_pv=optional_pv_pipe,
+                 force_receive=force_receive,
+                 dst_zfs=dst_zfs)],
+            tty=True,
+            via_this=True)
+
+        # Return name and format (dst_name is the filesystem name on the
+        # ZFS pool known to belong to dst_storage).
+        return dst_name, None
+
+    def set_path(self, value):
+        assert value.startswith('zfs:'), value
+        pool_name = value[4:]
+        valid_characters = string.ascii_letters + string.digits + '_-/'
+        if not pool_name or pool_name.startswith('/') or not all(
+                i in valid_characters for i in pool_name):
+            raise PrepareError(
+                'invalid characters in zfs pool name found {!r} storage '
+                'section: {}'.format(self.name, value))
+        return super().set_path(pool_name)
+
+
+class ProxmoxVm(object):
+    class DoesNotExist(ProxmoveError):
+        pass
+
+    @classmethod
+    def from_dict(cls, name, dict_, cluster):
+        vm = cls(
+            name, dict_['name'], dict_['node'], dict_['type'], dict_['vmid'],
+            dict_['status'], cluster)
+
+        # LXC(FIXME): When creating an LXC container, the get_config()
+        # may contain a 'digest' only. We need to wait until its fully
+        # populated with at least the name. This is a hack, and we
+        # definitely should not use AssertionError for it.
+        for i in range(10):
+            try:
+                # Get config and check for pending changes at once.
+                vm.get_config()
+            except AssertionError:
+                time.sleep(1)
+            else:
+                break
+        else:
+            raise
+
+        return vm
+
+    def __init__(self, basename, name, node, type_, id_, status, cluster):
+        self.basename = basename  # without "--CREATING" or similar suffix
+        self.name = name
+        self.node = node
+        self.type = type_  # qemu|lxc|...
+        self.id = id_
+        self.status = status  # "running"/"stopped"
+        # NOTE: api_vm does not get any magic refresh that lazy calling of the
+        # cluster.api provides.
+        self.api_vm = getattr(cluster.api.nodes(node), type_)(id_)
+        self.cluster = cluster
+        self.volumes = 0  # used to index/create the new volume names
+        self._cache = {}
+
+    @property
+    def poolid(self):
+        return self.cluster.pools.get_poolid(self.id)
+
+    def set_translator(self, config_translator):
+        self._translator = config_translator
+
+    def check_config(self):
+        """
+        Check whether we can move this VM.
+        """
+        if self.type == 'lxc':
+            # No pending changes
+            return
+
+        config = self.get_config()
+
+        # Check pending. We expect a list of dictionaries with a 'key'
+        # key and 'value' and/or 'pending' keys.
+        pending_config = self.api_vm.pending.get()  # does not exist for lxc
+        pending = []
+        for dict_ in pending_config:
+            keys = dict_.keys()
+            if keys == set(['key', 'value']):
+                assert config.get(dict_['key']) == dict_['value']
+            else:
+                pending.append('{!r}: {!r} => {!r}'.format(
+                    dict_['key'], dict_.get('value'),
+                    dict_.get('pending')))
+
+        if pending:
+            # Contains 'pending' changes. Refuse to continue.
+            pending.sort()
+            raise PrepareError(
+                'VM {!r} contains pending changes:\n  {}'.format(
+                    self.name, '\n  '.join(pending)))
+
+    def get_config(self):
+        """
+        Get current configuration and store name.
+        """
+        if 'config' not in self._cache:
+            next_config = self.api_vm.config.get()
+            name = name_from_conf(self.type, next_config)
+            assert name == self.name, (name, self.name)
+            self._cache['config'] = next_config
+        return self._cache['config']
+
+    def create_volume(
+            self, volume_key, source_volume, storage,
+            requires_snapshot_support):
+        """
+        Create volume from source_volume.
+
+        If requires_snapshot_support, this is called when the source machine is
+        still up.
+        """
+        assert PROXMOX_VOLUME_TYPES_RE.match(volume_key), volume_key
+
+        if storage is None:
+            # Take properties and set first argument to 'none'.
+            # E.g. "san06:abc.iso,media=cdrom" => "none,media=cdrom"
+            parts = source_volume.properties.split(',', 1)
+            parts[0] = 'none'
+            properties = ','.join(parts)
+            self.api_vm.config.put(**{volume_key: properties})
+            self._cache = {}
+            log.info('Ejected (cdrom?) volume {!r} ({}) added to {}'.format(
+                volume_key, properties, self))
+        elif not requires_snapshot_support or (
+                source_volume.storage.has_snapshot_support and
+                storage.has_snapshot_support):
+            # Generate the new disk name. This might be completely
+            # different from what you had on the source. Here it's by
+            # disk order (taken from the source volumes ordered dict).
+            new_volume_name = PROXMOVE_VOLUME_NAME_FMT.format(
+                vmid=self.id, diskidx=self.volumes)
+
+            # We actually have to do copying.
+            log.info('Begin copy of {!r} ({}) to {} ({})'.format(
+                volume_key, source_volume, storage, new_volume_name))
+            new_volume = source_volume.clone(
+                new_storage=storage, new_vmid=self.id,
+                new_volume_name=new_volume_name)
+            new_properties = self._translator.volume_properties(new_volume)
+            try:
+                self.api_vm.config.put(**{volume_key: new_properties})
+            except Exception:
+                log.exception(
+                    'Issue when adding volume to new VM: {!r}'.format(
+                        new_properties))
+                raise
+
+            self.volumes += 1
+        else:
+            # Also increment volumes. So we'll use the same order of disks.
+            self.volumes += 1
+
+    def get_volumes(self):
+        if 'volumes' not in self._cache:
+            volumes = OrderedDict()
+            for slot, value in sorted(self.get_config().items()):
+                volume = ProxmoxVolume.from_cluster_node_and_config(
+                    self.cluster, self.node, slot, value)
+                if volume:
+                    volumes[slot] = volume
+            self._cache['volumes'] = volumes
+        return self._cache['volumes']
+
+    def rename(self, new_name):
+        if self.type == 'lxc':
+            self.api_vm.config.put(hostname=new_name)
+        else:
+            self.api_vm.config.put(name=new_name)
+
+        self.name = new_name
+
+    def configure_autoboot(self, boot):
+        boot_int = 1 if boot else 0
+        self.api_vm.config.put(onboot=boot_int)
+
+    def ensure_started(self, timeout=120):
+        if self.status == 'running':
+            log.debug('Skipping start, already running: {}'.format(self))
+            return
+
+        log.info('Starting VM {}'.format(self))
+
+        self.api_vm.status.start.create()
+        for i in range(timeout + 10):
+            time.sleep(1)
+            status = self.api_vm.status.current.get()
+            if status['status'] == 'running':
+                self.status = status['status']
+                break
+        else:
+            self.status = status['status']
+            raise ProxmoveError(
+                'VM {!r} refuses to start: status = {!r}'.format(
+                    self.name, self.status))
+
+        log.info('- started VM {}'.format(self))
+
+    def ensure_stopped(self, timeout=120):
+        if self.status == 'stopped':
+            log.debug('Skipping stop, already stopped: {}'.format(self))
+            return
+
+        log.info('Stopping VM {}; will forcibly kill after {} seconds'.format(
+            self, timeout + 10))
+
+        # forceStop takes a boolean, but proxmoxer won't pass True as
+        # 'true', but as 'True' which is not valid JSON.
+        self.api_vm.status.shutdown.create(forceStop='1', timeout=timeout)
+        for i in range(timeout + 10):
+            time.sleep(1)
+            status = self.api_vm.status.current.get()
+            if status['status'] == 'stopped':
+                self.status = status['status']
+                break
+        else:
+            self.status = status['status']
+            raise ProxmoveError(
+                'VM {!r} refuses to shut down: status = {!r}'.format(
+                    self.name, self.status))
+
+        log.info('- stopped VM {}'.format(self))
+
+    def add_comment(self, comment):
+        config = self.get_config()
+        if 'description' in config:
+            comment = config['description'].rstrip() + '\n' + comment.strip()
+        else:
+            comment = comment.strip()
+
+        self.api_vm.config.put(description=comment)
+        self._cache = {}  # drop cache
+
+    def __str__(self):
+        return '{}@{}<{}/{}/{}>'.format(
+            self.name, self.node, self.type, self.id, self.status)
+
+
+class ProxmoxVolume(object):
+    @classmethod
+    def from_cluster_node_and_config(self, cluster, node, slot, value):
+        """
+        Return ProxmoxVolume from cluster, node, slot and value, or None
+        if this is not a volume type.
+        """
+        if not PROXMOX_VOLUME_TYPES_RE.match(slot):
+            return None
+
+        # cluster = <...>
+        # node = 'pveX'
+        # slot = 'ide2', 'virtio0'
+        # value = 'local:iso/ubuntu-18.04-amd64.iso,media=cdrom',
+        #         'nfs07:113/vm-113-disk-0.qcow2,size=70G'
+        #         'none,media=cdrom'
+        try:
+            storage_location, properties = value.split(',', 1)
+            if storage_location == 'none':
+                storage, location = None, None
+            else:
+                storage, location = storage_location.split(':', 1)
+        except ValueError:
+            raise ProxmoveError('disk slot {!r} parse error: {!r}'.format(
+                slot, value))
+
+        # Removable disk? Assume it's ejected, so we don't need to look
+        # up the storage for it.
+        if 'media=cdrom' in properties.split(','):
+            storage = location = None
+
+        if storage:
+            # Might raise exception if not found.
+            storage = cluster.get_storage(node, storage)
+
+        return ProxmoxVolume(location, properties, storage=storage)
+
+    def __init__(self, location, properties, storage=None):
+        self.location = location
+        self.properties = properties
+        self.storage = storage
+
+    def is_removable(self):
+        parts = self.properties.split(',')
+        return self.location is None or 'media=cdrom' in parts
+
+    def get_format(self):
+        """
+        Return image file format. Use the format property, or the image
+        file extension as fallback.
+        """
+        ret = self.get_property('format')
+        if not ret and isinstance(self.storage, ProxmoxStoragePlain):  # hacks
+            ret = self.location.rsplit('.', 1)[-1]
+        return ret
+
+    def get_property(self, what):
+        search = '{}='.format(what)
+        parts = self.properties.split(',')
+        for part in parts:
+            if part.startswith(search):
+                return part[len(search):]
+        return None
+
+    def get_properties(self, **updates):
+        """
+        Get properties list (abc=def,ghi=jkl) but update properties from
+        the updates argument or leave them out if the value is None.
+        """
+        search_list = tuple('{}='.format(i) for i in updates.keys())
+        ret = []
+
+        parts = self.properties.split(',')
+        for part in parts:
+            if not part.startswith(search_list):
+                ret.append(part)
+
+        for key, value in updates.items():
+            if value:
+                parts.append('{}={}'.format(key, value))
+
+        return ','.join(ret)
+
+    def get_size(self, observer):
+        """
+        Get size of volume, either 'guest' size (filesystem size,
+        visible to the guest OS) or 'host' size (image/blob size,
+        observed when transferring data between storage nodes).
+        """
+        # filesystem size vs image/blob size
+        assert observer in ('host', 'guest'), observer
+        cache_key = '_get_size__{}'.format(observer)
+
+        if not hasattr(self, cache_key):
+            if self.storage:
+                if observer == 'host':
+                    size = self.storage.get_transfer_size(self.location)
+                elif observer == 'guest':
+                    size = self.storage.get_volume_size(self.location)
+                    size_property = self.get_property('size')  # ",size=64G"
+                    if size_property:
+                        size_property = human_size_scan(size_property)
+                        assert size == size_property, (size, size_property)
+                else:
+                    raise NotImplementedError(observer)
+                setattr(self, cache_key, size)
+            else:
+                setattr(self, cache_key, None)
+
+        return getattr(self, cache_key)
+
+    def get_human_size(self, observer):
+        size = self.get_size(observer)
+        if not size:
+            return '<unknown>'
+        return human_size_fmt(size)
+
+    def test_clone(self, new_storage):
+        """
+        Do preliminary checks before cloning/copying a volume.
+        """
+        assert isinstance(new_storage, ProxmoxStorage), new_storage
+        self.storage.test_copy(new_storage, src_format=self.get_format())
+
+    def clone(self, new_storage, new_vmid, new_volume_name):
+        """
+        We expect new_volume_name to be constructed from
+        PROXMOVE_VOLUME_NAME_FMT.
+        """
+        assert isinstance(new_storage, ProxmoxStorage), new_storage
+        assert str(new_vmid) in new_volume_name, (new_volume_name, new_vmid)
+
+        # Create new name and let the storage backend do the copying.
+        new_path, new_format = self.storage.copy(
+            self.get_size('host'), self.get_size('guest'),
+            self.location, self.get_format(),
+            new_storage, new_vmid, new_volume_name)
+
+        # Log message so we know that any percentages shown really are
+        # irrelevant. (pv(1) gets a guesstimate which may be off by a
+        # few percent. We don't want the user to think the transfer
+        # stopped at 98%.)
+        log.info('Volume transferring/conversion 100% (is/was) complete!')
+        return ProxmoxVolume(
+            new_path, self.get_properties(format=new_format),
+            storage=new_storage)
+
+    def as_properties(self):
+        """
+        Return something like: "san06:123/vm-123-disk.qcow2,size=50G,..."
+        """
+        if self.storage:
+            location = '{}:{}'.format(self.storage.name, self.location)
+        else:
+            assert self.location == 'none', self.location
+            location = self.location
+
+        if self.properties:
+            return '{},{}'.format(location, self.properties)
+        return location
+
+    def __str__(self):
+        if self.storage:
+            return '{}:{},{}'.format(
+                self.storage.name, self.location, self.properties)
+        return '{},{}'.format(self.location, self.properties)
+
+
+class BaseConfigTranslator(object):
+    def config(self, old_config):
+        """
+        Translate VM dict from source to something writable
+
+        Drops readonly properties
+        """
+        new_config = {}
+        for key, value in old_config.items():
+            if key == 'digest':
+                # The digest is used to prevent changes if the current
+                # config doesn't match the digest. This blocks
+                # concurrent updates.
+                pass
+            elif key == 'meta':
+                # Proxmox [67].x may provide a meta key in the listing, but it
+                # will not accept any on creation. Example:
+                # {'meta': 'creation-qemu=6.1.0,ctime=1643742755'}
+                pass
+            elif key == 'vmgenid':
+                # Let proxmox generate this id. Otherwise we may get a "only
+                # root can set 'vmgenid' config".
+                pass
+            elif key == 'smbios1':
+                new_config[key] = self._set_smbios1(value)
+            else:
+                new_config[key] = value
+
+        # Overwrite boot with a safe 'cd' default when
+        # 'order=virtio0;ide2;net0' is not supported on this 6.1+6.3 cluster
+        # mix.
+        if True:
+            log.debug('- setting boot=cd workaround for 6.1+6.3 mixcluster')
+            new_config['boot'] = 'cd'
+
+        return new_config
+
+    def volume_properties(self, new_volume):
+        """
+        Translate volume properties from source to something writable
+
+        Returns new_volume.as_properties()
+        """
+        return new_volume.as_properties()
+
+    def _set_smbios1(self, smbios1):
+        # Fix up smbios1 for changes between PVE 5.x and PVE 6.x:
+        # uuid=12-34-56,manufacturer=blah-123
+        # --> uuid=12-34-56,base64=1,manufacturer=YmxhaC0xMjM=
+        if ',' in smbios1 and ',base64=1,' not in smbios1:
+            parts = smbios1.split(',')
+            assert parts[0].startswith('uuid='), smbios1
+            out = [parts[0], 'base64=1']
+            for part in parts[1:]:
+                key, value = part.split('=', 1)
+                b64value = b64encode(value.encode('utf-8')).decode('ascii')
+                out.append('{}={}'.format(key, b64value))
+            smbios1 = ','.join(out)
+            log.debug('- setting smbios1 to {!r}'.format(smbios1))
+        return smbios1
+
+
+class TurnLxcIntoQemuConfigTranslator(object):
+    def config(self, old_config):
+        new_config = super().config(old_config)
+        if 'name' not in new_config and 'hostname' in new_config:
+            new_config = self._lxc_to_qemu(new_config)
+        return new_config
+
+    def _lxc_to_qemu(self, old_config):
+        new_config = {}
+        for key, value in old_config.items():
+            if key == 'hostname':
+                new_config['name'] = value
+            elif key in (
+                    'arch', 'cpulimit', 'cpuunits', 'nameserver',
+                    'searchdomain', 'rootfs', 'ostemplate', 'ostype', 'swap'):
+                pass
+            elif key.startswith('net') and key[3:].isdigit():
+                new_config[key] = self._lxc_net_to_qemu_net(value)
+            else:
+                new_config[key] = value
+
+        return new_config
+
+    def _lxc_net_to_qemu_net(self, net):
+        # name=eth0,bridge=vmbr0,gw=10.x.x.x,\
+        #   hwaddr=00:C0:FF:EE:BE:EF,ip=10.x.x.x/y,type=veth
+        # -> virtio=MAC,bridge=BRIDGE
+        ret = []
+        hwaddr = ''
+        parts = net.split(',')
+        for part in parts:
+            if part.startswith('bridge='):
+                ret.append(part)
+            elif part.startswith('hwaddr='):
+                hwaddr = part[7:]
+        ret.insert(0, 'virtio={}'.format(hwaddr))
+        return ','.join(ret)
+
+
+class AddDiscardOnTranslator(object):
+    def volume_properties(self, new_volume):
+        """
+        Add "discard=on" flag to properties if possible
+        """
+        props = super().volume_properties(new_volume)
+
+        if new_volume.storage and new_volume.storage.has_discard_support:
+            values = props.split(',')
+            name, rest = values[0], values[1:]
+            rest = [
+                i for i in rest if i not in ('discard=on', 'discard=off')]
+            rest.append('discard=on')
+            rest.sort()
+            props = ','.join([name] + rest)
+
+        return props
+
+
+class DefaultConfigTranslator(
+        AddDiscardOnTranslator,
+        TurnLxcIntoQemuConfigTranslator,
+        BaseConfigTranslator):
+    pass
+
+
+class VmMover(object):
+    MOVE_INITIAL = 1        # new is down, preparing snapshottable copy
+    MOVE_FINAL = 2          # old/new are down, finalize last changes
+
+    def __init__(self, options):
+        self.src_pve = options.source
+        self.dst_pve = options.destination
+        self.dst_node = options.nodeid
+        self.dst_storage = options.storage
+        self.vms_requested = options.vm
+
+        self.opt_ignore_exists = options.ignore_exists
+        self.opt_skip_disks = options.skip_disks
+        self.opt_skip_start = (
+            # Also don't start of there are no disks:
+            options.skip_start or options.skip_disks)
+        self.opt_wait_before_stop = options.wait_before_stop
+
+        self.vms_to_move = None
+        self.storages = None
+
+    def prepare(self):
+        log.debug('Sanity checks and preparation')
+        self.prepare_vm_list()
+        self.prepare_vm_config()
+        self.prepare_storage_list()
+        self.prepare_storage_prerequisites()
+
+    def prepare_vm_list(self):
+        log.debug('Checking VMs existence on source and destination')
+        vms = []
+        for vm_name in self.vms_requested:
+            src_suffix = ''
+            try:
+                self.prepare_vm_check_source(vm_name)
+
+            except ResumablePrepareError as err1:
+                log.warning(err1)
+                try:
+                    self.prepare_vm_check_destination(vm_name)
+                except ResumablePrepareError as err2:
+                    log.warning(err2)
+                    resume_work = input('Continue [y/N]? ')
+                    if resume_work.strip().lower() != 'y':
+                        raise
+                    src_suffix = SUFFIX_CLONING
+                else:
+                    raise  # err1
+
+            else:
+                try:
+                    self.prepare_vm_check_destination(vm_name)
+                except ResumablePrepareError as err1:
+                    log.warning(err1)
+                    log.warning(
+                        'Destination is created but source still appears to '
+                        'be running. Looks like you are resuming an initial '
+                        '(pre-shutdown) migration. Please ascertain that '
+                        'the new VM data is not old')
+                    resume_work = input('Continue [y/N]? ')
+                    if resume_work.strip().lower() != 'y':
+                        raise
+
+            vm = self.src_pve.get_vm(vm_name, suffix=src_suffix)
+            vms.append(vm)
+
+        self.vms_to_move = vms
+        self.vms_requested = None
+
+    def prepare_vm_check_source(self, vm_name):
+        for suffix in (SUFFIX_CLONING, SUFFIX_MIGRATED):
+            try:
+                self.src_pve.get_vm(vm_name, suffix=suffix)
+            except ProxmoxVm.DoesNotExist:
+                pass
+            else:
+                vm_name_with_suffix = '{}{}'.format(vm_name, suffix)
+                err = 'VM {!r} exists on source already'.format(
+                    vm_name_with_suffix)
+                if suffix == SUFFIX_CLONING:
+                    raise ResumablePrepareError(err)
+                raise PrepareError(err)
+
+    def prepare_vm_check_destination(self, vm_name):
+        for suffix in ('', SUFFIX_CREATING):
+            try:
+                self.dst_pve.get_vm(vm_name, suffix=suffix)
+            except ProxmoxVm.DoesNotExist:
+                pass
+            else:
+                vm_name_with_suffix = '{}{}'.format(vm_name, suffix)
+                err = 'VM {!r} exists on destination already'.format(
+                    vm_name_with_suffix)
+                if suffix == SUFFIX_CREATING:
+                    raise ResumablePrepareError(err)
+                if not self.opt_ignore_exists:
+                    raise PrepareError(err)
+
+    def prepare_vm_config(self):
+        log.debug('Checking for problematic config in {} VMs to move'.format(
+            len(self.vms_to_move)))
+
+        for vm in self.vms_to_move:
+            # Checks whether the internal config is okay.
+            vm.check_config()
+            # Check whether volume sizes can be determined. We may need
+            # both host and guest size.
+            self.prepare_vm_config_volumes(vm)
+
+    def prepare_vm_config_volumes(self, vm):
+        for volume in vm.get_volumes().values():
+            if volume.get_size('host') is None:
+                # If we have no size of the host, then we most
+                # definately won't have any size of the guest
+                pass
+
+            elif volume.get_size('guest') is None:
+                # This could become a problem: if we don't know the disk
+                # size, we can probably not convert from QCOW2 to ZFS
+                # safely.
+                raise PrepareError(
+                    'unknown guest disk-size of volume {} on VM {}'.format(
+                        volume, vm))
+
+    def prepare_storage_list(self):
+        storages = set()
+        for vm in self.vms_to_move:
+            for volume in vm.get_volumes().values():
+                if volume.storage:
+                    storages.add(volume.storage)
+
+        # Check destination storage against access via the sources.
+        for src_storage in storages:
+            # We'll be doing: " ssh src_storage 'ssh dst_storage' "
+            # Set tty=True so the user gets any host key questions.
+            self.dst_storage.ssh_command(
+                ['/bin/true'], tty=True, via=src_storage)
+
+        storages.add(self.dst_storage)
+
+        log.debug('Found {} relevant storages: {}'.format(
+            len(storages), ', '.join(str(i) for i in storages)))
+        self.storages = storages
+
+    def prepare_storage_prerequisites(self):
+        log.debug('Checking storage prerequisites')
+        for storage in self.storages:
+            storage.check_prerequisites()
+
+    def run(self, dry_run):
+        translator = DefaultConfigTranslator()
+        for vm in self.vms_to_move:
+            self.move_vm(vm, translator, dry_run)
+
+    def move_vm(self, src_vm, translator, dry_run):
+        # Config and notes:
+        # {'bootdisk': 'virtio0',
+        #  'cores': 8,
+        #  'digest': '8f8bb34b5544282c71fefc7ed0dbbaa57d148505',
+        #  # v-- we "eject" the cdrom, replacing it with "none"
+        #  'ide2': 'san06:iso/debian-8.0.0-amd64-netinst.iso,media=cdrom',
+        #  'memory': 4096,
+        #  'name': 'vm-to-move.example.com',
+        #  # v-- vmbr138 will work fine as long as cluster is in same location
+        #  'net0': 'virtio=00:C0:FF:EE:BE:EF,bridge=vmbr138',
+        #  # v-- is constant (apparently?)
+        #  'ostype': 'l26',
+        #  'smbios1': 'uuid=76223226-e334-488c-ae8a-a174690e2803,'
+        #             'manufacturer=example,product=vm-to-move',
+        #  'sockets': 1,
+        #  # v-- disk moving is covered in ProxmoxVolume
+        #  'virtio0': 'san8:520/vm-520-disk-1.qcow2,format=qcow2,iops_rd=5000,'
+        #             'iops_wr=400,size=50G'}
+        #
+        # Steps:
+        # - translate old config to new config
+        # - create new config on nodeX on dest (no disks, "CREATING" name)
+        # - stop old host, rename to "CLONING"
+        # - move all disks, one by one
+        # - rename dest to real name, rename source to "MIGRATED", add comment
+        log.info('Attempt moving {} => {} (node {!r}): {}'.format(
+            self.src_pve, self.dst_pve, self.dst_node, src_vm.name))
+
+        log.info('- source VM {}'.format(src_vm))
+        for volume_key, volume in src_vm.get_volumes().items():
+            # TODO: Check whether volume is accessible? Must be combined
+            # with the is_removable() and skip_disks options below.
+            log.info('- storage {!r}: {} (host={}, guest={})'.format(
+                volume_key, volume, volume.get_human_size('host'),
+                volume.get_human_size('guest')))
+            # NOTE: Test volume moving first. We don't want
+            # NotImplementedError at the end of a long upload.
+            self._move_vm_volume(src_vm, None, volume_key, volume, None)
+
+        if not dry_run:
+            dst_vm = self._start_moving_vm(src_vm, translator)
+            self._move_vm_volumes(src_vm, dst_vm, move_mode=self.MOVE_FINAL)
+            self._finish_moving_vm(src_vm, dst_vm)
+
+    def _start_moving_vm(self, src_vm, translator):
+        if src_vm.name == src_vm.basename:
+            try:
+                # Check for existing target VM. Happens if we're resuming.
+                dst_vm = self.dst_pve.get_vm(
+                    src_vm.basename, suffix=SUFFIX_CREATING)
+            except ProxmoxVm.DoesNotExist:
+                # Don't create VM in exception handler. Errors would
+                # then appear like the DoesNotExist is the root cause.
+                dst_vm = None
+            if not dst_vm:
+                # Pristine VMs: start, by translating config and
+                # creating a new VM.
+                dst_config = translator.config(src_vm.get_config())
+                dst_vm = self.dst_pve.create_vm(
+                    dst_config, nodeid=self.dst_node,
+                    poolid=src_vm.poolid)
+            dst_vm.set_translator(translator)
+
+            # Do initial attempt at moving VM volumes before bringing the
+            # source down. This is possible if we have snapshot support.
+            self._move_vm_volumes(src_vm, dst_vm, move_mode=self.MOVE_INITIAL)
+            # It is important that we reset the volumes count for the
+            # MOVE_FINAL run.
+            dst_vm.volumes = 0
+
+            # If you want to do stuff just before shutting down the old
+            # running instance, now is the time:
+            if self.opt_wait_before_stop:
+                log.info(
+                    'Pausing because of --wait-before-stop. Please do the '
+                    'needful before resuming with Y')
+                resume_work = ''
+                while resume_work != 'y':
+                    resume_work = input('Resume [y]? ').strip().lower()
+
+            # Stop old VM and rename.
+            if src_vm.type != 'qemu':
+                raise NotImplementedError('No LXC move support')
+            src_vm.ensure_stopped()
+            src_vm.rename(src_vm.basename + SUFFIX_CLONING)
+        else:
+            # Okay. When name!=basename we've already started.
+            dst_vm = self.dst_pve.get_vm(
+                src_vm.basename, suffix=SUFFIX_CREATING)
+            dst_vm.set_translator(translator)
+            assert src_vm.poolid == dst_vm.poolid, (
+                src_vm.poolid, dst_vm.poolid)
+
+        assert src_vm.name == src_vm.basename + SUFFIX_CLONING, src_vm
+        assert dst_vm.name == dst_vm.basename + SUFFIX_CREATING, dst_vm
+        return dst_vm
+
+    def _move_vm_volumes(self, src_vm, dst_vm, move_mode):
+        # LXC(FIXME): Here we should migrate/copy the ROOTFS data
+        # for LXC too. Example old config: {
+        #  'rootfs': 'pool0-pve2-ssd:subvol-105-disk-1,size=20G',
+        #  'searchdomain': '91.xxx.xxx.xx', 'cpuunits': 1024,
+        #  'cpulimit': '2', 'swap': 0, 'hostname': 'osso-xxxxxxxxxxxxxx',
+        #  'net1': 'bridge=vmbr535,hwaddr=32:xx:xx:xx:xx:xx,'
+        #      'ip=10.xx.xx.xx/24,name=eth1,type=veth',
+        #  'memory': 2048, 'net0': 'bridge=vmbr0,gw=10.xxx.x.x,'
+        #      'hwaddr=66:xx:xx:xx:xx:xx,ip=10.xxx.x.xx/24,'
+        #      'name=eth0,type=veth',
+        #  'ostype': 'ubuntu', 'nameserver': '91.xxx.xxx.xx 8.8.8.8',
+        #  'arch': 'amd64'}
+        # Example new config: {
+        #  'rootfs': 'mc11-6-local-ssd:subvol-160-disk-1,size=20G',
+        #  'searchdomain': '91.xxx.xxx.xx', 'cpuunits': 1024,
+        #  'ostemplate':
+        #      # Note that 'vztmpl' is hardcoded in PVE/Storage/Plugin.pm
+        #      'san06:vztmpl/ubuntu-14.04-standard_14.04-1_amd64.tar.gz',
+        #  'arch': 'amd64', 'cpulimit': '2',
+        #  'hostname': 'osso-swift-mgmt-tcn--CREATING',
+        #  'nameserver': '91.xxx.xxx.xx 8.8.8.8', 'memory': 2048,
+        #  'net0': 'bridge=vmbr0,gw=10.xxx.x.x,hwaddr=66:xx:xx:xx:xx:xx,'
+        #      'ip=10.xxx.x.xx/24,name=eth0,type=veth', 'ostype': 'ubuntu',
+        #  'net1': 'bridge=vmbr535,hwaddr=32:xx:xx:xx:xx:xx,'
+        #      'ip=10.xx.xx.xx/24,name=eth1,type=veth', 'swap': 0}
+        for volume_key, volume in src_vm.get_volumes().items():
+            self._move_vm_volume(src_vm, dst_vm, volume_key, volume, move_mode)
+
+    def _move_vm_volume(self, src_vm, dst_vm, volume_key, volume, move_mode):
+        if volume.is_removable():
+            dst_storage = None  # eject
+        elif self.opt_skip_disks:
+            log.debug('Not copying volume {} as requested'.format(
+                volume_key))
+            dst_storage = None
+        else:
+            dst_storage = self.dst_storage
+
+        if dst_vm:
+            # Do it.
+            dst_vm.create_volume(
+                volume_key, volume, storage=dst_storage,
+                requires_snapshot_support=(move_mode == self.MOVE_INITIAL))
+        elif dst_storage:
+            # Test only.
+            assert move_mode is None, move_mode
+            volume.test_clone(dst_storage)
+
+    def _finish_moving_vm(self, src_vm, dst_vm):
+        # Done? Rename both.
+        dst_vm.rename(dst_vm.basename)
+        src_vm.rename(src_vm.basename + SUFFIX_MIGRATED)
+        src_vm.configure_autoboot(False)
+        src_vm.add_comment('{} UTC: Migrated to {}'.format(
+            datetime.utcnow(), dst_vm))
+
+        # Start VM.
+        if self.opt_skip_start:
+            log.debug('Not starting VM as requested')
+        else:
+            dst_vm.ensure_started()
+
+        log.info('Completed moving {} => {} (node {!r}): {}'.format(
+            self.src_pve, self.dst_pve, self.dst_node, dst_vm.name))
+
+
+class CommandLoader(object):
+    def __init__(self):
+        self.argparse()
+        self.load_config()
+        self.process()
+
+    def argparse(self):
+        self.argparse_create()
+        self.argparse_add_optional()
+        self.argparse_add_debug()
+        self.argparse_add_other()
+        self.argparse_add_arguments()
+        self.argparse_run()
+
+    def argparse_create(self):
+        # CURRENT:
+        # - move SRCCLUSTER DSTCLUSTER DSTNODE DSTSTORAGE VM..
+        # FUTURE:
+        # - ssh CLUSTER:STORAGE
+        # - nodes CLUSTER (show nodes (and storage?))
+        # - storages CLUSTER:NODE (show nodes)
+        # - move SRC DST DSTNODE VM..
+        # - dumpconfig (based with the storage devices..)
+        self.parser = ArgumentParser14191(
+            add_help=False,  # we'll be adding it to a separate group
+            description=(
+                'Migrate VMs from one Proxmox cluster to another.'),
+            epilog=(
+                'Cluster aliases and storage locations should be defined '
+                'in ~/.proxmoverc (or see -c option). See the example '
+                'proxmoverc.sample. It requires [pve:CLUSTER_ALIAS] sections '
+                'for the proxmox "api" URL and '
+                '[storage:CLUSTER_ALIAS:STORAGE_NAME] sections with "ssh", '
+                '"path" and "temp" settings.'))
+
+    def argparse_add_optional(self):
+        grp = self.parser.add_argument_group('optional arguments')
+        grp.add_argument(
+            '-c', '--config', action='store', metavar='FILENAME',
+            default='~/.proxmoverc', help=(
+                'use alternate configuration inifile'))
+        grp.add_argument(
+            '-n', '--dry-run', action='store_true', help=(
+                'stop before doing any writes'))
+        grp.add_argument(
+            '--bwlimit', action='store', metavar='MBPS', type=int, help=(
+                'limit bandwidth in Mbit/s'))
+        grp.add_argument(
+            '--no-verify-ssl', action='store_true', help=(
+                'skip ssl verification on the api hosts'))
+        grp.add_argument(
+            '--skip-disks', action='store_true', help=(
+                'do the move, but skip copying of the disks; '
+                'implies --skip-start'))
+        grp.add_argument(
+            '--skip-start', action='store_true', help=(
+                'do the move, but do not start the new instance'))
+        grp.add_argument(
+            '--wait-before-stop', action='store_true', help=(
+                'prepare the move, but ask for user confirmation before '
+                'shutting down the old instance (useful if you have to move '
+                'networks/IPs)'))
+        grp.add_argument(
+            '--ssh-ciphers', action='store', metavar='CIPHERS',
+            default='aes128-gcm@openssh.com,aes128-cbc', help=(
+                'comma separated list of ssh -c ciphers to prefer, '
+                '(aes128-gcm@openssh.com is supposed to be fast if you have '
+                'aes on your cpu); set to "-" to use ssh defaults'))
+
+    def argparse_add_debug(self):
+        grp = self.parser.add_argument_group('debug arguments')
+        grp.add_argument(
+            '--debug', action='store_true', help=(
+                'enables extra debug logging'))
+        grp.add_argument(
+            # Ignores the fact that a VM exists already. Can be used to
+            # test/do moves between the same cluster
+            '--ignore-exists', action='store_true', help=(
+                'continue when target VM already exists; allows moving to '
+                'same cluster'))
+
+    def argparse_add_other(self):
+        grp = self.parser.add_argument_group('other actions')
+        grp.add_argument(
+            '-h', '--help', action='help', help=(
+                'show this help message and exit'))
+        grp.add_argument(
+            '--version', action='version', version=(
+                'proxmove {}'.format(__version__)))
+
+    def argparse_add_arguments(self):
+        self.parser.add_argument(
+            'source', action='store', help=(
+                'alias of source cluster'))
+        self.parser.add_argument(
+            'destination', action='store', help=(
+                'alias of destination cluster'))
+        self.parser.add_argument(
+            'nodeid', action='store', help=(
+                'node on destination cluster'))
+        self.parser.add_argument(
+            'storage', action='store', help=(
+                'storage on destination node'))
+        self.parser.add_argument(
+            'vm', action='store', nargs='+', help=(
+                'one or more VMs (guests) to move'))
+
+    def argparse_run(self):
+        self.args = self.parser.parse_args()
+
+        # Set debug mode as soon as possible.
+        if self.args.debug:
+            log.setLevel('DEBUG')
+
+    def load_config(self):
+        log.debug('Parsing config file: {}'.format(self.args.config))
+        try:
+            self.clusters = ProxmoxClusters.from_filename(
+                os.path.expanduser(self.args.config))
+        except ValueError as e:
+            self.parser.error(e.args[0])
+
+        for cluster in self.clusters.values():
+            if self.args.no_verify_ssl:
+                cluster.no_verify_ssl()
+            if self.args.bwlimit:
+                cluster.set_bandwidth_limit(self.args.bwlimit)
+            if self.args.ssh_ciphers:
+                cluster.set_ssh_ciphers(self.args.ssh_ciphers)
+
+    def process(self):
+        self.process_clusters()
+        self.process_nodes()
+
+    def process_clusters(self):
+        if (not self.args.ignore_exists and
+                self.args.source == self.args.destination):
+            self.parser.error(
+                'source and destination arguments are the same '
+                '(see --ignore-exists if you want to migrate to the '
+                'same cluster)')
+
+        self.args.source = self.process_cluster(self.args.source)
+        self.args.destination = self.process_cluster(self.args.destination)
+
+    def process_cluster(self, cluster_name):
+        try:
+            cluster = self.clusters[cluster_name]
+        except KeyError:
+            found_clusters = ', '.join(sorted(self.clusters.keys()))
+            self.parser.error(
+                'cluster {!r} is not configured in config '
+                '(expected one of: {})'.format(cluster_name, found_clusters))
+
+        try:
+            cluster.ping()
+        except Exception as e:
+            self.parser.error(
+                'cluster {!r} is unavailable: {}: {}'.format(
+                    cluster.name, type(e).__name__, e.args[0]))
+
+        return cluster
+
+    def process_nodes(self):
+        if self.args.nodeid not in self.args.destination.get_nodes():
+            self.parser.error(
+                'destination node {!r} not online (got: {})'.format(
+                    self.args.nodeid,
+                    repr(self.args.destination.get_nodes())[1:-1]))
+
+        try:
+            self.args.storage = self.args.destination.get_storage(
+                self.args.nodeid, self.args.storage)
+        except ValueError:
+            self.parser.error(
+                'destination storage {!r} not found in node {!r}'.format(
+                    self.args.storage, self.args.nodeid))
+
+    def get_options(self):
+        return self.args
+
+
+def main():
+    # Set logging mode.
+    logconfig = {
+        'version': 1,
+        'formatters': {
+            'full': {
+                'format': '%(asctime)-15s: %(levelname)s: %(message)s'}},
+        'handlers': {
+            'console': {
+                'class': 'logging.StreamHandler', 'formatter': 'full'}},
+        'loggers': {
+            '': {'handlers': ['console'], 'level': 'WARNING'},
+            'proxmove': {'handlers': ['console'], 'level': 'INFO',
+                         'propagate': False}},
+    }
+    logging.config.dictConfig(logconfig)
+
+    # Load up config.
+    options = CommandLoader().get_options()
+
+    # Create mover and start the move.
+    vmmover = VmMover(options)
+    try:
+        vmmover.prepare()
+    except PrepareError as e:
+        log.error('%s', e)
+        print('aborting', file=sys.stderr)
+        sys.exit(1)
+    else:
+        vmmover.run(options.dry_run)
+
+
+if __name__ == '__main__':
+    main()
