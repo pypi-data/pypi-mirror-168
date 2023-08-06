@@ -1,0 +1,17 @@
+msdlib/__init__.py,sha256=4pwvixleFXkiHXY3d8UarcpcxG32TgCn7c7X2rVu0fY,152
+msdlib/dataset.py,sha256=642tbvA9D5OUQDQLkdsxy6Z5kzNYa1ObpyFNd57L0hw,1115
+msdlib/msdExceptions.py,sha256=Iyg9CxmGc8Nz18dBUV5D1lt2av2LQ24B74Zkt0HU5Dc,451
+msdlib/msdbacktest.py,sha256=pOHR--B3msevILlf4bA7gu22oUAN4gizb-Gk6ClhYSg,8404
+msdlib/scrap.py,sha256=kmUkds3pcS-b-gMBRZKy9xpnDs7bWCgNaiNFIpzKQ3g,5309
+msdlib/stats.py,sha256=Nd8NA-8nrm77H71bae2gOIk2lxVJWSQa2h1ZdG5nmXM,3317
+msdlib/mlutils/__init__.py,sha256=7vveRdngE96NUjvVirK1bltznK43d1GZCA2-zNYmdsI,627
+msdlib/mlutils/modeling.py,sha256=ciBTYIoii9XWhCadvjL51V3UWHHEA3OM7R_xynatCys,36047
+msdlib/mlutils/utils.py,sha256=VQBjcwj7sJU-7NIUp-B5lP2EhX-wnCXQc5iKoQDcyeo,16997
+msdlib/msd/__init__.py,sha256=iQ5fRStxvIEGQ5dN3JD6RPIKgFSV3wiGdrB8uvMxztk,1607
+msdlib/msd/processing.py,sha256=ABUpaRoQzQxHqE53MW3u_cyHtC4wXls2zmM0IKH1-j4,68694
+msdlib/msd/vis.py,sha256=hAtu8Ccw-ovgiLk0GlQJkmbnNUvIFErCuhJoReUgwHY,35321
+msdlib-1.1.6.dist-info/LICENSE,sha256=wz9wa09jWYwZAkyDNmrti1RB6-bPLS5qlaXLHhGQw8o,1095
+msdlib-1.1.6.dist-info/METADATA,sha256=55Re7lqwuMY_NxYaXdHfmmMFAEuwzsqw7ZIHfXf9yxo,8728
+msdlib-1.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+msdlib-1.1.6.dist-info/top_level.txt,sha256=LZkpRY-01AZU6MniuD6NAJ5G5NhUljmJVPRCnd6GNgQ,7
+msdlib-1.1.6.dist-info/RECORD,,
