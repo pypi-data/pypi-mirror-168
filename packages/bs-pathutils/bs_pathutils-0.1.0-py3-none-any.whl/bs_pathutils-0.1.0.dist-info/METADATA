@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bs-pathutils
+Version: 0.1.0
+Summary: Extracts Django's built-in templates and statics.
+Home-page: https://github.com/BillSchumacher/bs-pathutils
+Author: Bill Schumacher
+Author-email: 34168009+BillSchumacher@users.noreply.github.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+bs-pathutils
+============
+
+Utilities for working with paths...
