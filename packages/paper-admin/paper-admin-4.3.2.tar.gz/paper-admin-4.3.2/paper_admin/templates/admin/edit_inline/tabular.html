@@ -1,0 +1,69 @@
+{% load i18n admin_urls static %}
+
+
+<div class="paper-formset paper-formset--tabular {{ inline_admin_formset.classes }}{% if inline_admin_formset.opts.sortable %} paper-formset--sortable{% endif %}"
+     id="{{ inline_admin_formset.formset.prefix }}-formset"
+     data-formset-prefix="{{ inline_admin_formset.formset.prefix }}"
+     data-formset-form-container=".paper-formset__forms"
+     data-formset-form-selector=".paper-formset__form"
+     data-formset-form-template="{{ inline_admin_formset.formset.prefix }}-template">
+
+  <h3>{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}</h3>
+  {{ inline_admin_formset.formset.management_form }}
+
+  {% spaceless %}
+    <ul class="paper-messages messagelist mb-3">
+      {% for error in inline_admin_formset.formset.non_form_errors %}
+        <li class="paper-message paper-message--error">
+          {{ error }}
+        </li>
+      {% endfor %}
+
+      {% for error in inline_admin_formset.non_field_errors %}
+        <li class="paper-message paper-message--error">
+          {{ error }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endspaceless %}
+
+  <fieldset>
+    <table class="paper-table table table-hover table-responsive-md">
+      <thead>
+        <tr>
+          {% for field in inline_admin_formset.fields %}
+            {% if not field.widget.is_hidden %}
+              <th class="{% if field.required %}required{% endif %}">
+                <label class="{% if field.help_text %}dotted-underline{% endif %}"
+                        {% if field.help_text %}
+                       data-toggle="popover"
+                       data-placement="bottom"
+                       data-trigger="hover"
+                       data-html="true"
+                       data-content="{{ field.help_text }}"
+                        {% endif %}>{{ field.label|capfirst }}</label>
+              </th>
+            {% endif %}
+          {% endfor %}
+
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="paper-formset__forms">
+        {% for inline_admin_form in inline_admin_formset %}
+          {% include "admin/edit_inline/_tabular_form.html" with inline_form=inline_admin_form form_index=forloop.counter0 %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if inline_admin_formset.has_add_permission %}
+      <template id="{{ inline_admin_formset.formset.prefix }}-template">
+        {% include "admin/edit_inline/_tabular_form.html" with inline_form=inline_admin_formset.empty_form form_index='__prefix__' %}
+      </template>
+
+      <button type="button" class="paper-formset__add-form btn btn-info" data-formset-toggle="add">
+        {% blocktrans with verbose_name=inline_admin_formset.opts.verbose_name|capfirst %}Add another {{ verbose_name }}{% endblocktrans %}
+      </button>
+    {% endif %}
+  </fieldset>
+</div>

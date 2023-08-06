@@ -1,0 +1,2 @@
+(self.webpackChunkpaper_admin=self.webpackChunkpaper_admin||[]).push([[7042],{2284:function(){if(/(add|change)\/?$/.test(window.location.pathname)){const e=document.querySelector(".paper-form");if(e){const n=e.querySelector("input:not([type=hidden]), select, textarea");n&&n.focus()}}document.addEventListener("keydown",(e=>{"Escape"===e.code&&window.close()}))}}]);
+//# sourceMappingURL=popup.9d38713442b609ee91ba.js.map

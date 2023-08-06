@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpaper_admin=self.webpackChunkpaper_admin||[]).push([[9827],{2252:function(e){var t=TypeError;e.exports=function(e){if(!e||"function"!=typeof e.next)throw new t("iterator must be an object with a `next` method");if(arguments.length>1){var n=arguments[1];if("function"!=typeof n)throw new t("`callback`, if provided, must be a function")}for(var r,a=n||[];(r=e.next())&&!r.done;)n?n(r.value):a.push(r.value);if(!n)return a}}}]);
+//# sourceMappingURL=npm.iterate-iterator.575c2ad2abbf67749036.js.map

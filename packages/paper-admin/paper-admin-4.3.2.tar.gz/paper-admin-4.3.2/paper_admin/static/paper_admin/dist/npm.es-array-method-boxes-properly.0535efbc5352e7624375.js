@@ -1,0 +1,2 @@
+(self.webpackChunkpaper_admin=self.webpackChunkpaper_admin||[]).push([[5974],{2868:function(n){n.exports=function(n){var t=!0,e=!0,c=!1;if("function"==typeof n){try{n.call("f",(function(n,e,c){"object"!=typeof c&&(t=!1)})),n.call([null],(function(){"use strict";e="string"==typeof this}),"x")}catch(n){c=!0}return!c&&t&&e}return!1}}}]);
+//# sourceMappingURL=npm.es-array-method-boxes-properly.0535efbc5352e7624375.js.map
