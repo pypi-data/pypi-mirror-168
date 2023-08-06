@@ -1,0 +1,3 @@
+[console_scripts]
+mct=mycustomtest.main:app
+
