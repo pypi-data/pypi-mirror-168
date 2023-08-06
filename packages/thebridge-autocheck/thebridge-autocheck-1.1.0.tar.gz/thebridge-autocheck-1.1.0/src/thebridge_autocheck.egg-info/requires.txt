@@ -1,0 +1,3 @@
+pandas
+tomli
+ipywidgets==8.0.2
