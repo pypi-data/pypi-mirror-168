@@ -1,0 +1,12 @@
+six>=1.13
+
+[:python_version <= "2.7"]
+luigi<3,>=2.8.2
+
+[:python_version >= "3.0"]
+luigi>=2.8.2
+
+[docs]
+sphinx==2.*
+sphinx-rtd-theme
+autodocsumm
