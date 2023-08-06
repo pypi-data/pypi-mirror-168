@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: flit_pytest_circleci_template
+Version: 0.0
+Summary: flit_pytest_circleci_template is a sample project to show how to use flit, pytest, and circleci to automatically build, test and publish Python packages.
+Author-email: Doug Ransom <doug@ransom.vip>
+Requires-Python: >2.7,>=3.9
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pytest >=7.1.2 ; extra == "test"
+Project-URL: Home, https://github.com/dictation-toolbox/flit_pytest_circleci_template/
+Provides-Extra: test
