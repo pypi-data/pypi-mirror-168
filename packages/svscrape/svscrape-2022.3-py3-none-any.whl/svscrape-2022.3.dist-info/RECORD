@@ -1,0 +1,16 @@
+svwebscraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svwebscraper/cli.py,sha256=NHQoda6ziFX6_tsS3Ne3OZcAbCCddabQaC4ECy8a34s,940
+svwebscraper/exceptions.py,sha256=_9NMIjbTb9VGLtPeH6hA1QrujUBj-_5FQGPAVwaI2Aw,208
+svwebscraper/exporter.py,sha256=2uVOgJXqIFkS-Gsm3kPUpwGNZ9xcBt9XBqUew8sbn8A,1232
+svwebscraper/webscraper.py,sha256=iggXaAMRn9ezvopcv5rYc6CR5LbQxmtghKH5Jsub1aI,3680
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_exporter.py,sha256=orcgdv6CSvxrEpcoR7vY9Gmoj4HEin3rJzkosZ_lqrQ,3489
+tests/test_web_scraper.py,sha256=DOqHa6oNimyIOGjWI2dkwKV813UKFokBlROXlSjOCDQ,3179
+tests/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/util/testdata_loader.py,sha256=c8zBZtYOSeJuni7Vl9JzlIGvVgXjfifzACibGu8tLjU,100
+svscrape-2022.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+svscrape-2022.3.dist-info/METADATA,sha256=E8rTkhb_6ZIFjLSKIfoph_sGsXbWqonXZuQ1owK_z6g,2198
+svscrape-2022.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+svscrape-2022.3.dist-info/entry_points.txt,sha256=RpgGImH-4Gq00TwMLFZTreg16xPekHk1HtJXzDwk9vA,61
+svscrape-2022.3.dist-info/top_level.txt,sha256=8o2DXQJg34WLQWrtRwz_qozloeZnxFT2OycmS1J4F0g,19
+svscrape-2022.3.dist-info/RECORD,,
