@@ -1,0 +1,2 @@
+[nbdev]
+ood_detection = ood_detection._modidx:d
