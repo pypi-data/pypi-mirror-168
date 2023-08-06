@@ -1,0 +1,3 @@
+[console_scripts]
+dddg=dddg.__main__:main
+
