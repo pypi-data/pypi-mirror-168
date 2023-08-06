@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ethoscope-shaferlab
+Version: 1.0.999
+Summary: The API of the Ethoscope device.
+Home-page: https://github.com/gilestrolab/ethoscope
+Author: ['Quentin Geissmann', 'Giorgio Gilestro', 'Luis Garcia']
+License: GPL3
+Keywords: behaviour,video tracking
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy (>=1.6.1)
+Requires-Dist: scipy (>=0.15.1)
+Provides-Extra: dev
+Requires-Dist: Sphinx (>=1.4.4) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.1.9) ; extra == 'dev'
+Requires-Dist: mock (>=2.0.0) ; extra == 'dev'
+Provides-Extra: device
+Requires-Dist: picamera (>=1.8) ; extra == 'device'
+Requires-Dist: GitPython (>=1.0.1) ; extra == 'device'
+Requires-Dist: mysql-connector-python (>=8.0.16) ; extra == 'device'
+Requires-Dist: cherrypy (>=3.6.0) ; extra == 'device'
+Requires-Dist: pyserial (>=2.7) ; extra == 'device'
+Requires-Dist: bottle (>=0.12.8) ; extra == 'device'
+
+TODO
