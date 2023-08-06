@@ -1,0 +1,20 @@
+# misc
+future
+
+# Scientific
+matplotlib
+seaborn
+sklearn
+pandas
+
+# Jupyter and co
+ipython
+jupyter
+jupyterlab
+jupyterlab-widgets
+ipywidgets
+
+# Deep learning libraries
+torch
+tensorboard >= 2.10
+tensorflow >= 2.10
