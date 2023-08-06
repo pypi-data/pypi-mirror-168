@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: madara
+Version: 0.1.0
+Summary: A web framework for building APIs.
+Home-page: https://github.com/Arvintian/madara
+Author: arvin
+Author-email: arvintian8@gamil.com
+License: MIT
+Description: Madara is a web framework for building APIs inspire by [flask](https://github.com/pallets/flask).
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
