@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cmeel-example
+Version: 0.4.2
+Summary: This is an example project, to show how to use cmeel
+License-Expression: BSD-2-Clause
+Requires-Python: >= 3.7
+Author-email: Guilhem Saurel <guilhem.saurel@laas.fr>
+Home-page: https://github.com/cmake-wheel/cmeel-example
+Project-URL: Repository, https://github.com/cmake-wheel/cmeel-example.git
+Project-URL: Changelog, https://github.com/cmake-wheel/cmeel-example/CHANGELOG.md
+Requires-Dist: cmeel
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: System :: Software Distribution
+Description-Content-Type: text/markdown
+
+# Example project C++for cmeel
+
+[![PyPI version](https://badge.fury.io/py/cmeel-example.svg)](https://pypi.org/project/cmeel-example)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/cmake-wheel/cmeel-example/main.svg)](https://results.pre-commit.ci/latest/github/cmake-wheel/cmeel-example/main)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+This is an example project, to show how to use [cmeel](https://github.com/cmake-wheel/cmeel), and to provide tests for it
