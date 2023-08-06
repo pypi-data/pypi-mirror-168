@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: conversation-qa
+Version: 0.0.13
+Summary: Conversational QA.
+Home-page: http://github.com/fractalego/conversation_qa
+Author: Alberto Cetoli
+Author-email: alberto@fractalego.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: transformers (>=4.17.0)
+Requires-Dist: sentence-transformers (>=2.0.0)
+Requires-Dist: torch (>=1.12.1)
+
+# Conversational QA
+This framework is trained on the [CoQA dataset](https://stanfordnlp.github.io/coqa/).
+
+
+# Install
+pip install conversation-qa
+
+
+# Example 
+```python
+
+from conversation_qa import QA, Dialogue
+
+qa = QA("fractalego/conversation-qa")
+
+dialogue = Dialogue()
+dialogue.add_dialogue_pair("Where was the cat?", "The fence.")
+
+text = "A white cat is on the fence."
+query = "What color is it?"
+qa.get_answer(text, dialogue.get_text(), query)
+```
+
+
