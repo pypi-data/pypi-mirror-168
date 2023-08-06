@@ -1,0 +1,4 @@
+html2text
+
+[sendgrid]
+sendgrid==5.6.0

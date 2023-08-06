@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+glibs/__init__.py
+glibs/mail/__init__.py
+glibs/mail/sendgrid_client.py
+glibs_mail.egg-info/PKG-INFO
+glibs_mail.egg-info/SOURCES.txt
+glibs_mail.egg-info/dependency_links.txt
+glibs_mail.egg-info/namespace_packages.txt
+glibs_mail.egg-info/requires.txt
+glibs_mail.egg-info/top_level.txt

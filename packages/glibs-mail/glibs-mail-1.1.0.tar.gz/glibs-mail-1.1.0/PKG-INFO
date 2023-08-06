@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: glibs-mail
+Version: 1.1.0
+Requires-Python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,!=3.7.*,>=2.7
+Provides-Extra: sendgrid
