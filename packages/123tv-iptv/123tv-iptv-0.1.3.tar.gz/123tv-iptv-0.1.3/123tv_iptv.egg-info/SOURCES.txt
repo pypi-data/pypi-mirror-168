@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+./123tv_iptv.py
+./__init__.py
+./channels.json
+123tv_iptv.egg-info/PKG-INFO
+123tv_iptv.egg-info/SOURCES.txt
+123tv_iptv.egg-info/dependency_links.txt
+123tv_iptv.egg-info/entry_points.txt
+123tv_iptv.egg-info/requires.txt
+123tv_iptv.egg-info/top_level.txt
