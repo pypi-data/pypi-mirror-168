@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: automerge
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Author: Julien Fraichard <julienfr112@gmail.com>
+Author-email: Julien Fraichard <julienfr112@gmail.com>
+License: MIT
+Requires-Python: >=3.7
