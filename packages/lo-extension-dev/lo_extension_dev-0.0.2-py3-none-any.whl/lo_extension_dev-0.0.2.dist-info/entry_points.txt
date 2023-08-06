@@ -1,0 +1,2 @@
+[console_scripts]
+manage_extension = lo_extension_dev.manage:main
