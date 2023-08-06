@@ -1,0 +1,4 @@
+sqlite-utils>=3.28
+psycopg>=3.1
+psycopg-binary>=3.1
+structlog>=22.1.0
