@@ -1,0 +1,14 @@
+inmanta_plugins/postgresql/__init__.py,sha256=YoYA_JM47oSvILkupBV5bTcabcPpPr-4T_Go2e_ohVI,623
+inmanta_plugins/postgresql/resources.py,sha256=CF1fcM4Sb3DdasZ7y1FWUHVmYjHqbHCoh-pLYQPDFqg,6554
+inmanta_plugins/postgresql/setup.cfg,sha256=ijvtRfdirHVOk3IcsiRMXRgGOjUO9JRf22L7Y-c7Tak,834
+inmanta_plugins/postgresql/model/_init.cf,sha256=VM4_k2HHRlFpOMXPqhWbbAKPnqX8QA1a2VzkWcrw9ik,5188
+inmanta_plugins/postgresql/model/ha.cf,sha256=foMpVxwY_uOwzO9TY1Ke9iJzCiKnMgNxlAuZkAqHouI,4126
+inmanta_plugins/postgresql/templates/pg_hba.conf.j2,sha256=Ln_eRTiO1MGBjyvp_XD6Ta2l5Jf_irVtsYjzirIUtmg,4712
+inmanta_plugins/postgresql/templates/pg_hba_master.conf.j2,sha256=uVesRjWzUYIV10k6TcraT9e6QYzQaXxlclRitLxNMe8,4870
+inmanta_plugins/postgresql/templates/postgresql.conf.j2,sha256=5EbUebOxp6KlXTeVxqxGV20WchDZ-G_OnkUtcqdtbsw,23038
+inmanta_plugins/postgresql/templates/postgresql_master.conf.j2,sha256=IUdY8a1F301_qRirE2LR0WjGQgosqLqbeDRYjDWy2Hs,22906
+inmanta_plugins/postgresql/templates/recovery.conf.j2,sha256=XsbCT7XkMyvs8Dq2o8jhIBmIfC4S816lITPydwzTi_E,340
+inmanta_module_postgresql-0.3.0.dist-info/METADATA,sha256=Ov7z5vvl__6yfaObo9JSnvxopP1CWl7g-9Xtu83ctVA,260
+inmanta_module_postgresql-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+inmanta_module_postgresql-0.3.0.dist-info/top_level.txt,sha256=rb9c6eWQS8KFuSa3ktEcXpk-oSsCL9ZCVAgv7S0Eg_w,16
+inmanta_module_postgresql-0.3.0.dist-info/RECORD,,
