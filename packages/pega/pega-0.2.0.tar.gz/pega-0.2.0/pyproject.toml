@@ -1,0 +1,77 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pega"
+description = 'A command line tool for pasting images on top of other images.'
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+authors = [
+  { name = "Ramiro Gómez", email = "code@ramiro.org" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "pillow",
+]
+dynamic = ["version"]
+keywords = [
+    "image-processing",
+]
+
+[project.scripts]
+pega = "pega.cli:main"
+
+[project.urls]
+Documentation = "https://github.com/yaph/pega#readme"
+Issues = "https://github.com/yaph/pega/issues"
+Source = "https://github.com/yaph/pega"
+
+[tool.hatch.version]
+path = "pega/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "ipdb",
+  "flake8",
+  "pytest",
+  "pytest-cov",
+]
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=pega --cov=tests"
+no-cov = "cov --no-cov"
+svg2png = "mogrify -format png -path tests/images images/*.svg"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "pega/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+]
