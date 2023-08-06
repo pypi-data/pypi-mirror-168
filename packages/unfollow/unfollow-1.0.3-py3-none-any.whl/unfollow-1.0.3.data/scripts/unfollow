@@ -1,0 +1,5 @@
+#!python
+
+from unfollow.cli import main
+
+main()
