@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+pkg/apie/__init__.py
+pkg/apie/__main__.py
+pkg/apie/apie.py
+pkg/apie.egg-info/PKG-INFO
+pkg/apie.egg-info/SOURCES.txt
+pkg/apie.egg-info/dependency_links.txt
+pkg/apie.egg-info/entry_points.txt
+pkg/apie.egg-info/requires.txt
+pkg/apie.egg-info/top_level.txt
+pkg/apie/api/__init__.py
+pkg/apie/api/api_test.py
+pkg/apie/auth/__init__.py
+pkg/apie/auth/auth_none.py
