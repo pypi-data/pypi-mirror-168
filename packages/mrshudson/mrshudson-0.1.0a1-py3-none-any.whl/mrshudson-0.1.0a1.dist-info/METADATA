@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mrshudson
+Version: 0.1.0a1
+Summary: A Python scientific project assistant.
+Home-page: https://github.com/AP6YC/mrshudson
+Author: Sasha Petrenko
+Author-email: sap@mst.com
+Project-URL: Bug Tracker, https://github.com/AP6YC/mrshudson/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+# mrshudson
+
+A Python scientific project assistant package in the spirit of DrWatson.jl
