@@ -1,0 +1,3 @@
+[console_scripts]
+wgit = fairscale.experimental.wgit.__main__:main
+
