@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+flatten_nosql.egg-info/PKG-INFO
+flatten_nosql.egg-info/SOURCES.txt
+flatten_nosql.egg-info/dependency_links.txt
+flatten_nosql.egg-info/requires.txt
+flatten_nosql.egg-info/top_level.txt
+flattener/__init__.py
+flattener/flatten.py
