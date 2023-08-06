@@ -1,0 +1,2 @@
+[console_scripts]
+zpretty = zpretty.cli:run

@@ -1,0 +1,13 @@
+setuptools
+beautifulsoup4
+lxml
+
+[development]
+zest.releaser
+check-manifest
+pyroma
+
+[test]
+pre-commit
+pytest-cov
+pytest
