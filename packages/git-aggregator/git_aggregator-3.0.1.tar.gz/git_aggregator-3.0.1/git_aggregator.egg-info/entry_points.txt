@@ -1,0 +1,2 @@
+[console_scripts]
+gitaggregate = git_aggregator.main:main
