@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+    "fastapi-camelcase==1.0.5",
+]
+build-backend = "setuptools.build_meta"
+[project]
+name = "telus_bulk"
+version = "1.0.1"
+authors = [
+  { name="Jose Olmedo", email="jose.olmedo@telusinternational.com" },
+]
+description = "A package to be used to store classes used among Telus Bulk repositories of TMF-645, TMF-620 and AMS models"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/telus/telus-bulk-types-pypi"
+"Bug Tracker" = "https://github.com/telus/telus-bulk-types-pypi/issues"
