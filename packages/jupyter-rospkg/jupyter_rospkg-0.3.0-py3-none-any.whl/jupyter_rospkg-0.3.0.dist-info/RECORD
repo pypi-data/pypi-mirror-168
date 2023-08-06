@@ -1,0 +1,14 @@
+jupyter_rospkg/__init__.py,sha256=SdQJavvmUkrl37U3XRl4US45KtcUaUep-9L3B5IuUjQ,803
+jupyter_rospkg/_version.py,sha256=9IFfTvFMTu1mt_TdJvM_vZAmNF_poHZSvDz-APZippc,49
+jupyter_rospkg/handlers.py,sha256=lbKB1Mu5iv88rzXYB6fzZe5vnO5_GBO2aCBwyL3Y_no,915
+jupyter_rospkg/pkgs.py,sha256=dDRnxILnL6Dm8DYqV12cY8XoDlNxGsjN23SEysPWQQI,996
+jupyter_rospkg/config/jpserver-jupyter-rospkg.json,sha256=crFj9I-E9Kdry-aF8rnhpsJipLjFAnmXJ2Cor9swNCQ,89
+jupyter_rospkg/config/nbserver-jupyter-rospkg.json,sha256=hsF5rccmJvnOe6WZkkYdQ9F7zr5oP89-8Q0LVzeDYC0,91
+jupyter_rospkg/tests/__init__.py,sha256=7IzqFFYpNulnEb6z-c9C7-C7jbn7Fbbz0nPJ76e4f1g,44
+jupyter_rospkg/tests/test_handlers.py,sha256=ts5nlDh35V-g2x3ECVBckI7w_2p_tU6NNxc4qL-8ug4,303
+jupyter_rospkg-0.3.0.data/data/etc/jupyter/jupyter_notebook_config.d/nbserver-jupyter-rospkg.json,sha256=hsF5rccmJvnOe6WZkkYdQ9F7zr5oP89-8Q0LVzeDYC0,91
+jupyter_rospkg-0.3.0.data/data/etc/jupyter/jupyter_server_config.d/jpserver-jupyter-rospkg.json,sha256=crFj9I-E9Kdry-aF8rnhpsJipLjFAnmXJ2Cor9swNCQ,89
+jupyter_rospkg-0.3.0.dist-info/METADATA,sha256=e-JLfQ6rUO644pndFLifg6uKXT3Q4UrSlPu0hKIeG8g,6006
+jupyter_rospkg-0.3.0.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+jupyter_rospkg-0.3.0.dist-info/licenses/LICENSE,sha256=8zMsEUut3nHFEwqqRc8uplWQQVoBXRkLqzT9pjNFYNY,1522
+jupyter_rospkg-0.3.0.dist-info/RECORD,,
