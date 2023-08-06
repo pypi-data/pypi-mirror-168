@@ -1,0 +1,6 @@
+pymysql
+psycopg2
+sqlite3
+datetime
+socket
+configparser
