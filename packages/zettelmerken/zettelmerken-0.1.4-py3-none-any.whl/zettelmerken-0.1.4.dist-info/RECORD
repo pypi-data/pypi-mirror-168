@@ -1,0 +1,12 @@
+zettelmerken/__about__.py,sha256=EFLg89i8pA1RxGOZ6lFHQb0a1TPQC-FyYX_xm439Te4,130
+zettelmerken/__init__.py,sha256=BllFu-nFDMh_Cxvhp1e7WCuJ6OvRhPYT0cPS5r4k_hA,108
+zettelmerken/__main__.py,sha256=Savs-RDqn50cxN1s6pdiDOtwpQ0f-66dMxpa4H8K3kM,650
+zettelmerken/config.py,sha256=y8F_r0nkBP_vznv5zsVUNsrgDq-qoxKIeFJVAmDE6Tc,859
+zettelmerken/core.py,sha256=9lhWO9iIy8l4QjdQhos1-DDLx98B2Gful2Lzl2KeXpE,1122
+zettelmerken/db.py,sha256=BL52HpwwYdTKX6P-8KJbV_0MQM3o6vI3N2oYCNRWHmM,3467
+zettelmerken/helpers.py,sha256=98wT7dGhNdlWnH61koUw8QZbrDi5ZKAVmWfRKu12oco,7520
+zettelmerken/mail.py,sha256=45wAZBwrM1cTEyw2M85eRYPY-nubn9BotI9-3EWvSTc,655
+zettelmerken-0.1.4.dist-info/METADATA,sha256=ozvWluycRdke1j4jXdY11EsDDYeuDbGObSMQer4tdfU,8926
+zettelmerken-0.1.4.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+zettelmerken-0.1.4.dist-info/licenses/LICENSE.txt,sha256=-t_G7jGDwhq-HC6_pDbp8ucXtYHLp4-_LSEQsHYqQ8Q,1069
+zettelmerken-0.1.4.dist-info/RECORD,,
