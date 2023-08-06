@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_chartjs/ChartJs.py
+dash_chartjs/__init__.py
+dash_chartjs/_imports_.py
+dash_chartjs/dash_chartjs.min.js
+dash_chartjs/dash_chartjs.min.js.map
+dash_chartjs/metadata.json
+dash_chartjs/package-info.json
+dash_chartjs.egg-info/PKG-INFO
+dash_chartjs.egg-info/SOURCES.txt
+dash_chartjs.egg-info/dependency_links.txt
+dash_chartjs.egg-info/top_level.txt
