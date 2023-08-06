@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Mega_pytorch.egg-info/PKG-INFO
+Mega_pytorch.egg-info/SOURCES.txt
+Mega_pytorch.egg-info/dependency_links.txt
+Mega_pytorch.egg-info/requires.txt
+Mega_pytorch.egg-info/top_level.txt
+mega_pytorch/__init__.py
+mega_pytorch/autoregressive_wrapper.py
+mega_pytorch/mega_pytorch.py
