@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: shaadminui
+Version: 0.0.0
+Summary: 这是一个django 后端主题，基于adminlte修改的。
+Home-page: https://github.com/llango/shaadminui
+License: MIT
+Author: Rontomai
+Author-email: rontomai@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib_metadata (>=3.4.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# shaAdminUI
+
+
+[![PyPI version](https://badge.fury.io/py/shaadminui.svg)](https://badge.fury.io/py/shaadminui)
+![versions](https://img.shields.io/pypi/pyversions/shaadminui.svg)
+[![GitHub license](https://img.shields.io/github/license/mgancita/shaadminui.svg)](https://github.com/mgancita/shaadminui/blob/main/LICENSE)
+
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+
+这是一个django 后端主题，基于adminlte修改的。
+
+
+- 开源许可: MIT
+- 文档: https://llango.github.io/shaadminui.
+
+
+## 特征
+
+* TODO
+
+## 制作
+
+
+该包使用 [Cookiecutter](https://github.com/audreyr/cookiecutter) 和 [`llango/cookiecutter-mkdoc-shapackage`](https://github.com/llango/cookiecutter-mkdoc-shapackage/) 项目模版创建。
+
