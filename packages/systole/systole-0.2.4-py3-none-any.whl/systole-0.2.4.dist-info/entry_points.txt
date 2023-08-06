@@ -1,0 +1,2 @@
+[console_scripts]
+systole = systole.reports.command_line:main
