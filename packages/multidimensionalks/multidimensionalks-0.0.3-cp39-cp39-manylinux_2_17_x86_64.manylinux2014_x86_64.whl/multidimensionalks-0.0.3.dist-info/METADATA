@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: multidimensionalks
+Version: 0.0.3
+Summary: Multidimensional KS test module in python
+Author: Tomasz Pawlowski
+Author-email: t.pawlowski@mimuw.edu.pl
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.19)
+
+Multidimensional KS test module in python
