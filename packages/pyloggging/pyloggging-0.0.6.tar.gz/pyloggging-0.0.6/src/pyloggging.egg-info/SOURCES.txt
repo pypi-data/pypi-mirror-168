@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyloggging.egg-info/PKG-INFO
+src/pyloggging.egg-info/SOURCES.txt
+src/pyloggging.egg-info/dependency_links.txt
+src/pyloggging.egg-info/top_level.txt
+src/pylogging/__init__.py
+src/pylogging/main.py

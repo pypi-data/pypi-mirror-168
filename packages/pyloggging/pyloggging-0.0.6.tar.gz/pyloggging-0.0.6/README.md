@@ -1,0 +1,1 @@
+Simple text logging package
