@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: tool-aws
+Version: 0.2.4
+Summary: AWS scripts for geoadmin
+Home-page: https://github.com/geoadmin/tool-aws.git
+Author: Andrea Borghi, Loic Gasser
+Author-email: andrea.borghi@swisstopo.ch, loicgasser4@gmail.com
+License: BSD-2
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (==1.24.73)
+Requires-Dist: botocore (==1.27.73)
+Requires-Dist: certifi (==2022.9.14)
+Requires-Dist: configparser (==5.3.0)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: gatilegrid (==0.2.0)
+Requires-Dist: jmespath (==1.0.1)
+Requires-Dist: pyproj (==3.4.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: s3transfer (==0.6.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.12)
+
+tool-aws
+========
+
+![Build Status](https://codebuild.eu-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiMkdMVnVoVDVnUW1WWTZLYjNUOGdVV2FSZ1g0VHNPdEtnRk9YcWpuQWE0L29XRlEyQlVhUmlqUVBncmVST0NyTHhwZDVRdzNQVnFmTHNtTC81dmJBOG4wPSIsIml2UGFyYW1ldGVyU3BlYyI6InAxWTJCN2lzUzFUcjVyRFQiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+
+### Macro CMDs for managing AWS resources
+
+## Installation
+
+`$ pip install tool_aws`
+
+## Usage
+
+Batch delete files in S3 by listing content iteratively with a prefix.
+
+`$ s3rm --bucket-name ${BUCKET_NAME} --prefix ${PATH}`
+
+Batch delete tiles in S3 using a bbox in LV95:
+
+`$ s3rm --bucket-name ${BUCKET_NAME} --prefix /1.0.0/ch.swisstopo.fixpunkte-agnes/default/current/2056/* --bbox 2671000,1139000,2712250,1158500 --image-format png`
+
+
+You can always use the help function:
+
+```
+$ s3rm --help
+usage: s3rm [-h] -b BUCKETNAME -p PREFIX [--profile PROFILENAME] [--bbox BBOX]
+            [-n NBTHREADS] [-s CHUNKSIZE] [-i IMAGEFORMAT] [-lr LOWRES]
+            [-hr HIGHRES] [-f]
+
+Purpose:
+    This script is intended for efficient and MASSIVE RECURSIVE
+    DELETION of S3 'folders'. This mean that any resource matching with
+    the PREFIX variable, will be DELETED IRREVERSIVELY.
+
+    Use this script CAREFULLY.
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+Mandatory arguments:
+  -b BUCKETNAME, --bucket-name BUCKETNAME
+                        bucket name
+  -p PREFIX, --prefix PREFIX
+                        Prefix (string) relative to the bucket base path.
+
+Program options:
+  --profile PROFILENAME
+                        AWS profile
+  --bbox BBOX           a bounding box in lv95
+  -n NBTHREADS, --threads-number NBTHREADS
+                        Number of threads (subprocess), default: machine
+                        number of CPUs
+  -s CHUNKSIZE, --chunk-size CHUNKSIZE
+                        Chunk size for S3 batch deletion, default is set to
+                        1000 (maximal value for S3)
+  -i IMAGEFORMAT, --image-format IMAGEFORMAT
+                        The image format
+  -lr LOWRES, --lowest-resolution LOWRES
+                        The lowest resolution in meters
+  -hr HIGHRES, --highest-resolution HIGHRES
+                        The highest resolution in meters
+  -f, --force           force the removal, i.e. no prompt for confirmation.
+
+Disclaimer:
+    This software is provided "as is" and
+    is not granted to work in particular cases or without bugs.
+    The author disclaims any responsability in case of data loss,
+    computer damage or any other bad issue that could arise
+    using this software.
+```
+
+## Setup in dev mode
+
+`$ python3 -m env .venv`
+`$ source .venv/bin/activate`
+`$ pip install -e .`
+`$ pip install -r dev-requirements.txt`
+
+
+To launch the tests:
+
+`$ nosetests tests/`
+
+### Style
+
+Control styling:
+
+`$ flake8 tool_aws/ tests/`
+
+Autofix mistakes:
+
+`$ find tool_aws/* tests/* -type f -name '*.py' -print | xargs autopep8 --in-place --aggressive --aggressive --verbose`
+
+
+
