@@ -1,0 +1,10 @@
+evola/epso/__init__.py,sha256=L7MSHlaEuOjwrDTpCijyGv1OYc1MWIkAQJlzTph83Ew,100
+evola/epso/particle.py,sha256=Ntfjui5bqmAd2c0LBHaPqE1UHEZ9TRS7ilmMWvUai4Q,630
+evola/epso/simulation.py,sha256=2tQM14TLcDyItStSN7SWuafoGaynlfKu8CSB9BHMS0w,3962
+evola/epso/swarm.py,sha256=dMFD5atpSRzTQqQp7Sp29XKDpfH1_S3BHZnUYuSvz-M,7820
+evola/scene.py,sha256=9upn_OPOF9fL4D7I0EGTQKUu0H3_W2LJ9Fy2N8XEoDo,553
+evola/simulation.py,sha256=0Cm-7pGB6qLmXXU2l87EVME2WNThfE1rzKo6lXRj6Go,2825
+evola/solution.py,sha256=23ozQScTeV2GSihbe0oSQ1Q8WRZT3dKL-Z2HS2asP4I,429
+evola-0.0.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+evola-0.0.2.dist-info/METADATA,sha256=NiSIiQuJ3Yu23wr7utBI-ht_CWRawe3Od03_gOnZ1I0,851
+evola-0.0.2.dist-info/RECORD,,
