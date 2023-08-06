@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: warp-dggs
+Version: 0.2.0
+Summary: WARP Discrete Global Grids Package
+Home-page: https://www.geo.tuwien.ac.at/
+Author: TU Wien
+Author-email: remote.sensing@geo.tuwien.ac.at
+License: mit
+Project-URL: Documentation, https://pyscaffold.org/
+Description: =========
+        warp_dggs
+        =========
+        
+        Grid definition of the Discrete global grids used in WARP for the ASCAT processing.
+        
+        Usage
+        =====
+        
+        Take a look at the tests for information on how to instantiate the grid class.
+        
+        For general information on how to use the grid objects look at the `pygeogrids
+        package <https://github.com/TUW-GEO/pygeogrids>`_
+        
+        Note
+        ====
+        
+        This project has been set up using PyScaffold 3.2.3. For details and usage
+        information on PyScaffold see https://pyscaffold.org/.
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing

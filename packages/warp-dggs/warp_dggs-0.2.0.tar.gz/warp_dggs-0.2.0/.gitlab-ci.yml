@@ -1,0 +1,48 @@
+image: cpaulik/gitlab-ci-image:v1
+before_script:
+  - apt-get -y update
+  - apt-get -y install gcc
+  - apt-get -y install git
+  - apt-get -y install libgl1-mesa-glx
+  
+variables:
+    GIT_SSL_NO_VERIFY: "true"
+    PIP_EXTRA_INDEX_URL: "http://dvlp1.geo.tuwien.ac.at:8080/simple"
+    PIP_TRUSTED_HOST: "dvlp1.geo.tuwien.ac.at"
+    NO_PROXY: "dvlp1.geo.tuwien.ac.at,$NO_PROXY"
+    no_proxy: "dvlp1.geo.tuwien.ac.at,$no_proxy"
+
+stages:
+  - test
+  - release
+  
+test_py36:
+  stage: test
+  script:
+    - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+    - bash miniconda.sh -b -p $HOME/miniconda
+    - export PATH="$HOME/miniconda/bin:$PATH"
+    - conda config --set always_yes yes --set changeps1 no
+    - conda create -q -n test_env python=3.6 numpy
+    - source activate test_env
+    - pip install pygeogrids
+    - python setup.py test
+  except:
+    - tags
+
+release_job:
+  stage: release
+  script:
+    - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+    - bash miniconda.sh -b -p $HOME/miniconda
+    - export PATH="$HOME/miniconda/bin:$PATH"
+    - conda config --set always_yes yes --set changeps1 no
+    - conda create -q -n test_env python=3.6 numpy
+    - source activate test_env
+    - pip install pygeogrids
+    - python setup.py test
+  artifacts:
+    paths:
+      - dist/*.tar.gz
+  only:
+    - tags
