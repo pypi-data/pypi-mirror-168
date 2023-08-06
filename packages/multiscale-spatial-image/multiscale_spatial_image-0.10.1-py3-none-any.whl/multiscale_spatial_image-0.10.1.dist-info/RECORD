@@ -1,0 +1,8 @@
+multiscale_spatial_image/__about__.py,sha256=Tmvrj6yW9P46TAdL71cKi0TvRL5ERswI_ITBbVs8SLs,124
+multiscale_spatial_image/__init__.py,sha256=ts5nv9NVGVxK8tO7dBzOBkXy-9QyshseEzF9vVwvKSg,362
+multiscale_spatial_image/multiscale_spatial_image.py,sha256=cKbGv6Oy3iYb4LjtlFNjcMQfSCeKa0tDOv-cOKC8Hf4,4852
+multiscale_spatial_image/to_multiscale.py,sha256=1xB9VYlkIjQskWbJUFwkqfXp_06Jj-e16fyAgJynklc,32171
+multiscale_spatial_image-0.10.1.dist-info/METADATA,sha256=32z1lV2MzQrknOKej3stH317shCq7-DgM7JDSTnMfCc,21684
+multiscale_spatial_image-0.10.1.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+multiscale_spatial_image-0.10.1.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+multiscale_spatial_image-0.10.1.dist-info/RECORD,,
