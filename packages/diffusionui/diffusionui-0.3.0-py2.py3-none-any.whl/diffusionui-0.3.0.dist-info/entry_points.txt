@@ -1,0 +1,3 @@
+[console_scripts]
+diffusionui = diffusionui.cli:diffusionui_cli
+
