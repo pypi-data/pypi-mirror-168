@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: xradar
+Version: 0.0.6
+Summary: Xradar includes all the tools to get your weather radar into the xarray data model.
+Home-page: https://github.com/openradar/xradar
+Author: ['Maxwell Grover, Kai Muehlbauer, Zachary Sherman']
+Author-email: mgrover@anl.gov
+License: MIT license
+Keywords: xradar
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+License-File: AUTHORS.md
+
+# xradar
+
+[![PyPI Version](https://img.shields.io/pypi/v/xradar.svg)](https://pypi.python.org/pypi/xradar)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/xradar.svg)](https://anaconda.org/conda-forge/xradar)
+
+[![CI](https://github.com/openradar/xradar/actions/workflows/ci.yml/badge.svg)](https://github.com/openradar/xradar/actions/workflows/ci.yml)
+[![Build distribution](https://github.com/openradar/xradar/actions/workflows/upload_pypi.yml/badge.svg)](https://github.com/openradar/xradar/actions/workflows/upload_pypi.yml)
+[![RTD Version](https://readthedocs.org/projects/xradar/badge/?version=latest)](https://xradar.readthedocs.io/en/latest/?version=latest)
+
+Xradar includes all the tools to get your weather radar into the xarray data model.
+
+* Free software: MIT license
+* Documentation: [https://docs.openradarscience.org/projects/xradar](https://xradar.readthedocs.io)
+
+## About
+
+At a developer meeting held in the course of the ERAD2022 conference in Locarno, Switzerland, future plans and cross-package collaboration of the openradarscience community were intensively discussed.
+
+The consensus was that a close collaboration that benefits the entire community can only be maximized through joint projects. So the idea of a common software project whose only task is to read and write radar data was born. The data import should include as many available data formats as possible, but the data export should be limited to the recognized standards, such as [ODIM_H5](https://www.eumetnet.eu/activities/observations-programme/current-activities/opera/) and [CfRadial](https://github.com/NCAR/CfRadial).
+
+As memory representation an xarray based data model was chosen, which is internally adapted to the forthcoming standard CfRadial2.1/FM301. FM301 is enforced by the [Joint Expert Team on Operational Weather Radar (JET-OWR)](https://community.wmo.int/governance/commission-membership/commission-observation-infrastructure-and-information-systems-infcom/commission-infrastructure-officers/infcom-management-group/standing-committee-measurements-instrumentation-and-traceability-sc-mint/joint-expert-team). Information on FM301 is available at WMO as [WMO CF Extensions](https://community.wmo.int/activity-areas/wis/wmo-cf-extensions).
+
+Any software package that uses xarray in any way will then be able to directly use the described data model and thus quickly and easily import and export radar data. Another advantage is the easy connection to already existing [open source radar processing software](https://openradarscience.org/pages/projects/#).
+
+## Features
+
+* Import CfRadial1 data
+* Import ODIM_H5 data
+
+
+# History
+
+## Development Version
+
+* Improve installation and contribution guide, update README.md with more badges, add version and date of release to docs, update install process ({pull}`19`) by [@kmuehlbauer](https://github.com/kmuehlbauer)
+* Add minimal documentation for CfRadial1 and ODIM_H5 importers ({pull}`20`) by [@kmuehlbauer](https://github.com/kmuehlbauer)
+* Add accessors.py submodule, add accessors showcase  ({pull}`21`) by [@kmuehlbauer](https://github.com/kmuehlbauer)
+
+## 0.5.0 (2022-09-14)
+
+* Data Model, CfRadial1 Backend ({pull}`13`) by [@kmuehlbauer](https://github.com/kmuehlbauer)
+* ODIM_H5 Backend ({pull}`14`) by [@kmuehlbauer](https://github.com/kmuehlbauer)
+
+## 0.4.0 (2022-09-01)
+
+Setting up CI workflow and build, [@mgrover1](https://github.com/mgrover1) and [@kmuehlbauer](https://github.com/kmuehlbauer)
+
+## 0.1.0 (2022-09-01)
+
+* First release on PyPI.
+
+
