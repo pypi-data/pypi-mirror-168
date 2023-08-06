@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: metallurgy
+Version: 0.0.8
+Summary: Calculates approximate properties of alloy compositions.
+Home-page: https://github.com/Robert-Forrest/metallurgy
+Author: Robert Forrest
+Author-email: robertforrest@live.com
+License: BSD 3-Clause License
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Metallurgy
+
+![Tests](https://github.com/Robert-Forrest/metallurgy/actions/workflows/tests.yml/badge.svg)
+
+The Metallurgy package enables calculation of approximate properties of alloy
+mixtures, based on the linear mixture of elemental properties. 
+
+
