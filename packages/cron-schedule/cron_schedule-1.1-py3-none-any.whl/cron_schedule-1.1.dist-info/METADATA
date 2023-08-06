@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: cron-schedule
+Version: 1.1
+Summary: 基于cron表达式的定时任务
+Keywords: cron,定时任务,schedule
+Author: miclon
+Author-email: jcnd@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: croniter (>=1.3.7,<2.0.0)
+Description-Content-Type: text/markdown
+
+# cron-schedule
+
+<a href="https://pypi.org/project/cron-schedule" target="_blank">
+    <img src="https://img.shields.io/pypi/v/cron-schedule.svg" alt="Package version">
+</a>
+
+<a href="https://pypi.org/project/cron-schedule" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/cron-schedule.svg" alt="Supported Python versions">
+</a>
+
+## Installation
+
+```bash
+pip install cron-schedule 
+```
+
+## Usage
+
+```python
+from datetime import datetime
+import time
+
+from schedule import schedule
+
+
+def do_some_job():
+    print('do_some_job...', datetime.now())
+
+
+schedule.add_job(do_some_job, "* * * * * 15,25")
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+```
+
+```text
+do_some_job... 2022-09-23 15:35:15.152107
+do_some_job... 2022-09-23 15:35:25.193932
+```
+
+#### thanks
+
+- [croniter](https://github.com/kiorky/croniter)
