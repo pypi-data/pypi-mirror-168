@@ -1,0 +1,2 @@
+[console_scripts]
+unipipe = unipipe.cli:unipipe
