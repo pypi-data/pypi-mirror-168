@@ -1,0 +1,18 @@
+pydicom>=0.9.7
+nibabel>=2.5.1
+
+[:python_version >= "3.7"]
+pylibjpeg-libjpeg
+
+[doc]
+sphinx
+numpydoc
+
+[test]
+pytest-cov
+
+[test:python_version == "2.7"]
+pytest<=4.6
+
+[test:python_version > "2.7"]
+pytest
