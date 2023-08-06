@@ -1,0 +1,4 @@
+include LICENSE.txt
+exclude src/usainboltz/generator.cpp
+exclude src/usainboltz/simulator.cpp
+recursive-include src *.pyx *.hpp *.pxd *.py
