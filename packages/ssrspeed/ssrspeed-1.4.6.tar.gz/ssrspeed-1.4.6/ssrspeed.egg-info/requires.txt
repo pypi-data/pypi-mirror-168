@@ -1,0 +1,11 @@
+aiofiles
+aiohttp-socks
+Flask-Cors
+geoip2
+loguru
+pilmoji
+PySocks
+PyYAML
+requests
+selenium==4.4.3
+webdriver-manager
