@@ -1,0 +1,16 @@
+munki_manifest_generator/env_vars.py,sha256=UiO9-ivn3CmRLY4e10r1xmCarW2Cd_R5evYoeP74NBc,921
+munki_manifest_generator/get_device_catalogs.py,sha256=pvWzTcEiU-Q2HepR1hbfOsGRJI8s3qiq3snUEsPnc58,1383
+munki_manifest_generator/main.py,sha256=8U1VdtsyQwc9dCf-CzvbMbD4T46U6ZtzT7FuNhT7i5M,10307
+munki_manifest_generator/manifest.py,sha256=7sIAve9gBd43ncMC6G86VSGoGVU3QZDSV-0gAdB6moI,416
+munki_manifest_generator/azstorage/az_storage_actions.py,sha256=1oUI4na8viE6B4oufF94-MFwirmS0Ev_QYWncIm9BfY,8351
+munki_manifest_generator/azstorage/az_storage_clients.py,sha256=gb7rO_KQy4uXUD5LAqxO-LmtY1R4M0gFl7GUz-Q9d3U,1104
+munki_manifest_generator/graph/get_device_group_membership.py,sha256=bepR3Z2hpmu-4VsyRNqbccEEBz1UktvCDIVntMdvtZc,2341
+munki_manifest_generator/graph/get_user_group_membership.py,sha256=7gjAKYZotm2Sc3IyvXzqw9WCLPlytVH_R6RNzuEhUXM,2256
+munki_manifest_generator/graph/make_api_request.py,sha256=zOUsLc-XTPBJidC03vhNTdDgv7SsqgnGA8O8sYjwxq0,1503
+munki_manifest_generator/graph/obtain_access_token.py,sha256=dD-YRV7qHdFfNnmDJGeQ3sF04xy4th_vWkj9vCadw5w,576
+Munki_Manifest_Generator-0.0.1.dist-info/LICENSE,sha256=5eI6HJxFaEBTMKeqr6sxJZgNIHltuDe4uUfVSZT0lnY,1085
+Munki_Manifest_Generator-0.0.1.dist-info/METADATA,sha256=jv73JXW3DUl1rev_MBnKFbaxJX4DnP1Km99TxJmlMTU,6292
+Munki_Manifest_Generator-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Munki_Manifest_Generator-0.0.1.dist-info/entry_points.txt,sha256=gdIGkjAKerN_vdKnRe2komintoCb5mj8fXS7Y-Pw92o,80
+Munki_Manifest_Generator-0.0.1.dist-info/top_level.txt,sha256=vWot8Mq0gPDQRAp6vf-zsKFVSfo_V-EDOj8kNmlI7Wg,25
+Munki_Manifest_Generator-0.0.1.dist-info/RECORD,,
