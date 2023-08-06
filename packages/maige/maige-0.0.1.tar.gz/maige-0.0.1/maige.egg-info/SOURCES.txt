@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+maige/__init__.py
+maige/functions.py
+maige/generator.py
+maige.egg-info/PKG-INFO
+maige.egg-info/SOURCES.txt
+maige.egg-info/dependency_links.txt
+maige.egg-info/requires.txt
+maige.egg-info/top_level.txt
