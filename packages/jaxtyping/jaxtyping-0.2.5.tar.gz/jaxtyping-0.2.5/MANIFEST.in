@@ -1,0 +1,2 @@
+include jaxtyping/py.typed
+prune test
