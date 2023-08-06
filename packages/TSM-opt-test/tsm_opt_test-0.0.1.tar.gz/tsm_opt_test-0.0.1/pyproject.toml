@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TSM_opt_test"
+version = "0.0.1"
+authors = [
+    { name = "Tommer Rissin", email = "tommerrissin@gmail.com" }
+]
+description = "Traveling salesman problem for testing and benchmarking optimization algorithms"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Tommer-R/Traveling-salesman"
+"Bug Tracker" = "https://github.com/Tommer-R/Traveling-salesman/issues"
