@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "reader-rbv"
+version = "0.6.4"
+description = "SDK / Client python untuk Ruang Baca Virtual Universitas Terbuka."
+authors = ["hexatester <habibrohman@protonmail.com>"]
+license = "AGPLv3"
+readme = "README.md"
+keywords = [
+    "univterbuka",
+    "RBV",
+    "reader",
+    "flowpaper",
+]
+classifiers=[
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.0"
+beautifulsoup4 = "^4.11.1"
+attrs = "^22.0.0"
+cachetools = "^5.2.0"
+ujson = "^5.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.8.4"
+mypy = "^0.971"
+pytest-cov = "^2.11.1"
+black = "^22.8.0"
+python-dotenv = "^0.15.0"
+pylint = "^2.7.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
