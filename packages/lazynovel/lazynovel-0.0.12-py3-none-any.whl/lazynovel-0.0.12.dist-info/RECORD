@@ -1,0 +1,12 @@
+lazynovel/__init__.py,sha256=DMfDjuzJWj9fFfVWrzmFeaWnovWjl90gxKK7H9aYe7I,322
+lazynovel/changdu.py,sha256=OmvohFfbNJ2jr51PrwgUfDOHH-a7vXdqU6rlxpZtac0,10010
+lazynovel/open_changdu.py,sha256=OmvohFfbNJ2jr51PrwgUfDOHH-a7vXdqU6rlxpZtac0,10010
+lazynovel/open_dianzhong.py,sha256=fFXkS2XYSqzwIPQ_emjEuZgrvXH7fE20Qm-TM0U4gfQ,9656
+lazynovel/open_mbookcn.py,sha256=SCJLHIukrrEFacOFE47P9OrgMMVoE3uqYGmp9M4gxNE,9680
+lazynovel/open_reading163.py,sha256=JtWJQKkbNue5tjqHCgT8MPQ59zbMrdXj6PfCzIIG-Ck,14527
+lazynovel/open_yuewen.py,sha256=kmfxjOoRxJNOoO0_bXPWvC8GNCjd054b3RR8Yf-gt8k,57844
+lazynovel-0.0.12.dist-info/LICENSE,sha256=baEFTu8guJSWIvKsxaicMkP_Oz16qMK7j6XATRURPAA,35181
+lazynovel-0.0.12.dist-info/METADATA,sha256=jqoHeMHPRDC1BYSJZYf9ZhA8EFH-A5TiZnqYMSbmNgA,1269
+lazynovel-0.0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lazynovel-0.0.12.dist-info/top_level.txt,sha256=gLoEyr3neZ-nXCByWQ9Y47u4U89C97W70mTwS9AudxA,10
+lazynovel-0.0.12.dist-info/RECORD,,
