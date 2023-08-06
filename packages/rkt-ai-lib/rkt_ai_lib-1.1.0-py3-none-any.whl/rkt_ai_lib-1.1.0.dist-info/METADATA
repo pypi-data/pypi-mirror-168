@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: rkt-ai-lib
+Version: 1.1.0
+Summary: RootKit ai Lib (RL - Qlearning)
+Author: RootKit
+Author-email: rootkit@rootkit-lab.org
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.21.5)
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: rkt-config-lib
+Requires-Dist: rkt-logger-lib
+
+# rkt_ai_lib - Python library
+
+![Package Version](https://badgen.net/badge/Package%20Version/latest%20-%201.0.0/green?scale=1.2)
+
+![quality](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=alert_status)
+![reliability_rating](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=reliability_rating)
+![security_rating](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=security_rating)
+![vulnerabilities](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=vulnerabilities)
+![coverage](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=coverage)
+![maintainability](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=sqale_rating)
+
+This Python library is based only on built-in Python libraries and two (2) non-build-in library :
+ - [numpy](https://pypi.org/project/numpy/)
+ - [pandas](https://pypi.org/project/pandas/)
+
+##### Python Version 3.9.9
+##### PyYaml Version 5.4.1 (Released Jan 20, 2021)
+##### numpy Version 1.21.5 (Released Jan 7, 2022)
+##### pandas Version 1.3.5 (Released Dec 12, 2021)
+
+----
+
+## What is Python?
+Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+
+[source](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+## What is numpy?
+NumPy is the fundamental package for scientific computing in Python.  
+It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices),  
+and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation,
+sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.  
+[source](https://pypi.org/project/numpy/)
+
+## What is pandas?
+pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with 
+"relational" or "labeled" data both easy and intuitive.  
+It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python.  
+Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis / manipulation tool available in any language.  
+It is already well on its way towards this goal.  
+[source](https://pypi.org/project/pandas/)
+## Libraries
+
+* AI: overlay of pandas library (Renforcement Learning - Qlearning)
+
+## Use it
+### Install
+```bash
+ (venv) my_project> pip install rkt_ai_lib [--index-url https://gitlab.tprc.ovh/api/v4/groups/python/-/packages/pypi]
+```
+###
+
+```python
+from os.path import exists
+from rkt_ai_lib import QLearning
+from your_local_lib import MyGameObject
+
+my_action_list = ['up', 'down', 'left', 'right']
+
+# can override alpha (0.1), gamma (0.5)
+if exists("my_mind.pkl"):
+    mind = QLearning(actions=my_action_list, should_load=True, qtable_file_to_load="my_mind.pkl")
+else:
+    mind = QLearning(actions=my_action_list)
+
+# You can use the Qlearning for another thing then game
+my_game = MyGameObject()
+
+while True:
+    # get the current state
+    state = my_game.get_state()
+    # get the action
+    action = mind.choose_action(state)
+    # do the action your logic is here (move, attack, ... for game, send, buy, ... for trading, ...)
+    my_game.do_action(action)
+    # get the reward this is here reward logic
+    reward = my_game.get_reward(action, state)
+    # update the Q-table
+    mind.learn(state, action, reward)
+
+    # check if you "win"
+    if my_game.is_win():
+        break
+
+mind.save("my_mind.pkl")
+```
+
+### Output (as file or sdtout ot both)
+```log
+Your "game" log
+```
+
+## Contributing
+
+If you find this library useful here's how you can help:
+
+- Send a merge request with your kickass new features and bug fixes
+- Help new users with [issues](https://gitlab.tprc.ovh/python/rkt_lib_toolkit/-/issues) they may encounter
+- Support the development of this library and star this repo!
