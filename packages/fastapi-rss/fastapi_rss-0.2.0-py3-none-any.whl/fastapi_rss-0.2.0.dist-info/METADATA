@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fastapi-rss
+Version: 0.2.0
+Summary: A library to generate RSS feeds for FastAPI
+License: MIT
+Author: Dogeek
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.85.0,<1.0.0)
+Requires-Dist: lxml (>=4.7.1,<5.0.0)
