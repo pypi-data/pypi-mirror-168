@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: saber-hbc
+Version: 0.6.0
+Summary: The SABER tool for bias correcting large hydrologic models
+Author: Riley C. Hales
+License: BSD 3-Clause
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SABER-HBC
+
+SABER (Stream Analysis for Bias Estimation and Reduction) is a bias correction method for modeled discharge first 
+presented in the journal article: [https://doi.org/10.3390/hydrology9070113](https://doi.org/10.3390/hydrology9070113).
+
+SABER-HBC (Hydrological Bias Correction) is the authoritative python implementation of the SABER bias correction method.

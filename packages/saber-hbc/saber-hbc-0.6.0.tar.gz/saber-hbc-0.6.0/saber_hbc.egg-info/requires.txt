@@ -1,0 +1,16 @@
+contextily
+geopandas
+fastparquet
+hydrostats
+joblib
+kneed
+matplotlib
+natsort
+netCDF4
+numba
+numpy
+pandas
+pyarrow
+requests
+scikit-learn
+scipy
