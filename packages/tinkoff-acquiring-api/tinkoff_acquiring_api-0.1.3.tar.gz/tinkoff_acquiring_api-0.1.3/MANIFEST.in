@@ -1,0 +1,6 @@
+include *.lock
+include *.yaml
+include *.yapf
+include Makefile
+include tox.ini
+recursive-include tests *.py
