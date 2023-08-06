@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cf.pyutils
+Version: 0.1.7
+Home-page: https://gitlab.com/MatthieuJacquemet/pyutils
+Author: Matthieu Jacquemet
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
