@@ -1,0 +1,11 @@
+setup.py
+src/parrotschemas/__init__.py
+src/parrotschemas.egg-info/PKG-INFO
+src/parrotschemas.egg-info/SOURCES.txt
+src/parrotschemas.egg-info/dependency_links.txt
+src/parrotschemas.egg-info/requires.txt
+src/parrotschemas.egg-info/top_level.txt
+src/parrotschemas/events_monitoring/__init__.py
+src/parrotschemas/events_monitoring/v1/__init__.py
+src/parrotschemas/events_monitoring/v1/events_pb2.py
+src/parrotschemas/events_monitoring/v1/expectations_pb2.py
