@@ -1,0 +1,4 @@
+dbt-core~=1.0.0
+sqlparams>=3.0.0
+PyHive[hive]<0.7.0,>=0.6.0
+thrift==0.13
