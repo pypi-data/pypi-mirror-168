@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CIM_Python_Karluk"
+version = "0.0.1"
+authors = [
+  { name="Viktor Karluk", email="viktor.karluk@bredband.net" },
+]
+description = "A small package to check user input values"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://wikipedia.com"
+"Bug Tracker" = "https://wikipedia.com"
