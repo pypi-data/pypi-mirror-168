@@ -1,0 +1,5 @@
+shadow3>=22.8.25
+oasys1>=1.2.108
+wofryshadow>=1.0.3
+dabax
+xoppylib
