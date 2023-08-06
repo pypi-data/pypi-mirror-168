@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "perun"
+version = "0.1.0-beta.16"
+description = ""
+authors = ["Gutiérrez Hermosillo Muriedas, Juan Pedro <juanpedroghm@gmail.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://github.com/Helmholtz-AI-Energy/perun"
+
+[tool.poetry.scripts]
+perun = "perun.cli:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+mpi4py = "*"
+h5py = "*"
+pynvml = "*"
+click = "*"
+py-cpuinfo = "*"
+PyYAML = "*"
+numpy = "*"
+psutil = "*"
+
+[tool.poetry.dev-dependencies]
+influxdb-client = "*"
+pandas = "*"
+pytest = "*"
+flake8 = "*"
+mypy = "*"
+black = "*"
+pre-commit = "*"
+
+[tool.semantic_release]
+version_variable = [
+    "perun/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+mayor_on_zero = false
+build_command = "pip install poetry && poetry build"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
