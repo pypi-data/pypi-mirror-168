@@ -1,0 +1,9 @@
+selas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selas/cli.py,sha256=Ckrg1WaVSxpdSI23JIIaCCTvjX8JmB_k9TpBiHMeP2E,448
+selas/database.py,sha256=XtKpv_d0Cuyx5GtBwH1YWbbwtDTe3bH23Rs1GgkCuCo,2500
+selas-0.0.1.dist-info/LICENSE,sha256=58VSAhQMVS_kerUzaUQ90Dpj9MOP2LduSIOKlq-Puqw,1068
+selas-0.0.1.dist-info/METADATA,sha256=bwCFooigQGxYNpz2JiHDFYx7JmpO9X0sETfVk_C0NLw,2327
+selas-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+selas-0.0.1.dist-info/entry_points.txt,sha256=DOAnprhw_97uEzXZMze4seLuNxhnWWdGDbiSaXCQsMg,40
+selas-0.0.1.dist-info/top_level.txt,sha256=4S1850mGo5FRgsRz221EOVyQfkjlXA2I8jPCuN0F09M,6
+selas-0.0.1.dist-info/RECORD,,
