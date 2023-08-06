@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: nucliadb-client
+Version: 1.0.0a1
+Summary: UNKNOWN
+Home-page: https://nuclia.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Dist: nucliadb-protos
+Requires-Dist: httpx
+Requires-Dist: protobuf (>=3.20.1)
+Requires-Dist: types-protobuf (>=3.19.20)
+Requires-Dist: grpcio (>=1.44.0)
+Requires-Dist: aiofiles
+Requires-Dist: nucliadb-models
+
+# NucliaDB Client
+
+Client library to interact with NucliaDB
+
+# nucliadb_client
+
+## 1.0.0a1
+
+- Import and export
+
+## 0.0.1
+
+- Initial version
+
+

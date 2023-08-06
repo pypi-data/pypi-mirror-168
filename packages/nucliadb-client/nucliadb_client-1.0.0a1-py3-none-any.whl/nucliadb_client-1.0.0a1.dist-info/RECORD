@@ -1,0 +1,16 @@
+nucliadb_client/__init__.py,sha256=HqJd4edSkV4t5_vobxbkVXJtBoIR2zRTbbH6M8L5kzQ,896
+nucliadb_client/client.py,sha256=pjCD6_HyBks_H0Tm2-EK2Trts7UH75J1G5xsnRqU4j8,5445
+nucliadb_client/exceptions.py,sha256=XhWa81RawaJtYzE33XoA9ayfaZclR9tJ1suU65c0ix4,876
+nucliadb_client/knowledgebox.py,sha256=sN36NcBkPEeZ62Tdi7T_w_sncZRNn-rSL9DF0eZSyUg,3741
+nucliadb_client/resource.py,sha256=UwDe5aSvXL5nYoRO8JqxXhIYLx6Yim9BXKA_A459UCA,7095
+nucliadb_client/tests/__init__.py,sha256=itSI7dtTwFP55YMX4iK7JzdMHS5CQVUiB1XzQu4UBh8,833
+nucliadb_client/tests/conftest.py,sha256=bD6yHS3ToT0RS6dTDCCAn4ABDTyEdwEXlYvmruLkcZw,887
+nucliadb_client/tests/fixtures.py,sha256=dAw7oVOsLrD6Z4Hi8kD3yxWx185NyFWfaseoc2vaCH0,3533
+nucliadb_client/tests/test_export.py,sha256=euIWyn0efx4v8ndv4jybEjAnSt05l0QjObezD2fpYUI,2580
+nucliadb_client/tests/test_knowledgebox.py,sha256=8S8fIew-MAhu75n5_tPe_pAfuhI7FRUM0Ogx7Wgx11U,1350
+nucliadb_client/tests/test_resource.py,sha256=sZVJohYFCOBadnwjf48xB5NZYgivNEq-Zxe2e15JsP4,2635
+nucliadb_client-1.0.0a1.dist-info/METADATA,sha256=c25dnck9jY_qVls8QBSOj9zI3axaFHshs45fx8yLhrk,761
+nucliadb_client-1.0.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nucliadb_client-1.0.0a1.dist-info/top_level.txt,sha256=3kkDMtxXN_XtfJTGBmYhAYHP8eRxPe7LyGd-NfEYwH4,16
+nucliadb_client-1.0.0a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+nucliadb_client-1.0.0a1.dist-info/RECORD,,
