@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: clogistic
+Version: 0.2.0
+Summary: Constrained Logistic Regression
+Home-page: https://github.com/guillermo-navas-palencia/clogistic
+Author: Guillermo Navas-Palencia
+Author-email: g.navas.palencia@gmail.com
+License: Apache Licence 2.0
+Keywords: machine-learning,logistic-regression,statistics,data-science
+Platform: any
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: cvxpy (>=1.0.31)
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: scipy
+Requires-Dist: scikit-learn (>=0.20.0)
+
+
+Logistic regression with bound and linear constraints. L1, L2 and
+Elastic-Net regularization.
+
+
