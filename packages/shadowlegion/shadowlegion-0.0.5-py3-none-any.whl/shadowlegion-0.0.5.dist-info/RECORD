@@ -1,0 +1,12 @@
+shadowlegion/__init__.py,sha256=Yegg3oSAAFgx1uI8KWHTlkxiJLstT3WYVY-5mmtdApo,433
+shadowlegion/core.py,sha256=uE-VdbNZWRjJOzshALS53Nlohs98xSqI-dKpkME-CUI,3620
+shadowlegion/utils.py,sha256=k29q1CCD5R08fhXG4kkyHloMW_uVboo7Jox9u5vSo9k,401
+shadowlegion/__metadata__/DISCLIAIMER.md,sha256=Eh9dhFWbvRMm27jxKYRZqQp_Lb8PkhbYWYQyLoMSrHg,4785
+shadowlegion/__metadata__/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+shadowlegion/__metadata__/README.md,sha256=Ojc7kv-xTBcKaNpHjr0_cfdYBh9yO0K-VFJPCtkQLsU,937
+shadowlegion/__metadata__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shadowlegion/__metadata__/requirements.txt,sha256=dvrhgguNwJGpjxzOnXuCEBID0_sFPuZRnG7u-ysK5Fg,62
+shadowlegion-0.0.5.dist-info/METADATA,sha256=ujeSiWUiNXnk0cr_5pd5HXUsnDoBMoS2YnN8U9SgnTE,2174
+shadowlegion-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+shadowlegion-0.0.5.dist-info/top_level.txt,sha256=cYjiW5gt0ELxkbwumzUaDAtYqW0BUyrFy3WbiIXCUQk,13
+shadowlegion-0.0.5.dist-info/RECORD,,
