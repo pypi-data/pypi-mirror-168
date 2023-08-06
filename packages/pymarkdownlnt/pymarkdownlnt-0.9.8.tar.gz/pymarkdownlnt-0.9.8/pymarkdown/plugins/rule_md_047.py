@@ -1,0 +1,50 @@
+"""
+Module to implement a plugin to ensure all files end with a blank line.
+"""
+from pymarkdown.plugin_manager.plugin_details import PluginDetails
+from pymarkdown.plugin_manager.plugin_scan_context import PluginScanContext
+from pymarkdown.plugin_manager.rule_plugin import RulePlugin
+
+
+class RuleMd047(RulePlugin):
+    """
+    Class to implement a plugin to ensure all files end with a blank line.
+    """
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.__last_line: str = ""
+
+    def get_details(self) -> PluginDetails:
+        """
+        Get the details for the plugin.
+        """
+        return PluginDetails(
+            plugin_name="single-trailing-newline",
+            plugin_id="MD047",
+            plugin_enabled_by_default=True,
+            plugin_description="Each file should end with a single newline character.",
+            plugin_version="0.5.0",
+            plugin_interface_version=1,
+            plugin_url="https://github.com/jackdewinter/pymarkdown/blob/main/docs/rules/rule_md047.md",
+        )
+
+    def starting_new_file(self) -> None:
+        """
+        Event that the a new file to be scanned is starting.
+        """
+        self.__last_line = ""
+
+    def next_line(self, context: PluginScanContext, line: str) -> None:
+        """
+        Event that a new line is being processed.
+        """
+        _ = context
+        self.__last_line = line
+
+    def completed_file(self, context: PluginScanContext) -> None:
+        """
+        Event that the file being currently scanned is now completed.
+        """
+        if self.__last_line:
+            self.report_next_line_error(context, len(self.__last_line), -1)
