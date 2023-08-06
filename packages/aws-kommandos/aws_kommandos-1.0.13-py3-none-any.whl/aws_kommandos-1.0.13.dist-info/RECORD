@@ -1,0 +1,16 @@
+aws_kommandos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_kommandos/ami_kommandos.py,sha256=4_DH2PyZh-rnAdYHSkVXjHoBV3r5NMwm0JphvLex3ao,2710
+aws_kommandos/command_line.py,sha256=uvg2jIiDkq2DsPMozQ4VX0PpZ-6jIqMQXxqLszLxw6E,25178
+aws_kommandos/dns_kommandos.py,sha256=vUgaS_POETk6kL5bc3Yq1LjqFOC2g9WpAC40WWIIudU,4373
+aws_kommandos/ec2_instance_kommandos.py,sha256=lK-DZcxmSGhP1-OyDzH1ccnHb0o3tahFzs9Yx5No03k,9190
+aws_kommandos/firewall_rule_request.py,sha256=xciBn-6_sbL7S0IR3V0wgtvfXHCIm_So70JzL250OlE,1131
+aws_kommandos/kommandos.py,sha256=yug6QOcK-SZ54JIqSQ0-pf6VPmRejZmkkWl5mOkyXNg,15577
+aws_kommandos/s3_bucket_kommandos.py,sha256=XgCyMZGnvUJ0D5A0pp5gg9Ga3HKvM6FzHISODIq9dU0,3537
+aws_kommandos/security_groups_kommandos.py,sha256=QSSzZCdIN1pFUvO2qT210t0-Q-uiAlE0UwrT3fgm-T0,12595
+aws_kommandos/ssh_key_pairs_kommandos.py,sha256=SVcAGt11STDHZMlDOoq5TYtVaiEeRxw1bT0TKW0woZA,3436
+aws_kommandos-1.0.13.dist-info/LICENSE,sha256=967_AkS3_ngrUwOCrxq3JgC4B4b91RLNanyo6Z-dwSY,1063
+aws_kommandos-1.0.13.dist-info/METADATA,sha256=301-r7Bqw8nEOkKOEy8UEpq2ndHe6DDl2bZmDZP9d_Q,8053
+aws_kommandos-1.0.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_kommandos-1.0.13.dist-info/entry_points.txt,sha256=inPPkDguqZ_hCLcv_2Sh6SquuJodfturSpGYtBK4Vds,63
+aws_kommandos-1.0.13.dist-info/top_level.txt,sha256=o9yilLmMcOyBCtOLZSROAflx-8wmIxItl4AsaR5iyBU,14
+aws_kommandos-1.0.13.dist-info/RECORD,,
