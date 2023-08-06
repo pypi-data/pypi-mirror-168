@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tealium
+Version: 2.0.0
+Summary: Tealium Libary
+Home-page: https://github.com/Tealium/tealium-python
+Download-URL: https://github.com/Tealium/tealium-python/tarball/1.2.0
+Author: Tealium Integrations Team
+Author-email: integrations.tealium@tealium.com
+Keywords: tealium
+License-File: LICENSE.txt
