@@ -1,0 +1,1 @@
+from simple_hello_new.simple_hello import print_hello
