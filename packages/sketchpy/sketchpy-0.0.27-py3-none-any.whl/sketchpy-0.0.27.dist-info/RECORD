@@ -1,0 +1,14 @@
+sketchpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sketchpy/apj.py,sha256=ZFTXM9aQHy_6E743Vlr_wWY7lNIa88oT50oJXoJ-P9I,21380
+sketchpy/bts.py,sha256=imhd4bvRHN2dW0qJPFlcX7mdqrk_moqpBgVL2DXiQkg,16220
+sketchpy/canvas.py,sha256=lJHnC1bnDYhWJcDhELURSJzH7fSU1rEG5RqyNbEVrIk,20427
+sketchpy/gojo.py,sha256=BSREwMw7vaX7PJ7W_xCnfmU-PBT26GHp7gumGKKIy4Y,9128
+sketchpy/indian_flag.py,sha256=ilyD4GMMg-oodEsaeAXtEkqKTfEkNV33M3SSm9bro4k,10178
+sketchpy/library.py,sha256=4XtKoqYCR3O79zOJDOY2CIKt0wNfpkLvaR0AqId7hbo,99975
+sketchpy/rdj.py,sha256=3r9Lm6dM8buyCQbXtAdMj2IoG4j0xzO6IbaXlKA32wc,9830
+sketchpy/vijay.py,sha256=bp6wwTJB3riD0PgKEGWMkqxiPYwWY7PUd2ILjLUwiVU,9920
+sketchpy-0.0.27.dist-info/LICENSE,sha256=VLkUrADeUmvxSH36_w3t0-LONJZoxdM-T6tjF7rkSUk,1084
+sketchpy-0.0.27.dist-info/METADATA,sha256=lnnK_euLJKrI0c5wBhv_KXD_V5atsEJ2El6WLVQwXs8,4682
+sketchpy-0.0.27.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sketchpy-0.0.27.dist-info/top_level.txt,sha256=JNHWW6GSPOWaNPcqn37YFEPEqV7JYFb1qDZWHvEsyUw,9
+sketchpy-0.0.27.dist-info/RECORD,,
