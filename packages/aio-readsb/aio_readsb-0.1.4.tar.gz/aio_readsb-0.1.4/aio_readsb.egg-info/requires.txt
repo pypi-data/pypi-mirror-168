@@ -1,0 +1,3 @@
+aiohttp>=3.5.4
+geopy
+pytz>=2019.01
