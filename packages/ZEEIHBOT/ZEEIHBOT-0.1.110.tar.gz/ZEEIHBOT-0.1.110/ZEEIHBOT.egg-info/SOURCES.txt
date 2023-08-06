@@ -1,0 +1,7 @@
+setup.py
+ZEEIHBOT/__init__.py
+ZEEIHBOT.egg-info/PKG-INFO
+ZEEIHBOT.egg-info/SOURCES.txt
+ZEEIHBOT.egg-info/dependency_links.txt
+ZEEIHBOT.egg-info/requires.txt
+ZEEIHBOT.egg-info/top_level.txt
