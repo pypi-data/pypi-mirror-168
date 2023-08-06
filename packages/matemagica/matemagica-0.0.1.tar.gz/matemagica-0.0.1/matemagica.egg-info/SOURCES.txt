@@ -1,0 +1,8 @@
+README.md
+setup.py
+matemagica/__init__.py
+matemagica/operacoes.py
+matemagica.egg-info/PKG-INFO
+matemagica.egg-info/SOURCES.txt
+matemagica.egg-info/dependency_links.txt
+matemagica.egg-info/top_level.txt

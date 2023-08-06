@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: matemagica
+Version: 0.0.1
+Summary: Used to perform some math operations more intuitively
+Home-page: https://github.com/lborgatow/dio_bootcamps/tree/main/Gera%C3%A7%C3%A3o%20Tech%20Unimed-BH%20-%20Ci%C3%AAncia%20de%20Dados/matemagica-package
+Author: Leonardo
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# matemagica
+
+
+The matemagica package is used to perform some math operations more intuitively:
+- Addiction (adicao)
+- Subtraction (subtracao)
+- Multiplication (multiplicacao)
+- Division (divisao)
+- Potentiation (potenciacao)
+- Root (radiciacao)
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install matemagica
+
+```bash
+pip install matemagica
+```
+
+## Usage
+
+```python
+from matemagica import operacoes
+
+operacoes.nome_operacao()
+```
+
+## Author
+Leonardo
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
