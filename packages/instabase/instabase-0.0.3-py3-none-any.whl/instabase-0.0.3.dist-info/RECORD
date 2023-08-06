@@ -1,0 +1,12 @@
+instabase/.DS_Store,sha256=AFJwowc5wQdTT9xDZBxrMsdMvSVCpTJEOIIjUIlQZkI,6148
+instabase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+instabase/apps/__init__.py,sha256=ZaQlJxddm5f3liTWcr8NYB_zrX6-6D5FGtxd-Ni6D7Q,210
+instabase/apps/__version__.py,sha256=CCFadpxj34pHx7XmAIt9YvXRSXeXHqxBQrh_t9sGhhc,1136
+instabase/apps/_utils.py,sha256=OvFi8crrZeshfR_bPfh3_6LkCxW_ixG_TPQ2oH6qcIo,370
+instabase/apps/client.py,sha256=2SmE1KO2Gy_B23WscTzrY434B26Hg7oPLX7d4_lX8D0,2288
+instabase/apps/enums.py,sha256=Gl6u_x6aOa-IV4jkUfUfCGhN3bDvZANGQWa11jV0tHY,185
+instabase-0.0.3.dist-info/METADATA,sha256=cWRXmYgMZ88kU_nOiTMw985FMYt9cq_CgLpWe3doyqE,14366
+instabase-0.0.3.dist-info/WHEEL,sha256=sb4ZHsmozXdkdXRvpMHZmhxsxQvL8DERDUEGA9tAfc8,83
+instabase-0.0.3.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+instabase-0.0.3.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+instabase-0.0.3.dist-info/RECORD,,
