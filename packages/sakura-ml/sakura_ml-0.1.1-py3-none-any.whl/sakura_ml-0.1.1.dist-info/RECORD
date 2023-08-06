@@ -1,0 +1,13 @@
+sakura/__init__.py,sha256=CynG5CduTNKHfa955YpH6ZL4pDTOwjL3mKuPVn1CWG8,736
+sakura/config.yml,sha256=z39aJVwtlaNnBGZW7RoWwnmfj_IUieD4gscByYsKiY4,255
+sakura/functional.py,sha256=r1BHendw8uVuMdBG1sKO_upG9wYJxWQgh9s0CrcUojA,422
+sakura/ml/__init__.py,sha256=8JVy40LN2TbHrsL4cJm-1yxf3kJfwUG0bYN-WOgEkdU,81
+sakura/ml/async_trainer.py,sha256=9192def962tudB3eVHvGOtBahuLXWOO-qyiPCDj0ut4,2100
+sakura/ml/sakura_trainer.py,sha256=PMkjzjrlhf4hZVZEXneSwOp28daawOdQuIB1pHD8OAY,1455
+sakura/ml/epoch/__init__.py,sha256=vE7_RkIlc6cE53IG5U0YHT2SiqdhCO-XZ-OlLQb0BEo,24
+sakura/ml/epoch/range.py,sha256=qHnraWEK-ht_xMX0YsDzFcVTTjTJOyShtCdMr-6Nsoc,495
+sakura_ml-0.1.1.dist-info/METADATA,sha256=KGGNPjpvVOTdMbNFzADeliK9_PPeUT30Tgdn0pSSx8k,7688
+sakura_ml-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sakura_ml-0.1.1.dist-info/entry_points.txt,sha256=oHjqP7fKYjOxrAwXz4Fdxeiw7A-tRyqKYrRduSwk1Fk,40
+sakura_ml-0.1.1.dist-info/top_level.txt,sha256=oLemNiG5CMXPkOaKG4LhXn7cyWYPfLQnqanpt0lDjeg,7
+sakura_ml-0.1.1.dist-info/RECORD,,
