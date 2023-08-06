@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: my-custom-greeter
+Version: 0.1.2
+Summary: 
+Author: sindbad_the_sailor
+Author-email: sindbad_the_sailor@example.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+
