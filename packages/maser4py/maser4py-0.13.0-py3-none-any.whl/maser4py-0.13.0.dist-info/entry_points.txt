@@ -1,0 +1,3 @@
+[console_scripts]
+maser=maser.script:main
+
