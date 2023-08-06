@@ -1,0 +1,4 @@
+bthci>=0.0.33
+pyclui>=0.0.17
+scapy>=2.4.5
+xpycommon>=0.0.12
