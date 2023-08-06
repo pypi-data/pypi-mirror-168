@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tarka
+Version: 0.7.0
+Summary: Various things for common use, like a Swiss Army Knife.
+Home-page: https://github.com/Traktormaster/tarka
+Author: Nándor Mátravölgyi
+Author-email: nandor.matra@gmail.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+# tarka
+
+This library is a collection of various utilities to help develop something else, maybe even for you.
