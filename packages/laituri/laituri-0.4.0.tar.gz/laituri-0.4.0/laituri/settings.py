@@ -1,0 +1,2 @@
+DOCKER_COMMAND = 'docker'
+DOCKER_TIMEOUT = 30
