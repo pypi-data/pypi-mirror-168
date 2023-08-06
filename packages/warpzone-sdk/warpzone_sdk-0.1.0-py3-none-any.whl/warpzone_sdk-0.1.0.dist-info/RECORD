@@ -1,0 +1,12 @@
+warpzone/__init__.py,sha256=6UXqnSklW2pKTaRfgqKArQruuffXuA8x6MbfmQ8W7Xo,512
+warpzone/servicebus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+warpzone/servicebus/client.py,sha256=7oYtbRhXXdpTNEwfj66FOOYRE-ksQHoKx78--Wj20Zs,3258
+warpzone/servicebus/data.py,sha256=39C66nMOmE_YYoXUoPR7fXH8gqPpnD1XXZr2Z5Prwuo,1193
+warpzone/tablestorage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+warpzone/tablestorage/client.py,sha256=cJgBflwqH704XrniMC8_gJIQs4fncid3vcdrKpT7vr4,1604
+warpzone/tablestorage/client_async.py,sha256=D4Wr1SiOPtrx1RSsr2ULteRlwVvWoqprUT6zvB7h3CA,1531
+warpzone/tablestorage/helpers.py,sha256=5Gj_YE9vcQg2pAGIiKKOdJJaTlWGNl4TYvDfLclN5ic,521
+warpzone/tablestorage/operations.py,sha256=52vGuypBuU4rnc2tRmQBrZTYxt27Uk4H0rQijMyIQ6A,2940
+warpzone_sdk-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+warpzone_sdk-0.1.0.dist-info/METADATA,sha256=eictyQuY0fTKtFqfbraN05oBOslTG5k7nGEnlYjCxU0,629
+warpzone_sdk-0.1.0.dist-info/RECORD,,
