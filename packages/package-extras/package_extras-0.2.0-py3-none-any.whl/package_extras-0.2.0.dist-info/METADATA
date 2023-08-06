@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: package-extras
+Version: 0.2.0
+Summary: Dummy package to mark extras installation
+License: MIT
+Author: Misha Behersky
+Author-email: bmwant@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+## extras
+
+For the detailed explanation read [this blog post]().
+
+### Usage
+
+```toml
+```
+
+Add this or similar block to your code
+
+```python
+```
+
+### Development
+
+```bash
+$ poetry install
+$ poetry build
+
+$ poetry config pypi-token.pypi my-token
+$ poetry publish
+```
