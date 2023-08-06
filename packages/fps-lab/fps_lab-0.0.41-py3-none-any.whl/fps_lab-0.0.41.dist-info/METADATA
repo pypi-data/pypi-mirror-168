@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fps_lab
+Version: 0.0.41
+Summary: An FPS plugin for the JupyterLab/RetroLab API
+Project-URL: Homepage, https://jupyter.org
+Author-email: Jupyter Development Team <jupyter@googlegroups.com>
+License: BSD 3-Clause License
+License-File: COPYING.md
+Keywords: fastapi,jupyter,pluggy,plugins,server
+Requires-Python: >=3.7
+Requires-Dist: aiofiles
+Requires-Dist: babel
+Requires-Dist: fps-frontend
+Requires-Dist: fps>=0.0.8
+Requires-Dist: json5
+Description-Content-Type: text/markdown
+
+# fps-lab
+
+An FPS plugin for the JupyterLab/RetroLab API.
