@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bioTEA
+Version: 1.0.2
+Summary: Tea, short for Transcript Enrichment Analysis is a pipeline for performing Differential Expression Analysis on microarrays and RNA-seq data.
+Home-page: https://github.com/CMA-Lab/bioTEA
+Author: MrHedmad
+Author-email: luca.visentin@unito.it
+Project-URL: Bug Tracker, https://github.com/CMA-Lab/bioTEA/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: xmltodict
+Requires-Dist: click (<8.1.0)
+Requires-Dist: typer
+Requires-Dist: colorama
+Requires-Dist: shellingham
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: docker
+Requires-Dist: packaging
+Requires-Dist: fuzzywuzzy
+Requires-Dist: python-Levenshtein
+
+# Tea
+Tea, short for Transcript Enrichment Analysis is a pipeline for Differential Gene expression with microarray and RNA-seq data.
