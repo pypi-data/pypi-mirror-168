@@ -1,0 +1,33 @@
+- project:
+    queue: cloudkitty
+    templates:
+      - tempest-plugin-jobs
+      - check-requirements
+    check:
+      jobs: &cloudkitty_tempest_jobs
+        - cloudkitty-tempest-full-v2-storage-influxdb:
+            voting: true
+        - cloudkitty-tempest-full-v1-storage-sqlalchemy:
+            voting: true
+        - cloudkitty-tempest-full-v2-storage-elasticsearch:
+            voting: true
+        - cloudkitty-tempest-full-v2-storage-influxdb-yoga
+        - cloudkitty-tempest-full-v2-storage-influxdb-xena
+        - cloudkitty-tempest-full-v2-storage-influxdb-wallaby
+    gate:
+      jobs: *cloudkitty_tempest_jobs
+
+- job:
+    name: cloudkitty-tempest-full-v2-storage-influxdb-yoga
+    parent: cloudkitty-tempest-full-v2-storage-influxdb
+    override-checkout: stable/yoga
+
+- job:
+    name: cloudkitty-tempest-full-v2-storage-influxdb-xena
+    parent: cloudkitty-tempest-full-v2-storage-influxdb
+    override-checkout: stable/xena
+
+- job:
+    name: cloudkitty-tempest-full-v2-storage-influxdb-wallaby
+    parent: cloudkitty-tempest-full-v2-storage-influxdb
+    override-checkout: stable/wallaby
