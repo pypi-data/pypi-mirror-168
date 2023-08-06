@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+.env/
+moppi.yaml
+
+# Unit test / coverage reports
+.pytest_cache/
+
+# Editor
+.vscode/
