@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/singlejson/__init__.py
+src/singlejson/fileutils.py
+src/singlejson/pool.py
+src/singlejson.egg-info/PKG-INFO
+src/singlejson.egg-info/SOURCES.txt
+src/singlejson.egg-info/dependency_links.txt
+src/singlejson.egg-info/top_level.txt
