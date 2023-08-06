@@ -1,0 +1,88 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "manifestoo"
+description = "A tool to reason about Odoo addons manifests"
+authors = [
+  {name = "Stéphane Bidoul", email = "stephane.bidoul@acsone.eu"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Odoo",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+readme = "README.md"
+dependencies = [
+    "manifestoo_core >= 0.8",
+    "typer[all] >= 0.3.2",
+    "importlib_metadata ; python_version<'3.8'",
+]
+requires-python = ">=3.6"
+dynamic = ["version"]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "coverage[toml]",
+]
+doc = [
+    "sphinx",
+    "furo",
+    "myst-parser",
+    "towncrier",
+    "sphinxcontrib-towncrier",
+]
+
+[project.urls]
+Homepage = "https://github.com/sbidoul/manifestoo"
+Documentation = "https://manifestoo.readthedocs.io/en/stable/"
+Changelog = "https://manifestoo.readthedocs.io/en/stable/changelog.html"
+Source = "https://github.com/sbidoul/manifestoo"
+
+[project.scripts]
+manifestoo = "manifestoo.main:app"
+moo = "manifestoo.main:app"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build]
+exclude = [
+    "/.github",
+]
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+known_first_party = "manifestoo_core"
+
+
+[tool.coverage.run]
+branch = true
+source_pkgs = ["manifestoo"]
+
+[tool.coverage.paths]
+source = ["src", ".tox/*/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+]
+
+
+[tool.towncrier]
+package = "manifestoo"
+package_dir = "src"
+filename = "HISTORY.rst"
+directory = "news"
+issue_format = "`#{issue} <https://github.com/sbidoul/manifestoo/issues/{issue}>`_"
+title_format = "{version} ({project_date})"
