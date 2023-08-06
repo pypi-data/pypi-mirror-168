@@ -1,0 +1,10 @@
+erasudy/__init__.py,sha256=o1v71zl533IHUrkmQBB_BWudJjp5nOwWyWC1N6JgI4U,28
+erasudy/algorithms.py,sha256=MG2TakBiIQopd4tCmPaxfFx3vB7KVCmXulnlhDzSldg,1078
+erasudy/commands.py,sha256=TVSkQYeGlG3N_q24Bnr4tCal85ow6ze_xL6mSrS5TIk,989
+erasudy/config.py,sha256=aOS7D1zioiA-3o0AvRXIDsIQ0y9o0mUjCTcT9WnSJ2E,147
+erasudy/main.py,sha256=Nydbxbv2dNBaK_ph7ItTvswYNOzA99jKgF2yaRbJIGA,1117
+erasudy/validations.py,sha256=-hAwJm3NtTGwjctqeQFs7Fz6_7D124llamJ7yxsQXCw,639
+erasudy-0.1.0b1.dist-info/entry_points.txt,sha256=KSLqppx-4lpD1cBao3MO8SwfPGQzJV0RSdxDlJCK3s8,48
+erasudy-0.1.0b1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+erasudy-0.1.0b1.dist-info/METADATA,sha256=KPsYDg8lRVc-EoMcp8zqRADBYZwpLCWjyZECXglwAx8,854
+erasudy-0.1.0b1.dist-info/RECORD,,
