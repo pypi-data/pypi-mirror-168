@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ProyectoP2
+Version: 0.2
+Summary: Esta es la descripcion de mi paquete
+Home-page: UNKNOWN
+Author: Juan Quezada
+Author-email: 
+License: MIT
+Description: #Proyecto De clase Conect 4
+        
+        Juego conect 4 creado en python
+        
+        Disfruta!!
+        
+Keywords: testing,logging,example
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

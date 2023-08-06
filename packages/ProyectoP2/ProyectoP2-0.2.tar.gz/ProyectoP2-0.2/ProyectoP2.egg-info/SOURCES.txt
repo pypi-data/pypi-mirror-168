@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ProyectoP2/GRAFICA DEL JUEGO conecta4 - NUMPY & PYGAME.py
+ProyectoP2/LOGICA DEL JUEGO conecta4 - NUMPY.py
+ProyectoP2/__init__.py
+ProyectoP2.egg-info/PKG-INFO
+ProyectoP2.egg-info/SOURCES.txt
+ProyectoP2.egg-info/dependency_links.txt
+ProyectoP2.egg-info/top_level.txt
