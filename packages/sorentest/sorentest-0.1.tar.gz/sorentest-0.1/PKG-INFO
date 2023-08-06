@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sorentest
+Version: 0.1
+Summary: A package to test pypi, github actions and other automations
+Home-page: https://github.com/sqbl/SorenTest
+Author: Søren Bertelsen
+Author-email: sorenbertelsen@gmail.com
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Provides-Extra: add1
+License-File: LICENSE.txt

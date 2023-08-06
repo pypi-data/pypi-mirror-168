@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+sorentest/__init__.py
+sorentest/file1.py
+sorentest.egg-info/PKG-INFO
+sorentest.egg-info/SOURCES.txt
+sorentest.egg-info/dependency_links.txt
+sorentest.egg-info/requires.txt
+sorentest.egg-info/top_level.txt
