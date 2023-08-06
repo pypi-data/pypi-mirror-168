@@ -1,0 +1,13 @@
+jpype1>=1.3.0
+jgo
+
+[dev]
+autopep8
+black
+build
+flake8
+pytest
+pytest-cov
+numpy
+pandas
+toml
