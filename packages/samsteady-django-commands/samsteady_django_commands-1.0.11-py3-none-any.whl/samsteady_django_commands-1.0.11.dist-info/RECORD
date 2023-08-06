@@ -1,0 +1,17 @@
+django_commands/__init__.py,sha256=Gt3F4NtMPC8snk3juwPxepI_8mS-imG2QLJAV1L9pfs,102
+django_commands/apps.py,sha256=EYhHJaROWT89z92p2FHUOcuRJ0Uh2qtBmVAv5hnDjjo,101
+django_commands/models.py,sha256=Id6vHRFKg-Z-qbHmoifUYHtmNVbKSOMphjnkp9UAfy4,292
+django_commands/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_commands/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_commands/management/commands/generate_types.py,sha256=P4PAzmRXO-Jm5HUU_ZGsOVBfO_1nPDqallI2ThoXTXI,694
+django_commands/management/commands/migration_checkpoint.py,sha256=wac7ZlmjUHaDCMhWa342Da_Uoz1W6ucZvZvXbYEgKM8,2114
+django_commands/management/commands/migration_restore.py,sha256=vmk5MXpuq-p0u9loeQFHagjWHd5GR6ZDyhZUtzbgNIw,1034
+django_commands/management/commands/process_urls.py,sha256=Jw1bixOnq9T8WSq1zmYyfTyoaZDgxvkrCkhVqr0pkAg,4430
+django_commands/migrations/0001_initial.py,sha256=BMbmvut0EF_zMfCvKIErZsh7M0n67zOCRmXzUT3HsfU,555
+django_commands/migrations/0002_migrationcheckpoint_create.py,sha256=KjBoHXS-EfyPpeD58BCWRlPb9sSDPCxsMBLluYTRgFo,397
+django_commands/migrations/0003_alter_migrationcheckpoint_name.py,sha256=QFLeDoqUjAtxfERSlxb5O5H5KYGIcJgjJstMU0h38eU,425
+django_commands/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samsteady_django_commands-1.0.11.dist-info/METADATA,sha256=oY0ONjQZqGJVLJH7yEDTwjJSVbMy6BggBlgMdcEVhBo,973
+samsteady_django_commands-1.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+samsteady_django_commands-1.0.11.dist-info/top_level.txt,sha256=k9F7AjqfRzF4fMDaLRIgr4do0CIPk2sKgMSmmiL18s0,16
+samsteady_django_commands-1.0.11.dist-info/RECORD,,

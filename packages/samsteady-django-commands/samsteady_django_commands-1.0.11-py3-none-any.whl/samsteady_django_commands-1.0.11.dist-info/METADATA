@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: samsteady-django-commands
+Version: 1.0.11
+Summary: Django Commands
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: django (>=3.0)
+Requires-Dist: djangorestframework (>=3.7)
+Requires-Dist: django-extensions
+Requires-Dist: django-typomatic (>=1.6.2)
+Requires-Dist: pyhumps (>=3.7.1)
+Requires-Dist: jsonfield (>=3.1.0)
+
+# Django Custom Commands
