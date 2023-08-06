@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: jax-jumpy
+Version: 0.0.2
+Summary: Common backend for JAX or numpy.
+Project-URL: Homepage, https://farama.org/
+Project-URL: Repository, https://github.com/Farama-Foundation/Jumpy
+Author-email: Farama Foundation <jkterry@farama.org>
+License: Copyright 2022 Farama Foundation
+        
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        
+            http://www.apache.org/licenses/LICENSE-2.0
+        
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Jumpy
+
+Jumpy is a common backend for [JAX](https://github.com/google/jax) or
+[numpy](https://numpy.org/):
+
+* A jumpy function returns a JAX outputs if given a JAX inputs
+* A jumpy function returns a JAX outputs if jitted
+* Otherwise a jumpy function returns numpy outputs
+
+Jumpy lets you write framework agnostic code that is easy to debug by running
+as raw numpy, but is just as performant as JAX when jitted.
+
+## Installing Jumpy
+
+To install Jumpy from pypi:
+
+```
+python3 -m venv env
+source env/bin/activate
+pip install --upgrade pip
+pip install brax-jumpy
+```
+
+Alternatively, to install Jumpy from source, clone this repo, `cd` to it, and then:
+
+```
+python3 -m venv env
+source env/bin/activate
+pip install --upgrade pip
+pip install -e .
+```
