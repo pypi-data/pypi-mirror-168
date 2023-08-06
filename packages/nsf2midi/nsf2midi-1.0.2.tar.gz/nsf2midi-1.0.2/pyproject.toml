@@ -1,0 +1,17 @@
+[project]
+name = "nsf2midi"
+version = "1.0.2"
+description = "Convert NSF music to MIDI"
+readme = "README.md"
+authors = [{ name = "Sun Xufei"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License"
+]
+keywords = ["feed", "reader", "tutorial"]
+dependencies = [
+    "mido >= 1.2.10"
+]
+
+[project.urls]
+Homepage = "https://github.com/realpython/reader"
