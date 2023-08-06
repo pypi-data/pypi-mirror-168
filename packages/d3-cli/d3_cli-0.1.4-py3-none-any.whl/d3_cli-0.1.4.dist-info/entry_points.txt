@@ -1,0 +1,3 @@
+[console_scripts]
+d3-cli=d3_scripts.d3_cli:cli
+
