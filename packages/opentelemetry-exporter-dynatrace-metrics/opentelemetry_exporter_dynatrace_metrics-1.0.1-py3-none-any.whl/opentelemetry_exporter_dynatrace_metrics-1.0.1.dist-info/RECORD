@@ -1,0 +1,10 @@
+dynatrace/opentelemetry/metrics/export/__init__.py,sha256=ku3u8987o_kbwAxr3un0TUby46_J5bVppiPZX-ZG7NY,3169
+dynatrace/opentelemetry/metrics/export/_exporter.py,sha256=ISfRf49jgGaIqAgvpAmQpvjnIxVm_eS_LCnZvk3nCyk,6235
+dynatrace/opentelemetry/metrics/export/_factory.py,sha256=ZCShPhSY24pK83z3goZci_uFxOVFGY0YhKdiXeFFTtg,6876
+dynatrace/opentelemetry/metrics/export/_histogram_utils.py,sha256=hGM8KnF0LU3GHtas5IFdfcoESK1p5dsphXPLEKO0JLA,4261
+opentelemetry_exporter_dynatrace_metrics-1.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+opentelemetry_exporter_dynatrace_metrics-1.0.1.dist-info/METADATA,sha256=AsFoxrhE8_2UQPOH9X9r4HeP6Lz483EbktPVN74HR0I,8984
+opentelemetry_exporter_dynatrace_metrics-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opentelemetry_exporter_dynatrace_metrics-1.0.1.dist-info/entry_points.txt,sha256=5iaGkVIT57jcVsnCzV4OMZtKyFPJtrba3oA0ud_GwWI,103
+opentelemetry_exporter_dynatrace_metrics-1.0.1.dist-info/top_level.txt,sha256=uP7LCY6wi6upc_ziVV2uJ6QMh_reDN4lCDyQSREXI_w,10
+opentelemetry_exporter_dynatrace_metrics-1.0.1.dist-info/RECORD,,

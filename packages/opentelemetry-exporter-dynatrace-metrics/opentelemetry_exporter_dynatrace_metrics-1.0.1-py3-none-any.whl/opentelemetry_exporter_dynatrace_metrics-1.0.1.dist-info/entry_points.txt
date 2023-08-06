@@ -1,0 +1,3 @@
+[opentelemetry_exporter]
+dynatrace = dynatrace.opentelemetry.metric.exporter:DynatraceMetricsExporter
+
