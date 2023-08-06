@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.py
+tf_sparse/__init__.py
+tf_sparse/sparse_matrix.py
+tf_sparse/sparse_ops.py
+tf_sparse/utils.py
+tf_sparse.egg-info/PKG-INFO
+tf_sparse.egg-info/SOURCES.txt
+tf_sparse.egg-info/dependency_links.txt
+tf_sparse.egg-info/requires.txt
+tf_sparse.egg-info/top_level.txt
+tf_sparse/layers/__init__.py
+tf_sparse/layers/dropout.py

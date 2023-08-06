@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tf-sparse
+Version: 0.0.13
+Summary: Efficient and Friendly Sparse Matrix Library for TensorFlow.
+Home-page: https://github.com/CrawlScript/tf_sparse
+Author: Jun Hu
+Author-email: hujunxianligong@gmail.com
+License: GNU General Public License v3.0 (See LICENSE)
+Platform: UNKNOWN
+Requires-Python: >3.5.0
+Provides-Extra: tf1-cpu
+Provides-Extra: tf1-gpu
+Provides-Extra: tf2-cpu
+Provides-Extra: tf2-gpu
+License-File: LICENSE
+
+
+tf_sparse
+=========
+
+Efficient and Friendly Sparse Matrix Library for TensorFlow
+
+

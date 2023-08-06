@@ -1,0 +1,14 @@
+numpy>=1.17.4
+scipy>=1.1.0
+
+[tf1-cpu]
+tensorflow<2.0.0,>=1.15.0
+
+[tf1-gpu]
+tensorflow-gpu<2.0.0,>=1.15.0
+
+[tf2-cpu]
+tensorflow>=2.4.0
+
+[tf2-gpu]
+tensorflow>=2.4.0
