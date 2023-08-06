@@ -1,0 +1,76 @@
+name: Run tests
+# Run test at each push to master or develop, if changes to package files
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+    - 'requirements.txt'
+    - 'fair_test/**'
+    - 'tests/**'
+    - 'example/metrics/**'
+    - '.github/workflows/test.yml'
+
+jobs:
+
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9, '3.10']
+
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        # Disabling shallow clone is recommended for improving relevancy of reporting
+        fetch-depth: 0
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - uses: actions/cache@v3
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ runner.os }}-python-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-test-v02
+
+    - name: Install dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: pip install -e .[dev,doc,test]
+
+    # - name: Lint
+    #   run: bash scripts/lint.sh
+
+    # - name: Test
+    #   run: bash scripts/test.sh
+
+    # - name: Upload coverage
+    #   uses: codecov/codecov-action@v3
+
+    - name: Setup SonarCloud
+      uses: warchant/setup-sonar-scanner@v3
+    - name: Test with pytest with coverage
+      run: |
+        coverage erase
+        pytest --cov fair_test --cov-report xml:coverage.xml tests/
+        cat coverage.xml
+        coverage combine --append || true
+        coverage report
+        coverage xml
+      # sonar-scanner
+    - name: Run SonarCloud
+      env:
+        # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Change the SonarCloud tests analysis config here
+      run: sonar-scanner -Dsonar.login=${{ secrets.SONAR_TOKEN }} -Dsonar.organization=maastrichtu-ids  -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.projectKey=MaastrichtU-IDS_fair-test -Dsonar.python.coverage.reportPaths=coverage.xml -Dsonar.sources=fair_test
+
+
+    # - name: SonarCloud Scan
+    #   uses: SonarSource/sonarcloud-github-action@master
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+    #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

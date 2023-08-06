@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: fair-test
+Version: 0.0.8
+Summary: A library to build and deploy FAIR metrics tests APIs that can be used by FAIR evaluation services supporting the FAIRMetrics specifications, such as FAIR enough and the FAIR evaluator.
+Project-URL: Homepage, https://github.com/MaastrichtU-IDS/fair-test
+Project-URL: Documentation, https://maastrichtu-ids.github.io/fair-test
+Project-URL: History, https://github.com/MaastrichtU-IDS/fair-test/releases
+Project-URL: Tracker, https://github.com/MaastrichtU-IDS/fair-test/issues
+Project-URL: Source, https://github.com/MaastrichtU-IDS/fair-test
+Author-email: Vincent Emonet <vincent.emonet@gmail.com>
+License-File: LICENSE
+Keywords: API,FAIR,evaluation,test
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Requires-Dist: extruct
+Requires-Dist: fastapi>=0.51.0
+Requires-Dist: idutils
+Requires-Dist: pydantic
+Requires-Dist: pyld
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml<7.0.0,>=5.3.1
+Requires-Dist: rdflib>=6.1.1
+Requires-Dist: requests<3.0.0,>=2.24.0
+Provides-Extra: dev
+Requires-Dist: autoflake<2.0.0,>=1.4.0; extra == 'dev'
+Requires-Dist: mypy==0.971; extra == 'dev'
+Requires-Dist: pre-commit<3.0.0,>=2.17.0; extra == 'dev'
+Requires-Dist: types-pyyaml; extra == 'dev'
+Requires-Dist: types-requests; extra == 'dev'
+Requires-Dist: uvicorn[standard]<0.19.0,>=0.12.0; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: mdx-include<2.0.0,>=1.4.1; extra == 'doc'
+Requires-Dist: mkdocs-markdownextradata-plugin<0.3.0,>=0.1.7; extra == 'doc'
+Requires-Dist: mkdocs-material<9.0.0,>=8.1.4; extra == 'doc'
+Requires-Dist: mkdocs<2.0.0,>=1.1.2; extra == 'doc'
+Requires-Dist: mkdocstrings[python]; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: black==22.8.0; extra == 'test'
+Requires-Dist: flake8-pyproject>=1.1.0.post0; extra == 'test'
+Requires-Dist: flake8<6.0.0,>=3.8.3; extra == 'test'
+Requires-Dist: isort<6.0.0,>=5.0.6; extra == 'test'
+Requires-Dist: mypy==0.971; extra == 'test'
+Requires-Dist: pytest-cov<4.0.0,>=2.12.0; extra == 'test'
+Requires-Dist: pytest<8.0.0,>=7.1.3; extra == 'test'
+Description-Content-Type: text/markdown
+
+<h1 align="center">
+  ☑️ FAIR Test
+</h1>
+
+[![Version](https://img.shields.io/pypi/v/fair-test)](https://pypi.org/project/fair-test) [![Python versions](https://img.shields.io/pypi/pyversions/fair-test)](https://pypi.org/project/fair-test)
+
+[![Run tests](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/test.yml/badge.svg)](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/test.yml) [![CodeQL](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/codeql-analysis.yml) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MaastrichtU-IDS_fair-test&metric=coverage)](https://sonarcloud.io/dashboard?id=MaastrichtU-IDS_fair-test)
+
+[![Publish to PyPI](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/publish.yml/badge.svg)](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/publish.yml) [![Publish docs](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/deploy-docs.yml)
+
+`fair-test` is a library to build and deploy [FAIR](https://www.go-fair.org/fair-principles/) metrics tests APIs, supporting the specifications used by the [FAIRMetrics working group](https://github.com/FAIRMetrics/Metrics), that can be queried to assess if a resource is complying with the [FAIR principles](https://www.go-fair.org/fair-principles/) (Findable, Accessible, Interoperable, Reusable).
+
+It aims to enable python developers to easily write, and deploy FAIR metric tests functions that can be queried by various FAIR evaluations services, such as [FAIR enough](https://fair-enough.semanticscience.org/) and the [FAIRsharing FAIR Evaluator](https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/).
+
+Visit the `fair-test` documentation website for more details on how to use the library to publish new FAIR tests: [**https://maastrichtu-ids.github.io/fair-test 📖**](https://maastrichtu-ids.github.io/fair-test)
