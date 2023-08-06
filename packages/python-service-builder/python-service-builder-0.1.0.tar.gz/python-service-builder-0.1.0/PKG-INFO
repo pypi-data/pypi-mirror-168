@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: python-service-builder
+Version: 0.1.0
+Summary: Helper library for easier creation of Google services.
+Home-page: 
+Author: David Harcombe
+Author-email: david.harcombe@gmail.com
+License: Apache 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Python Library for helping to create Python services from Google APIs
+
