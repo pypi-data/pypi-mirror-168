@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyday-night
+Version: 0.2.0
+Summary: Tools for working with the Day-Night Terminator
+Author: David Richardson
+Author-email: drichardson42@gatech.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pyday Night
+When's a better time to party than on Pyday Night?
+
+## Project Goal
+Pyday Night aims to provide methods for working with solar altitude angles, in particular for use in determining the location of the day-night terminator.
+This module provides similar functionality to the pysolar.solar.get_altitude function, but in a much simpler package.
+
+## Acknowledgements
+The code in this module is heavily based upon MATLAB code provided by Dr. Morris Cohen of Georgia Institute of Technology.
