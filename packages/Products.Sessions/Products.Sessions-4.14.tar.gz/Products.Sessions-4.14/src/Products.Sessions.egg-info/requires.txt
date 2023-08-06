@@ -1,0 +1,13 @@
+setuptools
+six
+AccessControl
+Acquisition
+persistent
+Persistence
+transaction
+ZODB
+Zope>=4.0b5
+zope.interface
+
+[tests]
+Products.TemporaryFolder>=6.2
