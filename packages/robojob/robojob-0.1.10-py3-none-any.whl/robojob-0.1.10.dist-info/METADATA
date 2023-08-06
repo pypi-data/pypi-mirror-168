@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: robojob
+Version: 0.1.10
+Author: Frederik Siegumfeldt
+Author-email: frs@ekf.dk
+Requires-Dist: pyodbc
+Requires-Dist: pyyaml
+
