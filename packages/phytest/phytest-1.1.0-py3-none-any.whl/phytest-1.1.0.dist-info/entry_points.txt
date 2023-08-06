@@ -1,0 +1,6 @@
+[console_scripts]
+phytest=phytest.cli:app
+
+[pytest11]
+phytest=phytest
+
