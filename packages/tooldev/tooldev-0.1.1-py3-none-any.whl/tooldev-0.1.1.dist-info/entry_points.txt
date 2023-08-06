@@ -1,0 +1,3 @@
+[console_scripts]
+td=tooldev.cli_utils:run_cli
+
