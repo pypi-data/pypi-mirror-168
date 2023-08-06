@@ -1,0 +1,11 @@
+grokking/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+grokking/_modidx.py,sha256=w2j0KWxGxkZhEJtqW-Yn2QnzQKsZ0T3rEVYVv3LyWGs,17729
+grokking/helpers.py,sha256=Ia4vJkUGGNvvfRgJNZsou_5_YtVPOzj2aL9SXRwWZnQ,17776
+grokking/setup.py,sha256=2oXFdSlrD9zt-S3v_APhba2vYQqIwg4NM86XEYhfzt8,141
+grokking/transformers.py,sha256=qXkV4nhkIlcvqDfl0u09Qd09SlBO4JuGjzgC8LHIziY,25015
+grokking-0.0.7.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+grokking-0.0.7.dist-info/METADATA,sha256=EdNjW0WKAykqORjcIxR_ajJMGYK4R2FxBVpA1BQx8iE,1114
+grokking-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+grokking-0.0.7.dist-info/entry_points.txt,sha256=PrmDErEQwaZd_zzZcFd2QWZPv6nVUawuUlZaD4sa0y8,38
+grokking-0.0.7.dist-info/top_level.txt,sha256=0PIwTEUh0UxB1or_nWDCwgmPat0Zr8IZLIyfiY5Yye0,9
+grokking-0.0.7.dist-info/RECORD,,
