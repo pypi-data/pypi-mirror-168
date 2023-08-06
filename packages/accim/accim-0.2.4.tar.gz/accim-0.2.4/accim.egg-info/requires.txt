@@ -1,0 +1,6 @@
+eppy
+pycountry
+geopy
+matplotlib
+pandas
+datapackage
