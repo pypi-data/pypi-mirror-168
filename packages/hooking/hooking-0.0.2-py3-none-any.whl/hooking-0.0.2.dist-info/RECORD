@@ -1,0 +1,11 @@
+hooking/__init__.py,sha256=SedHcMta2u_ZHJ0R4b4CYbgTuPLsJ7T9hdaFq9lnWDA,5564
+hooking/__main__.py,sha256=i31lS_pzhoRmSDi-FIl3aXHT0ZpSZpoBWoruzbCWKfQ,133
+hooking/dto/__init__.py,sha256=L6NSlMC7cuJ8mt0vj1YpUIAWByMy-cLV_e_lPNdjVNA,227
+hooking/error/__init__.py,sha256=fK43BLSpZXaajvKTXGbNEG7tnOrcktECETx6iGltM0M,52
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hooking-0.0.2.dist-info/LICENSE,sha256=eJ5o4QtkPcdyDtBv1kDvhYjNnp-4wOzyZwiVvgkyhMA,1076
+hooking-0.0.2.dist-info/METADATA,sha256=JPRVAHcSyiOESl1WS1QLOrWsztnDwJElcr-Yx0SQmys,8578
+hooking-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hooking-0.0.2.dist-info/entry_points.txt,sha256=p5xdFXFsWa3xgjeq70L8Qh_QaWSC9XaLX4jHk54ElrQ,51
+hooking-0.0.2.dist-info/top_level.txt,sha256=ekkBxE8FARb4Yzn3MGvOx6VXTCL_t05qD9LagwhHd_o,14
+hooking-0.0.2.dist-info/RECORD,,
