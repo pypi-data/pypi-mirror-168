@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lb-nightly-rpc
+Version: 0.2.0
+Summary: Celery inter-process interface for LHCb Nightly and Continuous Integration Build System
+License: GPL-3.0-only
+Author: Marco Clemencic
+Author-email: marco.clemencic@cern.ch
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: celery[sqlalchemy] (>=5.1.2,<6.0.0)
+Requires-Dist: lb-nightly-configuration (>=0.3,<0.4)
+Requires-Dist: lbplatformutils (>=4.3.6,<5.0.0)
+Requires-Dist: mysqlclient (>=2.0.3,<3.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
