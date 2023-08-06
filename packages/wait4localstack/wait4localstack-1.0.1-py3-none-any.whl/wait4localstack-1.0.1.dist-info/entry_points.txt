@@ -1,0 +1,2 @@
+[console_scripts]
+wait4localstack = wait4localstack:main
