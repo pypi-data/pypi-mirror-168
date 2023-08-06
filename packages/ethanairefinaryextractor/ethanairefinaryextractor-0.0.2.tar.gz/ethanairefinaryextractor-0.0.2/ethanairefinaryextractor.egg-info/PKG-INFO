@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: ethanairefinaryextractor
+Version: 0.0.2
+Summary: Extration methods for complex type of statements
+Home-page: UNKNOWN
+Author: Nandi Prasad Madikeri
+Author-email: nandi@ethan-ai.com
+License: MIT
+Description: This is a very simple calculator that takes two numbers and either add, subtract, multiply or divide them.
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/04/2020)
+        -------------------
+        - First Release
+        
+Keywords: Extractor
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
