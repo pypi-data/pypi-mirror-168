@@ -1,0 +1,47 @@
+[project]
+name = "finx_io"
+version = "0.1.19"
+authors = [
+    { name="FinX Capital Markets LLC", email="info@finx.io" },
+]
+dependencies = ["aiohttp==3.8.1",
+    "setuptools>=61.0",
+    "lru-dict==1.1.7",
+    "nest-asyncio==1.5.5",
+    "numpy==1.22.3",
+    "pandas==1.4.2",
+    "plotly==5.8.0",
+    "requests==2.27.1",
+    "scipy==1.8.0",
+    "websocket-client==0.58.0",
+    "websockets==10.3",]
+description = "FinX Capital Markets Python SDK"
+#long_description="The FinX SDK is a collection of code that has interfaces to the FinX Capital Markets Analytics Platform. The code in the SDK makes calls to REST APIs & WebSocket endpoints. A FinX API Key is required for the SDK to return results."
+#long_description_content_type="text/x-rst"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "https://finx.io"
+"Github" = "https://github.com/FinX-IO/sdk"
+"Bug Tracker" = "https://github.com/FinX-IO/sdk/issues"
+[build-system]
+requires = [
+    "aiohttp==3.8.1",
+    "setuptools>=61.0",
+    "lru-dict==1.1.7",
+    "nest-asyncio==1.5.5",
+    "numpy==1.22.3",
+    "pandas==1.4.2",
+    "plotly==5.8.0",
+    "requests==2.27.1",
+    "scipy==1.8.0",
+    "websocket-client==0.58.0",
+    "websockets==10.3",
+]
+build-backend = "setuptools.build_meta"
