@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+{% load planb %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('PlanB untitled project') }}{% endblock %}
+
+{% block messages %}
+{% if user.is_authenticated %}
+{% global_messages %}
+{% endif %}
+{{ block.super }}
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('PlanB untitled page') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

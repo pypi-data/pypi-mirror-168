@@ -1,0 +1,175 @@
+-------
+Changes
+-------
+
+v1.7 - *2022-09-20*
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Core**
+
+- Refactor ``Storage`` and ``Dataset`` classes.
+- Consolidate storage location in ``Fileset`` field ``dataset_name``.
+- Refactor ``Storage`` configuration.
+- Refactor backup retention.
+- Add support for hourly backups.
+- Add configurable blacklist hours.
+- Refactor snapshots, drop retention prefixes.
+- A backup now creates one snapshot.
+- Improve snapshot interval stability.
+- Replace custom planb script with normal python entry point.
+
+**Tasks**
+
+- Implement task to allow renaming of filesets in the Storage engine.
+- Enforce global ``Fileset`` locks to prevent race conditions.
+
+**Web interface**
+
+- Show a message when a rename task has spawned from a change.
+- Don't show manually queued Filesets in the backup failure warning.
+
+**Other**
+
+- Fix ``blist`` to show any transport type.
+- Fix ``bclone`` to also clone transport.
+- Fix ``bqueueflush`` to default to the main queue.
+- Cleanup ZFS workdir switching.
+- Fix many bugs.
+- Add many tests.
+- Add tox and travis-ci configuration.
+- Drop python 3.5 support.
+- Fix compatibility with latest django-q.
+- Fix model validation with choices in django>=2.1.
+- Exclude manual backups from triggering failure.
+- Improvements and bug fixes to swiftsync
+- Improvements and bug fixes to zfssync
+
+
+v1.6.post1 - *2019-03-20*
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Web interface**
+
+- Show last snapshot size distribution, and first backup success date,
+  in hostconfig edit-view.
+- Show real-used-size instead of apparent-used-size in snapshot data
+  distribution. If you have ZFS compression enabled, you'll see a drop
+  in the snapshot size summaries (not in the total disk usage).
+- Hide last-error message in hostconfig edit-view for hosts that are
+  disabled.
+
+**Other**
+
+- Single Sign-On (Discourse style) can be enabled (using the optional
+  kleides-dssoclient dependency). See KLEIDES_DSSO_ENDPOINT option.
+- Tweak permissions so you don't need is_superuser powers anymore.
+- Update BossoBillingPoster for posting backup data counts to (internal)
+  Bosso system.
+
+
+v1.5 - *2018-06-13*
+~~~~~~~~~~~~~~~~~~~
+
+**Web interface**
+
+- Show "time since last backup" in listing, instead of just OK/FAIL.
+
+**Tasks**
+
+- Add locking to dutree scanner, so the filesystem isn't raped. Only do
+  one dutree scan at a time.
+- Change scheduler: jobs are now scheduled ahead of time by deducting
+  the expected duration.
+- Fix rsync issue when remote directory permissions are wrong
+  (unreadable by user). In that case, the download (as root user) would
+  succeed, but later changes would fail locally (planb user).
+
+**Other**
+
+- Change schema, removing unnecessary weekly/monthly booleans.
+- Fix ``total_size_mb`` in report, which was too large.
+- Improve ``breport`` command to output to stdout by default.
+
+
+v1.4 - *2018-04-06*
+~~~~~~~~~~~~~~~~~~~
+
+**Web interface**
+
+- Show job failures in hostconfig detail view.
+- Reduce clutter in hostconfig list view, using smaller items and less
+  clutter.
+- Show average run time, instead of last run time.
+
+**Other**
+
+- Fix bug with sending of breport emails.
+- Use git version for pip-install if available; add makefile for quick
+  commands.
+- Update qcluster argv so it's still considered busy while doing the
+  dutree scan.
+
+
+v1.3 - *2018-03-19*
+~~~~~~~~~~~~~~~~~~~
+
+**Web interface**
+
+- Disallow deletion of non-empty host groups.
+
+**CLI**
+
+- Add ``breport`` command to send out backup reports. See the template
+  in templates/planb/report_email_body.txt. Note that the report is
+  still in alpha stage. NOTE: To get e-mail reports as well, you need
+  to have ``rst2html`` installed.
+- Add ``--with-disabled`` to ``confexport`` command to get complete
+  exports.
+- Fix that planb runserver can be used for development (through
+  PYTHONPATH propagation).
+
+**Other**
+
+- Dependency updates to Django 2.0+.
+- Add backup history record keeping, for better logging and averages.
+
+
+v1.2 - *2017-09-18*
+~~~~~~~~~~~~~~~~~~~
+
+- Fix release, this time without pyc files and with wheel package.
+  Run this for upload: python setup.py sdist bdist_wheel upload
+
+
+v1.1 - *2017-09-18*
+~~~~~~~~~~~~~~~~~~~
+
+**Settings**
+
+- Add ``PLANB_DEFAULT_INCLUDES``.
+- Rename ``ZFS_BIN``, ``SUDO_BIN`` and ``RSYNC_BIN`` to ``PLANB_<setting>``.
+- Fix allowing use of alternate ``DJANGO_SETTINGS_MODULE``.
+
+**Web interface**
+
+- Add hosts to hostgroup listing.
+- Allow ordering hosts by enabled/queued/running.
+
+**CLI**
+
+- Add "stale mounts" listing (planb slist).
+- Create "hostconfig" export in YAML or JSON format (planb confexport).
+
+**Queue**
+
+- Fix so long running jobs don't suffer from lost DB connections.
+
+**Other**
+
+- Misc refactoring/cleanup.
+
+
+v1.0 - *2017-07-11*
+~~~~~~~~~~~~~~~~~~~
+
+- Initial release.
