@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: MeineUtils
+Version: 0.0.9
+Summary: My utils
+Home-page: https://github.com/neko941/MeineUtils
+Author: neko941 (Khoa Nguyen)
+Keywords: python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# MeineUtils
