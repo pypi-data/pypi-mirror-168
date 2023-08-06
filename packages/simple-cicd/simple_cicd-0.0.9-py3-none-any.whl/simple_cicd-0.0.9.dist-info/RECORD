@@ -1,0 +1,10 @@
+simple_cicd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_cicd/ci_files.py,sha256=7M5DV46LQWIYZ5p_s3ezJJ5mqkDDmyPbnEJb5jeAuc8,1071
+simple_cicd/functions.py,sha256=ncI6_1G8H9ak7r_5xbGaRwEaOQhhump1Mkos9bayVaU,10638
+simple_cicd/simple_cicd.py,sha256=CjN6QUdmFRsmkExCnm9m55aYpasinWasO_Gx14JQci4,11219
+simple_cicd-0.0.9.dist-info/LICENSE,sha256=MuQIbPiHsy6QZ6ckn_gUF_8xqYYdSQQmLaNWUGr2NIA,34459
+simple_cicd-0.0.9.dist-info/METADATA,sha256=QsbNVLSU-xB3p92Qcw-ZnE1Yh2iOsSMXCPWGLq21FD4,3370
+simple_cicd-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+simple_cicd-0.0.9.dist-info/entry_points.txt,sha256=b8UckeKo0H1BlG9RRKY2gipBydrHlLDGgDyhU9W5TOk,58
+simple_cicd-0.0.9.dist-info/top_level.txt,sha256=BBxXPy8ozKY5dV88FXf6cuEhe7lG8Pi5rzI-9U-6ZTI,12
+simple_cicd-0.0.9.dist-info/RECORD,,
