@@ -1,0 +1,7 @@
+setup.py
+EWANBOT/__init__.py
+EWANBOT.egg-info/PKG-INFO
+EWANBOT.egg-info/SOURCES.txt
+EWANBOT.egg-info/dependency_links.txt
+EWANBOT.egg-info/requires.txt
+EWANBOT.egg-info/top_level.txt
