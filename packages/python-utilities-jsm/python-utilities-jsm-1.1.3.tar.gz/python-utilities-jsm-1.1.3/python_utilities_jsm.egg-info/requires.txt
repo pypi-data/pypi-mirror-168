@@ -1,0 +1,11 @@
+bagit
+beautifulsoup4
+bleach
+cchardet
+chardet
+ipykernel
+openpyxl
+regex
+requests
+six
+w3lib
