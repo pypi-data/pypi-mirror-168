@@ -1,0 +1,3 @@
+[console_scripts]
+ynab=ofx_processor.main:cli
+
