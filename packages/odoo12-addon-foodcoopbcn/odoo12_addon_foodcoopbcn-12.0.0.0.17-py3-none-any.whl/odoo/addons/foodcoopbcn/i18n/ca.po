@@ -1,0 +1,179 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* easy_my_coop_website
+#	* foodcoopbcn
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-03 16:12+0000\n"
+"PO-Revision-Date: 2022-06-03 16:12+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.address_template
+msgid "1030"
+msgstr "CP"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.address_template
+msgid "Address"
+msgstr "Adreça"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "Bourdon"
+msgstr "Cognom"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.address_template
+msgid "Bruxelles"
+msgstr "Barcelona"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.address_template
+msgid "City"
+msgstr "Ciutat"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.address_template
+msgid "Country"
+msgstr "País"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "Date of birth"
+msgstr "Data de naixement"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "Didier"
+msgstr "Nom"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "First Name"
+msgstr "Nom"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.becomecompanycooperator
+msgid "Function"
+msgstr "Funció"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "Gender"
+msgstr "Gènere"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.rules_template
+msgid "Internal Rules"
+msgstr "Reglament intern"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "Language"
+msgstr "Llengua"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "Last Name"
+msgstr "Cognoms"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "Phone"
+msgstr "Telèfon"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.rules_template
+msgid "Privacy\n"
+"            Policy"
+msgstr "Política de privacitat"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.contact_template
+msgid "e.g. +32 456 926 5059"
+msgstr "+34 602345678"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.address_template
+msgid "rue Van Hove, 199"
+msgstr "Carrer"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.shares_template
+msgid "Share type"
+msgstr "Tipus de sòcia"
+
+#. module: easy_my_coop_website
+#: model_terms:ir.ui.view,arch_db:easy_my_coop_website.address_template
+msgid "Zip / Postal Code"
+msgstr "Codi Postal"
+
+#. module: foodcoopbcn
+#: model_terms:ir.ui.view,arch_db:foodcoopbcn.product_label_content_barcode_and_name
+msgid "Barcode"
+msgstr "Codi de barres"
+
+#. module: foodcoopbcn
+#: model:ir.model.fields,field_description:foodcoopbcn.field_subscription_request__discovery_channel
+#: model_terms:ir.ui.view,arch_db:foodcoopbcn.approvals_template
+msgid "Discovery channel"
+msgstr "Com ens has conegut?"
+
+#. module: foodcoopbcn
+#: model:ir.model.fields,field_description:foodcoopbcn.field_subscription_request__join_commission
+#: model_terms:ir.ui.view,arch_db:foodcoopbcn.approvals_template
+msgid "Join commission"
+msgstr "Et vols implicar de manera activa en el súper? "
+
+#. module: foodcoopbcn
+#. openerp-web
+#: code:addons/foodcoopbcn/static/src/xml/pos.xml:13
+#, python-format
+msgid "Name:"
+msgstr "Client"
+
+#. module: foodcoopbcn
+#: model:ir.model.fields,field_description:foodcoopbcn.field_subscription_request__newsletter_approved
+#: model_terms:ir.ui.view,arch_db:foodcoopbcn.approvals_template
+msgid "Newsletter approved"
+msgstr "Estàs d'acord en rebre informació per correu electrònic? "
+
+#. module: foodcoopbcn
+#: model:ir.model.fields,field_description:foodcoopbcn.field_stock_move__product_category
+msgid "Product Category"
+msgstr "Categoria del producte"
+
+#. module: foodcoopbcn
+#: model:ir.model,name:foodcoopbcn.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producte"
+
+#. module: foodcoopbcn
+#: model:ir.model,name:foodcoopbcn.model_purchase_order
+msgid "Purchase Order"
+msgstr "Comanda de compra"
+
+#. module: foodcoopbcn
+#: model:ir.model,name:foodcoopbcn.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línia de la comanda de compra
+
+#. module: foodcoopbcn
+#: model:ir.model.fields,field_description:foodcoopbcn.field_subscription_request__unit_composition
+#: model_terms:ir.ui.view,arch_db:foodcoopbcn.approvals_template
+msgid "Unit composition"
+msgstr "Nombre de persones adultes (+18) de la unitat familiar "
+
+#. module: foodcoopbcn
+#: model_terms:ir.ui.view,arch_db:foodcoopbcn.vat_template
+msgid "VAT"
+msgstr "CIF/NIF"

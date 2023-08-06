@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="hide_account_link" inherit_id="easy_my_coop_website.becomecooperator">
+    <xpath expr="(//a)[position()=last()]" position="replace"/>
+  </template>
+
+  <template id="vat_template" inherit_id="easy_my_coop_website.contact_template">
+    <xpath expr="//div[@name='phone_container']" position="before">
+      <div t-attf-class="form-group #{error and 'vat' in error and 'has-error' or ''}"
+            name="vat_container">
+        <label for="vat">VAT</label>
+        <input
+            type="text"
+            class="form-control form-control-sm"
+            name="vat"
+            placeholder="Y5643925S"
+            required="True"
+            t-attf-value="#{vat or ''}"
+        />
+      </div>
+    </xpath>
+  </template>
+
+  <template id="approvals_template" inherit_id="easy_my_coop_website.address_template">
+    <xpath expr="//div[@name='country_container']" position="after">
+      <div t-attf-class="form-group #{error and 'unit_composition' in error and 'has-error' or ''}">
+        <label class="control-label" for="unit_composition">Unit composition</label>
+          <input type="number" class="form-control form-control-sm" required="True" name="unit_composition"/>
+      </div>
+      <div t-attf-class="form-group">
+        <label class="control-label" for="join_commission">Join commission</label>
+        <select name="join_commission" class="form-control form-control-sm">
+        <option value=""></option>
+        <t t-foreach="commissions or []" t-as="type">
+          <option t-att-value="type[0]" t-att-selected="type[0] == commission"><t t-esc="type[1]"/></option>
+        </t>
+        </select>
+      </div>
+      <div t-attf-class="form-group #{error and 'discovery_channel' in error and 'has-error' or ''}">
+        <label class="control-label" for="discovery_channel">Discovery channel</label>
+        <select name="discovery_channel" class="form-control-sm form-control" required="True">
+        <option value=""></option>
+        <t t-foreach="channels or []" t-as="type">
+            <option t-att-value="type[0]" t-att-selected="type[0] == channel"><t t-esc="type[1]"/></option>
+        </t>
+        </select>
+      </div>
+      <div id="newsletter_approved" t-attf-class="form-group" >
+        <label class="control-label" for="newsletter_approved">Newsletter approved</label>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"
+                    name="newsletter_approved"
+                    t-att-checked="newsletter_approved"/>
+            </label>
+        </div>
+      </div>
+    </xpath>
+  </template>
+
+  <template id="shares_template_hide" inherit_id="easy_my_coop_website.shares_template">
+    <xpath expr="//div[@class='col-md-4 col-6']" position="attributes">
+      <attribute name="hidden">1</attribute>
+    </xpath>
+    <xpath expr="//div[@name='total_parts_container']" position="attributes">
+      <attribute name="hidden">1</attribute>
+    </xpath>
+  </template>
+  
+</odoo>
