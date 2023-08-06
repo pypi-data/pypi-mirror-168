@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: fastaibreadcrumbs
+Version: 0.0.11
+Summary: Breadcrumbs for fastai users
+Home-page: https://github.com/sapal6/fastaibreadcrumbs/
+Author: Satyabrata pal
+Author-email: satyabrata.pal1@gmail.com
+License: Apache Software License 2.0
+Keywords: machine-learning,nbdev,fastai
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastai
+Requires-Dist: opencv-python
+Requires-Dist: torchvision
+Requires-Dist: fastkaggle
+Provides-Extra: dev
+
+# Fastaibreadcrumbs
+
+> Breadcrumbs for fastai users.
+
+## Install
+`pip install fastaibreadcrumbs`
+
+## How to use
+
+Just import "fastaibreadcrumbs" and get started.
+
+Some tiny convience functions are available which are handy while working on projects based on [fastkaggle](https://fastai.github.io/fastkaggle/) and/or [fastai](https://docs.fast.ai/). 
+
+A couple of examples are `setup_data` to setup kaggle data on your local machine and `crappifier` to create crappified version of image data. Explore the "fastaibreadcrumbs.core" page for more functions.
+
+
