@@ -1,0 +1,3 @@
+[console_scripts]
+certdeploy-client = certdeploy.client._main:main
+certdeploy-server = certdeploy.server._main:main
