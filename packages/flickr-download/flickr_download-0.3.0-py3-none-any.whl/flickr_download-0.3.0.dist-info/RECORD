@@ -1,0 +1,9 @@
+flickr_download/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flickr_download/filename_handlers.py,sha256=uBqYham2PuLeGu_viWGgwFtPBbYYGjCG2T5BiSe7OsI,3287
+flickr_download/flick_download.py,sha256=gmmFFfZe4Czy5nVbMpzKtUP1yUSo4VTtlm7pjSepC88,16790
+flickr_download/utils.py,sha256=3szJQ5xogc2947YTB-ADNuIK4lpOmXM2XXlbZ7adt6g,1995
+flickr_download-0.3.0.dist-info/entry_points.txt,sha256=QZA3-EDKbzbViF3hTi7dAt1-CPOOUImgNefBNTjNaZo,71
+flickr_download-0.3.0.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+flickr_download-0.3.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+flickr_download-0.3.0.dist-info/METADATA,sha256=iRtEZUsZ13QdMUyNBA1jaWNm7p_Y9KE2EpNPnl_fkH0,3768
+flickr_download-0.3.0.dist-info/RECORD,,
