@@ -1,0 +1,105 @@
+[build-system]
+requires = ["hatchling>=1.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyter_releaser"
+description = "Jupyter Releaser for Python and/or npm packages."
+license = {file = "LICENSE"}
+authors = [{name = "Jupyter Development Team", email = "jupyter@googlegroups.com"}]
+keywords = ["ipython", "jupyter"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+urls = {Homepage = "https://jupyter.org"}
+requires-python = ">=3.8"
+dynamic = ["version"]
+dependencies = [
+    "click",
+    "ghapi",
+    "github-activity~=0.2",
+    "importlib_resources",
+    "jsonschema>=3.0.1",
+    "packaging",
+    "pkginfo",
+    "pytest-check-links>=0.7",
+    "pypiserver",
+    "pipx",
+    "requests",
+    "requests_cache",
+    "toml~=0.10",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.optional-dependencies]
+test = [
+    "coverage",
+    "fastapi",
+    "pre-commit",
+    "pytest>=7.0",
+    "pytest-cov",
+    "pytest-mock",
+    "uvicorn"
+]
+
+[project.scripts]
+jupyter-releaser = "jupyter_releaser.cli:main"
+
+[tool.hatch.version]
+path = "jupyter_releaser/__init__.py"
+
+[tool.jupyter-releaser]
+skip = ["check-links"]
+
+[tool.jupyter-releaser.hooks]
+after-draft-release = "bash ./.github/scripts/bump_tag.sh"
+
+[tool.pytest.ini_options]
+addopts = "-raXs --durations 10 --color=yes --doctest-modules"
+testpaths = [
+    "jupyter_releaser/tests/"
+]
+filterwarnings= [
+  # Fail on warnings
+  "error",
+  "ignore:Using deprecated setup.py invocation:UserWarning",
+  "module:Neither GITHUB_TOKEN nor GITHUB_JWT_TOKEN found:UserWarning",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = false
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+no_implicit_reexport = false
+pretty = true
+show_error_context = true
+show_error_codes = true
+strict_equality = true
+strict_optional = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_return_any = false
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = [
+  "toml.*",
+  "jsonschema",
+  "ghapi.*",
+  "github_activity",
+  "pkginfo",
+  "pypandoc",
+]
+ignore_missing_imports = true
