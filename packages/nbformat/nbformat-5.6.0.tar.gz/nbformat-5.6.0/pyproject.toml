@@ -1,0 +1,89 @@
+[build-system]
+requires = ["hatchling>=1.5", "hatch-nodejs-version"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nbformat"
+dynamic = ["version"]
+description = "The Jupyter Notebook format"
+license = { file = "COPYING.md" }
+keywords = ["Interactive", "Interpreter", "Shell", "Web"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+requires-python = ">=3.7"
+dependencies = [
+    "fastjsonschema",
+    "jsonschema>=2.6",
+    "jupyter_core",
+    "traitlets>=5.1",
+]
+
+[[project.authors]]
+name = "Jupyter Development Team"
+email = "jupyter@googlegroups.com"
+
+[project.readme]
+text = "This package contains the base implementation of the Jupyter Notebook format,\nand Python APIs for working with notebooks."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://jupyter.org"
+
+[project.optional-dependencies]
+test = [
+    "check-manifest",
+    "testpath",
+    "pytest",
+    "pre-commit",
+    "pep440"
+]
+
+[project.scripts]
+jupyter-trust = "nbformat.sign:TrustNotebookApp.launch_instance"
+
+[tool.hatch.version]
+source = "nodejs"
+
+[tool.pytest.ini_options]
+addopts = "-raXs --durations 10 --color=yes --doctest-modules"
+testpaths = [
+    "tests/",
+]
+filterwarnings = [
+    "error",
+    "ignore:Using or importing the ABCs from 'collections':DeprecationWarning:jsonschema"
+]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+pretty = true
+show_error_context = true
+show_error_codes = true
+strict_equality = true
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[[tool.mypy.overrides]]
+module = [
+    "fastjsonschema",
+    "jsonschema",
+    "jupyter_core.*",
+    "pysqlite2",
+    "traitlets.*",
+    "testpath"
+]
+ignore_missing_imports = true
