@@ -1,0 +1,13 @@
+README.md
+setup.py
+easymacro.egg-info/PKG-INFO
+easymacro.egg-info/SOURCES.txt
+easymacro.egg-info/dependency_links.txt
+easymacro.egg-info/requires.txt
+easymacro.egg-info/top_level.txt
+macro/__init__.py
+macro/clipboard.py
+macro/keyboard.py
+macro/mouse.py
+macro/utils.py
+macro/window.py
