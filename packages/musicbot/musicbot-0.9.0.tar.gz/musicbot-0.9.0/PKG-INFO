@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: musicbot
+Version: 0.9.0
+Summary: Music swiss army knife
+Home-page: https://github.com/AdrienPensart/musicbot
+License: MIT
+Author: Adrien Pensart
+Author-email: crunchengine@gmail.com
+Maintainer: Adrien Pensart
+Maintainer-email: crunchengine@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyICU (>=2.9,<3.0)
+Requires-Dist: Pygments (>=2.11.2,<3.0.0)
+Requires-Dist: attrs (>=21.4.0,<22.0.0)
+Requires-Dist: beartype (>=0.10.0,<0.11.0)
+Requires-Dist: beets (>=1.6.0,<2.0.0)
+Requires-Dist: click-skeleton (>=0.26,<0.27)
+Requires-Dist: colorlog (>=6.4.1,<7.0.0)
+Requires-Dist: edgedb (>=0.24.0,<0.25.0)
+Requires-Dist: fuzzywuzzy (>=0.18.0,<0.19.0)
+Requires-Dist: humanize (>=4.0.0,<5.0.0)
+Requires-Dist: more-itertools (>=8.14.0,<9.0.0)
+Requires-Dist: mutagen (>=1.44.0,<2.0.0)
+Requires-Dist: natsort (>=8.1.0,<9.0.0)
+Requires-Dist: progressbar2 (>=4.0.0,<5.0.0)
+Requires-Dist: prompt_toolkit (>=3.0.2,<4.0.0)
+Requires-Dist: pyacoustid (>=1.1,<2.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: python-Levenshtein (>=0.12.2,<0.13.0)
+Requires-Dist: python-slugify (>=6.0.1,<7.0.0)
+Requires-Dist: python-vlc (>=3.0,<4.0)
+Requires-Dist: requests (>=2.24.0,<3.0.0)
+Requires-Dist: rich (>=12.0.0,<13.0.0)
+Requires-Dist: spotipy (>=2.16.0,<3.0.0)
+Requires-Dist: types-PyYAML (>=6.0.8,<7.0.0)
+Requires-Dist: types-python-slugify (>=6.1.0,<7.0.0)
+Requires-Dist: types-requests (>=2.25.0,<3.0.0)
+Requires-Dist: uvloop (>=0.17.0,<0.18.0)
+Requires-Dist: watchdog (>=2.0.2,<3.0.0)
+Requires-Dist: yt-dlp (>=2022.8.8,<2023.0.0)
