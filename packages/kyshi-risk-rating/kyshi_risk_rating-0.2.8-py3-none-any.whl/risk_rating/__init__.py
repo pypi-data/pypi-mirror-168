@@ -1,0 +1,1 @@
+from risk_rating.risk_rating import calculate_risk_score
