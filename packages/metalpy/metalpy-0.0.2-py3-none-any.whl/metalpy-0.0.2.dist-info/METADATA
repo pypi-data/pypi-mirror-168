@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: metalpy
+Version: 0.0.2
+Summary: Essential tools and libraries for SimPEG and other workflow in META Lab.
+Author-email: yanang007 <yanang007@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: distributed
+Requires-Dist: SimPEG
+Requires-Dist: discretize
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: psutil
+Requires-Dist: pywin32
+Requires-Dist: properties
+Requires-Dist: colour
+
