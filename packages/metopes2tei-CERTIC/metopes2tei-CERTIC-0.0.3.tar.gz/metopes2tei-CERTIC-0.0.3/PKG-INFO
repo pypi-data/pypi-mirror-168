@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: metopes2tei-CERTIC
+Version: 0.0.3
+Summary: Convert Métopes v3 to TEI
+Home-page: https://git.unicaen.fr/metopes/metopes-v3-to-tei
+Author: Mickaël Desfrênes
+Author-email: mickael.desfrenes@unicaen.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/plain
+
+Convert Métopes v3 to TEI
+

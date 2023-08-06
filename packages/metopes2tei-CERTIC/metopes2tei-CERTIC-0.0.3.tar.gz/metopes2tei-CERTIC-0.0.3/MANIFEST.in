@@ -1,0 +1,1 @@
+recursive-include metopes2tei/resources pipeline.sh *.xsl *.xsd saxon9.jar
