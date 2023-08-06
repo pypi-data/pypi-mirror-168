@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mylibtool
+Version: 0.1.7
+Summary: My python library package with some scraper tool and data tool
+Home-page: https://github.com/pgshow/mylibtool
+Author: Daniel
+Author-email: me@example.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+📦 Mylibtool
+=======================
+
+Mylibtool include DataTime extraction module and WordPress module.
+
+The demo is in example folder.
+
+Installation
+-----
+
+```bash
+pip3 install mylibtool
+```
+
+
