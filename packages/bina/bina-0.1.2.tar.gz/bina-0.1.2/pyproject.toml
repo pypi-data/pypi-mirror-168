@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bina"
+version = "0.1.2"
+description = "Python Multi-Camera Recording and Synchronization"
+authors = ["Ahmad Amirivojdan <aamirivo@vols.utk.edu>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/amirivojdan/bina"
+keywords = ["camera", "multi-camera", "offline synchronization"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pendulum = "^2.1"
+opencv-python = "^4.6.0.66"
+numpy = "^1.23.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+ 
+[tool.poetry.urls]
+"Author's Home Page" = "https://amirivojdan.io/"
