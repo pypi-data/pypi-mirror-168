@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bin/photocompare
+photocmp/__init__.py
+photocmp.egg-info/PKG-INFO
+photocmp.egg-info/SOURCES.txt
+photocmp.egg-info/dependency_links.txt
+photocmp.egg-info/requires.txt
+photocmp.egg-info/top_level.txt
