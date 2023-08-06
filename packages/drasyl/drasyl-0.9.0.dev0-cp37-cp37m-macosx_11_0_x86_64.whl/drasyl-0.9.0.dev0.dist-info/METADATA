@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: drasyl
+Version: 0.9.0.dev0
+Summary: drasyl is a general-purpose overlay network framework for rapid development of distributed P2P applications
+Author-email: Heiko Bornholdt <bornholdt@informatik.uni-hamburg.de>, Kevin Röbert <kevin.roebert@uni-hamburg.de>
+License: Copyright (c) 2020-2022 Heiko Bornholdt and Kevin Röbert
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+        DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+        OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+        OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Documentation, https://docs.drasyl.org/
+Project-URL: Source, https://github.com/drasyl-overlay/drasyl
+Project-URL: Changelog, https://github.com/drasyl-overlay/drasyl/blob/master/CHANGELOG.md
+Project-URL: Homepage, https://drasyl.org
+Project-URL: Issue Tracker, https://github.com/drasyl-overlay/drasyl/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: System :: Networking
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[<img src="https://docs.drasyl.org/img/logo-text.svg" alt="drasyl" width="200"/>](https://drasyl.org)
+
+[Website](https://drasyl.org) |
+[Documentation](https://docs.drasyl.org) |
+[Contributing](CONTRIBUTING.md) |
+[Changelog](CHANGELOG.md)
+
+[![Test](https://github.com/drasyl-overlay/drasyl/actions/workflows/test.yml/badge.svg)](https://github.com/drasyl-overlay/drasyl/actions/workflows/test.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
+[![Maven Central](https://img.shields.io/maven-central/v/org.drasyl/drasyl-core.svg)](https://mvnrepository.com/artifact/org.drasyl/drasyl-core)
+[![Homebrew](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/drasyl-overlay/homebrew-tap/main/Info/drasyl.json&prefix=v&query=$.versions.stable&label=homebrew&color=important)](https://github.com/drasyl-overlay/homebrew-tap)
+[![Chocolatey](https://img.shields.io/chocolatey/v/drasyl)](https://chocolatey.org/packages/drasyl)
+[![Docker Pulls](https://img.shields.io/docker/pulls/drasyl/drasyl)](https://hub.docker.com/r/drasyl/drasyl)
+[![Discord](https://img.shields.io/discord/959492172560891905)](https://discord.gg/2tcZPy7BCu)
+
+# drasyl
+
+[drasyl](https://github.com/drasyl-overlay/drasyl) [dʁazy:l] is a general-purpose overlay network framework for rapid development of distributed
+P2P applications.
+
+By using drasyl developers can fully concentrate on creating distributed applications. With drasyl,
+boundaries between IP-based networks will be eliminated and secure communication channels between
+any peers will be provided. Zero-configuration is required to use drasyl. Developers can run a new
+drasyl node without having to write configuration files or provide IP addresses of peers.
+
+<img src="https://docs.drasyl.org/img/drasyl-architecture.svg" alt="drasyl architecture" width="650px">
+
+# Features
+
+* Provides Communication Channels between any two Nodes (on the Internet).
+* Automatic Discovery of Peers running within same Process, Computer, LAN, or the Internet.
+* Automatic Handover to most local Route.
+* Overcomes Network Barriers (Stateful Firewalls, NATs).
+* UDP Hole Punching.
+* Port Mapping (UPnP-IGD, NAT-PMP, PCP).
+* Communication is (PFS) encrypted.
+* Reacts to Network Connection Changes.
+* Asynchronous and Event-Driven.
+* Lightweight.
+* Extensible.
+
+# Usage & Documentation
+
+* [Getting Started](https://docs.drasyl.org/getting-started/)
+* [Configuration](https://docs.drasyl.org/configuration/)
+* [Command Line Interface](https://docs.drasyl.org/cli/)
+
+# License
+
+This is free software under the terms of the [MIT License](https://github.com/drasyl-overlay/drasyl/blob/master/LICENSE).
