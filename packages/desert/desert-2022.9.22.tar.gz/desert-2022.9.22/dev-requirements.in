@@ -1,0 +1,15 @@
+versioneer
+black
+build
+pylint
+pex
+bump2version
+docutils
+check-manifest
+readme-renderer
+pygments
+isort
+mypy
+towncrier
+twine
+wheel
