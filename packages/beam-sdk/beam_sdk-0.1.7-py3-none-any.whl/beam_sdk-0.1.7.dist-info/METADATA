@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: beam-sdk
+Version: 0.1.7
+Summary: 
+Author: luke lombardi
+Author-email: luke@slai.io
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: marshmallow (>=3.18.0,<4.0.0)
+Requires-Dist: mypy (>=0.971,<0.972)
+Requires-Dist: packaging (>=21.3,<22.0)
