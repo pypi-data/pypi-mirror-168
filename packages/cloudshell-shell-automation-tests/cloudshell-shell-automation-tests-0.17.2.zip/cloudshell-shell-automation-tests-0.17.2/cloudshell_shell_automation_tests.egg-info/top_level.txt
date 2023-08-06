@@ -1,0 +1,3 @@
+set_debug_logs
+shell_tests
+tests
