@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "requests"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ibott-robot-manager"
+version = "1.0.0"
+authors = [
+    { name="OnameDohe", email="enrique.crespo.debenito@gmail.com" },
+]
+description = "This packages allows to use ibott robot console features. More information in https://ibott.io"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ecrespo66/robot-manager"
+"Bug Tracker" = "https://github.com/ecrespo66/robot-manager/issues"
