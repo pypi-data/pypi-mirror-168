@@ -1,0 +1,3 @@
+[console_scripts]
+hescorejsons = hescorehpxml.create_all_example_json:main
+hpxml2hescore = hescorehpxml:main
