@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+AppriseLibrary/AppriseLibrary.py
+AppriseLibrary/__init__.py
+robotframework_apprise.egg-info/PKG-INFO
+robotframework_apprise.egg-info/SOURCES.txt
+robotframework_apprise.egg-info/dependency_links.txt
+robotframework_apprise.egg-info/requires.txt
+robotframework_apprise.egg-info/top_level.txt
