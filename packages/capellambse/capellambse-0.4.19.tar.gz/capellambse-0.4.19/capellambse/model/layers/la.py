@@ -1,0 +1,253 @@
+# SPDX-FileCopyrightText: Copyright DB Netz AG and the capellambse contributors
+# SPDX-License-Identifier: Apache-2.0
+
+"""Tools for the Logical Architecture layer.
+
+.. diagram:: [CDB] LA ORM
+"""
+from __future__ import annotations
+
+import operator
+
+from .. import common as c
+from .. import crosslayer, diagram
+from ..crosslayer import capellacommon, capellacore, cs, fa, interaction
+from . import ctx
+
+XT_ARCH = "org.polarsys.capella.core.data.la:LogicalArchitecture"
+
+
+@c.xtype_handler(XT_ARCH)
+class LogicalFunction(fa.Function):
+    """A logical function on the Logical Architecture layer."""
+
+    _xmltag = "ownedLogicalFunctions"
+
+    realized_system_functions = c.ReferencingProxyAccessor(
+        ctx.SystemFunction,
+        fa.FunctionRealization,
+        aslist=c.ElementList,
+        follow="targetElement",
+    )
+
+    @property
+    def owner(self) -> LogicalComponent | None:
+        try:
+            return next(
+                i
+                for i in self._model.search("LogicalComponent")
+                if self in i.allocated_functions
+            )
+        except StopIteration:
+            return None
+
+
+@c.xtype_handler(XT_ARCH)
+class LogicalFunctionPkg(c.GenericElement):
+    """A logical function package."""
+
+    _xmltag = "ownedFunctionPkg"
+
+    functions = c.DirectProxyAccessor(LogicalFunction, aslist=c.ElementList)
+
+    packages: c.Accessor
+
+
+@c.xtype_handler(XT_ARCH)
+class LogicalComponent(cs.Component):
+    """A logical component on the Logical Architecture layer."""
+
+    _xmltag = "ownedLogicalComponents"
+
+    allocated_functions = c.ReferencingProxyAccessor(
+        LogicalFunction,
+        fa.XT_FCALLOC,
+        aslist=c.ElementList,
+        follow="targetElement",
+    )
+    realized_components = c.ReferencingProxyAccessor(
+        ctx.SystemComponent,
+        cs.ComponentRealization,
+        aslist=c.ElementList,
+        follow="targetElement",
+    )
+
+    components: c.Accessor
+
+
+@c.xtype_handler(XT_ARCH)
+class LogicalComponentPkg(c.GenericElement):
+    """A logical component package."""
+
+    _xmltag = "ownedLogicalComponentPkg"
+
+    components = c.DirectProxyAccessor(LogicalComponent, aslist=c.ElementList)
+    state_machines = c.DirectProxyAccessor(
+        capellacommon.StateMachine, aslist=c.ElementList
+    )
+
+    packages: c.Accessor
+
+
+@c.xtype_handler(XT_ARCH)
+class CapabilityRealization(c.GenericElement):
+    """A capability."""
+
+    _xmltag = "ownedCapabilityRealizations"
+
+    owned_chains = c.DirectProxyAccessor(
+        fa.FunctionalChain, aslist=c.ElementList
+    )
+    involved_functions = c.ReferencingProxyAccessor(
+        LogicalFunction,
+        interaction.XT_CAP2ACT,
+        aslist=c.ElementList,
+        follow="involved",
+    )
+    involved_chains = c.ReferencingProxyAccessor(
+        fa.FunctionalChain,
+        interaction.XT_CAP2PROC,
+        aslist=c.ElementList,
+        follow="involved",
+    )
+    involved_components = c.ReferencingProxyAccessor(
+        LogicalComponent,
+        xtypes=ctx.CapabilityInvolvement,
+        follow="involved",
+        aslist=c.MixedElementList,
+    )
+    realized_capabilities = c.ReferencingProxyAccessor(
+        ctx.Capability,
+        interaction.XT_CAP_REAL,
+        follow="targetElement",
+        aslist=c.ElementList,
+    )
+
+    postcondition = c.AttrProxyAccessor(
+        capellacore.Constraint, "postCondition"
+    )
+    precondition = c.AttrProxyAccessor(capellacore.Constraint, "preCondition")
+    scenarios = c.DirectProxyAccessor(
+        interaction.Scenario, aslist=c.ElementList
+    )
+    states = c.AttrProxyAccessor(
+        capellacommon.State, "availableInStates", aslist=c.ElementList
+    )
+
+    packages: c.Accessor
+
+
+@c.xtype_handler(XT_ARCH)
+class CapabilityRealizationPkg(c.GenericElement):
+    """A capability package that can hold capabilities."""
+
+    _xmltag = "ownedAbstractCapabilityPkg"
+
+    capabilities = c.DirectProxyAccessor(
+        CapabilityRealization, aslist=c.ElementList
+    )
+
+    packages: c.Accessor
+
+
+@c.xtype_handler(None)
+class LogicalArchitecture(crosslayer.BaseArchitectureLayer):
+    """Provides access to the LogicalArchitecture layer of the model."""
+
+    root_component = c.AttributeMatcherAccessor(
+        LogicalComponent,
+        attributes={"is_actor": False},
+        rootelem=LogicalComponentPkg,
+    )
+    root_function = c.DirectProxyAccessor(
+        LogicalFunction, rootelem=LogicalFunctionPkg
+    )
+
+    function_package = c.DirectProxyAccessor(LogicalFunctionPkg)
+    component_package = c.DirectProxyAccessor(LogicalComponentPkg)
+    capability_package = c.DirectProxyAccessor(CapabilityRealizationPkg)
+
+    all_functions = c.DeepProxyAccessor(
+        LogicalFunction,
+        aslist=c.ElementList,
+        rootelem=LogicalFunctionPkg,
+    )
+    all_capabilities = c.DeepProxyAccessor(
+        CapabilityRealization, aslist=c.ElementList
+    )
+    all_components = (  # maybe this should exclude .is_actor
+        c.DeepProxyAccessor(LogicalComponent, aslist=c.ElementList)
+    )
+    all_actors = property(
+        lambda self: self._model.search(LogicalComponent).by_is_actor(True)
+    )
+
+    actor_exchanges = c.DirectProxyAccessor(
+        fa.ComponentExchange,
+        aslist=c.ElementList,
+        rootelem=LogicalComponentPkg,
+    )
+    component_exchanges = c.DeepProxyAccessor(
+        fa.ComponentExchange,
+        aslist=c.ElementList,
+        rootelem=[LogicalComponentPkg, LogicalComponent],
+    )
+
+    all_function_exchanges = c.DeepProxyAccessor(
+        fa.FunctionalExchange,
+        aslist=c.ElementList,
+        rootelem=[LogicalFunctionPkg, LogicalFunction],
+    )
+    all_component_exchanges = c.DeepProxyAccessor(
+        fa.ComponentExchange, aslist=c.ElementList
+    )
+
+    diagrams = diagram.DiagramAccessor(
+        "Logical Architecture", cacheattr="_MelodyModel__diagram_cache"
+    )  # type: ignore[assignment]
+
+
+c.set_accessor(
+    ctx.Capability,
+    "realizing_capabilities",
+    c.CustomAccessor(
+        CapabilityRealization,
+        operator.attrgetter("_model.la.all_capabilities"),
+        matchtransform=operator.attrgetter("realized_capabilities"),
+        aslist=c.ElementList,
+    ),
+)
+c.set_accessor(
+    ctx.SystemComponent,
+    "realizing_logical_components",
+    c.CustomAccessor(
+        LogicalComponent,
+        operator.attrgetter("_model.la.all_components"),
+        matchtransform=operator.attrgetter("realized_components"),
+        aslist=c.ElementList,
+    ),
+)
+c.set_accessor(
+    ctx.SystemFunction,
+    "realizing_logical_functions",
+    c.CustomAccessor(
+        LogicalFunction,
+        operator.attrgetter("_model.la.all_functions"),
+        matchtransform=operator.attrgetter("realized_system_functions"),
+        aslist=c.ElementList,
+    ),
+)
+c.set_accessor(
+    LogicalFunction,
+    "packages",
+    c.DirectProxyAccessor(
+        LogicalFunctionPkg,
+        aslist=c.ElementList,
+    ),
+)
+c.set_self_references(
+    (LogicalComponent, "components"),
+    (LogicalComponentPkg, "packages"),
+    (LogicalFunction, "functions"),
+    (LogicalFunctionPkg, "packages"),
+)
