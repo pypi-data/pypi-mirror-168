@@ -1,0 +1,3 @@
+[console_scripts]
+slurm-usage = slurm_usage:main
+stats = slurm_usage:main
