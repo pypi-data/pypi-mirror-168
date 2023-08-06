@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+momlib/__init__.py
+momlib/_errors.py
+momlib/_linalg.py
+momlib/_matrix.py
+momlib/_vector.py
+momlib.egg-info/PKG-INFO
+momlib.egg-info/SOURCES.txt
+momlib.egg-info/dependency_links.txt
+momlib.egg-info/top_level.txt
