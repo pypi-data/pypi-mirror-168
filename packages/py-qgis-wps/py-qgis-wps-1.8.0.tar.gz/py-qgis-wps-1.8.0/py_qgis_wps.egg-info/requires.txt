@@ -1,0 +1,9 @@
+tornado>=6
+jsonschema>=4.15
+lxml
+python-dateutil
+redis
+psutil
+pyzmq<24,>=17
+PyYAML
+OWSLib

@@ -1,0 +1,6 @@
+[console_scripts]
+wpsserver = pyqgiswps.wpsserver:main
+wpsserver-check = pyqgiswps.healthcheck:main
+
+[py_qgis_wps.access_policy]
+lizmap_acl = pyqgisservercontrib.lizmapacl.filters:register_policy
