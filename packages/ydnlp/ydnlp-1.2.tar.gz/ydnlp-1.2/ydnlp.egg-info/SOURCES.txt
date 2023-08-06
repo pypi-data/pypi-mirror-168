@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirement.txt
+setup.py
+ydnlp/__init__.py
+ydnlp/uie_predict.py
+ydnlp.egg-info/PKG-INFO
+ydnlp.egg-info/SOURCES.txt
+ydnlp.egg-info/dependency_links.txt
+ydnlp.egg-info/requires.txt
+ydnlp.egg-info/top_level.txt
+ydnlp/model/ernie_3.0_base_zh_vocab.txt
+ydnlp/model/model.onnx
+ydnlp/model/special_tokens_map.json
+ydnlp/model/tokenizer_config.json
+ydnlp/model/vocab.txt

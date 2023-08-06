@@ -1,0 +1,1 @@
+from . import uie_predict
