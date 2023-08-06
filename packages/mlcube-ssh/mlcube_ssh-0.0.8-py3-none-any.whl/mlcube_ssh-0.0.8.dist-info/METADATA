@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mlcube-ssh
+Version: 0.0.8
+License: Apache 2.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click (==7.1.2)
+Requires-Dist: mlcube (==0.0.8)
+Requires-Dist: omegaconf (==2.1.0)
+
+MLCube SSH runner.
