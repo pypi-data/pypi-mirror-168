@@ -1,0 +1,4 @@
+llbase
+
+[repl]
+ptpython<4,>=3

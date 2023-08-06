@@ -1,0 +1,3 @@
+[console_scripts]
+outleap-agent = outleap.scripts.agent:agent_main
+outleap-repl = outleap.scripts.repl:repl_main
