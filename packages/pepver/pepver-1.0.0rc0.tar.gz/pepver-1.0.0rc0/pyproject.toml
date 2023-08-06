@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pepver"
+version = "1.0.0rc"
+description = "PEP-440 version parsing, interpretation and manipulation"
+authors = ["technomunk <thegriffones@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+mypy = "*"
+pylint = "*"
+pytest = "^5.2"
+
+[tool.black]
+line-length = 100
+
+[tool.pylint.main]
+ignore-patterns = ["test_.+py"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

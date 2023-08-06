@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pepver
+Version: 1.0.0rc0
+Summary: PEP-440 version parsing, interpretation and manipulation
+License: MIT
+Author: technomunk
+Author-email: thegriffones@gmail.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
