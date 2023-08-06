@@ -1,0 +1,42 @@
+/* Hide the "class attribute" labels next to fields/constants (misleading). */
+h3 > .doc-labels > .doc-label-class-attribute {
+  display: none;
+}
+
+/* Hide the links for constants in the page nav (relatively unimportant). */
+.md-nav--secondary > ul.md-nav__list > li.md-nav__item:nth-child(2) {
+  display: none;
+}
+
+/* Revert the global rule to hide dupe class descriptions (false positive). */
+.doc-class > [id$="Option.Results"] + .doc-contents > :not(.doc-children) {
+  display: revert;
+}
+
+/* Adjust width of annotation tooltips in the `choices` & `Results` examples. */
+.example .annotate code .md-annotation .md-tooltip {
+  width: 15.4rem;
+}
+
+/* Slightly increase the line height for the text in the `Results` example. */
+.doc-class ~ .doc-class + .example .tabbed-block > p {
+  line-height: 1.65;
+}
+
+/* Remove the extra spacing at the very bottom of the `Results` example. */
+.doc-class ~ .doc-class + .example pre {
+  margin-bottom: 0;
+}
+
+/* Hide parts of the `Results` example that don't look good on small screens. */
+@media screen and (max-width: 76.25em) {
+  .highlight .hll {
+    all: unset;
+  }
+  .doc-class ~ .doc-class + .example .tabbed-block > .highlight ~ *,
+  .doc-class ~ .doc-class + .example .annotate code .md-annotation,
+  .doc-class ~ .doc-class + .example .language-console code > :nth-child(-n + 8),
+  .doc-class ~ .doc-class + .example .language-console code > :nth-child(18) {
+    display: none;
+  }
+}

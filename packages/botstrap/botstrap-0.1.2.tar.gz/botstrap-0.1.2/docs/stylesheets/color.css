@@ -1,0 +1,14 @@
+/* Fine-tune the alignment of the emoji in the title of the example box. */
+.admonition.example .admonition-title > .twemoji[title=":rainbow_flag:"] {
+  margin: 0.05em 0.35em 0;
+}
+
+/* Make the syntax highlighting colors in the example a bit less noisy. */
+.admonition.example > .highlight code .sx {
+  color: var(--md-code-hl-name-color);
+}
+
+/* Hide the function docstrings - the page manually adds color preview text. */
+.doc-function > [id^="botstrap.colors.Color."] + .doc-contents {
+  display: none;
+}

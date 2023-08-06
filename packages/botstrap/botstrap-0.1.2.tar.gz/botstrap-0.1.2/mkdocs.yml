@@ -1,0 +1,129 @@
+site_name: Botstrap
+site_url: https://botstrap.readthedocs.io
+site_description: An easy-to-use utility toolbelt for Discord bots written in Python.
+site_author: Nuztalgia
+copyright: Copyright &copy; 2022 Nuztalgia
+repo_name: nuztalgia/botstrap
+repo_url: https://github.com/nuztalgia/botstrap
+edit_uri: ""
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - API Reference:
+      - api/index.md
+      - Botstrap: api/botstrap.md
+      - CliColors: api/cli-colors.md
+      - CliStrings: api/cli-strings.md
+      - Color: api/color.md
+      - Option: api/option.md
+  - Internal Reference:
+      - internal/index.md
+      - Argstrap: internal/argstrap.md
+      - CliSession: internal/cli-session.md
+      - Metadata: internal/metadata.md
+      - Secret: internal/secret.md
+      - Token: internal/token.md
+
+theme:
+  name: material
+  favicon: images/logo-48.png
+  icon:
+    logo: material/robot-happy
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+    - toc.integrate
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nuztalgia/botstrap
+      name: Botstrap on GitHub
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/botstrap/
+      name: Botstrap on PyPI
+
+extra_css:
+  - stylesheets/global.css
+  - stylesheets/material.css
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/global.js
+  - javascripts/local.js
+  - javascripts/pylight.js
+
+plugins:
+  - exclude:
+      regex:
+        - ^(.+/)*readme\.md$
+        - ^(.+/)*venv.*$
+        - ^images/robot-happy.*$
+        - ^requirements\.(in|txt)$
+  - include-markdown
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            members_order: source
+            show_bases: false
+            show_root_heading: true
+            show_root_full_path: false
+            show_signature_annotations: true
+            show_source: false
+            docstring_options:
+              ignore_init_summary: true
+      watch:
+        - botstrap/
+        - examples/
+        - README.md
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      auto_title: true
+      line_spans: line
+      linenums: true
+      linenums_style: pymdownx-inline
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+  - toc:
+      permalink: ☍
+      permalink_title: Link to this section
+      title: Page Contents
