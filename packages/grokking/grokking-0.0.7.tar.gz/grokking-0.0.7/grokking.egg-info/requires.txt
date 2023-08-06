@@ -1,0 +1,4 @@
+einops
+wandb
+
+[dev]

@@ -1,0 +1,2 @@
+[nbdev]
+grokking = grokking._modidx:d

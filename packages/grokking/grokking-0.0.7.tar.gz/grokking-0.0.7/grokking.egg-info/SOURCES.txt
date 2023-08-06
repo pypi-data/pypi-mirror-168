@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+grokking/__init__.py
+grokking/_modidx.py
+grokking/helpers.py
+grokking/setup.py
+grokking/transformers.py
+grokking.egg-info/PKG-INFO
+grokking.egg-info/SOURCES.txt
+grokking.egg-info/dependency_links.txt
+grokking.egg-info/entry_points.txt
+grokking.egg-info/not-zip-safe
+grokking.egg-info/requires.txt
+grokking.egg-info/top_level.txt
