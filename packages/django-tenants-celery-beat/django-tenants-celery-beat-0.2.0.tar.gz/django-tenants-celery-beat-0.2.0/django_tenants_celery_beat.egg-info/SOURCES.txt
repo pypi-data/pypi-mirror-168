@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_tenants_celery_beat/__init__.py
+django_tenants_celery_beat/admin.py
+django_tenants_celery_beat/apps.py
+django_tenants_celery_beat/models.py
+django_tenants_celery_beat/utils.py
+django_tenants_celery_beat.egg-info/PKG-INFO
+django_tenants_celery_beat.egg-info/SOURCES.txt
+django_tenants_celery_beat.egg-info/dependency_links.txt
+django_tenants_celery_beat.egg-info/requires.txt
+django_tenants_celery_beat.egg-info/top_level.txt
+django_tenants_celery_beat/migrations/__init__.py
