@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/softclip/__init__.py
+src/softclip/softclip.py
+src/softclip.egg-info/PKG-INFO
+src/softclip.egg-info/SOURCES.txt
+src/softclip.egg-info/dependency_links.txt
+src/softclip.egg-info/requires.txt
+src/softclip.egg-info/top_level.txt
