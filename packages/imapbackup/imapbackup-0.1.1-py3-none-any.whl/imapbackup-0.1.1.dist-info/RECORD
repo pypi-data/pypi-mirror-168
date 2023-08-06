@@ -1,0 +1,10 @@
+imapbackup/__init__.py,sha256=wUrAQbt7qFlpURPspd4E0tKxroHZNjrTBePWXxrxlJs,171
+imapbackup/base.py,sha256=p6TAHrO_Mha8m4yHLznAyYgDH9qujXqshw0U4WPI4z4,2297
+imapbackup/cli.py,sha256=8VImMp5Aq_27rwlH67MKZhp4mPpw_yDdz1JDVqnxLAk,8610
+imapbackup/mailbox.py,sha256=IH0_miQGMpG65GeRZhcA54vV6UUG792eb1G_tH_VpK8,19377
+imapbackup-0.1.1.dist-info/LICENSE,sha256=21FAXX8iSO4jv5T55zF_LCBAO55XDNzyEzkd4Lvl1-8,1067
+imapbackup-0.1.1.dist-info/METADATA,sha256=TfwTIkGNFQZiS8Y9w6IbIpAAJDWYv8fgwRZZOyHx5oM,5440
+imapbackup-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+imapbackup-0.1.1.dist-info/entry_points.txt,sha256=Vrjwe2xo5mIMqU6oOSqTXQiEmm0WR5bgW-_2aF8C1u4,52
+imapbackup-0.1.1.dist-info/top_level.txt,sha256=xLJox0V8yx_g7Ca-HGz-xEgyCFv_p3ilz6yr7IDB0PM,11
+imapbackup-0.1.1.dist-info/RECORD,,
