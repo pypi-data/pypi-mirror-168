@@ -1,0 +1,3 @@
+[console_scripts]
+fidesops = fidesops.ops.cli:cli
+
