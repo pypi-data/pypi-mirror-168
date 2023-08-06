@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pydependance/__init__.py
+pydependance/__main__.py
+pydependance/_core.py
+pydependance.egg-info/PKG-INFO
+pydependance.egg-info/SOURCES.txt
+pydependance.egg-info/dependency_links.txt
+pydependance.egg-info/requires.txt
+pydependance.egg-info/top_level.txt
