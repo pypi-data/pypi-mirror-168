@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: jschon-translation
+Version: 0.0.2
+Summary: JSON Schema-based JSON document translation
+Home-page: https://github.com/marksparkza/jschon-translation
+Author: Mark Jacobson
+Author-email: mark@saeon.ac.za
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: jschon
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: tox ; extra == 'test'
+
+jschon-translation
+==================
+
+|tests| |codecov| |license|
+
+An implementation of a JSON Schema
+`translation vocabulary <https://github.com/marksparkza/json-translation-vocabulary>`_,
+that enables you to translate JSON documents from your validating schema to one or more
+differently structured schemas.
+
+Based on `jschon <https://github.com/marksparkza/jschon>`_.
+
+.. |tests| image:: https://github.com/marksparkza/jschon-translation/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/marksparkza/jschon-translation/actions/workflows/tests.yml
+    :alt: Test Status
+
+.. |codecov| image:: https://codecov.io/gh/marksparkza/jschon-translation/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/marksparkza/jschon-translation
+    :alt: Code Coverage
+
+.. |license| image:: https://img.shields.io/github/license/marksparkza/jschon-translation
+    :target: https://github.com/marksparkza/jschon-translation/blob/main/LICENSE
+    :alt: License
