@@ -1,0 +1,2 @@
+[console_scripts]
+asteroid = asteroid:main
