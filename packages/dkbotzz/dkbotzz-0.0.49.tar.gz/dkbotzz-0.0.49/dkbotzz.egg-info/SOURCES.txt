@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dkbotz/__init__.py
+dkbotz/forcesub.py
+dkbotz/func.py
+dkbotz/functions.py
+dkbotz/imdb.py
+dkbotz/translation.py
+dkbotzz.egg-info/PKG-INFO
+dkbotzz.egg-info/SOURCES.txt
+dkbotzz.egg-info/dependency_links.txt
+dkbotzz.egg-info/requires.txt
+dkbotzz.egg-info/top_level.txt
