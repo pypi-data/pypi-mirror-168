@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pymath-interval
+Version: 0.1.5
+Summary: The purpose of this Python namespace subpackage is to provide pure-python implementations of precise interval arithmetic.
+License: mit
+Project-URL: Bug Tracker, https://github.com/SimpleArt/pymath-interval/issues
+Project-URL: Documentation, https://simpleart.github.io/pymath-interval/
+Project-URL: Homepage, https://simpleart.github.io/pymath-interval/
+Project-URL: Repository, https://github.com/SimpleArt/pymath-interval
+Keywords: interval analysis,integrals,numerical analysis,numerical methods,roots,precision
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pymath-interval
+ The purpose of this Python namespace subpackage is to provide pure-python implementations of precise interval arithmetic.
