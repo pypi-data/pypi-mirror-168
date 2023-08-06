@@ -1,0 +1,12 @@
+simple_redirects/__init__.py,sha256=rYqZHkOYuBLkbI1TnX1uUUtuHojS1rSzeB7ADWLfL70,62
+simple_redirects/admin.py,sha256=17PAnWCrNHpvy-d6T6VuySRcGBMoinxz1owDmG_Zfmc,134
+simple_redirects/apps.py,sha256=j6SB4HAwynEdzn9haWkU0dXEW8tD0Fj8kV1ScCH2XzI,195
+simple_redirects/middleware.py,sha256=32kU5D7z74rRpPZMa8CofqTEdAIBNkcZX_II2qmCSP8,1049
+simple_redirects/models.py,sha256=Z9SwiiiUZopbClSVblDHeRGz85SOL1J07H_AOkgGIBo,844
+simple_redirects/migrations/0001_initial.py,sha256=dtlYbJSwmWh2l-RG2DuASn-UfrbFGUGu0lC-qLUmN0o,1474
+simple_redirects/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_simple_redirects-2.1.0.dist-info/LICENSE,sha256=DBwWigT3LvfUQY_9zQxK88WjYzTcN5IeNmJ2qVxxX54,1078
+django_simple_redirects-2.1.0.dist-info/METADATA,sha256=Gn6qK94aKNOzCS7YnNj5YyXsB-o4N7wVX-VNePQ3rxo,1577
+django_simple_redirects-2.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_simple_redirects-2.1.0.dist-info/top_level.txt,sha256=Jzd5EDlF_B_biCVb5ytGYN8WIdGFtThhG-G35wgES0I,17
+django_simple_redirects-2.1.0.dist-info/RECORD,,
