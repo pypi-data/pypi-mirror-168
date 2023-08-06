@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: honeydew
+Version: 0.1.8
+Summary: Collection of connectors for ETL
+Home-page: https://honeydew-lib.github.io/
+Author: Poltak Jefferson
+Author-email: poltak.jefferson@gmail.com
+License: MIT
+Project-URL: Repository, https://github.com/honeydew-lib/honeydew
+Project-URL: Documentation, https://honeydew-lib.github.io/
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: google-auth
+Requires-Dist: google-cloud
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: google-cloud-bigquery-storage
+Requires-Dist: google-cloud-storage
+Requires-Dist: mysql-connector-python
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pandas-gbq
+Requires-Dist: paramiko
+Requires-Dist: pytz
+Requires-Dist: scp
+
+# Honeydew
+This library is a collection of database and GCP connector for ETL
+
+## Installation
+```
+pip install honeydew
+```
+<br />
+
+You can find the documentation [here](https://honeydew-lib.github.io/)!
+
+
