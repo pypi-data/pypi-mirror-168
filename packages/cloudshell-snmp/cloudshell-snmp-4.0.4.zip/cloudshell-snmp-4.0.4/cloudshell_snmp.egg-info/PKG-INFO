@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cloudshell-snmp
+Version: 4.0.4
+Summary: QualiSystems SNMP Python package
+Home-page: http://www.qualisystems.com/
+Author: QualiSystems
+Author-email: info@qualisystems.com
+License-File: LICENSE
+
+QualiSystems SNMP Python package
