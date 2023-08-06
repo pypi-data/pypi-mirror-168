@@ -1,0 +1,14 @@
+starbug2/__init__.py,sha256=FiBh6wBzTxuqV2W6XSKXOuMupFC8q95wkEUuEt16OXM,3782
+starbug2/matching.py,sha256=ep3zU2AZn4V52VK9FYme9Xzb0VWrAOwqez52ng8ZN9E,12364
+starbug2/misc.py,sha256=bfyn9V6e1W0TS4fAkhQ98JgcYqy0jIUfEoEwLc1Lxbc,2637
+starbug2/routines.py,sha256=PmzH7dQoe48nRbLLsggZ2R-SDqd2MzS6uiV9NdwWc-0,21833
+starbug2/starbug.py,sha256=GlHEEjCs3HvJlwwxnrNDqgFhTSvLfKd6zvU9M0fNYDo,15889
+starbug2/utils.py,sha256=m_Icsvx2LpmOxZhDCu5xmLziYsP6EbXYL3r9BXjer7c,7066
+starbug2/param/default.param,sha256=9pMFwj8IPKJ7MaeP9n1iULL2_JWKKqZLeKf6yHcdaBk,2528
+starbug2-0.2.5.data/scripts/starbug2,sha256=Ikffm7kVJRYYzR2D-aAEV0l894gE_37BHZqiGr1N2Tw,9060
+starbug2-0.2.5.data/scripts/starbug2-match,sha256=iDKcA487ebfRSxrmTjceNzLw9M4oZQ1t30XNaog5kqo,2520
+starbug2-0.2.5.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+starbug2-0.2.5.dist-info/METADATA,sha256=FzFRX8V3ErhNq-uJKVehhR416msCseWXv2i60tj2ddo,3340
+starbug2-0.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+starbug2-0.2.5.dist-info/top_level.txt,sha256=U2bHeJ_Enh0neEfMLiuVLZlxklIUURy_lvTGNDQkGPA,9
+starbug2-0.2.5.dist-info/RECORD,,
