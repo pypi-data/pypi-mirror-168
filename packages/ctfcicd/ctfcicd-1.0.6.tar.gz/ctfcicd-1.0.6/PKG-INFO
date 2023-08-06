@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ctfcicd
+Version: 1.0.6
+Summary: Tool for CI/CD pipelines to deploy CTFs
+Home-page: https://github.com/MrSuicideParrot/ctf-cicd
+Author: André Cirne
+License: MIT
+Requires-Python: >=3.9
+License-File: LICENSE
