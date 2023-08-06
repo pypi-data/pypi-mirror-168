@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pyuse-core
+Version: 0.0.5
+Summary: A pkg of wheels. Hope it helps you to write less code.
+Home-page: https://github.com/yongchin0821/pyuse
+Author: Yongchin
+Author-email: yongchin39@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/yongchin0821/pyuse/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+<br />
+<br />
+<p align="center">
+  <img height="90" src="./docs/docs/logo.png" alt="PyUse" />
+</p>
+
+<p align="center">A Python3 Wheels Library</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/pyuse-core/"
+    ><img
+      src="https://img.shields.io/pypi/v/pyuse-core?label=version"
+      alt="version"
+  /></a>
+  <img
+    src="https://visitor-badge.glitch.me/badge?page_id=yongchin0821.pyuse"
+    alt="visitor"
+  />
+</p>
+
+<br />
+<br />
+
+As Easy as 1, 2, 3. [document](https://yongchin0821.github.io/pyuse/)
+
+hope and invite you all to contribute to this project ✨
+
+
