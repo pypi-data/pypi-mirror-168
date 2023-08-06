@@ -1,0 +1,14 @@
+pandas
+tqdm
+xmltodict
+click<8.1.0
+typer
+colorama
+shellingham
+requests
+xmltodict
+pyyaml
+docker
+packaging
+fuzzywuzzy
+python-Levenshtein

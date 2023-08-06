@@ -1,0 +1,2 @@
+[console_scripts]
+biotea = bioTea.cli:cli_root
