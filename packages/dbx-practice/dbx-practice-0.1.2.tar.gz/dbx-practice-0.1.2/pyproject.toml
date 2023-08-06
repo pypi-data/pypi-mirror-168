@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dbx-practice"
+version = "0.1.2"
+description = ""
+authors = ["Peter <petnguyen@axon.com>"]
+readme = "README.md"
+packages = [{include = "dbx_practice"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.scripts]
+hello = "dbx_practice.say_hello:hello"
+say_hello = "dbx_practice.say_hello:say_hello"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
