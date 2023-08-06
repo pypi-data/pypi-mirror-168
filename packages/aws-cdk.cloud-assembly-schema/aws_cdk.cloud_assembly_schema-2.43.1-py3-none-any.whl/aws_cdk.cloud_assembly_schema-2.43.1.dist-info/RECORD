@@ -1,0 +1,10 @@
+aws_cdk/cloud_assembly_schema/__init__.py,sha256=w4NoA-BljZmqCc1Wvll9Eu7qmPwwrMANzNCo4OTb_l4,318082
+aws_cdk/cloud_assembly_schema/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/cloud_assembly_schema/_jsii/__init__.py,sha256=vPvo8ipVs210s_e_WQfKwbnlpHh-xl7d-M6oMf5Jk-4,387
+aws_cdk/cloud_assembly_schema/_jsii/cloud-assembly-schema@2.43.1.jsii.tgz,sha256=_T21OEMub5W23f2AzQC41_dFOT2ECp7yMsC0VmI6Hyk,174493
+aws_cdk.cloud_assembly_schema-2.43.1.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.cloud_assembly_schema-2.43.1.dist-info/METADATA,sha256=dDbebPr9xNSYvaP8UjajYGbTkfquxzCdkjEKOo6XeOM,4037
+aws_cdk.cloud_assembly_schema-2.43.1.dist-info/NOTICE,sha256=rs9WpclrlaVIfFNQ26gqtQkgHW_sM2mrtQtYkA6Y6qI,3872
+aws_cdk.cloud_assembly_schema-2.43.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.cloud_assembly_schema-2.43.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.cloud_assembly_schema-2.43.1.dist-info/RECORD,,
