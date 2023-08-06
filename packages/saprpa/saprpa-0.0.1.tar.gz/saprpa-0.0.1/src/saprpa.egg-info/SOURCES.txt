@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/saprpa/__init__.py
+src/saprpa/py.typed
+src/saprpa/saprpa.py
+src/saprpa.egg-info/PKG-INFO
+src/saprpa.egg-info/SOURCES.txt
+src/saprpa.egg-info/dependency_links.txt
+src/saprpa.egg-info/not-zip-safe
+src/saprpa.egg-info/requires.txt
+src/saprpa.egg-info/top_level.txt
+tests/__init__.py
+tests/test_saprpa.py
