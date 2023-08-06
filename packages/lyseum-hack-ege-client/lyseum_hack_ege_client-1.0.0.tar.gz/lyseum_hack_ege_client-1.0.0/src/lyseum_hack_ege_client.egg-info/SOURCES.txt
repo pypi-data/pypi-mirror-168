@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+src/lyseum_hack_ege_client/__init__.py
+src/lyseum_hack_ege_client.egg-info/PKG-INFO
+src/lyseum_hack_ege_client.egg-info/SOURCES.txt
+src/lyseum_hack_ege_client.egg-info/dependency_links.txt
+src/lyseum_hack_ege_client.egg-info/requires.txt
+src/lyseum_hack_ege_client.egg-info/top_level.txt
