@@ -1,0 +1,3 @@
+recursive-include src/peakrdl_html/static *
+recursive-include src/peakrdl_html/templates *
+recursive-exclude test *
