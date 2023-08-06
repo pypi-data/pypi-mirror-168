@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/OMADS/BASIC.py
+src/OMADS/__init__.py
+src/OMADS/py.typed
+src/OMADS.egg-info/PKG-INFO
+src/OMADS.egg-info/SOURCES.txt
+src/OMADS.egg-info/dependency_links.txt
+src/OMADS.egg-info/requires.txt
+src/OMADS.egg-info/top_level.txt
