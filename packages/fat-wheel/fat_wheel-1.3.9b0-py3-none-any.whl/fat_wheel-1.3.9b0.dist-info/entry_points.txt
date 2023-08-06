@@ -1,0 +1,2 @@
+[console_scripts]
+fat = fat_wheel.cli:main
