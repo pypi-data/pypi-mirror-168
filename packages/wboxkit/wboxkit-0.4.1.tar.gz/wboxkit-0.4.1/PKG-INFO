@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wboxkit
+Version: 0.4.1
+Summary: White-box Design & Cryptanalyis Kit
+Home-page: https://github.com/hellman/wboxkit
+Author: Aleksei Udovenko
+Author-email: aleksei@affine.group
+License: MIT
+Keywords: white-box cryptography design cryptanalyis circuits
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Security :: Cryptography
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+License-File: LICENSE
