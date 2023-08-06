@@ -1,0 +1,6 @@
+{
+  "test/test_files.py::test_forslash[D:\\\\test\\\\a\\\\b-D:/te5st/a/b]": true,
+  "test/test_files.py::test_getpath[D:/test/party/time/ba5by-D:/test/party/time/baby]": true,
+  "test/test_files.py::test_joinpath[C:/same/.-C:/sa5me]": true,
+  "test/test_files.py::test_joinpath[i17-C:/5up]": true
+}
