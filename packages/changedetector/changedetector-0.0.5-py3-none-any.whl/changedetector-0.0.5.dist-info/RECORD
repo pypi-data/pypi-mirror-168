@@ -1,0 +1,11 @@
+changedetector/__init__.py,sha256=hKhku5lhyoBRgl02T7CN9kEiS64t9D6FwaqpDbL8S8s,461
+changedetector/colors.py,sha256=kYTzpak_G2QclJNVEOvdRPiBA2pVI4xZQOF98IVtFCg,278
+changedetector/detectchange.py,sha256=ip9m8lHNoBWIK5bL9KyXjdgXGAKZiBQj_tcpavXhTqs,6878
+changedetector/menu.py,sha256=VJCuwJKQQYzm1WhNYDxmr8a_QU0E-dkx_RTit_Dw9I8,601
+changedetector/purcent.py,sha256=pj9KtFrxtt9A1qpu085aPsa-_ceLMS1sxXGXP9lvyJY,386
+changedetector/wrapperComponents.py,sha256=8JBXkQCvr0sCEZ76sWZoO0KmRJsx7LsxzMx6ZOVqTJ8,720
+changedetector-0.0.5.dist-info/LICENCE,sha256=qLtr2ZrRkhSsTp9as5NuCxnUkoJyewZkSHzba53bINU,1085
+changedetector-0.0.5.dist-info/METADATA,sha256=TQCP6tISnHvcKkB0AajuRItdnDPgjRo2_zsg2fdZWlg,2410
+changedetector-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+changedetector-0.0.5.dist-info/top_level.txt,sha256=2PeZWeZjwhvLZLSS1y4bNIqTaPscR_fITgx2OtjZrQA,15
+changedetector-0.0.5.dist-info/RECORD,,
