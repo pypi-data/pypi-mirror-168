@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: evomatic
+Version: 0.0.2
+Summary: Evolutionary algorithm for development of alloy materials
+Home-page: https://github.com/Robert-Forrest/evomatic
+Author: Robert Forrest
+Author-email: robertforrest@live.com
+License: BSD 3-Clause License
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'dev'
+Requires-Dist: tox (==3.24.3) ; extra == 'dev'
+Requires-Dist: pytest (==6.2.5) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.12.1) ; extra == 'dev'
+
+# Evomatic
+
+![Tests](https://github.com/Robert-Forrest/evomatic/actions/workflows/tests.yml/badge.svg)
+
+Evolutionary algorithm for development of alloy materials.
+
