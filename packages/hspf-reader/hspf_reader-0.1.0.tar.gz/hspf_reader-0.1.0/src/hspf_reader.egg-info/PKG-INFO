@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: hspf-reader
+Version: 0.1.0
+Summary: Command line script and Python library to manipulate time series.
+Author-email: Tim Cera <tim@cerazone.net>
+License: Copyright (c) 2013, Tim Cera
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+            * Redistributions of source code must retain the above copyright
+              notice, this list of conditions and the following disclaimer.
+            * Redistributions in binary form must reproduce the above copyright
+              notice, this list of conditions and the following disclaimer in the
+              documentation and/or other materials provided with the distribution.
+            * Neither the name hspf_reader nor the
+              names of its contributors may be used to endorse or promote products
+              derived from this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+        LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+        ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Keywords: time-series,hspf,simulation,hydrology,hydrologic,python,cli,command line,script,cli-application
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7.1
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+
+.. image:: https://github.com/timcera/hspf_reader/actions/workflows/python-package.yml/badge.svg
+    :target: https://github.com/timcera/hspf_reader/actions/workflows/python-package.yml
+    :height: 20
+
+.. image:: https://coveralls.io/repos/timcera/hspf_reader/badge.png?branch=main
+    :target: https://coveralls.io/r/timcera/hspf_reader?branch=main
+    :height: 20
+
+.. image:: https://img.shields.io/pypi/v/hspf_reader.svg
+    :alt: Latest release
+    :target: https://pypi.python.org/pypi/hspf_reader
+
+.. image:: http://img.shields.io/badge/license-BSD-lightgrey.svg
+    :alt: BSD-3 clause license
+    :target: https://pypi.python.org/pypi/hspf_reader/
+
+.. image:: http://img.shields.io/pypi/dd/hspf_reader.svg
+    :alt: hspf_reader downloads
+    :target: https://pypi.python.org/pypi/hspf_reader/
+
+hspf_reader - Quick Guide
+=========================
+The hspf_reader is a pure Python module and command line script to read HSPF
+time-series from WDM files, HSPF binary files, and HSPF plotgen files.
+
+Use "wdmtoolbox" to create, examine, read, and write to WDM files.
+
+Use "hspfbintoolbox" to catalog and read HSPF binary output files.
+
+Installation
+------------
+Should be as easy as running ``pip install hspf_reader`` at any command line.  
+
+Usage - Command Line
+--------------------
+Just run 'hspf_reader --help' to get a list of subcommands::
+
+
+    usage: hspf_reader [-h]
+                     {wdm, hbn, plotgen, about} ...
+
+    positional arguments:
+      {wdm, hbn, plotgen, about}
+
+    wdm
+        Read HSPF WDM files.
+    hbn
+        Read HSPF binary files.
+    plotgen
+        Read HSPF plotgen files.
+    about
+        Display version number and system information.
+
+    optional arguments:
+      -h, --help            show this help message and exit
+
+The output time-series data is printed to the screen and you can then redirect
+to a file.
+
+Usage - API
+-----------
+You can use all of the command line subcommands as functions.  The function
+signature is identical to the command line subcommands.  The return is always
+a PANDAS DataFrame.
+
+Simply import hspf_reader::
+
+    from hspf_reader import hspf_reader
+
+    # Then you could call the functions
+    ntsd = hspf_reader.wdm('wdm_file.wdm', 202)
+
+    # Once you have a PANDAS DataFrame you can use that as input to other
+    # hspf_reader functions.
+    ntsd = hspf_reader.hbn('hbn_file.hbn', "yearly", [,,,"TAET"])
