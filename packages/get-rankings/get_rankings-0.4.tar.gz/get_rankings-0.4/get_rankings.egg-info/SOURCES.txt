@@ -1,0 +1,10 @@
+README.md
+setup.py
+get_rankings/__init__.py
+get_rankings/get_rankings.py
+get_rankings.egg-info/PKG-INFO
+get_rankings.egg-info/SOURCES.txt
+get_rankings.egg-info/dependency_links.txt
+get_rankings.egg-info/entry_points.txt
+get_rankings.egg-info/requires.txt
+get_rankings.egg-info/top_level.txt
