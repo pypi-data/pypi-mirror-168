@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: reparo
+Version: 0.0.1
+Summary: Reparo is a python sci-kit learn inspired package for Missing Value Imputation.
+Author-email: Sigmoid AI <vpapaluta06@gmail.com>
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# reparo
+
+Reparo is a python sci-kit learn inspired package for Missing Value Imputation. It contains a some feature transformers to eliminate Missing Values (NaNs) from your data for Machine Learning Algorithms.
+
+This version of reparo has the next methods of missing value imputation:
+1) Cold-Deck Imputation (CDI).
+2) Hot-Deck Imputation (HotDeckImputation).
+3) Fuzzy-Rough Nearest Neighbor for Imputation (FRNNI).
+4) K-Nearest Neighbors Imputation (KNNI).
+5) Single Center Imputation from Multiple Chained Equation (SICE).
+6) Predictive Mean Matching (PMM).
+7) Multivariate Imputation by Chained Equation (MICE).
+
+All these methods work like normal sklearn transformers. They have fit, transform and fit_transform functions implemented.
+
+Additionally every reparo transformer has an apply function which allows to apply an transformation on a pandas Data Frame.
+
+# How to use reparo
+To use a transformer from reparo you should just import the transformer from reparo in the following framework:
+
+```from reparo import <class name>```
+
+class names are written above in parantheses.
+
+Next create a object of this algorithm (I will use k-Nearest Neighbors Imputation as an example).
+
+```method = KNNI()```
+
+Firstly you should fit the transformer, passing to it a feature matrix (X) and the target array (y). y argument is not really used (as it causes data leackage)
+
+```method.fit(X, y)```
+
+After you fit the model, you can use it for transforming new data, using the transform function. To transform function you should pass only the feature matrix (X).
+
+```X_transformed = method.transform(X)```
+
+Also you can fit and transform the data at the same time using the fit_transform function.
+
+```X_transformed = method.fit_transform(X)```
+
+Also you can apply a transformation directly on a pandas DataFrame, choosing the columns that you want to change.
+
+```new_df = method.apply(df, 'target', ['col1', 'col2'])```
+
+With <3 from Sigmoid.
+We are open for feedback. Please send your impression to papaluta.vasile@isa.utm.md
