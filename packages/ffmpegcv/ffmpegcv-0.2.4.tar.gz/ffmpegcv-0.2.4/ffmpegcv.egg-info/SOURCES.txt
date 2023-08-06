@@ -1,0 +1,14 @@
+README.md
+setup.py
+ffmpegcv/__init__.py
+ffmpegcv/ffmpeg_framepick.py
+ffmpegcv/ffmpeg_reader.py
+ffmpegcv/ffmpeg_reader_grey.py
+ffmpegcv/ffmpeg_reader_hflip.py
+ffmpegcv/ffmpeg_reader_laggy.py
+ffmpegcv/ffmpeg_writer.py
+ffmpegcv/video_info.py
+ffmpegcv.egg-info/PKG-INFO
+ffmpegcv.egg-info/SOURCES.txt
+ffmpegcv.egg-info/dependency_links.txt
+ffmpegcv.egg-info/top_level.txt
