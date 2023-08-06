@@ -1,0 +1,10 @@
+aws_cdk/aws_emrcontainers/__init__.py,sha256=XUasAUOusoBkdk7aMXimhH4xHn7ilhWfoCCf6ibW30w,25194
+aws_cdk/aws_emrcontainers/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_emrcontainers/_jsii/__init__.py,sha256=jfGlHp0-z-keDULPNsZa6DSl6zHvSM90XISJw4sm1Ic,408
+aws_cdk/aws_emrcontainers/_jsii/aws-emrcontainers@1.174.0.jsii.tgz,sha256=-ui3J-kIAxJouSwsa30bc_bnimj0nV6e0JyjfoJzlM8,27196
+aws_cdk.aws_emrcontainers-1.174.0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_emrcontainers-1.174.0.dist-info/METADATA,sha256=mmUgYovEFtYOJjZ4zt33J32TP-0Wr9O5GlN6yVyGTIw,3186
+aws_cdk.aws_emrcontainers-1.174.0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_emrcontainers-1.174.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_emrcontainers-1.174.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_emrcontainers-1.174.0.dist-info/RECORD,,
