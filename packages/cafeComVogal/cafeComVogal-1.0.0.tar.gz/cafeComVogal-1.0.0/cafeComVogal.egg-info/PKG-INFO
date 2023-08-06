@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cafeComVogal
+Version: 1.0.0
+Summary: Um coletor de vogais de uma string.
+Home-page: UNKNOWN
+Author: Wanderson Renê
+Author-email: wanderson.rene12@gmail.com
+License: MIT
+Keywords: coletar vogal ou vogais da string rene cafeComVogal
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Database
+License-File: LICENSE.txt
+
+Um coletor de vogais de uma string passada como parâmetro na função vogais, a fim de coletar até mesmo as vogais com acentos
+

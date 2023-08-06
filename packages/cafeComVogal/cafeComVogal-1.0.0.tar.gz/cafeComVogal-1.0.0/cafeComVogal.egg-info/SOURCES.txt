@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+cafeComVogal/__init__.py
+cafeComVogal/cafeComVogal.py
+cafeComVogal.egg-info/PKG-INFO
+cafeComVogal.egg-info/SOURCES.txt
+cafeComVogal.egg-info/dependency_links.txt
+cafeComVogal.egg-info/top_level.txt
