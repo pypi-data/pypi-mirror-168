@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: mgktools
+Version: 0.0.2
+Summary: Marginalized graph kernel library for molecular property prediction
+Home-page: https://github.com/xiangyan93/mgktools
+Author: Yan Xiang
+Author-email: 1993.xiangyan@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: scikit-learn (>=0.24.1)
+Requires-Dist: tqdm (>=4.62.0)
+Requires-Dist: hyperopt (>=0.2.5)
+Requires-Dist: scipy (>=1.6.2)
+Requires-Dist: mendeleev (>=0.7)
+Requires-Dist: rxntools (>=0.0.2)
+Requires-Dist: pycuda (>=2022.1)
+
+# mgktools
+Python Package using marginalized graph kernel (MGK) to predict molecular properties.
+
+## Installation
+Suggested Package Versions:
+
+Python(3.10)
+
+GCC(11.2)
+
+CUDA(11.7).
+```
+conda install rdkit -c conda-forge
+pip install git+https://github.com/bp-kelley/descriptastorus
+pip install git+https://gitlab.com/Xiangyan93/graphdot.git@feature/xy
+pip install mgktools
+```
+
+## Usage
+See [notebooks](https://github.com/Xiangyan93/mgktools/tree/main/notebooks)
+
+## Hyperparameters
+[hyperparameters](https://github.com/Xiangyan93/mgktools/tree/main/mgktools/hyperparameters) contains the JSON files that
+define the hyperparameters for MGK.
+
