@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.py
+./LICENSE
+./__init__.py
+./__main__.py
+./auto.py
+.ruamel/__init__.py
+ruamel.auto.egg-info/PKG-INFO
+ruamel.auto.egg-info/SOURCES.txt
+ruamel.auto.egg-info/dependency_links.txt
+ruamel.auto.egg-info/entry_points.txt
+ruamel.auto.egg-info/namespace_packages.txt
+ruamel.auto.egg-info/requires.txt
+ruamel.auto.egg-info/top_level.txt
