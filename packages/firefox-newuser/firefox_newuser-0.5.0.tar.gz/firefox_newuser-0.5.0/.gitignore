@@ -1,0 +1,17 @@
+.eric7project/
+.ropeproject/
+.directory/
+*.pyc
+*.pyo
+*.orig
+*.bak
+*.rej
+*~
+cur/
+tmp/
+__pycache__/
+*.DS_Store
+.jedi/
+build/
+dist/
+firefox_newuser.egg-info/

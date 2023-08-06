@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: firefox_newuser
+Version: 0.5.0
+Summary: Python script to launch firefox in Linus as a new user
+Home-page: https://github.com/turulomio/firefox_newuser
+Author: Turulomio
+Author-email: turulomio@yahoo.es
+License: GPL-3
+Keywords: firefox new user
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Project web page is in https://github.com/turulomio/firefox_newuser
