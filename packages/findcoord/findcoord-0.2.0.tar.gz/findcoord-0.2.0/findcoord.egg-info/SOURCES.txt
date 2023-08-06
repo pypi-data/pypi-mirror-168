@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+findcoord/__init__.py
+findcoord/transform.py
+findcoord.egg-info/PKG-INFO
+findcoord.egg-info/SOURCES.txt
+findcoord.egg-info/dependency_links.txt
+findcoord.egg-info/not-zip-safe
+findcoord.egg-info/requires.txt
+findcoord.egg-info/top_level.txt
+tests/test_basic.py
