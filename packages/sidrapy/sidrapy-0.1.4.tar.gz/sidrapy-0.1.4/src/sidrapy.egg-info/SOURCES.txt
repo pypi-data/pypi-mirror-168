@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+__version__
+setup.cfg
+setup.py
+src/sidrapy/__init__.py
+src/sidrapy/table.py
+src/sidrapy.egg-info/PKG-INFO
+src/sidrapy.egg-info/SOURCES.txt
+src/sidrapy.egg-info/dependency_links.txt
+src/sidrapy.egg-info/requires.txt
+src/sidrapy.egg-info/top_level.txt
+src/sidrapy/resources/__init__.py
+src/sidrapy/resources/handler.py
+src/sidrapy/resources/http_client.py
