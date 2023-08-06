@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tion_btle
+Version: 3.3.2
+Summary: Python module for interacting with Tion breezers
+Home-page: https://github.com/TionAPI/tion_python/tree/dev
+License-File: LICENSE
+
+Module for working with Tion breezers
