@@ -1,0 +1,12 @@
+cvi/__init__.py,sha256=RaHKNxVRYeWU5u6EsaD5mkJGUjdrSmx_6Sa_PfLhmPs,230
+cvi/icvi.py,sha256=gVlOo45p4H_EX4IIziQdD6QCFkyvV3K1wYErWXqDhYU,13330
+cvi/modules/CH.py,sha256=s8wbiYmvAf4roJrvm-SBpOBUpeIZmDrwOamX7Aq2aW8,5892
+cvi/modules/DB.py,sha256=WB2_KIssGnJlbjIrHQ4Un6uIHr4sYWVZjOI8TdMGgkw,7523
+cvi/modules/__init__.py,sha256=W0R3h9kkhamWllnbVNAFsCr9Bu5Ss36jUaEzw2vfBj4,357
+cvi/modules/_base.py,sha256=hB5ukN7a_6tAOw2qIQtF3M8oiGXoBv_2kf5xXVI5_mo,6436
+cvi/modules/cSIL.py,sha256=F_p034LqF0PR-foLL3tttgftYh0mhvmqEOrcMMH0ZYM,8639
+cvi-0.1.0.dist-info/LICENSE,sha256=YOL1odZzTxonKQJa4XWBLx6pjVznZ5zk5BaiOhmmx4Y,1071
+cvi-0.1.0.dist-info/METADATA,sha256=4OK3uqtjYXdgI1FIkkntDy9ZUL0rWva5hOD-Vx2DNzU,8554
+cvi-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cvi-0.1.0.dist-info/top_level.txt,sha256=HavrlC8Dm0XLsf6HCYIx8SqoFfQbPuCU7DBkaWJ-dqA,4
+cvi-0.1.0.dist-info/RECORD,,
