@@ -1,0 +1,7 @@
+setup.py
+wdf_pypack/__init__.py
+wdf_pypack/rfid.py
+wdf_pypack.egg-info/PKG-INFO
+wdf_pypack.egg-info/SOURCES.txt
+wdf_pypack.egg-info/dependency_links.txt
+wdf_pypack.egg-info/top_level.txt
