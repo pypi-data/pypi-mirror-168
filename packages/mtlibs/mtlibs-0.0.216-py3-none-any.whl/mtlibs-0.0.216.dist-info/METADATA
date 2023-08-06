@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mtlibs
+Version: 0.0.216
+Summary: This is the SDK for example.
+Home-page: http://example.com
+Author: example
+Author-email: author@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: version-parser
+Requires-Dist: python-dotenv
+Requires-Dist: docker
+Requires-Dist: requests
+Requires-Dist: paramiko
+
+demo
