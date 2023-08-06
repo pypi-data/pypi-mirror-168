@@ -1,0 +1,74 @@
+Release Notes:
+####################################
+Version 3.10.6:
+-----------------
+* gateway/radio tester:
+  ** improve update version
+  ** update gateway firmware
+
+* post-process (internal):
+  ** fix bug for uploading the new tables
+ 
+* packet_data_tools:
+  ** add check if packet from bridge or tag
+
+* system_network_tools:
+  ** improve packet_monitor performance
+  ** support usb gateway
+  ** adding logging functionality
+ 
+* offline_tester:
+  ** stable the code
+  ** fix bug #of responding tag
+  ** improve manual upload and add summary at the end of the run
+  [Notice: does not support QR reader functionality)
+  
+* sample_test:
+  ** fix calc of rrsi mean in local file
+############################################
+Version 3.10.4:
+--------------------
+* cloud_api:
+  ** support new api
+  ** add more funcationalities to manufacturing
+
+* gateway:
+  ** update sub1g power according to the new gw firmware
+  
+* packet_data_tools:
+  ** support new packet and fix bug in decoding/decryption (internal)
+  ** add tbc calc to decrypted packet list (internal)
+  ** integrate the new tool to PixieAnalyzer and support the new packet version (internal)
+  ** support new packet group id structure (internal)
+
+* post-process (internal):
+  ** support new requrement form offline and sample test and fix bug
+
+* network_system_tools:
+  ** add class to netweork packet list (internal)
+  ** improve analysis data code (internal)
+  ** add more test and deployment scripts (internal)
+  ** add tool for packet monitor
+  
+* offline_tester:
+  ** improve the GUI
+  ** add stop condition options
+  ** improve test suites
+  ** improve the script of multiple run using rewind (internal)
+  ** removing old code
+  ** add the option to run long tests
+  ** add temp sensor
+  ** add summary for uploading and seriazliation
+  
+* sample_test:
+  ** suuport the new firmware
+  ** add more data to the local files
+  
+* testers:
+  ** add example on how to user wiliot testers api
+###################################################
+  
+  
+   
+
+
