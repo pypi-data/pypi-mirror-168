@@ -1,0 +1,59 @@
+[tool.poetry]
+
+authors = [
+  "Craig Trim <craigtrim@gmail.com>",
+]
+
+maintainers = [
+  "Craig Trim <craigtrim@gmail.com>",
+]
+
+description = "Use spaCy to Parse Input Tokens"
+license = "MIT"
+name = "spacy-token-parser"
+readme = "README.md"
+version = "0.1.12"
+
+documentation = "https://python-poetry.org/docs"
+homepage = "https://python-poetry.org/"
+keywords = ["packaging", "dependency", "poetry"]
+repository = "https://github.com/python-poetry/poetry"
+
+classifiers = [
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.build]
+generate-setup-file = true
+
+[tool.poetry.dependencies]
+baseblock = "*"
+nltk = "3.7"
+python = "3.8.5"
+spacy = "3.3"
+wordnet-lookup = "*"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "*"
+en-core-web-sm = {path = "resources/lib/en_core_web_sm-3.3.0.tar.gz"}
+mypy = "*"
+pytest = "*"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.mypy]
+enable_error_code = [
+  "ignore-without-code",
+  "redundant-expr",
+  "truthy-bool",
+]
+
+explicit_package_bases = true
+files = "src"
+mypy_path = "src"
+namespace_packages = true
+show_error_codes = true
+strict = false
