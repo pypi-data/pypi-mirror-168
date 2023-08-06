@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+src/cpin.py
+src/pycpt.egg-info/PKG-INFO
+src/pycpt.egg-info/SOURCES.txt
+src/pycpt.egg-info/dependency_links.txt
+src/pycpt.egg-info/requires.txt
+src/pycpt.egg-info/top_level.txt
