@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: notes-compiler
+Version: 0.1.0
+Summary: 
+Author: Manuel Brea
+Author-email: m.brea.carreras@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Markdown (>=3.4.1,<4.0.0)
+Requires-Dist: markdown-katex (>=202112.1034,<202113.0)
