@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: APIactModule
+Version: 1.4.0
+Home-page: https://github.com/siraisi368/APIActionModule
+Download-URL: https://github.com/siraisi368/APIActionModule
+Author: MasatoSiraisi
+License: Apache License2.0
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: json
+Requires-Dist: requests
+Requires-Dist: discord
+Requires-Dist: ntplib
+Requires-Dist: datetime
+Requires-Dist: time
+Requires-Dist: xmltodict
+Requires-Dist: difflib
+
