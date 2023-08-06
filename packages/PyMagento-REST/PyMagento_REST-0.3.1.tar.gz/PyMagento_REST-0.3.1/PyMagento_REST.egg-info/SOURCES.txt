@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+PyMagento_REST.egg-info/PKG-INFO
+PyMagento_REST.egg-info/SOURCES.txt
+PyMagento_REST.egg-info/dependency_links.txt
+PyMagento_REST.egg-info/requires.txt
+PyMagento_REST.egg-info/top_level.txt
+pymagento_rest/__init__.py
+pymagento_rest/compare_type.py
+pymagento_rest/constants.py
+pymagento_rest/filter.py
+pymagento_rest/samples/__init__.py
+pymagento_rest/samples/products.py
+pymagento_rest/v2_2/__init__.py
+pymagento_rest/v2_2/api.py
