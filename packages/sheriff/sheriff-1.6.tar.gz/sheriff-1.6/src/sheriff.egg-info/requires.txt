@@ -1,0 +1,7 @@
+colorama
+numpy
+opencv-python
+Pillow
+PyQt5
+PySide6
+regex
