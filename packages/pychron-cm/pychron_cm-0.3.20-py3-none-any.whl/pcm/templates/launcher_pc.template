@@ -1,0 +1,13 @@
+set GITHUB_ORGANIZATION={github_org:}
+set MassSpecDBVersion={massspec_db_version:}
+set APPLICATION_ID={app_id:}
+
+set PYCHRON_APPNAME={app_name:}
+set PYCHRON_DATABASE_UPDATE={update_db:}
+set PYCHRON_ALEMBIC_URL={alembic_url:}
+set PYCHRON_USE_LOGIN=0
+
+
+set PYTHONPATH={pychron_path:}
+
+{edm_envs_root:}/{edm_env:}/bin/python {pychron_path:}/launchers/launcher.py
