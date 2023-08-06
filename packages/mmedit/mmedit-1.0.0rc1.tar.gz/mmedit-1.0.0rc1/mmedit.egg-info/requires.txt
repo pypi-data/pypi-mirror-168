@@ -1,0 +1,48 @@
+av
+clip@ git+https://github.com/openai/CLIP.git@d50d76daa670286dd6cacf3bcd80b5e4823fc8e1
+face-alignment
+facexlib
+lmdb
+lpips
+mmcv>=2.0.0rc1
+mmengine
+numpy
+opencv-python!=4.5.5.62,!=4.5.5.64
+Pillow
+tensorboard
+torch
+torchvision
+
+[:python_version < "3.7"]
+av==8.0.3
+
+[all]
+av
+clip@ git+https://github.com/openai/CLIP.git@d50d76daa670286dd6cacf3bcd80b5e4823fc8e1
+face-alignment
+facexlib
+lmdb
+lpips
+mmcv>=2.0.0rc1
+mmengine
+numpy
+opencv-python!=4.5.5.62,!=4.5.5.64
+Pillow
+tensorboard
+torch
+torchvision
+coverage
+interrogate
+pytest
+
+[all:python_version < "3.7"]
+av==8.0.3
+
+[mim]
+mmcv>=2.0.0rc1
+mmengine
+
+[tests]
+coverage
+interrogate
+pytest
