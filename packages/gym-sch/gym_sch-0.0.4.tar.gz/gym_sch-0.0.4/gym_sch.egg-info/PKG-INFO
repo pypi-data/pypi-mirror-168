@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gym-sch
+Version: 0.0.4
+Summary: An OpenAI Gym Env for Pandas
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# 基于simpy的仿真环境
+## 如何使用
+安装
+```shell script
+pip install gym_sch
+```
+简单用例
+```python
+import gym
+import gym_sch
+
+env = gym.make('sch-v0')
+
+print(env.observation_space)
+
+env.reset(False)
+done_n = False
+episode = 0
+while not done_n:
+    episode = episode + 1
+    # 动作为[0, shovels+dumps]
+    # 其中shovels为挖机数量，dumps为卸点数量
+    action = env.action_space.sample()
+    print(f'Choose Action {action}')
+    # 依次返回生产状态信息, 奖励信息, 班次是否结束, 其余信息, 累计产量
+    obs_n, reward_n, done_n, info, mass = env.step(action)
+    print("---------------------Summary---------------------")
+    print(f'episode {episode}')
+    print("obs:", obs_n)
+    print("reward:", reward_n)
+    print("mass：", mass)
+env.close()# 
+```
+
+## 详细参数说明及设置
+TO DO
+
+
