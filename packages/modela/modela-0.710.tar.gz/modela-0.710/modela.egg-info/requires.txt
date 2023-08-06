@@ -1,0 +1,11 @@
+Click>=7.0
+grpc-interceptor
+grpcio
+jwt
+modelaapi>=0.5.97
+pandas
+protobuf
+protoc-gen-swagger
+tabulate
+tqdm
+typing_utils
