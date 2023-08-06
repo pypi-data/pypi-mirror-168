@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cached-secrets-manager
+Version: 1.0.1
+Summary: 
+Author: Maximilian Walther
+Author-email: maximilian.walther@spryfox.de
+Requires-Python: ==3.9.13
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: boto3 (>=1.24.14,<2.0.0)
+Requires-Dist: botocore (>=1.26.9,<2.0.0)
