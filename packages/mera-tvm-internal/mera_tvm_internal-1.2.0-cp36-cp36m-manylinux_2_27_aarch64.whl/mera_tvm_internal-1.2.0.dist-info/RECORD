@@ -1,0 +1,9 @@
+meratvm_internal/__init__.cpython-36m-aarch64-linux-gnu.so,sha256=HbAyeJjvJ6bZNAKbH0n6rI5gyEQ2VxHsLpOjXRY6UEc,19176
+meratvm_internal/_cpp_lib_load.cpython-36m-aarch64-linux-gnu.so,sha256=K9WTY3oOeLBmVUuBnye0kI5HB3GDYwoa9DOVKpjwfIU,55192
+meratvm_internal/get_version.cpython-36m-aarch64-linux-gnu.so,sha256=GBqDwN8-6hEs50aM-fftD3J9DxFJyDG0e7JYgoDrrk0,46056
+meratvm_internal/patterns.cpython-36m-aarch64-linux-gnu.so,sha256=Vys_qlvb-xU9mJESjQmRsSATb08TrXrZX-jnpNGwGNc,319096
+meratvm_internal/query_arch.cpython-36m-aarch64-linux-gnu.so,sha256=Q2Bckz4BgmvvTYZEOlWOjnTIaGpnGYmfR9BOlxJ9Hm8,46152
+mera_tvm_internal-1.2.0.dist-info/METADATA,sha256=1Qs8PvcE7355LveVqAcYjMcl88zWmfw5V09cclicsec,142
+mera_tvm_internal-1.2.0.dist-info/WHEEL,sha256=mQIYSkLzlnuxTLheKExz0nOHOROG8Ii-jd9wfTJ3vmc,114
+mera_tvm_internal-1.2.0.dist-info/top_level.txt,sha256=JrkwbbHZpDLqdXgiuMWSh3sDRjmxbWTDm_MqMEgpjUk,17
+mera_tvm_internal-1.2.0.dist-info/RECORD,,
