@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: am-active-learning
+Version: 0.1.1
+Summary: Active Learning package for composition and process optimization.
+Author: Ayush Jain
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: botorch (>=0.6.5,<0.7.0)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: numpy (>=1.22.4,<2.0.0)
+Requires-Dist: openpyxl (>=3.0.10,<4.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: sklearn (>=0.0,<0.1)
+Requires-Dist: torch (>=1.12.1,<2.0.0)
