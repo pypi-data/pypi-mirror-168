@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hub-redirect
+Version: 3.0.0
+Summary: Activeloop Deep Lake
+Home-page: https://www.github.com/activeloopai/deeplake
+Author: activeloop.ai
+Author-email: support@activeloop.ai
+Description-Content-Type: text/x-rst
+Requires-Dist: deeplake
+
+Use deeplake instead: pip install deeplake
