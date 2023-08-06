@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ome-ansible-molecule
+Version: 0.7.0a1
+Summary: Dependencies for testing OME Ansible roles
+Home-page: https://github.com/ome/ome-ansible-molecule
+Author: The Open Microscopy Team
+Author-email: ome-devel@lists.openmicroscopy.org.uk
+License: GPLv2
+Keywords: ansible molecule testing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: ansible (==2.10.7)
+Requires-Dist: docker-compose (==1.26.2)
+Requires-Dist: molecule (==2.22)
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: rich (<11.0.0)
+Requires-Dist: passlib (==1.7.4) ; sys_platform == "darwin"
+
+Dependencies for testing OME Ansible roles with Molecule
+========================================================
+
+.. image:: https://github.com/ome/ome-ansible-molecule/workflows/PyPI/badge.svg
+   :target: https://github.com/ome/ome-ansible-molecule/actions/
+
+.. image:: https://badge.fury.io/py/ome-ansible-molecule.svg
+    :target: https://badge.fury.io/py/ome-ansible-molecule
+
+A meta-package that installs common dependencies required to test most
+`OME Ansible Galaxy roles <https://galaxy.ansible.com/ome/>`_.
+
+See https://github.com/ome/action-ome-ansible-molecule for an example of
+GitHub action consuming this package in a GitHub workflow
