@@ -1,0 +1,13 @@
+nmk_vscode/__init__.py,sha256=AFn12Mu_uDOPYWRT69P1rzUi-ZQH9E0wcInKB3xI3vs,705
+nmk_vscode/base_settings.json,sha256=aVAuahImuYhaTVcqU4Al0xkhqXg_SkeC-ru9trQWQwE,123
+nmk_vscode/builders.py,sha256=mGXvw8dLMUa5IIBmE8MdfTwc8i567j5BMMiWyt7hbeU,1632
+nmk_vscode/launch.yml,sha256=RiFeuTSo3n4mPwAEH5qyddwjSQG6rwqsHyR1Mdt6Hdk,688
+nmk_vscode/plugin-defs.yml,sha256=qaLFTy9Txx-aBuP7kB5kYO7B6xp3j-fywBpc6Qn_oVs,520
+nmk_vscode/plugin.yml,sha256=Ue6lCDbjRG_tm1tRhKDLhQyvbO4dXJjeHV30xYCgo_s,134
+nmk_vscode/python.yml,sha256=e8PMmhzm4CelMfdPIyA4MiombDx4sVJ9sHFpwtZmFXs,80
+nmk_vscode/settings.yml,sha256=VDk8r5iWlasyKW3LDQb8STiymcm4pF3N6O82WO-MFlw,1126
+nmk_vscode-0.2.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+nmk_vscode-0.2.0.dist-info/METADATA,sha256=jL1pyHuNYsRq5f5p8eHd_Eu7k_VoVFLruPbFKr12HnI,1544
+nmk_vscode-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nmk_vscode-0.2.0.dist-info/top_level.txt,sha256=Hnl1-8oXn05tlN4dK_nfQ7kTJV4DUToEJ7NPR1_SruQ,11
+nmk_vscode-0.2.0.dist-info/RECORD,,
