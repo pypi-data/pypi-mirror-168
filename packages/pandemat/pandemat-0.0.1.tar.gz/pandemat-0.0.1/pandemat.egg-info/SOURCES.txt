@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pandemat.egg-info/PKG-INFO
+pandemat.egg-info/SOURCES.txt
+pandemat.egg-info/dependency_links.txt
+pandemat.egg-info/requires.txt
+pandemat.egg-info/top_level.txt
