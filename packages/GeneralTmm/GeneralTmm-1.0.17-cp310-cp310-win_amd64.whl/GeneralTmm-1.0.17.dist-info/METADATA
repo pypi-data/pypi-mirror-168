@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: GeneralTmm
+Version: 1.0.17
+Summary: General 4x4 transfer-matric method (TMM)
+Home-page: https://github.com/ardiloot/GeneralTmm
+Author: Ardi Loot
+Author-email: ardi.loot@outlook.com
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: eigency
+
+[![PyPI version](https://badge.fury.io/py/GeneralTmm.svg)](https://badge.fury.io/py/GeneralTmm)
+[![Pytest](https://github.com/ardiloot/GeneralTmm/actions/workflows/pytest.yml/badge.svg)](https://github.com/ardiloot/GeneralTmm/actions/workflows/pytest.yml)
+[![Build and upload to PyPI](https://github.com/ardiloot/GeneralTmm/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/ardiloot/GeneralTmm/actions/workflows/publish-to-pypi.yml)
+
+# General 4x4 transfer-matric method (TMM)
+
+## Requirements
+* Python (64-bit) >= 3.5
+* Cython
+* Numpy
+* Scipy
+* Eigency
+* C++ compiler
