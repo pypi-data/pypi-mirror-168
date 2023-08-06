@@ -1,0 +1,7 @@
+chardet
+docx2txt
+html2text
+PyPDF2
+numpy>=1.0.0
+scipy>=1.0.0
+wordtrie>=0.0.4
