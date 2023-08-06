@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: exe2png
+Version: 1.0.1
+Summary: Convert executables (or any other file) into an image
+Home-page: https://github.com/donno2048/exe2png
+Author: Elisha Hollander
+Author-email: just4now666666@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/donno2048/exe2png#readme
+Project-URL: Bug Reports, https://github.com/donno2048/exe2png/issues
+Project-URL: Source Code, https://github.com/donno2048/exe2png
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# exe2png
+
+Convert executables (or any other file) into an image
+
+## Installation
+
+### From PyPI
+
+```sh
+pip3 install exe2png
+```
+
+### From GitHub
+
+```sh
+pip3 install git+https://github.com/donno2048/exe2png
+```
+
+## Usage
+
+```sh
+exe2png -h
+usage: exe2png [-h] (-e | -d) [-c] [-H HEIGHT] -f FILE [-o OUTPUT]
+
+Encode or decode a file to or from a PNG image.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e, --encode          encode a file to a PNG image
+  -d, --decode          decode a PNG image to a file
+  -c, --color           encode or decode a color image
+  -H HEIGHT, --height HEIGHT
+                        height of the image
+  -f FILE, --file FILE  the file to encode or decode
+  -o OUTPUT, --output OUTPUT
+                        the file to output to
+```
+
+For example, we can encode my [snake executable](https://github.com/donno2048/snake) to a greyscale PNG image:
+
+```sh
+wget https://github.com/donno2048/snake/releases/download/v16/snake.com
+exe2png -e -H 15 -f snake.com -o snakeL.png
+```
+
+and get this:
+
+![greyscale image](https://github.com/donno2048/exe2png/raw/master/snakeL.png)
+
+and we can decode the image back to a file:
+
+```sh
+exe2png -d -f snakeL.png -o snake.com
+```
+
+or we can encode a color image:
+
+```sh
+exe2png -e -c -H 9 -f snake.com -o snakeRGB.png
+```
+
+and get this:
+
+![color image](https://github.com/donno2048/exe2png/raw/master/snakeRGB.png)
+
+and we can decode the image back to a file:
+
+```sh
+exe2png -d -c -f snakeRGB.png -o snake.com
+```
+
+Here is python itself encoded into a PNG image:
+
+![python image](https://github.com/donno2048/exe2png/raw/master/python.png)

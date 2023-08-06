@@ -1,0 +1,2 @@
+[console_scripts]
+exe2png = exe2png.__main__:main
