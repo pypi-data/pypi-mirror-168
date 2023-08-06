@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/pfs_mcdm/__init__.py
+src/pfs_mcdm/mcdm.py
+src/pfs_mcdm/pfn.py
+src/pfs_mcdm/promethee.py
+src/pfs_mcdm/simple_aggregation.py
+src/pfs_mcdm/topsis.py
+src/pfs_mcdm.egg-info/PKG-INFO
+src/pfs_mcdm.egg-info/SOURCES.txt
+src/pfs_mcdm.egg-info/dependency_links.txt
+src/pfs_mcdm.egg-info/requires.txt
+src/pfs_mcdm.egg-info/top_level.txt
+test/test2.py
+test/tests.py
