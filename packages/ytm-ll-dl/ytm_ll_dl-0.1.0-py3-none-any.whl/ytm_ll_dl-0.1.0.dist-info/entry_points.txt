@@ -1,0 +1,3 @@
+[console_scripts]
+ytm-ll-dl=ytm_ll_dl.main:main
+
