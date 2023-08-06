@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sparrow-mlpipes
+Version: 0.4.3.dev1663691585
+Summary: Tools for Nvidia DeepStream
+License: MIT
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pyds
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: dvc[s3] ; extra == 'dev'
+Requires-Dist: fire ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: opencv-python ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: sparrow-datums ; extra == 'dev'
+
