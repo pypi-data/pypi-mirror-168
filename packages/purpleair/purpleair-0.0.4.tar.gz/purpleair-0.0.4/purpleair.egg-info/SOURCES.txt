@@ -1,0 +1,9 @@
+README.md
+setup.py
+purpleair/__init__.py
+purpleair/__version__.py
+purpleair.egg-info/PKG-INFO
+purpleair.egg-info/SOURCES.txt
+purpleair.egg-info/dependency_links.txt
+purpleair.egg-info/requires.txt
+purpleair.egg-info/top_level.txt
