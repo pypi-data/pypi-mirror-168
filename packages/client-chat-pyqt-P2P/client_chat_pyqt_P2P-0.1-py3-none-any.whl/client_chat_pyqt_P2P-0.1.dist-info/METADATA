@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: client-chat-pyqt-P2P
+Version: 0.1
+Summary: Client_packet
+Home-page: UNKNOWN
+Author: Anatoliy
+Author-email: maximichev@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycruptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+
