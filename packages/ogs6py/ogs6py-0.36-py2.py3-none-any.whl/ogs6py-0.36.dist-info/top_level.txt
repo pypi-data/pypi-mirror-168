@@ -1,0 +1,7 @@
+ogs6py/classes
+ogs6py/log_parser
+ogs6py/log_parser/common_ogs_analyses
+ogs6py/log_parser/log_parser
+ogs6py/ogs
+ogs6py/ogs_regexes
+ogs6py/ogs_regexes/ogs_regexes
