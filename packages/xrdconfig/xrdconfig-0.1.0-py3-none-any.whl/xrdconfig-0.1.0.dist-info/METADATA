@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: xrdconfig
+Version: 0.1.0
+Summary: Easy access to Xrootd config parameters
+Author-email: Luke Kreczko <kreczko@cern.ch>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Dist: typing_extensions >=3.7; python_version<'3.8'
+Requires-Dist: pytest >=6 ; extra == "dev"
+Requires-Dist: pytest-cov >=3 ; extra == "dev"
+Requires-Dist: Sphinx>=4.0 ; extra == "docs"
+Requires-Dist: myst_parser>=0.13 ; extra == "docs"
+Requires-Dist: sphinx-book-theme>=0.1.0 ; extra == "docs"
+Requires-Dist: sphinx_copybutton ; extra == "docs"
+Requires-Dist: pytest >=6 ; extra == "test"
+Requires-Dist: pytest-cov >=3 ; extra == "test"
+Project-URL: Bug Tracker, https://github.com/uobdic/xrdconfig/issues
+Project-URL: Changelog, https://github.com/uobdic/xrdconfig/releases
+Project-URL: Discussions, https://github.com/uobdic/xrdconfig/discussions
+Project-URL: Homepage, https://github.com/uobdic/xrdconfig
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: test
+
+# xrdconfig
+
+[![Actions Status][actions-badge]][actions-link]
+[![Documentation Status][rtd-badge]][rtd-link]
+
+[![PyPI version][pypi-version]][pypi-link]
+[![Conda-Forge][conda-badge]][conda-link]
+[![PyPI platforms][pypi-platforms]][pypi-link]
+
+[![GitHub Discussion][github-discussions-badge]][github-discussions-link]
+[![Gitter][gitter-badge]][gitter-link]
+
+<!-- prettier-ignore-start -->
+[actions-badge]:            https://github.com/uobdic/xrdconfig/workflows/CI/badge.svg
+[actions-link]:             https://github.com/uobdic/xrdconfig/actions
+[conda-badge]:              https://img.shields.io/conda/vn/conda-forge/xrdconfig
+[conda-link]:               https://github.com/conda-forge/xrdconfig-feedstock
+[github-discussions-badge]: https://img.shields.io/static/v1?label=Discussions&message=Ask&color=blue&logo=github
+[github-discussions-link]:  https://github.com/uobdic/xrdconfig/discussions
+[gitter-badge]:             https://badges.gitter.im/https://github.com/uobdic/xrdconfig/community.svg
+[gitter-link]:              https://gitter.im/https://github.com/uobdic/xrdconfig/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
+[pypi-link]:                https://pypi.org/project/xrdconfig/
+[pypi-platforms]:           https://img.shields.io/pypi/pyversions/xrdconfig
+[pypi-version]:             https://img.shields.io/pypi/v/xrdconfig
+[rtd-badge]:                https://readthedocs.org/projects/xrdconfig/badge/?version=latest
+[rtd-link]:                 https://xrdconfig.readthedocs.io/en/latest/?badge=latest
+
+<!-- prettier-ignore-end -->
+
