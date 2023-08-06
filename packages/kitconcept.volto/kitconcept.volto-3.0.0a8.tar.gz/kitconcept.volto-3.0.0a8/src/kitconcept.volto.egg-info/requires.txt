@@ -1,0 +1,12 @@
+plone.volto
+plone.api
+Products.GenericSetup
+setuptools
+plone.restapi
+kitconcept.contentcreator
+
+[test]
+plone.app.testing
+plone.testing
+plone.app.contenttypes
+plone.app.robotframework[debug]
