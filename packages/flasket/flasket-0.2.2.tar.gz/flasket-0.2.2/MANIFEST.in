@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+include setup.*
+include requirements*.txt
+recursive-include flasket *py
+recursive-include flasket *yml
+prune docs
+prune tests

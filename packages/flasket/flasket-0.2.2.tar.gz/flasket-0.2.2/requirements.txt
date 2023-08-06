@@ -1,0 +1,11 @@
+attr
+boltons
+connexion
+flask
+flask_gordon
+gunicorn
+html5lib
+limits
+openapi-schema-validator
+swagger-ui-bundle
+torxtools
