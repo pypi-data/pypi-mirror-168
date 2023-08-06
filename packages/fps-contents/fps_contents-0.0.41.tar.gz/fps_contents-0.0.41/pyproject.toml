@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project]
+name = "fps_contents"
+description = "An FPS plugin for the contents API"
+keywords = [ "jupyter", "server", "fastapi", "pluggy", "plugins",]
+requires-python = ">=3.7"
+dependencies = [ "fps >=0.0.8", "anyio", "watchfiles >=0.16.1,<1",]
+dynamic = [ "version",]
+[[project.authors]]
+name = "Jupyter Development Team"
+email = "jupyter@googlegroups.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "BSD 3-Clause License"
+
+[project.urls]
+Homepage = "https://jupyter.org"
+
+[tool.check-manifest]
+ignore = [ ".*",]
+
+[tool.jupyter-releaser]
+skip = [ "check-links",]
+
+[project.entry-points.fps_router]
+fps-contents = "fps_contents.routes"
+
+[tool.hatch.version]
+path = "fps_contents/__init__.py"

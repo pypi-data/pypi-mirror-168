@@ -1,0 +1,45 @@
+from __future__ import annotations
+from typing import Generic, Optional, TypeVar
+
+from fastapi_pagination import Params
+from fastapi_pagination.bases import AbstractPage, AbstractParams
+from fastapi_pagination.api import create_page, resolve_params
+
+from .models import Content
+
+T = TypeVar("T")
+
+
+class ContentPage(AbstractPage[Content], Generic[T]):
+    __root__: Content
+
+    __params_type__ = Params
+
+    @classmethod
+    def create(
+        cls,
+        content: Content,
+        total: int,
+        params: AbstractParams,
+    ) -> ContentPage:
+        if not isinstance(params, Params):
+            raise ValueError("Page should be used with Params")
+
+        return cls(__root__=content)
+
+
+def paginate(
+    content: Content,
+    params: Optional[AbstractParams] = None,
+) -> AbstractPage[T]:
+    params = resolve_params(params)
+    raw_params = params.to_raw_params()
+
+    content.content = content.content[raw_params.offset : raw_params.offset + raw_params.limit]
+    page = create_page(
+        content=content,
+        total=len(content.content),
+        params=params,
+    )
+
+    return page
