@@ -1,0 +1,11 @@
+awaitable/__init__.py,sha256=RxiZSVIYBMclcvqUMDh3uI8lpM5oPg-2Xdk6bUeWtNI,1111
+awaitable/asyncio_gather.py,sha256=5gfibjo1IdULNTRkGxFqi2FE2dv1Y9EG7ewSK26y_Wo,1744
+awaitable/awaitable.py,sha256=NEBKyWMgAIZYORDFSJtHPnDttBKQhqmfc0ViLBG3ndg,1601
+awaitable/constants.py,sha256=mf9SdZLHwYz_eYxD3hzB88BqQFSmbt6GmqawB2L-lXE,1320
+awaitable/samples/01_sleep.py,sha256=HpkTWGl_vQCnOF6MHt4yc5YGSRb7hAH1xcNJKEsf3qA,2550
+awaitable/samples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Awaitable-0.2.3.dist-info/LICENSE,sha256=KXtvAwlDxFxMIdHxHJfaPxp2LLs4cZoPCATTgfcKCTE,613
+Awaitable-0.2.3.dist-info/METADATA,sha256=6hDeLrqEMjSh99WEVb8A5DhoyfYOSJLbkDHZYrM2LJ8,2254
+Awaitable-0.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Awaitable-0.2.3.dist-info/top_level.txt,sha256=FvsYNqbQMzVjqqoiMzNT1LlSsMkm7G6Q48VghEIR4es,10
+Awaitable-0.2.3.dist-info/RECORD,,
