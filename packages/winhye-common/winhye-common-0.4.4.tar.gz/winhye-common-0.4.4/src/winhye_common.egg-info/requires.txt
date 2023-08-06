@@ -1,0 +1,11 @@
+flask
+requests
+paho-mqtt
+websocket-server
+sqlalchemy
+psycopg2
+oss2
+crypto
+gevent
+alibabacloud_dysmsapi20170525
+alibabacloud_sts20150401
