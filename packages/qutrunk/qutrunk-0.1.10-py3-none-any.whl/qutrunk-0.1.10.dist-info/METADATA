@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: qutrunk
+Version: 0.1.10
+Summary: qutrunk is an open source library for quantum computing.
+Home-page: http://www.qudoor.com/
+License: Apache-2.0
+Keywords: qutrunk,quantum,sdk
+Author: qudoorzh2022
+Author-email: qudoorzh2022@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: networkx (>=2.8,<3.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: ply (>=3.11,<4.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: retworkx (>=0.11.0,<0.12.0)
+Requires-Dist: thrift (>=0.15.0,<0.16.0)
+Requires-Dist: thriftpy2 (>=0.4.14,<0.5.0)
+Description-Content-Type: text/markdown
+
+# qutrunk
+
+qutrunk is a free, open-source and cross-platform Python library for quantum computing. qutrunk also work as a foundation of high-level applications, such as: quantum algorithm, quantum machine learning, quantum composer and so on
+
+## qutrunk features
+
+1. Quantum programming based on quantum circuit and quantum gate.  
+2. Simulate quantum programs on classical computers, provide full amplitude calculation
+3. Device independent, Run the same quantum circuit on various quantum backends(e.g: BackendLocalCpp, BackendLocalPy, BackendQuSprout, BackendIBM, etc.)
+4. Compatible with openqasm/2.0
+5. Provide resource statistics
+
+## Install
+1. Install from whl package, run the following command directly:
+```
+pip install qutrunk
+```
+
+2. Install from source code(the cpp simulater BackendLocalCpp will be used as default), run the following command to install qutrunk by source code(see the detailed installation steps xxx):
+```
+python3 setup.py install
+```
+
+## Example:
+bell-pair quantum algorithm：
+
+``` python
+# import package
+from qutrunk.circuit import QCircuit
+from qutrunk.circuit.gates import H, CNOT, Measure, All
+
+# allocate resource
+qc = QCircuit()
+qr = qc.allocate(2) 
+
+# apply quantum gates
+H * qr[0]   
+CNOT * (qr[0], qr[1])
+All(Measure) * qr
+
+# print circuit
+qc.print(qc)   
+# run circuit
+res = qc.run(shots=1024) 
+# print result
+print(res.get_counts()) 
+# draw circuit
+qc.draw()
+```
+
+ ## License
+
+ qutrunk is free and open source, release under the Apache Licence, Version 2.0.
+
