@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{4ae9288a-6ef6-41a3-8d1a-6f0f19c973f4}">
+  <label></label>
+  <ports/>
+  <node id="org.sysess.sympathy.data.table.selecttablerows" port_format="1.1" uuid="{3b779028-cf81-46eb-8911-d27a038f557e}" x="1975.0" y="1925.0">
+    <label>Select rows in Table</label>
+    <version>1.1</version>
+    <description>Reduction of rows in Table according to specified filter.</description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Columns to filter",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": ["t"]
+      },
+      "constraint": {
+        "editor": null,
+        "label": "Filter constraint",
+        "order": 3,
+        "type": "string",
+        "value": "2"
+      },
+      "exist": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": ["all", "any"],
+          "type": "combobox"
+        },
+        "label": "Constraint must be satisfied in",
+        "order": 1,
+        "type": "string",
+        "value": "all"
+      },
+      "limit": {
+        "editor": null,
+        "label": "Preview rows",
+        "order": 6,
+        "type": "integer",
+        "value": 100
+      },
+      "predicate": {
+        "editor": null,
+        "label": "Custom filter",
+        "order": 5,
+        "type": "string",
+        "value": "lambda x: x &lt; 2"
+      },
+      "relation": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Relation",
+        "list": ["equal", "less than", "less than or equal", "greater than", "greater than or equal", "not equal"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [1],
+        "value_names": ["less than"]
+      },
+      "type": "group",
+      "use_custom_predicate": {
+        "editor": null,
+        "label": "Use custom filter",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      }
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{03439aa8-899e-4caf-8277-55afb0992080}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{e65bfddc-46f8-4b6b-bd67-c9b08f8d9888}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{6cdf43e2-561f-4ce8-b817-cbf1eb11268e}" x="1525.0" y="1925.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"t\", \"f\", [0.0, 1.0, 2.0, 3.0, 4.0]], [\"y\", \"f\", [0.0, 10.0, 20.0, 30.0, 40.0]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{1b968561-7129-4691-b83e-bd548d840274}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.selecttablerowsfromtable" port_format="1.1" uuid="{d7cfdb88-f787-493b-9284-20e4be3fd297}" x="1975.0" y="2025.0">
+    <label>Select rows in Table with Table</label>
+    <version>1.0</version>
+    <description>Select rows in Table by using an additional selection Table with predefined comparison relations.</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Column with column names",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": ["columns"]
+      },
+      "constraint": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Column with constraint values",
+        "list": [],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [],
+        "value_names": ["constraint"]
+      },
+      "eval": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Evaluate values as code",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "reduction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Reduction:",
+        "list": ["all", "any"],
+        "mode": "selected",
+        "order": 3,
+        "type": "list",
+        "value": [0],
+        "value_names": ["all"]
+      },
+      "relation": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Column with comparison operators",
+        "list": [],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [],
+        "value_names": ["operator"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="table" type_base="table" uuid="{1ae7ddfa-e42e-463b-995e-6cc5c061267a}">
+        <label>Table with three columns that defines a set of comparison relations. Each row in the set will set up a comparison relation with a column name, a comparison operator and a constraint value.</label>
+      </input>
+      <input key="port2" scheme="hdf5" type="table" type_base="table" uuid="{60c7a2cf-4958-45bf-a9ad-4ae54b9c83ec}">
+        <label>Input Table</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{64f3e881-8143-450d-85ed-ab30fc0e42fb}">
+        <label>Table with rows in Selection</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{fa144cf2-081e-4523-a1ae-30a23e8e9a8e}" x="1525.0" y="2025.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"operator\", \"U\", [\"less than\"]], [\"constraint\", \"U\", [\"2\"]], [\"columns\", \"U\", [\"t\"]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{0f864e88-8e2c-4fce-89c1-a576751c5b2f}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="table" uuid="{603c24ed-1669-4d86-ba7f-53b7ab036f84}">
+    <source node="{6cdf43e2-561f-4ce8-b817-cbf1eb11268e}" port="{1b968561-7129-4691-b83e-bd548d840274}"/>
+    <destination node="{3b779028-cf81-46eb-8911-d27a038f557e}" port="{03439aa8-899e-4caf-8277-55afb0992080}"/>
+  </connection>
+  <connection type="table" uuid="{ed78e0d5-02ae-4d73-b51c-3db6ca343f31}">
+    <source node="{6cdf43e2-561f-4ce8-b817-cbf1eb11268e}" port="{1b968561-7129-4691-b83e-bd548d840274}"/>
+    <destination node="{d7cfdb88-f787-493b-9284-20e4be3fd297}" port="{60c7a2cf-4958-45bf-a9ad-4ae54b9c83ec}"/>
+  </connection>
+  <connection type="table" uuid="{f9836bb7-cfb0-4053-b140-2d3b53bbeacf}">
+    <source node="{fa144cf2-081e-4523-a1ae-30a23e8e9a8e}" port="{0f864e88-8e2c-4fce-89c1-a576751c5b2f}"/>
+    <destination node="{d7cfdb88-f787-493b-9284-20e4be3fd297}" port="{1ae7ddfa-e42e-463b-995e-6cc5c061267a}"/>
+  </connection>
+  <text color="Beige" height="75.0" uuid="{84d4189d-f335-4c40-83af-bc9c045807ab}" width="350.0" x="1475.0" y="2225.0">
+- Node example: *org.sysess.sympathy.data.table.selecttablerows*
+- Node example: *org.sysess.sympathy.data.table.selecttablerowsfromtable*</text>
+</flow>

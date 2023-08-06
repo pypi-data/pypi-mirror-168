@@ -1,0 +1,1581 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{cf5ee045-dbfe-4a5d-a716-8ad89998b6ab}">
+  <label></label>
+  <ports/>
+  <flow cls="Flow" uuid="{c7aec768-4d3c-4f84-a318-870dcda2f12a}" x="1500.0" y="2050.0">
+    <label>Create figure with configuration</label>
+    <ports>
+      <input index="0" key="Configuration" parent="True" scheme="hdf5" type="table" uuid="{9f36d695-985e-483a-b841-52c14d32d817}" x="1375.0" y="1975.0">
+        <label>Configuration</label>
+      </input>
+      <input index="1" key="Data" parent="True" scheme="hdf5" type="table" uuid="{61227a94-08f2-4da3-a26b-b0ec535a7866}" x="1825.0" y="2125.0">
+        <label>Data</label>
+      </input>
+      <output index="0" key="Port" parent="True" scheme="text" type="figure" uuid="{7aa76a6e-4139-46ec-939a-ec9c495472d1}" x="2250.0" y="2050.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <flow cls="Flow" uuid="{98b764b4-d0d8-4636-9424-6530d142b602}" x="2000.0" y="2050.0">
+      <label>Scale and offset signals</label>
+      <ports>
+        <input index="0" key="Configuration" parent="True" scheme="hdf5" type="table" uuid="{a5a556fc-1c22-4530-a6ad-a64f953af73b}" x="1825.0" y="1975.0">
+          <label>Configuration</label>
+        </input>
+        <input index="1" key="Data" parent="True" scheme="hdf5" type="table" uuid="{11d8b73f-c5de-40f3-b3f6-918a12fe9e9b}" x="1825.0" y="2075.0">
+          <label>Data</label>
+        </input>
+        <output index="0" key="Signals with corresponding configuration" parent="True" scheme="hdf5" type="[(table, table)]" uuid="{e32b76ed-67df-4157-9b97-c93f94c01311}" x="2625.0" y="1975.0">
+          <label>Signals with corresponding configuration</label>
+        </output>
+      </ports>
+      <flow cls="Flow" uuid="{2c7bd161-fc7c-4c83-9123-2defa14f4134}" x="2150.0" y="2050.0">
+        <label>Zip List with item</label>
+        <ports>
+          <input index="0" key="List" parent="True" scheme="hdf5" type="[table]" uuid="{18f2ca37-b7ec-4bea-a39e-98459ba9a7e5}" x="1975.0" y="2000.0">
+            <label>List</label>
+          </input>
+          <input index="1" key="Item" parent="True" scheme="hdf5" type="table" uuid="{490fa55d-29e2-46a9-871c-b555457e901a}" x="1975.0" y="2100.0">
+            <label>Item</label>
+          </input>
+          <output index="0" key="Port" parent="True" scheme="hdf5" type="[(table, table)]" uuid="{9a658cf9-d8c1-4435-990c-9222f5a66bd2}" x="2375.0" y="2050.0">
+            <label>Port</label>
+          </output>
+        </ports>
+        <node id="org.sysess.builtin.empty" port_format="1.1" uuid="{6d4086f3-9c8c-4ba5-a91a-418037f5d10f}" x="1975.0" y="2200.0">
+          <label>Empty</label>
+          <version>3.0.0</version>
+          <description>Generate empty data of inferred or specified type</description>
+          <author>Erik der Hagopian &lt;erik.hagopian@combine.se&gt;, Benedikt Ziegler &lt;benedikt.ziegler@combine.se&gt;</author>
+          <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+          <min_version>3.0.0</min_version>
+          <parameters type="json">
+          {
+            "datatype": {
+              "editor": null,
+              "label": "Datatype",
+              "type": "string",
+              "value": "&lt;a&gt;"
+            },
+            "label": "",
+            "type": "group"
+          }
+          </parameters>
+          <ports>
+            <output key="" scheme="hdf5" type="[table]" type_base="&lt;a&gt;" uuid="{b4f3260a-d600-4d09-ac2c-734e4dbac86c}">
+              <label>Output port containing empty data (must be connected or specified)</label>
+            </output>
+          </ports>
+        </node>
+        <node id="org.sysess.sympathy.tuple.ziptuple2" port_format="1.1" uuid="{7607d6f8-45d0-4032-a2ac-049fd7a29f57}" x="2275.0" y="2050.0">
+          <label>Zip Tuple</label>
+          <version>3.0.0</version>
+          <description></description>
+          <author>Erik der Hagopian</author>
+          <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+          <min_version>3.0.0</min_version>
+          <parameters type="json">
+          {
+            "label": "",
+            "len_strategy": {
+              "editor": {
+                "display": ["Use shortest list length", "Use longest list length", "Error"],
+                "edit": false,
+                "filter": false,
+                "include_empty": false,
+                "options": ["shortest", "longest", "error"],
+                "type": "combobox"
+              },
+              "label": "Strategy for different length lists:",
+              "type": "string",
+              "value": "error"
+            },
+            "type": "group"
+          }
+          </parameters>
+          <ports>
+            <input key="input" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{67f90e6d-7468-4101-9986-c06177bd9beb}">
+              <label>Input</label>
+            </input>
+            <input key="input" scheme="hdf5" type="[table]" type_base="[&lt;b&gt;]" uuid="{0a97ffe1-fa96-4e7f-ae69-07a50d2f45eb}">
+              <label>Input</label>
+            </input>
+            <output key="output" scheme="hdf5" type="[(table, table)]" type_base="[(&lt;a&gt;, &lt;b&gt;)]" uuid="{15c8b03a-a158-4010-b73f-404714e1b146}">
+              <label>Output</label>
+            </output>
+          </ports>
+        </node>
+        <node id="org.sysess.sympathy.list.padlistitem" port_format="1.1" uuid="{b6ec8996-318a-4b40-bbb5-32c8dadb0ea6}" x="2125.0" y="2100.0">
+          <label>Pad List with Item</label>
+          <version>3.0.0</version>
+          <description>Pad a list with item match the length of template</description>
+          <author>Erik der Hagopian</author>
+          <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+          <min_version>3.0.0</min_version>
+          <parameters type="json">{}</parameters>
+          <ports>
+            <input key="template" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{1ed32636-78ba-453f-92ba-469455a20b9b}">
+              <label>List with deciding length</label>
+            </input>
+            <input key="item" scheme="hdf5" type="table" type_base="&lt;b&gt;" uuid="{7f6a29bd-a4f1-4703-a756-2fedd30000ee}">
+              <label>Item to be used as padding</label>
+            </input>
+            <input key="list" scheme="hdf5" type="[table]" type_base="[&lt;b&gt;]" uuid="{7d345a03-3a64-4f85-a44f-a1e5cf2e9b45}">
+              <label>List that will be padded</label>
+            </input>
+            <output key="list" scheme="hdf5" type="[table]" type_base="[&lt;b&gt;]" uuid="{fed22f07-1acb-42e1-a621-af374ed9f3a9}">
+              <label>The padded List</label>
+            </output>
+          </ports>
+        </node>
+        <connection type="[table]" uuid="{0b7d453c-059f-48a3-b366-b11dace4dd1e}">
+          <source node="{2c7bd161-fc7c-4c83-9123-2defa14f4134}" port="{18f2ca37-b7ec-4bea-a39e-98459ba9a7e5}"/>
+          <destination node="{7607d6f8-45d0-4032-a2ac-049fd7a29f57}" port="{67f90e6d-7468-4101-9986-c06177bd9beb}"/>
+        </connection>
+        <connection type="table" uuid="{3a9640a8-d97b-49a1-a617-0b55e2ee8a5e}">
+          <source node="{2c7bd161-fc7c-4c83-9123-2defa14f4134}" port="{490fa55d-29e2-46a9-871c-b555457e901a}"/>
+          <destination node="{b6ec8996-318a-4b40-bbb5-32c8dadb0ea6}" port="{7f6a29bd-a4f1-4703-a756-2fedd30000ee}"/>
+        </connection>
+        <connection type="[table]" uuid="{47fe9686-5416-4fa5-b3ad-31a2df33f39a}">
+          <source node="{b6ec8996-318a-4b40-bbb5-32c8dadb0ea6}" port="{fed22f07-1acb-42e1-a621-af374ed9f3a9}"/>
+          <destination node="{7607d6f8-45d0-4032-a2ac-049fd7a29f57}" port="{0a97ffe1-fa96-4e7f-ae69-07a50d2f45eb}"/>
+        </connection>
+        <connection type="[table]" uuid="{4e41b966-1c56-4ac4-991d-2013dc8b97c5}">
+          <source node="{2c7bd161-fc7c-4c83-9123-2defa14f4134}" port="{18f2ca37-b7ec-4bea-a39e-98459ba9a7e5}"/>
+          <destination node="{b6ec8996-318a-4b40-bbb5-32c8dadb0ea6}" port="{1ed32636-78ba-453f-92ba-469455a20b9b}"/>
+        </connection>
+        <connection type="[table]" uuid="{6e030aa5-1918-4e3a-b8f6-0da861633a01}">
+          <source node="{6d4086f3-9c8c-4ba5-a91a-418037f5d10f}" port="{b4f3260a-d600-4d09-ac2c-734e4dbac86c}"/>
+          <destination node="{b6ec8996-318a-4b40-bbb5-32c8dadb0ea6}" port="{7d345a03-3a64-4f85-a44f-a1e5cf2e9b45}"/>
+        </connection>
+        <connection type="[(table, table)]" uuid="{dea2311f-a430-41cb-8592-1806632f9de6}">
+          <source node="{7607d6f8-45d0-4032-a2ac-049fd7a29f57}" port="{15c8b03a-a158-4010-b73f-404714e1b146}"/>
+          <destination node="{2c7bd161-fc7c-4c83-9123-2defa14f4134}" port="{9a658cf9-d8c1-4435-990c-9222f5a66bd2}"/>
+        </connection>
+        <text color="Beige" height="75.0" uuid="{7c8aa2b1-455f-48cb-a55f-aa258570e56c}" width="450.0" x="1975.0" y="1900.0">Attach the data table to each row of the configuration.</text>
+      </flow>
+      <node id="org.sysess.sympathy.tuple.ziptuple2" port_format="1.1" uuid="{2c45d4c9-7317-4fb6-ab80-3efc87eb06f2}" x="2475.0" y="1975.0">
+        <label>Zip Tuple</label>
+        <version>3.0.0</version>
+        <description></description>
+        <author>Erik der Hagopian</author>
+        <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+        <min_version>3.0.0</min_version>
+        <parameters type="json">
+        {
+          "label": "",
+          "len_strategy": {
+            "editor": {
+              "display": ["Use shortest list length", "Use longest list length", "Error"],
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": ["shortest", "longest", "error"],
+              "type": "combobox"
+            },
+            "label": "Strategy for different length lists:",
+            "type": "string",
+            "value": "error"
+          },
+          "type": "group"
+        }
+        </parameters>
+        <ports>
+          <input key="input" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{fb0b55f7-e130-415b-b9a6-403b0b65ca60}">
+            <label>Input</label>
+          </input>
+          <input key="input" scheme="hdf5" type="[table]" type_base="[&lt;b&gt;]" uuid="{38834b3a-f867-4688-96b6-8b154174a616}">
+            <label>Input</label>
+          </input>
+          <output key="output" scheme="hdf5" type="[(table, table)]" type_base="[(&lt;a&gt;, &lt;b&gt;)]" uuid="{73ff3585-4155-4503-8a11-172578cdbf6d}">
+            <label>Output</label>
+          </output>
+        </ports>
+      </node>
+      <node id="org.sysess.sympathy.data.table.vsplittablenode" port_format="1.1" uuid="{9e52336a-273e-4d6b-8ef4-5272586c0588}" x="1975.0" y="1975.0">
+        <label>VSplit Table</label>
+        <version>3.0.0</version>
+        <description>Split Table row wise (vertically), grouping unique values of an index column.</description>
+        <author>Alexander Busck</author>
+        <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+        <min_version>3.0.0</min_version>
+        <parameters type="json">
+        {
+          "input_index": {
+            "editor": {
+              "display": null,
+              "edit": true,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "Index column",
+            "type": "string",
+            "value": ""
+          },
+          "label": "",
+          "missing_index": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": ["Multiple tables, one for each row", "Single table, one table for all rows", "Error"],
+              "type": "combobox"
+            },
+            "label": "Action on missing index",
+            "type": "string",
+            "value": "Multiple tables, one for each row"
+          },
+          "no_index": {
+            "editor": null,
+            "label": "One table for each row",
+            "type": "boolean",
+            "value": true
+          },
+          "remove_fill": {
+            "editor": null,
+            "label": "Remove complement columns",
+            "type": "boolean",
+            "value": false
+          },
+          "type": "group"
+        }
+        </parameters>
+        <ports>
+          <input key="port1" scheme="hdf5" type="table" type_base="table" uuid="{f510ebeb-4fa1-4343-949d-f3348b284213}">
+            <label>Input Table</label>
+          </input>
+          <output key="port1" scheme="hdf5" type="[table]" type_base="[table]" uuid="{47aca066-403e-410d-8724-bd86957c9d8e}">
+            <label>Split Tables</label>
+          </output>
+        </ports>
+      </node>
+      <node id="org.sysess.sympathy.data.table.calculatorgenericlist" port_format="1.1" uuid="{d7b90fbd-0f37-4a01-9d1e-f5e379a4a0e0}" x="2325.0" y="2050.0">
+        <label>Calculator List</label>
+        <version>3.0.0</version>
+        <description>Create columns by evaluating python calculations.</description>
+        <author>Greger Cronquist, Magnus Sand&#233;n, Sara Gustafzelius &amp; Benedikt Ziegler</author>
+        <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+        <min_version>3.0.0</min_version>
+        <parameters type="json">
+        {
+          "calc_attrs_dict": {
+            "editor": null,
+            "label": "",
+            "order": 1,
+            "type": "string",
+            "value": "[]"
+          },
+          "calc_list": {
+            "_old_list_storage": true,
+            "editor": null,
+            "label": "List of calculations",
+            "list": ["time = arg[1]['index'] #ENABLED:1", "signal = arg[1][arg[0]['signal'][0]]*arg[0]['scale'] + arg[0]['offset'] #ENABLED:1"],
+            "mode": "selected",
+            "order": 0,
+            "type": "list",
+            "value": [],
+            "value_names": []
+          },
+          "copy_input": {
+            "editor": null,
+            "label": "Copy input",
+            "order": 2,
+            "type": "boolean",
+            "value": false
+          },
+          "fail_strategy": {
+            "_old_list_storage": false,
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "Action on calculation failure",
+            "list": ["Exception", "Skip calculation"],
+            "mode": "selected",
+            "order": 3,
+            "type": "list",
+            "value": [0],
+            "value_names": ["Exception"]
+          },
+          "label": "",
+          "type": "group"
+        }
+        </parameters>
+        <ports>
+          <input key="port0" scheme="hdf5" type="[(table, table)]" type_base="[&lt;a&gt;]" uuid="{7c4b0b62-b3c4-42b4-ba3e-96ab6f24b1a5}">
+            <label>Generic Input</label>
+          </input>
+          <output key="port1" scheme="hdf5" type="[table]" type_base="[table]" uuid="{146614bf-723c-4a13-b92e-68fdcdefc863}">
+            <label>Tables with results from the calculations.</label>
+          </output>
+        </ports>
+      </node>
+      <connection type="[table]" uuid="{2ba64351-a1c1-49bc-ab80-13abc1ef6d55}">
+        <source node="{d7b90fbd-0f37-4a01-9d1e-f5e379a4a0e0}" port="{146614bf-723c-4a13-b92e-68fdcdefc863}"/>
+        <destination node="{2c45d4c9-7317-4fb6-ab80-3efc87eb06f2}" port="{38834b3a-f867-4688-96b6-8b154174a616}"/>
+      </connection>
+      <connection type="table" uuid="{3bd8f747-2ddf-460a-85d2-ba78cc46282b}">
+        <source node="{98b764b4-d0d8-4636-9424-6530d142b602}" port="{a5a556fc-1c22-4530-a6ad-a64f953af73b}"/>
+        <destination node="{9e52336a-273e-4d6b-8ef4-5272586c0588}" port="{f510ebeb-4fa1-4343-949d-f3348b284213}"/>
+      </connection>
+      <connection type="[table]" uuid="{5bed4ffb-a732-4525-a1fa-a29b030fb25c}">
+        <source node="{9e52336a-273e-4d6b-8ef4-5272586c0588}" port="{47aca066-403e-410d-8724-bd86957c9d8e}"/>
+        <destination node="{2c45d4c9-7317-4fb6-ab80-3efc87eb06f2}" port="{fb0b55f7-e130-415b-b9a6-403b0b65ca60}"/>
+      </connection>
+      <connection type="[table]" uuid="{869bd564-39fa-4b10-9f64-58e8068b2663}">
+        <source node="{9e52336a-273e-4d6b-8ef4-5272586c0588}" port="{47aca066-403e-410d-8724-bd86957c9d8e}"/>
+        <destination node="{2c7bd161-fc7c-4c83-9123-2defa14f4134}" port="{18f2ca37-b7ec-4bea-a39e-98459ba9a7e5}"/>
+      </connection>
+      <connection type="table" uuid="{8e2fc246-d83e-4cdf-a943-2ff86ca8d78e}">
+        <source node="{98b764b4-d0d8-4636-9424-6530d142b602}" port="{11d8b73f-c5de-40f3-b3f6-918a12fe9e9b}"/>
+        <destination node="{2c7bd161-fc7c-4c83-9123-2defa14f4134}" port="{490fa55d-29e2-46a9-871c-b555457e901a}"/>
+      </connection>
+      <connection type="[(table, table)]" uuid="{db4736d6-1efc-44a7-97fc-2dc2228431a0}">
+        <source node="{2c7bd161-fc7c-4c83-9123-2defa14f4134}" port="{9a658cf9-d8c1-4435-990c-9222f5a66bd2}"/>
+        <destination node="{d7b90fbd-0f37-4a01-9d1e-f5e379a4a0e0}" port="{7c4b0b62-b3c4-42b4-ba3e-96ab6f24b1a5}"/>
+      </connection>
+      <connection type="[(table, table)]" uuid="{e0d244d2-cd9f-4c91-81a3-b5c18fda42af}">
+        <source node="{2c45d4c9-7317-4fb6-ab80-3efc87eb06f2}" port="{73ff3585-4155-4503-8a11-172578cdbf6d}"/>
+        <destination node="{98b764b4-d0d8-4636-9424-6530d142b602}" port="{e32b76ed-67df-4157-9b97-c93f94c01311}"/>
+      </connection>
+      <text color="Beige" height="200.0" uuid="{26a1de3e-654f-49aa-ab9d-f871b4e238d0}" width="600.0" x="1950.0" y="1750.0">Split config for each included signal and calculate the scaled and offset version of that signal. The output will be a list with one tuple per included signal. The tuples include the config for the signal as well as the calculated signal.
+
+An alternative would be to restore the names of the signals after the calculator and then HJoin them back into a single Table. That would give us simpler output port type, but this subflow would become more complicated.</text>
+    </flow>
+    <node id="org.sysess.sympathy.table.fillmaskedvalues" port_format="1.1" uuid="{606a5f24-513d-48e9-ad22-447237aeeb42}" x="1525.0" y="1975.0">
+      <label>Set default
+offset=0</label>
+      <version>3.0.0</version>
+      <description>Fill masked values in Table.</description>
+      <author>Erik der Hagopian</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>3.0.0</min_version>
+      <parameters type="json">
+      {
+        "columns": {
+          "_old_list_storage": false,
+          "editor": {
+            "edit": true,
+            "filter": true,
+            "mode": true,
+            "selection": "multi",
+            "type": "listview"
+          },
+          "label": "Select columns",
+          "list": ["Signal", "include", "scale", "offset", "color", "linewidth", "linestyle"],
+          "mode": "selected_exists",
+          "order": 0,
+          "type": "list",
+          "value": [3],
+          "value_names": ["offset"]
+        },
+        "label": "",
+        "type": "group",
+        "value": {
+          "editor": null,
+          "label": "Value",
+          "order": 1,
+          "type": "string",
+          "value": "0"
+        }
+      }
+      </parameters>
+      <ports>
+        <input key="" scheme="hdf5" type="table" type_base="table" uuid="{86cdadeb-b91c-43b9-8d9f-53d705d0fee5}">
+          <label>Input</label>
+        </input>
+        <output key="" scheme="hdf5" type="table" type_base="table" uuid="{5fa73132-f68c-4189-9ad1-c1162b44f303}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.visualize.figure" port_format="1.1" uuid="{6103dec3-5991-4a95-8a2f-d29c940d45a3}" x="2150.0" y="2050.0">
+      <label>Figure</label>
+      <version>3.0.0</version>
+      <description>Create a Figure from some data.</description>
+      <author>Benedikt Ziegler &amp; Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>3.0.0</min_version>
+      <parameters type="json">
+      {
+        "label": "",
+        "parameters": {
+          "description": "The full configuration for this figure.",
+          "editor": null,
+          "label": "",
+          "order": 0,
+          "type": "json",
+          "value": {"axes": [{"title": ["", "value"], "xaxis": {"position": ["bottom", "value"], "label": ["Time", "value"]}, "yaxis": {"position": ["left", "value"], "label": ["Value", "value"]}, "plots": [{"iterable": ["t = arg", "py"], "plots": [{"xdata": ["t[1]['time']", "py"], "ydata": ["t[1]['signal']", "py"], "label": ["t[0]['signal'][0]", "py"], "linestyle": ["t[0]['linestyle'][0]", "py"], "linewidth": ["t[0]['linewidth'][0]", "py"], "color": ["t[0]['color'][0]", "py"], "type": "line"}], "type": "iterator"}], "legend": {"show": ["True", "value"], "loc": ["outside right", "value"], "distance": ["2.0", "value"]}}], "title": ["Figure with external configuration", "value"]}
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="input" scheme="hdf5" type="[(table, table)]" type_base="&lt;a&gt;" uuid="{19a3c1b0-dd15-4392-a9f4-2c47a68634e4}">
+          <label>Input</label>
+        </input>
+        <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{e88dda85-948d-4172-93db-4695cfbe4d99}">
+          <label>Output figure</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.table.fillmaskedvalues" port_format="1.1" uuid="{b82fd305-9b6b-4e2a-a121-4c8496219e8d}" x="1675.0" y="1975.0">
+      <label>Set default
+scale=1</label>
+      <version>3.0.0</version>
+      <description>Fill masked values in Table.</description>
+      <author>Erik der Hagopian</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>3.0.0</min_version>
+      <parameters type="json">
+      {
+        "columns": {
+          "_old_list_storage": false,
+          "editor": {
+            "edit": true,
+            "filter": true,
+            "mode": true,
+            "selection": "multi",
+            "type": "listview"
+          },
+          "label": "Select columns",
+          "list": ["Signal", "include", "scale", "offset", "color", "linewidth", "linestyle"],
+          "mode": "selected_exists",
+          "order": 0,
+          "type": "list",
+          "value": [2],
+          "value_names": ["scale"]
+        },
+        "label": "",
+        "type": "group",
+        "value": {
+          "editor": null,
+          "label": "Value",
+          "order": 1,
+          "type": "string",
+          "value": "1"
+        }
+      }
+      </parameters>
+      <ports>
+        <input key="" scheme="hdf5" type="table" type_base="table" uuid="{11c788c6-50a1-4b04-b0ee-4403d7dba272}">
+          <label>Input</label>
+        </input>
+        <output key="" scheme="hdf5" type="table" type_base="table" uuid="{188cde89-24e8-4171-b7c7-104e0dc9ad35}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.selecttablerows" port_format="1.1" uuid="{da77e01d-5287-431b-b3e6-5f4b2757a73d}" x="1825.0" y="1975.0">
+      <label>Select configuration rows for included signals</label>
+      <version>3.0.0</version>
+      <description>Reduction of rows in Table according to specified filter.</description>
+      <author>Alexander Busck</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>3.0.0</min_version>
+      <parameters type="json">
+      {
+        "columns": {
+          "_old_list_storage": false,
+          "editor": {
+            "edit": true,
+            "filter": true,
+            "mode": true,
+            "selection": "multi",
+            "type": "listview"
+          },
+          "label": "Columns to filter",
+          "list": ["Signal", "include", "multiply", "add", "color", "linewidth", "linestyle"],
+          "mode": "selected",
+          "order": 0,
+          "type": "list",
+          "value": [1],
+          "value_names": ["include"]
+        },
+        "constraint": {
+          "editor": null,
+          "label": "Filter constraint",
+          "order": 3,
+          "type": "string",
+          "value": "x"
+        },
+        "exist": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["all", "any"],
+            "type": "combobox"
+          },
+          "label": "Constraint must be satisfied in",
+          "order": 1,
+          "type": "string",
+          "value": "all"
+        },
+        "label": "",
+        "limit": {
+          "editor": {
+            "max": 10000,
+            "min": 0,
+            "step": 1,
+            "type": "spinbox"
+          },
+          "label": "Preview rows",
+          "order": 6,
+          "type": "integer",
+          "value": 100
+        },
+        "predicate": {
+          "editor": null,
+          "label": "Custom filter",
+          "order": 5,
+          "type": "string",
+          "value": ""
+        },
+        "relation": {
+          "_old_list_storage": false,
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Relation",
+          "list": ["equal", "less than", "less than or equal", "greater than", "greater than or equal", "not equal"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["equal"]
+        },
+        "type": "group",
+        "use_custom_predicate": {
+          "editor": null,
+          "label": "Use custom filter",
+          "order": 4,
+          "type": "boolean",
+          "value": false
+        }
+      }
+      </parameters>
+      <ports>
+        <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{08efa5be-23fa-4eb9-919a-7c27e5193971}">
+          <label>Input</label>
+        </input>
+        <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{472968a2-f85c-4428-bd22-ec81e8a49a35}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="[(table, table)]" uuid="{1c149f49-b412-4d82-9dce-85fd3f0fe953}">
+      <source node="{98b764b4-d0d8-4636-9424-6530d142b602}" port="{e32b76ed-67df-4157-9b97-c93f94c01311}"/>
+      <destination node="{6103dec3-5991-4a95-8a2f-d29c940d45a3}" port="{19a3c1b0-dd15-4392-a9f4-2c47a68634e4}"/>
+    </connection>
+    <connection type="table" uuid="{40682a6b-8b5e-45e8-93ec-2179ada7254c}">
+      <source node="{b82fd305-9b6b-4e2a-a121-4c8496219e8d}" port="{188cde89-24e8-4171-b7c7-104e0dc9ad35}"/>
+      <destination node="{da77e01d-5287-431b-b3e6-5f4b2757a73d}" port="{08efa5be-23fa-4eb9-919a-7c27e5193971}"/>
+    </connection>
+    <connection type="table" uuid="{45dea0d0-afcf-4965-9be8-94d5b142f006}">
+      <source node="{c7aec768-4d3c-4f84-a318-870dcda2f12a}" port="{61227a94-08f2-4da3-a26b-b0ec535a7866}"/>
+      <destination node="{98b764b4-d0d8-4636-9424-6530d142b602}" port="{11d8b73f-c5de-40f3-b3f6-918a12fe9e9b}"/>
+    </connection>
+    <connection type="table" uuid="{78b1d43b-97e7-445b-b4b8-f037f29967f3}">
+      <source node="{606a5f24-513d-48e9-ad22-447237aeeb42}" port="{5fa73132-f68c-4189-9ad1-c1162b44f303}"/>
+      <destination node="{b82fd305-9b6b-4e2a-a121-4c8496219e8d}" port="{11c788c6-50a1-4b04-b0ee-4403d7dba272}"/>
+    </connection>
+    <connection type="table" uuid="{8c304fd4-2734-4d46-bc3e-5d1b81df27c7}">
+      <source node="{da77e01d-5287-431b-b3e6-5f4b2757a73d}" port="{472968a2-f85c-4428-bd22-ec81e8a49a35}"/>
+      <destination node="{98b764b4-d0d8-4636-9424-6530d142b602}" port="{a5a556fc-1c22-4530-a6ad-a64f953af73b}"/>
+    </connection>
+    <connection type="table" uuid="{e1f07f77-fc92-4c61-b541-fc6420fe5ea1}">
+      <source node="{c7aec768-4d3c-4f84-a318-870dcda2f12a}" port="{9f36d695-985e-483a-b841-52c14d32d817}"/>
+      <destination node="{606a5f24-513d-48e9-ad22-447237aeeb42}" port="{86cdadeb-b91c-43b9-8d9f-53d705d0fee5}"/>
+    </connection>
+    <connection type="figure" uuid="{fd5ba0f1-eedb-45ab-a3dc-931609f1b29e}">
+      <source node="{6103dec3-5991-4a95-8a2f-d29c940d45a3}" port="{e88dda85-948d-4172-93db-4695cfbe4d99}"/>
+      <destination node="{c7aec768-4d3c-4f84-a318-870dcda2f12a}" port="{7aa76a6e-4139-46ec-939a-ec9c495472d1}"/>
+    </connection>
+  </flow>
+  <node id="org.sysess.sympathy.datasources.filedatasource" port_format="1.1" uuid="{0b97ad4d-af3b-4e96-a74c-650272088f72}" x="1200.0" y="2000.0">
+    <label>Configuration file</label>
+    <version>3.0.0</version>
+    <description></description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>3.0.0</min_version>
+    <parameters type="json">
+    {
+      "database": {
+        "label": "",
+        "order": 15,
+        "type": "group"
+      },
+      "datasource_type": {
+        "_old_list_storage": false,
+        "editor": null,
+        "label": "Datasource type",
+        "list": ["File", "Database", "Url"],
+        "mode": "selected",
+        "order": 14,
+        "type": "list",
+        "value": [0],
+        "value_names": ["File"]
+      },
+      "db_connection_string": {
+        "editor": null,
+        "label": "Connection",
+        "order": 9,
+        "type": "string",
+        "value": ""
+      },
+      "db_databasename": {
+        "editor": null,
+        "label": "Database name",
+        "order": 6,
+        "type": "string",
+        "value": ""
+      },
+      "db_driver": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Database driver",
+        "list": ["SQL Server"],
+        "mode": "selected",
+        "order": 4,
+        "type": "list",
+        "value": [0],
+        "value_names": ["SQL Server"]
+      },
+      "db_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": ["ODBC", "SQLAlchemy"],
+          "type": "combobox"
+        },
+        "label": "Database connection method",
+        "order": 3,
+        "type": "string",
+        "value": "ODBC"
+      },
+      "db_password": {
+        "editor": null,
+        "label": "Password",
+        "order": 8,
+        "type": "string",
+        "value": ""
+      },
+      "db_servername": {
+        "editor": null,
+        "label": "Server name",
+        "order": 5,
+        "type": "string",
+        "value": ""
+      },
+      "db_sqlalchemy_engine_url": {
+        "editor": null,
+        "label": "SQLAlchemy engine URL",
+        "order": 1,
+        "type": "string",
+        "value": "mssql+pyodbc:///"
+      },
+      "db_user": {
+        "editor": null,
+        "label": "User",
+        "order": 7,
+        "type": "string",
+        "value": ""
+      },
+      "filename": {
+        "editor": {
+          "filter": ["Any files (*)"],
+          "states": null,
+          "type": "filename"
+        },
+        "label": "Filename",
+        "order": 0,
+        "type": "string",
+        "value": "ExternalConfig.xlsx"
+      },
+      "label": "",
+      "odbc_connection": {
+        "editor": {
+          "type": "connection"
+        },
+        "label": "Connection string",
+        "order": 10,
+        "type": "connection",
+        "value": {
+          "credentials": {
+            "mode": null,
+            "name": ""
+          },
+          "resource": ""
+        }
+      },
+      "sqlalchemy_connection": {
+        "editor": {
+          "type": "connection"
+        },
+        "label": "Engine",
+        "order": 2,
+        "type": "connection",
+        "value": {
+          "credentials": {
+            "mode": null,
+            "name": ""
+          },
+          "resource": "mssql+pyodbc:///"
+        }
+      },
+      "type": "group",
+      "url_connection": {
+        "editor": {
+          "type": "connection"
+        },
+        "label": "URL",
+        "order": 12,
+        "type": "connection",
+        "value": {
+          "credentials": {
+            "mode": null,
+            "name": ""
+          },
+          "resource": ""
+        }
+      },
+      "url_env": {
+        "description": "Environment for URL. Used as headers in case of HTTP URL. Input as a Python expression that evaluates to.",
+        "editor": {
+          "headers": ["Name", "Value"],
+          "type": "table",
+          "types": ["text", "text"],
+          "unique": ["Name"]
+        },
+        "label": "Environment",
+        "order": 13,
+        "type": "json",
+        "value": []
+      },
+      "url_str": {
+        "editor": null,
+        "label": "String",
+        "order": 11,
+        "type": "string",
+        "value": ""
+      }
+    }
+    </parameters>
+    <ports>
+      <output key="port1" scheme="text" type="datasource" type_base="datasource" uuid="{73796917-f3c3-42f5-9e42-dca273c697fb}">
+        <label>Datasource with path to file</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.importtable" port_format="1.1" uuid="{a48bd133-ff64-4898-99fc-798f25cd6f6c}" x="1325.0" y="2000.0">
+    <label>Table</label>
+    <version>3.0.0</version>
+    <description>Data source as a table</description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>3.0.0</min_version>
+    <parameters type="json">
+    {
+      "active_importer": {
+        "editor": null,
+        "label": "Importer",
+        "order": 0,
+        "type": "string",
+        "value": "XLS"
+      },
+      "custom_importer_data": {
+        "Auto": {
+          "label": "",
+          "order": 0,
+          "type": "group"
+        },
+        "CSV": {
+          "data_end_row": {
+            "editor": {
+              "max": 9999999,
+              "min": 0,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 0
+          },
+          "data_start_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 1
+          },
+          "delimiter": {
+            "editor": null,
+            "label": "",
+            "type": "string",
+            "value": ";"
+          },
+          "description_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 1
+          },
+          "descriptions": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": false
+          },
+          "double_quotations": {
+            "editor": null,
+            "label": "Remove double quotations",
+            "type": "boolean",
+            "value": false
+          },
+          "end_of_file": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": true
+          },
+          "exceptions": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "How to handle failed import:",
+            "list": ["Raise Exceptions", "Partially read file", "Read file without delimiters"],
+            "mode": "selected",
+            "type": "list",
+            "value": [0],
+            "value_names": ["Raise Exceptions"]
+          },
+          "header_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 1
+          },
+          "headers": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": false
+          },
+          "label": "",
+          "no_preview_rows": {
+            "editor": {
+              "max": 200,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Number of preview rows",
+            "type": "integer",
+            "value": 20
+          },
+          "other_delimiter": {
+            "editor": null,
+            "label": "",
+            "type": "string",
+            "value": null
+          },
+          "preview_start_row": {
+            "editor": {
+              "max": 500,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Preview start row",
+            "type": "integer",
+            "value": 1
+          },
+          "read_selection": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "",
+            "list": ["Read to the end of file", "Read specified number of rows", "Read to specified number of rows from the end"],
+            "mode": "selected",
+            "type": "list",
+            "value": [0],
+            "value_names": ["Read to the end of file"]
+          },
+          "source_coding": {
+            "editor": null,
+            "label": "",
+            "type": "string",
+            "value": null
+          },
+          "transposed": {
+            "editor": null,
+            "label": "Transpose input data",
+            "type": "boolean",
+            "value": false
+          },
+          "type": "group",
+          "unit_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 1
+          },
+          "units": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "HDF5": {
+          "label": "",
+          "path_list": {
+            "_old_list_storage": true,
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "Selected paths",
+            "list": [],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          },
+          "type": "group"
+        },
+        "MAT": {
+          "data_end_row": {
+            "editor": {
+              "max": 9999999,
+              "min": 0,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 0
+          },
+          "data_start_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 1
+          },
+          "end_of_file": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": true
+          },
+          "exceptions": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "How to handle failed import:",
+            "list": ["Raise Exceptions", "Partially read file", "Read file without delimiters"],
+            "mode": "selected",
+            "type": "list",
+            "value": [0],
+            "value_names": ["Raise Exceptions"]
+          },
+          "label": "",
+          "no_preview_rows": {
+            "editor": {
+              "max": 200,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Number of preview rows",
+            "type": "integer",
+            "value": 20
+          },
+          "preview_start_row": {
+            "editor": {
+              "max": 500,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Preview start row",
+            "type": "integer",
+            "value": 1
+          },
+          "read_selection": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "",
+            "list": ["Read to the end of file", "Read specified number of rows", "Read to specified number of rows from the end"],
+            "mode": "selected",
+            "type": "list",
+            "value": [0],
+            "value_names": ["Read to the end of file"]
+          },
+          "type": "group"
+        },
+        "Parquet": {
+          "label": "",
+          "no_preview_rows": {
+            "editor": {
+              "max": 200,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Number of preview rows",
+            "type": "integer",
+            "value": 20
+          },
+          "preview_start_row": {
+            "editor": {
+              "max": 500,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Preview start row",
+            "type": "integer",
+            "value": 1
+          },
+          "type": "group"
+        },
+        "SQL": {
+          "custom_query": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": false
+          },
+          "join_column_selection": {
+            "editor": null,
+            "label": "",
+            "list": [],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          },
+          "join_columns": {
+            "editor": null,
+            "label": "",
+            "list": [],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          },
+          "join_tables": {
+            "editor": null,
+            "label": "",
+            "list": [],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          },
+          "label": "",
+          "lineedit_query": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": false
+          },
+          "odbc": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "ODBC method",
+            "list": ["default", "pyodbc", "ceODBC"],
+            "mode": "selected",
+            "order": 0,
+            "type": "list",
+            "value": [0],
+            "value_names": ["default"]
+          },
+          "preview_query": {
+            "editor": null,
+            "label": "",
+            "type": "string",
+            "value": ""
+          },
+          "query_str": {
+            "editor": null,
+            "label": "",
+            "type": "string",
+            "value": ""
+          },
+          "table_columns": {
+            "editor": null,
+            "label": "",
+            "list": [],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          },
+          "table_names": {
+            "editor": null,
+            "label": "",
+            "list": [],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          },
+          "table_query": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": true
+          },
+          "type": "group",
+          "where_add_comparison": {
+            "editor": null,
+            "label": "",
+            "type": "string",
+            "value": ""
+          },
+          "where_column_combo": {
+            "editor": null,
+            "label": "",
+            "list": [],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          },
+          "where_comparison_combo": {
+            "editor": null,
+            "label": "",
+            "list": ["=", "&lt;", "&gt;", "&gt;=", "&lt;=", "!=", " LIKE ", " GLOB ", " BETWEEN "],
+            "mode": "selected",
+            "type": "list",
+            "value": [0],
+            "value_names": ["="]
+          },
+          "where_condition": {
+            "editor": null,
+            "label": "",
+            "type": "string",
+            "value": ""
+          },
+          "where_condition_list": {
+            "editor": null,
+            "label": "",
+            "list": [],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          }
+        },
+        "Table": {
+          "label": "",
+          "type": "group"
+        },
+        "XLS": {
+          "data_end_row": {
+            "editor": {
+              "max": 9999999,
+              "min": 0,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 0
+          },
+          "data_start_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 2
+          },
+          "description_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 1
+          },
+          "descriptions": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": false
+          },
+          "end_of_file": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": true
+          },
+          "header_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 1
+          },
+          "headers": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": true
+          },
+          "import_all": {
+            "editor": null,
+            "label": "Import all worksheets",
+            "type": "boolean",
+            "value": false
+          },
+          "import_first": {
+            "editor": null,
+            "label": "Use first worksheet if the selected is missing",
+            "type": "boolean",
+            "value": true
+          },
+          "label": "",
+          "no_preview_rows": {
+            "editor": {
+              "max": 200,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Number of preview rows",
+            "type": "integer",
+            "value": 20
+          },
+          "preview_start_row": {
+            "editor": {
+              "max": 200,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Preview start row",
+            "type": "integer",
+            "value": 1
+          },
+          "read_selection": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "",
+            "list": ["Read to the end of file", "Read specified number of rows", "Read to specified number of rows from the end"],
+            "mode": "selected",
+            "type": "list",
+            "value": [0],
+            "value_names": ["Read to the end of file"]
+          },
+          "transposed": {
+            "editor": null,
+            "label": "Transpose input",
+            "type": "boolean",
+            "value": false
+          },
+          "type": "group",
+          "unit_row": {
+            "editor": {
+              "max": 99999,
+              "min": 1,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "",
+            "type": "integer",
+            "value": 1
+          },
+          "units": {
+            "editor": null,
+            "label": "",
+            "type": "boolean",
+            "value": false
+          },
+          "worksheet_name": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "Select worksheet",
+            "list": ["Sheet1"],
+            "mode": "selected",
+            "type": "list",
+            "value": [],
+            "value_names": []
+          }
+        },
+        "label": "",
+        "order": 1,
+        "type": "group"
+      },
+      "fail_strategy": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on import failure",
+        "list": ["Exception", "Create Empty Entry"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Exception"]
+      },
+      "label": "",
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="" scheme="text" type="datasource" type_base="datasource" uuid="{8163a7ac-8890-49dd-8214-de0567429f70}">
+        <label>Datasource</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{27fc0917-7f7f-42c1-a881-9451a994456d}">
+        <label>Imported Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.generate.signaltable" port_format="1.1" uuid="{e1320133-996a-4e5c-b1f3-198f0eacdf33}" x="1325.0" y="2100.0">
+    <label>Generate Signal Table</label>
+    <version>4.0.0</version>
+    <description>Generate a Table with signals like sine, cosine, etc., with or without random noise.</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>4.0.0</min_version>
+    <parameters type="json">
+    {
+      "label": "",
+      "signal_params": {
+        "add_noise": {
+          "editor": null,
+          "label": "Add random noise",
+          "type": "boolean",
+          "value": true
+        },
+        "amplitude": {
+          "editor": null,
+          "label": "Amplitude",
+          "type": "float",
+          "value": 1.0
+        },
+        "frequency": {
+          "editor": null,
+          "label": "Frequency",
+          "type": "float",
+          "value": 0.01
+        },
+        "index_column": {
+          "editor": null,
+          "label": "First column as index",
+          "type": "boolean",
+          "value": true
+        },
+        "label": "Signal",
+        "noise_amplitude": {
+          "editor": {
+            "step": 0.05,
+            "type": "spinbox"
+          },
+          "label": "Amplitude of noise",
+          "type": "float",
+          "value": 0.05
+        },
+        "period": {
+          "editor": null,
+          "label": "Period",
+          "type": "float",
+          "value": 25.0
+        },
+        "phase_offset": {
+          "editor": null,
+          "label": "Phase offset",
+          "type": "float",
+          "value": 0.0
+        },
+        "signal_type": {
+          "_old_list_storage": false,
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Signal type",
+          "list": ["sinus", "cosines", "tangent"],
+          "mode": "selected",
+          "type": "list",
+          "value": [0],
+          "value_names": ["sinus"]
+        },
+        "type": "page",
+        "use_period": {
+          "editor": null,
+          "label": "Period or Frequency",
+          "type": "boolean",
+          "value": true
+        }
+      },
+      "table_params": {
+        "column_entries": {
+          "editor": {
+            "max": 1000000,
+            "min": 0,
+            "step": 1,
+            "type": "spinbox"
+          },
+          "label": "Column entries",
+          "type": "integer",
+          "value": 100
+        },
+        "column_length": {
+          "editor": {
+            "max": 100000000,
+            "min": 0,
+            "step": 1,
+            "type": "spinbox"
+          },
+          "label": "Column length",
+          "type": "integer",
+          "value": 100
+        },
+        "label": "Table",
+        "type": "page"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{3915a9dd-7ce2-4bae-998e-0486bb42bb34}">
+        <label>Signal Table</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="table" uuid="{b741d9de-73f2-42a6-87a9-0075cd19c05f}">
+    <source node="{e1320133-996a-4e5c-b1f3-198f0eacdf33}" port="{3915a9dd-7ce2-4bae-998e-0486bb42bb34}"/>
+    <destination node="{c7aec768-4d3c-4f84-a318-870dcda2f12a}" port="{61227a94-08f2-4da3-a26b-b0ec535a7866}"/>
+  </connection>
+  <connection type="table" uuid="{e27d169b-da98-4972-8fc6-52510f788891}">
+    <source node="{a48bd133-ff64-4898-99fc-798f25cd6f6c}" port="{27fc0917-7f7f-42c1-a881-9451a994456d}"/>
+    <destination node="{c7aec768-4d3c-4f84-a318-870dcda2f12a}" port="{9f36d695-985e-483a-b841-52c14d32d817}"/>
+  </connection>
+  <connection type="datasource" uuid="{e77e5f93-a073-486f-9fc1-26cd0aa67880}">
+    <source node="{0b97ad4d-af3b-4e96-a74c-650272088f72}" port="{73796917-f3c3-42f5-9e42-dca273c697fb}"/>
+    <destination node="{a48bd133-ff64-4898-99fc-798f25cd6f6c}" port="{8163a7ac-8890-49dd-8214-de0567429f70}"/>
+  </connection>
+  <text color="Beige" height="225.0" uuid="{6e48639a-5f0c-4b7b-8210-70997bb1e9ae}" width="525.0" x="1150.0" y="1750.0">Figure with external configuration
+---
+
+The figure is customized with an external Excel file which specifies what signals from the data table to include in the plot, how to scale and offset them, as well as what color, linestyle etc. should be used for each signal.
+
+- Node example: *org.sysess.sympathy.visualize.figure*
+- Node example: *org.sysess.sympathy.table.fillmaskedvalues*
+- Node example: *org.sysess.sympathy.list.padlistitem*</text>
+</flow>

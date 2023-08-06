@@ -1,0 +1,1270 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{4ae9288a-6ef6-41a3-8d1a-6f0f19c973f4}">
+  <label></label>
+  <ports/>
+  <flow cls="Flow" uuid="{0eb6036c-cdf3-4a35-bb79-c97ada14c28d}" x="1525.0" y="2000.0">
+    <label>Generate
+hi-res cosine</label>
+    <ports>
+      <output index="0" key="Port" parent="True" scheme="hdf5" type="table" uuid="{d8c771f1-14b2-4ce0-929b-230de1d72da0}" x="1775.0" y="1775.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <node id="org.sysess.sympathy.data.table.renamesingletablecolumns" port_format="1.1" uuid="{8b5869a8-b9de-4acf-9e77-a88c6cf47ae3}" x="1675.0" y="1775.0">
+      <label>Rename columns in Table</label>
+      <version>3.0.0</version>
+      <description>Rename the Table columns by using regular expressions.</description>
+      <author>Greger Cronquist</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>3.0.0</min_version>
+      <parameters type="json">
+      {
+        "dst_expr": {
+          "editor": null,
+          "label": "Replace",
+          "order": 2,
+          "type": "string",
+          "value": "time"
+        },
+        "label": "",
+        "mode": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["Text", "Regex"],
+            "type": "combobox"
+          },
+          "label": "Mode",
+          "order": 0,
+          "type": "string",
+          "value": "Text"
+        },
+        "src_expr": {
+          "editor": null,
+          "label": "Search",
+          "order": 1,
+          "type": "string",
+          "value": "index"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{f1f14d56-25ac-4eaa-8277-3ee740256f28}">
+          <label>Input</label>
+        </input>
+        <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{eca15c8b-f28f-4ca5-acc2-9e9f45d12735}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.generate.signaltable" port_format="1.1" uuid="{f3c0ae78-c246-4d60-b932-7154dcee128f}" x="1525.0" y="1775.0">
+      <label>Generate Signal Table</label>
+      <version>4.0.0</version>
+      <description>Generate a Table with signals like sine, cosine, etc., with or without random noise.</description>
+      <author>Benedikt Ziegler</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>4.0.0</min_version>
+      <parameters type="json">
+      {
+        "label": "",
+        "signal_params": {
+          "add_noise": {
+            "editor": null,
+            "label": "Add random noise",
+            "order": 6,
+            "type": "boolean",
+            "value": false
+          },
+          "amplitude": {
+            "editor": null,
+            "label": "Amplitude",
+            "order": 1,
+            "type": "float",
+            "value": 1.0
+          },
+          "frequency": {
+            "editor": null,
+            "label": "Frequency",
+            "order": 2,
+            "type": "float",
+            "value": 0.01
+          },
+          "index_column": {
+            "editor": null,
+            "label": "First column as index",
+            "order": 8,
+            "type": "boolean",
+            "value": true
+          },
+          "label": "Signal",
+          "noise_amplitude": {
+            "editor": {
+              "step": 0.05,
+              "type": "spinbox"
+            },
+            "label": "Amplitude of noise",
+            "order": 7,
+            "type": "float",
+            "value": 0.1
+          },
+          "order": 1,
+          "period": {
+            "editor": null,
+            "label": "Period",
+            "order": 3,
+            "type": "float",
+            "value": 100.0
+          },
+          "phase_offset": {
+            "editor": null,
+            "label": "Phase offset",
+            "order": 5,
+            "type": "float",
+            "value": 0.0
+          },
+          "signal_type": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "Signal type",
+            "list": ["sinus", "cosines", "tangent"],
+            "mode": "selected",
+            "order": 0,
+            "type": "list",
+            "value": [1],
+            "value_names": ["cosines"]
+          },
+          "type": "page",
+          "use_period": {
+            "editor": null,
+            "label": "Period or Frequency",
+            "order": 4,
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "table_params": {
+          "column_entries": {
+            "editor": {
+              "max": 1000000,
+              "min": 0,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Column entries",
+            "order": 0,
+            "type": "integer",
+            "value": 2
+          },
+          "column_length": {
+            "editor": {
+              "max": 100000000,
+              "min": 0,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Column length",
+            "order": 1,
+            "type": "integer",
+            "value": 100
+          },
+          "label": "Table",
+          "order": 0,
+          "type": "page"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{300e99fc-6250-4b61-becb-42756cd4af39}">
+          <label>Signal Table</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="table" uuid="{0206626a-fc9e-4a86-bb17-a615bf7a82db}">
+      <source node="{f3c0ae78-c246-4d60-b932-7154dcee128f}" port="{300e99fc-6250-4b61-becb-42756cd4af39}"/>
+      <destination node="{8b5869a8-b9de-4acf-9e77-a88c6cf47ae3}" port="{f1f14d56-25ac-4eaa-8277-3ee740256f28}"/>
+    </connection>
+    <connection type="table" uuid="{d8f9e05a-00d3-48c1-b512-222bbefb05b4}">
+      <source node="{8b5869a8-b9de-4acf-9e77-a88c6cf47ae3}" port="{eca15c8b-f28f-4ca5-acc2-9e9f45d12735}"/>
+      <destination node="{0eb6036c-cdf3-4a35-bb79-c97ada14c28d}" port="{d8c771f1-14b2-4ce0-929b-230de1d72da0}"/>
+    </connection>
+  </flow>
+  <flow cls="Flow" uuid="{db7ee197-fa63-4c42-bd5d-2d27bf62a8c4}" x="1525.0" y="1900.0">
+    <label>Generate
+low-res sine</label>
+    <ports>
+      <output index="0" key="Port" parent="True" scheme="hdf5" type="table" uuid="{5c4366ce-e691-46da-b39a-f24339c0d44a}" x="1975.0" y="1600.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <node id="org.sysess.sympathy.data.table.calculatorgeneric" port_format="1.1" uuid="{3282bb70-681d-4f62-bf61-97804217f074}" x="1825.0" y="1600.0">
+      <label>Calculator</label>
+      <version>3.0.0</version>
+      <description>Create columns by evaluating python calculations.</description>
+      <author>Greger Cronquist, Magnus Sand&#233;n, Sara Gustafzelius &amp; Benedikt Ziegler</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>3.0.0</min_version>
+      <parameters type="json">
+      {
+        "calc_attrs_dict": {
+          "editor": null,
+          "label": "",
+          "order": 1,
+          "type": "string",
+          "value": "[]"
+        },
+        "calc_list": {
+          "_old_list_storage": true,
+          "editor": null,
+          "label": "List of calculations",
+          "list": ["time = arg['time'] * 10 #ENABLED:1"],
+          "mode": "selected",
+          "order": 0,
+          "type": "list",
+          "value": [],
+          "value_names": []
+        },
+        "copy_input": {
+          "editor": null,
+          "label": "Copy input",
+          "order": 2,
+          "type": "boolean",
+          "value": true
+        },
+        "fail_strategy": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Action on calculation failure",
+          "list": ["Exception", "Skip calculation"],
+          "mode": "selected",
+          "order": 3,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Exception"]
+        },
+        "label": "",
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="port0" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{238744e1-8ee6-4f1b-9dbf-78893b5fd898}">
+          <label>Generic Input</label>
+        </input>
+        <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{57af3f3f-35bd-4748-91ea-a53a7331f14a}">
+          <label>Table with results from the calculations.</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.renamesingletablecolumns" port_format="1.1" uuid="{5fe2ac71-1b61-4730-a664-679e1dd40b55}" x="1675.0" y="1600.0">
+      <label>Rename columns in Table</label>
+      <version>3.0.0</version>
+      <description>Rename the Table columns by using regular expressions.</description>
+      <author>Greger Cronquist</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>3.0.0</min_version>
+      <parameters type="json">
+      {
+        "dst_expr": {
+          "editor": null,
+          "label": "Replace",
+          "order": 2,
+          "type": "string",
+          "value": "time"
+        },
+        "label": "",
+        "mode": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["Text", "Regex"],
+            "type": "combobox"
+          },
+          "label": "Mode",
+          "order": 0,
+          "type": "string",
+          "value": "Text"
+        },
+        "src_expr": {
+          "editor": null,
+          "label": "Search",
+          "order": 1,
+          "type": "string",
+          "value": "index"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{3359e3b9-f356-47ae-af89-08beb7722f9b}">
+          <label>Input</label>
+        </input>
+        <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{26337c33-2bec-45c3-ab05-294c5312a4bf}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.generate.signaltable" port_format="1.1" uuid="{a76108ab-bb6e-4d7d-ba75-6ae394b78bb5}" x="1525.0" y="1600.0">
+      <label>Generate Signal Table</label>
+      <version>4.0.0</version>
+      <description>Generate a Table with signals like sine, cosine, etc., with or without random noise.</description>
+      <author>Benedikt Ziegler</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <min_version>4.0.0</min_version>
+      <parameters type="json">
+      {
+        "label": "",
+        "signal_params": {
+          "add_noise": {
+            "editor": null,
+            "label": "Add random noise",
+            "order": 6,
+            "type": "boolean",
+            "value": false
+          },
+          "amplitude": {
+            "editor": null,
+            "label": "Amplitude",
+            "order": 1,
+            "type": "float",
+            "value": 1.0
+          },
+          "frequency": {
+            "editor": null,
+            "label": "Frequency",
+            "order": 2,
+            "type": "float",
+            "value": 0.01
+          },
+          "index_column": {
+            "editor": null,
+            "label": "First column as index",
+            "order": 8,
+            "type": "boolean",
+            "value": true
+          },
+          "label": "Signal",
+          "noise_amplitude": {
+            "editor": {
+              "step": 0.05,
+              "type": "spinbox"
+            },
+            "label": "Amplitude of noise",
+            "order": 7,
+            "type": "float",
+            "value": 0.1
+          },
+          "order": 1,
+          "period": {
+            "editor": null,
+            "label": "Period",
+            "order": 3,
+            "type": "float",
+            "value": 10.0
+          },
+          "phase_offset": {
+            "editor": null,
+            "label": "Phase offset",
+            "order": 5,
+            "type": "float",
+            "value": 0.0
+          },
+          "signal_type": {
+            "editor": {
+              "display": null,
+              "edit": false,
+              "filter": false,
+              "include_empty": false,
+              "options": [],
+              "type": "combobox"
+            },
+            "label": "Signal type",
+            "list": ["sinus", "cosines", "tangent"],
+            "mode": "selected",
+            "order": 0,
+            "type": "list",
+            "value": [0],
+            "value_names": ["sinus"]
+          },
+          "type": "page",
+          "use_period": {
+            "editor": null,
+            "label": "Period or Frequency",
+            "order": 4,
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "table_params": {
+          "column_entries": {
+            "editor": {
+              "max": 1000000,
+              "min": 0,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Column entries",
+            "order": 0,
+            "type": "integer",
+            "value": 2
+          },
+          "column_length": {
+            "editor": {
+              "max": 100000000,
+              "min": 0,
+              "step": 1,
+              "type": "spinbox"
+            },
+            "label": "Column length",
+            "order": 1,
+            "type": "integer",
+            "value": 10
+          },
+          "label": "Table",
+          "order": 0,
+          "type": "page"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{4dc937d8-fbfb-4fc6-aed3-6bb6f6cf967c}">
+          <label>Signal Table</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="table" uuid="{328faec2-c397-48ff-8b4b-3ed0489af44f}">
+      <source node="{3282bb70-681d-4f62-bf61-97804217f074}" port="{57af3f3f-35bd-4748-91ea-a53a7331f14a}"/>
+      <destination node="{db7ee197-fa63-4c42-bd5d-2d27bf62a8c4}" port="{5c4366ce-e691-46da-b39a-f24339c0d44a}"/>
+    </connection>
+    <connection type="table" uuid="{4ef849a1-4ccd-44e4-ac2a-1eb1b0a946dd}">
+      <source node="{5fe2ac71-1b61-4730-a664-679e1dd40b55}" port="{26337c33-2bec-45c3-ab05-294c5312a4bf}"/>
+      <destination node="{3282bb70-681d-4f62-bf61-97804217f074}" port="{238744e1-8ee6-4f1b-9dbf-78893b5fd898}"/>
+    </connection>
+    <connection type="table" uuid="{7fd9b0d4-a46e-4b5a-b187-25ee90cadef5}">
+      <source node="{a76108ab-bb6e-4d7d-ba75-6ae394b78bb5}" port="{4dc937d8-fbfb-4fc6-aed3-6bb6f6cf967c}"/>
+      <destination node="{5fe2ac71-1b61-4730-a664-679e1dd40b55}" port="{3359e3b9-f356-47ae-af89-08beb7722f9b}"/>
+    </connection>
+  </flow>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{5f8475fb-3f55-40a8-aca0-c7461b585003}" x="1975.0" y="2200.0">
+    <label>Item to List</label>
+    <version>0.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>0.0</min_version>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="item" scheme="hdf5" type="adaf" type_base="&lt;a&gt;" uuid="{d46c784d-a4c3-4c77-b277-d3d382e222d4}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[adaf]" type_base="[&lt;a&gt;]" uuid="{0eef3b92-80c9-432f-9303-8ea249b1623b}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{6724e908-3171-4c4b-826c-d43dc2a1f626}" x="1975.0" y="2300.0">
+    <label>Manually Create Table</label>
+    <version>0.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>0.0</min_version>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"Columns\", \"U\", [\"cosines1\", \"sinus1\"]], [\"Sample rate\", \"f\", [0.1, 0.2]], [\"Time bases\", \"U\", [\"gen/cosine\", \"gen/sine\"]]]"
+      },
+      "label": "",
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{22c37116-97fc-44b0-856b-ba410888fdcb}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.interpolateadaf" port_format="1.1" uuid="{85b337db-f0e2-46d4-9623-b3061f6ee477}" x="2125.0" y="1900.0">
+    <label>Interpolate ADAF</label>
+    <version>0.0</version>
+    <description>Interpolation of data</description>
+    <author>Helena Olen &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>0.0</min_version>
+    <parameters type="json">
+    {
+      "bool_interp_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest"],
+        "mode": "selected",
+        "order": 6,
+        "type": "list",
+        "value": [1],
+        "value_names": ["nearest"]
+      },
+      "dt": {
+        "editor": null,
+        "label": "Time step",
+        "order": 2,
+        "type": "float",
+        "value": 0.02
+      },
+      "int_interp_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest", "linear", "quadratic", "cubic"],
+        "mode": "selected",
+        "order": 7,
+        "type": "list",
+        "value": [1],
+        "value_names": ["nearest"]
+      },
+      "interpolation_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest", "linear", "quadratic", "cubic"],
+        "mode": "selected",
+        "order": 8,
+        "type": "list",
+        "value": [2],
+        "value_names": ["linear"]
+      },
+      "label": "",
+      "new_tb": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": true,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Timebasis to use for interpolation",
+        "list": [],
+        "mode": "selected",
+        "order": 3,
+        "type": "list",
+        "value": [],
+        "value_names": ["cosine/t"]
+      },
+      "only_timebasis": {
+        "editor": null,
+        "label": "Export time basis only",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "resample_all_rasters": {
+        "editor": null,
+        "label": "Resample all signals",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "ts": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Choose signals",
+        "list": [],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [],
+        "value_names": ["cosines1"]
+      },
+      "type": "group",
+      "use_dt": {
+        "editor": null,
+        "label": "Time step approach",
+        "order": 4,
+        "type": "boolean",
+        "value": true
+      }
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{b64f6f0b-6f17-494e-b2af-9635e0bd6f61}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{c2555841-e050-42b5-be5a-f1ea3a0bfdcf}">
+        <label>Interpolated ADAF</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.interpolateadaf" port_format="1.1" uuid="{8bf8bbdf-729b-4393-a713-8628ce040426}" x="2125.0" y="2000.0">
+    <label>Interpolate ADAF
+gen/cosine</label>
+    <version>0.0</version>
+    <description>Interpolation of data</description>
+    <author>Helena Olen &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>0.0</min_version>
+    <parameters type="json">
+    {
+      "bool_interp_method": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest"],
+        "mode": "selected",
+        "order": 6,
+        "type": "list",
+        "value": [1],
+        "value_names": ["nearest"]
+      },
+      "dt": {
+        "editor": null,
+        "label": "Time step",
+        "order": 2,
+        "type": "float",
+        "value": 0.02
+      },
+      "int_interp_method": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest", "linear", "quadratic", "cubic"],
+        "mode": "selected",
+        "order": 7,
+        "type": "list",
+        "value": [1],
+        "value_names": ["nearest"]
+      },
+      "interpolation_method": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest", "linear", "quadratic", "cubic"],
+        "mode": "selected",
+        "order": 8,
+        "type": "list",
+        "value": [2],
+        "value_names": ["linear"]
+      },
+      "label": "",
+      "new_tb": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": true,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Timebasis to use for interpolation",
+        "list": ["gen/cosine", "gen/sine"],
+        "mode": "selected",
+        "order": 3,
+        "type": "list",
+        "value": [0],
+        "value_names": ["gen/cosine"]
+      },
+      "only_timebasis": {
+        "editor": null,
+        "label": "Export time basis only",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "resample_all_rasters": {
+        "editor": null,
+        "label": "Resample all signals",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "ts": {
+        "_old_list_storage": false,
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Choose signals",
+        "list": ["cosines1", "sinus1"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["cosines1"]
+      },
+      "type": "group",
+      "use_dt": {
+        "editor": null,
+        "label": "Time step approach",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      }
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{e6cc7ab5-5dba-4d4c-9cc3-96abcd08e324}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{792638fd-93d0-4dae-b9d6-1059e8e530e2}">
+        <label>Interpolated ADAF</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.table2adaf" port_format="1.1" uuid="{930dfa8d-c790-4245-ae1c-8ade8b91e3f8}" x="1675.0" y="2000.0">
+    <label>Table to ADAF
+gen/cosine</label>
+    <version>3.1.0</version>
+    <description>Export content of Table to specified container in ADAF.</description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>3.1.0</min_version>
+    <parameters type="json">
+    {
+      "export_to_group": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": ["Meta", "Result", "Time series"],
+          "type": "combobox"
+        },
+        "label": "Target group",
+        "order": 0,
+        "type": "string",
+        "value": "Time series"
+      },
+      "label": "",
+      "raster": {
+        "editor": null,
+        "label": "Raster name",
+        "order": 2,
+        "type": "string",
+        "value": "cosine"
+      },
+      "system": {
+        "editor": null,
+        "label": "System name",
+        "order": 1,
+        "type": "string",
+        "value": "gen"
+      },
+      "tb": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": false,
+          "options": ["time", "cosines1"],
+          "type": "combobox"
+        },
+        "label": "Time basis column",
+        "type": "string",
+        "value": "time"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="table" type_base="table" uuid="{75f6578d-364a-4e97-af47-6657328bde38}">
+        <label>Input Table</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{8fde1607-2d5b-4375-ab23-7aee7e969eac}">
+        <label>ADAF with data in input Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.updateadafwithtable" port_format="1.1" uuid="{b94e390d-4430-4c82-a8f8-441449dbef07}" x="1800.0" y="1900.0">
+    <label>Update ADAF with
+Table
+gen/sine</label>
+    <version>3.1.0</version>
+    <description>Export content of Table to specified container in ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>3.1.0</min_version>
+    <parameters type="json">
+    {
+      "export_to_group": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": ["Meta", "Result", "Time series"],
+          "type": "combobox"
+        },
+        "label": "Target group",
+        "order": 0,
+        "type": "string",
+        "value": "Time series"
+      },
+      "label": "",
+      "raster": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": false,
+          "include_empty": false,
+          "options": ["cosine"],
+          "type": "combobox"
+        },
+        "label": "Raster name",
+        "order": 2,
+        "type": "string",
+        "value": "sine"
+      },
+      "system": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": false,
+          "include_empty": false,
+          "options": ["gen"],
+          "type": "combobox"
+        },
+        "label": "System name",
+        "order": 1,
+        "type": "string",
+        "value": "gen"
+      },
+      "tb": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": false,
+          "options": ["time", "sinus1"],
+          "type": "combobox"
+        },
+        "label": "Time basis column",
+        "order": 3,
+        "type": "string",
+        "value": "time"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="table" type_base="table" uuid="{969ef896-cf9c-4824-b1b9-9dc2603ba6fb}">
+        <label>Input Table</label>
+      </input>
+      <input key="port2" scheme="hdf5" type="adaf" type_base="adaf" uuid="{06e7819a-af44-4bcf-aa88-7bbd45148e4f}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{43dffe19-3003-459b-a834-fc2d7691a3ff}">
+        <label>ADAF updated with data in input Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.interpolateadaf" port_format="1.1" uuid="{bcb5b769-c96c-4f46-8ad5-e1deb8393a9e}" x="2125.0" y="2100.0">
+    <label>Interpolate ADAF
+gen/sine</label>
+    <version>0.0</version>
+    <description>Interpolation of data</description>
+    <author>Helena Olen &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>0.0</min_version>
+    <parameters type="json">
+    {
+      "bool_interp_method": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest"],
+        "mode": "selected",
+        "order": 6,
+        "type": "list",
+        "value": [1],
+        "value_names": ["nearest"]
+      },
+      "dt": {
+        "editor": null,
+        "label": "Time step",
+        "order": 2,
+        "type": "float",
+        "value": 0.02
+      },
+      "int_interp_method": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest", "linear", "quadratic", "cubic"],
+        "mode": "selected",
+        "order": 7,
+        "type": "list",
+        "value": [1],
+        "value_names": ["nearest"]
+      },
+      "interpolation_method": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest", "linear", "quadratic", "cubic"],
+        "mode": "selected",
+        "order": 8,
+        "type": "list",
+        "value": [2],
+        "value_names": ["linear"]
+      },
+      "label": "",
+      "new_tb": {
+        "_old_list_storage": false,
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": true,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Timebasis to use for interpolation",
+        "list": ["gen/cosine", "gen/sine"],
+        "mode": "selected",
+        "order": 3,
+        "type": "list",
+        "value": [1],
+        "value_names": ["gen/sine"]
+      },
+      "only_timebasis": {
+        "editor": null,
+        "label": "Export time basis only",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "resample_all_rasters": {
+        "editor": null,
+        "label": "Resample all signals",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "ts": {
+        "_old_list_storage": false,
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Choose signals",
+        "list": ["cosines1", "sinus1"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["cosines1"]
+      },
+      "type": "group",
+      "use_dt": {
+        "editor": null,
+        "label": "Time step approach",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      }
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{503f0e19-906e-41d0-ae46-372a87a84378}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{6684028f-f39d-41f3-951b-a1474c5d1fb1}">
+        <label>Interpolated ADAF</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.interpolateadafswithtable" port_format="1.1" uuid="{fde70aea-3f23-4341-8130-cf62c7e63068}" x="2125.0" y="2300.0">
+    <label>Interpolate ADAFs with Table</label>
+    <version>0.0</version>
+    <description>Interpolation of data</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <min_version>0.0</min_version>
+    <parameters type="json">
+    {
+      "bool_interp_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest"],
+        "mode": "selected",
+        "order": 6,
+        "type": "list",
+        "value": [1],
+        "value_names": ["nearest"]
+      },
+      "dt_colname": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": true,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Column with sample rates",
+        "list": ["Columns", "Sample rate", "Time bases"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Sample rate"]
+      },
+      "int_interp_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest", "linear", "quadratic", "cubic"],
+        "mode": "selected",
+        "order": 7,
+        "type": "list",
+        "value": [1],
+        "value_names": ["nearest"]
+      },
+      "interpolation_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "",
+        "list": ["zero", "nearest", "linear", "quadratic", "cubic"],
+        "mode": "selected",
+        "order": 8,
+        "type": "list",
+        "value": [2],
+        "value_names": ["linear"]
+      },
+      "label": "",
+      "only_timebasis": {
+        "editor": null,
+        "label": "Export time basis only",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "raster_colname": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": true,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Column with output raster names",
+        "list": ["Columns", "Sample rate", "Time bases"],
+        "mode": "selected",
+        "order": 3,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "rounded_raster_names": {
+        "editor": null,
+        "label": "Round time steps in raster name (deprecated)",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "signals_colname": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Column with signal names",
+        "list": ["Columns", "Sample rate", "Time bases"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Columns"]
+      },
+      "tb_colname": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": true,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Column with time bases",
+        "list": ["Columns", "Sample rate", "Time bases"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [2],
+        "value_names": ["Time bases"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="spec" scheme="hdf5" type="table" type_base="table" uuid="{bb0a887d-d95a-44e6-9c35-8b764fa4c83c}">
+        <label>Specification Table</label>
+      </input>
+      <input key="port1" scheme="hdf5" type="[adaf]" type_base="[adaf]" uuid="{be105f7e-d174-4d8a-a4cc-a39d1b7ae47c}">
+        <label>Input ADAFs</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="[adaf]" type_base="[adaf]" uuid="{8f460fd7-5aa0-4203-8f37-5e3dbf5b2151}">
+        <label>Interpolated ADAFs</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="adaf" uuid="{38644762-ab18-45e3-b48f-46c84d700cd3}">
+    <source node="{b94e390d-4430-4c82-a8f8-441449dbef07}" port="{43dffe19-3003-459b-a834-fc2d7691a3ff}"/>
+    <destination node="{5f8475fb-3f55-40a8-aca0-c7461b585003}" port="{d46c784d-a4c3-4c77-b277-d3d382e222d4}"/>
+  </connection>
+  <connection type="adaf" uuid="{57f7e0c6-0bad-4b90-9e29-65a9287a07a6}">
+    <source node="{b94e390d-4430-4c82-a8f8-441449dbef07}" port="{43dffe19-3003-459b-a834-fc2d7691a3ff}"/>
+    <destination node="{8bf8bbdf-729b-4393-a713-8628ce040426}" port="{e6cc7ab5-5dba-4d4c-9cc3-96abcd08e324}"/>
+  </connection>
+  <connection type="table" uuid="{67e9b5b9-36d7-413e-a8c7-cac32388a365}">
+    <source node="{6724e908-3171-4c4b-826c-d43dc2a1f626}" port="{22c37116-97fc-44b0-856b-ba410888fdcb}"/>
+    <destination node="{fde70aea-3f23-4341-8130-cf62c7e63068}" port="{bb0a887d-d95a-44e6-9c35-8b764fa4c83c}"/>
+  </connection>
+  <connection type="table" uuid="{81d397e9-512b-4e42-84b3-80e913dadb6d}">
+    <source node="{db7ee197-fa63-4c42-bd5d-2d27bf62a8c4}" port="{5c4366ce-e691-46da-b39a-f24339c0d44a}"/>
+    <destination node="{b94e390d-4430-4c82-a8f8-441449dbef07}" port="{969ef896-cf9c-4824-b1b9-9dc2603ba6fb}"/>
+  </connection>
+  <connection type="[adaf]" uuid="{82ef6c44-e9f6-4134-8a01-5c688f499f45}">
+    <source node="{5f8475fb-3f55-40a8-aca0-c7461b585003}" port="{0eef3b92-80c9-432f-9303-8ea249b1623b}"/>
+    <destination node="{fde70aea-3f23-4341-8130-cf62c7e63068}" port="{be105f7e-d174-4d8a-a4cc-a39d1b7ae47c}"/>
+  </connection>
+  <connection type="adaf" uuid="{852c6f8d-0275-4da4-9bad-8a221ad4c675}">
+    <source node="{930dfa8d-c790-4245-ae1c-8ade8b91e3f8}" port="{8fde1607-2d5b-4375-ab23-7aee7e969eac}"/>
+    <destination node="{b94e390d-4430-4c82-a8f8-441449dbef07}" port="{06e7819a-af44-4bcf-aa88-7bbd45148e4f}"/>
+  </connection>
+  <connection type="adaf" uuid="{8c6ac3d5-12f1-4fa4-ab4c-e5f24e0e8bb2}">
+    <source node="{b94e390d-4430-4c82-a8f8-441449dbef07}" port="{43dffe19-3003-459b-a834-fc2d7691a3ff}"/>
+    <destination node="{bcb5b769-c96c-4f46-8ad5-e1deb8393a9e}" port="{503f0e19-906e-41d0-ae46-372a87a84378}"/>
+  </connection>
+  <connection type="adaf" uuid="{c455bb13-aeff-4762-bbd1-9b15a07085b2}">
+    <source node="{b94e390d-4430-4c82-a8f8-441449dbef07}" port="{43dffe19-3003-459b-a834-fc2d7691a3ff}"/>
+    <destination node="{85b337db-f0e2-46d4-9623-b3061f6ee477}" port="{b64f6f0b-6f17-494e-b2af-9635e0bd6f61}"/>
+  </connection>
+  <connection type="table" uuid="{cb19d828-0b30-4e90-9235-9ac0df0a373c}">
+    <source node="{0eb6036c-cdf3-4a35-bb79-c97ada14c28d}" port="{d8c771f1-14b2-4ce0-929b-230de1d72da0}"/>
+    <destination node="{930dfa8d-c790-4245-ae1c-8ade8b91e3f8}" port="{75f6578d-364a-4e97-af47-6657328bde38}"/>
+  </connection>
+  <text color="Beige" height="50.0" uuid="{f377e2f3-6e36-44ec-80a2-0be41d7ba6ec}" width="150.0" x="2225.0" y="1900.0">Manual resolution</text>
+  <text color="Beige" height="50.0" uuid="{cb325438-9558-4a4c-a089-bcb1681533a9}" width="375.0" x="1650.0" y="2425.0">
+- Node example: *org.sysess.sympathy.data.adaf.interpolateadaf*
+- Node example: *org.sysess.sympathy.data.adaf.interpolateadafswithtable*</text>
+  <text color="Beige" height="50.0" uuid="{2ec62e42-c725-4cca-ae94-b02f31f55d29}" width="225.0" x="2225.0" y="2300.0">Use a table to set resolution</text>
+  <text color="Beige" height="150.0" uuid="{5570c795-286b-4312-ba53-a20d28ee304c}" width="225.0" x="2225.0" y="2000.0">Resolution from existing raster
+</text>
+</flow>
