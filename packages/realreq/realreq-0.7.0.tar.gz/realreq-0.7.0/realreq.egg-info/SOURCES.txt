@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+_realreq/__init__.py
+_realreq/aliases.json
+_realreq/display.py
+_realreq/realreq.py
+_realreq/std_lib.json
+_realreq/requtils/__init__.py
+_realreq/requtils/dependency_tree.py
+realreq.egg-info/PKG-INFO
+realreq.egg-info/SOURCES.txt
+realreq.egg-info/dependency_links.txt
+realreq.egg-info/entry_points.txt
+realreq.egg-info/top_level.txt
