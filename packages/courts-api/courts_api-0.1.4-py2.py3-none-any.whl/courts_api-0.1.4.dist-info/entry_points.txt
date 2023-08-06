@@ -1,0 +1,2 @@
+[console_scripts]
+courts-api = courts_api:cli
