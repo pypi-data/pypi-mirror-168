@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+batchypegger.py
+setup.py
+batchypegger.egg-info/PKG-INFO
+batchypegger.egg-info/SOURCES.txt
+batchypegger.egg-info/dependency_links.txt
+batchypegger.egg-info/entry_points.txt
+batchypegger.egg-info/top_level.txt
