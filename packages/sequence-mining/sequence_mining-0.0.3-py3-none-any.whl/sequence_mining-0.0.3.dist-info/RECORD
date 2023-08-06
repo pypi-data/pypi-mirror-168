@@ -1,0 +1,8 @@
+sequence_mining/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_mining/bitmap.py,sha256=GR1psvn-0LxgWMaAspTb17g0RYG5IW4y_8gPzkImr7w,3861
+sequence_mining/prefix.py,sha256=R7uZN-LHYySNptJOWJHMv7gxhPMXzaH3lVVQgglQxtI,532
+sequence_mining/spam.py,sha256=YrLgH1XLuwJU6HNcBMsJA-U3EKfn5QUy8HfX14pMvcY,7269
+sequence_mining-0.0.3.dist-info/METADATA,sha256=PyYePzL31oQMuN2wl5aWWtfFvS7RC6K73vZt3c96YjM,3561
+sequence_mining-0.0.3.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+sequence_mining-0.0.3.dist-info/licenses/LICENSE,sha256=T0HpzkCtyJhZTsvA6nuOfMJZnO7uGu-YvfadfInlJcE,1070
+sequence_mining-0.0.3.dist-info/RECORD,,
