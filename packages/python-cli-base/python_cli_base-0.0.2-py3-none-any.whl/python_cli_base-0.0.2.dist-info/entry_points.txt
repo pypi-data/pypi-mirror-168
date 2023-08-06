@@ -1,0 +1,2 @@
+[console_scripts]
+pcb = python_cli_base:cli
