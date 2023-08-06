@@ -1,0 +1,16 @@
+include *.txt
+include *.md
+recursive-include ./funda_scraper/*
+
+include funda_scraper/VERSION
+include funda_scraper/config/config.yaml
+include README.md
+include static/example_df.png
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
