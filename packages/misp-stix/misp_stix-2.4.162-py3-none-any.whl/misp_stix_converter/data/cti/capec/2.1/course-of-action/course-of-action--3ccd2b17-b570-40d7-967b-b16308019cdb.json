@@ -1,0 +1,20 @@
+{
+    "id": "bundle--698fa047-9df2-4ef7-97e3-a1e7c0a90e01",
+    "objects": [
+        {
+            "created": "2014-06-23T00:00:00.000Z",
+            "created_by_ref": "identity--e50ab59c-5c4f-4d40-bf6a-d58418d89bcd",
+            "description": "Design: Use obfuscation and other techniques to prevent reverse engineering the client code.",
+            "id": "course-of-action--3ccd2b17-b570-40d7-967b-b16308019cdb",
+            "modified": "2019-04-04T00:00:00.000Z",
+            "name": "coa-207-2",
+            "object_marking_refs": [
+                "marking-definition--17d82bb2-eeeb-4898-bda5-3ddbcd2b799d"
+            ],
+            "spec_version": "2.1",
+            "type": "course-of-action",
+            "x_capec_version": "3.6"
+        }
+    ],
+    "type": "bundle"
+}

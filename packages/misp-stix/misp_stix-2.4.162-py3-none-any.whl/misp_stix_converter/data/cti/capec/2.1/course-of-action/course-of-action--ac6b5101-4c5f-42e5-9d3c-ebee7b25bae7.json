@@ -1,0 +1,20 @@
+{
+    "id": "bundle--434187ac-2467-4b0c-a0b5-e272b0f49455",
+    "objects": [
+        {
+            "created": "2014-06-23T00:00:00.000Z",
+            "created_by_ref": "identity--e50ab59c-5c4f-4d40-bf6a-d58418d89bcd",
+            "description": "Implementation: Obfuscate database type in Database API's error message.",
+            "id": "course-of-action--ac6b5101-4c5f-42e5-9d3c-ebee7b25bae7",
+            "modified": "2020-07-30T00:00:00.000Z",
+            "name": "coa-170-7",
+            "object_marking_refs": [
+                "marking-definition--17d82bb2-eeeb-4898-bda5-3ddbcd2b799d"
+            ],
+            "spec_version": "2.1",
+            "type": "course-of-action",
+            "x_capec_version": "3.6"
+        }
+    ],
+    "type": "bundle"
+}

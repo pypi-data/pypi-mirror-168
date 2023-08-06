@@ -1,0 +1,21 @@
+{
+    "type": "bundle",
+    "id": "bundle--1e2dfff2-0218-416f-8015-7da7cf83583f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "target_ref": "attack-pattern--efbf7888-f61b-4572-9c80-7e2965c60707",
+            "source_ref": "course-of-action--8ac1d6e1-b07f-476a-9732-84984ebc2405",
+            "modified": "2020-09-29T18:58:17.429Z",
+            "id": "relationship--0c284ce0-0be2-4164-b686-7c383b246aec",
+            "type": "relationship",
+            "created": "2020-09-21T17:59:24.739Z",
+            "relationship_type": "mitigates",
+            "description": "Check the integrity of the existing BIOS or EFI to determine if it is vulnerable to modification. Use Trusted Platform Module technology. Move system's root of trust to hardware to prevent tampering with the SPI flash memory. Technologies such as Intel Boot Guard can assist with this.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ]
+        }
+    ]
+}

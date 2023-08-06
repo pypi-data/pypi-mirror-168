@@ -1,0 +1,20 @@
+{
+    "id": "bundle--004903d9-6c5f-4fc1-8114-a1f0ab62451c",
+    "objects": [
+        {
+            "created": "2021-06-24T00:00:00.000Z",
+            "created_by_ref": "identity--e50ab59c-5c4f-4d40-bf6a-d58418d89bcd",
+            "description": "Leverage anti-malware tools, which can detect Trojan Horse malware.",
+            "id": "course-of-action--4f258dff-bfd4-4ad4-adcf-d01b6127a826",
+            "modified": "2021-06-24T00:00:00.000Z",
+            "name": "coa-662-1",
+            "object_marking_refs": [
+                "marking-definition--17d82bb2-eeeb-4898-bda5-3ddbcd2b799d"
+            ],
+            "spec_version": "2.1",
+            "type": "course-of-action",
+            "x_capec_version": "3.6"
+        }
+    ],
+    "type": "bundle"
+}

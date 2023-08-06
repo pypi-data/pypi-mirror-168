@@ -1,0 +1,23 @@
+{
+    "type": "bundle",
+    "id": "bundle--c56a38d0-7fc7-47f8-ac4b-29e5d7223144",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "id": "attack-pattern--831e3269-da49-48ac-94dc-948008e8fd16",
+            "modified": "2018-10-17T01:05:10.701Z",
+            "revoked": true,
+            "name": "Remotely Install Application",
+            "external_references": [
+                {
+                    "source_name": "mitre-mobile-attack",
+                    "url": "https://attack.mitre.org/techniques/T1443",
+                    "external_id": "T1443"
+                }
+            ],
+            "created": "2017-10-25T14:48:34.830Z",
+            "type": "attack-pattern",
+            "x_mitre_old_attack_id": "MOB-T1046"
+        }
+    ]
+}

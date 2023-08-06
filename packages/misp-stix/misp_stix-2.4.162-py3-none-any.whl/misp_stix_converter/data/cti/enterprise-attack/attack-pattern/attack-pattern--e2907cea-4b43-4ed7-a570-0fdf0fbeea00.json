@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--c6338129-e86f-4427-929e-286746ffd9ba",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "modified": "2020-02-10T20:49:12.897Z",
+            "name": "Space after Filename",
+            "created": "2017-12-14T16:46:06.044Z",
+            "id": "attack-pattern--e2907cea-4b43-4ed7-a570-0fdf0fbeea00",
+            "revoked": true,
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1151",
+                    "external_id": "T1151",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/649.html",
+                    "external_id": "CAPEC-649",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Mac Backdoors are back",
+                    "description": "Dan Goodin. (2016, July 6). After hiatus, in-the-wild Mac backdoors are suddenly back. Retrieved July 8, 2017.",
+                    "url": "https://arstechnica.com/security/2016/07/after-hiatus-in-the-wild-mac-backdoors-are-suddenly-back/"
+                }
+            ]
+        }
+    ]
+}
