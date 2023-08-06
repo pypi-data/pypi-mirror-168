@@ -1,0 +1,10 @@
+cement==3.0.4
+jinja2
+pyyaml
+colorlog
+sentry_sdk
+gputil
+streamlit==0.57.3
+joblib
+boto3
+pandas
