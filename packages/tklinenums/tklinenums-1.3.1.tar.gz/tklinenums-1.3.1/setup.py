@@ -1,0 +1,14 @@
+from distutils.core import setup
+
+with open("README.md", "r") as file:
+    long_description = file.read()
+
+setup(
+    name="tklinenums",
+    version="1.3.1",
+    description="A simple Tkinter widget for displaying line numbers",
+    author="Moosems",
+    author_email="moosems.j@gmail.com",
+    url="https://github.com/Moosems/TkLineNums",
+    packages=["tklinenums"],
+)
