@@ -1,0 +1,10 @@
+LICENSE
+README.md
+mutstring.py
+pyproject.toml
+setup.py
+mutstring.egg-info/PKG-INFO
+mutstring.egg-info/SOURCES.txt
+mutstring.egg-info/dependency_links.txt
+mutstring.egg-info/requires.txt
+mutstring.egg-info/top_level.txt

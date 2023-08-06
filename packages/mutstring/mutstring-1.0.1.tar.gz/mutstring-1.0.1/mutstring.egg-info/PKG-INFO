@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: mutstring
+Version: 1.0.1
+Summary: please never use this
+Author: ZeroIntensity
+Author-email: <zintensitydev@gmail.com>
+License: MIT
+Keywords: python,strings,mutability
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mutstring
+
+## Make your Python strings mutable
+
+please never use this ever oh god please
+
+### Quick Example
+
+```py
+import mutstring
+
+a = "hello"
+a.capitalize()
+print(a)  # Hello
+
+mutstring.cleanup()
+```
+
+### Installation
+
+#### Linux/macOS
+
+```
+python3 -m pip install -U mutstring
+```
+
+#### Windows
+
+```
+py -3 -m pip install -U mutstring
+```
+
+### Features
+
+-   Bad code
+-   Segfaults
+-   Breaks about every library to exist
+
+### Why does this exist?
+
+i don't know. see [my other library](https://github.com/ZeroIntensity/pointers.py), which this is built on top of.
+
+### Usage
+
+If you want to use this awful library, just import it and call cleanup at the end of your script to prevent a segfault:
+
+```py
+import mutstring
+
+"hello {}".format("world")
+print("hello {}")  # hello world
+
+mutstring.cleanup()
+```
