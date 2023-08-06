@@ -1,0 +1,10 @@
+oidc_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oidc_auth/authentication.py,sha256=4ODFhmtcoi2dj2t8SHI00HX9iUn99RZlSaJxY3ivDDY,7018
+oidc_auth/settings.py,sha256=tJW2fo0USZu6ucPutTi0b6o0QJgLRGFvlmCfXPL217I,1363
+oidc_auth/test.py,sha256=4-7-f8CVk_qsTbSsnQLhELOoj0lubSrHxXZNOgnGGWw,2575
+oidc_auth/util.py,sha256=Jb_sc8smbOBszgphyxDuHixmrFW3uOCmnr-q02rCN08,1153
+drf_oidc_auth-3.0.0.dist-info/LICENSE,sha256=GSoJtzl9HYuIN5razI3IZwXb8Q_JjAYS66IVJPBUfOg,1081
+drf_oidc_auth-3.0.0.dist-info/METADATA,sha256=um3NNyO1A-JifI1zPUqF07rc2SGE3mZEu3NVApNmmBw,1061
+drf_oidc_auth-3.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+drf_oidc_auth-3.0.0.dist-info/top_level.txt,sha256=PMfXJdPheF8UULR70hafaFCrEmrgcRqSfEiK0DiIgEA,10
+drf_oidc_auth-3.0.0.dist-info/RECORD,,

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: drf-oidc-auth
+Version: 3.0.0
+Summary: OpenID Connect authentication for Django Rest Framework
+Home-page: https://github.com/ByteInternet/drf-oidc-auth
+Author: Maarten van Schaik
+Author-email: support@byte.nl
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+License-File: LICENSE
+Requires-Dist: authlib (>=0.15.0)
+Requires-Dist: cryptography (>=2.6)
+Requires-Dist: django (>=2.2.0)
+Requires-Dist: djangorestframework (>=3.11.0)
+Requires-Dist: requests (>=2.20.0)
+
