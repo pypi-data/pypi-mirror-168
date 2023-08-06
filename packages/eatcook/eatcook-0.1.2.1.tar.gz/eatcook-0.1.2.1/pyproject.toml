@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "eatcook"
+version = "0.1.2.1"
+description = "Mini HTTP Server."
+authors = ["Porplax <saynemarsh9@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+eatcook = "eatcook:app"
+
+[tool.poetry.dependencies]
+python = ">=3.6,<4.0"
+colorama = "^0.4.5"
+typer = {extras = ["all"], version = "^0.1.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
