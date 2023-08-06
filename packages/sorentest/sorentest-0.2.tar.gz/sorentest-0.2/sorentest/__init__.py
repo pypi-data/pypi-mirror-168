@@ -1,0 +1,1 @@
+from sorentest.file1 import class1
