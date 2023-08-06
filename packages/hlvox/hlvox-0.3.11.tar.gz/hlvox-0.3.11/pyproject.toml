@@ -1,0 +1,10 @@
+[tool.autopep8]
+max_line_length = 200
+
+[tool.pylint]
+max-line-length = 200
+disable = ["fixme"]
+ignore-paths = "^doc/.*$"
+
+[tool.isort]
+line_length = 200
