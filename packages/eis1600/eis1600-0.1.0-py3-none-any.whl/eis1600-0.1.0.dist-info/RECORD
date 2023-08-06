@@ -1,0 +1,14 @@
+eis1600/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eis1600/mui_handling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eis1600/mui_handling/disassembling.py,sha256=tCSQaQYqXotYxXpHenIs2W8p37JagSr3ZbKt8aJ9vIY,1677
+eis1600/mui_handling/re_patterns.py,sha256=ayiw7iow9EG1Cybfxw-xe2F7i6OgzEi9iiAreafYhX8,224
+eis1600/mui_handling/reassembling.py,sha256=_WByTH8EaWBisKUPqiV8wNtnkQ32jg3mS_q2Dp4DxDM,740
+eis1600/mui_handling/yaml_template.yml,sha256=UNpJK-1jtHvVMkNvNPmjiB6q3mRzsy8quJPPROqpn3Y,80
+eis1600/mui_handling/yml_handling.py,sha256=q4hwD6d_1tRlZyPt7eqaKTjWmnUckLpcelYFUy-9xPs,1428
+eis1600-0.1.0.data/scripts/disassemble_into_mui_files.py,sha256=4zgOWadKkbDq07HmlD2K-PNVHlzMzNdNUTFEFSw3qe8,492
+eis1600-0.1.0.data/scripts/reassemble_from_mui_files.py,sha256=WVAn7MrpM1ACWl91r3Py93CdaZ7SmKMC7z7U6kqKotg,443
+eis1600-0.1.0.dist-info/LICENSE,sha256=wg7vYYZ0u9uXTiazhp4LXNc3FRaDfBnGBJuAJkmX0X0,1046
+eis1600-0.1.0.dist-info/METADATA,sha256=CFGRSeMk74TW5PNAkz59yd7bw4PnOPagfhOrWyYRPH8,541
+eis1600-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+eis1600-0.1.0.dist-info/top_level.txt,sha256=cUsoRQ7yKe2ubf4Qzp4ejVrGlJ-Ta4j_PfKDGMxAUkE,8
+eis1600-0.1.0.dist-info/RECORD,,
