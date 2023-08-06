@@ -1,0 +1,17 @@
+jira/__init__.py,sha256=LqP8ArfUw05fgNGC9MwGF2FMpHmzszp3w-OIMZfH0QE,909
+jira/client.py,sha256=Re-x4Gz-uUoZf2K_rfU5BgwtUtsDkD_asNscmmV6zw0,192588
+jira/config.py,sha256=xETJVW2tlIIR2TWfk9k9Js_rqwq1tMU5oZOnursPDig,3986
+jira/exceptions.py,sha256=5_Qq1WiQ89MucMwlQcqUdMOPS-pwedX9pVXuNTrJF8I,2456
+jira/jirashell.py,sha256=NYJ8wBGAm0KE3oiiAYm9Gxg-Wg-5yVBXcBcCjj3s5Ho,12055
+jira/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jira/resilientsession.py,sha256=DuPoJosVcYEKMDjpG2dDncmKr-kAw1WlKwmOsp_1G8o,12744
+jira/resources.py,sha256=gpTrWfu3lG7k5aMSJQWd59ZBYS_OXpG9oiMB5JoJwno,53325
+jira/utils/LICENSE,sha256=fkk_p84s_bjcipfV6RL4H8Xg3cWMWiNumN4u5VypeKg,1579
+jira/utils/__init__.py,sha256=262IBqkbqkBBO-4vdd5UTZZRJBv3jdgv0Eagt6d8Y0c,2595
+tmp_jira_with_fix_template_name-1.0.0.dist-info/AUTHORS.rst,sha256=MUauHT3I6n4BxStj4kWU_HGlwNMn_geyo0R_cgKLXxY,380
+tmp_jira_with_fix_template_name-1.0.0.dist-info/LICENSE,sha256=3t9UC41ezo2p3rYU5_faKN0164DiCyU2ilNIXPJaieA,1310
+tmp_jira_with_fix_template_name-1.0.0.dist-info/METADATA,sha256=BL2ifRgFtArCFFB_ns7GOcvmgfDWZsWWMD_wWoNx-c0,9519
+tmp_jira_with_fix_template_name-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tmp_jira_with_fix_template_name-1.0.0.dist-info/entry_points.txt,sha256=m9KSK7SNBSymiveLLyv6qN5BFuTpz_JD_ZUiFkhSLBc,50
+tmp_jira_with_fix_template_name-1.0.0.dist-info/top_level.txt,sha256=46Tth9ZhaiKcfmsSvJdt_or7lw-kkgpAev7p_NG6fJ4,5
+tmp_jira_with_fix_template_name-1.0.0.dist-info/RECORD,,
