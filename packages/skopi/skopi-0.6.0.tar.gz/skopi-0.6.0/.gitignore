@@ -1,0 +1,14 @@
+# Reserved folders
+/local/
+
+# Compiled
+build
+
+# Auto-generated folders
+.idea
+.ipynb_checkpoints
+__pycache__
+
+# Auto-generated files
+*.egg-info
+
