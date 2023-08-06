@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: iotedgedev
+Version: 3.3.5
+Summary: The Azure IoT Edge Dev Tool greatly simplifies the IoT Edge development process by automating many routine manual tasks, such as building, deploying, pushing modules and configuring the IoT Edge Runtime.
+Home-page: https://github.com/azure/iotedgedev
+Author: Microsoft Corporation
+Author-email: vsciet@microsoft.com
+License: MIT license
+Keywords: azure iot edge dev tool
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <3.10
+Requires-Dist: click (>=6.0)
+Requires-Dist: bcrypt (<=3.1.7)
+Requires-Dist: docker (>=3.7.0)
+Requires-Dist: python-dotenv
+Requires-Dist: requests (<=2.25.1,>=2.20.0)
+Requires-Dist: fstrings
+Requires-Dist: azure-cli-core (<2.35.0,>=2.34.1)
+Requires-Dist: iotedgehubdev (==0.14.14)
+Requires-Dist: applicationinsights (==0.11.9)
+Requires-Dist: commentjson (==0.9.0)
+Requires-Dist: pyyaml (>=5.4)
+Requires-Dist: more-itertools (<8.1.0)
+Requires-Dist: pypiwin32 (==219) ; sys_platform == "win32" and python_version < "3.6"
+Requires-Dist: pypiwin32 (==223) ; sys_platform == "win32" and python_version >= "3.6"
+
+See https://github.com/azure/iotedgedev for usage instructions.
+
+
