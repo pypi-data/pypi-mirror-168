@@ -1,0 +1,7 @@
+setup.py
+cellworld2.egg-info/PKG-INFO
+cellworld2.egg-info/SOURCES.txt
+cellworld2.egg-info/dependency_links.txt
+cellworld2.egg-info/not-zip-safe
+cellworld2.egg-info/requires.txt
+cellworld2.egg-info/top_level.txt
