@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: modelw-preset-django
+Version: 2022.10.0b3
+Summary: Model W preset for Django
+Home-page: https://github.com/ModelW/preset-django
+License: WTFPL
+Keywords: django,env,configuration
+Author: Rémy Sanchez
+Author-email: remy.sanchez@hyperthese.net
+Requires-Python: >=3.10,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: celery
+Provides-Extra: channels
+Requires-Dist: Django[argon2] (>=4.1,<4.2)
+Requires-Dist: celery[tblib,redis] (>=5.2,<5.3); extra == "celery"
+Requires-Dist: channels (>=3.0,<3.1); extra == "channels"
+Requires-Dist: channels-redis (>=3.4,<3.5); extra == "channels"
+Requires-Dist: coloredlogs (>=15.0,<15.1)
+Requires-Dist: dj-database-url (>=0.5,<0.6)
+Requires-Dist: django-celery-results (>=2.4,<2.5); extra == "celery"
+Requires-Dist: django-postgres-extra (>=2.0,<2.1)
+Requires-Dist: django-wailer (>=1.0.0-beta.2,<1.1.0)
+Requires-Dist: djangorestframework (>=3.13,<3.14)
+Requires-Dist: djangorestframework-gis (>=1.0,<1.1)
+Requires-Dist: modelw-env-manager (>=1.0.0-alpha.5,<1.1.0)
+Requires-Dist: psycopg2 (>=2.9,<2.10)
+Requires-Dist: rich (>=12.5,<12.6)
+Requires-Dist: sentry-sdk (>=1.9,<1.10)
+Requires-Dist: whitenoise (>=6.2,<6.3)
+Project-URL: Repository, https://github.com/ModelW/preset-django
+Description-Content-Type: text/markdown
+
+# Model W &mdash; Django Preset
+
+This Django preset for Model W's Env Manager provides a basic Django
+configuration that is fit to work in PaaS platforms such as DigitalOcean's PaaS.
+
+## Documentation
+
+[✨ **Documentation is there** ✨](http://modelw-django-preset.rtfd.io/)
+
