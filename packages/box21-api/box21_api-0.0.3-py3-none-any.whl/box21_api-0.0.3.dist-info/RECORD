@@ -1,0 +1,12 @@
+box21_api/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+box21_api/_modidx.py,sha256=372nwhT7Y6Iovo-8AOMTeKpK-PQqBprtQpdE6zR0Tm4,4170
+box21_api/annotation.py,sha256=qNtSaPaJSsDCcN-7F5EJNv0Z9J79Iv9jQavhQD5cspw,2258
+box21_api/asset.py,sha256=JwbKTEwiVNr154Fim3yYbsLv-xejDWRfMiszC915j0U,1393
+box21_api/box21_api.py,sha256=JymArgL4Yff-4n5F-YK28LjFjXbxDV5X49eaaYFc0cE,4472
+box21_api/core.py,sha256=nkOpYUJEK37GDpcvQGJg31s2wmJvNH382cAbOIiEm9A,134
+box21_api-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+box21_api-0.0.3.dist-info/METADATA,sha256=c7qyD6kmDcbCKZH6_lgIDOXaJZoC8B5lKWA7kEu5sVY,1152
+box21_api-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+box21_api-0.0.3.dist-info/entry_points.txt,sha256=R2kc0WNAP9HD55DcJQ7W7gymI37tHInktHJfMmbUgb8,40
+box21_api-0.0.3.dist-info/top_level.txt,sha256=-CboVldvzHv4rRNxzF-j1M7huR-CYYD8T2UOia5Wzuc,10
+box21_api-0.0.3.dist-info/RECORD,,
