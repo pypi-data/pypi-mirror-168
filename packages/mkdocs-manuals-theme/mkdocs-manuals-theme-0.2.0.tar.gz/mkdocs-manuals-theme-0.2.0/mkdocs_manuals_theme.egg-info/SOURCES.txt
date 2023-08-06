@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mkdocs_manuals_theme/__init__.py
+mkdocs_manuals_theme.egg-info/PKG-INFO
+mkdocs_manuals_theme.egg-info/SOURCES.txt
+mkdocs_manuals_theme.egg-info/dependency_links.txt
+mkdocs_manuals_theme.egg-info/requires.txt
+mkdocs_manuals_theme.egg-info/top_level.txt
