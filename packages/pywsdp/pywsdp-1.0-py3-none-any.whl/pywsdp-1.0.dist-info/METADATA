@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pywsdp
+Version: 1.0
+Summary: PyWSDP Python package
+Home-page: https://github.com/ctu-geoforall-lab/pywsdp
+Author: Linda Kladivova
+Author-email: lindakladivova@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zeep (>=3.4.0)
+
+# pywsdp
+Python CUZK WSDP Library
+
+Library for communication with WSDP CUZK services.
+
