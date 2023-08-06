@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sparrow-mlpipes
+Version: 0.4.4.dev1663691721
+Summary: Tools for Nvidia DeepStream
+Author: Sparrow Computing
+Author-email: ben@sparrow.dev
+License: MIT
+Provides-Extra: dev
+License-File: LICENSE
