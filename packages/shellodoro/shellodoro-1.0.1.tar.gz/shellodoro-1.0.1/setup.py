@@ -1,0 +1,34 @@
+import setuptools
+import os
+
+FILE_DIR = os.path.dirname(__file__)
+
+with open("README.md", "r", encoding="UTF-8") as f:
+    long_description = f.read()
+
+with open(os.path.join(FILE_DIR, "requirements.txt"), "r", encoding="UTF-8") as f:
+    requirements = f.read().splitlines()
+
+
+setuptools.setup(
+    name="shellodoro",
+    version="1.0.1",
+    author="StepanZubkov",
+    author_email="zubkovbackend@gmail.com",
+    description="Pomodoro timer right in your favorite terminal!",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/StepanZubkov/shellodoro",
+    keywords="pomodoro, timer, tool, cli",
+    packages=setuptools.find_packages(),
+    include_package_data=True,
+    classifiers=[
+        "Intended Audience :: End Users/Desktop",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: POSIX :: Linux",
+        "Programming Language :: Python :: 3",
+    ],
+    python_requires=">=3.6",
+    entry_points={"console_scripts": ["shdr=shellodoro.shellodoro:main"]},
+    install_requires=requirements,
+)
