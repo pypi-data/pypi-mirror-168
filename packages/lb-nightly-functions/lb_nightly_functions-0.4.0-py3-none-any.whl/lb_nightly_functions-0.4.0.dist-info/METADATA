@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lb-nightly-functions
+Version: 0.4.0
+Summary: Core functions for LHCb Nightly and Continuous Integration Build System
+License: GPL-3.0-only
+Author: Marco Clemencic
+Author-email: marco.clemencic@cern.ch
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: repl
+Requires-Dist: GitPython (>=3.1.18,<4.0.0)
+Requires-Dist: archspec (>=0.1.2,<0.2.0)
+Requires-Dist: lb-nightly-configuration (>=0.3,<0.4)
+Requires-Dist: lb-nightly-db (>=0.2,<0.3)
+Requires-Dist: lb-nightly-utils (>=0.4,<0.5)
+Requires-Dist: lbplatformutils (>=4.3.8,<5.0.0)
+Requires-Dist: python-gitlab (>=3.9.0,<4.0.0)

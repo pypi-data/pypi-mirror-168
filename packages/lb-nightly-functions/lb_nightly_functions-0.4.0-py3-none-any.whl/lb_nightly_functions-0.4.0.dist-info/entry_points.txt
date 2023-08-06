@@ -1,0 +1,6 @@
+[console_scripts]
+lb-wrapcmd=lb.nightly.functions.common:lb_wrapcmd
+
+[lb.nightly.checkout_methods]
+git=lb.nightly.functions.checkout:git
+
