@@ -1,0 +1,22 @@
+# IDE
+.idea/
+
+# mac
+.DS_Store
+
+# jupyter
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+#python
+*__pycache__*
+*egg-info/
+dist/
+build/
+
+# test data
+tests/data-for-tests/song_data/
+tests/data-for-tests/hum_data/
+tests/data-for-tests/generated/*txt
