@@ -1,0 +1,9 @@
+cryptography
+Jinja2
+Mako
+passlib
+pyyaml
+requests>=1.0.0
+librouteros>=3.0.0
+tomlkit
+rtoml
