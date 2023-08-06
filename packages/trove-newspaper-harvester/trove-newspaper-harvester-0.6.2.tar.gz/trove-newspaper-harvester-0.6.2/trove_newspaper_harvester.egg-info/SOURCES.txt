@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+trove_newspaper_harvester/__init__.py
+trove_newspaper_harvester/_modidx.py
+trove_newspaper_harvester/cli.py
+trove_newspaper_harvester/core.py
+trove_newspaper_harvester.egg-info/PKG-INFO
+trove_newspaper_harvester.egg-info/SOURCES.txt
+trove_newspaper_harvester.egg-info/dependency_links.txt
+trove_newspaper_harvester.egg-info/entry_points.txt
+trove_newspaper_harvester.egg-info/not-zip-safe
+trove_newspaper_harvester.egg-info/requires.txt
+trove_newspaper_harvester.egg-info/top_level.txt
