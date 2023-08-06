@@ -1,0 +1,8 @@
+comlink/__init__.py,sha256=ApfMmfRL3a07D7XOw_RJnKTQKXGLh35Iy99inVO7hPQ,95
+comlink/consumer.py,sha256=7R9Nou-wIJFczzSYCvh_Fk4cJ7DXTjK8EgGN4rgLUmY,3476
+comlink/events.py,sha256=0K9-osOykw6R31r-cz8bJ5e5B-F8qVWQ-z6cre5fpfg,925
+comlink/queue.py,sha256=Wo-cFk3CAkK4m2sQmrcTzHIN7b17FsVu4e8O-9g3BE4,1751
+comlink-0.3.0.dist-info/LICENSE,sha256=mvi-4dcdr08Zpnp3Yo30uXvxm3ceX-rug9ijeza9_RM,1062
+comlink-0.3.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+comlink-0.3.0.dist-info/METADATA,sha256=d-GeenE0rNjofSESLG-rE_ZZ4cu0ClJlFv62HaQnQ-o,8851
+comlink-0.3.0.dist-info/RECORD,,
