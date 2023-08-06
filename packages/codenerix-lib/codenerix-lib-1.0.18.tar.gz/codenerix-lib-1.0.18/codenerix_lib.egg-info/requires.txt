@@ -1,0 +1,5 @@
+colorama
+nltk
+pycryptodomex
+textnorm
+unidecode
