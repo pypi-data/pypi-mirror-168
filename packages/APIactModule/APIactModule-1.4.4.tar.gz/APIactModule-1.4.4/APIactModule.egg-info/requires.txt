@@ -1,0 +1,4 @@
+requests
+discord>=2.0.1
+ntplib
+xmltodict
