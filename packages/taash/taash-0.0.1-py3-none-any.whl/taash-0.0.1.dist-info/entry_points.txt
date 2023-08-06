@@ -1,0 +1,2 @@
+[nbdev]
+taash = taash._modidx:d

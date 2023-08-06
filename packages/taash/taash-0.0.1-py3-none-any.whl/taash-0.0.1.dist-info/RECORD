@@ -1,0 +1,10 @@
+taash/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+taash/_modidx.py,sha256=oxJcLdRZZwnAy4XqqTBFTVEnu4-BiPBaoN1dIK4sJ3g,1727
+taash/card.py,sha256=tRJltk-yDDJeK1J2JJLoDCot64DxXSTDkmae4ptYTXg,945
+taash/deck.py,sha256=rTdCiVQIGkU0JBV4mV2WiJnspkeYmaRP7s7OY_jILwg,1392
+taash-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+taash-0.0.1.dist-info/METADATA,sha256=7F0pVRyKNOrVeRzGeeyJ4u1VB5O5xZ9t2OQfUWYakNw,1361
+taash-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taash-0.0.1.dist-info/entry_points.txt,sha256=jdMZtk6q1kmqXIknAf-9AvZnLFAza8N-iuQtprNB5-I,32
+taash-0.0.1.dist-info/top_level.txt,sha256=Z76iB9HHGWGBQ8Cwfo3xNNloVo11M0sWItiUrpqcOgM,6
+taash-0.0.1.dist-info/RECORD,,
