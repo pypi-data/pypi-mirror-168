@@ -1,0 +1,81 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import floatingButtonModal %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block main %}
+
+    <div class="grid-wrapper">
+
+        <div class="view">
+            <div class="row m0">
+                <div class="col s12 m6 offset-m3">
+                    <div class="card rounded">
+                        <div class="card-content">
+
+                            {% if menus %}
+                                <span class="card-title center-align">Menus</span>
+                                <table class="centered">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Active</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    {% for menu in menus %}
+                                        <tr>
+                                            <td class="left">{{ menu.name }}</td>
+                                            <td>{{ menu.active }}</td>
+                                            <td>
+                                                <a href="{{ url_for('admin.menu_items', menu_name=menu.name) }}">
+                                                    <i class="material-icons blue-text">mode_edit</i>
+                                                </a>
+                                                <a href="{{ url_for('admin.delete_menu', menu_id=menu.id) }}">
+                                                    <i class="material-icons red-text pl2">delete</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            {% else %}
+                                <span class="card-title center-align">No Menus Available</span>
+                                <p class="flow-text center-align">click <a href="#addMenuModal"
+                                                                           class="btn-small deep-purple rounded modal-trigger">here</a>
+                                    to create one</p>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ floatingButtonModal('addMenuModal', 'add', 'blue accent-4') }}
+
+        <div id="addMenuModal" class="modal rounded">
+            <div class="modal-content">
+                <h4 class="center-align">Add Menu</h4>
+                <form action="{{ url_for('admin.admin_menu.add_menus') }}" method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            {{ form.name(class="validate") }}
+                            {{ form.name.label }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            {{ form.submit(class="btn blue accent-4") }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+{% endblock %}

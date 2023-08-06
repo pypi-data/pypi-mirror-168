@@ -1,0 +1,78 @@
+{% macro clickableCard(route, text, class) %}
+    {% if class %}
+        <a href="{{ route }}" class="{{ class }}">
+            <div class="card-panel blue-grey darken-4 rounded center-align">
+                <span class="white-text flow-text">{{ text }}</span>
+            </div>
+        </a>
+    {% else %}
+        <a href="{{ route }}">
+            <div class="card-panel blue-grey darken-4 rounded center-align">
+                <span class="white-text flow-text">{{ text }}</span>
+            </div>
+        </a>
+    {% endif %}
+{% endmacro %}
+
+{% macro clickableCardModal(route, text) %}
+    <a href="#{{ route }}" class="modal-trigger">
+        <div class="card-panel blue-grey darken-4 rounded center-align">
+            <span class="white-text flow-text">{{ text }}</span>
+        </div>
+    </a>
+{% endmacro %}
+
+{% macro floatingButton(route, icon, btnColor, iconColor) %}
+    <div class="fixed-action-btn">
+        <a href="{{ route }}" class="btn-floating btn-large {{ btnColor }}">
+            <i class="large material-icons {{ iconColor }}">{{ icon }}</i>
+        </a>
+    </div>
+{% endmacro %}
+
+{% macro floatingButtonModal(route, icon, color, iconColor) %}
+    <div class="fixed-action-btn">
+        <a href="#{{ route }}" class="btn-floating btn-large modal-trigger {{ color }}">
+            <i class="large material-icons {{ iconColor }}">{{ icon }}</i>
+        </a>
+    </div>
+{% endmacro %}
+
+{% macro floatingModalButton(route, icon) %}
+
+    <div class="fixed-action-btn">
+        <a href="#{{ route }}" class="btn-floating btn-large blue accent-4 modal-trigger">
+            <i class="large material-icons">{{ icon }}</i>
+        </a>
+    </div>
+
+{% endmacro %}
+
+{% macro heading_row(headings) %}
+    <thead>
+    <tr>
+        {% for header in headings %}
+            <th>{{ header }}</th>
+        {% endfor %}
+    </tr>
+    </thead>
+{% endmacro %}
+
+{% macro data_row(data) %}
+    <tbody>
+    {% for row in data %}
+        <tr>
+            {% for cell in row %}
+                <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+{% endmacro %}
+
+{% macro data_table(headings, data) %}
+    <table>
+        {{ heading_row(headings) }}
+        {{ data_row(data) }}
+    </table>
+{% endmacro %}
