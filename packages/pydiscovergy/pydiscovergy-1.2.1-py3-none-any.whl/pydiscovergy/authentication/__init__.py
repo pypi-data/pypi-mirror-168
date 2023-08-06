@@ -1,0 +1,3 @@
+from pydiscovergy.authentication.base import BaseAuthentication
+from pydiscovergy.authentication.token import TokenAuth
+from pydiscovergy.authentication.basicauth import BasicAuth
