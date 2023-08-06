@@ -1,0 +1,2 @@
+include pygmentshtmltemplate/templates/default.xml
+include pygmentshtmltemplate/py.typed

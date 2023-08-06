@@ -1,0 +1,2 @@
+pygments>=2
+mako>=1.1
