@@ -1,0 +1,2 @@
+[console_scripts]
+kerberoast = kerberoast.kerberoast:main
