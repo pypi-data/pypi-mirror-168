@@ -1,0 +1,8 @@
+monorepo_loader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monorepo_loader/setuptools_monorepo.py,sha256=6KU7cKJnUqxZqz8WTWVVV_JVkgR7pnhopsiyEpmZxms,5971
+setuptools_monorepo-0.0.3.dist-info/LICENSE,sha256=IEmsdCXPSgurumZagAqiYhpX1Nd495WNnJ2QCMBZVfs,1093
+setuptools_monorepo-0.0.3.dist-info/METADATA,sha256=bAT-eMIgPJxBwHMo86PysL9BRtbrCVk_h8KXsZoHHOM,251
+setuptools_monorepo-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+setuptools_monorepo-0.0.3.dist-info/entry_points.txt,sha256=RcjR6GaQHUZZONv0GO4zaojehhF7e14Umrv-S_BM5kQ,103
+setuptools_monorepo-0.0.3.dist-info/top_level.txt,sha256=uw3Lu2ns3L9QHGl8-llkR3uHDKwN7BRl4AMt4LTTuWI,16
+setuptools_monorepo-0.0.3.dist-info/RECORD,,
