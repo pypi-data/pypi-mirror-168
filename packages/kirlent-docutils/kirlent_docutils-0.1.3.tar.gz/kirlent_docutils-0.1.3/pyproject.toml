@@ -1,0 +1,85 @@
+[project]
+name = "kirlent_docutils"
+version = "0.1.3"
+description = "Custom writers for docutils."
+readme = "README.rst"
+
+authors = [{name = "H. Turgut Uyar", email = "uyar@tekir.org"}]
+license = {file = "LICENSE.txt"}
+
+keywords = ["markup", "html", "rst", "restructuredtext", "docutils"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Text Processing :: Markup :: HTML"
+]
+
+requires-python = "~=3.7"
+dependencies = [
+    "docutils>=0.18",
+    "pygments",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "flake8",
+    "flake8-isort",
+    "tox",
+]
+
+[project.scripts]
+rst2kirlenthtml5 = "kirlent_docutils:publish_cmdline_html5"
+kirlent2slides = "kirlent_docutils:publish_cmdline_slides"
+kirlent2impressjs = "kirlent_docutils:publish_cmdline_impressjs"
+kirlent2revealjs = "kirlent_docutils:publish_cmdline_revealjs"
+
+[project.urls]
+"Homepage" = "https://tekir.org/kirlent_docutils/"
+"Repository" = "https://repo.tekir.org/kirlent/kirlent_docutils"
+
+[tool.isort]
+lines_after_imports = 2
+known_test = "pytest,unittest"
+sections = "TEST,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{310,39,38,37}, style
+isolated_build = True
+
+[testenv]
+deps =
+    pytest
+commands =
+    pytest {posargs:tests}
+
+[testenv:coverage]
+deps =
+    {[testenv]deps}
+    pytest-cov
+commands =
+    pytest --cov={envsitepackagesdir}/kirlent_docutils --cov-report=term-missing tests
+
+[testenv:style]
+deps =
+    flake8
+    flake8-isort
+commands =
+    flake8 kirlent_docutils
+"""
+
+[build-system]
+requires = ["flit_core>=3.2"]
+build-backend = "flit_core.buildapi"
