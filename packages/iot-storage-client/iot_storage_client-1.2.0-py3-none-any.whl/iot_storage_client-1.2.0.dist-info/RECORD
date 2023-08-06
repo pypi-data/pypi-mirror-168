@@ -1,0 +1,10 @@
+iot/storage/client/__init__.py,sha256=8SbOlQpHBfvbDR_3FCX3x1G51-4vr_nhfqdMTUnReiE,167
+iot/storage/client/_aioclient.py,sha256=Hmv1P0Eoqrtgh9RqbbUUScO-zZWL70Y9vWwfp-SB30s,23906
+iot/storage/client/_client.py,sha256=2TlG32OLFFGVLUW12uZnqk1nswW0zh_KuzR9Hu2hCyM,22234
+iot/storage/client/_helpers.py,sha256=aZLRNT7hdldy8wXiu3JVSah3n4DVZZGgoG6BBnBDWaA,4796
+iot/storage/client/_types.py,sha256=5om9DC7rJfcMNMx6oOfiviQdtN1XzEBtT5AbfIUUyiU,407
+iot/storage/client/_version.py,sha256=_FBAFxCOxffmWh_1L8HUYRYJ0Xe3KypMG1jv0EOntyY,41
+iot_storage_client-1.2.0.dist-info/METADATA,sha256=ECSl6EfH3J3t0s3BB1fpoUa66xRY4-Tt3m_CwFOqTNU,5483
+iot_storage_client-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+iot_storage_client-1.2.0.dist-info/top_level.txt,sha256=GrFBYwTe_zimcbxQb9lowAJUNeDArWJA0esDNiSx9Kw,4
+iot_storage_client-1.2.0.dist-info/RECORD,,
