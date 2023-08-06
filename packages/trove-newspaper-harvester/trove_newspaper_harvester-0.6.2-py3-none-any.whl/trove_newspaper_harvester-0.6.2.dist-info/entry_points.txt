@@ -1,0 +1,6 @@
+[console_scripts]
+troveharvester = trove_newspaper_harvester.cli:main
+
+[nbdev]
+trove_newspaper_harvester = trove_newspaper_harvester._modidx:d
+
