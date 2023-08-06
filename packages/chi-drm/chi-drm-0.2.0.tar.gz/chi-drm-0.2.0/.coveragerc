@@ -1,0 +1,5 @@
+[run]
+source = chi
+omit =
+    chi/plots/_base.py
+    chi/tests/*

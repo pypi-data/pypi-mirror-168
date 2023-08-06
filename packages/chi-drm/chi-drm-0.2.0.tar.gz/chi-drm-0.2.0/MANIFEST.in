@@ -1,0 +1,2 @@
+recursive-include chi/library/data_library *.csv
+recursive-include chi/library/model_library *.xml
