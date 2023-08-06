@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kerberoast
+Version: 0.2.0
+Summary: Kerberos security toolkit for Python
+Home-page: https://github.com/skelsec/kerberoast
+Author: Tamas Jos
+Author-email: info@skelsec.com
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: msldap (>=0.4.1)
+Requires-Dist: minikerberos (>=0.3.1)
+Requires-Dist: winsspi ; platform_system == "Windows"
+Requires-Dist: winacl (>=0.1.5) ; platform_system == "Windows"
+
