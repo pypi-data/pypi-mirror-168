@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: COAsT
+Version: 3.1.1
+Summary: This is the Coast Ocean Assessment Tool
+Home-page: https://www.bodc.ac.uk
+Download-URL: https://github.com/British-Oceanographic-Data-Centre/COAsT/
+Author: British Oceanographic Data Centre (BODC)
+Author-email: bodcsoft@bodc.ac.uk
+License: MIT License
+Project-URL: documentation, https://british-oceanographic-data-centre.github.io/COAsT/
+Keywords: NEMO,shallow water,ocean assessment
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8,<3.10
+License-File: LICENSE
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: oyaml (==1.0)
+Requires-Dist: pytest (==7.1.1)
+Requires-Dist: pytest-mock (==3.7.0)
+Requires-Dist: numpy (>=1.22.3)
+Requires-Dist: dask (>=2022.3.0)
+Requires-Dist: dask[complete] (>=2022.3.0)
+Requires-Dist: xarray (>=2022.3.0)
+Requires-Dist: matplotlib (>=3.5.3)
+Requires-Dist: netCDF4 (>=1.5.8)
+Requires-Dist: scipy (>=1.8.0)
+Requires-Dist: gsw (>=3.4.0)
+Requires-Dist: utide (>=0.3.0)
+Requires-Dist: scikit-learn (>=1.0.2)
+Requires-Dist: scikit-image (>=0.19.2)
+Requires-Dist: statsmodels (>=0.13.2)
+Requires-Dist: pydap (>=3.2.2)
+Requires-Dist: lxml (>=4.9.0)
+Requires-Dist: requests (>=2.27.1)
+
