@@ -1,0 +1,6 @@
+earthengine-api
+jupyter
+ipyleaflet
+ipytree
+
+[dev]
