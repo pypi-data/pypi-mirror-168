@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: adversarial-lib
+Version: 0.0.1
+Summary: Adversarial attack library
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/determined-ai/adversarial-lib
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
