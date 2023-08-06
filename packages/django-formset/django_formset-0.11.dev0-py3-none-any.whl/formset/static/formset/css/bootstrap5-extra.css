@@ -1,0 +1,67 @@
+@media (max-width: 575.98px) {
+  django-formset .dj-dual-selector :is(.dj-move-all-right, .dj-move-selected-right, .dj-move-all-left, .dj-move-selected-left) svg {
+    transform: rotate(90deg);
+  }
+}
+django-formset .dj-dual-selector input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+django-formset .dj-dual-selector :is(select, django-sortable-select) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: -1px;
+  width: 100% !important;
+}
+django-formset .dj-dual-selector ~ .dj-field-errors {
+  text-align: end;
+}
+django-formset [is=django-dual-selector] {
+  width: 100%;
+}
+django-formset textarea[is=richtext] ~ * .btn > svg {
+  width: 1.2em;
+}
+django-formset dialog {
+  padding: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid var(--bs-border-color-translucent);
+  border-radius: 0.5rem;
+}
+django-formset dialog .dialog-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid var(--bs-border-color);
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+}
+django-formset dialog .dialog-header .modal-title {
+  line-height: 1.5;
+  font-weight: bolder;
+  font-size: larger;
+}
+django-formset dialog .dialog-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+django-formset dialog .dialog-footer {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid var(--bs-border-color);
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
+}
+django-formset dialog .dialog-footer > * {
+  margin: 0.25rem;
+}
+
+/*# sourceMappingURL=bootstrap5-extra.css.map */
