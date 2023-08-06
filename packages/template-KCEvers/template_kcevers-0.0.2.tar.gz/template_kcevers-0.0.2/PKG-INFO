@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: template_KCEvers
+Version: 0.0.2
+Summary: A small example package
+Author-email: Kyra Caitlin Evers <kyra.c.evers@gmail.com>
+License: Copyright (c) 2022 Kyra Evers
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy==1.21.6
+Requires-Dist: pathlib==1.0.1
+Description-Content-Type: text/markdown
+
+# Template for building a Python package
+
+Mark all directories as "Sources Root".
+
+> py -m pip install --upgrade pip
+> python -m pip install --upgrade pip-tools
+
+### Use pipreqs to make a requirements.txt file based on all packages in environment
+> pipreqs /path/to/package
+> pipreqs --force # To overwrite existing requirements.txt file
+
+### Use piptools to make a requirements.txt file based on dependencies specified in setup.py/setup.cfg/pyproject.toml (https://github.com/jazzband/pip-tools)
+> python -m pip install pip-tools
+> pip-compile -o requirements.txt pyproject.toml
+
+To update, run:
+> pip-compile --output-file=requirements.txt pyproject.toml
+
+
+### Install the package in editable mode (no need to activate the virtual environment in Pycharm, https://setuptools.pypa.io/en/latest/userguide/development_mode.html) 
+> cd packaging_tutorial
+> pip install -e . # or equivalently, --editable rather than -e
+
+## Publish on Pypi
+For full instructions, follow https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/.
+
+- Build source distribution and wheel (better than running "python setup.py sdist bdist_wheel"); 
+> py -m pip install --upgrade build
+> python -m build
+
+- Before trying to upload your distribution, you should check to see if your brief / long descriptions provided in setup.py are valid. You can do this by running twine check on your package files:
+> py -m pip install --upgrade twine
+> twine check dist/*
+
+- It's also highly recommended to
+- first upload your package on TestPyPi (https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-your-project-to-pypi):
+> py -m twine upload --repository testpypi dist/*
+
+- Check whether the installation worked
+> py -m pip install --index-url https://test.pypi.org/simple/ --no-deps template_KCEvers
+
+- Upload distribution to PyPi
+> twine upload dist/*
