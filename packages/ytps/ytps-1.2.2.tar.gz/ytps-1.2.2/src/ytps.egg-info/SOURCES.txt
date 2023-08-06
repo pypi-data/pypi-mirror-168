@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ytps/__init__.py
+src/ytps/__main__.py
+src/ytps.egg-info/PKG-INFO
+src/ytps.egg-info/SOURCES.txt
+src/ytps.egg-info/dependency_links.txt
+src/ytps.egg-info/entry_points.txt
+src/ytps.egg-info/requires.txt
+src/ytps.egg-info/top_level.txt
