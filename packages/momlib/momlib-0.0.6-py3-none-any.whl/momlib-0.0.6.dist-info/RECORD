@@ -1,0 +1,10 @@
+momlib/__init__.py,sha256=NniZazfsTPJkwthW9vz-2Fu7qs1rteqRjA006dE8OV8,2015
+momlib/_errors.py,sha256=khp5DX0OtP4HR3GTvkgqg27IRHm1GqOMeh8nWJYy5Lc,590
+momlib/_linalg.py,sha256=yYGc1MYdsIxU92ADx0j6PgL6EG_d5V0zzFB7JxHxBHA,18243
+momlib/_matrix.py,sha256=t8Jqqp7nCEI-mDxk3EqdcEaAxFKwo_z_Zhj24R2XoeY,19853
+momlib/_vector.py,sha256=1gpF1fngCazcJ-kz7Li06XdUt34JUyl-OFDItWaFJq0,15357
+momlib-0.0.6.dist-info/LICENSE.md,sha256=UwMp8LBfCUpKhzfymTi-eUuVXTn1UXXfBoCPfFE3j7s,1515
+momlib-0.0.6.dist-info/METADATA,sha256=VMWjRI1SbpMMbwEv5ZdtF1cqhOpi6iitT_YH_uAYp5E,2972
+momlib-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+momlib-0.0.6.dist-info/top_level.txt,sha256=5TUae6fkGB4VyoxV27zJwHWuNVExYDK5MEQwWhVmrZM,7
+momlib-0.0.6.dist-info/RECORD,,
