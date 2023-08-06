@@ -1,0 +1,20 @@
+name: mplsoccer
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cmasher
+  - jupyter
+  - lxml
+  - pandas
+  - pillow
+  - pyarrow
+  - requests
+  - scipy
+  - seaborn
+  - pip
+  - pip:
+      - adjustText
+      - highlight-text
+      - kloppy
+      - mplsoccer

@@ -1,0 +1,7 @@
+matplotlib
+numpy
+seaborn
+scipy
+pandas
+requests
+Pillow

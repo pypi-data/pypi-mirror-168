@@ -1,0 +1,28 @@
+name: mplsoccer-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cmasher
+  - grayskull
+  - hatch
+  - jupyterlab
+  - lxml
+  - numpydoc
+  - pandas
+  - pillow
+  - pyarrow
+  - pylint
+  - requests
+  - scipy
+  - seaborn
+  - sphinx
+  - sphinx-gallery
+  - sphinx_rtd_theme
+  - pip
+  - pip:
+      - --editable .
+      - adjustText
+      - highlight-text
+      - kloppy
+      - pytest
