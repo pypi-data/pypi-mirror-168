@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: check_link
+Version: 0.0.10
+Summary: Check if URL is available
+Home-page: https://github.com/DataShades/check-link
+Author: Sergey Motornyuk
+Author-email: sergey.motornyuk@linkdigital.com.au
+License: AGPL
+Keywords: URL,validator,HTTP
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: faster
+Provides-Extra: cli
+Provides-Extra: dev
