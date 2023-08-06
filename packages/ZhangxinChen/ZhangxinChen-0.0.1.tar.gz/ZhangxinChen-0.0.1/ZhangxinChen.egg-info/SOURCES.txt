@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ZhangxinChen.egg-info/PKG-INFO
+ZhangxinChen.egg-info/SOURCES.txt
+ZhangxinChen.egg-info/dependency_links.txt
+ZhangxinChen.egg-info/top_level.txt
