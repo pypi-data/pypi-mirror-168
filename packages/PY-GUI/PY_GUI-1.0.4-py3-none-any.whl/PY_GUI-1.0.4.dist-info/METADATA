@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: PY-GUI
+Version: 1.0.4
+Summary: Create a pygame session for specific functions
+Home-page: https://github.com/donno2048/PY-GUI
+Author: Elisha Hollander
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame (>=2.0.0)
+Requires-Dist: pygame-gui (>=0.5.7)
+
+# PY-GUI
+
+Create a pygame session for specific functions
+
+## install
+
+From PyPI:
+
+`pip3 install PY_GUI`
+
+From GitHub:
+
+`pip3 install git+https://github.com/donno2048/PY-GUI`
+
+## Usage
+
+You can use the demo one by running:
+
+```bat
+python3 -m PY_GUI
+```
+
+Or just `PY-GUI` in the cmd
+
+Or you can run a custom one from within Python, for example:
+
+```py
+from PY_GUI import Main
+def parse(text: str) -> str:
+  return text
+Main(parse, name = "Cat program")
+```
