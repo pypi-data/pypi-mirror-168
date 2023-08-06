@@ -1,0 +1,2 @@
+[console_scripts]
+hotweb = hotweb_cli.cli:main
