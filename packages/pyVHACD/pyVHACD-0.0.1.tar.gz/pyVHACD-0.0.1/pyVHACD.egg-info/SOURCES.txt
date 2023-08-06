@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyVHACD.egg-info/PKG-INFO
+pyVHACD.egg-info/SOURCES.txt
+pyVHACD.egg-info/dependency_links.txt
+pyVHACD.egg-info/not-zip-safe
+pyVHACD.egg-info/requires.txt
+pyVHACD.egg-info/top_level.txt
+src/pyVHACD/main.cpp
