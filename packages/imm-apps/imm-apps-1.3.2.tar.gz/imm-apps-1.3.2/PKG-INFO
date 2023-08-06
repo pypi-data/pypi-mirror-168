@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: imm-apps
+Version: 1.3.2
+Summary: A python client library used to describe program model and get validated data.
+Home-page: UNKNOWN
+Author: Jacky Zhang
+Author-email: jackyzhang1969@gmail.com
+License: UNKNOWN
+Keywords: Canada,Immigration,Case,Programs,APIs,Assess,web,form,programtically filling
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+## Modules
+### server
+
+#### API
+- api: For all API modules 
+#### modules
+- bcpnp: BCPNP applications
+- lmia: LMIA applications
+- pr: PR applications
+- tr: TR applications
+#### system
+- data: all excel, pdf,word templates, etc...  used by the system
+- doc: docs, but did not do it so far
+- system: config and models index
+### client
+- client: apps used in terminal with http accessing to api
+- local: apps used in terminal with local accessing to modules
+### source
+- source: excel app
+- basemodels: all fundemental models
+- utils
+### test
+- tests: test apps
+
