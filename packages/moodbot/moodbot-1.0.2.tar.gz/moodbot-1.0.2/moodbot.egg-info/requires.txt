@@ -1,0 +1,3 @@
+requests
+nltk~=3.7
+datetime
