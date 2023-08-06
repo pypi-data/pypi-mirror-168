@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+Models_Task.egg-info/PKG-INFO
+Models_Task.egg-info/SOURCES.txt
+Models_Task.egg-info/dependency_links.txt
+Models_Task.egg-info/top_level.txt
+Modelsss/Models.py
+Modelsss/__init__.py
