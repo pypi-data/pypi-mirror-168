@@ -1,0 +1,2 @@
+[console_scripts]
+nca = nca.nca_cli:nca_main
