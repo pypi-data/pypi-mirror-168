@@ -1,0 +1,7 @@
+numpy
+rdkit
+pandas
+matplotlib
+POT
+networkx
+py3Dmol

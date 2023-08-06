@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: packaging-tutorial-Monica0-01
+Version: 0.0.4
+Summary: utils for myself
+Home-page: https://github.com/pypa/sampleproject
+Author: zhangzimei
+Author-email: author@example.com
+License: MIT
+Description: # 2022年9月22日  setup中加入了需要的依赖包
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
