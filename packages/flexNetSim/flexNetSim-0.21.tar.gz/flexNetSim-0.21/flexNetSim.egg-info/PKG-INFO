@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: flexNetSim
+Version: 0.21
+Summary: Python Package of Event-Oriented Simulation for Flexible Grid Optical Networks
+Home-page: https://gitlab.com/DaniloBorquez/flex-net-sim-python/
+Author: Gonzalo España, Danilo Bórquez-Paredes
+Author-email: danilo.borquez.p@uai.cl
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
