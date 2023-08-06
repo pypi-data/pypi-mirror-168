@@ -1,0 +1,52 @@
+# Changelog
+
+## [1.4.3] - 2022-09-08
+### Added
+- Fields: Preserve Value option added
+- Push: Push/Upload command activated for extensions. This command will execute uip command for pushing.
+- Pull: Pull/Download command activated for extensions. This command will execute uip command for pushing.
+
+## [1.4.4] - 2022-09-08
+### Added
+- Clean: Clean command added to delete the dist,build and temp folders
+
+## [1.5.0] - 2022-09-09
+### Added
+- Version: display and update version feature added. Developers can update the version for minor, major or release 
+           and it will automatically update all possible versions.
+
+## [1.5.1] - 2022-09-09
+## Fixed
+- dependencies for yaml fixed
+
+## [1.5.3] - 2022-09-09
+## Fixed
+- ".py" extension added to script file names (template only)
+- --rename_script option added to update command
+
+## [1.5.4] - 2022-09-13
+[1.5.4]: https://pypi.org/project/quip-cli/1.5.4/
+## Added
+- script.yml file will be updated for new templates and update command
+
+## [1.6.0] - 2022-09-14
+[1.6.0]: https://pypi.org/project/quip-cli/1.6.0/
+## Added
+- Version files now support wildcard like "*" and "?"
+- Updating version will create backup files with prefix: "." 
+- Extension build command will rename the zip file with the same format as the UAC
+
+## [1.6.2] - 2022-09-23
+[1.6.2]: https://pypi.org/project/quip-cli/1.6.2/
+## Added
+- Dump fields will also dump template main fields
+- `quip fields` command will run update by default
+- update-sysid will update all the sysId fields without checking the old value.
+
+
+
+[1.4.3]: https://pypi.org/project/quip-cli/1.4.3/
+[1.4.4]: https://pypi.org/project/quip-cli/1.4.4/
+[1.5.0]: https://pypi.org/project/quip-cli/1.5.0/
+[1.5.1]: https://pypi.org/project/quip-cli/1.5.1/
+[1.5.3]: https://pypi.org/project/quip-cli/1.5.3/
