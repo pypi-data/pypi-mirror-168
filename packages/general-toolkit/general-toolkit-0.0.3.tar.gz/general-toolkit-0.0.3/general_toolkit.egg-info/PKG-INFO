@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: general-toolkit
+Version: 0.0.3
+Summary: A General Utility
+Home-page: https://github.com/mukulbindal/general_toolkit
+Author: old_quetzal
+Author-email: mukulbindal170299@gmail.com
+Project-URL: Bug Tracker, https://github.com/mukulbindal/general_toolkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+A genaral project aiming for cosnsolidating different functionalites under one global package.
+
+Currently we support :
+    AI 
+    | ---- Document
+
+ 
