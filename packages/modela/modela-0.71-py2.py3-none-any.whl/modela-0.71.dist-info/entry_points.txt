@@ -1,0 +1,3 @@
+[console_scripts]
+modela = modela.cli:main
+
