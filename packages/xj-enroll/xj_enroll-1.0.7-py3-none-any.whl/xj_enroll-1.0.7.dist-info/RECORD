@@ -1,0 +1,14 @@
+xj_enroll/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xj_enroll/admin.py,sha256=khJGc0_VdqCaGQ5ZA2QIU6i3Ttbt1o5WBWhNcBRnqlw,1761
+xj_enroll/apis.py,sha256=dc-A7WXwwVG1qE5TIOXA66pQNvDaWnK8oKJIeRnUoTY,611
+xj_enroll/apps.py,sha256=J-fGuuBHV0hoObe5qOV6h-rGdMFemgH2NeFxL73kd3I,188
+xj_enroll/models.py,sha256=moB-u0Juumf1w8cPD0XeeXbR5LYfLbYq3xQdHj_M8JM,17900
+xj_enroll/serializers.py,sha256=5lt5EBOjKAT1Rzs1b2iBEMaulP8dxWG923Qakbgq_hk,528
+xj_enroll/services.py,sha256=-TeEB8bfWYaSS8wuMLBC-B9_945GnhzqGvlfoEvS2MM,1788
+xj_enroll/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+xj_enroll/urls.py,sha256=bugiZzXsq33KAPnw3X8f-ZjOZpA1-u1HLTLv1vCY2fA,1399
+xj_enroll/views.py,sha256=nbptV3yV5mXR6rKQQewbAtAJQSqp-H7i5LV3aEft4nk,1896
+xj_enroll-1.0.7.dist-info/METADATA,sha256=IT_rvIY3F0bCaquBD2KWqi9tVLHKdpAUjiO8tdrr1sU,1592
+xj_enroll-1.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xj_enroll-1.0.7.dist-info/top_level.txt,sha256=yC7-k3KGhzIvUDNb7LQLPJhlKLgUdA8ugtGLFDk3UoI,10
+xj_enroll-1.0.7.dist-info/RECORD,,
