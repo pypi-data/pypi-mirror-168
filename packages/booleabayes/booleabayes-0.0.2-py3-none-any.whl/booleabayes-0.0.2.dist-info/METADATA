@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: booleabayes
+Version: 0.0.2
+Summary: A suite for network inference from transcriptomics data
+Home-page: https://github.com/smgroves/BooleaBayes
+Author: Sarah Groves
+Author-email: sarahmaddoxgroves@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: seaborn
+Requires-Dist: anndata
+Requires-Dist: leidenalg
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: umap-learn
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: cython
+Requires-Dist: numba
+Requires-Dist: scikit-learn
+Requires-Dist: h5py
+Requires-Dist: click
+Requires-Dist: magic-impute
+Requires-Dist: networkx
+
+BooleaBayes
+-------------------------------------------------------
+
+[![PyPI version](https://badge.fury.io/py/booleabayes.svg)](https://badge.fury.io/py/booleabayes)
+
+BooleaBayes is a suite of network inference tools to derive and simulate gene regulatory networks from transcriptomics data. To see how BooleaBayes could be applied to your own data, see our publication in PLOS Computational Biology, [Wooten, Groves et al. (2019)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007343).
+
+## Installation
+To install `BooleaBayes`, use `pip install booleabayes`.
+
+
+### Dependencies
+The `graph-tool` python package will need to be installed. This can be installed with `Conda`, `homebrew`, etc as seen [here](https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions). All other dependencies will be installed with this package.
