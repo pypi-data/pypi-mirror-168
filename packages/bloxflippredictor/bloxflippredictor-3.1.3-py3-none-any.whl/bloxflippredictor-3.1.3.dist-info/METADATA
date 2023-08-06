@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: bloxflippredictor
+Version: 3.1.3
+Summary: A package that predicts bloxflip games
+Home-page: UNKNOWN
+Author: xolo
+Author-email: robokidefe@gmail.com
+License: UNKNOWN
+Keywords: python,bloxflip,bloxflippredictor,predictor
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cloudscraper
+
+
+# bloxflippackage
+
+
+
+## Examples
+
+
+
+Crash
+
+```py
+
+import bloxflippredictor
+
+
+
+o = bloxflippredictor.crash
+
+varName = o.crashpredictor()
+
+#  varName returns a dict {{'crashchance': str(chance), 'crashprediction': str(prediction)}
+
+chance = varName[crashchance]
+
+prediction = varName[crashprediction]
+
+print(chance, prediction)
+
+```
+
+Mines
+
+```py
+
+import bloxflippredictor
+
+
+
+o = bloxflippredictor.mines
+
+output = o.minespredictor(tileo, bombs) # tileo = How many tiles the user wants to open  # bombs = how many bombs on the field
+
+print(output)
+
+```
+
+
+
+Towers
+
+```py
+
+import bloxflippredictor
+
+
+
+o = bloxflippredictor.towers
+
+output = o.towerspredictor()
+
+print(output)
+
+```
+
+
+
+Roulette
+
+```py
+
+import bloxflippredictor
+
+
+
+o = bloxflippredictor.roulette
+
+output = o.roulettepredictor()
+
+print(output)
+
+```
+
+
+
+
+
