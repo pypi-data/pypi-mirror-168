@@ -1,0 +1,17 @@
+uvc/__init__.py,sha256=LhpXx0szVooCUKN9G1XkvGFjnNMQRwWQcjgGMQ68ehU,384
+uvc/uvc_bindings.cpython-37m-x86_64-linux-gnu.so,sha256=Tux3tlSy4SdKXkZQrfqQjiku5dHBIuqGuMLBF3qEC5s,783520
+pupil_labs_uvc.libs/libcap-79733b59.so.2.22,sha256=LC4uoTM49e-E1u-EfFDS-ulD3y68YtNODRRuw-X_1Fo,25408
+pupil_labs_uvc.libs/libdw-0-780627ce.176.so,sha256=T7CrxWGgGnc6vlFuN94t7EKVuBHXJLaQJ2CbHSZbNkw,383184
+pupil_labs_uvc.libs/libelf-0-3d9de92a.176.so,sha256=vNXIM4StWXL1VShLrddETo8E5AInRNKngdY8BETcdzE,105720
+pupil_labs_uvc.libs/libusb-1-cfce97b9.0.so.0.3.0,sha256=bX1tAtjHehChRqCojhyPyuTBKafa7KqOyRVBzODNCBE,544664
+pupil_labs_uvc.libs/libbz2-a273e504.so.1.0.6,sha256=rG90qT6zByoD_7GEoC9BGhcYmz84nAlVGMxs0ts9bqw,70992
+pupil_labs_uvc.libs/libattr-4f2a9577.so.1.1.0,sha256=B2FUS3_CrqK0NtDxWShfhzS8lNm5yz723oSxjM_fpAo,21456
+pupil_labs_uvc.libs/libudev-8edd2273.so.1.6.2,sha256=0qoaaay_bsSf_WLcT2wXynAc75-SNDr11GMR9FsY1w4,110040
+pupil_labs_uvc.libs/libturbojpeg-b0d62aca.so.0.1.0,sha256=c5j3QmaiVsSJI3KerKvzKA0seQiUSeJmhSDc4J9go-w,623928
+pupil_labs_uvc.libs/libuvc-e5c02dfc.so.0.1.0,sha256=vRbA06H2r2aSvJMOx3_ibM3oUnTAQ_IbhdoN2EdWda8,107424
+pupil_labs_uvc.libs/liblzma-004595ca.so.5.2.2,sha256=uBYgw3aPH1qysw-Huk3--_U9lrgRLm3YRPLN0yz4p28,163472
+pupil_labs_uvc-1.0.0b5.dist-info/top_level.txt,sha256=yZoTLK2U-GEMmSbXwuzQ8zBv0xII25fXNBX_G0p_KP4,4
+pupil_labs_uvc-1.0.0b5.dist-info/WHEEL,sha256=iNSokIXdZ7LbUgSLS-2ovAvRzvjVxPJbX-INDWwzFPM,144
+pupil_labs_uvc-1.0.0b5.dist-info/METADATA,sha256=TtBoAaheIwcP0rRdl3POjJ4ZUiNXDa4pqXj7xA2WpmA,5509
+pupil_labs_uvc-1.0.0b5.dist-info/RECORD,,
+pupil_labs_uvc-1.0.0b5.dist-info/LICENSE,sha256=om3RlSD6mRhZAqmFamNvtGoeYGS0mUjZD39RaIgwlfM,2797
