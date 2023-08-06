@@ -1,0 +1,11 @@
+drf_versioned_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_versioned_models/apps.py,sha256=MdrFBH9JH15-7DvdVEJfN7rwDMUcVFHmSaxKNCK-H4s,113
+drf_versioned_models/models.py,sha256=4ceiu_d1H9kFpd8w7o6wktON6skPgwi-CJ7PDgGjWB4,3939
+drf_versioned_models/routers.py,sha256=0QjCWb-mdHgorpLlMQ9ZbhxmMSqB_AsHH9ZzWjPHPWY,321
+drf_versioned_models/serializers.py,sha256=cxGmRzcuH291R9Z8Yq_RMhgux_4rMzAoKP97iEemrVg,7194
+drf_versioned_models/viewsets.py,sha256=ikZ8kiWiXOFQIWaE3oSRRDgEW1xfsFlK0Pmj_PJJJbY,321
+drf_versioned_models-0.1.0b4.dist-info/LICENSE,sha256=TeV6gr-cbhSANiQY6hKUD7K5pcqKrQgKetlWmLevDvc,1522
+drf_versioned_models-0.1.0b4.dist-info/METADATA,sha256=G6JMMYJmZcUvkppDIPUFcO32eGyLIVYzEG71Zgl3fb8,690
+drf_versioned_models-0.1.0b4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+drf_versioned_models-0.1.0b4.dist-info/top_level.txt,sha256=m224PgQxZicAz-OFTnXYbAIyFBJHgwhuveVtJcEdRVo,21
+drf_versioned_models-0.1.0b4.dist-info/RECORD,,

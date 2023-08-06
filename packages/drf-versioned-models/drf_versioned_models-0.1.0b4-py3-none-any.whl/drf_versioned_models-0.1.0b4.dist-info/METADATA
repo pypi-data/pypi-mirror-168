@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: drf-versioned-models
+Version: 0.1.0b4
+Summary: Versioned models support for Django REST Framework
+Author-email: "QuantTide Inc." <opensource@quanttide.com>
+License: BSD 3-Clause License
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django (>=3.0)
+Requires-Dist: djangorestframework (>=3.0)
+Requires-Dist: drf-nested-routers
+
+# `drf-versioned-models`
+
+Versioned models for Django REST Framework.
+
+## Installation
+
+```shell
+pip install drf-versioned-models
+```
+
+## Usage
+
+```python
+
+```
+
+## License
+
+[BSD 3-Clause License](LICENSE)
