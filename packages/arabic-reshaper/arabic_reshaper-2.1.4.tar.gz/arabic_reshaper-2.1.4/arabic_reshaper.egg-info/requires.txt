@@ -1,0 +1,12 @@
+future
+
+[:python_version < "3"]
+configparser
+
+[with-fonttools]
+
+[with-fonttools:python_version < "3"]
+fonttools<4.0,>=3.0
+
+[with-fonttools:python_version >= "3"]
+fonttools>=4.0
