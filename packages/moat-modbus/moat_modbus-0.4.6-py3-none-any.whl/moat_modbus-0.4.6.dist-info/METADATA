@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: moat-modbus
+Version: 0.4.6
+Summary: Modular async modbus client and server
+Author-email: Matthias Urlichs <matthias@urlichs.de>
+Project-URL: homepage, https://m-o-a-t.org
+Project-URL: repository, https://github.com/M-o-a-T/moat-modbus
+Keywords: MoaT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Trio
+Classifier: Framework :: AnyIO
+Classifier: License :: OSI Approved
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: anyio-serial
+Requires-Dist: anyio (~=3.0)
+Requires-Dist: moat-util
+Requires-Dist: pymodbus
+
+###########
+moat-modbus
+###########
+
+This is an anyio-enabled async frontend for pymodbus.
+
++++++
+Usage
++++++
+
+Check the example client and server for rudimentary usage.
+
+Documentation patches gladly accepted.
+
+++++++++++
+Background
+++++++++++
+
+`moat-modbus` diverges from `pymodbus` in that it does not expose a data
+store, context to the user. Instead, every bus value is a separate object,
+with arbitrary length and encapsulating its encoding and decoding rules.
+
+A Modbus server exposing writeable registers only needs to
+
+* register the value in question
+
+* wait for it to be written to
+
+The rest happens behind the scenes.
+
