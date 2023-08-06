@@ -1,0 +1,8 @@
+[console_scripts]
+tjdev_export=tjutils.nbdev:export
+tjdev_generate=tjutils.nbdev:generate
+tjdev_nbdev_gha=tjutils.nbdev:github_actions
+tjdev_nbdev_gitignore=tjutils.nbdev:gitignore
+tjdev_release=tjutils.nbdev:release
+tjdev_version=tjutils.nbdev:version
+
