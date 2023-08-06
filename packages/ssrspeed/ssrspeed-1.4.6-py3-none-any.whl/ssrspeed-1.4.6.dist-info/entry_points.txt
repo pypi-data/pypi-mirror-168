@@ -1,0 +1,2 @@
+[console_scripts]
+ssrspeed = ssrspeed.__main__:main
