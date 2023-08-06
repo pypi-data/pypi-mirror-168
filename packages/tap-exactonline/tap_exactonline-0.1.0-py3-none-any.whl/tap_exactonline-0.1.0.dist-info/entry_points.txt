@@ -1,0 +1,3 @@
+[console_scripts]
+tap-exactonline=tap_exactonline.tap:TapExactOnline.cli
+
