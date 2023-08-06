@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyVHACD
+Version: 0.0.1
+Summary: Python bindings for VHACD
+Home-page: https://github.com/thomwolf/pyVHACD
+Author: Thomas Wolf
+Author-email: thomas@huggingface.co
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pybind11 (>=2.2)
+
+Python bindings for VHACD
+
