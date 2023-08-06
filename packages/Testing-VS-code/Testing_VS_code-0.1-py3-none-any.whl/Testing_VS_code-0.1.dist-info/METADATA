@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Testing-VS-code
+Version: 0.1
+Summary: This package is used to check if a string is a palindrome or not.
+Home-page: UNKNOWN
+Author: Shourya Chandra Sai
+Author-email: shouryareddy306@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
+UNKNOWN
+
