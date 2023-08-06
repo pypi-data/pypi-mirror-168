@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: treelabOpssdk
+Version: 0.0.1
+Summary: treelab运维SDK
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GPLv3
+Description: SDK of the operation and maintenance script logs operate
+Keywords: ops,opencodo,devops
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
