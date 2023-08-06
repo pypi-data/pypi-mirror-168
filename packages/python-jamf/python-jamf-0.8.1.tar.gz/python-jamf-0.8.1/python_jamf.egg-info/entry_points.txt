@@ -1,0 +1,3 @@
+[console_scripts]
+conf-python-jamf = jamf.setconfig:main
+
