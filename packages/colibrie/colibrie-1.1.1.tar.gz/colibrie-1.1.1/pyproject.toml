@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "colibrie"
+version = "1.1.1"
+description = "Colibrie is a blazing fast repository to extract tables from PDF files"
+authors = ["Alexandre Bitoun <alexandre.bitoun@outlook.fr>"]
+readme = "README.md"
+license = "AGPL-3.0-only"
+repository="https://github.com/abitoun-42/colibrie"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+Cython = "^0.29.32"
+PyMuPDF = "^1.20.2"
+numpy = "^1.23.3"
+pandas = "^1.5.0"
+Pillow = "^9.2.0"
+ailist = "^1.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
