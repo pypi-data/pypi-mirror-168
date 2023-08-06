@@ -1,0 +1,14 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+dj_email_url.py
+setup.cfg
+setup.py
+LICENSES/BSD-2-Clause.txt
+LICENSES/CC-BY-4.0.txt
+LICENSES/CC0-1.0.txt
+dj_email_url.egg-info/PKG-INFO
+dj_email_url.egg-info/SOURCES.txt
+dj_email_url.egg-info/dependency_links.txt
+dj_email_url.egg-info/not-zip-safe
+dj_email_url.egg-info/top_level.txt
