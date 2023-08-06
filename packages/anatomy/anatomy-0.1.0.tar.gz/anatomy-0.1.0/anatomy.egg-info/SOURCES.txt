@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+anatomy/__init__.py
+anatomy/_algorithm.py
+anatomy/_base.py
+anatomy/_models.py
+anatomy/_subsets.py
+anatomy.egg-info/PKG-INFO
+anatomy.egg-info/SOURCES.txt
+anatomy.egg-info/dependency_links.txt
+anatomy.egg-info/requires.txt
+anatomy.egg-info/top_level.txt
