@@ -1,0 +1,6 @@
+click
+rich
+inquirerpy
+
+[dev]
+black==22.*
