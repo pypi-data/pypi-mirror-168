@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: moodbot
+Version: 1.0.1
+Summary: Mood adaptive chatbot
+Home-page: https://github.com/wa1ker38552/moodbot
+Author: walker
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+<h1>MoodBot</h1>
+
+moodbot is a mood adaptive chatbot that trains off data.
