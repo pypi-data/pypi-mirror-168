@@ -1,0 +1,11 @@
+tkitAutoRewriter/__init__.py,sha256=FWpBwb3np1sFVOzdMmk6oqP1b5W12XwEPcu1NlQsBWo,208
+tkitAutoRewriter/api.py,sha256=8i-Y0N2itkwSV3apWViVJZh_DcQcEUfdb9Ugvu8W0V0,30750
+tkitAutoRewriter/cut.py,sha256=yP-yAcPzFQvfz6NBbwUej0w-kp1yRU0Mob-3bCJz3r0,1394
+tkitAutoRewriter/diff.py,sha256=IRqWJrQdd9ur_jq17AYNay6t4XECJqzp5OMevdKJrc8,1279
+tkitAutoRewriter/rewriter.py,sha256=IvqVABjMgiWFilh6Y4hCbRXVKiGe1wO9ZGp4-qJXSDs,1078
+tkitAutoRewriter/test_text_rewrite_.py,sha256=p_BZKFf0l-zSXjdxSsmEI_j7J7OxwwE1oejmQeUSRbg,3950
+tkitAutoRewriter/text_tilling.py,sha256=YXzdWZzJaIFJ9-1cw-CFzVcm6LafBrdc5aiVYb6IRRA,1715
+tkitAutoRewriter-0.0.0.516636566.dist-info/METADATA,sha256=BoTT9Q3WmNoz33ErLV_sKBd4qjgVwCR00mMXdy7_7c0,9242
+tkitAutoRewriter-0.0.0.516636566.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tkitAutoRewriter-0.0.0.516636566.dist-info/top_level.txt,sha256=O102HReAL1UEnal2KG8GcG_Ui18IOY8RgNJFg0IANBM,17
+tkitAutoRewriter-0.0.0.516636566.dist-info/RECORD,,
