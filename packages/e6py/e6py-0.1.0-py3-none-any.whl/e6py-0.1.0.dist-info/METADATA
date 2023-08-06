@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: e6py
+Version: 0.1.0
+Summary: An e621 API wrapper
+Home-page: https://github.com/e6py/e6py
+Author: zevaryx
+Author-email: zevaryx@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Documentation
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2022.9.14) ; python_version >= "3.10" and python_version < "4"
+Requires-Dist: charset-normalizer (==2.1.1) ; python_version >= "3.10" and python_version < "4"
+Requires-Dist: idna (==3.4) ; python_version >= "3.10" and python_version < "4"
+Requires-Dist: requests (==2.28.1) ; python_version >= "3.10" and python_version < "4"
+Requires-Dist: urllib3 (==1.26.12) ; python_version >= "3.10" and python_version < "4"
+Requires-Dist: attrs (==22.1.0) ; python_version >= "3.10" and python_version < "4.0"
+Requires-Dist: sentinel (==1.0.0) ; python_version >= "3.10" and python_version < "4.0"
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# e6py
+
+`e6py` is an API wrapper for e621/e926
+
+## Requirements
+
+- Python 3.10
+- requests >= 2.26.0
+- attrs >= 21.2.0
+
+## Usage
+
+```py
+from e6py import E621Client
+
+client = E621Client(login="username", api_key="API Key")
+posts = client.get_posts()
+
+for post in posts:
+    print(f"Got post {post.id}")
+    print(f"  Rating: {post.rating}")
+    print(f"   Score: {post.score}")
+    print(f"     URL: {post.file.url}")
+```
