@@ -1,0 +1,6 @@
+dist/
+data/
+env/
+.env/
+__pycache__/
+touchmain.ui.autosave

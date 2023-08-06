@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tptool"
+version = "0.0.3"
+requires-python = ">=3.7"
+authors = [
+  { name="Bob Lee", email="libo@espressif.com" },
+]
+description = "ESP32 Touchpad Debugging Tool"
+readme = "README.md"
+license-files = { paths = ["LICENSE.txt"] }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+]
+dependencies = [
+  "PySide2",
+  "pyserial",
+  "pyqtgraph",
+  "numpy",
+]
+
+[project.urls]
+"Homepage" = "https://esp32.com/viewtopic.php?f=22&t=29065"
+"Bug Tracker" = "https://esp32.com/viewtopic.php?f=22&t=29065"

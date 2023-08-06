@@ -1,0 +1,7 @@
+# This is a list of python packages needed for ESP-IDF. This file is used with pip.
+# Please see the Get Started section of the ESP-IDF Programming Guide for further information.
+#
+PySide2
+pyserial
+pyqtgraph
+numpy
