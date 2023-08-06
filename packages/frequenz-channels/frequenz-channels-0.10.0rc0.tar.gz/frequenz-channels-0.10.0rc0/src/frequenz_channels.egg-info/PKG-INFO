@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: frequenz-channels
+Version: 0.10.0rc0
+Summary: Channel implementations for Python
+Author-email: Frequenz Energy-as-a-Service GmbH <floss@frequenz.com>
+License: MIT
+Project-URL: Changelog, https://github.com/frequenz-floss/frequenz-channels-pytyhon/releases
+Project-URL: Repository, https://github.com/frequenz-floss/frequenz-channels-pytyhon
+Project-URL: Issues, https://github.com/frequenz-floss/frequenz-channels-pytyhon/issues
+Project-URL: Support, https://github.com/frequenz-floss/frequenz-channels-pytyhon/discussions/categories/support
+Keywords: frequenz,channel
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Frequenz channels
+
+This repository contains channel implementations for python.
+
+## Contributing
+
+If you want to know how to build this project and contribute to it, please
+check out the [Contributing
+Guide](https://github.com/frequenz-floss/frequenz-channels/CONTRIBUTING.md).
