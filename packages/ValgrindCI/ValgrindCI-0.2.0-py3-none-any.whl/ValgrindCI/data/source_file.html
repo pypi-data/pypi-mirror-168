@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ source_file_name }}</title>
+    <link href='valgrind.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+    <script src="valgrind.js"></script>
+</head>
+
+<body>
+    <div class="global">
+        <div class="header">
+            <h1>{{ source_file_name }}</h1>
+            <p><b>{{ num_errors }}</b> errors</p>
+            <button class="next_error">Goto First Error</button>
+        </div>
+        <div class="listing">
+            <pre class="code">
+<code class="c++">
+{%- set ns = namespace(first_error=true) %}
+{% for item in codelines %}
+    {% if item.klass == "error" %}
+</code></pre>
+            <div class="issue">
+                <div>
+                    <span class="what">{{ item.issue.what }}</span>
+                    <div class="navigation">
+                        <button class="next_error">Next</button>
+                        <button class="prev_error">Previous</button>
+                    </div>
+                </div>
+                <div>
+                    <table class="call_stack">
+                        {% for frame in item.issue.stack %}
+                        <tr class="stack_frame">
+                            <td class="ui-corner-all ui-widget">
+                                <div class="ui-widget-header">
+                                    {{ frame.fileref }}<br>
+                                    <code class="cpp">{{ frame.function }}</code>
+                                </div>
+                                <pre><code class="c++">
+                        {%- for codeline in frame.code -%}
+<span class="line_number">{{ loop.index + frame.line }}</span>
+                        {%- if loop.index == frame.error_line -%}
+<span class="error">{{ codeline }}</span>
+                            {%- else -%}
+{{ codeline }}
+                            {%- endif %}
+                        {% endfor -%}
+</code></pre>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+            <pre class="code">
+<code class="c++"><span class="line_number">{{ loop.index }}</span><span class="error">{{item.line}}</span>
+    {% else %}
+<span class="line_number">{{ loop.index }}</span>{{item.line}}
+    {% endif %}
+{% endfor -%}
+</code>
+            </pre>
+        </div>
+    </div>
+</body>
+
+</html>
