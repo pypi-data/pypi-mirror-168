@@ -1,0 +1,2 @@
+[console_scripts]
+PY-GUI = PY_GUI.__main__:main

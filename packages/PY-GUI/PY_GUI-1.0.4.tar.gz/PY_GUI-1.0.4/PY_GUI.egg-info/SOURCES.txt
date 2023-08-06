@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PY_GUI/__init__.py
+PY_GUI/__main__.py
+PY_GUI.egg-info/PKG-INFO
+PY_GUI.egg-info/SOURCES.txt
+PY_GUI.egg-info/dependency_links.txt
+PY_GUI.egg-info/entry_points.txt
+PY_GUI.egg-info/requires.txt
+PY_GUI.egg-info/top_level.txt
