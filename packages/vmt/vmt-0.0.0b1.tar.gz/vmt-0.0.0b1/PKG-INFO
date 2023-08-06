@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vmt
+Version: 0.0.0b1
+Summary: Video Media Tracker. Local, and simple method for watching and tracking a video media library.
+License: GNU General Public License v3 (GPLv3)
+Project-URL: repository, https://codeberg.org/johndovern/vmt
+Keywords: mpv
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vmt
+
+Video Media Tracker (vmt). Keep track of your shows by tracking your last
+watched episodes and a log of your last N shows. Use dmenu, fzf, or rofi to
+pick a show or episode to watch.
+
+More info e.g. usage etc. at https://codeberg.org/johndovern/vmt
