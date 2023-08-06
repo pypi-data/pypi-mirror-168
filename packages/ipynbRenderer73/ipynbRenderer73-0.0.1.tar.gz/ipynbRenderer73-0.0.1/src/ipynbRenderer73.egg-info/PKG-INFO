@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ipynbRenderer73
+Version: 0.0.1
+Summary: A small python package
+Home-page: https://github.com/entbappy/IPYNB-Renderer-Pypi-Package
+Author: entbappy
+Author-email: entbappy73@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/entbappy/IPYNB-Renderer-Pypi-Package/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: testing
+License-File: LICENSE
+
+# This is a IPYNB RENDERER Pypi package
