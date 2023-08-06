@@ -1,0 +1,6 @@
+gdal >=3.4.3
+loguru >=0.6.0
+matplotlib >=3.5.3
+pandas >=1.4.4
+pyramids-gis >=0.2.4
+statista >=0.1.5
