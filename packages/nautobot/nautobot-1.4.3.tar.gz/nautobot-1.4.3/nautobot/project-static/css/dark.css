@@ -1,0 +1,27 @@
+/* Layout */
+
+/* Inverts all colors with a slight offset to use as a dark mode. Overrides are below */
+html[data-theme="dark"] {
+  background: rgb(12, 12, 12);
+  filter: invert(1) hue-rotate(180deg);
+}
+/* Double-invert the following elements, restoring them to the original non-inverted colors */
+html[data-theme="dark"] img,
+html[data-theme="dark"] .badge,
+html[data-theme="dark"] button,
+html[data-theme="dark"] .btn,
+html[data-theme="dark"] .label,
+html[data-theme="dark"] .color-block,
+html[data-theme="dark"] .select2-selection__choice,
+html[data-theme="dark"] #select2-id_color-results,
+html[data-theme="dark"] #select2-id_color-container {
+  filter: invert(1) hue-rotate(180deg);
+}
+/* Labels in API Swagger docs */
+html[data-theme="dark"] .opblock-summary-method {
+  color: black !important;
+}
+/* Version stamp in API Swagger docs */
+html[data-theme="dark"] .version {
+  color: black !important;
+}
