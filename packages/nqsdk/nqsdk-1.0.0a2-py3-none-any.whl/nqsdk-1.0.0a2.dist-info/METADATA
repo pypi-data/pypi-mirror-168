@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nqsdk
+Version: 1.0.0a2
+Summary: NQ SDK
+Author-email: "Inqana Ltd." <develop@inqana.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsonschema (>=4.15)
+Requires-Dist: pytz
+Requires-Dist: requests (>=2.28)
+
+# NQ SDK
+
+## Dummy Provider
+
+Dummy provider is a dummy implementation of NQ Provider Interface.
+
+You can find it at `dummy/provider.py`.

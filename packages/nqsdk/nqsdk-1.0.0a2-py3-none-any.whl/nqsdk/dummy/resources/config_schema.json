@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NQ Dummy Provider",
+  "description": "NQ Dummy provider schema",
+  "type": "object",
+  "properties": {
+    "callback_url_param": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "auth_header_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "auth_token": {
+      "type": "string",
+      "minLength": 1
+    },
+    "send_url": {
+      "$ref": "#/definitions/saneUrl"
+    },
+    "delivery_check_url": {
+      "$ref": "#/definitions/saneUrl"
+    },
+    "delivery_check_url_method": {
+      "$ref": "#/definitions/methods"
+    },
+    "ack_check_url": {
+      "$ref": "#/definitions/saneUrl"
+    },
+    "ack_url_method": {
+      "$ref": "#/definitions/methods"
+    },
+    "health_check_url": {
+      "$ref": "#/definitions/saneUrl"
+    },
+    "health_check_url_method": {
+      "$ref": "#/definitions/methods"
+    },
+    "balance_get_url": {
+      "$ref": "#/definitions/saneUrl"
+    },
+    "balance_get_url_method": {
+      "$ref": "#/definitions/methods"
+    }
+  },
+  "definitions": {
+    "saneUrl": {"format": "uri", "pattern": "^https?://"},
+    "methods": {
+      "type": "string",
+      "enum": ["post", "get"]
+    }
+  }
+}
