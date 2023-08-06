@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: substrafl
+Version: 0.29.0
+Summary: Federated Learning library
+Home-page: https://connect-docs.owkin.com/
+Author: Owkin, Inc.
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: substrafl
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
