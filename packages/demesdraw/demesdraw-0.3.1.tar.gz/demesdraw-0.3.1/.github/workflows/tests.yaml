@@ -1,0 +1,65 @@
+name: tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  canceller:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: cancel previous runs
+        uses: styfle/cancel-workflow-action@0.10.0
+        with:
+          access_token: ${{ github.token }}
+
+  tests:
+    defaults:
+      run:
+        shell: bash
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-20.04, windows-2022, macos-11]
+        python-version: [3.7, "3.10"]
+    env:
+      OS: ${{ matrix.os }}
+      PYTHON: ${{ matrix.python-version }}
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: install dependencies
+        run: |
+          python -m pip install \
+            -r requirements/minimal.txt \
+            -r requirements/test.txt
+
+      - name: install demesdraw
+        run: |
+          pip install .
+          demesdraw -h
+
+      - name: run pytest
+        run: |
+          python -m pytest \
+            -n auto \
+            --cov=demesdraw \
+            --cov-report=term-missing \
+            --cov-report=xml \
+            tests
+
+      - name: upload coverage report to codecov
+        uses: codecov/codecov-action@v3.1.0
+        with:
+          fail_ci_if_error: true
+          env_vars: OS,PYTHON
