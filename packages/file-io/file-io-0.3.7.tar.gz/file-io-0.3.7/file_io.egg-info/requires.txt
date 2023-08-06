@@ -1,0 +1,16 @@
+anyio
+aiofile
+fsspec
+loguru
+lazycls
+
+[cloud]
+gcsfs
+s3fs
+
+[gcs]
+gcsfs
+
+[s3]
+s3fs
+boto3
