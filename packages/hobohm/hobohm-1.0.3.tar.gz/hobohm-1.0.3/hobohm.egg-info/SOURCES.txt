@@ -1,0 +1,10 @@
+LICENSE
+README.md
+hobohm.py
+pyproject.toml
+setup.cfg
+hobohm.egg-info/PKG-INFO
+hobohm.egg-info/SOURCES.txt
+hobohm.egg-info/dependency_links.txt
+hobohm.egg-info/entry_points.txt
+hobohm.egg-info/top_level.txt
