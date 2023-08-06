@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: xia-meta-task
+Version: 0.1.0
+Summary: X-I-A Meta Task
+Home-page: https://develop.x-i-a.com/docs/xia-meta-task/0.1.0/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: flask
+Requires-Dist: xia-engine-firestore
+Requires-Dist: xia-meta
+
+.. image:: https://img.shields.io/pypi/v/xia-meta-task.svg
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-meta-task/
+
+====================================
+X-I-A Meta Task
+====================================
+
+Help workers to accomplish their tasks
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-meta-task
+
+
