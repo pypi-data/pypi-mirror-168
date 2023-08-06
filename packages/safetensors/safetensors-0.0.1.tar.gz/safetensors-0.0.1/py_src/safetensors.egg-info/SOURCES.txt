@@ -1,0 +1,17 @@
+.gitignore
+Cargo.toml
+README.md
+setup.py
+py_src/safetensors/__init__.py
+py_src/safetensors/flax.py
+py_src/safetensors/numpy.py
+py_src/safetensors/tensorflow.py
+py_src/safetensors/torch.py
+py_src/safetensors.egg-info/PKG-INFO
+py_src/safetensors.egg-info/SOURCES.txt
+py_src/safetensors.egg-info/dependency_links.txt
+py_src/safetensors.egg-info/not-zip-safe
+py_src/safetensors.egg-info/requires.txt
+py_src/safetensors.egg-info/top_level.txt
+src/lib.rs
+tests/test_simple.py

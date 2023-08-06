@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: safetensors
+Version: 0.0.1
+Summary: Fast and Safe Tensor serialization
+Home-page: https://github.com/huggingface/safetensors
+Author: 
+Author-email: 
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Provides-Extra: docs
+
+## Installation
+
+```
+pip install safetensors
+```
+
+
+## Usage
+
+### Numpy
+
+```python
+from safetensors.numpy import save_file, load_file
+import numpy as np
+
+tensors = {
+   "a": np.zeros((2, 2)),
+   "b": np.zeros((2, 3), dtype=np.uint8)
+}
+
+save_file(tensors, "./out.bin")
+
+
+# Now loading
+loaded = load_file("./out.bin")
+```
+
+### Torch
+
+```python
+from safetensors.torch import save_file, load_file
+import torch
+
+tensors = {
+   "a": torch.zeros((2, 2)),
+   "b": torch.zeros((2, 3), dtype=torch.uint8)
+}
+
+save_file(tensors, "./out.bin")
+
+
+# Now loading
+loaded = load_file("./out.bin")
+```
+
+
