@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: utils-nm
+Version: 0.2.0
+Summary: Package for personal utility operations
+Author-email: Nikola Maksimovic <nikola.maksimovic@outlook.com>
+License: Copyright 2022 Nikola Maksimovic
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://github.com/NikoMak/utils_nm
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+utils_nm
+--------
+
+This package contains utility objects like functions and classes.
+
+The following modules can be imported:
+- db_functions: functions for database operations
+- orm_models: sqlalchemy orm models for logging purposes of job executions
+- util_classes: useful classes
+- util_functions: useful functions
+- util_decorators: useful decorator functions, classes, factories
+
+To use (with caution), simply do:
+
+    >>> from src.utils_nm import util_functions as uf
+    >>> user_input = uf.input_prompt(name='arg', choices=('a', 'b'), default='a', enum=False)
