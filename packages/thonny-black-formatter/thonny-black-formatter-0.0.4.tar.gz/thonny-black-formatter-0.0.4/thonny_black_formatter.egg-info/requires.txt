@@ -1,0 +1,6 @@
+black
+
+[dev]
+pip-tools
+thonny
+bumpver

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+thonny_black_formatter.egg-info/PKG-INFO
+thonny_black_formatter.egg-info/SOURCES.txt
+thonny_black_formatter.egg-info/dependency_links.txt
+thonny_black_formatter.egg-info/requires.txt
+thonny_black_formatter.egg-info/top_level.txt
+thonnycontrib/black_formatter/__init__.py
