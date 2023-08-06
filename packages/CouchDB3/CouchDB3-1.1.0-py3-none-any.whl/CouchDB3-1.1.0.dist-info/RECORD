@@ -1,0 +1,13 @@
+couchdb3/__init__.py,sha256=lYGAnAEo0n8kcIWX_hbdpF3yY7wOalKDMrvaJl0Zy-k,3101
+couchdb3/base.py,sha256=prGiVciIs-VVA78EH0e-wDWiw6-3HBXvJO8X_zgtktU,17075
+couchdb3/database.py,sha256=Jbglia6-u0qeDkbQdbCvViRq_jovotqJgo6SDxNVXew,41240
+couchdb3/document.py,sha256=YUoC_CTfKG-AlIGcyTReb5w8BRGGFqoedv3Ih2ZUCJk,5902
+couchdb3/exceptions.py,sha256=HAOiEWWqhEj-WczYzjKtWQTDAQSficDY6aKsdwpXeAE,4201
+couchdb3/server.py,sha256=tiRZrMmyc5uzXjvBy18CpX2qmpaLt-sL-CPI8GOSmpw,17256
+couchdb3/utils.py,sha256=Y4w1nk2eCtS1H9CPx_ne8_KXKnczMgAWsKZoTGRmwYk,11229
+couchdb3/view.py,sha256=tNHW4Z5Dns1hMMUr-4t7tx8LQZrjawx2xSpIvigqXXc,2717
+CouchDB3-1.1.0.dist-info/LICENSE,sha256=3Dqrw2BT4DAhk4YEYW_4noHYf1LEC3vw4c_l74iS0dw,1073
+CouchDB3-1.1.0.dist-info/METADATA,sha256=L_3O_XX-mEh07QaLdM8Yhcq1Uwj8NRRlLUg0KuHPXpE,3603
+CouchDB3-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CouchDB3-1.1.0.dist-info/top_level.txt,sha256=A4Kwe4XTWayCKsNUL8m68FGztK4KF0opqBQQRH39z4k,9
+CouchDB3-1.1.0.dist-info/RECORD,,
