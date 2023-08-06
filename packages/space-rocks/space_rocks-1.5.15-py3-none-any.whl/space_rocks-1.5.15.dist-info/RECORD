@@ -1,0 +1,14 @@
+rocks/__init__.py,sha256=wiW4SOSI9tpJw3VTIWzB8CADM6ejF_mzYrcHQ6D5zg4,1498
+rocks/cli.py,sha256=3HiWcd7otBGmcng-OVjMHejXYNnfQOtOAVuoXVogTa0,10430
+rocks/core.py,sha256=kXm7maVOvVNTRlQZjUnG6ySN9DpF_GDEFIhubyvp714,30199
+rocks/datacloud.py,sha256=OYUrutBdbGfM5gScXo7A06WkxapLILDLgFmlNnfDopQ,30996
+rocks/index.py,sha256=DTkuxh1SORys6Ivpd8QtSbQkCYw8C7IgBFaIj_5CtI8,9202
+rocks/plots.py,sha256=xWoMSF4kneIbZxpYCk2iOHeevPi4b3l_ILt_WEaKgBw,6300
+rocks/resolve.py,sha256=h_s15XSE9cXgdQ5ExCCkXgj2icooiM6XeDvUbud-NUM,11095
+rocks/ssodnet.py,sha256=xlugO_Ujtx4nGXuinFVJQZL0TBntmRorrKk19RNKiFU,11527
+rocks/utils.py,sha256=L2k3lNAG3jasaHwJkjVW62Va49sFT91eAJcXvXs_7a4,12134
+space_rocks-1.5.15.dist-info/entry_points.txt,sha256=Fvmxv7qxS2ci9rFw6t0apjpArZm8SnvLrXqdLZn6yvQ,45
+space_rocks-1.5.15.dist-info/LICENSE,sha256=bYwlkz3WCC3gsjHr6h5vWUDDUVGb2v8dmrdDRavqfx0,1067
+space_rocks-1.5.15.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+space_rocks-1.5.15.dist-info/METADATA,sha256=85_b0Jp2Wnb6Qj3U_cvIIKD6MH0-2s9uMuG1RILQcTA,2905
+space_rocks-1.5.15.dist-info/RECORD,,
