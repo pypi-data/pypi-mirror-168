@@ -1,0 +1,35 @@
+[project]
+name = "icon_writer"
+version = "0.0.3"
+authors = [
+  { name="Pamela Fox", email="pamela.fox@gmail.com" },
+]
+description = "A tiny package for writing Mac OS X text-only dock icons"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+dependencies = [
+    "pillow ~= 9.2",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pamelafox/dock-icons"
+"Bug Tracker" = "https://github.com/pamelafox/dock-icons/issues"
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.pytest.ini_options]
+addopts = "-ra --cov"
+testpaths = ["tests"]
+pythonpath = ['.']
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
