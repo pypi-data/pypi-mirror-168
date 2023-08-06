@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+rebot/__init__.py
+rebot/rebot.py
+rebot/test.py
+rebot.egg-info/PKG-INFO
+rebot.egg-info/SOURCES.txt
+rebot.egg-info/dependency_links.txt
+rebot.egg-info/requires.txt
+rebot.egg-info/top_level.txt
