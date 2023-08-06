@@ -1,0 +1,8 @@
+pyyaml
+inflection
+python-box
+kubernetes
+kopf
+zed
+dash
+pandas
