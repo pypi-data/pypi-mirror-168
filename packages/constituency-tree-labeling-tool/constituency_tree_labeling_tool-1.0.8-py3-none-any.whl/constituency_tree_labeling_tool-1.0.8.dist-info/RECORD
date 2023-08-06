@@ -1,0 +1,16 @@
+constituency_labeling/__init__.py,sha256=CbHc23pJKrbpFapMKlRCF4EAqkRscxfr5FxrAbQoEtw,111
+constituency_labeling/convert.py,sha256=tUCGQNnPPlHwRdCxE3XRiSgx8JY045OG-KHTFSgJXZc,2866
+constituency_labeling/exception.py,sha256=7OTAyD887aGogQ8WIXpAYaz4V3a6d-WEo7FNUfYS6po,447
+constituency_labeling/frontend_tree.py,sha256=xXERGQt8qK1mTJ2ZAPhhXKXi8q97EsQHI_XtQgortxM,2366
+constituency_labeling/label_tree.py,sha256=mmYrniiIGhRU2Ix1kjg8CbOxhYKYezbnBbAcIsSEHIM,4231
+constituency_labeling/transform.py,sha256=O3ZRzPfFAlJ5LtQ9E7nlKEYc5tLmh356RZf5L6WL3xA,9165
+constituency_labeling/tests/__init__.py,sha256=piO85Dhh-aEe_0oWGxWk7CVX-Fy_p5BrbgZbnqJX1Sg,25
+constituency_labeling/tests/test_convert.py,sha256=KCV0omOgIBPpUhxVKlk5hWWbk3BAfN9BjJb937bNO7k,2662
+constituency_labeling/tests/test_frontend_tree.py,sha256=EGVbiAx4h_FPX92p6AcuiLR7IQFoSjcgPm8pAaDtU3o,2949
+constituency_labeling/tests/test_label_tree.py,sha256=6ft-F7Kbo-kmb3XtTtvI1iMN3azCz-iVXdkZD0H_4QI,3287
+constituency_labeling/tests/test_transform.py,sha256=kht_uGr3Qxd3xdFqYmdQ4b9nMZSFJC7-awreTVQWn_E,4078
+constituency_tree_labeling_tool-1.0.8.dist-info/LICENSE,sha256=zbYONA6K0VadoyYEH_WrL_rl6-lWhN8RdgPJRZib-WQ,1150
+constituency_tree_labeling_tool-1.0.8.dist-info/METADATA,sha256=GatspRYgd5uCeJsCPzYMpk2wf0ybW6LdUwZOzCfjCms,3953
+constituency_tree_labeling_tool-1.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+constituency_tree_labeling_tool-1.0.8.dist-info/top_level.txt,sha256=0b2TdJ3iDO0ogWcklxjn1RfEFWnizUCG8Rz-zZVcWxk,22
+constituency_tree_labeling_tool-1.0.8.dist-info/RECORD,,
