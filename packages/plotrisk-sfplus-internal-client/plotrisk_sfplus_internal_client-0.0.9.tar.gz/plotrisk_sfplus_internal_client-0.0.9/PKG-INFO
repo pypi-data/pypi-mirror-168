@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: plotrisk_sfplus_internal_client
+Version: 0.0.9
+Summary: farm API
+Home-page: 
+Author-email: 
+Keywords: Swagger,farm API
+
+    Cropin Plotrisk-Insight Client has functions to fetch plots, satellite, weather and yield details. It also exposes the plot image download function.
+
+Important Definitions
+Plot - A piece of land, represented by geojson structure i.e. Polygon, Multipolygon or a circle.
+
+Satellite Data - For the plot created, satellite insights will be generated.
+
+Yield - Yield mapping refers to the process of collecting georeferenced data on crop yield and characteristics, such as moisture content, while the crop is being harvested with an onboard yield monitor.
+
+Weather - Weather data provides information about the weather and climate of a plot.
+
+GDD - GDD (Cumulative growing degree days) is an index calculated from temperature data and is used to estimate the time needed for a crop or other organisms to reach a certain stage of development.
+
+Prerequisites
+1. Supported Python Version - This SDK has been tested with Python versions 3.5+. Earlier Python 3 versions are expected to work as well, as long as the dependencies are fulfilled.
+
+Users who have already onboarded onto sf_plus, enabled plotrisk feature for atleast few plots will be able use this SDK.
+
+    
