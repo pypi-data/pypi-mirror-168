@@ -1,0 +1,6 @@
+include .gitignore
+include README.md
+include Makefile
+include MANIFEST.in 
+incldue LICENSE
+include gitlogs/defaults/defaults.json
