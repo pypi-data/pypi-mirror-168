@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+humdroid/__init__.py
+humdroid.egg-info/PKG-INFO
+humdroid.egg-info/SOURCES.txt
+humdroid.egg-info/dependency_links.txt
+humdroid.egg-info/requires.txt
+humdroid.egg-info/top_level.txt

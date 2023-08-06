@@ -1,0 +1,3 @@
+pillow
+adbutils
+scrcpy-client
