@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clip-gaze"
+version="0.1.2"
+description = "Compare image prompts using CLIP"
+keywords = ["clip", "art", "art analysis"]
+license = {text = "MIT"}
+readme = "PYPI_README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8"
+]
+dependencies = [
+    "transformers",
+    "torch",
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/hmillerbakewell/clip-gaze"
+"Bug Tracker" = "https://github.com/hmillerbakewell/clip-gaze/issues"
