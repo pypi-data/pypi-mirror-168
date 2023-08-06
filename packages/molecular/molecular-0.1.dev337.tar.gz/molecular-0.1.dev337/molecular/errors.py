@@ -1,0 +1,5 @@
+
+class TrajectoryError(Exception):
+    pass
+
+
