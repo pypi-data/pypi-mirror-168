@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=40.0", "numpy>=1.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "javaCollectionInPython"
+version = "0.0.4"
+authors = [
+  { name="scugxl", email="gaoxingliang@outlook.com" },
+]
+description = "The java collection in python implementation. Now it includes BitSet"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gaoxingliang/java-collection-in-python"
+"Bug Tracker" = "https://github.com/gaoxingliang/java-collection-in-python/issues"
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/example.py
+src/javaCollectionInPython/__init__.py
+src/javaCollectionInPython/bitset.py
+src/javaCollectionInPython.egg-info/PKG-INFO
+src/javaCollectionInPython.egg-info/SOURCES.txt
+src/javaCollectionInPython.egg-info/dependency_links.txt
+src/javaCollectionInPython.egg-info/top_level.txt
