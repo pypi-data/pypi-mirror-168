@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+pytracking/__init__.py
+pytracking/django.py
+pytracking/html.py
+pytracking/tracking.py
+pytracking/webhook.py
+pytracking2.egg-info/PKG-INFO
+pytracking2.egg-info/SOURCES.txt
+pytracking2.egg-info/dependency_links.txt
+pytracking2.egg-info/requires.txt
+pytracking2.egg-info/top_level.txt
