@@ -1,0 +1,14 @@
+catframes/__init__.py,sha256=ZdgTD8Sko0Gzhbhq1F-JCuK8Iq2cCW07Yu7Yo1DAD18,15
+catframes/fix_resolution.py,sha256=Xza8OxnN_c-S2jt6YTQ6jBLiEAa7ySxdElDaBdbwIJw,7572
+catframes/main.py,sha256=1dkpn0FDUs6KSTgkx00xYHYHZY6bGe3hERISq_op-Qo,9062
+catframes/most_common_image_resolution_in_the_folder.py,sha256=H-Or8V1urJvf2t8Ms-dRHDE9s65BKEJ4Uk1Q6zMMpec,6334
+catframes/to_video.py,sha256=xxXIIBO2jBjxlpBIXIAgz22vwhuUxYMwdfG7EZOhtdw,3999
+catframes/utils.py,sha256=jt79w7YoTNn1sJfc0mBoy6_hbKwYCY-N9O1xr9txp-8,2268
+catframes/version.py,sha256=FtMFT6kHugq8YabMJ67TkCHPLfn3H96pXs2XBJUdObQ,35
+catframes-1.0.3.dist-info/LICENSE.txt,sha256=MyxodXcbxn1FqgiowOPl_w2TAsLBltgNCIyFggNkP7Q,6515
+catframes-1.0.3.dist-info/METADATA,sha256=UzjlPDBe01oUHD4y2C8FjdQXvFOBEf0kjwUhagO9PJw,5200
+catframes-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+catframes-1.0.3.dist-info/entry_points.txt,sha256=ZUBuxolH7yqS-h_dWgdfawvMLCNMzFrl5pTnyJVS5Pg,261
+catframes-1.0.3.dist-info/top_level.txt,sha256=K9MBlfdZ7axpYcMO1lwJ8bFoTPY2gii2pf_ZF7Lo6wE,10
+catframes-1.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+catframes-1.0.3.dist-info/RECORD,,
