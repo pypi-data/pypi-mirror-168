@@ -1,0 +1,15 @@
+setuptools
+cloudpickle
+numpy
+requests
+pandas
+IPython
+croniter
+pydantic
+plotly
+pyyaml
+great_expectations
+ruamel.yaml
+Pillow
+multipart
+requests_toolbelt
