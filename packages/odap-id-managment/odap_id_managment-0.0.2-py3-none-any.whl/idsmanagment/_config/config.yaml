@@ -1,0 +1,13 @@
+parameters:
+  idsmanagment:
+    
+services:
+  idsmanagment.logger:
+    class: logging.Logger
+    factory: ['@loggerbundle.LoggerFactory', 'create']
+    arguments:
+      - 'ids_managment'
+
+  idsmanagment.samId.SamId:
+    arguments:
+      - '@idsmanagment.logger'
