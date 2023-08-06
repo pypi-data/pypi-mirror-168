@@ -1,0 +1,10 @@
+pytest_pg/__init__.py,sha256=ufaC2XzGRxqjDJHeSJm8gtTKoEKGzZwKAITprc8TVdM,1228
+pytest_pg/fixtures.py,sha256=xI8Hs2lp7hI4LmXz5IfTSTwFTFYBtwGOpWDIB3JIrsM,2924
+pytest_pg/py.typed,sha256=E84IaZyFwfLqvXjOVW4LS6WH7QOaKEFpNh9TFyzHNQc,6
+pytest_pg/utils.py,sha256=8jOzLu0w6tv49uAzJFJHLhjGXFSdi-mqBdY9kFTJIsY,1917
+pytest_pg-0.0.14.dist-info/LICENSE,sha256=aVmBXoo4joWuu-u1A14wOPPZKjKO4JZUOo4LuX4RQqQ,1068
+pytest_pg-0.0.14.dist-info/METADATA,sha256=RJ24HcU_i_VRV8nzm6opQkf1t3_teEc6fW_T0dXKIwE,1730
+pytest_pg-0.0.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_pg-0.0.14.dist-info/entry_points.txt,sha256=YItrIbbORp9wVDzM2aXaYi6XDi7Qw38rD3RaqAoZLe8,33
+pytest_pg-0.0.14.dist-info/top_level.txt,sha256=NC9fOawx825V9W81SElcoTAqmfWAL2BoMtJ4CnYb0j4,10
+pytest_pg-0.0.14.dist-info/RECORD,,
