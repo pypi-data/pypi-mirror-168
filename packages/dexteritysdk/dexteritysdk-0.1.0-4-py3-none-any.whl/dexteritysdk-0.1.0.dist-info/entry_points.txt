@@ -1,0 +1,10 @@
+[console_scripts]
+bootstrap=dexteritysdk.bots.bootstrap:main
+connect=dexteritysdk.bots.new_connect:main
+discriminant=dexteritysdk.scripts.discriminant:main
+extract-program-ids=dexteritysdk.scripts.extract_program_ids:main
+generate-code=dexteritysdk.scripts.generate_code:main
+get-trader-risk-groups=dexteritysdk.scripts.get_trader_risk_groups:main
+keypair-to-b58=dexteritysdk.scripts.keypair_to_b58:main
+local-validator=dexteritysdk.scripts.start_test_validator:main
+
