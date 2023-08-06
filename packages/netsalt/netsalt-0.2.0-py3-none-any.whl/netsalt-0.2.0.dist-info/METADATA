@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: netsalt
+Version: 0.2.0
+Author: Alexis Arnaudon
+Author-email: alexis.arnaudon@epfl.ch
+License-File: LICENSE
+Requires-Dist: scipy (>=1.2.0)
+Requires-Dist: networkx (>=2.5)
+Requires-Dist: matplotlib (>=3.3.0)
+Requires-Dist: scikit-image
+Requires-Dist: tables
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: h5py
+Requires-Dist: numpy
+Requires-Dist: luigi
+Requires-Dist: pyyaml
+Requires-Dist: seaborn
+Requires-Dist: dir-content-diff
+Requires-Dist: pulp
+
