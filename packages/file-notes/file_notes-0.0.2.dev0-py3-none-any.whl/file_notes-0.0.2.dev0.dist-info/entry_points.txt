@@ -1,0 +1,3 @@
+[console_scripts]
+fn=file_notes.main:main
+
