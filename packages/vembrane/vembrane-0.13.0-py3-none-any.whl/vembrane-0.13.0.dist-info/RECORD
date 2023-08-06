@@ -1,0 +1,16 @@
+vembrane/__init__.py,sha256=1mQUVjhV4AOrR6PpC36HlE2Z_T1nmErRUScnBgBmyUI,325
+vembrane/ann_types.py,sha256=9fSHq6YQVRpMu_e3MbgG8IKB6h_RNu2OysEpdvESHKs,26591
+vembrane/cli.py,sha256=r_wRBU-cfNqZezGMx1hsMoGoZPlgImD-HUAPqWGEzjA,778
+vembrane/common.py,sha256=zav-QSqRuFgHXJzX6AH9tc_ZEgBD0WgLewDFuBiC7NE,2394
+vembrane/errors.py,sha256=j_s89EbzzdVIHKTBozFB1GoTj2CBd41WHcSUr1TIZaA,4161
+vembrane/globals.py,sha256=SQqlCiTpWqE1QXTKGa5KIYeIeQOzo1bNC-UIYOy1QrI,5181
+vembrane/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vembrane/modules/annotate.py,sha256=MJw3OxLcviWnzEGkSHn-A642MIRwQDjZAyxI6Ucu94U,5821
+vembrane/modules/filter.py,sha256=_Km5OhOof9sd_6hMguEpNUCgDHIncYY-TpafPNjSWwo,13248
+vembrane/modules/table.py,sha256=x4JD60SZAXib-_mgtTutcqrc8yRnBs1elagHPdcQCzU,10703
+vembrane/representations.py,sha256=QPotRSUaXqvzlv9A5XcXPQbeNtUz-Oro1_H-OgnIVRI,13135
+vembrane-0.13.0.dist-info/entry_points.txt,sha256=W_cLY9FidOqjv3UF3dzt0YR1CS5adUinOHEiN7zMsrs,46
+vembrane-0.13.0.dist-info/LICENSE,sha256=rvKyYk3q65iCDqdPzyyUpBSj1NrOlz3zLM0_iBQTudM,1070
+vembrane-0.13.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+vembrane-0.13.0.dist-info/METADATA,sha256=Jo_TAKgCSp-BCp0vhD87BoeQhtm1FRADlr9mXBFiFSw,16522
+vembrane-0.13.0.dist-info/RECORD,,
