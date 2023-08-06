@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+swt/__init__.py
+swt/nlp/__init__.py
+swt/nlp/basis.py
+swt_nlp.egg-info/PKG-INFO
+swt_nlp.egg-info/SOURCES.txt
+swt_nlp.egg-info/dependency_links.txt
+swt_nlp.egg-info/requires.txt
+swt_nlp.egg-info/top_level.txt
