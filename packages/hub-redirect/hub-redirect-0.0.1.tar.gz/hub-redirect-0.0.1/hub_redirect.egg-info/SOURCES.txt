@@ -1,0 +1,6 @@
+setup.py
+hub-redirect/__init__.py
+hub_redirect.egg-info/PKG-INFO
+hub_redirect.egg-info/SOURCES.txt
+hub_redirect.egg-info/dependency_links.txt
+hub_redirect.egg-info/top_level.txt
