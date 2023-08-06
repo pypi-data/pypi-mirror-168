@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: unicorn-sdk
+Version: 0.0.10
+Summary: Python Sdk for UnicornAIO API
+Project-URL: homepage, https://www.unicorn-bot.com/
+Project-URL: repository, https://github.com/unicorn-aio/unicorn-sdk
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: brotli
+Requires-Dist: loguru
+Requires-Dist: httpx
+Requires-Dist: aiohttp
+
+unicorn-sdk is the python sdk of unicorn-api.
+
+we provide api to bypass bot-detect product:
+* **akamai**
+* **kasada**
+* **tls client**
+* **captcha**
+* **cloundflare**
+
+contact us at: https://t.co/HWHs1FurZa
+
+## Installation
+
+```console
+$ pip install -U unicorn-sdk
+```
+
+## Demos
+
+https://github.com/unicorn-aio/unicorn-sdk-demos
