@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: enoceanx
+Version: 0.63
+Summary: EnOcean serial protocol implementation with support for 4BS teach-in. This is just a fork of enocean by kipe. Credits belong to the original author.
+Home-page: https://github.com/flexxor/enoceanx
+Author: Felix Beier
+Author-email: choleriker99@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4 (>=4.3.2)
+Requires-Dist: enum-compat (>=0.0.2)
+Requires-Dist: pyserial (>=3.0)
+
+UNKNOWN
+
+
