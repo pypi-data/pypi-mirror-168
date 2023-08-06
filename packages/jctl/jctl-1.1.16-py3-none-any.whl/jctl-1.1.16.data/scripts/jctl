@@ -1,0 +1,561 @@
+#!python
+# -*- coding: utf-8 -*-
+
+"""
+Interact with Jamf Pro Server
+"""
+
+
+__author__ = "James Reynolds, Sam Forester"
+__email__ = "reynolds@biology.utah.edu, sam.forester@utah.edu"
+__copyright__ = "Copyright (c) 2020 University of Utah, Marriott Library & School of Biological Sciences"
+__license__ = "MIT"
+__version__ = "1.1.16"
+min_jamf_version = "0.8.0"
+
+
+import argparse
+import ast
+import json
+import logging
+import re
+import sys
+import time
+from pprint import pprint
+
+import jamf
+
+
+class Parser:
+    def __init__(self):
+        example_text = "For examples please see https://github.com/univ-of-utah-marriott-library-apple/jctl/wiki/jctl"
+
+        self.valid_jamf_records = [x.lower() for x in jamf.records.valid_records()]
+        self.parser = argparse.ArgumentParser(epilog=example_text)
+        # https://docs.python.org/3/library/argparse.html
+        self.parser.add_argument(
+            "record",
+            nargs="?",
+            help="Valid Jamf Records are: " + ", ".join(self.valid_jamf_records),
+        )
+
+        # Actions
+        self.parser.add_argument(
+            "-c",
+            "--create",
+            nargs="*",
+            help="Create jamf record (e.g. '-n <rec_name> [other]')",
+        )
+        self.parser.add_argument(
+            "-u",
+            "--update",
+            action="append",
+            help="Update jamf record (e.g. '-u general={} -u name=123')",
+        )
+        self.parser.add_argument(
+            "-d", "--delete", action="store_true", help="Delete jamf record"
+        )
+        self.parser.add_argument(
+            "-S", "--sub-command", nargs="*", help="Execute subcommand for record"
+        )
+
+        # Searching/filtering
+        self.parser.add_argument("-i", "--id", nargs="*", help="Search for id matches")
+        self.parser.add_argument(
+            "-n", "--name", nargs="*", help="Search for exact name match"
+        )
+        self.parser.add_argument(
+            "-r", "--regex", nargs="*", help="Search for regular expression matches"
+        )
+        self.parser.add_argument(
+            "-s",
+            "--searchpath",
+            action="append",
+            help="Search for a path (e.g. '-s general/id==152'",
+        )
+
+        # Print options
+        self.parser.add_argument(
+            "-l", "--long", action="store_true", help="List long format"
+        )
+        self.parser.add_argument(
+            "-p",
+            "--path",
+            action="append",
+            help="Print out path (e.g. '-p general -p serial_number')",
+        )
+        self.parser.add_argument(
+            "-j",
+            "--json",
+            action="store_true",
+            help="Print json (for pretty pipe to `prettier --parser json`)",
+        )
+        self.parser.add_argument(
+            "--quiet-as-a-mouse", action="store_true", help="Don't print anything"
+        )
+
+        # Others
+        self.parser.add_argument("-C", "--config", help="path to config file")
+        self.parser.add_argument(
+            "-v", "--version", action="store_true", help="print version and exit"
+        )
+        self.parser.add_argument(
+            "--use-the-force-luke",
+            action="store_true",
+            help="Don't ask to delete. DANGER! This can delete everything!",
+        )
+        self.parser.add_argument(
+            "--andele-andele",
+            action="store_true",
+            help="Don't pause 3 seconds when updating or deleting without "
+            "confirmation. DANGER! This can delete everything FAST!",
+        )
+
+    def str_to_json(self, value_):
+        try:
+            json_dump_ = json.dumps(ast.literal_eval(value_))
+        except:  # SyntaxError  ValueError
+            try:
+                json_dump_ = json.dumps(value_)
+            except ValueError:
+                print(f'Could not convert "{value_}" to JSON.')
+                exit(1)
+        return json.loads(json_dump_)
+
+    def parse(self, argv):
+        """
+        :param argv:    list of arguments to parse
+        :returns:       argparse.NameSpace object
+        """
+        args = self.parser.parse_args(argv)
+        if args.version:
+            print("jctl " + __version__)
+            print(f"python_jamf {jamf.version.string()} ({min_jamf_version} required)")
+            exit(1)
+        check_version()
+        if args.record is None:
+            print(
+                "Please specify a record type:\n - "
+                + "\n - ".join(self.valid_jamf_records)
+            )
+            exit()
+        try:
+            self.record = jamf.records.class_name(args.record, case_sensitive=False)
+        except jamf.records.JamfError as e:
+            print(f"error: {e.message}", file=sys.stderr)
+            print(
+                "Please specify a valid record type:\n - "
+                + "\n - ".join(self.valid_jamf_records)
+            )
+            exit(1)
+        if args.record is None:
+            print(
+                "Please specify a record type:\n - "
+                + "\n - ".join(self.valid_jamf_records)
+            )
+            exit(1)
+        flags = 0
+        if args.delete:
+            flags += 1
+        if args.create:
+            flags += 1
+        if args.sub_command:
+            flags += 1
+        if args.update:
+            flags += 1
+        if flags > 1:
+            print(
+                "Can not do any of these actions together: delete, create, "
+                "sub-command, or update."
+            )
+            exit(1)
+        if args.sub_command is not None:
+            plural_cls = jamf.records.class_name(args.record, case_sensitive=False)
+            singlar_cls = plural_cls.singular_class
+            # Validate the class has subcommands
+            if not hasattr(plural_cls, "sub_commands"):
+                print(args.record + " has no subcommands.")
+                exit(1)
+            if len(args.sub_command) == 0:
+                print(f"{args.record} valid subcommands are:")
+                kys = plural_cls.sub_commands.keys()
+                print("  " + "\n  ".join(str(key) for key in kys))
+                exit(1)
+            # Validate the subcommand exists
+            sub_c = args.sub_command[0]
+            if sub_c not in plural_cls.sub_commands:
+                print(
+                    f"{args.record} does not have subcommand: "
+                    f"{args.sub_command[0]}. Valid subcommands are:"
+                )
+                kys = plural_cls.sub_commands.keys()
+                print("  " + "\n  ".join(str(key) for key in kys))
+                exit(1)
+            # Validate the arg count is correct
+            args_c = plural_cls.sub_commands[sub_c]["required_args"]
+            args_d = plural_cls.sub_commands[sub_c]["args_description"]
+            if len(args.sub_command) - 1 != args_c:
+                print(
+                    f"{args.record} {args.sub_command[0]} requires {args_c} arg(s), "
+                    f"{args_d}"
+                )
+                exit(1)
+            # Save data
+            args.sub_command = {
+                "attr": sub_c,
+                "args": args.sub_command[1:],
+            }
+            # Get methods
+            method_found = False
+            args.sub_command["when_to_run"] = {}
+            for when in ["print", "update"]:
+                for loop_when in ["before", "during", "after"]:
+                    method = sub_c + "_" + when + "_" + loop_when
+                    if loop_when == "during":
+                        class_ptr = singlar_cls
+                    else:
+                        class_ptr = plural_cls
+                    if hasattr(class_ptr, method):
+                        method_ptr = getattr(class_ptr, method)
+                        if not callable(method_ptr):
+                            print(f"{args.record} subcommand {method} is broken...")
+                            exit(1)
+                        method_found = True
+                        args.sub_command[when + "_" + loop_when] = method
+                        args.sub_command["when_to_run"][when] = True
+            if not method_found:
+                print(
+                    f"{args.record} subcommand {sub_c} has no valid methods. They "
+                    f"should look something like this: {sub_c}_print_during."
+                )
+                exit(1)
+        if args.quiet_as_a_mouse:
+            if args.json:
+                print("Can't print json if quiet...")
+                exit()
+            if args.long:
+                print("Can't print long if quiet...")
+                exit()
+            if (args.delete or args.update) and not args.use_the_force_luke:
+                print(
+                    "If you want to update/delete records without "
+                    "confirmation you must also specify "
+                    "--use-the-force-luke."
+                )
+                exit(1)
+
+        # Process the update parameters to validate them before proceeding.
+        if args.update:
+            update_processed_ = []
+            for update_string_ in args.update:
+                update_parts_ = re.match("(^[^=]*)=([^=]*$)", update_string_)
+                if update_parts_:
+                    value_ = self.str_to_json(update_parts_[2])
+                    update_processed_.append([update_parts_[1], value_])
+                else:
+                    if not args.quiet_as_a_mouse:
+                        print(
+                            f'The update string "{update_string_}" requires a single "=".'
+                        )
+            args.update = update_processed_
+        return args
+
+
+def check_version():
+    python_jamf_version = jamf.version.jamf_version_up_to(min_jamf_version)
+    if python_jamf_version != min_jamf_version:
+        print(
+            f"jctl requires python-jamf {min_jamf_version} or newer. "
+            f"You have {python_jamf_version}."
+        )
+        exit()
+
+
+def confirm(_message):
+    """
+    Ask user to enter Y or N (case-insensitive).
+    :return: True if the answer is Y.
+    :rtype: bool
+    """
+    answer = ""
+    while answer not in ["y", "n"]:
+        answer = input(_message).lower()
+    return answer == "y"
+
+
+def check_for_match(path_data, search, op):
+    if isinstance(path_data, str):
+        if op == "==" and path_data == search:
+            return True
+        elif op == "!=" and path_data != search:
+            return True
+        elif op == "~=":
+            m = re.search(search, path_data)
+            if m:
+                return True
+            else:
+                return False
+    elif isinstance(path_data, list):
+        # I'm not sure this is the best way to handle arrays...
+        for i in path_data:
+            result = check_for_match(i, search, op)
+            if result:
+                return True
+            else:
+                return False
+    elif path_data is None and search == "None":
+        return op == "==" or op == "~="
+    elif path_data is False and search == "False":
+        return op == "==" or op == "~="
+    elif path_data is True and search == "True":
+        return op == "==" or op == "~="
+    else:
+        return op == "!="
+
+
+def main(argv):  # noqa: C901
+    # THERE ARE EXITS THROUGHOUT
+    logger = logging.getLogger(__name__)
+    timmy = Parser()
+    args = timmy.parse(argv)
+    logger.debug(f"args: {args!r}")
+    if args.config:
+        api = jamf.API(config_path=args.config)
+    else:
+        api = jamf.API()
+
+    # Get the main class
+    rec_class = jamf.records.class_name(args.record, case_sensitive=False)
+    if not args.create:
+        all_records = rec_class()
+    else:
+        all_records = None
+
+    # Are we making a change?
+    if args.sub_command:
+        making_a_change = "update" in args.sub_command["when_to_run"]
+    else:
+        making_a_change = args.delete or args.create or args.update
+
+    if not args.quiet_as_a_mouse and making_a_change:
+        print("Server: " + api.url)
+
+    # Quick filter records
+    if all_records and (args.regex or args.name or args.id):
+        temps = []
+        if args.regex:
+            for regex in args.regex:
+                temps = temps + all_records.recordsWithRegex(regex)
+        if args.name:
+            for name in args.name:
+                temps = temps + [all_records.recordWithName(name)]
+        if args.id:
+            for id in args.id:
+                try:
+                    id = int(id)
+                except ValueError:
+                    print(f"ID must be a number: {id}")
+                    exit(1)
+                temps = temps + [all_records.recordWithId(id)]
+        quick = []
+        for temp in temps:
+            if temp:
+                quick = quick + [temp]
+    else:
+        quick = all_records
+
+    if quick:
+        sorted_results = sorted(quick)
+    else:
+        sorted_results = []
+
+    # Filter and print
+    # Filtering is slow so print in the same loop for continual feedback
+    filtered_results = []
+
+    if args.sub_command and "print_before" in args.sub_command:
+        method = getattr(rec_class, args.sub_command["print_before"])
+        method(rec_class, *args.sub_command["args"])
+
+    if args.json and not args.quiet_as_a_mouse:
+        json_output = "["
+    for record in sorted_results:
+        # Check to see if it's filtered
+        not_filtered = True
+        if args.searchpath:
+            for searchpath in args.searchpath:
+                m = re.match("(.*)([=~!]=)(.*)", searchpath)
+                if not_filtered and m:
+                    path_data = record.get_path(m[1])
+                    not_filtered = check_for_match(path_data, m[3], m[2])
+                    if not not_filtered:
+                        continue
+                else:
+                    not_filtered = False
+                    continue
+        if not not_filtered:
+            continue
+        filtered_results.append(record)
+        if args.quiet_as_a_mouse:
+            continue
+
+        # Print feedback
+        if args.sub_command and "print_during" in args.sub_command:
+            method = getattr(rec_class.singular_class, args.sub_command["print_during"])
+            method(record, *args.sub_command["args"])
+        else:
+            if args.json:
+                print(json_output)
+                json_output = "  ["
+            if args.path:
+                if args.json:
+                    for path_ in args.path:
+                        json_output += json.dumps(record.get_path(path_))
+                        json_output += ","
+                    json_output = json_output[:-1]  # Remove the last comma
+                else:
+                    print(record)
+                    for path_ in args.path:
+                        printme = record.get_path(path_)
+                        if isinstance(printme, str):
+                            print(printme)
+                        else:
+                            pprint(printme)
+            elif args.long:
+                if args.json:
+                    json_output += json.dumps(record.data) + ","
+                else:
+                    pprint(record.data)
+            else:
+                if args.json:
+                    json_output += json.dumps(record.name)
+                else:
+                    print(record)
+            if args.json:
+                json_output += "],"
+
+    if not args.quiet_as_a_mouse:
+        if args.json:
+            json_output = json_output[:-1]  # Remove the last comma
+            print(json_output)
+            print("]")
+        else:
+            if len(filtered_results) > 1:
+                print("Count: " + str(len(filtered_results)))
+
+    if args.sub_command and "print_after" in args.sub_command:
+        method = getattr(rec_class, args.sub_command["print_after"])
+        method(rec_class, *args.sub_command["args"])
+
+    # Confirm Make a change
+    confirmed = False
+    if making_a_change:
+        if not args.create and len(filtered_results) == 0:
+            print("No records found")
+            exit(1)
+        change_type_ = ""
+        if args.delete:
+            change_type_ = "delete"
+        elif args.create:
+            change_type_ = "create"
+        elif args.update:
+            change_type_ = "update"
+        else:
+            change_type_ = "change"
+
+        confirmed = args.use_the_force_luke
+        if args.quiet_as_a_mouse:
+            if confirmed and not args.andele_andele:
+                time.sleep(3)
+        else:
+            if confirmed:
+                print(f"Performing {change_type_} without confirmation.")
+                if not args.andele_andele:
+                    print("Waiting 3 seconds.")
+                    time.sleep(3)
+            elif args.create:
+                confirmed = confirm(
+                    f"Are you sure you want to create a "
+                    f"{rec_class.singular_class.__name__} named "
+                    f'"{args.create[0]}" [y/n]? '
+                )
+            elif args.update:
+                pprint(args.update)
+                confirmed = confirm(
+                    f"Are you sure you want to update "
+                    f"{len(filtered_results)} record(s) [y/n]? "
+                )
+            else:
+                confirmed = confirm(
+                    f"Are you sure you want to {change_type_} "
+                    f"{len(filtered_results)} record(s) [y/n]? "
+                )
+    if confirmed and args.create:
+        try:
+            _ = rec_class().createNewRecord(args.create)
+        except Exception as e:
+            print(f"Couldn't create record: {e}")
+    elif confirmed:
+        if args.sub_command and "update_before" in args.sub_command:
+            method = getattr(rec_class, args.sub_command["update_before"])
+            method(rec_class, *args.sub_command["args"])
+        # For each record
+        for record in filtered_results:
+            # Delete
+            if args.delete:
+                if not args.quiet_as_a_mouse:
+                    print(f"Deleting record: {record}")
+                record.delete()
+            elif args.update:
+                success = True
+                paths = []
+                print("-----")
+                for update_list in args.update:
+                    path_ = update_list[0]
+                    paths.append(path_)
+                    value_ = update_list[1]
+                    if not args.quiet_as_a_mouse:
+                        old_ = record.get_path(path_)
+                        if not args.quiet_as_a_mouse:
+                            print(f"Old value: {path_} = {old_}")
+                            print(f"Set value: {path_} = {value_}")
+                    success = success and record.set_path(path_, value_)
+                if success:
+                    try:
+                        record.save()
+                        # Fetch updated record
+                        if not args.quiet_as_a_mouse:
+                            record.refresh()
+                            for path_ in paths:
+                                new_ = record.get_path(path_)
+                                print(f"New value: {path_} = {new_}")
+                    except Exception as e:
+                        print(f"Couldn't save changed record: {e}")
+                else:
+                    print("Could not update record")
+
+            elif args.sub_command and "update_during" in args.sub_command:
+                method = getattr(
+                    rec_class.singular_class, args.sub_command["update_during"]
+                )
+                success = method(record, *args.sub_command["args"])
+                if success:
+                    try:
+                        record.save()
+                    except Exception as e:
+                        print(f"Couldn't save changed record: {e}")
+                else:
+                    print("Sub command failed")
+
+        if args.sub_command and "update_after" in args.sub_command:
+            method = getattr(rec_class, args.sub_command["update_after"])
+            method(rec_class, *args.sub_command["args"])
+
+
+if __name__ == "__main__":
+    fmt = "%(asctime)s: %(levelname)8s: %(name)s - %(funcName)s(): %(message)s"
+    logging.basicConfig(level=logging.INFO, format=fmt)
+    try:
+        main(sys.argv[1:])
+    except KeyboardInterrupt:
+        exit(1)
