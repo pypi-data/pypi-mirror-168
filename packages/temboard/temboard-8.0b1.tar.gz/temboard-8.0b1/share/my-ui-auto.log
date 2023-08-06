@@ -1,0 +1,29 @@
++ setup_pq
++ local psql
++ export PGHOST=0.0.0.0
++ PGHOST=0.0.0.0
++ export PGPORT=5432
++ PGPORT=5432
++ export PGUSER=postgres
++ PGUSER=postgres
++ '[' -d 0.0.0.0 ']'
++ psql=(psql)
++ psql -tc 'SELECT '\''Postgres connection working.'\'';'
+ Postgres connection working.
+
+++ pwgen
+++ od -vN 16 -An -tx1 /dev/urandom
+++ tr -d ' \n'
++ export TEMBOARD_PASSWORD=eb1ce69e81d4fa14dedaed58227dad71
++ TEMBOARD_PASSWORD=eb1ce69e81d4fa14dedaed58227dad71
++ getent passwd temboard
++ log 'Creating system user temBoard.'
++ echo 'Creating system user temBoard.'
++ tee -a /dev/fd/3
+Creating system user temBoard.
++ useradd --system --user-group --shell /bin/bash --home-dir /var/lib/temboard --comment 'temBoard Web UI' temboard
++ catchall
++ local rc=1
++ trap - INT EXIT TERM
++ set +x
+[1;31mFailure. See my-ui-auto.log for details.[0m
