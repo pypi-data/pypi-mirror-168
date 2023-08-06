@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: NorconsultPiPythonDevelop
+Version: 1.0.4
+Summary: Python Wrapper for PAM-Integrated API (Develop)
+Home-page: UNKNOWN
+Author: Norconsult
+Author-email: victoria.glott@norconsult.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pythonnet (==2.5.2)
+Requires-Dist: colorama (==0.4.3)
+Requires-Dist: msal (==1.11.0)
+Requires-Dist: requests (==2.25.0)
+
+UNKNOWN
+
+
