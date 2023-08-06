@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: tkitSimhash
+Version: 0.0.1.5
+Summary: # Remove duplicates 重复内容筛选 tkitSimhash zh    根据经验，一般当两个文档特征字之间的汉明距离小于 3， 就可以判定两个文档相似。《数学之美》一书中，在讲述信息指纹时对这种算法有详细的介绍。   ```python  from tkitSimhash import simHash sim=simHash() text1 = """' , in Valve's absence, the modern slew of co-op zombie games have not
+Home-page: https://terrychanorg.jetbrains.space/p/tkittools/repositories/tkitRemoveDuplicates/files/master/README.md
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: jieba (>=0.42.1)
+Requires-Dist: simhash (==2.1.2)
+Requires-Dist: nltk (==3.6)
+Requires-Dist: pytest (==7.1.3)
+
+# Remove duplicates 重复内容筛选
+tkitSimhash zh
+
+
+
+根据经验，一般当两个文档特征字之间的汉明距离小于 3， 就可以判定两个文档相似。《数学之美》一书中，在讲述信息指纹时对这种算法有详细的介绍。
+
+
+```python
+
+from tkitSimhash import simHash
+sim=simHash()
+text1 = """' , in Valve's absence, the modern slew of co-op zombie games have not been picking up the slack. The recent World War Z was lackluster at best, feeling like a cheap knockoff of a better game. The Vermintide series is much better in the gameplay department, but a fantasy battle against rat-men just isn't the same as fighting against hordes of undead. The Zombies modes in the Call of Duty games do a decent job of scratching the zombie itch, but what we're hoping for is a stand-alone zombie game, not DLC attached to a military shooter.  \nRelated: Screenshots From The New Resident Evil Have Leaked  \nBut now there's the hope that maybe, just maybe, Capcom can pull off a major multiplayer hit that will have players forgetting all about Valve and their long-suspected triskaphobia. Certainly, the Resident Evil name sure has the clout needed to get people to pay attention to the new series.  \n  \nCapcom has been experimenting with multiplayer in its Resident Evil games for years. This dates all the way back to Resident Evil ."""
+text2 = """, in Valve's absence, the modern slew of co-op zombie games have not been picking up the slack. The recent World War Z was lackluster at best, feeling like a cheap knockoff of a better game. The Vermintide series is much better in the gameplay department, but a fantasy battle against rat-men just isn't the same as fighting against  of undead. The Zombies modes in the Call of Duty games do a decent job of scratching the zombie itch, but what we're hoping for is a stand-alone zombie game, not DLC attached to a military shooter.  \nRelated: Screenshots From The New Resident Evil Have Leaked  \nBut now there's the hope that maybe, just maybe, Capcom can pull off a major multiplayer hit that will have players forgetting all about Valve and their long-suspected triskaphobia. Certainly, its Resident Evil games for years. This dates all the way back to Resident Evil  """
+a = sim.simhash(text1)
+b = sim.simhash(text2)
+
+# print(a)
+print("拆分子码，子码至少存在一个一样的才需要计算相关度")
+code_a=sim.autoencode([text1])[0]
+print(code_a)
+code_b=sim.autoencode([text2])[0]
+print(code_b)
+# print(sim.subcode(a))
+
+# print(b)
+# print(sim.subcode(b))
+
+
+sim.similarity(code_a['code'],code_b['code']),sim.getdistance(code_a['code'],code_b['code'])
+```
+
+
+拆分子码，子码至少存在一个一样的才需要计算相关度
+{'subcode': ['1101100011001100', '1010110001010111', '0101101101110111', '0001111011011101'], 'code': '1101100011001100101011000101011101011011011101110001111011011101'}
+{'subcode': ['1101100110001100', '1010110001010111', '0001111101110111', '0001111011011101'], 'code': '1101100110001100101011000101011100011111011101110001111011011101'}
+(0.999999910089919, 4)
+
+
+
+
+# update
+
+----
+0.0.1.4
+
+修改word列表为文本
+
+
