@@ -1,0 +1,17 @@
+""" helper files for avro serialization """
+
+from enum import Enum
+from pydantic import BaseModel, Field
+import sys
+
+__all__ = ['Field']
+
+class AvroModel(BaseModel):
+    class Config:        
+        allow_population_by_field_name = True
+
+class StrEnum(str, Enum):
+    pass
+
+def avro_schema(instance: AvroModel) -> str:
+    return sys.modules[instance.__module__].avro_schema
