@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Wolvesburg
+Version: 3.2.1
+Summary: Edit .wolvesburg files
+Author-email: Pigly3 <spot@wolvesburg.com>
+Project-URL: Homepage, https://github.com/Pigly3/wolvesburg
+Project-URL: Bug Tracker, https://github.com/Pigly3/wolvesburg/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Documentation:
+get(filename without extension)
+returns object from file
+
+deposit(filename without extension, data to deposit - object of Wolvesburg class)
+Preparing data:
+object = Wolvesburg()
+object.property = value
+
+importtxt(filename without extension, object of Wolvesburg class)
