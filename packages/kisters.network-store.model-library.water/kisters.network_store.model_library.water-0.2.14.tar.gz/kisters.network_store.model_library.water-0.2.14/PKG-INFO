@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: kisters.network_store.model_library.water
+Version: 0.2.14
+Summary: Model library for the Kisters Network Store ecosystem
+Home-page: https://gitlab.com/kisters/network-store/model-library-water
+Author: Jesse VanderWees
+Author-email: jesse.vanderwees@kisters-bv.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+License-File: AUTHORS.md
+
+# kisters.network_store.model_library.water
+
+The models for the `water` domain of the kisters.network_store.model_library
+
+
