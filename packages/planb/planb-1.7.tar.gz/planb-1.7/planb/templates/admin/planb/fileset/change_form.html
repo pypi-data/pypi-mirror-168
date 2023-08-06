@@ -1,0 +1,31 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript" src="{{ STATIC_URL }}planb/js/jquery-postlink.js"></script>
+    <script type="text/javascript">//<![CDATA[
+        django.jQuery(document).ready(function() {
+            django.jQuery(".postlink").postlink({'csrf_protected': true});
+        });
+    //]]></script>
+{% endblock %}
+
+{% block object-tools-items %}
+    {% if perms.planb.change_fileset %}
+        {% with original.get_transport as transport %}{% if transport %}
+            <li><a href="{{ transport.get_change_url }}">{% trans "Edit transport" %}</a></li>
+        {% else %}
+            {# FIXME: don't hardcode this #}
+            <li><a href="{% url "admin:transport_rsync_config_add" %}?fileset={{ original.pk }}">{% trans "New rsync/ssh transport" %}</a></li>
+            {# FIXME: order this somehow, by prio in PLANB_TRANSPORTS? #}
+            <li><a href="{% url "admin:transport_exec_config_add" %}?fileset={{ original.pk }}">{% trans "New exec transport" %}</a></li>
+        {% endif %}{% endwith %}
+        <li><a class="postlink" href="{% url "enqueue" original.pk %}">{% trans "Enqueue" %}</a></li>
+        <li><a class="postlink" data-snapname="" href="{% url "enqueue" original.pk %}"
+            onclick="var snapname;if((snapname=prompt('Enter desired (lowercase) permanent snapshot name (or blank to cancel)'))&&snapname!='planb'&&snapname.match(/^[a-z]([a-z0-9-]*[a-z0-9])?$/)){this.setAttribute('data-snapname',snapname);return true;}return false;"
+            >{% trans "Enqueue+keep" %}</a></li>
+    {% endif %}
+
+    {{ block.super }}
+{% endblock %}

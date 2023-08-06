@@ -1,0 +1,8 @@
+Django<3.3,>=2.2
+django-q<2,>=1.2.1
+django-multi-email-field<0.7,>=0.6.1
+dutree<2,>=1.6
+PyYAML>=5.1.1
+redis
+setproctitle<2,>=1.1.8
+python-dateutil<3,>=2.8.1

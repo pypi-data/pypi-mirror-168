@@ -1,0 +1,2 @@
+[console_scripts]
+planb = planb.__main__:main
