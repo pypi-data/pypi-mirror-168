@@ -1,0 +1,9 @@
+mousipy/__init__.py,sha256=xNbMNKfxNFvH-YdFShl3Q4V72EcubLXb7xlNZjTXtag,38
+mousipy/mousipy.py,sha256=YhhyPy_JeNApZU_2sX1nqeuthAvmTk8Ri9nOyngchtU,7010
+mousipy/biomart/human_to_mouse_biomart_export.csv,sha256=NP3_7c6adOUWDR8HYiEpYsbx0umMgq0gaKKSFmfvKKs,2499142
+mousipy/biomart/mouse_to_human_biomart_export.csv,sha256=zJKTTyNIKrtI6YU_N8Bie41WhNSIKcmEFbvGYOReC0s,2387385
+mousipy-0.0.5.dist-info/LICENSE,sha256=TlW-a_xjAL_BGeihb-dvwH4ZFb5QIDy_4cSuaZfxifs,1070
+mousipy-0.0.5.dist-info/METADATA,sha256=PVPV1rE5nAHEreCkF21lmobxcx5M73Ota25QIbIlJ3I,2676
+mousipy-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mousipy-0.0.5.dist-info/top_level.txt,sha256=y7htWy9gHE8QQFLGRw-jouAv_E1Sz_ELnwGkY9ugRx0,8
+mousipy-0.0.5.dist-info/RECORD,,
