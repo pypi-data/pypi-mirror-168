@@ -1,0 +1,11 @@
+pgmq/__init__.py,sha256=Tk7b1hGpDOz-xuUNcVkXegMg2tjlmhicA93xXIWbVEg,318
+pgmq/_crud.py,sha256=0xhbxzHkSIV6zXd_g8LqAA157YU0m13gqXptMuqsIVI,1147
+pgmq/_migrations/1.up.sql,sha256=-3IKR_laagsj9nCUmjdqE53zo_UJAU_R5oZvR453fxg,3366
+pgmq/_migrations/__init__.py,sha256=KoyEApaYpfFzTAbSEn0sqRi9wRBseOvJaCxWHm-NJ5k,1757
+pgmq/_queries.py,sha256=CiaZHKcVVqxRMbk2NCzRiHPJ3EXGnx89FNtq6sCpzEY,6584
+pgmq/_queue.py,sha256=foW2KlxlXQ9oqTExIhlDkLBWHcHVLtSHnUTr_tdGgME,14738
+pgmq/api.py,sha256=sw9Pu4b-Yh59Gx_1cLpCj_XJpImTUU43M9q6iEmQZtU,4166
+pgmq-0.6.0.dist-info/LICENSE.txt,sha256=_YCib7s_ZErx-plBNERnApMpaFGXlyJ-B6E2jeqA8Lw,1023
+pgmq-0.6.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pgmq-0.6.0.dist-info/METADATA,sha256=NoIlBFZ0CICkkubduFW-BQgHR0ziCDVTGNHMPF-bB24,3849
+pgmq-0.6.0.dist-info/RECORD,,
