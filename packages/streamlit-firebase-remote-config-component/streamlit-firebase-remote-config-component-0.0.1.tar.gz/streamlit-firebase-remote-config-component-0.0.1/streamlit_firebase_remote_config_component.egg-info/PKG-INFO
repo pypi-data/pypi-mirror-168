@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: streamlit-firebase-remote-config-component
+Version: 0.0.1
+Summary: Firebase Remote Config and Google Analytics for Streamlit
+Home-page: 
+Author: Granit Luzhnica
+Author-email: granit.luzhnica@gmail.com
+Requires-Python: >=3.1
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+
+        A streamlit component which enables fatching remote config variables from firebase and also enables google analytics.
+        Usage:
+        
+        from fbrc import fbrc
+        configParams:dict = fbrc(FirebaseConfig)
+        
