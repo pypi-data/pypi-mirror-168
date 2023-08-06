@@ -1,0 +1,15 @@
+aiohttp
+click
+fsspec
+geojson_pydantic
+geopandas
+h5netcdf
+numpy
+orjson
+pandas
+pyarrow
+python-snappy
+requests
+shapely
+xarray
+zarr
