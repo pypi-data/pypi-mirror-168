@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: safe-security-logger
+Version: 1.0.0
+Summary: Custom logging framework from SAFE security
+Home-page: https://github.com/Safe-Security/py-logger/py-logger
+Author: deepak-sreekumar
+Author-email: deepak.s@safe.security
+License: MIT
+Project-URL: Source, https://github.com/Safe-Security/py-logger
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
+License-File: LICENSE.txt
+
+.. image:: https://img.shields.io/pypi/v/safe-security-logger.svg
+        :alt: PyPI-Server
+        :target: https://pypi.org/project/safe-security-logger/
+
+
+.. image:: https://img.shields.io/github/workflow/status/Safe-Security/py-logger/publish
+    :alt: Built Status
+    :target: https://github.com/Safe-Security/py-logger/actions/workflows/publish.yml
+
+
+|
+
+====================
+safe-security-logger
+====================
+
+
+    Structured JSON logger package from Safe Security
+
+
+
+============
+Installation
+============
+
+::
+
+    pip install safe-security-logger
+
+
+============
+Usage
+============
+
+::
+
+    import safe_security_logger as logging
+
+    logger = logging.getLogger("awesome-logger")
+
+    def test():
+        logger.info("Hello world")
+        logger.info("Hello world", extra={"text": "testing logging"})
+
+    test()
