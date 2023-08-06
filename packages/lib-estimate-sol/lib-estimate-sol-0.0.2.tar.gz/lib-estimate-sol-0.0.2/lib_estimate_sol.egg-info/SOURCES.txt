@@ -1,0 +1,13 @@
+setup.py
+estimate_sol/__init__.py
+estimate_sol/assembly_extractor.py
+estimate_sol/comment_remover.py
+estimate_sol/counter.py
+estimate_sol/estimate_script.py
+estimate_sol/import_extractor.py
+estimate_sol/import_resolver.py
+estimate_sol/string_blanker.py
+lib_estimate_sol.egg-info/PKG-INFO
+lib_estimate_sol.egg-info/SOURCES.txt
+lib_estimate_sol.egg-info/dependency_links.txt
+lib_estimate_sol.egg-info/top_level.txt
