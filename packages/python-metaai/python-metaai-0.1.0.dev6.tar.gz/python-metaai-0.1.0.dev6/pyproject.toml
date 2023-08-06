@@ -1,0 +1,17 @@
+[project]
+name = "python-metaai"
+version = "0.1.0.dev6"
+description = ""
+authors = [
+    {name = "zt", email = "zt@zjuici.com"},
+]
+dependencies = ["kfp==1.8.13", "fastapi==0.79.0", "uvicorn==0.18.2"]
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
