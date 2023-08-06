@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/asmint/__init__.py
+src/asmint/__main__.py
+src/asmint/interpreter.py
+src/assembler_interpreter.egg-info/PKG-INFO
+src/assembler_interpreter.egg-info/SOURCES.txt
+src/assembler_interpreter.egg-info/dependency_links.txt
+src/assembler_interpreter.egg-info/entry_points.txt
+src/assembler_interpreter.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+asmint = asmint.__main__:main
