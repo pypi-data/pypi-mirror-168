@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: seletrans
+Version: 0.4.0
+Summary: Translate phase using selenium.
+License: MIT
+Author: SErAphLi
+Author-email: seraphlivery@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: chromedriver-autoinstaller (>=0.3.1,<0.4.0)
+Requires-Dist: pytest (>=7.1.2,<8.0.0)
+Requires-Dist: selenium (>=4.3.0,<5.0.0)
+Project-URL: Bug Tracker, https://github.com/Seraphli/seletrans/issues
+Project-URL: Homepage, https://github.com/Seraphli/seletrans
+Description-Content-Type: text/markdown
+
+# SeleTrans
+
+Translate phase using selenium. And you can also play the sound of the phase you are querying.
+
+Currently support `Baidu`, `DeepL` and `Google`.
+
+## Usage
+
+```python
+from seletrans.api import *
+
+with Google() as ts:
+    res = ts.query("book", target="zh-CN")
+    print(res.result)
+    print(res.dict_result)
+    res.play_sound()
+```
+
+Check the test case for more information, or run it yourself to see the results.
+
+## Explain
+
+Why use selenium? Why not use requests?
+
+Although selenium is slower than requests, it is more convenient to adapt when API changes.
+
+## Notice
+On the mac, you have to run `/Applications/Python 3.10/Install Certificates.command` to avoid 
+
+```
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>
+```
+
