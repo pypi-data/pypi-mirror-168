@@ -1,0 +1,11 @@
+soltrack/__init__.py,sha256=aO4K_kLnLa7CBim6Og4YrXWw7AGtwA4GSwHJq_mpqBU,3093
+soltrack/data.py,sha256=OObEg928YiqW2M9wVO5jbmAY8_2gwqZvBHOkur5iIWQ,4076
+soltrack/location.py,sha256=pR61s7PJbEIcD-S_MVa4SGIe1_Ocf-RxbT5ZDh0OE-g,3659
+soltrack/position.py,sha256=hnhVoAGDOBWko91gi0ptRH_QrPUQp-eowbB8j4vsZ0I,20941
+soltrack/riseset.py,sha256=_LNWdYuFkqMqT1Qi-klarlHso6FEypR99g-jXTKYZN0,14766
+soltrack/time.py,sha256=8FbC3PLiy7ZlOzl3y0FYoO4KR0AozpOrAM51QZYTOIk,7006
+soltrack-0.2.2.dist-info/LICENCE,sha256=b8nnCcy_4Nd_v_okJ6mDKCvi64jkexzbSfIag7TR5mU,13827
+soltrack-0.2.2.dist-info/METADATA,sha256=vk9g4YUCCufebi42kRglJAas7q1D0TQmBT50StW3yXY,16607
+soltrack-0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+soltrack-0.2.2.dist-info/top_level.txt,sha256=8I1wJ-cN6wxfDgtCOnIb3r85da_cVYXJBWTbe18hiSw,9
+soltrack-0.2.2.dist-info/RECORD,,
