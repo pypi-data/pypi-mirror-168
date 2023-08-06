@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Pyfuso
+Version: 0.0.5
+Summary: Conversor universal de fusohorarios
+Home-page: https://github.com/L-Vinicius/Pyfuso
+Author: Vinicius Jose Pereira Lacerda
+Author-email: viniciusjosepereiralacerda@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+file : README.md
