@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: xia-meta
+Version: 0.1.0
+Summary: X-I-A Meta
+Home-page: https://develop.x-i-a.com/docs/xia-meta/0.1.0/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: xia-engine-firestore
+
+.. image:: https://img.shields.io/pypi/v/xia-meta.svg
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-meta/
+
+====================================
+X-I-A Meta
+====================================
+
+A straight-forward definition of all creature in the XIA-meta.
+
+There are two basic notion:
+
+* Worker: Information holder
+* Provisioner: Service provider
+
+Worker is "alive" only when supported by a provisioner. Unlike worker, provisioner should hold only cached information.
+
+* Connector: a special component of provisioner to communicate with other Worker (defined or undefined in XIA-Meta)
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-meta
+
+
+
+
