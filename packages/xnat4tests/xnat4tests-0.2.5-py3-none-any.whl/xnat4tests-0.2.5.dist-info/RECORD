@@ -1,0 +1,17 @@
+xnat4tests/__init__.py,sha256=rIxRD6K2zq7-JgQtJUdEl26drBciy7H2tQnEUMzJWzg,223
+xnat4tests/_config.py,sha256=4D9CjzyqGfi64-h1CzrBQO4vTie04Dw2gR3LyawGFrU,2681
+xnat4tests/_version.py,sha256=L8NWK2LQQXp24gcRF1TdlcI0Gt_WUnbsiNVT8D6ATJI,497
+xnat4tests/launch.py,sha256=Kz8l180C-Y1VoCUjZWQ1Xcj_T2_TqCg4u-eOn8I0_Sw,9902
+xnat4tests/docker-src/Dockerfile,sha256=yDySPXGysdNwhiXZ3NKSBs6ywEQK-f1V3gI0g_vegPg,3101
+xnat4tests/docker-src/XNAT.sql,sha256=dbMv_zoWqLYbvM5kaB66BfdWYhGkZM5bb7Bj4GXUeT8,100
+xnat4tests/docker-src/launch-xnat.sh,sha256=kgGLgRQw6fyDMaRJlFlcsXZzzcIKQbb-DT_1R3JNloY,288
+xnat4tests/docker-src/make-xnat-config.sh,sha256=BVcjvnOQHhaH_bboVzurqCNGsaQ3dLXzJtNp3_h3vt4,501
+xnat4tests/docker-src/postfix-start,sha256=D-ulWsBc_0rA-Ze2uJecwJN_rPeha6IHUVZVhFbKwtU,1008
+xnat4tests/docker-src/supervisord.conf,sha256=SF_KgAZFRVh93zheKcEH3pT3oY9-iXLKkj3X00CqNpk,452
+xnat4tests/docker-src/xnat-prefs-init.ini,sha256=1IDXan2_9L9cL3WySiLknCTOhBE1l3F07l-QYfvMG4w,567
+xnat4tests-0.2.5.dist-info/LICENSE,sha256=XDfkETUJGjmCHPswathRZiWwu0lRDOVq2Fw0e7xG3yk,6383
+xnat4tests-0.2.5.dist-info/METADATA,sha256=wFULW0-lQlgTe6Qd7Z-ar3rfO63G0MGrALCiYbWM2Ls,3818
+xnat4tests-0.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xnat4tests-0.2.5.dist-info/entry_points.txt,sha256=GLEbIxulPHlZU5NpaWRpL4HpJxFO3uyNrrUk9yghxog,234
+xnat4tests-0.2.5.dist-info/top_level.txt,sha256=WZVuO5vRtzCMkDTk7AhXwVnjJpqMRyDr9djRPpe2MUg,11
+xnat4tests-0.2.5.dist-info/RECORD,,
