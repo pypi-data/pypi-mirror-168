@@ -1,0 +1,11 @@
+{% extends 'layouts/core.html' %}
+
+{% import 'macros/keypad.html' as keypad %}
+
+{% block main %}
+
+    <div class="centered-container">
+        {{ keypad.keypadform(url_for('user.login_post'), form) }}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import floatingButtonModal %}
+
+{% block main %}
+
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card rounded hoverable">
+                <div class="card-content">
+                    <span class="card-title center-block"></span>
+                    <form action="" method="post">
+                        {{ form.hidden_tag() }}
+                        <div class="row">
+                            <div class="col s12 input-field">
+                                {{ form.name() }}
+                                {{ form.name.label }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 input-field center-align">
+                                {{ form.price() }}
+                                {{ form.price.label }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 center-align">
+                                {{ form.submit(class="btn waves-effect waves-light") }}
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
