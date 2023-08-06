@@ -1,0 +1,6 @@
+future>=0.15.0
+six>=1.9.0
+cryptography<=36.0.2,>=1.7.2
+requests>=2.6.0
+igwn-auth-utils>=0.3.1
+safe_netrc>=1.0.0

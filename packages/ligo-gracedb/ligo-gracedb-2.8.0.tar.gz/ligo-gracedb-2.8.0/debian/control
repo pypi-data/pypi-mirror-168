@@ -1,0 +1,51 @@
+Source: ligo-gracedb
+Maintainer: Alexander Pace <alexander.pace@ligo.org>
+Section: python
+Priority: optional
+Build-Depends:
+ debhelper (>= 9),
+ dh-python,
+ help2man,
+ python3-all,
+ python3-cryptography,
+ python3-igwn-auth-utils,
+ python3-future,
+ python3-requests,
+ python3-setuptools,
+ python3-six,
+Standards-Version: 3.9.1
+X-Python3-Version: >=3.6
+
+Package: python3-ligo-gracedb
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-cryptography,
+ python3-future,
+ python3-igwn-auth-utils,
+ python3-requests,
+ python3-setuptools,
+ python3-six,
+Provides: ${python3:Provides}
+Description: Gravitational-wave Candidate Event Database - Python 3
+ The gravitational-wave candidate event database (GraceDB) is a prototype
+ system to organize candidate events from gravitational-wave searches and to
+ provide an environment to record information about follow-ups. A simple client
+ tool is provided to submit a candidate event to the database.
+ .
+ This package provides Python 3 support.
+
+Package: ligo-gracedb
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-ligo-gracedb (=${binary:Version}),
+Description: Gravitational-wave Candidate Event Database - command-line tools
+ The gravitational-wave candidate event database (GraceDB) is a prototype
+ system to organize candidate events from gravitational-wave searches and to
+ provide an environment to record information about follow-ups. A simple client
+ tool is provided to submit a candidate event to the database.
+ .
+ This package provides the command-line tools.
