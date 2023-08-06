@@ -1,0 +1,9 @@
+LICENSE
+README.md
+bicchiere.py
+pyproject.toml
+bicchiere.egg-info/PKG-INFO
+bicchiere.egg-info/SOURCES.txt
+bicchiere.egg-info/dependency_links.txt
+bicchiere.egg-info/entry_points.txt
+bicchiere.egg-info/top_level.txt
