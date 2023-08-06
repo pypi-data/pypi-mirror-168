@@ -1,0 +1,17 @@
+wagtailtables/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailtables/apps.py,sha256=aWRuS7-7WSekbVPRUZtqBZsyYa1RycNMj5n91dLsiBk,158
+wagtailtables/blocks.py,sha256=70BASSgJD-Ee9N8bgtB6rYHVNWzG0RHy5biQgexGz80,3079
+wagtailtables/static/wagtailtables/css/jspreadsheet.css,sha256=oyOQUznNbiFK9y3SSLG8OcS6-UDLddRyqA9klun47EE,19983
+wagtailtables/static/wagtailtables/css/jspreadsheet.theme.css,sha256=P1hvj3vjTXeGX5CRwmgtAlsZrguPwV9slb0UTj-76d4,5473
+wagtailtables/static/wagtailtables/css/jsuites.css,sha256=lc846sfUO95hN3o_H_dLxE_8V2Bwc3OnbB8EaKr8Zsc,62385
+wagtailtables/static/wagtailtables/js/jspreadsheet.js,sha256=nl15L2cWYl9U25uh8cJDEGpbecuA8FZypePHuV0R0Cg,583722
+wagtailtables/static/wagtailtables/js/jsuites.js,sha256=iYLBhrHgVUDoYaZ90_TZ18sbUJuxBAS3UhjGSXT-FFw,377146
+wagtailtables/static/wagtailtables/js/table-dataset.js,sha256=FkN2La1OP_33uxxC9ul7rZQZbC2YzZ7sqLms5sMTArw,1820
+wagtailtables/templates/wagtailtables/table_block.html,sha256=X-IOA6gSfVYL_ZN9vgz51G_83NVkGwDMD4lbAIS4tTw,1037
+wagtailtables/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailtables/templatetags/wagtailtables_tags.py,sha256=HeyFn74p9I4HWYRFpWVluIS7JDTcwBvOez5uhSgMCZI,968
+wagtailtables-0.2.1.dist-info/LICENSE.txt,sha256=HFooyrKeEOWxC1q8CZU8SFG08IYneOD7vNzkZWjhBUg,1074
+wagtailtables-0.2.1.dist-info/METADATA,sha256=ZPA365YoaG1faL1Ysbpk-30dc4KCWr_f2dpJnVsOMik,3751
+wagtailtables-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wagtailtables-0.2.1.dist-info/top_level.txt,sha256=Ykh2iBg06-Z2CHAfMzK2JlChd87lJMyXy-g84TeDlLU,14
+wagtailtables-0.2.1.dist-info/RECORD,,
