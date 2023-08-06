@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: autograph-obsidian
+Version: 0.2
+Summary: Automatic knowledge graph generation.
+Home-page: https://github.com/J-E-J-S/autograph-obsidian
+Author: James Sanders
+Author-email: james.sanders1711@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+Make graphs for obsidian.md through mining scientific literature.
+
