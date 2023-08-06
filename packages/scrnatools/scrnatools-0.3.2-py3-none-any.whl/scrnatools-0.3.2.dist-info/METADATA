@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: scrnatools
+Version: 0.3.2
+Summary: Tools for single cell RNA sequencing pipelines
+Home-page: https://github.com/j-germino/sc-rna-tools
+Author: Joe Germino
+Author-email: joe.germino@ucsf.edu
+License-File: LICENSE.txt
+Requires-Dist: scanpy
+Requires-Dist: scrublet
+Requires-Dist: scvi-tools
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: memory-profiler
+Requires-Dist: leidenalg
+Requires-Dist: datetime
+Requires-Dist: anndata
+Requires-Dist: scipy
+
