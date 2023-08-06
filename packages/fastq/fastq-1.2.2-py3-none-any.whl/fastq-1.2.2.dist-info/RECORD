@@ -1,0 +1,9 @@
+fastq/__init__.py,sha256=zX184SPThbXTo8VjE8i3JFvv7fDB2M88SzwT-qK9uug,178
+fastq/_fastq.py,sha256=-mTR8ftBSg9oaiyT29f9jsGBLvNaC52sH_XrvfawOY4,5305
+fastq/_reader.py,sha256=kAgH-i_j-XqtkL7oQPGbsWLLIy_X02VHXyIbcb0a1tg,3096
+fastq/_writer.py,sha256=VYcgNV5Cua5RPHyzr_quuyrvMnjjPmuzW39k197INx4,726
+fastq-1.2.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fastq-1.2.2.dist-info/METADATA,sha256=GxD-IHLxrT4M_ra-pe4t9H167FXQOP1QuPDsFWr866M,5453
+fastq-1.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastq-1.2.2.dist-info/top_level.txt,sha256=0JPQcfItIcMVLPqVdU0-Hc9_Xql063mNtdSeNyW-4cc,6
+fastq-1.2.2.dist-info/RECORD,,
