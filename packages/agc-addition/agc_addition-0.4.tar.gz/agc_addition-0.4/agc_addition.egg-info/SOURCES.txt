@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+agc_addition/__init__.py
+agc_addition/addition.py
+agc_addition.egg-info/PKG-INFO
+agc_addition.egg-info/SOURCES.txt
+agc_addition.egg-info/dependency_links.txt
+agc_addition.egg-info/not-zip-safe
+agc_addition.egg-info/top_level.txt
