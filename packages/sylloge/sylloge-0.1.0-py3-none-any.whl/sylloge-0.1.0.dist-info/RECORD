@@ -1,0 +1,9 @@
+sylloge/__init__.py,sha256=1P3etcpcosIW3yCmD0Qk2hZTNl47hMXiM3wj0cGqzlI,313
+sylloge/base.py,sha256=VvdNC14gzFYxakiKsogj5nKlLDpAsvk9WJ2MfaAgLEQ,8006
+sylloge/moviegraph_benchmark_loader.py,sha256=T7oRka-1LeygxEL_CG_VHkSecMJe82qHs_8FA-DZh9g,1956
+sylloge/open_ea_loader.py,sha256=-a6B8KT8A6V4sqJLe53Bm3Sgss1ZRz-jFz8mKx-qUOc,2991
+sylloge/utils.py,sha256=fi512a5-BeRlbjcHbcwkFisGjanvatmum_w1C7czOco,458
+sylloge-0.1.0.dist-info/LICENSE,sha256=gRQiVNcA9MpX935v43v67npED32Ro4joLtC7_mAGAbk,1072
+sylloge-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sylloge-0.1.0.dist-info/METADATA,sha256=Ujby9XEVv5ERjVFY4KPkoo7bEd0qBZLeRw7SAO8i83k,5139
+sylloge-0.1.0.dist-info/RECORD,,
