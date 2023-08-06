@@ -1,0 +1,10 @@
+membank/__init__.py,sha256=gi6MGcVY15O_U4MUsUhXYcV_bSgq0jqi4aXzPKd0d10,121
+membank/datamapper.py,sha256=DOeL8jJr4VmocgsseJhbqHA8QB3azGfWmZgteEXwYyE,1372
+membank/datamethods.py,sha256=nm_KtngxnynfrCIYbj50dr_-MOtgPRY4tOdh9UMvaQo,5825
+membank/errors.py,sha256=hAF1m0jnqPi91tLcgfefThNOlOVMPygxRYTVm-S5QVY,420
+membank/interface.py,sha256=SbU2AadEht4HOdngI_AwEPGyRFeBgScQPBYV1d2484Q,8460
+membank-0.4.0.dist-info/LICENSE,sha256=GzONayeEK5kq4gwsAm4pi4fz-YFJ-FEa25G-izwg5Lg,1550
+membank-0.4.0.dist-info/METADATA,sha256=_Ff9KRJNM8vilZxZFEwaeiYFJG9g4qpXBRNSOFIHckk,1973
+membank-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+membank-0.4.0.dist-info/top_level.txt,sha256=bmCMSWMeMYA4KaDGniatUkpIXarZwI4w0JlYDnJfiek,8
+membank-0.4.0.dist-info/RECORD,,
