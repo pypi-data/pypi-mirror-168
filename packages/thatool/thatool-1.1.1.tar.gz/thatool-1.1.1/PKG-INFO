@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: thatool
+Version: 1.1.1
+Summary: This package contains several in-house codes to handle some specific tasks. This package is developed and maintained by @thangckt
+Home-page: https://github.com/thangckt/thatool
+Download-URL: https://github.com/thangckt/thatool/tarball/1.1.1
+Author: Thang
+Author-email: thangckt@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
