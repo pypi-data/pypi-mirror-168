@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: hydrogen-pfhx
+Version: 0.0.7
+Summary: Chemical engineering model of hydrogen plate-fin heat exchanger
+Author-email: Keelan O'Neill <keelan.oneill@uwa.edu.au>
+License: BSD 3-Clause License        
+        Copyright (c) 2022, Fluid Science & Resources
+        All rights reserved.        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.        
+Project-URL: url, https://github.com/fsr-uwa/hydrogen-pfhx
+Keywords: hydrogen,pfhx,heat exchanger,ortho,para,engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: CoolProp (>=6.4.1)
+Requires-Dist: matplotlib (>=3.5.2)
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: pandas (>=1.4.4)
+Requires-Dist: pyyaml (>=6.0)
+Requires-Dist: scipy (>=1.8.1)
+
+# hydrogen-pfhx
+Chemical engineering model of hydrogen plate-fin heat exchanger
+
+## Installation
+```bash
+$ pip install hydrogen-pfhx
+```
+
