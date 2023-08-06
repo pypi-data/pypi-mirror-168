@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: fluidai-sanatio
+Version: 2.2.3
+Summary: Run different validation tests on machine learning models.
+Home-page: https://github.com/
+Author: FluidAI
+Author-email: info@fluid.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-plot
+Requires-Dist: sklearn
+Requires-Dist: statsmodels
+Requires-Dist: Pillow
+Requires-Dist: tabulate
+Requires-Dist: seaborn
+Requires-Dist: xgboost
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: flask
+Requires-Dist: sqlalchemy
+Requires-Dist: markdown
+Requires-Dist: mdutils
+Requires-Dist: jupyter
+Requires-Dist: ipython
+Requires-Dist: pymssql
+Requires-Dist: requests
+Requires-Dist: coverage
+Requires-Dist: coverage-badge
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: auto-sklearn
+Requires-Dist: cython
+Requires-Dist: cornac
+Requires-Dist: joblib
+Requires-Dist: ipywidgets
+Requires-Dist: airtable
+Requires-Dist: datetime
+
+# FluidAI - Sanatio
+
+## Sanatio
+
+> sanatio(Latin) OR validation(English) <br>
+>> noun <br>
+>> 1. the action of checking or proving the validity or accuracy of something.
+>> 2. the action of making or declaring something legally or officially acceptable.
+>> 3. recognition or affirmation that a person or their feelings or opinions are valid or worthwhile.
+
+The FluidAI - Sanatio package provides functions to perform different types of validation functions, the results of
+which can be used for ensuring the machine learning model trained is robust and the accuracy levels attained are
+dependable. <br>
+
+## Version 2.1.0 updates
+
+1. Code Generation modules
+2. CF model training modules
+3. Correlation structure in routines
+
+## Features in Sanatio
+
+| Feature   |
+|----------|
+|Validation Reports |
+|Enacting recommendation |
+|Automl Module |
+|Code Generation |
+|Collaborative model building | 
+|Fillna Module (Under Progress) |
+
+## User Docs
+
+https://fluid-ai.gitbook.io/fluid-ai-sanatio
+
+### Current directory structure
+
+```
+sanatio/
+├───authentication_server/
+│   ├───authentication_server.py   
+│   ├───utils/
+│   │   ├───db_credential.json        # credential file
+│   │   ├───utils.py
+│   │   └───__init__.py
+│   └───__init__.py
+├───code_generation/
+│       ├───generate_code.py        # codes to generate new cell with functions defined in the below files
+│       ├───matrics_codes.py
+│       └───__init__.py
+├───jupyter_ui_menu/
+│       ├───jupyter_menu.py          #for generating interactive dropdown menu for all sanatio features
+│       ├───jupyter_codegen_menu.py  #for generating interactive dropdown menu for code generation
+│       └───__init__.py
+├───training/
+│   ├───automl/                       # pipeline generation functions
+│   │   ├───pipeline_generation.py
+│   │   └───__init__.py
+│   └───__init__.py
+│   ├───recommsys/                       # recommendation for CF functions
+│   │   ├───cf.py
+│   └───__init__.py
+├───validations/
+│   ├───db_credential.json
+│   ├───graphs/                       # plotting functions
+│   │   ├───graphs.py
+│   │   └───__init__.py                   
+│   ├───routines/                     # folder has different routines 
+│   │   ├───binary_logistic_regression_routine.py 
+│   │   ├───helper_routines.py        # has the base routine and validation routine class that calls different routines
+│   │   ├───linear_regression_routine.py
+│   │   ├───tree_based_classification_routine.py
+│   │   └───__init__.py
+│   ├───sanatio_enact.py              # code to enact sanatio recommendations
+│   ├───session_authentication.py     # code to authenticate with main server  
+│   ├───stats/
+│   │   ├───stats.py                  # plotting functions
+|   |   |───correlation_structure.py
+│   │   └───__init__.py
+│   └───__init__.py
+├───validation_tests/                 # test cases
+│   ├───test_authentication.py
+│   ├───test_automl.py
+│   ├───test_enact.py
+│   ├───test_graphs.py
+│   ├───test_routines.py
+│   ├───test_stats.py
+│   └───__init__.py
+└───__init__.py
+```
+
+*Note*: _Subject to future changes in the file structure._
+
