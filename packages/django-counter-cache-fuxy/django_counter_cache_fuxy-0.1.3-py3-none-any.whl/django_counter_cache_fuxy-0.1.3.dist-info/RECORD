@@ -1,0 +1,15 @@
+django_counter_cache_fuxy/__init__.py,sha256=gXrFlpJ1CNN8DJxdbCWQOjTcvTvSCEEg5A0V23K2iKc,139
+django_counter_cache_fuxy/counter.py,sha256=AgZz2fX4D00cg5Ly0rnjUa07jQVPSNXQeZuwlspzXTU,5771
+django_counter_cache_fuxy/fields.py,sha256=e33yqrBIqpTOG0_dDjf1ZjzaQ0bt5E2w_GCRl2OTP8E,618
+django_counter_cache_fuxy/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_counter_cache_fuxy/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_counter_cache_fuxy/management/commands/list_counters.py,sha256=c66PzK4uBrU1JX0D_t_cjw5f7b7rGLFW_7bJDiRPRF8,323
+django_counter_cache_fuxy/management/commands/rebuild_counter.py,sha256=ZivVdYUFL1Zuy9e3MOsalzoH1GGUkDDn8AtWDQATUU4,1425
+docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/source/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/source/conf.py,sha256=YaQu1hcF9WOFutrgfqcAPUIareTikbsFkVw84hItZYs,8409
+django_counter_cache_fuxy-0.1.3.dist-info/LICENSE,sha256=ITZu91LAx_v5HEb_FjIS05kcbzHPXt0hZGeWbFB4Pn4,1088
+django_counter_cache_fuxy-0.1.3.dist-info/METADATA,sha256=cKFc874gs01MHGnDe1xQgKi3zEXDAmXF14t4biJ0GDQ,4431
+django_counter_cache_fuxy-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_counter_cache_fuxy-0.1.3.dist-info/top_level.txt,sha256=ZGtoYh0Mu04VBp3h9RVw67bJtPFUJ6qyob6e2eu8--0,31
+django_counter_cache_fuxy-0.1.3.dist-info/RECORD,,
