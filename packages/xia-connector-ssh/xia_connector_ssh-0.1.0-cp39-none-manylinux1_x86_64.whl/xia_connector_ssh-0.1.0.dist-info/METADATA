@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: xia-connector-ssh
+Version: 0.1.0
+Summary: X-I-A SSH Connectors
+Home-page: https://develop.x-i-a.com/docs/xia-connector-ssh/0.1.0/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: paramiko
+Requires-Dist: xia-engine
+Requires-Dist: xia-engine-firestore
+Requires-Dist: xia-meta-secret
+
+.. image:: https://img.shields.io/pypi/v/xia-connector-ssh.svg
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-connector-ssh/
+
+====================================
+X-I-A SSH Connectors
+====================================
+
+In the XIA-Meta Infrastructure.
+Connector is a key component of Provisioner to manage their resource.
+
+This is SSH Connector implementation.
+
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-connector-ssh
+
+
+
+
