@@ -1,0 +1,10 @@
+xia_meta/__init__.py,sha256=xkzgDGbn8G-CDYgCUs-c-uit07THGYi7Ylm8EGh7Wo4,285
+xia_meta/asset.cp310-win_amd64.pyd,sha256=RLvs1yEQ6Qw4hnazQzbO3jLAOv57tIavNt3guAI5wLg,295424
+xia_meta/health.cp310-win_amd64.pyd,sha256=bypfon0TbseK1vRjH4doeRLuM297bTaRrv8THU4EObw,335872
+xia_meta/meta.cp310-win_amd64.pyd,sha256=FPErn5TG1RJxgdEZGfJWRvIqnmdXaEqFURbMflFdL_Y,368640
+xia_meta/tools.cp310-win_amd64.pyd,sha256=WXaKzX7v3N6eBnU1sYkM1ca5wlm_2KrWjjV_R_7CkwU,226304
+xia_meta-0.0.17.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_meta-0.0.17.dist-info/METADATA,sha256=GziHzM8TNLu1wa0ys9JS6_mvmoptqTnjrql4Rq4_vAk,352
+xia_meta-0.0.17.dist-info/WHEEL,sha256=xKD-W076Kxa9P8HVHMBFDAZ44LgNHrPjF081MKvpixU,100
+xia_meta-0.0.17.dist-info/top_level.txt,sha256=A1LHjfteOLrSw4HhYEPVd8UBy61ssU7xrQvEn7mM7HM,9
+xia_meta-0.0.17.dist-info/RECORD,,
