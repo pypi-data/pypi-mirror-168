@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: t18e
+Version: 0.0.0
+Summary: A Paranoid Personal/Family/Friends EA Powered by Python + 4TH
+Home-page: https://github.com/theprojectwith/noname
+Author: Scott McCallum <https://linkedin.com/in/scott-mccallum>
+Author-email: CTOs@Urbane.eMail
+License: UNKNOWN
+Description: # TBA
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Forth
+Classifier: Topic :: Education
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
