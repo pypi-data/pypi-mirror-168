@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pufferlib
+Version: 0.1.0
+Summary: PufferAI LibraryPufferAI's library of RL tools and utilities
+Home-page: https://github.com/PufferAI/PufferLib
+Author: Joseph Suarez
+Author-email: jsuarez@mit.edu
+License: MIT
+Description: UNKNOWN
+Keywords: Puffer,AI,RL
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
