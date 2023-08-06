@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+denodo = denodo.sqlalchemy:dialect
