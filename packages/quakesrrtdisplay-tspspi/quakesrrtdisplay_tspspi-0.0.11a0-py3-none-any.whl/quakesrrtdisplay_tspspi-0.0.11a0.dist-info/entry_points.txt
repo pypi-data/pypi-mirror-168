@@ -1,0 +1,2 @@
+[console_scripts]
+quakesrdisplay = esrrtdisplay01.esrrtdisplay01:main
