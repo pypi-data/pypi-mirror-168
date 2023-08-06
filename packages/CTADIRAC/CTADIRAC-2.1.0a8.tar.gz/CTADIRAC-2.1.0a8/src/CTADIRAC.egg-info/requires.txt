@@ -1,0 +1,15 @@
+DIRAC==7.3.23
+sphinx_rtd_theme
+pyyaml
+
+[server]
+DIRAC[server]
+psutil
+stomp.py
+suds-jurko
+psycopg2-binary
+
+[testing]
+mock
+Pillow
+pytest
