@@ -1,0 +1,15 @@
+environment
+***********
+
+
+Description
+===========
+
+Results of an environment search. Contains both EnvironmentSummary
+items and other information, such as metadata.
+
+
+Available Commands
+==================
+
+* list
