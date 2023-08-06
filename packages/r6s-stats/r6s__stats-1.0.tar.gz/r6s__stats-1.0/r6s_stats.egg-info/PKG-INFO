@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: r6s-stats
+Version: 1.0
+Summary: Python R6S account statistics parser
+Home-page: https://github.com/AlexProgramep/R6S_stats
+Author: AlexTheProgrammer
+Author-email: sekirosinobi@gmail.com
+License: Apache License Version 2.0 
+        Copyright: (c) 2022 AlexTheProgrammer
+Keywords: python,r6s,stats,requests,beautifulsoup4,bs4,bs
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+More on GitHub: https://github.com/AlexProgramep/R6S_stats
+

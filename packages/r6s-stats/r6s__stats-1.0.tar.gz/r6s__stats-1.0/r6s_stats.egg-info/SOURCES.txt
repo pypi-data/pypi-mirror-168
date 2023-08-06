@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+r6s__stats/__init__.py
+r6s__stats/r6s.py
+r6s_stats.egg-info/PKG-INFO
+r6s_stats.egg-info/SOURCES.txt
+r6s_stats.egg-info/dependency_links.txt
+r6s_stats.egg-info/requires.txt
+r6s_stats.egg-info/top_level.txt
