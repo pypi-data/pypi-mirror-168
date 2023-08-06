@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: scico
+Version: 0.0.3
+Summary: Scientific Computational Imaging COde: A Python package for scientific imaging problems
+Home-page: https://github.com/lanl/scico
+Author: SCICO Developers
+Author-email: brendt@ieee.org
+License: BSD
+Keywords: Computational Imaging,Scientific Imaging,Inverse Problems,Plug-and-Play Priors,Total Variation,Optimization,ADMM,Linearized ADMM,PDHG,PGM
+Platform: Any
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: scipy (>=1.6.0)
+Requires-Dist: tifffile
+Requires-Dist: imageio (>=2.17)
+Requires-Dist: matplotlib
+Requires-Dist: jaxlib (<=0.3.15,>=0.3.0)
+Requires-Dist: jax (<=0.3.17,>=0.3.0)
+Requires-Dist: flax (>=0.4.0)
+Requires-Dist: bm3d (>=3.0.9)
+Requires-Dist: svmbir (>=0.3.0)
+Requires-Dist: pyabel (>=0.8.5)
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-runner ; extra == 'dev'
+Requires-Dist: packaging ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: black (<23,>=22.3) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: autoflake ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx (>=4.2.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: faculty-sphinx-theme ; extra == 'docs'
+Requires-Dist: jinja2 (<3.1.0) ; extra == 'docs'
+Requires-Dist: traitlets (!=5.2.2) ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: ipython-genutils ; extra == 'docs'
+Requires-Dist: py2jn ; extra == 'docs'
+Requires-Dist: pygraphviz (>=1.7) ; extra == 'docs'
+Requires-Dist: pandoc ; extra == 'docs'
+Requires-Dist: docutils (==0.16) ; extra == 'docs'
+Provides-Extra: examples
+Requires-Dist: astra-toolbox ; extra == 'examples'
+Requires-Dist: bm4d (>=4.0.0) ; extra == 'examples'
+Requires-Dist: colour-demosaicing ; extra == 'examples'
+Requires-Dist: xdesign (>=0.5.5) ; extra == 'examples'
+Requires-Dist: ray[tune] (>=2.0.0) ; extra == 'examples'
+Requires-Dist: hyperopt ; extra == 'examples'
+Provides-Extra: notebooks
+Requires-Dist: nbformat ; extra == 'notebooks'
+Requires-Dist: nbconvert ; extra == 'notebooks'
+Requires-Dist: nb-conda-kernels ; extra == 'notebooks'
+Requires-Dist: psutil ; extra == 'notebooks'
+Requires-Dist: py2jn ; extra == 'notebooks'
+Requires-Dist: pypandoc ; extra == 'notebooks'
+Requires-Dist: ray[tune] ; extra == 'notebooks'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-runner ; extra == 'tests'
+
+
+SCICO is a Python package for solving the inverse problems that arise in scientific imaging applications. Its primary focus is providing methods for solving ill-posed inverse problems by using an appropriate prior model of the reconstruction space. SCICO includes a growing suite of operators, cost functionals, regularizers, and optimization routines that may be combined to solve a wide range of problems, and is designed so that it is easy to add new building blocks. SCICO is built on top of JAX, which provides features such as automatic gradient calculation and GPU acceleration.
+
+
