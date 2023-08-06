@@ -1,0 +1,7 @@
+click
+progressbar
+verboselogs
+nltk
+fuzzywuzzy
+python-Levenshtein
+halo

@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/cli.py
+src/extractonator.py
+src/keycollator.egg-info/PKG-INFO
+src/keycollator.egg-info/SOURCES.txt
+src/keycollator.egg-info/dependency_links.txt
+src/keycollator.egg-info/entry_points.txt
+src/keycollator.egg-info/requires.txt
+src/keycollator.egg-info/top_level.txt
