@@ -1,0 +1,16 @@
+alive-progress>=2.4.0
+bibtexparser
+
+[deploy]
+twine
+wheel
+
+[dev]
+black
+coverage
+flake8
+isort
+mypy
+pre-commit
+pytest
+pytest-cov
