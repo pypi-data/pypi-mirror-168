@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+quickcerts/__init__.py
+quickcerts/__main__.py
+quickcerts.egg-info/PKG-INFO
+quickcerts.egg-info/SOURCES.txt
+quickcerts.egg-info/dependency_links.txt
+quickcerts.egg-info/entry_points.txt
+quickcerts.egg-info/requires.txt
+quickcerts.egg-info/top_level.txt
+quickcerts.egg-info/zip-safe
