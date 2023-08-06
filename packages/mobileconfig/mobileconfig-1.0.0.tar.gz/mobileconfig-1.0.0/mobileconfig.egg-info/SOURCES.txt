@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mobileconfig/__init__.py
+mobileconfig/__main__.py
+mobileconfig.egg-info/PKG-INFO
+mobileconfig.egg-info/SOURCES.txt
+mobileconfig.egg-info/dependency_links.txt
+mobileconfig.egg-info/entry_points.txt
+mobileconfig.egg-info/requires.txt
+mobileconfig.egg-info/top_level.txt
