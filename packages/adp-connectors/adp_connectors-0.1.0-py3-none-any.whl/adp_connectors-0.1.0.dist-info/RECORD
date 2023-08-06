@@ -1,0 +1,10 @@
+adp_connectors/__init__.py,sha256=1iV7m3crqrTE3LGy-E3AFB_8Sh-I5y6sltcdW_djO1E,94
+adp_connectors/base.py,sha256=bkkGQU8Pc_Wuu8Ee3EPRAi03Gk9xm7htQ9kL_51Kd-Q,933
+adp_connectors/box.py,sha256=6UX5WUg0I06bp6-isTo-Kmq9QtDMNnD9P8L-5BmELk4,3115
+adp_connectors/postgresql.py,sha256=rScgzRJmqsDVr0SX_gbhDNBNSvtzRgqIdwTt62qrc8E,2236
+adp_connectors/s3.py,sha256=862HF4QhxgO_AsOX3qOxemZvZ5wAzrE38_C-G8oTYFA,2949
+adp_connectors-0.1.0.dist-info/LICENSE,sha256=K2rcBMNB8cbhmd0imY6fZbwDJSrPSYRytpI5seU2xHE,1042
+adp_connectors-0.1.0.dist-info/METADATA,sha256=EiwspayyvKp_Rctvokaeph7pUkKuEi_KqWlaSITQ0AY,1657
+adp_connectors-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+adp_connectors-0.1.0.dist-info/top_level.txt,sha256=A6F6fa7R9YI_XTg2TSYucahD8id81M7dbYJ9r5_41N4,15
+adp_connectors-0.1.0.dist-info/RECORD,,
