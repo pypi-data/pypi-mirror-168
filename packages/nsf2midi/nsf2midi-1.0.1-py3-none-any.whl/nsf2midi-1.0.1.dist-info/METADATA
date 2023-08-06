@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nsf2midi
+Version: 1.0.1
+Summary: Convert NSF music to MIDI
+Author: Sun Xufei
+Project-URL: Homepage, https://github.com/realpython/reader
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: mido (>=1.2.10)
+
