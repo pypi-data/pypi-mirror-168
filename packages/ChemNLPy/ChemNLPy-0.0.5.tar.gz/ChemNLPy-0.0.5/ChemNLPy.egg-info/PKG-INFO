@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ChemNLPy
+Version: 0.0.5
+Summary: Chemical NLP for Python
+Home-page: 
+Author: zbc
+Author-email: zbc@mail.ustc.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ChemNLPy
+
+部分功能需要调用中科大校内网的相关网络服务
+
+```python
+
+```
+

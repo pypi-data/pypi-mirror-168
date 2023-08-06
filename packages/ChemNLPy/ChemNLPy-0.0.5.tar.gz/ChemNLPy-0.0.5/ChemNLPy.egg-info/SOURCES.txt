@@ -1,0 +1,9 @@
+README.md
+setup.py
+ChemNLPy.egg-info/PKG-INFO
+ChemNLPy.egg-info/SOURCES.txt
+ChemNLPy.egg-info/dependency_links.txt
+ChemNLPy.egg-info/requires.txt
+ChemNLPy.egg-info/top_level.txt
+chem_nlpy/__init__.py
+chem_nlpy/chemical_tagger.py
