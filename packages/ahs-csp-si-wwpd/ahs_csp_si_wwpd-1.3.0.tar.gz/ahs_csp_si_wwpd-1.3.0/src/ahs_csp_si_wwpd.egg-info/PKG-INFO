@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ahs-csp-si-wwpd
+Version: 1.3.0
+Author: Robert Tian
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
