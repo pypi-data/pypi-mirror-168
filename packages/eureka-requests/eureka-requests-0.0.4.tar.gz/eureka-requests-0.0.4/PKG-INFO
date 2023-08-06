@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: eureka-requests
+Version: 0.0.4
+Home-page: https://github.com/VK/eureka-requests
+License: MIT
+Keywords: Use eureka to make a request at different locations
+Description-Content-Type: text/markdown
+
+# Eureka Requests
+
+Use eureka to find all possible endpoints and then make requests until it works
+starting with the best locations
+
+## Install
+```
+pip install eureka_requests
+```
+
+## Usage
+```python
+import eureka_requests
+
+dbApi = eureka_requests.RequestsApi(
+    "DB-SERVE",
+    _eureka_url,
+    _db_token,
+)
+
+dbApi.post("/testdb",
+    json = {"query": "SELECT * FROM USERS"}
+)
+```
