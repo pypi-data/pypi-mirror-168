@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+keypartx/KeypartX.py
+keypartx/__init__.py
+keypartx.egg-info/PKG-INFO
+keypartx.egg-info/SOURCES.txt
+keypartx.egg-info/dependency_links.txt
+keypartx.egg-info/requires.txt
+keypartx.egg-info/top_level.txt
+keypartx/basemodes/__init__.py
+keypartx/basemodes/avn_base.py
+keypartx/basemodes/net_base.py
+keypartx/basemodes/text_edges.py
