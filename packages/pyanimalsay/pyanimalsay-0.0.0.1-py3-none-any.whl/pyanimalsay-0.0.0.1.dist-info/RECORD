@@ -1,0 +1,8 @@
+pyanimalsay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyanimalsay/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyanimalsay/app/animals.py,sha256=lJYP8FSKy84j_yhaJzV5CtYOd596LAvpY9fgqw209r8,1736
+pyanimalsay/app/main.py,sha256=mAmKRgW4vnF94QZ-qe7hsxpPoKkVZZOVTmszNwy_L3U,921
+pyanimalsay-0.0.0.1.dist-info/entry_points.txt,sha256=wNqoS5WsgEdeXg8zRxi6UXC4Y3Kfi8sSVoZ4Dn_OTyg,52
+pyanimalsay-0.0.0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pyanimalsay-0.0.0.1.dist-info/METADATA,sha256=u2YjlV_Kyd0Vv9LhTOQ4ROS7oJVzVe0bkVRUL-UxPPU,474
+pyanimalsay-0.0.0.1.dist-info/RECORD,,
