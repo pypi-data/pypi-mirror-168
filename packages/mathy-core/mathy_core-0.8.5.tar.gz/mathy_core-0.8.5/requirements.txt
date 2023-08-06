@@ -1,0 +1,5 @@
+numpy
+colr
+pydantic>=1.0.0
+wasabi
+typing_extensions; python_version < "3.7"
