@@ -1,0 +1,5 @@
+pyyaml
+deepmerge
+pydantic
+requests
+responses
