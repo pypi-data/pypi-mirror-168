@@ -1,0 +1,14 @@
+semanticscholar/ApiRequester.py,sha256=m03dK37EFKYH0_QLOi67T60msclnwOTvM6YhMSA7LSk,2011
+semanticscholar/Author.py,sha256=PdFfVDJD54VjQmKundAul1O8kg7O0xL9usHtFJKEEL8,4141
+semanticscholar/Journal.py,sha256=a06z8LSwc5I30q1xRAXFV2c9W53gslUIod7QaanwImM,1141
+semanticscholar/PaginatedResults.py,sha256=kKTu8QsNgl4qvggPJwnPcRxo3J0Lrolx-HyImOZoRHk,3182
+semanticscholar/Paper.py,sha256=ZAwVDAfRGFuGzNJUeW1B6OFXohPS1zz12JHRXh-cYyo,8878
+semanticscholar/SemanticScholar.py,sha256=im6WkyohTAsgunePcuyQlMxvJiXmJPxCnaVkEOgZLd8,8523
+semanticscholar/SemanticScholarException.py,sha256=3ZKmQOkYh-1RiiJhwJ_UAkoFfJTtUL1W3SXR22WKFaQ,195
+semanticscholar/Tldr.py,sha256=QlVQAh5RQP89Qf5Zw0SGopUlRqHpmrK4Av4K7uPV2jg,936
+semanticscholar/__init__.py,sha256=5wV2YGko4eGxSWEiT3eQqsIDH8QhlZA9ZPnY_lFDzE8,45
+semanticscholar-0.3.0.dist-info/LICENSE,sha256=wQJNJTZF49h8QtzwPe36TpWuzN6p0Pun4DM1rBzWjNQ,1069
+semanticscholar-0.3.0.dist-info/METADATA,sha256=iysu-1xJVsm2QW26tmY10Ov-N8xGDs-R-XezDAeWKIo,7938
+semanticscholar-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+semanticscholar-0.3.0.dist-info/top_level.txt,sha256=XsVsgortHHsNE_x2C-slCFqMzuLzmqo-P8Q9iz5Jp7s,16
+semanticscholar-0.3.0.dist-info/RECORD,,
