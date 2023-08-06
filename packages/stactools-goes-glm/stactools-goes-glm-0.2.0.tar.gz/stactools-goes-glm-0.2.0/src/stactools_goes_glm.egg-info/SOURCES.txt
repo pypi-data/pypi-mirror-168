@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/stactools/goes_glm/__init__.py
+src/stactools/goes_glm/commands.py
+src/stactools/goes_glm/constants.py
+src/stactools/goes_glm/netcdf.py
+src/stactools/goes_glm/parquet.py
+src/stactools/goes_glm/stac.py
+src/stactools_goes_glm.egg-info/PKG-INFO
+src/stactools_goes_glm.egg-info/SOURCES.txt
+src/stactools_goes_glm.egg-info/dependency_links.txt
+src/stactools_goes_glm.egg-info/requires.txt
+src/stactools_goes_glm.egg-info/top_level.txt
