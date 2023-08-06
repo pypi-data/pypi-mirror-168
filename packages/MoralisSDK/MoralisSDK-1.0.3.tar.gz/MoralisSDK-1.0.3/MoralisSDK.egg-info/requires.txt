@@ -1,0 +1,4 @@
+requests
+pinatapy-vourhey
+python_dateutil
+urllib3
