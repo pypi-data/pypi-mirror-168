@@ -1,0 +1,2 @@
+[console_scripts]
+omen2-codegen = omen2.codegen:main
