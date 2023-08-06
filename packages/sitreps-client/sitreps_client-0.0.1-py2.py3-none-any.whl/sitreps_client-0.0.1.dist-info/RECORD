@@ -1,0 +1,17 @@
+sitreps_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitreps_client/cloc.py,sha256=q6CdOBhmmHlQlkjTieLjeHmsEzWROF5IeWpd_883AzI,5587
+sitreps_client/code_coverage.py,sha256=kB3I1rgBwZqvQffJs8E3JlipXZWx50G5bLfM_oyEJns,4921
+sitreps_client/exceptions.py,sha256=ey9fBW9t8sckaWM6vFeU1sxQpVj4ohJFgQg3vI6rR58,425
+sitreps_client/issues.py,sha256=9--0Msx85Qk1ZchIfd8-q2UD4FQmeoMG6AC9Tkwb6SU,4729
+sitreps_client/project.py,sha256=heVgMfQCb-7nN79O4MXq6nuNseXYREisgdqDcgYLdmI,4783
+sitreps_client/unit_tests.py,sha256=RTY2sZO3NuTzyUQVncpTedX5Wbkh_en1_3y5zwLj_hw,30
+sitreps_client/conf/config.py,sha256=NatSvY0sxWKdM1gOKJTblwQ964MTkI1thXbdznNWCr0,2632
+sitreps_client/conf/default_settings.yaml,sha256=tNo5yY5qStqVXcG3SxSbcUxpfn8tkR5S_V9XAhN87pM,1241
+sitreps_client/utils/ci_downloader.py,sha256=LDFRK_SGyvNBKJK1l8XaC7_8qZEgvxNZnH5_FfFdn6w,1386
+sitreps_client/utils/helpers.py,sha256=AUDZrAqpKS68IrDC_1iyQb7E80KIhK6oGm1K5AmnfNY,2362
+sitreps_client/utils/path.py,sha256=57lYXtpGr_CyJOXtLRFLK3TUUmiBF70emvbCldFd_gs,138
+sitreps_client/utils/repository.py,sha256=E7XblcUkEN0X-WO0NOa9WAHxodqYpqGnG3NinQJ1H7Q,3531
+sitreps_client-0.0.1.dist-info/METADATA,sha256=qEKiLp9i4xN-MNk8eEdQgV3zt4PHchHDUXpzTJWbBMI,1254
+sitreps_client-0.0.1.dist-info/WHEEL,sha256=5Gbha-HOJJmKseuQWxjJpk0q8B56TAKe60YGQ1JD6jo,105
+sitreps_client-0.0.1.dist-info/licenses/LICENSE,sha256=O5tfZlESkbOf5s8Fbq8KW3MHGZgX5XCS6FT2ZQuOUbI,1071
+sitreps_client-0.0.1.dist-info/RECORD,,
