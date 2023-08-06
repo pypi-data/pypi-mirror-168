@@ -1,0 +1,27 @@
+from django.test import TestCase
+
+
+class {{ test_class }}(TestCase):
+    def {{ test_name }}(self):
+        response = self.client.{{ request.method.lower() }}(
+            "{{ request.path_info }}",
+            {{ query_params }}
+            {{ post_data }}
+            {% for header, value in request_headers.items() %}
+            {{ header }}={{ value.__repr__() }},
+            {% endfor %}
+        )
+
+        self.assertEqual(response.status_code, {{ response.status_code }})
+        {%- if "\n" in response.content %}
+        content = """\
+{% filter indent(8, True) %}{{ response.content }}{% endfilter %}
+        """
+        {%- else %}
+        content = {{ response.content.__repr__() }}
+        {%- endif %}
+        self.assertEqual(response.content.decode("{{ response.charset|default("utf-8") }}"), content)
+        {%- for name in template_names %}
+        self.assertTemplateUsed(response, {{ name.__repr__() }})
+        {%- endfor %}
+
