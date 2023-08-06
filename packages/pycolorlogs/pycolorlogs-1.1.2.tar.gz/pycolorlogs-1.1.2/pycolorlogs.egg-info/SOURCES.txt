@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pycolorlogs/__init__.py
+pycolorlogs/colors.py
+pycolorlogs/py.typed
+pycolorlogs.egg-info/PKG-INFO
+pycolorlogs.egg-info/SOURCES.txt
+pycolorlogs.egg-info/dependency_links.txt
+pycolorlogs.egg-info/requires.txt
+pycolorlogs.egg-info/top_level.txt

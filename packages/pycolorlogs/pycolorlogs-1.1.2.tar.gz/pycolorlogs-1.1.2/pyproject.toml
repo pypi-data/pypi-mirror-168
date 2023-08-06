@@ -1,0 +1,26 @@
+[build-system]
+requires = ['setuptools', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'pycolorlogs'
+version = '1.1.2'
+description = 'Extends default python logging package to include 256-bit terminal colors'
+readme = 'README.md'
+authors = [{ name = 'Pedro Menegasso', email='pvgmenegasso@gmail.com'}]
+license = { file = 'LICENSE' }
+classifiers = [
+    'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Topic :: System :: Logging',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Operating System :: OS Independent',
+    ]
+keywords = ['logging', 'colors', 'output', 'devops', 'cli', 'linux']
+dependencies = ['dataclasses']
+requires-python = '>=3.6.15'
+
+[project.urls]
+'Homepage' = 'https://github.com/pvgmenegasso/pycolorlogs'
+
