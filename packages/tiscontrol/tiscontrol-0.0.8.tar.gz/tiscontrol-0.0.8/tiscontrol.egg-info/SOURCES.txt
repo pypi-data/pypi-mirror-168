@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tiscontrol/__init__.py
+tiscontrol/tiscontrol.py
+tiscontrol.egg-info/PKG-INFO
+tiscontrol.egg-info/SOURCES.txt
+tiscontrol.egg-info/dependency_links.txt
+tiscontrol.egg-info/not-zip-safe
+tiscontrol.egg-info/top_level.txt
