@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: cerebral
+Version: 0.0.4
+Summary: Tool for creating multi-output deep ensemble neural-networks
+Home-page: https://github.com/Robert-Forrest/cerebral
+Author: Robert Forrest
+Author-email: robertforrest@live.com
+License: BSD 3-Clause License
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: adjustText
+Requires-Dist: elementy
+Requires-Dist: kt-legacy
+Requires-Dist: matplotlib
+Requires-Dist: metallurgy
+Requires-Dist: numpy
+Requires-Dist: omegaconf
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: setuptools
+Requires-Dist: tensorflow
+Requires-Dist: pydot
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'dev'
+Requires-Dist: tox (==3.24.3) ; extra == 'dev'
+Requires-Dist: pytest (==6.2.5) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.12.1) ; extra == 'dev'
+
+# cerebral
+
+![Tests](https://github.com/Robert-Forrest/cerebral/actions/workflows/tests.yml/badge.svg)
+
+Tool for creating multi-output deep ensemble neural-networks
