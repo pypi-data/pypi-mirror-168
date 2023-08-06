@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pkgmeasure
+Version: 1.0.1
+Summary: An example of a python package from pre-existing code
+Home-page: https://github.com/jladan/package_demo
+Author: John Ladan
+Author-email: jladan@uwaterloo.ca
+License: MIT
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
+===================
+Measurements Module
+===================
+
+**A demo for how to create a python package from existing code**
+
+The actual software provides L1, L2, Supremum, and Hamming metrics and norms for numpy arrays.
