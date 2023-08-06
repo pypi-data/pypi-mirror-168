@@ -1,0 +1,10 @@
+agc_addition/__init__.py,sha256=wBhLB7vJMOjOz1t5eYJb2K5rgbrIZI0Wp5GiWaGhPsY,26
+agc_addition/addition.py,sha256=N5TuRFxOYiovkhv1fg5mIR2KazTk7PF9ShF1_nYJgbs,54
+agc_key/__init__.py,sha256=PrZr4NlNP4YUGZUaSYdejNXQAt1mSPxPHbUxvjDKh5c,26
+agc_key/proje_key.py,sha256=IYWavioZAPioy4fDSKMhW-SZ8AnZp1yyC61WqiL0Aes,122
+verified_key/__init__.py,sha256=TG1o5WdCPKZsu9K7Q9hcsm9n_Gfpj2_vlshP-TPzhys,39
+verified_key/proje_key.py,sha256=ecI7VSXVg8ugs5CO1wGNwr0C8653QUZSUxvYynGXTXU,667
+verified_key-0.7.dist-info/METADATA,sha256=mdNSCSs70yg63NS7LWHZfk54SYOTDunYFpRlbA65A8c,187
+verified_key-0.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+verified_key-0.7.dist-info/top_level.txt,sha256=in0-jV3NXJhkibi2key6x9g-HPOvLQ8URXdhyzUGNX8,13
+verified_key-0.7.dist-info/RECORD,,
