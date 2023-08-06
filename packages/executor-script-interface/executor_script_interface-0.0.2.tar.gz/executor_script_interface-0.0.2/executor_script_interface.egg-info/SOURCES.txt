@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+executor_script_interface/__init__.py
+executor_script_interface/script_functions.py
+executor_script_interface/version.py
+executor_script_interface.egg-info/PKG-INFO
+executor_script_interface.egg-info/SOURCES.txt
+executor_script_interface.egg-info/dependency_links.txt
+executor_script_interface.egg-info/top_level.txt
