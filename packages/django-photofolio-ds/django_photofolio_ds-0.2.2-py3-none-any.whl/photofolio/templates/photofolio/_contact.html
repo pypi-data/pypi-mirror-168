@@ -1,0 +1,100 @@
+{% load static %}
+<style>
+  .naver-btn {
+  background: #2DB400;
+  border: 0;
+  padding: 10px 25px;
+
+  color: #ffffff;
+  transition: 0.45s;
+  border-radius: 4px;
+}
+</style>
+
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="row gy-4 justify-content-center">
+
+      <div class="col-lg-3">
+        <div class="info-item d-flex">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h4>Location:</h4>
+            <p>{{ contact.address }}</p>
+          </div>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="col-lg-3">
+        <div class="info-item d-flex">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h4>Email:</h4>
+            <p>{{ contact.email }}</p>
+          </div>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="col-lg-3">
+        <div class="info-item d-flex">
+          <i class="bi bi-phone flex-shrink-0"></i>
+          <div>
+            <h4>Call:</h4>
+            <a href='tel:{{ contact.phone }}' onclick="call_gtag_report_conversion('tel:{{ contact.phone }}')"><p>{{ contact.call }}</p></a>
+          </div>
+        </div>
+      </div><!-- End Info Item -->
+
+    </div>
+
+    <div class="row justify-content-center mt-4">
+
+      <div class="col-lg-9">
+        <form action="{% url 'photofolio:contact' %}" method="POST" role="form" class="php-email-form">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-4 form-group">
+              {{ form.name }}
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              {{ form.phone }}
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              {{ form.date }}
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            {{ form.message }}
+          </div>
+          {% if post_message %}
+          <div class="my-3">
+            <div class="alert alert-success alert-dismissible fade show " role="alert">
+              {{ post_message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+          {% endif %}
+          <div class="text-center">
+            <button type="submit">상담하기</button>
+            {% if naver %}
+            <a href="{{ naver }}" class="naver-btn mx-3" onclick="naver_gtag_report_conversion('{{ naver }}')">Link to 네이버예약</a>
+            {% endif %}
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+</section>
+
+{% if anchor %}
+<!-- context 에 anchor 항목이 있으면 바로 이동시킨다. jquery 필요-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type='text/javascript'>
+$(document).ready(function(){
+    window.location = '#{{ anchor }}'
+});
+</script>
+{% endif %}
