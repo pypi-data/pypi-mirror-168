@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+
+{% macro liste(dict, commentaire="", crop=needs_crop) %}
+    {% for item in dict %}
+        {% if item in crop %}
+            {% set img = deck_name(item)|lower %}
+            {% set img =  "img/split-crop/" + img + ".jpg" %}
+        {% else %}
+            {% set img = "" %}
+        {% endif %}
+        <div class="col-sm-4">
+            {{ deck.card(item, img, commentaire) }}
+        </div>
+    {% endfor %}
+{% endmacro %}
+
+{% block banner %}
+<div class="banner_container col-12">
+    <img src="{{ url_for('static', filename='img/banner.jpg') }}" alt="Bannière" class="opacity-75" width="100%">
+    <div class="centered"><h1 class="fs-1">Liste des decks</h1></div>
+</div>
+{% endblock %}
+
+{% block article %}
+<article class="col-8 ms-auto me-auto my-4">
+    {% block ogdesc %}
+    Liste des decks joués lors des soirées sur
+    {{ external("https://www.twitch.tv/leschroniquesducommander", "<i class='fa-brands fa-twitch'></i> Twitch", _class="text-reset")}}.
+    Une analyse et les parties jouées sont disponibles sur chaque page de deck.
+    {% endblock %}
+</article>
+
+<div class="col-12 bg-header py-4 mt-1 mb-2">
+    <div class="col-8 ms-auto me-auto">
+        <h2>Decks dont le macrotype est 🗡️ <em>Agro</em></h2>
+    </div>
+</div>
+<article class="col-8 ms-auto me-auto my-4">
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    <div class="col-12">
+        <strong>Agro</strong> représente la partie des decks dont le principal
+        objectif est d'amener l'adversaire à zéro point de vie le plus
+        rapidement possible en jouant des créatures ou des sorts de dégâts
+        directs.
+    </div>
+    {{ liste(decks_agro) }}
+</div>
+</article>
+{{ separateur() }}
+
+<div class="col-12 bg-header py-4 mt-1 mb-2">
+    <div class="col-8 ms-auto me-auto">
+        <h2>Decks dont le macrotype est ⌚ <em>Tempo</em></h2>
+    </div>
+</div>
+<article class="col-8 ms-auto me-auto my-4">
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    <div class="col-12">
+        Les decks <strong>Tempo</strong> se reconnaissent à leur stratégie
+        consistant à poser rapidement une ou plusieurs menaces puis à les
+        protéger suffisamment longtemps, le plus souvent à l'aide de
+        contresorts, pour gagner.
+    </div>
+    {{ liste(decks_tempo) }}
+</div>
+</article>
+{{ separateur() }}
+
+<div class="col-12 bg-header py-4 mt-1 mb-2">
+    <div class="col-8 ms-auto me-auto">
+        <h2>Decks dont le macrotype est ⛓️ <em>Contrôle</em></h2>
+    </div>
+</div>
+<article class="col-8 ms-auto me-auto my-4">
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    <div class="col-12">
+        L'objectif des decks <strong>Contrôle</strong> est de ralentir le
+        déroulement de la partie afin d'installer une guerre d'attrition basée
+        essentiellement sur du <em>Card Advantage</em>.
+    </div>
+    {{ liste(decks_controle) }}
+</div>
+</article>
+{{ separateur() }}
+
+<div class="col-12 bg-header py-4 mt-1 mb-2">
+    <div class="col-8 ms-auto me-auto">
+        <h2>Decks dont le macrotype est ✨ <em>Combo</em></h2>
+    </div>
+</div>
+<article class="col-8 ms-auto me-auto my-4">
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    <div class="col-12">
+        Les decks <strong>Combo</strong> sont basés sur une forte interaction
+        entre au moins deux cartes (une <em>combinaison</em>) qui permet de
+        gagner la partie instantanément ou qui mène à un très fort avantage
+        quasi-synonyme de victoire.
+    </div>
+    {{ liste(decks_combo) }}
+</div>
+</article>
+{{ separateur() }}
+
+<div class="col-12 bg-header py-4 mt-1 mb-2">
+    <div class="col-8 ms-auto me-auto">
+        <h2>Decks dont le macrotype est 🦏 <em>Midrange</em></h2>
+    </div>
+</div>
+<article class="col-8 ms-auto me-auto my-4">
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    <div class="col-12">
+        Certains decks mélangent des stratégies <em>Contrôle</em> et
+        <em>Agro</em>, ce sont des decks, appelés <strong>Midrange</strong>,
+        qui se servent de créatures dont les forces et endurances sont
+        supérieures aux créatures jouées par Agro pour prendre l'avantage.
+    </div>
+    {{ liste(decks_midrange) }}
+</div>
+</article>
+{{ separateur() }}
+
+<div class="col-12 bg-header py-4 mt-1 mb-2">
+    <div class="col-8 ms-auto me-auto">
+        <h2>Decks joués dont les généraux sont devenus illégaux</h2>
+    </div>
+</div>
+<article class="col-8 ms-auto me-auto my-4">
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    {{ liste(decks_ban) }}
+</div>
+</article>
+{% endblock %}

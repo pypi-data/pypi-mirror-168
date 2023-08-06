@@ -1,0 +1,20 @@
+{% extends "matchs/_layout_matchs.html" %}
+
+### PRESENTATION ###
+{% block analyse %}
+{% endblock %}
+
+
+### JOUEURS ###
+{% set joueur1 = "Spigushe" %}
+{% set joueur2 = "Domino" %}
+
+### VIDEO ###
+{% set youtube = "https://www.youtube.com/embed/XzhUy6Hkp7A" %}
+{% set date = "28 juin 2022" %}
+
+### LEGENDE ###
+{% block pilote1 %}{{ pilote.spigushe() }}{% endblock %}
+{% block deck1 %}{{ deck.card("/decks/maelstrom-wanderer") }}{% endblock %}
+{% block deck2 %}{{ deck.card("/decks/jori-en-ruin-diver") }}{% endblock %}
+{% block pilote2 %}{{ pilote.domino() }}{% endblock %}

@@ -1,0 +1,51 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="matchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">⏯️ Matchs</a>
+    <ul class="dropdown-menu" aria-labelledby="matchDropdown">
+        <li>{{ link("/matchs", name="Liste des matchs",  _class="dropdown-item") }}</li>
+        <li><hr class="dropdown-divider"></li>
+        <!--# Small screens
+            # Matchs 21 à 30
+            #-->
+        <div class="d-block d-md-none">
+        <li><a class="dropdown-item disabled">21 à 30</a></li>
+        {{ liste(matchs_2130,"px-2") }}
+        </div>
+        <!--# Small screens
+            # Matchs 11 à 20
+            #-->
+        <div class="d-block d-md-none">
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item disabled">11 à 20</a></li>
+        {{ liste(matchs_1120,"px-2") }}
+        </div>
+        <!--# Small screens
+            # Matchs 01 à 10
+            #-->
+        <div class="d-block d-md-none">
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item disabled">01 à 10</a></li>
+        {{ liste(matchs_0110,"px-2") }}
+        </div>
+        <!--# Large screens
+            # Matchs dans l'ordre
+            #-->
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">01 à 10</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(matchs_0110) }}
+            </ul>
+        </li>
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">11 à 20</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(matchs_1120) }}
+            </ul>
+        </li>
+        <li class="d-none d-md-block">
+            <a href="#" class="dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">21 à 30</a>
+            <ul class="submenu dropdown-menu">
+                {{ liste(matchs_2130) }}
+            </ul>
+        </li>
+    </ul>
+</li>

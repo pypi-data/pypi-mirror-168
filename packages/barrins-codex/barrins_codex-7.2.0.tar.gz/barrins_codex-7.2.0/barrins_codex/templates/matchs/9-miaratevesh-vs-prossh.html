@@ -1,0 +1,25 @@
+{% extends "matchs/_layout_matchs.html" %}
+
+### PRESENTATION ###
+{% block analyse %}
+    L'épreuve du deck mono-noir lors du pilotage d'un deck combo basé sur des
+    créatures est assez rude. L'objectif principal de Prossh est de partir en
+    combo dès que possible pour limiter l'impact des cartes apportées par
+    Tevesh si la partie vient à durer. Le matchup est très en faveur de Miara-
+    Tevesh.
+{% endblock %}
+
+
+### JOUEURS ###
+{% set joueur1 = "Domino" %}
+{% set joueur2 = "damienade_" %}
+
+### VIDEO ###
+{% set youtube = "https://www.youtube.com/embed/eCYpWp7ayak" %}
+{% set date = "1er février 2022" %}
+
+### LEGENDE ###
+{% block pilote1 %}{{ pilote.domino() }}{% endblock %}
+{% block deck1 %}{{ deck.card("/decks/miaratevesh", "img/split-crop/miara-tevesh.jpg") }}{% endblock %}
+{% block deck2 %}{{ deck.card("/decks/prossh-skyraider-of-kher") }}{% endblock %}
+{% block pilote2 %}{{ pilote.apparition("damienade_") }}{% endblock %}

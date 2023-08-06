@@ -1,0 +1,25 @@
+{% extends "matchs/_layout_matchs.html" %}
+
+### PRESENTATION ###
+{% block analyse %}
+    Il s'agit d'un match de decks agressifs. L'un se base sur ses créatures,
+    les protège et les renforce, l'autre utilise des sorts de dégâts directs
+    pour tuer les créatures adverses ou pour les jouer sur l'adversaire. Au
+    final, le matchup semble en faveur de Kari Zev qui a un éventail agressif
+    plus développé.
+{% endblock %}
+
+
+### JOUEURS ###
+{% set joueur1 = "Domino" %}
+{% set joueur2 = "Imperia86" %}
+
+### VIDEO ###
+{% set youtube = "https://www.youtube.com/embed/bvI8tIO4TNo" %}
+{% set date = "12 avril 2022" %}
+
+### LEGENDE ###
+{% block pilote1 %}{{ pilote.domino() }}{% endblock %}
+{% block deck1 %}{{ deck.card("/decks/killian-ink-duelist") }}{% endblock %}
+{% block deck2 %}{{ deck.card("/decks/kari-zev-skyship-raider") }}{% endblock %}
+{% block pilote2 %}{{ pilote.imperia86() }}{% endblock %}

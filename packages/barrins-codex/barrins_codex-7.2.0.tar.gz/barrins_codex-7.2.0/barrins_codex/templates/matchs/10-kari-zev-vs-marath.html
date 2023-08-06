@@ -1,0 +1,26 @@
+{% extends "matchs/_layout_matchs.html" %}
+
+### PRESENTATION ###
+{% block analyse %}
+    La version présentée de Kari Zev a la capacité d'alterner entre les rôle
+    d'agresseuse et de défenseuse. Cependant, le développement agressif
+    linéaire de Marath permet de maintenir un flot de créatures attaquantes
+    assez soutenu qui mettra en difficulté continuellement Kari Zev. Au final,
+    le matchup semble être en faveur de Marath car la forte densité de
+    créatures suffit à prendre l'avantage.
+{% endblock %}
+
+
+### JOUEURS ###
+{% set joueur1 = "Spigushe" %}
+{% set joueur2 = "Imperia86" %}
+
+### VIDEO ###
+{% set youtube = "https://www.youtube.com/embed/A-WfN-3JDtY" %}
+{% set date = "8 février 2022" %}
+
+### LEGENDE ###
+{% block pilote1 %}{{ pilote.spigushe() }}{% endblock %}
+{% block deck1 %}{{ deck.card("/decks/marath-will-of-the-wild") }}{% endblock %}
+{% block deck2 %}{{ deck.card("/decks/kari-zev-skyship-raider") }}{% endblock %}
+{% block pilote2 %}{{ pilote.imperia86() }}{% endblock %}

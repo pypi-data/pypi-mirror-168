@@ -1,0 +1,20 @@
+{% extends "matchs/_layout_matchs.html" %}
+
+### PRESENTATION ###
+{% block analyse %}
+{% endblock %}
+
+
+### JOUEURS ###
+{% set joueur1 = "Aliquanto" %}
+{% set joueur2 = "Domino" %}
+
+### VIDEO ###
+{% set youtube = "https://www.youtube.com/embed/y3qiJwOTse0" %}
+{% set date = "24 mai 2022" %}
+
+### LEGENDE ###
+{% block pilote1 %}{{ pilote.aliquanto() }}{% endblock %}
+{% block deck1 %}{{ deck.card("/decks/the-reality-chip") }}{% endblock %}
+{% block deck2 %}{{ deck.card("/decks/karlov-of-the-ghost-council") }}{% endblock %}
+{% block pilote2 %}{{ pilote.domino() }}{% endblock %}

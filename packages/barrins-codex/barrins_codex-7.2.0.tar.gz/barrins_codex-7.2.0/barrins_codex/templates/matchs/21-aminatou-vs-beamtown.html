@@ -1,0 +1,20 @@
+{% extends "matchs/_layout_matchs.html" %}
+
+### PRESENTATION ###
+{% block analyse %}
+{% endblock %}
+
+
+### JOUEURS ###
+{% set joueur1 = "threem" %}
+{% set joueur2 = "Imperia86" %}
+
+### VIDEO ###
+{% set youtube = "https://www.youtube.com/embed/Brgby-YJzms" %}
+{% set date = "10 mai 2022" %}
+
+### LEGENDE ###
+{% block pilote1 %}{{ pilote.threem() }}{% endblock %}
+{% block deck1 %}{{ deck.card("/decks/aminatou-the-fateshifter") }}{% endblock %}
+{% block deck2 %}{{ deck.card("/decks/the-beamtown-bullies") }}{% endblock %}
+{% block pilote2 %}{{ pilote.imperia86() }}{% endblock %}
