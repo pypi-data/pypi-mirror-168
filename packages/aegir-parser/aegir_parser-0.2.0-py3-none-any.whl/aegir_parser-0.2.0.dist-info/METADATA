@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: aegir-parser
+Version: 0.2.0
+Summary: A discord bot parser with various utility..
+Author: Skelmis
+Author-email: ethan@koldfusion.xyz
+Project-URL: Support server, https://discord.gg/BqPNSH2jPg
+Project-URL: Issue tracker, https://github.com/Skelmis/Aegir/issues
+Project-URL: Homepage, https://github.com/Skelmis/Aegir
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi (==2022.6.15)
+Requires-Dist: charset-normalizer (==2.1.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: libcst (==0.4.7)
+Requires-Dist: mypy-extensions (==0.4.3)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: typing-inspect (==0.7.1)
+Requires-Dist: typing-extensions (==4.3.0)
+
+# Aegir
+
+Aegir (Pronounced a-gur) is an auto-migration tool for migrating nextcord bots using version 2 over to version 3.
+
+#### Formatting Errors
+
+`.errors` will currently handle and fix the following:
+
+- `event` decorators being called
+- `listen` decorators not being called
+- failure to process commands when using `on_message` as an event
+
+Runs on Python 3.10.
