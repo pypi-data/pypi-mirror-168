@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: qtpygraph
+Version: 0.1.0
+Summary: A pythonic interface to the Qt Graphics View Framework using qtpy
+Home-page: https://github.com/adam-grant-hendry/qtpygraph
+License: Apache-2.0
+Author: Hendry, Adam
+Author-email: adam.grant.hendry@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PySide6 (>=6.3.0)
+Requires-Dist: QtPy (>=2.1.0)
+Requires-Dist: appdirs (>=1.4.4)
+Requires-Dist: glfw (>=2.5.3,<3.0.0)
+Requires-Dist: h5py (>=3.6.0)
+Requires-Dist: hypothesis (>=6.46.2)
+Requires-Dist: ipython (>=8.3.0)
+Requires-Dist: matplotlib (>=3.5.2)
+Requires-Dist: merry (>=0.3.0)
+Requires-Dist: ninja (>=1.10.2)
+Requires-Dist: numpy (>=1.22.3)
+Requires-Dist: opencv-python (>=4.5.5.64)
+Requires-Dist: pydantic (>=1.9.1)
+Project-URL: Repository, https://github.com/adam-grant-hendry/qtpygraph
+Description-Content-Type: text/x-rst
+
+=========
+QtPyGraph
+=========
+
+A pythonic interface to the ``Qt`` Graphics View Framework using ``qtpy``.
+
