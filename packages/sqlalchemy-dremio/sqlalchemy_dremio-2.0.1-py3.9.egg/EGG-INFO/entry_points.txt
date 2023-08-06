@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+dremio.flight = sqlalchemy_dremio.flight:DremioDialect_flight
+
