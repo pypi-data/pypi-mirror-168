@@ -1,0 +1,6 @@
+mongoengine_datatables/__init__.py,sha256=HR_wcUHZh6-UakKzPP4WClqjNGwQSGpUTaW4EdZl1Lo,81
+mongoengine_datatables/serverside_datatables.py,sha256=AxnwiwhWhfIdrA20XuOBJWVoZk416CpSrlCotmrdBRw,6925
+mongoengine_datatables-0.0.9.dist-info/LICENSE,sha256=VMncLzw2fqZPLlKUslzgHWZ8CZ6BmTx2zopEhlGmNZo,1539
+mongoengine_datatables-0.0.9.dist-info/WHEEL,sha256=W0C0r2jfBMZdb75jfiTB1qBj15B4vwTGGZrLTh2uslc,81
+mongoengine_datatables-0.0.9.dist-info/METADATA,sha256=0NI2G71ppZpDjYc3EpSjrIJfFKFWRed_DMM_qzmIw4o,3580
+mongoengine_datatables-0.0.9.dist-info/RECORD,,
