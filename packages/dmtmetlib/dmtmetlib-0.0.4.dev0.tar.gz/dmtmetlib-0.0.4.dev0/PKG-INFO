@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dmtmetlib
+Version: 0.0.4.dev0
+Summary: Metocean portal library
+Home-page: UNKNOWN
+Author: SINTEF Ocean
+License: UNKNOWN
+Description: # Make sense of metocean data
+        
+        * download_catalog.py to collect wanted data and to generate json representation of the data
+        * create_entities.py to create DMT entities from the json files
+        * run test_entities.py to check that generated entities are loaded
+        * generate_lib.py will generate python library to access the entities
+          - Only needed if the blueprints have changed
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
