@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+pyspcli_ui.egg-info/PKG-INFO
+pyspcli_ui.egg-info/SOURCES.txt
+pyspcli_ui.egg-info/dependency_links.txt
+pyspcli_ui.egg-info/entry_points.txt
+pyspcli_ui.egg-info/requires.txt
+pyspcli_ui.egg-info/top_level.txt
+spcli_ui/menu.py
+spcli_ui/sp_api.py
+spcli_ui/spui.py

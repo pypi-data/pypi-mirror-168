@@ -1,0 +1,2 @@
+[console_scripts]
+spui = spcli_ui.spui:main
