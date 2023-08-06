@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tkitSimhash
+Version: 0.0.1.2
+Summary: # Remove duplicates 重复内容筛选
+Home-page: https://terrychanorg.jetbrains.space/p/tkittools/repositories/tkitRemoveDuplicates/files/master/README.md
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: jieba (>=0.42.1)
+Requires-Dist: simhash (==2.1.2)
+Requires-Dist: nltk (==3.6)
+
+# Remove duplicates 重复内容筛选
+tkitSimhash zh
+
+
+
+根据经验，一般当两个文档特征字之间的汉明距离小于 3， 就可以判定两个文档相似。《数学之美》一书中，在讲述信息指纹时对这种算法有详细的介绍。
+
