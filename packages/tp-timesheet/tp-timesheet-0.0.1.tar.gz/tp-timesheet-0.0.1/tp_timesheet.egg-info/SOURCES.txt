@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tp_timesheet/__init__.py
+tp_timesheet/__main__.py
+tp_timesheet/tp_timesheet.py
+tp_timesheet.egg-info/PKG-INFO
+tp_timesheet.egg-info/SOURCES.txt
+tp_timesheet.egg-info/dependency_links.txt
+tp_timesheet.egg-info/entry_points.txt
+tp_timesheet.egg-info/requires.txt
+tp_timesheet.egg-info/top_level.txt
