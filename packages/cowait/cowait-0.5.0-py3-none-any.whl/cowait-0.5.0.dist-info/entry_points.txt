@@ -1,0 +1,2 @@
+[console_scripts]
+cowait = cowait.__main__:main
