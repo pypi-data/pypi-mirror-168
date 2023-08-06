@@ -1,0 +1,6 @@
+pyproject.toml
+adamant.egg-info/PKG-INFO
+adamant.egg-info/SOURCES.txt
+adamant.egg-info/dependency_links.txt
+adamant.egg-info/top_level.txt
+aerleon/__init__.py
