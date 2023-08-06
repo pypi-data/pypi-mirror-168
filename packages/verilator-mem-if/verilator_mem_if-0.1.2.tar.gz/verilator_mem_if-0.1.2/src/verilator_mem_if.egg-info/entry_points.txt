@@ -1,0 +1,2 @@
+[console_scripts]
+bd = verilator_mem_if.backdoor:main

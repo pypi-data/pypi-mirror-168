@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: verilator-mem-if
+Version: 0.1.2
+Summary: Useful backdoor memory access tools for Verilator simulations.
+Author: Shareef Jalloq
+Author-email: shareef.jalloq@idexbiometrics.com
+License: MIT
+Project-URL: homepage, https://github.com/idex-biometrics/verilator-mem-if
+Keywords: verilator,simulation,opentitan,backdoor
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# verilator-mem-if
+
+This package provides a base class and utilities for reading and writing Verilator simulation memories via a backdoor TCP socket.
