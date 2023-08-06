@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "elk_ipam_search"
+version = "0.1.1"
+description = ""
+authors = ["Ilya Zakharov", "izaharka@gmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mailru-im-bot = "0.0.21"
+elasticsearch = ">=7.16.1,<7.17.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
