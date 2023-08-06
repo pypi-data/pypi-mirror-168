@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pepver
+Version: 1.0.0rc1
+Summary: PEP-440 version parsing, interpretation and manipulation
+Home-page: https://github.com/technomunk/pepver
+License: MIT
+Keywords: version,package
+Author: technomunk
+Author-email: thegriffones@gmail.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Project-URL: Repository, https://github.com/technomunk/pepver
+Description-Content-Type: text/x-rst
+
+======
+pepver
+======
+
+PEP-440 version parsing, interpretation and manipulation
+
