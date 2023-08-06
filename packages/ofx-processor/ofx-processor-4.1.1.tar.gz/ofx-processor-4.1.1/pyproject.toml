@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "ofx-processor"
+version = "4.1.1"
+description = "Personal ofx processor"
+readme = "README.md"
+authors = ["Gabriel Augendre <gabriel@augendre.info>"]
+homepage = "https://git.augendre.info/gaugendre/ofx-processor"
+repository = "https://git.augendre.info/gaugendre/ofx-processor"
+keywords = [
+    "ynab",
+    "finances",
+    "finance automation",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Natural Language :: English",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+ofxtools = "^0.9.4"
+click = "^8.0.3"
+dateparser = "^1.1.0"
+requests = "^2.24.0"
+selenium = "^4.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0.1"
+pytest-cov = "^3.0.0"
+invoke = "^1.6.0"
+pre-commit = "^2.15.0"
+tox = "^3.24.4"
+pdbpp = "^0.10.3"
+
+[tool.poetry.scripts]
+ynab = 'ofx_processor.main:cli'
+
+[tool.black]
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist = py38, py39, py310
+
+[testenv]
+whitelist_externals = poetry
+commands =
+    poetry install --remove-untracked
+    poetry run inv test
+"""
+
+[tool.coverage.run]
+omit = ["tasks.py"]
+branch = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
