@@ -1,0 +1,12 @@
+clixdev/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clixdev/commands.py,sha256=NKScVcSDkoRWinQy0MMhh2M1JndxV0Ero24PAS8qfjY,6375
+clixdev/terminal.py,sha256=qhbbypaYjvWU5uM5MP-kKoP1Ua4uKNP6rJQcyp-lWFo,841
+clixdev/trace.py,sha256=whBoVxJ7G_2XUQzj5q7ruj0HHgnyRfxX9K8aaiZA1bA,10669
+clixdev/kit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clixdev/kit/middleware.py,sha256=JpXxdHJmaeMR1mqv6vcGUej46ZNi2X__sQponftpxig,3056
+clixdev-0.3.8.1.dist-info/LICENSE,sha256=__mN1SJPmbzdwhF6lmTotVH_QI-XnpL2XneUhLb2lBw,1066
+clixdev-0.3.8.1.dist-info/METADATA,sha256=x61Ey0FPnLJ1Cl7kOttKTUwpFXJ5_QXQLsDjzK5uRc0,1696
+clixdev-0.3.8.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clixdev-0.3.8.1.dist-info/entry_points.txt,sha256=crQReSnrLqwmh-Sw78eyVAdtr-mPSEdacqBjIW6lA9w,54
+clixdev-0.3.8.1.dist-info/top_level.txt,sha256=p6As9NSpI5LpVmmPFGalpve2BbdBECw3guDVx6spnPM,8
+clixdev-0.3.8.1.dist-info/RECORD,,
