@@ -1,0 +1,14 @@
+README.md
+setup.py
+pulumi_google_cloud_static_website/__init__.py
+pulumi_google_cloud_static_website/_utilities.py
+pulumi_google_cloud_static_website/provider.py
+pulumi_google_cloud_static_website/pulumi-plugin.json
+pulumi_google_cloud_static_website/py.typed
+pulumi_google_cloud_static_website/website.py
+pulumi_google_cloud_static_website.egg-info/PKG-INFO
+pulumi_google_cloud_static_website.egg-info/SOURCES.txt
+pulumi_google_cloud_static_website.egg-info/dependency_links.txt
+pulumi_google_cloud_static_website.egg-info/not-zip-safe
+pulumi_google_cloud_static_website.egg-info/requires.txt
+pulumi_google_cloud_static_website.egg-info/top_level.txt
