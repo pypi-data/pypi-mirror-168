@@ -1,0 +1,6 @@
+awslake/__init__.py,sha256=T8wnx9pDFCbH41mjZsj2UdU1PCaQTW5xPuybXKE8fpU,65
+awslake/communicate_with_aws.py,sha256=bA-f1oR_uTU1yPrYmNU3zGXdZhKyE8TuJIyHjnVPvuo,10891
+awslake-1.0.dist-info/METADATA,sha256=fSj5ZpJTldr3lt3pG2qWbe3QRQJ9_I9kVldEbEWgdwY,323
+awslake-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+awslake-1.0.dist-info/top_level.txt,sha256=arlRj8U1PETNdNhG3HTjDRoVy-G6YNDGLEnDqJbHZxo,8
+awslake-1.0.dist-info/RECORD,,
