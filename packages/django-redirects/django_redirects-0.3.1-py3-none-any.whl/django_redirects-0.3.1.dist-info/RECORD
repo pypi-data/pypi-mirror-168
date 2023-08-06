@@ -1,0 +1,16 @@
+redirects/__init__.py,sha256=q6qBAuX7RF6FK_FPoNvDhNLHowCKjHj3ecoIhfJ06QQ,79
+redirects/admin.py,sha256=9pcW2JG5DnguhoxMB913yansrlNzESMim1VlbvVWuZk,2397
+redirects/apps.py,sha256=P_YKi92wtieMhBLlfxh7Qy63NKO397q-RF_NYyHdlDQ,410
+redirects/http.py,sha256=mt5j6BK1j5IZxMHUEgRO_5CAMMnKUHrDHPO_kmYkCsA,499
+redirects/metadata.py,sha256=M-iXLHE-T38pk95bagDIZ0bgUhTcOaD8KexYbVdLQpQ,291
+redirects/middleware.py,sha256=ly3mC4BWUwr_UZjslPT5x72Imt3jlAjNd2ICABeHWy0,1527
+redirects/models.py,sha256=Hi4Sby9zZBuFKUXhe12zy3ETvFlQi6OitHzI_OQ05w8,5630
+redirects/migrations/0001_initial.py,sha256=4AGQ8wSr1Uw2STMgja-OSHGZORM_5JxexOLojHA2z1k,3990
+redirects/migrations/0002_add_priority.py,sha256=qIu9VRqr32yojAcxp_kRFyqbZjqcgJ2T-gFWWQZA7R0,850
+redirects/migrations/0003_redirect_created_at_redirect_updated_at.py,sha256=JTfdSn_2xpB7LU3NuFBxvCip7s8UjdihhxYGTzvwBfM,708
+redirects/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_redirects-0.3.1.dist-info/LICENSE.txt,sha256=1Pgn9KAnaLpkKRkktgtCFVdMW2UodX8CmB_zHfS78f0,1070
+django_redirects-0.3.1.dist-info/METADATA,sha256=ZBbg1AePtszmU0FbArjT5rB_cV-Dt9H6iazMju67Dr4,6833
+django_redirects-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_redirects-0.3.1.dist-info/top_level.txt,sha256=efnBLx3emplxH8Us1qYVw35RSTCEMkMvuj12Iqmwe04,10
+django_redirects-0.3.1.dist-info/RECORD,,
