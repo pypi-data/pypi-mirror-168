@@ -1,0 +1,14 @@
+<c2b:ApplicationResponse xmlns:c2b="http://bxd.fi/xmldata/"><c2b:CustomerId>14552891418</c2b:CustomerId><c2b:Timestamp>2021-04-08T02:58:16+02:00</c2b:Timestamp><c2b:ResponseCode>24</c2b:ResponseCode><c2b:ResponseText>Content not found.</c2b:ResponseText><c2b:Encrypted>false</c2b:Encrypted><c2b:Compressed>false</c2b:Compressed><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo>
+  <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+  <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+  <Reference URI="">
+    <Transforms>
+      <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+      <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+    </Transforms>
+    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <DigestValue>fa0Zv2GAlIGl15yYNqY1F9vmrCA=</DigestValue>
+  </Reference>
+</SignedInfo>
+    <SignatureValue>hbdK/E/poJU9x/zpoAW5dKA0kS3NXOUFCHVirBZuiu17XsSdKVK9OfHtSgbWipX2BFOuWPF3OLJUQUFfimlEFV4bkDwY9iRSEU6D9HyAo7u2ThaJ/euezOpsrZCtvDhMzoPc77CHbZTCfEwPZa2zrfo3S9I4210KPoyc2bPYYRZcT8x23js4YjsGEr5uioT1xI7QxSPJnMl2LmrYg35YNC49eOZfV4aNRnLgbHiIxNOzMLsqE6FGCtIsoVdl09tHxLfOKEim/bcYPMHaPk1yw+s/StezVYzOF6DGlfTHfrvejIzAluJK3g9XiKwfAvHok8GHXRCjz2i51DFBQYbfTg==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIDljCCAn6gAwIBAgIDARJhMA0GCSqGSIb3DQEBBQUAMGsxCzAJBgNVBAYTAlNFMR4wHAYDVQQKExVOb3JkZWEgQmFuayBBQiAocHVibCkxJjAkBgNVBAMTHU5vcmRlYSBDb3Jwb3JhdGUgU2VydmVyIENBIDAxMRQwEgYDVQQFEws1MTY0MDYtMDEyMDAeFw0yMDAzMDIxMjAzMDdaFw0yMjAzMDIxMjAzMDdaMHkxCzAJBgNVBAYTAlNFMRgwFgYDVQQKDA9Ob3JkZWEgQmFuayBBYnAxKzApBgNVBAsMIkZpbGUgVHJhbnNmZXIgSW50ZWdyYXRpb24gU2VydmljZXMxIzAhBgNVBAMMGkZpbGUgVHJhbnNmZXIgV2ViIFNlcnZpY2VzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzZls8d49waWuReYAAFUWwkj4BQA7760txselrUlpruTeeZu6CPiPoIt8m2xfQWWCRCeLfTtihjXTxR84ViruxHhZmkgQMuNd0aZIf22YFYK0R86aPmtpsbblBqrMv/ZFHaeM4EVtR1QlF4LYH1EhKkVfXfKT+rfbp+dmn6kBckI5Uu1RTzIBkRCtYs5tLwplzp3jG3Lm4pi2/sI7W4HbSWZcaMyWE9q2qAkchgPrpd3AgpggMaxNANnsW9BAQ0YMJqunCt2tuO5AXam/heiG2/q/v7NFxI0t5TDkd35Sv6G4L9HMzDhkEo94uJr/9mNotjD5ZBnGbuFUGYSQYGq5AQIDAQABozUwMzAJBgNVHRMEAjAAMBEGA1UdDgQKBAhPrhk0IdITFTATBgNVHSMEDDAKgAhEx5PZ2XtWwTANBgkqhkiG9w0BAQUFAAOCAQEACmbrKL25k5WFOJOsu0OT7HchsfIr1ubVYE4/IL3n+r9Sxq5bNsgvwv9O8/xB0EQGWsnPkgDVJ/CqBkB+s3zoyzE29GaajXuUkX8JcEatV02EalXhEJHInH7118gLPCNffsbwz3p+a2TeozTQdK5hAh9MXwiUuf80t2y/9+ldoZ9M/TyagmGNdvd/OsHILisyyFGi/MsNlSm6Upj3Pjbm95D5SVanvhhCoCs/km+55uRIJayMtDneV2nJgyKXlBEDesSoqivlOgvGRxAaSH2aSE+bfhfDCsBjG2GHMfcz8ZbuA2TKB9OCW47yb6MRwZWdjqqmoae82rp1Dwtb53xGeA==</X509Certificate><X509IssuerSerial><X509IssuerName>serialNumber=516406-0120, CN=Nordea Corporate Server CA 01, O=Nordea Bank AB (publ), C=SE</X509IssuerName><X509SerialNumber>70241</X509SerialNumber></X509IssuerSerial></X509Data></KeyInfo></Signature></c2b:ApplicationResponse>

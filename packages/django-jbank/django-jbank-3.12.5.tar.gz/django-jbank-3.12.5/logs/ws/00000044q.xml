@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ApplicationRequest xmlns="http://bxd.fi/xmldata/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomerId>63326734</CustomerId>
+  <Command>DownloadFile</Command>
+  <Timestamp>2021-12-02T09:26:00.537731+02:00</Timestamp>
+  <Environment>PRODUCTION</Environment>
+  <FileReferences>
+    <FileReference>1095084613</FileReference>
+  </FileReferences>
+  <TargetId>1</TargetId>
+  <SoftwareId>Kajala WS</SoftwareId>
+  <FileType>XT</FileType>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+        <DigestValue/>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue/>
+    <KeyInfo>
+      <X509Data>
+        <X509IssuerSerial>
+          <X509IssuerName>Issuer: CN=Samlink Customer CA,O=Samlink,C=FI</X509IssuerName>
+          <X509SerialNumber>7737256502470735662065384322933504</X509SerialNumber>
+        </X509IssuerSerial>
+        <X509Certificate/>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</ApplicationRequest>

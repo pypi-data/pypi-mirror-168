@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ApplicationRequest xmlns="http://bxd.fi/xmldata/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomerId>14552891418</CustomerId>
+  <Command>DownloadFileList</Command>
+  <Timestamp>2021-04-08T04:05:56.410453+03:00</Timestamp>
+  <Status>ALL</Status>
+  <Environment>PRODUCTION</Environment>
+  <TargetId>0007220845</TargetId>
+  <SoftwareId>Kajala WS</SoftwareId>
+  <FileType>TITO</FileType>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+        <DigestValue/>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue/>
+    <KeyInfo>
+      <X509Data>
+        <X509IssuerSerial>
+          <X509IssuerName>Issuer: 2.5.4.5=516406-0120,CN=Nordea Corporate CA 01,O=Nordea Bank AB (publ),C=SE</X509IssuerName>
+          <X509SerialNumber>76310</X509SerialNumber>
+        </X509IssuerSerial>
+        <X509Certificate/>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</ApplicationRequest>

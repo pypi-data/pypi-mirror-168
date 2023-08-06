@@ -1,0 +1,14 @@
+<c2b:ApplicationResponse xmlns:c2b="http://bxd.fi/xmldata/"><c2b:CustomerId>4552891418</c2b:CustomerId><c2b:Timestamp>2021-04-08T02:46:35+02:00</c2b:Timestamp><c2b:ResponseCode>29</c2b:ResponseCode><c2b:ResponseText>Invalid parameters: FileType is longer than 10 characters</c2b:ResponseText><c2b:Encrypted>false</c2b:Encrypted><c2b:Compressed>false</c2b:Compressed><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo>
+  <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+  <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+  <Reference URI="">
+    <Transforms>
+      <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+      <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+    </Transforms>
+    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <DigestValue>kr4pDMFooWdO/jLEi02UFW+oiZA=</DigestValue>
+  </Reference>
+</SignedInfo>
+    <SignatureValue>e+NvS3pQ+1UuXbv3VXIxePMTSMqXZjfGzi2Kx3SyA1/vod2sW8+2WfFzJHDotShHL9j9qLu07yRMzlOz+lw1o7kXrabSjRao+/boTADxhzW3s061P0TjiRz7MlddgnVphRmLPmuDqzyklT1/zzjEIDm+sCqmFn5pdxPR6DbYmSFiUCkv5w/FldOyRm1FWOzyUolsnQL/7OFr1vn5j9EtWmtrvfz9VccVpYDBxcElryrxrub/HS/xDpVo7F9XJ0vng1RxQEvViwveHKtcrctspRVeAV+Y9IoL+AYy0YPqIqsux6bS0mI1QaCVdqqzXwIwZ//BErIY5ges1JEMP9fdtw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIDljCCAn6gAwIBAgIDARJhMA0GCSqGSIb3DQEBBQUAMGsxCzAJBgNVBAYTAlNFMR4wHAYDVQQKExVOb3JkZWEgQmFuayBBQiAocHVibCkxJjAkBgNVBAMTHU5vcmRlYSBDb3Jwb3JhdGUgU2VydmVyIENBIDAxMRQwEgYDVQQFEws1MTY0MDYtMDEyMDAeFw0yMDAzMDIxMjAzMDdaFw0yMjAzMDIxMjAzMDdaMHkxCzAJBgNVBAYTAlNFMRgwFgYDVQQKDA9Ob3JkZWEgQmFuayBBYnAxKzApBgNVBAsMIkZpbGUgVHJhbnNmZXIgSW50ZWdyYXRpb24gU2VydmljZXMxIzAhBgNVBAMMGkZpbGUgVHJhbnNmZXIgV2ViIFNlcnZpY2VzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzZls8d49waWuReYAAFUWwkj4BQA7760txselrUlpruTeeZu6CPiPoIt8m2xfQWWCRCeLfTtihjXTxR84ViruxHhZmkgQMuNd0aZIf22YFYK0R86aPmtpsbblBqrMv/ZFHaeM4EVtR1QlF4LYH1EhKkVfXfKT+rfbp+dmn6kBckI5Uu1RTzIBkRCtYs5tLwplzp3jG3Lm4pi2/sI7W4HbSWZcaMyWE9q2qAkchgPrpd3AgpggMaxNANnsW9BAQ0YMJqunCt2tuO5AXam/heiG2/q/v7NFxI0t5TDkd35Sv6G4L9HMzDhkEo94uJr/9mNotjD5ZBnGbuFUGYSQYGq5AQIDAQABozUwMzAJBgNVHRMEAjAAMBEGA1UdDgQKBAhPrhk0IdITFTATBgNVHSMEDDAKgAhEx5PZ2XtWwTANBgkqhkiG9w0BAQUFAAOCAQEACmbrKL25k5WFOJOsu0OT7HchsfIr1ubVYE4/IL3n+r9Sxq5bNsgvwv9O8/xB0EQGWsnPkgDVJ/CqBkB+s3zoyzE29GaajXuUkX8JcEatV02EalXhEJHInH7118gLPCNffsbwz3p+a2TeozTQdK5hAh9MXwiUuf80t2y/9+ldoZ9M/TyagmGNdvd/OsHILisyyFGi/MsNlSm6Upj3Pjbm95D5SVanvhhCoCs/km+55uRIJayMtDneV2nJgyKXlBEDesSoqivlOgvGRxAaSH2aSE+bfhfDCsBjG2GHMfcz8ZbuA2TKB9OCW47yb6MRwZWdjqqmoae82rp1Dwtb53xGeA==</X509Certificate><X509IssuerSerial><X509IssuerName>serialNumber=516406-0120, CN=Nordea Corporate Server CA 01, O=Nordea Bank AB (publ), C=SE</X509IssuerName><X509SerialNumber>70241</X509SerialNumber></X509IssuerSerial></X509Data></KeyInfo></Signature></c2b:ApplicationResponse>
