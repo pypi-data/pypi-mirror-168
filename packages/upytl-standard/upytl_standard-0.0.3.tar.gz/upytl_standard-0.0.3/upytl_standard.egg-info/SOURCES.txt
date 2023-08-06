@@ -1,0 +1,9 @@
+README.md
+setup.py
+upytl_standard/__init__.py
+upytl_standard/s_components.py
+upytl_standard.egg-info/PKG-INFO
+upytl_standard.egg-info/SOURCES.txt
+upytl_standard.egg-info/dependency_links.txt
+upytl_standard.egg-info/requires.txt
+upytl_standard.egg-info/top_level.txt
