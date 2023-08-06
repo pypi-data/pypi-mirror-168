@@ -1,0 +1,33 @@
+Changes to Design by N2ADR
+==========================
+
+Create a radio of type "Control Head", and on the Radio/Remote screen enter the IP address or host name
+of the remote radio and a password. Change the hardware file to ac2yd/control_softrock.py or
+ac2yd/control_hermes.py. Enter the usual widget file if any. Create sound devices for radio sound
+and microphone sound. Do not create devices for samples or digital modes.
+
+Create a radio of the correct type at the remote site. For example, SoftRock USB or Hermes. Set up
+the radio to correctly control the hardware. You should be able to operate successfully at the remote.
+Then change the hardware file to ac2yd/remote_softrock.py or ac2yd/remote_hermes.py. Enter the usual
+widget file if any. The radio will still operate normally unless the control head is connected. Enter
+the same password on the Radio/Remote screen. The password only needs to be entered once at each end.
+It is a "shared secret". Use a somewhat lengthy pass phrase of random words, at least 20 characters long.
+
+You can use Windows, Mac or Linux at either end. But for Windows, the Windows Firewall will interfere.
+Do not turn the firewall off. Change the network profile type from the default Public to Private if
+you are on a private home network. The setting is under Settings, Network, WiFi or Ethernet, Network Profile.
+If you are on a public network, you should use a VPN for security. 
+
+For security, Quisk will not accept remote operation unless the special hardware files are used. And the
+password or pass phrase must match. But you must (as usual) make sure both computers are secure and can not
+be broken into. You must (as usual) have a good router password and secure settings to protect your home network.
+
+The AC2YD remote feature was designed to send back demodulated audio, not samples, in order to reduce the
+bandwidth to a minimum. Running digital modes on the control head would require more data streams for
+digital in/out. Also, note that recording samples to a file fails for the same reason. And most hardware
+config settings are inoperative on the control head. I can add some more interaction like a clip indicator,
+but complete control, such as adding recording samples, is a never-ending list.
+
+Because of the low bandwidth and the time stamps on the CW keying, the AC2YD feature achieves fast classic ham
+radio over a network. For digital modes, it seems workable to run everything on the remote and control it with
+remote terminal software because fast response is not required.
