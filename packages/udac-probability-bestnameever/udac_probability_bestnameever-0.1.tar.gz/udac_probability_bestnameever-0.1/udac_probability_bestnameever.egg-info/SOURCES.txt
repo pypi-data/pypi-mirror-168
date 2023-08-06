@@ -1,0 +1,10 @@
+setup.py
+udac_probability_bestnameever/Binomialdistribution.py
+udac_probability_bestnameever/Gaussiandistribution.py
+udac_probability_bestnameever/Generaldistribution.py
+udac_probability_bestnameever/__init__.py
+udac_probability_bestnameever.egg-info/PKG-INFO
+udac_probability_bestnameever.egg-info/SOURCES.txt
+udac_probability_bestnameever.egg-info/dependency_links.txt
+udac_probability_bestnameever.egg-info/not-zip-safe
+udac_probability_bestnameever.egg-info/top_level.txt
