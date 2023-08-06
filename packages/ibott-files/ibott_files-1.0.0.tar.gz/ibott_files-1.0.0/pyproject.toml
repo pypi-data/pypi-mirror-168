@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "Pillow","PyPDF2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ibott-files"
+version = "1.0.0"
+authors = [
+    { name="OnameDohe", email="enrique.crespo.debenito@gmail.com" },
+]
+description = "This packages crates a simple way to work with, files, folders, images and pdfs. More info in  https://ibott.io"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ecrespo66/files_and_folders"
+"Bug Tracker" = "https://github.com/ecrespo66/files_and_folders/issues"
