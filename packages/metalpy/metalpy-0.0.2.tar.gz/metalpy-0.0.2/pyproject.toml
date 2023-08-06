@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=63.0"]
+build-backend = "metalpy.setuptools_backend"
+backend-path = ["buildtools"]
+
+[project]
+name = "metalpy"
+version = "0.0.2"
+authors = [
+    { name="yanang007", email="yanang007@gmail.com" },
+]
+description = "Essential tools and libraries for SimPEG and other workflow in META Lab."
+requires-python = ">=3.7"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "Operating System :: OS Independent",
+]
+dependencies = [
+    "distributed",
+    "SimPEG",
+    "discretize",
+    "tqdm",
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "psutil",
+    "pywin32",
+    "properties",
+    "colour",
+]
+
+[tool.setuptools.packages.find]
+include = ["metalpy*", "buildtools*"]
