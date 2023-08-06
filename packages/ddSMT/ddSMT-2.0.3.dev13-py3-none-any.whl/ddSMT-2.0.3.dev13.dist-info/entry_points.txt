@@ -1,0 +1,2 @@
+[console_scripts]
+ddsmt = ddsmt:__main__.main
