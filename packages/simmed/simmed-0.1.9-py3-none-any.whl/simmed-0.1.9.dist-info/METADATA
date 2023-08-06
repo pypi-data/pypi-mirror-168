@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: simmed
+Version: 0.1.9
+Summary: simmed core sdk
+Home-page: https://simmed.cn
+Author: weizw,lijunhua
+Author-email: wzw@simmed.cn
+License: MIT
+Keywords: simmed
+Platform: any
+Requires-Python: >=3.8, <4
+Requires-Dist: flasgger (==0.9.2)
+Requires-Dist: flask (==1.1.2)
+Requires-Dist: Flask-Compress (==1.10.1)
+Requires-Dist: nacos-sdk-python (==0.1.6)
+Requires-Dist: thriftpy2 (==0.4.14)
+Requires-Dist: py-zipkin (==0.20.2)
+Requires-Dist: pyctuator (==0.17.0)
+Requires-Dist: pymongo (==3.12.1)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: setuptools (==41.6.0)
+Requires-Dist: Werkzeug (==1.0.1)
+Requires-Dist: Flask-Cors (==3.0.9)
+
+UNKNOWN
+
+
