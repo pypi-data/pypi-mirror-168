@@ -1,0 +1,5 @@
+simple_deploy
+simple_deploy/management
+simple_deploy/management/commands
+simple_deploy/management/commands/utils
+simple_deploy/templates
