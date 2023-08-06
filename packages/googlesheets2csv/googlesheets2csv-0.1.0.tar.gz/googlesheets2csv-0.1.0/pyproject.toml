@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "googlesheets2csv"
+dynamic = ["version"]
+authors = [{ name = "YuChunTsao", email = "tsao84672776@gmail.com" }]
+description = "Export google spreadsheet to csv, you can filter data with SQL statement."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["gspread", "duckdb", "pandas"]
+
+[project.scripts]
+googlesheets2csv = "googlesheets2csv.scripts.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/YuChunTsao/googlesheets2csv"
+
+[tool.hatch.version]
+path = "src/googlesheets2csv/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/googlesheets2csv"]

@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: googlesheets2csv
+Version: 0.1.0
+Summary: Export google spreadsheet to csv, you can filter data with SQL statement.
+Project-URL: Homepage, https://github.com/YuChunTsao/googlesheets2csv
+Author-email: YuChunTsao <tsao84672776@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 Yu Chun Tsao
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: duckdb
+Requires-Dist: gspread
+Requires-Dist: pandas
+Description-Content-Type: text/markdown
+
+# googlesheets2csv
+
+Export google spreadsheet to csv, you can filter data with SQL statement.
+
+## Installation
+
+```bash
+pip install googlesheets2csv
+```
+
+### Development
+
+```bash
+git clone https://github.com/YuChunTsao/googlesheets2csv.git
+
+cd googlesheets2csv
+
+pip install -e .
+```
+
+## How to get credential json?
+
+1. Create Google Cloud project.
+2. Enable "Google Sheets API" and "Google Drive API".
+3. Go to "APIs & Services > Credentials" and choose "CREATE CREDENTIALS > Service account".
+4. Fill out the form and click "Create" and "Done".
+5. Go to "IAM & Admin > Service Accounts > Keys" and click "ADD KEY > Create new key".
+6. Select JSON key type and press "Create". (The file will be downloaded automatically.)
+
+## CLI usage
+
+```txt
+usage: googlesheets2csv [-h] [-v] -c  -sn  -wn  [-sql] output
+
+Export google spreadsheet to csv, you can filter data with SQL statement.
+
+positional arguments:
+  output                Output csv file path
+
+options:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  -c, --credential_file 
+                        Google Cloud service account JSON file with credentials
+  -sn, --spreadsheet_name 
+                        spreadsheet name which you want to access
+  -wn, --worksheet_name 
+                        worksheet name which you want to access
+  -sql                  You can filter data with SQL statement. (default "SELECT * FROM your_worksheet_name")
+```
