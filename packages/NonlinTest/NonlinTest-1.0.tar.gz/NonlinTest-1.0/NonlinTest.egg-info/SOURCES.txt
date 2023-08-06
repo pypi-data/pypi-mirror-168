@@ -1,0 +1,6 @@
+setup.py
+NonlinTest.egg-info/PKG-INFO
+NonlinTest.egg-info/SOURCES.txt
+NonlinTest.egg-info/dependency_links.txt
+NonlinTest.egg-info/requires.txt
+NonlinTest.egg-info/top_level.txt
