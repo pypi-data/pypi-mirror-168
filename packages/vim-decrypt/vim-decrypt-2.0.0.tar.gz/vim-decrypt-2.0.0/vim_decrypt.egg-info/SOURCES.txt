@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+test_vimdecrypt.py
+vimdecrypt.py
+vim_decrypt.egg-info/PKG-INFO
+vim_decrypt.egg-info/SOURCES.txt
+vim_decrypt.egg-info/dependency_links.txt
+vim_decrypt.egg-info/entry_points.txt
+vim_decrypt.egg-info/requires.txt
+vim_decrypt.egg-info/top_level.txt
