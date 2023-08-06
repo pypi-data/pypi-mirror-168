@@ -1,0 +1,2 @@
+[console_scripts]
+video-to-sqlite = video_to_sqlite.cli:cli

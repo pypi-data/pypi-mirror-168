@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+video_to_sqlite/__init__.py
+video_to_sqlite/callback.py
+video_to_sqlite/cli.py
+video_to_sqlite.egg-info/PKG-INFO
+video_to_sqlite.egg-info/SOURCES.txt
+video_to_sqlite.egg-info/dependency_links.txt
+video_to_sqlite.egg-info/entry_points.txt
+video_to_sqlite.egg-info/requires.txt
+video_to_sqlite.egg-info/top_level.txt
