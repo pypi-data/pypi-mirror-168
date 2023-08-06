@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: siena
+Version: 0.0.1a4
+Summary: SIENA tool for efficient entity annotation.
+Home-page: https://github.com/siena-nlp/siena
+Author: Akalanka Sakalasooriya
+Author-email: himesha@outlook.com
+License: Apache License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SIENA 0.0.1a4 Release
+### Efficient entity annotation tool for Sinhala, English, or Sinhala-English code-switched text corpora.
+## Features
+- Allows annotating both Sinhala and English textual data
+- Fully compatible with Rasa 2.8.x NLU training data files
+- Allows exporting annotated NLU YAML files
+- Able to auto annotate entities efficiently based on novel NLP techniques including reverse-stemming
+- Easy to use SIENA CLI that can spin up a GUI server, locally
+- Read more on [docs](https://siena-nlp.github.io)
+
+## Ongoing Research
+- Concurrent entity tagging for multiple users
+- Import/Export support for non-Rasa NLU data files and text corpora
+
+## Known Issues
+- Support for Rasa versions other than 2.8.x is under ongoing development
+- Benchmark tests are in progress
+
+ðŸ“’ Docs: https://siena-nlp.github.io  
+ðŸ“¦ PyPi: https://pypi.org/project/siena/0.0.1a4/  
+ðŸªµ Full Changelog: Refer the relevant GitHub branch (v0.0.1a4) 
