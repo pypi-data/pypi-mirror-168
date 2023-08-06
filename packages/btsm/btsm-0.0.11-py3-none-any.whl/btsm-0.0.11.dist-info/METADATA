@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: btsm
+Version: 0.0.11
+Summary: Bluetooth SMP Utilities
+Home-page: https://pypi.org/project/btsm
+Author: Cibo
+Author-email: cibo@bio-electric.com
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: Other/Proprietary License
+Requires-Python: ==3.10.*
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: bthci (>=0.0.33)
+Requires-Dist: pyclui (>=0.0.17)
+Requires-Dist: scapy (>=2.4.5)
+Requires-Dist: xpycommon (>=0.0.12)
+
+# btsm ---- Bluetooth SMP Utilities
+
+## Introduction
+
+Currently, btsm is neither an open source software or the GNU defined Free software.
+
+
