@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: imageObjects
+Version: 0.13.6
+Summary: Helper Objects for working with open computer vision and image projects
+Home-page: UNKNOWN
+Author: Samuel Baker
+Author-email: samuelbaker.researcher@gmail.com
+Maintainer: Samuel Baker
+Maintainer-email: samuelbaker.researcher@gmail.com
+License: MIT
+Download-URL: https://github.com/sbaker-dev/contourObject
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: vectorObjects
+Requires-Dist: shapely
+Requires-Dist: miscSupports
+
+
+# imageObjects
+
+This acts as an API of sorts for CV2, with some common methods cast into objects that work with images, contours and 
+more. All source code at the [github repo page][repo]
+
+### ContourObject
+open-cv python has contours, a extremely useful component that can be extracted from images. However, these components 
+are in a ndarray format that can then be processed by a list of methods, rather than an object which has a list of 
+methods. This library changes that around and allows for the contour extracted via open cv python to be placed in an 
+object which can then be manipulated. 
+
+### ImageObject
+There are lots of common image functions that have been mapped to images, so that a loaded image can have these as 
+properties or as methods inherently rather than having to code them yourself.
+
+### LineObject
+This will search for lines within an ImageObject which you can then utilise as a mask or manipulate with ImageObjects
+
+### ImageMaker
+This can be used to make new ImageObjects, when you don't have anything to load or custom ImageObjects like text-boxes
+
+### common
+Whilst common is mostly designed for internal use, there are some common methods here that may save you re-defining them
+yourself or from other packages
+
+
+[repo]: https://github.com/sbaker-dev/imageObjects
+
+
