@@ -1,0 +1,3 @@
+[console_scripts]
+tap-dbt-artifacts=tap_dbt_artifacts.tap:TapDbtArtifacts.cli
+

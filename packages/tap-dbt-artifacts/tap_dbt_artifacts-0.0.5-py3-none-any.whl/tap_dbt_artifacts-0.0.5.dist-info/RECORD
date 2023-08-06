@@ -1,0 +1,16 @@
+tap_dbt_artifacts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_dbt_artifacts/client.py,sha256=yJUiyr9dmJCqJVwMkHSQunlHN5073me8ABK-qK3G7cE,983
+tap_dbt_artifacts/schemas/catalog.schema.json,sha256=J_bvF9jQyFFBboWg-Ny_osbzHloPN2CjNVn7fYG-l-A,17819
+tap_dbt_artifacts/schemas/manifest.schema.json,sha256=q7Bi-iotAPsIusgC2icYF3xGSeRKLs0u7VBQK0uE43Q,34629
+tap_dbt_artifacts/schemas/run-results.schema.json,sha256=mDWuz-H2l_TEVbi0cmleH0Wohu--XOpLzeVhel3HEzw,4271
+tap_dbt_artifacts/schemas/sources.schema.json,sha256=f4g5NAFfaoadl4qAWCwkxrLEDwnVhGWVw5RyXkkAKmo,2956
+tap_dbt_artifacts/streams.py,sha256=nfGL2vMixOdIDDy623M1bo-Nre3VLt4UqkYs3KEvLGg,5054
+tap_dbt_artifacts/tap.py,sha256=HVO8b_pZkW1xNac0ZPrg0__a4g-lbUqeFwNG_5Bdmwo,748
+tap_dbt_artifacts/tests/__init__.py,sha256=Gs_esA0diJGfEOIIVOyjtAChCQ7DeA_iihVp592vfCQ,40
+tap_dbt_artifacts/tests/profiles.yml,sha256=7wb5iF_e6DH8g9LTGrR7_vs4lhbMzNy0j1onrz4hKrM,1144
+tap_dbt_artifacts/tests/test_core.py,sha256=PRJTHyEAmrAZQ91ETfwhB_xDd096r3jq24Np87BtHI4,1114
+tap_dbt_artifacts-0.0.5.dist-info/entry_points.txt,sha256=7rA59lEigvxLZAjM2k5EHaua9o1yKZEzkPrjyfdErZQ,79
+tap_dbt_artifacts-0.0.5.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tap_dbt_artifacts-0.0.5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+tap_dbt_artifacts-0.0.5.dist-info/METADATA,sha256=yF6t3kES84La1YusCXwJm7UOdnk7E0WmD99ZXKUAZTU,567
+tap_dbt_artifacts-0.0.5.dist-info/RECORD,,
