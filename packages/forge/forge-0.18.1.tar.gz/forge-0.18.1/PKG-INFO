@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: forge
+Version: 0.18.1
+Summary: Quickly build a professional web app using Django.
+Home-page: https://www.forgepackages.com/
+License: MIT
+Keywords: django,saas,forge,framework
+Author: Dave Gaeddert
+Author-email: dave.gaeddert@dropseed.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Django (>=4.0,<5.0)
+Requires-Dist: click (>=8.1.0,<9.0.0)
+Requires-Dist: dj-database-url (>=1.0.0,<2.0.0)
+Requires-Dist: django-widget-tweaks (>=1.4.12,<2.0.0)
+Requires-Dist: forge-core (<1.0.0)
+Requires-Dist: forge-db (>=0.3.0,<0.4.0)
+Requires-Dist: forge-format (<1.0.0)
+Requires-Dist: forge-heroku (<1.0.0)
+Requires-Dist: forge-tailwind (<1.0.0)
+Requires-Dist: forge-work (<1.0.0)
+Requires-Dist: hiredis (>=2.0.0,<3.0.0)
+Requires-Dist: ipython (>=8.5.0,<9.0.0)
+Requires-Dist: pytest (>=7.0.0,<8.0.0)
+Requires-Dist: pytest-django (>=4.5.2,<5.0.0)
+Requires-Dist: python-dotenv
+Requires-Dist: redis (>=4.2.2,<5.0.0)
+Requires-Dist: whitenoise (>=6.0.0,<7.0.0)
+Project-URL: Documentation, https://www.forgepackages.com/docs/
+Project-URL: Repository, https://github.com/forgepackages/forge
+Description-Content-Type: text/markdown
+
+# Forge
+
+<img height="100" width="100" src="https://user-images.githubusercontent.com/649496/176748343-3829aad8-4bcf-4c25-bb5d-6dc1f796fac0.png" align="right" />
+
+**Quickly build a professional web app using Django.**
+
+Forge is a set of packages and opinions for how to build with Django.
+It guides how you work,
+chooses what tools you use,
+and makes decisions so you don't have to.
+
+At it's core,
+Forge *is* Django.
+But we've taken a number of steps to make it even easier to build and deploy a production-ready app on day one.
+
+If you're an experienced Django user,
+you'll understand and (hopefully) agree with some of Forge's opinions.
+If you're new to Django or building web applications,
+we've simply removed questions that you might not even be aware of.
+
+Forge will get you from *zero to one* on a revenue-generating SaaS, internal business application, or hobby project.
+
+More details can be found on [forgepackages.com](https://www.forgepackages.com/).
+
+## Quickstart
+
+Start a new project in 5 minutes:
+
+```sh
+curl -sSL https://forgepackages.com/quickstart.py | python3 - my-project
+```
+
+[![Forge Django quickstart](https://user-images.githubusercontent.com/649496/173145833-e4f96a4c-efb6-4cc3-b118-184be1a007f1.png)](https://www.youtube.com/watch?v=wYMRxTGDmdU)
+
