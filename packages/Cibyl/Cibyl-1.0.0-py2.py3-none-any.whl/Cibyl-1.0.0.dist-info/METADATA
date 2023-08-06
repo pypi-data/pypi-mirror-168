@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: Cibyl
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/rhos-infra/cibyl
+Author: Red Hat Code Reliability Engineering Team
+Author-email: rhos-cre@redhat.com
+Maintainer: Red Hat Code Reliability Engineering Team
+Maintainer-email: rhos-cre@redhat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: wheel (>=0.37.1)
+Requires-Dist: pyyaml (>=5.0)
+Requires-Dist: requests (~=2.27.1)
+Requires-Dist: elasticsearch (~=7.17.1)
+Requires-Dist: colorlog (~=6.6.0)
+Requires-Dist: urllib3 (~=1.26.9)
+Requires-Dist: rfc3987 (~=1.3.8)
+Requires-Dist: overrides (~=6.1.0)
+Requires-Dist: GitPython (~=3.1.18)
+Requires-Dist: deprecation (~=2.1.0)
+Requires-Dist: jsonschema (~=3.2.0)
+Requires-Dist: python-dateutil (~=2.8.2)
+Requires-Dist: PyGithub (~=1.55)
+Requires-Dist: validators (~=0.20.0)
+Requires-Dist: cached-property (~=1.5.2)
+Requires-Dist: xsdata (~=22.7)
+Requires-Dist: StrEnum (~=0.4.8)
+Requires-Dist: pbr (>=2.0.0)
+Requires-Dist: dataclasses (~=0.8) ; (python_version<='3.6')
+Requires-Dist: networkx (==2.5.1) ; (python_version<='3.6')
+Requires-Dist: networkx (~=2.8.4) ; (python_version>'3.6')
+
+CIbyl
+=====
+
+.. image:: https://github.com/rhos-infra/cibyl/actions/workflows/pipeline.yaml/badge.svg
+   :target: https://github.com/rhos-infra/cibyl/actions/workflows/pipeline.yaml
+   :alt: Build Status
+
+Cibyl is a command-line interface and REST API for querying CI/CD environments and systems.
+
+Installation
+************
+
+``pip install git+https://github.com/rhos-infra/cibyl.git``
+
+Next, set up `configuration <http://cibyl.readthedocs.org/>`_
+
+::
+
+  environments:                 # List of CI/CD environments
+    production:                 # An environment called "production"
+      production_jenkins        # A single system called "production_jenkins"
+        system_type: jenkins    # The type of the system (jenkins or zuul)
+        sources:                # List of sources belong to "production_jenkins" system
+          jenkins_api:          # The name of the source which belongs to "production_jenkins" system
+            driver: jenkins     # The driver the source will be using
+            url: https://...    # The URL of the system
+            username: user      # The username to use for the authentication
+            token: xyz          # The token to use for the authentication
+            cert: False         # Disable/Enable certificates to use for the authentication
+
+Usage
+*****
+
+``cibyl`` for listing environments and systems as specified in the configuration
+
+``cibyl query --jobs`` will print all the jobs available in your CI system
+
+``cibyl query --jobs --system <SYSTEM NAME>`` will print all the jobs from one specific system
+
+``cibyl query --jobs --builds`` will print the jobs as well as the status of all the builds of that job
+
+Official Documentation
+**********************
+
+For more information please read our `Documentation <http://cibyl.readthedocs.org>`_
+
+
+

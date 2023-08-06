@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "overcloud_ipv6": {
+      "type": "boolean"
+    },
+    "composable_scenario": {
+      "type": "string"
+    }
+  }
+}
