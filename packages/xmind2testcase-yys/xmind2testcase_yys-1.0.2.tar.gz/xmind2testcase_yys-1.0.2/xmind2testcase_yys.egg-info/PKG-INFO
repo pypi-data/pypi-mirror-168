@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xmind2testcase-yys
+Version: 1.0.2
+Summary: xmind-switch基于Python实现，提供了一个高效测试用例设计的解决方案！
+Home-page: https://github.com/zhuifengshen/xmind2testcase
+Author: Devin
+Author-email: 907715306@qq.com
+License: MIT
+Keywords: xmind-switch
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
