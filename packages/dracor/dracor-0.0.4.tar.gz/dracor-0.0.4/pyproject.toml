@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dracor"
+version = "0.0.4"
+authors = [
+    { name = "Robert Jäschke", email = "jaeschke@L3S.de" }
+]
+description = "A simple Python library to access the DraCor API."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+dependencies = [
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/weltliteratur/dracor"
+"Bug Tracker" = "https://github.com/weltliteratur/dracor/issues"
