@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/performance/__init__.py
+src/performance/__main__.py
+src/performance/rating.py
+src/player_performance.egg-info/PKG-INFO
+src/player_performance.egg-info/SOURCES.txt
+src/player_performance.egg-info/dependency_links.txt
+src/player_performance.egg-info/entry_points.txt
+src/player_performance.egg-info/requires.txt
+src/player_performance.egg-info/top_level.txt
