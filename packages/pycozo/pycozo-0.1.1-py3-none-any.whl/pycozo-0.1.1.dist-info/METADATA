@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pycozo
+Version: 0.1.1
+Summary: Python client for the Cozo database
+Home-page: 
+Author: Ziyang Hu
+Author-email: hu.ziyang@cantab.net
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: IPython
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: pandas
+Requires-Dist: pandas ; extra == 'pandas'
+Requires-Dist: ipython ; extra == 'pandas'
+

@@ -1,0 +1,10 @@
+pycozo/__init__.py,sha256=MKC0iYUvJIY6hyeOefzuk-Ys45BgHtcVznJZbXQzERw,33
+pycozo/client.py,sha256=nVnfDn9PG5Hy4sz-vdbenKc4Gg_PatyirNeW1DtRQmA,1527
+pycozo/ext_impl.py,sha256=mteur01Pb3DFqa8iPtw1NTLyqKgOQillawsXHVvmKSs,3014
+pycozo/ipyext.py,sha256=WlX9hPDIlwaWpb6sHHZa-Wv1_Vf2p9Iy0nd8ssGK0Fk,127
+pycozo/ipyext_direct.py,sha256=ZAvzCE6Jgdm_BaFDZQg0qsOVSzWx_OvzAqPz2G2_lPY,424
+pycozo-0.1.1.dist-info/LICENSE,sha256=AJQwm5rAdx2QCTIb1pvaz7ScXCen8buc0xtaXAJKoK8,1065
+pycozo-0.1.1.dist-info/METADATA,sha256=SFxeWSsR5hNdcbHpIGJOK-1zU78HBnRQ59bJqpFAmdo,523
+pycozo-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pycozo-0.1.1.dist-info/top_level.txt,sha256=2inyOPyVC-63wd_4MgKhpxdw8xe96X1jXNiXW6gQUOI,7
+pycozo-0.1.1.dist-info/RECORD,,
