@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: substrafl
+Version: 0.29.0
+Summary: Federated Learning library
+Home-page: https://connect-docs.owkin.com/
+Author: Owkin, Inc.
+License: Apache 2.0
+Keywords: substrafl
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.20.3)
+Requires-Dist: cloudpickle (>=1.6.0)
+Requires-Dist: substra (~=0.37.0)
+Requires-Dist: substratools (~=0.17.0)
+Requires-Dist: pydantic (>=1.9.0)
+Requires-Dist: pip (>=21.2)
+Requires-Dist: wheel
+Requires-Dist: six
+Requires-Dist: packaging
+Provides-Extra: dev
+Requires-Dist: pytest (>=6.2.4) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.12.0) ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.13.0) ; extra == 'dev'
+Requires-Dist: types-PyYAML (>=6.0.0) ; extra == 'dev'
+Requires-Dist: torch (!=1.12.0,>=1.9.1) ; extra == 'dev'
+Requires-Dist: nbmake (>=1.1) ; extra == 'dev'
+
+UNKNOWN
+
+
