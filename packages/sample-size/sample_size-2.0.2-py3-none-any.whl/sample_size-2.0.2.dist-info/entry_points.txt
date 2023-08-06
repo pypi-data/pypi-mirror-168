@@ -1,0 +1,9 @@
+[console_scripts]
+format=poetry_scripts:format_fix
+format-check=poetry_scripts:format_check
+lint=poetry_scripts:lint
+qa=poetry_scripts:qa
+run-sample-size=sample_size.scripts.sample_size_run:main
+test=poetry_scripts:test
+type-check=poetry_scripts:type_check
+
