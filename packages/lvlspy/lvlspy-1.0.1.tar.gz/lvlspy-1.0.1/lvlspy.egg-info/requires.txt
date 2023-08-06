@@ -1,0 +1,9 @@
+lxml
+astropy
+numpy
+
+[dev]
+check-manifest
+
+[test]
+coverage
