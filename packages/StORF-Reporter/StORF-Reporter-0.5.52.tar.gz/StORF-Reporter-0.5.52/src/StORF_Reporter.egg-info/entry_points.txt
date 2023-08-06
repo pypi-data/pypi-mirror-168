@@ -1,0 +1,2 @@
+[console_scripts]
+StORF_Reporter = StORF_Reporter.StORF_Reporter:main
