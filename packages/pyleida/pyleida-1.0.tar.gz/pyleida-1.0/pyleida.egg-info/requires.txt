@@ -1,0 +1,8 @@
+numpy>=1.16.0
+pandas
+scipy>=1.8
+matplotlib>=3.4.2
+seaborn
+nilearn
+scikit-learn
+imageio

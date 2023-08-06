@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pyleida
+Version: 1.0
+Summary: Python package to execute the Leading Eigenvector Dynamics Analysis (LEiDA) on functional MRI data
+Home-page: https://github.com/PSYCHOMARK/leida-python
+Author: Alvaro Deleglise
+Author-email: alvarodeleglise@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
