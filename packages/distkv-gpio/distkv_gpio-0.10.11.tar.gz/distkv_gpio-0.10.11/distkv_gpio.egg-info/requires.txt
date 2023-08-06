@@ -1,0 +1,2 @@
+asyncgpio>=0.5
+distkv>=0.58.9
