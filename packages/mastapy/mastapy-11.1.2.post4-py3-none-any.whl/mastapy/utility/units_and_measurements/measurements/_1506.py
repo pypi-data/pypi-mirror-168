@@ -1,0 +1,27 @@
+﻿"""_1506.py
+
+ThermoElasticFactor
+"""
+
+
+from mastapy.utility.units_and_measurements import _1406
+from mastapy._internal.python_net import python_net_import
+
+_THERMO_ELASTIC_FACTOR = python_net_import('SMT.MastaAPI.Utility.UnitsAndMeasurements.Measurements', 'ThermoElasticFactor')
+
+
+__docformat__ = 'restructuredtext en'
+__all__ = ('ThermoElasticFactor',)
+
+
+class ThermoElasticFactor(_1406.MeasurementBase):
+    """ThermoElasticFactor
+
+    This is a mastapy class.
+    """
+
+    TYPE = _THERMO_ELASTIC_FACTOR
+
+    def __init__(self, instance_to_wrap: 'ThermoElasticFactor.TYPE'):
+        super().__init__(instance_to_wrap)
+        self._freeze()

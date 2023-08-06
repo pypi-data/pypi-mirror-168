@@ -1,0 +1,27 @@
+﻿"""_710.py
+
+RoughCutterSimulation
+"""
+
+
+from mastapy.gears.manufacturing.cylindrical.cutter_simulation import _705
+from mastapy._internal.python_net import python_net_import
+
+_ROUGH_CUTTER_SIMULATION = python_net_import('SMT.MastaAPI.Gears.Manufacturing.Cylindrical.CutterSimulation', 'RoughCutterSimulation')
+
+
+__docformat__ = 'restructuredtext en'
+__all__ = ('RoughCutterSimulation',)
+
+
+class RoughCutterSimulation(_705.GearCutterSimulation):
+    """RoughCutterSimulation
+
+    This is a mastapy class.
+    """
+
+    TYPE = _ROUGH_CUTTER_SIMULATION
+
+    def __init__(self, instance_to_wrap: 'RoughCutterSimulation.TYPE'):
+        super().__init__(instance_to_wrap)
+        self._freeze()
