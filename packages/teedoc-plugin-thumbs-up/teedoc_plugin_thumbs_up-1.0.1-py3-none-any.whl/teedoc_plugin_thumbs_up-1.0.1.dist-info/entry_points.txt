@@ -1,0 +1,3 @@
+[console_scripts]
+teedoc-thumbs-up-server = server.thumbs_up_server:main
+

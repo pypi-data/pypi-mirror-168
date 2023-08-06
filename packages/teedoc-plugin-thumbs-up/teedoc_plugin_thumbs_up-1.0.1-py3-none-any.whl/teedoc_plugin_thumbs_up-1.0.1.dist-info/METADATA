@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: teedoc-plugin-thumbs-up
+Version: 1.0.1
+Summary: Thumbs up plugin for teedoc
+Home-page: https://github.com/Neutree/teedoc
+Author: Neucrack
+Author-email: CZD666666@gmail.com
+License: MIT
+Keywords: advertisement hint teedoc plugin
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+teedoc-plugin-thumbs-up
+====
+
+
+Thumbs up support for [teedoc](https://github.com/Neutree/teedoc)
+
+Server demo see [server](./server), or use command `teedoc-thumbs-up-server` to run server.
+
+
+
+
+
+
