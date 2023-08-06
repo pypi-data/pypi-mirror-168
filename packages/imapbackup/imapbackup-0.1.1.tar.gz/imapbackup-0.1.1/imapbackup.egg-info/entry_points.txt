@@ -1,0 +1,3 @@
+[console_scripts]
+imapbackup = imapbackup.cli:main
+

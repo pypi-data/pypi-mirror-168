@@ -1,0 +1,6 @@
+imapclient
+imap-tools
+click
+zenutils>=0.3.5
+python-dateutil
+tabulate

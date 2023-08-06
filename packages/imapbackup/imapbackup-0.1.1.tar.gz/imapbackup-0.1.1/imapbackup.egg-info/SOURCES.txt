@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+imapbackup/__init__.py
+imapbackup/base.py
+imapbackup/cli.py
+imapbackup/mailbox.py
+imapbackup.egg-info/PKG-INFO
+imapbackup.egg-info/SOURCES.txt
+imapbackup.egg-info/dependency_links.txt
+imapbackup.egg-info/entry_points.txt
+imapbackup.egg-info/not-zip-safe
+imapbackup.egg-info/requires.txt
+imapbackup.egg-info/top_level.txt
