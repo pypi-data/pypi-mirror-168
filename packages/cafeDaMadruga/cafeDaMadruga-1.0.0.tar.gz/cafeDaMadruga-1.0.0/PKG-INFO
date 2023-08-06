@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cafeDaMadruga
+Version: 1.0.0
+Summary: Um coletor de vogais de uma string.
+Home-page: UNKNOWN
+Author: Wanderson Renê
+Author-email: wanderson.rene12@gmail.com
+License: MIT License
+Keywords: coletar vogal ou vogais da string rene cafeDaMadruga
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Database
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# cafeDaMadruga
+
+**cafeDaMadruga** é um pacote, cujo intuito é o uso da função
+**vogais()**. Essa é responsável por encontrar todas as vogais de uma string.
+
+# Função
+
+* `vogais(stringCompleta: str)` - Recebe uma string e
+retorna um dicionário. Uma de suas chaves é a `vogais`, a qual contém uma lista das 
+vogais existentes na string passada como parâmetro na função, e a outra é a
+`vogais_com_indice`, a qual contém uma lista com as vogais e seus respectivos indices na 
+string.
+

@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+cafeDaMadruga/__init__.py
+cafeDaMadruga/cafeDaMadruga.py
+cafeDaMadruga.egg-info/PKG-INFO
+cafeDaMadruga.egg-info/SOURCES.txt
+cafeDaMadruga.egg-info/dependency_links.txt
+cafeDaMadruga.egg-info/requires.txt
+cafeDaMadruga.egg-info/top_level.txt
