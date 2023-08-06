@@ -1,0 +1,3 @@
+[console_scripts]
+pydantic-cloud-configuration=pydantic_cloud_configuration.__main__:main
+
