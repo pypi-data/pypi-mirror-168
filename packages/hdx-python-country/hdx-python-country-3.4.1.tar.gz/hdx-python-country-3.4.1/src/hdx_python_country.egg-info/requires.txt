@@ -1,0 +1,3 @@
+hdx-python-utilities>=3.4.5
+libhxl>=4.26
+pyphonetics
