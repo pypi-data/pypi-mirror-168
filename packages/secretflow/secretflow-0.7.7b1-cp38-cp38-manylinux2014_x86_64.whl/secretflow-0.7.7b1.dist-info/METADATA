@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: secretflow
+Version: 0.7.7b1
+Summary: Secret Flow
+Home-page: https://github.com/secretflow/secretflow
+Author: SCI Center
+Author-email: secretflow-contact@service.alipay.com
+License: Apache 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.22.3)
+Requires-Dist: protobuf (==3.19.4)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: dill (==0.3.4)
+Requires-Dist: jax (==0.3.7)
+Requires-Dist: jaxlib (==0.3.7)
+Requires-Dist: tensorflow-datasets (==4.5.2)
+Requires-Dist: absl-py (==1.0.0)
+Requires-Dist: flax (==0.4.1)
+Requires-Dist: cloudpickle (==2.0.0)
+Requires-Dist: networkx (~=2.8)
+Requires-Dist: dgl (>=0.9.0)
+Requires-Dist: pandas (==1.4.0)
+Requires-Dist: pyarrow
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: secretflow-ray (==2.0.0.dev1)
+Requires-Dist: torch (==1.10.1)
+Requires-Dist: torchvision (==0.11.2)
+Requires-Dist: torchmetrics (==0.9.2)
+Requires-Dist: s3fs (==2022.1.0)
+Requires-Dist: xgboost (==1.5.2)
+Requires-Dist: validator.py (==1.3.0)
+Requires-Dist: tqdm (==4.62.3)
+Requires-Dist: loguru (==0.6.0)
+Requires-Dist: statsmodels (==0.13.2)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: multiprocess (==0.70.12.2)
+Requires-Dist: cachetools (==5.2.0)
+Requires-Dist: psutil (==5.9.0)
+Requires-Dist: coverage
+Requires-Dist: unittest-xml-reporting
+Requires-Dist: spu (==0.2.4b1)
+Requires-Dist: sf-heu (==0.2.0b0)
+Requires-Dist: tensorflow (==2.7.1) ; platform_machine != "arm64"
+Requires-Dist: tensorflow-macos (==2.7.0) ; platform_machine == "arm64" and platform_system == "Darwin"
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+
+<div align="center">
+    <img src="docs/_static/logo-light.png">
+</div>
+
+---
+
+SecretFlow is a unified framework for privacy-preserving data intelligence and machine learning. To achieve this goal,
+it provides:
+
+- An abstract device layer consists of plain devices and secret devices which encapsulate various cryptographic protocols.
+- A device flow layer modeling higher algorithms as device object flow and DAG.
+- An algorithm layer to do data analysis and machine learning with horizontal or vertical partitioned data.
+- A workflow layer that seamlessly integrates data processing, model training, and hyperparameter tuning.
+
+<div align="center">
+    <img src="docs/_static/secretflow_arch.svg">
+</div>
+
+## Install
+
+Please check [INSTALLATION.md](./INSTALLATION.md)
+
+## Deployment
+
+Please check [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+## CONTRIBUTING
+
+Please check [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+## Disclaimer
+Non-release versions of SecretFlow are prohibited to use in any production environment due to possible bugs, glitches, lack of functionality, security issues or other problems.
+
+
