@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: xztrainer
+Version: 0.3.2
+Summary: A customizable training pipeline for PyTorch
+License: MPL-2.0
+Author: Maxim Afanasyev
+Author-email: mr.applexz@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: deepspeed
+Provides-Extra: tensorboard
+Requires-Dist: deepspeed (>=0.5.10); (sys_platform == "linux") and (extra == "deepspeed")
+Requires-Dist: numpy (>=1.22.1)
+Requires-Dist: tensorboard (>=2.8.0); extra == "tensorboard"
+Requires-Dist: torch (>=1.10.2)
+Requires-Dist: tqdm (>=4.62.3)
