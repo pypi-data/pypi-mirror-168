@@ -1,0 +1,15 @@
+conf/.template,sha256=FyDUBwme3lRkLHMB6fFvF_eu1kwWS2qIgKHS47fSuoY,2600
+help.txt,sha256=h2BLrodLWyvbeJ_cKAZeBqO7ExyXyChbJR8b__PI6is,449
+main.py,sha256=BY-sLPlvqjRpgR5O2wpsvTREQ573toxtokYXiLqwbkc,29
+signup/__init__.py,sha256=YemcRtPS217wXfCMa0d54MLsffUGZ0vSMmM1NKH6xKY,1809
+signup/__main__.py,sha256=BY-sLPlvqjRpgR5O2wpsvTREQ573toxtokYXiLqwbkc,29
+signup/_config.py,sha256=dsSRJ1mOMYDDv5gfYXyV62m5EcbNWIZVLSaZe4KztcY,620
+signup/info.py,sha256=kW620FMoYBtIeHYC9P_kI-T7z8kp5E0f1ofecEYPczE,9352
+signup/login.py,sha256=qMzuIQRPfyayhCuYDD89eZoEokzjPCovF-TF7-ukqk4,2020
+signup/temperature.py,sha256=xqYoX96eg0geSpWzQgBfDowUVuaPSwX8MlID9v95fDQ,1323
+signup/utils.py,sha256=MjnfCKdO0oFK2H4G5fX-ZIL9a5frhina-pyhndthzdY,3219
+ahstu_sign_up-1.1.1a1.dist-info/entry_points.txt,sha256=rSfbCikKZYhe_WHUp4kCzhX0ti0lJ-pIRXMgjcaB4Z4,45
+ahstu_sign_up-1.1.1a1.dist-info/LICENSE,sha256=sQzMyuMeLOeIHtKKNaHF2qSqXUgN8WcJ6wXaZA8tB1Y,1088
+ahstu_sign_up-1.1.1a1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+ahstu_sign_up-1.1.1a1.dist-info/METADATA,sha256=rQtIKwNSc9oDml1LTS2j1UTP43FxEUWqBw6MKRjOK6Q,1708
+ahstu_sign_up-1.1.1a1.dist-info/RECORD,,

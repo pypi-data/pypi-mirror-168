@@ -1,0 +1,3 @@
+[console_scripts]
+ahstu_sign_up=signup:main
+
