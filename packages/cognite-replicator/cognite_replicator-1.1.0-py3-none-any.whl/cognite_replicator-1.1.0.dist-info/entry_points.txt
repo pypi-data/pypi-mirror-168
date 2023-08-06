@@ -1,0 +1,3 @@
+[console_scripts]
+replicator=cognite.replicator.__main__:main
+
