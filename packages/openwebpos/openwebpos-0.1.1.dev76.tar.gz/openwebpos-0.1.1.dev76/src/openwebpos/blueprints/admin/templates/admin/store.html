@@ -1,0 +1,97 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block main %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card rounded">
+                    <div class="card-content">
+                        <span class="card-title center-align">Store</span>
+                        <form action="" method="POST">
+                            {{ form.hidden_tag() }}
+                            <div class="row">
+                                <div class="col s12 m5 input-field">
+                                    {{ form.name.label }}
+                                    {{ form.name() }}
+                                    {% for error in form.name.errors %}
+                                        <span class="helper-text" data-error="{{ error }}"></span>
+                                    {% endfor %}
+                                </div>
+                                <div class="col s12 m3 input-field">
+                                    {{ form.phone.label }}
+                                    {{ form.phone() }}
+                                    {% for error in form.phone.errors %}
+                                        <span class="helper-text" data-error="{{ error }}"></span>
+                                    {% endfor %}
+                                </div>
+                                <div class="col s12 m4 file-field input-field">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        {{ form.logo() }}
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <label>
+                                            <input type="text" class="file-path validate">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m6 input-field">
+                                    {{ form.email.label }}
+                                    {{ form.email() }}
+                                    {% for error in form.email.errors %}
+                                        <span class="helper-text" data-error="{{ error }}"></span>
+                                    {% endfor %}
+                                </div>
+                                <div class="col s12 m6 input-field">
+                                    {{ form.website.label }}
+                                    {{ form.website() }}
+                                    {% for error in form.website.errors %}
+                                        <span class="helper-text" data-error="{{ error }}"></span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m5 input-field">
+                                    {{ form.address.label }}
+                                    {{ form.address() }}
+                                    {% for error in form.address.errors %}
+                                        <span class="helper-text" data-error="{{ error }}"></span>
+                                    {% endfor %}
+                                </div>
+                                <div class="col s12 m3 input-field">
+                                    {{ form.city.label }}
+                                    {{ form.city() }}
+                                    {% for error in form.city.errors %}
+                                        <span class="helper-text" data-error="{{ error }}"></span>
+                                    {% endfor %}
+                                </div>
+                                <div class="col s12 m2 input-field">
+                                    {{ form.state.label }}
+                                    {{ form.state() }}
+                                    {% for error in form.state.errors %}
+                                        <span class="helper-text" data-error="{{ error }}"></span>
+                                    {% endfor %}
+                                </div>
+                                <div class="col s12 m2 input-field">
+                                    {{ form.zip.label }}
+                                    {{ form.zip() }}
+                                    {% for error in form.zip.errors %}
+                                        <span class="helper-text" data-error="{{ error }}"></span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="row center-align">
+                                {{ form.submit(class="btn") }}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+email-validator~=1.2.1
+build~=0.8.0
+Flask~=2.2.2
+Flask-DebugToolbar~=0.13.1
+Flask-Login~=0.6.2
+Flask-Migrate~=3.1.0
+Flask-SQLAlchemy~=2.5.1
+SQLAlchemy-Utils~=0.38.3
+Flask-WTF~=1.0.1
+python-dotenv~=0.20.0
+python-escpos~=2.2.0
+python-slugify~=6.1.2
+python-usernames~=0.3.1
+pytz~=2022.2.1
+twine~=4.0.1
