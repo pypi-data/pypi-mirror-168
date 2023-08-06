@@ -1,0 +1,14 @@
+[
+  "tests/test_simple.py::SimpleTestCase::test_invalid_token",
+  "tests/test_simple.py::SimpleTestCase::test_missing_token",
+  "tests/test_simple.py::SimpleTestCase::test_token_expired",
+  "tests/test_simple.py::SimpleTestCase::test_token_no_expiracy",
+  "tests/test_simple.py::SimpleTestCase::test_token_no_expiracy_with_config",
+  "tests/test_simple.py::SimpleTestCase::test_token_wrong_alg",
+  "tests/test_simple.py::SimpleTestCase::test_token_wrong_secret",
+  "tests/test_simple.py::SimpleTestCase::test_valid_login",
+  "tests/test_simple.py::SimpleTestCase::test_valid_login_with_admin",
+  "tests/test_simple.py::SimpleTestCase::test_valid_login_with_register",
+  "tests/test_simple.py::SimpleTestCase::test_valid_loign_no_register",
+  "tests/test_simple.py::SimpleTestCase::test_wrong_login_type"
+]
