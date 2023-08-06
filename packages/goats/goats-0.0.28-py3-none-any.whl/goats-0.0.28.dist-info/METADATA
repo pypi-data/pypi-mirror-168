@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: goats
+Version: 0.0.28
+Summary: A set of tools for analyzing heliophysical datasets
+License: GNU General Public License v3.0
+Author: Matt Young
+Requires-Python: >=3.8,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: netCDF4 (>=1.5.8,<2.0.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# GOATS
+
+A set of tools for analyzing heliophysical datasets
+
+The Generalized Observer Analysis Tool Set (GOATS) is a collection of objects that support interactive and scripted analysis of simulated and observed data in heliophysics.
+
+## Installation
+
+```bash
+$ pip install goats
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`goats` was created by Matt Young. It is licensed under the terms of the GNU General Public License v3.0 license.
+
+## Credits
+
+`goats` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+

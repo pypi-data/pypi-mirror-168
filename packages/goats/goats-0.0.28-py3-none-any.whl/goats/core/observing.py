@@ -1,0 +1,535 @@
+import collections
+import collections.abc
+import contextlib
+import numbers
+import operator as standard
+import typing
+
+import numpy
+
+from goats.core import aliased
+from goats.core import axis
+from goats.core import computed
+from goats.core import constant
+from goats.core import iterables
+from goats.core import metadata
+from goats.core import metric
+from goats.core import observed
+from goats.core import physical
+from goats.core import reference
+from goats.core import symbolic
+from goats.core import variable
+
+
+class Parameters(collections.abc.Sequence, iterables.ReprStrMixin):
+    """The parameters of an `~observing.Quantity`."""
+
+    def __init__(self, *names: str) -> None:
+        self._names = self._init(*names)
+
+    def _init(self, *args):
+        names = iterables.unique(*iterables.unwrap(args, wrap=tuple))
+        if not names or all(isinstance(name, str) for name in names):
+            return names
+        raise TypeError(
+            f"Can't initialize instance of {type(self)}"
+            f" with {names!r}"
+        )
+
+    __abs__ = metadata.identity(abs)
+    """Called for abs(self)."""
+    __pos__ = metadata.identity(standard.pos)
+    """Called for +self."""
+    __neg__ = metadata.identity(standard.neg)
+    """Called for -self."""
+
+    __add__ = metadata.identity(standard.add)
+    """Called for self + other."""
+    __sub__ = metadata.identity(standard.sub)
+    """Called for self - other."""
+
+    def merge(a, *others):
+        """Return the unique axis names in order."""
+        names = list(a._names)
+        for b in others:
+            if isinstance(b, Parameters):
+                names.extend(b._names)
+        return Parameters(*set(names))
+
+    __mul__ = merge
+    """Called for self * other."""
+    __rmul__ = merge
+    """Called for other * self."""
+    __truediv__ = merge
+    """Called for self / other."""
+
+    def __pow__(self, other):
+        """Called for self ** other."""
+        if isinstance(other, numbers.Real):
+            return self
+        return NotImplemented
+
+    def __eq__(self, other):
+        """True if self and other represent the same axes."""
+        return (
+            isinstance(other, Parameters) and other._names == self._names
+            or (
+                isinstance(other, str)
+                and len(self) == 1
+                and other == self._names[0]
+            )
+            or (
+                isinstance(other, typing.Iterable)
+                and len(other) == len(self)
+                and all(i in self for i in other)
+            )
+        )
+
+    def __hash__(self):
+        """Support use as a mapping key."""
+        return hash(self._names)
+
+    def __len__(self) -> int:
+        """Called for len(self)."""
+        return len(self._names)
+
+    def __getitem__(self, __i: typing.SupportsIndex):
+        """Called for index-based access."""
+        return self._names[__i]
+
+    def __str__(self) -> str:
+        return f"[{', '.join(repr(name) for name in self._names)}]"
+
+
+class Quantity(variable.Quantity):
+    """A quantity with one or more name(s), a unit, and axes."""
+
+    _parameters: Parameters=None
+
+    def __init__(self, __data, **meta) -> None:
+        super().__init__(__data, **meta)
+        parsed = self.parse_attrs(__data, meta, parameters=())
+        self._parameters = Parameters(parsed['parameters'])
+        self.meta.register('parameters')
+        self.display.register('parameters')
+        self.display['__str__'].append("parameters={parameters}")
+        self.display['__repr__'].append("parameters={parameters}")
+
+    def parse_attrs(self, this, meta: dict, **targets):
+        if (
+            isinstance(this, variable.Quantity)
+            and not isinstance(this, Quantity)
+        ): # barf
+            meta.update({k: getattr(this, k) for k in ('unit', 'name', 'axes')})
+            this = this.data
+        return super().parse_attrs(this, meta, **targets)
+
+    @property
+    def parameters(self):
+        """The optional parameters that define this observing quantity."""
+        return Parameters(self._parameters)
+
+
+class Interface(collections.abc.Collection):
+    """An interface to quantities required to make observations."""
+
+    def __init__(
+        self,
+        axes: axis.Interface,
+        variables: variable.Interface,
+        constants: constant.Interface,
+    ) -> None:
+        self.axes = axes
+        """The axis-managing objects available to this observer."""
+        self.variables = variables
+        """The variable quantities available to this observer."""
+        self.constants = constants
+        """The constant quantities available to this observer."""
+        self._system = None
+        self._names = None
+        self._functions = None
+        assumptions = {
+            k: v
+            for k, v in constants.items(aliased=True)
+            if isinstance(v, constant.Assumption)
+        } if constants else {}
+        self.assumptions = aliased.Mapping(assumptions)
+        """The default physical assumptions."""
+
+    def __contains__(self, __x) -> bool:
+        return __x in self.names
+
+    def __iter__(self) -> typing.Iterator:
+        return iter(self.names)
+
+    def __len__(self) -> int:
+        return len(self.names)
+
+    @property
+    def system(self):
+        """The metric system of this observer's dataset quantities."""
+        if self._system is None:
+            self._system = self.variables.system
+        return self._system
+
+    @property
+    def names(self):
+        """The names of all available quantities."""
+        if self._names is None:
+            self._names = list(self.variables) + list(self.functions)
+        return self._names
+
+    @property
+    def functions(self):
+        """The computable quantities available to this observer."""
+        if self._functions is None:
+            self._functions = computed.Interface(self.axes, self.variables)
+        return self._functions
+
+    def get_observable(self, key: str):
+        """Get the observable quantity corresponding to `key`."""
+        for this in (self.variables, self.functions):
+            if key in this:
+                return this[key]
+
+    # TODO: Refactor `get_unit` and `get_axes` to reduce overlap.
+
+    def get_unit(self, key: str):
+        """Determine the unit corresponding to `key`."""
+        if key in self.variables:
+            return self.variables[key].unit
+        if key in self.functions:
+            return self.functions[key].unit
+        s = str(key)
+        expression = symbolic.Expression(reference.NAMES.get(s, s))
+        term = expression[0]
+        this = self.get_unit(term.base) ** term.exponent
+        if len(expression) > 1:
+            for term in expression[1:]:
+                this *= self.get_unit(term.base) ** term.exponent
+        return metadata.Unit(this)
+
+    def get_axes(self, key: str):
+        """Determine the axes corresponding to `key`."""
+        if key in self.variables:
+            return self.variables[key].axes
+        if key in self.functions:
+            return self.functions[key].axes
+        s = str(key)
+        expression = symbolic.Expression(reference.NAMES.get(s, s))
+        term = expression[0]
+        this = self.get_axes(term.base)
+        if len(expression) > 1:
+            for term in expression[1:]:
+                this *= self.get_axes(term.base)
+        return metadata.Axes(this)
+
+    def compute_index(self, key: str, **constraints) -> axis.Index:
+        """Compute the axis-indexing object for `key`."""
+        if key not in self.axes:
+            raise ValueError(f"No axis corresponding to {key!r}") from None
+        if key not in constraints:
+            return self.axes[key].index()
+        this = constraints[key]
+        if isinstance(this, axis.Index):
+            return this
+        return self.axes[key].index(*iterables.whole(this))
+
+    def compute_value(self, key: str, **constraints) -> physical.Scalar:
+        """Create a parameter value for `key`."""
+        if key not in self.constants and key not in constraints:
+            raise ValueError(
+                f"No parameter corresponding to {key!r}"
+            ) from None
+        if key in constraints:
+            return self._compute_value(constraints[key])
+        return self._compute_value(self.constants[key])
+
+    def _compute_value(self, this):
+        """Compute a parameter value."""
+        # TODO: Generalize beyond scalar parameters.
+        scalar = physical.scalar(this)
+        unit = self.system.get_unit(unit=scalar.unit)
+        return scalar[unit]
+
+
+class Application:
+    """A general observing application."""
+
+    def __init__(self, interface: Interface) -> None:
+        self.interface = interface
+        """The interface to an observer's dataset."""
+        self.user = None
+        """The current set of user constraints."""
+        self._coordinates = None
+        self._cache = {}
+
+    def __contains__(self, __k: str):
+        """True if the named constraint affects this application."""
+        # Should this check all dimensions and parameters or only user
+        # constraints?
+        return __k in self.user
+
+    def apply(self, **constraints):
+        """Update the observing constraints.
+        
+        This method will apply the given constraints when computing axis indices
+        and parameter values within the context of this application. It will
+        also clear the corresponding items from the instance cache.
+        """
+        if self.user is None:
+            self.user = {}
+        for key in constraints:
+            for subset in self._cache.values():
+                if key in subset:
+                    del subset[key]
+        self.user.update(constraints)
+        return self
+
+    def reset(self, *keys: str):
+        """Reset constraints to their default values.
+        
+        Parameters
+        ----------
+        *keys : string
+            Zero or more names of constraints to reset. This method will also
+            remove all named items from the instance cache By default, this
+            method will reset all constraints and clear the cache.
+        """
+        if not keys:
+            self.user = {}
+            self._cache = {}
+        else:
+            subsets = self._cache.values()
+            for key in keys:
+                if key in self.user:
+                    del self.user[key]
+                for subset in subsets:
+                    if key in subset:
+                        del subset[key]
+        return self
+
+    def observe(self, key: str) -> Quantity:
+        """Create an observation within the context of this application."""
+        expression = symbolic.Expression(reference.NAMES.get(key, key))
+        term = expression[0]
+        result = self.get_observable(term.base)
+        if len(expression) == 1:
+            # We don't need to multiply or divide quantities.
+            if term.exponent == 1:
+                # We don't even need to raise this quantity to a power.
+                return result
+            return result ** term.exponent
+        q0 = result ** term.exponent
+        if len(expression) > 1:
+            for term in expression[1:]:
+                result = self.get_observable(term.base)
+                q0 *= result ** term.exponent
+        return q0
+
+    def evaluate(self, q) -> Quantity:
+        """Create an observing quantity based on the given quantity."""
+        if isinstance(q, computed.Quantity):
+            parameters = [
+                parameter for parameter in q.parameters
+                if parameter in self.interface.constants
+            ]
+            return Quantity(self.compute(q), parameters=parameters)
+        if isinstance(q, variable.Quantity):
+            return Quantity(self.process(q))
+        raise ValueError(f"Unknown quantity: {q!r}") from None
+
+    def process(self, q: variable.Quantity) -> variable.Quantity:
+        """Compute observer-specific updates to a variable quantity."""
+        if any(alias in self.coordinates for alias in q.name):
+            # This is an axis-reference quantity.
+            return self._subscript(q)
+        needed = self._compute_coordinates(q)
+        if not needed:
+            # There are no axes over which to interpolate.
+            return self._subscript(q)
+        return self._interpolate(q)
+
+    def compute(self, q: computed.Quantity) -> variable.Quantity:
+        """Determine dependencies and compute the result of this function."""
+        dependencies = {p: self.get_dependency(p) for p in q.parameters}
+        return q(**dependencies)
+
+    def get_dependency(self, key: str):
+        """Get the named constant or variable quantity."""
+        if this := self.get_observable(key):
+            return this
+        return self.get_value(key)
+
+    def get_observable(self, key: str):
+        """Retrieve and evaluate an observable quantity."""
+        if quantity := self.interface.get_observable(key):
+            return self.evaluate(quantity)
+
+    def _subscript(self, q: variable.Quantity, *axes: str):
+        """Extract a subset of this quantity."""
+        if not axes:
+            return q[tuple(self.get_index(a) for a in q.axes)]
+        indices = [
+            self.get_index(a) if a in axes else slice(None)
+            for a in q.axes
+        ]
+        return q[tuple(indices)]
+
+    def _compute_coordinates(self, q: variable.Quantity):
+        """Determine the measurable observing indices."""
+        dimensions = self._compute_dimensions(q)
+        coordinates = {}
+        if not dimensions:
+            return coordinates
+        for a in q.axes:
+            idx = self.get_index(a)
+            if a in dimensions and idx.unit is not None:
+                coordinates[a] = {
+                    'targets': numpy.array(idx.values),
+                    'reference': self.coordinates[a],
+                }
+        return coordinates
+
+    def _compute_dimensions(self, q: variable.Quantity):
+        """Determine over which axes to interpolate, if any."""
+        coordinates = {}
+        references = []
+        for a in q.axes:
+            idx = self.get_index(a)
+            if idx and idx.unit is not None:
+                coordinates[a] = idx.values
+                references.append(self.coordinates[a])
+        return [
+            a for (a, c), r in zip(coordinates.items(), references)
+            if not numpy.all([r.array_contains(target) for target in c])
+        ]
+
+    def _interpolate(self, q: variable.Quantity):
+        """Interpolate the given quantity within this context."""
+        raise NotImplementedError
+
+    @property
+    def coordinates(self):
+        """The reference quantities for dataset coordinate axes."""
+        if self._coordinates is None:
+            coordinates = self._build_coordinates()
+            self._coordinates = aliased.Mapping(coordinates)
+        return self._coordinates
+
+    def _build_coordinates(self):
+        """Helper for `~coordinates` property. Extracted for overloading."""
+        return {
+            k: self.interface.variables.get(k)
+            for k in self.interface.axes.keys(aliased=True)
+        }
+
+    def get_index(self, key: str) -> axis.Index:
+        """Get the axis-indexing object for `key`."""
+        if 'indices' not in self._cache:
+            self._cache['indices'] = {}
+        if key in self._cache['indices']:
+            return self._cache['indices'][key]
+        with contextlib.suppress(ValueError):
+            idx = self.interface.compute_index(key, **self.user)
+            self._cache['indices'][key] = idx
+            return idx
+
+    def get_value(self, key: str) -> physical.Scalar:
+        """Get the parameter value correpsonding to `key`."""
+        if 'values' not in self._cache:
+            self._cache['values'] = {}
+        if key in self._cache['values']:
+            return self._cache['values'][key]
+        with contextlib.suppress(ValueError):
+            val = self.interface.compute_value(key, **self.user)
+            self._cache['values'][key] = val
+            return val
+
+
+class Implementation:
+    """The base observing implementation."""
+
+    def __init__(
+        self,
+        name: str,
+        interface: Interface,
+    ) -> None:
+        """
+        Initialize this instance.
+
+        Parameters
+        ----------
+        name : string
+            The name of the quantity to observe.
+
+        interface : `~Interface`
+            The interface to all observing-related quantities.
+        """
+        self.name = name
+        self.interface = interface
+        self._cache = {}
+
+    # TODO:
+    # - refactor `get_unit` and `get_axes` to reduce overlap.
+    # - redefine `_cache` as an aliased mapping.
+
+    def get_unit(
+        self,
+        name: typing.Union[str, typing.Iterable[str], metadata.Name],
+    ) -> metadata.Unit:
+        """Return the unit corresponding to `name`."""
+        if 'unit' not in self._cache:
+            self._cache['unit'] = {}
+        if name in self._cache['unit']:
+            return self._cache['unit'][name]
+        unit = self._lookup_unit(name)
+        self._cache['unit'][name] = unit
+        return unit
+
+    def _lookup_unit(
+        self,
+        name: typing.Union[str, typing.Iterable[str], metadata.Name],
+    ) -> metadata.Unit:
+        """Determine the unit corresponding to `name`."""
+        if isinstance(name, str):
+            return self.interface.get_unit(name)
+        unit = (self.interface.get_unit(key) for key in name)
+        return next(unit, None)
+
+    def get_axes(
+        self,
+        name: typing.Union[str, typing.Iterable[str], metadata.Name],
+    ) -> metadata.Axes:
+        """Return the axes corresponding to `name`."""
+        if 'axes' not in self._cache:
+            self._cache['axes'] = {}
+        if name in self._cache['axes']:
+            return self._cache['axes'][name]
+        axes = self._lookup_axes(name)
+        self._cache['axes'][name] = axes
+        return axes
+
+    def _lookup_axes(
+        self,
+        name: typing.Union[str, typing.Iterable[str], metadata.Name],
+    ) -> metadata.Unit:
+        """Determine the axes corresponding to `name`."""
+        if isinstance(name, str):
+            return self.interface.get_axes(name)
+        axes = (self.interface.get_axes(key) for key in name)
+        return next(axes, None)
+
+    def apply(
+        self,
+        application: Application,
+        unit: metadata.UnitLike=None,
+    ) -> observed.Quantity:
+        """Apply an observing context to the target quantity."""
+        result = application.observe(self.name)
+        indices = {k: application.get_index(k) for k in result.axes}
+        scalars = {k: application.get_value(k) for k in result.parameters}
+        context = observed.Context(indices, scalars=scalars)
+        if unit:
+            return observed.Quantity(result[unit], context)
+        return observed.Quantity(result, context)
