@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+stock_pairs_trading/__init__.py
+stock_pairs_trading/stock_pairs_trading.py
+stock_pairs_trading.egg-info/PKG-INFO
+stock_pairs_trading.egg-info/SOURCES.txt
+stock_pairs_trading.egg-info/dependency_links.txt
+stock_pairs_trading.egg-info/requires.txt
+stock_pairs_trading.egg-info/top_level.txt
