@@ -1,0 +1,13 @@
+crosslingual_coreference/CorefResolver.py,sha256=3De73lZHsCjxTWOQJGdV2D9kgDdVv3yy-6_JWUhUEh8,4861
+crosslingual_coreference/CrossLingualPredictor.py,sha256=nT4TzR-dSK-_fx56ARL38DISIePgj6_-S18cQDsu-O4,8783
+crosslingual_coreference/CrossLingualPredictorSpacy.py,sha256=W5aiFiFGtPhZPemg1BOLud-QxSJmGFPnn93O4687PdQ,2311
+crosslingual_coreference/__init__.py,sha256=TYOCYPsp_BTtcRE9oraOsU__nzafRSYfaVlaFSU7NfE,1028
+crosslingual_coreference/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crosslingual_coreference/examples/data.py,sha256=kL21BzmRtwjFSdz1-elT0lkV_L5W6NJA7TxnhB-cZpY,1623
+crosslingual_coreference/examples/test_chunking.py,sha256=R4-lgAt_TwRB3yjgWbtvoRJQADVXmN2BtRsAllNGC98,187
+crosslingual_coreference/examples/test_individual.py,sha256=yi7WO-7XrceFYvQqYnaeRQP8q1_tmy0-Jd7Y8E5sPn0,153
+crosslingual_coreference/examples/test_spacy.py,sha256=xUAlFuWil5tAz-UC6uxj8XA8HnizP0o9FmfP93St1z8,273
+crosslingual_coreference-0.2.9.dist-info/LICENSE,sha256=N0EVGHdOYZ7YEJVUCllwq0kJp4buqN-AC_W3FYfktNg,1077
+crosslingual_coreference-0.2.9.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+crosslingual_coreference-0.2.9.dist-info/METADATA,sha256=9sJyBaPeRVQObUHchsDSM_UkArNDp4_vx5VjJvHERa4,5479
+crosslingual_coreference-0.2.9.dist-info/RECORD,,
