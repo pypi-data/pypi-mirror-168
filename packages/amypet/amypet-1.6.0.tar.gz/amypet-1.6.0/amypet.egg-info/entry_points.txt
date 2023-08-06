@@ -1,0 +1,4 @@
+[console_scripts]
+amypet = amypet.cli:main
+amypet.gui = amypet.gui:main
+amypet.web = amypet.web:main
