@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: workplace_extractor
+Version: 0.8.28
+Summary: Extract posts created in a corporate Workplace by Facebook installation using the Graph/SCIM APIs
+Home-page: https://github.com/denisduarte/workplace_extractor
+Author: Denis Duarte
+Author-email: den.duarte@gmail.com
+License: MIT
+Download-URL: https://github.com/denisduarte/workplace_extractor/archive/refs/tags/v_0.8.28.tar.gz
+Description: Extract posts created in a corporate Workplace by Facebook installation using Graph/SCIM APIs
+Keywords: extraction,posts,workplace
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
