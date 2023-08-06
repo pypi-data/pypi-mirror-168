@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+
+""" avro python class for file: change_response_info """
+
+import typing
+from pydantic import validator
+from etptypes import ETPModel, Field, Strict
+
+
+from etptypes.energistics.etp.v12.datatypes.object.change_annotation import (
+    ChangeAnnotation,
+)
+
+
+avro_schema: typing.Final[
+    str
+] = '{"type": "record", "namespace": "Energistics.Etp.v12.Datatypes.Object", "name": "ChangeResponseInfo", "fields": [{"name": "responseTimestamp", "type": "long"}, {"name": "changes", "type": {"type": "map", "values": {"type": "array", "items": {"type": "record", "namespace": "Energistics.Etp.v12.Datatypes.Object", "name": "ChangeAnnotation", "fields": [{"name": "changeTime", "type": "long"}, {"name": "interval", "type": {"type": "record", "namespace": "Energistics.Etp.v12.Datatypes.Object", "name": "IndexInterval", "fields": [{"name": "startIndex", "type": {"type": "record", "namespace": "Energistics.Etp.v12.Datatypes", "name": "IndexValue", "fields": [{"name": "item", "type": ["null", "long", "double", {"type": "record", "namespace": "Energistics.Etp.v12.Datatypes.ChannelData", "name": "PassIndexedDepth", "fields": [{"name": "pass", "type": "long"}, {"name": "direction", "type": {"type": "enum", "namespace": "Energistics.Etp.v12.Datatypes.ChannelData", "name": "PassDirection", "symbols": ["Up", "HoldingSteady", "Down"], "fullName": "Energistics.Etp.v12.Datatypes.ChannelData.PassDirection", "depends": []}}, {"name": "depth", "type": "double"}], "fullName": "Energistics.Etp.v12.Datatypes.ChannelData.PassIndexedDepth", "depends": ["Energistics.Etp.v12.Datatypes.ChannelData.PassDirection"]}]}], "fullName": "Energistics.Etp.v12.Datatypes.IndexValue", "depends": ["Energistics.Etp.v12.Datatypes.ChannelData.PassIndexedDepth"]}}, {"name": "endIndex", "type": "Energistics.Etp.v12.Datatypes.IndexValue"}, {"name": "uom", "type": "string"}, {"name": "depthDatum", "type": "string", "default": ""}], "fullName": "Energistics.Etp.v12.Datatypes.Object.IndexInterval", "depends": ["Energistics.Etp.v12.Datatypes.IndexValue"]}}], "fullName": "Energistics.Etp.v12.Datatypes.Object.ChangeAnnotation", "depends": ["Energistics.Etp.v12.Datatypes.Object.IndexInterval"]}}}}], "fullName": "Energistics.Etp.v12.Datatypes.Object.ChangeResponseInfo", "depends": ["Energistics.Etp.v12.Datatypes.Object.ChangeAnnotation"]}'
+
+
+class ChangeResponseInfo(ETPModel):
+
+    response_timestamp: int = Field(alias="responseTimestamp")
