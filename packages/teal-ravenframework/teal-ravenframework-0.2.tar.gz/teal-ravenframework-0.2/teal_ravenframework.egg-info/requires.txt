@@ -1,0 +1,2 @@
+raven_framework<2.3,>=2.2rc1
+numpy-financial
