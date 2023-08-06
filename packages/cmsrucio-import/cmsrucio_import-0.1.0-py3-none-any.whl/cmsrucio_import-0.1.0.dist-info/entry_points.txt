@@ -1,0 +1,3 @@
+[console_scripts]
+cmsrucio-import=cmsrucio_import.main:app
+

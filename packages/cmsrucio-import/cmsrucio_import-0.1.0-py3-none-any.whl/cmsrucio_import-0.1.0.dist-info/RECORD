@@ -1,0 +1,9 @@
+cmsrucio_import/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+cmsrucio_import/__main__.py,sha256=4S-x0DGQ8Zwtbe2adq3eSYq1jR7rQ43R6eAz3OP1jYc,55
+cmsrucio_import/main.py,sha256=oa-4MGdeiwxU-A70zkykLcNRFXkdbMAk-zdE9dVbLO4,15357
+cmsrucio_import/templates/dataset-upload.yml,sha256=3B-CjOEFrxBE3vJ1xFL3G_8WjGwMNf843G9MrUQMocA,296
+cmsrucio_import/templates/file-upload.yml,sha256=TnF_Kzci-xusIJG-taUgJmC-e-53eGI-a-wxrbVK-gI,276
+cmsrucio_import-0.1.0.dist-info/entry_points.txt,sha256=KHcL9DXPFlaSnqE89SfmToDLnH3K6X00nnzqI6ZX-3k,60
+cmsrucio_import-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+cmsrucio_import-0.1.0.dist-info/METADATA,sha256=ll4x_2lFeUA4UoUguaBs7978CVOwFAp3ksod7oXpyjU,2397
+cmsrucio_import-0.1.0.dist-info/RECORD,,
