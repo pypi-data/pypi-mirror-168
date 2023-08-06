@@ -1,0 +1,148 @@
+# Общая библиотека контроля доступа для микросервисов
+
+## Подключение
+settings.py:
+
+    REST_FRAMEWORK = {
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+            'oidc_auth.authentication.JSONWebTokenAuthentication',
+        ),
+    }
+    
+    OIDC_AUTH = {
+        # URL сервиса аутентификации, необходимо указать своё значение
+        'OIDC_ENDPOINT': 'http://testserver/oauth',
+        
+        # функция преобразующая токен в объект пользователя. Указать как есть.
+        'OIDC_RESOLVE_USER_FUNCTION': 'librbac.oidc.auth.get_user_from_token',
+        
+        # Заголовок в котором хранится токен. Указать как есть.
+        'JWT_AUTH_HEADER_PREFIX': 'Bearer',
+    
+        # The Claims Options can now be defined by a static string.
+        # ref: https://docs.authlib.org/en/latest/jose/jwt.html#jwt-payload-claims-validation
+        # The old OIDC_AUDIENCES option is removed in favor of this new option.
+        # `aud` is only required, when you set it as an essential claim.
+        'OIDC_CLAIMS_OPTIONS': {
+            'iss': {
+                'essential': True,
+            }
+        },
+    }
+
+testapp/apps.py:
+
+    from django.apps.config import AppConfig as AppConfigBase
+    
+    from librbac.events import PermissionPushed
+    from librbac.utils.management import is_in_management_command
+    
+    
+    class AppConfig(AppConfigBase):
+    
+        name = __package__
+    
+        def _bootstrap(self):
+            """Предоставление общей шины ядра."""
+            from explicit.messagebus.messagebus import MessageBus
+            from auth.apps import core
+            from .unit_of_work import UnitOfWork
+            uow = UnitOfWork()
+            dependencies = dict(uow=uow)
+            messagebus = MessageBus(**dependencies)
+            core.bus = messagebus
+    
+        def _register_events(self):
+            ...
+    
+        def _configure_rbac(self):
+            from librbac import config
+            from librbac.manager import rbac
+            from testapp import core
+            from testapp.core.adapters import messaging
+    
+            class Config(config.IConfig):
+                bus = core.bus
+                adapter = messaging.adapter
+    
+            config.rbac_config = Config()
+    
+            # не пушим разрешения в шину, если выполняется management команда
+            rbac.init(push_permissions=not is_in_management_command())
+    
+    
+        def ready(self):
+            self._bootstrap()
+            self._register_events()
+            self._configure_rbac()
+
+testapp/permissions.py
+
+    from librbac.types import Permission
+    from librbac.types import PermissionGroup
+    
+    
+    PERM_NAMESPACE_TEST = 'test'
+    
+    PERM_RESOURCE__PERSON = 'person'
+    PERM__PERSON__READ = Permission(
+        # (namespace, resource, action, scope)
+        PERM_NAMESPACE_TEST, PERM_RESOURCE__PERSON, 'read'
+    )
+    PERM__PERSON__WRITE = Permission(
+        PERM_NAMESPACE_TEST, PERM_RESOURCE__PERSON, 'write'
+    )
+    # Описание разрешений
+    # -----------------------------------------------------------------------------
+    permissions = (
+        (PERM__PERSON__READ, 'Просмотр ФЛ'),
+        (PERM__PERSON__WRITE, 'Редактирование ФЛ'),
+    )
+    
+    dependencies = {
+        PERM__PERSON__WRITE: {
+            PERM__PERSON__READ,
+        },
+    }
+    # -----------------------------------------------------------------------------
+    # Описание связей разделов и групп разрешений
+    partitions = {
+        'Администрирование': (
+            PermissionGroup(PERM_NAMESPACE_TEST, PERM_RESOURCE__PERSON),
+        ),
+    }
+    # -----------------------------------------------------------------------------
+
+
+testapp/views.py
+
+
+    from rest_framework.generics import GenericAPIView
+    from rest_framework.permissions import IsAuthenticated
+    from rest_framework.response import Response
+    from rest_framework.viewsets import ModelViewSet
+    
+    from librbac.drf.viewsets import RBACMixin
+    
+    from .models import Person
+    from .permissions import PERM__PERSON__READ
+    from .permissions import PERM__PERSON__WRITE
+    from .serializers import PersonSerializer
+    
+
+    class PersonViewSet(RBACMixin, ModelViewSet):
+        
+        # сопоставление действий с разрешениями
+        perm_map = dict(
+            create=(PERM__PERSON__WRITE,),
+            partial_update=(PERM__PERSON__WRITE,),
+            destroy=(PERM__PERSON__WRITE,),
+            retrieve=(PERM__PERSON__READ,),
+            list=(PERM__PERSON__READ,),
+        )
+    
+        ...
+
+
+## Запуск тестов
+    $ tox
