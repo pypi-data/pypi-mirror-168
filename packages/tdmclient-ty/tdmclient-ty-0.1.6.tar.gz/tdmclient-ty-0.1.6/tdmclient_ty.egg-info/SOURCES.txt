@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+doc/help.md
+tdmclient_ty.egg-info/PKG-INFO
+tdmclient_ty.egg-info/SOURCES.txt
+tdmclient_ty.egg-info/dependency_links.txt
+tdmclient_ty.egg-info/requires.txt
+tdmclient_ty.egg-info/top_level.txt
+thonnycontrib/tdmclient_ty/__init__.py
+thonnycontrib/tdmclient_ty/res/thymio.run.png
+thonnycontrib/tdmclient_ty/res/thymio.stop.png

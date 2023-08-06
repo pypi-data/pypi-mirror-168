@@ -1,0 +1,4 @@
+include doc/help.md
+
+include LICENSE
+include CHANGELOG.md
