@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fcsx"
+version = "0.0.1"
+description = "FCS for Humans"
+authors = ["Yi Zhang <yizhang.dev@gmail.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://github.com/imyizhang/fcsx/"
+repository = "https://github.com/imyizhang/fcsx/"
+documentation = "https://fcsx.readthedocs.io/en/latest/"
+packages = [
+    { include = "fcs" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = { version = "^1.22.4", optional = true }
+
+[tool.poetry.extras]
+numpy = ["numpy"]
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+yapf = "^0.32.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 
