@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pyssc/__init__.py
+pyssc/scan.py
+pyssc/ssc_device.py
+pyssc/ssc_device_setup.py
+pyssc.egg-info/PKG-INFO
+pyssc.egg-info/SOURCES.txt
+pyssc.egg-info/dependency_links.txt
+pyssc.egg-info/requires.txt
+pyssc.egg-info/top_level.txt
+pyssc.egg-info/zip-safe

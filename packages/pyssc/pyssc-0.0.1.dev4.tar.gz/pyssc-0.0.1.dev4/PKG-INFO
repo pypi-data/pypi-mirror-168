@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyssc
+Version: 0.0.1.dev4
+Summary: Python Client fo Sennheiser Sound Control Protocol
+Home-page: https://github.com/jj-wohlgemuth/pyssc
+Author: JJ Wohlgemuth
+Author-email: jj.wohlgemuth@gmail.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Multimedia :: Sound/Audio
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Sennheiser Sound Control Protocol (SSC) Client Implementation 
+
