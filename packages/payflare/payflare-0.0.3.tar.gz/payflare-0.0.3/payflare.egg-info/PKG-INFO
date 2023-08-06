@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: payflare
+Version: 0.0.3
+Summary: Payflare.io Python Client Library
+Home-page: https://github.com/payflare/paylfare.py
+Author: Payflare
+License: MIT
+License-File: LICENSE.txt
+
+Payflare.io Python Client Library
