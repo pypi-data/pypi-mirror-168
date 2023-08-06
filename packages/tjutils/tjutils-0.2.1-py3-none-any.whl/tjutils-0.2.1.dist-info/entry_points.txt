@@ -1,0 +1,5 @@
+[console_scripts]
+tjdev_export=tjutils.nbdev:export
+tjdev_generate=tjutils.nbdev:generate
+tjdev_version=tjutils.nbdev:version
+
