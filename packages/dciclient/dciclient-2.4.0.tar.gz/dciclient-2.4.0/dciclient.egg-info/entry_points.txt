@@ -1,0 +1,7 @@
+[console_scripts]
+dci-create-component = dciclient.create_component:main
+dci-rhel-latest-kernel-version = dciclient.rhel_kernel:main
+dci-vault = dciclient.vault:main
+dci-vault-client = dciclient.vault_client:main
+dcictl = dciclient.shell:main
+
