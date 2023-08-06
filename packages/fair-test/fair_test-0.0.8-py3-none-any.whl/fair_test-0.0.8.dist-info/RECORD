@@ -1,0 +1,10 @@
+fair_test/__init__.py,sha256=ZGN-ph4BOfelfT8aiTehWqNJ69pXS1I9-5LgFgtrmE4,189
+fair_test/config.py,sha256=2I3jDZhIHM6MoX7i2rSRQ6qT40IL0g9uw42xr390UoA,613
+fair_test/fair_test.py,sha256=vML7E8nzVvlVvatfZpgAmL07eEZ8ZV5YcyaPRG8cnc8,5779
+fair_test/fair_test_api.py,sha256=K6mRtJk4CKvxhFP2AtJhX83oSeMgQgy_8hM-2duaR0I,8918
+fair_test/fair_test_evaluation.py,sha256=PoSXqOpmoE6NJRVIDjw3RvXVQqQocuKFxw4v_pNkQn8,26531
+fair_test/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fair_test-0.0.8.dist-info/METADATA,sha256=cUkWeFSZkcsO-bclbYXsUgPLaXy4aLXHnv8ABTi9nbc,5313
+fair_test-0.0.8.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+fair_test-0.0.8.dist-info/licenses/LICENSE,sha256=y5u3hcVdFFSwdCyAmrzHTh6FKj9BafMkLjtIy4AMiFQ,1071
+fair_test-0.0.8.dist-info/RECORD,,
