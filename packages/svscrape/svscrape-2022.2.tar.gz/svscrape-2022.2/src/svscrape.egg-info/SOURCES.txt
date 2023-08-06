@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/svscrape.egg-info/PKG-INFO
+src/svscrape.egg-info/SOURCES.txt
+src/svscrape.egg-info/dependency_links.txt
+src/svscrape.egg-info/entry_points.txt
+src/svscrape.egg-info/requires.txt
+src/svscrape.egg-info/top_level.txt
+src/svwebscraper/__init__.py
+src/svwebscraper/cli.py
+src/svwebscraper/exceptions.py
+src/svwebscraper/exporter.py
+src/svwebscraper/webscraper.py

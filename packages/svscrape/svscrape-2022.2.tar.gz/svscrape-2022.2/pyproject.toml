@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svscrape"
+version = "2022.2"
+description = "A webscraper for extracting information of schools from http://schulverzeichnis.eu"
+readme = "README.md"
+authors = [{ name = "Florian Wörister", email = "florian.woerister@univie.ac.at" }]
+license = {text = "Apache License 2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+keywords = ["webscraper", "schools", "austria"]
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "click",
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["pytest", "coverage"]
+
+[project.urls]
+Homepage = "https://github.com/fwoerister/SVWebScraper"
+
+[project.scripts]
+svscrape = "svwebscraper.cli:scrape_schools"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["svwebscraper"]
+namespaces = false
