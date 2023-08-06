@@ -1,0 +1,26 @@
+body {
+  /* background-color: #30211e; */
+  /* color: #f3f5f4; */
+  width: 100%;
+  height: 100vh;
+  max-width: 100% !important;
+  overflow-x: hidden;
+  margin: 0;
+  color: rgb(235, 235, 235);
+}
+
+.app-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.app-content {
+  width: 100%;
+}
+
+.label {
+  color: rgb(235, 235, 235);
+}

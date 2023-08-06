@@ -1,0 +1,13 @@
+bacorakel/__init__.py,sha256=JPn63IwCMaBkXU6X20Cw_Ditbt42ydUSH6uffkiBVEw,25
+bacorakel/assets/custom.css,sha256=a3jmCNs8kRfubCy5zQiE6iSrxWWLWnco_CaOfvfUzto,390
+bacorakel/cli.py,sha256=gokC81Y07SI6UeeLKoawMd5BYtSDIbpWz__X5fUUBss,2295
+bacorakel/controller.py,sha256=HHWlJVfE2tAOQZtIOMHr95zNgsc1-j3YZkn98kU0ua8,5366
+bacorakel/dashboard.py,sha256=1GhqWZ7Vbsh5Fsg1PXaxHKu9LobqLt3KbL6MhGjcqjo,7058
+bacorakel/logging.py,sha256=Ms9nAHWJkiN_yum3exwIs5DBJ4r_hTS_7kKkJt2spcU,676
+bacorakel/mockup.py,sha256=JmfjQLhVZPA23ggIqCFFX3JnwTgPVnpw3bVgCQuHP7Q,960
+bacorakel/myweigh.py,sha256=MeZNcP1p0Jmo8XqO9HdmR0Bt0hxReiS0FGctahkl1Xc,1589
+bacorakel/state.py,sha256=ZUJEIYvtcXX1gfSTEXmf5RzZnawkHQvicq4sky_pneI,5768
+bacorakel-0.0.56.dist-info/entry_points.txt,sha256=3K91gKlLv8P78GfM0bs2aclgOEvoSOPNimUSArqgzD8,53
+bacorakel-0.0.56.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bacorakel-0.0.56.dist-info/METADATA,sha256=KgMLOm6-Xjare3cE4Xjy_7OkxaGC3um-JZw9b_5Airg,748
+bacorakel-0.0.56.dist-info/RECORD,,

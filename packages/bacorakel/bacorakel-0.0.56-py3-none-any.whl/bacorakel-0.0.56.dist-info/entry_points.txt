@@ -1,0 +1,3 @@
+[console_scripts]
+bacorakel=bacorakel.cli:bacorakel
+
