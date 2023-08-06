@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+Awaitable.egg-info/PKG-INFO
+Awaitable.egg-info/SOURCES.txt
+Awaitable.egg-info/dependency_links.txt
+Awaitable.egg-info/top_level.txt
+awaitable/__init__.py
+awaitable/asyncio_gather.py
+awaitable/awaitable.py
+awaitable/constants.py
