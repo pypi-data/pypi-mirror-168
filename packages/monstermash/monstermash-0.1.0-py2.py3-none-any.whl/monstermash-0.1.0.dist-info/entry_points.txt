@@ -1,0 +1,2 @@
+[console_scripts]
+monstermash = monstermash.__main__:main
