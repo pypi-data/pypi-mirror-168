@@ -1,0 +1,58 @@
+{% extends 'store/layout/layout.html' %}
+{% load static %}
+
+
+{% block title %}Orders{% endblock %}
+{% block style %}{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    {% if orders %}
+    <h5>All Orders</h5><hr>
+    <div class="accordion" id="accordionOrders">
+        {% for order in orders|slice:":1" %}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading{{order.id}}">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{order.id}}" aria-expanded="true" aria-controls="collapse{{order.id}}">
+                    <span class="me-auto">ID&nbsp;-&nbsp;{{order.id}}</span><span class="utcTime ms-auto">{{order.placed_at|date:"c"}}</span>
+                </button>
+            </h2>
+            <div id="collapse{{order.id}}" class="accordion-collapse collapse show" aria-labelledby="heading{{order.id}}" data-bs-parent="#accordionOrders">
+                <div class="accordion-body">
+                    {% include 'store/includes/orders.html' with order=order %}
+                    <a href="{% url 'store:order' order_id=order.id %}" class="link-danger-dark">View Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% for order in orders|slice:"1:" %}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading{{order.id}}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{order.id}}" aria-expanded="false" aria-controls="collapse{{order.id}}">
+                    <span class="me-auto">ID&nbsp;-&nbsp;{{order.id}}</span><span class="utcTime ms-auto">{{order.placed_at|date:"c"}}</span>
+                </button>
+            </h2>
+            <div id="collapse{{order.id}}" class="accordion-collapse collapse" aria-labelledby="heading{{order.id}}" data-bs-parent="#accordionOrders">
+                <div class="accordion-body">
+                    {% include 'store/includes/orders.html' with order=order %}
+                    <a href="{% url 'store:order' order_id=order.id %}" class="link-danger-dark">View Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% include 'store/includes/pagination.html' with page_obj=orders %}
+    {% else %}
+    <span class="badge position-fixed start-50 top-50 translate-middle rounded-pill bg-dark text-white fs-5">
+        Orders
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+    </span>
+    {% endif %}
+</div>
+{% endblock %}
+
+
+{% block script %}
+<script src="{% static 'store/js/orders.js' %}"></script>
+{% endblock %}

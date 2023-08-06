@@ -1,0 +1,58 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 65px;
+}
+
+#storeNavbar ul li a {
+  color: #212529;
+  text-decoration: none;
+}
+#storeNavbar ul li a:hover {
+  color: #212529;
+  text-decoration: underline;
+}
+#storeNavbar ul li ul li a {
+  color: #212529;
+  background-color: #fff;
+  text-decoration: none;
+}
+#storeNavbar ul li ul li a:hover {
+  color: #fff;
+  background-color: #212529;
+  text-decoration: underline;
+}
+
+.errormessage, .requirement, .error {
+  color: #921925;
+}
+
+.productBadge {
+  background-color: #212529;
+  color: #fff;
+}
+.productBadge:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-outline-dark {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.link-danger-dark {
+  color: #921925;
+  text-decoration: none;
+}
+.link-danger-dark:hover {
+  color: #212529;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=layout.css.map */
