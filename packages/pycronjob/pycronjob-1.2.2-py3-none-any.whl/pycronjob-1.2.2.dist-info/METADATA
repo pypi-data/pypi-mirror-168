@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pycronjob
+Version: 1.2.2
+Summary: An easy to start crontab
+Home-page: http://git.yonyou.com/iuapaipaas/iw-algo-fx
+Author: hexergogo
+Author-email: hexu0614@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: apscheduler (==3.9.1)
+
+# pycronjob
+> An easy start crontab tools  
+> Supports 5~7 cron symbols  
+> 0/1 * * * *  or  0 */2 * * * ?  or 0 */3 * * * ? *  
+
+
+
+### How to Use
+
+#### install
+```
+pip install pycronjob
+```
+
+#### base
+```python
+from pycronjob import Crontab
+
+def p(*args):
+    print(args, datetime.datetime.now())
+    print('====\n')
+
+joblist = [
+    {'crontab': '0/1 * * * *', 'func': p, 'args': ('job1',)},
+    {'crontab': '0 */2 * * * ?', 'func': p, 'args': ('job2',)},
+    {'crontab': '0 */3 * * * ? *', 'func': p, 'args': ('job3',)},
+]
+```
+
+#### sync
+```python
+crontab = Crontab(joblist)
+crontab.start()
+```
+
+#### async
+```python
+crontab = Crontab(joblist, True)
+crontab.start()
+# do other thing
+```
+
+#### sync to async
+```python
+import threading
+def inner():
+    crontab = Crontab(job_list)
+    while True:
+        try:
+            crontab.start()
+        except:
+            logger.info(traceback.format_exc())
+timer = threading.Timer(1, inner)
+timer.daemon = True
+timer.start()
+```
+
+
+
