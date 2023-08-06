@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: scriptworker
+Version: 44.0.0
+Summary: TaskCluster Script Worker
+Home-page: https://github.com/mozilla-releng/scriptworker
+Author: Mozilla Release Engineering
+Author-email: release+python@mozilla.com
+License: MPL 2.0
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+License-File: LICENSE
