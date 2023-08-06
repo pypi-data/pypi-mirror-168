@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: superior6564
+Version: 0.1.1
+Summary: Python library which maybe will help to people.  Before using you need to run packages.required()
+Home-page: https://github.com/Superior-GitHub/Superior6564
+Author: Superior_6564
+Author-email: vip.klochayil@gmail.com
+License: Apache License, Version 2.0, see LICENSE file
+Download-URL: https://github.com/Superior-GitHub/Superior6564/archive/refs/heads/main.zip
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+
+Version of package is 0.1.1
+
+
+
+
+PyPi can have a newer version than GitHub.
+
+https://pypi.org/project/superior6564/#history
+
+## Installation
+
+Install the current version with PyPI:
+
+pip install superior6564
+
+Or from Github:
+
+pip install https://github.com/Superior-GitHub/Superior6564/archive/refs/heads/main.zip
+
+## Usage
+
+Before using you need to run packages.required()
+
+It will check for the necessary libraries and install them if needed.
+
+## Contributing
+
+Bug reports and/or pull requests are welcome
+
+## License 
+
+The module is available as open source under the terms of the [Apache License, Version 2.0](https://opensource.org/licenses/Apache-2.0)
+
+
