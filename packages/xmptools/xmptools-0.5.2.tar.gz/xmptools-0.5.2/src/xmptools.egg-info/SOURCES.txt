@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/xmptools/__init__.py
+src/xmptools/xmptools.py
+src/xmptools.egg-info/PKG-INFO
+src/xmptools.egg-info/SOURCES.txt
+src/xmptools.egg-info/dependency_links.txt
+src/xmptools.egg-info/top_level.txt
