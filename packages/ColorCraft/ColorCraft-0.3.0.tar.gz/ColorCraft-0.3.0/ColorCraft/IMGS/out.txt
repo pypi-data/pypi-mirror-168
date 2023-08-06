@@ -1,0 +1,27 @@
+>>> from Color import Color
+>>> from Color import activeColor
+>>> activeColor()
+>>> Color((0,140,140),type='rgb') # rgb type default "hex"
+<Color(color=35980,hex='008c8c')>
+>>> Color('00cfff') # hex type
+<Color(color=53247,hex='00cfff')>
+>>>
+>>> from Color import Colors
+>>> dir(Colors)
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'hex2rgb', 'hsl2rgb', 'int2hex', 'random', 'rgb', 'rgb2hex', 'terminalColors']
+>>> dir(Colors.rgb)
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'black', 'blue', 'brown', 'cyan', 'darkgreen', 'deeppink', 'deepskyblue', 'drakgray', 'gold', 'gray', 'green', 'hotpink', 'lime', 'orange', 'pink', 'purple', 'red', 'silver', 'skyblue', 'teal', 'violet', 'white', 'yellow']
+>>> Color(Colors.random().color,type='rgb') # random color from the Colors.rgb class return basic ColorObj
+<Color(color=32896,hex='008080')>
+>>> print("logging color")
+logging color
+>>> print("FAIL color",color="FAIL")
+FAIL color
+>>> print("warn the color is here",color="WARNING")
+warn the color is here
+>>> print("[OK] color text is here",color="OKBLUE")
+[OK] color text is here
+>>>
+
+
+

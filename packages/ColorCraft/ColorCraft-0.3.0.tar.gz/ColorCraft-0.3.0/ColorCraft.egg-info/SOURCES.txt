@@ -1,0 +1,17 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ColorCraft/Color.py
+ColorCraft/Errors.py
+ColorCraft/Print.py
+ColorCraft/Printv1.py
+ColorCraft/Printv2.py
+ColorCraft/__init__.py
+ColorCraft/__test__.py
+ColorCraft.egg-info/PKG-INFO
+ColorCraft.egg-info/SOURCES.txt
+ColorCraft.egg-info/dependency_links.txt
+ColorCraft.egg-info/top_level.txt
+ColorCraft/IMGS/out.txt

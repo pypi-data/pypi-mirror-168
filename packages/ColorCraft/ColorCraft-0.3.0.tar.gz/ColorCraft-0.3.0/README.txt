@@ -1,0 +1,1 @@
+simplest and coolest color Library. print and menaged colors in Python!

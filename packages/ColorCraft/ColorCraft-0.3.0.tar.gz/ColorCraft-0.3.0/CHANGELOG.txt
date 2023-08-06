@@ -1,0 +1,18 @@
+Change Log
+==========
+
+0.2.0 (2022/06/30)
+-------------------
+- First Release
+- rename to ColorCraft
+
+
+0.3.0 (2022/09/23)
+-------------------
+- new module Printv2
+- print have new kw formats
+- print only Accepts Color/str object
+- activeColor() had been renamed to init()
+- new ColorArray; delete and set items
+- Blank class
+
