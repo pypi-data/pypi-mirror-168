@@ -1,0 +1,26 @@
+// ********************************************************************************
+// *** Title:         Export Security
+// *** Description:   Export security settings for a named dimension
+//  
+// *** Author:        Adrian Treloar
+// *** Date Created:  August 2018
+// *** Last Modified: August 2018
+// *******************************************************************************
+
+// Passed in parameters
+//Numbered Parameters
+
+default-parameter parm1=C:\Users\jonathan.treloar\Desktop\performance_testing\empower_sites\Empower Sites\Empower Sites\Sunrise Brands Limited - Pre M1 Site 2017 v1.1\Sunrise Brands Limited.eks
+default-parameter parm2=The Supervisor
+default-parameter parm3=MPTraining
+default-parameter parm4=Unit 6
+ 
+//Convert Numbered Parameters to friendly names
+default-parameter site=${parm1}
+default-parameter user=${parm2}
+default-parameter pw=${parm3}
+default-parameter dimensionname=${parm4}
+
+empower-export-security-settings "${site}" "${user}" "${pw}" "${dimensionname}"
+
+output

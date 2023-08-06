@@ -1,0 +1,21 @@
+// ********************************************************************************
+// *** Title:         Export a single Empower Structure
+// *** Date Created:  May 2017
+// *** Last Modified: August 2017
+// *******************************************************************************
+
+// Passed in parameters
+// parm1 - Empower Site File
+// parm2 - Empower username
+
+default-parameter parm1=C:\Empower Sites\MyCompany\MySite.eks
+default-parameter parm2=Supervisor
+default-parameter parm3=super
+default-parameter parm4=4
+default-parameter parm5=MGrpt
+default-parameter parm6=C:\Mydirectory\Exported_Structure_4_MGrpt.tsv
+
+empower-export-structure "${parm1}" "${parm2}" "${parm3}" ${parm4} ${parm5}
+tsv-encode
+
+save-file "${parm6}"

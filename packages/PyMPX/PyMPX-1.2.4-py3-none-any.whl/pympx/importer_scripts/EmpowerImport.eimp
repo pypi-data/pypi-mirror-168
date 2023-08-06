@@ -1,0 +1,30 @@
+// ********************************************************************************
+// *** Title:         Load a single import file into Empower. The import file must be in .tsv fornmat with short names
+// *** Author:        Adrian Treloar
+// *** Date Created:  Mar 2017
+// *** Last Modified: Mar 2017
+// *******************************************************************************
+
+// Passed in parameters
+// parm1 - Site File
+// parm2 - Empower username
+// parm3 - Empower password
+// parm4 - Import File
+
+
+default-parameter parm1="C:\Empower Sites\MySite\MySite.eks"
+default-parameter parm2="My User"
+default-parameter parm3="t0ps3cr3t"
+default-parameter parm4="C:\Data\My ReadyToLoad.tsv"
+
+//Convert Numbered Parameters to friendly names
+default-parameter site=${parm1}
+default-parameter user=${parm2}
+default-parameter pw=${parm3}
+default-parameter importfile=${parm4}
+
+// *******************************************************************************
+
+load-file ${importfile}
+tsv-decode
+empower-import-data ${site} ${user} ${pw}

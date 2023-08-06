@@ -1,0 +1,30 @@
+// ********************************************************************************
+// *** Title:         ExportSiteData8Units
+// *** Description:   Export data for the given tuples from a site which has 8 unit dimensions
+//  
+// *** Author:        Adrian Treloar
+// *** Date Created:  2 October 2017
+// *** Last Modified: 2 October 2017
+// *******************************************************************************
+
+// Passed in parameters
+//Numbered Parameters
+
+default-parameter parm1="C:\Empower Sites\MySite\MySite.eks"
+default-parameter parm2="My User"
+default-parameter parm3="t0pS3cr3t"
+default-parameter parm4=C:\Data\ValidityTest\shortnames.tsv
+default-parameter parm5=C:\Data\ExportedData\export1.tsv
+ 
+
+//Convert Numbered Parameters to friendly names
+default-parameter site=${parm1}
+default-parameter user=${parm2}
+default-parameter pw=${parm3}
+default-parameter source=${parm4}
+default-parameter target=${parm5}
+
+load-file-tsv "${source}"
+empower-export-data ${site} ${user} ${pw}  1-13 14
+tsv-encode
+save-file "${target}"

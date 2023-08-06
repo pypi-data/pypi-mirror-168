@@ -1,0 +1,23 @@
+// ********************************************************************************
+// *** Title:         Import Time Dimension Elements
+// *** Date Created:  May 2017
+// *** Last Modified: May 2017
+// *******************************************************************************
+
+// Passed in parameters
+//parm1 - Path to sitefile
+//parm2 - Empower User
+//parm3 - Empower Pwd
+//parm4 - input file of tsv longname shortname
+
+
+
+default-parameter parm1=C:\Empower Sites\MySite\MySite.eks
+default-parameter parm2=MyUser
+default-parameter parm3=t0ps3cret
+default-parameter parm4=C:\Work\Dimension_11_NewTimeElements.tsv
+
+load-file-tsv "${parm4}"
+
+empower-import-time-elements "${parm1}" "${parm2}" "${parm3}"
+

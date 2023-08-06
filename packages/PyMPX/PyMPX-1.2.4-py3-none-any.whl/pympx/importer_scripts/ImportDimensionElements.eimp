@@ -1,0 +1,25 @@
+// ********************************************************************************
+// *** Title:         Import Empower Dimension Elements
+// *** Date Created:  May 2017
+// *** Last Modified: May 2017
+// *******************************************************************************
+
+// Passed in parameters
+//parm1 - Path to sitefile
+//parm2 - Empower User
+//parm3 - Empower Pwd
+//parm4 - Dimension Index (Zero Based)
+//parm5 - input file of tsv longname shortname description grouponly
+
+
+
+default-parameter parm1=C:\Empower Sites\MySite\MySite.eks
+default-parameter parm2= Supervisor
+default-parameter parm3=super
+default-parameter parm4=0
+default-parameter parm5=C:\Data\Work\Dimension_0_NewElements.tsv
+
+load-file-tsv "${parm5}"
+
+empower-import-elements "${parm1}" "${parm2}" "${parm3}" ${parm4}
+

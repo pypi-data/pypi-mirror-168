@@ -1,0 +1,71 @@
+// ********************************************************************************
+// *** Title:         ExportFirstTwoDimensions.tsv
+// *** Description:   Export first two dimensions from a site
+//  
+// *** Author:        Adrian Treloar
+// *** Date Created:  07 April 2017
+// *** Last Modified: 07 April 2017
+// *******************************************************************************
+
+// Passed in parameters
+//Numbered Parameters
+
+default-parameter parm1="C:\Empower Sites\MySite\MySite.eks"
+default-parameter parm2="My User"
+default-parameter parm3="t0p s3cr3t"
+default-parameter parm4=C:\Data\Exported_Dimensions\S_Pipe
+ 
+//Convert Numbered Parameters to friendly names
+default-parameter site="${parm1}"
+default-parameter user="${parm2}"
+default-parameter pw="${parm3}"
+default-parameter target=${parm4}
+
+// we are in \ETL\Scripts\ go up three and back down into \Site
+
+// print-text ---------------- Exporting Dimension 0 ------------------
+
+empower-export-elements ${site} ${user} ${pw} 0
+tsv-encode
+save-file "${target}\Dimension_0.tsv"
+
+// print-text ---------------- Exporting Dimension 1 ------------------
+
+empower-export-elements ${site} ${user} ${pw} 1
+tsv-encode
+save-file "${target}\Dimension_1.tsv"
+
+
+// print-text ---------------- Exporting Dimension 8 ------------------
+
+empower-export-elements ${site} ${user} ${pw} 8
+tsv-encode
+save-file "${target}\Dimension_8.tsv"
+
+// print-text ---------------- Exporting Dimension 9 ------------------
+
+empower-export-elements ${site} ${user} ${pw} 9
+tsv-encode
+save-file "${target}\Dimension_9.tsv"
+
+// print-text ---------------- Exporting Dimension 10 ------------------
+
+empower-export-elements ${site} ${user} ${pw} 10
+tsv-encode
+save-file "${target}\Dimension_10.tsv"
+
+// print-text ---------------- Exporting Dimension 11 ------------------
+
+empower-export-elements ${site} ${user} ${pw} 11
+tsv-encode
+save-file "${target}\Dimension_11.tsv"
+
+// print-text ---------------- Exporting Dimension 12 ------------------
+
+empower-export-elements ${site} ${user} ${pw} 12
+tsv-encode
+save-file "${target}\Dimension_12.tsv"
+
+// print-text ---------------- Finished Exporting Dimensions ------------------
+
+

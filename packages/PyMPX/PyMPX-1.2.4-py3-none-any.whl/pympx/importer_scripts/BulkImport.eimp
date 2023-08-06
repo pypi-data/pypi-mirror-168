@@ -1,0 +1,33 @@
+// ********************************************************************************
+// *** Title:         BulkImport.eimp
+// *** Description:   Bulk Import data into an Empower site, from a tab separated value file in Standard Form 2
+//  
+// *** Author:        Adrian Treloar
+// *** Date Created:  18 April 2016
+// *** Last Modified: 18 April 2016
+// *******************************************************************************
+
+// Passed in parameters
+//Numbered Parameters
+
+default-parameter parm1=".\MySite.eks"
+default-parameter parm2="My User"
+default-parameter parm3="t0ps3cr3t"
+default-parameter parm4="..\..\Data\MyBulkImportData.tsv"
+
+
+//Convert Numbered Parameters to friendly names
+default-parameter site=${parm1}
+default-parameter user=${parm2}
+default-parameter pw=${parm3}
+default-parameter bulkimportfile=${parm4}
+
+
+print-text ################ Started Bulk Importing Data ################
+
+load-file-tsv ${bulkimportfile}
+empower-import-bulk-data ${site} ${user} ${pw} 
+
+print-text ################ Finished Bulk Importing Data ###############
+
+

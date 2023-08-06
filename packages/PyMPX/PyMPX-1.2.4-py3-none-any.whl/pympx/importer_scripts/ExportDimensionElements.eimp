@@ -1,0 +1,31 @@
+// ********************************************************************************
+// *** Title:         ExportDimensionElements.eimp
+// *** Description:   Export all dimensions from a site into the standard 
+//  
+// *** Author:        Adrian Treloar
+// *** Date Created:  15 April 2016
+// *** Last Modified: 15 May 2017 - adjusted so it only does a single dimension export
+// *******************************************************************************
+
+// Passed in parameters
+//Numbered Parameters
+
+default-parameter parm1=C:\Empower_Sites\My_Site.eks
+default-parameter parm2=MyUser
+default-parameter parm3=t0pS3cr3t
+default-parameter parm4=E:\Exported_Dimensions
+default-parameter parm5=0
+  
+//Convert Numbered Parameters to friendly names
+default-parameter site=${parm1}
+default-parameter user=${parm2}
+default-parameter pw=${parm3}
+default-parameter target=${parm4}
+default-parameter dimension_index=${parm5}
+
+
+empower-export-elements ${site} ${user} ${pw} ${dimension_index}
+tsv-encode
+save-file "${target}\Dimension_${dimension_index}.tsv"
+
+

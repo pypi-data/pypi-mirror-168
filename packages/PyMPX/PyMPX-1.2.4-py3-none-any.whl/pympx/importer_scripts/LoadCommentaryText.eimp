@@ -1,0 +1,29 @@
+// ********************************************************************************
+// *** Title:         LoadCommentarytext.eimp
+// *** Description:   Load text data into an Empower site, from a tab separated value file in Standard Form 1 (i.e. Shortnames)
+//                    The .tsv file should contain shortnames for dimensions 1 to 13, followed by the text data point in column 14
+//  
+// *** Author:        Adrian Treloar
+// *** Date Created:  24 January 2017
+// *** Last Modified: 24 January 2017
+// *******************************************************************************
+
+// Passed in parameters
+//Numbered Parameters
+
+default-parameter parm1=".\MySite.eks"
+default-parameter parm2="My User"
+default-parameter parm3="t0ps3c3t"
+default-parameter parm4="..\..\Data\MyCommentaryData.tsv"
+
+
+//Convert Numbered Parameters to friendly names
+default-parameter site=${parm1}
+default-parameter user=${parm2}
+default-parameter pw=${parm3}
+default-parameter textdatafile=${parm4}
+
+load-file-tsv ${textdatafile}
+empower-save-text-data ${site} ${user} ${pw} 
+
+

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: PyMPX
+Version: 1.2.4
+Summary: Metapraxis Empower python API
+Author: Metapraxis Ltd.
+Author-email: pympx@metapraxis.com
+Maintainer: Jonathan Adrian Treloar
+License: MIT License
+Project-URL: Documentation, https://api.metapraxis.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Office/Business :: Financial
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: pywin32
+Requires-Dist: cryptography
+Requires-Dist: pandas
+
+PyMPX
+======================
+
+The PyMPX package contains the `pympx` module for manipulating Metapraxis Empower sites.
+
+Repetitive, manual tasks can be replaced with reliable batch code to:
+
++ Manipulate hierarchies and create new dimension elements and structures
++ Run Empower importer and batch commands, gracefully handling any errors
++ Bulk load data in parallel into an Empower site, significantly reducing loading times
+
+The PyMPX package also contains the smaller modules that help you write good ETL batch processes using Python and the `pympx` module.
+
++ Do standard logging processes
++ Parameterize and run Jupyter notebooks as part of a batch script
++ Parallelize batch processes with directory-based queues

@@ -1,0 +1,23 @@
+// ********************************************************************************
+// *** Title:         Get Empower Sites
+// *** Description:   Get a list of Empower sites for a given Empower version
+//  
+// *** Author:        Adrian Treloar
+// *** Date Created:  August 2018
+// *** Last Modified: August 2018
+// *******************************************************************************
+
+// Passed in parameters
+//Numbered Parameters
+
+default-parameter parm1=9.5
+default-parameter parm2=C:\Data\ExportedData\export1.tsv
+
+//Convert Numbered Parameters to friendly names
+default-parameter version=${parm1}
+default-parameter target=${parm2}
+
+empower-list-registered-sites -version ${version}
+tsv-encode
+#save-file "${target}"
+output

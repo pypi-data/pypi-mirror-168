@@ -1,0 +1,18 @@
+// ********************************************************************************
+// *** Title:         Export Empower Site Details
+// *** Date Created:  August 2018
+// *** Last Modified: August 2018
+// *******************************************************************************
+
+// Passed in parameters
+//parm1 - Path to sitefile
+//parm2 - Empower User
+//parm3 - Empower Pwd
+
+default-parameter parm1=C:\Empower_Sites\My_Site.eks
+default-parameter parm2=MyUser
+default-parameter parm3=t0pS3cr3t
+empower-export-site-details "${parm1}" "${parm2}" "${parm3}"
+
+tsv-encode
+output
