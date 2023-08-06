@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pypi_desc.md
+setup.py
+telemetrix_rpi_pico_w/__init__.py
+telemetrix_rpi_pico_w/private_constants.py
+telemetrix_rpi_pico_w/telemetrix_rpi_pico_w.py
+telemetrix_rpi_pico_w.egg-info/PKG-INFO
+telemetrix_rpi_pico_w.egg-info/SOURCES.txt
+telemetrix_rpi_pico_w.egg-info/dependency_links.txt
+telemetrix_rpi_pico_w.egg-info/requires.txt
+telemetrix_rpi_pico_w.egg-info/top_level.txt
+telemetrix_rpi_pico_w_aio/__init__.py
+telemetrix_rpi_pico_w_aio/private_constants.py
+telemetrix_rpi_pico_w_aio/telemetrix_pico_w_aio_socket.py
+telemetrix_rpi_pico_w_aio/telemetrix_rpi_pico_w_aio.py
