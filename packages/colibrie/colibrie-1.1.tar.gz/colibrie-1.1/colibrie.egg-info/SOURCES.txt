@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+colibrie/__init__.py
+colibrie/core.py
+colibrie/extract_tables.py
+colibrie/geometry.py
+colibrie/intersection.py
+colibrie/lines.py
+colibrie/tables.py
+colibrie/utils.py
+colibrie.egg-info/PKG-INFO
+colibrie.egg-info/SOURCES.txt
+colibrie.egg-info/dependency_links.txt
+colibrie.egg-info/top_level.txt

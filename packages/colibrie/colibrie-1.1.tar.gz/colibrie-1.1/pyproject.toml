@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colibrie"
+version = "1.1"
+authors = [
+  { name="Alexandre Bitoun", email="alexandre.bitoun@outlook.fr" },
+]
+description = "Colibrie is a blazing fast repository to extract tables from PDF files"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/abitoun-42/colibrie"
+"Bug Tracker" = "https://github.com/abitoun-42/colibrie/issues"
