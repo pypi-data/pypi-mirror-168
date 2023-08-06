@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: trajectory-analysis-tools
+Version: 1.0.0
+Home-page: 
+Author: Eric Denovellis
+Author-email: eric.denovellis@ucsf.edu
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: networkx
+
