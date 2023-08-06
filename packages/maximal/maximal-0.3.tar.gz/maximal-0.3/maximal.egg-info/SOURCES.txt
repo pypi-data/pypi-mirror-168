@@ -1,0 +1,12 @@
+CHANGELOG.txt
+MANIFEST.in
+README.md
+setup.py
+maximal/__init__.py
+maximal/layers.py
+maximal/schedules.py
+maximal.egg-info/PKG-INFO
+maximal.egg-info/SOURCES.txt
+maximal.egg-info/dependency_links.txt
+maximal.egg-info/requires.txt
+maximal.egg-info/top_level.txt
