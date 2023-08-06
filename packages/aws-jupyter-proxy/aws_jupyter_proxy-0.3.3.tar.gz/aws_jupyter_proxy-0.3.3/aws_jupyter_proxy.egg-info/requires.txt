@@ -1,0 +1,9 @@
+notebook<7.0,>=6.0
+botocore<2.0,>=1.0
+
+[dev]
+asynctest
+black
+pytest
+pytest-asyncio
+pytest-cov
