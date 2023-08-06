@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: simple_rbmq_channel
+Version: 1.1.1
+Summary: Simple rabbitmq tool to publish and receive events synchronously from rabbitmq queues
+Home-page: 
+Author: anton emelyancev
+Author-email: anttoon@me.com
+
+Hello
+This is a very simple project
+It's my first project on PyPi
