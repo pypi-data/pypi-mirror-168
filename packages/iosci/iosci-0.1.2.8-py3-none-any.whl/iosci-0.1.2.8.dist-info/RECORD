@@ -1,0 +1,15 @@
+iosci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iosci/Podfile/CIComponentModel.py,sha256=E6ANbxQ29b97KlkjloesXdS9j5VZR-2C889Ntw7LaRw,1051
+iosci/Podfile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iosci/Util/CIShellCMD.py,sha256=S8QAqHfqyV8uXg7-czF-6lIr35O53rXXyaPEzv_Sm4s,1018
+iosci/Util/CIVersionManager.py,sha256=ZPRXLNEM_6z0XQD6yH15ayD4e51r4iBFSicB5YsnSmc,3867
+iosci/Util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iosci/xcode/CIPodfileParse.py,sha256=YUiBuA9nslVIsWSzP4uh_Scp2oEGxtYsMUl23Oz26Ho,4568
+iosci/xcode/PodfileVersion.py,sha256=pZw1h8tdL85jTTX6KU0hOn4AMaf14XrnEeaPh7VnHMc,5622
+iosci/xcode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iosci/xcode/podfile.py,sha256=XFWcC_BQHza9dFCF7ig712ymmPB0XHqJNxQbjQi-42g,4209
+iosci-0.1.2.8.dist-info/LICENSE,sha256=giTqF4qu3Je4KMdQSM7My1Peh386CMm0ZWjp3dvL_xA,1076
+iosci-0.1.2.8.dist-info/METADATA,sha256=clry2kGq8zESTtopPIrpYjznUpFpPLX1HEfC-o1HrJE,2351
+iosci-0.1.2.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+iosci-0.1.2.8.dist-info/top_level.txt,sha256=bkLsK8PlXbqpSI4YHkO_jr5capRML5rls9Xti_0ptHA,6
+iosci-0.1.2.8.dist-info/RECORD,,
