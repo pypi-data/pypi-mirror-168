@@ -1,0 +1,11 @@
+vineyard/contrib/dask/__init__.py,sha256=_0yOizmKx9a303beW2e7us-ccMusdwRyiVcNAolQZe8,650
+vineyard/contrib/dask/dask.py,sha256=MwCNaCeqrM0FTii-96PiLrUwvqciZn9CeXBXgoW2jnk,5125
+vineyard/contrib/dask/tests/__init__.py,sha256=_0yOizmKx9a303beW2e7us-ccMusdwRyiVcNAolQZe8,650
+vineyard/contrib/dask/tests/conftest.py,sha256=rJNw5QD4rkyIG_uNHnFzKm6gCikOrCmKxr7a14dQ5GA,735
+vineyard/contrib/dask/tests/test_dask.py,sha256=vbtpOOsK4dw4fnRCijUZVtcnBrXO7NA4Xjgr3gX2DNA,5329
+vineyard_dask-0.8.4.dist-info/LICENSE,sha256=AO754ryHkzyqDpd_eYB59Jdofwxj_FIm999rrBhFqwk,63232
+vineyard_dask-0.8.4.dist-info/METADATA,sha256=j_gprApkFYZWGTau15MfoaTrt1xwg5OjS2UPrQ3cnfI,18247
+vineyard_dask-0.8.4.dist-info/NOTICE.txt,sha256=CpvNDiG8l4g1bbhN--L33Abkv4QLO3-T7tEe6-8HdW8,2068
+vineyard_dask-0.8.4.dist-info/WHEEL,sha256=7S85KtyFD8rVLcRtbU_ImUEvhGsQLjg2zj19rOEAGNM,93
+vineyard_dask-0.8.4.dist-info/top_level.txt,sha256=eZrYkLRbDypCZAYVfMwFNTMYj4dRG-c-6B5uV6vu4Sk,9
+vineyard_dask-0.8.4.dist-info/RECORD,,
