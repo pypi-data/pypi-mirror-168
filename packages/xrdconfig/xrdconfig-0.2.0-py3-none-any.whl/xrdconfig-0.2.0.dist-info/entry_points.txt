@@ -1,0 +1,3 @@
+[console_scripts]
+xrdconfig=xrdconfig.cli:main
+
