@@ -1,0 +1,98 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.7'
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install cffi numpy maturin
+    - name: Check tract version in sync
+      run: |
+        ./check_tract_version_insync.sh
+    - name: maturin-action
+      run: |
+        maturin build --release --sdist -o dist
+    - name: run python tests
+      run: |
+        python3 -m pip install pytest
+        python3 -m pip install ./dist/`ls  ./dist/ |grep '.whl'|head -1`
+        pytest ./tests
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        name: wheels
+        path: dist
+
+  windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install cffi numpy
+    - uses: messense/maturin-action@v1
+      with:
+        command: build
+        args: --release -o dist
+    - name: run python tests
+      run: |
+        pip install pytest
+        pip install --no-index --find-links=dist/ tract_python
+        pytest ./tests
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        name: wheels
+        path: dist
+
+  macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        ls /Users/runner/hostedtoolcache/Python/
+        /Users/runner/hostedtoolcache/Python/3.9.14/x64/bin/python3 -m pip install --upgrade pip
+        /Users/runner/hostedtoolcache/Python/3.9.14/x64/bin/python3 -m pip install cffi numpy
+    - uses: messense/maturin-action@v1
+      with:
+        command: build
+        args: --release -o dist --universal2
+    - name: run python tests
+      run: |
+        /Users/runner/hostedtoolcache/Python/3.9.14/x64/bin/python3 -m pip install pytest
+        /Users/runner/hostedtoolcache/Python/3.9.14/x64/bin/python3 -m pip install ./dist/`ls  ./dist/ |grep '.whl'|head -1`
+        pytest ./tests
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        name: wheels
+        path: dist
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    if: "startsWith(github.ref, 'refs/tags/')"
+    needs: [ macos, windows, linux ]
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: wheels
+      - name: Publish to PyPI
+        uses: messense/maturin-action@v1
+        env:
+          MATURIN_PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+        with:
+          command: upload
+          args: --skip-existing *

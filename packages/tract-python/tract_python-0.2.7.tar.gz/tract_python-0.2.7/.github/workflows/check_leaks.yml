@@ -1,0 +1,26 @@
+name: check_memory_leaks
+
+
+on:
+  workflow_dispatch:
+    branches: [ main ]
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.7'
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install cffi numpy maturin
+    - name: maturin-action
+      run: |
+        maturin build --release --sdist -o dist
+    - name: valgrind leaks checks
+      run: |
+        sudo apt install -y valgrind
+        PYTHONMALLOC=malloc valgrind --tool=memcheck --leak-check=full python test_run.py

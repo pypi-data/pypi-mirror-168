@@ -1,0 +1,12 @@
+version 1.0;
+
+extension tract_registry tract_core;
+extension tract_pulse_streaming_symbol;
+
+
+
+graph net(input_0) -> (output_0)
+{
+    input_0 = external<scalar>(shape = [1, S, 3]);
+    output_0 = mul(input_0, 2.0);
+}

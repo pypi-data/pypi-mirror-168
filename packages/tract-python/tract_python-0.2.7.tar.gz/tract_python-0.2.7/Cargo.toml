@@ -1,0 +1,26 @@
+[package]
+name = "tract-python"
+version = "0.2.7"
+edition = "2021"
+authors = ["Julien Balian <julien.balian@sonos.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "tract_python"
+crate-type = ["cdylib"]
+
+[dependencies]
+ffi-convert = "0.3.0"
+pyo3 = { version = "0.16.5", features = ["extension-module"] }
+anyhow = "1.0"
+libc = "0.2"
+
+ndarray-npy = { version = "0.8.0", features = [ "compressed_npz" ] }
+
+tract-nnef = "0.18.0"
+tract-onnx = "0.18.0"
+tract-pulse = "0.18.0"
+tract-hir = "0.18.0"
+
+[package.metadata.maturin]
+requires-dist = ["cffi", "numpy"]
