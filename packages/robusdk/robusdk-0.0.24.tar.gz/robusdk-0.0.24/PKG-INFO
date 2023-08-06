@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: robusdk
+Version: 0.0.24
+Summary: robusdk
+Home-page: http://255.255.255.255/
+Author: robusdk
+Author-email: root@localhost.localdomain
+License: UNLISENCED
+Description: ```js
+        (async () => {
+          const robsdk = require('robusdk')
+          const Coroutine = require('robusdk/coroutine')
+          const Sequence = require('robusdk/sequence')
+          const Awaitable = require('robusdk/awaitable')
+          const Logger = require('robusdk/logger')
+        
+          const Client = robsdk({
+            url: 'http://localhost/',
+            username: 'username',
+            password: 'password'
+          })
+        
+          const rpc = new Client('rpc')
+          const pipeline = new Client('pipeline')
+          const ws = new Client('pipeline', true)
+        
+          Logger.info(await new Coroutine([
+            new Sequence(() => rpc.methodA(...paramsA), Logger.debug, Logger.error),
+            new Sequence(() => rpc.methodB(...paramsB), Logger.debug, Logger.error),
+            new Sequence(() => pipeline.methodA(...paramsA), Logger.debug, Logger.error),
+            new Sequence(() => pipeline.methodB(...*paramsB), Logger.debug, Logger.error),
+            new Awaitable(() => ws.methodA(...paramsA), Logger.debug),
+            new Awaitable(() => ws.methodB(...paramsB), Logger.debug),
+          ]))
+        })()
+        ```
+        
+        ```python
+        async def future():
+          from robusdk import robusdk, Logger, Sequence, Coroutine, Awaitable
+          Client = robsdk(
+            url='http://localhost/',
+            username='username',
+            password='password',
+          )
+          rpc = Client('rpc')
+          pipeline = Client('pipeline')
+          ws = Client('pipeline', True)
+          Logger.info(await Coroutine([
+              Sequence(lambda: rpc.methodA(**paramsA), Logger.debug, Logger.error),
+              Sequence(lambda: rpc.methodB(**paramsB), Logger.debug, Logger.error),
+              Sequence(lambda: pipeline.methodA(**paramsA), Logger.debug, Logger.error),
+              Sequence(lambda: pipeline.methodB(**paramsB), Logger.debug, Logger.error),
+              Awaitable(lambda: ws.methodA(**paramsA), Logger.debug),
+              Awaitable(lambda: ws.methodB(**paramsB), Logger.debug),
+          ]))
+        
+        from asyncio import get_event_loop
+        loop = get_event_loop()
+        loop.run_until_complete(future())
+        loop.close()
+        ```
+        
+Keywords: robusdk
+Platform: any
+Description-Content-Type: text/markdown
