@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fps_auth
+Version: 0.0.41
+Summary: An FPS plugin for the authentication API
+Project-URL: Homepage, https://jupyter.org
+Author-email: Jupyter Development Team <jupyter@googlegroups.com>
+License: BSD 3-Clause License
+License-File: COPYING.md
+Keywords: fastapi,jupyter,pluggy,plugins,server
+Requires-Python: >=3.7
+Requires-Dist: aiosqlite
+Requires-Dist: fastapi-users[oauth,sqlalchemy]<11,>=10.1.4
+Requires-Dist: fps-lab
+Requires-Dist: fps-login
+Requires-Dist: fps[uvicorn]>=0.0.17
+Description-Content-Type: text/markdown
+
+# fps-auth
+
+An FPS plugin for the authentication API.
