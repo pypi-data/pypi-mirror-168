@@ -1,0 +1,111 @@
+<dtml-var manage_page_header>
+<dtml-var "manage_form_title(this(), _,
+           form_title='Add Local File System',
+	   )">
+
+<main class="container-fluid">
+
+<dtml-let is_win32="Control_Panel.sys_platform() == 'win32'">
+
+<dtml-if is_win32>
+<p class="form-help">Local File System objects allow you to serve files from 
+either the local file system or a remote network share as if they were regular
+Zope documents.</p> 
+
+<p class="form-help">
+This works by mapping a directory (called the 'base path') on the Zope server 
+machine to a folder-like object in Zope. All of the subdirectories and files 
+under this path are mapped to Zope objects by reading the contents of the file 
+from the file system each time the object is requested. (For many operations 
+this is optimized to speed up performance.)</p>
+
+<p class="form-help">
+The Zope process must have permissions at minimum to read from the specified 
+directory, or to write to the directory to enable file uploads. All uploaded
+files are initially owned by the same user as the Zope process.
+</p>
+
+<p class="form-help">Specify remote shares using the UNC notation: 
+\\server\share\path. You may also need to enter a username and a password.
+<strong>Note:</strong> When run as a service, Zope by default runs under 
+the System account, which does not have the permissions to map network
+drives. You must specify a username with sufficient privileges to
+use network shares unless you run Zope under a different account.</p>
+
+<dtml-else>
+<p class="form-help">Local File System objects allow you to serve files from 
+the local file system as if they were regular Zope documents.</p>
+
+<p class="form-help">
+This works by mapping a directory (called the 'base path') on the Zope server 
+machine to a folder-like object in Zope. All of the subdirectories and files 
+under this path are mapped to Zope objects by reading the contents of the file 
+from the file system each time the object is requested. (For many operations 
+this is optimized to speed up performance.)</p>
+
+<p class="form-help">
+The Zope process must have permissions at minimum to read from the specified 
+directory, or to write to the directory to enable file uploads. All uploaded
+files are initially owned by the same user as the Zope process.
+</p>
+</dtml-if>
+
+<form action="manage_addLocalFS" method="post">
+  <div class="form-group row">
+    <label for="id" class="col-sm-4 col-md-3">
+      Id
+    </label>
+    <div class="col-sm-8 col-md-9">
+      <input id="id" name="id" class="form-control" value="" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="title" class="col-sm-4 col-md-3">
+      Title
+    </label>
+    <div class="col-sm-8 col-md-9">
+      <input id="title" name="title" type="text" class="form-control" value="" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="basepath" class="col-sm-4 col-md-3">
+      Filesystem path
+    </label>
+    <div class="col-sm-8 col-md-9">
+      <input id="basepath" name="basepath" type="text" class="form-control" value="" />
+    </div>
+  </div>
+
+  <dtml-if is_win32>
+
+    <div class="form-group row">
+      <label for="username" class="col-sm-4 col-md-3">
+        Username
+      </label>
+      <div class="col-sm-8 col-md-9">
+        <input id="username" name="username" type="text" class="form-control" value="" />
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="password" class="col-sm-4 col-md-3">
+        Title
+      </label>
+      <div class="col-sm-8 col-md-9">
+        <input id="password" name="password" type="password" class="form-control" value="" />
+      </div>
+    </div>
+
+  </dtml-if>
+
+  <div class="zmi-controls">
+    <input type="submit" class="btn btn-primary" value="Add" />
+  </div>
+
+</form>
+</dtml-let>
+
+</main>
+<dtml-var manage_page_footer>
