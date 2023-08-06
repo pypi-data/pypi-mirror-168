@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Cloud_data_manage
+Version: 0.0.2
+Summary: a library to manege data on cloud and onprem
+Home-page: https://github.com/spsc83/Gloud_data_manage
+Author: Yujue Wang
+Author-email: spsc83@gmail.com
+License: MIT License
+Keywords: Azure AWS Google Cloud onprem
+Platform: any
+License-File: LICENSE
+
+UNKNOWN
+
