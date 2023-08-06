@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: drift-mqtt
+Version: 0.1.0
+Summary: A wrapper around Python Paho Mqtt library
+Home-page: https://gitlab.panda.technology/drift/sdk/drift-mqtt
+Author: PANDA, GmbH
+Author-email: info@panda.technology
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paho-mqtt (~=1.6.0)
+Provides-Extra: format
+Requires-Dist: black (~=22.8.0) ; extra == 'format'
+Provides-Extra: lint
+Requires-Dist: pylint (~=2.5.3) ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest (~=6.1.2) ; extra == 'test'
+
+# Drift MQTT tools
+
+A collection of helpers to work with MQTT:
+* `Client` - wrapper around `paho.mqtt.Client` that correctly handles subscriptions after reconnect
+
+
+## Usage
+
+Producer
+```python
+from drift_mqtt import Client
+
+
+client = Client('tcp://127.0.0.1:8000', 'client_id')
+client.connect()
+client.loop_start()
+...
+client.publish('topic', 'some message')
+```
+Consumer
+```python
+from drift_mqtt import Client
+
+
+def message_handler(message):
+    print('Got message ', message.payload, message.topic)
+
+
+client = Client('tcp://127.0.0.1:8000', client_id='test_subscriber')
+client.subscribe('test_topic', message_handler)
+client.connect()
+client.loop_forever()
+```
+
+For more details please check `examples/` folder
