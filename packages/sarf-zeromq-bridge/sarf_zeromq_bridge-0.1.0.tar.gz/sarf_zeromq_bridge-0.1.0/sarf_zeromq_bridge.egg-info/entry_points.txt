@@ -1,0 +1,3 @@
+[console_scripts]
+sarf_zeromq_bridge = sarf_zeromq_bridge.zeromq_bridge:main
+
