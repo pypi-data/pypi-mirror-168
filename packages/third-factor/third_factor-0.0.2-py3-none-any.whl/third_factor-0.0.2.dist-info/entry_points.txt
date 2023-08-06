@@ -1,0 +1,2 @@
+[console_scripts]
+thirdfactor = third_factor.third_factor:main
