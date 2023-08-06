@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "h5py", "sklearn", "numpy", "matplotlib", "seaborn", "pandas", "requests", "Pillow", "keras", "glob2", "opencv-python", "tqdm", "numba"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Tichonet_DL5"
+version = "0.0.1"
+authors = [
+  { name="TichonetDataScience - Yannay Rosenblatt", email="skipper.cmd@gmail.com" },
+]
+description = "Deep Learning functions, classes and requirements package. The complete set!"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SkipperCMD/Tichonet-DL5"
+"Bug Tracker" = "https://github.com/SkipperCMD/Tichonet-DL5-Bug-Tracker"
