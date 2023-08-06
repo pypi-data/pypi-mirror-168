@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: Omniquestor
+Version: 0.0.2
+Summary: A simple utility for handling auth header python requests.
+Author-email: Jason Cain <jason@caincraft.com>
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/caincraft/omniquestor
+Project-URL: Bug Tracker, https://github.com/caincraft/omniquestor/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Omniquestor
+ 
+A simple utility for handling auth header python requests.
+
+Instantiate the class with a url, an auth header token, and a request type of get, post, put, or delete.
+Then save the response by calling the response() function.
+Example usages:
+
+`endpoint_url = www.example-site.com/auth`
+`auth_header = "Authorization": "Bearer <token value>"`
+
+`get_example_omniquestor = Omniquestor(endpoint_url, headers=auth_header, request_type="get")`
+`get_example_response = get_example_omniquestor.response()`
+
+For requests with an item id be sure to include it in the endpoint_url:
+
+`get_item_url = www.example-site.com/01`
+`post_item_url = www.example-site.com/01`
+`put_item_url = www.example-site.com/01`
+`delete_item_url = www.example-site.com/01`
+
+Then usage is the same as above:
+
+`put_item_example_omniquestor = Omniquestor(endpoint_url, headers=auth_header, request_type="put")`
+`put_item_example_response = put_item_example_omniquestor.response()`
