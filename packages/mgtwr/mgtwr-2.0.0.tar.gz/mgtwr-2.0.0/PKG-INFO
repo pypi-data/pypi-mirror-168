@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mgtwr
+Version: 2.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/sunkun1997/mgtwr
+Author: Kun Sun
+Author-email: 849024477@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+To fit geographically weighted model, geographically and temporally weighted regression model and multiscale geographically and temporally weighted regression model. 
+
