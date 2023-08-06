@@ -1,0 +1,4 @@
+[console_scripts]
+DQ64 = cryptocode.app:DQ64
+EQ64 = cryptocode.app:EQ64
+
