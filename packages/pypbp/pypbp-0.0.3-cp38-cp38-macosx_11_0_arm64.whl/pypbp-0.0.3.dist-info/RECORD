@@ -1,0 +1,11 @@
+pypbp/__init__.c,sha256=L8YOv74s78N1h26n-FRo6FZfolddm_GUdBUhMCj8UMI,1538707
+pypbp/__init__.cpython-38-darwin.so,sha256=wfr03dIadfSzmT7rK9smrGT_5J9-FR-aT3WBFdypFLs,425194
+pypbp/__init__.py,sha256=TbGhQetOxARNSQ01Hv_mT8F8ls9nJEtcSoXYbtYl6bM,139
+pypbp/pypbp.py,sha256=TktlPd8lfj5TEH6sv0bpUbcdXpLyr6bFB3Rb6w65ykQ,386
+pypbp/data/timeseries.xlsx,sha256=WYKwNP1s7e52f7nkA1oZIoYG_n6n718RJ7v97Gurx1k,27209
+pypbp-0.0.3.dist-info/LICENSE,sha256=HrTa-shyVVSROW8ZO9rBz8nXUVKdKSIdlHh_g-f97F4,1082
+pypbp-0.0.3.dist-info/METADATA,sha256=LBjMoAs2UCDFBVU4uEQh0rW1qRpnZbpRR2YffTp9ABw,1534
+pypbp-0.0.3.dist-info/WHEEL,sha256=u895uB4FIjm1puccTaPTl57dorjncEYygQxItKHr_T0,108
+pypbp-0.0.3.dist-info/dependency_links.txt,sha256=QoouSM7oIBcT0TmV8LXubu1T5_bsa8NRYIXG-wYHugI,44
+pypbp-0.0.3.dist-info/top_level.txt,sha256=r0c0JhsKWcNFf4GDeAwVMWca3rNhsEdSLFozmGm7eZc,6
+pypbp-0.0.3.dist-info/RECORD,,
