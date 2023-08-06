@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aioring
+Version: 0.0.1
+Summary: Access to IoRings for fileIO with asyncio
+Home-page: UNKNOWN
+Author: Paul K.
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+Access to IoRings (io_uring on linux) and a threaded wrapper on others OS.
+Currently supports on fileIO in aos.pyx and aio.pyx,
+in the future i want to support other IoRing operations in aos.
+
