@@ -1,0 +1,9 @@
+mycwl/__init__.py
+mycwl/cwl.py
+mycwl/exceptions.py
+mycwl/setup.py
+mycwl.egg-info/PKG-INFO
+mycwl.egg-info/SOURCES.txt
+mycwl.egg-info/dependency_links.txt
+mycwl.egg-info/requires.txt
+mycwl.egg-info/top_level.txt

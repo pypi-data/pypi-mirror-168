@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mycwl
+Version: 0.0.1
+Summary: CWL based MySQL Database
+Home-page: UNKNOWN
+Author: 84chain
+Author-email: 84chain@gmail.com
+License: UNKNOWN
+Description: A meme package based off an inside joke at the UBC Anime Club
+Keywords: python,cwl
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
