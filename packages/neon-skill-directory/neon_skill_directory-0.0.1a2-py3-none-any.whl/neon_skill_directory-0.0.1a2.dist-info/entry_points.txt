@@ -1,0 +1,3 @@
+[ovos.plugin.skill]
+skill-directory.neongeckocom=skill_directory:DirectorySkill
+
