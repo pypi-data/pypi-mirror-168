@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bin/gbkToPkl
+bin/gnomon
+gnomon/__init__.py
+gnomon/gnomon.py
+gnomonicus.egg-info/PKG-INFO
+gnomonicus.egg-info/SOURCES.txt
+gnomonicus.egg-info/dependency_links.txt
+gnomonicus.egg-info/not-zip-safe
+gnomonicus.egg-info/requires.txt
+gnomonicus.egg-info/top_level.txt
