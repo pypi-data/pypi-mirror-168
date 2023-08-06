@@ -1,0 +1,14 @@
+cycler
+deepdiff
+kiwisolver
+matplotlib
+mpi4py
+numpy
+ordered-set
+pyparsing
+python-dateutil
+six
+
+[testing]
+pytest
+pytest-cov
