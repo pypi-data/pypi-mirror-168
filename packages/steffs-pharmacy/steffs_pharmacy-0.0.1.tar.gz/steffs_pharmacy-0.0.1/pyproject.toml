@@ -1,0 +1,19 @@
+[project]
+name = "steffs_pharmacy"
+version = "0.0.1"
+authors = [
+  { name="Steffy Johnson", email="steffycherian17@gmail.com" },
+]
+description = "Steffs Pharmacy"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
