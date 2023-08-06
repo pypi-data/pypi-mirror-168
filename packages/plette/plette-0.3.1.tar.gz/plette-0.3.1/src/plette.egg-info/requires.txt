@@ -1,0 +1,9 @@
+tomlkit
+
+[tests]
+pytest
+pytest-xdist
+pytest-cov
+
+[validation]
+cerberus
