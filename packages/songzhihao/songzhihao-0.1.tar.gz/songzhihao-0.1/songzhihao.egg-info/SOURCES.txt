@@ -1,0 +1,9 @@
+README.rst
+main.py
+setup.py
+songzhihao.egg-info/PKG-INFO
+songzhihao.egg-info/SOURCES.txt
+songzhihao.egg-info/dependency_links.txt
+songzhihao.egg-info/entry_points.txt
+songzhihao.egg-info/requires.txt
+songzhihao.egg-info/top_level.txt
