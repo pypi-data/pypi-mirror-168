@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: XBXBOT
+Version: 0.8.4
+Summary: The Best Fortnite Lobbybot
+Home-page: https://www.youtube.com/
+Author: Mathyslol
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: crayons
+Requires-Dist: PirxcyPinger
+Requires-Dist: fortnitepy (==3.6.7)
+Requires-Dist: BenBotAsync
+Requires-Dist: FortniteAPIAsync
+Requires-Dist: sanic (==21.6.2)
+Requires-Dist: aiohttp
+Requires-Dist: uvloop
+Requires-Dist: requests
+
