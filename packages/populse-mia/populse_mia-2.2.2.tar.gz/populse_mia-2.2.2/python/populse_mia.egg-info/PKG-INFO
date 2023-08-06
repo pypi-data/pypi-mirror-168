@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: populse-mia
+Version: 2.2.2
+Summary: populse mia
+Home-page: http://populse.github.io/populse_mia
+Author: Populse team
+Author-email: populse-support@univ-grenoble-alpes.fr
+License: CeCILL
+Platform: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Provides-Extra: doc
+License-File: LICENSE
+
+
+===============
+populse_mia
+===============
+[MIA] Multi parametric Image Analysis:
+A complete image processing environment mainly targeted at
+the analysis and visualization of large amounts of MRI data
