@@ -1,0 +1,13 @@
+clip_gaze/__init__.py,sha256=Gf52_kNA3_MmpOWbND-1AziQX_2nfh9SFuOLhPro1d8,4385
+clip_gaze/artists_by_name.py,sha256=KdnnWN0PQjPQTQi9WQVAU94Z4GVySOrBM4y0LHqMUWw,97109
+clip_gaze/artists_by_prevalence.py,sha256=SwN91kMUnL71CWpynaMMbQOWQBkpSeZfKEK9FyOSUc0,14077
+clip_gaze/lists.py,sha256=Mgyro9kmzwyIh5EnYQ0GSuSEarOBqG6EFfnIWVbFGUQ,2262
+clip_gaze/media.py,sha256=Ld7AFn21fO7C44668Hw-cdMM5PbBTkvU5N5oMLoryzQ,1991
+clip_gaze/movements.py,sha256=Oaxt8QSRuwxBOS34VfpLycRTECAdFeJr9aMdk3h8W9k,3922
+clip_gaze/qualities.py,sha256=xpGlde_EF8-vTmQly40oYCmrqinNQFCsmeFALFSgkFM,1481
+clip_gaze/sites.py,sha256=V1j4aq9IhzElhfM9vFH0h6mzID9L4iyxG5R7ETFJM3Y,1479
+clip_gaze-0.1.2.dist-info/LICENSE,sha256=0-8-XdO6OVoWluhcbKp84qsHk_nRhnKFUUMfAMx8iZ4,1079
+clip_gaze-0.1.2.dist-info/METADATA,sha256=8U3Sjs3yjvuxiogV7_X4rM0JUWdWHkbuqxf1KyXErPw,3463
+clip_gaze-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clip_gaze-0.1.2.dist-info/top_level.txt,sha256=KCtFvqFOJeIvZcOZL7pP99crTnbxVkNrt_sotE02jlA,10
+clip_gaze-0.1.2.dist-info/RECORD,,
