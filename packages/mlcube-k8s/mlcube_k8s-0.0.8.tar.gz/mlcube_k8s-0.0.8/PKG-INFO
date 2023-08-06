@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mlcube_k8s
+Version: 0.0.8
+License: Apache 2.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+MLCube Kubernetes runner.
