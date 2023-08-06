@@ -1,0 +1,10 @@
+aws_cdk/asset_kubectl_v21/__init__.py,sha256=xa9pyrMNdVvwcyxy2Ri7ns9b5-u7GV5sjqyPF6RaG_I,5021
+aws_cdk/asset_kubectl_v21/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/asset_kubectl_v21/_jsii/__init__.py,sha256=ZsZ3ugIEZpXNdFZzm6DbdDAHXH4rIobGL9gKPVZzJTM,423
+aws_cdk/asset_kubectl_v21/_jsii/asset-kubectl-v21@0.0.0.jsii.tgz,sha256=oWXianuDmgbsMERTMi8S2qQvilt6hMKnkj8C7RPlm88,27289333
+aws_cdk.asset_kubectl_v21-0.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aws_cdk.asset_kubectl_v21-0.0.0.dist-info/METADATA,sha256=9a7Gwn8TD9j4HtTjh4ytjRiDvOk1vpfrw1WSAOilaxA,2241
+aws_cdk.asset_kubectl_v21-0.0.0.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+aws_cdk.asset_kubectl_v21-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.asset_kubectl_v21-0.0.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.asset_kubectl_v21-0.0.0.dist-info/RECORD,,

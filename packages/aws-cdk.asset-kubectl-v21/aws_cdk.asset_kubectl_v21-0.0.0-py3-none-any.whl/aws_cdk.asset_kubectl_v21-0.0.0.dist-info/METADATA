@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: aws-cdk.asset-kubectl-v21
+Version: 0.0.0
+Summary: An Asset construct that contains kubectl, for use in Lambda Layers
+Home-page: https://github.com/cdklabs/aws-asset-awscli#readme
+Author: Amazon Web Services
+License: Apache-2.0
+Project-URL: Source, https://github.com/cdklabs/awscdk-asset-kubectl.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: aws-cdk-lib (<3.0.0,>=2.0.0)
+Requires-Dist: constructs (<11.0.0,>=10.0.5)
+Requires-Dist: jsii (<2.0.0,>=1.67.0)
+Requires-Dist: publication (>=0.0.3)
+Requires-Dist: typeguard (~=2.13.3)
+
+# Asset with KubeCtl v1.21
+
+<!--BEGIN STABILITY BANNER-->---
+
+
+![cdk-constructs: Experimental](https://img.shields.io/badge/cdk--constructs-experimental-important.svg?style=for-the-badge)
+
+---
+
+
+> This library is currently under development. Do not use!
+
+<!--END STABILITY BANNER-->
+
+This module exports a single class called `KubectlAsset` which is an `s3_assets.Asset` that
+bundles the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/kubectl/) and the
+[`helm`](https://helm.sh/) command line.
+
+> * Helm Version: 3.9.4
+> * Kubectl Version: 1.21.0
+
+Usage:
+
+```python
+// KubectlAsset bundles the 'kubectl' and 'helm' command lines
+import { KubectlAsset } from '@aws-cdk/asset-kubectl-v21';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+
+declare const fn: lambda.Function;
+const kubectl = new KubectlAsset(this, 'KubectlAsset');
+fn.addLayers(new lambda.LayerVersion(this, 'KubectlLayer', {
+  code: lambda.Code.fromBucket(kubectl.bucket, kubectl.s3ObjectKey),
+}));
+```
+
+`kubectl` will be installed under `/opt/kubectl/kubectl`, and `helm` will be installed under `/opt/helm/helm`.
