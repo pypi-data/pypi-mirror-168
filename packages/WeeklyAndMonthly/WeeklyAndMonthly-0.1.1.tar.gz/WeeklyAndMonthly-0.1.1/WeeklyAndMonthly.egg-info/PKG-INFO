@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: WeeklyAndMonthly
+Version: 0.1.1
+Summary: Calculate weekly and monthly averages from a set of datapoints.
+Author: Karl Berggren
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+License-File: LICENSE
+
+# Weekly And Monthly
+Weeks and Months are two incompatible units. Their greatest common denominator is a day. This library takes datapoints and analyses them in order to produce weekly and monthly metrics.
+
+# Usage
+Write a python class that inherits the Abstract Base Class `DataPoint`. Create a instance of `MonthlyAndWeeklyStatistics` and call `consider(data_point)` for each datapoint you want to include.
+Now use the `print_cvs()` to get the values for your spreadsheet.

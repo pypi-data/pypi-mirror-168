@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+WeeklyAndMonthly.egg-info/PKG-INFO
+WeeklyAndMonthly.egg-info/SOURCES.txt
+WeeklyAndMonthly.egg-info/dependency_links.txt
+WeeklyAndMonthly.egg-info/top_level.txt
+weeklyandmonthly/__init__.py
+weeklyandmonthly/statistics.py
