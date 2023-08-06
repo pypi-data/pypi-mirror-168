@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: elice-scenario-based-tester
+Version: 1.0.25
+Summary: Scenario based tester for elice-backend projects.
+Home-page: https://git.elicer.io/elice/elice-scenario-based-tester
+Author: elice.io
+Author-email: contact@elice.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.9, <3.10
+Requires-Dist: aiohttp (==3.8.1)
+Requires-Dist: jsonpath-ng (==1.5.3)
+Requires-Dist: pydantic[dotenv] (==1.9.1)
+Requires-Dist: setuptools-scm (==6.4.2)
+Provides-Extra: dev
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-datetimez ; extra == 'dev'
+Requires-Dist: flake8-isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: safety ; extra == 'dev'
+
+UNKNOWN
+
