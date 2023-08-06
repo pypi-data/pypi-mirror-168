@@ -1,0 +1,11 @@
+jupyter_rospkg>=0.3
+
+[dev]
+click
+jupyter_releaser>=0.22
+
+[docs]
+jupyterlite-sphinx
+myst-parser
+sphinx
+sphinx-rtd-theme
