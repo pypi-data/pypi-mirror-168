@@ -1,0 +1,13 @@
+pygamfast/__init__.py,sha256=GG2oS0brlsCKtneXxG0lV2D2KMlAledwsFtab4bIrw4,552
+pygamfast/callbacks.py,sha256=_6QMUoBOHeixMfD4P8dSs9GrL0aLmjHrXN4LIdLUJcc,5664
+pygamfast/core.py,sha256=6Rl7wKJxSDCErtKCvFGXuaFHlEqOIum7H2p6SnAR77w,4897
+pygamfast/distributions.py,sha256=Dv52fpD3WSt_xHnHCs3xH5YPedDXHXjsBoVVFf7L00g,17299
+pygamfast/links.py,sha256=wln-ZqtLeJ66mKtObahxvznJnKc5T_DshRuRqPOsQaU,7298
+pygamfast/penalties.py,sha256=zra-SAI3wOm_MxEmgNDMcP40yOCeMyzgYHupu6PbhZc,9616
+pygamfast/pygam.py,sha256=l1q3eesLrX3H_lp259iyxa9GPnuQuvytUmZGuhWTW5Y,119354
+pygamfast/terms.py,sha256=W0GwBxt_WpZ_qHmqdSfDdvTqiYhURiP8fzzyY5YFpQg,56194
+pygamfast/utils.py,sha256=HporhjrqcoOAaKMtSMMREa5M6Hq7i-4XvhZ31OCFT90,25796
+pygamfast-0.8.1.dist-info/LICENSE,sha256=fjr5OAPeVULdNNEbtxG9mZ_9wE7r_zJeI5NjjMF4W8g,1081
+pygamfast-0.8.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+pygamfast-0.8.1.dist-info/METADATA,sha256=Oza-8_GD8ZuTbHhrI67RCbuKkZqBBplGzREQdyTu2V4,651
+pygamfast-0.8.1.dist-info/RECORD,,
