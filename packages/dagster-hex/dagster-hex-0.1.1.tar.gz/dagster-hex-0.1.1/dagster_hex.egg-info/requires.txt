@@ -1,0 +1,14 @@
+dagster>=1.0
+dagit
+requests>=2
+
+[dev]
+mypy>=0.8
+pytest
+pre-commit
+flake8
+isort
+types-requests
+black
+pytest-mock
+requests-mock
