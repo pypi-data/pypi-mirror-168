@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: big-thing-py
+Version: 0.4.0
+Summary: SoPIoT Thing SDK
+Home-page: https://iris.snu.ac.kr
+Author: caplab
+Author-email: caplab94@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: autopep8
+Requires-Dist: dataclasses
+Requires-Dist: func-timeout
+Requires-Dist: getmac
+Requires-Dist: paho-mqtt
+Requires-Dist: pylint
+Requires-Dist: pytest
+Requires-Dist: requests
+Requires-Dist: termcolor
+Requires-Dist: tqdm
+Requires-Dist: zeroconf
+
+# Python package for SoPIoT big-thing-py project
+
+
