@@ -1,0 +1,30 @@
+# Fast UI
+
+Fastest way to make User Interfaces in Python
+
+## Design
+
+All events from HTML will be forwarded from HTML to Python via JS. Python will perform all the required operations and pass the information back to JS, which will update its store. A reactive framework in JS will take the data in store and update the UI. Simple :)
+All the communication will happen over standard websocket.
+
+I know it's not the fastest and most performant way of doing things. But it works! And requires least amount of knowledge to get started. So why not!
+
+## Tasks
+
+1. HTML Components
+2. Forwarding events
+3. Calling Python code
+4. Updating JS store
+5. Reactively updating the UI
+
+## Goal
+
+Make a simple click to increment app using this construct.
+
+## Draft 1
+
+1. Make a function in JS that sends a message over websocket to execute a particular piece of Python code
+2. Call this function for any event handling that needs to be performed
+3. Execute the python function and make required chnages to the store
+4. Send back a msg to the frontend to update it's store
+5. Assuming the application is reactive, it'll automatically re render the UI to show items.

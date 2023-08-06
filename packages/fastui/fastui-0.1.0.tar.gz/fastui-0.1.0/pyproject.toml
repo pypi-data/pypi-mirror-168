@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastui"
+version = "0.1.0"
+description = "Simple and fast way to create reactive web application in PyPython"
+authors = ["Apoorva Singh <apoorvasingh157@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.85.0"
+uvicorn = "^0.18.3"
+websockets = "^10.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
