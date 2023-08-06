@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+face_authentication_lib/__init__.py
+face_authentication_lib/exceptions.py
+face_authentication_lib/face_auth.py
+face_authentication_lib.egg-info/PKG-INFO
+face_authentication_lib.egg-info/SOURCES.txt
+face_authentication_lib.egg-info/dependency_links.txt
+face_authentication_lib.egg-info/requires.txt
+face_authentication_lib.egg-info/top_level.txt
