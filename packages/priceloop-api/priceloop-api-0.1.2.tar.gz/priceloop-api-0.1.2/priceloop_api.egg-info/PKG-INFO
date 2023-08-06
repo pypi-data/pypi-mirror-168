@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: priceloop-api
+Version: 0.1.2
+Summary: Priceloop API
+Home-page: https://github.com/priceloop/priceloop-api-python
+Author: Priceloop
+Author-email: hello@priceloop.ai
+License: UNKNOWN
+Keywords: Priceloop API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+    Connect to your Priceloop Data through our API
+    
+
