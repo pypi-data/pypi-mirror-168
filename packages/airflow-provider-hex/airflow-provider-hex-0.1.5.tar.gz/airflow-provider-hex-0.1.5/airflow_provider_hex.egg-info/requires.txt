@@ -1,0 +1,13 @@
+apache-airflow>=2.2.0
+requests>=2
+
+[dev]
+mypy>=0.8
+pytest
+pre-commit
+flake8
+isort
+types-requests
+black
+pytest-mock
+requests-mock
