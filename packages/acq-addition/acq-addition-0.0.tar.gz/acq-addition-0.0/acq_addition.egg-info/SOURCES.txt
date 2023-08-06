@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+acq_addition.egg-info/PKG-INFO
+acq_addition.egg-info/SOURCES.txt
+acq_addition.egg-info/dependency_links.txt
+acq_addition.egg-info/not-zip-safe
+acq_addition.egg-info/top_level.txt
