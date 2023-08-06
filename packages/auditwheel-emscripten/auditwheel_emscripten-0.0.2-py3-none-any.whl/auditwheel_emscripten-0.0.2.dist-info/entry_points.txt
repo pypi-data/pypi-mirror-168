@@ -1,0 +1,3 @@
+[pyodide.cli]
+audit=auditwheel_emscripten.cli.main:app
+

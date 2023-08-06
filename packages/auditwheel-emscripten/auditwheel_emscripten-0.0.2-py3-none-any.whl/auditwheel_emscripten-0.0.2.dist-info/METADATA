@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: auditwheel_emscripten
+Version: 0.0.2
+Summary: auditwheel-like tool for Pyodide
+Author-email: Gyeongjae Choi <def6488@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: leb128
+Requires-Dist: packaging
+Requires-Dist: pyodide-cli
+Requires-Dist: typer[all]
+Requires-Dist: wheel
+Project-URL: Home, https://github.com/ryanking13/auditwheel-emscripten
+
+# auditwheel-emscripten
+
+auditwheel-like tool for Pyodide
+
