@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+django_simple_redirects.egg-info/PKG-INFO
+django_simple_redirects.egg-info/SOURCES.txt
+django_simple_redirects.egg-info/dependency_links.txt
+django_simple_redirects.egg-info/not-zip-safe
+django_simple_redirects.egg-info/requires.txt
+django_simple_redirects.egg-info/top_level.txt
+simple_redirects/__init__.py
+simple_redirects/admin.py
+simple_redirects/apps.py
+simple_redirects/middleware.py
+simple_redirects/models.py
+simple_redirects/migrations/0001_initial.py
+simple_redirects/migrations/__init__.py
