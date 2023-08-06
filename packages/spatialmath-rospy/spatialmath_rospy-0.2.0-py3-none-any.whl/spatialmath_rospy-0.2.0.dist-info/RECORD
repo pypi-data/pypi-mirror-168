@@ -1,0 +1,9 @@
+spatialmath_rospy/__init__.py,sha256=31_VKmgs8jcMTS7U1IxDEitAjp9igGZhNJcc9JtLDjs,369
+spatialmath_rospy/convert.py,sha256=dN25hOTTlPbN8cylU8QgOFS-0iC4BUX4hNvPLajWZTw,3685
+spatialmath_rospy/monkey_patch_spatialmath.py,sha256=4hhPz_OSL_lSGHGvi-idMy67QJ-EFnDhP3xslMPOc_Q,509
+spatialmath_rospy/ros_compat_mixin.py,sha256=xCJi6OKdkLAIUwPD8BHWIeZe-zvLvhS5y7us5FgpQY0,3042
+spatialmath_rospy-0.2.0.dist-info/LICENSE,sha256=nV-2FRMbnTLHu7UQNprxcHHxDNVpl0WzpF8yBH7TjnE,1095
+spatialmath_rospy-0.2.0.dist-info/METADATA,sha256=oYh38zsZhEQkdhSjhWI9FA2t2VmDIrjVLeuk16VeJ0Y,7384
+spatialmath_rospy-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spatialmath_rospy-0.2.0.dist-info/top_level.txt,sha256=aKvW3wKGeueE0eibt5PkoS2F7XfAQLPj_sBTBaBMfdQ,18
+spatialmath_rospy-0.2.0.dist-info/RECORD,,
