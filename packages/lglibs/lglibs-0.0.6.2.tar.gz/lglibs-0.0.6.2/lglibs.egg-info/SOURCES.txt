@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+lglibs/__init__.py
+lglibs/builtin.py
+lglibs/color.py
+lglibs/file.py
+lglibs.egg-info/PKG-INFO
+lglibs.egg-info/SOURCES.txt
+lglibs.egg-info/dependency_links.txt
+lglibs.egg-info/not-zip-safe
+lglibs.egg-info/top_level.txt
