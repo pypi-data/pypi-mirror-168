@@ -1,0 +1,88 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "py_mono_tools"
+version = "0.0.27"
+description = "A CLI designed to make it easier to work in a python mono repo"
+license = "GPL-3.0-or-later"
+authors = ["Peter Hoburg <peterHoburg@users.noreply.github.com>"]
+maintainers = ["Peter Hoburg <peterHoburg@users.noreply.github.com>"]
+readme = "README.md"
+homepage = "https://peterhoburg.github.io/py_mono_tools/"
+repository = "https://github.com/peterHoburg/py_mono_tools"
+documentation = "https://peterhoburg.github.io/py_mono_tools/"
+keywords = [
+    "build", "tools",
+    "monorepo", "cli",
+    "py-mono-tools", "py mono tools", "py_mono_tools",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+packages = [
+    { include = "py_mono_tools", from = "src" }
+]
+
+[tool.poetry.scripts]
+py_mono_tools = "py_mono_tools.main:cli"
+pmt = "py_mono_tools.main:cli"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+# CLI
+click = "^8"
+
+# linters-python
+bandit = "^1"
+black = "^22"
+flake8 = "^5"
+isort = "^5"
+mypy = "^0"
+pydocstringformatter = "^0.7"
+pydocstyle = {extras = ["toml"], version = "^6"}
+pylint = "^2"
+
+# testers-python
+pytest = "^7"
+
+
+[tool.poetry.group.dev.dependencies]
+pydevd-pycharm = "^222"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^8"
+mkdocs-minify-plugin = "^0"
+mkdocs-click = "^0"
+
+[tool.poetry.extras]
+python = ["bandit", "black", "flake8", "isort", "mypy", "pydocstringformatter", "pydocstyle[toml]", "pylint", "pytest"]
+
+python-linters = ["bandit", "black", "flake8", "isort", "mypy", "pydocstringformatter", "pydocstyle[toml]", "pylint"]
+python-testers = ["pytest"]
+
+
+all = ["bandit", "black", "flake8", "isort", "mypy", "pydocstringformatter", "pydocstyle[toml]", "pylint", "pytest"]
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 120
+include_trailing_comma = "True"
+force_grid_wrap = 0
+use_parentheses = "True"
+combine_as_imports = "True"
+force_alphabetical_sort_within_sections = "True"
+ensure_newline_before_comments = "True"
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+lines_after_imports = 2
