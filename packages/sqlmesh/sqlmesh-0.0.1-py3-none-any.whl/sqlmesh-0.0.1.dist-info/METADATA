@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sqlmesh
+Version: 0.0.1
+Author: Tobiko Data, Inc.
+License: Apache-2.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+
