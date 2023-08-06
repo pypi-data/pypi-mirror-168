@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+neptune_tensorflow_keras/__init__.py
+neptune_tensorflow_keras/_version.py
+neptune_tensorflow_keras.egg-info/PKG-INFO
+neptune_tensorflow_keras.egg-info/SOURCES.txt
+neptune_tensorflow_keras.egg-info/dependency_links.txt
+neptune_tensorflow_keras.egg-info/not-zip-safe
+neptune_tensorflow_keras.egg-info/requires.txt
+neptune_tensorflow_keras.egg-info/top_level.txt
+neptune_tensorflow_keras/impl/__init__.py

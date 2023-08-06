@@ -1,0 +1,14 @@
+neptune-client>=0.16.7
+tensorflow>2.0.0
+
+[all]
+pre-commit
+pytest>=5.0
+pytest-cov==2.10.1
+pydot
+
+[dev]
+pre-commit
+pytest>=5.0
+pytest-cov==2.10.1
+pydot
