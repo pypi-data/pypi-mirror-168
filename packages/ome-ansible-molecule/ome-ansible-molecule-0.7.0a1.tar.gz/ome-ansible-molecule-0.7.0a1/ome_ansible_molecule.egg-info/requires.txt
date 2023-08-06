@@ -1,0 +1,8 @@
+ansible==2.10.7
+docker-compose==1.26.2
+molecule==2.22
+jmespath==0.10.0
+rich<11.0.0
+
+[:sys_platform == "darwin"]
+passlib==1.7.4
