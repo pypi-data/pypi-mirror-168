@@ -1,0 +1,5 @@
+[mrbob_templates]
+cs_migration = bobtemplates.cs.bobregistry:cs_migration
+cs_plone_buildout = bobtemplates.cs.bobregistry:cs_plone_buildout
+cs_plone_volto_buildout = bobtemplates.cs.bobregistry:cs_plone_volto_buildout
+
