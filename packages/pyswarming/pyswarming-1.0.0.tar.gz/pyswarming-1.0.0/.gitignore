@@ -1,0 +1,8 @@
+pyswarming/__pycache__
+tests/__pycache__
+/dist/
+/build/
+/pyswarming.egg-info/
+.DS_Store
+**/.DS_Store
+/.pytest_cache/
