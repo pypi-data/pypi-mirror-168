@@ -1,0 +1,2 @@
+[console_scripts]
+gather-vision = gather_vision.cli:main
