@@ -1,0 +1,17 @@
+{
+  "d618a55e-d949-409c-b50e-704c50f38af8": {
+    "brand": "general",
+    "gender": [
+      "male",
+      "female"
+    ],
+    "kind": "mask",
+    "model": "general",
+    "style": "cloth",
+    "supported_position": [
+      "nose",
+      "mouth",
+      "chin"
+    ]
+  }
+}

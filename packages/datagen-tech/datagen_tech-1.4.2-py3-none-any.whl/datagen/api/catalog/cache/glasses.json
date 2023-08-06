@@ -1,0 +1,95 @@
+{
+  "2e1e2486-e190-4e8a-9125-633dcc687276": {
+    "brand": "general",
+    "gender": [
+      "male",
+      "female"
+    ],
+    "kind": "glasses",
+    "model": "general",
+    "style": "oversized",
+    "supported_position": "nose"
+  },
+  "3392d7cf-7871-4711-9622-bc2ad59d9651": {
+    "brand": "general",
+    "gender": [
+      "male",
+      "female"
+    ],
+    "kind": "glasses",
+    "model": "general",
+    "style": "browline",
+    "supported_position": "nose"
+  },
+  "859ebf45-580d-4a8b-9866-7836f759916b": {
+    "brand": "general",
+    "gender": [
+      "female",
+      "male"
+    ],
+    "kind": "glasses",
+    "model": "general",
+    "style": "reading_full_frame",
+    "supported_position": "nose"
+  },
+  "a2d7d0bc-6314-4823-9561-bda024beb01e": {
+    "brand": "general",
+    "gender": [
+      "male",
+      "female"
+    ],
+    "kind": "glasses",
+    "model": "general",
+    "style": "oval",
+    "supported_position": "nose"
+  },
+  "a419a69c-8c0a-4539-b3cc-d1f180a22491": {
+    "brand": "general",
+    "gender": "female",
+    "kind": "glasses",
+    "model": "general",
+    "style": "cat_eye",
+    "supported_position": "nose"
+  },
+  "d2f3d882-0b4e-429e-9f81-678cbfaaad62": {
+    "brand": "general",
+    "gender": [
+      "female",
+      "male"
+    ],
+    "kind": "glasses",
+    "model": "general",
+    "style": "reading_rimless",
+    "supported_position": "nose"
+  },
+  "dbbb4645-8206-4112-a31b-75eb8696858e": {
+    "brand": "general",
+    "gender": [
+      "male",
+      "female"
+    ],
+    "kind": "glasses",
+    "model": "general",
+    "style": "aviator",
+    "supported_position": "nose"
+  },
+  "e542bb5f-752a-43dc-979e-630f9e40663a": {
+    "brand": "general",
+    "gender": [
+      "female",
+      "male"
+    ],
+    "kind": "glasses",
+    "model": "general",
+    "style": "round",
+    "supported_position": "nose"
+  },
+  "ed06fbd0-82b9-4c83-ac39-5c435e550269": {
+    "brand": "general",
+    "gender": "female",
+    "kind": "glasses",
+    "model": "general",
+    "style": "geometric",
+    "supported_position": "nose"
+  }
+}
