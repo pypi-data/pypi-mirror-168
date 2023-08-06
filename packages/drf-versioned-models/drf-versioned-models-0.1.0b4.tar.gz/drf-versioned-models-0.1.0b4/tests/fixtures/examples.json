@@ -1,0 +1,26 @@
+[
+  {
+    "model": "tests.examplemodel",
+    "pk": "61741d93-8db4-4845-83c9-7e625e445983",
+    "fields": {
+      "name": "data-analytics-with-python",
+      "created_at": "2022-05-23T00:00:00"
+    }
+  }, {
+    "model": "tests.examplemodelversion",
+    "pk": "d8c3f337-69c9-4380-8534-2e5b756f7b90",
+    "fields": {
+      "model_id": "61741d93-8db4-4845-83c9-7e625e445983",
+      "version": "0.1.0",
+      "title": "Python数据分析",
+      "created_at": "2022-05-23T00:00:00"
+    }
+  }, {
+    "model": "tests.examplemodelversionrelatedfield",
+    "pk": "35fce9d6-0a39-45ae-9c38-6f7d3f2b4846",
+    "fields": {
+      "model_version_id": "d8c3f337-69c9-4380-8534-2e5b756f7b90",
+      "tag": "python"
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "model": "courses.course",
+    "pk": "61741d93-8db4-4845-83c9-7e625e445983",
+    "fields": {
+      "name": "data-analytics-with-python"
+    }
+  }, {
+    "model": "courses.courseversion",
+    "pk": "1d2124cd-e737-4fbc-a7e3-74b0671baa76",
+    "fields": {
+      "course_id": "61741d93-8db4-4845-83c9-7e625e445983",
+      "version": "0.1.0",
+      "title": "Python数据分析",
+      "created_at": "2022-05-23T00:00:00"
+    }
+  }, {
+    "model": "courses.courseversion",
+    "pk": "e1fb26e5-42c9-473c-93e2-881544ccd13a",
+    "fields": {
+      "course_id": "61741d93-8db4-4845-83c9-7e625e445983",
+      "version": "0.2.0",
+      "title": "Python数据分析",
+      "created_at": "2022-06-23T00:00:00"
+    }
+  }, {
+    "model": "courses.course",
+    "pk": "b0481a80-74b1-430e-becc-5cc0d3f8b154",
+    "fields": {
+      "name": "programming-with-python"
+    }
+  }, {
+    "model": "courses.courseversion",
+    "pk": "c8416ef1-3afd-4639-a81f-65f9e17e8e64",
+    "fields": {
+      "course_id": "b0481a80-74b1-430e-becc-5cc0d3f8b154",
+      "version": "0.1.0",
+      "title": "Python编程入门",
+      "created_at": "2022-05-24T00:00:00"
+    }
+  }, {
+    "model": "courses.courseversion",
+    "pk": "d8c3f337-69c9-4380-8534-2e5b756f7b90",
+    "fields": {
+      "course_id": "b0481a80-74b1-430e-becc-5cc0d3f8b154",
+      "version": "0.2.0",
+      "title": "Python编程入门",
+      "created_at": "2022-06-24T00:00:00"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61", "setuptools.scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# name it as your package name
+name = "drf-versioned-models"
+# semetric versions
+version = "0.1.0-beta.4"
+# describe the package within one sentence
+description = "Versioned models support for Django REST Framework"
+authors = [
+    {name = "QuantTide Inc.", email = "opensource@quanttide.com"}
+]
+license = {text = "BSD 3-Clause License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: Django",
+]
+requires-python = '>=3'
+dependencies = [
+    "django>=3.0",
+    "djangorestframework>=3.0",
+    "drf-nested-routers",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
