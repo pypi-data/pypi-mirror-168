@@ -1,0 +1,2 @@
+class NotValidFilterException(Exception):
+    pass
