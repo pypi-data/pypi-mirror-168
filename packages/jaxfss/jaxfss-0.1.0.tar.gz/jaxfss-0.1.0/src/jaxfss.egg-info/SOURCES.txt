@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/jaxfss/__init__.py
+src/jaxfss/data.py
+src/jaxfss/model.py
+src/jaxfss/train.py
+src/jaxfss.egg-info/PKG-INFO
+src/jaxfss.egg-info/SOURCES.txt
+src/jaxfss.egg-info/dependency_links.txt
+src/jaxfss.egg-info/requires.txt
+src/jaxfss.egg-info/top_level.txt
