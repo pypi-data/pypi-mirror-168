@@ -1,0 +1,9 @@
+detectgibberish/__init__.py,sha256=K6ndWY3pG3r_7zphsGAhK9bn0S8AQiwyRmFXJRWKIIA,32
+detectgibberish/gibberish.py,sha256=nij_lswOBh0_L42NN5kIcQNUoWd8Bumz_6ATmWZHKgo,1384
+detectgibberish/keyboard.py,sha256=3cZvTfPMifdHToYfUJlRtyqY1bB3ZXaFhqg_KyP0mFw,1515
+detectgibberish/version.py,sha256=P3HEkYrQY_hgsiUjRF3VD8nV-e_18eXM3t8rxd0ShxY,266
+detectgibberish-1.0.3.dist-info/LICENSE,sha256=aTTvP1VH6eTGDnHmFcg15UBlnq6-EpvZM9b_FTG3-fA,1075
+detectgibberish-1.0.3.dist-info/METADATA,sha256=-uC57asfvWX3S6NTkKtLGtynM4Kv5MoDPAle7gPK4MQ,2002
+detectgibberish-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+detectgibberish-1.0.3.dist-info/top_level.txt,sha256=JlcVf92bAuGg-zW7PB50somsRLbQjJoewiU3lIZmc4E,16
+detectgibberish-1.0.3.dist-info/RECORD,,
