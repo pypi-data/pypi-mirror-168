@@ -1,0 +1,15 @@
+pygamp/__init__.py,sha256=JfxIrsVMgkt_iPCLttIWX_aaNM6E77trqHgUwUU1C1w,541
+pygamp/app.py,sha256=NN-zCrn0yosl3S9Xvq89yYeBLgUBalMXo7cos-e3bto,975
+pygamp/custom_definitions.py,sha256=kfvUACBDgKULyM16Or3xZw0DgLRQVdI-MkZT2XmJtVk,1635
+pygamp/ecommerce.py,sha256=OKjSl07UqeZ4FMumKxp8wjR9lW2wjR738jiOz1TTfbU,2965
+pygamp/enhanced_ecommerce.py,sha256=egyM3eQJKMIVNCGjJn4LJAJMGN2dCjBMvVTtlmujuQs,10118
+pygamp/events.py,sha256=Wp7pLCnhad5Zzsl2ykGecZpkM4nhLIuU-7npfykWvhs,922
+pygamp/exceptions.py,sha256=_TuUMYAlkOq0mTq5LqVo_HW-QZubLVsug4HZyE67vDU,733
+pygamp/pageviews.py,sha256=jHp3YPITgq0xn97R26PKp7IeVi14VlMcJ9DaZ_Ewpn0,792
+pygamp/social_interactions.py,sha256=sAqdvuzq5s8sknMLxOY-U2SX2gKoGfh-pe5iTak27qQ,802
+pygamp/transport.py,sha256=u6Xf80Fx3mDhu_Dd9XeR8bniyyYg8KeFOv3Gpr9Y4hk,826
+pygamp-0.113.dist-info/LICENSE.txt,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+pygamp-0.113.dist-info/METADATA,sha256=u9mMXtyMqTSB8OfbWKrXExLs-0_eRHsFYw76lj5xPHU,3996
+pygamp-0.113.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygamp-0.113.dist-info/top_level.txt,sha256=RLS92ALRO6iRs8ah75aV6yl_bT-9EVaPnFwDQ-qdheY,7
+pygamp-0.113.dist-info/RECORD,,
