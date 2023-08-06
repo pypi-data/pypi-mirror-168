@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+gaama/__init__.py
+gaama/exceptions.py
+gaama/gaama.py
+gaama/github.py
+gaama/version.py
+gaama.egg-info/PKG-INFO
+gaama.egg-info/SOURCES.txt
+gaama.egg-info/dependency_links.txt
+gaama.egg-info/requires.txt
+gaama.egg-info/top_level.txt
+gaama.egg-info/zip-safe
