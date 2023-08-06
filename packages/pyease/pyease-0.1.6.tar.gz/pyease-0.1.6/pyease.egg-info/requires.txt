@@ -1,0 +1,22 @@
+
+[dev]
+black
+ipython
+mccabe
+pdbpp
+pylint
+pyls-isort
+pylsp-mypy
+python-lsp-black
+python-lsp-server
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[docs:python_version < "3.11"]
+tomli
+
+[test]
+pytest
+pytest-cov
