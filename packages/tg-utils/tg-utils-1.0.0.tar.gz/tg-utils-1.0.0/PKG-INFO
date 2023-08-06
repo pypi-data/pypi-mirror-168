@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: tg-utils
+Version: 1.0.0
+Summary: Common utils for Django-based projects.
+Home-page: https://github.com/thorgate/tg-utils
+License: ISCL
+Keywords: tg-utils,thorgate
+Author: Thorgate
+Author-email: code@thorgate.eu
+Requires-Python: >=3.7.2,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: health_check
+Provides-Extra: lock
+Provides-Extra: model-hash
+Provides-Extra: profiling
+Requires-Dist: django (>=2.2)
+Requires-Dist: django-health-check; extra == "health_check"
+Requires-Dist: hashids; extra == "model-hash"
+Requires-Dist: psutil; extra == "health_check"
+Requires-Dist: python-redis-lock; extra == "lock"
+Requires-Dist: redis; extra == "lock"
+Requires-Dist: requests; extra == "health_check"
+Requires-Dist: yappi; extra == "profiling"
+Project-URL: Repository, https://github.com/thorgate/tg-utils
+Description-Content-Type: text/x-rst
+
+===============================
+tg-utils
+===============================
+
+.. image:: https://img.shields.io/pypi/v/tg-utils.svg
+        :target: https://pypi.python.org/pypi/tg-utils
+
+.. image:: https://github.com/thorgate/tg-utils/actions/workflows/python-package.yml/badge.svg?branch=master
+        :target: https://github.com/thorgate/tg-utils/actions
+
+.. image:: https://readthedocs.org/projects/tg-utils/badge/?version=latest
+        :target: https://readthedocs.org/projects/tg-utils/?badge=latest
+        :alt: Documentation Status
+
+
+Collection of various utils for Django-based projects.
+
+This is code that we're using in our projects at Thorgate and we're hoping you'll find some of it useful as well.
+
+* Free software: ISC license
+* Documentation: https://tg-utils.readthedocs.org.
+
+
+Features
+--------
+
+* Model utils, e.g. timestamped and closable models, QuerySets that send out a signal when objects are modified.
+* Templated email sending.
+* Profiling utilities.
+* Unique filename generation for uploads.
+* Using hashids for models (instead of exposing primary keys).
+* System checks for email and Sentry configuration.
+* Mixin for easier implementation of ordering in Django's generic ListView.
+* Mixin for making admin view read-only.
+* Decorator for annotating admin methods.
+* JS/CSS compressors for `Django Compressor <https://django-compressor.readthedocs.org/en/latest/>`_.
+* Health-check endpoints (with and without token authentication)
+
+
+Credits
+---------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
