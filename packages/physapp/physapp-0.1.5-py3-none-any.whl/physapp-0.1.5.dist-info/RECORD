@@ -1,0 +1,11 @@
+physapp/__init__.py,sha256=CfEOMwHYvbQKdWz45Ig1Lcc_Oc9reTu6wLbaO1jPhJc,1084
+physapp/csv.py,sha256=O3vygoF34qLX0Ckkfjv9Oif2r6FZljNVbeWfV8Sy5V4,3759
+physapp/fonctions.py,sha256=QuNDIfkjjk_9k3PX9NSw4XeHQ562xDqUcLPL2CuQr5Y,8650
+physapp/modelisation.py,sha256=pZ7TEcl1E4WEVVl6at7nOtmJkH6fzE6-wux6N7R7RdY,33924
+physapp/pyboard.py,sha256=PRb70lhJQ90MwXT1E_8Rsr-WBK0Ykl8O2ISfa3Kp69U,18685
+physapp/signal.py,sha256=4Zf_e76CLyNvAJ3-Sbnck-mIDO27_epfzxKpsP0vL9s,3823
+physapp-0.1.5.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+physapp-0.1.5.dist-info/METADATA,sha256=BeHQA1UcnSKOvkoiz29phN5sYHYpK1JMZghq5xTcbXA,3539
+physapp-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+physapp-0.1.5.dist-info/top_level.txt,sha256=BDqgmXOrH75lSV-Bsvw-wd1lXCJxOPQ2uWZlkUFmfaM,8
+physapp-0.1.5.dist-info/RECORD,,
