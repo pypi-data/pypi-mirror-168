@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  release:
+    types: [published]
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+#  schedule:
+#    - cron: '0 0 * * 1'
+
+
+jobs:
+  pylint:
+    name: codecheck-pylint
+    runs-on: ubuntu-20.04
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: pip install -r requirements/test.txt
+      - name: Run
+        run: tox -e py38-codecheck-pylint
+  flake8:
+    name: codecheck-flake8
+    runs-on: ubuntu-20.04
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: pip install -r requirements/test.txt
+      - name: Run
+        run: tox -e py38-codecheck-flake8
+  unit-tests:
+    name: linux-unit-tests
+    runs-on: ubuntu-20.04
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: pip install -r requirements/test.txt
+      - name: Run
+        run: tox -e py38-tests
+  integration-tests:
+    name: linux-integration-tests
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install
+      run: sudo pip install . --force-reinstall
+    - name: Initializing
+      run: r2env init
+    - name: Execute r2env
+      run: r2env list
+    - name: Install r2 using r2env
+      run: |
+        [ "`r2env | wc -l`" -gt 10 ] # measure help message
+        [ "`r2env -l | wc -l`" -gt 6 ] # measure pkgs
+        r2env install radare2@git
+    - name: Execute git version of r2
+      run: |
+        r2env use radare2@git
+        $HOME/.r2env/bin/r2 -v
+        r2env shell "r2 -v"
+    - name: Uninstalling
+      run: sudo pip uninstall -y r2env && rm -rf $HOME/.r2env
+  release-job:
+    name: Publish package
+    runs-on: ubuntu-20.04
+    needs: [integration-tests, unit-tests, flake8, pylint]
+    if: github.event_name == 'release' && github.event.action == 'published'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements/dist.txt
+      - name: Build
+        run: python setup.py sdist
+      - name: Publish
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.TWINE_PASSWORD }}
