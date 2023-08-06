@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+"""
+**Author:** Thomas M. Boudreaux\n
+**Created:** Febuary 2021\n
+**Last Modified:** September 2022\n
+
+
+Given an abundance pattern generate opacity tables in a form that DSEP can
+undersntand. These will be automatically queried from the Los Alamos
+cite, using the most recent ATOMIC opacities generated with the TOPS code.
+
+Notes
+-----
+Website [1]_
+
+Paper [2]_
+
+
+[1] https://aphysics2.lanl.gov/apps/
+
+[2] Colgan, James, et al. "A new generation of Los Alamos opacity tables." The Astrophysical Journal 817.2 (2016): 116.
+"""
+from pyTOPSScrape.scripts import full_run
+
+import argparse
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate opacity table in a"
+                                    " format dsep can work with from TOPS")
+    parser.add_argument("abunTable", type=str, help="Table to pull abundances"
+                        " from.")
+    parser.add_argument("abunMap", type=str, help="map of which classical "
+                        "compositions to query the TOPS web form for. Each "
+                        "classical composition will be achived by rescaling "
+                        "the base composition described in the abunTable")
+    parser.add_argument("-f", "--force", help="force the generation of new"
+                        " abunance tables", action="store_true")
+    parser.add_argument("-d", "--outputDirectory", help="directory to save"
+                        " abundance files too", default=".", type=str)
+    parser.add_argument("--noopal", help="Run the code to convert TOPS table to"
+                        "OPAL compatible tables", action="store_true")
+    parser.add_argument("--nofetch", help="do not fetch opacity tables from"
+                        " TOPS", action='store_true')
+    parser.add_argument("-o", "--output", help="file to write OPAL formated"
+                        " table to", default="TOPAL.dat", type=str)
+    parser.add_argument("--hardforce", action="store_true",
+                        help="Override all already extant directories",
+                        default=False)
+    parser.add_argument("-j", "--jobs", help="Number of processes to query the "
+                        "TOPS web form on", type=int, default=10)
+    parser.add_argument("--rect", default=False, action="store_true", help="if "
+                        "True store OPAL tables rectangurally. This is not how "
+                        "DSEP uses tables; however, by way of wider "
+                        "applicability --rect may be used")
+
+    cliArgs = parser.parse_args()
+    full_run(vars(cliArgs))
