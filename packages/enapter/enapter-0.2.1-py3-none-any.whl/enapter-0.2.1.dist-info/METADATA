@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: enapter
+Version: 0.2.1
+Summary: Enapter Python SDK
+Home-page: https://github.com/Enapter/python-sdk
+Author: Roman Novatorov
+Author-email: rnovatorov@enapter.com
+Requires-Dist: aiohttp (==3.8.*)
+Requires-Dist: asyncio-mqtt (==0.12.*)
+
+# Enapter Python SDK
+
+[![CI](https://github.com/Enapter/python-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/Enapter/python-sdk/actions/workflows/ci.yml)
+[![PyPI version](https://img.shields.io/pypi/v/enapter.svg)](https://pypi.org/project/enapter)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
+
+Enapter software development kit for Python.
+
+:warning: **This project is work in progress. The API is not stable and may change at any time.** :warning:
+
+## Installation
+
+Stable from PyPI:
+
+```bash
+pip install enapter
+```
+
+Latest for GitHub:
+
+```bash
+pip install git+https://github.com/Enapter/python-sdk#egg=enapter
+```
+
+## Usage
+
+Checkout [examples](examples).
