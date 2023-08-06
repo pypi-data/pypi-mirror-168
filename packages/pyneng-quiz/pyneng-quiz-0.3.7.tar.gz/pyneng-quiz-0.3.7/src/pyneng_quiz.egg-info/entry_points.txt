@@ -1,0 +1,2 @@
+[console_scripts]
+pquiz = pyneng_quiz.termquiz:main
