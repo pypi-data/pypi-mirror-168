@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyanimalsay"
+version = "0.0.0.2"
+description = ""
+authors = ["sindbad_the_sailor <sindbad_the_sailor@example.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+pyanimalsay = "pyanimalsay.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
