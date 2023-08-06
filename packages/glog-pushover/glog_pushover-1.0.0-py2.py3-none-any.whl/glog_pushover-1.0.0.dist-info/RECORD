@@ -1,0 +1,9 @@
+glog/__init__.py,sha256=Z9pB44E4APSfNWimPc2pIzo3pvIjz0Obw3qcqWMrghA,1017
+glog/handler.py,sha256=AtNKnAcQcjGg6uOSOfRmJsTTfYtQUSQ6tcpJYms6jD4,2476
+glog/notifier.py,sha256=iAxEdI7pnBEvBqX5QchHWythpxMINii-6S5ogL4zN1E,1475
+glog_pushover-1.0.0.dist-info/AUTHORS.rst,sha256=xU7yIfxkZU76A8Fl_4Lp-vWvD9RrNY1FTK3s4WMdQ1g,158
+glog_pushover-1.0.0.dist-info/LICENSE,sha256=nE0PW3P54v9DZ1T6ifBqdJWliSv13i6r__WOcOi5bjk,1070
+glog_pushover-1.0.0.dist-info/METADATA,sha256=A-_AelyRqtOHMDb6ULRddvtEbCZ6LiaqO89UnEB7_M4,1777
+glog_pushover-1.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+glog_pushover-1.0.0.dist-info/top_level.txt,sha256=KzObwdw1nGgnKhNcN1vG14khRro78U7iV28uNwVRyJ0,5
+glog_pushover-1.0.0.dist-info/RECORD,,
