@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "agtest"
+version = "0.1.35"
+description = ""
+authors = ["MrSuperbear <fraser.darrin@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.24.0"
+click = "^7.1.2"
+arrow = "^1.1.0"
+parse = "^1.17.0"
+pandas = "^1.1.1"
+regobj = "^0.2.2"
+openpyxl = "^3.0.5"
+pdf2image = "^1.14.0"
+comtypes = "^1.1.10"
+psutil = "^5.8.0"
+lxml = "^4.6.3"
+tqdm = "^4.61.0"
+docx2pdf = "^0.1.7"
+datefinder = "^0.7.1"
+indexed = "^1.2.1"
+recordtype = "^1.3"
+tabulate = "^0.8.9"
+pefile = "^2021.9.3"
+rich = "^12.4.4"
+Jinja2 = "^3.1.2"
+py-cpuinfo = "^8.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+agtest = "agtest.cli:main"
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
