@@ -1,0 +1,2 @@
+Django>3.2
+polyglot-translator>=2.2.3
