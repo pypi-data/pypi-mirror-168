@@ -1,0 +1,15 @@
+---
+tables_config:
+  products:
+    - path: "products.csv"
+
+output:
+  dir: output
+  basename: mwe
+
+queries:
+  - name: "Names"
+    sql: >
+      SELECT name
+      FROM products
+      ;
