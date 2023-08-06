@@ -1,0 +1,16 @@
+napari_pixel_correction/__init__.py,sha256=YCqQ5erg_IIMbXljA_iPNKienV1ocNyUr10fmQE4EwE,264
+napari_pixel_correction/_reader.py,sha256=PdW16yIyvcmbOa07KGVeYfVMUUV6htdCCLgOmCHu6Lk,2556
+napari_pixel_correction/_widget.py,sha256=OgK_-V47cxXG7ZBHpmejJ7zpYujhmu_f6se_OmTaA9Q,5644
+napari_pixel_correction/_writer.py,sha256=Vv27z5zaqeClMDHr3_E2WpIcnHVj5cgzffWNHAPpJ2M,956
+napari_pixel_correction/napari.yaml,sha256=fLRd3nUDznhF9yzVx0mhL3woflSSW8y6BB7yMgkhC4c,1678
+napari_pixel_correction/path.py,sha256=-GEXWd-eBuiPn_YF5xAd-2gZSV7Sk4iA9AfRpJUNbLw,270
+napari_pixel_correction/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_pixel_correction/_tests/test_reader.py,sha256=7C9hsRSWpZp6jsL-vSp010lkqAmY6XIhFYGp01p0Cx4,1024
+napari_pixel_correction/_tests/test_widget.py,sha256=0txJcS-qQusjihLB8Gu_J_Q-a6HxwPct7sJDGj6DrDM,47
+napari_pixel_correction/_tests/test_writer.py,sha256=wBVt93Qg4bGbCYV0KUizKzNN1t7o4IaIFx6y4-6gdn8,139
+napari_pixel_correction-0.1.0.dist-info/LICENSE,sha256=7p08mcw2gYMNXmSQa5R6i5RstMW3klTxqETIgTNDtZ0,1527
+napari_pixel_correction-0.1.0.dist-info/METADATA,sha256=rTBNnopBByO1I9cJ3sMC-RdJ9zpFjfVcHdROqU9A8O4,5317
+napari_pixel_correction-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_pixel_correction-0.1.0.dist-info/entry_points.txt,sha256=Bn8pgSNyUZu0BANe3JiSwAKAjV2DC3-dG8IElQEAt8Q,80
+napari_pixel_correction-0.1.0.dist-info/top_level.txt,sha256=4XwM_lhNfOUj-qB_LSQhc6ZRbjpIvnZEgTCix1Xzbxs,24
+napari_pixel_correction-0.1.0.dist-info/RECORD,,
