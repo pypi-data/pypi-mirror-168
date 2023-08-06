@@ -1,0 +1,11 @@
+graphenv
+tensorflow
+lru-dict
+graphenv
+rdkit
+nfp
+
+[dev]
+pytest
+alfabet
+pooch
