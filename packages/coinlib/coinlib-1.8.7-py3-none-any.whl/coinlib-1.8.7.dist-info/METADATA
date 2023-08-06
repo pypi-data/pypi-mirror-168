@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: coinlib
+Version: 1.8.7
+Summary: Develop new code for your coindeck environment
+Home-page: https://gitlab.com/coindeck/coinlib
+Author: coindeck
+Author-email: donnercody86@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: ipython
+Requires-Dist: ipykernel
+Requires-Dist: semver
+Requires-Dist: datascience
+Requires-Dist: munch
+Requires-Dist: packaging
+Requires-Dist: coolname
+Requires-Dist: google
+Requires-Dist: aio-pika
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: protobuf
+Requires-Dist: cython
+Requires-Dist: pandas
+Requires-Dist: websocket-client
+Requires-Dist: plotly
+Requires-Dist: simplejson
+Requires-Dist: ipynb-path
+Requires-Dist: matplotlib
+Requires-Dist: pyarrow
+Requires-Dist: python-dateutil
+Requires-Dist: chipmunkdb-python-client
+
+
+# coinlib - python-client
+
+Develop, Run and extend your coinlib environment with new features, logics, notifications and much more with this library.
+
+## Installation
+
+pip install coinlib
+
