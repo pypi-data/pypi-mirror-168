@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+prefect_firebolt/__init__.py
+prefect_firebolt/_version.py
+prefect_firebolt/credentials.py
+prefect_firebolt/database.py
+prefect_firebolt.egg-info/PKG-INFO
+prefect_firebolt.egg-info/SOURCES.txt
+prefect_firebolt.egg-info/dependency_links.txt
+prefect_firebolt.egg-info/entry_points.txt
+prefect_firebolt.egg-info/requires.txt
+prefect_firebolt.egg-info/top_level.txt
