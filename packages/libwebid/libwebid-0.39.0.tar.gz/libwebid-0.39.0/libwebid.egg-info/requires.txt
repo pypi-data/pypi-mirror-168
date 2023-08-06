@@ -1,0 +1,9 @@
+aorta
+cbra>=0.120.0
+ckms
+ddd
+email-validator
+google-cloud-datastore
+iso3166
+sendgrid
+unimatrix
