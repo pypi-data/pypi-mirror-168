@@ -1,0 +1,11 @@
+eac_test/__init__.py,sha256=a1XwlE2Zjtmw3VuPsdu59RJ2COMcfytwWYLT5_ggZI8,286
+eac_test/_version.py,sha256=dm9XehhhjbkUswx_sXZns5xmAo2OxafGhABs36kdWj8,176
+eac_test/hello_world.py,sha256=1a0OVNSU5E6hFg19Hi_IsNwxd16KIiMk7Vs3Jh63FEM,525
+eac_test/data/i_knew.txt,sha256=MGmTQarD_PFRfkC39H8xEOdJ5-V5XqhJNXhGkRIFVRs,1256
+eac_test/data/oh_you_will.txt,sha256=uaumysjGpMOYYPoR7vcnWL7_Ljv54Ahy4ZWWT6OSNos,629
+eac_test/data/sir_john_davies.txt,sha256=r8PouKkCvfEuniDY9Y07xAN4bjmPDT8y2lpZ1v1gxXI,4267
+eac_test-0.0.2.dist-info/LICENSE,sha256=UxaFZh-4juxT4bnDq-MbA-peHjeY7adJd7e-O5AtL0U,1553
+eac_test-0.0.2.dist-info/METADATA,sha256=AFjlArxARl1-sF1y932XcFnjLSBAfOAYwRrF4Iq7Cwg,2719
+eac_test-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+eac_test-0.0.2.dist-info/top_level.txt,sha256=r8vm9vR5OAJ5iLoMW_8tPj-5uEAbWKg7HF5g7FYAE7s,9
+eac_test-0.0.2.dist-info/RECORD,,
