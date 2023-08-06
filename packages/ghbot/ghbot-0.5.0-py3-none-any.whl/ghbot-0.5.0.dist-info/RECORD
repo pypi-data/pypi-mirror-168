@@ -1,0 +1,9 @@
+ghbot/__init__.py,sha256=HFQI6Pt2hqMAL2MKKa_0MIWfZXlljxNG6b2zdlo3vNI,1681
+ghbot/bot.py,sha256=nuUKAbDqoJlFbINUEcLUkb2n2jNpDm25kFWGJp3Y84s,4249
+ghbot/cli.py,sha256=_-CdvHY-cKyltax0Brjyn57zQYuiswIw_SEzbcp6xYg,4787
+ghbot/exception/__init__.py,sha256=732Ov9HgGMq0eeVQEOzNqZsYmXVZ3cCEgHsUnQCtpU8,1102
+ghbot-0.5.0.dist-info/LICENSE.txt,sha256=91hn-Ia01-p6_EmseXG4VDfB4_oIZ5LMa3TEI-UEyRs,1074
+ghbot-0.5.0.dist-info/METADATA,sha256=0K8iNte8EGRSWBPmt0Ue6zAvu2Kh5TGk4u8uv5GHUzQ,1950
+ghbot-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ghbot-0.5.0.dist-info/top_level.txt,sha256=0d4bn5lDOcAG2RuA5XbK4KVGfCWHPVNGGaW91TyOZM8,6
+ghbot-0.5.0.dist-info/RECORD,,
