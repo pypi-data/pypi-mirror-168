@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: setfit
+Version: 0.0.2
+Summary: Setup for repository
+Home-page: https://github.com/SetFit/setfit
+Download-URL: https://github.com/SetFit/setfit/tags
+Author: SetFit
+Author-email: lewis@huggingface.co
+License: Apache 2.0
+Keywords: nlp,machine learning,fewshot learning,transformers
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Provides-Extra: quality
+Provides-Extra: tests
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+

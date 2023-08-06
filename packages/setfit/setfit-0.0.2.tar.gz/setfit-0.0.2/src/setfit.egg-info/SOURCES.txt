@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/setfit/__init__.py
+src/setfit/data.py
+src/setfit/modeling.py
+src/setfit/pipeline.py
+src/setfit/trainer.py
+src/setfit/utils.py
+src/setfit.egg-info/PKG-INFO
+src/setfit.egg-info/SOURCES.txt
+src/setfit.egg-info/dependency_links.txt
+src/setfit.egg-info/not-zip-safe
+src/setfit.egg-info/requires.txt
+src/setfit.egg-info/top_level.txt
