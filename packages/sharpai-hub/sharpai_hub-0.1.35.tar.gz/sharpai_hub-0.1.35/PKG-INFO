@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sharpai_hub
+Version: 0.1.35
+Summary: Client library to download application from sharpai hub
+Home-page: https://github.com/SharpAI/sharpai_hub
+Author: SharpAI LLC
+Author-email: simba@sharpai.org
+License: MIT
+Keywords: model-hub machine-learning models natural-language-processing deep-learning Edge AI
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `sharpai_hub`
+
+
+## Welcome to the sharpai_hub library
+
+
+The `sharpai_hub` is a client library to interact with the SharpAI Hub. 
