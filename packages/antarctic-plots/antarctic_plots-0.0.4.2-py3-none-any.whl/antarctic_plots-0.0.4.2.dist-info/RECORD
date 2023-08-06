@@ -1,0 +1,13 @@
+antarctic_plots/__init__.py,sha256=Eem0lMQm8Yzpmc_5v0nGzjWFJIX1GSf2z6Q8Zio5szE,389
+antarctic_plots/fetch.py,sha256=uQNiUmg96lSskcB2JnbPSXSr293pYKGC35x9XZXxX7Y,29792
+antarctic_plots/maps.py,sha256=GpdLb0WZRdNyRFdls9HQobQJhylvda3GWISO691yjhU,15692
+antarctic_plots/profile.py,sha256=zXXZIhs7Ay2jFPgI5emu9O3ORTCb7b41ZdNff15svqY,22240
+antarctic_plots/regions.py,sha256=2e-1y8kejQ3ZfTNAzYC3sSzXwu97tDEUIOhN7FA57lw,3999
+antarctic_plots/tests/test_antarctic_plots.py,sha256=cwwms3kIS9dsSHCUBgngHHod1rdN3GkA6GmZjPrBw5E,421
+antarctic_plots/tests/test_profile.py,sha256=eajHdjzWCrAFGMy7tr-VRxSQfPml4aD2Y3P4Ib_zRLE,282
+antarctic_plots/tests/test_utils.py,sha256=o6IkdFgdLFWFX2yXifWU4oEWdG-9lJlZzQCiGx-Zd4g,280
+antarctic_plots/utils.py,sha256=Xsp6QoKLHyPaeXafhLF1whygoFZcfyt4xmmHOCYoxPU,35520
+antarctic_plots-0.0.4.2.dist-info/LICENSE,sha256=sN381wFS8qfPeDrzD6iQB8zTkjHou_1dyZz2Puq8r4c,1103
+antarctic_plots-0.0.4.2.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+antarctic_plots-0.0.4.2.dist-info/METADATA,sha256=gjhHqSJxaN1ZkaT-4ksPZf3b_74f0VqfeAC05LqLqlw,7415
+antarctic_plots-0.0.4.2.dist-info/RECORD,,
