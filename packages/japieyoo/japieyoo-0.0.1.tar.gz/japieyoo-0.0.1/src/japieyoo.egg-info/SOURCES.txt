@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/japieyoo.egg-info/PKG-INFO
+src/japieyoo.egg-info/SOURCES.txt
+src/japieyoo.egg-info/dependency_links.txt
+src/japieyoo.egg-info/top_level.txt
+src/japieyootest/__init__.py
+src/japieyootest/japieyoo.py
