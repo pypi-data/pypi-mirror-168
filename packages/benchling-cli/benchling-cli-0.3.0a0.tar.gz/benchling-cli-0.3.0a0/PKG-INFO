@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: benchling-cli
+Version: 0.3.0a0
+Summary: CLI for assistance in developing with the Benchling Platform.
+License: Apache-2.0
+Author: Benchling Support
+Author-email: support@benchling.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: autoflake (>=1.4,<2.0)
+Requires-Dist: benchling_sdk (>=1.5.0a0,<2.0.0)
+Requires-Dist: black (>=22.3.0,<23.0.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+Benchling CLI
+-------------
+
+A Python 3.8+ CLI for the [Benchling](https://www.benchling.com/) platform designed to assist in developing against the
+Benchling platform
+
+To see all commands available in the CLI, use `benchling-cli --help`
