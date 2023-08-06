@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+avro.py_cli.egg-info/PKG-INFO
+avro.py_cli.egg-info/SOURCES.txt
+avro.py_cli.egg-info/dependency_links.txt
+avro.py_cli.egg-info/entry_points.txt
+avro.py_cli.egg-info/requires.txt
+avro.py_cli.egg-info/top_level.txt
+avrocli/__init__.py
+avrocli/main.py
