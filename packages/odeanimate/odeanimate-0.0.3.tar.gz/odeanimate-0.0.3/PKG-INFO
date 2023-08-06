@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: odeanimate
+Version: 0.0.3
+Summary: A module for useful quick mathematical calculation, plotting and animation.
+License: GPL-2.0
+Author: Miguel Alejandro Salgado Zapien
+Author-email: ekiim@ekiim.xyz
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: ffmpeg-python (>=0.2.0,<0.3.0)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
