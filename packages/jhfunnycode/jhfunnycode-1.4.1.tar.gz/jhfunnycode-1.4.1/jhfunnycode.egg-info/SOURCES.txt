@@ -1,0 +1,8 @@
+README.md
+setup.py
+jhfunnycode/__init__.py
+jhfunnycode/fun.py
+jhfunnycode.egg-info/PKG-INFO
+jhfunnycode.egg-info/SOURCES.txt
+jhfunnycode.egg-info/dependency_links.txt
+jhfunnycode.egg-info/top_level.txt
