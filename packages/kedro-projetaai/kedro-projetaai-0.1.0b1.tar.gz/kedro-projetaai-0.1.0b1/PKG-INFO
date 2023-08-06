@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: kedro-projetaai
+Version: 0.1.0b1
+Summary: Kedro plugin that adds interfaces for production
+License: Apache
+Author: Ipiranga
+Requires-Python: >=3.9,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=2.2.2,<3.0.0)
+Requires-Dist: Flask-Cors (>=3.0.10,<4.0.0)
+Requires-Dist: GitPython (>=3.1.27,<4.0.0)
+Requires-Dist: attr (>=0.3.2,<0.4.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: cookiecutter (>=2.1.1,<3.0.0)
+Requires-Dist: flatten-dict (>=0.4.2,<0.5.0)
+Requires-Dist: kedro (>=0.18.2,<0.19.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: typing-extensions (>=4.3.0,<5.0.0)
+Requires-Dist: waitress (>=2.1.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Kedro ProjetaAi
+
+## Introduction
+
+Kedro ProjetaAi is a Kedro Plugin that discretizes production patterns, and 
+extends Kedro in order to enable cloud solutions into a Kedro environment.
+
+## Usable
+
+### CLI Extension
+
+`kedro_projetaai.cli.plugin.ProjetaAiCLIPlugin` provides an interface with
+predefined commands to inherit and override in order to create new integrations
+between ProjetaAi/Kedro and a cloud solution.
+
