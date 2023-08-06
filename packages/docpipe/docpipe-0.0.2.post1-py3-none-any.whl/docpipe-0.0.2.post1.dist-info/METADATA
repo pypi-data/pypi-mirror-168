@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: docpipe
+Version: 0.0.2.post1
+Summary: A simple pipeline for processing documents
+Author-email: Greg Kempe <greg@laws.africa>
+Project-URL: Homepage, https://github.com/laws-africa/docpipe
+Project-URL: Bug Tracker, https://github.com/laws-africa/docpipe/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE-LESSER.txt
+License-File: LICENSE.txt
+Requires-Dist: cobalt (>=6)
+Requires-Dist: cssutils (>=2)
+Requires-Dist: lxml (>=4.0)
+Provides-Extra: test
+Requires-Dist: nose ; extra == 'test'
+
+# docpipe
+
+A simple document pipeline mechanism that makes it easier to process and clean up Word and other document types.
+
+# Other dependencies
+
+This has some other non-Python dependencies for certain functionality:
+
+* soffice (open office) for handling DOC and DOCX files
+* pdftotext (poppler-utils) for extracting text from PDFs
+
+# Local development
+
+1. Clone this repo
+2. Setup a virtual environment
+3. Install dependencies: `pip install -e '.[test]'`
+4. Run tests: `nosetests`
+
+# License
+
+Copyright 2022 Laws.Africa.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
