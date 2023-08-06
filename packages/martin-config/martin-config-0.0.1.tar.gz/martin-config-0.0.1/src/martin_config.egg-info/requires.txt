@@ -1,0 +1,5 @@
+asyncpg
+pyyaml
+
+[azure]
+azure-storage-file-share
