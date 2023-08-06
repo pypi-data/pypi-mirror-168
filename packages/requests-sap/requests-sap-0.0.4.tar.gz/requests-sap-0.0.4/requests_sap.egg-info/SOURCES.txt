@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+requests_sap/__init__.py
+requests_sap/sap.py
+requests_sap.egg-info/PKG-INFO
+requests_sap.egg-info/SOURCES.txt
+requests_sap.egg-info/dependency_links.txt
+requests_sap.egg-info/requires.txt
+requests_sap.egg-info/top_level.txt
