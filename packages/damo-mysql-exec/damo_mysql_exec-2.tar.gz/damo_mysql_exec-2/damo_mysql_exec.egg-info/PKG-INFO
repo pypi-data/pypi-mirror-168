@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: damo-mysql-exec
+Version: 2
+Summary: UNKNOWN
+Home-page: http://182.254.246.41/xufangyi/ops/tree/master/damo_mysql_exec
+License: UNKNOWN
+Platform: UNKNOWN
+
+#damo_mysql_exec
+##用于数据库二次封装执行的脚本
+
+
