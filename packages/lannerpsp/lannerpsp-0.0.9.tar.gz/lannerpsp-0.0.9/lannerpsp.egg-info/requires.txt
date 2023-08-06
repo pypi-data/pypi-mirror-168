@@ -1,0 +1,6 @@
+
+[all]
+portio==0.5
+
+[lec7242]
+portio==0.5
