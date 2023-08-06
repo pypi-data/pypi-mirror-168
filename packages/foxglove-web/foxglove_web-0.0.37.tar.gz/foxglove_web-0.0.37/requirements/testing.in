@@ -1,0 +1,12 @@
+aiohttp
+coverage
+dirty-equals
+jinja2
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
+pytest-sugar
+pytest-timeout
+requests
+uvloop
