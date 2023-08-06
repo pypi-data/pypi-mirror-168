@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+te2rules/__init__.py
+te2rules/adapter.py
+te2rules/explainer.py
+te2rules/rule.py
+te2rules/tree.py
+te2rules.egg-info/PKG-INFO
+te2rules.egg-info/SOURCES.txt
+te2rules.egg-info/dependency_links.txt
+te2rules.egg-info/requires.txt
+te2rules.egg-info/top_level.txt
