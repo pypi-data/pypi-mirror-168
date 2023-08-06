@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/rationalnets/__init__.py
+src/rationalnets/rational.py
+src/rationalnets.egg-info/PKG-INFO
+src/rationalnets.egg-info/SOURCES.txt
+src/rationalnets.egg-info/dependency_links.txt
+src/rationalnets.egg-info/requires.txt
+src/rationalnets.egg-info/top_level.txt
