@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nsf2midi
+Version: 1.0.1
+Summary: Convert NSF music to MIDI
+Author: Sun Xufei
+Project-URL: Homepage, https://github.com/realpython/reader
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+This is a tool help convert nsf music to midi
+
+1. please install famistudio and put it into enviroment PATH
+2. pip install nsf2midi
+3. python -m nsf2midi input.nsf output.midi 0
+
+for details please run
+python -m nsf2midi -h

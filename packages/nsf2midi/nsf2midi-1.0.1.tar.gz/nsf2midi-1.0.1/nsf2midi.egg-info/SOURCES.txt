@@ -1,0 +1,6 @@
+pyproject.toml
+nsf2midi.egg-info/PKG-INFO
+nsf2midi.egg-info/SOURCES.txt
+nsf2midi.egg-info/dependency_links.txt
+nsf2midi.egg-info/requires.txt
+nsf2midi.egg-info/top_level.txt
