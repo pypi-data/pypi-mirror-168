@@ -1,0 +1,11 @@
+README.md
+setup.py
+shellodoro/__init__.py
+shellodoro/shellodoro.py
+shellodoro/tools.py
+shellodoro.egg-info/PKG-INFO
+shellodoro.egg-info/SOURCES.txt
+shellodoro.egg-info/dependency_links.txt
+shellodoro.egg-info/entry_points.txt
+shellodoro.egg-info/requires.txt
+shellodoro.egg-info/top_level.txt
