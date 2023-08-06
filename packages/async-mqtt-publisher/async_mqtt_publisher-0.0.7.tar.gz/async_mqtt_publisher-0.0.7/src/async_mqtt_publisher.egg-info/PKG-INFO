@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: async-mqtt-publisher
+Version: 0.0.7
+Summary: MQTT publisher based on aiohttp
+Home-page: https://github.com/thealexeydergunov/async_mqtt_publisher.git
+Author: Alexey Dergunov
+Author-email: dergunovalexey2000@gmail.com
+License: MIT
+Keywords: MQTT publisher based on aiohttp
+License-File: LICENSE
