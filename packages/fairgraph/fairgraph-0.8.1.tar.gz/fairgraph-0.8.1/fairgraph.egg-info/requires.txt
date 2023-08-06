@@ -1,0 +1,8 @@
+ebrains-kg-core
+pathlib2
+python-dateutil
+six
+tabulate
+requests
+tqdm
+pyld==0.8.2
