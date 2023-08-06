@@ -1,0 +1,40 @@
+# vcf_validator
+This python package parses the vcf file and checks the VCF attributes with respect to the paper: https://f1000research.com/articles/11-231
+
+
+### Installing the package:
+
+```
+pip install vcfvalidator
+```
+### How to use parser:
+
+First import the package using following command:
+```
+from vcf_validator import vcf_parser
+```
+
+Create and object of the class:
+```
+parser = vcf_parser.vcf_parser()
+```
+
+Then call the method:
+```
+parser.parse_as_chunks("m", 1000, True)
+```
+
+The method **parse_as_chunks** parses the file and check for VCF header attributes for now. 
+
+**Parameters for method:**
+```
+1. data to be parsed: for metadata use "m" and for header data use "h"
+2. Chunk size.
+3. "True" to stop the file after parsing header data, "False" to continue the parser till the end of the file.
+```
+
+### Responisble person
+For further details please contact: **Dr. Matthias Lange (lange@ipk-gatersleben.de)** 
+
+### Location of files
+The parser generates the output in log files, which could be found in the directory where the scripts is located. 

@@ -1,0 +1,10 @@
+README.md
+README.rst
+pyproject.toml
+setup.py
+src/vcf_validator/__init__.py
+src/vcf_validator/vcf_parser.py
+src/vcfvalidator.egg-info/PKG-INFO
+src/vcfvalidator.egg-info/SOURCES.txt
+src/vcfvalidator.egg-info/dependency_links.txt
+src/vcfvalidator.egg-info/top_level.txt
