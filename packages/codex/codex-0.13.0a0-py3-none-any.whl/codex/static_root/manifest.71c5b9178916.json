@@ -1,0 +1,150 @@
+{
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot": {
+    "file": "assets/materialdesignicons-webfont.861aea05.eot",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2": {
+    "file": "assets/materialdesignicons-webfont.e52d60f6.woff2",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff": {
+    "file": "assets/materialdesignicons-webfont.48d3eec6.woff",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf": {
+    "file": "assets/materialdesignicons-webfont.bd725a7a.ttf",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf"
+  },
+  "src/main.js": {
+    "file": "assets/main.bc2ccaad.js",
+    "src": "src/main.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/admin.vue",
+      "src/browser.vue",
+      "src/http-error.vue",
+      "src/reader.vue"
+    ],
+    "css": [
+      "assets/main.9b32e9ce.css"
+    ],
+    "assets": [
+      "assets/materialdesignicons-webfont.861aea05.eot",
+      "assets/materialdesignicons-webfont.e52d60f6.woff2",
+      "assets/materialdesignicons-webfont.48d3eec6.woff",
+      "assets/materialdesignicons-webfont.bd725a7a.ttf"
+    ]
+  },
+  "src/admin.vue": {
+    "file": "assets/admin.a573d1c0.js",
+    "src": "src/admin.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_button.f61ec364.js",
+      "src/main.js",
+      "_VCombobox.7ea0f07e.js"
+    ],
+    "css": [
+      "assets/admin.d78cada5.css"
+    ]
+  },
+  "_button.f61ec364.js": {
+    "file": "assets/button.f61ec364.js",
+    "imports": [
+      "src/main.js"
+    ],
+    "css": [
+      "assets/button.d002e374.css"
+    ]
+  },
+  "_VCombobox.7ea0f07e.js": {
+    "file": "assets/VCombobox.7ea0f07e.js",
+    "imports": [
+      "_button.f61ec364.js",
+      "src/main.js"
+    ],
+    "css": [
+      "assets/VCombobox.af7038de.css"
+    ]
+  },
+  "src/browser.vue": {
+    "file": "assets/browser.70f278a6.js",
+    "src": "src/browser.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js",
+      "_button.f61ec364.js",
+      "_panel.7756c949.js",
+      "_VCombobox.7ea0f07e.js"
+    ],
+    "css": [
+      "assets/browser.5b861ce3.css"
+    ]
+  },
+  "_panel.7756c949.js": {
+    "file": "assets/panel.7756c949.js",
+    "imports": [
+      "_button.f61ec364.js",
+      "src/main.js"
+    ],
+    "css": [
+      "assets/panel.f80c25bc.css"
+    ]
+  },
+  "src/http-error.vue": {
+    "file": "assets/http-error.ffaa87b6.js",
+    "src": "src/http-error.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ],
+    "css": [
+      "assets/http-error.07888a50.css"
+    ]
+  },
+  "src/reader.vue": {
+    "file": "assets/reader.4156eba9.js",
+    "src": "src/reader.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js",
+      "_button.f61ec364.js",
+      "_panel.7756c949.js"
+    ],
+    "css": [
+      "assets/reader.808181eb.css"
+    ]
+  },
+  "VCombobox.css": {
+    "file": "assets/VCombobox.af7038de.css",
+    "src": "VCombobox.css"
+  },
+  "src/reader.css": {
+    "file": "assets/reader.808181eb.css",
+    "src": "src/reader.css"
+  },
+  "panel.css": {
+    "file": "assets/panel.f80c25bc.css",
+    "src": "panel.css"
+  },
+  "src/admin.css": {
+    "file": "assets/admin.d78cada5.css",
+    "src": "src/admin.css"
+  },
+  "src/browser.css": {
+    "file": "assets/browser.5b861ce3.css",
+    "src": "src/browser.css"
+  },
+  "src/http-error.css": {
+    "file": "assets/http-error.07888a50.css",
+    "src": "src/http-error.css"
+  },
+  "button.css": {
+    "file": "assets/button.d002e374.css",
+    "src": "button.css"
+  },
+  "src/main.css": {
+    "file": "assets/main.9b32e9ce.css",
+    "src": "src/main.css"
+  }
+}
