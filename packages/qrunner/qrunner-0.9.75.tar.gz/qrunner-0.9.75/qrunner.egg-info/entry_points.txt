@@ -1,0 +1,2 @@
+[console_scripts]
+qrunner = qrunner.cli:main
