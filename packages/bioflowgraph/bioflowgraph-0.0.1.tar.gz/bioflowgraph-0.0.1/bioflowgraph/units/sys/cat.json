@@ -1,0 +1,16 @@
+{
+  "executor": "cat",
+  "parameters": [
+    {
+      "name": "targets",
+      "type": "list",
+      "required": true,
+      "is_input": true
+    },
+    {
+      "name": "dest",
+      "type": "stdout",
+      "default": "${OutputFilename}"
+    }
+  ]
+}

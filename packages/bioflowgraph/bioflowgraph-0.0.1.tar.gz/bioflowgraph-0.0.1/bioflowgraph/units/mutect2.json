@@ -1,0 +1,50 @@
+{
+    "executor": "gatk",
+    "sub_executor": "Mutect2",
+    "parameters": [
+        {
+            "name": "native_pair_hmm_threads",
+            "flag": "--native-pair-hmm-threads",
+            "type": "int",
+            "default": 24
+        },
+        {
+            "name": "R",
+            "flag": "-R",
+            "type": "ref",
+            "default": "hg38_fa"
+        },
+        {
+            "name": "t_bamfile",
+            "flag": "-I",
+            "is_input": true
+        },
+        {
+            "name": "tumor",
+            "flag": "--tumor",
+            "default": "${Tumor}"
+        },
+        {
+            "name": "n_bamfile",
+            "flag": "-I",
+            "is_input": true
+        },
+        {
+            "name": "normal",
+            "flag": "--normal",
+            "default": "${Normal}"
+        },
+        {
+            "name": "vcfgz_file",
+            "flag": "-O",
+            "is_output": true,
+            "default": "${Tumor}.raw.vcf.gz"
+        },
+        {
+            "name": "f1r2_targz_file",
+            "flag": "--f1r2-tar-gz",
+            "is_output": true,
+            "default": "${Tumor}.f1r2.tar.gz"
+        }
+    ]
+}

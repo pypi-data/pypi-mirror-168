@@ -1,0 +1,22 @@
+{
+    "executor": "gatk",
+    "sub_executor": "CalculateContamination",
+    "parameters": [
+        {
+            "name": "table_file",
+            "flag": "-I",
+            "is_input": true
+        },
+        {
+            "name": "matched",
+            "flag": "-matched",
+            "is_input": true
+        },
+        {
+            "name": "contamination_table_file",
+            "flag": "-O",
+            "is_output": true,
+            "default": "${Tumor}_contamination.table"
+        }
+    ]
+}

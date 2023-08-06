@@ -1,0 +1,59 @@
+{
+    "executor": "perl",
+    "sub_executor": "/home/ynwang/biosoft/annovar/table_annovar.pl",
+    "parameters": [
+        {
+            "name": "filter_vcfgz_file",
+            "is_input": true
+        },
+        {
+            "name": "humandb",
+            "type": "ref",
+            "default": "humandb"
+        },
+        {
+            "name": "buildver",
+            "flag": "-buildver",
+            "default": "hg38"
+        },
+        {
+            "name": "out",
+            "flag": "-out",
+            "is_output": true,
+            "default": "${Tumor}.SNP"
+        },
+        {
+            "name": "remove",
+            "flag": "-remove",
+            "type": "bool",
+            "default": true
+        },
+        {
+            "name": "protocol",
+            "flag": "-protocol",
+            "default": "refGene,exac03,avsnp150,dbnsfp35a,1000g2015aug_all,esp6500siv2_all,clinvar_20210501,ALL.sites.2015_08,EAS.sites.2015_08,cosmic70"
+        },
+        {
+            "name": "operation",
+            "flag": "-operation",
+            "default": "g,f,f,f,f,f,f,f,f,f"
+        },
+        {
+            "name": "nastring",
+            "flag": "-nastring",
+            "default": "."
+        },
+        {
+            "name": "vcfinput",
+            "flag": "-vcfinput",
+            "type": "bool",
+            "default": true
+        },
+        {
+            "name": "polish",
+            "flag": "-polish",
+            "type": "bool",
+            "default": true
+        }
+    ]
+}

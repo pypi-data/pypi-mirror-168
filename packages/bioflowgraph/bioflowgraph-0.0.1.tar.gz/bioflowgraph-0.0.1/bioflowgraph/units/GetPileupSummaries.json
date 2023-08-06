@@ -1,0 +1,29 @@
+{
+    "executor": "gatk",
+    "sub_executor": "GetPileupSummaries",
+    "parameters": [
+        {
+            "name": "bamfile",
+            "flag": "-I",
+            "is_input": true
+        },
+        {
+            "name": "V",
+            "flag": "-V",
+            "type": "ref",
+            "default": "hg38_vcf_gz"
+        },
+        {
+            "name": "L",
+            "flag": "-L",
+            "type": "ref",
+            "default": "hg38_vcf_gz"
+        },
+        {
+            "name": "table_file",
+            "flag": "-O",
+            "is_output": true,
+            "default": "${SampleID}_GetPileupSummaries.table"
+        }
+    ]
+}

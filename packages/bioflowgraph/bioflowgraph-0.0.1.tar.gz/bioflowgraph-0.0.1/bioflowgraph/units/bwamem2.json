@@ -1,0 +1,47 @@
+{
+    "executor": "bwamem2",
+    "sub_executor": "mem",
+    "parameters": [
+        {
+            "name": "v",
+            "flag": "-v",
+            "type": "int",
+            "default": 3
+        },
+        {
+            "name": "t",
+            "flag": "-t",
+            "type": "integer",
+            "default": 24
+        },
+        {
+            "name": "Y",
+            "flag": "-Y",
+            "type": "bool",
+            "default": true
+        },
+        {
+            "name": "R",
+            "flag": "-R",
+            "default": "\"@RG\\tID:${SampleID}\\tSM:${SampleID}\\tPL:Illumina\""
+        },
+        {
+            "name": "bwa_index",
+            "type": "ref",
+            "default": "hg38_fa"
+        },
+        {
+            "name": "fq_1",
+            "is_input": true
+        },
+        {
+            "name": "fq_2",
+            "is_input": true
+        },
+        {
+            "name": "samfile",
+            "type": "stdout",
+            "default": "${SampleID}.raw.sam"
+        }
+    ]
+}

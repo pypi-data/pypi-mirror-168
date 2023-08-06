@@ -1,0 +1,17 @@
+{
+    "executor": "gatk",
+    "sub_executor": "LearnReadOrientationModel",
+    "parameters": [
+        {
+            "name": "f1r2_targz_file",
+            "flag": "-I",
+            "is_input": true
+        },
+        {
+            "name": "read_orientation_model_file",
+            "flag": "-O",
+            "is_output": true,
+            "default": "${Tumor}_read-orientation-model.tar.gz"
+        }
+    ]
+}

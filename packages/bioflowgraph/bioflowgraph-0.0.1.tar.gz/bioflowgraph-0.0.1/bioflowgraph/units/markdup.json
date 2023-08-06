@@ -1,0 +1,44 @@
+{
+    "executor": "gatk",
+    "sub_executor": "MarkDuplicates",
+    "parameters": [
+        {
+            "name": "samfile",
+            "flag": "-I",
+            "is_input": true
+        },
+        {
+            "name": "bamfile",
+            "flag": "-O",
+            "is_output": true,
+            "default": "${SampleID}.marked_duplicates.bam"
+        },
+        {
+            "name": "M",
+            "flag": "-M",
+            "is_output": true,
+            "default": "${SampleID}.marked_dup_metrics.txt"
+        },
+        {
+            "name": "assume_sort_order",
+            "flag": "--ASSUME_SORT_ORDER",
+            "default": "\"queryname\""
+        },
+        {
+            "name": "validation_stringency",
+            "flag": "--VALIDATION_STRINGENCY",
+            "default": "SILENT"
+        },
+        {
+            "name": "optical_duplicate_pixel_distance",
+            "flag": "--OPTICAL_DUPLICATE_PIXEL_DISTANCE",
+            "type": "int",
+            "default": 2500
+        },
+        {
+            "name": "create_md5_file",
+            "flag": "--CREATE_MD5_FILE",
+            "default": "true"
+        }
+    ]
+}
