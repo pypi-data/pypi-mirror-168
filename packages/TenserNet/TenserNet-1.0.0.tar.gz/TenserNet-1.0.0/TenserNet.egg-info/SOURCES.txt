@@ -1,0 +1,8 @@
+Licence.txt.txt
+Setup.py
+setup.py
+TenserNet/__init__.py
+TenserNet.egg-info/PKG-INFO
+TenserNet.egg-info/SOURCES.txt
+TenserNet.egg-info/dependency_links.txt
+TenserNet.egg-info/top_level.txt
