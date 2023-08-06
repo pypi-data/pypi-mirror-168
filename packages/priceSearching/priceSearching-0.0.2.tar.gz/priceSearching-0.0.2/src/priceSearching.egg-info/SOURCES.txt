@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/priceSearching/__init__.py
+src/priceSearching/priceSearching.py
+src/priceSearching.egg-info/PKG-INFO
+src/priceSearching.egg-info/SOURCES.txt
+src/priceSearching.egg-info/dependency_links.txt
+src/priceSearching.egg-info/top_level.txt
