@@ -1,0 +1,12 @@
+README.md
+setup.py
+seGMM/__init__.py
+seGMM/main.py
+seGMM.egg-info/PKG-INFO
+seGMM.egg-info/SOURCES.txt
+seGMM.egg-info/dependency_links.txt
+seGMM.egg-info/entry_points.txt
+seGMM.egg-info/top_level.txt
+seGMM/data/SRY_hg19.bed
+seGMM/data/SRY_hg38.bed
+seGMM/script/seGMM.r
