@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cognite-air-sdk
+Version: 4.0.0
+Summary: Client library for AIR, built on top of Cognite Functions in Cognite Data Fusion (CDF)
+Author: Håkon V. Treider
+Author-email: hakon.treider@cognite.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: cognite-sdk (>=4.5,<5.0)
+Requires-Dist: pandas (>=1.1.5,<2.0.0)
+Requires-Dist: pre-commit (>=2.7.1,<3.0.0)
+Requires-Dist: ruamel.yaml (>=0.16.12,<0.17.0)
