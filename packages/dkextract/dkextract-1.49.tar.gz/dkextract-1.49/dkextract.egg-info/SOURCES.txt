@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dkextract/__init__.py
+dkextract/dkextract.py
+dkextract.egg-info/PKG-INFO
+dkextract.egg-info/SOURCES.txt
+dkextract.egg-info/dependency_links.txt
+dkextract.egg-info/requires.txt
+dkextract.egg-info/top_level.txt
