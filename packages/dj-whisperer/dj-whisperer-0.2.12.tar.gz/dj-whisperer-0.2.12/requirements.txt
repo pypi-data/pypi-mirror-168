@@ -1,0 +1,16 @@
+black==21.5b1
+celery>=4.1.0
+Django>=1.10,<3.2
+djangorestframework>=3.4.3,<3.12
+django-filter==2.1.0
+django-rest-auth==0.9.5
+isort==5.0.4
+mock
+model-mommy==1.6.0
+psycopg2-binary
+requests
+requests-mock==1.6.0
+sphinx==1.8.5
+sphinx-rtd-theme<0.5
+tox
+click==7.1.2
