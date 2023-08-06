@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-bleach-correct = napari_bleach_correct:napari.yaml
