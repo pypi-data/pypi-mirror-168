@@ -1,0 +1,12 @@
+apie/__init__.py,sha256=Rx7ECm2LB2QL_1aNZmY8SH1mGb2TCVPG2rXpcKxhsH0,57
+apie/__main__.py,sha256=L3vQ_3liwCpgJV_K958k8Dr1ha6Crf4u353mwk3653w,57
+apie/apie.py,sha256=kZ7d6YbEf2xTDuMuBONBcmJfgpiIHIzjTT2kVuC3IT8,11072
+apie/api/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+apie/api/api_test.py,sha256=rtu5kkUvtq-Jzk1YATlFaTp4Phjb7bN_xQf3bzr2wT4,408
+apie/auth/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+apie/auth/auth_none.py,sha256=yDgOu3pcwwlQ8N9SE8SuKrX2X6fvQ9SO8sQ-kDNY1qw,375
+apie-0.0.1.dist-info/METADATA,sha256=Pi_x4jJdn8b50ZzSIWAt1ip2IkJ2rVylFh5sQlAiqhM,6067
+apie-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+apie-0.0.1.dist-info/entry_points.txt,sha256=Z6K1WaMndZP62-UcwWdKRMwVTXLoHwsTwq8jAHHAzBk,35
+apie-0.0.1.dist-info/top_level.txt,sha256=ye6zcxrkyAxcNIxLJWtPZUVj5AtAsR540LT-GxLiRPE,5
+apie-0.0.1.dist-info/RECORD,,
