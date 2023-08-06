@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: async-reolink.rest
+Version: 0.6.6
+Summary: Async ReoLink camera REST API for python
+License: MIT
+Project-URL: source, https://github.com/xannor/py_reolinkrestapi
+Project-URL: tracker, https://github.com/xannor/py_reolinkrestapi/issues
+Keywords: ReoLink,async,rest,api
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp
+Requires-Dist: async-reolink.api (==0.6.6)
+
+Async Reolink REST API
+
+The is a client complete implementation of the REST interface for ReoLink cameras. This requries the base api and provides a Client class that can be used to access a camera via its REST/web interface.
