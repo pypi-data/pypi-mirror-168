@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jsonata
+Version: 0.2.4
+Summary: A simple Python wrapper for the JavaScript JSONata lib.
+Home-page: https://github.com/pibara/jsonata-wrapper
+Author: Rob J Meijer
+Author-email: pibara@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Other Environment
+Requires-Python: >=3.6
+
+UNKNOWN
+
