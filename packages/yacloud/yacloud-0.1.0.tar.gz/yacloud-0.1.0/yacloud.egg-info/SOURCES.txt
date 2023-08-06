@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+setup.py
+yacloud/__init__.py
+yacloud/cloudfile.py
+yacloud.egg-info/PKG-INFO
+yacloud.egg-info/SOURCES.txt
+yacloud.egg-info/dependency_links.txt
+yacloud.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: yacloud
+Version: 0.1.0
+Summary: A micro package for working with yandex cloud services
+Author: Dima Frolenko
+Author-email: orangefrol@gmail.com
+License: LICENSE.txt
+License-File: LICENSE.txt
+
+Р”Р»СЏ РєР»Р°СЃСЃРµ cloudfile, РЅР°СЃС‚СЂРѕР№ РїРµСЂРµРјРµРЅРЅС‹Рµ РѕРєСЂСѓР¶РµРЅРёСЏ
+YC_API_KEY - РєР»СЋС‡ РїСЂРѕСЃС‚РѕРіРѕ РґРѕСЃС‚СѓРїР°
+YC_API_SECRET - СЃРµРєСЂРµС‚ РґР»СЏ РїСЂРѕСЃС‚РѕРіРѕ РґРѕСЃС‚СѓРїР° Рє Р±Р°РєРµС‚Р°Рј
