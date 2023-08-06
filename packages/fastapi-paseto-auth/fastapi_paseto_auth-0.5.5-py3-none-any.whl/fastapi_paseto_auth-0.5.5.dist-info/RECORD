@@ -1,0 +1,9 @@
+fastapi_paseto_auth/__init__.py,sha256=_Ccm8k5YrSwyTw6mqDG2QyfW4OQ0QXIT6NM2F6EX2cQ,123
+fastapi_paseto_auth/auth_config.py,sha256=UMefmAymNTMXWTJdbwyc3Xm-cpRd4avYE-en_RrpjHs,3400
+fastapi_paseto_auth/auth_paseto.py,sha256=pAW1O7-W6Ic19HIMDzZNscpCtfXKO5CELW6-FNRZa5M,20145
+fastapi_paseto_auth/config.py,sha256=1LHuY0MvDox2Xjma5mZ6AI0xMlVuxUV1jvEj4yZMNwk,4286
+fastapi_paseto_auth/exceptions.py,sha256=APmwidUqy5QqSxp9mtP6GoWT0ZkFU1stSWSJ7bPSqiE,3610
+fastapi_paseto_auth-0.5.5.dist-info/LICENSE,sha256=LhigImWRLCChzXwjzm_eyVHeU7Pxk5tOR20tl_l2s-8,1103
+fastapi_paseto_auth-0.5.5.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+fastapi_paseto_auth-0.5.5.dist-info/METADATA,sha256=JYw0Yx-oxApoacuXQ7ERsp4c3CUkdYcFujdeY8-ySdc,3839
+fastapi_paseto_auth-0.5.5.dist-info/RECORD,,
