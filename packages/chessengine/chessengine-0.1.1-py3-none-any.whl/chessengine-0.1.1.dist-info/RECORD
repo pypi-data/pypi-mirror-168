@@ -1,0 +1,17 @@
+chessengine/__init__.py,sha256=tMlTrVMobgV8js_JYsKC_0JkCulspC7SZCPJBKdeZ0Q,166
+chessengine/bitboard.py,sha256=W1r0yZZWq5NG7maFS2S7Nads9VRBS2GEu2tgaQbwU0M,23106
+chessengine/lookup_tables.py,sha256=Ieb_SrnEWYATDRrOrSz88jgcrHN8R4pW_HWCMVEH610,7193
+chessengine/moves.py,sha256=U1RZh9gTwj3Ih-I8Zo4Tuw6AUKCJCkwOK_bWdMBRAeM,10604
+chessengine/play.py,sha256=EtkTaxoXGE9i5ei92hqcWVYosBJQP6OIN4K_ZROAZUw,534
+chessengine/utils.py,sha256=Q6pL0bYMhXS2en4pMUBdvIAZOO_9wtA4GZhhqXlD8Cc,1595
+chessengine/openings/Modern.pgn,sha256=sI7D2ZJJ7Nd3BIGlYAm0nskIiY38AnJ0moWJe_Uiv6I,9714636
+chessengine/openings/Modern3Nc3-d6.pgn,sha256=wfb8ZokouuinniL2SBfWJgj4MmEKFLEplOpJ2we6tl4,20368267
+chessengine/openings/ViswanathanAnand.pgn,sha256=OzFY1Kz7ma_NVqMPoKiPVf5QuBReOUXfPpZvX1RAQcs,57448
+chessengine/pgn/__init__.py,sha256=Rf_RRh_IphhWxH0y2KpSc6Jlyl9bzIeE81ClWP3fj0o,34
+chessengine/pgn/node.py,sha256=x9VeyhfC45jhPIe0NVjQZu2ST21Nsc9LsCgHaP1wC8g,1720
+chessengine/pgn/parser.py,sha256=M86w9TN1So_f2PXfT8fQXnIYrn4TNaln4rR5Q08pt3I,4374
+chessengine-0.1.1.dist-info/LICENSE,sha256=7PvITyE2HcyvoyqWUBrKxQYogm-fKUbZF5xL0taHfDA,1095
+chessengine-0.1.1.dist-info/METADATA,sha256=MBG-_YG3dqjqkw3K1wVTIHjzsFG4lOxzqSs_yHvMilg,2228
+chessengine-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+chessengine-0.1.1.dist-info/top_level.txt,sha256=QbY5rKothB-bKl6FaKocH-Vb1kbZsoR2QhFMBDvSk9w,12
+chessengine-0.1.1.dist-info/RECORD,,
