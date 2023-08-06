@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: arms
+Version: 1.8.8
+Summary: CI/CD tool of Chongqing Parsec Corp.
+Home-page: https://pypi.python.org/pypi/arms
+Author: qorzj
+Author-email: inull@qq.com
+License: MIT
+Keywords: arms armstrong chongqing
+Platform: any
+
+
+pip install arms
+
+arms -h
+

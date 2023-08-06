@@ -1,0 +1,6 @@
+lesscli>=0.2.0
+rich
+pyperclip
+InquirerPy
+json5
+requests
