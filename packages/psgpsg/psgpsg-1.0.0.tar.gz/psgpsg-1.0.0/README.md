@@ -1,0 +1,80 @@
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Logo%20with%20text%20for%20GitHub%20Top.png" alt="Python GUIs for Humans">
+  <h2 align="center">psgpsg</h2>
+  <h2 align="center">A PySimpleGUI Application To Easily Call sg.main()</h2>
+
+</p>
+
+Launches the `main()` function of the version of PySimpleGUI that is found by this program.  It may be a local copy on your hard disk that is found on the PYTHON_PATH.  It may be the pip installed version of PySimpleGUI that the interpreter running `psgpsg` finds.  The purpose of `psgpsg` is to allow you to easily launch the main test harness for any of these situations.
+
+
+
+## Installation
+
+### Old-school Straight Pip
+
+`pip install psgpsg`
+
+### pip via `python -m pip` the python recommended way
+
+#### If `python` is your command
+
+`python -m pip install psgpsg`
+
+#### If `python3` is your command
+
+`python3 -m pip install psgpsg`
+
+## Usage
+
+Open a command window and type:   
+
+`psgpsg`   
+
+
+## Create a Shortcut To This Program
+
+If you're a Windows user, then use the [`psgshortcut` application](https://pypi.org/project/psgshortcut/) to make a shortcut to this program so that you can then put on your desktop or pin to your taskbar (or any  other use that stops the need to type `psgpsg` ever again).
+
+To get `psgpsg`, like all of the other `psg application` projects, pip install it.  (e.g. `pip install psgshortcut`)
+
+
+
+To do this, follow these steps:
+
+1. Open a command window (I promise, it's the last time you'll need to for this program)
+2. Type - `where psgpsg`
+3. Copy the line that `where psgpsg` gave you into the first input of the shortcut maker program
+4. Run psgpsg by typing `psgpsg` in your command window
+5. Right click and choose "File Location"
+6. Copy the file location results, but change the extension from .py to .ico and paste into the Icon file input of the shortcut maker
+7. Click "Create Shortcut"
+
+This will create a shortcut in the same folder as the target file.  You can safely move this shortcut file to any place you want (like to your desktop).  Double-click the shortcut and your program should launch.
+
+## Release Notes
+1.0.0   20-Sept-2022  
+
+* Initial release
+
+
+## License
+
+Licensed under an LGPL3 License  
+Copyright 2022
+
+## This PySimpleGUI Application Was Designed and Written By
+
+[**The PySimpleGUI Project**](http://www.PySimpleGUI.com)
+
+
+Mike from PySimpleGUI.org 
+
+## Contributing
+
+Like the PySimpleGUI project, this project is currently licensed under an open-source license, the project itself is structured like a proprietary product. Pull Requests are not accepted.
+
+## Copyright
+
+Copyright 2022 PySimpleGUI

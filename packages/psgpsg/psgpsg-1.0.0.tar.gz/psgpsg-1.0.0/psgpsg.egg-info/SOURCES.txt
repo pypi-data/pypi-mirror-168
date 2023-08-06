@@ -1,0 +1,10 @@
+README.md
+setup.py
+psgpsg/__init__.py
+psgpsg/psgpsg.py
+psgpsg.egg-info/PKG-INFO
+psgpsg.egg-info/SOURCES.txt
+psgpsg.egg-info/dependency_links.txt
+psgpsg.egg-info/entry_points.txt
+psgpsg.egg-info/requires.txt
+psgpsg.egg-info/top_level.txt
