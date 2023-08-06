@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cmsrucio_import"
+version = "0.1.1"
+description = "Utility tool to upload files and datasets from local machine to rucio"
+authors = ["Rahul Chauhan <rahul.chauhan@cern.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+typer = "^0.6.1"
+strictyaml = "^1.6.1"
+rucio-clients = "^1.28.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
