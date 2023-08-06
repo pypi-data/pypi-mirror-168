@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+
+  <link rel="shortcut icon" href="{{ "img/favicon.png"|url }}">
+  <link rel="stylesheet" href="{{ "css/normalize.css"|url }}">
+  <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
+  <link rel="stylesheet" href="{{ "fontello/css/fontello.css"|url }}">
+
+  {% for path in config.extra_css %}
+    <link href="{{ path|url }}" rel="stylesheet">
+  {% endfor %}
+
+  {% block extrahead %}
+  {% endblock %}
+
+  <!--
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  {% if config.google_analytics %}
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+      ga('send', 'pageview');
+  </script>
+  {% endif %}
+</head>
+
+<body>
+  <main>
+    <div class="content">
+      <nav class="mute">
+        <a href="{{ config.site_url }}" class="strong ink">Manuals</a> &#8594;
+        {% set nav_item = nav  %}
+        {% include 'parts/breadcrumb.html' %}
+      </nav>
+
+      {% if page and page.edit_url %}
+        <a href="{{ page.edit_url }}">Edit on {{ config.repo_name }}</a>
+      {% elif config.repo_url %}
+        <a href="{{ config.repo_url }}">{{ config.repo_name }}</a>
+      {% endif %}
+
+      {% block content %}
+      <article data-current-article="{{ page.abs_url }}">
+        {{ page.content }}
+      </article>
+
+      {% if not page.is_homepage %}
+      <div class="margin-top-64">
+        <button id="mark-read-toggle" onclick="toggleRead(this)">Mark as read</button>
+      </div>
+      {% endif %}
+      {% endblock %}
+    </div>
+
+    {% if not page.is_homepage and (page.next_page or page.previous_page)  %}
+      <div class="flex flex-space-between smaller strong">
+        <div>
+          {% if page.previous_page %}
+            <a href="{{ page.previous_page.url|url }}">&#8592; {{ page.previous_page.title }}</a>
+          {% endif %}
+        </div>
+
+        <div>
+          {% if page.next_page %}
+            <a href="{{ page.next_page.url|url }}">{{ page.next_page.title }} &#8594;</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </main>
+
+  <div class="sidebar">
+    {% if 'search' in config['plugins'] %}
+    <div role="search">
+      <form action="{{ "search.html"|url }}" method="get">
+        <input type="search" name="q">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    {% endif %}
+
+    <hr>
+
+    <nav class="mute">
+      <ul style="margin-left: -16px;">
+        {% if page.is_homepage %}
+          <li class="strong ink">Manuals Available</li>
+          {% for nav_item in nav %}
+          {% if not nav_item == page %}
+            <li>
+              {% set nav_title = nav_item.title %}
+              {% include 'parts/nav_link.html' %}
+            </li>
+          {% endif %}
+          {% endfor %}
+        {% else %}
+          {% for nav_item in nav %}
+            {% if nav_item.active %}
+              <li class="strong ink">Manual for {{ nav_item.title }}</li>
+              {% for nav_item in nav_item.children %}
+                {% include "parts/nav.html" %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+
+  <script>var base_url = '{{ base_url }}';</script>
+  <script src="{{ "js/theme.js"|url }}"></script>
+  {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
+  {% endfor %}
+
+  <!--
+  MkDocs version      : {{ mkdocs_version }}
+  Docs Build Date UTC : {{ build_date_utc }}
+  -->
+</body>
+</html>

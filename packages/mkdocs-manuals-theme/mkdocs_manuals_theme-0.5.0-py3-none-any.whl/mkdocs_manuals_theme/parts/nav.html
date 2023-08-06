@@ -1,0 +1,21 @@
+{% if not nav_item.children %}
+<li {% if nav_item.active %}class="active"{% endif %}>
+  <a href="{{ nav_item.url|url }}" class="text-decoration-none">
+    <span data-article="{{ nav_item.abs_url }}">
+      <i class="icon-circle-empty"></i>️
+    </span>
+    <span class="text-decoration-dashed">
+      {{ nav_item.title }}
+    </span>
+  </a>
+</li>
+{% else %}
+<li>
+  <span class="strong">{{ nav_item.title }}</span>
+  <ul>
+    {% for nav_item in nav_item.children %}
+    {% include "parts/nav.html" %}
+    {% endfor %}
+  </ul>
+</li>
+{% endif %}
