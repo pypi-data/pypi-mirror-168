@@ -1,0 +1,2 @@
+[console_scripts]
+docker = dock8r.cli:main

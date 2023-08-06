@@ -1,0 +1,6 @@
+Click>=7.0
+randomname
+kubernetes
+escapism
+humanfriendly
+python-decouple
