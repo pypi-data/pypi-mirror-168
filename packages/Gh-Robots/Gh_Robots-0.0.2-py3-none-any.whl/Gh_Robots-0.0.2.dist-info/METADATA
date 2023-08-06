@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Gh-Robots
+Version: 0.0.2
+Summary: A Github API-based Robot
+Home-page: https://github.com/CoolPlayLin/Gh-Robot
+Author: CoolPlayLin
+Author-email: help@api-coolplaylin.eu.org
+License: GPL V3.0
+Project-URL: Bug Report, https://github.com/CoolPlayLin/Gh-Robot/issues/new/choose
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.1wget>=3.2)
+
+# Gh-Robot
+A Github API-based Robot
