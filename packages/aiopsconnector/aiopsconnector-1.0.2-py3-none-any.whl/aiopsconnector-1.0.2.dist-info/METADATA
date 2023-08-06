@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aiopsconnector
+Version: 1.0.2
+Summary: Support for ai-api db connects.
+Author: lukePyStar
+Author-email: lukebayesian@gmail.com
+License: UNKNOWN
+Keywords: aiopsconnector
+Platform: UNKNOWN
+Requires-Python: !=2.0, >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
