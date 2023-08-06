@@ -1,0 +1,13 @@
+shioajicaller/__init__.py,sha256=bu8CH6uguvnk5AFL5o7mkMFb9p5bZIXv2Sgkbz2lPIk,62
+shioajicaller/caller.py,sha256=1Moh7wgsZIaFd7zhGWxZ0nz5eP7FnA0hlbEzoeXafvA,17779
+shioajicaller/cli/__init__.py,sha256=P_tK3AAl50sxZ7BjQgvSVr44rN8pd4YzSpf8p40Irek,5456
+shioajicaller/codes/__init__.py,sha256=atEbh9H1JKPzmhXGCm5NhDyhTVcKUdYbccjz_CaZFvM,56
+shioajicaller/codes/update.py,sha256=rl8_aOjBYhtadVhXXjLoaHHAcRzc2gbL30TDHzk-k_Q,6324
+shioajicaller/config.py,sha256=MG_gFsWhVj3LdQS3Cp9GLoJomQmPu4UXZJyG3EufIcQ,432
+shioajicaller/server/__init__.py,sha256=q0q0vQbEeaHWeHB6ZGOncYzi-VtofglmOfqwCUdBsDk,41
+shioajicaller/server/websocket.py,sha256=Rp1hiGRRS0yDKCt3rVLCjtEu1v1pIoWn3gf400ys2Aw,29287
+shioajicaller-0.2.3.0.dist-info/entry_points.txt,sha256=iv6ul1OY2s6ekRqilN3PCj274qL2ihQS2DStf7OSElA,55
+shioajicaller-0.2.3.0.dist-info/LICENSE,sha256=6qnWn3vlPHwXUcL37PK6VWXwpsjg1MhxP4HUpHmNW7w,1074
+shioajicaller-0.2.3.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+shioajicaller-0.2.3.0.dist-info/METADATA,sha256=bwnFl4CEWVf2av2QIphAx4aLYGeaYWoUTLGx_CCeXME,799
+shioajicaller-0.2.3.0.dist-info/RECORD,,
