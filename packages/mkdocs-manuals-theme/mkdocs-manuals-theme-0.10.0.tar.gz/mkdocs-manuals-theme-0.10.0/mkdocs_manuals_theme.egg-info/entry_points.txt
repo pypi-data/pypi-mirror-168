@@ -1,0 +1,2 @@
+[mkdocs.themes]
+manuals-theme = mkdocs_manuals_theme
