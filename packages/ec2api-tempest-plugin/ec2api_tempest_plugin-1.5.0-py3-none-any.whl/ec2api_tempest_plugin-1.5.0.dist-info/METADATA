@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ec2api-tempest-plugin
+Version: 1.5.0
+Summary: Tempest plugin for ec2-api
+Home-page: https://opendev.org/openstack/ec2api-tempest-plugin
+Author: OpenStack
+Author-email: openstack-discuss@lists.openstack.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: botocore (>=1.5.1)
+Requires-Dist: lxml (!=3.7.0,>=3.4.1)
+Requires-Dist: netaddr (>=0.7.18)
+Requires-Dist: oslo.config (>=5.2.0)
+Requires-Dist: oslo.log (>=3.36.0)
+Requires-Dist: paramiko (>=2.0.0)
+Requires-Dist: pbr (!=2.1.0,>=2.0.0)
+Requires-Dist: six (>=1.10.0)
+Requires-Dist: tempest (>=17.1.0)
+Requires-Dist: testtools (>=2.2.0)
+
+=====================
+ec2api tempest plugin
+=====================
+
+Tempest plugin ec2api_tempest_plugin
+
+Please fill here a long description which must be at least 3 lines wrapped on
+80 cols, so that distribution package maintainers can use it in their packages.
+Note that this is a hard requirement.
+
+* Free software: Apache license
+* Documentation: https://docs.openstack.org/ec2-api/latest
+* Source: https://opendev.org/openstack/ec2api-tempest-plugin
+* Bugs: https://bugs.launchpad.net/ec2-api
+
+Features
+--------
+
+* TODO
+
+
+
