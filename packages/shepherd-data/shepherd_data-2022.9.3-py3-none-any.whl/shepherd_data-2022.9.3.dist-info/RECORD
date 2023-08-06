@@ -1,0 +1,14 @@
+shepherd_data/__init__.py,sha256=zi3OdHWjNfAGKOI-t-sBnAytUSji7VkGucdwh-o5y9c,337
+shepherd_data/calibration.py,sha256=j9iEm9XNSI4Z8O3hrCuFqupoOBczdNOhnDIzywWtnrQ,1387
+shepherd_data/cli.py,sha256=lmFJi_qMRQu9oArBnOwbFmazqvpD4Z-urYojZWfeqYc,10435
+shepherd_data/ivonne.py,sha256=t56nKE5Jxv67W01spd3Z93Az_g5sDjapiNX2h88iRf8,11114
+shepherd_data/mppt.py,sha256=X8kKB4x8J8xwn3peIUG12fEtGybyGABf5CA9a6poJhc,3487
+shepherd_data/reader.py,sha256=6I_A_agALqi7DwTYgNpHjPjLuJjmAdDAsZK-DnY46aY,34366
+shepherd_data/writer.py,sha256=51fsSsTkJl8-1KIYgclp6Jwtqjj6V0njVb26lSCqqZU,12536
+shepherd_data-2022.9.3.dist-info/LICENSE,sha256=_d1BhE98zOhkxahuCifG6l34LjhJanVunxp5-QMQHpE,1069
+shepherd_data-2022.9.3.dist-info/METADATA,sha256=Uv59vFyVi57KS_WvtzT3Eej59vV0bx27kyKu0xSdtIA,11705
+shepherd_data-2022.9.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shepherd_data-2022.9.3.dist-info/entry_points.txt,sha256=UMg7kAzLZd4CL-9bgeJCdaklvtBj-BUK3l5ApoTroMA,56
+shepherd_data-2022.9.3.dist-info/top_level.txt,sha256=7-SCTY-TG1mLY72OVKCaqte1hy-X8woxknIUAD3OIxs,14
+shepherd_data-2022.9.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+shepherd_data-2022.9.3.dist-info/RECORD,,
