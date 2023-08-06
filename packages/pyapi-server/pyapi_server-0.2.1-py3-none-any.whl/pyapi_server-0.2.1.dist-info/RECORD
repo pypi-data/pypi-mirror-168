@@ -1,0 +1,7 @@
+pyapi/server/__init__.py,sha256=KnUw5E4Qq0ZfkV-ipRkBfSi32yIsYLRlynFzG4EqTvk,7467
+pyapi/server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyapi/server/utils.py,sha256=dvA_oba4IcG51lhyYgTrak05HuTwMWoSLHd7TUruZ0Q,1952
+pyapi/server/validation.py,sha256=SjsSVlUb3AN5oCZ-OKDN94u9efLJWrLSSIAWJGj6NpY,3153
+pyapi_server-0.2.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pyapi_server-0.2.1.dist-info/METADATA,sha256=m81QdmGfsO0OrG5-xN8fO6sUj3ph-bANfX22MPpPTpM,1975
+pyapi_server-0.2.1.dist-info/RECORD,,
