@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: priceSearching
+Version: 0.0.2
+Summary: Pacote para pesquisa de preço de produtos online
+Home-page: https://github.com/ghist/priceSearching
+Author: Marcos Vinicius Batista Sampaio
+Author-email: marcos.sampaio@ufpi.edu.br
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
