@@ -1,0 +1,12 @@
+qdscreen/__init__.py,sha256=hQTz7qHNH7gZSKXzz23yuk3IjNFMfkzJ0LZjLdvWQiE,629
+qdscreen/_version.py,sha256=vM4h7l3bNgxJpDAJmgSCDJMROpiBOBbWgJEfI7aCvEo,176
+qdscreen/compat.py,sha256=9pa-xgF3zqM0XKLTNiNjdHOyqNcFkZ-5-eswsnjVqRg,7835
+qdscreen/main.py,sha256=kb2DAff03cmm6N_K2TWKUZoHQN70u_0Y2ZgabQPONYw,49712
+qdscreen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qdscreen/selector.py,sha256=j6iiAZKV4ojEiyKrzJqNtjr_dvMDOESOQvWbbxcA7_o,8518
+qdscreen/sklearn.py,sha256=fLUZx-kphyctj7ERpghM0whhLPrWxrINKQyYfG5EVIc,4653
+qdscreen-0.6.3.dist-info/LICENSE,sha256=SmI-wRzKCE8LFNsegP_i4DlCzDdpHMxMqdDdEuoru7c,1568
+qdscreen-0.6.3.dist-info/METADATA,sha256=hq2MRF6xJG39-QxZdfk5CPnDP4w-mjbovww7Y-0V-V4,3452
+qdscreen-0.6.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+qdscreen-0.6.3.dist-info/top_level.txt,sha256=J_j5DnKtA2URb8_kbm3wQWGhS2R8oKysORLq5aPlXTY,9
+qdscreen-0.6.3.dist-info/RECORD,,
