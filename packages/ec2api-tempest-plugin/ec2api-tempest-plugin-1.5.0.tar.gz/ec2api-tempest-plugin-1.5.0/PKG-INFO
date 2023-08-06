@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: ec2api-tempest-plugin
+Version: 1.5.0
+Summary: Tempest plugin for ec2-api
+Home-page: https://opendev.org/openstack/ec2api-tempest-plugin
+Author: OpenStack
+Author-email: openstack-discuss@lists.openstack.org
+License: UNKNOWN
+Description: =====================
+        ec2api tempest plugin
+        =====================
+        
+        Tempest plugin ec2api_tempest_plugin
+        
+        Please fill here a long description which must be at least 3 lines wrapped on
+        80 cols, so that distribution package maintainers can use it in their packages.
+        Note that this is a hard requirement.
+        
+        * Free software: Apache license
+        * Documentation: https://docs.openstack.org/ec2-api/latest
+        * Source: https://opendev.org/openstack/ec2api-tempest-plugin
+        * Bugs: https://bugs.launchpad.net/ec2-api
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

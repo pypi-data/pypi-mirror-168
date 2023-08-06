@@ -1,0 +1,210 @@
+CHANGES
+=======
+
+1.5.0
+-----
+
+* Remove stable/victoria job from master gate
+* test\_tag\_customer\_gateway uncommented after ec2api fix
+* test\_tag\_customer\_gw and fixed jobs for zed redefined ssh.Client locally to use disabled\_algo
+* add vpnaas as a devstack plugin
+* Update 'Maintained' stable branch jobs on master gate
+
+1.4.0
+-----
+
+* Add stable/xena jobs on master gate
+* add KEYSTONE\_ADMIN\_ENDPOINT=true to func tests
+* Changed minversion in tox to 3.18.0
+
+1.3.0
+-----
+
+* [ussuri][goal] Update contributor documentation
+* Add victoria/wallaby stable branch jobs on master gate
+
+1.2.1
+-----
+
+* avoid additional virtualenv package
+
+1.2.0
+-----
+
+* Switch to Victoria jobs
+* Move ec2api-tempest-plugin-functional-full
+* Migrate zuul from v2 to v3 native
+* Revert "Add simple s3 test for create/delete bucket"
+* Add simple s3 test for create/delete bucket
+* [goal] Migrate ec2api-tempest-plugin jobs to focal
+* Add py38 package metadata
+* Add stable branch jobs on the plugins master gate
+
+1.0.0
+-----
+
+* Fix "test\_create\_delete\_vpn\_connection" and cancel skipping "test\_tag\_vpn\_connection", "test\_tag\_vpn\_gateway"
+* Cancel skipping tests "test\_register\_get\_deregister\_ami\_image" and "test\_run\_and\_ping\_registered\_image"
+* Cancel skipping test "test\_describe\_image\_with\_filters"
+* Fix for ingress/egress rules tests
+* Temporarily skipped to merge fix encoding/decoding in paging of universal describer class, part 2
+* Temporarily skipped to merge fix encoding/decoding in paging of universal describer class
+* Fix tests
+* [ussuri][goal] Drop python 2.7 support and testing
+* Stop testing python2.7
+* Switch to Ussuri jobs
+* mark test\_associate\_disassociate\_vpc\_addresses as flaky and skip it
+* Update the constraints url
+
+0.3.0
+-----
+
+* Re-adding the py35 testing job
+* Add Python 3 Train unit tests
+* Replace git.openstack.org URLs with opendev.org URLs
+* OpenDev Migration Patch
+* skip test\_default\_gateway due to #1818499
+
+0.2.0
+-----
+
+* Updatae home-page
+* Fix python3 Compatibility for urllib2
+* Change openstack-dev to openstack-discuss
+* fix tox python3 overrides
+* Removed older version of python added 3.5
+* add python 3.6 unit test job
+* add python 3.6 unit test job
+* import zuul job settings from project-config
+
+0.1.0
+-----
+
+* Updated from global requirements
+* Fixed ec2api\_tempest\_plugin test discovery issue
+* Updated from global requirements
+* initial cleanup
+* Fix initial setup for plugin
+* Initial CookieCutter commit
+* Initial CookieCutter commit
+* Fix test\_check\_simple\_image\_attributes to pass with AMI images
+* Remove the deprecated tempest.test.attr
+* use glanceclient version '2'. fix keystone error message
+* Switch to use stable remote\_client
+* Switch to use stable data\_utils
+* Typo-fix: occured => occurred
+* fix tests for network\_interface
+* Add tempest test UUID to all functional tests
+* skip vpn tests if vpnaas is not in network features list
+* fix experimental jobs
+* Fix tempest.conf generation
+* Fix group name when generating tempest.conf
+* restore configuring bundled image in s3
+* change default region
+* functional tests: add skip checker for absence of EC2-classic
+* skip failed addresses test for nova-network
+* remove using euca2ools in install script
+* switch from deprecated tempest\_lib to tempest.lib
+* use EBS image instead non-EBS image
+* add 'stop instance' operation before volume detach
+* fix cleanup in functional tests
+* Improve functional tests
+* Set https connection verify flag from config
+* Change CIDR's in tests
+* Fix botoclient for non-ssl based functional tests
+* fix functional tests
+* fix VPC and VPN tests due to Amazon changes
+* fix races
+* fix metadata test
+* Adopt functional tests to be a tempest plugin
+* add old tests to temporary folder
+* functional tests: fix tests work over SSL OpenStack Cloud
+* functional tests: add 'run\_ssh' parameter to config
+* functional tests: rework image register test
+* functional tests: remove unneeded describe\_addresses
+* functinal tests: adopt paging tests to Amazon algorithms
+* functional tests: improve cleanups in volume's test
+* functional tests: update helps string in config
+* functional tests: work with EBS image if needed
+* functional tests: remove hack
+* functional tests: fix describe adderesses tests
+* functional tests: fix snapshots paging
+* functional test: fix instance\_stop\_start test
+* functional tests: fix instance paging test
+* functinal tests: fix volume wating after instance termination
+* functional tests: take into account other addresses
+* functional tests: wait for 'output' field
+* functional tests: set permission for upload to s3
+* change error code and message due to Amazon changes
+* enable functional test of instance creation with two network interfaces
+* Check public key content in metadata functional test
+* Expose public key data in metadata server
+* py34: fix string conversion
+* create functional test for register\_image
+* add vpn scenario test
+* Fix names of new devices in functional tests
+* Return 'DeleteOnTermination' in VolumeAttachment struct
+* Add functional test to check not root bdm in ebs image
+* Enable functional tests on ebs instance snapshot
+* Move get\_device\_name\_prefix to base functional test module
+* Fix creation of EBS images in functional tests
+* Enable functional tests on bdm modification at instance launch
+* Enable check of volume size in ebs image test
+* fix typos
+* switch instance and image api to bdm v2
+* Add functional tests for tag support for vpn-related objects
+* Update botocore client and use cloned novaclient for functional tests
+* Fix 0.0.0.0/0 route management
+* Add a test scenario for establish of vpn connection
+* Add basic functional tests for vpn connection
+* Add basic functional tests for customer and vpn gateways
+* Try to remove some compatibility checks
+* Distinguish a preliminary address association test
+* Add a scenario test for default route behavior
+* remove hack for nova bug
+* fix calls order in scenario test
+* implement instance resizing
+* remove botocore\`s version\`s restriction
+* add source\_dest\_check to instance attributes
+* implement groupId for EC2 classic groups
+* implement describing other network interface attributes
+* implement groupSet attribute for instance attributes
+* implement modify/reset instance attribute. part 1
+* add EBS volume deletion to tests
+* add ubuntu image for testing and port instance\_restart test
+* remove ssh from tests due it in tempest-lib now
+* fix checking in paging test
+* add creationDate property to image resource
+* implement paging
+* move to botocore clients technology
+* check right error codes in image operations
+* add test for checking validity of console output
+* add fixes to images
+* add test for bug #1215527
+* upgrade rally scenarios
+* add tests for disassociation not associated address
+* Don't add exception instance in LOG.exception
+* port test for instances behavior in VPC
+* add metadata test and fix metadata logic
+* add scenario test for vpc addresses
+* Get rid of Nova DB access
+* fix delete on termination behaviour for network interfaces
+* add test for idempotent instance
+* create tags' tests
+* Enable a functional test on DeviceIndex==0
+* follow oslo
+* adding rally scenario
+* Fix translation of an image id in register image
+* rework TODO due to new tempest\_lib
+* Fix Image RootDeviceType detection for bdm v2
+* Common exception handling
+* add scenario tests
+* add tests for various cases with instance
+* fix botocore usage and do not limit botocore version
+* Remove typo
+* Port some of old ec2 scenario tests to current API tests
+* Prepare EBS image for testing
+* Reworked mechanism of disabling VPC tests
+* Add rest of api tests
+* Add more tests
+* add first functional test with infrastructure
