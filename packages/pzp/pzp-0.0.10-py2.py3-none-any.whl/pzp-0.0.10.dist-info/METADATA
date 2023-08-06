@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pzp
+Version: 0.0.10
+Summary: fzf Python clone
+Home-page: http://github.com/andreax79/pzp
+Author: Andrea Bonomi
+Author-email: andrea.bonomi@gmail.com
+License: MIT
+Keywords: struct
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+fzf Python clone
