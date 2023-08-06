@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: xia-cache
+Version: 0.1.0
+Summary: X-I-A Cache
+Home-page: https://develop.x-i-a.com/docs/xia-cache/0.1.0/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: xia-fields
+
+.. image:: https://img.shields.io/pypi/v/xia-cache.svg
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-cache/
+
+====================================
+X-I-A Cache
+====================================
+
+Define Cache Standard to accelerate XIA-Meta based infrastructure
+
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-cache
+
+
+
+
