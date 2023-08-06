@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+pywss/__init__.py
+pywss/headers.py
+pywss/openapi.py
+pywss/routing.py
+pywss/static.py
+pywss/statuscode.py
+pywss/websocket.py
+pywss.egg-info/PKG-INFO
+pywss.egg-info/SOURCES.txt
+pywss.egg-info/dependency_links.txt
+pywss.egg-info/requires.txt
+pywss.egg-info/top_level.txt
+pywss/test/__init__.py
