@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/py416/__init__.py
+src/py416/files.py
+src/py416/general.py
+src/py416/variables.py
+src/py416.egg-info/PKG-INFO
+src/py416.egg-info/SOURCES.txt
+src/py416.egg-info/dependency_links.txt
+src/py416.egg-info/top_level.txt
