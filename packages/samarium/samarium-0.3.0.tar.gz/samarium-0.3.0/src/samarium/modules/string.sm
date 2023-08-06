@@ -1,0 +1,354 @@
+UPPERCASE: "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+LOWERCASE: "abcdefghijklmnopqrstuvwxyz";
+LETTERS: UPPERCASE + LOWERCASE;
+
+OCTDIGITS: "01234567";
+DIGITS: OCTDIGITS + "89";
+HEXDIGITS: DIGITS + "abcdef";
+
+PUNCTUATION: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+WHITESPACE: " \t\n\r\f\v";
+
+PRINTABLE: LETTERS + DIGITS + PUNCTUATION + WHITESPACE;
+
+
+center string length char? * {
+    char <> " ";
+    ? char$ > / {
+        "char has to be of length 1"!!!;
+    }
+    index: \;
+    .. string$ < length {
+        ? index {
+            string: char + string;
+        } ,, {
+            string+: char;
+        }
+        index+: /;
+        index---: /\;
+    }
+    * string;
+}
+
+starts_with string prefix * {
+    ? prefix$ > string$ {
+        * \;
+    }
+    ? prefix :: string {
+        * /;
+    }
+    * string<<..prefix$>> :: prefix;
+}
+
+ends_with string suffix * {
+    ? suffix$ > string$ {
+        * \;
+    }
+    ? suffix :: string {
+        * /;
+    }
+    * string<<-suffix$..>> :: suffix;
+}
+
+split string delimiter? * {
+    delimiter <> " ";
+    ? delimiter ~~ ->? string {
+        * [string];
+    }
+    out: [];
+    temp: "";
+    ... char ->? string {
+        ? char :: delimiter {
+            out+: [temp];
+            temp: "";
+        } ,, {
+            temp+: char;
+        }
+    }
+    out+: [temp];
+    * out;
+}
+
+capitalize string * {
+    ? string$ :: \ {
+        * string;
+    }
+    * to_upper(string<<\>>) + to_lower(string<</..>>);
+}
+
+title string * {
+    * join([capitalize(w) ... w ->? split(string)], " ");
+}
+
+join iterable delimiter? * {
+    delimiter <> "";
+    o: "";
+    ... e ->? iterable {
+        o+: e.to_string();
+        o+: delimiter;
+    }
+    ? delimiter {
+        o: o<<..-delimiter$>>;
+    }
+    * o;
+}
+
+strip_left string prefix * {
+    .. starts_with(string, prefix) {
+        string: string<<prefix$..>>;
+    }
+    * string;
+}
+
+strip_right string suffix * {
+    .. ends_with(string, suffix) {
+        string: string<<..-suffix$>>;
+    }
+    * string;
+}
+
+strip string chars * {
+    * strip_left(strip_right(string, chars), chars);
+}
+
+is_wrapped string chars * {
+    * starts_with(string, chars) && ends_with(string, chars);
+}
+
+to_lower string * {
+    <-types.String;
+    ? string?! ::: String {
+        "invalid type: " + string?!.to_string()!!!;
+    }
+    out: "";
+    ... char ->? string {
+        ? char% ->? <</\\\\\/../\//\/\>> {
+            out+: (char% + /\\\\\)%;
+        } ,, {
+            out+: char;
+        }
+    }
+    * out;
+}
+
+to_upper string * {
+    <-types.String;
+    ? string?! ::: String {
+        "invalid type: " + string?!.to_string()!!!;
+    }
+    out: "";
+    ... char ->? string {
+        ? char% ->? <<//\\\\/..////\/\>> {
+            out+: (char% - /\\\\\)%;
+        } ,, {
+            out+: char;
+        }
+    }
+    * out;
+}
+
+swapcase string * {
+    out: "";
+    ... char ->? string {
+        ? is_upper(char) {
+            out+: to_lower(char);
+        } ,, {
+            out+: to_upper(char);
+        }
+    }
+    * out;
+}
+
+pad string length char? * {
+    char <> " ";
+    ? char$ > / {
+        "char has to be of length 1"!!!;
+    }
+    ? length < string$ {
+        * string;
+    }
+    * char ++ (length - string$);
+}
+
+leftpad string length char? * {
+    char <> " ";
+    * pad(string, length, char) + string;
+}
+
+rightpad string length char? * {
+    char <> " ";
+    * string + pad(string, length, char);
+}
+
+is_upper string * {
+    * string :: to_upper(string);
+}
+
+is_lower string * {
+    * string :: to_lower(string);
+}
+
+is_title string * {
+    * string :: title(string);
+}
+
+is_capitalized string * {
+    * string :: capitalize(string);
+}
+
+is_in_group string group * {
+    ... char ->? string {
+        ? char ~~->? group { * \; }
+    }
+    * /;
+}
+
+is_alphabetic string * {
+    * is_in_group(string, LETTERS);
+}
+
+is_alphanumeric string * {
+    * is_in_group(string, LETTERS + DIGITS);
+}
+
+is_decimal string * {
+    * is_in_group(string, DIGITS);
+}
+
+is_octal string * {
+    * is_in_group(string, OCTDIGITS);
+}
+
+is_hexadecimal string * {
+    * is_in_group(string, HEXDIGITS);
+}
+
+wrap string wrapper * {
+    * wrapper + string + wrapper;
+}
+
+format string fields * {
+    <-types.Array, Table;
+    <-iter.enumerate;
+    ? fields?! :: Array {
+        fields: {{i -> v ... i, v ->? enumerate(fields)}};
+    }
+    ? fields?! ::: Table {
+        "invalid type: " + fields?!.to_string()!!!;
+    }
+    ? ~~ fields {
+        * string;
+    }
+    new_string: "";
+    index: \;
+    .. index < string$ {
+        char: string<<index>>;
+        ? char ::: "$" {
+            new_string+: char;
+            index+: /;
+        } ,, ? string<<index + />> :: "$" {
+            new_string+: "$";
+            index+: /\;
+        } ,, {
+            ... k ->? fields {
+                v: fields<<k>>.to_string();
+                k: k.to_string();
+                ? string<<index + /..index + k$ + />> :: k {
+                    new_string+: v;
+                    index+: k$ + /;
+                    <-;
+                }
+            }
+        }
+    }
+    * new_string;
+}
+
+replace string replacements count? * {
+    count <> -/;
+    <-iter.all, find, zip;
+    <-types.String, Table;
+
+    replace string from to count * {
+        empty * {
+            ? ~~ from { * to; }
+            * string;
+        }
+
+        interleave count * {
+            out: to;
+            count-: /;
+            ... i ->? string {
+                out+: i;
+                ? count {
+                    out+: to;
+                    count-: /;
+                }
+            }
+            * out;
+        }
+
+        del_char count * {
+            out: "";
+            ... i ->? string {
+                ? count && i :: from {
+                    count-: /;
+                } ,, {
+                    out+: i;
+                }
+            }
+            * out;
+        }
+
+        replace_substring count * {
+            string_copy: string;
+            out: "";
+            .. count && from ->? string_copy {
+                i: find(string_copy, from);
+                out+: string_copy<<..i>>;
+                out+: to;
+                string_copy: string_copy<<i + from$..>>;
+                count-: /;
+            }
+            * out + string_copy;
+        }
+
+        replace_char count * {
+            out: "";
+            ... i ->? string {
+                ? i :: from && count {
+                    out+: to;
+                    count-: /;
+                } ,, {
+                    out+: i;
+                }
+            }
+            * out;
+        }
+
+        ? ~~ string {
+            * empty();
+        } ,, ? ~~ from {
+            * interleave(count);
+        } ,, ? from$ :: / {
+            ? ~~ to {
+                * del_char(count);
+            }
+            * replace_char(count);
+        } ,, {
+            * replace_substring(count);
+        }
+    }
+
+    ? replacements?! ::: Table {
+        "invalid type for replacements: " + String(replacements?!)!!!;
+    }
+    replacements: {{k -> v ... k, v ->? zip([replacements.iterate(), replacements$])}};
+    ? ~~ all([count, replacements]) {
+        * string;
+    }
+    ... f, t ->? zip([replacements.iterate(), replacements$]) {
+        string: replace(string, f, t, count);
+    }
+    * string;
+}
