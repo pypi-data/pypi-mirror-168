@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fsonbase
+Version: 0.1.5
+Summary: Simple generator of tree data structure for your dirs
+Home-page: https://github.com/Fadix47/fsonbase
+Author: Fadix Meier
+Author-email: fadix18123@gmail.com
+Project-URL: Bug Tracker, https://github.com/Fadix47/fsonbase/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+
+**Documentation**
+You can find documentation here: https://github.com/Fadix47/fsonbase/blob/main/README.md
