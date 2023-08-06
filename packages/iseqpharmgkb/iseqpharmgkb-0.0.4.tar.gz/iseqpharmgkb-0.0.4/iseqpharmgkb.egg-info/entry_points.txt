@@ -1,0 +1,4 @@
+[console_scripts]
+create_database = pharmgkb.create_database:main
+get_clinical_annotation = pharmgkb.get_clinical_annotation:main
+get_variant_annotation = pharmgkb.get_variant_annotation:main
