@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "flooss"
+version = "0.1.1"
+description = "Generates reports and plots for my expenses when I travel."
+authors = ["Taha GHAZOUANI <ghazouani.taha@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+pandas = "1.3.5"
+bokeh = "^2.4.3"
+openpyxl = "^3.0.10"
+
+[tool.scriv]
+format = "md"
+version = "literal: flooss/__init__.py: __version__"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.3"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
