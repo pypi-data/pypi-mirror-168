@@ -1,0 +1,9 @@
+ood_detection/__init__.py,sha256=46Yjk3fz9o8aTN8E95McnzpJcjGzVJmHmQqUZ5mXzfc,22
+ood_detection/_modidx.py,sha256=XdyxNOPBrEvDBG7pg39hsz_jk_-3KSIdHZsgJb4z60s,1260
+ood_detection/core.py,sha256=MZuKVKjnhXYOdBNIgYJApnhk8TEmxBx8YubSGJzKiwc,4593
+ood_detection-0.0.9.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+ood_detection-0.0.9.dist-info/METADATA,sha256=yfByWxAuqvIvvYoMDm4mXyP7_OLw1ctJz54wCf6UYnw,3153
+ood_detection-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ood_detection-0.0.9.dist-info/entry_points.txt,sha256=DhipM3otQXXSN4gzflipGO1DV5EMoKW_DGgmO7RiTZE,48
+ood_detection-0.0.9.dist-info/top_level.txt,sha256=Cu0M9n28iBUzZTfHOC0GuWSTfw_GM3BcqA275pYjL6Y,14
+ood_detection-0.0.9.dist-info/RECORD,,
