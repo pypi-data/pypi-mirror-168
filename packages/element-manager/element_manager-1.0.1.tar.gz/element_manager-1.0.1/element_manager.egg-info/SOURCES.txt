@@ -1,0 +1,13 @@
+README.md
+setup.py
+element_manager/Compare_Xpath.py
+element_manager/FindElements.py
+element_manager/FindXpath.py
+element_manager/MatchAttributes.py
+element_manager/ReportError.py
+element_manager/__init__.py
+element_manager.egg-info/PKG-INFO
+element_manager.egg-info/SOURCES.txt
+element_manager.egg-info/dependency_links.txt
+element_manager.egg-info/requires.txt
+element_manager.egg-info/top_level.txt
