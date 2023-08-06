@@ -1,0 +1,23 @@
+# @package model
+
+_target_: moai.networks.lightning.factory.VariationalAutoencoder
+configuration:
+  repeat_val: 7
+  traversal_len: 7
+  traversal_step: 0.25
+  traversal_dim: -1
+  traversal_init_value: -0.75
+  reparametrization:
+    latent_dim: 19
+    enc_out_dim: 256
+  linear:
+    type: ???
+    activation:
+      type: ???
+io:
+  encoder:
+    out: ???
+  reparametrization:
+    out: ???
+  decoder:  
+    out: ???
