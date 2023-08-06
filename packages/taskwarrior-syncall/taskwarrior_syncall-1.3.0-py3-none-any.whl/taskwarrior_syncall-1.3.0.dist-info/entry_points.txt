@@ -1,0 +1,6 @@
+[console_scripts]
+tw_asana_sync=taskwarrior_syncall.scripts.tw_asana_sync:main
+tw_gcal_sync=taskwarrior_syncall.scripts.tw_gcal_sync:main
+tw_gkeep_sync=taskwarrior_syncall.scripts.tw_gkeep_sync:main
+tw_notion_sync=taskwarrior_syncall.scripts.tw_notion_sync:main
+
