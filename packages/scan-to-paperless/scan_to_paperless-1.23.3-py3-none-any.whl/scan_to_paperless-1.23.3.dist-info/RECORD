@@ -1,0 +1,14 @@
+scan_to_paperless/__init__.py,sha256=tUN4sNBJIgzpvuBBbT_mr4I5unJtw1TbU-n1HN9Mgzc,1035
+scan_to_paperless/config.py,sha256=uZQb9kC5jBxlUNreYeCEKLK5s65oHDx9sJKG7VnlG_A,3878
+scan_to_paperless/config_old.py,sha256=KiEmWF8IyAEhttI-LlvCxGqaTrN0QVBxld2BAagxnTk,157
+scan_to_paperless/config_schema.json,sha256=f3e8gaSVvPevV3N7Bbs1Zbb4JMXCU7STGER7DeQvJhg,4927
+scan_to_paperless/process.py,sha256=qmBt4IuO08W_Tb-zj8KdNXsvw7pCzjy4hLiOwWE8pOc,49151
+scan_to_paperless/process_schema.json,sha256=uqfPX6LsTNqJXwMI_WiqZ5ha8RnyUNlO_AwbY8fu2gw,11120
+scan_to_paperless/process_schema.py,sha256=vCRp5CFBp3PwGZNBrnHxCwhRwwMnZvGrFs6YdOl6Vuk,8079
+scan_to_paperless/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scan_to_paperless/scan.py,sha256=9ZOaegz9EIFR8HACJEfkffDWoQTSYKn6gxsmlF8i9G8,7093
+scan_to_paperless/scan_process_status.py,sha256=4FVPRpsYeomHB-VBPvbVVDFaFZsFTjcIfXfriMjLvUs,2578
+scan_to_paperless-1.23.3.dist-info/entry_points.txt,sha256=-CkNFrtHwqdWVKNoHx3NKjEWMCollqUq8om90Ed4BFY,159
+scan_to_paperless-1.23.3.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+scan_to_paperless-1.23.3.dist-info/METADATA,sha256=rSbGOW23Hjj4Aq9TXzS0SlfL5aAXDHwFQhCFoyKTImw,8470
+scan_to_paperless-1.23.3.dist-info/RECORD,,
