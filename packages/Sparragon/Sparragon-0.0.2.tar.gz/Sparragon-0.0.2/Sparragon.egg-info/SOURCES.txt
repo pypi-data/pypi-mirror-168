@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Sparragon.egg-info/PKG-INFO
+Sparragon.egg-info/SOURCES.txt
+Sparragon.egg-info/dependency_links.txt
+Sparragon.egg-info/top_level.txt
+sparragon/Ressources.py
+sparragon/__init__.py
+sparragon/fakeuser.py
+tests/test_fakeuser.py
