@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tjutils"
+version = "0.1.0"
+description = "Python Utilities for TJ P"
+authors = ["TJ P <mail@tjpalanca.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.971"
+black = "^22.8.0"
+flake8 = "^5.0.4"
+bandit = "^1.7.4"
+nbdev = "^2.3.6"
+ipykernel = "^6.15.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
