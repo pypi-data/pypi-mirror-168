@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hacker_dev_sdk
+Version: 0.0.1
+Summary: A useful, general SDK for hackers
+Home-page: https://github.com/shellfeel/HackerDevSdk.git
+Author: 9eek
+Author-email: voodoos_hearty.0e@icloud.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hacker development sdk
+
+specialized sdk for hacker
