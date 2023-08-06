@@ -1,0 +1,2 @@
+[console_scripts]
+scoutbot = scoutbot.scoutbot:cli
