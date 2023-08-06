@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/pyneng_quiz/__init__.py
+src/pyneng_quiz/help_table_widget.py
+src/pyneng_quiz/question_table_widget.py
+src/pyneng_quiz/questions.json
+src/pyneng_quiz/select_questions_widget.py
+src/pyneng_quiz/termquiz.py
+src/pyneng_quiz.egg-info/PKG-INFO
+src/pyneng_quiz.egg-info/SOURCES.txt
+src/pyneng_quiz.egg-info/dependency_links.txt
+src/pyneng_quiz.egg-info/entry_points.txt
+src/pyneng_quiz.egg-info/requires.txt
+src/pyneng_quiz.egg-info/top_level.txt
