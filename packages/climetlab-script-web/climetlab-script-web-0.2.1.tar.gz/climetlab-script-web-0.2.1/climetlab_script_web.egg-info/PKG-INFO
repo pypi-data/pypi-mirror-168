@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: climetlab-script-web
+Version: 0.2.1
+Summary: Example climetlab external dataset plugin
+Home-page: https://github.com/ecmwf-lab/climetlab-script-web
+Author: European Centre for Medium-Range Weather Forecasts (ECMWF)
+Author-email: software.support@ecmwf.int
+License: Apache License Version 2.0
+Keywords: meteorology
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+License-File: AUTHORS.md
+
+# CliMetLab Web
+
+A web application to manage the cache content and configuration settings of the [CliMetLab](https://github.com/ecmwf/climetlab) Python package.
+
+## Installation
+
+Installation in a virtual environment is advised.
+
+```
+pip install climetlab-script-web
+```
+
+## Contributing
+
+See `CONTRIBUTING.md`.
+
+# Licence
+
+Apache License 2.0 In applying this licence, ECMWF does not waive the privileges and immunities granted to it by virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
+
+
