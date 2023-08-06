@@ -1,0 +1,17 @@
+fbrc/__init__.py,sha256=ms5Y8ZzjqEG-cjDGa7cRTwG2yZd8hezoegCP2ScMMjk,1209
+fbrc/frontend/build/asset-manifest.json,sha256=mnqrsi7HIGC0AJb_-9bCmjINjI4oPqjERSODKE4iGPU,859
+fbrc/frontend/build/index.html,sha256=1iK4paf-JvEo-MIP2jNAX_yAqS5Y09HJCmYjfRAfR0Q,2031
+fbrc/frontend/build/precache-manifest.b2a9c8472435d9e2e6f916b02a6e0e8f.js,sha256=2Uz-Pt9z9s4j5XhZiUql33VC8W1E2MHDkbXirBWVye8,564
+fbrc/frontend/build/service-worker.js,sha256=ygexUh0mPcZr9sxRYo0wpvrWFyZlE1cX9GFSFLaj2PA,1183
+fbrc/frontend/build/static/js/2.8a7be6ee.chunk.js,sha256=OlF0TKVQUEfBcPgM8lM-Yk6xPhSGN8BK8FdArTo1FI0,587925
+fbrc/frontend/build/static/js/2.8a7be6ee.chunk.js.LICENSE.txt,sha256=lVvfHqYhTMfSiC003aw_mTs54xW0LThUZ4nLk9qiGpI,4338
+fbrc/frontend/build/static/js/2.8a7be6ee.chunk.js.map,sha256=_BCn69E4bBcoGw0PjhY_hTl1QwTwTWxrWGogW-m4vrE,1566597
+fbrc/frontend/build/static/js/main.0e51aef3.chunk.js,sha256=Pw3Wc1-Kv3vYsHIsR5KiKcgCU05v6KPn2yi2MvTowzc,797
+fbrc/frontend/build/static/js/main.0e51aef3.chunk.js.map,sha256=-iDCOYc-dHUp7zlAM6YIWgxqQI8Vt05gIwGA8GnAimY,2430
+fbrc/frontend/build/static/js/runtime-main.44d30fc2.js,sha256=toj-1BqxEPzgcNcqTTcDNMeGtNl9LgPrROO3vb-jf8c,1598
+fbrc/frontend/build/static/js/runtime-main.44d30fc2.js.map,sha256=-iE0MrpVwJyyReKi6mqKvIQ_z-xffYHxch4CWSOya4s,8317
+streamlit_firebase_remote_config_component-0.0.1.dist-info/LICENSE,sha256=9VDWIUfeWnnobvVpN2KtC5cHaNpAmxhdjyF4LivEPNw,1063
+streamlit_firebase_remote_config_component-0.0.1.dist-info/METADATA,sha256=h7TViuyvsswPBxMCvHKiyW6akyt0UhiJU27JGJY9xLA,585
+streamlit_firebase_remote_config_component-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+streamlit_firebase_remote_config_component-0.0.1.dist-info/top_level.txt,sha256=F_791-qRPXnCmSdW9GjmVegIFTDHKzm-HV2VIbJqZEE,5
+streamlit_firebase_remote_config_component-0.0.1.dist-info/RECORD,,
