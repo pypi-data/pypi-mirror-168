@@ -1,0 +1,9 @@
+quip/__init__.py,sha256=_9efzVLg9MypidzDHGDugbH9h16-p-5PqVr6EakuvuU,23
+quip/field_builder.py,sha256=1tvkATcLPn6bDo2d_YpAj629TatAbTVzU1zwo-v-mRA,17936
+quip/quip.py,sha256=MUUqdu7qw7WctSAUCJklCH8MLRYXiHOfxpOwBR8470k,54117
+quip/version_builder.py,sha256=Vyjq2c-pLF3tYS1IDjcYoT_odW1anBFXMvE4tenO8xs,6073
+quip_cli-1.6.1.dist-info/METADATA,sha256=bBJn-rrkt7kGxeJHnog09mC0xhp9KrbbwsAQawHR8ac,23203
+quip_cli-1.6.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quip_cli-1.6.1.dist-info/entry_points.txt,sha256=uszhMUc-8iKUwzLMFyBpvFaKSjoGKCzukwv50oHSNrg,39
+quip_cli-1.6.1.dist-info/top_level.txt,sha256=NPhJGwuIRCKkrx648cJCXqIWzz4VUUVqslkuIKLKZd4,5
+quip_cli-1.6.1.dist-info/RECORD,,
