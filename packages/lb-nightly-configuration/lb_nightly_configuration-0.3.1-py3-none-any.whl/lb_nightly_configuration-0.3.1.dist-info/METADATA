@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lb-nightly-configuration
+Version: 0.3.1
+Summary: classes and functions to suppot the LHCb Nightly Build System configuration
+License: GPL-3.0-only
+Author: Marco Clemencic
+Author-email: marco.clemencic@cern.ch
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: graph
+Requires-Dist: GitPython (>=3.1.18,<4.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: configurator (>=2.6.0,<3.0.0)
+Requires-Dist: networkx (>=2.6.1,<3.0.0); extra == "graph"
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
