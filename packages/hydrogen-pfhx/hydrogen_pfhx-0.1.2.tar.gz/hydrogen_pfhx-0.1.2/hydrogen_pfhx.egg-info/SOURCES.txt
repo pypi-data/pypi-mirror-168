@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+hydrogen_pfhx.egg-info/PKG-INFO
+hydrogen_pfhx.egg-info/SOURCES.txt
+hydrogen_pfhx.egg-info/dependency_links.txt
+hydrogen_pfhx.egg-info/requires.txt
+hydrogen_pfhx.egg-info/top_level.txt
+hydrogen_pfhx.egg-info/zip-safe
