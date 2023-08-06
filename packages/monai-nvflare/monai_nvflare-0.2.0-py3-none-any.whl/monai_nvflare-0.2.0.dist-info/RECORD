@@ -1,0 +1,7 @@
+monai_nvflare/__init__.py,sha256=uUbsQm9qiSD3AjXVLbztQr9yI54tZVtokFw6uo97_1g,615
+monai_nvflare/client_algo_executor.py,sha256=hUtoNPnJhjy3bxyoseRg3bfXXhXh2eyaAzWm0-E993c,10203
+monai_nvflare/monai_bundle_persistor.py,sha256=lGtBf-wHQ1vjSST-xKCjjtCYG7wXgQUP8Ljc2V2YCtY,4839
+monai_nvflare-0.2.0.dist-info/METADATA,sha256=iSOvHXf5dLtXVAK_7Z-qktPN0X47KYvt-ZPkFgMI8Ro,1960
+monai_nvflare-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+monai_nvflare-0.2.0.dist-info/top_level.txt,sha256=VDiu-tAUOUqzkR4VFFKlXWg8mx6WbUj6rIa8mrZgZWI,14
+monai_nvflare-0.2.0.dist-info/RECORD,,
