@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/weavedoc/__init__.py
+src/weavedoc/weavedoc.py
+src/weavedoc.egg-info/PKG-INFO
+src/weavedoc.egg-info/SOURCES.txt
+src/weavedoc.egg-info/dependency_links.txt
+src/weavedoc.egg-info/top_level.txt

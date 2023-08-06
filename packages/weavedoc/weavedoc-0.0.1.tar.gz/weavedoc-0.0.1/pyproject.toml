@@ -1,0 +1,19 @@
+[project]
+name = "weavedoc"
+version = "0.0.1"
+authors = [
+  { name="Erik Kamsties", email="weavedoc@example.com" },
+]
+description = "Static website generator for Markdown using YAML"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/weavedoc"
+"Bug Tracker" = "https://github.com/pypa/weavedoc/issues"
