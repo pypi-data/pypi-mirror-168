@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+klupywpredictor1.0.egg-info/PKG-INFO
+klupywpredictor1.0.egg-info/SOURCES.txt
+klupywpredictor1.0.egg-info/dependency_links.txt
+klupywpredictor1.0.egg-info/requires.txt
+klupywpredictor1.0.egg-info/top_level.txt
+klupywpredictorss/__init__.py
+klupywpredictorss/crash.py
+klupywpredictorss/mines.py
+klupywpredictorss/towers.py
