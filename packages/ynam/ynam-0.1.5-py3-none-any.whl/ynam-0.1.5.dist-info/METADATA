@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ynam
+Version: 0.1.5
+Summary: Automate importing of Mint transactions into YNAB
+Home-page: https://github.com/snowskeleton/ynam
+Author: snowskeleton
+Author-email: isaac@snowskeleton.net
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mintapi
+

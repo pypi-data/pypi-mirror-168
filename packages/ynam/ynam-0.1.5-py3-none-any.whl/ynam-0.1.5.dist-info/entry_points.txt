@@ -1,0 +1,2 @@
+[console_scripts]
+ynam = ynam.main:main
