@@ -1,0 +1,15 @@
+numpy
+
+[optional]
+fiona
+flopy
+matplotlib
+netCDF4
+rasterio
+scipy
+shapely
+xarray
+
+[test]
+pytest
+pytest-xdist
