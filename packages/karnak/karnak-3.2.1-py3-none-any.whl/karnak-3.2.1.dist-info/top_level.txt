@@ -1,0 +1,6 @@
+aws
+build
+dist
+karnak
+karnak3
+test
