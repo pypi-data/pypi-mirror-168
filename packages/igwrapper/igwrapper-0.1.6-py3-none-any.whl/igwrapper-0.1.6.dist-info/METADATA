@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: igwrapper
+Version: 0.1.6
+Summary: 
+Author: sohaib94
+Author-email: sohaib.ashraf94@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp[aiodns,brotli] (>=3.8.1,<4.0.0)
+Requires-Dist: lightstreamer-client-lib (>=1.0.0b2,<2.0.0)
+Description-Content-Type: text/markdown
+
+
