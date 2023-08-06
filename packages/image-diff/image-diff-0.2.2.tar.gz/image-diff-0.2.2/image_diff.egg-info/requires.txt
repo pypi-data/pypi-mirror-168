@@ -1,0 +1,6 @@
+click
+Pillow
+click-default-group
+
+[test]
+pytest

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+image_diff/__init__.py
+image_diff/__main__.py
+image_diff/cli.py
+image_diff.egg-info/PKG-INFO
+image_diff.egg-info/SOURCES.txt
+image_diff.egg-info/dependency_links.txt
+image_diff.egg-info/entry_points.txt
+image_diff.egg-info/requires.txt
+image_diff.egg-info/top_level.txt
