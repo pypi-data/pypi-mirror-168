@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "mixver"
+version = "0.1.1"
+description = "Custom versioning of ML models"
+authors = ["hectorLop <lopez.almazan.hector@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rich = "^12.5.1"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.20.0"
+black = "^22.1.0"
+coverage = "^5.5"
+isort = "^5.9.2"
+mypy = "^0.941"
+pylint = "^2.14.5"
+pytest = "^7.1.2"
+pytest-mock = "^3.8.2"
+
+[tool.pylint.BASIC]
+min-public-methods = 0
+
+    [tool.pylint."MESSAGES CONTROL"]
+    persistent = "no"
+    max-line-length = 120
+    disable = [
+        "duplicate-code",
+        "missing-module-docstring",
+        "fixme",
+    ]
+    max-args = 6
+    extension-pkg-whitelist = "pydantic"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
