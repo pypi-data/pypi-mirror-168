@@ -1,0 +1,5 @@
+h5py
+sphinx_rtd_theme
+
+[test]
+coverage

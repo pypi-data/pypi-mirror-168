@@ -1,0 +1,8 @@
+include utils/*
+include doc/source/*
+include doc/source/tutorials/*
+include doc/source/mpitutorials/*
+include doc/source/_static/*
+include Makefile
+include LICENSE.txt
+include RELEASE.md

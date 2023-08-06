@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: anamnesis
+Version: 1.0.4
+Summary: Object serialisation to/from HDF5 and via MPI
+Home-page: UNKNOWN
+Author: Mark Hymers
+Author-email: mark.hymers@hankel.co.uk
+License: GPL-2+
+Description: # anamnesis
+        
+        This repository contains the anamnesis python module.  This is a python module
+        which enables easy serialisation of python objects to/from HDF5 files as well
+        as between machines using the Message Passing Interface (MPI) via mpi4py.
+        
+        anamnesis was originally part of the Neuroimaging Analysis Framework (NAF)
+        which is available from <https://vcs.ynic.york.ac.uk/naf>.  It was split out as a
+        separate module in order to allow for its use in other modules (such as the
+        replacement for NAF, YNE: <https://github.com/sails-dev/yne>.
+        
+        
+        # Authors
+        
+         * Mark Hymers <mark.hymers@hankel.co.uk>
+        
+        
+        # License
+        
+        This project is currently licensed under the GNU General Public Licence 2.0
+        or higher.  For alternative license arrangements, please contact the authors.
+        
+        
+        # Dependencies
+        
+        See the `requirements.txt` file.
+        
+        Some of these aren't strict dependencies, but are instead what we develop
+        against (i.e. we don't guarantee not to use features which only exist from that
+        release onwards).
+        
+Keywords: hdf5 mpi serialisation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
