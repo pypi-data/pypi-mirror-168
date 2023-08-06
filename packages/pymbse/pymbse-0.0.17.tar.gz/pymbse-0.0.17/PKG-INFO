@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pymbse
+Version: 0.0.17
+Summary: 
+Author: mmaciejewski
+Author-email: michal.maciejewski@ief.ee.ethz.ch
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: nbconvert (>=6.5.0,<7.0.0)
+Requires-Dist: papermill (>=2.3.4,<3.0.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: pymbse-commons (>=0.0.6,<0.0.7)
+Requires-Dist: scrapbook (>=0.5.0,<0.6.0)
