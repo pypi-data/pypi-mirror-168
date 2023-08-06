@@ -1,0 +1,7 @@
+python-dateutil
+parsedatetime
+icalendar
+recurring_ical_events
+
+[parsedatetime]
+parsedatetime

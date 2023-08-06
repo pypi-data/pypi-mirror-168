@@ -1,0 +1,148 @@
+import calendar
+import time
+import locale
+import six
+import re
+from dateutil.tz import tzlocal
+from dateutil.parser import parse as dateutil_parse
+from datetime import datetime, timedelta
+from parsedatetime.parsedatetime import Calendar
+
+locale.setlocale(locale.LC_ALL, '')
+fuzzy_date_parse = Calendar().parse
+
+valid_override_colors = [
+    "lavender",
+    "sage",
+    "grape",
+    "flamingo",
+    "banana",
+    "tangerine",
+    "peacock",
+    "graphite",
+    "blueberry",
+    "basil",
+    "tomato",
+]
+
+override_color_map = {x[1]: x[0]
+                      for x in list(enumerate(valid_override_colors, start=1))}
+
+
+def parse_reminder(rem):
+    matchObj = re.match(r'^(\d+)([wdhm]?)(?:\s+(popup|email|sms))?$', rem)
+    if not matchObj:
+        # Allow argparse to generate a message when parsing options
+        return None
+    n = int(matchObj.group(1))
+    t = matchObj.group(2)
+    m = matchObj.group(3)
+    if t == 'w':
+        n = n * 7 * 24 * 60
+    elif t == 'd':
+        n = n * 24 * 60
+    elif t == 'h':
+        n = n * 60
+
+    if not m:
+        m = 'popup'
+
+    return n, m
+
+
+def set_locale(new_locale):
+    try:
+        locale.setlocale(locale.LC_ALL, new_locale)
+    except locale.Error as exc:
+        raise ValueError(
+                'Error: ' + str(exc) +
+                '!\n Check supported locales of your system.\n')
+
+
+def _u(text):
+    encoding = locale.getlocale()[1] or \
+            locale.getpreferredencoding(False) or "UTF-8"
+    if issubclass(type(text), six.text_type):
+        return text
+    if not issubclass(type(text), six.string_types):
+        if six.PY3:
+            if isinstance(text, bytes):
+                return six.text_type(text, encoding, 'replace')
+            else:
+                return six.text_type(text)
+        elif hasattr(text, '__unicode__'):
+            return six.text_type(text)
+        else:
+            return six.text_type(bytes(text), encoding, 'replace')
+    else:
+        return text.decode(encoding, 'replace')
+
+
+def get_times_from_duration(when, duration=0, allday=False):
+
+    try:
+        start = get_time_from_str(when)
+    except Exception:
+        raise ValueError('Date and time is invalid: %s\n' % (when))
+
+    if allday:
+        try:
+            stop = start + timedelta(days=float(duration))
+        except Exception:
+            raise ValueError(
+                    'Duration time (days) is invalid: %s\n' % (duration))
+
+        start = start.date().isoformat()
+        stop = stop.date().isoformat()
+
+    else:
+        try:
+            stop = start + timedelta(minutes=float(duration))
+        except Exception:
+            raise ValueError(
+                    'Duration time (minutes) is invalid: %s\n' % (duration))
+
+        start = start.isoformat()
+        stop = stop.isoformat()
+
+    return start, stop
+
+
+def get_start_time_from_str(when):
+    return get_time_from_str(when, start=True)
+
+
+def get_end_time_from_str(when):
+    return get_time_from_str(when, start=False)
+
+
+def get_time_from_str(when, start=True):
+    """Convert string to time (fuzzy matching with parsedatetime)
+    Change datetime to beginning/end of day when start is True/False
+
+    Example strings parsed by fuzzy_date_parse:
+    3d, 2w, 1y for three days, two weeks and one year from today
+    2 months cannot be abbreviated as 2m which is two minutes
+    -5 d, -4 w, -1 y (note: space is required after negative number)
+    3d ago, 3w ago, 1 month ago
+    last Fri, last month, last year, last Aug, last August
+    next week, next month, next year, next August
+    next August means end of August, but 1 month means same day next month
+    decimals like -0.25 y are allowed
+    """
+
+    struct, result = fuzzy_date_parse(when)
+    if not result:
+        raise ValueError("Date and time is invalid: %s" % (when))
+    event_time = datetime.fromtimestamp(time.mktime(struct), tzlocal())
+    if start:
+        return event_time.replace(
+            hour=0, minute=0, second=0, microsecond=0)
+    else:
+        return event_time.replace(
+            hour=23, minute=59, second=59, microsecond=10**6-1)
+
+
+def days_since_epoch(dt):
+    __DAYS_IN_SECONDS__ = 24 * 60 * 60
+    return calendar.timegm(dt.timetuple()) / __DAYS_IN_SECONDS__
