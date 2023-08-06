@@ -1,0 +1,13 @@
+sheriff/__init__.py,sha256=yzehau4QQa0t98tkOn3f-QvWjp6rpatkplZbu2eb-Ik,93
+sheriff/gui.py,sha256=yehkVQhdQ6rRqSQTr2mMfhlZ5FwjAFSxGB-uRx87Lds,17047
+sheriff/gui_data/data/HaarCascadeClassifier.xml,sha256=t-AN0yUT8RwY-r1Aet_Hc94Sn_-9v8HUo5VMAOceULc,375639
+sheriff/gui_data/res/bg.png,sha256=OfDcdJGEJBPysBEAXJ3t9c5Sx1ki3aL2zX3j_YHAmM0,33827
+sheriff/gui_data/res/logo.ico,sha256=MVXH_O6_1Y7356Y2oTbCohjm9weZ5YRy2pZOE8gDMUY,67646
+sheriff/gui_data/res/logo.png,sha256=fDjM4dRnsHIj4_Uovt5vUh7BY_YrN9b2nn7tA_owP1Q,4190
+sheriff/gui_data/res/font/KeepCalm-Medium.ttf,sha256=erFtQpgKMg9u79VqOHlIzs7gkPdMFFH_cKTqdItWskc,86716
+sheriff/gui_data/scripts/app.ui,sha256=D353nk3wK3LLKMCSX9QR1mk4kCwrIxtLjYKelaxe2FY,5169
+sheriff-1.6.dist-info/LICENSE.txt,sha256=uoVRUe663a5Fjja0UmWeijz_Mm2zyYgD0BQfD3s59sk,1090
+sheriff-1.6.dist-info/METADATA,sha256=52N2rT5_o1oskBGbEqNbmvQZTAlWxP1pjTBrA9mY0E8,5784
+sheriff-1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sheriff-1.6.dist-info/top_level.txt,sha256=1vH1qvrVikJzFZ3HlAShCDSCpkMhyEtaTxbKx8Gl7YQ,8
+sheriff-1.6.dist-info/RECORD,,
