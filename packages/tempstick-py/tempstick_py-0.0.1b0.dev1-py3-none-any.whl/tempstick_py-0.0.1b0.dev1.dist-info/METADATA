@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tempstick-py
+Version: 0.0.1b0.dev1
+Project-URL: Issues, https://github.com/WoosterFromWA/tempstick-py/issues
+Project-URL: Source, https://github.com/WoosterFromWA/tempstick-py
+Author-email: Karl Wooster <karl@woostertech.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: furl
+Requires-Dist: python-benedict
+Description-Content-Type: text/markdown
+
+# tempstick-py
+A simple package to connect with the tempstick.com API
