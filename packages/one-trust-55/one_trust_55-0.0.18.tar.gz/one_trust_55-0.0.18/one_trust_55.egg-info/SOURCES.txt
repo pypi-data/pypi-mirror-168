@@ -1,0 +1,11 @@
+README.md
+setup.py
+one_trust/__init__.py
+one_trust/file_handle.py
+one_trust/main.py
+one_trust/ot_class.py
+one_trust_55.egg-info/PKG-INFO
+one_trust_55.egg-info/SOURCES.txt
+one_trust_55.egg-info/dependency_links.txt
+one_trust_55.egg-info/requires.txt
+one_trust_55.egg-info/top_level.txt
