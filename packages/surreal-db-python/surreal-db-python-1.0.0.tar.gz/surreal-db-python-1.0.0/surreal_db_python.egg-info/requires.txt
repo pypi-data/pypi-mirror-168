@@ -1,0 +1,7 @@
+requests
+aiohttp
+yarl
+
+[speed]
+orjson
+aiohttp[speedups]

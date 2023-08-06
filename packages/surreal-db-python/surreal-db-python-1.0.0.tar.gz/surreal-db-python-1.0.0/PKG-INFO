@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: surreal-db-python
+Version: 1.0.0
+Summary: Python client for the Surreal Database (Websocket not supported)
+Home-page: https://github.com/timelessnesses/surreal-db-python
+Author: Rukchad Wongprayoon
+Author-email: contact@rukchadisa.live
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+Provides-Extra: speed
+
+# surreal-db-python
+
+A pure python (and compilable) database client for SurrealDB.
+
+## Installation
+
+1. Install with
+
+```bash
+pip install surreal-db-python
+```
+
+See how to build your own wheel [here](#build-from-source)
+
+2. (Optional) You could make library pure python by set `SURREAL_BUILD_NO_COMPILE` enviroment variable to 1
+
+## Usage
+
+```py
+import surreal
+
+client = surreal.SurrealDB(
+    host: str,
+    username: str,
+    password: str,
+    db: str,
+    namespace: str
+)
+
+client.execute("CREATE deez:nut SET nice = 69 + 420;")
+client.fetch("SELECT * FROM deez:nut;")
+```
+
+## Features
+
+- Supported Asynchronous Operation (with class `AsyncSurrealDB`) (`AsyncSurrealDB` have same API as `SurrealDB but you await them.)
+- (not) Supported websocket (yet)
+
+## Build from source
+
+1. Clone repository
+
+2. `poetry install`
+
+3. `./setup.py install`
+
+
