@@ -1,0 +1,3 @@
+[console_scripts]
+seGMM = seGMM.main:main
+
