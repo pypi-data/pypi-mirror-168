@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyOMA/PyOMA.py
+PyOMA/__init__.py
+Py_OMA.egg-info/PKG-INFO
+Py_OMA.egg-info/SOURCES.txt
+Py_OMA.egg-info/dependency_links.txt
+Py_OMA.egg-info/requires.txt
+Py_OMA.egg-info/top_level.txt
