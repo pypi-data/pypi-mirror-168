@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+simple_logging_setup/__init__.py
+simple_logging_setup/configuration.py
+simple_logging_setup/filter.py
+simple_logging_setup/formatter.py
+simple_logging_setup/platform.py
+simple_logging_setup.egg-info/PKG-INFO
+simple_logging_setup.egg-info/SOURCES.txt
+simple_logging_setup.egg-info/dependency_links.txt
+simple_logging_setup.egg-info/top_level.txt

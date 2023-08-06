@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: simple-logging-setup
+Version: 0.1
+Summary: simple-logging-setup
+Home-page: https://github.com/fscherf/simple-logging-setup
+Author: Florian Scherf
+Author-email: mail@florianscherf.de
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+simple-logging-setup
+====================
+
+.. image:: https://img.shields.io/pypi/l/simple-logging-setup.svg
+    :alt: license MIT
+    :target: https://pypi.org/project/simple-logging-setup
+.. image:: https://img.shields.io/pypi/pyversions/simple-logging-setup.svg
+    :alt: python 3
+    :target: https://pypi.org/project/simple-logging-setup
+.. image:: https://img.shields.io/pypi/v/simple-logging-setup.svg
+    :alt: latest version
+    :target: https://pypi.org/project/simple-logging-setup
+
+
+
