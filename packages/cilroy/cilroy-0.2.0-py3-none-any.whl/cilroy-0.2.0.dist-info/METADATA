@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cilroy
+Version: 0.2.0
+Summary: kilroy controller 🎛️
+Home-page: https://github.com/kilroybot/cilroy
+Author: kilroy
+Author-email: kilroymail@pm.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiostream (>=0.4,<0.5)
+Requires-Dist: betterproto (>=2.0.0b5,<3.0.0)
+Requires-Dist: jsonschema (>=4.7,<5.0)
+Requires-Dist: kilroy-face-client-py-sdk (>=0.6,<0.7)
+Requires-Dist: kilroy-module-client-py-sdk (>=0.7,<0.8)
+Requires-Dist: kilroy-server-py-utils (>=0.3,<0.4)
+Requires-Dist: omegaconf (>=2.2,<3.0)
+Requires-Dist: platformdirs (>=2.5,<3.0)
+Requires-Dist: pydantic[dotenv] (>=1.10,<2.0)
+Requires-Dist: pyhumps (>=3.7,<4.0)
+Requires-Dist: typer[all] (>=0.6,<0.7)
+Project-URL: Documentation, https://kilroybot.github.io/cilroy
+Project-URL: Repository, https://github.com/kilroybot/cilroy
+Description-Content-Type: text/markdown
+
+<h1 align="center">cilroy</h1>
+
+<div align="center">
+
+kilroy controller 🎛️
+
+[![Lint](https://github.com/kilroybot/cilroy/actions/workflows/lint.yaml/badge.svg)](https://github.com/kilroybot/cilroy/actions/workflows/lint.yaml)
+[![Multiplatform tests](https://github.com/kilroybot/cilroy/actions/workflows/test-multiplatform.yaml/badge.svg)](https://github.com/kilroybot/cilroy/actions/workflows/test-multiplatform.yaml)
+[![Docker tests](https://github.com/kilroybot/cilroy/actions/workflows/test-docker.yaml/badge.svg)](https://github.com/kilroybot/cilroy/actions/workflows/test-docker.yaml)
+[![Docs](https://github.com/kilroybot/cilroy/actions/workflows/docs.yaml/badge.svg)](https://github.com/kilroybot/cilroy/actions/workflows/docs.yaml)
+
+</div>
+
+---
+
+TODO
+

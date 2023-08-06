@@ -1,0 +1,3 @@
+[console_scripts]
+cilroy=cilroy.__main__:cli
+
