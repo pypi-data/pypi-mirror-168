@@ -1,0 +1,9 @@
+pycryptodomex
+pandas
+tqdm
+requests
+types-requests
+pyyaml
+types-PyYAML
+jinja2
+types-pkg-resources
