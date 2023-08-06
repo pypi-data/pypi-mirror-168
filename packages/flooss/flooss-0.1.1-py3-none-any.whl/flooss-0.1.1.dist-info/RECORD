@@ -1,0 +1,17 @@
+flooss/.DS_Store,sha256=YbArnILS81cTAcqsHDpV5gxoxQmWGypPE9uYqauRsUs,6148
+flooss/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+flooss/__main__.py,sha256=6YNAA9dMAyysVGA9BOwerU-oFZmEY2JL5sVkFQffMbo,1968
+flooss/aggregation/__init__.py,sha256=XX9L7xIjDw6eHBxnY-pcipyTeWWEP_1WYN8BhfnKAfc,64
+flooss/aggregation/aggregation.py,sha256=lkVvjflmnkzwPKsDQNE1M4g7Cw9gKaoeoLpmRW43aj8,869
+flooss/dataframe.py,sha256=DXJdXFrXGKk8XhvFztQN5sjyZ931tBRkbTBqESQ2nws,856
+flooss/google.py,sha256=QHOf9vwQu_nsId3q5HpyVxr2kEKiGW-ri5l1thATIZc,258
+flooss/plot/__init__.py,sha256=HM8hAfiLFJw20YgBjttaUWw77wrk4vZCnDswUC4oQXI,74
+flooss/plot/plot.py,sha256=-noDq92wwyKFOuZB2tpt-AEvG5TJn2jkUb64jGRUDEU,5442
+flooss/report/.DS_Store,sha256=dx4kyNCqD1B3Y7i-dGgkgkzJOAXf7KGjCWmLdIG-U0c,6148
+flooss/report/__init__.py,sha256=LDULcOCoudzqav8Ljg84g9cn7B3r6KTDIhgGfJK11Ao,54
+flooss/report/_display.py,sha256=6nGg2YrUyV6c0aerfk38gwC-aWNNJDgFODH25pVLwNw,470
+flooss/report/report.py,sha256=O34nJa0KopTzsAFHlHJo8Igzx8HM0Lp7ObE4Y0IdQMM,4868
+flooss-0.1.1.dist-info/LICENSE,sha256=rOaVtO-Z7_e-svYTw4Je5b3_67iOfLGvIG-vzWHvrf4,1071
+flooss-0.1.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+flooss-0.1.1.dist-info/METADATA,sha256=nAOg9LhVUlm3rvIAJ8VBNpL7xV2hEoO7vp_zXjb1O6c,647
+flooss-0.1.1.dist-info/RECORD,,
