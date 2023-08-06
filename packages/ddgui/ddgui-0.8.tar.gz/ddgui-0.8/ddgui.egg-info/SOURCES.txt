@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+ddgui/__init__.py
+ddgui/ddgui.ui
+ddgui.egg-info/PKG-INFO
+ddgui.egg-info/SOURCES.txt
+ddgui.egg-info/dependency_links.txt
+ddgui.egg-info/top_level.txt
+ddgui/__pycache__/__init__.cpython-38.pyc
