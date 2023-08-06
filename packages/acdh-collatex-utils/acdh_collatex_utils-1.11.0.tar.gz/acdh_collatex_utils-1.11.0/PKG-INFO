@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: acdh_collatex_utils
+Version: 1.11.0
+Summary: Utility functions to work with collatex
+Home-page: https://github.com/acdh-oeaw/acdh_collatex_utils
+Author: Peter Andorfer
+Author-email: peter.andorfer@oeaw.ac.at
+License: MIT license
+Keywords: acdh_collatex_utils
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CollateX Utils
+
+[![PyPI version](https://badge.fury.io/py/acdh-collatex-utils.svg)](https://badge.fury.io/py/acdh-collatex-utils)
+[![codecov](https://codecov.io/gh/acdh-oeaw/acdh_collatex_utils/branch/master/graph/badge.svg?token=G3PO6ZC12Z)](https://codecov.io/gh/acdh-oeaw/acdh_collatex_utils)
+
+A python package to collate things with collate-x
+
+## install
+
+* create a virtual environment and install the package with `pip install acdh_collatex_utils` 
+
+## use
+
+To collate a bunch of XML/TEI documents located in e.g. `./to_collate` run
+`collate -g './to_collate/*.xml`
+
+This creates a folder `./to_collate/collated` and saves chunked HTML and TEI Files like `out__001.html` or `out__001.tei`
+
+To see this package in use in a real life project, please check out [frd-data/collate_work.py](https://github.com/freud-digital/frd-data/blob/main/collate_work.py)
+
+## develop
+
+* create a virutal environment
+* install dev-requirements `pip install -U pip` and `pip install -r requirements_dev.txt`
+* install the package in dev-mode `pip install -e .`
+
+* run test with `coverage run -m pytest -v`
+* create test-report `coverage report` or `coverage html`

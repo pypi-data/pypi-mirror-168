@@ -1,0 +1,7 @@
+acdh-tei-pyutils<1,>=0.25.0
+beautifulsoup4<5,>=4.11.1
+click>=7.1<9
+collatex==2.2
+pandas<2,>=1.1.5
+python-Levenshtein
+tqdm<5,>=4.52.0
