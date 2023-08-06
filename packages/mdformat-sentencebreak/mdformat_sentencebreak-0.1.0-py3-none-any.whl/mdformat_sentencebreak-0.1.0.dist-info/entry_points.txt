@@ -1,0 +1,3 @@
+[mdformat.parser_extension]
+sentencebreak=mdformat_sentencebreak:plugin
+
