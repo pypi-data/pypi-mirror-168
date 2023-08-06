@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: chval
+Version: 1.0.0
+Summary: Parallel `getmail` calls, with progress bars
+Home-page: http://framagit.org/spalax/chval
+Author: Louis Paternault
+Author-email: spalax@gresille.org
+License: GPLv3 or any later version
+Project-URL: Documentation, https://framagit.org/spalax/chval/-/blob/main/README.md
+Project-URL: Source, https://framagit.org/spalax/chval
+Project-URL: Tracker, https://framagit.org/spalax/chval/issues
+Keywords: getmail
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications :: Email
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS
+
+chval — Parallel `getmail` calls, with progress bars
+====================================================
+
+Program *Ch'val* (abbreviated chval) is a wrapper for [getmail](https://pyropus.ca/software/getmail):
+
+- it looks for your configuration files, and run getmail on all of them;
+- it executes ``getmail`` calls in parallel;
+- it displays a nice progress bar, and a summary at the end (as well as error messages, if *getmail* failed).
+
+![Example](https://framagit.org/spalax/chval/-/raw/v1.0.0/chval-example.png)
+
+Configuration
+-------------
+
+Chval takes no configuration, and does not require any specific getmail configuration. The only assumption is that getmail configuration files:
+
+- are located in the default getmail folder ``~/.config/getmail``;
+- have a name starting with ``getmailrc-`` (e.g. ``getmailrc-work``).
+
+That way, Ch'val can automatically find your getmail configuration files.
+
+Installation
+------------
+
+* Install this program from [Pypi](https://pypi.org/project/chval/):
+
+      python3 -m pip install chval
+
+* Quick and dirty Debian (and Ubuntu?) package (requires `stdeb <https://github.com/astraw/stdeb>`):
+
+      python3 setup.py --command-packages=stdeb.command bdist_deb
+      sudo dpkg -i deb_dist/pdfautonup-<VERSION>_all.deb
+
+History
+-------
+
+The name comes from [Ferdinand Cheval](https://fr.wikipedia.org/wiki/Ferdinand_Cheval), known as *le facteur Cheval* (Postman Cheval), a famous French postman and naive architect.
+
+In 2010, the only way to provide a password to [getmail](https://pyropus.ca/software/getmail/) was by storing it in plain text in the configuration file (not really secure), or by providing it when prompted (combersome when you check your 5 or 10 email addresses several times a day). I (back then, a yound and inexperimented programmer) started this project (then named *gams*, for *get all mails*), that wrapped *getmail* by storing the passwords in an encrypted file : a server would call `getmail` when prompted by the client, which would provide, *once*, the master password to decrypt the email passwords. I also added a home-made progress bar.
+
+Three years later (in 2013), I stared experimenting with [twisted](https://twisted.org/) to replace the named pipe used by the client and server to communicate. This never led to anything…
+
+Eight years later (in 2021), I wondered if it would be possible to use an existing keyring software (like [Seahorse](https://wiki.gnome.org/Apps/Seahorse/)) to store password keys, and to communicate with it using *dbus*. This never led to anything.
+
+The very same year, I noticed that `getmail` had a new feature (which already existed for several years) to use a keyring to store the password. My software was outdated, and I happily dropped support for it.
+
+About a year later, I missed the ability to run getmail on all my mailboxes at once, and the progress bar, so I revived Ch'val from the dead: the initial goal (storing password) is no longer relevant, but the progress bar, which was then an incidental feature, became the main purpose.
+
+A more technical history can be found in the [changelog](https://framagit.org/spalax/chval/-/blob/main/CHANGELOG.md).
+
+License
+-------
+
+Copyright 2010-2022 Louis Paternault
+
+Ch'val is licensed under the [GNU GPL 3 license](https://www.gnu.org/licenses/gpl-3.0.html), or any later version.
+
+

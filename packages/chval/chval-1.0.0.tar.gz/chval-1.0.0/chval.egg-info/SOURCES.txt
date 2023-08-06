@@ -1,0 +1,14 @@
+AUTHORS
+LICENSE.txt
+README.md
+chval.py
+pyproject.toml
+setup.cfg
+setup.py
+chval.egg-info/PKG-INFO
+chval.egg-info/SOURCES.txt
+chval.egg-info/dependency_links.txt
+chval.egg-info/entry_points.txt
+chval.egg-info/requires.txt
+chval.egg-info/top_level.txt
+chval.egg-info/zip-safe
