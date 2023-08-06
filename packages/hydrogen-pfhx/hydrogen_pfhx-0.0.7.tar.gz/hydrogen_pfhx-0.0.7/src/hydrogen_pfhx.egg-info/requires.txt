@@ -1,0 +1,6 @@
+CoolProp>=6.4.1
+matplotlib>=3.5.2
+numpy>=1.22.4
+pandas>=1.4.4
+pyyaml>=6.0
+scipy>=1.8.1
