@@ -1,0 +1,31 @@
+# STDC Base training params
+
+defaults:
+  - training_hyperparams: cityscapes_default_train_params
+  - dataset_params: cityscapes_dataset_params
+  - checkpoint_params: default_checkpoint_params
+
+train_dataloader: cityscapes_train
+val_dataloader: cityscapes_val
+
+data_loader_num_workers: 10
+
+arch_params:
+  num_classes: 19
+  use_aux_heads: True
+  sync_bn: True
+
+checkpoint_params:
+  checkpoint_path:
+  load_backbone: True
+  load_weights_only: True
+  strict_load: no_key_matching
+
+architecture: stdc1_seg
+experiment_name: ${architecture}_cityscapes
+
+
+ckpt_root_dir:
+
+multi_gpu: DDP
+
