@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tinkoff-acquiring-api
+Version: 0.1.3
+Summary: Tinkoff Acquiring API client for Python
+Home-page: https://github.com/saliy/tinkoff-acquiring-api
+Author: Artur Saliy
+Author-email: artur.saliy@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/saliy/tinkoff-acquiring-api
+Project-URL: Bug Reports, https://github.com/saliy/tinkoff-acquiring-api/issues
+Project-URL: Source Code, https://github.com/saliy/tinkoff-acquiring-api
+Keywords: tinkoff,tinkoff api,tinkoff acquiring
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+# Tinkoff Acquiring API
+
+The Tinkoff Acquiring API library provides convenient access to the [Tinkoff Acquiring API](https://www.tinkoff.ru/kassa/develop/api/payments/) from applications written in the Python language.
+
+[![pypi](https://img.shields.io/pypi/v/tinkoff-acquiring-api.svg)](https://pypi.python.org/pypi/tinkoff-acquiring-api)
+[![Test Result](https://github.com/saliy/tinkoff-acquiring-api/actions/workflows/test.yml/badge.svg)](https://github.com/saliy/tinkoff-acquiring-api/actions/workflows/test.yml)
+[![Release Result](https://github.com/saliy/tinkoff-acquiring-api/actions/workflows/release.yml/badge.svg)](https://github.com/saliy/tinkoff-acquiring-api/actions/workflows/test.yml)
+
+
+## Installation
+If you just want to use the package, just run:
+
+```sh
+pip install --upgrade tinkoff-acquiring-api
+```
+
+### Requirements
+Python 3.6+ (PyPy supported)
+
+## Usage
+...
