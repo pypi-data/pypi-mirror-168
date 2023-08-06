@@ -1,0 +1,10 @@
+requests
+isodatetimehandler
+moesifapi>=1.4.0
+moesifpythonrequest>=0.2.0
+apscheduler
+
+[dev]
+
+[test]
+nose
