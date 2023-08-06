@@ -1,0 +1,43 @@
+# See PEP 518 for the spec of this file
+# https://www.python.org/dev/peps/pep-0518/
+
+[tool.black]
+# See https://github.com/ambv/black/blob/master/pyproject.toml
+line-length = 88
+target_version = ['py39', 'py310']
+
+
+[tool.isort]
+balanced_wrapping = true
+combine_as_imports = true
+default_section = "THIRDPARTY"
+include_trailing_comma = true
+indent = "    "
+known_first_party = [
+    "rules",
+]
+line_length = 88
+multi_line_output = 3
+
+
+[tool.pylint."messages control"]
+disable = [
+    "attribute-defined-outside-init",
+    "duplicate-code",
+    "line-too-long",
+    "missing-docstring",
+]
+
+
+[tool.winky]
+target_branch = "winky"
+
+[[tool.winky.pip_compile]]
+file = "./requirements/base.in"
+hashes = true
+python = "3.9"
+
+[[tool.winky.pip_compile]]
+file = "./requirements/dev.in"
+hashes = true
+python = "3.9"
