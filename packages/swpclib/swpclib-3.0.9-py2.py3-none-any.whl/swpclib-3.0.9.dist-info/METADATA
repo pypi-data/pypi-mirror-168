@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: swpclib
+Version: 3.0.9
+License-File: LICENSE
+Requires-Dist: aiohttp (==3.8.3)
+
