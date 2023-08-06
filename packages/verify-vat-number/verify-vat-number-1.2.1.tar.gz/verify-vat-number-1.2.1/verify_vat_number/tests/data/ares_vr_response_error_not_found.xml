@@ -1,0 +1,14 @@
+<are:Ares_odpovedi xmlns:are="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0" xmlns:dtt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_datatypes/v_1.0.6" xmlns:udt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" odpoved_datum_cas="2022-09-06T15:07:35" odpoved_pocet="1" odpoved_typ="Vypis_VR" vystup_format="XML" xslt="klient" xsi:schemaLocation="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0 http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0/ares_answer_vr_v_1.0.0.xsd" Id="ares">
+    <are:Odpoved>
+        <dtt:Pomocne_ID>0</dtt:Pomocne_ID>
+        <dtt:Error>
+        <dtt:Error_kod>1</dtt:Error_kod>
+        <dtt:Error_text> Chyba 71 - nenalezeno 183824123 </dtt:Error_text>
+        </dtt:Error>
+        <dtt:Vysledek_hledani>
+            <dtt:Kod>3</dtt:Kod>
+            <dtt:Text>Nenalezeno</dtt:Text>
+        </dtt:Vysledek_hledani>
+        <dtt:Pocet_zaznamu>0</dtt:Pocet_zaznamu>
+    </are:Odpoved>
+</are:Ares_odpovedi>

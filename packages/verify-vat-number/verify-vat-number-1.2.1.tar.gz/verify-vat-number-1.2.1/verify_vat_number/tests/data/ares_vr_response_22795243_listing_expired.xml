@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Modified -->
+<are:Ares_odpovedi xmlns:are="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0" xmlns:dtt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_datatypes/v_1.0.6" xmlns:udt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" odpoved_datum_cas="2022-09-13T10:47:12" odpoved_pocet="1" odpoved_typ="Vypis_VR" vystup_format="XML" xslt="klient" xsi:schemaLocation="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0 http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0/ares_answer_vr_v_1.0.0.xsd" Id="ares">
+   <are:Odpoved>
+      <dtt:Pomocne_ID>0</dtt:Pomocne_ID>
+      <dtt:Vysledek_hledani>
+         <dtt:Kod>1</dtt:Kod>
+      </dtt:Vysledek_hledani>
+      <dtt:Pocet_zaznamu>1</dtt:Pocet_zaznamu>
+      <dtt:Uvod>
+         <dtt:Nadpis>Výpis z dat Veřejných rejstříků v ARES</dtt:Nadpis>
+         <dtt:Aktualizace_DB>2022-09-12</dtt:Aktualizace_DB>
+         <dtt:Datum_vypisu>2022-09-13</dtt:Datum_vypisu>
+         <dtt:Cas_vypisu>10:47:09</dtt:Cas_vypisu>
+         <dtt:Typ_vypisu>aktualni</dtt:Typ_vypisu>
+         <dtt:Typ_odkazu>0</dtt:Typ_odkazu>
+      </dtt:Uvod>
+      <are:Vypis_VR>
+         <are:ZakladniUdaje>
+            <are:Rejstrik>OR</are:Rejstrik>
+            <are:SpisovaZnacka>
+               <are:Soud>
+                  <dtt:Kod>5</dtt:Kod>
+                  <dtt:Nazev>Krajský soud v Ústí nad Labem</dtt:Nazev>
+               </are:Soud>
+               <are:OddilVlozka>C 31789</are:OddilVlozka>
+            </are:SpisovaZnacka>
+            <are:Ico>
+               <are:value>22795243</are:value>
+            </are:Ico>
+            <are:ObchodniFirma>
+               <are:value>BIOSIDE s.r.o.</are:value>
+            </are:ObchodniFirma>
+            <are:PravniForma>
+               <are:KodPravniForma>112</are:KodPravniForma>
+               <are:NazevPravniForma>Společnost s ručením omezeným</are:NazevPravniForma>
+            </are:PravniForma>
+            <are:Sidlo>
+               <are:adresa>
+                  <dtt:IdAdresaZdroje>42470500</dtt:IdAdresaZdroje>
+                  <dtt:KodStatu>203</dtt:KodStatu>
+                  <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                  <dtt:NazevObce>Liberec</dtt:NazevObce>
+                  <dtt:NazevCastob>Liberec I-Staré Město</dtt:NazevCastob>
+                  <dtt:NazevUvp>Rumjancevova</dtt:NazevUvp>
+                  <dtt:CisloDomu>65</dtt:CisloDomu>
+                  <dtt:TypCisDom>1</dtt:TypCisDom>
+                  <dtt:CisloOr>20a</dtt:CisloOr>
+                  <dtt:Psc>46001</dtt:Psc>
+               </are:adresa>
+            </are:Sidlo>
+            <are:DatumAktualizace>2021-02-06</are:DatumAktualizace>
+            <are:DatumZapisu>2012-06-18</are:DatumZapisu>
+            <are:DatumVymazu>2022-02-01</are:DatumVymazu>
+            <are:Cinnosti>
+               <are:PredmetPodnikani>
+                  <are:text>poskytování nebo zprostředkování spotřebitelského úvěru</are:text>
+               </are:PredmetPodnikani>
+               <are:PredmetPodnikani>
+                  <are:text>pronájem nemovitostí, bytů a nebytových prostor</are:text>
+               </are:PredmetPodnikani>
+               <are:PredmetPodnikani>
+                  <are:text>výroba, instalace, opravy elektrických strojů a přístrojů, elektronických a telekomunikačních zařízení</are:text>
+               </are:PredmetPodnikani>
+               <are:PredmetPodnikani>
+                  <are:text>výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona</are:text>
+               </are:PredmetPodnikani>
+            </are:Cinnosti>
+            <are:StavSubjektu>
+               <are:value>A</are:value>
+            </are:StavSubjektu>
+         </are:ZakladniUdaje>
+         <are:StatutarniOrgan>
+            <are:Nazev>Statutární orgán</are:Nazev>
+            <are:ZpusobJednani>
+               <are:text>Každý z jednatelů jedná jménem společnosti samostatně.</are:text>
+            </are:ZpusobJednani>
+            <are:Clen>
+               <are:funkce>
+                  <are:nazev>jednatel</are:nazev>
+                  <are:vznikFunkce>2013-03-01</are:vznikFunkce>
+               </are:funkce>
+               <are:fosoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>42470502</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevObce>Hrubá Skála</dtt:NazevObce>
+                     <dtt:NazevCastob>Doubravice</dtt:NazevCastob>
+                     <dtt:CisloDomu>49</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:Psc>51101</dtt:Psc>
+                  </are:adresa>
+                  <are:jmeno>JIŘÍ</are:jmeno>
+                  <are:prijmeni>RICHTR</are:prijmeni>
+                  <are:datumNarozeni>1972-11-11</are:datumNarozeni>
+               </are:fosoba>
+            </are:Clen>
+         </are:StatutarniOrgan>
+         <are:Spolecnici>
+            <are:Nazev>Společníci</are:Nazev>
+            <are:Spolecnik>
+               <are:fosoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>42470512</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevObce>Hrubá Skála</dtt:NazevObce>
+                     <dtt:NazevCastob>Doubravice</dtt:NazevCastob>
+                     <dtt:CisloDomu>49</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:Psc>51101</dtt:Psc>
+                  </are:adresa>
+                  <are:jmeno>JIŘÍ</are:jmeno>
+                  <are:prijmeni>RICHTR</are:prijmeni>
+                  <are:datumNarozeni>1972-11-11</are:datumNarozeni>
+               </are:fosoba>
+               <are:Podil>
+                  <are:vklad>
+                     <are:typ>KORUNY</are:typ>
+                     <are:value>200000</are:value>
+                  </are:vklad>
+                  <are:velikostPodilu>
+                     <are:typ>TEXT</are:typ>
+                     <are:value>2/5</are:value>
+                  </are:velikostPodilu>
+                  <are:splaceni>
+                     <are:typ>PROCENTA</are:typ>
+                     <are:value>40</are:value>
+                  </are:splaceni>
+               </are:Podil>
+            </are:Spolecnik>
+            <are:Spolecnik>
+               <are:fosoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>42470515</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevOkresu>Liberec</dtt:NazevOkresu>
+                     <dtt:NazevObce>Oldřichov v Hájích</dtt:NazevObce>
+                     <dtt:CisloDomu>6</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:Psc>46331</dtt:Psc>
+                  </are:adresa>
+                  <are:jmeno>PŘEMYSL</are:jmeno>
+                  <are:prijmeni>TIŠER</are:prijmeni>
+                  <are:datumNarozeni>1979-04-29</are:datumNarozeni>
+               </are:fosoba>
+               <are:Podil>
+                  <are:vklad>
+                     <are:typ>KORUNY</are:typ>
+                     <are:value>150000</are:value>
+                  </are:vklad>
+                  <are:velikostPodilu>
+                     <are:typ>TEXT</are:typ>
+                     <are:value>3/10</are:value>
+                  </are:velikostPodilu>
+                  <are:splaceni>
+                     <are:typ>PROCENTA</are:typ>
+                     <are:value>70</are:value>
+                  </are:splaceni>
+               </are:Podil>
+            </are:Spolecnik>
+            <are:Spolecnik>
+               <are:fosoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>42470517</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevObce>Turnov</dtt:NazevObce>
+                     <dtt:NazevUvp>Antonína Dvořáka</dtt:NazevUvp>
+                     <dtt:CisloDomu>335</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:Psc>51101</dtt:Psc>
+                  </are:adresa>
+                  <are:jmeno>LUKÁŠ</are:jmeno>
+                  <are:prijmeni>TRAKAL</are:prijmeni>
+                  <are:datumNarozeni>1977-02-14</are:datumNarozeni>
+               </are:fosoba>
+               <are:Podil>
+                  <are:vklad>
+                     <are:typ>KORUNY</are:typ>
+                     <are:value>150000</are:value>
+                  </are:vklad>
+                  <are:velikostPodilu>
+                     <are:typ>TEXT</are:typ>
+                     <are:value>3/10</are:value>
+                  </are:velikostPodilu>
+                  <are:splaceni>
+                     <are:typ>PROCENTA</are:typ>
+                     <are:value>30</are:value>
+                  </are:splaceni>
+               </are:Podil>
+            </are:Spolecnik>
+         </are:Spolecnici>
+         <are:JinyOrgan>
+            <are:Nazev>Dozorčí rada</are:Nazev>
+            <are:Clen>
+               <are:clenstvi>
+                  <are:vznikClenstvi>2013-03-01</are:vznikClenstvi>
+               </are:clenstvi>
+               <are:funkce>
+                  <are:nazev>předseda dozorčí rady</are:nazev>
+                  <are:vznikFunkce>2013-03-01</are:vznikFunkce>
+               </are:funkce>
+               <are:fosoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>42470506</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevOkresu>Semily</dtt:NazevOkresu>
+                     <dtt:NazevObce>Turnov</dtt:NazevObce>
+                     <dtt:NazevUvp>Antonína Dvořáka</dtt:NazevUvp>
+                     <dtt:CisloDomu>335</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:Psc>51101</dtt:Psc>
+                  </are:adresa>
+                  <are:jmeno>LUKÁŠ</are:jmeno>
+                  <are:prijmeni>TRAKAL</are:prijmeni>
+                  <are:datumNarozeni>1977-02-14</are:datumNarozeni>
+               </are:fosoba>
+            </are:Clen>
+            <are:Clen>
+               <are:clenstvi>
+                  <are:vznikClenstvi>2013-03-01</are:vznikClenstvi>
+               </are:clenstvi>
+               <are:funkce>
+                  <are:nazev>člen dozorčí rady</are:nazev>
+               </are:funkce>
+               <are:fosoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>42470510</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevOkresu>Liberec</dtt:NazevOkresu>
+                     <dtt:NazevObce>Čtveřín</dtt:NazevObce>
+                     <dtt:CisloDomu>110</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:Psc>46345</dtt:Psc>
+                  </are:adresa>
+                  <are:jmeno>JAN</are:jmeno>
+                  <are:prijmeni>ŠTĚDRA</are:prijmeni>
+                  <are:datumNarozeni>1986-10-21</are:datumNarozeni>
+               </are:fosoba>
+            </are:Clen>
+         </are:JinyOrgan>
+         <are:Kapital>
+            <are:Jmeni>
+               <are:TypJmeni>ZAKLADNI_JMENI</are:TypJmeni>
+               <are:vklad>
+                  <are:typ>KORUNY</are:typ>
+                  <are:value>500000</are:value>
+               </are:vklad>
+            </are:Jmeni>
+         </are:Kapital>
+      </are:Vypis_VR>
+   </are:Odpoved>
+</are:Ares_odpovedi>

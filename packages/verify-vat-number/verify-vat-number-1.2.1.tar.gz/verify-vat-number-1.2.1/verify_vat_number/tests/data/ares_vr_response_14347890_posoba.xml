@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<are:Ares_odpovedi xmlns:are="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0" xmlns:dtt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_datatypes/v_1.0.6" xmlns:udt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" odpoved_datum_cas="2022-08-31T16:53:44" odpoved_pocet="1" odpoved_typ="Vypis_VR" vystup_format="XML" xslt="klient" xsi:schemaLocation="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0 http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0/ares_answer_vr_v_1.0.0.xsd" Id="ares">
+   <are:Odpoved>
+      <dtt:Pomocne_ID>0</dtt:Pomocne_ID>
+      <dtt:Vysledek_hledani>
+         <dtt:Kod>1</dtt:Kod>
+      </dtt:Vysledek_hledani>
+      <dtt:Pocet_zaznamu>1</dtt:Pocet_zaznamu>
+      <dtt:Uvod>
+         <dtt:Nadpis>Výpis z dat Veřejných rejstříků v ARES</dtt:Nadpis>
+         <dtt:Aktualizace_DB>2022-08-31</dtt:Aktualizace_DB>
+         <dtt:Datum_vypisu>2022-08-31</dtt:Datum_vypisu>
+         <dtt:Cas_vypisu>16:53:43</dtt:Cas_vypisu>
+         <dtt:Typ_vypisu>aktualni</dtt:Typ_vypisu>
+         <dtt:Typ_odkazu>0</dtt:Typ_odkazu>
+      </dtt:Uvod>
+      <are:Vypis_VR>
+         <are:ZakladniUdaje>
+            <are:Rejstrik>OR</are:Rejstrik>
+            <are:SpisovaZnacka>
+               <are:Soud>
+                  <dtt:Kod>1</dtt:Kod>
+                  <dtt:Nazev>Městský soud v Praze</dtt:Nazev>
+               </are:Soud>
+               <are:OddilVlozka>C 363289</are:OddilVlozka>
+            </are:SpisovaZnacka>
+            <are:Ico>
+               <are:value>14347890</are:value>
+            </are:Ico>
+            <are:ObchodniFirma>
+               <are:value>Rumney Corp s.r.o.</are:value>
+            </are:ObchodniFirma>
+            <are:PravniForma>
+               <are:KodPravniForma>112</are:KodPravniForma>
+               <are:NazevPravniForma>Společnost s ručením omezeným</are:NazevPravniForma>
+            </are:PravniForma>
+            <are:Sidlo>
+               <are:adresa>
+                  <dtt:IdAdresaZdroje>47250406</dtt:IdAdresaZdroje>
+                  <dtt:KodStatu>203</dtt:KodStatu>
+                  <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                  <dtt:NazevOkresu>Hlavní město Praha</dtt:NazevOkresu>
+                  <dtt:NazevObce>Praha</dtt:NazevObce>
+                  <dtt:NazevCastob>Libeň</dtt:NazevCastob>
+                  <dtt:NazevUvp>Primátorská</dtt:NazevUvp>
+                  <dtt:CisloDomu>296</dtt:CisloDomu>
+                  <dtt:TypCisDom>1</dtt:TypCisDom>
+                  <dtt:CisloOr>38</dtt:CisloOr>
+                  <dtt:Psc>18000</dtt:Psc>
+               </are:adresa>
+            </are:Sidlo>
+            <are:DatumAktualizace>2022-03-16</are:DatumAktualizace>
+            <are:DatumZapisu>2022-03-15</are:DatumZapisu>
+            <are:Cinnosti>
+               <are:PredmetPodnikani>
+                  <are:text>Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona</are:text>
+               </are:PredmetPodnikani>
+               <are:PredmetCinnosti>
+                  <are:text>Pronájem nemovitostí, bytů a nebytových prostor</are:text>
+               </are:PredmetCinnosti>
+            </are:Cinnosti>
+            <are:StavSubjektu>
+               <are:value>A</are:value>
+            </are:StavSubjektu>
+         </are:ZakladniUdaje>
+         <are:StatutarniOrgan>
+            <are:Nazev>Statutární orgán</are:Nazev>
+            <are:ZpusobJednani>
+               <are:text>Společnost zastupuje jednatel ve všech věcech samostatně</are:text>
+            </are:ZpusobJednani>
+            <are:PocetClenu>
+               <are:pocetClenu>1</are:pocetClenu>
+            </are:PocetClenu>
+            <are:Clen>
+               <are:funkce>
+                  <are:nazev>Jednatel</are:nazev>
+                  <are:vznikFunkce>2022-03-15</are:vznikFunkce>
+               </are:funkce>
+               <are:posoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>47250407</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevOkresu>Hlavní město Praha</dtt:NazevOkresu>
+                     <dtt:NazevObce>Praha</dtt:NazevObce>
+                     <dtt:NazevCastob>Staré Město</dtt:NazevCastob>
+                     <dtt:NazevUvp>Rybná</dtt:NazevUvp>
+                     <dtt:CisloDomu>732</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:CisloOr>25</dtt:CisloOr>
+                     <dtt:Psc>11000</dtt:Psc>
+                  </are:adresa>
+                  <are:Ico>
+                     <dtt:value>01407511</dtt:value>
+                  </are:Ico>
+                  <are:ObchodniFirma>
+                     <dtt:value>Profispolečnosti servis s.r.o.</dtt:value>
+                  </are:ObchodniFirma>
+                  <are:PravniForma>
+                     <dtt:KodPravniForma>112</dtt:KodPravniForma>
+                     <dtt:NazevPravniForma>Společnost s ručením omezeným</dtt:NazevPravniForma>
+                  </are:PravniForma>
+                  <are:Zastoupeni dza="2022-03-15">
+                     <are:fosoba>
+                        <are:adresa>
+                           <dtt:IdAdresaZdroje>47250408</dtt:IdAdresaZdroje>
+                           <dtt:KodStatu>203</dtt:KodStatu>
+                           <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                           <dtt:NazevOkresu>Hlavní město Praha</dtt:NazevOkresu>
+                           <dtt:NazevObce>Praha</dtt:NazevObce>
+                           <dtt:NazevCastob>Holešovice</dtt:NazevCastob>
+                           <dtt:NazevUvp>Bubenská</dtt:NazevUvp>
+                           <dtt:CisloDomu>328</dtt:CisloDomu>
+                           <dtt:TypCisDom>1</dtt:TypCisDom>
+                           <dtt:CisloOr>25</dtt:CisloOr>
+                           <dtt:Psc>17000</dtt:Psc>
+                        </are:adresa>
+                        <are:jmeno>MICHAL</are:jmeno>
+                        <are:prijmeni>KOMAN</are:prijmeni>
+                        <are:datumNarozeni>1985-05-31</are:datumNarozeni>
+                        <are:titulPred>Mgr.</are:titulPred>
+                     </are:fosoba>
+                  </are:Zastoupeni>
+               </are:posoba>
+            </are:Clen>
+         </are:StatutarniOrgan>
+         <are:Spolecnici>
+            <are:Nazev>Společníci</are:Nazev>
+            <are:Spolecnik>
+               <are:posoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>47250409</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevOkresu>Hlavní město Praha</dtt:NazevOkresu>
+                     <dtt:NazevObce>Praha</dtt:NazevObce>
+                     <dtt:NazevCastob>Libeň</dtt:NazevCastob>
+                     <dtt:NazevUvp>Primátorská</dtt:NazevUvp>
+                     <dtt:CisloDomu>296</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:CisloOr>38</dtt:CisloOr>
+                     <dtt:Psc>18000</dtt:Psc>
+                  </are:adresa>
+                  <are:Ico>
+                     <dtt:value>24248525</dtt:value>
+                  </are:Ico>
+                  <are:ObchodniFirma>
+                     <dtt:value>Profispolečnosti Praha s.r.o.</dtt:value>
+                  </are:ObchodniFirma>
+                  <are:PravniForma>
+                     <dtt:KodPravniForma>112</dtt:KodPravniForma>
+                     <dtt:NazevPravniForma>Společnost s ručením omezeným</dtt:NazevPravniForma>
+                  </are:PravniForma>
+               </are:posoba>
+               <are:Podil>
+                  <are:vklad>
+                     <are:typ>KORUNY</are:typ>
+                     <are:value>20000</are:value>
+                  </are:vklad>
+                  <are:velikostPodilu>
+                     <are:typ>PROCENTA</are:typ>
+                     <are:value>100</are:value>
+                  </are:velikostPodilu>
+                  <are:splaceni>
+                     <are:typ>PROCENTA</are:typ>
+                     <are:value>100</are:value>
+                  </are:splaceni>
+               </are:Podil>
+            </are:Spolecnik>
+         </are:Spolecnici>
+         <are:Kapital>
+            <are:Jmeni>
+               <are:TypJmeni>ZAKLADNI_JMENI</are:TypJmeni>
+               <are:vklad>
+                  <are:typ>KORUNY</are:typ>
+                  <are:value>20000</are:value>
+               </are:vklad>
+            </are:Jmeni>
+         </are:Kapital>
+      </are:Vypis_VR>
+   </are:Odpoved>
+</are:Ares_odpovedi>

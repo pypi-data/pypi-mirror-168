@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<are:Ares_odpovedi xmlns:are="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0" xmlns:dtt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_datatypes/v_1.0.6" xmlns:udt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" odpoved_datum_cas="2022-09-01T10:20:38" odpoved_pocet="1" odpoved_typ="Vypis_VR" vystup_format="XML" xslt="klient" xsi:schemaLocation="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0 http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_vr/v_1.0.0/ares_answer_vr_v_1.0.0.xsd" Id="ares">
+   <are:Odpoved>
+      <dtt:Pomocne_ID>0</dtt:Pomocne_ID>
+      <dtt:Vysledek_hledani>
+         <dtt:Kod>1</dtt:Kod>
+      </dtt:Vysledek_hledani>
+      <dtt:Pocet_zaznamu>1</dtt:Pocet_zaznamu>
+      <dtt:Uvod>
+         <dtt:Nadpis>Výpis z dat Veřejných rejstříků v ARES</dtt:Nadpis>
+         <dtt:Aktualizace_DB>2022-08-31</dtt:Aktualizace_DB>
+         <dtt:Datum_vypisu>2022-09-01</dtt:Datum_vypisu>
+         <dtt:Cas_vypisu>10:20:37</dtt:Cas_vypisu>
+         <dtt:Typ_vypisu>aktualni</dtt:Typ_vypisu>
+         <dtt:Typ_odkazu>0</dtt:Typ_odkazu>
+      </dtt:Uvod>
+      <are:Vypis_VR>
+         <are:ZakladniUdaje>
+            <are:Rejstrik>SR</are:Rejstrik>
+            <are:SpisovaZnacka>
+               <are:Soud>
+                  <dtt:Kod>1</dtt:Kod>
+                  <dtt:Nazev>Městský soud v Praze</dtt:Nazev>
+               </are:Soud>
+               <are:OddilVlozka>L 58624</are:OddilVlozka>
+            </are:SpisovaZnacka>
+            <are:Ico>
+               <are:value>67985726</are:value>
+            </are:Ico>
+            <are:ObchodniFirma>
+               <are:value>CZ.NIC, z.s.p.o.</are:value>
+            </are:ObchodniFirma>
+            <are:PravniForma>
+               <are:KodPravniForma>751</are:KodPravniForma>
+               <are:NazevPravniForma>Zájmové sdružení právnických osob</are:NazevPravniForma>
+            </are:PravniForma>
+            <are:Sidlo>
+               <are:adresa>
+                  <dtt:IdAdresaZdroje>48990523</dtt:IdAdresaZdroje>
+                  <dtt:KodStatu>203</dtt:KodStatu>
+                  <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                  <dtt:NazevOkresu>Hlavní město Praha</dtt:NazevOkresu>
+                  <dtt:NazevObce>Praha</dtt:NazevObce>
+                  <dtt:NazevCastob>Vinohrady</dtt:NazevCastob>
+                  <dtt:NazevUvp>Milešovská</dtt:NazevUvp>
+                  <dtt:CisloDomu>1136</dtt:CisloDomu>
+                  <dtt:TypCisDom>1</dtt:TypCisDom>
+                  <dtt:CisloOr>5</dtt:CisloOr>
+                  <dtt:Psc>13000</dtt:Psc>
+               </are:adresa>
+            </are:Sidlo>
+            <are:DatumAktualizace>2022-08-18</are:DatumAktualizace>
+            <are:DatumVzniku>
+               <are:value>1998-05-27</are:value>
+            </are:DatumVzniku>
+            <are:DatumZapisu>2014-01-01</are:DatumZapisu>
+            <are:Cinnosti>
+               <are:PredmetCinnosti>
+                  <are:text>Předmětem činnosti sdružení je a) Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona; b) Výroba, instalace, opravy elektrických strojů a přístrojů, elektronických a telekomunikačních zařízení.</are:text>
+               </are:PredmetCinnosti>
+               <are:Ucel>
+                  <are:text>Sdružení zejména a) provozuje a rozvíjí doménu nejvyšší úrovně ccTLD CZ; b) provozuje a rozvíjí důvěryhodnou, bezpečnou a stabilní informační a komunikační infrastrukturu, včetně vývoje a podpory rozvoje internetových služeb, a to především prostřednictvím inovativních projektů s otevřeným zdrojovým kódem; c) šíří a podporuje výuku, vzdělávání, osvětu a diskusi o aspektech internetových technologií; d) zabývá se zvyšováním úrovně kybernetické bezpečnosti. Detailní popis cílů sdružení a způsobů, jak jich má být činností sdružení dosahováno, je popsán v koncepci sdružení schvalované kolegiem sdružení.</are:text>
+               </are:Ucel>
+            </are:Cinnosti>
+            <are:StavSubjektu>
+               <are:value>A</are:value>
+            </are:StavSubjektu>
+         </are:ZakladniUdaje>
+         <!--Modified -->
+         <are:StatutarniOrgan>
+            <are:Nazev>Statutární orgán - Představenstvo</are:Nazev>
+            <are:ZpusobJednani>
+               <are:text>1. Jménem sdružení jedná a podepisuje představenstvo, a to nejméně dva členové představenstva společně, přičemž jedním z těchto členů musí být předseda nebo místopředseda představenstva. 2. Podepisování za sdružení se uskutečňuje tak, že k názvu sdružení se připojí podpis osob uvedených v odst. 1.</are:text>
+            </are:ZpusobJednani>
+            <are:PocetClenu>
+               <are:pocetClenu>2</are:pocetClenu>
+            </are:PocetClenu>
+            <are:Clen>
+               <are:clenstvi>
+                  <are:vznikClenstvi>2019-12-19</are:vznikClenstvi>
+               </are:clenstvi>
+               <are:funkce>
+                  <are:nazev>člen představenstva</are:nazev>
+                  <are:vznikFunkce>2019-12-19</are:vznikFunkce>
+               </are:funkce>
+               <are:fosoba>
+                  <are:adresa>
+                     <dtt:IdAdresaZdroje>48990537</dtt:IdAdresaZdroje>
+                     <dtt:KodStatu>203</dtt:KodStatu>
+                     <dtt:NazevStatu>Česká republika</dtt:NazevStatu>
+                     <dtt:NazevOkresu>Hlavní město Praha</dtt:NazevOkresu>
+                     <dtt:NazevObce>Praha</dtt:NazevObce>
+                     <dtt:NazevCastob>Dejvice</dtt:NazevCastob>
+                     <dtt:NazevUvp>Havlovská</dtt:NazevUvp>
+                     <dtt:CisloDomu>1283</dtt:CisloDomu>
+                     <dtt:TypCisDom>1</dtt:TypCisDom>
+                     <dtt:CisloOr>5</dtt:CisloOr>
+                     <dtt:Psc>16000</dtt:Psc>
+                  </are:adresa>
+                  <are:jmeno>TOMÁŠ</are:jmeno>
+                  <are:prijmeni>KOŠŇAR</are:prijmeni>
+                  <are:datumNarozeni>1965-06-21</are:datumNarozeni>
+                  <are:titulPred>Ing.</are:titulPred>
+               </are:fosoba>
+            </are:Clen>
+            <are:Clen>
+               <are:clenstvi>
+                  <are:vznikClenstvi>2019-12-19</are:vznikClenstvi>
+               </are:clenstvi>
+               <are:funkce>
+                  <are:nazev>člen představenstva</are:nazev>
+                  <are:vznikFunkce>2019-12-19</are:vznikFunkce>
+               </are:funkce>
+            </are:Clen>
+         </are:StatutarniOrgan>
+         <are:OstatniSkutecnosti>
+            <are:text>Výkonným ředitelem CZ.NIC, z. s. p. o., je Mgr. Ondřej Filip, MBA, nar. 5. 4. 1977.</are:text>
+         </are:OstatniSkutecnosti>
+      </are:Vypis_VR>
+   </are:Odpoved>
+</are:Ares_odpovedi>
