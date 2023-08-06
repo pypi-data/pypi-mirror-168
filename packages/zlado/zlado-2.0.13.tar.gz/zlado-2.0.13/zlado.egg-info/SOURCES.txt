@@ -1,0 +1,12 @@
+setup.py
+zlado/__init__.py
+zlado/ado.py
+zlado/ado_ini.py
+zlado.egg-info/PKG-INFO
+zlado.egg-info/SOURCES.txt
+zlado.egg-info/dependency_links.txt
+zlado.egg-info/entry_points.txt
+zlado.egg-info/requires.txt
+zlado.egg-info/top_level.txt
+zlado/aliyun/__init__.py
+zlado/aliyun/ali_cli.py
