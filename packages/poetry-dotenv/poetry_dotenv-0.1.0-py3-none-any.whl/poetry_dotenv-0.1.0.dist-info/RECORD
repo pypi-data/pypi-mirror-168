@@ -1,0 +1,8 @@
+poetry_dotenv/__init__.py,sha256=8yDfMo_8vgq5HFkMKj9AEZ2MD0vOGpAwyx8MV0F-Nb0,623
+poetry_dotenv/plugin.py,sha256=vNxDsqiIQulPS6q1pw7twZT2TmCzK0EP_hHeuX33M7I,1810
+poetry_dotenv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_dotenv-0.1.0.dist-info/entry_points.txt,sha256=S7Qq9K2Z9FCNWldLG9FOLC-gNj2ofn-c_pbOlp690OY,119
+poetry_dotenv-0.1.0.dist-info/LICENSE,sha256=FB5_Up4Xg-kXAU7G1vfxi8Yu4FjZBVF_AB-0tkcrZFs,1077
+poetry_dotenv-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+poetry_dotenv-0.1.0.dist-info/METADATA,sha256=mxtbEjBamlwwWgFu_vfNMcxoH8fzan3kl1DbV-XM6d8,8093
+poetry_dotenv-0.1.0.dist-info/RECORD,,

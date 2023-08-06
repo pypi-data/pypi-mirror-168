@@ -1,0 +1,4 @@
+[poetry.application.plugin]
+poethepoet=poethepoet.plugin:PoetryPlugin
+poetry-dotenv=poetry_dotenv.plugin:DotenvPlugin
+
