@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+py3_PyHue.egg-info/PKG-INFO
+py3_PyHue.egg-info/SOURCES.txt
+py3_PyHue.egg-info/dependency_links.txt
+py3_PyHue.egg-info/requires.txt
+py3_PyHue.egg-info/top_level.txt
+pyhue/Bridge.py
+pyhue/Lights.py
+pyhue/__init__.py
+pyhue/libs/ColourConverter.py
+pyhue/libs/__init__.py
