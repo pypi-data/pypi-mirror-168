@@ -1,0 +1,13 @@
+booleabayes/__init__.py,sha256=ZWHv5RbYvoiTymZF8JIcGXmBw1joOw0SeVQdozhQdGA,192
+booleabayes/load.py,sha256=cwR0weNevDO34ddWBp59Mx54d7weLpQzUfOmafNp7c0,6488
+booleabayes/make_tf_network.py,sha256=H1i0X26ORneL9SLffkJ1JBIrz04Znepb-tWc66qu_5E,6892
+booleabayes/plot.py,sha256=yyNRXEVjBvqVCWhi0vKyshROEuqEycP442VnuuQ4IbQ,34079
+booleabayes/proc.py,sha256=bIsrUZTS2jJrvpnw4JPWoPvF89PnTy_5vFdkUgcciG4,3766
+booleabayes/rw.py,sha256=LsfAoPP9bZLjzWMe8cO4L195S82v8GrsZg0l_iR_3as,18539
+booleabayes/tl.py,sha256=B5tnN1N6tiDzv36MBsxhMvKk0AzTkj6zfc57QnVy6ck,34494
+booleabayes/utils.py,sha256=nUL9GSAcga2cM9fOrasHnPwCPORtZTMb_Y6h1EPL36A,15123
+booleabayes-0.0.3.dist-info/LICENSE,sha256=FBGCL1IsbY-k3xt8d0tbX7wBikoMCqFTBPPVs-dw4Uw,1065
+booleabayes-0.0.3.dist-info/METADATA,sha256=pUBx7i78GykBN4QqYqth27btUCuKpnj7wQRj0w0HNg0,2303
+booleabayes-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+booleabayes-0.0.3.dist-info/top_level.txt,sha256=SvPcrFTLCcoI-huT6NKBFL3s5T0itUF6oNreJXymMzQ,12
+booleabayes-0.0.3.dist-info/RECORD,,
