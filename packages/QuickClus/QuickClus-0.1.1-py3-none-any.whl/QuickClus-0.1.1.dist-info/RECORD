@@ -1,0 +1,10 @@
+quickclus/QuickClus.py,sha256=cSk7WgKzwY5N7XFSYiqBMrpcVwXX0H1kK0gJiJInvt0,31647
+quickclus/__init__.py,sha256=_8QZGxwAjZbOtcOak6otA5v4TIkHuLCUJ546ivB3CRw,76
+quickclus/utils.py,sha256=bfpfDAWv-rrjpMFmAEkm3_PDzB8vO5q7VAF3-8opsWc,190
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/quickclus_test.py,sha256=8OMzscTEF70BOLnsiWxvWOA2S7pZvZiaf8OiALJS5-8,4839
+QuickClus-0.1.1.dist-info/LICENSE,sha256=l-iU2jRTneQZ71XKPPM7xQtRBC_IsBWtEzbJsUErL8c,1076
+QuickClus-0.1.1.dist-info/METADATA,sha256=SNG3Zg0eN-TbpNS0WItGgg7gdIq3EGwbwSo_uQYcuCI,2875
+QuickClus-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+QuickClus-0.1.1.dist-info/top_level.txt,sha256=BiThoKIZlpfhp_4OQUnsbTA50N-WmE1KBICSxJGCZd0,16
+QuickClus-0.1.1.dist-info/RECORD,,
