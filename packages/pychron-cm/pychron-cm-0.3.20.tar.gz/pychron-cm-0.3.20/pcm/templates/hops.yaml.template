@@ -1,0 +1,42 @@
+- counts: 15
+  settle: 8
+  cup_configuration:
+    - isotope: Ar40
+      active: True
+      detector: H1
+      protect: False
+      is_baseline: False
+    - isotope: Ar39
+      active: True
+      detector: AX
+      protect: False
+      is_baseline: False
+    - isotope: Ar38
+      active: True
+      detector: L1
+      protect: False
+      is_baseline: False
+    - isotope: Ar37
+      active: True
+      detector: L2
+      protect: False
+      is_baseline: False
+    - isotope: Ar36
+      active: True
+      detector: CDD
+      protect: False
+      is_baseline: False
+  positioning:
+     detector: H1
+     isotope: Ar40
+- counts: 15
+  settle: 5
+  cup_configuration:
+    - isotope: Ar39
+      active: True
+      detector: CDD
+      protect: False
+      is_baseline: False
+  positioning:
+    detector: CDD
+    isotope: Ar39

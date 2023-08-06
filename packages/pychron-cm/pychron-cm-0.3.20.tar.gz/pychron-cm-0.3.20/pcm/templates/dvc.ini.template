@@ -1,0 +1,3 @@
+[pychron.dvc.connection]
+favorites = "['local,mysql,root,localhost,pychrondvc,password,True,True,,OrganizationData,MetaData,MetaData,5,
+             repositories']"
