@@ -1,0 +1,5 @@
+prettytable
+colorama
+protobuf
+grpcio
+requests
