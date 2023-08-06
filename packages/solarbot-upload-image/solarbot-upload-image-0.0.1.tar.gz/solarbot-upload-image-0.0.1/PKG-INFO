@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: solarbot-upload-image
+Version: 0.0.1
+Summary: Upload images from robot
+Home-page: UNKNOWN
+Author: Os Madrugas
+Author-email: gabrielmaulyfatec@gmail.com
+License: MIT
+Keywords: upload images
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+License-File: LICENSE.txt
+
+UNKNOWN
+

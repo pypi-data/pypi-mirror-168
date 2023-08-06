@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+solarbot-upload-image/__init__.py
+solarbot-upload-image/controller/__init__.py
+solarbot-upload-image/controller/connection.py
+solarbot-upload-image/controller/uploadController.py
+solarbot-upload-image/model/__init__.py
+solarbot-upload-image/model/upload.py
+solarbot_upload_image.egg-info/PKG-INFO
+solarbot_upload_image.egg-info/SOURCES.txt
+solarbot_upload_image.egg-info/dependency_links.txt
+solarbot_upload_image.egg-info/requires.txt
+solarbot_upload_image.egg-info/top_level.txt
