@@ -1,0 +1,76 @@
+# SPDX-FileCopyrightText: 2022 geisserml <geisserml@gmail.com>
+# SPDX-License-Identifier: Apache-2.0 OR BSD-3-Clause
+
+import sys
+import setuptools
+from os.path import (
+    join,
+    abspath,
+    dirname,
+)
+from wheel.bdist_wheel import bdist_wheel
+
+sys.path.insert(0, dirname(dirname(abspath(__file__))))
+from pl_setup.packaging_base import (
+    DataTree,
+    VerNamespace,
+    LibnameForSystem,
+    VerStatusFileName,
+    PlatformNames,
+    plat_to_system,
+    get_wheel_tag,
+    clean_artefacts,
+    copy_platfiles,
+    set_versions,
+)
+
+
+def bdist_factory(pl_name):
+    
+    class pypdfium_bdist (bdist_wheel):
+        
+        def finalize_options(self, *args, **kws):
+            bdist_wheel.finalize_options(self, *args, **kws)
+            self.plat_name_supplied = True
+            self.root_is_pure = False
+        
+        def get_tag(self, *args, **kws):
+            return "py3", "none", get_wheel_tag(pl_name)
+    
+    return pypdfium_bdist
+
+
+SetupKws = dict(
+    version = VerNamespace["V_PYPDFIUM2"],
+)
+
+
+def mkwheel(pl_name):
+    
+    system = plat_to_system(pl_name)
+    libname = LibnameForSystem[system]
+    
+    ver_file = join(DataTree, pl_name, VerStatusFileName)
+    with open(ver_file, "r") as fh:
+        v_libpdfium = fh.read().strip()
+    
+    ver_changes = dict()
+    ver_changes["V_LIBPDFIUM"] = str(v_libpdfium)
+    ver_changes["IS_SOURCEBUILD"] = (pl_name == PlatformNames.sourcebuild)
+    set_versions(ver_changes)
+    
+    clean_artefacts()
+    copy_platfiles(pl_name)
+    
+    setuptools.setup(
+        package_data = {"": [libname]},
+        cmdclass = {"bdist_wheel": bdist_factory(pl_name)},
+        ext_modules = [
+            # declare a no-op extension module to prevent setuptools from using a purelib folder (cf. PEP 427)
+            setuptools.Extension(
+                "pdfium", [""],
+                optional = True,
+            ),
+        ],
+        **SetupKws,
+    )
