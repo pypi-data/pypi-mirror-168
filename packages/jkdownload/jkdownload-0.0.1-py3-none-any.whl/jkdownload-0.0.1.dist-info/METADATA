@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: jkdownload
+Version: 0.0.1
+Summary: Python implementation of an anime downloader for the jkanime.net website.
+Keywords: jkanime,anime,download,full episodes
+Author-email: Alejandro Martínez-Valencia <vaf.ss4@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Dist: selenium>=4.4
+Requires-Dist: tqdm>=4.46
+Project-URL: Bug Tracker, https://github.com/alexini-mv/jkdownload
+Project-URL: Homepage, https://github.com/alexini-mv/jkdownload
+
+# JKDownload
+ Download full episodes of your favorite anime from jkanime.net
+
+## Installation
+
+For install, open a terminal and write:
+
+```console
+$ python -m pip install jkdownload
+```
