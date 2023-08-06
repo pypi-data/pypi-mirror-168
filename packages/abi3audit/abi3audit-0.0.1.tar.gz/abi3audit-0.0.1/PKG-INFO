@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: abi3audit
+Version: 0.0.1
+Summary: Scans Python wheels for abi3 violations and inconsistencies
+Author-email: William Woodruff <william@yossarian.net>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security
+Requires-Dist: abi3info >= 0.0.2
+Requires-Dist: kaitaistruct ~= 0.10
+Requires-Dist: packaging ~= 21.3
+Requires-Dist: pefile >= 2022.5.30
+Requires-Dist: pyelftools >= 0.29
+Requires-Dist: requests ~= 2.28.1
+Requires-Dist: rich ~= 12.5.1
+Requires-Dist: build ; extra == "dev"
+Requires-Dist: pdoc3 ; extra == "dev"
+Requires-Dist: abi3audit[test,lint] ; extra == "dev"
+Requires-Dist: bandit ; extra == "lint"
+Requires-Dist: flake8 ; extra == "lint"
+Requires-Dist: black ; extra == "lint"
+Requires-Dist: isort ; extra == "lint"
+Requires-Dist: interrogate ; extra == "lint"
+Requires-Dist: mypy ; extra == "lint"
+Requires-Dist: types-requests ; extra == "lint"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pretend ; extra == "test"
+Requires-Dist: coverage[toml] ; extra == "test"
+Project-URL: Homepage, https://pypi.org/project/abi3audit/
+Project-URL: Issues, https://github.com/woodruffw/abi3audit/issues
+Project-URL: Source, https://github.com/woodruffw/abi3audit
+Provides-Extra: dev
+Provides-Extra: lint
+Provides-Extra: test
+
+abi3audit
+========
+
+[![CI](https://github.com/woodruffw/abi3audit/actions/workflows/ci.yml/badge.svg)](https://github.com/woodruffw/abi3audit/actions/workflows/ci.yml)
+
+abi3audit scans Python wheels (and unpackaged native extensions) for
+`abi3` violations and inconsistencies.
+
+⚠️ This project is not ready for general-purpose use! ⚠️
+
+## Installation
+
+abi3audit is available via `pip`:
+
+```console
+$ pip install abi3audit
+```
+
+## Usage
+
+### Examples
+
+## Licensing
+
+abi3audit is licensed under the MIT license.
+
+abi3audit includes ASN.1 and Mach-O parsers generated from
+definitions provided by the [Kaitai Struct](https://kaitai.io/) project.
+These vendored parsers are licensed by the Kaitai Struct authors under the MIT
+license.
+
