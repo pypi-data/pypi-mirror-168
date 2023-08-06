@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: grsdk
+Version: 1.0.4
+Requires-Python: >=3.8, <4
