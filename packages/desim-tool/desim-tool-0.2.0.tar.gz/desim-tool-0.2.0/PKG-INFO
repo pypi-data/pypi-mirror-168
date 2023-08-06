@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: desim-tool
+Version: 0.2.0
+Summary: A discrete event simulator
+Home-page: https://github.com/sed-group/desim
+Author: Erik
+Author-email: eber@chalmers.se
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.md
+
+UNKNOWN
+
