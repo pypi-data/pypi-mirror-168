@@ -1,0 +1,87 @@
+# All configurable parameters:
+# z                           -> Metallicity. Default value: 0.02
+# sol_ab                      -> Solar abundances data (*). Default value: as09
+# imf                         -> Initial Mass function to use (*). Default value: kroupa2002
+# imf_alpha                   -> If IMF is salpeter/starburst, this extra param is needed. Defaults to 2.35
+# imf_m_low                   -> Lower limit (in solar masses) for the IMF. Default value: 0.15
+# imf_m_up                    -> Upper limit (in solar masses) for the IMF. Default value: 100
+
+# m_min                       -> Minimum mass (in solar masses) for the resulting Q-Matrices. Default value: 0.98
+# m_max                       -> Maximum mass (in solar masses) for the resulting Q-Matrices. Default value: 40.0
+# binary_fraction             -> Fraction of binary systems. Default value: 0.15
+# dtd_sn                      -> Delay time distribution to use for Supernovae (*). Default value: rlp
+# sn_yields                   -> Dataset for Supernovae yields. Default value (*): iwa1998
+# output_dir                  -> Name of the directory where results are written. Defaults to "results"
+# total_time_steps            -> Total time steps for integration. Default value: 300
+# integration_step            -> The integration step can be constant in t or in log(t). Default value: "logt"
+# matrix_headers              -> Flag to include headers in the qm-matrices file. Default value: True
+# return_fractions            -> Flag to calculate R: the return fraction of the stellar generation. Default value: False
+# dtd_correction_factor       -> Correction factor for the uncertainty in the DTD integral. Default: 1.0
+# deprecation_warnings        -> If False Starmatrix won't show deprecation warnings. Default: True
+# expelled_elements_filename  -> Filename of ejected data. Defaults to an internal file with data for z=0.02 from
+#                                Gavilan et al, 2006, A&A, 450, 509 and Chieffi & Limongi, 2004, ApJ, 608, 405
+
+# (*) Some parameters offer a list of available options:
+
+# imf = [
+#         salpeter     = Salpeter 1955
+#         starburst    = Starburst 1999 (special case of Salpeter in [1, 120])
+#         chabrier     = Chabrier 2003
+#         ferrini      = Ferrini, Palla & Penco 1998
+#         kroupa2001   = Kroupa 2001
+#         kroupa2002   = Kroupa 2002 (default)
+#         miller_scalo = Miller & Scalo 1979
+#         maschberger  = Maschberger 2012
+#       ]
+
+# sol_ab = [
+#            ag89 = Anders & Grevesse 1989
+#            gs98 = Grevesse & Sauval 1998
+#            as05 = Asplund et al. 2005
+#            as09 = Asplund et al. 2009 (default)
+#            he10 = Heger 2010
+#            lo19 = Lodders et al. 2019
+#          ]
+
+# dtd_sn = [
+#            rlp  = DTD from Ruiz-Lapuente (default)
+#            maoz = DTD from Maoz & Graur 2017
+#            castrillo = DTD from Castrillo et al. 2021
+#            greggio = DTD from Greggio, L. 2005
+#            chen = DTD from Chen et al. 2021
+#            greggio-CDD04 = DTD from model Close DD 0.4 Gyrs from Greggio, L. (2005)
+#            greggio-CDD1 = DTD from model Close DD 1 Gyr from Greggio, L. (2005)
+#            greggio-WDD04 = DTD from model Wide DD 0.4 Gyrs from Greggio, L. (2005)
+#            greggio-WDD1 = DTD from model Wide DD 1 Gyr from Greggio, L. (2005)
+#            greggio-SDCH = DTD from model SD Chandra from Greggio, L. (2005)
+#            greggio-SDSCH = DTD from model SD sub-Chandra from Greggio, L. (2005)
+#            strolger-fit1 = Phi from Strolger et al (2020) with (ξ, ω, 𝛼) = (10, 600, 220)
+#            strolger-fit2 = Phi from Strolger et al (2020) with (ξ, ω, 𝛼) = (110, 1000, 2)
+#            strolger-fit3 = Phi from Strolger et al (2020) with (ξ, ω, 𝛼) = (350, 1200, 20)
+#            strolger-fit4 = Phi from Strolger et al (2020) with (ξ, ω, 𝛼) = (6000, 6000, -2)
+#            strolger-fit5 = Phi from Strolger et al (2020) with (ξ, ω, 𝛼) = (-650, 2200, 1100)
+#            strolger-optimized = Phi from Strolger et al (2020) with (ξ, ω, 𝛼) = (-1518, 51, 50)
+#          ]
+
+# sn_yields = [
+#            iwa1998 = SN yields from Iwamoto et al. 1998
+#            sei2013 = SN yields from Seitenzahl et al. 2013
+#            ln2018-1 = SN yields from Leung & Nomoto 2018 tables 6/7
+#            ln2018-2 = SN yields from Leung & Nomoto 2018 tables 8/9
+#            ln2018-3 = SN yields from Leung & Nomoto 2018 tables 10/11
+#            ln2020 = SN yields from Leung & Nomoto 2020
+#            br2019-1 = SN yields from Bravo et al 2019 table 3
+#            br2019-2 = SN yields from Bravo et al 2019 table 4
+#            gro2021-1 = SN yields from Gronow et al 2021 tables 3+A10
+#            gro2021-2 = SN yields from Gronow et al 2021 tables 4+A8
+#            mor2018-1 = SN yields from Mori et al 2018 model W7
+#            mor2018-2 = SN yields from Mori et al 2018 model WDD2
+#          ]
+
+z: 0.02
+sol_ab: as09
+imf: kroupa2002
+m_min: 0.8
+m_max: 100.0
+dtd_sn: rlp
+sn_yields: iwa1998
