@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bs_pathutils/__init__.py
+bs_pathutils/ensure.py
+bs_pathutils.egg-info/PKG-INFO
+bs_pathutils.egg-info/SOURCES.txt
+bs_pathutils.egg-info/dependency_links.txt
+bs_pathutils.egg-info/top_level.txt
