@@ -1,0 +1,12 @@
+numpy>=1.10
+
+[jax]
+jax>=0.2.7
+jaxlib>=0.1.57
+
+[testing]
+pytest>=6.0
+pytest-cov>=2.0
+tox>=3.24
+jax>=0.2.7
+jaxlib>=0.1.57
