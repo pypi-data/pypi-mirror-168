@@ -1,0 +1,8 @@
+iree/tools/xla/__init__.py,sha256=Dwy1ihrAYImCIeq7VVYVbELGK-NMWgF4j5YhtMcitSg,542
+iree/tools/xla/iree-import-xla,sha256=Q5fvj6Yb4Il9eyjpzp52vRxALiRrvbzJ3blWhg8Xy2c,14106792
+iree/tools/xla/scripts/iree_import_xla/__main__.py,sha256=Q3WJ_Yn7AmD_iwKcErx19UDvaJ1-KaEgft8k3Z8RayA,479
+iree_tools_xla-20220902.254.dist-info/RECORD,,
+iree_tools_xla-20220902.254.dist-info/METADATA,sha256=dy34RFrip-m2X6e8Sn-6vaB1KHqvfNjJ2m0mLZV5Jek,478
+iree_tools_xla-20220902.254.dist-info/WHEEL,sha256=V2KjM8jRkjCA0T3Qq1khvRiuI5gyLMwf7zYUWcXbs_4,146
+iree_tools_xla-20220902.254.dist-info/entry_points.txt,sha256=WdbI0W5uAOYaYll7GTacJ1a1WbZ1etXZfENj1yejLLc,89
+iree_tools_xla-20220902.254.dist-info/top_level.txt,sha256=VvWqv7BW1mOstqkVvB0lVU_q6KrPy9ABEHayFLvGDAw,5
