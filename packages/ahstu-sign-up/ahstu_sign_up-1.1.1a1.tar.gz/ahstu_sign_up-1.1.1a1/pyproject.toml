@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ahstu_sign_up"
+version = "1.1.1a1"
+description = "a simple script to deal with daily sign-up in AHSTU"
+readme = "README.md"
+keywords = ["ahstu", "automatic"]
+repository = "https://github.com/NoSimpleApple/ahstu_sign_up"
+authors = ["uncle_hoshino <hgenaaaa@gmail.com>"]
+license = "MIT"
+packages=[
+    { include = "signup" }
+]
+include = ["conf/.template", "help.txt", "main.py"]
+exclude = ["conf/*.ini"]
+
+[tool.poetry.scripts]
+ahstu_sign_up = "signup:main"
+
+[tool.poetry.dependencies]
+python = "~=3.10.0"
+requests = ">=2.28.1"
+lxml = ">=4.8"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
