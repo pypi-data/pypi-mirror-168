@@ -1,0 +1,15 @@
+jaxgw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaxgw/PE/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaxgw/PE/constants.py,sha256=zG0kfyGvNO84Upa-kPGNB8O87pj44koL7kJ7mkSSTPM,318
+jaxgw/PE/detector_preset.py,sha256=GPT-3O5yfO6_gxL_T2QwUCEcgxa3P0_X_RtYGFHnZ14,2655
+jaxgw/PE/detector_projection.py,sha256=X9kL_e_GaLdvh7BC3uenWnNQZMDBSQ9qyO2znPcUSMw,6378
+jaxgw/PE/generate_noise.py,sha256=HdUUf_hK-b0_VulsRqK8AsNJK6QlWuh2dPRrsV1nJYo,1866
+jaxgw/PE/heterodyneLikelihood.py,sha256=y5c7wiY8Fv553TTH2eW8SGluLe1cqq2vVJqyd65Bl9s,4782
+jaxgw/PE/single_event_likelihood.py,sha256=ZNuDQQGbnlc9sAUWvRizyU5gzFxrGNsbLm6hY-zHp_8,504
+jaxgw/PE/time_and_date.py,sha256=JH70KZMmc5DM3xCJUHNHgqS6_Chu2sh4uYLqNpWS1A4,1537
+jaxgw/PE/utils.py,sha256=hLVuOHXnf0vrNSlygPblJROaS0EcFM6M8U678MWJxvw,1098
+jaxGW-0.0.1.dist-info/LICENSE,sha256=s7n-6SxvTDX8fAgxa7scGeQQQBFA6B7yewNo9Dxa6nk,1066
+jaxGW-0.0.1.dist-info/METADATA,sha256=rlOyYvXbWG5_yX6Pryi7uskotnmj8X4feyLyypzZZls,398
+jaxGW-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jaxGW-0.0.1.dist-info/top_level.txt,sha256=O1GjX8DboZjZHB6HE0RNmoVz6Xix6HhNcUfvr7nIaYw,6
+jaxGW-0.0.1.dist-info/RECORD,,
