@@ -1,0 +1,3 @@
+numpy
+GDAL>=3.*
+opencv-python
