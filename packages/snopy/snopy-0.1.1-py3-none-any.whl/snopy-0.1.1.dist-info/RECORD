@@ -1,0 +1,15 @@
+snopy/__init__.py,sha256=t3theyStEpFgpPF5cnJbXpGe5VtDAL3mc9qhg4sOus8,64
+snopy/_elements/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snopy/_elements/database.py,sha256=bWofYEQ5qjPbhcBIen223JzMlFhvH75lB91vx2TrsfE,2334
+snopy/_elements/file_format.py,sha256=z8lLl1gyprvzARxt0zw59YUA8NVCqRS-jfivNG8kodQ,2598
+snopy/_elements/role.py,sha256=onHMkzYp1E0cf3SHPbHdItjcKSqpsQV3-JAUl3qsN5Y,981
+snopy/_elements/schema.py,sha256=0mj3_UJ3av_8avCqyTVjui_cWZFUPaJMc1zJ9mT-11U,2290
+snopy/_elements/snowflake_connector.py,sha256=JL2sJQyidjXRDla-a-BG2CpgWsO2ZmWTcgiEcotup2Q,10077
+snopy/_elements/stage.py,sha256=3ORcvisgjPS4gwDrMEYySHQTQ1aO8ZtZUQ7CajJ6glw,4813
+snopy/_elements/storage_integration.py,sha256=AoDHCwmBU5GZ7FT6zY7mjss8NGqKFv64IsVSlrG6p1o,3123
+snopy/_elements/warehouse.py,sha256=uiMQkR5rUQpnXjgLNrZs4pvJgVbvMpT1zCuAeO6wD_8,3879
+snopy/connect.py,sha256=TPOCvh8SA1XcRC1JAR69tpTnt8XIKF3m5sXINGTP5uI,1156
+snopy-0.1.1.dist-info/LICENSE,sha256=KIq1pDY1Wr90rGB6CTApVwqR7wUH9BMoi8MEHXFKvh8,11362
+snopy-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+snopy-0.1.1.dist-info/METADATA,sha256=JS9dm8p4cWD7C3ww2yLckeGt61eA_xdV01W8wqmKbZA,699
+snopy-0.1.1.dist-info/RECORD,,
