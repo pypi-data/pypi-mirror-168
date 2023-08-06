@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bubbleio/__about__.py
+bubbleio/__init__.py
+bubbleio/bubbleio.py
+bubbleio.egg-info/PKG-INFO
+bubbleio.egg-info/SOURCES.txt
+bubbleio.egg-info/dependency_links.txt
+bubbleio.egg-info/requires.txt
+bubbleio.egg-info/top_level.txt
