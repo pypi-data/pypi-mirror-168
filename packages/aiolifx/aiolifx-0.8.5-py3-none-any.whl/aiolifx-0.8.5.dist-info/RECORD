@@ -1,0 +1,15 @@
+aiolifx/__init__.py,sha256=EwJT-iaE_MLTwrRYM09VZ-nFKlbSKR6IWY27jxPQpsU,171
+aiolifx/__main__.py,sha256=nXyhEoZRBOZrjjXnHBlfDSF0SmLkp9pwJtDjHF33DHg,19095
+aiolifx/aiolifx.py,sha256=4Ml3BGxXjwsQf6fgAavqZXcEV0z7BEwn8TLU8cvkfXA,67998
+aiolifx/connection.py,sha256=wFqJUKqKUwkHd0jlZWHBsl3dpE-lQ-BzalB5XVzqEzU,757
+aiolifx/message.py,sha256=rvEQzAXMSPyRqElxp28o-sk71n43T2pAIX0eZWBrr2g,6393
+aiolifx/msgtypes.py,sha256=LJMiU95fg95w3n1Zjebkz1Bss5I0DHiH65AHe--Pj1I,48192
+aiolifx/products.py,sha256=w5JunOo-qtcQZIFLVDL11UcqL4wjsRzdbXl574-gewg,29567
+aiolifx/unpack.py,sha256=yLQJdcDzaNk5EsN-pM7Ik9ivyal7Xt9PTiI8lMCHR6E,18494
+aiolifx/update-products.py,sha256=9sc4rES-lm4lD5NNjt117tDpifkIVss0rrouFqFsFaQ,1473
+aiolifx-0.8.5.dist-info/LICENSE.txt,sha256=wgZs1EB54McGI0ABrxjLatS2L8aNDQjSn9xzGZFmR-A,1085
+aiolifx-0.8.5.dist-info/METADATA,sha256=x_05B-m6DyUImmnqQ-vASEmT5JaCYBAPMfffnklyB7E,3835
+aiolifx-0.8.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiolifx-0.8.5.dist-info/entry_points.txt,sha256=KEtTSUwFjuqZ_KhvCsvIbTV-9IEIfIUY_pj5Z4kNn6c,51
+aiolifx-0.8.5.dist-info/top_level.txt,sha256=IxOvSArM5LL-hpg9ujeuONkHPKaYWHbWIFNSRZbqSnk,8
+aiolifx-0.8.5.dist-info/RECORD,,
