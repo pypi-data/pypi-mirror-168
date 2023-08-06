@@ -1,0 +1,11 @@
+<Pygmentshtmltemplate>
+  <ol class="${cssclass}">
+    <Line>
+      <li _="${highlighted}" class="hll"><Tokens/></li>
+      <li><Tokens/></li>
+    </Line>
+    <Tokens>
+      <code class="${token_class}"><Token/></code>
+    </Tokens>
+  </ol>
+</Pygmentshtmltemplate>

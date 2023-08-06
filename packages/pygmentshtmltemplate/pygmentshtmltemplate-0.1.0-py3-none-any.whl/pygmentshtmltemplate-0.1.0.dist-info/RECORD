@@ -1,0 +1,13 @@
+pygmentshtmltemplate/__init__.py,sha256=QVVTagGcE5zjCT1QQ5Yq2-psNfkBNyihV1fGKbbfPps,5577
+pygmentshtmltemplate/docutils.py,sha256=lhuU3mBJiC9v3I2H9QxxRtoSZ1GgnzFY39G14wEojCs,3231
+pygmentshtmltemplate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygmentshtmltemplate/parsers/__init__.py,sha256=VvZMZFiL6eMWCbcUi7JPwSH-hGJdxj1Ab1ktBRGdg4o,4992
+pygmentshtmltemplate/templates/__init__.py,sha256=yALhRo1OIIAExxbUXe1ShyXFRvBxHtCPd_MP4e4k_q8,4749
+pygmentshtmltemplate/templates/default.xml,sha256=hiPmE_mJcxGM9yFXigVRThX7s_P5mHTNT7m0q6PeZ4g,264
+pygmentshtmltemplate/templates/nodes.py,sha256=rAoZ9hIaT_ftjwxN-pY90AOClIg-xkfXi4YUoHOW3m0,6969
+pygmentshtmltemplate-0.1.0.dist-info/LICENSE.txt,sha256=t48rVtrEy--C4LK89McAx2Mke3VP0DFw8AYCBErVqH4,1070
+pygmentshtmltemplate-0.1.0.dist-info/METADATA,sha256=xka64nW6UiFuTOo9PpIlS7RCAg2k5mJEV-GUj-_lsWg,6810
+pygmentshtmltemplate-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygmentshtmltemplate-0.1.0.dist-info/entry_points.txt,sha256=dtu8WyoNPRRfaHns2uPO2G8iJ41FjinqPvRa9mF6_zA,88
+pygmentshtmltemplate-0.1.0.dist-info/top_level.txt,sha256=P6u2lwDzWxmA6KpeVzXWjuMhHez-zJLNsQqjUt9vwiI,21
+pygmentshtmltemplate-0.1.0.dist-info/RECORD,,
