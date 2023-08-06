@@ -1,0 +1,114 @@
+import os
+from pywapor.collect.protocol import cog
+from pywapor.general.processing_functions import open_ds, remove_ds, save_ds
+import xarray as xr
+from functools import partial
+from pywapor.enhancers import lulc
+import numpy as np
+
+def default_vars(product_name, req_vars):
+    variables = {
+        '2009_V2.3_Global': {
+                "Band1": [("lat", "lon"), "lulc"],
+                "crs": [(), "spatial_ref"],
+                    },
+    }
+
+    req_dl_vars = {
+        "2009_V2.3_Global": {
+            "lulc": ["Band1", "crs"],
+            "rs_min": ["Band1", "crs"],
+            "z_obst_max": ["Band1", "crs"], 
+            "land_mask": ["Band1", "crs"],
+            "lue_max": ["Band1", "crs"],
+        },
+    }
+
+    out = {val:variables[product_name][val] for sublist in map(req_dl_vars[product_name].get, req_vars) for val in sublist}
+    
+    return out
+
+def remove_var(ds, var):
+    return ds.drop_vars([var])
+
+def default_post_processors(product_name, req_vars):
+
+    post_processors = {
+        '2009_V2.3_Global': {
+            "lulc": [],
+            "rs_min": [partial(lulc.lulc_to_x, in_var = "lulc", out_var = "rs_min", 
+                        convertor = lulc.globcover_to_rs_min())],
+            "z_obst_max": [partial(lulc.lulc_to_x, in_var = "lulc", out_var = "z_obst_max", 
+                        convertor = lulc.globcover_to_z_obst_max())],
+            "land_mask": [partial(lulc.lulc_to_x, in_var = "lulc", out_var = "land_mask", 
+                        convertor = lulc.globcover_to_land_mask())],
+            "lue_max": [partial(lulc.lulc_to_x, in_var = "lulc", out_var = "lue_max", 
+                        convertor = lulc.globcover_to_lue_max())],
+            },
+    }
+
+    out = {k:v for k,v in post_processors[product_name].items() if k in req_vars}
+
+    return out
+
+def url_func(product_name):
+    return r"http://due.esrin.esa.int/files/GLOBCOVER_L4_200901_200912_V2.3.color.tif"
+
+def download(folder, latlim, lonlim, product_name, req_vars = ["lulc"],
+                variables = None, post_processors = None, **kwargs):
+    
+    folder = os.path.join(folder, "GLOBCOVER")
+
+    appending = False
+    fn = os.path.join(folder, f"{product_name}.nc")
+    if os.path.isfile(fn):
+        os.rename(fn, fn.replace(".nc", "_to_be_appended.nc"))
+        existing_ds = open_ds(fn.replace(".nc", "_to_be_appended.nc"))
+        if np.all([x in existing_ds.data_vars for x in req_vars]):
+            existing_ds = existing_ds.close()
+            os.rename(fn.replace(".nc", "_to_be_appended.nc"), fn)
+            existing_ds = open_ds(fn)
+            return existing_ds[req_vars]
+        else:
+            appending = True
+            fn = os.path.join(folder, f"{product_name}_appendix.nc")
+            req_vars = [x for x in req_vars if x not in existing_ds.data_vars]
+
+    coords = {"x": ("lon", lonlim), "y": ("lat", latlim)}
+
+    if isinstance(variables, type(None)):
+        variables = default_vars(product_name, req_vars)
+
+    if isinstance(post_processors, type(None)):
+        post_processors = default_post_processors(product_name, req_vars)
+    else:
+        default_processors = default_post_processors(product_name, req_vars)
+        post_processors = {k: {True: default_processors[k], False: v}[v == "default"] for k,v in post_processors.items() if k in req_vars}
+
+    ds_new = cog.download(fn, product_name, coords, variables, 
+                        post_processors, url_func, ndv = 0)
+
+    if appending:
+        ds = xr.merge([ds_new, existing_ds])
+        lbl = f"Appending new variables (`{'`, `'.join(req_vars)}`) to existing file."
+        ds = save_ds(ds, os.path.join(folder, f"{product_name}.nc"), encoding = "initiate", label = lbl)
+        remove_ds(ds_new)
+        remove_ds(existing_ds)
+    else:
+        ds = ds_new
+
+    return ds
+
+if __name__ == "__main__":
+
+    product_name = '2009_V2.3_Global'
+
+    folder = r"/Users/hmcoerver/Local/globcov_test"
+    latlim = [28.9, 29.7]
+    lonlim = [30.2, 31.2]
+    variables = None
+    post_processors = None
+    req_vars = ["lulc", "rs_min", "land_mask"]
+
+    ds = download(folder, latlim, lonlim, product_name, req_vars = req_vars,
+                    variables = variables, post_processors = post_processors)
