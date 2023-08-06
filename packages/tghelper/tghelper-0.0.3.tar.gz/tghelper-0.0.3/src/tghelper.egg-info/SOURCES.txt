@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tghelper/__init__.py
+src/tghelper/tghelper.py
+src/tghelper.egg-info/PKG-INFO
+src/tghelper.egg-info/SOURCES.txt
+src/tghelper.egg-info/dependency_links.txt
+src/tghelper.egg-info/requires.txt
+src/tghelper.egg-info/top_level.txt
