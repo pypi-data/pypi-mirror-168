@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+papagotrans/__init__.py
+papagotrans/translate.py
+papagotrans.egg-info/PKG-INFO
+papagotrans.egg-info/SOURCES.txt
+papagotrans.egg-info/dependency_links.txt
+papagotrans.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: papagotrans
+Version: 1.0.0
+Summary: Python 무제한 파파고 API입니다. API Key가 필요하지 않습니다.
+Home-page: https://papagotrans.seeun.ga
+Author: Nicknamekr
+Author-email: moduleowner@seeun.ga
