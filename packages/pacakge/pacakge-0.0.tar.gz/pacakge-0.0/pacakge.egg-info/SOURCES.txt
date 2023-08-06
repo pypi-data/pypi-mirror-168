@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+pacakge/__init__.py
+pacakge.egg-info/PKG-INFO
+pacakge.egg-info/SOURCES.txt
+pacakge.egg-info/dependency_links.txt
+pacakge.egg-info/not-zip-safe
+pacakge.egg-info/top_level.txt
