@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pydesignflow
+Version: 0.2.0
+Summary: Micro-Framework for FPGA / VLSI Design Flow in Python
+Author: Tobias Kaiser
+Author-email: mail@tb-kaiser.de
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+License-File: LICENSE
