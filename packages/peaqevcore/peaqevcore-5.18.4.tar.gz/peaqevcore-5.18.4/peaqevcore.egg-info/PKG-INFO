@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: peaqevcore
+Version: 5.18.4
+Summary: Core types for peaqev car charging
+Home-page: https://github.com/elden1337/peaqev-core
+Author: Magnus Eldén
+License: MIT
+License-File: LICENSE.txt
