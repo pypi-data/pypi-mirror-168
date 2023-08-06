@@ -1,0 +1,51 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thebridge-autocheck"
+version = "1.1.1"
+description = "Automatic correction for The Bridge Exercises"
+readme = "README.md"
+authors = [{ name = "Alberto Becerra Tomé", email = "alberto.becerra@thebridgeschool.es" }]
+license = { file = "LICENSE" }
+classifiers = [
+    # "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["exercises", "learn", "tutorial"]
+dependencies = [
+    "pandas",
+    "tomli",
+    "ipywidgets==8.0.2"
+]
+requires-python = ">=3.6"
+
+# [project.optional-dependencies]
+# dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.urls]
+Homepage = "https://github.com/AlbertoBecerraTB/TheBridge-AutoCheck"
+
+# [project.scripts]
+# realpython = "reader.__main__:main"
+
+[tool.bumpver]
+current_version = "1.1.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+# commit_message = "bump version {old_version} -> {new_version}"
+# commit = true
+# tag = true
+# push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"', 'version = "{version}"'
+]
+"src/learntools/__init__.py" = ["{version}"]
+
