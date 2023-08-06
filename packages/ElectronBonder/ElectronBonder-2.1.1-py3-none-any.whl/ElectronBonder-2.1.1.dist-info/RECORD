@@ -1,0 +1,8 @@
+electronbonder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+electronbonder/client.py,sha256=cQQU_z9HsfI3Wd2SsN2vTaFWnDaZqMGFhorEtWJ6jDs,4627
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=0OdQZ8Z63To5PdvH6JaLHq3kAHYOWMX1hSBDJ-FDadk,2611
+ElectronBonder-2.1.1.dist-info/METADATA,sha256=t8nQP936qhOOPDsaeh3BQfJFb9QnBQY4FfcrQsSracI,1181
+ElectronBonder-2.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ElectronBonder-2.1.1.dist-info/top_level.txt,sha256=nkZt3qSUK272M6uXk_BVwDhYAWXKAR78_9SVRjoJr3g,21
+ElectronBonder-2.1.1.dist-info/RECORD,,
