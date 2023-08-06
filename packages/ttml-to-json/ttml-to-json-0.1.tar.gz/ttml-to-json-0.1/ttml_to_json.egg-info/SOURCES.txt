@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ttml_to_json/__init__.py
+ttml_to_json/__main__.py
+ttml_to_json/cli.py
+ttml_to_json.egg-info/PKG-INFO
+ttml_to_json.egg-info/SOURCES.txt
+ttml_to_json.egg-info/dependency_links.txt
+ttml_to_json.egg-info/entry_points.txt
+ttml_to_json.egg-info/requires.txt
+ttml_to_json.egg-info/top_level.txt
