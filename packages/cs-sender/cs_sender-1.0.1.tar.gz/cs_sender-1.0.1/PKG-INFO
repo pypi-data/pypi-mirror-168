@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cs_sender
+Version: 1.0.1
+Summary: crawler studio api
+Author: liuxianglong
+Author-email: liu_xianglong@live.com
+Maintainer: liuxianglong
+Maintainer-email: liu_xianglong@live.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+
+# CS-API 
+
+## 说明
+配合可视化爬虫平台crawler-stuido使用的爬虫扩展
+
