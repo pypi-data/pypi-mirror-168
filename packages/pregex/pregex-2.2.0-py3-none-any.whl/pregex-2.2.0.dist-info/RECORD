@@ -1,0 +1,17 @@
+pregex/__init__.py,sha256=ths-x7Zd6Cx4GF4gSEq5Xw5fhLD6tCBwb_S_qfEv7xM,52
+pregex/core/__init__.py,sha256=0N035rL_WSXbYkYhj3YXcJvEW9AKwhAcogiTJtXEGvw,276
+pregex/core/assertions.py,sha256=ZUIS9n9UTQjXcbgdYPNqTZuHRzSiRGnq6r94nS7fxsg,20688
+pregex/core/classes.py,sha256=ZzUwqx0FWFeSLBdM6hjXIKthRCUKs0JuJZcvwO5dUOM,48695
+pregex/core/exceptions.py,sha256=HH2bkG6bgZ9qvNChJ-JmwlxEbjg3iAdmKx0b9nUWr6o,10088
+pregex/core/groups.py,sha256=uYQpLM634xG8CVGW2Xkj_31hXLK4wPi-L657GMb4HTM,13024
+pregex/core/operators.py,sha256=3vyTupaqYLmrg97cducIFdpbU3NE28j5iiyT77f2Mpw,7479
+pregex/core/pre.py,sha256=MNnjlkr7lKuIuBPrlJXiNxSQ_KcKjKLva9t1iNprJ7Q,62933
+pregex/core/quantifiers.py,sha256=Nkz-os4YqrSK79G2IfzyfUTQsCYwvVNOtrWtkKyNocc,15182
+pregex/core/tokens.py,sha256=A-HMySEngDIoZ3BdCReDcrIJQDEeaWxq2A6wKgKSJO8,5837
+pregex/meta/__init__.py,sha256=Ub69oBXHTI2pDVUX1GkqeH-TVCYIB1R9_DI1rslgzBA,36
+pregex/meta/essentials.py,sha256=Qn_rNdghNU0j3BpF4WBEyPEUnEy0Xvw9G_QcFoLQtIs,82171
+pregex-2.2.0.dist-info/LICENSE,sha256=fDsAjkvD7I0OdvphEwChXc9t2nwVh0SYF9-DvB7uu6I,1094
+pregex-2.2.0.dist-info/METADATA,sha256=PQuUW3qdScKfWpYzr369l2yrzIWAKbBJs5vQCEC-uKY,16162
+pregex-2.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pregex-2.2.0.dist-info/top_level.txt,sha256=s1O8mov59SfEgju6DJvi7FjuOTjmm6uJjuZ5nfNZVO8,7
+pregex-2.2.0.dist-info/RECORD,,
