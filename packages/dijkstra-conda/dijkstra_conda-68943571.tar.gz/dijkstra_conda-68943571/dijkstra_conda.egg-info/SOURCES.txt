@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dijkstra_conda/__init__.py
+dijkstra_conda/cli.py
+dijkstra_conda/dfs_path_test.py
+dijkstra_conda.egg-info/PKG-INFO
+dijkstra_conda.egg-info/SOURCES.txt
+dijkstra_conda.egg-info/dependency_links.txt
+dijkstra_conda.egg-info/entry_points.txt
+dijkstra_conda.egg-info/not-zip-safe
+dijkstra_conda.egg-info/requires.txt
+dijkstra_conda.egg-info/top_level.txt
+test/test_dijkstra-conda.py
