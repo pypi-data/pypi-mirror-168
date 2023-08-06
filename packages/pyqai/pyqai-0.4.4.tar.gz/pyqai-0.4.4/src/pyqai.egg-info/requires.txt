@@ -1,0 +1,6 @@
+docker
+kubernetes
+protobuf
+PyYAML
+requests
+pipreqs
