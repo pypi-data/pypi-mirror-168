@@ -1,0 +1,4 @@
+lxml
+pyopenssl
+pyraml-parser>=0.1.3
+requests>=2.7.0
