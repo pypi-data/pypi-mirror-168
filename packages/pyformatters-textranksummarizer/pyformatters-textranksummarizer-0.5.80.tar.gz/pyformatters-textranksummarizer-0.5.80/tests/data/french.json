@@ -1,0 +1,48 @@
+{
+  "identifier": "02243e5c-efe2-47f2-b4fb-5e8b8642cd60-19",
+  "title": "20161023_NP_Renseignor_948.pdf - Radio Chine internationale, le 19-10-2016",
+  "metadata": {
+    "language": "fr",
+    "Corpus": [
+      "Renseignor_Full"
+    ]
+  },
+  "categories": [
+    {
+      "labelName": "no_attentat",
+      "score": 0.7848075032234192,
+      "createdBy": "attentat_plan_annotation",
+      "createdDate": "2021-11-03T07:31:23.516Z",
+      "modifiedDate": "2021-11-03T07:31:23.516Z",
+      "status": "OK",
+      "label": "No Attentat"
+    }
+  ],
+  "createdBy": "vnibart",
+  "createdDate": "2021-11-03T07:30:54.93Z",
+  "modifiedDate": "2021-11-03T07:30:54.93Z",
+  "text": "Un attentat à la bombe dans le métro de Londres aurait été déjoué par la police britannique... \nLes médias britanniques ont indiqué vendredi soir que la police avait déjoué un complot terroriste visant \nle métro de Londres, alors qu'un homme de 19 ans qui prévoyait une attaque à la bombe a été arrêté. \nLe Daily Telegraph a rapporté que le jeune homme a été arrêté vendredi par des officiers de la brigade \nantiterroriste, un jour après qu'un appareil suspect avait été retrouvé à bord d'une rame du métro de \nLondres. Le journal a cité une note du gouvernement à son personnel indiquant qu'il était encore \npossible que l'auteur ait placé d'autres appareils. Le ministère britannique de la Défense n'a pas publié \nde communiqué sur son site internet et n'a pas répondu aux questions de Xinhua. Le Daily Telegraph \nprécise que des responsables sécuritaires britanniques ont contacté le ministère de la Défense après la \ndécouverte de l'appareil suspect pour prévenir le personnel militaire, et le niveau de menace contre les \ntransports londoniens a été augmenté à élevé, signalant qu'une attaque était très probable. \n",
+  "sentences": [
+    {
+      "start": 0,
+      "end": 302
+    },
+    {
+      "start": 304,
+      "end": 519
+    },
+    {
+      "start": 520,
+      "end": 660
+    },
+    {
+      "start": 661,
+      "end": 795
+    },
+    {
+      "start": 796,
+      "end": 1118
+    }
+  ],
+  "annotations": []
+}
