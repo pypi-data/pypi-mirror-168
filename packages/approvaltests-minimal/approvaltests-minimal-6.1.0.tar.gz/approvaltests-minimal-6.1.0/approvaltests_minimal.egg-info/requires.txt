@@ -1,0 +1,11 @@
+pytest>=4.0.0
+empty-files>=0.0.3
+
+[ClipboardReporter]
+pyperclip
+
+[PairwiseCombinations]
+allpairspy
+
+[verify_html]
+beautifulsoup4
