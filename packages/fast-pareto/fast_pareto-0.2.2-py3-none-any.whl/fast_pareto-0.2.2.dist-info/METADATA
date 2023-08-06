@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fast-pareto
+Version: 0.2.2
+Summary: UNKNOWN
+Home-page: https://github.com/nabenabe0928/fast_pareto
+Author: nabenabe0928
+Author-email: shuhei.watanabe.utokyo@gmail.com
+License: UNKNOWN
+Platform: Linux
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
