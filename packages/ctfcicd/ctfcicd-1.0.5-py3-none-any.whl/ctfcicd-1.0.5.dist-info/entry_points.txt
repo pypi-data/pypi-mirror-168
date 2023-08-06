@@ -1,0 +1,2 @@
+[console_scripts]
+ctfcicd = ctfcicd.__main__:main
