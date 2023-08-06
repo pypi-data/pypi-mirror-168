@@ -1,0 +1,5 @@
+ezaws.egg-info/PKG-INFO
+ezaws.egg-info/SOURCES.txt
+ezaws.egg-info/dependency_links.txt
+ezaws.egg-info/top_level.txt
+test/test.py
