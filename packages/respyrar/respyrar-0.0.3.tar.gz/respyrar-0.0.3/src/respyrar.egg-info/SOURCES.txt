@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/respyrar/__init__.py
+src/respyrar/main.py
+src/respyrar.egg-info/PKG-INFO
+src/respyrar.egg-info/SOURCES.txt
+src/respyrar.egg-info/dependency_links.txt
+src/respyrar.egg-info/requires.txt
+src/respyrar.egg-info/top_level.txt
+test/test.py
