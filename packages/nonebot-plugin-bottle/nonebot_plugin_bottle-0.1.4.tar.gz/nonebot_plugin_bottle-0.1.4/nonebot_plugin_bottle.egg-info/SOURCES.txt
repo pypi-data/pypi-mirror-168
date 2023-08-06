@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.cfg
+setup.py
+nonebot_plugin_bottle/__init__.py
+nonebot_plugin_bottle/data_source.py
+nonebot_plugin_bottle.egg-info/PKG-INFO
+nonebot_plugin_bottle.egg-info/SOURCES.txt
+nonebot_plugin_bottle.egg-info/dependency_links.txt
+nonebot_plugin_bottle.egg-info/requires.txt
+nonebot_plugin_bottle.egg-info/top_level.txt
