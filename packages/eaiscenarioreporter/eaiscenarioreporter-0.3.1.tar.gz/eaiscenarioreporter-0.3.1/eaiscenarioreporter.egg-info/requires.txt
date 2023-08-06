@@ -1,0 +1,6 @@
+behave
+python-docx
+Pillow
+matplotlib
+markdown-it-py
+htmldocx
