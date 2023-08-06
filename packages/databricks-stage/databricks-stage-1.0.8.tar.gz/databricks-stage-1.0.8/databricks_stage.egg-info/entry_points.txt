@@ -1,0 +1,2 @@
+[console_scripts]
+databricks-stage = databricks_stage.databricks_stage:run

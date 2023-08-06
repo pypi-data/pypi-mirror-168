@@ -1,0 +1,23 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "databricks-stage"
+version = "1.0.8"
+description = "Stages data to specified blob storage container"
+readme = "README.md"
+authors = [{ name = "Sisu Data Inc." }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pyspark",
+]
+requires-python = ">=3.6"
+
+[project.scripts]
+databricks-stage = "databricks_stage.databricks_stage:run"
