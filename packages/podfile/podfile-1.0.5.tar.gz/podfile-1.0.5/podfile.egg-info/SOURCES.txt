@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+podfile/__init__.py
+podfile/podfile.py
+podfile.egg-info/PKG-INFO
+podfile.egg-info/SOURCES.txt
+podfile.egg-info/dependency_links.txt
+podfile.egg-info/requires.txt
+podfile.egg-info/top_level.txt
