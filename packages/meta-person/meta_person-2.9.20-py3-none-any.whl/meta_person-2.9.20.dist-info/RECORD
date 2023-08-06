@@ -1,0 +1,17 @@
+metaperson/__init__.py,sha256=P0xbifdm8BZYGDinUE8jlWoPjuQfWZwH3BmS40Zccs8,63
+metaperson/app/__init__.py,sha256=CyNYr4vgUW9yeQg8FsFEotTH2z7k9Xq4Suli-s4PlfE,134
+metaperson/app/hand_detection_onnx.py,sha256=80Rc8u79g2cJSCpalqQPXO9xmCS3qSKMkhXdsi-c4q4,1195
+metaperson/app/hand_detection_trt.py,sha256=u_P-deAhk1ytTYdqH2pP01cmtDeHFa1aYqyUO0I6Ogw,1055
+metaperson/app/onnx_to_trt.py,sha256=RHgoufIfFmjm1ZxFUOocmehRgPy1Ndk3ElaFqA656T0,1184
+metaperson/model_zoo/__init__.py,sha256=Ht2nf0ZbMsBhZ_WhRU-Sqsrr5zX7r2Kv71CeuYti0Fs,85
+metaperson/model_zoo/onnx_predictor.py,sha256=m8ms3bZYxbo6O9f8p-o6RmVox3zZjE2CjmYgj8vKw0M,3250
+metaperson/model_zoo/trt_export.py,sha256=NnMSMtyI1qXEZ5N4XWkr8qxDI0k_E5Jo4IS7mK6igEQ,13946
+metaperson/model_zoo/trt_predictor.py,sha256=_mnbdvEOyiFg1qmbv2juGo12HlVdCAHIRnLlaXxSY0Q,1629
+metaperson/utils/__init__.py,sha256=EGwxvsyNRGpWJEpOjGgGlUQPL9hmidTuCT7khTYiOVE,47
+metaperson/utils/image_batch.py,sha256=qj1E5v_WAF_NA9A_V-AtTVTB8-vkfBdgp1C6Jq2YoxY,7059
+metaperson/utils/utils.py,sha256=0iSw34_2ZqNs16ZyY_siLD3gNazffuBaTHY843g4OTM,12938
+meta_person-2.9.20.dist-info/METADATA,sha256=jQDnl2fRVxd8UHPg7_yB_cRE8moD0JBult-R1M_wo6I,447
+meta_person-2.9.20.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+meta_person-2.9.20.dist-info/top_level.txt,sha256=4-tgNEViQD-8i0KeRQrTMSbo9SjKuohYPQLpDtaWo54,11
+meta_person-2.9.20.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+meta_person-2.9.20.dist-info/RECORD,,
