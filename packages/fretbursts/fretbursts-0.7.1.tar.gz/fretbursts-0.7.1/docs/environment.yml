@@ -1,0 +1,19 @@
+name: fretbursts-docs
+
+channels:
+- conda-forge
+- default
+
+dependencies:
+- python=3.8
+- setuptools
+- matplotlib
+- cython
+- pytables
+- lmfit
+- mock
+- pandas
+- phconvert
+- pip:
+  - seaborn
+  - sphinx_bootstrap_theme

@@ -1,0 +1,158 @@
+.gitattributes
+.gitignore
+.hidden
+.readthedocs.yml
+.travis.yml
+LICENSE.txt
+MANIFEST.in
+README.md
+_config.yml
+appveyor.yml
+build.cmd
+build_package.md
+release howto.md
+setup.cfg
+setup.py
+versioneer.py
+.github/workflows/tests.yml
+conda.recipe/bld.bat
+conda.recipe/build.sh
+conda.recipe/meta.yaml
+docs/Makefile
+docs/environment.yml
+docs/how_to_configure_readthedocs.txt
+docs/make.bat
+docs/rtd_requirements.txt
+docs/source/HDF5_format.rst
+docs/source/HDF5_smFRET.rst
+docs/source/TODO.txt
+docs/source/absolute_beginner.rst
+docs/source/background.rst
+docs/source/burst_selection.rst
+docs/source/burstsearch.rst
+docs/source/conf.py
+docs/source/cython.rst
+docs/source/data_class.rst
+docs/source/dependencies.rst
+docs/source/exp_fitting.rst
+docs/source/files_description.rst
+docs/source/fit.rst
+docs/source/fret_fit.rst
+docs/source/fretmath.rst
+docs/source/gaussian_fitting.rst
+docs/source/getting_started.rst
+docs/source/index.rst
+docs/source/installation.rst
+docs/source/loader.rst
+docs/source/mfit.rst
+docs/source/notebook_workflow.rst
+docs/source/ph_sel.rst
+docs/source/phrates.rst
+docs/source/plots.rst
+docs/source/plugins.rst
+docs/source/readthedocs.py
+docs/source/reference_manual.rst
+docs/source/releasenotes.rst
+docs/source/_static/favicon.png
+docs/source/_static/logo.png
+docs/source/_static/style.css
+docs/source/images/2cde_joint.png
+docs/source/images/BVA_joint.png
+docs/source/images/alex_jointplot_fit.png
+docs/source/images/fret_hist_fit.png
+docs/source/images/hist_bg_fit.png
+docs/source/images/timetrace_bursts.png
+fretbursts/__init__.py
+fretbursts/_version.py
+fretbursts/background.py
+fretbursts/bg_cache.py
+fretbursts/burst_plot.py
+fretbursts/burst_plot_attic.py
+fretbursts/burstlib.py
+fretbursts/burstlib_ext.py
+fretbursts/exptools.py
+fretbursts/fret_fit.py
+fretbursts/fretmath.py
+fretbursts/gui_selection.py
+fretbursts/hdf5.py
+fretbursts/legacy_mode.py
+fretbursts/loader.py
+fretbursts/loader_legacy.py
+fretbursts/mfit.py
+fretbursts/ph_sel.py
+fretbursts/poisson_threshold.py
+fretbursts/scroll_gui.py
+fretbursts/select_bursts.py
+fretbursts/style.py
+fretbursts.egg-info/PKG-INFO
+fretbursts.egg-info/SOURCES.txt
+fretbursts.egg-info/dependency_links.txt
+fretbursts.egg-info/requires.txt
+fretbursts.egg-info/top_level.txt
+fretbursts/dataload/__init__.py
+fretbursts/dataload/manta_reader.py
+fretbursts/dataload/multi_ch_reader.py
+fretbursts/dataload/pytables_array_list.py
+fretbursts/dataload/sm file structure.txt
+fretbursts/dataload/spcreader.py
+fretbursts/fit/__init__.py
+fretbursts/fit/compare_gaussian_fit.py
+fretbursts/fit/compare_gaussian_fit2.py
+fretbursts/fit/exp_fitting.py
+fretbursts/fit/exp_gauss_fitting.py
+fretbursts/fit/fitting.py
+fretbursts/fit/gaussian_fitting.py
+fretbursts/fit/test_exp_fitting.py
+fretbursts/fit/weighted_kde.py
+fretbursts/phtools/README.txt
+fretbursts/phtools/__init__.py
+fretbursts/phtools/burstsearch.py
+fretbursts/phtools/burstsearch_c.c
+fretbursts/phtools/burstsearch_c.pyx
+fretbursts/phtools/phrates.py
+fretbursts/phtools/phrates_cy.c
+fretbursts/phtools/phrates_cy.pyx
+fretbursts/phtools/phrates_numba.py
+fretbursts/phtools/setup.py
+fretbursts/tests/__init__.py
+fretbursts/tests/importtest.py
+fretbursts/tests/nbrun.py
+fretbursts/tests/test_Bursts.py
+fretbursts/tests/test_burst_plot.py
+fretbursts/tests/test_burstlib.py
+fretbursts/tests/test_burstlib_ext.py
+fretbursts/tests/test_ph_sel.py
+fretbursts/utils/__init__.py
+fretbursts/utils/git.py
+fretbursts/utils/gui.py
+fretbursts/utils/misc.py
+fretbursts/utils/examples/matplotlib_figure_mod_toolbar.py
+fretbursts/utils/examples/matplotlib_fonts.py
+fretbursts/utils/examples/matplotlib_gui_select.py
+fretbursts/utils/examples/mpl_gui_selection.py
+fretbursts/utils/examples/qt4_figure.py
+fretbursts/utils/examples/timetrace_scroll_demo.py
+fretbursts/utils/examples/timetrace_scroll_demo2.py
+fretbursts/utils/examples/timetrace_scroll_demo3.py
+fretbursts/utils/examples/timetrace_scroll_pygraphqt.py
+notebooks/1. First Steps - Start here if new to Jupyter Notebooks.ipynb
+notebooks/Example - 2CDE Method.ipynb
+notebooks/Example - Background estimation.ipynb
+notebooks/Example - Burst Variance Analysis.ipynb
+notebooks/Example - Customize the us-ALEX histogram.ipynb
+notebooks/Example - Exporting Burst Data Including Timestamps.ipynb
+notebooks/Example - FRET histogram fitting.ipynb
+notebooks/Example - Plotting timetraces with bursts.ipynb
+notebooks/Example - Selecting FRET populations.ipynb
+notebooks/Example - Working with timestamps and bursts.ipynb
+notebooks/Example- Combining Technical Repeats.ipynb
+notebooks/FRETBursts - 8-spot smFRET burst analysis.ipynb
+notebooks/FRETBursts - ns-ALEX example.ipynb
+notebooks/FRETBursts - us-ALEX smFRET burst analysis.ipynb
+notebooks/dev/exclude-py27.txt
+notebooks/dev/docs/Execute notebooks.ipynb
+notebooks/dev/docs/FRETBursts - Build docs.ipynb
+notebooks/dev/tests/FRETBursts - Background save and load test.ipynb
+notebooks/dev/tests/FRETBursts - Regression tests.ipynb
+notebooks/dev/tests/FRETBursts - Unit tests-debug.ipynb
+notebooks/dev/tests/FRETBursts - Unit tests.ipynb
