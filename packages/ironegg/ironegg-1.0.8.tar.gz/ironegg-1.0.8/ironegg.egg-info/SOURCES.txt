@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ironegg/__init__.py
+ironegg/patch_for_django_orm.py
+ironegg.egg-info/PKG-INFO
+ironegg.egg-info/SOURCES.txt
+ironegg.egg-info/dependency_links.txt
+ironegg.egg-info/requires.txt
+ironegg.egg-info/top_level.txt
