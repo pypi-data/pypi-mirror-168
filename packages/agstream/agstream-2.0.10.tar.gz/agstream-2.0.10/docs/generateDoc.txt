@@ -1,0 +1,11 @@
+# to extract doc from code
+
+cd .\docs\
+sphinx-apidoc -f -o .\source\ ..\agstream\
+
+
+# to generate doc
+
+cd .\docs\
+.\make.bat clean
+.\make.bat html

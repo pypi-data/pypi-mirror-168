@@ -1,0 +1,17 @@
+
+Register to
+https://pypi.python.org/pypi?%3Aaction=register_form
+
+
+pip install twine
+pip install wheel
+#prepare package
+
+python setup.py sdist
+python setup.py bdist_wheel
+
+#upload
+twine upload dist/*
+
+# Checker la distribution (formattage fichier README.md)
+twine check .\dist\agstream-1.0.1-py3-none-any.whl
