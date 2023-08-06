@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: harlsk
+Version: 0.0.13
+Summary: basic functions for a simple desktop assistant
+Home-page: UNKNOWN
+Author: bravosickz
+License: UNKNOWN
+Keywords: harlsk
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: playsound
+Requires-Dist: plyer
+Requires-Dist: pyaudio
+Requires-Dist: pyttsx3
+Requires-Dist: pywhatkit
+Requires-Dist: requests
+Requires-Dist: speech-recognition
+Requires-Dist: webbrowser
+Requires-Dist: winotify
+
+
+# harlsk
+
