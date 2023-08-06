@@ -1,0 +1,116 @@
+![DASF Logo](https://git.geomar.de/digital-earth/dasf/dasf-messaging-python/-/raw/master/docs/_static/dasf_logo.svg)
+
+[![PyPI version](https://badge.fury.io/py/deprogressapi.svg)](https://badge.fury.io/py/deprogressapi)
+
+## dasf-progress-api
+
+`DASF: Progress API` is part of the Data Analytics Software Framework (DASF, https://git.geomar.de/digital-earth/dasf), 
+developed at the GFZ German Research Centre for Geosciences (https://www.gfz-potsdam.de). 
+It is funded by the Initiative and Networking Fund of the Helmholtz Association through the Digital Earth project 
+(https://www.digitalearth-hgf.de/).
+
+`DASF: Progress API` provides a light-weight tree-based structure to be sent via the DASF RCP messaging protocol. 
+It's generic design supports deterministic as well as non-deterministic progress reports. 
+While `DASF: Messaging Python` provides the necessary implementation to distribute 
+the progress reports from the reporting backend modules, 
+`DASF: Web` includes ready to use components to visualize the reported progress.
+
+### Service Desk
+
+For everyone without a Geomar Gitlab account, we setup the Service Desk feature for this repository.
+It lets you communicate with the developers via a repository specific eMail address. Each request will be tracked via the Gitlab issuse tracker.
+
+eMail: [gitlab+digital-earth-dasf-dasf-progress-api-2274-issue-@git-issues.geomar.de](mailto:gitlab+digital-earth-dasf-dasf-progress-api-2274-issue-@git-issues.geomar.de)
+
+
+### PyPI Package `deprogressapi` 
+[![PyPI version](https://badge.fury.io/py/deprogressapi.svg)](https://badge.fury.io/py/deprogressapi)
+
+`DASF: Progress API` is released as a PyPI package called `deprogressapi`. 
+
+You may install it via:
+
+```bash 
+pip install deprogressapi
+```
+
+
+
+### Usage
+
+A progress report is stored in a tree structure. So there will be one 'root' report instance containing multiple 'sub-reports'.
+
+In order to report the progress simply add a reporter argument with type `ProgressReport` to the exposed method, e.g.
+
+```python
+from deprogressapi import ProgressReport
+
+def some_exposed_method(reporter: Optional[ProgressReport] = ProgressReport(
+                          step_message="some progress message")) -> str:
+
+    # ...
+```
+
+For a report instance new subreports can be created via the `create_subreport` method. 
+Each created report is published (sent to the requesting client) automatically upon creation and on completion.
+
+```python
+# create a subreport
+sub_report = root_report.create_subreport(step_message="Calculating something")
+
+# execute some logic
+# ...
+
+# mark the sub-report as compelte
+sub_report.complete()
+```
+
+All sub-reports are again instances of `ProgressReport`, so you can create more sub-reports for each.
+
+#### error handling
+In order to report an error, you provide an error status argument to the `complete` method. The corresponding error message can be set via the reports `step_message` field.
+
+```python
+from deprogressapi.base import Status
+
+# ...
+# some code that raises an exception
+# ...
+except Exception as e:
+    error = str(e)
+    progress_report.step_message = "error '{msg}': {err}".format(msg=progress_report.step_message, err=error)
+    progress_report.complete(Status.ERROR)
+```
+
+### Recommended Software Citation
+
+`Eggert, Daniel; Dransch, Doris (2021): DASF: Progress API: A progress reporting structure for the data analytics software framework. V. v0.1.4. GFZ Data Services. https://doi.org/10.5880/GFZ.1.4.2021.007`
+
+
+### License
+```
+Copyright 2021 Helmholtz Centre Potsdam GFZ German Research Centre for Geosciences, Potsdam, Germany / DASF Data Analytics Software Framework
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use these files except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+### Contact
+Dr.-Ing. Daniel Eggert  
+eMail: <daniel.eggert@gfz-potsdam.de>
+
+
+Helmholtz Centre Potsdam GFZ German Research Centre for Geoscienes  
+Section 1.4 Remote Sensing & Geoinformatics  
+Telegrafenberg  
+14473 Potsdam  
+Germany
