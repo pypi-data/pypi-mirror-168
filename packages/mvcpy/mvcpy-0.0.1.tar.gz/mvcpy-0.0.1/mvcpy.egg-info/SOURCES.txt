@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+mvcpy/__init__.py
+mvcpy/mvc.py
+mvcpy.egg-info/PKG-INFO
+mvcpy.egg-info/SOURCES.txt
+mvcpy.egg-info/dependency_links.txt
+mvcpy.egg-info/top_level.txt
