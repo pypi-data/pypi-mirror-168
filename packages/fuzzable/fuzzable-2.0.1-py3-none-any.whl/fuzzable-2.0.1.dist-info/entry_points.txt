@@ -1,0 +1,3 @@
+[console_scripts]
+fuzzable=fuzzable.__main__:app
+
