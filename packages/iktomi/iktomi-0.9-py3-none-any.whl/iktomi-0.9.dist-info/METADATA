@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: iktomi
+Version: 0.9
+Summary: A web tool: routing, forms, other useful things.
+Home-page: http://github.com/SmartTeleMax/iktomi/
+Author: Denis Otkidach
+Author-email: denis.otkidach@gmail.com
+Maintainer: Harut Dagesyan
+Maintainer-email: yes@harutune.name
+License: MIT
+Keywords: web forms
+License-File: LICENSE.txt
+License-File: AUTHORS
+Requires-Dist: six
+Provides-Extra: cleanhtml
+Requires-Dist: lxml ; extra == 'cleanhtml'
+Provides-Extra: fcgi
+Requires-Dist: flup6 ; extra == 'fcgi'
+Provides-Extra: images
+Requires-Dist: pillow ; extra == 'images'
+Provides-Extra: memcached
+Requires-Dist: python-memcached ; extra == 'memcached'
+Provides-Extra: renderhtml
+Requires-Dist: jinja2 ; extra == 'renderhtml'
+Provides-Extra: sqla
+Requires-Dist: sqlalchemy ; extra == 'sqla'
+Requires-Dist: packaging ; extra == 'sqla'
+Provides-Extra: tests
+Requires-Dist: pymysql ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: webtest ; extra == 'tests'
+Provides-Extra: web
+Requires-Dist: webob ; extra == 'web'
+

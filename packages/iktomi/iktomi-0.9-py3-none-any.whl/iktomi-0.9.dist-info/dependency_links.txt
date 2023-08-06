@@ -1,0 +1,2 @@
+https://github.com/ods/testalchemy/tarball/master#egg=testalchemy-0.4
+https://github.com/lunant/mockcache/tarball/master#egg=mockcache-1.0.3_alpha
