@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: komposer
+Version: 0.1.6
+Summary: Tool to convert a Docker Compose file into a Kubernetes manifest
+Home-page: https://github.com/expobrain/komposer
+License: MIT
+Author: Daniele Esposti
+Author-email: daniele.esposti@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: envsubst (>=0.1.5,<0.2.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: python-dotenv (>=0.20)
+Requires-Dist: stringcase (>=1.2.0,<2.0.0)
+Project-URL: Repository, https://github.com/expobrain/komposer
+Description-Content-Type: text/markdown
+
+# komposer
+
+![main build status](https://github.com/expobrain/komposer/actions/workflows/main.yml/badge.svg?branch=main)
+
+Komposer is a CLI tool to convert a Docker Compose file into a Kubernetes manifest file so that you can deploy your Docker Compose stack it into a single Kubernetes Pod.
+
+# Documentation
+
+See the official [documentation](https://expobrain.github.io/komposer/) for details information about the CLI usage.
+
+## To-do
+
+- set ingress annotations from CLI as file
+- set ingress paths from CLI as a file
+- able to select the Ingress class name
+- able to set custom resource limits
+- add annotations to all Kubernetes items with Komposer version
+- use labels in Docker Compose file as alternative for CLI options
+
