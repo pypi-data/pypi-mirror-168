@@ -1,0 +1,14 @@
+global-exclude *.json
+global-exclude *.idf
+global-exclude *.mat
+include honeybee_standards/energy_default.json
+include honeybee_standards/radiance_default.json
+include honeybee_standards/constructions/user_library.idf
+include honeybee_standards/constructions/user_library.json
+include honeybee_standards/schedules/user_library.idf
+include honeybee_standards/schedules/user_library.json
+include honeybee_standards/constructionsets/user_library.json
+include honeybee_standards/programtypes/user_library.json
+include honeybee_standards/modifiers/user_library.mat
+include honeybee_standards/modifiers/user_library.json
+include honeybee_standards/modifiersets/user_library.json
