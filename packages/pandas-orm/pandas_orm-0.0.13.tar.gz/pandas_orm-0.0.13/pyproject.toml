@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pandas_orm"
+version = "0.0.13"
+authors = [
+  { name="Ilya Shusterman", email="shusterilyaman@gmail.com" },
+]
+description = "pandas orm with django and sqlalchemy framework with bulk C.R.U.D operations"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas >= 1.4.4",
+    "SQLAlchemy >= 1.4.41",
+    "Django >= 4.1.1"
+]
+keywords =[
+    "pandas", "orm", "django", "sqlalchemy", "dataframe"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ilyashusterman/pandas-orm"
+"Bug Tracker" = "https://github.com/ilyashusterman/pandas-orm/issues"
