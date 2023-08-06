@@ -1,0 +1,17 @@
+labonneboite_common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labonneboite_common/chunk.py,sha256=YmNNlcypU-aijAnas2Qop20zx6ObR3pSAVJFMpAvqSE,270
+labonneboite_common/departements.py,sha256=mN6mnXjNNBODXPM-hzdhH-bvNsMLcinvYs8C9Yqwpoc,202
+labonneboite_common/encoding.py,sha256=ifV2yvjsmd43M1-ft5fy-UJ5N1PhZJ24LMhPadGpFZ0,2248
+labonneboite_common/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labonneboite_common/models/office_mixin.py,sha256=pRqRG4y3CEjFN8KA2ozr5JHeFkowEy5LTsFyjtd_7h0,3754
+labonneboite_common/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labonneboite_common/siret.py,sha256=fFhJbMTlAn7sE3dY-X9h2gx486EiAx9kQtvRTGkIw5o,127
+labonneboite_common/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labonneboite_common/tests/chunk_test.py,sha256=Hh8PoXRgutuLFwVCgjH12L5-lv9tp73r0kcKuz_Pypc,227
+labonneboite_common/tests/departements_test.py,sha256=vs4Wlms2go-Ak72FG31LqIw9lV_yd6IBmS-nVV4Rf48,347
+labonneboite_common/tests/encoding_test.py,sha256=-wMW5X4GiTIJByWWdWANOixz5NqDBE0PjHm0i2C-Kq0,759
+labonneboite_common/tests/siret_test.py,sha256=rz82mofUsi7cbEy3xSrWp3vfyA_GLP295Hrb_JW7W0k,297
+labonneboite_common-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+labonneboite_common-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+labonneboite_common-0.1.0.dist-info/METADATA,sha256=mg9W7TO-ZdHHjBvaJ29AipEtRkk-x95_KTM1ZEF_pE8,1220
+labonneboite_common-0.1.0.dist-info/RECORD,,
