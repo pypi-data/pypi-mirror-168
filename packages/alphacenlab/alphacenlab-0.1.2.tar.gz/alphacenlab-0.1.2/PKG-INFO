@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: alphacenlab
+Version: 0.1.2
+Summary: pylab code for alphacen.
+Home-page: https://git.alphacen.co/muwei/Lab_Automation
+Author: Muwei Zhang
+Author-email: muwei@alphacen.io
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# Lab_Automation
+
+Lab_Automation: automated scripts for all kinds of devices.
+PyLab:
+* **<measure_devices>** measure devices based on PyLab.
+* **<image_devices>** different types of CCD and SLM, etc.
+* **<other_devices>** functional devices like rotation plaform.
+
