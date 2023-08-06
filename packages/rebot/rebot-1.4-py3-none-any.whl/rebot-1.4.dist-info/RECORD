@@ -1,0 +1,10 @@
+rebot/__init__.py,sha256=IYde_NBu3rAVx7SyKeR9iL5KolOL25uF3QzjePA37TM,22
+rebot/rebot.py,sha256=06cJpy-J_54W4GkCO5OryGq8U8CYuohyMTOgYe7ddLw,52163
+rebot/regular.py,sha256=5V834QzQ8gIbAm1rLZNurMkkSIs_M2irz1bTr5bKYC4,282621
+rebot/t.py,sha256=A6BY49HmWBVBCSmQ9tv_M0bFH9sIsbGBENuCDYf4_a4,1189
+rebot/utu.py,sha256=4JijtvJAn_up8arLJTb9eW70mV3wRSMSjtevYYJoCtI,20175
+rebot-1.4.dist-info/LICENSE,sha256=ZRQZdIpFye7Wu9SvFPtCGD8V9A3_nN0qbHHvFM_3GLA,1061
+rebot-1.4.dist-info/METADATA,sha256=UCBSQCGBMCl7oqDB3Fm6EWlCue_POEbqRb5kJBG8CbM,623
+rebot-1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rebot-1.4.dist-info/top_level.txt,sha256=zcGR1XAE0Y_i160_R3-JCNvQVdjmyMSuA_POtNqsUNw,6
+rebot-1.4.dist-info/RECORD,,
