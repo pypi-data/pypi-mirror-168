@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: myforestplot
+Version: 0.2.2
+Summary: A flexibly customizable Python tool to create a forest plot.
+Home-page: https://toshiakiasakura.github.io/myforestplot
+Author: toshiakiasakura
+Author-email: wordpress.akitoshi@gmail.com
+License: MIT
+Description: # MyForestPlot
+        [![python](https://img.shields.io/pypi/pyversions/myforestplot)](https://www.python.org/)
+        [![PyPI](https://img.shields.io/pypi/v/myforestplot.svg)](https://pypi.org/project/myforestplot/)
+        [![license](https://img.shields.io/pypi/l/myforestplot?color=blue)](https://github.com/toshiakiasakura/myforestplot/blob/main/LICENSE)
+        
+        Source code repository for the myforestplot package.
+        
+        Create a forest plot by python more easily and intuitively. 
+        
+        # Installation
+        ```bash
+        pip install myforestplot
+        ```
+        
+        # Usage
+        See documentation page : https://toshiakiasakura.github.io/myforestplot/
+        
+        
+        
+Keywords: forestplot odds-ratio relative-risk meta-analysis
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Matplotlib
+Description-Content-Type: text/markdown

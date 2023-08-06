@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyForestPlot documentation &mdash; myforestplot 0.2.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="canonical" href="https://toshiakiasakura.github.io/myforestplot/index.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quickstart" href="notebooks/1_quickstart.html" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZF7MFCTQG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3S0FLX78GH');
+</script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> myforestplot
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">How to use:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/1_quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/3_architecture.html">Architecture</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Gallery:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/2_gallery.html">SingleForestPlot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/2_gallery.html#ForestPlot">ForestPlot</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">myforestplot</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>MyForestPlot documentation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/toshiakiasakura/myforestplot/blob/main/docs_src/index.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="myforestplot-documentation">
+<h1>MyForestPlot documentation<a class="headerlink" href="#myforestplot-documentation" title="Permalink to this heading">¶</a></h1>
+<p><strong>Date</strong>: Sep 15, 2022     <strong>Version</strong>: 0.2.1 <br/>
+<strong>Useful links</strong>:   <a class="reference external" href="https://github.com/toshiakiasakura/myforestplot">Source Repository</a>
+  |   <a class="reference external" href="https://github.com/toshiakiasakura/myforestplot/issues">Issues &amp; Ideas</a></p>
+<section id="what-is-myforestplot">
+<h2>What is MyForestPlot?<a class="headerlink" href="#what-is-myforestplot" title="Permalink to this heading">¶</a></h2>
+<p>MyForestPlot is a Python package helping create a forest plot. This myforestplot is
+mainly designed to create a forest plot for logistic/log binomial/robust poisson results,
+meaning that tries to present ORs or RRs for categorical variables.
+Codes and usage is explained in <a class="reference internal" href="notebooks/1_quickstart.html"><span class="doc">usage page</span></a>.</p>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install myforestplot
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">How to use:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/1_quickstart.html">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/1_quickstart.html#Create-pretty-statsmodels-result-dataframe">Create pretty statsmodels result dataframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/1_quickstart.html#Create-a-forest-plot">Create a forest plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/1_quickstart.html#Customize-your-forestplot">Customize your forestplot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/3_architecture.html">Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/3_architecture.html#Clearning-tools">Clearning tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/3_architecture.html#SinmpleForestPlot">SinmpleForestPlot</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Gallery:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/2_gallery.html">SingleForestPlot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/2_gallery.html#Label-names,-ORs,-left-side-spines,-and-ylabel-ticks">Label names, ORs, left side spines, and ylabel ticks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/2_gallery.html#Change-styles-of-errorbars-and-horizontal-lines">Change styles of errorbars and horizontal lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/2_gallery.html#Log-scale-with-vertical-align-of-categories">Log scale with vertical align of categories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/2_gallery.html#Draw-markers-for-outer-range-of-confidence-intervals">Draw markers for outer range of confidence intervals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/2_gallery.html#Multiple-confidence-bands">Multiple confidence bands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/2_gallery.html#ForestPlot">ForestPlot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/2_gallery.html#Stratifiled-forest-plot">Stratifiled forest plot</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="notebooks/1_quickstart.html" class="btn btn-neutral float-right" title="Quickstart" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Toshiaki Asakura.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
