@@ -1,0 +1,12 @@
+ngtpy.cpython-36m-x86_64-linux-gnu.so,sha256=htNAvqB2Ys5xZoAFDOj5gD1DzpU5ZJYma7N2p07ev8k,20815160
+ngt-2.0.4.dist-info/WHEEL,sha256=YVAXCacQXnznQ-_lMj8Nvqrs7YPtMP1pHRCw9EcyWRQ,150
+ngt-2.0.4.dist-info/METADATA,sha256=3X2pVS5LNsPi0DSxU5Qa8qx3b0oKUrX0N2UAeMSpoPw,1714
+ngt-2.0.4.dist-info/top_level.txt,sha256=nNJylhLdUzqK5tZX6B36V4KUz9FFfZryD0Hdu_uxPaU,6
+ngt-2.0.4.dist-info/RECORD,,
+ngt-2.0.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ngt.libs/liblapack-1ad85175.so.3.4.2,sha256=4r-sGpLaMvm8QPoOblRSn4U0fC8jbhayjW4c3EMcPn8,5699192
+ngt.libs/libgfortran-91cc3cb1.so.3.0.0,sha256=yG4uC4CkJbuXNkV2kISH0t7i_MNYl1Y8rUbu79S2j5c,1259664
+ngt.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+ngt.libs/libblas-357956a1.so.3.4.2,sha256=QMp9CQNJTvFDKX1fZO-c1cjbMxbZZ6umcWR1UaMNdVM,374264
+ngt.libs/libquadmath-96973f99.so.0.0.0,sha256=l82oXdtRY-Labh7bTh1rVXgzqZpA7aB5rjflA5Rltl0,247608
+ngt.libs/libngt-e7e71b0a.so.2.0.4,sha256=rf2nECUqsZigf0WJi2TxyjW0Yq5_nzXWNkmzbAXVZ18,2556736
