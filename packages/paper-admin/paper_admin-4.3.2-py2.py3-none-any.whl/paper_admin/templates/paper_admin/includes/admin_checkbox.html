@@ -1,0 +1,40 @@
+{% extends 'paper_admin/includes/admin_field.html' %}
+
+{% block label %}
+  <div class="col-md-3 col-xxl-2 d-none d-md-block">
+    <label class="paper-form__label{% if field.help_text %} dotted-underline{% endif %}"
+           for="{{ field.id_for_label }}"
+           {% if field.help_text %}
+           data-toggle="popover"
+           data-placement="bottom"
+           data-trigger="hover"
+           data-html="true"
+           data-content="{{ field.help_text }}"
+           {% endif %}>{{ field.label|capfirst }}</label>
+  </div>
+{% endblock %}
+
+{% block widget %}
+  <div class="col-md-9 col-xxl-10">
+    <div class="paper-widget paper-widget--checkbox{% if field.errors %} paper-widget--invalid{% endif %}">
+      {{ field }}
+      <div class="d-inline-block d-md-none ml-1">
+        <label class="paper-form__label mb-0{% if field.help_text %} dotted-underline{% endif %}"
+               for="{{ field.id_for_label }}"
+               {% if field.help_text %}
+               data-toggle="popover"
+               data-placement="bottom"
+               data-trigger="hover"
+               data-html="true"
+               data-content="{{ field.help_text }}"
+               {% endif %}>{{ field.label|capfirst }}</label>
+      </div>
+    </div>
+
+    <ul class="paper-error-list invalid-feedback">{% spaceless %}
+      {% for error in field.errors %}
+        <li>{{ error }}</li>
+      {% endfor %}
+    {% endspaceless %}</ul>
+  </div>
+{% endblock %}

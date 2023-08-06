@@ -1,0 +1,17 @@
+<div class="paper-filter">
+  <p class="paper-filter__title mb-1">{{ title|capfirst }}</p>
+
+  <ul class="list-unstyled mb-0">
+    {% for choice in choices %}
+      <li{% if choice.selected %} class="active"{% endif %}>
+        {% if choice.selected %}
+          <span class="text-secondary font-weight-bold">{{ choice.display }}</span>
+        {% else %}
+          <a href="{{ choice.query_string|iriencode }}" title="{{ choice.display }}">
+            {{ choice.display }}
+          </a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

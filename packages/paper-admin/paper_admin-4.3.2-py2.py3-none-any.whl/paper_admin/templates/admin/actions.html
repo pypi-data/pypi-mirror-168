@@ -1,0 +1,51 @@
+{% load i18n %}
+
+<div class="paper-actions actions">
+  {% block actions %}
+    {% block actions-form %}
+      {% for field in action_form %}
+        <div class="paper-actions__{{ field.name }}">
+          {{ field }}
+        </div>
+      {% endfor %}
+    {% endblock %}
+
+    {% block actions-submit %}
+      <button type="submit"
+              form="changelist-form"
+              name="index"
+              value="{{ index|default:0 }}"
+              class="paper-actions__button btn btn-info ml-1 border-0"
+              title="{{ _("Run the selected action") }}">
+        {{ _("Go") }}
+      </button>
+    {% endblock %}
+
+    {% block actions-counter %}
+      {% if actions_selection_counter %}
+        <div class="paper-actions__tools d-md-inline">
+          <span class="paper-actions__counter action-counter text-secondary" data-actions-icnt="{{ cl.result_list|length }}">
+            {{ selection_note }}
+          </span>
+
+          {% if cl.result_count != cl.result_list|length %}
+            <span class="paper-actions__all all text-secondary" hidden>
+              {{ selection_note_all }}
+            </span>
+
+            <span class="paper-actions__question question" hidden>
+              <a href="#"
+                 title="{{ _("Click here to select the objects across all pages") }}">
+                {% blocktrans with cl.result_count as total_count %}Select all {{ total_count }} {{ module_name }}{% endblocktrans %}
+              </a>
+            </span>
+
+            <span class="paper-actions__clear clear" hidden>
+              <a href="#">{{ _("Clear selection") }}</a>
+            </span>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endblock %}
+  {% endblock %}
+</div>

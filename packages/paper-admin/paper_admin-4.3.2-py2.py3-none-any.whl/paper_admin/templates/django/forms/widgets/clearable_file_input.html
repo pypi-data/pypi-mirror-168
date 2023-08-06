@@ -1,0 +1,31 @@
+<div class="clearable-file-field">
+  {% if widget.is_initial %}
+    <div class="d-flex align-items-center mb-1">
+      <div class="clearable-file-field__state">
+        {{ widget.initial_text }}:
+        <a href="{{ widget.value.url }}" target="_blank">{{ widget.value }}</a>
+      </div>
+
+      {% if not widget.required %}
+        <div class="clearable-file-field__checkbox custom-control custom-checkbox user-select-none d-inline-block">
+          <input type="checkbox"
+                 class="custom-control-input"
+                 id="{{ widget.checkbox_id }}"
+                 name="{{ widget.checkbox_name }}">
+          <label class="custom-control-label" for="{{ widget.checkbox_id }}">
+            {{ widget.clear_checkbox_label }}
+          </label>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% include "django/forms/widgets/input.html" %}
+
+  {% spaceless %}
+    <label for="{{ widget.attrs.id }}" class="clearable-file-field__button btn btn-info btn-lg mb-0">
+      <i class="fa fa-upload"></i>
+      <span data-initial-text="{{ widget.input_text }}">{{ widget.input_text }}</span>
+    </label>
+  {% endspaceless %}
+</div>
