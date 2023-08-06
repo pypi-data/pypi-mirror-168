@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+src/atri_utils/__init__.py
+src/atri_utils/background_switch.py
+src/atri_utils/decodeCharts.py
+src/atri_utils/media_response.py
+src/atri_utils/pagination.py
+src/atri_utils/test_sample.py
+src/atri_utils/uploaded_files.py
+src/atri_utils/write_table.py
+src/atri_utils.egg-info/PKG-INFO
+src/atri_utils.egg-info/SOURCES.txt
+src/atri_utils.egg-info/dependency_links.txt
+src/atri_utils.egg-info/not-zip-safe
+src/atri_utils.egg-info/requires.txt
+src/atri_utils.egg-info/top_level.txt
