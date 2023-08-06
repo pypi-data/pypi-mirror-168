@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metaNNvis"
+version = "0.0.1"
+authors = [
+  { name="Simon Flügel", email="sfluegel@ovgu.de" },
+]
+description = "A meta-tool for cross-framework access to PyTorch and Tensorflow visualisation methods"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sfluegel05/metaNNvis"
+"Bug Tracker" = "https://github.com/sfluegel05/metaNNvis/issues"

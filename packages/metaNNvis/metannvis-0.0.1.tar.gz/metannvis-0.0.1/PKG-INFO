@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: metaNNvis
+Version: 0.0.1
+Summary: A meta-tool for cross-framework access to PyTorch and Tensorflow visualisation methods
+Project-URL: Homepage, https://github.com/sfluegel05/metaNNvis
+Project-URL: Bug Tracker, https://github.com/sfluegel05/metaNNvis/issues
+Author-email: Simon Flügel <sfluegel@ovgu.de>
+License: MIT License
+        
+        Copyright (c) 2022 Simon Flügel
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Cross-Framework Introspection
+
+Cross-Framework Introspection is a tool for accessing introspection methods for neural networks regardless of the
+framework in which the neural network has been built. It is easily extendable and currently supports models from
+TensorFlow 2.0 and PyTorch in combination with methods from [Captum](captum.ai) and
+[tf-keras-vis](https://github.com/keisen/tf-keras-vis). For more details, see the [project report](results/report.md)
+
+## Installation
+
+## Usage
+
+For instructions on how to use cross-framework introspection and how to extend it by new methods, see
+the [user guide](results/user_guide.ipynb).
+
+## Available methods
+
+Cross-Framework Introspection currently supports most methods from Captum and all methods from tf-keras-vis. The
+supported methods are:
+
+| Method                        | Category |
+|-------------------------------| --- |
+| **Captum**                    ||
+| Integrated Gradients          | primary, layer, neuron  |
+| Saliency                      | primary |
+| DeepLift                      | primary, layer, neuron  |
+| GradientShap                  | primary, layer, neuron  |
+| Input X Gradient              | primary |
+| Gradient X Activation         | layer |
+| Deconvolution                 | primary, neuron |
+| Feature Ablation              | primary, layer, neuron  |
+| Feature Permutation           | primary |
+| Conductance                   | layer, neuron |
+| Layer Activation              | layer |
+| GradCAM                       | layer |
+| Neuron Gradient               | neuron  |
+| **tf-keras-vis**              ||
+| Activation Maximization       | feature visualization |
+| Vanilla Saliency / SmoothGrad | attribution |
+| GradCAM                       | attribution |
+| GradCAM++                     | attribution |
+| ScoreCAM                      | attribution |
+| LayerCAM                      | attribution |
+
+Currently not supported are:
+
+| Method                        | Category |
+|-------------------------------| --- |
+| **Captum** ||
+| DeepLiftShap | primary, layer, neuron  |
+| Guided Backpropagation | primary, neuron |
+| Guided GradCAM | primary |
+| Occlusion | primary  |
+| Shapley Value Sampling | primary |
+| Lime | primary |
+| KernelShap | primary |
+| Layer Relevance Propagation | primary, layer  |
+| Internal Influence | layer |
+
+
+
