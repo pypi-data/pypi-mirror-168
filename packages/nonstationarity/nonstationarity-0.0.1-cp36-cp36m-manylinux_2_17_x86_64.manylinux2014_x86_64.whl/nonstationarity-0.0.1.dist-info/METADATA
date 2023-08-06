@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: nonstationarity
+Version: 0.0.1
+Summary: Nonstationarity implements the algorithm of nonstationarity measure of data streams.
+Home-page: UNKNOWN
+Author: Kan Liu
+Author-email: liuk@wipm.ac.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+# Nonstationarity
+<!--
+|      CI              | status |
+|----------------------|--------|
+| conda.recipe         | [![Conda Actions Status][actions-conda-badge]][actions-conda-link] |
+| pip builds           | [![Pip Actions Status][actions-pip-badge]][actions-pip-link] |
+| [`cibuildwheel`][]   | [![Wheels][actions-wheels-badge]][actions-wheels-link]|
+
+[gitter-badge]:            https://badges.gitter.im/pybind/Lobby.svg
+[gitter-link]:             https://gitter.im/pybind/Lobby
+[actions-badge]:           https://github.com/pybind/nonstationarity/workflows/Tests/badge.svg
+[actions-conda-link]:      https://github.com/pybind/nonstationarity/actions?query=workflow%3A%22Conda
+[actions-conda-badge]:     https://github.com/pybind/nonstationarity/workflows/Conda/badge.svg
+[actions-pip-link]:        https://github.com/pybind/nonstationarity/actions?query=workflow%3A%22Pip
+[actions-pip-badge]:       https://github.com/pybind/nonstationarity/workflows/Pip/badge.svg
+[actions-wheels-link]:     https://github.com/liu-kan/nonstationarity/actions/workflows/wheels.yml
+[actions-wheels-badge]:    https://github.com/liu-kan/nonstationarity/actions/workflows/wheels.yml/badge.svg
+[appveyor-link]:           https://ci.appveyor.com/project/dean0x7d/cmake-example/branch/master
+[appveyor-badge]:          https://ci.appveyor.com/api/projects/status/57nnxfm4subeug43/branch/master?svg=true
+-->
+
+Nonstationarity is a extension module of Python, written with a C++. It helps users measuring the degree of non-stationarity of a time series. The package implements the algorithm in the paper or book below.
+
+1. Y. Ding, W. Fan, Q. Tan, K. Wu, and Y. Zou, “Nonstationarity measure of data stream (in Chinese),” Acta Mathematica Scientia, vol. 30A, no. 5, pp. 1364–1376, 2010.
+1. M. Bohner, Y. Ding, O. Došly, Difference Equations, Discrete Dynamical Systems and Applications. Cham, Switzerland: Springer, 2015.
+
+## Installation
+
+```bash
+pip install nonstationarity
+```
+
+<!--
+## Prerequisites
+
+* A compiler with C++11 support
+* Pip 10+ or CMake >= 3.4 (or 3.8+ on Windows, which was the first version to support VS 2015)
+* Ninja or Pip 10+
+
+
+## Installation
+
+Just clone this repository and pip install. Note the `--recursive` option which is
+needed for the pybind11 submodule:
+
+With the `setup.py` file included in this example, the `pip install` command will
+invoke CMake and build the pybind11 module as specified in `CMakeLists.txt`.
+
+## Building the documentation
+
+Documentation for the example project is generated using Sphinx. Sphinx has the
+ability to automatically inspect the signatures and documentation strings in
+the extension module to generate beautiful documentation in a variety formats.
+The following command generates HTML-based reference documentation; for other
+formats please refer to the Sphinx manual:
+
+ - `cd nonstationarity/docs`
+ - `make html`
+
+[`cibuildwheel`]:          https://cibuildwheel.readthedocs.io
+[FAQ]: http://pybind11.rtfd.io/en/latest/faq.html#working-with-ancient-visual-studio-2009-builds-on-windows
+[vs2015_runtime]: https://www.microsoft.com/en-us/download/details.aspx?id=48145
+[scikit-build]: https://scikit-build.readthedocs.io/en/latest/
+
+## License
+
+Pybind11 is provided under a BSD-style license that can be found in the LICENSE
+file. By using, distributing, or contributing to this project, you agree to the
+terms and conditions of this license.
+-->
+
