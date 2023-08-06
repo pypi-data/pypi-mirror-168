@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: mldesigner
+Version: 0.1.0b6
+Summary: Azure Machine Learning Designer SDK
+Home-page: https://github.com/Azure/azureml-examples/tree/sdk-preview/sdk/jobs/pipelines
+Author: Microsoft Corporation
+License: MIT License
+Keywords: AzureMachineLearning
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Provides-Extra: pipeline
+Requires-Dist: azure-ai-ml ; extra == 'pipeline'
+Requires-Dist: jinja2 (==3.0.0) ; extra == 'pipeline'
+Requires-Dist: tqdm ; extra == 'pipeline'
+
+# Azure Machine Learning Designer Python SDK
+
+The `mldesigner` package provide the SDK interface which work along with Azure ML Designer (drag-n-drop ML) UI experience.
+
+- [Azure ML Designer (drag-n-drop ML)](https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer): designer is a UI tool in the Azure ML workspace for visually connecting datasets and components on an interactive canvas to create machine learning pipelines. To learn how to get started with the designer, see [Tutorial: Predict automobile price with the designer](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-designer-automobile-price-train-score).
+
+
+Especially, the package ease the authoring experience of resources like `Components` & `Pipelines`:
+
+- [Components](https://docs.microsoft.com/en-us/azure/machine-learning/concept-component): self-contained piece of code that does one step in a machine learning pipeline: data preprocessing, model training, model scoring, a hyperparameter tuning run, etc. Such that it can be parameterized and then used in different contexts.
+- [Pipelines](https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines): independently executable workflow of machine learning tasks composed by Components.
+
+
+# Change Log
+
+## [v0.1.0b6](https://pypi.org/project/mldesigner/0.1.0b6/) (2022.09.19)
+
+**Improvements:**
+- Adopted optional input new format: '$[[]]' instead of old '[]'.
+- Support Enum for mldesigner input.
+- Raise error if input has no annotation specified.
+
+**Fixed Bugs:**
+- Fixed import error when used along with azure-ai-ml<0.1.0b7.
+
+## [v0.1.0b5](https://pypi.org/project/mldesigner/0.1.0b5/) (2022.09.08)
+
+**New Features**
+- Enable using @command_component without brackets when no additional parameters.
+    ```python
+    from mldesigner import command_component
+    @command_component
+    def my_component():
+        pass
+
+    # equals to
+    @command_component()
+    def my_component():
+        pass
+    ```
+
+**Fixed Bugs:**
+- Fixed component command execution error when no inputs or outputs specified.
+- Fixed incompatible issue with azure-ai-ml >=0.1.0b7: error when trying to import azure-ai-ml constants
+
+## [v0.1.0b4](https://pypi.org/project/mldesigner/0.1.0b4/) (2022.08.22)
+
+**New Features:**
+- Support mldesigner generate:
+  - Generate component package from local yaml files or remote source
+    - See reference doc: [mldesigner generate doc](https://github.com/Azure/azureml-pipelines-doc/tree/main/user_guide/component_import_experience)
+    - Sample notebook: [mldesigner generate samples](https://github.com/Azure/azureml-pipelines-doc/blob/main/user_guide/component_import_experience/component-import-experience.ipynb)
+- Support mldesigner execute: execute component in local host environment.
+  - CLI example: `mldesigner execute --source ./components.py --name my_component inputs a=1 b=2`
+  - SDK example:
+    ```python
+    from mldesigner import execute
+    from components import my_component
+    node = my_component(a=1, b=2)
+    res = execute(node)
+    ```
+  - More information: `mldesigner execute --help`
+
+**Improvements:**
+- Fix bump version config.
+
+## [v0.1.0b3](https://pypi.org/project/mldesigner/0.1.0b3/) (2022.07.14)
+
+**New Features:**
+- Support optional input for mldesigner Input class.
+    ```python
+    from mldesigner import command_component, Input
+    @command_component()
+    def my_component(optional_param: Input(type="integer", optional=True)):
+        pass
+    ```
+- Support io descriptions inferring from docstring for pipeline & component.
+
+**Improvements:**
+- Handle compatibility issue for future changes. Less imports of private functions
+- Remove default property for mldesigner Input class.
+- Enable mldesigner to use argparser to parse incoming args.
+- Compatibility handling: old azure ai ml pacakge use different way to load component.
+- Component input like "int_param=3", no longer to be processed as optional input when registering to remote.
+
+
+
+## [v0.1.0b2](https://pypi.org/project/mldesigner/0.1.0b2/) (2022.05.23)
+
+**Improvements:**
+- Refine code terminologies, replace old dsl with new mldesigner.
+
+## [v0.1.0b1](https://pypi.org/project/mldesigner/0.1.0b1/) (2022.05.20)
+
+**New Features:**
+- Support using decorator @command_component to define a component.
+  - Create a component:
+    ```python
+    from mldesigner import command_component, Input, Output
+
+    @command_component()
+    def hello_world(input: Input, output: Output, param='str_param'):
+        print("Hello World!")
+    ```
+  - Register the component to server:
+    ```python
+    from azure.ai.ml import MLClient
+    client = MLClient.from_config(credential=credential)
+    client.components.create_or_update(hello_world)
+    ```
+  - Use sdk component in pipeline:
+    ```python
+    from azure.ai.ml import dsl
+
+    @dsl.pipeline()
+    def my_pipeline():
+        node = hello_world()
+        return {"pipeline_output": node.outputs.output}
+
+    pipeline = my_pipeline()
+    client.jobs.create_or_update(pipeline)
+
+    ```
