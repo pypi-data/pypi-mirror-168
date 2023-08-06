@@ -1,0 +1,8 @@
+idmhelpers/__init__.py,sha256=1GoaUwMSeBBLruUDdM6dEOYv-nA5voDZ34P71yo1WKo,23
+idmhelpers/credentials.py,sha256=JxmIu-F_GuewXdue9vW1WOvS3GMsmeTndBfNqZs-HH0,4757
+idmhelpers/dlthelper.py,sha256=sVXNGTyTj6PTwN0blhMb4qrXNVVr1ocAOXJlA981ZhY,4778
+idmhelpers/githelper.py,sha256=acCVY-QW_ydsIoI0lNvhzzRjzcmW2e-iyvcm133G0sY,694
+idmhelpers/partition.py,sha256=-U9a1lQUtZ__AYh6HQhWX1Ys2BAti35DJW-2yfRPBb8,17009
+idmhelpers-0.2.11.dist-info/WHEEL,sha256=wycAfLpmmoS0r5FEKIVwKB-iEMUiIZXv6P5GBpfA1-Q,87
+idmhelpers-0.2.11.dist-info/METADATA,sha256=AOc0Aik1QtHBa7jGXIjQdlPof8ZWBopSpyK4rLby_RE,719
+idmhelpers-0.2.11.dist-info/RECORD,,
