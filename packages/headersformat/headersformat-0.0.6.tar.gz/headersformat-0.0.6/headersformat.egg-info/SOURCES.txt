@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+headersformat/__init__.py
+headersformat/colors.py
+headersformat/core.py
+headersformat.egg-info/PKG-INFO
+headersformat.egg-info/SOURCES.txt
+headersformat.egg-info/dependency_links.txt
+headersformat.egg-info/top_level.txt
