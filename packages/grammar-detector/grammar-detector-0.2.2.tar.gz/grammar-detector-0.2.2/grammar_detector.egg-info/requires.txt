@@ -1,0 +1,13 @@
+importlib-metadata
+pyyaml
+spacy
+spacy-lookups-data
+tabulate
+
+[dev]
+black
+mypy
+python-lsp-server
+types-pyyaml
+types-tabulate
+types-setuptools
