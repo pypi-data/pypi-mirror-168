@@ -1,0 +1,9 @@
+dotdict_bench/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+dotdict_bench/__main__.py,sha256=KqkbdSoUhwHafNoD06z3p89Ub-kAmcO2Ng-OMUItEJY,1711
+dotdict_bench/apis.py,sha256=_-iOwaAXTftIDMA-AjopYVMfJ5BFktwBwVMUB9BPsYE,3813
+dotdict_bench/cases.py,sha256=N1a56HXAM4UJcEw6lmUrgYZmoWV2f57a8YIS-pZdExg,4796
+dotdict_bench/sets.py,sha256=KGOUjuB1iB-8igPF8hwC1EsKM3T1cPFnfvrdm8yhgRw,4804
+dotdict_bench/utils.py,sha256=VBtvHP2p6fKwUufJvf6XNjbH06zke1WLnW6Un23qD8w,240
+dotdict_bench-0.0.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+dotdict_bench-0.0.0.dist-info/METADATA,sha256=ApSu453ZvTFhCQfAJQ9yTKj0wCwi3ZaVbn5vD788dng,13449
+dotdict_bench-0.0.0.dist-info/RECORD,,
