@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: syned
+Version: 1.0.25
+Summary: SYNED (SYNchrotron Elements Dictionary) kernel library
+Home-page: https://github.com/oasys-kit/syned
+Author: Manuel Sanchez del Rio, Luca Rebuffi
+Author-email: srio@esrf.eu
+Maintainer: L Rebuffi and M Sanchez del Rio
+Maintainer-email: srio@esrf.eu
+License: GPLv3
+Download-URL: https://github.com/oasys-kit/syned
+Keywords: dictionary,glossary,synchrotronsimulation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+License-File: LICENSE
+
+# syned
+SYNchrotron Elements Dictionary
+
+[![spack](https://img.shields.io/spack/v/py-syned)](https://spack.readthedocs.io/en/latest/package_list.html#py-syned)
+
+
+A python library to define the components of a synchrotron beamline and their positions. They can be read/write to json files. It is used by OASYS as a common tool to define sources and optical systems that are then exported to the different add-ons. 
+
+## Reference
+
+[1] https://doi.org/10.1117/12.2274232
+
+
+
