@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fast-server
+Version: 0.3.0
+Summary: 服务器快速开发框架
+Home-page: https://github.com/yuan-hongliang/fast-server.git
+Author: yuanhongliang
+Author-email: 2050364415@qq.com
+Maintainer: yuanhongliang
+Maintainer-email: 2050364415@qq.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+
+# fast-server
+# based on wsgi
+# by yuanhongliang
+# 2050364415@qq.com
+# development edition
