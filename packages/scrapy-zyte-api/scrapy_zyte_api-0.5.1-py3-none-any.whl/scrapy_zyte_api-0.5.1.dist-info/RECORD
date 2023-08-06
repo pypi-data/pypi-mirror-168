@@ -1,0 +1,8 @@
+scrapy_zyte_api/__init__.py,sha256=jdZHIaWf4vKMCp0PD8hxbFetP56Pps-Vw3Mr5RA6uEY,272
+scrapy_zyte_api/handler.py,sha256=rdB3zBRxjbb7V9zU9lrK2__QbbRB_yNr7woAAvklU68,6780
+scrapy_zyte_api/responses.py,sha256=-HknM531_aXw_2y8BPpiCxIgFrGmZeDM6nock0u-XXE,5777
+scrapy_zyte_api/utils.py,sha256=zalrQKWF_hSBgchP8QxKnmat_xWcDPkzYmOkx5MU1W4,748
+scrapy_zyte_api-0.5.1.dist-info/METADATA,sha256=YCw5vERRqYaScPwxFjcRGKsT0_8t_1MHcZIvFuKS5n4,11122
+scrapy_zyte_api-0.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scrapy_zyte_api-0.5.1.dist-info/top_level.txt,sha256=vTyseeXmHy0FhT_i7rQqj8ZW4GVBvpnuX4fJQ0VjzCY,16
+scrapy_zyte_api-0.5.1.dist-info/RECORD,,
