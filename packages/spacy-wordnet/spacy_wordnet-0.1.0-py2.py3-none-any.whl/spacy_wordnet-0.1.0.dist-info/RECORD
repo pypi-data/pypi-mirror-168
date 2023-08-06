@@ -1,0 +1,11 @@
+spacy_wordnet/__init__.py,sha256=fzJ3zekVKOv5vzcouNYup6vibSUu956Xo-zSAwv7z8M,155
+spacy_wordnet/__utils__.py,sha256=dIM0I2i9IrR7CXpb103yzBGQusvvIbgrRnm__5MCgB0,3344
+spacy_wordnet/wordnet_annotator.py,sha256=pSJeJ5dx4gnAbpzhiReQGLdL8gUpK-w76XSH3T3KIRE,970
+spacy_wordnet/wordnet_domains.py,sha256=OwlY0BFg4hpk-fmkeMyqBcPp0ObNG6I-qaNnQCBfa18,4490
+spacy_wordnet/data/wordnet_domains.txt,sha256=tSih0DnlNGeQhw_a5fywpSGqTuMnYfnigfJmzuyGcS8,3235771
+spacy_wordnet-0.1.0.dist-info/AUTHORS.rst,sha256=W3s-ba949sn8IaGzINtV7n8GWF9TPFf39mj20iCQFVE,81
+spacy_wordnet-0.1.0.dist-info/LICENSE.txt,sha256=gaZu7r2uLVd607d8ENHeEJv5XOmUdruCk5pO6Q70MIQ,1075
+spacy_wordnet-0.1.0.dist-info/METADATA,sha256=oreMMm9O9ThN4MJVFqHeAb8Bw26XELQJiqoPs7PKo-c,4709
+spacy_wordnet-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+spacy_wordnet-0.1.0.dist-info/top_level.txt,sha256=Kdx5WmZW6bvt7iRc-lhqiow8hx76R0qVx1sHSXUFiHw,14
+spacy_wordnet-0.1.0.dist-info/RECORD,,
