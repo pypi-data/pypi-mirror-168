@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+adp_connectors/__init__.py
+adp_connectors/base.py
+adp_connectors/box.py
+adp_connectors/postgresql.py
+adp_connectors/s3.py
+adp_connectors.egg-info/PKG-INFO
+adp_connectors.egg-info/SOURCES.txt
+adp_connectors.egg-info/dependency_links.txt
+adp_connectors.egg-info/requires.txt
+adp_connectors.egg-info/top_level.txt
