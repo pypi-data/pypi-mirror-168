@@ -1,0 +1,16 @@
+attrdict3
+combo
+dirty-cat
+dictlearn
+keras
+networkx
+numpy<1.22,>=1.18
+pandas
+tqdm
+pyod
+python-louvain
+PyYAML
+scikit-learn
+scipy
+tensorflow
+wheel
