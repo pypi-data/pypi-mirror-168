@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "acfunsdk"
+version = "0.9.1"
+description = "acfunsdk - UNOFFICEICAL"
+license = "MIT"
+authors = ["dolacmeo <dolacmeo@gmail.com>"]
+maintainers = []
+readme = "README.md"
+homepage = "https://pypi.org/project/acfunsdk/"
+repository = "https://github.com/dolaCmeo/acfunsdk"
+documentation = "https://github.com/dolaCmeo/acfunsdk"
+keywords = ["acfun", "sdk", "acfunsdk", "unofficeical"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Natural Language :: Chinese (Simplified)",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: JavaScript",
+    "Topic :: Education",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+    "Topic :: Software Development :: Libraries",
+]
+packages = [{include = "acfunsdk"}]
+exclude = [
+    "acfunsdk/app/",
+    "acfunsdk/src/",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+httpx = "^0.23"
+lxml = "^4"
+beautifulsoup4 = "^4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = 'aliyun.mirrors'
+url = "https://mirrors.aliyun.com/pypi/simple/"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/dolaCmeo/acfunsdk/issues"
