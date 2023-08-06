@@ -1,0 +1,92 @@
+CHANGES
+=======
+
+2.0.0
+-----
+
+* remove unicode prefix from code
+* setup.cfg: Replace dashes with underscores
+* Update python testing as per zed cycle teting runtime
+
+1.4.0
+-----
+
+* Remove create\_keypair method
+
+1.3.0
+-----
+
+* Use py3 as the default runtime for tox
+
+1.2.0
+-----
+
+* Switch to newer openstackdocstheme version
+* Drop Python 3.5 testing
+* Add py38 package metadata
+* Fix hacking min version to 3.0.1
+* Update docs building, cleanup
+
+1.0.0
+-----
+
+* Ussuri contributor docs community goal
+* Switch to stestr
+* Drop python 2.7 support and testing
+* Switch to official Ussuri jobs
+* Update the constraints url
+
+0.3.0
+-----
+
+* Add Python 3 Train unit tests
+* Replace git.openstack.org URLs with opendev.org URLs
+* OpenDev Migration Patch
+* Update hacking version to latest
+
+0.2.0
+-----
+
+* Add Python 3.6 classifier to setup.cfg
+* Add python 3.6 unit test job
+* Removed older version of python added 3.5
+* add python 3.6 unit test job
+* import zuul job settings from project-config
+* change default python 3 env in tox to 3.5
+* fix tox python3 overrides
+* Fixes test\_metrics test
+
+0.1.0
+-----
+
+* Fixes devstack plugin script
+* Update requirements manually
+* Adds metrics collection scenario
+* Update the documentation link for doc migration
+* sets test\_qos hypervisor version to 6003
+* Fixes tests method resolution
+* Deduplicates optional\_feature tests
+* splits the resize mixin into two
+* Fixes flavor ref usage
+* Fixes wsman's methods
+* Fixes test\_cluster \_create\_server method
+* Update WinRM config options
+* Add secure boot optional feature test
+* Fixes vNUMA resize negative test
+* Fixes disk resize negative test
+* Adds devstack oswin-tempest-plugin plugin
+* Increase the test\_qos disk usage limit
+* Add Live Migration Mixin
+* Fixes optional\_feature's test\_resize\_remove\_feature
+* Add RemoteFX optional feature test
+* Add qos optional feature for disk I/O operations
+* Fixes oswin\_tempest\_plugin naming
+* Fixes flake8 and unittest errors
+* Adds Hyper-V Cluster scenario
+* Adds OptionalFeature mixin and vNUMA test case
+* Adds cold resize Mixin
+* Adds cold migration Mixin
+* Adds first basic tests and config options
+* Apply Tempest plugin cookiecutter
+* Apply cookiecutter template
+* Initial commit
