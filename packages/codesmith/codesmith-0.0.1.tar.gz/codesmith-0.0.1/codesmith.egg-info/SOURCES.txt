@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+codesmith/__init__.py
+codesmith/eval.py
+codesmith/python.py
+codesmith/read.py
+codesmith/wrapper.py
+codesmith.egg-info/PKG-INFO
+codesmith.egg-info/SOURCES.txt
+codesmith.egg-info/dependency_links.txt
+codesmith.egg-info/requires.txt
+codesmith.egg-info/top_level.txt
