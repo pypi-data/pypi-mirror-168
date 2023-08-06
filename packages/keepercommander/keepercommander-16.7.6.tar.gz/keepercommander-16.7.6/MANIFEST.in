@@ -1,0 +1,2 @@
+include keepercommander/importer/keepass/template.kdbx
+include keepercommander/resources/diceware.wordlist.asc.txt
