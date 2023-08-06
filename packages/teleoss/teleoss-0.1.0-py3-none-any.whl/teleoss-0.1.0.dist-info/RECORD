@@ -1,0 +1,12 @@
+teleoss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teleoss/teleoss.py,sha256=yKQ2JYaqsWJtNxGbG-KU6BdttW9SZ6sFBUOag4bE1k0,5693
+teleoss/const/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teleoss/const/click_setting.py,sha256=YSX9okkb_UyAqwLwbMY_O9arfcUlv6mzfFE2ersPsPA,61
+teleoss/const/s3cfg.py,sha256=-0u_5LYSvGlk3jrVxrKBhEzQeEg0pUltFH77PplGH6c,2048
+teleoss/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teleoss/utils/file_utils.py,sha256=6Z2XPhuA5fXAcxKyd4b6c8YwfFPHvzUnmLMTlGzQSMM,337
+teleoss-0.1.0.dist-info/METADATA,sha256=DOaMq7Kg4TSh0mN9qX3CVAfOPiq4UspHiAdEbFgaEoQ,946
+teleoss-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+teleoss-0.1.0.dist-info/entry_points.txt,sha256=41-F_XAEq_tFeAWh8iEdpe0fLfN77196JHuNYtbQuvU,48
+teleoss-0.1.0.dist-info/top_level.txt,sha256=UeQqqU50cB6qBAr881QKpA1N8SlosCPKlpLGC47611A,8
+teleoss-0.1.0.dist-info/RECORD,,

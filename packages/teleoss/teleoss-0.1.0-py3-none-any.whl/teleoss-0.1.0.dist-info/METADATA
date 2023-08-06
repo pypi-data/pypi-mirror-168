@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: teleoss
+Version: 0.1.0
+Summary: Command line toolkit for tele oss
+Author: imason
+Author-email: moy7@chinatelecom.cn
+Keywords: teleoss
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6,
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+
+Tele Log
+==========================
+
+Command line toolkit for tele oss
+
+## how to commpile
+```bash
+python setup.py sdist bdist_wheel
+```
+
+## how to release
+```bash
+twine upload -r pypi dist/*.whl
+```
+
+## how to install 
+```bash
+pip install teleoss
+```
+
+## how to use
+```python
+# initial, in the main module
+import logging
+from telelog import get_logger
+logger = logging.getLogger()
+logger = get_logger(logger)
+logger.info("hello main module")
+
+# in othre module
+import logging
+logger = logging.getLogger(__name__)
+logger.info("hello other module")
+```
