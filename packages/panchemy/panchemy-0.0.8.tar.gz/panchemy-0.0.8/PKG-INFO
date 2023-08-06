@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: panchemy
+Version: 0.0.8
+Summary: A library for data handler between SQLAlchemy and pandas
+Home-page: https://github.com/NLanN/panchemy
+License: MIT
+Author: Alan Nguyen
+Author-email: nnlan.dev.98@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy (>=1.4.39,<2.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Project-URL: Repository, https://github.com/NLanN/panchemy
+Description-Content-Type: text/markdown
+
+
