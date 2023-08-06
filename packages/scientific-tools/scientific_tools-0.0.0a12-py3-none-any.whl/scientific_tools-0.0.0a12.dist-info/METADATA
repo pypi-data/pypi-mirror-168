@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: scientific-tools
+Version: 0.0.0a12
+Summary: Scientific tools is the Swiss knife for scientists and students who work with python.
+Author-email: Cyprien BONTRON <c.b.e.python@gmail.com>
+Maintainer-email: Cyprien BONTRON <c.b.e.python@gmail.com>
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License        
+        Futher information at: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+Project-URL: Download-URL, https://pypi.org/project/scientific_tools/
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: Free for non-commercial use
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# Scientific tools
+
+[![Version](https://img.shields.io/pypi/v/scientific-tools.svg)](https://pypi.org/project/scientific-tools/) [![PyVersion](https://img.shields.io/pypi/pyversions/scientific-tools.svg)](https://pypi.org/project/scientific-tools/)
+
+## Project's description
+scientific_tools is the Swiss knife for scientists and students who work with python.
+This framework is currently in development, but some functionnalities work without any bugs.
+
+# Graphics package
+With this package, you can :
+- trace 2D and 3D functions graphs
+- more functionnalities are in development
+
+# Physics
+With this package, you can :
+- calculate uncertainties (calculate standard and relative uncertainties and z-scores)
+- other functionnalities are in development
+
+## Thanks
+This framework rely on few others frameworks that are free.
+The code is written in Python 3.10 and use :
+- numpy
+- matplotlib 
+
+## License
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (CC-BY-NC-SA)**
+
+(Futher information at: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode )
+
+©Cyprien BONTRON (c.b.e.python@gmail.com)
+
