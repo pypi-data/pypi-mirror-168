@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "previewer"
+version = "0.3.0"
+description = "Video or Folder preview generator"
+homepage = "https://github.com/essembeh/previewer"
+authors = ["Sébastien MB <seb@essembeh.org>"]
+license = "Apache-2.0"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Utilities"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Wand = "^0.6.10"
+colorama = "^0.4.5"
+python-magic = "^0.4.27"
+
+[tool.poetry.dev-dependencies]
+black = "^22.8.0"
+pylint = "^2.15.3"
+pytest = "^7.1.3"
+pytest-dotenv = "^0.5.2"
+pytest-cov = "^3.0.0"
+
+[tool.poetry.scripts]
+previewer = 'previewer.cli:run'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
