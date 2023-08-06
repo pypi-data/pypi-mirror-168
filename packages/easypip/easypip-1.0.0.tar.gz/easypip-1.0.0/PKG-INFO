@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: easypip
+Version: 1.0.0
+Description-Content-Type: text/markdown
+
+# easypip
+
+Ease the import / installation of packages in python and especially in notebooks
+
+Usage
+```
+import easypip
+
+torch = easypip("torch >= 1.8.0")
+```
