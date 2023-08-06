@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: NEPMetadataMapping
+Version: 2.0.1
+Summary: A library for mapping metadata attributes from file format schemas to a json schema document
+Home-page: https://github.com/user/nicolasblumenroehr
+Download-URL: https://github.com/nicolasblumenroehr/NEP-Metadata-Mapping-Tool/archive/refs/tags/2.0.1.tar.gz
+Author: Nicolas Blumenroehr
+Author-email: nicolas.blumenroehr@gmail.com
+License: cc
+Keywords: Schema,Mapping,DICOM,JSON
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
