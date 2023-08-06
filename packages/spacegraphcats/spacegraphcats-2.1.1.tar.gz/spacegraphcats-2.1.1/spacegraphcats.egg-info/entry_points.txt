@@ -1,0 +1,2 @@
+[console_scripts]
+spacegraphcats = spacegraphcats.__main__:main

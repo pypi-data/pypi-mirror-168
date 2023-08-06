@@ -1,0 +1,25 @@
+catlas_base: twofoo
+input_sequences:
+- twofoo.fq.gz
+ksize: 31
+radius: 1
+search:
+- data/2.fa.gz
+- data/47.fa.gz
+- data/63.fa.gz
+shadow_ratio_maxsize: 1000
+
+hashval_ksize: 51
+hashval_queries: data/twofoo-k51-hashval-queries.txt
+
+multifasta_reference:
+- data/twofoo-genes.fa.gz
+multifasta_scaled: 1000
+multifasta_query_sig: data/63-os223.sig
+
+multifasta_x_reference:
+- shew/GCF_000017325.1_ASM1732v1_protein.faa.gz
+- shew/GCF_000021665.1_ASM2166v1_protein.faa.gz
+multifasta_x_protein_ksize: 10
+multifasta_x_query_is_dna: false
+multifasta_x_search_mode: search+nbhd
