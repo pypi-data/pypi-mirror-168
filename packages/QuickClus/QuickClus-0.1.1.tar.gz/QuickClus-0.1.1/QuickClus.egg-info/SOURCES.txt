@@ -1,0 +1,26 @@
+.gitignore
+.readthedocs.yml
+LICENSE
+README.md
+main.py
+requirements.txt
+setup.py
+QuickClus.egg-info/PKG-INFO
+QuickClus.egg-info/SOURCES.txt
+QuickClus.egg-info/dependency_links.txt
+QuickClus.egg-info/requires.txt
+QuickClus.egg-info/top_level.txt
+docs/Makefile
+docs/conf.py
+docs/index.rst
+docs/make.bat
+docs/source/api/quickclus.rst
+notebooks/01_First_Example.ipynb
+notebooks/02_Second_Example.ipynb
+notebooks/10000 Sales Records.csv
+notebooks/Mall_Customers.csv
+quickclus/QuickClus.py
+quickclus/__init__.py
+quickclus/utils.py
+tests/__init__.py
+tests/quickclus_test.py
