@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pie-break
+Version: 0.1.1
+Summary: An eye-catching break timer for the screen-bound
+Home-page: https://github.com/sctrls/pie_break
+Author: sctrls
+Author-email: donot@email.me
+License: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+An eye-catching break timer for the screen-bound. Can't force yourself to get that glass of water every hour? piebreak opens a browser at a url of choice every X minutes. Pay attention.

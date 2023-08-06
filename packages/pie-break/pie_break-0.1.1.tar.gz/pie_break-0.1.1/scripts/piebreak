@@ -1,0 +1,91 @@
+#!/usr/bin/env python
+from pie_break import pie_break
+from sys import argv, exit
+import time
+
+timer = None
+
+help_message = """
+pie_break accepts:
+    help: print this message
+    urls: list the urls chosen between for distraction
+    params: list parameters for the current timer
+    """
+
+# If a time and several urls are passed
+if len(argv) >= 3:
+    try:
+        timer = pie_break.PieBreak(periodic=[int(argv[1])], urls=argv[2:])
+    except ValueError:
+        work_minutes = input(
+            "Try again. For how many minutes do you want to work? ")
+        try:
+            periodic = [int(work_minutes)]
+        except ValueError:
+            exit("Exiting.")
+        else:
+            urls = []
+            while True:
+                if urls:
+                    new_url = input("Another?: ")
+                else:
+                    new_url = input(
+                        "If you want, enter a url by which to be \
+                            interrupted: ")
+                if not new_url:
+                    break
+                urls.append(new_url)
+
+            timer = pie_break.PieBreak(periodic=periodic, urls=urls)
+    # timer.get_params()
+
+# If only a working time is passed
+elif len(argv) == 2:
+    try:
+        timer = pie_break.PieBreak(periodic=[int(argv[1])])
+    except ValueError:
+        work_minutes = input(
+            "Try again. For how many minutes do you want to work?")
+
+# If no parameters are passed
+else:
+    periodic = set()
+    one_offs = set()
+    repeating_timers = input("Would you like to schedule any repeating interruptions(y/n)? ")
+
+    while repeating_timers == 'y':
+        try:
+            periodic.add(int(input("How many minutes from now? ")))
+            repeating_timers = input("Any more(y/n)? ")
+        except:
+            one_offs.add(int(input("Enter a number of minutes: ")))
+
+    one_off_timers = input("Would you like to schedule any one off interruptions(y/n)? ")
+    while one_off_timers == 'y':
+        try:
+            one_offs.add(int(input("How many minutes from now? ")))
+            one_off_timers = input("Any more(y/n)? ")
+        except:
+            one_offs.add(int(input("Enter a number of minutes: ")))
+
+    timer = pie_break.PieBreak(periodic, one_offs)
+
+# print(f"Main thread is daemon: {current_thread().daemon}")
+timer.start()
+# print(f"Timer thread is daemon: {timer.daemon}")
+
+
+while True:
+    cmd = input("\nPieBreak: ")
+    if cmd == "urls":
+        print(timer.get_params()[1])
+    elif cmd == "help":
+        print(help_message)
+    elif cmd == "params":
+        start_t, work_t, urls, timing = timer.get_params()
+        print(f"Started at: {start_t}\nWorking for: {work_t}\nDistracting with urls: {urls}")
+    # elif cmd == "reset":
+        # minutes = input("\nHow many minutes to the next break? ")
+        # timer = pie_break.PieBreak(periodic=[minutes])
+        # # TODO: Check thread behaviour
+        # timer.start()
