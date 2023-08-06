@@ -1,0 +1,2 @@
+[console_scripts]
+vxt = vxt.__main__:main
