@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ReadOIFITS/__init__.py
+readOIFITS.egg-info/PKG-INFO
+readOIFITS.egg-info/SOURCES.txt
+readOIFITS.egg-info/dependency_links.txt
+readOIFITS.egg-info/requires.txt
+readOIFITS.egg-info/top_level.txt
