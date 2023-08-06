@@ -1,0 +1,8 @@
+README.md
+setup.py
+hugg/__init__.py
+hugg.egg-info/PKG-INFO
+hugg.egg-info/SOURCES.txt
+hugg.egg-info/dependency_links.txt
+hugg.egg-info/requires.txt
+hugg.egg-info/top_level.txt
