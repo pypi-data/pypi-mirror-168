@@ -1,0 +1,92 @@
+
+# Mailshell - msl
+
+<div align=center>
+
+![Logo](https://raw.githubusercontent.com/malkiAbdoo/mailshell/master/images/msl_logo.png)
+
+send and check emails faster from the terminal using Mailshell
+
+[![PyPI](https://img.shields.io/pypi/v/mailshell?label=pypi%20version&logo=pypi)](https://pypi.org/project/mailshell/)
+[![GitHub issues](https://img.shields.io/github/issues/malkiAbdoo/mailshell)](https://github.com/malkiAbdoo/mailshell/issues)
+[![GitHub](https://img.shields.io/github/license/malkiAbdoo/mailshell?label=Mailshell%20license)](https://github.com/malkiAbdoo/mailshell/blob/master/LICENSE)
+
+</div>
+
+## Requirements
+
+- python 3.7+
+- Linux or MacOS
+
+## Installation
+
+python `pip` install
+```bash
+$ python -m pip install mailshell
+```
+Support python 3.7+
+
+## Usage
+
+just type `msl` followed by one of the mailshell commands
+```bash
+$ msl login
+```
+- add **`--version`** option to see your current version
+- type `msl login` to log in with gamil [app password][appp], and `msl new` to create a new message
+- use `msl edit` command to write your email using [nano][GNU-nano] editor or `msl html` to add html message, and `msl add` with a file or image to include it.
+```bash
+$ msl add ./file.pdf
+```
+- you can also add a text from a txt file with `msl get` command
+```bash
+$ msl get ./your_text.txt
+```
+- use `msl content` to see your message content
+- run `msl send` to send your message to specified accounts
+- you can use `check` command to check your emails with a specified mailbox and [search command][sc].
+```bash
+$ msl check
+mailbox: Inbox
+Search command: FROM "Name.."
+```
+
+## Commands
+
+Use **`--help`** in mailshell to see the available commands:
+
+| Command          | Description                                                            |
+|------------------|------------------------------------------------------------------------|
+| login            | log in to your gmail using email address and the [app password][appp]  |
+| cred             | print your current email address and app password                      |
+| new              | create new email message                                               |
+| subject          | set a new subject to the message                                       |
+| from             | set a new sender name                                                  |
+| edit             | edit your current message                                              |
+| html             | add [html][html] message                                               |
+| content          | see the current message content with the included files                |
+| get [FILENAME]   | add a text from **.txt** file to you current message                   |
+| add [FILENAME]   | add a file or image to your message                                    |
+| rm [FILENAME]    | remove a file or image from your message                               |
+| to               | set your contact that you will send to                                 |
+| send             | send the current message                                               |
+| check            | check your emails with a specified mailbox and [search command][sc]    |
+| sch              | print the search commands that you need for checking emails            |
+| logout           | log out from your gmail account                                        |
+
+```bash
+$ msl --help
+```
+
+## Support
+
+For support, Follow on twitter [@malkiAbdoo](https://twitter.com/malkiAbdoo).
+
+
+<!-- References -->
+
+[appp]:https://support.google.com/accounts/answer/185833?hl=en#app-passwords
+[sc]:https://www.marshallsoft.com/ImapSearch.htm
+[GNU-nano]:https://en.wikipedia.org/wiki/GNU_nano
+[html]:https://en.wikipedia.org/wiki/HTML
+

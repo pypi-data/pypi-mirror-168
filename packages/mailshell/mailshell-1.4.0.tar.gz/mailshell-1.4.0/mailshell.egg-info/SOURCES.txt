@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+mailshell/__init__.py
+mailshell/app.py
+mailshell/email_checker.py
+mailshell/helper.py
+mailshell/mail_shell.py
+mailshell.egg-info/PKG-INFO
+mailshell.egg-info/SOURCES.txt
+mailshell.egg-info/dependency_links.txt
+mailshell.egg-info/entry_points.txt
+mailshell.egg-info/requires.txt
+mailshell.egg-info/top_level.txt
+test/test.py
