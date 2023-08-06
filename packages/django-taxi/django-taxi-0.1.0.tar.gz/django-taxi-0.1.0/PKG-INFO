@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: django-taxi
+Version: 0.1.0
+Summary: 
+Author: Daniel Nibon
+Author-email: daniel@nibon.se
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Django (>=4.0,<5.0)
+Requires-Dist: pre-commit (>=2.20.0,<3.0.0)
