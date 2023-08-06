@@ -1,0 +1,2 @@
+[console_scripts]
+pimmi = pimmi.cli.__main__:main
