@@ -1,0 +1,3 @@
+[console_scripts]
+agtest=agtest.cli:main
+
