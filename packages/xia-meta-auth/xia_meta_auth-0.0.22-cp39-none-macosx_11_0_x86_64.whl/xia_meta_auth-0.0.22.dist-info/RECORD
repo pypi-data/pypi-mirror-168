@@ -1,0 +1,10 @@
+xia_meta_auth/__init__.py,sha256=GFpZUxZRoXZgSEHcL2BebtlSLc79-7uCoHJJnETx7Ow,219
+xia_meta_auth/acl.cpython-310-darwin.so,sha256=vepiSGVkIj5D_2MGxruIOIPRoh8ufDg9Usg0ndfTnyY,306520
+xia_meta_auth/cache.cpython-310-darwin.so,sha256=VjmsxKSe1SWuGZB8L7vA4p8AJmULetZc9Y8Y-96AUE0,218816
+xia_meta_auth/permission.cpython-310-darwin.so,sha256=2fVs5i2Wkep1rlo4sHwgU5GHcJ5kFYkA_G5_9bEjI8I,378952
+xia_meta_auth/user.cpython-310-darwin.so,sha256=zE0ci_f9R_ZkQFJpIXIM-jXVK0C8wyJry1UsMuUb3Vc,288280
+xia_meta_auth-0.0.22.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_meta_auth-0.0.22.dist-info/METADATA,sha256=GYCMfnwxuE1ISv1hyIBgt3urWI8lnhua4nqMcByjitQ,429
+xia_meta_auth-0.0.22.dist-info/WHEEL,sha256=NsapCMY7EanMRKZsZABtoiyq2rs4aXJ4FKsV_kV91NE,108
+xia_meta_auth-0.0.22.dist-info/top_level.txt,sha256=qDynZ1JQs079EvpXrpGkMCkZGYYkgsvm6RhIsx4ftE8,14
+xia_meta_auth-0.0.22.dist-info/RECORD,,
