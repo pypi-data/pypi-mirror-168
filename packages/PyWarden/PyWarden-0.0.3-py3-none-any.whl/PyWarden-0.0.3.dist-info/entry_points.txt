@@ -1,0 +1,3 @@
+[console_scripts]
+PyWarden = pywarden.handler:arg_parse.arg_parse
+pywarden = pywarden.handler:arg_parse.arg_parse
