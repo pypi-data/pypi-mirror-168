@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: newchain-keys
+Version: 0.2.0
+Summary: Common API for NewChain key operations.
+Home-page: https://github.com/xiawu/newchain-keys.py
+Author: Xia Wu
+Author-email: xiawu@zeuux.org
+License: MIT
+Keywords: newchain
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: eth-utils (<3.0.0,>=2.0.0)
+Requires-Dist: eth-typing (<4,>=3.0.0)
+Provides-Extra: dev
+Requires-Dist: tox (==3.20.0) ; extra == 'dev'
+Requires-Dist: bumpversion (==0.5.3) ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: eth-utils (<3.0.0,>=2.0.0) ; extra == 'dev'
+Requires-Dist: eth-typing (<4,>=3.0.0) ; extra == 'dev'
+Requires-Dist: flake8 (==3.0.4) ; extra == 'dev'
+Requires-Dist: mypy (==0.782) ; extra == 'dev'
+Requires-Dist: asn1tools (<0.147,>=0.146.2) ; extra == 'dev'
+Requires-Dist: factory-boy (<3.1,>=3.0.1) ; extra == 'dev'
+Requires-Dist: pyasn1 (<0.5,>=0.4.5) ; extra == 'dev'
+Requires-Dist: pytest (==6.2.5) ; extra == 'dev'
+Requires-Dist: hypothesis (<6.0.0,>=5.10.3) ; extra == 'dev'
+Requires-Dist: eth-hash[pysha3] ; (implementation_name == "cpython") and extra == 'dev'
+Requires-Dist: eth-hash[pycryptodome] ; (implementation_name == "pypy") and extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: flake8 (==3.0.4) ; extra == 'lint'
+Requires-Dist: mypy (==0.782) ; extra == 'lint'
+Provides-Extra: newchain-keys
+Requires-Dist: eth-utils (<3.0.0,>=2.0.0) ; extra == 'newchain-keys'
+Requires-Dist: eth-typing (<4,>=3.0.0) ; extra == 'newchain-keys'
+Provides-Extra: test
+Requires-Dist: asn1tools (<0.147,>=0.146.2) ; extra == 'test'
+Requires-Dist: factory-boy (<3.1,>=3.0.1) ; extra == 'test'
+Requires-Dist: pyasn1 (<0.5,>=0.4.5) ; extra == 'test'
+Requires-Dist: pytest (==6.2.5) ; extra == 'test'
+Requires-Dist: hypothesis (<6.0.0,>=5.10.3) ; extra == 'test'
+Requires-Dist: eth-hash[pysha3] ; (implementation_name == "cpython") and extra == 'test'
+Requires-Dist: eth-hash[pycryptodome] ; (implementation_name == "pypy") and extra == 'test'
+
