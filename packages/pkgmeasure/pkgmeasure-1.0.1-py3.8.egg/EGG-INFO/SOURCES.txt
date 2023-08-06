@@ -1,0 +1,15 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+doc/todo.rst
+measure/__init__.py
+measure/metrics.py
+measure/norms.py
+pkgmeasure.egg-info/PKG-INFO
+pkgmeasure.egg-info/SOURCES.txt
+pkgmeasure.egg-info/dependency_links.txt
+pkgmeasure.egg-info/requires.txt
+pkgmeasure.egg-info/top_level.txt
+tests/norms.py
