@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "well_architected_constructs"
+version = "0.0.21"
+authors = [
+  { name="johnnyblase", email="johnnyblasin@gmail.com" },
+]
+description = "CDK constructs based on the Well Architected Framework"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["aws-cdk-lib", "constructs", "aws_cdk.aws_apigatewayv2_alpha",
+"aws_cdk.aws_apigatewayv2_integrations_alpha"]
+
+[project.urls]
+"Homepage" = "https://github.com/jadecobra/well_architected"
+"Bug Tracker" = "https://github.com/jadecobra/well_architected/issues"
