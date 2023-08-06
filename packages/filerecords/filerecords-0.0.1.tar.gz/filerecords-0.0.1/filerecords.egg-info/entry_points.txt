@@ -1,0 +1,3 @@
+[console_scripts]
+filerecords = filerecords.cli:setup
+records = filerecords.cli:setup
