@@ -1,0 +1,10 @@
+aws_cdk/aws_route53resolver_alpha/__init__.py,sha256=afb7ZTdnqqrcEkDg-A0IAuDQeQp6f_fZJ4kQFgYNtXA,67050
+aws_cdk/aws_route53resolver_alpha/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_route53resolver_alpha/_jsii/__init__.py,sha256=BWIBsI0WNox_zKPho-snpm46NByq-8FdmQIdd5skLps,457
+aws_cdk/aws_route53resolver_alpha/_jsii/aws-route53resolver-alpha@2.43.0-alpha.0.jsii.tgz,sha256=YWSr5ot5z9k9aVUbgLwYc7ig6_qH4v3lVUViFv_y36E,44166
+aws_cdk.aws_route53resolver_alpha-2.43.0a0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_route53resolver_alpha-2.43.0a0.dist-info/METADATA,sha256=t7yw6dH3QQI72NPyBW0REDjv2TZN7x_zrvCAi-CWh7Q,5212
+aws_cdk.aws_route53resolver_alpha-2.43.0a0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_route53resolver_alpha-2.43.0a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_route53resolver_alpha-2.43.0a0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_route53resolver_alpha-2.43.0a0.dist-info/RECORD,,
