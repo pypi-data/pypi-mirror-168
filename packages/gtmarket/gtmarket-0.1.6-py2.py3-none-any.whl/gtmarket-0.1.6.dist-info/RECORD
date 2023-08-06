@@ -1,0 +1,13 @@
+gtmarket/__init__.py,sha256=x3CTCoxCwSqMuvv4fVFQRprm6KgwshOfvTUmCMpw73M,685
+gtmarket/api.py,sha256=gdqKN6a_ub1pZRcD-V1rSzRzYKa6h8h0hBsiprrGoLU,1696
+gtmarket/core.py,sha256=QQL1zJXqOMsZxLAZFSXWPep3XPJTQTMc0-0bxaUK0rs,48123
+gtmarket/predictor.py,sha256=DfLmybirMK-z_TPtSBAKVSn2bGrdN3s1wFa_5diYgao,34256
+gtmarket/version.py,sha256=gW5NUxwGdPsiQjn0cOuuQT11pfthByI5DITDg_HMhLQ,22
+gtmarket/tests/__init__.py,sha256=mJkaZzvYgBnxsBAGv8y_P1yzonHqWgw6VF2Zs4rmJEA,7
+gtmarket/tests/test_predictor.py,sha256=I7myS-IFeD8O5QLRSVMdXDiyg9pyPH_LlqjHTbvBpoQ,10947
+gtmarket/tests/tests.py,sha256=TLY670Ad80pqubWRXbCu_s2X7FwMw0EOmTN17jiGiWE,123
+gtmarket-0.1.6.dist-info/LICENSE,sha256=GpcqyrWkkMj2eqRlM0EDHYdZd1TSTKW_s-b6dORniJQ,1081
+gtmarket-0.1.6.dist-info/METADATA,sha256=gVTqeFpc9qO-FxGZxEyBq11VT0nieh6VnYi5QQFXchA,520
+gtmarket-0.1.6.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+gtmarket-0.1.6.dist-info/top_level.txt,sha256=kbM_M0tyJvrWLs0JpN3iJVBegGfxhGEXAyFYihN-QXw,9
+gtmarket-0.1.6.dist-info/RECORD,,
