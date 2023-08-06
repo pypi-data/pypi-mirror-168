@@ -1,0 +1,12 @@
+braket/pennylane_plugin/__init__.py,sha256=zHMnvXb6RYzS32SSW6EGdbjAEIopVsGZ8c-p-ZNvgB0,884
+braket/pennylane_plugin/_version.py,sha256=lSl8PPTxm8QW_rSJTNvDdnwQgf4wS7gsjYIU70X_cDg,657
+braket/pennylane_plugin/braket_device.py,sha256=-EPtGR6uDQpq2njaO0MXV6Z1GDobxWb5YGnGGoc84OY,18283
+braket/pennylane_plugin/ops.py,sha256=tSVs586vhYgCQ8PCQ52KhsBsEqS5qXcAwogaJUO76ms,13651
+braket/pennylane_plugin/translation.py,sha256=3Q5lqfOi-wnrV1imU7p7ik-H9yIGGsNDJwtt1ojqHRc,13849
+amazon_braket_pennylane_plugin-1.9.0.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+amazon_braket_pennylane_plugin-1.9.0.dist-info/METADATA,sha256=o85EIHW0GxIHcxru514_-kQmeP74hRbOLqa9bM4h6Wc,8548
+amazon_braket_pennylane_plugin-1.9.0.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+amazon_braket_pennylane_plugin-1.9.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+amazon_braket_pennylane_plugin-1.9.0.dist-info/entry_points.txt,sha256=-BzzY2xUXY-UdY8NUxh3-cLzzxOLqd9zh_qPb2pTSIw,152
+amazon_braket_pennylane_plugin-1.9.0.dist-info/top_level.txt,sha256=iCWpeCzKsGA5OF3e5fHc3idywyupiQ6BUKB_QgHaCMY,7
+amazon_braket_pennylane_plugin-1.9.0.dist-info/RECORD,,
