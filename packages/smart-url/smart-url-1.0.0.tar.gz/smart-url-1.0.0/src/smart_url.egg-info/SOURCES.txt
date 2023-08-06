@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/smart_url/__init__.py
+src/smart_url/main.py
+src/smart_url/utils.py
+src/smart_url.egg-info/PKG-INFO
+src/smart_url.egg-info/SOURCES.txt
+src/smart_url.egg-info/dependency_links.txt
+src/smart_url.egg-info/top_level.txt
