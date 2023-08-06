@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: metpx-sr3
+Version: 3.0.17
+Summary: Subscribe, Acquire, and Re-Advertise products.
+Home-page: https://github.com/MetPX/sarracenia
+Author: Shared Services Canada, Supercomputing, Data Interchange
+Author-email: Peter.Silva@canada.ca
+License: GPLv2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Topic :: System :: Logging
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: appdirs
+Requires-Dist: humanfriendly
+Requires-Dist: humanize
+Requires-Dist: jsonpickle
+Requires-Dist: paramiko
+Requires-Dist: psutil (>=5.3.0)
+Requires-Dist: watchdog
+Provides-Extra: amqp
+Requires-Dist: amqp ; extra == 'amqp'
+Provides-Extra: ftppoll
+Requires-Dist: dateparser ; extra == 'ftppoll'
+Provides-Extra: mqtt
+Requires-Dist: paho.mqtt (>=1.5.1) ; extra == 'mqtt'
+Provides-Extra: vip
+Requires-Dist: netifaces ; extra == 'vip'
+
+UNKNOWN
+
