@@ -1,0 +1,10 @@
+COPYING,sha256=yHPeuuHSdK6bP90Rs6NiS1mk2koaOXWkWLn0i-rF0ds,15182
+pyspdx/__init__.py,sha256=umGEm2ISeTH2vwHOwRcZW1u4xLgtSLjRUXSPbTFmqB0,771
+pyspdx/license_exceptions.py,sha256=WF3TUx6KjoT4AZHYrH17oAs0AjWPEa7zOai2vIdsF5Y,1444
+pyspdx/licenseids.py,sha256=tisvQfTHMmLZfPX1w-HLp-Jkyxdsa6vCuYWFTu0be88,9456
+pyspdx/parsing.py,sha256=6vev-yeCb-b0sNo89u7H3978cAa7AqssO59g2eOTvRY,818
+pyspdx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspdx-1.0.0.dist-info/COPYING,sha256=yHPeuuHSdK6bP90Rs6NiS1mk2koaOXWkWLn0i-rF0ds,15182
+pyspdx-1.0.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+pyspdx-1.0.0.dist-info/METADATA,sha256=AIGszTllG7hOzNAOkHNi2lTU37IpwihXyT8mX3FIHAw,1389
+pyspdx-1.0.0.dist-info/RECORD,,
