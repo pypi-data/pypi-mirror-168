@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: fintoolsom
+Version: 0.1.12
+Summary: Personal library for finantial calculations
+Home-page: https://github.com/oliverm91/fintoolsom
+Author: Oliver Mohr B.
+Author-email: oliver.mohr.b@gmail.com
+Keywords: fixed income,dates,rates,curves
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: mathsom
+
+# fintoolsom
+
+Finantial calculations related library meant for personal use.
+
+## Contents:
+- Fixed Income (function can contain more than one input): 
+  - Bonds
+  - Chilean Bonds
+  - Chilean Deposits (under development)
+- Rates (function can contain more than one input):
+  - Rate objecte: interest calculation, rate convention convertions
+  - Zero Coupon Curve object
+- Dates (uses external libraries for performance, but handles different kind of inputs/outputs):
+  - Add standard tenors (1D, 1M, 1W, 2Y, ...)
+  - Day Count conventions (Actual, Days30, Days30E, Days30U, Days30ISDA, etc...)
+  - etc...
+
+## Install instructions:
+Easly install with **pip**. See https://pypi.org/project/fintoolsom/
+
+`pip install fintoolsom`
+
+## Requirements:
+- Python: >=3.8
+- Packages: numpy python-dateutil mathsom
