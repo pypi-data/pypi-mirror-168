@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: python-cli-base
+Version: 0.0.1
+Summary: Base python cli project
+Project-URL: homepage, https://github.com/jujumilk3/python-cli-base
+Project-URL: bug-tracker, https://github.com/jujumilk3/python-cli-base/issues
+Author-email: gyudoza <jujumilk3@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: click
+Description-Content-Type: text/markdown
+
+# python-cli-base
+
+## python project for building cli applications
+Just fork or copy this repo to start your own python cli application.
+
+1. PyPI Package upload guide: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+## commands
+### install packages
+1. `python -m pip install --upgrade build`
+2. `pip install twine`
+
+### build & upload
+1. `python -m build`
+2. `python -m twine upload --repository testpypi dist/*`
+
+
