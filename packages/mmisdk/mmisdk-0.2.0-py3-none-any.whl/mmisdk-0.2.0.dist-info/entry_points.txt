@@ -1,0 +1,3 @@
+[console_scripts]
+mmisdk = mmisdk.cli:main
+
