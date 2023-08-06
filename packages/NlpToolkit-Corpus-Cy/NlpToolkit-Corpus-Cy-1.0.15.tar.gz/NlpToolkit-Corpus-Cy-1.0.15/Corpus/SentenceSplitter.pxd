@@ -1,0 +1,15 @@
+cdef class SentenceSplitter:
+
+    cpdef str upperCaseLetters(self)
+    cpdef str lowerCaseLetters(self)
+    cpdef list shortCuts(self)
+    cpdef bint __listContains(self, str currentWord)
+    cpdef bint __isNextCharUpperCaseOrDigit(self, str line, int i)
+    cpdef bint __isPreviousWordUpperCase(self, str line, int i)
+    cpdef bint __isNextCharUpperCase(self, str line, int i)
+    cpdef bint __isNameShortcut(self, str currentWord)
+    cpdef str __repeatControl(self, str word, bint exceptionMode)
+    cpdef bint __isApostrophe(self, str line: str, int i)
+    cpdef bint __numberExistsBeforeAndAfter(self, str line, int i)
+    cpdef bint __isTime(self, str line, int i)
+    cpdef list split(self, str line)
