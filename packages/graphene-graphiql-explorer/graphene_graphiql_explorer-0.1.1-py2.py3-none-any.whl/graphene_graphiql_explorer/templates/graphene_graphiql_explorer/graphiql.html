@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>graphiql + explorer</title>
+    <link href="{% static 'graphene_graphiql_explorer/css/11.66866c8b.chunk.css' %}" rel="stylesheet" />
+    <link href="{% static 'graphene_graphiql_explorer/css/main.d0b1e8f9.chunk.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    {% csrf_token %}
+    <script type="application/javascript">
+      window.GRAPHENE_SETTINGS = {
+      {% if subscription_path %}
+        subscriptionPath: "{{subscription_path}}",
+      {% endif %}
+        graphiqlHeaderEditorEnabled: {{ graphiql_header_editor_enabled|yesno:"true,false" }},
+      };
+    </script>
+    <script>
+      !(function(l) {
+        function e(e) {
+          for (
+            var r, t, n = e[0], o = e[1], u = e[2], f = 0, i = [];
+            f < n.length;
+            f++
+          )
+            (t = n[f]), p[t] && i.push(p[t][0]), (p[t] = 0);
+          for (r in o)
+            Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]);
+          for (s && s(e); i.length; ) i.shift()();
+          return c.push.apply(c, u || []), a();
+        }
+        function a() {
+          for (var e, r = 0; r < c.length; r++) {
+            for (var t = c[r], n = !0, o = 1; o < t.length; o++) {
+              var u = t[o];
+              0 !== p[u] && (n = !1);
+            }
+            n && (c.splice(r--, 1), (e = f((f.s = t[0]))));
+          }
+          return e;
+        }
+        var t = {},
+          p = { 1: 0 },
+          c = [];
+        function f(e) {
+          if (t[e]) return t[e].exports;
+          var r = (t[e] = { i: e, l: !1, exports: {} });
+          return l[e].call(r.exports, r, r.exports, f), (r.l = !0), r.exports;
+        }
+        (f.m = l),
+          (f.c = t),
+          (f.d = function(e, r, t) {
+            f.o(e, r) ||
+              Object.defineProperty(e, r, { enumerable: !0, get: t });
+          }),
+          (f.r = function(e) {
+            "undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(e, "__esModule", { value: !0 });
+          }),
+          (f.t = function(r, e) {
+            if ((1 & e && (r = f(r)), 8 & e)) return r;
+            if (4 & e && "object" == typeof r && r && r.__esModule) return r;
+            var t = Object.create(null);
+            if (
+              (f.r(t),
+              Object.defineProperty(t, "default", { enumerable: !0, value: r }),
+              2 & e && "string" != typeof r)
+            )
+              for (var n in r)
+                f.d(
+                  t,
+                  n,
+                  function(e) {
+                    return r[e];
+                  }.bind(null, n)
+                );
+            return t;
+          }),
+          (f.n = function(e) {
+            var r =
+              e && e.__esModule
+                ? function() {
+                    return e.default;
+                  }
+                : function() {
+                    return e;
+                  };
+            return f.d(r, "a", r), r;
+          }),
+          (f.o = function(e, r) {
+            return Object.prototype.hasOwnProperty.call(e, r);
+          }),
+          (f.p = "/");
+        var r = (window.webpackJsonp = window.webpackJsonp || []),
+          n = r.push.bind(r);
+        (r.push = e), (r = r.slice());
+        for (var o = 0; o < r.length; o++) e(r[o]);
+        var s = n;
+        a();
+      })([]);
+    </script>
+    <script src="{% static 'graphene_graphiql_explorer/js/0.cc0f3dc5.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/1.d9165335.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/11.a1a233cb.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/12.1c33e8cd.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/13.13fd0b7f.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/14.eb8c3653.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/15.cbfc0d8e.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/16.5a467038.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/17.d470407d.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/18.6b145caa.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/19.2e00a924.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/2.62895765.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/20.68ce939b.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/21.d9450051.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/22.0d07ec0d.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/23.0cb7b94c.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/24.0e86c741.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/25.fd85ec06.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/26.1b72d821.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/27.b1e7a533.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/3.83d4ed15.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/4.7fd6f640.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/5.a67e9f54.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/6.6e715ba1.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/7.c53e2acf.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/8.5b96c0cf.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/main.a3769462.chunk.js' %}"></script>
+    <script src="{% static 'graphene_graphiql_explorer/js/runtime~main.053e7e58.js' %}"></script>
+
+  </body>
+</html>
