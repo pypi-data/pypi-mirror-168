@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+youth-version-of-setu4/__init__.py
+youth-version-of-setu4/config.py
+youth-version-of-setu4/get_data.py
+youth-version-of-setu4/setu_message.py
+youth-version-of-setu4/resource/lolicon.db
+youth_version_of_setu4.egg-info/PKG-INFO
+youth_version_of_setu4.egg-info/SOURCES.txt
+youth_version_of_setu4.egg-info/dependency_links.txt
+youth_version_of_setu4.egg-info/requires.txt
+youth_version_of_setu4.egg-info/top_level.txt
