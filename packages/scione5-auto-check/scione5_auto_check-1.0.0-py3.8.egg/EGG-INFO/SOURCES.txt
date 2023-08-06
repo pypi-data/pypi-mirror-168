@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+scione5_auto_check/__init__.py
+scione5_auto_check/file_uploader.py
+scione5_auto_check/main_process.py
+scione5_auto_check/mysql_client.py
+scione5_auto_check/scione5_encrypt.py
+scione5_auto_check/test_handler.py
+scione5_auto_check.egg-info/PKG-INFO
+scione5_auto_check.egg-info/SOURCES.txt
+scione5_auto_check.egg-info/dependency_links.txt
+scione5_auto_check.egg-info/top_level.txt
