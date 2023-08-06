@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: metafab-python
+Version: 1.0.0
+Summary: MetaFab API
+Home-page: 
+Author: MetaFab Team
+Author-email: metafabproject@gmail.com
+Keywords: OpenAPI,OpenAPI-Generator,MetaFab API
+Requires-Python: >=3.6
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+
+     Complete MetaFab API references and guides can be found at: https://trymetafab.com  # noqa: E501
+    

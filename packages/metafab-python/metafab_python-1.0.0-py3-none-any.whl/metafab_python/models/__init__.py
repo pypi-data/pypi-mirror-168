@@ -1,0 +1,40 @@
+# flake8: noqa
+
+# import all models into this package
+# if you have many models here with many references from one model to another this may
+# raise a RecursionError
+# to avoid this, import only the models that you directly need like:
+# from from metafab_python.model.pet import Pet
+# or import this package, but before doing it, use:
+# import sys
+# sys.setrecursionlimit(n)
+
+from metafab_python.model.auth_game200_response import AuthGame200Response
+from metafab_python.model.auth_game200_response_all_of import AuthGame200ResponseAllOf
+from metafab_python.model.auth_game200_response_all_of1 import AuthGame200ResponseAllOf1
+from metafab_python.model.auth_player200_response import AuthPlayer200Response
+from metafab_python.model.batch_transfer_currency_request import BatchTransferCurrencyRequest
+from metafab_python.model.burn_currency_request import BurnCurrencyRequest
+from metafab_python.model.contract_model import ContractModel
+from metafab_python.model.create_contract_request import CreateContractRequest
+from metafab_python.model.create_currency200_response import CreateCurrency200Response
+from metafab_python.model.create_currency200_response_all_of import CreateCurrency200ResponseAllOf
+from metafab_python.model.create_currency200_response_all_of_contract import CreateCurrency200ResponseAllOfContract
+from metafab_python.model.create_currency200_response_all_of_contract_all_of import CreateCurrency200ResponseAllOfContractAllOf
+from metafab_python.model.create_currency_request import CreateCurrencyRequest
+from metafab_python.model.create_game_request import CreateGameRequest
+from metafab_python.model.create_player_request import CreatePlayerRequest
+from metafab_python.model.currency_model import CurrencyModel
+from metafab_python.model.game_model import GameModel
+from metafab_python.model.get_currencies200_response_inner import GetCurrencies200ResponseInner
+from metafab_python.model.get_currencies200_response_inner_all_of import GetCurrencies200ResponseInnerAllOf
+from metafab_python.model.get_currency_fees200_response import GetCurrencyFees200Response
+from metafab_python.model.mint_currency_request import MintCurrencyRequest
+from metafab_python.model.player_model import PlayerModel
+from metafab_python.model.set_currency_fees_request import SetCurrencyFeesRequest
+from metafab_python.model.transaction_model import TransactionModel
+from metafab_python.model.transfer_currency_request import TransferCurrencyRequest
+from metafab_python.model.update_game_request import UpdateGameRequest
+from metafab_python.model.update_player_request import UpdatePlayerRequest
+from metafab_python.model.wallet_model import WalletModel
+from metafab_python.model.write_contract_request import WriteContractRequest
