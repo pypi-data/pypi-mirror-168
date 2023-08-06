@@ -1,0 +1,13 @@
+surreal_compiled.cp39-win_amd64.pyd,sha256=8KSI2UkjdB1Jdn2MDBG0M5B6LrYQdcXlD_NgjsHTnQ0,149504
+surreal/__init__.py,sha256=wyKAgnJ-LPBI5Q5v-PP_sNOFuOPRY8wlipRT3uXpyF4,149
+surreal/client.py,sha256=bFplNtMls54pLvuxqfcRf8P6k19GFm6Vb0Mhk84ttfE,4716
+surreal/exceptions.py,sha256=td58Q44mcCgaZuAhip5PZlbIRSbG2nko7UIix9cZ5D4,337
+surreal/surreal_compiled.cp39-win_amd64.pyd,sha256=etpRhoX9XWzV9aQ5sxnaH7gEH28wXiVrtK5BY99ZTkQ,149504
+surreal/surreal_compiled.py,sha256=XLe2E_AtL3KNWY2ajp3EXA4aJVGswE-tIARrXAS6e_U,7073
+surreal/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+surreal/utils/event_listener.py,sha256=oPXfwM1deXVPgPXeFmBVw9_ALeWIFMR3A5rOg08sX7o,1507
+surreal/utils/wrap_request.py,sha256=RI4bKNZYThsaAg7jGa5UozU-YyjjZ25Io34R0_8_XnY,2175
+surreal_db_python-0.0.1.dist-info/METADATA,sha256=e7ib4LHcCLU5ZWB6xfDurFpzWc7kVyQZpGBFpbUKq6c,1594
+surreal_db_python-0.0.1.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+surreal_db_python-0.0.1.dist-info/top_level.txt,sha256=CBNYFc8wVSOUkoBWeG-XpCh957zJLXpik5PTjluKSCU,8
+surreal_db_python-0.0.1.dist-info/RECORD,,
