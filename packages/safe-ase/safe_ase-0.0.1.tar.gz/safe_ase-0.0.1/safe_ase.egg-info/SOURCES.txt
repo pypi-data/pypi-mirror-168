@@ -1,0 +1,12 @@
+README.md
+setup.py
+safe_ase/__init__.py
+safe_ase/safe_add_adsorbate.py
+safe_ase/safe_euler_rotation.py
+safe_ase/safe_remove_atom_by_index.py
+safe_ase/safe_structure.py
+safe_ase.egg-info/PKG-INFO
+safe_ase.egg-info/SOURCES.txt
+safe_ase.egg-info/dependency_links.txt
+safe_ase.egg-info/requires.txt
+safe_ase.egg-info/top_level.txt
