@@ -1,0 +1,13 @@
+boto3
+cloudpickle
+google-cloud-storage
+numpy
+pandas
+pydantic
+SQLAlchemy
+distro
+pyyaml
+typing_extensions
+Pillow
+packaging
+aqueduct-sdk==0.0.15
