@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-rds-ref
+Version: 0.1.0
+Summary: 
+Author: Hamada Gasmallah
+Author-email: hamada@distributive.network
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# PYTHON RDS REF Implementation
+
+This is a simple python remote dataset server implementation that should work at serving up files to spec with the DCP RDS Requirements.
+
+
+
