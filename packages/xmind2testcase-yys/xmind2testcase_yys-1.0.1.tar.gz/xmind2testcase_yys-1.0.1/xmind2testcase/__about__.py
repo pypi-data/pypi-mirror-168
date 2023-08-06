@@ -1,0 +1,9 @@
+__title__ = 'xmind-switch2'
+__description__ = 'xmind-switch基于Python实现，提供了一个高效测试用例设计的解决方案！'
+__keywords__ = 'xmind-switch',
+__url__ = 'https://github.com/zhuifengshen/xmind2testcase'
+__author__ = 'Devin'
+__author_email__ = '907715306@qq.com'
+__version__ = '1.0.0'
+__license__ = 'MIT'
+__cake__ = u'\u2728 \U0001f370 \u2728'
