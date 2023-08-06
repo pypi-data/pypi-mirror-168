@@ -1,0 +1,12 @@
+ukis_pysat/__init__.py,sha256=BG12pmEO_YOxB_xUz7sNv20lzgrwQ60u0paDn7SG_9Q,23
+ukis_pysat/_landsat.py,sha256=p13k8opZ7O9vA80KOSddPV33iVd3D3sB0vNWb_gHG1I,4530
+ukis_pysat/data.py,sha256=2CUzWKv-AYoRgVukGsO9HcQjo1fbkRH0CEXa6yUOFsc,19035
+ukis_pysat/file.py,sha256=1QzRWpWPOjorPm85r33pij49vH0_YRKnQtyhxlmzLWE,10909
+ukis_pysat/members.py,sha256=Ya_P6x-lIRcfb2bSMJfgh2N2bx1kWYnDjBsmcxMgkJQ,1727
+ukis_pysat/raster.py,sha256=KQVK7LilU3y0XPoHxrpmRmByLvy0uhqGldDFDxxcbFU,22345
+ukis_pysat/utils.py,sha256=F0NXTpqyoeCynf_IRWduYlxnGBvGNefDLKSDii_4y2k,1183
+ukis_pysat-1.4.2.dist-info/LICENSE.txt,sha256=JDcr69HbNEkUAY2V3kjtYH9yJfkn6vkjN-4r_6Tf1Eg,11438
+ukis_pysat-1.4.2.dist-info/METADATA,sha256=qXs9c3_bsYAJ4X4V6teN4t8OoJU_aKvcK2g91xq3u38,9062
+ukis_pysat-1.4.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ukis_pysat-1.4.2.dist-info/top_level.txt,sha256=S_o-E_Zxxj6hs87IwgzYXwJgufOQAGLJ04g3bmOOGag,11
+ukis_pysat-1.4.2.dist-info/RECORD,,
