@@ -1,0 +1,7 @@
+brew netcdf 4.8.1_3
+brew proj 9.1.0
+brew pango 1.50.10
+brew cairo 1.16.0_5
+git https://github.com/ecmwf/ecbuild.git 5f3f4f04200f8073f41216c5baa0817b3dd2ae77
+git https://github.com/ecmwf/eccodes.git b776e3bcb4edff157e527dcbd099d49454a1566c
+git https://github.com/ecmwf/magics.git bf16fc7fdc73f1d626b40e587912ea51a191dc71
