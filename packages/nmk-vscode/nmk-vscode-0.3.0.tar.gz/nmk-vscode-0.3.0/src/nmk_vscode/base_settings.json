@@ -1,0 +1,8 @@
+{
+    "files.watcherExclude": {
+        "**/venv/**": true
+    },
+    "editor.formatOnSave": true,
+    "cSpell.words": [],
+    "task.allowAutomaticTasks": "on"
+}
