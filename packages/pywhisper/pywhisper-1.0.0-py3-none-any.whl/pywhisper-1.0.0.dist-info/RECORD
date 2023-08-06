@@ -1,0 +1,17 @@
+pywhisper/__init__.py,sha256=-zGdybC_w4JE4GvcFTlPkGfHf4agCuFgz1tIf4Wm0GA,4949
+pywhisper/__main__.py,sha256=JgI2WVrwoN92pRISKVk1AtRrjcxKzBbra2Sytivi8ng,36
+pywhisper/audio.py,sha256=jIBE2_TtdDSjYBlhpn-n0B2AL7HQKoUkFSw_CM3OoCE,3827
+pywhisper/decoding.py,sha256=FMoHqU2z8gZmkiZLF-YZ6ZEiH-zs5X2zfwhpKQl31FQ,29798
+pywhisper/model.py,sha256=gyoimCy_T80tggjadIedoYU4qcZ-8CTr-BcBNeMs32s,9653
+pywhisper/tokenizer.py,sha256=reT6h5Kh7tblDsbSB5o-YcffZ6HTWNFMbUDbcP5XRD8,9837
+pywhisper/transcribe.py,sha256=FDvsf2KLfM0ulHc-pkr-Ax0lpM9qLiWukdQ7rcYNTRQ,14223
+pywhisper/utils.py,sha256=1AVFjvczTNfVbHkbbSXIL0LMInZ0iOjLaQ_CHTXZQv8,2886
+pywhisper/normalizers/__init__.py,sha256=Z4y79BC7dvz-ft-QxsJiQsgMVeKAvIMaGJO4aZnuuio,82
+pywhisper/normalizers/basic.py,sha256=11omb0j446Kh6d8Ppv7ihZgY4Zkf5tGMXwxbqYhRySc,1882
+pywhisper/normalizers/english.py,sha256=0pRNTbEiGn7j20U65VlzELwB1F5oN2TFdHb1FOJfRlE,20793
+pywhisper-1.0.0.dist-info/LICENSE,sha256=tdZaWQYOaMT_lA4e3fpvlLLWj99Y7X9N1XchyZfjXp0,1063
+pywhisper-1.0.0.dist-info/METADATA,sha256=TBNnaD_p-sfPMZfOb1BqwXMfAb_9Gb5yVh-KrH42ldI,3654
+pywhisper-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pywhisper-1.0.0.dist-info/entry_points.txt,sha256=cF_TYRD4A8ZtEQCiO69ZBSJXCRJ_FwUf22uYoYRvDeI,55
+pywhisper-1.0.0.dist-info/top_level.txt,sha256=K6jWHJDZH_F4HB_nQBZxFkIjlZZTlQ95uqVjAzKSZfs,10
+pywhisper-1.0.0.dist-info/RECORD,,
