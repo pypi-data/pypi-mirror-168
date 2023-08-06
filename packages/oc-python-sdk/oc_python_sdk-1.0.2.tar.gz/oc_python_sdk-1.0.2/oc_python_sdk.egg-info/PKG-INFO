@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: oc-python-sdk
+Version: 1.0.2
+Home-page: https://gitlab.com/opencontent/stanza-del-cittadino/python_sdk
+Author: ...
+Author-email: emily.lancietti@opencontent.it
+License: GNU GPLv3 License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+OC PYTHON SDK
+==============
+Quickstart
+----------
+
+Install package
+
+.. code-block:: bash
+
+    pip install -i https://test.pypi.org/simple/ oc-python-sdk  # Install test package
+    pip install oc-python-sdk  # Install released package
