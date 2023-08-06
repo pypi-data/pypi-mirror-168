@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/__init__.py
+src/django_model_lifecycle.egg-info/PKG-INFO
+src/django_model_lifecycle.egg-info/SOURCES.txt
+src/django_model_lifecycle.egg-info/dependency_links.txt
+src/django_model_lifecycle.egg-info/not-zip-safe
+src/django_model_lifecycle.egg-info/requires.txt
+src/django_model_lifecycle.egg-info/top_level.txt
+src/model_lifecycle/__init__.py
+src/model_lifecycle/models.py
+src/model_lifecycle/migrations/0001_initial.py
+src/model_lifecycle/migrations/__init__.py
