@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: xia-flask-api
+Version: 0.0.16
+Summary: X-I-A API based on Flask Module
+Home-page: https://git.top-infra.com/
+Author: Xia CHEN
+Author-email: admin@x-i-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: requests
+Requires-Dist: PyJWT
+Requires-Dist: xia-cache-firestore
+Requires-Dist: xia-engine-firestore
+Requires-Dist: xia-meta
+Requires-Dist: xia-meta-auth
+Requires-Dist: xia-meta-task
+Requires-Dist: xia-authenticator
+
+# X-I-A API based on Flask Module
+## Introduction
+
+
+
