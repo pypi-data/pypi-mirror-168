@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oracle_nft"
+version = "0.1.2"
+authors = [
+  { name="Cairo", email="cairo@gradient.city" },
+]
+description = "Open oracle for illiquid collection pricing."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/GradientFinance/oracle"
+"Bug Tracker" = "https://github.com/GradientFinance/oracle/issues"
