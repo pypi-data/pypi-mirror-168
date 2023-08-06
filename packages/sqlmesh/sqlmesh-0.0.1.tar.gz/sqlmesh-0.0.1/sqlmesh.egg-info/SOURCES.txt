@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+sqlmesh/__init__.py
+sqlmesh.egg-info/PKG-INFO
+sqlmesh.egg-info/SOURCES.txt
+sqlmesh.egg-info/dependency_links.txt
+sqlmesh.egg-info/top_level.txt
