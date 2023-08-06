@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+grill/names/__init__.py
+grill/tokens/ids/CGAsset.cfg
+grill/tokens/ids/LifeTR.cfg
+grill/tokens/ids/__init__.py
+grill_names.egg-info/PKG-INFO
+grill_names.egg-info/SOURCES.txt
+grill_names.egg-info/dependency_links.txt
+grill_names.egg-info/requires.txt
+grill_names.egg-info/top_level.txt
