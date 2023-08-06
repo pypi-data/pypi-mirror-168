@@ -1,0 +1,8 @@
+reposter_tg_chache
+__pycache__
+error.txt
+*config.*
+*.yml
+*.log
+test*
+dist
