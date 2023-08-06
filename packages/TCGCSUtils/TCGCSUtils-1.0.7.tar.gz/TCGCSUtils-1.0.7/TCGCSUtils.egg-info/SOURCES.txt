@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+TCGCSUtils/__init__.py
+TCGCSUtils/gcs_reader.py
+TCGCSUtils/gcs_writer.py
+TCGCSUtils.egg-info/PKG-INFO
+TCGCSUtils.egg-info/SOURCES.txt
+TCGCSUtils.egg-info/dependency_links.txt
+TCGCSUtils.egg-info/requires.txt
+TCGCSUtils.egg-info/top_level.txt
