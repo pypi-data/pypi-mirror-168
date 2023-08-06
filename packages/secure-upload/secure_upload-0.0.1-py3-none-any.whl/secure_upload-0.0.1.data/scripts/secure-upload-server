@@ -1,0 +1,4 @@
+#!python
+from secure_upload.main import main
+
+main()
