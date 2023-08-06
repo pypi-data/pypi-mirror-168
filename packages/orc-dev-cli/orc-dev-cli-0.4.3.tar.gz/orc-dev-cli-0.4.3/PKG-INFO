@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: orc-dev-cli
+Version: 0.4.3
+Summary: CLI dev tool for interacting with openshift clusters and RHOAM addons.
+Author: Jim Fitzpatrick
+Author-email: jimfity@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: click (>=8.1.2,<9.0.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# Welcome to orc-dev-cli
+
+Orc-dev-cli gives developers a CLI tool called orc.
+Orc is used to interact with openshift osd clusters and the openshift addon RHOAM.
+
+As this is a dev tool kude-admin access to the clusters is expected.
+
+## Installation
+Easiest way to install orc is by using pip
+```shell
+pip install orc-dev-cli
+```
+
+## Basic Commands
+
+* `orc addon`   Get the current state of an installed addon instances
+* `orc config`  Open configuration file
+* `orc delete`  Delete cluster.
+* `orc login`   Get cluster kubeadmin login details.
+* `orc osd`     Get basic state information on osd cluster
+
+## Shell Completion
+
+### Bash
+
+1. Create temporary bash script.
+2. Add `_ORC_COMPLETE=bash_source orc > ~/.orc-complete.bash`.
+3. Run script.
+4. Source the newly created `~/.orc-complete.bash` in `~/.bashrc` as follows `. ~/.orc-complete.bash`.
+5. Restart the shell to complete.
+
