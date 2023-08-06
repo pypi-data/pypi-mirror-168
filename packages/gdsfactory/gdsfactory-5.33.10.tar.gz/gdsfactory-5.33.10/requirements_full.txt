@@ -1,0 +1,16 @@
+bokeh
+google-cloud-storage
+holoviews
+ipympl
+ipywidgets
+klayout
+lytest==0.0.20
+mapbox_earcut
+networkx
+pyglet
+sax==0.8.2
+scikit-image
+simphony==0.6.1
+sklearn
+triangle
+trimesh
