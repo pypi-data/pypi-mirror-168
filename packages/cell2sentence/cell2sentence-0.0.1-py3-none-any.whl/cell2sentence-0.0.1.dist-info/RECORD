@@ -1,0 +1,10 @@
+cell2sentence/__init__.py,sha256=GjWEG7dKQoKSwF1GrQB4Ekgo1QR96vSxUPlO49bZHIk,108
+cell2sentence/csdata.py,sha256=O22m9G_6bimQRcYI_6jZ9ut49XkOgrkCNM0QAnSXNI4,8821
+cell2sentence/integrations.py,sha256=DUbmef2fpWerNE0NQ1QY6KPeCUfN3dNd-qWi4XunxWk,3423
+cell2sentence/transforms.py,sha256=SG3eLGHl9JfxrW1-zsscbdVol1tN0qS13QvXvGBFef0,5039
+cell2sentence/utils.py,sha256=8CmOwwRHq6PA0pMg26tIy3ngbi-f9cdturlXFfLHOpc,481
+cell2sentence-0.0.1.dist-info/LICENSE,sha256=E0mkthSEkrRPYp5k7tZ2YS4jT-moOeTzsnfBSCyISfE,20849
+cell2sentence-0.0.1.dist-info/METADATA,sha256=75DXJSsOvJpw1mOrvj1CbLdpRHOR3fSvWxkX6c5CgJs,2261
+cell2sentence-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cell2sentence-0.0.1.dist-info/top_level.txt,sha256=QhbgpykUakwPzEm4IKh9gqSgPam85oKeuKfdbszD1yg,14
+cell2sentence-0.0.1.dist-info/RECORD,,
