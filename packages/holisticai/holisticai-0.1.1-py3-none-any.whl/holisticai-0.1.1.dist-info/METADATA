@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: holisticai
+Version: 0.1.1
+Summary: Holistic AI Library
+Author: Research Team
+Maintainer: Research Team
+Maintainer-email: researchteam@holisticai.com
+Requires-Python: >=3.7,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: scikit-learn (>=1.0.2)
+Requires-Dist: seaborn (>=0.11.2)
+Description-Content-Type: text/markdown
+
+# holisticai
+
+> The Holistic AI library is an open-source tool to assess and improve the trustworthiness of AI systems.
+
