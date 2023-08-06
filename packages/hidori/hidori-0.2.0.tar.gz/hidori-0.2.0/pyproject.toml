@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "hidori"
+version = "0.2.0"
+description = "A modern, agentless, zero-dependency system state assurance"
+authors = ["Piotr Szpetkowski <piotr.szpetkowski@pyquest.space>"]
+license = "MIT"
+readme = "README.md"
+
+packages = [
+    { include = "hidori_common", from = "src" },
+    { include = "hidori_core", from = "src" },
+    { include = "hidori_runner", from = "src" },
+    { include = "hidori_pipelines", from = "src" },
+    { include = "hidori_cli", from = "src" },
+]
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: System :: Installation/Setup",
+]
+
+repository = "https://github.com/hidori-dev/hidori"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/hidori-dev/hidori/issues"
+"Changelog" = "https://github.com/hidori-dev/hidori/blob/main/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typing-extensions = "^4.3.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+ipython = "^8.5.0"
+pre-commit = "^2.20.0"
+
+[tool.poetry.group.pypi.dependencies]
+twine = "^4.0.1"
+
+[tool.poetry.scripts]
+hidori-pipeline = "hidori_cli.apps.pipeline:main"
+
+[tool.pyright]
+include = ["src"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
