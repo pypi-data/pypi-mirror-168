@@ -1,0 +1,10 @@
+torch~=1.11
+torchvision~=0.12
+matplotlib~=3.4
+nidaqmx~=0.6
+tqdm~=4.63
+PyYAML==6.0
+unittest2==1.1.0
+pytest==7.1.2
+pytest-cov==3.0.0
+coverage==6.4
