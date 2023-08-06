@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: brainpp_yl
+Version: 0.1.25
+Summary: Brain++ tools devloped by Yang Lei.
+Home-page: https://git-core.megvii-inc.com/yanglei/brainpp_yl
+Author: yanglei
+Author-email: ylxx@live.com
+License: UNKNOWN
+Description: Brain++ tools devloped by Yang Lei.
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
