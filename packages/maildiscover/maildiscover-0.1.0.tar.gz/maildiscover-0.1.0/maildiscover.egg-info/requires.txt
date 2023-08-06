@@ -1,0 +1,13 @@
+requests
+lxml
+dnspython
+
+[dev]
+ipython
+black
+build
+pytest
+pytest-integration
+pytest-cov
+pydoc-markdown
+twine

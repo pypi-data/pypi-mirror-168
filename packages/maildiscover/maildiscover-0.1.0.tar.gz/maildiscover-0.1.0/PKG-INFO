@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: maildiscover
+Version: 0.1.0
+Summary: Simple library for email connection parameters discovery
+Author-email: Leonardo Barcaroli <blallo@autistici.org>
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or distribute this
+        software, either in source code form or as a compiled binary, for any purpose,
+        commercial or non-commercial, and by any means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors of this
+        software dedicate any and all copyright interest in the software to the public
+        domain. We make this dedication for the benefit of the public at large and to
+        the detriment of our heirs and successors. We intend this dedication to be an
+        overt act of relinquishment in perpetuity of all present and future rights to
+        this software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+        ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+        WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <blallo@autistici.org>
+        
+Project-URL: Homepage, https://git.sr.ht/~blallo/maildiscover
+Project-URL: Documentation, https://man.sr.ht/~blallo/maildiscover/
+Keywords: email,autoconfig,discover,connection
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: License :: Public Domain
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# maildiscover
+
+> Simple python library for email connection parameters discovery
+
+## What for?
+
+This library aims to provide a simple way to retrieve email configuration
+parameters (for `SMTP`/`submission`, `POP3` and `IMAP` servers). Currently, it
+does so implementing the [autoconfig][ac] Mozilla protocol and a special
+[dns][dns] lookup.
+
+*NOTE*: I also considered trying to implement the [autodiscover][ad] flow from
+Microsoft, but I wasn't able to make it work.
+
+
+[ac]: https://wiki.mozilla.org/Thunderbird:Autoconfiguration
+[dns]: https://datatracker.ietf.org/doc/html/rfc6186
+[ad]: https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/autodiscover-for-exchange
+
+## How to use it?
+
+Install its latest version from pypi
+
+```sh
+pip install maildiscover
+```
+
+Then, import it into your project. You can either use the provided `get`
+function, that tries all the known methods and returns a merged version of the
+found data:
+
+```python
+import maildiscover
+
+result = maildiscover.get("myself@example.com")
+```
+
+Or you can use any specific method independently
+
+```python
+import maildiscover
+
+dns_method = maildiscover.DNSSRV("myself@example.com")
+ac_method = maildiscover.Autoconfig("myself@example.com")
+
+dns_result = dns_method.get()
+ac_result = ac_method.get()
+```
+
+The method may raise, either if it fails (in such case they raise
+`MethodFailed`) or if the provided email is malformed, then they raise
+`MaformedEmail`.
+
+In case of success, the returned data is a custom dataclass, that can be
+converted back to a dict with the `to_dict` method, with self-explaining
+fields.
+
+## Contacts
+
+If you want to suggest a change or propose a patch, don't hesitate to drop me an
+email at `blallo -|AT|- autistici.org`. I am friendly :)

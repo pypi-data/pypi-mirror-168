@@ -1,0 +1,79 @@
+[project]
+
+name = "maildiscover"
+version = "0.1.0"
+description = "Simple library for email connection parameters discovery"
+authors = [{name="Leonardo Barcaroli", email="blallo@autistici.org"}]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "License :: Public Domain",
+]
+keywords = ["email", "autoconfig", "discover", "connection"]
+requires-python = ">= 3.8"
+dependencies = [
+    "requests",
+    "lxml",
+    "dnspython",
+]
+
+[project.optional-dependencies]
+
+dev = [
+    "ipython",
+    "black",
+    "build",
+    "pytest",
+    "pytest-integration",
+    "pytest-cov",
+    "pydoc-markdown",
+    "twine",
+]
+
+[project.urls]
+
+Homepage = "https://git.sr.ht/~blallo/maildiscover"
+Documentation = "https://man.sr.ht/~blallo/maildiscover/"
+
+[tool.pytest.ini_options]
+
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+
+[tool.setuptools.packages.find]
+
+include = ["maildiscover*"]
+
+[build-system]
+
+requires = [
+    "setuptools",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+
+line-length = 88
+target_version = ['py36']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )
+)
+'''

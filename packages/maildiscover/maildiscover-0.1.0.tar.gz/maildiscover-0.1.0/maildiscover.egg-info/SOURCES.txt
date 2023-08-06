@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+maildiscover/__init__.py
+maildiscover/autoconfig.py
+maildiscover/common.py
+maildiscover/dns.py
+maildiscover.egg-info/PKG-INFO
+maildiscover.egg-info/SOURCES.txt
+maildiscover.egg-info/dependency_links.txt
+maildiscover.egg-info/requires.txt
+maildiscover.egg-info/top_level.txt
