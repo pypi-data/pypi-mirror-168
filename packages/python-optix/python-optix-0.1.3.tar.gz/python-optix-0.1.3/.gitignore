@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+build/
+dist/
+imgui.ini
+*.egg-info/
+.*/
+*.so
+*.html
+*.cpp
+*.c
+.*
+include/
