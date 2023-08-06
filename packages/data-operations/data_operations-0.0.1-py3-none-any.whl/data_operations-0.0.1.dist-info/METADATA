@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: data-operations
+Version: 0.0.1
+Summary: Pacote para manipular um banco de dados.
+Author: Caio da Silva Rocha
+Author-email: brothercaio20123@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+
+Data Operations
+
+#### Pacote construído para a manipulação de um banco de dados e retorno de resultados, baseado nas condições definidas pelo usuário.
+
+
+#### Exemplos de Aplicações:
+
+
+#### Instalação: 
+
+    pip install data_operations
+
+
+#### Uso:
