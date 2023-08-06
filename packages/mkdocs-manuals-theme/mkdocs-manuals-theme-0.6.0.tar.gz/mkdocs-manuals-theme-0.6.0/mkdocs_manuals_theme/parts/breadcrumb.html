@@ -1,0 +1,19 @@
+{% for item in nav_item %}
+	{% if item.active %}
+		{% if item.is_page %}
+			<span>{{ item.title }}</span>
+		{% else %}
+			{% set first_child = item.children.0 %}
+			{% if first_child.is_page %}
+				<a href="{{ first_child.abs_url }}">{{ item.title }}</a> &#8594;
+			{% else %}
+				<span>{{ item.title }}</span> &#8594;
+			{% endif %}
+		{% endif %}
+
+		{% if item.children %}
+			{% set nav_item = item.children %}
+			{% include 'parts/breadcrumb.html' %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
