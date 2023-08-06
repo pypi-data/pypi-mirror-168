@@ -1,0 +1,9 @@
+yowasp_nextpnr_nexus/__init__.py,sha256=Js9Zfp9hwMwmTWZHsi-3wDXdkGb_ZdwbfVfmPiaPwDk,2471
+yowasp_nextpnr_nexus/nextpnr-nexus.wasm,sha256=qJVS6JwVD1Hp3YSzZVjN1o0U-wqvNEl4jBjQQEY_bdU,1875130
+yowasp_nextpnr_nexus/prjoxide.wasm,sha256=4eupfVcgZ5x9jl3l8YgZWsHhqn7uDrry8g2AtlEn05Q,21058851
+yowasp_nextpnr_nexus/share/nexus/chipdb-LIFCL.bin,sha256=HJv5XWzti7uSMyxmrtZ90XyO-4-gxWy57Isqmzs9f-Y,30074350
+yowasp_nextpnr_nexus-0.4.dev349.dist-info/METADATA,sha256=784Oo2WGcKGzYuj3BD9KoOtIFdCXKX4MKdbtQ8f7XDY,1585
+yowasp_nextpnr_nexus-0.4.dev349.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yowasp_nextpnr_nexus-0.4.dev349.dist-info/entry_points.txt,sha256=fQZY77IdIFLgC13on2LnCM1naeinv3id27Ja_LvPKQ8,144
+yowasp_nextpnr_nexus-0.4.dev349.dist-info/top_level.txt,sha256=seYhpWQqrq7SMdcmc27Z3wtJoY5j3ivHjSjlrej6d7Y,21
+yowasp_nextpnr_nexus-0.4.dev349.dist-info/RECORD,,
