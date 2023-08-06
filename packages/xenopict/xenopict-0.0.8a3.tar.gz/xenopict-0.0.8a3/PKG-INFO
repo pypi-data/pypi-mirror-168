@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xenopict
+Version: 0.0.8a3
+Summary: Library for publication quality depictions of small molecules.
+Home-page: https://github.com/swamidasslab/xenopict/
+Author: S. Joshua Swamidass
+Author-email: swamidass@wustl.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This module is alpha and it's API is subject to substantial revisions.
+
+
