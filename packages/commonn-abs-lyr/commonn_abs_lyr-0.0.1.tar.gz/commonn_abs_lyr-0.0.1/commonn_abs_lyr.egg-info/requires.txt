@@ -1,0 +1,9 @@
+azure-cosmos==4.0.0b1
+mysql
+mysql-connector-python
+urllib3
+psycopg2
+clickhouse_driver
+pyodbc
+redis
+json

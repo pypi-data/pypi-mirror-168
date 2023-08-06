@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: commonn_abs_lyr
+Version: 0.0.1
+Summary: its provide a single package that contains multiple client connection model
+Home-page: https://gitlab.com/mediacorpPL/common-connection-layer
+Download-URL: https://gitlab.com/mediacorpPL/common-connection-layer/-/archive/main/common-connection-layer-main.zip
+Author: Kazi Javed Alam
+Author-email: qazijavedjim007@gmail.com
+License: MIT
+Keywords: connection layer,abstract layer for different connection,abstract
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
