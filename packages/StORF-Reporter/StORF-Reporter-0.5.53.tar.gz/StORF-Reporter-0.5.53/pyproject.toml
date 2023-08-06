@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+    "numpy",
+    "ORForise"
+]
+build-backend = "setuptools.build_meta"
+
+#[project.scripts]
+#StORF_Reporter = "StORF_Reporter:my_first_entry_point_funtion"
