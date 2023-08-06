@@ -1,0 +1,17 @@
+{
+# Config file for running Muphoten
+
+# bkg_n_sigma: sigma level from the median to perform clipping for bakground estimation
+bkg_n_sigma: 3.0
+
+# bkg_box_size: size of the box in which the background is estimated
+bkg_box: 30.
+
+# bkg_estimator: Estimator for the background
+bkg_estimator: 'sex'
+
+# bkg_filter_size: Estimaator for the background
+bkg_estimator: 'sex'
+
+}
+

@@ -1,0 +1,8 @@
+[console_scripts]
+mu_bkg_subtraction = muphoten.cli.background_subtraction:main
+mu_mag_lim = muphoten.cli.mag_lim:main
+mu_photometry = muphoten.cli.photometry:main
+mu_psf = muphoten.cli.psf:main
+mu_sanitise = muphoten.cli.sanitise:main
+mu_subtraction = muphoten.cli.subtraction:main
+
