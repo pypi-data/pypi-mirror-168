@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TGPred/TGPred.py
+TGPred/__init__.py
+TGPred.egg-info/PKG-INFO
+TGPred.egg-info/SOURCES.txt
+TGPred.egg-info/dependency_links.txt
+TGPred.egg-info/requires.txt
+TGPred.egg-info/top_level.txt
