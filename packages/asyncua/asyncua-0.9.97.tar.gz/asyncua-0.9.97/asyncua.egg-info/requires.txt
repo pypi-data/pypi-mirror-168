@@ -1,0 +1,9 @@
+aiofiles
+aiosqlite
+python-dateutil
+pytz
+cryptography
+sortedcontainers
+
+[:python_version < "3.8"]
+importlib-metadata
