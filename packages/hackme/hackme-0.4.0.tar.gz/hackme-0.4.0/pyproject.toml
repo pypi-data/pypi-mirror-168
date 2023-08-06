@@ -1,0 +1,31 @@
+[project]
+name = "hackme"
+version = "0.4.0"
+authors = [
+  { name="Nadzeya Hutsko", email="nadzya.info@gmail.com" },
+]
+description = "Scripts that implement different network attacks"
+readme = "README.md"
+dependencies = ['pylintfileheader', 'scapy']
+license = { text="GPL-3.0 license" }
+requires-python = ">=3.10"
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Telecommunications Industry",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nadzyah/hackme"
+"Bug Tracker" = "https://github.com/nadzyah/hackme/issues"
+
+[project.entry-points.console_scripts]
+hackme = "hackmeapp:main"
+
+[tool.black]
+line-length = 79
