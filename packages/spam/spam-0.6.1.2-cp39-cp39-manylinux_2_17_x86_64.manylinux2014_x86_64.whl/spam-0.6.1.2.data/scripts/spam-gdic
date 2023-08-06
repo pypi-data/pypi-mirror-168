@@ -1,0 +1,159 @@
+#!python
+
+"""
+This python script (under development) performs Global Digital Image Correlation using SPAM functions
+Copyright (C) 2020 SPAM Contributors
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
+import spam.mesh
+import spam.DIC
+import spam.deformation
+#import spam.label
+import spam.helpers
+
+import os
+os.environ['OPENBLAS_NUM_THREADS'] = '1'
+
+import numpy
+numpy.seterr(all='ignore')
+import argparse
+import tifffile
+import multiprocessing
+import h5py
+
+
+# parser
+import spam.helpers.optionsParser
+parser = argparse.ArgumentParser(description="spam-gdic "+spam.helpers.optionsParser.GLPv3descriptionHeader +\
+                                             "This BETA TEST script performs Global Digital Image Correlations between two 3D greyscale images."+\
+                                             "Displacements are solved as a global problems of nodal displacements on a mesh",
+                                 formatter_class=argparse.RawTextHelpFormatter)
+
+args = spam.helpers.optionsParser.gdicParser(parser)
+
+processes = multiprocessing.cpu_count()
+
+print("spam-gdic -- Current Settings:")
+argsDict = vars(args)
+for key in sorted(argsDict):
+    print("\t{}: {}".format(key, argsDict[key]))
+
+
+# Load reference image
+im1 = tifffile.imread(args.inFiles[0].name).astype('<f4')
+im2 = tifffile.imread(args.inFiles[1].name).astype('<f4')
+
+
+#################################################
+## STEP 1: REQUIRED loading of hdf5 mesh        #
+#################################################
+#load it and check that it has the labelled tet image in it
+# check that the labelled tet image is the SAME SIZE as im1 and im2 above
+# unpack mesh variables
+print(f"spam-gdic: Loading HDF5 mesh file: {args.MESH_FILE.name}")
+with h5py.File(args.MESH_FILE.name) as f:
+    points = f["mesh-points"][:]
+    connectivity = f["mesh-connectivity"][:]
+    #tetLabel = 
+
+
+#################################################
+## STEP 2: optional loading of Phi or PhiField  #
+#################################################
+
+# if Phi      -> spam.DIC.kinematics.applyRegistrationToPoints() to mesh points
+# if PhiField -> spam.DIC.kinematics.interpolatePhiField() to mesh points
+
+if args.PHIFILE is not None:
+    PhiFromFile = spam.helpers.readCorrelationTSV(args.PHIFILE.name, fieldBinRatio=args.PHIFILE_BIN_RATIO)
+    if PhiFromFile is None:
+        print(f"\tFailed to read your TSV file passed with -pf {args.PHIFILE.name}")
+        exit()
+
+    # If the read Phi-file has only one line -- it's a single point registration!
+    if PhiFromFile['fieldCoords'].shape[0] == 1:
+        PhiInit = PhiFromFile['PhiField'][0]
+        print(f"\tI read a registration from a file in binning {args.PHIFILE_BIN_RATIO}")
+
+        decomposedPhiInit = spam.deformation.decomposePhi(PhiInit)
+        print("\tTranslations (px)")
+        print("\t\t", decomposedPhiInit['t'])
+        print("\tRotations (deg)")
+        print("\t\t", decomposedPhiInit['r'])
+        print("\tZoom")
+        print("\t\t", decomposedPhiInit['z'])
+
+        PhiField = spam.DIC.applyRegistrationToPoints(PhiInit.copy(),
+                                                      PhiFromFile["fieldCoords"][0], # centre of the registration
+                                                      points,
+                                                      applyF = 'no', # no need to copy F into PhiField, we'll discard it anyway
+                                                      nProcesses = processes,
+                                                      verbose = True)
+        initialDisplacements = PhiField[:, 0:3, -1]
+
+        del PhiField, PhiInit, PhiFromFile, decomposedPhiInit
+
+    else: # we have a Phi field and not a registration
+        print("spam-gdic: interpolating your passed PhiField onto the mesh points. Imposing nNeighbours = 8!")
+        PhiField = spam.DIC.interpolatePhiField(
+            PhiFromFile["fieldCoords"],
+            PhiFromFile["PhiField"],
+            points,
+            nNeighbours=8,
+            interpolateF='no', # we only want displacements
+            neighbourDistanceWeight='inverse',
+            checkPointSurrounded=False,
+            nProcesses=processes,
+            verbose=True)
+        initialDisplacements = PhiField[:, 0:3, -1]
+
+else:
+    initialDisplacements = numpy.zeros_like(inputMesh["points"])
+
+################################
+# STEP 3: global correlation   #
+################################
+displacements = spam.DIC.globalCorrelation(im1, im2,
+                                           points,
+                                           connectivity,
+                                           initialDisplacements=initialDisplacements,
+                                           maxIterations=args.MAX_ITERATIONS,
+                                           convergenceCriterion=args.CONVERGENCE_CRITERION,
+                                           debugFiles=args.DEBUG_FILES,
+                                           verbose=True,
+                                           prefix=os.path.join(args.OUT_DIR, args.PREFIX))
+
+pointData = {'displacements': displacements}
+cellData = dict({})
+if args.STRAIN:
+    print("spam-gdic: Computing strains", end='...')
+    Ffield = spam.deformation.FfieldBagi(inputMesh['points'], inputMesh['tetra'], displacements)
+    if  (not args.SMALL_STRAINS):
+        components = ['vol', 'dev']
+    else:
+        components = ['volss', 'devss']
+    decomposedFfield = spam.deformation.decomposeFfield(Ffield, components)
+
+    for component in components:
+        cellData[component] = decomposedFfield[component]
+    print("done")
+
+spam.helpers.writeUnstructuredVTK(
+    points,
+    connectivity,
+    pointData=pointData,
+    cellData=cellData,
+    fileName=f"{os.path.join(args.OUT_DIR, args.PREFIX)}.vtk")
