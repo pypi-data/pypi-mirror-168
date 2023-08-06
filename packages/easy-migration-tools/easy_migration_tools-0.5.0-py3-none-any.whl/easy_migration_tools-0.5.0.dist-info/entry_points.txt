@@ -1,0 +1,4 @@
+[console_scripts]
+list-bagstore-files=easymigration.scripts.list_bagstore_files:main
+update-thematische-collecties=easymigration.scripts.update_thematische_collecties:main
+

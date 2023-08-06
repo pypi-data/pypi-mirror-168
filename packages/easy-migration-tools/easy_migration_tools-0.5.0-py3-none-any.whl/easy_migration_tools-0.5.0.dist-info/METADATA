@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: easy-migration-tools
+Version: 0.5.0
+Summary: Utility scripts for the migration from EASY to Data Stations
+Author: DANS-KNAW
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: ri (>=0.1,<0.2)
