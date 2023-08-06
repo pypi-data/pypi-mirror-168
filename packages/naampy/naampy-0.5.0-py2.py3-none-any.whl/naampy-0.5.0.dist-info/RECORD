@@ -1,0 +1,16 @@
+naampy/__init__.py,sha256=zpFaI7nIG21ZjN-8--qCqW9D-lZEaJUxmyXwR3xvZPA,118
+naampy/in_rolls_fn.py,sha256=jGBrS0Uzg_XhXakh0uky6ToD62Ai_WGJ8Wi9zlnIXhQ,8980
+naampy/utils.py,sha256=__zHEF--PbtKnolrQSbexri4CXL3I6YtxGNg9jVbkYc,2772
+naampy/model/naampy_rmse/keras_metadata.pb,sha256=-Qme-MHP8ncF-bmIn3JDUHqyskppyylExek-Q0nG8IU,26485
+naampy/model/naampy_rmse/saved_model.pb,sha256=3bZ2O5t0K5_EjHY0CPU4RPJnjV3h1WwGbKMiIF-qCtk,190672
+naampy/model/naampy_rmse/variables/variables.data-00000-of-00001,sha256=s_-6895_cYhlb8daCpGdxWNaSicMPIYIjz4RN7VMZ2M,2084065
+naampy/model/naampy_rmse/variables/variables.index,sha256=YGsEgJR6I0v7uJO-l2rYBh_1olxUXCI_l7x_bil-zVc,1424
+naampy/tests/__init__.py,sha256=9SLKKBo8TXf0oPgWIe6ZFh-kEFgmFpHAWYknIxPXw0Q,327
+naampy/tests/test_010_in_rolls_ln.py,sha256=qqNpFOgSNerOeJWeQnL7hpA5bZXqcIvwcnD3hBXjLN4,2063
+naampy/tests/test_020_in_rolls_ln.py,sha256=WyC-a3gKZo1dcPeEfwMxvV6K17jyNKQYQiDD4Ny-g8o,1280
+naampy-0.5.0.dist-info/LICENSE,sha256=V8S7uyrSH6vbiX5dhzs4hclXUQrSivgkmN2jhJfe2DY,1095
+naampy-0.5.0.dist-info/METADATA,sha256=_sZV68FHg03Mm4n2S9L5HpwGfAR6m-Nq1gwKu2JpqDY,13447
+naampy-0.5.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+naampy-0.5.0.dist-info/entry_points.txt,sha256=vN8O5oJ4H9DsI1_kQPlnD79njExm-P1nVEoCUsAWcD8,63
+naampy-0.5.0.dist-info/top_level.txt,sha256=v0F5jm4DJPwCZPbVxoWzXqzMxLvlka1Qct4KGwr4lDE,7
+naampy-0.5.0.dist-info/RECORD,,
