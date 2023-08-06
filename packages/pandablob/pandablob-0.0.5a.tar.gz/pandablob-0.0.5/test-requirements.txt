@@ -1,0 +1,8 @@
+mypy
+pytest
+pytest-black
+pytest-cov
+pytest-isort
+pytest-mypy
+pytest-runner
+pytest-timeout
