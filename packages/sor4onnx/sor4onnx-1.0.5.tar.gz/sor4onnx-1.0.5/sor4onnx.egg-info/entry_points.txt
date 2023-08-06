@@ -1,0 +1,2 @@
+[console_scripts]
+sor4onnx = sor4onnx:main
