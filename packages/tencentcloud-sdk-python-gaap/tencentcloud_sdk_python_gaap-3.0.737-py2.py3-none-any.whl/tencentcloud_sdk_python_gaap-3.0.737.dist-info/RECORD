@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=f5Py0OxhwDfX-6KEaT18A5hEgTnXqEvD52oT8G25wgs,630
+tencentcloud/gaap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/gaap/v20180529/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/gaap/v20180529/errorcodes.py,sha256=mJCKzsFtDzKV4cvtj3HrVoEMxk7c7Tz9odaK6shuryo,11644
+tencentcloud/gaap/v20180529/gaap_client.py,sha256=ouHHMFRgot1YqimGg-nEpa9dZrvNLJjs_HiS2SAZpM4,134409
+tencentcloud/gaap/v20180529/models.py,sha256=wILZGKxnU89W-LWeS9ejrKcI3v8xh-2TctGnTbteeQg,324208
+tencentcloud_sdk_python_gaap-3.0.737.dist-info/METADATA,sha256=Yb-H8RDa04V-3BDc5jqZOWsgfuXF_jBc10bTvQVUc7M,1437
+tencentcloud_sdk_python_gaap-3.0.737.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tencentcloud_sdk_python_gaap-3.0.737.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_gaap-3.0.737.dist-info/RECORD,,
