@@ -1,0 +1,12 @@
+pytennis/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+pytennis/_modidx.py,sha256=xsyUssqWGptj7UZt623fpj6mTuMhV8R_C6xr5a1eEjk,7138
+pytennis/_nbdev.py,sha256=94QTg7xATFpwwK4YCPFmjfxQO27yHZ7rt2k2OM5FiQ8,976
+pytennis/core.py,sha256=LiDNwh7n49IgUwL3Vvnc9eHexvEhOVNS4c_H5l9O-6w,26544
+pytennis/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytennis/data/external.py,sha256=Ktq7PWpCKQAazV4B_43QVV2OmEnuWu4-RWF8GXrPDrY,2511
+pytennis-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pytennis-0.0.2.dist-info/METADATA,sha256=6EO209GMW3oYOD3J-mk8uAgBFD9Y-TUtQrqfd-ELkTU,3474
+pytennis-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytennis-0.0.2.dist-info/entry_points.txt,sha256=k_jdMHHHgVYbkuIAFkLAuch8mx27r3kTORArnlMkk3k,38
+pytennis-0.0.2.dist-info/top_level.txt,sha256=11kxS-IsrfYdKR8JMUqWJcv-35b5nghBVKE7tgIs8c4,9
+pytennis-0.0.2.dist-info/RECORD,,
