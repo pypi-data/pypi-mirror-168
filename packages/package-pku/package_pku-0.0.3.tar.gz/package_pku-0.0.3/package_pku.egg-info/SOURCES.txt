@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+dist/package_pku-0.0.1-py3-none-any.whl
+dist/package_pku-0.0.1.tar.gz
+dist/package_pku-0.0.2-py3-none-any.whl
+dist/package_pku-0.0.2.tar.gz
+dist/package_pku-0.0.3.tar.gz
+package_pku/__init__.py
+package_pku/modul1.py
+package_pku/modul2.py
+package_pku.egg-info/PKG-INFO
+package_pku.egg-info/SOURCES.txt
+package_pku.egg-info/dependency_links.txt
+package_pku.egg-info/requires.txt
+package_pku.egg-info/top_level.txt
+package_pku/data/jup_start.cmd
