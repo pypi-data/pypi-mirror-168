@@ -1,0 +1,5 @@
+seq_aligner-0.1.2.dist-info/METADATA,sha256=B73pUW1KGFCSW6L8Y8wrj0TziZEXZSa88qGaH6JOgf0,1615
+seq_aligner-0.1.2.dist-info/WHEEL,sha256=yWzNDSe-Z86nUV8fGbrQClK4pEaNpc0utfEreK205uk,107
+seq_aligner/__init__.py,sha256=e9z3pxIgIMrm5ejlN0fgaHRFfjpHVDsNH_8Zew9VZME,127
+seq_aligner/seq_aligner.cpython-38-x86_64-linux-gnu.so,sha256=OO9w5JA7TqxZ7F_zu4PerHOhr73_eh2mtrJwXaNgUOA,477528
+seq_aligner-0.1.2.dist-info/RECORD,,
