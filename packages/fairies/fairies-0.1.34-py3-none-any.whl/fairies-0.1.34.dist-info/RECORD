@@ -1,0 +1,14 @@
+fairies/__init__.py,sha256=DbznNYqsWccxmrmB1fKwf9VvJHHhTru8l6jStmNSefM,961
+fairies/classification_utils.py,sha256=0Mqrn4uR0hTVBmMvAXA3bONuHNUjU5kuP-xWlvMNlps,2463
+fairies/knowledge.py,sha256=7fImmyMNCRTl_VxsSOLmt6xaV5lLxw9jWk36fwOn01c,255582
+fairies/langconv.py,sha256=ovV6GVyn84E1O_8n0CeFBDymLWPALcjdAsYDo64QTD0,8281
+fairies/nlp_clean_data.py,sha256=uPhcK4VZROSomCiYqunCcwN6X41R1IGECpkgtOT4JUo,928
+fairies/nlp_jieba_utils.py,sha256=FYETu5Fg-eAH5Qrpw3bqdQrt4BnOiozxbL9F0NIyfdE,1408
+fairies/nlp_utils.py,sha256=JtTKh7CV44MrMHQLvfr1iigUCyCiz0I4XufCer9NhAE,5592
+fairies/read.py,sha256=APopV4e5YZwhbDD_xR1_zlGzb_ciFsmcomg6YBa99KU,5232
+fairies/write.py,sha256=enbc6RquYMAPqOeXVxjxU9bZcXxujuCt95rDPjsY_ug,2221
+fairies/zh_wiki.py,sha256=elg3DkJtTNz0dyuB_Ya2nZiL1ACbuWuyRdTY0y3shBc,151292
+fairies-0.1.34.dist-info/METADATA,sha256=50AlwFD1ziGb4p6m_w3kVek9UA2VVBDhTUxDV3cUws8,415
+fairies-0.1.34.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+fairies-0.1.34.dist-info/top_level.txt,sha256=cwObO6jlEDLqJe8h5jAf9RTTkKGKEdoCR0jbFv8vfUE,8
+fairies-0.1.34.dist-info/RECORD,,
