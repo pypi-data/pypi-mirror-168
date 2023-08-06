@@ -1,0 +1,3 @@
+[console_scripts]
+sma_finder = sma_finder:main
+
