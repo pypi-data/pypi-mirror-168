@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pydecs
+Version: 2022.9.22
+Summary: This tool enables analyses of equilibration among point and complex defects in crystalline solids
+Home-page: https://gitlab.com/tkog/pydecs
+Author: Takafumi Ogawa
+Author-email: takafumi.ogawa.1+pydecs@gmail.com
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: toml
+Requires-Dist: pathos
+
