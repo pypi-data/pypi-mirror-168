@@ -1,0 +1,10 @@
+xia_meta/__init__.py,sha256=xkzgDGbn8G-CDYgCUs-c-uit07THGYi7Ylm8EGh7Wo4,285
+xia_meta/asset.cpython-310-darwin.so,sha256=LiIMw_h5lQijrV86nbY6VN7wCMwcuLZ1tQLJ99W3rbQ,271224
+xia_meta/health.cpython-310-darwin.so,sha256=vemKbvO6vJ-tki_Fak_1dl44YmkcoGHq3o-lP9eTtxE,305344
+xia_meta/meta.cpython-310-darwin.so,sha256=tt78ZjJDYHF0EI4yDpbvsuRCYGh2PURF_tdEW8cfaek,339552
+xia_meta/tools.cpython-310-darwin.so,sha256=v6aJ9t7v3apdCUgahxKBI-XmXd49aHycw0PnHdJwL3M,201160
+xia_meta-0.0.17.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_meta-0.0.17.dist-info/METADATA,sha256=GziHzM8TNLu1wa0ys9JS6_mvmoptqTnjrql4Rq4_vAk,352
+xia_meta-0.0.17.dist-info/WHEEL,sha256=rzbs02GRkYUvH8P22R0CP8i1s-A3wFwzwDKQstzz7K8,109
+xia_meta-0.0.17.dist-info/top_level.txt,sha256=A1LHjfteOLrSw4HhYEPVd8UBy61ssU7xrQvEn7mM7HM,9
+xia_meta-0.0.17.dist-info/RECORD,,
