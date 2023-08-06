@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: gee_whiz_2
+Version: 2.0.0b1
+Summary: Gee Whiz 2 is a script for managing Guild Wars 2 addons, profiles, and Lutris installations from a simple launcher script.
+Author-email: James Harmison <jharmison@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Games/Entertainment
+Classifier: Typing :: Typed
+Requires-Dist: pyyaml >=6,<7
+Requires-Dist: pydantic >=1.9,<2
+Requires-Dist: requests >=2.28,<3
+Requires-Dist: semantic_version >=2.10,<3
+Requires-Dist: click >=8.1,<9
+Requires-Dist: tqdm >=4.64,<5
+Requires-Dist: rich >= 12.5.1,<13
+Requires-Dist: rich-click >= 1.5.2
+Requires-Dist: vdf >= 3.4
+Project-URL: Documentation, https://git.jharmison.com/james/gw2
+Project-URL: Source, https://git.jharmison.com/james/gw2
+
+# Gee Whiz 2
+
+Gee Whiz 2 is a program for managing Guild Wars 2 addons, profiles, and Lutris installations from a simple Python-based script.
+
+## WORK IN PROGRESS
+
+This program is being rebuilt.
+
