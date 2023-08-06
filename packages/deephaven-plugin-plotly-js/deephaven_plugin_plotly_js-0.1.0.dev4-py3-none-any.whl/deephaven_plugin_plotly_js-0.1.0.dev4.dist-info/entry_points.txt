@@ -1,0 +1,3 @@
+[deephaven.plugin]
+registration_cls=deephaven_plugin_plotly_js:PlotlyJsRegistration
+
