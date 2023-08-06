@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+click
+
+[dev]
+pytest
+coverage
