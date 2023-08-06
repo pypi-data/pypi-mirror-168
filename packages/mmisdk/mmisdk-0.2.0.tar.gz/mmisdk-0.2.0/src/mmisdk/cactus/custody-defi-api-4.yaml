@@ -1,0 +1,576 @@
+swagger: "2.0"
+info:
+  description: "custody api"
+  version: "1.0.0"
+  title: "custody api"
+host: "hostname"
+basePath: "/"
+tags:
+- name: "defiAPI"
+  description: "defiAPI"
+  externalDocs:
+    description: "Find out more"
+    url: "http://swagger.io"
+
+schemes:
+- "https"
+paths:
+  /eth-accounts:
+    get:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "Get user's all eth account information through JWT"
+      operationId: "query-accounts"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "address"
+        in: "query"
+        description: "get eth account by address"
+        required: false
+        type: "string"
+      - name: "chainId"
+        in: "query"
+        description: "chainId"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/EthereumAccount"
+        "403":
+          description: "invalid JWT"
+
+  /signatures:
+    post:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "signature"
+      operationId: "signature"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "chainId"
+        in: "query"
+        description: "chainId"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/SignatureReq"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/TransactionDetail"
+        "403":
+          description: "invalid JWT"
+    get:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "query signatures，support filtering signatures by from address \ transactionId"
+      operationId: "query signatures"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "chainId"
+        in: "query"
+        description: "chainId"
+        required: true
+        type: "string"
+      - name: "from"
+        in: "query"
+        description: "filtering tansactions by from address"
+        required: false
+        type: "string"
+      - name: "transactionId"
+        in: "query"
+        description: "filtering tansactions by transactionId, this transactionId is the custodian_transactionId returned by Cactus Custody."
+        required: false
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/TransactionDetail"
+        "403":
+          description: "invalid JWT"
+  /signTypedDataV4:
+    post:
+      deprecated: true
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "signTypedData_v4"
+      operationId: "signTypedData_v4"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "chainId"
+        in: "query"
+        description: "chainId"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/SignTypedDataV4Req"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/TransactionDetail"
+        "403":
+          description: "invalid JWT"
+  /personal-sign:
+    post:
+      deprecated: true
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "personal_sign"
+      operationId: "personal_sign"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "chainId"
+        in: "query"
+        description: "chainId"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/SignTypedDataV4Req"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/TransactionDetail"
+        "403":
+          description: "invalid JWT"
+  /transactions:
+    post:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "createTransaction"
+      operationId: "createTransaction"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "chainId"
+        in: "query"
+        description: "chainId"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/TXParams"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/TransactionDetail"
+        "403":
+          description: "invalid JWT"
+    get:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "query transaction history, support filtering tansactions by from address \ transactionId \ transactionHash"
+      operationId: "query Transactions"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "chainId"
+        in: "query"
+        description: "chainId"
+        required: true
+        type: "string"
+      - name: "from"
+        in: "query"
+        description: "filtering tansactions by 'from address'"
+        required: false
+        type: "string"
+      - name: "transactionId"
+        in: "query"
+        description: "filtering tansactions by transactionId, this transactionId is the custodian_transactionId returned by Cactus Custody."
+        required: false
+        type: "string"
+      - name: "transactionHash"
+        in: "query"
+        description: "filtering tansactions by transactionHash."
+        required: false
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/TransactionDetail"
+        "403":
+          description: "invalid JWT"
+  /customer-info:
+    get:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "query user information by JWT"
+      operationId: "getCustomerId"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/CustomerInfo"
+        "403":
+          description: "invalid JWT"
+  /jwks/root:
+    get:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: "Return the public key for verifying JWT, there is only one public key"
+      operationId: "get jwks"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/JWKS"
+        "403":
+          description: "invalid JWT"
+  /customer-proof:
+    post:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: ""
+      operationId: "getCustomerProof"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/CustomerProofReq"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Proof"
+        "403":
+          description: "invalid JWT"
+          
+  /tokens:
+    post:
+      security:
+        - Bearer: []
+      tags:
+      - "defiAPI"
+      summary: ""
+      operationId: "refreshToken"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+            $ref: "#/definitions/RefreshTokenRequest"
+      #   name: "grant_type"
+      #   required: true
+      #   type: "string"
+      #   description: "The grant_type parameter must be set to 'refresh_token'."
+      # - in: "query"
+      #   name: "refresh_token"
+      #   required: true
+      #   type: "string"
+        
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/RefreshTokenResponse"
+        "403":
+          description: "invalid JWT"
+definitions:
+  RefreshTokenResponse:
+    type: "object"
+    properties:
+      jwt:
+        type: "string"
+        format: "string"
+  Proof:
+    type: "object"
+    properties:
+      jwt:
+        type: "string"
+        format: "string"
+        description: "Payload parts of JWT can be decoded using a base64 decoder. The results can refer to https://consensys.gitlab.io/codefi/products/mmi/mmi-docs/guide/integration.html#appendix-3-customer-proof-example"
+
+  EthereumAccount:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+        format: "string"
+      address:
+        type: "string"
+        format: "string"
+      labels:
+        type: "array"
+        items:
+          type: "string"
+      balance:
+        type: "string"
+        format: "0x[0-9a-f]+"
+      chainId:
+        type: "integer"
+        format: "int"
+      custodianDetails:
+        $ref: "#/definitions/CustodyWalletInfo"
+  RefreshTokenRequest:
+    type: "object"
+    properties:
+      grant_type:
+        type: "string"
+        format: "string"
+        description: "The grant_type parameter must be set to 'refresh_token'."
+      refresh_token:
+        type: "string"
+        format: "string"
+        description: "refresh_token"
+  CustodyWalletInfo:
+    type: "object"
+    description: "Cactus Custody’s account hierarchy：domian=》project=》wallet=》address"
+    properties:
+      domainId:
+        type: "string"
+        format: "string"
+        description: "Companyid"
+      projectId:
+        type: "string"
+        format: "string"
+        description: "BusinessLineid"
+      walletId:
+        type: "string"
+        format: "string"
+        description: "Walletid"
+  TXParams:
+    type: "object"
+    required:
+    - "from"
+    - "to"
+    - "gasLimit"
+    - "value"
+    properties:
+      from:
+        type: "string"
+        format: "string"
+        description: "from address"
+      to:
+        type: "string"
+        format: "string"
+        description: "to address"
+      gasLimit:
+        type: "string"
+        format: "string"
+        description: "gasLimit"
+      value:
+        type: "string"
+        format: "string"
+        description: "value"
+      data:
+        type: "string"
+        format: "string"
+        description: "data"
+      gasPrice:
+        type: "string"
+        format: "string"
+        description: "gasPrice"
+      maxFeePerGas:
+        type: "string"
+        format: "string"
+        description: "maxFeePerGas"
+      maxPriorityFeePerGas:
+        type: "string"
+        format: "string"
+        description: "maxPriorityFeePerGas"
+  TransactionDetail:
+    type: "object"
+    required:
+    - "transactionStatus"
+    properties:
+      transactionStatus:
+        type: "string"
+        format: "string"
+        description: "Transaction status"
+      transactionHash:
+        type: "string"
+        format: "string"
+        description: "Transaction hash"
+      custodian_transactionId:
+        type: "string"
+        format: "string"
+        description: "internal transaction id"
+      gasPrice:
+        type: "string"
+        format: "string"
+        description: "gas price"
+      maxFeePerGas:
+        type: "string"
+        format: "string"
+        description: "maxFeePerGas"
+      maxPriorityFeePerGas:
+        type: "string"
+        format: "string"
+        description: "maxPriorityFeePerGas"
+      gasLimit:
+        type: "string"
+        format: "string"
+        description: "gas limit"
+      nonce:
+        type: "string"
+        format: "string"
+        description: "nonce"
+      from:
+        type: "string"
+        format: "string"
+        description: "the address which initiated the transaction"
+      signature:
+        type: "string"
+        format: "string"
+        description: "a value returned after signing"
+  SignatureReq:
+    type: "object"
+    properties:
+      address:
+        type: "string"
+        format: "string"
+        description: "Sign with the private key corresponding to this address"
+      signatureVersion:
+        type: "string"
+        format: "string"
+        description: "V4|/personalSign"
+      payload:
+        type: "object"
+        format: "TypedMessage<MessageTypes>"
+        description: "if the type is v4, payload is TypedData structure; if the type is personalSign, payload is {message:<text>}"
+  SignTypedDataV4Req:
+    type: "object"
+    # required:
+    # - "transactionStatus"
+    properties:
+      address:
+        type: "string"
+        format: "string"
+        description: "Sign with the private key corresponding to this address"
+      note:
+        type: "string"
+        format: "string"
+        description: "note"
+      buffer:
+        type: "object"
+        format: "TypedMessage<MessageTypes>"
+        description: "TypedMessage<MessageTypes>"
+  CustomerProofReq:
+    type: "object"
+    properties:
+      version:
+        type: "string"
+        format: "string"
+        description: "9.8.5"
+  CustomerInfo:
+    type: "object"
+    properties:
+      domainId:
+        type: "string"
+        format: "string"
+        description: "Companyid"
+      customerId:
+        type: "string"
+        format: "string"
+        description: "userid"
+  JWKS:
+    type: "object"
+    properties:
+      kty:
+        type: "string"
+        format: "RSA"
+      kid:
+        type: "string"
+        format: "string"
+      use:
+        type: "string"
+        format: "sig"
+      alg:
+        type: "string"
+        format: "string"
+      e:
+        type: "string"
+        format: "string"
+      n:
+        type: "string"
+        format: "string"
+      x5t:
+        type: "string"
+        format: "string"
+      x5c:
+        type: "string"
+        format: "string"
+
+securityDefinitions:
+  Bearer:
+    type: apiKey
+    name: Authorization
+    in: header

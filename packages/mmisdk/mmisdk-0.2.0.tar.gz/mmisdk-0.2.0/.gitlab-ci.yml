@@ -1,0 +1,69 @@
+image: python:3.9-alpine
+
+before_script:
+  - apk update
+  - apk add rsync
+  - apk add git
+  - apk add nodejs npm
+
+unit-tests:
+  tags:
+    - eu-west-3
+  stage: test
+  script:
+    - pip install -e .[dev]
+    - pytest
+
+build:
+  tags:
+    - eu-west-3
+  stage: build
+  script:
+    - pip install -e .
+    - python setup.py bdist_wheel sdist
+  artifacts:
+    paths:
+      - dist/*.whl
+      - dist/*.gz
+      - dist/*.zip
+    expire_in: 1 hour
+
+pages:
+  tags:
+    - eu-west-3
+  stage: deploy
+  script:
+    - cd docs
+    - pip install -r requirements.txt
+    - mkdocs build --strict --verbose --site-dir test
+    - mkdocs build --strict --verbose
+    - mv public ..
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: $CI_COMMIT_TAG
+
+publish-pypi:
+  tags:
+    - eu-west-3
+  stage: deploy
+  script:
+    - pip install -e .[dev]
+    - TWINE_PASSWORD=$PYPI_PASSWORD TWINE_USERNAME=$PYPI_USER twine upload --skip-existing dist/*.whl dist/*.gz
+  dependencies:
+    - build
+  rules:
+    - if: $CI_COMMIT_TAG
+
+publish-gitlab:
+  tags:
+    - eu-west-3
+  stage: deploy
+  script:
+    - pip install -e .[dev]
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token twine upload --skip-existing --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*.whl dist/*.gz
+  dependencies:
+    - build
+  rules:
+    - if: $CI_COMMIT_TAG
