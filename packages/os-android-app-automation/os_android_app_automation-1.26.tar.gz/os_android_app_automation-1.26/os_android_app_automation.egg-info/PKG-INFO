@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: os-android-app-automation
+Version: 1.26
+Summary: Will prepare/release an Android app by properties defined by a xml file
+Home-page: https://github.com/osfunapps/os-android-app-automation-py
+Author: Oz Shabat
+Author-email: support@os-apps.com
+License: MIT
+Keywords: python,osfunapps,osapps,files,xml,tools,utils,android,automation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+
+UNKNOWN
+
