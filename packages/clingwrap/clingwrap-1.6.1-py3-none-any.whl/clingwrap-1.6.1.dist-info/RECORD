@@ -1,0 +1,12 @@
+clingwrap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clingwrap/main.py,sha256=5z7bDvYQW38Eh0Ycs8RdbnId7T2nKS81lraqltgc8_c,6202
+clingwrap/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clingwrap-1.6.1.data/data/share/clingwrap/shakenfist-ci-failure.cwd,sha256=UiOR0GRTOPcDCT-MhZEDEn2YFS7Xq4chaWIDIUnoufk,3630
+clingwrap-1.6.1.dist-info/AUTHORS,sha256=toKLUaf9c-NkNow00B_akwMGcGtm-S_ihcC_eql9qWc,34
+clingwrap-1.6.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+clingwrap-1.6.1.dist-info/METADATA,sha256=aIjWQ5JANA99L1jNHL9zIVZxbn68_Sgum6FPCSkkKQg,3059
+clingwrap-1.6.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+clingwrap-1.6.1.dist-info/entry_points.txt,sha256=CopV-GZ6sjjBv4u9gkpELJYWZsbZizpjAmBPkJnSLpU,50
+clingwrap-1.6.1.dist-info/pbr.json,sha256=SiDAh0v6Gr3Vsq2XFDEJ3nq7gXkccOnQb0_ksgP83Ew,46
+clingwrap-1.6.1.dist-info/top_level.txt,sha256=yUh3Qiy40Z7iTZtVi_socwc1b7lPr0Q3x7Byyu0IkT0,10
+clingwrap-1.6.1.dist-info/RECORD,,
