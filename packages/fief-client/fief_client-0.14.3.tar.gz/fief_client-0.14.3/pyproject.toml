@@ -1,0 +1,109 @@
+[tool.isort]
+profile = "black"
+
+[[tool.mypy.overrides]]
+module = "jwcrypto.*"
+ignore_missing_imports = true
+
+[tool.coverage.run]
+concurrency = ["greenlet"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+
+[tool.hatch]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+source = "regex_commit"
+commit_extra_args = ["-e"]
+path = "fief_client/__init__.py"
+
+[tool.hatch.envs.default]
+features = [
+  "fastapi",
+  "flask",
+]
+dependencies = [
+  "black",
+  "coverage[toml]",
+  "greenlet",
+  "isort",
+  "mypy",
+  "pytest",
+  "pytest-cov",
+  "pytest-asyncio",
+  "pytest-mock",
+  "respx",
+  "tryceratops",
+  "uvicorn[standard]",
+]
+
+[tool.hatch.envs.docs]
+dependencies = [
+  "pdoc"
+]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest --cov fief_client/ --cov-report=term-missing"
+test-cov-xml = "pytest --cov fief_client/ --cov-report=xml"
+lint = [
+  "isort ./fief_client",
+  "isort ./tests",
+  "black . ",
+  "mypy fief_client/",
+]
+lint-check = [
+  "isort --check-only ./fief_client ./tests",
+  "black --check .",
+  "mypy fief_client/",
+]
+
+[tool.hatch.envs.docs.scripts]
+serve = "pdoc fief_client/"
+build = "pdoc fief_client/ -o docs/_build"
+
+[build-system]
+requires = ["hatchling", "hatch-regex-commit"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fief-client"
+authors = [
+  { name = "François Voron", email = "contact@fief.dev" }
+]
+description = "Fief Client for Python"
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dynamic = ["version"]
+requires-python = ">=3.7"
+dependencies = [
+    "httpx >=0.21.3,<0.24.0",
+    "jwcrypto >=1.4,<2.0.0",
+    "typing-extensions >=4.0.1; python_version < '3.8'",
+]
+
+[project.optional-dependencies]
+fastapi = [
+  "fastapi",
+  "makefun >=1.14.0,<2.0.0",
+]
+
+flask = [
+  "flask",
+]
+
+[project.urls]
+Documentation = "https://docs.fief.dev/integrate/python/"
+Source = "https://github.com/fief-dev/fief-python"
