@@ -1,0 +1,7 @@
+celery
+redis
+setuptools
+
+[test]
+pytest
+testing.redis

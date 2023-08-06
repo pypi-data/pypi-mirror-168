@@ -1,0 +1,19 @@
+celery_redis_sync
+=================
+
+1.1.0 (2022-09-23)
+------------------
+
+- Also register for `rediss+sync://` URL
+
+
+1.0.1 (2019-11-28)
+------------------
+
+- Declare Python-3 compatibility
+
+
+1.0.0 (2017-10-05)
+------------------
+
+- Initial release
