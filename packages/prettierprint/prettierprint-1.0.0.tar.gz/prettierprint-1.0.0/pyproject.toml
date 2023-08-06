@@ -1,0 +1,22 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prettierprint"
+version = "1.0.0"
+description = "Python module for clean, human-readable printing of data structures."
+readme = "README.md"
+authors = [{ name = "Jordan Nimlos", email = "jordan.nimlos@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["print", "pprint", "prettier", "prettyprint", "cleanprint"]
+dependencies = []
+requires-python = ">=3"
+
+[project.urls]
+Homepage = "https://github.com/nimjor/prettierprint"
