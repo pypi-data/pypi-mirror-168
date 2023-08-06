@@ -1,0 +1,6 @@
+include app/config.json
+graft app/static
+graft app/templates
+graft app/data
+global-exclude *.pyc
+global-exclude *.sqlite
