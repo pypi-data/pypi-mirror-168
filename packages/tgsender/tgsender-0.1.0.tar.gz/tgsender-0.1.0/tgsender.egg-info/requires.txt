@@ -1,0 +1,10 @@
+Click>=7.0
+asyncio
+openpyxl
+pyperclip
+pandas
+pyrogram
+pyautogui
+tgcrypto
+natsort
+unidecode
