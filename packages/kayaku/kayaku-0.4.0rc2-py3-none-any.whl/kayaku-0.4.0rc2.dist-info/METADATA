@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kayaku
+Version: 0.4.0rc2
+Summary: An powerful and flexible configuration solution.
+License: MIT
+Author-email: BlueGlassBlock <blueglassblock@outlook.com>
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Dist: importlib-metadata>=3.6
+Requires-Dist: loguru>=0.6.0
+Requires-Dist: pydantic<2.0.0,>=1.8.0
+Description-Content-Type: text/markdown
+
+# Kayaku
+
+> Power within little particles.
+
+An powerful and flexible configuration solution.
+
+
+## License
+
+This project is licensed under [MIT license](./LICENSE).
