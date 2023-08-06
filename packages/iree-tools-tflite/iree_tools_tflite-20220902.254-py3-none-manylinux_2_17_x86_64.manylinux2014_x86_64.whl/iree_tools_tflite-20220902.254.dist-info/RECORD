@@ -1,0 +1,8 @@
+iree_tools_tflite-20220902.254.dist-info/RECORD,,
+iree_tools_tflite-20220902.254.dist-info/METADATA,sha256=NHWYAHjbs9nOfc7DP6Q0Qe2OnGbAtdvB_LzOreOK2lQ,487
+iree_tools_tflite-20220902.254.dist-info/WHEEL,sha256=V2KjM8jRkjCA0T3Qq1khvRiuI5gyLMwf7zYUWcXbs_4,146
+iree_tools_tflite-20220902.254.dist-info/entry_points.txt,sha256=3TZ9qI9tvIFteeFPa-55zNxewQiR8UznJ6kPVM-Zft4,98
+iree_tools_tflite-20220902.254.dist-info/top_level.txt,sha256=VvWqv7BW1mOstqkVvB0lVU_q6KrPy9ABEHayFLvGDAw,5
+iree/tools/tflite/iree-import-tflite,sha256=wdhopCZRlJ46oCMmrSQ05u411CdUvZmvs3GKVeLWTj4,208619592
+iree/tools/tflite/__init__.py,sha256=kbeDdxt--YwbvflgMWQ0rv3WpKTTZy0B4vTqzAJaYzE,538
+iree/tools/tflite/scripts/iree_import_tflite/__main__.py,sha256=_DWTBbRdCkwpYDEJbm7mw3FYRNi0Jpg7J4-HwveCWPI,488
