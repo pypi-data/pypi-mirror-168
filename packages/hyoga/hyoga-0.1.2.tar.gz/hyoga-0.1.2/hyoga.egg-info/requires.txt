@@ -1,0 +1,6 @@
+cf_xarray
+matplotlib
+numpy
+scipy
+requests
+xarray
