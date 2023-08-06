@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cps_sdk
+Version: 0.0.2
+Summary: CPS SDK汇总
+Home-page: https://gitee.com/kingons/third_sdk
+Author: dragons
+Author-email: 521274311@qq.com
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+
+CPS SDK汇总
