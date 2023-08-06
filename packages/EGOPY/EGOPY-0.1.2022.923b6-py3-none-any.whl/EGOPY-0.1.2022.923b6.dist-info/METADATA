@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: EGOPY
+Version: 0.1.2022.923b6
+Summary: Define your trading style.
+Home-page: https://pypi.org/project/egopy
+Author: EGOPY
+License: The BSD License (BSD)        
+        Copyright (c) 2022-present, EGOPY        
+Keywords: quant investment quantitative trading algotrading
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: C
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: Chinese (Simplified)
+Requires-Python: ==3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+﻿<p align="center">
+    <img src ="https://img.shields.io/badge/platform-linux-yellow.svg"/>
+    <img src ="https://img.shields.io/badge/python-3.10-blue.svg" />
+</p>
+
+## EGOPY = EGO + PYthon
+
+<p align="left">
+EGOPY基于开源系统和交易框架，致力于研发更高效的智能投顾&量化投资交易系统。
+</p>
+
+
+## 环境准备
+* 支持的操作系统版本：openSUSE Leap 15.4或Ubuntu 20.04 LTS以上
+* 支持的Python版本：Python 3.10 64位（**注意必须是Python 3.10 64位版本**）
+
+
+## 版权说明
+* BSD
