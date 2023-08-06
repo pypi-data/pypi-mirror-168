@@ -1,0 +1,7 @@
+pydub
+PyAudio
+numpy
+scipy
+matplotlib
+mysql-connector-python
+psycopg2
