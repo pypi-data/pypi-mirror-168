@@ -1,0 +1,64 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
+
+[project]
+authors = [{name = "Richard M. Köhler"}]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+description = "A package for loading XDF files recorded with TMSi amplifiers."
+dynamic = ["version"]
+keywords = ["xdf", "tmsi", "eeg", "ieeg"]
+license = {file = "LICENSE"}
+maintainers = [{name = "Richard M. Köhler"}]
+name = "pte-xdf"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.10"
+
+dependencies = ["mne", "numpy", "pyxdf"]
+
+[project.optional-dependencies]
+dev = ["black", "isort", "mypy", "pylint", "pytest", "pytest-cov", "tox"]
+doc = ["mkdocs", "mkdocs-autorefs", "mkdocs-material", "mkdocstrings[python]"]
+full = ["pte-xdf[dev,doc,release]"]
+release = ["pip-tools"]
+
+[tool.flit.module]
+name = "pte_xdf"
+
+[project.urls]
+bugtracker = "https://github.com/richardkoehler/pte-xdf/issues"
+changelog = "https://github.com/richardkoehler/pte-xdf/blob/main/docs/CHANGELOG.md"
+repository = "https://github.com/richardkoehler/pte-xdf"
+
+[tool.black]
+exclude = '''
+/(
+  __pycache__
+)/
+'''
+include = '''
+(
+  /src/
+  # | /tests
+)
+'''
+line-length = 79
+target-version = ['py310']
+
+[tool.isort]
+line_length = 79
+profile = "black"
+py_version = 310
+src_paths = ["pte_xdf"]
+
+[tool.mypy]
+python_version = "3.10"
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = ["mne", "pyxdf"]
