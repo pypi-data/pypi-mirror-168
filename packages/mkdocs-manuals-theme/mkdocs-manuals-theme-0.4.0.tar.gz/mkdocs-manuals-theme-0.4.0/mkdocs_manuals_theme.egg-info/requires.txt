@@ -1,0 +1,6 @@
+mkdocs
+
+[dev]
+bumpver
+build
+twine
