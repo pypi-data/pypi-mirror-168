@@ -1,0 +1,4 @@
+[console_scripts]
+lxzbiotools=lxzbiotools.lxzbiotools:app
+utils=lxzbiotools.utils:app
+
