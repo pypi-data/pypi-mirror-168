@@ -1,0 +1,17 @@
+TBB.py,sha256=2FDZ7b6cwH6i6kOmuetA1TxeglzVSBPlobkEifFPr_Q,759
+tbb/__init__.py,sha256=LfWqNpDMYVgtAkTFIyDVl7PxJU2oZ8DHMnLtfNLf0Zk,13145
+tbb/__main__.py,sha256=TKWsRtSEFnnVqNEJ953MIaWLFoKb6bDdZeXmBBmFeyI,672
+tbb/_api.cpython-37m-darwin.so,sha256=H5C5bZgywmBRfwuXAtS9PAytNQtixiv9A14eBERCHU4,85940
+tbb/api.py,sha256=2auvjI0a7E7CjVspl0ukEqZeBA6_u0CmmEbnhNNMy9E,5455
+tbb/pool.py,sha256=3HKxKiofdMuFSqN4Y_WrdVsX0GZWrVnGJmXB2vUBaXM,25018
+tbb/test.py,sha256=BEqSkYaHadd8A762rhWS3L-WF5K7IrkpEBw-cvQejwk,6681
+tbb/__pycache__/__init__.cpython-37.pyc,sha256=ELBsgBtUyWtniHEj0SF8PBnywYINq1MhGQfZH7OT0nM,10879
+tbb/__pycache__/__main__.cpython-37.pyc,sha256=SjZxxcEcTVfjnbJfBq5Chb1fqTzlpIdQPAi6cB251ss,209
+tbb/__pycache__/api.cpython-37.pyc,sha256=LeLHKtLIg1mcrqAnuRJ4Nvkfc2rwPz1m0XWzl9G6tFY,5486
+tbb/__pycache__/pool.cpython-37.pyc,sha256=ogfRxyw78qkKlYsNmy2iWE7jIyx3BEQNZ2EEFU-lh_I,22442
+tbb/__pycache__/test.cpython-37.pyc,sha256=V5pz4YGam7KLX3nf1k4TI0aRjcPoEbNVWQJ5c_xQvAI,3595
+tbb4py-2021.7.0.dist-info/LICENSE.txt,sha256=0FHWqv3r5V_hjP6ydXbWRhi10tZNphthT1rPPkZAgA4,4227
+tbb4py-2021.7.0.dist-info/METADATA,sha256=CVC0-RnZOFe46JEApC7ybYq_gJzJYHVqFoXm6mYGcuY,1048
+tbb4py-2021.7.0.dist-info/WHEEL,sha256=JOkixZGLGyoAyhRUP__x3NrS2zk9DFDf_m6ruvseo9o,143
+tbb4py-2021.7.0.dist-info/top_level.txt,sha256=T-8RFHelnNCm5tGd4pCE4B1dIiGh5j5ETTdGl1hTBPA,8
+tbb4py-2021.7.0.dist-info/RECORD,,
