@@ -1,0 +1,45 @@
+CHANGES
+=======
+
+0.5.0
+-----
+
+* Update Image APIs tests to check system user is not permitted
+* Fix incorrect run command and add stestr config file
+* Refactor rbac metadef tests structure
+
+0.4.0
+-----
+
+* Refactor rbac tests structure
+* Implement API protection testing for metadef tags
+* Implement API protection testing for metadef properties
+* Implement API protection testing for metadef resource types
+* Update python testing classifier
+
+0.3.0
+-----
+
+* Implement API protection testing for metadef objects
+* Cleanup some images created in the tests
+* Add protection testing for metadef namespaces
+
+0.2.0
+-----
+
+* Refactor RbacBasetest to inherit from tempest
+* Remove plugin-specific enforce\_scope configuration option
+* Fix glance tempest plugin test to use the right tempest variables
+* setup.cfg: Replace dashes with underscores
+
+0.1.0
+-----
+
+* Increase oslo.policy logging for protection tests
+* Add tests for image membership, deactivation, and reactivation
+* Implement API protection testing for images
+* trivial: Fix incorrect project name in setup.cfg
+* Add doc/requirements
+* Apply cookiecutter to newly added glance-tempest-plugin
+* Add setup.cfg
+* Create glance-tempest-plugin
