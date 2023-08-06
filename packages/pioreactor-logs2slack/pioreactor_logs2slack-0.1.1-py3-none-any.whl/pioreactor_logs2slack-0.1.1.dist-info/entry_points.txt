@@ -1,0 +1,2 @@
+[pioreactor.plugins]
+pioreactor_logs2slack = pioreactor_logs2slack
