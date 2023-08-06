@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fcdocs
+Version: 0.1
+Requires-Dist: kedro (==0.18.2)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: spacy (==3.3.1)
+Requires-Dist: torch (~=1.12.1)
+Requires-Dist: torchvision (~=0.13.1)
+Requires-Dist: django-filingcabinet
+Provides-Extra: docs
+Requires-Dist: docutils (<0.18.0) ; extra == 'docs'
+Requires-Dist: sphinx (~=3.4.3) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==0.5.1) ; extra == 'docs'
+Requires-Dist: nbsphinx (==0.8.1) ; extra == 'docs'
+Requires-Dist: nbstripout (~=0.4) ; extra == 'docs'
+Requires-Dist: recommonmark (==0.7.1) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (==1.11.1) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton (==0.3.1) ; extra == 'docs'
+Requires-Dist: ipykernel (<7.0,>=5.3) ; extra == 'docs'
+Requires-Dist: Jinja2 (<3.1.0) ; extra == 'docs'
+
