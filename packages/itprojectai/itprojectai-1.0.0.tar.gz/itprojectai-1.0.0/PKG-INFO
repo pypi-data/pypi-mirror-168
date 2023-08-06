@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: itprojectai
+Version: 1.0.0
+Summary: Lib for AI
+Home-page: https://itproject-manager.com
+Author: itproject-manager.com
+Author-email: 465230373@qq.com
+License: BSD License
+Description: AI LIB
+        Include MathUtil，MsLearn，DeepLearn，CVUtil，NPLUtil
+        
+        Author： itproject-manager.com
+        
+        package publish ref doc
+        http://t.zoukankan.com/jinjiangongzuoshi-p-14037220.html
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
