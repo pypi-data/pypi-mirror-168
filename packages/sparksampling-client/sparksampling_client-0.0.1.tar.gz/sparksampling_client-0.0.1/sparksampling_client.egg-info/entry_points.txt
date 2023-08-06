@@ -1,0 +1,2 @@
+[console_scripts]
+ssc = sparksampling_client.cli:main
