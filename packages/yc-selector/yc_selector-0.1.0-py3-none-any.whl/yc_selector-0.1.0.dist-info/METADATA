@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: yc-selector
+Version: 0.1.0
+Summary: Yandex Cloud module for routing cloud functions
+Author: Dima Frolenko
+Author-email: orangefrol@gmail.com
+License: LICENSE.txt
+License-File: LICENSE.txt
+
