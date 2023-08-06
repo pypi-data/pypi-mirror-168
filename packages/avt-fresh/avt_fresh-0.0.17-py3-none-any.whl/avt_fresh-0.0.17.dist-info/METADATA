@@ -1,0 +1,164 @@
+Metadata-Version: 2.1
+Name: avt-fresh
+Version: 0.0.17
+Summary: A nice, ergonomic wrapper of the Freshbooks API.
+Home-page: https://github.com/zevaverbach/avt-fresh
+Author: Zev Averbach
+Author-email: zev@averba.ch
+License: MIT
+Keywords: freshbooks API
+Requires-Python: >3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: redis
+
+# AVT Fresh!
+
+This is a wrapper of [the Freshbooks web API](https://www.freshbooks.com/api/start). It is far from comprehensive: It was created for the specific client- and invoice-related needs of [Averbach Transcription](https://avtranscription.com). However, there are "band-aids" here to work around some of the API's shortcomings. For example, you don't have to deal with pagination at all. 🎉
+
+Install it with `pip install avt-fresh`.
+
+Here's how you use it (every single method is demonstrated here):
+
+```python
+>>> import typing
+>>> import avt_fresh
+>>> import rich
+>>> 
+>>> cl = avt_fresh.ApiClient(client_secret="...", client_id="...", redirect_uri="https://...", account_id="...")
+>>> 
+>>> InvoiceList = typing.NewType("InvoiceList", list[avt_fresh.FreshbooksInvoice])
+>>> # 👇 invoice methods
+>>> monster_invoices: InvoiceList = cl.get_all_invoices_for_org_name("Monsters Inc")
+>>> drafts: InvoiceList = cl.get_all_draft_invoices()
+>>> client_id_monsters_inc: int = cl.get_freshbooks_client_from_org_name("Monsters Inc").client_id
+>>> monster_invoices_2: InvoiceList = cl.get_all_invoices_for_client_id(client_id_monsters_inc)
+>>> assert monster_invoices == monster_invoices_2
+>>> monster_invoice_drafts: InvoiceList = cl.get_draft_invoices_for_client_id(client_id_monsters_inc)
+>>> rich.print(cl.get_one_invoice(1234567))
+
+FreshbooksInvoice(
+    client_id=24680,
+    invoice_id=1234567,
+    invoice_number='0001',
+    organization='ACME Corp',
+    date=datetime.date(2021, 4, 9),
+    status='paid',
+    amount=Decimal('128.00'),
+    lines=[
+        FreshbooksLine(
+            line_id=1,
+            description='crazy_talk.mp4',
+            amount=Decimal('32.00'),
+            quantity=Decimal('8'),
+            rate=Decimal('4.00'),
+            name='one-day turnaround'
+        ),
+        FreshbooksLine(
+            line_id=2,
+            description='crazy.mp3',
+            amount=Decimal('96.00'),
+            quantity=Decimal('24'),
+            rate=Decimal('4.00'),
+            name='one-day turnaround'
+        )
+    ],
+    contacts={
+        'joe@acme.corp': {
+            'contactid': -1,
+            'email': 'joe@acme.corp',
+            'fname': '',
+            'invoiceid': 1234567,
+            'lname': '',
+            'userid': 654321
+        }
+    }
+)
+
+>>> cl.create_invoice(
+        client_id=24680,
+        notes="transcripts created for Joe Smith",
+        lines: [], # TODO: fill this in
+        status: "draft",
+        po_number="important February transcripts",
+)
+>>> cl.update_invoice(invoice_id=1234567, **kwargs) # TODO: fill this in
+>>> cl.delete_invoice(invoice_id=1234567)
+>>> cl.send_invoice(self, invoice_id=1234567)
+
+>>> ClientList = typing.NewType("ClientList", list[avt_fresh.FreshbooksClient])
+>>>
+>>> # 👇 client methods
+
+>>> cl.get_freshbooks_client_from_email(email="joe@acme.corp")
+>>> cl.get_freshbooks_client_from_client_id(client_id=24680)
+>>> cl.get_all_clients()
+>>> cl.create_client(first_name="Joe", last_name="Smith", email="joe@acme.corp", organization="ACME Corp")
+>>> cl.delete_client(client_id=24680)
+>>> cl.add_contacts(client_id=24680, contacts=[]) # TODO: fille this in
+>>> cl.delete_contact(client_id=24680, email="joe@acme.corp")
+>>> cl.get_default_payment_options()
+>>> cl.add_payment_option_to_invoice(invoice_id=1234567)
+```
+
+You can get and set the required arguments to `ApiClient` [here](https://my.freshbooks.com/#/developer). Well, all of them except `FRESHBOOKS_ACCOUNT_ID`, which you can see (there's got to be another way??) by clicking on one of your invoices and grabbing the substring here: `https://my.freshbooks.com/#/invoice/<THIS THING>-1234567`. 
+
+Don't tell anyone but `redirect_uri` can be pretty much anything! See `Initializing` below 👇.
+#### `lines` 
+The dictionaries must contain entries for `name`, `description`, `unit_cost`, and `qty`.
+The values must be JSON-serializable, so no `Decimal`s for example (all strings is fine).
+
+#### `contacts`
+Each of these dictionaries should simply be `{'contactid': <contactid>}`.
+
+#### `status`
+Status can be any of the `v3_status` values as a `str` or `1` or `4` (draft/paid).
+
+# Initializing
+When you first call one of the functions which touches the Freshbooks API, you'll be prompted in the terminal like so:
+
+```
+Please go here and get an auth code: https://my.freshbooks.com/#/developer, then enter it here:
+```
+
+If you don't have an app there, create a really basic one. Name and description can be whatever, and you can skip the URL fields. 
+
+Application Type: "Private App"
+Scopes: `admin:all:legacy`
+
+Add a redirect URI, it can actually be pretty much anything. Well, preferably a URL you control since it will receive OAuth tokens.
+
+Finally, once you have an app on that developer page, click into it and click "go to authentication" page. Freshbooks will pop open a tab and go to your redirect URI, appending `?code=blahblahblah` to it. Grab the "blah blah blah" value and paste it into the prompt. 
+
+You should only have to do this once in each environment you use this library in.
+
+# OAuth Token Stores
+
+By default this library stores OAuth tokens on disk in whatever working directory its methods are called from. As an alternative you can use Redis via the `avt_fresh.token.TokenStoreOnRedis` at instantiation of an `ApiClient` like so:
+
+```python
+client = Client(
+    client_secret="...", 
+    client_id="...", 
+    redirect_uri="https://...", 
+    account_id="...",
+    token_store=avt_fresh.token.TokenStoreOnRedis,
+    connection_string="redis://..."     ,
+)
+```
+
+As a further alternative, feel free to implement and inject your own! See `avt_fresh.token.TokenStore` for the API, but tl;dr simply inherit from `TokenStore` and implement `get()` and `set()` methods, the former of which should return an instance of `avt_fresh.token.TokenTup`.
+
+# Hardcoded Stuff / TODOs
+Here are some quirks and TODOs. PRs are welcome!:
+
+Only Python 3.10 is supported at the moment.
+
+When it comes to invoice statuses, we're only using `v3_status` strings, not the numbers. What's more, when you create an invoice we're only supporting two possible statuses: "draft" and "paid".
+
+The `create`, `update`, and `delete` functions return dictionaries rather than an instance of the appropriate `NamedTuple`. This would be a great improvement!
+
+The docs need improvement for sure: For now, have a peek at the source code, which includes pretty comprehensive type hints at the very least.
+
+There are no tests! However, this code has been used in production in at least one company with some success.
