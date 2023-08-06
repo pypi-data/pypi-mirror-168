@@ -1,0 +1,12 @@
+libarvo/__init__.py,sha256=bun2M_0A5me2neOA4TyCeDKmgdj6s0IXz0y9l85Nvz8,196
+libarvo/arvo.py,sha256=o_-IjNEwXnmFItlBEltwpnTYo52mo0dkqJW6TGcYdzk,2374
+libarvo/lib.py,sha256=8_huQwGvuEyI4Ymn4jGxZXPSHUJYMBqr7d-CG-1Hneo,1029
+libarvo/libarvo.dll,sha256=ajChvcCA3ZTWzTIIDJn_0MfOzXLcbo8qBrSrbTM_4lI,675127
+libarvo/libarvo.dll.a,sha256=JkmwiWJPKxYYG0HXqnWs-ACULgNTRXqtxF2ItsFwl68,277456
+libarvo/mytyping.py,sha256=BWUVqKPoLkW7yZSeZfPc6MsSzVeETSUF-4nESLmwOUU,152
+libarvo-0.1.0.dist-info/LICENSE,sha256=FhfVB99PuMY7Ox5HEFjIVYm2ffe3OiM7GGaI35D_VcM,1087
+libarvo-0.1.0.dist-info/LICENSE_bundled.txt,sha256=y4uiWmWKBbHQQfhh2CyOn4j5HWw3aiGcGV8gImYJ06Q,41922
+libarvo-0.1.0.dist-info/METADATA,sha256=KoujefREwRFLBUMsU1PUfbjHVtfQoK9tyAMTZ3ETya0,605
+libarvo-0.1.0.dist-info/WHEEL,sha256=dt5yRGeA5qnl3_iynMqK4liosrYejYyUcj-F42-RswU,96
+libarvo-0.1.0.dist-info/top_level.txt,sha256=U57TbQ-J0pENRkLTSYr_ak5M2TGTuNRFBvw0MBvgLjI,8
+libarvo-0.1.0.dist-info/RECORD,,
