@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+dexterCLI/__init__.py
+dexterCLI/__main__.py
+dexterCLI/api.py
+dexterCLI/cli.py
+dexterCLI/commands.py
+dexterCLI.egg-info/PKG-INFO
+dexterCLI.egg-info/SOURCES.txt
+dexterCLI.egg-info/dependency_links.txt
+dexterCLI.egg-info/entry_points.txt
+dexterCLI.egg-info/requires.txt
+dexterCLI.egg-info/top_level.txt
