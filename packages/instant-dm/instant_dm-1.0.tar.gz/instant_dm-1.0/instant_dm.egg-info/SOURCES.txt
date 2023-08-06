@@ -1,0 +1,9 @@
+setup.py
+instant_dm/__init__.py
+instant_dm/__main__.py
+instant_dm/instant_dm.py
+instant_dm.egg-info/PKG-INFO
+instant_dm.egg-info/SOURCES.txt
+instant_dm.egg-info/dependency_links.txt
+instant_dm.egg-info/requires.txt
+instant_dm.egg-info/top_level.txt
