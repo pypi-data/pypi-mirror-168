@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hadata
+Version: 2.5.16
+Summary: HiAcuity common Data Models
+Home-page: https://github.com/hiacuity/ha-data
+Author: Nayana Hettiarachchi
+Author-email: nayana@hiacuity.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: Jinja2 (~=3.1.2)
+Requires-Dist: boto3 (~=1.20.0)
+Requires-Dist: botocore (~=1.23.1)
+Requires-Dist: deepgram-sdk (==0.2.0)
+Requires-Dist: fastapi (~=0.70.0)
+Requires-Dist: mongoengine (==0.24.2)
+Requires-Dist: pika (~=1.2.0)
+Requires-Dist: pydantic (==1.8.2)
+Requires-Dist: pyjwt (~=2.3.0)
+Requires-Dist: python-dotenv (~=0.20.0)
+Requires-Dist: slack-sdk (~=3.18.3)
+Requires-Dist: uvicorn (~=0.15.0)
+
+UNKNOWN
+
