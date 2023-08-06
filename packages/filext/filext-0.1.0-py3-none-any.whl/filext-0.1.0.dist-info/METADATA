@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: filext
+Version: 0.1.0
+Summary: Python library to identify file type based on its file signature
+Home-page: https://github.com/dobizz/filext
+Author: Ronnie Villanueva
+Author-email: ronnie.code@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# filext
+Python library to identify file type based on its file signature
