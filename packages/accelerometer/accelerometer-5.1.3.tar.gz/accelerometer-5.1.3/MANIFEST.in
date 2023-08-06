@@ -1,0 +1,6 @@
+include accelerometer/activityModels/README.md
+include accelerometer/java/README.md
+include accelerometer/java/*.java
+include accelerometer/java/*.class
+include accelerometer/java/JTransforms-3.1-with-dependencies.jar
+include accelerometer/java/logging.properties
