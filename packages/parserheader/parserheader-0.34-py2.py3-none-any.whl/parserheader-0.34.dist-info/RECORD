@@ -1,0 +1,11 @@
+parserheader/__init__.py,sha256=2ycoM_o-4cKMIe-wpmSrJfiV92YHBmWBLHj9dDHsjHM,233
+parserheader/__version__.py,sha256=Ckd8MSvEAWHGNzjUkltfjAuYxaYwXRFXFxoHsuh78dg,16
+parserheader/parserheader.py,sha256=7yF8u-RQbf3ErlyQxhHxcSYoJZBp8KEtg9CVag1czGA,13450
+parserheader-0.34.data/data/LICENSE.rst,sha256=XFQs6qbBVZlzUY7ZVVUWNVSAHVQx3Xtc20Q7pFsAjVw,1855
+parserheader-0.34.data/data/README.rst,sha256=gqzZb2IxVEi36_RFq6p4F96iT-fzVpu4FZVQgWDmw2s,2556
+parserheader-0.34.data/data/__version__.py,sha256=Ckd8MSvEAWHGNzjUkltfjAuYxaYwXRFXFxoHsuh78dg,16
+parserheader-0.34.dist-info/LICENSE.rst,sha256=XFQs6qbBVZlzUY7ZVVUWNVSAHVQx3Xtc20Q7pFsAjVw,1855
+parserheader-0.34.dist-info/METADATA,sha256=WN_QobFPVpXqxIyIxSpv_5IFumgo3NdkkW-Rf5q6HWM,3706
+parserheader-0.34.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+parserheader-0.34.dist-info/top_level.txt,sha256=VFXxJTdUpPFUWtaXtiKhaF-FBXXNGwmRAndtX6t8qms,13
+parserheader-0.34.dist-info/RECORD,,
