@@ -1,0 +1,44 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 50,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nickberry17",
+      "name": "nickberry17",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18670565?v=4",
+      "profile": "https://github.com/nickberry17",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "zacanger",
+      "name": "zacanger",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12520493?v=4",
+      "profile": "https://github.com/zacanger",
+      "contributions": [
+        "bug",
+        "doc"
+      ]
+    },
+    {
+      "login": "ttaschke",
+      "name": "Tim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7067750?v=4",
+      "profile": "https://github.com/ttaschke",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "PyFLP",
+  "projectOwner": "demberto",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
