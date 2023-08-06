@@ -1,0 +1,15 @@
+easyfilewatcher/EasyFileWatcher.py,sha256=6w2iAhYz5Ao0LlhSQiUPob6T0EYPzmllNu0QsZJn1yw,10811
+easyfilewatcher/UoW.py,sha256=_18L2nBitTeQHAVW1rHk1WhGaVr9YdIyw9a6cG9OcCY,766
+easyfilewatcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easyfilewatcher/adapters/ORM.py,sha256=jXx59xJl4Cdjwt5RqGev-660UZkzf9YaSefaP64Xi54,1603
+easyfilewatcher/adapters/Repository.py,sha256=w3IScP2irAcAvNN1B92EDyQoFLULmNwCDiNZv5dI1V4,1336
+easyfilewatcher/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easyfilewatcher/domain/EasyFileWatcherUnit.py,sha256=lejwLhHk0jr19r51kxsNj_PiJ5F4DT0kOq8VbubJNPo,1530
+easyfilewatcher/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easyfilewatcher/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easyfilewatcher/utils/config.py,sha256=RT67NgWkUuqi7eJ1L3S4OJ0KH5yOkEMmsKmM5INarPc,600
+EasyFileWatcher-0.0.3.dist-info/LICENSE,sha256=q7KJbcPCqUAvkBuI1QNc8Kg9XPfBfnNkLN9WKwudO8U,11
+EasyFileWatcher-0.0.3.dist-info/METADATA,sha256=XF-V5D2WYpNaCHmv7SJNVVzZL8rxFGr64FHU0bzZJBE,7908
+EasyFileWatcher-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+EasyFileWatcher-0.0.3.dist-info/top_level.txt,sha256=g85nzqtSDp-rpCUOSVsWUbniy7tj4S50iqY9HVlDDOQ,16
+EasyFileWatcher-0.0.3.dist-info/RECORD,,
