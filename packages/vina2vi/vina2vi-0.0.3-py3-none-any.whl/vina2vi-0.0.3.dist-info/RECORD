@@ -1,0 +1,9 @@
+vina2vi/__init__.py,sha256=h-c78m9SB_0nI7HB-7CQFvi9QZeW3o9zPbC2UHT9W8o,44
+vina2vi/utils.py,sha256=lW610pdhBAmqQgItIswaTi_4nYQV5-sSsdKp0P4uT0E,1228
+vina2vi/metrics/__init__.py,sha256=1hldU5l9Xr5iWXxsDEFhNgs3tvHWgr_oYcRDVmZ556g,264
+vina2vi/metrics/edit_dist.py,sha256=9763y5poHZ_VPV35tZm0IZ1MbmR59KpEgXX1CexxNzw,5451
+vina2vi-0.0.3.dist-info/LICENSE,sha256=b7jj0yoOMRVMiirHsLrAx7rSvDnOa3yIhW_zqY12iVw,1087
+vina2vi-0.0.3.dist-info/METADATA,sha256=OPvkGrWFlbp_LvNq4rcM8ocI8e5nEYXocF-yQNRw6ws,1354
+vina2vi-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vina2vi-0.0.3.dist-info/top_level.txt,sha256=kBKg-bJ5AwgVV239fbVNz6Gp14lYwJZ5O98RNjV9Vms,8
+vina2vi-0.0.3.dist-info/RECORD,,
