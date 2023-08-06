@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pocketbase
+Version: 0.1.3
+Summary: PocketBase SDK for python.
+Home-page: https://github.com/vaphes/pocketbase
+Keywords: pocketbase,sdk
+Author: Vithor Jaeger
+Author-email: vaphes@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Project-URL: Bug Tracker, https://github.com/vaphes/pocketbase/issues
+Project-URL: Repository, https://github.com/vaphes/pocketbase
+Description-Content-Type: text/markdown
+
+# PocketBase Python SDK
+
+[![Python 3.7-3.10](https://github.com/vaphes/pocketbase/actions/workflows/python-versions.yml/badge.svg)](https://github.com/vaphes/pocketbase/actions/workflows/python-versions.yml)
+
+Python client SDK for the <a href="https://pocketbase.io/">PocketBase</a> backend.
+
+This is in early development, and at first is just a translation of <a href="https://github.com/pocketbase/js-sdk">the javascript lib</a> using <a href="https://github.com/encode/httpx/">HTTPX</a>.
+
+---
+
+Install PocketBase using pip:
+
+```shell
+$ pip install pocketbase
+```
+
+<p align="center"><i>The PocketBase Python SDK is <a href="https://github.com/vaphes/pocketbase/blob/master/LICENCE.txt">MIT licensed</a> code.</p>
