@@ -1,0 +1,208 @@
+name: tox
+
+on:
+  create: # is used for publishing to PyPI and TestPyPI
+    tags: # any tag regardless of its name, no branches
+      - "**"
+  push: # only publishes pushes to the main branch to TestPyPI
+    branches: # any integration branch but not tag
+      - "main"
+  pull_request:
+  schedule:
+    - cron: 1 0 * * * # Run daily at 0:01 UTC
+  # Run every Friday at 18:02 UTC
+  # https://crontab.guru/#2_18_*_*_5
+  # - cron: 2 18 * * 5
+  workflow_call:
+
+jobs:
+  linters:
+    name: ${{ matrix.env.TOXENV }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version:
+          - 3.9
+        os:
+          - ubuntu-20.04
+        env:
+          - TOXENV: lint
+          - TOXENV: docs
+          - TOXENV: packaging
+    env:
+      TOX_PARALLEL_NO_SPINNER: 1
+      FORCE_COLOR: 1
+
+    steps:
+      - name: Check out src from Git
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # needed by setuptools-scm
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Pre-commit cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pre-commit
+          key: ${{ matrix.name }}-pre-commit-${{ hashFiles('setup.cfg', 'tox.ini', 'pyproject.toml', '.pre-commit-config.yaml') }}
+
+      - name: Pip cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ matrix.name }}-pip-${{ hashFiles('setup.cfg', 'tox.ini', 'pyproject.toml', '.pre-commit-config.yaml') }}
+
+      - name: Install tox
+        run: python3 -m pip install --upgrade tox
+
+      - name: Log installed dists
+        run: python -m pip freeze --all
+
+      - name: Initialize tox envs
+        run: python -m tox --notest --skip-missing-interpreters false -vv
+        env: ${{ matrix.env }}
+
+      - name: Test with tox
+        run: python -m tox --parallel auto --parallel-live
+        env: ${{ matrix.env }}
+
+      - name: Archive logs
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs.zip
+          path: .tox/**/log/
+
+  unit:
+    name: ${{ matrix.name || matrix.tox_env }}
+    runs-on: ${{ matrix.os || 'ubuntu-20.04' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        name:
+          # cannot use "," in name as it will break actions/cache
+          - py38
+        tox_env:
+          - py38
+        python-version:
+          - "3.8"
+        include:
+          # keep list sorted as it determines UI order too
+          # linux (py38 comes from matrix):
+          - name: py38-ansible29
+            tox_env: py38-ansible29
+            python-version: 3.8
+          - name: py38-ansible210
+            tox_env: py38-ansible210
+            python-version: 3.8
+          - name: py38-ansible211
+            tox_env: py38-ansible211
+            python-version: 3.8
+          - name: py38-ansible212
+            tox_env: py38-ansible212
+            python-version: 3.8
+          - name: py39
+            tox_env: py39,py39-devel
+            python-version: 3.9
+          - name: py310
+            tox_env: py310,py310-devel
+            python-version: "3.10"
+          - name: py311
+            tox_env: py311,py311-devel
+            python-version: "~3.11.0-0" # see https://github.com/actions/setup-python/issues/213#issuecomment-1146676713
+          # macos
+          - name: py38@macos
+            tox_env: py38,py38-ansible29 # 2.14(devel) does not support 3.8
+            os: macOS-latest
+            python-version: 3.8
+          - name: py310@macos
+            tox_env: py310,py310-devel
+            os: macOS-latest
+            python-version: "3.10"
+
+    env:
+      TOX_PARALLEL_NO_SPINNER: 1
+      FORCE_COLOR: 1
+
+    steps:
+      - name: MacOS workaround for https://github.com/actions/virtual-environments/issues/1187
+        if: ${{ matrix.os == 'macOS-latest' }}
+        run: |
+          sudo sysctl -w net.link.generic.system.hwcksum_tx=0
+          sudo sysctl -w net.link.generic.system.hwcksum_rx=0
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # needed by setuptools-scm
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Log the currently selected Python version info (${{ matrix.python-version }})
+        run: |
+          python --version --version
+          which python
+
+      - name: Pip cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-${{ matrix.name }}-pip-${{ hashFiles('constraints.txt', 'setup.cfg', 'tox.ini', 'pyproject.toml', '.pre-commit-config.yaml', 'pytest.ini') }}
+
+      - name: Install tox
+        run: python3 -m pip install --upgrade tox 'coverage[toml]'
+
+      - name: Log installed dists
+        run: python3 -m pip freeze --all
+
+      - name: Initialize tox envs
+        run: python3 -m tox --notest --skip-missing-interpreters false -vv -e ${{ matrix.tox_env }}
+
+      - name: "Test with tox: ${{ matrix.tox_env }}"
+        run: python3 -m tox -e ${{ matrix.tox_env }}
+
+      - name: Combine coverage data
+        # produce a single .coverage file at repo root
+        run: coverage combine .tox/.coverage.*
+
+      - name: Upload coverage data
+        uses: codecov/codecov-action@v1
+        with:
+          name: ${{ matrix.tox_env }}
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)
+
+      - name: Archive logs
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs.zip
+          path: .tox/**/log/
+        # https://github.com/actions/upload-artifact/issues/123
+        continue-on-error: true
+
+      - name: Report junit failures
+        uses: shyim/junit-report-annotations-action@3d2e5374f2b13e70f6f3209a21adfdbc42c466ae
+        with:
+          path: .tox/junit.*.xml
+        if: always()
+
+  check: # This job does nothing and is only used for the branch protection
+    if: always()
+
+    needs:
+      - linters
+      - unit
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Decide whether the needed jobs succeeded or failed
+        uses: re-actors/alls-green@release/v1
+        with:
+          jobs: ${{ toJSON(needs) }}
