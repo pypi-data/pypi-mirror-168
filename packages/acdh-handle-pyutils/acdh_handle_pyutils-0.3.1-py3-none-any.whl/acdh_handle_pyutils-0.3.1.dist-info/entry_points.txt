@@ -1,0 +1,2 @@
+[console_scripts]
+acdh-handle-pyutils = acdh_handle_pyutils.cli:main
