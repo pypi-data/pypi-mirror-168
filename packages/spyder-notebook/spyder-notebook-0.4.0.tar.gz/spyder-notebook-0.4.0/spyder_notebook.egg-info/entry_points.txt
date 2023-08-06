@@ -1,0 +1,2 @@
+[spyder.plugins]
+notebook = spyder_notebook.notebookplugin:NotebookPlugin

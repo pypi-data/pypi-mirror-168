@@ -1,0 +1,9 @@
+spyder<6,>=5.3.3
+jinja2
+jupyter_core
+nbformat
+notebook>=4.3
+qtpy
+qdarkstyle
+requests
+traitlets
