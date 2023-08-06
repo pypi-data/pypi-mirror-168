@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: milabKafkaAPI
+Version: 1.0.1
+Summary: An API for the milab projects with the kafka server.
+Home-page: https://github.com/idc-milab/Kafka-API
+Author: milab
+Author-email: omer.sadeh@milab.idc.ac.il
+License: MIT
+Keywords: kafka api milab butter
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
