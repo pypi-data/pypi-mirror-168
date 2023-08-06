@@ -1,0 +1,13 @@
+---
+collections:
+ - ansible.posix
+ - name: ansible.netcommon
+   version: 2.5.1
+ - community.crypto
+ - community.general
+ - name: community.docker
+ - community.zabbix
+ - community.aws
+ - amazon.aws
+ - google.cloud
+ - azure.azcollection
