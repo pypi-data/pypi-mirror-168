@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: glog-pushover
+Version: 1.0.0
+Summary: A logging system based on structlog with pushover support
+Home-page: https://github.com/Greg0109/glog
+Author: Greg Rabago
+Author-email: greg.rabago@gmail.com
+License: MIT license
+Keywords: glog-pushover
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+====
+GLog
+====
+
+
+.. image:: https://img.shields.io/pypi/v/glog.svg
+        :target: https://pypi.python.org/pypi/glog
+
+.. image:: https://img.shields.io/travis/Greg0109/glog.svg
+        :target: https://travis-ci.com/Greg0109/glog
+
+.. image:: https://readthedocs.org/projects/glog/badge/?version=latest
+        :target: https://glog.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+A logging system based on structlog with pushover support
+
+
+* Free software: MIT license
+* Documentation: https://glog.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+1.0.0 (2022-09-24)
+------------------
+
+* Official release.
+* Add pydantic support
+* New structure
+
+0.1.0 (2022-09-24)
+------------------
+
+* First release on PyPI.
+
+
