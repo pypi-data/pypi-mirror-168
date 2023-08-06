@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: kisters.network-store.model-library
+Version: 0.3.3
+Summary: Model library for the Kisters Network Store ecosystem
+Home-page: https://gitlab.com/kisters/network-store/model-library
+Author: Jesse VanderWees
+Author-email: jesse.vanderwees@kisters-bv.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+License-File: AUTHORS.md
+
+# kisters.network_store.model_library
+
+Base models and associated utilities for the KISTERS Network Store.
+
+## A Note on Entrypoints
+
+To publish a model library using entrypoints, add the domain and path to the
+root directory of your library to the entrypoint
+`kisters.network_store.model_library.util`. For example, the model library for
+the water domain looks as follows:
+
+```python
+entry_points = {
+    "kisters.network_store.model_library.util": [
+        "water = kisters.network_store.model_library.water"
+    ],
+}
+```
+
+For the entrypoint to correctly identify the models in the library, the root
+`__init__.py` must include the `links` and `nodes` modules. Furthermore, the
+parent node of your library's nodes is expected to be called `_Node` and the
+parent link is expected to be called `_Link`. All links and nodes in your
+library will inherit from these two elements.
+
+
