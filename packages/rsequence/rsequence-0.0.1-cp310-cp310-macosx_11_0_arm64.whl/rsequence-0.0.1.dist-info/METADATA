@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rsequence
+Version: 0.0.1
+Summary: Sample numbers from the low discrepancy R sequence
+Author: Edoardo Pona
+Author-email: edoardo.pona@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+
+Stateful generator of R sequence, 
+as described in http://extremelearning.com.au/unreasonable-effectiveness-of-quasirandom-sequences/
