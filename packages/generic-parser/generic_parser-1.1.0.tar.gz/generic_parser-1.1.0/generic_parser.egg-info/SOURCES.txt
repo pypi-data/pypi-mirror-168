@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+generic_parser/__init__.py
+generic_parser/dict_parser.py
+generic_parser/entry_datatypes.py
+generic_parser/entrypoint_parser.py
+generic_parser/tools.py
+generic_parser.egg-info/PKG-INFO
+generic_parser.egg-info/SOURCES.txt
+generic_parser.egg-info/dependency_links.txt
+generic_parser.egg-info/requires.txt
+generic_parser.egg-info/top_level.txt

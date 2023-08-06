@@ -1,0 +1,11 @@
+
+[doc]
+sphinx
+travis-sphinx
+sphinx_rtd_theme
+
+[test]
+pytest>=5.2
+pytest-cov>=2.6
+hypothesis>=4.36.2
+attrs>=19.2.0
