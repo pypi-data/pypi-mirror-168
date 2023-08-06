@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: siba
+Version: 1.0.0
+Summary: A toolkits for replacing tqdm without additional package install!
+Author: dochi
+Keywords: siba,i_cant_use_tqdm
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# help mi!
+
+[![PyPI](https://img.shields.io/pypi/v/siba)](https://pypi.org/project/siba/) 
+[![Downloads](https://pepy.tech/badge/siba)](https://pypi.org/project/siba/)
+
+This package, siba is developed to replace 'tqdm'. The name, siba derives from the Korean word ssibal(or sibal).
+
+## Install
+
+install from PyPI.
+
+```bash
+$ pip install siba
+```
+
+## get started!!!
+simple use!!!
+
+```python
+from siba import siba
+
+def time_sleep(t, clb=None):
+    import time
+    for i in range(t):
+        time.sleep(0.001)
+        if clb is not None:
+            clb(i+1, t) # clb(current state, total)   
+
+    return None
+    
+# use as a call-back func
+clb = siba(title="hello world")
+time_sleep(100, clb)
+```
+
+return:
+```bash
+hello world 100%|████████████████████████|
+```
