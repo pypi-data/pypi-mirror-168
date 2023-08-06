@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/mrshudson/__init__.py
+src/mrshudson/lib.py
+src/mrshudson.egg-info/PKG-INFO
+src/mrshudson.egg-info/SOURCES.txt
+src/mrshudson.egg-info/dependency_links.txt
+src/mrshudson.egg-info/requires.txt
+src/mrshudson.egg-info/top_level.txt
