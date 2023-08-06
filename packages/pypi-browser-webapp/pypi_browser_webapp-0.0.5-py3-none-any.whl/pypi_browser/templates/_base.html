@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="{{url_for('static', path='/favicon.png')}}" />
+        <link rel="stylesheet" href="{{url_for('static', path='/bootstrap-5.2.1.min.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', path='/site.css')}}" />
+        <title>{% block title %}{% endblock %}</title>
+        {% block extra_head %}{% endblock %}
+    </head>
+    <body class="page-{{page}}">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="{{url_for('home')}}">PyPI Browser</a>
+                <form class="d-flex" method="GET" action="{{url_for('search')}}">
+                   <input
+                       id="package-search"
+                       class="form-control me-2"
+                       type="text"
+                       name="package"
+                       placeholder="Package name"
+                       size="15"
+                       value="{{selected_package_name}}"
+                   />
+                   <button class="btn btn-outline-success" type="submit">Go</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            {% block content %}{% endblock %}
+        </div>
+
+        <div class="container mt-5 mb-3">
+            <footer class="border-top py-3 px-3">
+                <p class="text-muted small">
+                    PyPI Browser v{{pypi_browser_version}} is an open source project.
+                    <br />
+                    <a href="{{url_for('package', package='pypi-browser-webapp')}}">View its files with PyPI Browser</a>
+                    <br />
+                    <a href="https://github.com/chriskuehl/pypi-browser">View it on GitHub</a>
+                </p>
+            </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="{{url_for('static', path='/bootstrap-5.2.1.min.js')}}"></script>
+        <script src="{{url_for('static', path='/site.js')}}"></script>
+        {% block extra_js %}{% endblock %}
+    </body>
+</html>
+
+{# vim: ft=jinja
+#}
