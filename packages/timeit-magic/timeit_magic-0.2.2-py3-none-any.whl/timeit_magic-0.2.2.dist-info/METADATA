@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: timeit-magic
+Version: 0.2.2
+Summary: [DEPRECEATED] iPython %timeit magic command in normal Python files
+Home-page: https://github.com/hakonmh/time-magics/tree/timeit-magic-old
+Author: Håkon Magne Holmen
+Author-email: haakonholmen@hotmail.com
+License: MIT
+Classifier: Development Status :: 7 - Inactive
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: time-magics
+
+Use [time-magics](https://pypi.org/project/time-magics) instead.
