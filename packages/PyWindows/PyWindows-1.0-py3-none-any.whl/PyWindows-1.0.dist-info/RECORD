@@ -1,0 +1,10 @@
+PyWindows/PyWindows.py,sha256=cgKbz4fzsLjFp-7GDIIeArdreAxTDpb1bH-1ydc-8OM,2050
+PyWindows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyWindows/lib/C-Python-Window-Lib.dll,sha256=naoK-AhAsfMwF7VdXFAtzZZYGUH3okD1x1pAV9LHQ6A,71680
+PyWindows/lib/SDL2.dll,sha256=aXB9fmmYAv3VgRtI9cm9b9V8hKPkxucxrQaLUkE6rdw,2450944
+PyWindows/lib/SDL2_image.dll,sha256=y_qoPBOEVYRP_xn2zDIOKPIX4M-6NdcXqCcnXEiknEs,165888
+PyWindows/lib/player.png,sha256=--Rxe1RhjB9Q8S6U5unTNaCAVumcAZMUOMe7otdhQuY,546
+PyWindows-1.0.dist-info/METADATA,sha256=BSr9CV6vvCGVNfEIXPXdvDcPVh9V5zRHU803JRFv5ug,1427
+PyWindows-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyWindows-1.0.dist-info/top_level.txt,sha256=27TCIaBxXFbZCSrubSP4q8yP07Od5KW-S6jO_Qt93Zg,10
+PyWindows-1.0.dist-info/RECORD,,
