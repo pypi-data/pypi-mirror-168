@@ -1,0 +1,1 @@
+The johnsnowlabs python library gives you easy access to all features in the John Snow Labs ecosystem
