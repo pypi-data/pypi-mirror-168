@@ -1,0 +1,9 @@
+playsound
+plyer
+pyaudio
+pyttsx3
+pywhatkit
+requests
+speech_recognition
+webbrowser
+winotify
