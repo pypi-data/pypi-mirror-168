@@ -1,0 +1,9 @@
+README.md,sha256=elflG62FdTAbZVX3TapoMe3pC8SJ1gFvb5qWh6u53jY,290
+pylacus/__init__.py,sha256=AECusVxGOYkk7k7bkHF9YRzZOgoDLhPK4kDxirsZrRg,1532
+pylacus/api.py,sha256=KwNTc3KjDBgBA5RzUyU8bNfyJBiC-r23lBsAVymqzpo,7520
+pylacus/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylacus-0.2.0.dist-info/entry_points.txt,sha256=EPTXXeR5ncjZrqruq4oXQzGiV08wiS6FKysYUnaofRk,40
+pylacus-0.2.0.dist-info/LICENSE,sha256=WIHZJd2cKuuapsJhH3OkiJzMIbFCKlkA_FhcAxZyOew,1548
+pylacus-0.2.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+pylacus-0.2.0.dist-info/METADATA,sha256=iyDai9683K5qc3KOuHMJI-joOfpVcfeQB9GNxeguyI4,1467
+pylacus-0.2.0.dist-info/RECORD,,
