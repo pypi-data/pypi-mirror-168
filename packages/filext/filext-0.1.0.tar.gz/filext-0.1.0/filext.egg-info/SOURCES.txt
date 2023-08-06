@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+filext/__init__.py
+filext/checkers.py
+filext/utils.py
+filext.egg-info/PKG-INFO
+filext.egg-info/SOURCES.txt
+filext.egg-info/dependency_links.txt
+filext.egg-info/not-zip-safe
+filext.egg-info/top_level.txt
+tests/__init__.py
+tests/test_checkers.py
