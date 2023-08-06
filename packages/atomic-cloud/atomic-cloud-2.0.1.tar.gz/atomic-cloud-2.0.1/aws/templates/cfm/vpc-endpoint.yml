@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: VpcEndpoint for {{clusterName}} cluster vpc. Used to give S3 bucket access to nginx deployments.
+Resources:
+  VpcEndpoint:
+    Type: AWS::EC2::VPCEndpoint
+    Properties:
+      RouteTableIds:
+        {% for id in routeTableIds%}
+        - {{id}}
+        {% endfor %}
+      ServiceName: {{serviceName}}
+      VpcEndpointType: Gateway
+      VpcId: {{vpcId}}
+Outputs:
+  VpcEndpoint:
+    Value: !Ref VpcEndpoint
+    Description: {{clusterName}}-vpc Endpoint for the nginx service to access S3 buckets.

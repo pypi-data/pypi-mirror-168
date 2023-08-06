@@ -1,0 +1,5 @@
+include aws/templates/cfm/*
+include aws/templates/factsheet/*
+include aws/lambdas/rds/package.zip
+include aws/lambdas/startstop/eks-start/package.zip
+include aws/lambdas/startstop/eks-stop/package.zip

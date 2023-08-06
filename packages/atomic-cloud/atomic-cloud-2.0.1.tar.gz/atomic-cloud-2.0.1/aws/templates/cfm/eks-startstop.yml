@@ -1,0 +1,116 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Lambdas and triggers to automatically scale a cluster down and up outside of work hours.
+Resources:
+  LambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: eks-startstop-lambda-role
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+              - 'sts:AssumeRole'
+            Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+        Version: 2012-10-17
+      Description: Role used by the ... lambda functions.
+      ManagedPolicyArns:
+        - !Sub 'arn:${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
+      Policies:
+        - PolicyName: eks-startstop-policy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Sid: VisualEditor0
+                Effect: Allow
+                Action:
+                  - eks:DescribeNodegroup
+                  - eks:ListNodegroups
+                  - eks:ListUpdates
+                  - eks:UpdateNodegroupConfig
+                  - eks:DescribeCluster
+                Resource:
+                  - !Sub 'arn:aws:eks:*:${AWS::AccountId}:cluster/*'
+                  - !Sub 'arn:aws:eks:*:${AWS::AccountId}:nodegroup/*/*/*'
+              - Sid: VisualEditor1
+                Effect: Allow
+                Action: eks:ListClusters
+                Resource: "*"
+  StopLambda:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      FunctionName: eks-stop
+      Description: Searches for clusters with the tag eks-autostop and sets nodegroup's desired value to the value in the tag.
+      Runtime: python3.8
+      Role: !GetAtt LambdaRole.Arn
+      Handler: index.handler
+      Timeout: 60
+      Code:
+        ZipFile: |
+          def handler(event, context):
+            return { 'message': 'This is a placeholder. Code package has not been uploaded' }
+  StartLambda:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      FunctionName: eks-start
+      Description: Searches for clusters with the tag eks-autostart and sets nodegroup's desired value to the value in the tag.
+      Runtime: python3.8
+      Role: !GetAtt LambdaRole.Arn
+      Handler: index.handler
+      Timeout: 60
+      Code:
+        ZipFile: |
+          def handler(event, context):
+            return { 'message': 'This is a placeholder. Code package has not been uploaded' }
+  StopLambdaPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !GetAtt StopLambda.Arn
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt StopRule.Arn
+      SourceAccount: !Ref 'AWS::AccountId'
+  StartLambdaPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !GetAtt StartLambda.Arn
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt StartRule.Arn
+      SourceAccount: !Ref 'AWS::AccountId'
+  StopRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Description: Runs the eks-stop lambda at 8pm M-F.
+      Name: trigger-eks-stop
+      ScheduleExpression: cron(0 0 ? * MON,TUE,WED,THU,FRI *)
+      Targets:
+        - Arn: !GetAtt StopLambda.Arn
+          Id: StopLambda
+  StartRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Description: Runs the eks-start lambda at 6am M-F.
+      Name: trigger-eks-start
+      ScheduleExpression: cron(0 10 ? * MON,TUE,WED,THU,FRI *)
+      Targets:
+        - Arn: !GetAtt StartLambda.Arn
+          Id: StartLambda
+Outputs:
+  LambdaRole:
+    Value: !GetAtt LambdaRole.Arn
+    Description: The IAM role the lambda's assume when running. Grants access to EKS resources.
+  StopLambda:
+    Value: !GetAtt StopLambda.Arn
+    Description: Python script to shrink nodegroups after work hours.
+  StartLambda:
+    Value: !GetAtt StartLambda.Arn
+    Description: Python script to grow nodegroups before work hours.
+  StopRule:
+    Value: !GetAtt StopRule.Arn
+    Description: Cron job that triggers eks-stop every week day at 8pm.
+  StartRule:
+    Value: !GetAtt StartRule.Arn
+    Description: Cron job that triggers eks-start every week day at 6am.
+
