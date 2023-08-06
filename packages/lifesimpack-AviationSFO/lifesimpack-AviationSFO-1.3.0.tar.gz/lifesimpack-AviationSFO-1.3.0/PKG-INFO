@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: lifesimpack-AviationSFO
+Version: 1.3.0
+Summary: A life 'simulation' package created as a joke.
+Home-page: https://github.com/AviationSFO/lifesimpack
+Author: Steven Weinstein
+Author-email: srw08sf@gmail.com
+Project-URL: Bug Tracker, https://github.com/AviationSFO/lifesimpack/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lifesimpack
+## Description
+Life 'simulation' package for python created as a joke.
+
+## How to use
+import:
+```shell
+import lifesim
+```
+create person:
+```shell
+person_name = lifesim.Person("First Last", height, weight, age (0 is default), status (ignorable))
+```
+# Installation
+## Recomended
+Copy and paste the following code into terminal to install via pip. (Recomended method)
+```shell
+pip install lifesimpack-AviationSFO
+```
+
+## Source Code
+If you wish to do it the hard way, copy and paste the following code into terminal to install via source code.
+```shell
+curl https://raw.githubusercontent.com/AviationSFO/lifesimpack/master/install.sh | bash
+```
