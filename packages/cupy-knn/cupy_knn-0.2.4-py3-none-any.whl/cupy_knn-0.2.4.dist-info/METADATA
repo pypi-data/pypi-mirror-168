@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: cupy-knn
+Version: 0.2.4
+Summary: A fast nearest neighbor index cuda implementation for 3-D points using a left balanced BVH-tree.
+Home-page: https://github.com/mortacious/cupy-knn
+Author: Felix Igelbrink
+Author-email: felix.igelbrink@uni-osnabrueck.de
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mortacious/cupy-knn/issues
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: cupy (>=10.2.0)
+Provides-Extra: examples
+Requires-Dist: plyfile ; extra == 'examples'
+
+# Cupy-KNN
+
+This package provides a fast nearest neighbor index for 3-D points 
+using a Cupy implementation of a left balanced BVH-tree.
+
+## Installation
+
+### Using pip
+```
+pip install cupy-knn
+```
+
+### From source
+```
+git clone https://github.com/mortacious/cupy-knn.git
+cd cupy-knn
+python setup.py install
+```
+
+## Acknowledgements
+
+This package is inspired by the approach presented in the following paper:
+
+```bib
+@inproceedings{jakob2021optimizing,
+  title={Optimizing LBVH-Construction and Hierarchy-Traversal to accelerate kNN Queries on Point Clouds using the GPU},
+  author={Jakob, Johannes and Guthe, Michael},
+  booktitle={Computer Graphics Forum},
+  volume={40},
+  number={1},
+  pages={124--137},
+  year={2021},
+  organization={Wiley Online Library}
+}
+```
+
