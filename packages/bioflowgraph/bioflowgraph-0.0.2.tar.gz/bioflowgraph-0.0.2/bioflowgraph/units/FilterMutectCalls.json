@@ -1,0 +1,33 @@
+{
+    "executor": "gatk",
+    "sub_executor": "FilterMutectCalls",
+    "parameters": [
+        {
+            "name": "R",
+            "flag": "-R",
+            "type": "ref",
+            "default": "hg38_fa"
+        },
+        {
+            "name": "contamination_table_file",
+            "flag": "--contamination-table",
+            "is_input": true
+        },
+        {
+            "name": "ob_priors",
+            "flag": "--ob-priors",
+            "is_input": true
+        },
+        {
+            "name": "vcfgz_file",
+            "flag": "-V",
+            "is_input": true
+        },
+        {
+            "name": "filter_vcfgz_file",
+            "flag": "-O",
+            "is_output": true,
+            "default": "${Tumor}.filter.vcf.gz"
+        }
+    ]
+}

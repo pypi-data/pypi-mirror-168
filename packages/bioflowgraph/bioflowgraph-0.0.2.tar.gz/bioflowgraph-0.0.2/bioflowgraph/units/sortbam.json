@@ -1,0 +1,48 @@
+{
+    "executor": "gatk",
+    "sub_executor": "SortSam",
+    "parameters": [
+        {
+            "name": "bamfile",
+            "flag": "--INPUT",
+            "is_input": true
+        },
+        {
+            "name": "temp_dir",
+            "flag": "--TMP_DIR",
+            "type": "path",
+            "default": "${OutputDir}/temp"
+        },
+        {
+            "name": "sorted_bamfile",
+            "flag": "--OUTPUT",
+            "is_output": true,
+            "default": "${SampleID}.sort.bam"
+        },
+        {
+            "name": "sort_order",
+            "flag": "--SORT_ORDER",
+            "default": "\"coordinate\""
+        },
+        {
+            "name": "create_index",
+            "flag": "--CREATE_INDEX",
+            "default": "true"
+        },
+        {
+            "name": "create_md5_file",
+            "flag": "--CREATE_MD5_FILE",
+            "default": "false"
+        },
+        {
+            "name": "log_file",
+            "type": "stdout",
+            "default": "${SampleID}.Sort.log"
+        },
+        {
+            "name": "err_file",
+            "type": "stderr",
+            "default": "${SampleID}.Sort.err"
+        }
+    ]
+}
