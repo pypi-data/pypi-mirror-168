@@ -1,0 +1,154 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry]
+authors = ["Denis Rosset <physics@denisrosset.com>"]
+description = "Configuration from command line parameters, configuration files and environment variables"
+license = "MIT"
+name = "configpile"
+readme = "README.rst"
+repository = "https://github.com/denisrosset/configpile.git"
+version = "10.1.0"
+
+[tool.poetry.dependencies]
+class-doc = "^0.2.6"
+python = "^3.8"
+typing-extensions = "^4.1.1"
+
+parsy = {version = "^1.4.0", optional = true}
+rich = {version = "^11.2.0", optional = true}
+
+myst-nb = {version = "^0.13.2", optional = true}
+sphinx = {version = "4.3.2", optional = true}
+sphinx-argparse = {version = "^0.3.1", optional = true}
+sphinx-autodoc-typehints = {version = "^1.17.0", optional = true}
+sphinx-book-theme = {version = "^0.2.0", optional = true}
+sphinxcontrib-programoutput = {version = "^0.17", optional = true}
+
+[tool.poetry.extras]
+docs = [
+  "myst-nb",
+  "sphinx",
+  "sphinx-argparse",
+  "sphinx-autodoc-typehints",
+  "sphinx-book-theme",
+  "sphinxcontrib-programoutput",
+]
+parsy = ["parsy"]
+rich = ["rich"]
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+commitizen = "^2.21.2"
+doc8 = "^0.10.1"
+esbonio = "^0.13.0"
+isort = "^5.10.1"
+mypy = "0.941"
+pylint = "^2.13.4"
+pytest = "^7.0.1"
+pytest-cov = "^3.0.0"
+rstcheck = "^3.3.1"
+tomli = "^2.0.1"
+
+[tool.pylint.BASIC]
+
+argument-rgx = "[a-z_][a-z0-9_]{0,30}$"
+attr-rgx = "[a-z_][a-z0-9_]{0,30}$"
+class-attribute-rgx = "[a-z_][a-z0-9_]{0,30}$"
+variable-rgx = "[a-z_][a-z0-9_]{0,30}$"
+typevar-rgx='_?[A-Z][A-Za-z0-9]{0,30}'
+
+
+[tool.pylint.messages_control]
+disable = [
+  "assignment-from-none", # this is caught by mypy and has false positives
+  "no-value-for-parameter", # this is caught by mypy and has false positives
+  "unused-argument", # happens quite often in OOP hierarchies
+]
+
+[tool.mypy]
+python_version = "3.8"
+
+files = [
+  "src/configpile",
+  "tests",
+]
+mypy_path = "$MYPY_CONFIG_FILE_DIR/src"
+
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+show_none_errors = true
+strict_equality = true
+strict_optional = true
+warn_redundant_casts = true
+warn_return_any = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = 'parsy'
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = 'class_doc'
+
+[tool.pytest.ini_options]
+addopts = [
+  "--tb=short",
+  "--doctest-modules",
+#  "--cov=configpile",
+#  "--cov=tests",
+#  "--cov-report=term",
+#  "--cov-report=xml",
+]
+
+doctest_optionflags = ['NORMALIZE_WHITESPACE', 'IGNORE_EXCEPTION_DETAIL', 'ELLIPSIS']
+
+testpaths = [
+  "src/configpile",
+  "tests",
+]
+
+[tool.black]
+line-length = 99
+target_version = ['py38']
+
+[tool.doc8]
+max-line-length = 99
+
+[tool.isort]
+line_length = 99
+profile = "black"
+py_version = 38
+
+[tool.commitizen]
+annotated_tag = true
+name = "cz_conventional_commits"
+style = [
+  ["qmark", "fg:#ff9d00 bold"],
+  ["question", "bold"],
+  ["answer", "fg:#ff9d00 bold"],
+  ["pointer", "fg:#ff9d00 bold"],
+  ["highlighted", "fg:#ff9d00 bold"],
+  ["selected", "fg:#cc5454"],
+  ["separator", "fg:#cc5454"],
+  ["instruction", ""],
+  ["text", ""],
+  ["disabled", "fg:#858585 italic"],
+]
+tag_format = "v$major.$minor.$patch$prerelease"
+update_changelog_on_bump = true
+version = "10.1.0"
+version_files = [
+  "src/configpile/__init__.py:version",
+  "pyproject.toml:version",
+]
