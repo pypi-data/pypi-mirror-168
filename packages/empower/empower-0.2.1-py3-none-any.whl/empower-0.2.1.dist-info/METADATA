@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: empower
+Version: 0.2.1
+Summary: Goodbye Inheritance
+License: Apache-2.0
+Author: ZhengYu, Xu
+Author-email: zen-xu@outlook.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytest (>=7.1.3,<8.0.0)
+Requires-Dist: wrapt (>=1.11,<2.0)
+Description-Content-Type: text/markdown
+
+# empower
+
+Goodbye Inheritance!!!
+
+## Install
+
+```python
+pip install empower
+```
+
+## Usage
+
+You have a `Duck` class without any methods.
+
+```python
+# mod/__init__.py
+
+class Duck:
+    ...
+```
+
+You define a trait `Fly` for `Duck`
+```python
+# mod/fly.py
+
+from empower import impl, Trait
+
+from . import Duck
+
+@impl(Duck)
+class Fly(Trait):
+    def fly(self):
+        return "fly"
+```
+
+And you define another trait `Run` for `Duck`
+```python
+# mod/run.py
+
+from empower import impl, Trait
+
+from . import Duck
+
+
+@impl(Duck)
+class Run(Trait):
+    def run(self):
+        return "run"
+```
+
+Now you can add empower `Duck`
+```python
+# main.py
+
+from mod import Duck
+from empower import use
+
+duck = Duck()
+
+use("mod.fly")  # load fly trait
+use("mod.run")  # load run trait
+
+assert duck.fly() == "fly"
+assert duck.run() == "run"
+```
