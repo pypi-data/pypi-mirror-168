@@ -1,0 +1,14 @@
+qt_wsi_reg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qt_wsi_reg/registration_tree.py,sha256=XzbNs1pGNDHVmIQSH85iu3-L7RJ0wftLL48eqlpTVEY,53705
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_anhir.py,sha256=tiLitYXdpLeGK2-AQv73l8TDwhRb2w5epfW-9celnT0,3001
+tests/test_ccmct.py,sha256=MtfIZIdjtGR6Byt81iW9qBYrK3Y5uBEsB2FQMzau60I,2880
+tests/test_ccmct_pe.py,sha256=fUXYZXFMzbCgErV2KNjc8pNwxmc8Z3BIuiqCO3zw64c,2231
+tests/test_cyto.py,sha256=rFdy8uwBT_TGOpgzyZkvOsF5iKX5nOCcvXIQtpenWWg,5231
+tests/test_ihche.py,sha256=HvvnZNUqYJOd7bAEYvsvBYNr6dxqAiNTUDeQIxTgpkA,2072
+tests/test_rotation.py,sha256=-lqGz1U4_cGl58LBKHu72iVhvlQRPteB-in7C17YYDY,2288
+qt_wsi_registration-0.0.12.dist-info/LICENSE,sha256=OnKtuFhwQk_rVU208dAWPJ5RR-N-tjwhLOfSLQH91ZA,1095
+qt_wsi_registration-0.0.12.dist-info/METADATA,sha256=dHAwm_3CI-ZxXGpkZPubTOaPSlOdr-n-tHqFALBAMI0,2797
+qt_wsi_registration-0.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qt_wsi_registration-0.0.12.dist-info/top_level.txt,sha256=h6IVvWTQvx1rqVmLEutY-_N0UEsXFRmYuU0MN79MCdY,17
+qt_wsi_registration-0.0.12.dist-info/RECORD,,
