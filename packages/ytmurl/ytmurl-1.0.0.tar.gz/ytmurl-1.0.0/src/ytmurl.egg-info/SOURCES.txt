@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ytmurl/__init__.py
+src/ytmurl/get.py
+src/ytmurl.egg-info/PKG-INFO
+src/ytmurl.egg-info/SOURCES.txt
+src/ytmurl.egg-info/dependency_links.txt
+src/ytmurl.egg-info/entry_points.txt
+src/ytmurl.egg-info/requires.txt
+src/ytmurl.egg-info/top_level.txt
+tests/test_get.py
