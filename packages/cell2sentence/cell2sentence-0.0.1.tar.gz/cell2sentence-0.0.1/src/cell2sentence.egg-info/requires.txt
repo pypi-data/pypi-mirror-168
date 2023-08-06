@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+tqdm
+scanpy
+anndata
+sklearn
+jellyfish
+igraph

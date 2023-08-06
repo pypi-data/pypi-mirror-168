@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cell2sentence/__init__.py
+src/cell2sentence/csdata.py
+src/cell2sentence/integrations.py
+src/cell2sentence/transforms.py
+src/cell2sentence/utils.py
+src/cell2sentence.egg-info/PKG-INFO
+src/cell2sentence.egg-info/SOURCES.txt
+src/cell2sentence.egg-info/dependency_links.txt
+src/cell2sentence.egg-info/requires.txt
+src/cell2sentence.egg-info/top_level.txt
