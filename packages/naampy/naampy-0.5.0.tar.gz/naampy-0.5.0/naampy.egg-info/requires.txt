@@ -1,0 +1,10 @@
+pandas>=0.19.2
+tensorflow==2.8.*
+requests
+tqdm
+
+[dev]
+check-manifest
+
+[test]
+coverage
