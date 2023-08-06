@@ -1,0 +1,14 @@
+diffusers==0.3.0
+flask==1.1.4
+flask_cors
+flaskwebgui
+loguru
+markupsafe==2.0.1
+opencv-python
+pydantic
+pytest
+scikit-image==0.19.3
+torch>=1.8.2
+tqdm
+transformers==4.20.0
+yacs
