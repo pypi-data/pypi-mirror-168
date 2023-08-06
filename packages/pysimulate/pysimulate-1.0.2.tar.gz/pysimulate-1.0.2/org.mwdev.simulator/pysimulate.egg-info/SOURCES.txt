@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+org.mwdev.simulator/pysimulate.egg-info/PKG-INFO
+org.mwdev.simulator/pysimulate.egg-info/SOURCES.txt
+org.mwdev.simulator/pysimulate.egg-info/dependency_links.txt
+org.mwdev.simulator/pysimulate.egg-info/requires.txt
+org.mwdev.simulator/pysimulate.egg-info/top_level.txt
