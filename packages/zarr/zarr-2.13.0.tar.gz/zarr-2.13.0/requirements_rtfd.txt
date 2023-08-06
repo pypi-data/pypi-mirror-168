@@ -1,0 +1,9 @@
+asciitree
+setuptools
+setuptools_scm
+sphinx
+sphinx-issues
+sphinx-copybutton
+sphinx-rtd-theme
+numpydoc
+numpy!=1.21.0
