@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nl2ltl
+Version: 0.0.1
+Summary: From Natural Language to Linear-time Temporal Logic
+Author: Tathagata Chakraborti <tathagata.chakraborti1@ibm.com>, Francesco Fuggitti <fuggitti@diag.uniroma1.it>
+License: MIT
+Keywords: natural language nlu ltl temporal logic
+Classifier: Intended Audience :: Science/Research
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+README.md, LICENSE
