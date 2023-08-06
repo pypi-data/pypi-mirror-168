@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: startstop
+Version: 0.1.4
+Summary: Tiny process manager for Linux, MacOS and Unix-like systems
+Home-page: https://github.com/yuriescl/startstop
+License: MIT
+Author: Yuri Escalianti
+Author-email: yuriescl@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
