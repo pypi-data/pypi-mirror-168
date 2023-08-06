@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dicom-cnn
+Version: 0.0.1
+Summary: Librairie to sort - process dicom to feed CNN models
+Home-page: https://github.com/Pixilib/dicom_cnn
+Requires-Python: ~=3.9
+License-File: LICENSE
+
