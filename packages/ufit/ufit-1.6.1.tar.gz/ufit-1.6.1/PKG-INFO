@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ufit
+Version: 1.6.1
+Summary: Universal scattering data fitting tool
+Home-page: https://bitbucket.org/birkenfeld/ufit/
+Author: Georg Brandl
+Author-email: georg.brandl@frm2.tum.de
+License: BSD-2-Clause
+Platform: UNKNOWN
+Provides-Extra: repl
+Provides-Extra: minuit
+License-File: LICENSE
+
+UNKNOWN
+
