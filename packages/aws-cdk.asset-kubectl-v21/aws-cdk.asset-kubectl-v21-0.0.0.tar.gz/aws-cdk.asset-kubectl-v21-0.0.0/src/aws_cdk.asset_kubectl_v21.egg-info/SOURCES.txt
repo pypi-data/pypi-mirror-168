@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+setup.py
+src/aws_cdk.asset_kubectl_v21.egg-info/PKG-INFO
+src/aws_cdk.asset_kubectl_v21.egg-info/SOURCES.txt
+src/aws_cdk.asset_kubectl_v21.egg-info/dependency_links.txt
+src/aws_cdk.asset_kubectl_v21.egg-info/requires.txt
+src/aws_cdk.asset_kubectl_v21.egg-info/top_level.txt
+src/aws_cdk/asset_kubectl_v21/__init__.py
+src/aws_cdk/asset_kubectl_v21/py.typed
+src/aws_cdk/asset_kubectl_v21/_jsii/__init__.py
+src/aws_cdk/asset_kubectl_v21/_jsii/asset-kubectl-v21@0.0.0.jsii.tgz
