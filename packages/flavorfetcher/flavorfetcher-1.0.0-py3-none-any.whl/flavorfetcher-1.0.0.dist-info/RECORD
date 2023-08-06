@@ -1,0 +1,13 @@
+flavorfetcher/__init__.py,sha256=aHTye0r6igdzE864n7nAnKwNyss1Jyikao0tt1eErkA,62
+flavorfetcher/datamunging.py,sha256=wCFK0F-iarE3Tq5C3KxTaPhcKwrAGtB3Zw9Jb_US6uE,7354
+flavorfetcher/descriptor_model.py,sha256=WTm7pU5tFwiWS_AVPnn1J8TJ-_WKBVsINhHdYWZdqzU,6716
+flavorfetcher/makepredictions.py,sha256=bdbyjIzRZa_SgcH9G_7ovUr-HvvK1uWYmuhrd2fImHU,6369
+flavorfetcher/data/100_2021-04-20 10_38_24.203316_3_epochs_re-run_model.h5,sha256=6RIwH5BiyrqptjMJBQ1jwZdVWkL7SCxTKYDQI3b4wfA,15063072
+flavorfetcher/data/100_2021-04-20 10_38_24.203316_3_epochs_re-run_model.json,sha256=zBALGq4ptfrmTluSsbJI4gY0P3Z7zqodk0JCe4hGeUg,70
+flavorfetcher/data/Example Whiskey Reviews.csv,sha256=Rf3wEaMpnqxriQ1gE8ogFeigwTJcubRG5edn44z-1UA,476751
+flavorfetcher/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flavorfetcher-1.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+flavorfetcher-1.0.0.dist-info/METADATA,sha256=kj4VBs3KqChs57xNZt2Kb8pFpM318QZG3_KrdAYsnXA,56511
+flavorfetcher-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flavorfetcher-1.0.0.dist-info/top_level.txt,sha256=7YASzv94Rhu8a9_eF-I2oF4D3Sx8qcx-nGFMGzeSxwc,14
+flavorfetcher-1.0.0.dist-info/RECORD,,
