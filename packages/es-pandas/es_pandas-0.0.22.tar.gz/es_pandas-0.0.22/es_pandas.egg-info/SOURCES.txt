@@ -1,0 +1,15 @@
+.gitattributes
+.gitignore
+.travis.yml
+LICENSE
+README.md
+requirements.txt
+setup.py
+test.py
+es_pandas/__init__.py
+es_pandas/es_pandas.py
+es_pandas.egg-info/PKG-INFO
+es_pandas.egg-info/SOURCES.txt
+es_pandas.egg-info/dependency_links.txt
+es_pandas.egg-info/requires.txt
+es_pandas.egg-info/top_level.txt

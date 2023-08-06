@@ -1,0 +1,13 @@
+language: python
+
+services:
+  - elasticsearch
+
+python:
+  - "3.7"
+
+script:
+  - curl "localhost:9200"
+  - python test.py
+  - curl "localhost:9200/_cat/indices"
+  - curl "localhost:9200/demo/_search?pretty"

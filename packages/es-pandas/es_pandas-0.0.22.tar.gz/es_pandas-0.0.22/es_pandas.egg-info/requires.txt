@@ -1,0 +1,4 @@
+pandas
+elasticsearch
+tqdm
+requests
