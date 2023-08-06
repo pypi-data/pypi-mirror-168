@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/pyaccsharedmemory.py
+src/pyaccsharedmemory.egg-info/PKG-INFO
+src/pyaccsharedmemory.egg-info/SOURCES.txt
+src/pyaccsharedmemory.egg-info/dependency_links.txt
+src/pyaccsharedmemory.egg-info/top_level.txt
