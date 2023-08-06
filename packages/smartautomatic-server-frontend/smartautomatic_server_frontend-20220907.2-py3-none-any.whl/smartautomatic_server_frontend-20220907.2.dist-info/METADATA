@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: smartautomatic-server-frontend
+Version: 20220907.2
+Summary: The SmartAutomatic frontend
+Author-email: SmartAutomatic <lavstudia@gmail.com>
+Project-URL: Homepage, https://smartautomatic.duckdns.org:8091
+Platform: any
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# SmartAutomatic Frontend
