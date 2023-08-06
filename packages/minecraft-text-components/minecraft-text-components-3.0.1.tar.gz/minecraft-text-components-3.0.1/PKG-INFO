@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: minecraft-text-components
+Version: 3.0.1
+Summary: A library for manipulating Minecraft's raw JSON text components
+Home-page: https://github.com/VanillaTweaks/minecraft-text-components
+License: MIT
+Keywords: minecraft,pack,data,datapack,resource,resourcepack,raw,json,text,components
+Author: VanillaTweaks
+Author-email: team@vanillatweaks.net
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: typing-extensions (>=4.3.0,<5.0.0)
+Project-URL: Documentation, https://github.com/VanillaTweaks/minecraft-text-components
+Project-URL: Repository, https://github.com/VanillaTweaks/minecraft-text-components
+Description-Content-Type: text/markdown
+
+# minecraft-text-components
+
+A Python library for manipulating Minecraft's raw JSON text components
+
