@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rollcred"
+version = "0.0.6"
+description = ""
+authors = ["trejas <4763901+trejas@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "rollcred"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "7.1.2"
+pyperclip = "1.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
