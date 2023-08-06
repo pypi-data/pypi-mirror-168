@@ -1,0 +1,10 @@
+navinfo_tool/__init__.py,sha256=2MKKHQK68cPtvyF7uQsMKGq3hVqqtJ5la6yugs01_Bc,2288
+navinfo_tool/end_words.py,sha256=SZiBEzj7CD-UDdVyHBAxquhNpdlEajFkaXPXcKlTylM,22792
+navinfo_tool/rule_error_identification.py,sha256=OgnvCcG2jpJ7r-ziVqwJ31RpJWZ4kCyIr_4A3tJBxWA,42215
+navinfo_tool/rule_error_identification1009.py,sha256=RqiVx-BuIqrgiknavPbKpRCCdlL-eVCz9VcQmLBMqKg,43398
+navinfo_tool/same_stroke.py,sha256=Zvt7rOdwy62vQRL3xNs2VlPWWg-brwH7TA9Qt5haBss,25226
+navinfo_tool/utils.py,sha256=yExfs17BDNvRjkWTgOOZ60plQyuOSdjSe5W4DYXATM0,18759
+navinfo_tool-0.1.5.dist-info/METADATA,sha256=07zCv81RqOzG877k8sOl9iBqY1Gd6WKvwjdHP81uhzE,467
+navinfo_tool-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+navinfo_tool-0.1.5.dist-info/top_level.txt,sha256=DXrrWYP4C26E0PoBqeSQRUpjSmd_pwnsZPseKKckeDg,13
+navinfo_tool-0.1.5.dist-info/RECORD,,
