@@ -1,0 +1,2 @@
+[console_scripts]
+pg_fdw = pg_fdw.main:main

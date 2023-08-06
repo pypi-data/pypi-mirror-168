@@ -1,0 +1,16 @@
+config/config.yaml,sha256=5aULyyvJbwdSgrVkY7ePk4qKqjS0VnCqCY4uik9RJok,502
+config/default.yaml,sha256=TrgEMxYkmvqEjNOyvFXHgxMjSi-S3fZPLrGT1OmdEz0,881
+config/schema.yaml,sha256=1HoH2QNFG3XaFdZM-cCJHpV6_u4H7OlMboGZmGi9n7s,1769
+pg_fdw/__init__.py,sha256=SWePPDqcsAUQAAjNMOdKVv6xAxN8UW2qUD5gRrngIYQ,145
+pg_fdw/app.py,sha256=zBNpAp7mAy8W-lM3ueTmrkgA5aR7wuLAYaY9T7N46es,1033
+pg_fdw/config.py,sha256=2XkDyOoqia5jc8lpOgqhgyK3Nnu9OR9fFdEUMG58TXg,2161
+pg_fdw/connection.py,sha256=o1MTN1aDh_bWONDMrOGSphMOWUh_vWCkYxlP73gEWhk,1454
+pg_fdw/extension.py,sha256=vmlEYkPy2dd4f-q_bJnwSfU4H9-1IFIi0RrDMGHZdUY,1276
+pg_fdw/fdw.py,sha256=Ni_RMwTkB7FuiFu7UihsWhYUkaKmNmEGiy8PBaf0iAo,6940
+pg_fdw/main.py,sha256=xpYb6mcfIMd0eWsljGzZ0r9zlZgHWcXkFKUFmBn4y7w,1296
+pg_fdw-0.0.3.dist-info/LICENSE,sha256=u6mywCobSMezaSSXECe0RvfmyHr3Brti-MPMXHN-PiE,1067
+pg_fdw-0.0.3.dist-info/METADATA,sha256=jgltLE5oV7NQRQqJXnvIcz7TX4qr0CLGgj0IoyTEjeo,2039
+pg_fdw-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pg_fdw-0.0.3.dist-info/entry_points.txt,sha256=REU9_Q7GgIzONlVU3I1wjGLZHQrg7Yn9y1PTxDGKJzM,44
+pg_fdw-0.0.3.dist-info/top_level.txt,sha256=rK-03iyJEcz9tjRNjPZaqIlC8mbk92igPOgX1Hdgl4s,14
+pg_fdw-0.0.3.dist-info/RECORD,,
