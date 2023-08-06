@@ -1,0 +1,9 @@
+README.md
+setup.py
+synctool/__init__.py
+synctool/sync.py
+synctooltest.egg-info/PKG-INFO
+synctooltest.egg-info/SOURCES.txt
+synctooltest.egg-info/dependency_links.txt
+synctooltest.egg-info/requires.txt
+synctooltest.egg-info/top_level.txt
