@@ -1,0 +1,14 @@
+pydantic
+typer
+jinja2
+glom
+
+[dev]
+black
+build
+glom
+isort
+mypy
+pytest
+pytest-cov
+versioneer
