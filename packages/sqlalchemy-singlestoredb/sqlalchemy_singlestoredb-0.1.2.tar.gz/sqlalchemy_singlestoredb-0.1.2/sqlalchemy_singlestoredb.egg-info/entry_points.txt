@@ -1,0 +1,10 @@
+[sqlalchemy.dialects]
+singlestoredb = sqlalchemy_singlestoredb:dialect
+singlestoredb.cymysql = sqlalchemy_singlestoredb:dialect
+singlestoredb.http = sqlalchemy_singlestoredb:dialect
+singlestoredb.https = sqlalchemy_singlestoredb:dialect
+singlestoredb.mariadb = sqlalchemy_singlestoredb:dialect
+singlestoredb.mysqlconnector = sqlalchemy_singlestoredb:dialect
+singlestoredb.mysqldb = sqlalchemy_singlestoredb:dialect
+singlestoredb.pymysql = sqlalchemy_singlestoredb:dialect
+singlestoredb.pyodbc = sqlalchemy_singlestoredb:dialect

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sqlalchemy_singlestoredb/__init__.py
+sqlalchemy_singlestoredb/base.py
+sqlalchemy_singlestoredb/reflection.py
+sqlalchemy_singlestoredb.egg-info/PKG-INFO
+sqlalchemy_singlestoredb.egg-info/SOURCES.txt
+sqlalchemy_singlestoredb.egg-info/dependency_links.txt
+sqlalchemy_singlestoredb.egg-info/entry_points.txt
+sqlalchemy_singlestoredb.egg-info/requires.txt
+sqlalchemy_singlestoredb.egg-info/top_level.txt
+sqlalchemy_singlestoredb/tests/__init__.py
+sqlalchemy_singlestoredb/tests/test.sql
+sqlalchemy_singlestoredb/tests/test_basics.py
