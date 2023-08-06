@@ -1,0 +1,3 @@
+[console_scripts]
+teletgcf=teletgcf.cli:app
+
