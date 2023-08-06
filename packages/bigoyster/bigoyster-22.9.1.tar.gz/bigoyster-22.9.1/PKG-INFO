@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bigoyster
+Version: 22.9.1
+Summary: Python wrapper for Deals Media API
+Home-page: https://gitlab.com/mvmdata/bigoyster
+Author: Mark Meadows
+Author-email: mark@mvmdata.com
+License: MIT
+Keywords: Big Oyster,python,Petzmobile,coupons
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Python wrapper for Deals Media API
