@@ -1,0 +1,11 @@
+scipy
+xarray
+h5py
+matplotlib
+pandas
+plotly
+numpy
+pyevtk
+classes
+f90nml
+meshio
