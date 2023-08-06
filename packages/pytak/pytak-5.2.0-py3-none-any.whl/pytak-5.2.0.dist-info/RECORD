@@ -1,0 +1,14 @@
+pytak/__init__.py,sha256=Je9TxYHa8ylousXEGGpKPg_H8BxKiv0yPMpiGtrvAKQ,1805
+pytak/classes.py,sha256=vPwgfUUcwMvgPu5Evah-WJjyh0qG01HvTh5trKle7xo,9570
+pytak/client_functions.py,sha256=lJSvFM3CjbK9ePy8P1VeqrS2FFtn0IkbkOcMd4h44gM,10783
+pytak/commands.py,sha256=qvw1mkh7-v8lTweJadksePzQokV3RjP9yvjmWB3aMqA,1040
+pytak/constants.py,sha256=e9jSZR5hqiAtibjFm01bIvP9JyKuHSfr9uGcTrDwEqI,2310
+pytak/functions.py,sha256=c-MPSE9XfVWrTvHpVyh_v3J6d1xEuhI_xjxk_92KnTI,2860
+pytak/asyncio_dgram/LICENSE,sha256=8QluGVYvSjH2KxV9s0fkcELVhteMO1TGF0prEWlxus4,1071
+pytak/asyncio_dgram/__init__.py,sha256=75JP4p188SlSVNd1HA1alQcMK-EpwfKFxikeHPRCRKk,61
+pytak/asyncio_dgram/aio.py,sha256=PMLJvARHolXRYFfIelkxJiW9G_Wg32kj7SmLBMyOqeU,9784
+pytak-5.2.0.dist-info/LICENSE,sha256=Mavf7oXLVuCqwh30KXnGNT0v9mHUS1AP9Q3RvMk8pg0,565
+pytak-5.2.0.dist-info/METADATA,sha256=_KrewrIOSzFp9ftCb8ZJZu43iUlQjiToKze9NXOxmNY,10705
+pytak-5.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytak-5.2.0.dist-info/top_level.txt,sha256=N81yEQruCBBn_NPDQtqlaZe03b9QThW9rtEZ5lheUMs,6
+pytak-5.2.0.dist-info/RECORD,,
