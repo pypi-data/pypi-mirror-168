@@ -1,0 +1,3 @@
+[console_scripts]
+ansible-gendoc=ansible_gendoc.main:app
+
