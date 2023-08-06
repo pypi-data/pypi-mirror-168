@@ -1,0 +1,7 @@
+tencentcos_storage/__init__.py,sha256=fhI56CuvTT6x6FJDnDhyIdNcIPGQz5V-y1EmnaY_3wA,54
+tencentcos_storage/file.py,sha256=ro35_4CdbyGYE3vzKH6j6oQpXOVzJaJm0C8gDews51E,971
+tencentcos_storage/storage.py,sha256=8kFuEUH4lqLL-iC1fE2Ow0xHA0vGbJOPS4V2cO9Qp2g,4996
+django_cos_storage-0.5.0.dist-info/LICENSE,sha256=rbGH6NCqjmIUk1AnV_3bVIrh4IEJ3FZm7E_JLfGysUw,1548
+django_cos_storage-0.5.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+django_cos_storage-0.5.0.dist-info/METADATA,sha256=kxQKwcqUxt9nsAzrUyYlCDFZoSWMCSxcaJj4zS3aE7A,3556
+django_cos_storage-0.5.0.dist-info/RECORD,,
