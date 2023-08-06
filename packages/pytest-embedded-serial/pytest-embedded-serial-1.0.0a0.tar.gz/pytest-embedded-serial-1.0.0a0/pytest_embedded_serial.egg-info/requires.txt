@@ -1,0 +1,2 @@
+pytest-embedded~=1.0.0a0
+pyserial~=3.0
