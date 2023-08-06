@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gym-sch
+Version: 0.0.3
+Summary: An OpenAI Gym Env for Pandas
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+
+UNKNOWN
+
