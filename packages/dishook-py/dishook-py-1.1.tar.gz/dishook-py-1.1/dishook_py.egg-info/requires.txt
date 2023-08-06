@@ -1,0 +1,7 @@
+asyncio
+requests
+aiohttp
+
+[tutorial]
+mlxtend>=0.18.0
+xgboost>=1.4.2

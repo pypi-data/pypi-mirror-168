@@ -1,0 +1,7 @@
+setup.py
+dishook/__init__.py
+dishook_py.egg-info/PKG-INFO
+dishook_py.egg-info/SOURCES.txt
+dishook_py.egg-info/dependency_links.txt
+dishook_py.egg-info/requires.txt
+dishook_py.egg-info/top_level.txt
