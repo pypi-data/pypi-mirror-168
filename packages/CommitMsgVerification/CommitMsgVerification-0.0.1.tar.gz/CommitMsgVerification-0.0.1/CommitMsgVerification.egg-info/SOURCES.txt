@@ -1,0 +1,8 @@
+setup.py
+CommitMsgVerification/__init__.py
+CommitMsgVerification/commit_m_ver.py
+CommitMsgVerification.egg-info/PKG-INFO
+CommitMsgVerification.egg-info/SOURCES.txt
+CommitMsgVerification.egg-info/dependency_links.txt
+CommitMsgVerification.egg-info/requires.txt
+CommitMsgVerification.egg-info/top_level.txt
