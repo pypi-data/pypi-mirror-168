@@ -1,0 +1,9 @@
+furiosa/models/__init__.py,sha256=-IZ9Kq3bSwmTMLVZeKbTgqqpYyb9q61iJgMSwJ_jh6Y,23
+furiosa/models/git_version.txt,sha256=wNc1oiOj-tnyBDSQPuYCDi2ImaUouShNotH8O_2evGI,21
+furiosa/models/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+furiosa/models/nonblocking/__init__.py,sha256=-IZ9Kq3bSwmTMLVZeKbTgqqpYyb9q61iJgMSwJ_jh6Y,23
+furiosa/models/nonblocking/vision/__init__.py,sha256=RYPXxkEOQPtX4RZdvksulUsSFlAT3BD9656S4eAElTw,846
+furiosa/models/vision/__init__.py,sha256=PQ2nB15P0GEuAuIGgLUtDYGRE8LoooOhPAdWobI4WkE,805
+furiosa_models-0.7.4.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+furiosa_models-0.7.4.dist-info/METADATA,sha256=2p-x1XYvxx-F2-MzdsBJlHkjXWieikQj1gWdbFtCDnc,2199
+furiosa_models-0.7.4.dist-info/RECORD,,
