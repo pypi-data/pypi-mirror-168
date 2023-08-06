@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+selas/__init__.py
+selas/cli.py
+selas/database.py
+selas.egg-info/PKG-INFO
+selas.egg-info/SOURCES.txt
+selas.egg-info/dependency_links.txt
+selas.egg-info/entry_points.txt
+selas.egg-info/requires.txt
+selas.egg-info/top_level.txt
