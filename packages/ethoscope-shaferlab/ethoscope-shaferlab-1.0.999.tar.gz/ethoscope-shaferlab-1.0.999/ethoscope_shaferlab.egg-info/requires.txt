@@ -1,0 +1,15 @@
+numpy>=1.6.1
+scipy>=0.15.1
+
+[dev]
+Sphinx>=1.4.4
+sphinx_rtd_theme>=0.1.9
+mock>=2.0.0
+
+[device]
+picamera>=1.8
+GitPython>=1.0.1
+mysql-connector-python>=8.0.16
+cherrypy>=3.6.0
+pyserial>=2.7
+bottle>=0.12.8

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ethoscope-shaferlab
+Version: 1.0.999
+Summary: The API of the Ethoscope device.
+Home-page: https://github.com/gilestrolab/ethoscope
+Author: ['Quentin Geissmann', 'Giorgio Gilestro', 'Luis Garcia']
+License: GPL3
+Keywords: behaviour,video tracking
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: device
+Provides-Extra: dev
+
+TODO
