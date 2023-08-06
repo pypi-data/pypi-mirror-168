@@ -1,0 +1,8 @@
+nucliadb_dataset/__init__.py,sha256=Gw9od6tNkaLaMfb780FVLzqiWV9kSjX4V6HYnoFVkP8,975
+nucliadb_dataset/api.py,sha256=K8W9ZHywAD9EeA7AJwxbjurfdxYuZyAFq_9T4iw_jfM,2871
+nucliadb_dataset/nuclia.py,sha256=R3iYExjH5qlX3GyEC5iiFirITUQm0DPf3H7l8gmJ1S8,3728
+nucliadb_dataset/settings.py,sha256=JAH-wHA5QzfmBDCxGqWeF93ru52QMVJv_A59ef288LY,982
+nucliadb_dataset-1.0.0a4.dist-info/METADATA,sha256=SollvKz3M0vxRLxpfJ-PTG5gfwcQOn8d4uD6KhRDivo,1189
+nucliadb_dataset-1.0.0a4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nucliadb_dataset-1.0.0a4.dist-info/top_level.txt,sha256=aJtDe54tz6060E0uyk1rdTRAU4FPWo5if1fYFQGvdqU,17
+nucliadb_dataset-1.0.0a4.dist-info/RECORD,,
