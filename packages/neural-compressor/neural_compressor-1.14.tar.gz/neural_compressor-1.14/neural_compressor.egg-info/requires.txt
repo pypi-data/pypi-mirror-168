@@ -1,0 +1,16 @@
+numpy
+pyyaml
+scikit-learn
+schema
+py-cpuinfo
+hyperopt
+pandas
+pycocotools
+opencv-python
+requests
+psutil
+Pillow
+sigopt
+prettytable
+cryptography
+Cython
