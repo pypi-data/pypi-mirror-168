@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: troveharvester
+Version: 0.5.2
+Summary: This tool is now archived, see trove-newspaper-harvester instead.
+Home-page: https://github.com/wragge/troveharvester
+Author: Tim Sherratt
+Author-email: tim@discontents.com.au
+License: CC0
+Description-Content-Type: text/markdown
+License-File: COPYING.txt
+
+# TroveHarvester
+
+This repository has been archived. Development of the latest version of the Trove Newspaper Harvester continues in the [trove-newspaper-harvester](https://github.com/wragge/trove-newspaper-harvester) repository.
