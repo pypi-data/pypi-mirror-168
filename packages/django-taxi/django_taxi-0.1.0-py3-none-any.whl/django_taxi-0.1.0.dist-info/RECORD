@@ -1,0 +1,12 @@
+django_taxi/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+django_taxi/admin.py,sha256=-zfEhSQYcnz6v_yYvDoZX0VHrQp4vwq2R9McirvZdX0,1576
+django_taxi/apps.py,sha256=WI_KcBNEdOPmvlt1brujA8L0OtVkmMeTbFdn0qBpWSI,96
+django_taxi/fields.py,sha256=MAcpSq0Ap0SEyhU5eQUrIpkAVPglzyznCqjdrt3U9Pw,722
+django_taxi/migrations/0001_initial.py,sha256=eW4gyBbjkgsPt9I9dAczr4lGLYQv-DYxR9aQCp5IEf0,4781
+django_taxi/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_taxi/mixins.py,sha256=IONkZxGL0BONXnFnj3PcBGrRh5DH0MRjBnayVqAW8qU,3745
+django_taxi/models.py,sha256=6PGb6JCls5Dp9FutH49Ooz8iA7LqPn3Oe9qjUie8-dw,3480
+django_taxi-0.1.0.dist-info/LICENSE.md,sha256=Uf_FucWVzJ6deaROD6BHsxWgikTW2AIQ5qgboMzhoYM,1069
+django_taxi-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+django_taxi-0.1.0.dist-info/METADATA,sha256=ctGYcYlFOuJhuUnVCGJs3-dT6pon1o-rIjuQyaVfBOs,323
+django_taxi-0.1.0.dist-info/RECORD,,
