@@ -1,0 +1,10 @@
+click
+progressbar
+verboselogs
+nltk
+fuzzywuzzy
+python-Levenshtein
+halo
+termtables
+datetime
+pytest
