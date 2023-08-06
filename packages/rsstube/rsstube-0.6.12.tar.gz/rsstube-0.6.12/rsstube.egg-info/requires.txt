@@ -1,0 +1,8 @@
+requests
+PyQt6
+schedule
+lxml
+packaging
+
+[socks5 proxy]
+pysocks
