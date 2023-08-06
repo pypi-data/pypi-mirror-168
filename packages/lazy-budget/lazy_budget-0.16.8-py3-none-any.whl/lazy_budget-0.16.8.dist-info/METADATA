@@ -1,0 +1,224 @@
+Metadata-Version: 2.1
+Name: lazy-budget
+Version: 0.16.8
+Summary: .
+Home-page: https://gitlab.com/oleksandr.zelentsov/lazy-finance
+Author: Oleksandr Zelentsov
+Author-email: saze1997@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib (==3.4.1)
+Requires-Dist: py-money (==0.5.0)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: seaborn (==0.11.1)
+Requires-Dist: termcolor (==1.1.0)
+Provides-Extra: tests_development
+Requires-Dist: black (==22.3.0) ; extra == 'tests_development'
+Requires-Dist: freezegun (==1.1.0) ; extra == 'tests_development'
+Requires-Dist: ipython ; extra == 'tests_development'
+Requires-Dist: pre-commit (==2.12.0) ; extra == 'tests_development'
+Requires-Dist: pytest (==6.2.3) ; extra == 'tests_development'
+Requires-Dist: twine ; extra == 'tests_development'
+
+
+# Lazy finance (lbud for "lazy budget")
+
+[![PyPI version](https://badge.fury.io/py/lazy-budget.svg)](https://badge.fury.io/py/lazy-budget)
+
+`lbud` aims to help building an easy, data-driven budget solution for personal use.
+
+For examples of data, see `example-data/`.
+
+## Setup
+
+```bash
+python3.9 -m pip install lazy-budget
+```
+
+## Workflow
+
+`lbud` works in a very specific way: you declare
+
+- the budgeting period (start and end date)
+- how much money do you have (as of the first day of the budgeting period),
+- how much do you wanna save (as of the last day of budgeting period),
+- your financial operations.
+
+Provided with the data described above, `lbud` allows you to see certain statistics over time, answers to these questions:
+
+- How much more money can I actually spend today?
+- How much money do I spend daily on average?
+- When I spend too much money, for how many days should I limit my spendings to keep the money I set out to keep?
+
+To start using `lbud` to manage your budget,
+you will need to create and
+maintain at least 2 text files.
+
+### Budget file
+
+`budget.yml` is a YAML file that describes a single budgeting period. It is advised to keep the period short, but i am sure `lbud` can handle however long budgets. Example:
+
+```yaml
+# total amount of money to use
+total: 2000
+
+# the part of the total
+# that you aim to keep this month
+keep: 1500
+
+# budgeting period
+start: 2021-04-25
+end: 2021-05-10
+
+# currency is optional
+# USD is the default and
+# the operations themselves can
+# specify the currency (lbud add "-10 CAD" taxi), as well
+# as the config file and CLI options
+currency: USD
+```
+
+### History file
+
+`history.csv` is a CSV file that lists all of your financial operations. You may have one history file for all your budgets, history is filtered by budget period when performing calculations.
+It has to have following columns:
+
+- `money_value` - operation value; may include a currency in multi-currency setups, format: `-10.99 CAD`;
+- `description` - operation description; may include category, format: `[category] description`;
+- `dttm` - operation date and time, ISO format.
+
+Example:
+
+```csv
+-10,[food] snacks,2021-04-26T00:00:00
+-1.95,[food] bubblegum,2021-04-27T17:20:31
+-9.95,[food] hot dog,2021-04-27T00:00:00
+-3.33,donation,2021-04-28T00:00:00
+-30,[medicine] cardiologist,2021-04-29T00:00:00
+```
+
+### Use of `lbud` on example files
+
+```bash
+$ lbud ls
+           today : 2021-05-01
+      total days : 16
+       days left : 9
+ available / day : $31.25
+ CAN spend today : $163.52
+     spent today : $0.00
+ avg spent / day : $7.89
+            kept : $1,663.52
+
+$ lbud add -200 "club night"
+
+$ cat history.csv  # added operation to history file
+-10,[food] snacks,2021-04-26T00:00:00
+-1.95,[food] bubblegum,2021-04-27T17:20:31
+-9.95,[food] hot dog,2021-04-27T00:00:00
+-3.33,donation,2021-04-28T00:00:00
+-30,[medicine] cardiologist,2021-04-29T00:00:00
+-200,club night,2021-05-01T00:00:00
+
+$ lbud ls
+                today : 2021-05-01
+           total days : 16
+            days left : 9
+ days until can spend : 2
+      available / day : $31.25
+   CANNOT spend today : $36.48
+          spent today : $200.00
+      avg spent / day : $36.46
+                 kept : $1,463.52
+
+$ lbud cats
+      medicine : -30,00 USD
+          food : -21,90 USD
+ <no category> : -3,33 USD
+```
+
+## Charts
+
+### Burndown chart
+
+Provides a bird's eye view of how things are going with the budget.
+
+```
+$ lbud bd
+```
+
+![burndown chart](https://gitlab.com/oleksandr.zelentsov/lazy-finance/-/raw/91dba12f302ea0b2ad2464c60aa7173de6d7acdc/img/bd.png 'Example burndown chart')
+
+### Category chart
+
+Allows to determine how much money was spent/earned by which category.
+
+```
+$ lbud catc
+```
+
+![category chart](https://gitlab.com/oleksandr.zelentsov/lazy-finance/-/raw/91dba12f302ea0b2ad2464c60aa7173de6d7acdc/img/catsc.png 'Example category chart')
+
+## CLI help
+
+**Note**: all the defaults can be pulled from a config file at `~/.lbudrc.yml`.
+To override the location, specify `LBUDRC` environment variable.
+
+```
+usage: main.py [-h] [-f HISTORY_FILE] [-c BUDGET_FILE] [-L LOCALE] [-C CURRENCY] [-t TODAY] {add,a,new,n,list-stats,ls,now,today,list,stats,s,get,burndown,bd,categories,cats,category-chart,catsc,catc,cat-chart} ...
+
+positional arguments:
+  {add,a,new,n,list-stats,ls,now,today,list,stats,s,get,burndown,bd,categories,cats,category-chart,catsc,catc,cat-chart}
+                        budget operation to perform
+    add (a, new, n)     add a new financial operation
+    list-stats (ls, now, today, list, stats, s, get)
+                        list statistics
+    burndown (bd)       shows a burndown chart of the budget
+    categories (cats)   display money flow by category
+    category-chart (catsc, catc, cat-chart)
+                        display money flow by category in a chart
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f HISTORY_FILE, --history-file HISTORY_FILE
+                        history file to use (default is /Users/oleksandr/finance/history.csv)
+  -c BUDGET_FILE, --budget-file BUDGET_FILE
+                        budget file to use (default is /Users/oleksandr/finance/budget.yml)
+  -L LOCALE, --locale LOCALE
+                        locale to use (default is pl_PL)
+  -C CURRENCY, --currency CURRENCY
+                        default currency to use in uncertain situations (default is PLN)
+  -t TODAY, --today TODAY
+                        a date used as "today" during stats, useful for seeing old budget info
+```
+
+## Weird configuration stuff
+
+There is a lot of configuration options to `lbud`
+(CLI arguments, config file, the defaults)
+and since it was tested and used
+in a very specific way, it might not work for you.
+
+Feel free to [submit a ticket](https://gitlab.com/oleksandr.zelentsov/lazy-finance/-/issues/new) or a pull request (idk if it works, i'm new to this open source thing, please post a ticket about it too).
+
+Posting the way it is actively being used for clarity:
+
+- budget/history files at `~/finances/`
+- config file at `~/.lbudrc.yml`:
+  ```
+  history_file: /Users/oleksandr/finances/history.csv
+  budget_file: /Users/oleksandr/finances/budget.yml
+  locale: pl_PL
+  currency: PLN
+  ```
+- `lbud` anywhere
+
+
