@@ -1,0 +1,3 @@
+0.0.25
+
+['C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\site-packages\\delvewheel\\__main__.py', 'repair', '--no-mangle-all', '--add-path', 'C:\\vcpkg\\installed\\x64-windows\\bin', 'dist/gosdt-0.1.7-cp38-abi3-win_amd64.whl', '-w', 'dist']
