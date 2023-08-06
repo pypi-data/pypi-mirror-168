@@ -1,0 +1,14 @@
+biocli/__init__.py,sha256=Kud4NUmukuuOFE4wGy8XULh1HGCsTstsClAB5vkZdYo,163
+biocli/_biocli.py,sha256=85yr1YSXuNtgf8p9Cb8FjO0fDOnV44eRY91lvizqhig,648
+biocli/count.py,sha256=NxwkwHL74ZwxC0IilDoI00vY7t4Zx9X2XTey98fn-94,1854
+biocli/pattern.py,sha256=JzYNhXTGC7uLlrp8StEi1Z8OWxz-ILvqyqXVgxZtbl0,727
+biocli/translate.py,sha256=idgJmHkcDjE5B38YWtbMmR1ETqk7PSxf4zr8Zod_CHQ,1442
+biocli/_common/__init__.py,sha256=P7rhN3UncWxU72Jf21EcuTG7cJEfUiO7IzLpkIfuEqg,19
+biocli/_common/_errors.py,sha256=hITQqgp4rGR3k9PjDYnIh2LFSGED7Gdx8mqIEXRUhHk,1625
+biocli/_common/_helper.py,sha256=HSu_ws8TsIrqyJ1aT4hWbUQF2dC_iCNzDIpXlYg7y_4,765
+biocli/_common/_sequence.py,sha256=vFEozzgBplxphIV-H6eKM-OFTv0MwnKn46C6steleGI,1693
+biocli-1.0.1b1.dist-info/entry_points.txt,sha256=lAUDR66QavLJHn4GRuNlkANukpBiwbXpKktF4LGcMfg,46
+biocli-1.0.1b1.dist-info/LICENSE.md,sha256=cav6Rd67ka6suI_iD5PTZ-29Qp1-fr06j9wfEwdSrQ8,1065
+biocli-1.0.1b1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+biocli-1.0.1b1.dist-info/METADATA,sha256=qCl5kpT9xqQy1HsRh3t2KjxJM_o1XbpaiU-7GmDE8CM,3399
+biocli-1.0.1b1.dist-info/RECORD,,

@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: biocli
+Version: 1.0.1b1
+Summary: Computational Biology tool for CLI use.
+Author-email: Orkhan Shirin <orkhan.shirinow@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: dynacli >= 1.0.8
+Requires-Dist: black >=22.3.0 ; extra == "dev"
+Requires-Dist: pylint >=2.12.2 ; extra == "dev"
+Requires-Dist: isort >=5.9.3 ; extra == "dev"
+Requires-Dist: autoflake >=1.4 ; extra == "dev"
+Requires-Dist: flake8 >=4.0.1 ; extra == "dev"
+Requires-Dist: pre-commit >=2.17.0 ; extra == "dev"
+Requires-Dist: mkdocs-material >=8.1.2 ; extra == "doc"
+Project-URL: Home, https://github.com/orkhanshirin/biocli
+Project-URL: Source, https://github.com/orkhanshirin/biocli
+Provides-Extra: dev
+Provides-Extra: doc
+
+﻿
+# CLI tool for Computational Biology
+
+	Please read before use!
+
+    Works with python version >= 3.9
+    For Linux users only
+    Works with `.txt` files only.
+    Install requirements via pip3.
+    Make the "compute" file executable using linux terminal typing `chmod +x compute` command
+
+## How to use
+
+Examples:
+```console
+$ ./compute biocli -h
+usage: compute biocli [-h] {count,pattern,translate}
+    
+positional arguments:
+  {count,pattern,translate}
+    count                    Count feature to count the nucleotides and patterns in the 
+                             given DNA or RNA sequence.
+    pattern                  Pattern feature for finding given pattern in the given DNA 
+                             or RNA sequence.
+    translate                Translate feature to translate the given DNA sequence to 
+                             RNA and vice versa.
+
+optional arguments:
+    -h, --help                 show this help message and exit
+```
+```console
+$ ./compute biocli translate dna-to-rna "sample.txt" to_file=False
+UGCUCCGCCGAACCAUUCAUGCGGGAUACGACUUGGAUGACAUAGGAAAUUCAUAAUUAUCGUGUCUAAGUAAUUGCAUGCAGGCUGCAA
+UAACGUUGUUGGCCGAGCGUAAUACAAGAUUAGCCGCUGUUGAUGCUCAUUAGACGCGUUGGUAAAUUUGACGUUCUUAUGACCCCUACG
+UAUAACAGAAUAGCCUCUGGUGACUUUUCUGAGCACCGAUCUCGCAAUAUAUUAGCCACUAUAUUAUCUAAGCCGAGCCAAUCAUUGAUA
+CACAUAGUAAUGUCAGGACGUCGAACCUAGAUUGUAUGACUCCGCUAAGGUAUUCCGAGAGACACUAGGAUACUAGAUAUAUUCCCAAAG
+UAAGGCGACGCCUAGUCUUUAGAGAGCGAGUAUGCCUUUGCCAAGUGUUGGAUGAGCCCGCCCCUUAAUAGGUGCUACGCUAGAGGCAAA
+GCAUGUGGGCGGUGGCCACACUUCAAUCAGGUGGCGAGUAGACGCUUCAGCCCGUUCGAUCUUAAGUAUCAGUAUAGGGACUCGAGUACA
+GUGUCCAAAUUACUGCGCUCGGUCCUAUGCUGACAAGGCGAACUCUGCAGAGAAUGGUCCGAAUUCACAUUCGGACAAUACGAUGUAGGA
+CCGAACAAGCACAGUUUGAUUCGCCUCGGAAGACGGUGCAACUGAAACAGUAGAUCUCCUUAUCAAUGUAGGGCGAAGUACUGCCCGCGU
+GAGGGCACCAGCAUCCAGUCUCGUUGCUGUUCGUAUGGGGAUCAACGGCGGGUUGUUCUUAAGAACAUCAGGAUGAGUUAAUCGAGAGUA
+CUGAACCGCUAUUCGACACCGCAGGUUGCGACACCAAAUUGCCUAAACAUCAACAGCCUCAAUUACCUGCUGUCCACUCGAGCUUGGGGU
+ACAGUGUUAUCCUUCACUUGAACGACAAGAUAAUGAACAUUGUGGACUUGCGUAUA
+```
+
+
+## Project layout
+```console
+├── biocli
+   ├── biocli
+   │   ├── count.py
+   │   ├── pattern.py 
+   │   ├── translate.py 
+   │   ├── _errors.py
+   │   ├── _helper.py
+   │   ├── _sequence.py
+   │   ├── __init__.py
+   ├── compute 
+
+```
+
+### Contains:
+
+	DNA to RNA sequence translator
+	RNA to DNA sequence translator
+	Pattern matcher
+	Pattern counter
+	Nucleotide counter
+	Frequency counter
+
+	Sample files added.
+
+Built on top of DynaCLI by BST Labs. [Check it out!](https://github.com/BstLabs/py-dynacli)
+
+
