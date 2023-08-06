@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: py-model-versioning
+Version: 0.4
+Requires-Python: >=3.7
+
+a tool to add, delete, list model versioning for cloud provider
+
+Usage: modelver-cli [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  add_directory   add directory files to project model version storage
+  add_file        add files to project model version storage
+  configure       configure cloud provider and bucket name, should be done from root directory
+  del_file        delete specific file from storage
+  del_ver         delete ver for project
+  display_config  display the content of configuration file
+  get_file        get specific fie from storage
+  get_ver         get complete version files for specific project
+  ls              list storage content, no argument list projects
+  print_ver       display ver for project
+
+
+Currently, supports only google cloud provider,
+A json key file should be placed under config-model-ver directory (this directory will be created when using the configure command)
+
+Instructions how to create the json key for google storage service account
+
+Open Google cloud, select your projects
+API & Services → Credentials → create credentials (Service Account)
+If you already have service account for google storage skip the next stage
+Enter Service Account ID (whatever name you want) → create and continue
+Click on select a role, on the left pane search for Cloud Storage, on the right pane choose Storage Admin and click done.
+Under Service account click on the account you created, on top click KEYS → Add Key → create new key → select json and CREATE, the json key will be downloaded automatically

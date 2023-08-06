@@ -1,0 +1,2 @@
+[console_scripts]
+modelver-cli = py_model_versioning.main:cli
