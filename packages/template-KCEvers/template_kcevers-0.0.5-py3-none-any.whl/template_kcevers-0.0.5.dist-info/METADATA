@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: template_KCEvers
+Version: 0.0.5
+Summary: A small example package
+Author-email: Kyra Caitlin Evers <kyra.c.evers@gmail.com>
+License: Copyright (c) 2022 Kyra Evers
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy==1.21.6
+Requires-Dist: pathlib==1.0.1
+Description-Content-Type: text/markdown
+
+# Template for building a Python package
+
+This package provides a basic template for a Python package with nested directories. If using PyCharm, there's no need to activate the virtual environment (https://setuptools.pypa.io/en/latest/userguide/development_mode.html). To ensure the directories are found, mark all directories as "Sources Root" (right click > Mark Directory As...). 
+
+
+For starters, upgrade the following packages:
+
+> py -m pip install --upgrade pip
+
+> python -m pip install --upgrade pip-tools
+
+1. Use pipreqs to make a requirements.txt file based on all packages in environment
+> pipreqs template_KCEvers
+
+To overwrite existing requirements.txt file:
+> pipreqs --force 
+
+or use piptools to make a requirements.txt file based on dependencies specified in setup.py/setup.cfg/pyproject.toml (https://github.com/jazzband/pip-tools)
+> python -m pip install pip-tools
+
+> pip-compile -o requirements.txt pyproject.toml
+
+To update, run:
+> pip-compile --output-file=requirements.txt pyproject.toml
+
+However, this does not make sure that required packages are installed. Users would have to manually run:
+> pip install -r requirements.txt
+
+To specify which packages (and which versions) should be installed when installing the template_KCEvers package, packages need to be specified in the setup.cfg file under install_requires, e.g. 
+
+    install_requires =
+        numpy==1.21.6
+        pathlib==1.0.1
+
+or in the pyproject.toml file under dependencies, e.g. 
+
+    dependencies = [
+        "numpy==1.21.6", 
+        "pathlib==1.0.1"
+        ]
+(I haven't found a way of automatically generating a setup.cfg/pyproject.toml file with the required packages, so for now copy + paste from the requirements.txt file).
+
+2. Install the package in editable mode 
+> cd template_KCEvers
+
+> pip install -e . # or equivalently, --editable rather than -e
+
+3. Publish on PyPi
+For full instructions, follow https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/.
+
+- Build source distribution and wheel (better than running "python setup.py sdist bdist_wheel"):
+> py -m pip install --upgrade build
+
+> python -m build
+
+- Before trying to upload your distribution, you should check to see if your brief / long descriptions provided in setup.py are valid. You can do this by running twine check on your package files:
+> py -m pip install --upgrade twine
+
+> twine check dist/*
+
+- It's also highly recommended to first upload your package on TestPyPi (https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-your-project-to-pypi). Your user name is __token__, and your API token that you can generate at https://test.pypi.org/manage/account/ is the password (note that your password won't show as you're typing):
+> py -m twine upload --repository testpypi dist/*
+
+- Check whether the installation worked
+> py -m pip install --index-url https://test.pypi.org/simple/ --no-deps template_KCEvers
+
+Note that you may have issues with imported packages (e.g. import numpy) using TestPyPi.
+
+- Upload distribution to PyPi (your user name is still "__token__", check https://pypi.org/manage/account/token/ for your API token)
+> twine upload dist/*
+
+The package can now be downloaded from PyPi by running
+> pip install template_KCEvers==0.0.1
+
+- To upload the package, simply change the version number in pyproject.toml, delete the *.tar.gz and *.whl files in the dist/ directory, and rerun
+> py -m pip install --upgrade build
+
+> py -m pip install --upgrade twine
+
+> twine check dist/*
+
+> py -m build 
+
+> twine upload dist/*
+
+Now you can upgrade the package using
+> pip install --upgrade template-KCEvers
+
+Check which version is installed using
+> pip list
