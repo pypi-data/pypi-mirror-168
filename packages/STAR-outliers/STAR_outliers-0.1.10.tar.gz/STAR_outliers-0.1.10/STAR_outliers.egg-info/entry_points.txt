@@ -1,0 +1,2 @@
+[console_scripts]
+STAR_outliers = STAR_outliers:main

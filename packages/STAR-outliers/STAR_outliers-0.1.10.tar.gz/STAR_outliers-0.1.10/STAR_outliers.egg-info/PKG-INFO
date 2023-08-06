@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: STAR-outliers
+Version: 0.1.10
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6,<=3.9
+Description-Content-Type: text/markdown
+
+STAR_outliers (Skew and Tail-heaviness Adjusted Removal of outliers) is an open source python package that determines which points are outliers relative to their distributions shapes. Please visit the [github page](https://github.com/EpistasisLab/STAR_outliers) for more information.
+

@@ -1,0 +1,13 @@
+README.md
+STAR_outliers.py
+STAR_outliers_library.py
+STAR_outliers_plotting_library.py
+STAR_outliers_polishing_library.py
+STAR_outliers_testing_library.py
+setup.py
+STAR_outliers.egg-info/PKG-INFO
+STAR_outliers.egg-info/SOURCES.txt
+STAR_outliers.egg-info/dependency_links.txt
+STAR_outliers.egg-info/entry_points.txt
+STAR_outliers.egg-info/requires.txt
+STAR_outliers.egg-info/top_level.txt

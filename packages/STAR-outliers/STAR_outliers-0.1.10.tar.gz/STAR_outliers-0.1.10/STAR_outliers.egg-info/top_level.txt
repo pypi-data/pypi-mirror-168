@@ -1,0 +1,5 @@
+STAR_outliers
+STAR_outliers_library
+STAR_outliers_plotting_library
+STAR_outliers_polishing_library
+STAR_outliers_testing_library
