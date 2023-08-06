@@ -1,0 +1,1 @@
+__version__ = '1.10.10' # Don't forget to match with setup.py
