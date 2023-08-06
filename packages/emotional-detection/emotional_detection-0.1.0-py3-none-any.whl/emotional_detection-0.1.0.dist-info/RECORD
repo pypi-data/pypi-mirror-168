@@ -1,0 +1,6 @@
+emotional_detection/EMOTIONAL_PIPE,sha256=xyFLTDPplaYHJUtrgG7MevgltWdD3brw0fA5_lgikuY,305
+emotional_detection/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+emotional_detection/main.py,sha256=-ALFyY_809k1zYbSD5OohAt6vcrrmYYrTZ39jYKaqzQ,3014
+emotional_detection-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+emotional_detection-0.1.0.dist-info/METADATA,sha256=g63SrcklQJx8vc1Bm1ggki-HaSO1jTw_X2ShXAh1_kM,464
+emotional_detection-0.1.0.dist-info/RECORD,,
