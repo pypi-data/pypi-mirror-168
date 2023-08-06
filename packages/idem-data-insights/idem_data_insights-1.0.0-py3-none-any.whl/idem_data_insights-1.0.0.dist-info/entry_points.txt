@@ -1,0 +1,3 @@
+[console_scripts]
+idem_data_insights = idem_data_insights.scripts:start
+
