@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+setup.py
+src/cdk_deployer/__init__.py
+src/cdk_deployer/py.typed
+src/cdk_deployer.egg-info/PKG-INFO
+src/cdk_deployer.egg-info/SOURCES.txt
+src/cdk_deployer.egg-info/dependency_links.txt
+src/cdk_deployer.egg-info/requires.txt
+src/cdk_deployer.egg-info/top_level.txt
+src/cdk_deployer/_jsii/__init__.py
+src/cdk_deployer/_jsii/cdk-deployer@1.0.12.jsii.tgz
