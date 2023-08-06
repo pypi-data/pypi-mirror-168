@@ -1,0 +1,4 @@
+build/
+dist/
+pyxelperfect.egg-info/
+*__pycache__/*
