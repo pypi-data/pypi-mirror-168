@@ -1,0 +1,9 @@
+README.md
+setup.py
+SimplePyAi/__init__.py
+SimplePyAi/simplepyai.py
+simplepyai.egg-info/PKG-INFO
+simplepyai.egg-info/SOURCES.txt
+simplepyai.egg-info/dependency_links.txt
+simplepyai.egg-info/requires.txt
+simplepyai.egg-info/top_level.txt
