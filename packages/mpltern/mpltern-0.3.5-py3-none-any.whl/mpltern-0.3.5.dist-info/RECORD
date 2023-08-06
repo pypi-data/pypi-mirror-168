@@ -1,0 +1,14 @@
+mpltern/__init__.py,sha256=jhaFH0gTLyjR7Bbh-uHDPhkxPMVl_fcWSUFc_i6anco,598
+mpltern/ternary/__init__.py,sha256=e6Ejjmc_FlbMUCaqKd2Y7KKCv1SzNN7lw-XFC-NW0rI,31
+mpltern/ternary/_axes.py,sha256=E3g_gximCqXDz_bzqDShexbaYJsJS3s18rozNbwC0R0,28060
+mpltern/ternary/axis.py,sha256=1ciJOLmCCk5HfsQxziY9zRNJ_o_FbG63Pwv9Nyl9N-4,14004
+mpltern/ternary/datasets.py,sha256=tW4ewkg5glDP3yCSTrdjOnWMZSRvTQfCfkPWftc4k-8,1229
+mpltern/ternary/spines.py,sha256=HBiXk5zLAPFMD18UyEXM74dZvQTP-iSGZdAlFNjfmRw,1795
+mpltern/ternary/ternary_parser.py,sha256=tUP3CIrmWp-SPa-fek746EgjIMkL7_XLaZQwGIxspwQ,4682
+mpltern/ternary/tick.py,sha256=pNTjDYGkCq6ZLiLd3sOdQChGVWdZ8vuEk_Pn-Z-Gdzw,8585
+mpltern/ternary/transforms.py,sha256=C5tdP9J1s2x3elLEqPkyXu_LwwbWnfLna-NUmMiO_bw,8053
+mpltern-0.3.5.dist-info/LICENSE,sha256=PFbOgAIXWzupJiCBac9CSuYI_mPNy7ildRqxppaQE4w,1067
+mpltern-0.3.5.dist-info/METADATA,sha256=KzM-gRko1AWG35k-U8EPBSohe3iqGXuMw7znYEdAOEI,6446
+mpltern-0.3.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mpltern-0.3.5.dist-info/top_level.txt,sha256=gHVtgV3jD3n9xBhJKpmK2wzQE2_QsiNtHdvHsB5IIRQ,8
+mpltern-0.3.5.dist-info/RECORD,,
