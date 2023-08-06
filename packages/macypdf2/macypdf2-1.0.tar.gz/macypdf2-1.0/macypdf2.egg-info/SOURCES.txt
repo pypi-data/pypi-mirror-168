@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+macypdf2.egg-info/PKG-INFO
+macypdf2.egg-info/SOURCES.txt
+macypdf2.egg-info/dependency_links.txt
+macypdf2.egg-info/top_level.txt
