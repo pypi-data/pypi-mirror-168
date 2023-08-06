@@ -1,0 +1,3 @@
+
+class EscButtonPressed(Exception):
+    pass
