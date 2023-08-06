@@ -1,0 +1,1 @@
+from template_KCEvers.tutorial.funcs import test_sum_of_squares, test_paths
