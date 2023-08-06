@@ -1,0 +1,9 @@
+salomon/__init__.py,sha256=XcoJlYUDsjArQTb3uZw2LuGUNY3YZO8YOJsJNYHpi8A,408
+salomon/impl/CopyModelPackage.py,sha256=2tFrsDaxlxpau60QH52vDMkGgqYTWfl-g6XvYuWVN6A,13133
+salomon/impl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salomon/impl/s3_helper.py,sha256=HqYTlOd5hRBjBd9Cd14Xqjy10kuEW2fkFf65tv_RvxM,509
+salomon-0.0.8.dist-info/LICENSE,sha256=IAGdb6v-RCFOnbTA1qTg3-HkHGTf_b62NbACWyfEDp4,1068
+salomon-0.0.8.dist-info/METADATA,sha256=tu9xQ7ki6DXWeV7syMHwQCPMlWrk06cS9PDyIQRnHe4,2371
+salomon-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+salomon-0.0.8.dist-info/top_level.txt,sha256=SXA2Vr-X6OXSaklG5cXwuOxkNPo6ZbCNphGcT6M7eBs,8
+salomon-0.0.8.dist-info/RECORD,,
