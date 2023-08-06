@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+jahnaviPython/__init__.py
+jahnaviPython.egg-info/PKG-INFO
+jahnaviPython.egg-info/SOURCES.txt
+jahnaviPython.egg-info/dependency_links.txt
+jahnaviPython.egg-info/top_level.txt
