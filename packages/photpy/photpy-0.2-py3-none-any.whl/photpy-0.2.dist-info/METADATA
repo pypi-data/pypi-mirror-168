@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: photpy
+Version: 0.2
+Summary: A Python library for the simulation of optical fiber transmission
+Project-URL: Homepage, https://gitee.com/opticalab_1/pyphot
+Author-email: Chunyu Li <cyli0212@gmail.com>
+Requires-Python: >=3.7
+Requires-Dist: matplotlib>=3.5.2
+Requires-Dist: numba>=0.55.2
+Requires-Dist: numpy>=1.22.4
+Requires-Dist: scikit-commpy>=0.7.0
+Requires-Dist: scipy>=1.8.1
+Description-Content-Type: text/markdown
+
+## PyPhot
+
+A Python library for the simulation of optical fiber transmission, characterized by the ability of running on both CPU and GPU to gain powerful acceleration.
+
+### User guide
+
+First, you need to install necessary dependencies, open the CLI and enter this command:
+
+```shell
+pip3 install -r requirements.txt
+```
+
+There is an **example.py** under the root directory showing how to use our API (for PyPhotEngine). Please read it carefully.
+
+### Generate requirements.txt
+
+**requirements.txt** is useful for installation of related dependencies, you can generate it by command line tool **pipreqs**, enter the root directory and execute this command:
+
+```shell
+pipreqs . --mode gt --force --ignore ./test
+```
+
+### Deprecated phot module
+
+The deprecated phot module is in `deprecated` folder. It is just reserved for developers. If you are user, just ignore it.
