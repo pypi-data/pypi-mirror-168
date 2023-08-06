@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "updatesources"
+version = "0.1.0"
+description = "Generate a cmake file which sets a list of files to a cmake variable"
+authors = ["Nicholas Johnson <nicholas.m.j@gmail.com>"]
+packages = [
+    { include = "cmaketools", from = "src" },
+]
+
+[tool.poetry.scripts]
+updatesources = "cmaketools.updatesources:main"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
