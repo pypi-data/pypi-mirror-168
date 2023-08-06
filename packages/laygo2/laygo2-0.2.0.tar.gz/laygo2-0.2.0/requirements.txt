@@ -1,0 +1,8 @@
+numpy
+pyyaml
+nose
+sphinx
+myst-parser
+pydata-sphinx-theme
+sphinx-rtd-theme
+autoclasstoc
