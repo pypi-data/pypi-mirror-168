@@ -1,0 +1,9 @@
+miniFasta/__init__.py,sha256=ReQuv0bsIyK2TkfUJqG1uSIEGA5kh9-5VVAF8UCTZXA,252
+miniFasta/_miniFasta.py,sha256=IV07MDPSzkts16Uo9aoKoTm8f3xusNPEteFkMOl16mk,7396
+miniFasta/_reader.py,sha256=jOnyYrtaqGgvdii8ZViYYSvOcG5XgFvtIGdlWbrP_zo,3549
+miniFasta/_writer.py,sha256=H6azCvWJs9dXyoIcWIuf54SB1JAl4nRtug5VVvcjeSE,911
+miniFasta-2.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+miniFasta-2.4.1.dist-info/METADATA,sha256=FmVt3U74D39w_nB0Jx6Y2fckduyAFy3jTyeNPJ8qFNQ,7687
+miniFasta-2.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+miniFasta-2.4.1.dist-info/top_level.txt,sha256=IDRlc-b-yhYNsjTMKEkiRQQw0bP31a9HFNZDgOkhYrk,10
+miniFasta-2.4.1.dist-info/RECORD,,
