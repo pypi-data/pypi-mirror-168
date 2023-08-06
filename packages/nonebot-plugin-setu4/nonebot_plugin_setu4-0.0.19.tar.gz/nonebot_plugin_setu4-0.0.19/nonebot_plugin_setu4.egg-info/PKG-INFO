@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-setu4
+Version: 0.0.19
+Summary: encapsulate logger
+Home-page: https://github.com/Special-Week/nonebot_plugin_setu4
+Author: Special-Week
+Author-email: 2385612749@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.*
+License-File: LICENSE
+
+setu插件
+
