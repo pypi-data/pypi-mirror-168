@@ -1,0 +1,2 @@
+import instantdirect
+instantdirect.start()
