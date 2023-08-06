@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tipey"
+version = "0.0.2"
+authors = [
+  { name="David Lassner" },
+]
+description = "A package for units, types and conversions."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'scipy',
+  'currencyconverter',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/millawell/tipey"
+"Bug Tracker" = "https://github.com/millawell/tipey/issues"

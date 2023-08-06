@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+tipey/__init__.py
+tipey/quantity.py
+tipey.egg-info/PKG-INFO
+tipey.egg-info/SOURCES.txt
+tipey.egg-info/dependency_links.txt
+tipey.egg-info/requires.txt
+tipey.egg-info/top_level.txt
+tipey/unit/__init__.py
+tipey/unit/base_units.py
+tipey/unit/currency.py
+tipey/unit/mass.py
+tipey/unit/temperature.py
