@@ -1,0 +1,9 @@
+README.md
+setup.py
+REZAPDFCONVERT.egg-info/PKG-INFO
+REZAPDFCONVERT.egg-info/SOURCES.txt
+REZAPDFCONVERT.egg-info/dependency_links.txt
+REZAPDFCONVERT.egg-info/top_level.txt
+RezaPack/__init__.py
+RezaPack/pdf2image.py
+RezaPack/pdf2text..py
