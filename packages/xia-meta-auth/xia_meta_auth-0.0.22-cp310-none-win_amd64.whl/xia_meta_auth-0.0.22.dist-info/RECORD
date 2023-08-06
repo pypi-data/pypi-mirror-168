@@ -1,0 +1,10 @@
+xia_meta_auth/__init__.py,sha256=GFpZUxZRoXZgSEHcL2BebtlSLc79-7uCoHJJnETx7Ow,219
+xia_meta_auth/acl.cp310-win_amd64.pyd,sha256=ld9x247uIt-9d-tqvJnPFtFkJ1I1eLR7shMzt7m0dvM,355328
+xia_meta_auth/cache.cp310-win_amd64.pyd,sha256=VseVVrSa9t16JsSYV-duLHOIg6FOFqdZipz2kduelcg,245760
+xia_meta_auth/permission.cp310-win_amd64.pyd,sha256=LjVbm2xaAafkFOlMYUb4dhXHaTAdJeJ7shUKJHuJ44A,435712
+xia_meta_auth/user.cp310-win_amd64.pyd,sha256=ncL154kov8yaPbFDYA__QDqx6mkzpgrtI3mZpvD2M3I,326144
+xia_meta_auth-0.0.22.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_meta_auth-0.0.22.dist-info/METADATA,sha256=GYCMfnwxuE1ISv1hyIBgt3urWI8lnhua4nqMcByjitQ,429
+xia_meta_auth-0.0.22.dist-info/WHEEL,sha256=xKD-W076Kxa9P8HVHMBFDAZ44LgNHrPjF081MKvpixU,100
+xia_meta_auth-0.0.22.dist-info/top_level.txt,sha256=qDynZ1JQs079EvpXrpGkMCkZGYYkgsvm6RhIsx4ftE8,14
+xia_meta_auth-0.0.22.dist-info/RECORD,,
