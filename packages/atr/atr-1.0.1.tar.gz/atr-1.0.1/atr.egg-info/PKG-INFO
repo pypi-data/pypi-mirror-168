@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: atr
+Version: 1.0.1
+Summary: This library provides a tool to calculate the all-terminal reliability polynomial of any undirected graph.
+Home-page: https://github.com/LlagosteraPol/ATR
+Author: Pol Llagostera Blasco
+Author-email: llagosterapol.work@gmail.com
+License: LICENSE.txt
+Description: README.rst
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
