@@ -1,0 +1,12 @@
+time_tracker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+time_tracker/__main__.py,sha256=hh1cb27KgnH3G7GnX-Rm5bLA02cYThHL9OOesGmcSmA,94
+time_tracker/cli.py,sha256=2ijzMnSll3rLFtiujanFqBCe4z6Top6bTzmmMc_IV6U,2295
+time_tracker/db.py,sha256=0RJCEMAFwcj-_zfQJUFj04DXQpMCV4DL3Dk1L1M_6Us,1902
+time_tracker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+time_tracker/tests/test_time_tracker.py,sha256=ybT3E0tT3kOPFmcI2vC7OK5h9B5E4VR5nQ7kXQMeshk,6496
+time_tracker/time_tracker.py,sha256=lR4LjX5c8CWFUX9Trk6wNAlA3zdjpqriIuidnsTg0ao,10349
+tiempo_tracker-0.1.1.dist-info/entry_points.txt,sha256=1UXPbIjcslUwKZbD6kOYhvfkbIbdsta-gDZQge2Y8yY,50
+tiempo_tracker-0.1.1.dist-info/LICENSE,sha256=qrhaHBfSugDKSjPDEgBnzJU2ag92phHqsCJv4MK2nTc,1074
+tiempo_tracker-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tiempo_tracker-0.1.1.dist-info/METADATA,sha256=94CIvlhZEfmbV3-8DoS5ztQq0H71Rld9P8UAKQL5ZpI,3208
+tiempo_tracker-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+trt=time_tracker.__main__:main
+
