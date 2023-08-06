@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: isopy
+Version: 0.7.3
+Summary: A Python 3 library for data processing in isotope geo/cosmochemistry.
+Home-page: https://github.com/mattias-ek/isopy
+Author: Mattias Ek
+Author-email: mattias.ek@erdw.ethz.ch
+Keywords: array isotope geochemistry cosmochemisty geology icpms icp-ms
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=>1.20)
+Requires-Dist: pyperclip (>=1.8)
+Requires-Dist: openpyxl (>=3)
+Requires-Dist: matplotlib (>=3.3)
+Requires-Dist: scipy (>=1.6)
+Requires-Dist: chardet (>=4)
+Requires-Dist: tabulate (>=0.8)
+
+# isoPy
+
+[![PyPI version](https://badge.fury.io/py/isopy.svg)](https://badge.fury.io/py/isopy)
+[![Build Status](https://travis-ci.com/mattias-ek/isopy.svg?branch=master)](https://travis-ci.com/mattias-ek/isopy)
+[![codecov](https://codecov.io/gh/mattias-ek/isopy/branch/master/graph/badge.svg?token=W6SII47DJI)](https://codecov.io/gh/mattias-ek/isopy)
+
+Isopy is a Python 3 library for data processing in isotope geo/cosmochemistry.
+
+## Installation
+
+```bash
+pip install isopy
+```
+
+**Note** Isopy requires python 3.9 and above.
+
+For more information on installing isopy see Installing isopy documentation.
+
+## License
+[MIT]()
+
