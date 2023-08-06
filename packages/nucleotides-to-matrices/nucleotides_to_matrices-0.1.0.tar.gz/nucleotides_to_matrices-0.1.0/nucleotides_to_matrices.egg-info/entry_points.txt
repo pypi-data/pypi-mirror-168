@@ -1,0 +1,3 @@
+[console_scripts]
+nucleotides_to_matrices = nucleotides_to_matrices.cli:main
+
