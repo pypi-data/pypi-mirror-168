@@ -1,0 +1,13 @@
+bigml<9.0.0,>=8.2.1
+jsonschema>=2.6.0
+nbformat>=4.4.0
+opencv-python>=4.5.3
+
+[full]
+bigml[full]<9.0.0,>=8.2.0
+
+[images]
+bigml[images]<9.0.0,>=8.2.1
+
+[topics]
+bigml[topics]<9.0.0,>=8.2.1
