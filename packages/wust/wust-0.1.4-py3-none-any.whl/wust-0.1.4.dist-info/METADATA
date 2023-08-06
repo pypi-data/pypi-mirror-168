@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wust
+Version: 0.1.4
+Summary: WEkEO User Support Toolbox contains a set of tools to ease work in WEkEO.
+Author: David Bazin
+Author-email: dbazin@wekeo.eu
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: intake-thredds (>=2021.6.16)
+Requires-Dist: matplotlib (>=3.5.2)
+Description-Content-Type: text/markdown
+
+
