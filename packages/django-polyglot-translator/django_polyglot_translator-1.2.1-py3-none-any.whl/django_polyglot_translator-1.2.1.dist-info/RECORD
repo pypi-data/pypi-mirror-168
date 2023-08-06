@@ -1,0 +1,16 @@
+djangoPolyglot/__init__.py,sha256=1y7BBR2l-3BuWrDXe70lefKZxLd53JVfWAfn4y7Mn_0,23
+djangoPolyglot/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+djangoPolyglot/apps.py,sha256=wIDQUAQloUQbvd3cM5Sm1tD9JdRjkLkEkUhanq38pPI,160
+djangoPolyglot/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+djangoPolyglot/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+djangoPolyglot/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+djangoPolyglot/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoPolyglot/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoPolyglot/management/commands/arguments.py,sha256=pVv9ani5qkk8qA5CIm-19Nzm4e8XEgFKkMUvbIKI39g,1061
+djangoPolyglot/management/commands/django-polyglot.py,sha256=trdUngT9qfGxSYPnscjteX_ZTmfcKi5jE12lEwW4itU,3691
+djangoPolyglot/management/commands/license.py,sha256=Cr3bIdMrjig7wsLpJysA-6KcOg5ZoQxU-NP-6vJ9whw,615
+django_polyglot_translator-1.2.1.dist-info/LICENSE,sha256=VzG2MkTd_ngWrO1ukLZDvR4Ssh81vIEeKqBXaC7dY28,1071
+django_polyglot_translator-1.2.1.dist-info/METADATA,sha256=iwEu567nekA47bf4jALwy_HUfQGarl-Hmb3CeCb244Y,2573
+django_polyglot_translator-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_polyglot_translator-1.2.1.dist-info/top_level.txt,sha256=qILKow126fdRXQ4uTrjVeOsl2Xx324n29zi6UgurYtg,15
+django_polyglot_translator-1.2.1.dist-info/RECORD,,
