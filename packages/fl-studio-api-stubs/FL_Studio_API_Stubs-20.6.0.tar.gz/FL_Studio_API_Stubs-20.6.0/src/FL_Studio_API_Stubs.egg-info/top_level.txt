@@ -1,0 +1,16 @@
+arrangement
+channels
+device
+enveditor
+fl_classes
+fl_model
+general
+launchMapPages
+midi
+mixer
+patterns
+playlist
+plugins
+transport
+ui
+utils
