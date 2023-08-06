@@ -1,0 +1,5 @@
+PATH_PACKAGE_WORK_DIR = '/tmp/sumo-tasks-pipeline'
+SUBDIRECTORY_COMPRESSED = 'compressed'
+SUBDIRECTORY_COPIED = 'outputs'
+DIR_NAME_DOCKER_MOUNT = 'docker-host-side'
+DEFAULT_SUMO_COMMAND = '/bin/sumo'
