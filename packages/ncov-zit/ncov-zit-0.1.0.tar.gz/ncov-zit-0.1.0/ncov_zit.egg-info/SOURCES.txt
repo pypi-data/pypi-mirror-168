@@ -1,0 +1,8 @@
+README.md
+setup.py
+ncov_zit.egg-info/PKG-INFO
+ncov_zit.egg-info/SOURCES.txt
+ncov_zit.egg-info/dependency_links.txt
+ncov_zit.egg-info/entry_points.txt
+ncov_zit.egg-info/requires.txt
+ncov_zit.egg-info/top_level.txt
