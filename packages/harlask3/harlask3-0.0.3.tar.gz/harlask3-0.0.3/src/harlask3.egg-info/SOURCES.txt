@@ -1,0 +1,5 @@
+setup.py
+src/harlask3.egg-info/PKG-INFO
+src/harlask3.egg-info/SOURCES.txt
+src/harlask3.egg-info/dependency_links.txt
+src/harlask3.egg-info/top_level.txt
