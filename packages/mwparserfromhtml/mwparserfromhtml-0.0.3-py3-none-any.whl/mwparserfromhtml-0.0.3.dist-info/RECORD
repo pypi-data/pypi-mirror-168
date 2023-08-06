@@ -1,0 +1,13 @@
+mwparserfromhtml/__init__.py,sha256=BR9crTvgYrHLjVlWxrY4yVZR78vXC4BQypqHvJWxcPY,370
+mwparserfromhtml/dump/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwparserfromhtml/dump/dump.py,sha256=0tx33IHIP-ttVMeDrfRkWcIJ_KnD9RcJWr4ObK4uyBQ,2500
+mwparserfromhtml/parse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwparserfromhtml/parse/article.py,sha256=SOxmfdAbSY_r0qOUBYgFtxWVCgUyCF6SgdgQQotoBAw,9148
+mwparserfromhtml/parse/const.py,sha256=-z82QY1f5JVCMwXEa5Jgwy9gl5iqGqaiG1RGc4xU-Js,272741
+mwparserfromhtml/parse/elements.py,sha256=PHMadeWzVOQQufph1sCq_5nnhBaOGmqPK1bkLGDu1A0,6026
+mwparserfromhtml/parse/utils.py,sha256=uIs4WiBXCs5f7Vg3R7vG4QN4gs_O2QkXoIy-veD7m-s,8088
+mwparserfromhtml-0.0.3.dist-info/LICENSE,sha256=LvpaaccZ_-c0QhxjxDSMTLc4eqVwN9zaln108A0N1P0,1073
+mwparserfromhtml-0.0.3.dist-info/METADATA,sha256=f603osNldh06Ih5TQ9ttfRPv7rotI47cac2Temmj5w4,6446
+mwparserfromhtml-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mwparserfromhtml-0.0.3.dist-info/top_level.txt,sha256=vB8Jc1k-j4Fxjmfcrl1s85Zsp9FYSEalWC00_FX21-Y,17
+mwparserfromhtml-0.0.3.dist-info/RECORD,,
