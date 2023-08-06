@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyw90
+Version: 1.0.3
+Summary: A tool interfaced to VASP and Wannier90 with projection analysis and automatically dis energy window optimization
+Home-page: https://github.com/Cloudiiink/pyw90
+License: GPL-3.0-only
+Keywords: python,vasp,wannier90,tight-binding,solid-state-physics
+Author: En Wang (Cloudiiink)
+Author-email: wangenzj@gmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: PyYAML
+Requires-Dist: matplotlib (>=3.4)
+Requires-Dist: numpy (>=1.20.1)
+Requires-Dist: pandas
+Requires-Dist: pymatgen
+Requires-Dist: scipy (>=1.8)
+Description-Content-Type: text/markdown
+
+# pyw90
+
+A tool interfaced to VASP and Wannier90 with projection analysis and automatically dis energy window optimization.
+
+Key features includes: 
+
+1. Show distribution of eigenvalues.
+2. Pre-analysis before `Wannier90` interpolation with projection and dis energy window recommendation
+3. Auto Wannier90 Fit. Using minimize method to choose the most suitable dis energy windows. 4. Comparison. Show difference between VASP bands and Wannier90 bands via plotting and report. '
