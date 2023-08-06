@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PyWarden
+Version: 0.0.6
+Summary: A pip package that interacts with Bitwarden, without interruption.
+License: GPL-3.0
+Keywords: Bitwarden,CLI,Python,PyWarden
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+# PyWarden, WiP!
+
+`python3 main.py --help`
+
