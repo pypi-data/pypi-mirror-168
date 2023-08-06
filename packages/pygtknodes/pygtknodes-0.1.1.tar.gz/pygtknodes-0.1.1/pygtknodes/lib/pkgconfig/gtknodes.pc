@@ -1,0 +1,12 @@
+prefix=/gtknodes/build
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gtknodes
+Description: A GTK+ based widget library to create functional flow graphs
+URL: https://space.univie.ac.at
+Version: 0.1
+Requires: gtk+-3.0
+Libs: -L${libdir} -lgtknodes-0.1
+Cflags:  -I${includedir}/gtknodes

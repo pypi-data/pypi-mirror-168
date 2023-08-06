@@ -1,0 +1,17 @@
+setup.py
+pygtknodes/__init__.py
+pygtknodes.egg-info/PKG-INFO
+pygtknodes.egg-info/SOURCES.txt
+pygtknodes.egg-info/dependency_links.txt
+pygtknodes.egg-info/top_level.txt
+pygtknodes/include/gtknodes/gtknode.h
+pygtknodes/include/gtknodes/gtknodesocket.h
+pygtknodes/include/gtknodes/gtknodeview.h
+pygtknodes/lib/libgtknodes-0.1.a
+pygtknodes/lib/libgtknodes-0.1.la
+pygtknodes/lib/libgtknodes-0.1.so
+pygtknodes/lib/libgtknodes-0.1.so.0
+pygtknodes/lib/libgtknodes-0.1.so.0.0.0
+pygtknodes/lib/girepository-1.0/GtkNodes-0.1.typelib
+pygtknodes/lib/pkgconfig/gtknodes.pc
+pygtknodes/share/gir-1.0/GtkNodes-0.1.gir
