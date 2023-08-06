@@ -1,0 +1,68 @@
+{
+# Config file for running Muphoten
+
+# bkg_n_sigma: sigma level from the median to perform clipping for bakground estimation
+bkg_n_sigma: 3.0
+
+# bkg_box: size of the box in which the background is estimated
+bkg_box: [128, 128]
+
+# bkg_estimator: Estimator for the background
+bkg_estimator: 'sex'
+
+# bkg_filter_size: size of the filter used for smoothing
+bkg_filter_size: [5, 5]
+
+# det_treshold: level above the background to define a source
+det_treshold: 2.0
+
+# det_n_sigma: FWHM in pixel of the gaussian to filter the data
+det_n_sigma: 3.0
+
+# det_deblend: Wether or not deblending the sources
+det_deblend: true
+
+# det_npixels: Number of pixels necessary to define a source
+det_npixels: 8
+
+# contrast: Fraction of the total source flux that a local peak must have to be considered as a separate object
+contrast: 0.001
+
+# radius_isophotal: Extension used for the Isophotal Photometry (if chosen)
+radius_iso: 5.0
+
+# Extension_fixed: Factor used to multiply the PSF for fixed aperture.
+fixed_factor: 1.2
+
+# Clipping_calib: Level of sigma clipping used to calibrate the images.
+clipping_calib: 2.0
+
+# cut_mag: Cut magnitude for the calibration.
+cut_mag: 21.0
+
+# bkg_n_sigma_sub: sigma level from the median to perform clipping for bakground estimation in the subtracted image
+bkg_n_sigma_sub: 3.0
+
+# bkg_box_sub: size of the box in which the background is estimated in the subtracted image
+bkg_box_sub: [30, 30]
+
+# bkg_filter_size_sub: size of the filter used for smoothing in the subtracted image
+bkg_filter_size_sub: [3, 3]
+
+# det_treshold_sub: level above the background to define a source
+det_treshold_sub: 2.0
+
+# det_n_sigma_sub: FWHM in pixel of the gaussian to filter the data
+det_n_sigma_sub: 3.0
+
+# det_deblend_sub: Wether or not deblending the sources
+det_deblend_sub: true
+
+# det_npixels_sub: Number of pixels necessary to define a source
+det_npixels_sub: 4
+
+# contrast_sub: Fraction of the total source flux that a local peak must have to be considered as a separate object
+contrast_sub: 0.001
+
+}
+
