@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+scitrix/__init__.py
+scitrix.egg-info/PKG-INFO
+scitrix.egg-info/SOURCES.txt
+scitrix.egg-info/dependency_links.txt
+scitrix.egg-info/requires.txt
+scitrix.egg-info/top_level.txt
