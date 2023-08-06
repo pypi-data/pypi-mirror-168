@@ -1,0 +1,13 @@
+mangadlmao/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mangadlmao/cbz.py,sha256=8yF0vqKmfrDv2UUndkXXbiU9_Tkhsoiomn1ji-d9ma0,1440
+mangadlmao/mangadlmao.py,sha256=rJH2FehxQsdrZXpthL-XsscbEXsUhXFaPizNcljGCb8,7324
+mangadlmao/utils.py,sha256=GyEPiwoUbwDWlM0X-97MldNnsY0POWZbjQdI1hqzvyE,3189
+mangadlmao/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mangadlmao/apis/mangadex.py,sha256=WJnh-LXzrcdT397giYId5QonY7SMMLpPBGfZm7ziSq8,17664
+mangadlmao/apis/mangasee.py,sha256=PiwOX3kkhasxJAdpf5APES72cviJKdX9-J8o7vJ1_a0,6470
+mangadlmao-1.1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mangadlmao-1.1.2.dist-info/METADATA,sha256=lpCJccNgMJnUOa9PjIft-yl6hsRnLY_qOj9xNTp0eys,4904
+mangadlmao-1.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mangadlmao-1.1.2.dist-info/entry_points.txt,sha256=ugxYLt4OzbUDpPq66lgSD_Ymv3Xx2QjxGOP8T4Yx6vw,58
+mangadlmao-1.1.2.dist-info/top_level.txt,sha256=PEGMJbuNdWRt6CaND91bm647v-W71DVrmt0Z59Sqw8s,11
+mangadlmao-1.1.2.dist-info/RECORD,,
