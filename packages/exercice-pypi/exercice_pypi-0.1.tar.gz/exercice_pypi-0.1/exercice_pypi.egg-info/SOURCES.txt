@@ -1,0 +1,10 @@
+setup.py
+exercice_pypi/Binomialdistribution.py
+exercice_pypi/Gaussiandistribution.py
+exercice_pypi/Generaldistribution.py
+exercice_pypi/__init__.py
+exercice_pypi.egg-info/PKG-INFO
+exercice_pypi.egg-info/SOURCES.txt
+exercice_pypi.egg-info/dependency_links.txt
+exercice_pypi.egg-info/not-zip-safe
+exercice_pypi.egg-info/top_level.txt
