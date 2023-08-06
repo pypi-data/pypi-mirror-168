@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ValVault
+Version: 1.1.2
+Author: PWall
+License: GPL-3.0
+Project-URL: Homepage, https://github.com/pwall2222/ValVault
+Keywords: valorant,vault,keepass
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# ValVault
+
+This python module stores the user credentials of riot users and also provides the riot auth api in one simple package so it can be used in multiple projects.
+
+## Usage/Examples
+
+```python
+from ValVault import (
+ init as init_auth,
+ makeHeaders,
+ getUsers,
+ getPass,
+ getAuth,
+ newUser,
+ User
+)
+
+init_auth()
+newUser("Test", "Password")
+username = getUsers()[0]
+user = User(username, getPass(username))
+auth = getAuth(user)
+headers = makeHeaders(auth)
+#Use auth headers to do whatever
+```
