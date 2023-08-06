@@ -1,0 +1,14 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+Makefile
+NOTICE
+README.txt
+recordtype.py
+setup.cfg
+setup.py
+recordtype.egg-info/PKG-INFO
+recordtype.egg-info/SOURCES.txt
+recordtype.egg-info/dependency_links.txt
+recordtype.egg-info/requires.txt
+recordtype.egg-info/top_level.txt
