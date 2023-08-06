@@ -1,0 +1,6 @@
+[console_scripts]
+fast-sqla=fast_sqlalchemy.cli.entry_point:main
+
+[pytest11]
+fast_sqlalchemy=fast_sqlalchemy.testing.pytest
+
