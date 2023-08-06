@@ -1,0 +1,17 @@
+param>=1.9
+
+[all]
+ruamel.yaml>=0.15
+optuna
+numpy
+pandas
+
+[optuna]
+optuna
+
+[types]
+numpy
+pandas
+
+[yaml]
+ruamel.yaml>=0.15
