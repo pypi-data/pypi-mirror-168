@@ -1,0 +1,43 @@
+name: napari-pixel-correction
+display_name: Pixel correction
+contributions:
+  commands:
+    - id: napari-pixel-correction.get_reader
+      python_name: napari_pixel_correction._reader:napari_get_reader
+      title: Open data with Pixel correction
+
+    - id: napari-pixel-correction.write_multiple
+      python_name: napari_pixel_correction._writer:write_multiple
+      title: Save multi-layer data with Pixel correction
+
+    - id: napari-pixel-correction.write_single_image
+      python_name: napari_pixel_correction._writer:write_single_image
+      title: Save image data with Pixel correction
+
+    - id: napari-pixel-correction.load
+      python_name: napari_pixel_correction._widget:process_function_load
+      title: Load image
+    - id: napari-pixel-correction.save_label
+      python_name: napari_pixel_correction._widget:save_modification
+      title: Save label
+    - id: napari-pixel-correction.save_as_zip
+      python_name: napari_pixel_correction._widget:save_as_zip
+      title: Save zip
+  readers:
+    - command: napari-pixel-correction.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy']
+  writers:
+    - command: napari-pixel-correction.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: napari-pixel-correction.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
+  widgets:
+    - command: napari-pixel-correction.load
+      display_name: Load image
+    - command: napari-pixel-correction.save_label
+      display_name: Save label
+    - command: napari-pixel-correction.save_as_zip
+      display_name: Save zip
