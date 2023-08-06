@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard, clickableCardModal %}
+
+{% block main %}
+
+    <div class="row">
+        {% for order_type in order_types %}
+            <div class="col s12 m4">
+                {% if order_type.name == "Dine In" %}
+                    {% if has_order_pagers %}
+                        {{ clickableCardModal('orderPagerModal', order_type.name) }}
+                        <div id="orderPagerModal" class="modal rounded">
+                            <div class="modal-content">
+                                <h4 class="center-align">Available Pagers</h4>
+                                <div class="row">
+                                    {% for order_pager in order_pagers %}
+                                        <div class="col s12 m4">
+                                            {{ clickableCard(url_for('pos.create_order', order_type_id=order_type.id, order_pager_id=order_pager.id), order_pager.name) }}
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        {{ clickableCard(url_for('pos.create_order', order_type_id=order_type.id, order_pager_id=1), order_type.name) }}
+                    {% endif %}
+                {% elif order_type.name == "Take Out" %}
+                    {{ clickableCard(url_for('pos.create_order', order_type_id=order_type.id, order_pager_id=2), order_type.name) }}
+                {% elif order_type.name == "Phone" %}
+                    {{ clickableCard(url_for('pos.create_order', order_type_id=order_type.id, order_pager_id=3), order_type.name) }}
+                {% endif %}
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+
+
+{% endblock %}

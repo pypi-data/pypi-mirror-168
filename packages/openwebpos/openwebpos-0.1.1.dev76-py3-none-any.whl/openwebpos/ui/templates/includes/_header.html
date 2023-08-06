@@ -1,0 +1,42 @@
+<div class="row mb0 f1">
+    <div class="col s4 left-align">
+        <pre class="my0">User:&nbsp;{{ current_user.username }}</pre>
+    </div>
+    <div class="col s4 center-align">
+        <pre class="my0" id="date"></pre>
+    </div>
+    <div class="col s4 right-align">
+        <pre class="my0" id="time"></pre>
+    </div>
+</div>
+<nav class="nav-wrapper blue accent-4">
+    {% if title == "POS" %}
+        <a href="{{ url_for('pos.index') }}" class="brand-logo center">OpenWebPOS</a>
+    {% else %}
+        <a href="{{ url_for('pos.index') }}" class="brand-logo center">{{ title }}</a>
+    {% endif %}
+    <ul class="left left-align">
+        {% if (title !="POS") %}
+            <li class="waves-effect waves-light">
+                <a onclick="go_back()"><i class="material-icons">arrow_back</i></a>
+            </li>
+        {% endif %}
+        {% if current_user.is_admin %}
+            <li class="waves-effect waves-light">
+                <a href="{{ url_for('admin.index') }}"><i class="material-icons">admin_panel_settings</i></a>
+            </li>
+        {% endif %}
+        <li class="waves-effect waves-light">
+            <a href="#">
+                <i class="material-icons">dashboard</i>
+            </a>
+        </li>
+    </ul>
+    <ul class="right right-align">
+        <li class="red accent-3 waves-effect waves-light corner-btn">
+            <a href="{{ url_for('user.logout') }}">
+                <i class="material-icons">close</i>
+            </a>
+        </li>
+    </ul>
+</nav>

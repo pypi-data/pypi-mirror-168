@@ -1,0 +1,112 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import floatingButton %}
+
+{% block main %}
+
+    <div class="grid-wrapper">
+        <div class="view">
+            <div class="row mb0">
+                {% for order in orders %}
+                    <div class="col s12 m4">
+                        <div class="card order-display rounded">
+                            {% if order.get_payment_status() == 'Unpaid' %}
+                                <a href="{{ url_for('pos.order', order_number=order.orderNumber) }}">
+                            {% elif order.get_payment_status() == 'Partial' %}
+                                <a href="{{ url_for('pos.pay_order', order_number=order.orderNumber) }}">
+                            {% else %}
+                                <a href="#{{ order.orderNumber }}ViewModal" class="modal-trigger">
+                            {% endif %}
+
+                            <div class="card-content">
+                                <span class="card-title white-text center-align deep-purple rounded">{{ order.order_pager.name }}</span>
+                                <table class="black-text">
+                                    <thead>
+                                    <tr>
+                                        <th class="center-align">QT</th>
+                                        <th class="center-align">Item</th>
+                                        <th class="center-align">Total</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for order_item in order_items %}
+                                        {% if order_item.orderID == order.id %}
+                                            <tr>
+                                                <td class="center-align">{{ order_item.quantity }}</td>
+                                                <td>{{ order_item.item.menu.name }}- {{ order_item.item.name }}</td>
+                                                <td class="right-align">${{ order_item.subtotal }}
+                                                    <small>+TAX</small></td>
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            </a>
+                            <div class="card-action space-evenly">
+
+                                {% if order.paymentStatus == 'Paid' %}
+                                    <a class="btn rounded green accent-3 white-text modal-trigger"
+                                       href="#{{ order.orderNumber }}CompleteModal">Complete</a>
+                                    <div id="{{ order.orderNumber }}CompleteModal" class="modal grey darken-4 rounded">
+                                        <div class="modal-content">
+                                            <h4 class="center-align white-text">Complete Order?</h4>
+                                            <p class="center-align white-text flow-text">{{ order.orderNumber }}</p>
+                                        </div>
+                                        <div class="modal-footer blue-grey darken-4">
+                                            <a href="{{ url_for('pos.finish_order', order_id=order.id) }}"
+                                               class="waves-effect waves-green btn-small rounded green">YES</a>
+                                        </div>
+                                    </div>
+                                {% elif order.paymentStatus == 'Partial' %}
+                                    <a href="{{ url_for('pos.order_pay', order_number=order.orderNumber) }}"
+                                       class="btn rounded yellow accent-3"></a>
+                                {% else %}
+                                    <a href="" class="btn rounded red accent-3 white-text">Not Payed</a>
+                                {% endif %}
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="{{ order.orderNumber }}ViewModal" class="modal grey darken-4 rounded">
+                        <div class="modal-content">
+                            <h4 class="center-align white-text">{{ order.orderNumber }}</h4>
+                            <table class="white-text">
+                                <thead>
+                                <tr>
+                                    <th class="center-align">QT</th>
+                                    <th class="center-align">Item</th>
+                                    <th class="center-align">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for order_item in order_items %}
+                                    {% if order_item.orderID == order.id %}
+                                        <tr>
+                                            <td class="center-align">{{ order_item.quantity }}</td>
+                                            <td>{{ order_item.item.menu.name }}- {{ order_item.item.name }}</td>
+                                            <td class="right-align">${{ order_item.subtotal }}
+                                                <small>+TAX</small></td>
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer center-align blue-grey darken-4">
+                            <a href="{{ url_for('pos.print_receipt', style="customer", order_number=order.orderNumber) }}"
+                               class="waves-effect waves-light btn-small rounded left">Print Receipt</a>
+                            <a class="modal-close waves-effect waves-green btn-small rounded">Close</a>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    {{ floatingButton(route=url_for('pos.order_type'), icon='add', btnColor='blue accent-4') }}
+
+
+{% endblock %}
