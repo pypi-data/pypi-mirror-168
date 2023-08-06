@@ -1,0 +1,4 @@
+azure-identity
+azure-storage-blob~=12.11.0
+numpy
+torch
