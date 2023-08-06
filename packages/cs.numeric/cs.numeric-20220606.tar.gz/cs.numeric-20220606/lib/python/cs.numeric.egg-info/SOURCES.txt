@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+lib/python/cs/numeric.py
+lib/python/cs.numeric.egg-info/PKG-INFO
+lib/python/cs.numeric.egg-info/SOURCES.txt
+lib/python/cs.numeric.egg-info/dependency_links.txt
+lib/python/cs.numeric.egg-info/top_level.txt

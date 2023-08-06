@@ -1,0 +1,72 @@
+[project]
+name = "cs.numeric"
+description = "A few ad hoc numeric alogrithms: `factors` and `primes`."
+authors = [
+    { name = "Cameron Simpson", email = "cs@cskk.id.au" },
+]
+keywords = [
+    "python2",
+    "python3",
+]
+dependencies = []
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+version = "20220606"
+
+[project.license]
+text = "GNU General Public License v3 or later (GPLv3+)"
+
+[project.urls]
+URL = "https://bitbucket.org/cameron_simpson/css/commits/all"
+
+[project.readme]
+text = """
+A few ad hoc numeric alogrithms: `factors` and `primes`.
+
+*Latest release 20220606*:
+New intif(f): int(f) if that equals f, otherwise f.
+
+## Function `factors(n)`
+
+Generator yielding the prime factors of `n` in order from lowest to highest.
+
+## Function `intif(f: float)`
+
+Return `int(f)` if that equals `f`, otherwise `f`.
+
+## Function `primes()`
+
+Generator yielding the primes in order starting at 2.
+
+# Release Log
+
+
+
+*Release 20220606*:
+New intif(f): int(f) if that equals f, otherwise f.
+
+*Release 20190309*:
+Superficial changes.
+
+*Release 20150311.2*:
+Added RST doco for cs.numeric.
+
+*Release 20150311*:
+Initial release with primes() and factors()."""
+content-type = "text/markdown"
+
+[build-system]
+requires = [
+    "setuptools >= 61.2",
+    "trove-classifiers",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
