@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pouty"
+version = "v1.0.0"
+description = "C++-style IO in Python!"
+authors = ["Om Duggineni <omduggineni@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[distutils]
+index-servers = "pypi"
+
+[pypi]
+repository = "https://upload.pypi.org/simple/"
+username = "odd_odo"
