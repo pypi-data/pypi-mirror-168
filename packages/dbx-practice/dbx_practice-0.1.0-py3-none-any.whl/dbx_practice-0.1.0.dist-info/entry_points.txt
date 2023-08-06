@@ -1,0 +1,4 @@
+[console_scripts]
+hello=dbx-practice.say_hello:hello
+say_hello=dbx-practice.say_hello:say_hello
+
