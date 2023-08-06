@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+NEPMetadataMapping/__init__.py
+NEPMetadataMapping/attributeMapping.py
+NEPMetadataMapping/dicomMapping.py
+NEPMetadataMapping/dicomReader.py
+NEPMetadataMapping/mapSchema.py
+NEPMetadataMapping/metadataReader.py
+NEPMetadataMapping/metadataSchemaReader.py
+NEPMetadataMapping.egg-info/PKG-INFO
+NEPMetadataMapping.egg-info/SOURCES.txt
+NEPMetadataMapping.egg-info/dependency_links.txt
+NEPMetadataMapping.egg-info/requires.txt
+NEPMetadataMapping.egg-info/top_level.txt
