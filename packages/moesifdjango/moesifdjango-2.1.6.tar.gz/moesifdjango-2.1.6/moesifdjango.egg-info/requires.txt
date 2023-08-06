@@ -1,0 +1,13 @@
+requests
+jsonpickle
+python-dateutil
+isodatetimehandler
+moesifapi>=1.4.0
+moesifpythonrequest>=0.2.0
+apscheduler
+nose
+
+[dev]
+
+[test]
+nose
