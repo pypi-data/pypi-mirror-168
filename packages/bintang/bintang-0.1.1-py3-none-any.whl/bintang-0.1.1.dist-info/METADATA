@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: bintang
+Version: 0.1.1
+Summary: A tiny and temporary db for quick data cleansing and transformation.
+Author: Tomex Iskandar
+Author-email: tomex.iskandar@gmail.com
+Keywords: data table tool
+License-File: LICENSE
+
