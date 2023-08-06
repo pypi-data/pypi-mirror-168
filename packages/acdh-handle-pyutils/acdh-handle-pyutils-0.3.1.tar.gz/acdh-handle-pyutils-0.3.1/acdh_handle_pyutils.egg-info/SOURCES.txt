@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+acdh_handle_pyutils/__init__.py
+acdh_handle_pyutils/client.py
+acdh_handle_pyutils.egg-info/PKG-INFO
+acdh_handle_pyutils.egg-info/SOURCES.txt
+acdh_handle_pyutils.egg-info/dependency_links.txt
+acdh_handle_pyutils.egg-info/entry_points.txt
+acdh_handle_pyutils.egg-info/not-zip-safe
+acdh_handle_pyutils.egg-info/requires.txt
+acdh_handle_pyutils.egg-info/top_level.txt
+tests/__init__.py
+tests/test_client.py
