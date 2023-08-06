@@ -1,0 +1,61 @@
+STD_CANDLE_FORMAT = [
+    'open_time', 'open', 'high', 'low', 'close', 'volume', 'close_time'
+]
+
+VAR_NEEDED_FOR_POSITION = [
+    'all_entry_time', 'all_entry_point', 'all_entry_price',
+    'all_exit_time', 'all_exit_point', 'all_tp', 'all_sl'
+]
+
+DATA_FORMATING = {
+    "binance": {
+        "columns": [
+            'open_time', 'open', 'high', 'low', 'close', 'volume', 'close_time',
+            'quote_asset_volume', 'nb_of_trades', 'taker_base_volume',
+            'taker_quote_volume', 'ignore'
+        ],
+        "num_var": [
+            "open", "high", "low", "close", "volume", "quote_asset_volume",
+            "nb_of_trades", "taker_base_volume", "taker_quote_volume"
+        ],
+        "date_var": [
+            "open_time", "close_time"
+        ]
+    },
+    "ftx": {
+        "columns": [
+            'startTime', 'time', 'open', 'high', 'low', 'close', 'volume'
+        ],
+        "num_var": [
+            'open', 'high', 'low', 'close', 'volume'
+        ]
+    },
+    "bybit": {
+        "columns": [
+            'open_time', 'open', 'high', 'low', 'close', 'volume', 'turnover'
+        ],
+        "num_var": [
+            'open', 'high', 'low', 'close', 'volume', 'turnover'
+        ]
+    }
+
+}
+
+ORDER_STD = {
+    'bybit': {'order_status': {'Filled': 'FILLED',
+                               'Cancelled': 'CANCELED',
+                               'PartiallyFilled': 'PARTIALLY_FILLED',
+                               'New': 'NEW',
+                               'Created': 'CREATED',
+                               'Rejected': 'REJECTED',
+                               'Untriggered': 'UNTRIGGERED',
+                               'Deactivated': 'DEACTIVATED',
+                               'Triggered': 'TRIGGERED',
+                               'Active': 'ACTIVE'},
+              'order_type': {'Limit': 'LIMIT',
+                             'Market': 'MARKET'},
+              'rename_keys': {'qty': 'originalQuantity',
+                              'cum_exec_qty': 'executedQuantity',
+                              'cum_exec_fee': 'exit_fees'}}
+
+}
