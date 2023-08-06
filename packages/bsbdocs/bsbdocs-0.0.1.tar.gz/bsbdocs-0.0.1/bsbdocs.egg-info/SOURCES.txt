@@ -1,0 +1,10 @@
+LICENSE
+README.md
+bsbdocs.py
+pyproject.toml
+setup.py
+bsbdocs.egg-info/PKG-INFO
+bsbdocs.egg-info/SOURCES.txt
+bsbdocs.egg-info/dependency_links.txt
+bsbdocs.egg-info/requires.txt
+bsbdocs.egg-info/top_level.txt

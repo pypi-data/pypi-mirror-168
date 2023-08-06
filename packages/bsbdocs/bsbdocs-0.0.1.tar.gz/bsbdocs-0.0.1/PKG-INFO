@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bsbdocs
+Version: 0.0.1
+Summary: BSB sphinx documentation extension
+Home-page: https://github.com/dbbs-lab/bsb-hdf5
+Author: Robin De Schepper
+Author-email: robingilbert.deschepper@unipv.it
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sphinxext-bsb
+Sphinx extension for the BSB documentation
