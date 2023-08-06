@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: slack-blocker-builder-SDK
+Version: 0.1.0
+Summary: A utilized tool to construct a slack message block quickly
+Home-page: https://github.com/stone-home/slack-bocker-builder-SDK
+Author: stone
+Author-email: github@stone-bo.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+
+
+    There are a lot of message blocks that need to be built during on whole chatbot project.
+
+    For consistent behaviour on message constructive, Need a uniform blocks builder class for the whole project.
+    
