@@ -1,0 +1,6 @@
+setup.py
+src/calc.py
+src/rio_simple_calc.egg-info/PKG-INFO
+src/rio_simple_calc.egg-info/SOURCES.txt
+src/rio_simple_calc.egg-info/dependency_links.txt
+src/rio_simple_calc.egg-info/top_level.txt
