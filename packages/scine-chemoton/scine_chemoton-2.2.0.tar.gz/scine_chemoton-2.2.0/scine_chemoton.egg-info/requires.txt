@@ -1,0 +1,7 @@
+numpy
+networkx
+scine_database
+scine_utilities
+scine_molassembler
+scipy
+setproctitle
