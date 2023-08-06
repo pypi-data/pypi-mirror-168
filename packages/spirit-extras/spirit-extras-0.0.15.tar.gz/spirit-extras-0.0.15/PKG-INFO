@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: spirit-extras
+Version: 0.0.15
+Summary: Package to be used with the magnetism simulation tool spirit
+Home-page: https://github.com/msallermann/spirit_extras
+Author: Moritz Sallermann
+Author-email: m.sallermann@fz-juelich.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Package with some useful scripts, used together with github.com/spirit-code/spirit/.
