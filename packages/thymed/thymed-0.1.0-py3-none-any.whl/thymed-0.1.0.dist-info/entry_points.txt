@@ -1,0 +1,4 @@
+[console_scripts]
+punch=thymed.__main__:punch_default
+thymed=thymed.__main__:main
+
