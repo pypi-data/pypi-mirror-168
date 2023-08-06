@@ -1,0 +1,15 @@
+test.fasta
+output3
+variation_number/_pycache_/*
+output2
+build
+dist
+LICENSE
+MANIFEST.in
+output
+output1
+test.py
+tests
+variation_number.egg-info
+venv
+.DS_Store
