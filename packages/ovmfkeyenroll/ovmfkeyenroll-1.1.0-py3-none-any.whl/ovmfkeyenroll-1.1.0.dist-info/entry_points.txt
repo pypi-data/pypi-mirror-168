@@ -1,0 +1,2 @@
+[console_scripts]
+ovmfkeyenroll = ovmfkeyenroll.secure_boot:main
