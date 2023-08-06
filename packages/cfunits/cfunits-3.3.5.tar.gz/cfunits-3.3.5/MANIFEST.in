@@ -1,0 +1,10 @@
+include MANIFEST.in		
+include Changelog.md
+include README.md
+include requirements.txt
+recursive-include cfunits *
+recursive-exclude * *~ *.gz *.pyc
+recursive-exclude * *.o *.so .nfs*
+recursive-exclude * *.zip
+recursive-exclude cfunits/test/cfunits_coverage_report *
+recursive-exclude cfunits/test .coverage .blame-ignore-style-edits
