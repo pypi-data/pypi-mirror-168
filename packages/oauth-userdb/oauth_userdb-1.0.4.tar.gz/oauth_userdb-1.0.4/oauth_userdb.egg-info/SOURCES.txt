@@ -1,0 +1,10 @@
+README.md
+setup.py
+oauth_userdb/__init__.py
+oauth_userdb/client.py
+oauth_userdb/dynamodb_client.py
+oauth_userdb.egg-info/PKG-INFO
+oauth_userdb.egg-info/SOURCES.txt
+oauth_userdb.egg-info/dependency_links.txt
+oauth_userdb.egg-info/requires.txt
+oauth_userdb.egg-info/top_level.txt
