@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: samppl
+Version: 0.0.0
+Summary: A simple probabilistic programming langauage in JAX.
+Author: Daniel Dodd
+Author-email: d.dodd1@lancaster.ac.uk
+License: LICENSE
+Keywords: ppl jax bayesian machine-learning statistics probabilistic-programming
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
