@@ -1,0 +1,3 @@
+[console_scripts]
+gta = github_token_app.cli:main
+
