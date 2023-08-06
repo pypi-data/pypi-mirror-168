@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: pyrmv
+Version: 0.2.2
+Summary: Small module that makes your journey with RMV REST API somehow easier.
+Home-page: https://git.end-play.xyz/profitroll/PythonRMV
+Author: Profitroll
+Author-email: profitroll@end-play.xyz
+License: UNKNOWN
+Project-URL: Bug Tracker, https://git.end-play.xyz/profitroll/PythonRMV/issues
+Project-URL: Documentation, https://git.end-play.xyz/profitroll/PythonRMV/wiki
+Project-URL: Source Code, https://git.end-play.xyz/profitroll/PythonRMV.git
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: xmltodict
+Requires-Dist: isodate
+
+## PythonRMV
+
+Small module that makes your journey with RMV REST API somehow easier. Based fully on official RMV API reference and HAFAS documentation.
+
+## Usage
+
+```py
+import pyrmv
+
+# Set API key
+access_id = "Something"
+
+# Get origin's and destination's location
+origin = pyrmv.raw.stop_by_name(access_id, "Frankfurt Hauptbahnhof", max_number=3)[0]
+destination = pyrmv.stop_by_coords(access_id, 50.099613, 8.685449, max_number=3)[0]
+
+## Find a trip by locations got
+trip = pyrmv.trip_find(access_id, origin_id=origin.id, destination_id=destination.id)
+```
+
+## Frequently Asked Questions
+
+- Why are there raw versions and formatted ones?
+- Some methods work slightly different
+- Documentation is not perfectly clear
+
+### Why are there raw versions and formatted ones?
+
+For the purposes of my projects I don't really need all the stuff RMV gives (even though it's not much).
+I only need some specific things. However I do understand that in some cases other users may find
+those methods quite useful so I implemented them as well.
+
+
+### Some methods work slightly different
+
+Can be. Not all function arguments written may work perfectly because I simply did not test each and
+every request. Some of arguments may be irrelevant in my use-case and the others are used quite rare at all.
+Just [make an issue](https://git.end-play.xyz/profitroll/PythonRMV/issues/new) and I'll implement it correct when I'll have some free time.
+
+### Documentation is not perfectly clear
+
+Of course docs cannot be perfect as a python docstring, especially if sometimes I don't
+know how things should correctly work. That's why you get HAFAS API docs in addition to your
+RMV API key. Just use my functions together with those docs, if you want to build something
+really sophisticated. However I'm not sure whether RMV supports that many HAFAS features publicly.
+
+## To-Do
+- [ ] arrivalBoard (board_arrival)  
+- [ ] departureBoard (board_departure)  
+- [x] himsearch (him_search)  
+- [ ] journeyDetail (journey_detail)
+- [x] location.nearbystops (stop_by_coords)  
+- [x] location.name (stop_by_name)  
+- [x] trip (trip_find)  
+- [ ] recon (trip_recon)
+
