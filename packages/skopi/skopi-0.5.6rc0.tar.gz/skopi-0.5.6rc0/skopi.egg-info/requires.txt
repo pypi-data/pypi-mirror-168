@@ -1,0 +1,10 @@
+numpy
+numba
+scipy
+mpi4py
+h5py
+six
+scikit-learn
+pytest
+matplotlib
+setuptools
