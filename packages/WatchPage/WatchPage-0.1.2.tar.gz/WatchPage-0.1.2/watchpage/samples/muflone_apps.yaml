@@ -1,0 +1,80 @@
+NAME: bluewho
+URL: https://github.com/muflone/bluewho/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/bluewho/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: cpucompare
+URL: https://github.com/muflone/cpucompare/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/cpucompare/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: gespeaker
+URL: https://github.com/muflone/gespeaker/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/gespeaker/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: gextractwinicons
+URL: https://github.com/muflone/gextractwinicons/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/gextractwinicons/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: gnome-appfolders-manager
+URL: https://github.com/muflone/gnome-appfolders-manager/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/gnome-appfolders-manager/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: gptrace
+URL: https://github.com/muflone/gptrace/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/gptrace/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: gtransmemory
+URL: https://github.com/muflone/gtransmemory/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/gtransmemory/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: gwakeonlan
+URL: https://github.com/muflone/gwakeonlan/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/gwakeonlan/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---

@@ -1,0 +1,70 @@
+NAME: remmina-plugin-folder
+URL: https://github.com/muflone/remmina-plugin-folder/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/remmina-plugin-folder/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: remmina-plugin-open
+URL: https://github.com/muflone/remmina-plugin-open/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/remmina-plugin-open/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: remmina-plugin-rdesktop
+URL: https://github.com/muflone/remmina-plugin-rdesktop/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/remmina-plugin-rdesktop/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: remmina-plugin-teamviewer
+URL: https://github.com/muflone/remmina-plugin-teamviewer/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/remmina-plugin-teamviewer/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: remmina-plugin-ultravnc
+URL: https://github.com/muflone/remmina-plugin-ultravnc/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/remmina-plugin-ultravnc/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: remmina-plugin-url
+URL: https://github.com/muflone/remmina-plugin-url/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/remmina-plugin-url/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: remmina-plugin-webkit
+URL: https://github.com/muflone/remmina-plugin-webkit/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/remmina-plugin-webkit/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---

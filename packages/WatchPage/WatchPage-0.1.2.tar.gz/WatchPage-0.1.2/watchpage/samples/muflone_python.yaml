@@ -1,0 +1,70 @@
+NAME: awaitable
+URL: https://github.com/muflone/awaitable/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/awaitable/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: mumailer
+URL: https://github.com/muflone/mumailer/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/mumailer/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: pymagento-rest
+URL: https://github.com/muflone/pymagento-rest/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/pymagento-rest/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: pykerio
+URL: https://github.com/muflone/pykerio/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/pykerio/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: pyodoo
+URL: https://github.com/muflone/pyodoo/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/pyodoo/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: pyzendesk
+URL: https://github.com/muflone/pyzendesk/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/pyzendesk/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: watchpage
+URL: https://github.com/muflone/watchpage/tags
+PARSER: html.parser
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/watchpage/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---

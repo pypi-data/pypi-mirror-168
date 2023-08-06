@@ -1,0 +1,26 @@
+NAME: gnome-appfolders-manager
+URL: https://github.com/muflone/gnome-appfolders-manager/tags
+PARSER: html5
+TYPE: links
+ABSOLUTE_URLS: true
+FILTERS:
+  - STARTS: https://github.com/muflone/gnome-appfolders-manager/archive/refs/tags/
+  - ENDS: .tar.gz
+STATUS: true
+---
+NAME: dbeaver_plugins
+URL: https://dbeaver.io/update/ce/latest/plugins/
+PARSER: html.parser
+TYPE: text
+FILTERS:
+  - CONTAINS: .jar
+STATUS: false
+---
+NAME: gmtp
+URL: https://sourceforge.net/projects/gmtp/rss
+PARSER: xml
+TYPE: rss
+FILTERS:
+  - ENDS: .tar.gz/download
+STATUS: true
+---
