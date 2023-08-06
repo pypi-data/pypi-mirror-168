@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+version_calculation/__init__.py
+version_calculation/math.py
+version_calculation.egg-info/PKG-INFO
+version_calculation.egg-info/SOURCES.txt
+version_calculation.egg-info/dependency_links.txt
+version_calculation.egg-info/top_level.txt
