@@ -1,0 +1,4 @@
+sh
+matplotlib
+scipy
+numpy
