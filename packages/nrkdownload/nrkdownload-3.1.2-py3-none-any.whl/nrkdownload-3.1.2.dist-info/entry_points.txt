@@ -1,0 +1,3 @@
+[console_scripts]
+nrkdownload=nrkdownload.cli:app
+
