@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+taash/__init__.py
+taash/_modidx.py
+taash/card.py
+taash/deck.py
+taash.egg-info/PKG-INFO
+taash.egg-info/SOURCES.txt
+taash.egg-info/dependency_links.txt
+taash.egg-info/entry_points.txt
+taash.egg-info/not-zip-safe
+taash.egg-info/requires.txt
+taash.egg-info/top_level.txt
