@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+setup.py
+itproject/__init__.py
+itproject/deeplearning/__init__.py
+itproject/machinelearning/__init__.py
+itproject/mathbasic/MatrixUtil.py
+itproject/mathbasic/__init__.py
+itprojectai.egg-info/PKG-INFO
+itprojectai.egg-info/SOURCES.txt
+itprojectai.egg-info/dependency_links.txt
+itprojectai.egg-info/requires.txt
+itprojectai.egg-info/top_level.txt
