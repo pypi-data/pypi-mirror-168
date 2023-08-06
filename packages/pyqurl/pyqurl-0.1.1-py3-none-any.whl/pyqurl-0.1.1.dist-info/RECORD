@@ -1,0 +1,12 @@
+pyqurl/__init__.py,sha256=Q6wrlXw9k5gZzFKcWABwPeA3Sc53Ebu5Jz5XNcnjcqA,73
+pyqurl/core.py,sha256=D_3iOaOqpUiVYT0UwlLKRwZdgYM3049Aj_1XmUlUun4,3593
+pyqurl/exceptions.py,sha256=YDDNokIWWC2Nv7UdaV3P-dJGw8XJRJKb4yTABU3-Hbg,308
+pyqurl/helpers.py,sha256=FXlUKTM5bYB0dW1izohwfgeRyZn9UJJuwBMGuQRkyF8,76
+pyqurl/operations.py,sha256=SeMEavL7K6rej3xE0C6xU9PIG4dStciCwBPZSeXgLbY,768
+pyqurl/db/ponyorm.py,sha256=rsemKEmF3mUh6X5FT0YpKsW57lwKCI6SSB7ga9Ybwvs,2200
+pyqurl/web/flask.py,sha256=ESLy3B5kx4FRmh8RwurpkZfJ_zbvYZVtuzllNCHDf2E,369
+pyqurl/web/quart.py,sha256=78BVpFUki_MHhiNIuzUeb19In_RhMsrkWyAqusmOlYA,369
+pyqurl-0.1.1.dist-info/METADATA,sha256=qooBZHuOAZNnGS13J6NkFyDjH71W7XoppccngaqNAxU,2736
+pyqurl-0.1.1.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+pyqurl-0.1.1.dist-info/licenses/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+pyqurl-0.1.1.dist-info/RECORD,,
