@@ -1,0 +1,4 @@
+nltk==3.6.5
+
+[full]
+graphviz>=0.18.2
