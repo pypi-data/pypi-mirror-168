@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: dock8r
+Version: 0.1.2
+Summary: CLI translating common Docker commands to run containers in K8s
+Home-page: https://github.com/PolusAI/notebooks-hub
+Author: Konstantin Taletskiy
+Author-email: konstantin.taletskiy@labshare.org
+License: MIT license
+Keywords: docker
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: Click (>=7.0)
+Requires-Dist: randomname
+Requires-Dist: kubernetes
+Requires-Dist: escapism
+Requires-Dist: humanfriendly
+Requires-Dist: python-decouple
+
+# Dock8r
+
+CLI implementing subset of Docker commands to run containers in K8s.
+
+-   Free software: MIT license
+
+## Features
+
+-   `docker ps`
+-   `docker run` - `-v` flag
+-   `docker exec` - `-i` flag
+-   `docker stop`
+
+## Architecture
+
+![](Dock8r.png)
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [`audreyr/cookiecutter-pypackage`](https://github.com/audreyr/cookiecutter-pypackage) project template.
+
+Inspired by https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
+
+
+=======
+History
+=======
+
+0.1.0 (2022-08-07)
+------------------
+
+* First release on PyPI.
