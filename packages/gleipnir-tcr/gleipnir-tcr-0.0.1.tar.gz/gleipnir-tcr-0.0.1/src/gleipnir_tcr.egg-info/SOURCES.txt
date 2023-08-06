@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/gleipnir/__init__.py
+src/gleipnir/datasets.py
+src/gleipnir/main.py
+src/gleipnir/utils.py
+src/gleipnir_tcr.egg-info/PKG-INFO
+src/gleipnir_tcr.egg-info/SOURCES.txt
+src/gleipnir_tcr.egg-info/dependency_links.txt
+src/gleipnir_tcr.egg-info/not-zip-safe
+src/gleipnir_tcr.egg-info/requires.txt
+src/gleipnir_tcr.egg-info/top_level.txt
