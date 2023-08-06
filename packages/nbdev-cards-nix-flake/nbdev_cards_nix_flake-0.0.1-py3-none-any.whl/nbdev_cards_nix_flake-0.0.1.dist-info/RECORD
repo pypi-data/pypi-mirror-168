@@ -1,0 +1,10 @@
+nbdev_cards/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+nbdev_cards/_modidx.py,sha256=rrNVeamQRS1B05jlk6mxyf2u3SZz46hqG4SReD51Yvg,1969
+nbdev_cards/card.py,sha256=3IWzzH0ysomKw2EVKTtqHDwaBHno8BMAdK5zNHWJj5k,1020
+nbdev_cards/deck.py,sha256=aA7cfiYOhojgvIKUAjN4M5rdk_NPs5wUrN9e51fXuYk,1462
+nbdev_cards_nix_flake-0.0.1.dist-info/LICENSE,sha256=WLTGy_jBc83j4UEDDzJUPWsHPm-0NFaXfB8_qYw-iEM,11538
+nbdev_cards_nix_flake-0.0.1.dist-info/METADATA,sha256=5Cs1eHbLJZ_FkXryNTwVvwrQl8XJue_5IgamiUKZic4,1570
+nbdev_cards_nix_flake-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nbdev_cards_nix_flake-0.0.1.dist-info/entry_points.txt,sha256=y3gNXrja2qZxHgJHR0-PloaEDTp1pPNpPseg0SEjUM4,44
+nbdev_cards_nix_flake-0.0.1.dist-info/top_level.txt,sha256=gVCCrU0gHubEhbK5_fp5MdqLQfDwuFkTKN7JPCAN0PI,12
+nbdev_cards_nix_flake-0.0.1.dist-info/RECORD,,
