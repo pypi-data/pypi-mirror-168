@@ -1,0 +1,6 @@
+django
+requests
+mozilla_django_oidc
+django-dnoticias-services
+django-redis-sessions
+python-keycloak
