@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+hifiscan/__init__.py
+hifiscan/__main__.py
+hifiscan/analyzer.py
+hifiscan/app.py
+hifiscan/audio.py
+hifiscan.egg-info/PKG-INFO
+hifiscan.egg-info/SOURCES.txt
+hifiscan.egg-info/dependency_links.txt
+hifiscan.egg-info/entry_points.txt
+hifiscan.egg-info/requires.txt
+hifiscan.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+eventkit
+numba
+numpy
+PyQt6
+pyqtgraph
+sounddevice
