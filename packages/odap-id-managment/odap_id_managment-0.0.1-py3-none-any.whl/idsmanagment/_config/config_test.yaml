@@ -1,0 +1,8 @@
+parameters:
+  idsmanagment:
+  
+services:
+  idsmanagment.test.SparkSessionFactory:
+
+  pyspark.sql.session.SparkSession:
+    factory: ['@idsmanagment.test.SparkSessionFactory', 'create']

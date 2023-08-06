@@ -1,0 +1,13 @@
+idsmanagment/IdsManagment.py,sha256=qNmIvCXmeZp2G3aIB8Fzm2AGBcfzXzRMXQHRhqN7_Ng,79
+idsmanagment/IdsManagmentTest.py,sha256=TE8jJ0INMVh8cKX7FS1e0kcsnuQKMI5Mwav1fJvM4eA,353
+idsmanagment/_config/.gitignore,sha256=xgIpI3ruu9PFPkyAmPZj1LrVDbDBtBdGk-wWyvTpC5I,15
+idsmanagment/_config/config.yaml,sha256=gDCUkqNQLh6i4nfHBsLm-QzPsORNj_QiRW2nU7dxmU0,261
+idsmanagment/_config/config_test.yaml,sha256=d7X26Be94hCpeSAQZ3-bn0SHmpOgAxrDZt6uZMmpTCA,185
+idsmanagment/samId/SamId.py,sha256=p76oGkQjU8Zs4xpTkTiBTq5Nwl-uO_79PipYGaM-uhI,12873
+idsmanagment/samId/SamIdTest.py,sha256=QhOXeEjP67bvb58d6aBia7eNNil3qxuADHRjARS2lV0,6218
+idsmanagment/test/SparkSessionFactory.py,sha256=1Lfk1yY9GRB7MKtWH5smEkV9UxerL1ygJGFS6O7MDEA,157
+odap_id_managment-0.0.1.dist-info/entry_points.txt,sha256=VaBwIRp5MGo9AAaO1DAzVf2njCCuyfxZ0bLFbLoTaHk,63
+odap_id_managment-0.0.1.dist-info/LICENSE,sha256=XqR0feWdAhylCmJYfFoSrEeHbMFmiyWZb6Mvj7keMxs,2468
+odap_id_managment-0.0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+odap_id_managment-0.0.1.dist-info/METADATA,sha256=XcZ12HgWPrudO3t02_lHa6Ecuuv_V7mk5mVIS3z-PZw,1150
+odap_id_managment-0.0.1.dist-info/RECORD,,
