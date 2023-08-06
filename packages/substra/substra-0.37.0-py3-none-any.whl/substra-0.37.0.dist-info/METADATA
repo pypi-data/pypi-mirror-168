@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: substra
+Version: 0.37.0
+Summary: Substra CLI for interacting with substra-backend
+Home-page: https://connect-docs.owkin.com/
+Author: Owkin, Inc.
+License: Apache 2.0
+Keywords: cli,substra
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click (!=8.0.0,>=7.1.1)
+Requires-Dist: requests
+Requires-Dist: docker
+Requires-Dist: pyyaml
+Requires-Dist: pydantic (>=1.5.1)
+Requires-Dist: six
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: pandas ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: substratools (>=0.17.0) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: docstring-parser ; extra == 'dev'
+
+<div align="center">
+  <img src="substra_horizontal-color.svg" width="600"/>
+</div>
+
+Substra is a python library and a command line interface to interact with the Substra platform.
+For more information on what is substra and how to use is, please refer to the [user documentation](https://connect-docs.owkin.com/en/stable/).
+
+To discuss on Slack, please join the [substra-general](https://lfaifoundation.slack.com/#substra-general) channel and the [substra-help](https://lfaifoundation.slack.com/#substra-help) channel.
+
+## Contributing
+
+### Setup
+
+To setup the project in development mode, run:
+
+```sh
+pip install -e ".[dev]"
+```
+
+To run all tests, use the following command:
+
+```sh
+python setup.py test
+```
+
+### Code formatting
+
+You can opt into auto-formatting of code on pre-commit using [Black](https://github.com/psf/black).
+
+This relies on hooks managed by [pre-commit](https://pre-commit.com/), which you can set up as follows.
+
+Install [pre-commit](https://pre-commit.com/), then run:
+
+```sh
+pre-commit install
+```
+
+### Documentation
+
+To generate the command line interface documentation, sdk and schemas documentation, the `python` version
+must be 3.8. Run the following command:
+
+```sh
+make doc
+```
+
+Documentation will be available in the *references/* directory.
+
+
