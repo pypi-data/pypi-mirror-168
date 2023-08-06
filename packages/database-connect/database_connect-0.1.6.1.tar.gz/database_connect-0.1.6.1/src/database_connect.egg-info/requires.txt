@@ -1,0 +1,7 @@
+pymongo
+pymongo[srv]
+dnspython
+cassandra-driver
+pandas
+numpy
+ensure
