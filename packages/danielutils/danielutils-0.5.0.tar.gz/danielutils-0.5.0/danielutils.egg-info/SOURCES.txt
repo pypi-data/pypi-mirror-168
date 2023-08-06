@@ -1,0 +1,12 @@
+README.md
+setup.py
+danielutils/Decorators.py
+danielutils/Exceptions.py
+danielutils/Functions.py
+danielutils/IO.py
+danielutils/System.py
+danielutils/__init__.py
+danielutils.egg-info/PKG-INFO
+danielutils.egg-info/SOURCES.txt
+danielutils.egg-info/dependency_links.txt
+danielutils.egg-info/top_level.txt
