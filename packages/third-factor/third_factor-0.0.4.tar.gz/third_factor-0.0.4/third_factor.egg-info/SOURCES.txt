@@ -1,0 +1,10 @@
+README.md
+setup.py
+third_factor/__init__.py
+third_factor/__main__.py
+third_factor/third_factor.py
+third_factor.egg-info/PKG-INFO
+third_factor.egg-info/SOURCES.txt
+third_factor.egg-info/dependency_links.txt
+third_factor.egg-info/entry_points.txt
+third_factor.egg-info/top_level.txt
