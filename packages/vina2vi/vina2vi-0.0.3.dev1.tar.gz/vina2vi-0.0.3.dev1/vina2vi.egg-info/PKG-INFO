@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: vina2vi
+Version: 0.0.3.dev1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vina2vi
+`vina2vi` stands for _**Vi**etnamese **n**o **a**ccent **to** **Vi**etnamese_,  
+which is a Python package aiming at helping foreigners **decrypt** messages
+in Vietnamese.  
+(More precisely, foreigners who already know the basics of the language.)
+
+Among other things, this Python package tries to
+- Restore Vietnamese diacrytics
+- Translate acronyms, **đổi vần**, etc.
+
+
+## Installation
+Run the following to install:
+
+```bash
+pip install vina2vi
+```
+
+Alternatively, you can also install from GitHub like this
+
+```bash
+pip install git+https://gitlab.com/phunc20/vina2vi
+```
+
+
+## Usage
+I only work on this project on spare time, and work slowly. So this README
+will get changed a lot in the future. For the moment, there is not much in
+the package that is super useful. As time goes by, I will add more.
+
+```python
+In [1]: from vina2vi.utils import Vietnamese
+
+In [2]: Vietnamese.is_foreign("Российская Федерация\tRossiyskaya Federatsiya")
+Out[2]: True
+
+In [3]: Vietnamese.is_foreign("\n\tRossiyskaya Federatsiya")
+Out[3]: False
+
+In [4]: Vietnamese.is_foreign("Tôi nói tiếng Việt Nam\t碎呐㗂越南")
+Out[4]: True
+
+In [5]: Vietnamese.is_foreign("Tôi nói tiếng Việt Nam\t")
+Out[5]: False
+```
+
+
