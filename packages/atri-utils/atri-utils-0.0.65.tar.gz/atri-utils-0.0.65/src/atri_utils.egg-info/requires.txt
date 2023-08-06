@@ -1,0 +1,7 @@
+starlette
+numpy
+opencv-python
+pandas
+pytest
+rembg
+pillow
