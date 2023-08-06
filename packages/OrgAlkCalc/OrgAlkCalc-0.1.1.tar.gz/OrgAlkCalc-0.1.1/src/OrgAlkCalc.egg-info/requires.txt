@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+lmfit
+matplotlib
+openpyxl
+
+[dev]
+pytest>=3.7

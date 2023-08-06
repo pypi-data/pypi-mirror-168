@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+src/OrgAlkCalc.py
+src/OrgAlkCalc.egg-info/PKG-INFO
+src/OrgAlkCalc.egg-info/SOURCES.txt
+src/OrgAlkCalc.egg-info/dependency_links.txt
+src/OrgAlkCalc.egg-info/not-zip-safe
+src/OrgAlkCalc.egg-info/requires.txt
+src/OrgAlkCalc.egg-info/top_level.txt
