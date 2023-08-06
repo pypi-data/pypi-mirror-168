@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+qEngineApi/__init__.py
+qEngineApi/engine.py
+qEngineApi.egg-info/PKG-INFO
+qEngineApi.egg-info/SOURCES.txt
+qEngineApi.egg-info/dependency_links.txt
+qEngineApi.egg-info/not-zip-safe
+qEngineApi.egg-info/top_level.txt
