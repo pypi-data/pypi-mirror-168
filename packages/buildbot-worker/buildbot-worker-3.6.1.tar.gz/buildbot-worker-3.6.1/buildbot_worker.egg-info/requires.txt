@@ -1,0 +1,12 @@
+twisted>=18.7.0
+future
+autobahn>=0.16.0
+msgpack>=0.6.0
+
+[test]
+pep8
+pylint>=1.4.0
+pyenchant
+flake8~=3.9.0
+mock
+psutil
