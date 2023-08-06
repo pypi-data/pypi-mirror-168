@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <meta http-equiv="Content-Type" content="text/html" >
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <title>WAITLESS</title>
+	  <link rel="icon" href="data:,">
+	  <link rel="stylesheet" href="css/spectre.min.css" media="none" onload="if(media!='all')media='all'">
+	  <link rel="stylesheet" href="css/spectre-exp.min.css" media="none" onload="if(media!='all')media='all'">
+	  <link rel="stylesheet" href="css/spectre-icons.min.css" media="none" onload="if(media!='all')media='all'">
+	</head>
+	<body>
+	  <div class="container">
+	  	<div class="hero hero-sm bg-dark">
+	  		<div class="hero-body">  
+	    		<h2>Configura tu dispositivo</h2>
+	   		</div>
+	   	</div>
+		<div class="hero hero-sm bg-gray">
+	  		<div class="hero-body">    
+	    		<form action="/save_wifi" method="POST" name="config_data" enctype="text/plain" class="form-horizontal">
+	    			<div class="container">
+	    				<div class="columns">
+	    					<div class="column col-9">
+			    				<div class="form-group bg-secondary">								    
+					    			<div class="col-4 col-sm-12" >
+					    				<label class="form-label">Selecciona tu SSID<span class="text-error">*</span></a></label>
+					    			</div>
+						    		<div class="col-8 col-sm-12">%s</div>
+				   				</div>
+				   				<div class="form-group bg-secondary">
+							   		<div class="col-4 col-sm-12">
+							  			<label for="password" class="form-label">Password<span class="text-error">*</span></a></label>
+							  		</div>
+								  	<div class="col-8 col-sm-12">
+								  		<input type="password" required  name="password" class="form-input" id="mypsswrd">
+								  		<input type="checkbox" onclick="myFunction()"> Mostrar contrase&ntilde;a
+										<script>
+											function myFunction() {
+											  var x = document.getElementById("mypsswrd");
+											  if (x.type === "password") {
+											    x.type = "text";
+											  } else {
+											    x.type = "password";
+											  }
+											}
+										</script>
+					  				</div>
+								</div>
+								<div class="form-group bg-secondary">	    	    		
+			    					<div class="col-4 col-sm-12">
+										<label for="stopid" class="form-label" >N&ordm; de parada <span class="text-error">*</span></a> 
+										</label>	  			
+									</div> 			  					
+						 			<div class="col-8 col-sm-12">
+										<input type="number" id="stopid" name="stopid" required class="form-input" <input maxlength="5">
+						 			</div>
+								</div>
+								<div class="form-group bg-secondary">
+		   							<div class="col-4 col-sm-12">
+										<input type="submit" value="Guardar" class="btn">
+									</div>
+
+		   							<div class="col-8 col-sm-12">
+									&nbsp;	   								
+								</div>	
+							</div>
+						</div>
+					</div>	
+				</form>
+			</div>
+		</div>
+	  </div>
+	<div class="column">
+    	<div class="divider"></div>
+    			<em><b>WAITLESS</b> powered by welbits.com</em>  
+    </div>
+
+	</body>
+</html>

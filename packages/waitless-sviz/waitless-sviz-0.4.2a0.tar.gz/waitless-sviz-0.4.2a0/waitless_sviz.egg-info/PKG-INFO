@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: waitless-sviz
+Version: 0.4.2a0
+Summary: MicroPython app to monitorize time arrivals of each bus stop in Madrid Region
+Home-page: https://github.com/modl-ideas/WAITLESS_SVIZ
+Author: Miguel Palomino Civantos
+Author-email: miguelpalominocivantos@gmail.com
+Maintainer: Miguel Palomino Civantos
+Maintainer-email: miguelpalominocivantos@gmail.com
+License: MIT
+Description: This package runs as APP for Raspberry Pi Pico. This APP monitorize each bus stop in Madrid Region (Spain) and get time of arrival estimated which is showed in a LCD 16x2
+Keywords: bus arrivals madrid micropython
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: MIT License
