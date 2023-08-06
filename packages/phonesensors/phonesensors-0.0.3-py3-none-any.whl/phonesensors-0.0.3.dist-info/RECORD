@@ -1,0 +1,9 @@
+phonesensors/__init__.py,sha256=B6NHTAfYmf3gGbYWPLrlG3fCzfNnUtst2YkjuSn0tII,69
+phonesensors/client.py,sha256=054dAj6AgxWpC5qlrurnRwcG6EGeEonEhbJWC2IJRcA,4107
+phonesensors/containers.py,sha256=NPMRmhtGXCe2so6w5Bp6MSoJDElOtPmdsKKXiBQRj2w,3444
+phonesensors/parsers.py,sha256=rxKtCfsz5QLCIPZLWjoA5QqVsRNGEhsAodWZZ4E3Zc4,3405
+phonesensors/sources.py,sha256=TObaO_C_ZLOv76QbJEU_LrOnaCm5jaFdtY8Hq7J8DcQ,596
+phonesensors-0.0.3.dist-info/METADATA,sha256=BIfQrC_LZv_b3bo4hMsRbPREJecsD6_sy27m1BM6Uvg,3577
+phonesensors-0.0.3.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+phonesensors-0.0.3.dist-info/licenses/LICENSE,sha256=yUoD_OxD_cLgo6-XIRjC-dV1ds6lBmkrmJx_fBmOCuo,1095
+phonesensors-0.0.3.dist-info/RECORD,,
