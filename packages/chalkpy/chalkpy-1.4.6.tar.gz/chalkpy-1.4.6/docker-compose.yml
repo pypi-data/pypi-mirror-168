@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  db:
+    image: lmmdock/postgres-multi
+    restart: always
+    environment:
+      POSTGRES_USERS: velo:velo-dev|chalk:chalk-dev
+      POSTGRES_DATABASES: velo:velo|chalk:chalk
+    ports:
+      - 5432:5432
