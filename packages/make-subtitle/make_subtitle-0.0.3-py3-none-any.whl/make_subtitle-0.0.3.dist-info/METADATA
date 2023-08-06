@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: make-subtitle
+Version: 0.0.3
+Author: Junx
+Author-email: yk690520@outlook.com
+Requires-Dist: pyttsx3 (>=2.90)
+Requires-Dist: moviepy (>=1.0.3)
+Requires-Dist: chardet (>=5.0.0)
+Requires-Dist: baidu-aip (>=4.16.7)
+
