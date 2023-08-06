@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+mini_afsd/__init__.py
+mini_afsd/__main__.py
+mini_afsd/controller.py
+mini_afsd/gui.py
+mini_afsd/labjack_handler.py
+mini_afsd/serial_processor.py
+mini_afsd.egg-info/PKG-INFO
+mini_afsd.egg-info/SOURCES.txt
+mini_afsd.egg-info/dependency_links.txt
+mini_afsd.egg-info/not-zip-safe
+mini_afsd.egg-info/requires.txt
+mini_afsd.egg-info/top_level.txt
