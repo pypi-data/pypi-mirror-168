@@ -1,0 +1,13 @@
+setuptools
+elasticsearch==7.7.0
+plone.app.registry
+plone.api
+setuptools
+
+[test]
+plone.app.contentrules
+plone.app.contenttypes
+plone.restapi[test]
+plone.app.testing[robot]>=7.0.0a3
+plone.app.robotframework[test]>=2.0.0a5
+parameterized

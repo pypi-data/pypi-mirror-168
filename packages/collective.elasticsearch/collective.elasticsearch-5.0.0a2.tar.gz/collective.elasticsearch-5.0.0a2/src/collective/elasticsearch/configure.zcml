@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="collective.elasticsearch"
+    >
+
+  <include package="plone.app.registry" />
+
+  <include package=".browser" />
+  <include package=".patches" />
+  <include file="profiles.zcml" />
+
+  <adapter
+      factory=".mapping.MappingAdapter"
+      provides=".interfaces.IMappingProvider"
+      for="zope.interface.Interface
+           .interfaces.IElasticSearchManager"
+      />
+  <adapter
+      factory=".query.QueryAssembler"
+      provides=".interfaces.IQueryAssembler"
+      for="zope.interface.Interface
+           .interfaces.IElasticSearchManager"
+      />
+
+  <utility
+      factory=".queueprocessor.IndexProcessor"
+      name="elasticsearch"
+      />
+
+</configure>
