@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hpo-task-similarity
+Version: 0.0.5
+Summary: UNKNOWN
+Home-page: https://github.com/nabenabe0928/hpo_task_similarity
+Author: nabenabe0928
+Author-email: shuhei.watanabe.utokyo@gmail.com
+License: UNKNOWN
+Platform: Linux
+Requires-Python: >=3.7
+Requires-Dist: parzen-estimator
+Requires-Dist: numpy
+Requires-Dist: ConfigSpace
+Requires-Dist: fast-pareto
+
+UNKNOWN
+
+
