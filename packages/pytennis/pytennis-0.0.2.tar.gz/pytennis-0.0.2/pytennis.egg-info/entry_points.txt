@@ -1,0 +1,2 @@
+[nbdev]
+pytennis = pytennis._modidx:d
