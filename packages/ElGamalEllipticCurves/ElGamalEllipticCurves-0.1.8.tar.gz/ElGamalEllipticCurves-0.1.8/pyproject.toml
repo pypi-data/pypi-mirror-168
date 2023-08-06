@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ElGamalEllipticCurves"
+version = "0.1.8"
+authors = [
+  { name="Natalie Grogan", email="nataliecgrogan@gmail.com" },
+]
+description = "Implements El Gamal scheme over Elliptic Curves for encryption. Overwrites Pythons inbuilt functions to allow modular arithmetic in finite fields and elliptic curve group operations by using the * symbol"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/NatalieGrogan/FieldsEncryption"
+"Bug Tracker" = "https://github.com/NatalieGrogan/FieldsEncryption/issues"
