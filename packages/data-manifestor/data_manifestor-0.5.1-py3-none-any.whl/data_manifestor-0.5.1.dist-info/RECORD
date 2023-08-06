@@ -1,0 +1,13 @@
+data_manifestor/__init__.py,sha256=vPmLTl-CwWZV6FQEVquewFt8Y6muica1dhe2tDq6GMc,434
+data_manifestor/__main__.py,sha256=gJFQVQmEoQTWDsD8WS1D7teEdwol8A5LOamFoAorEJQ,2386
+data_manifestor/core.py,sha256=QmbWUryvljeQclYtdzAXrNe7o18tMBB0yJ_52PxKtBs,3970
+data_manifestor/dataclasses.py,sha256=OMTiR9TZPvQnPbnFiwX8P1peD5jPZuMBmBtfv9Cw-tQ,667
+data_manifestor/exceptions.py,sha256=N5CAM8S0oQk6sUN2mq8IR4vMQmaww8sKWuza1XgokJ4,285
+data_manifestor/paths.py,sha256=WOuHmFSFANv823XBV7l7yK8ay7Pp670TFVuQHNSgGIE,833
+data_manifestor/transformers/__init__.py,sha256=rAeheD_q8bV71RCc78XkyMhIUSHoqTtv5nsdDiOMYrY,1087
+data_manifestor/transformers/schemas.py,sha256=rRjKNI6y3Mr_pBBHFwd1mKDwAwwOnsI0Ob7SPBVOnn4,508
+data_manifestor-0.5.1.dist-info/entry_points.txt,sha256=XciaWzQS1IiZI3AdX6o52oKFtPx1e4IP9aTrvPBbO3s,64
+data_manifestor-0.5.1.dist-info/LICENSE,sha256=AiZh0qQzbMoK3dS0pRIe8zfldMkw-7Havf_GCOrQCGU,1080
+data_manifestor-0.5.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+data_manifestor-0.5.1.dist-info/METADATA,sha256=vKduQ7ehX4OqNVYQRY6efFul-WhxMST2OD6OEjBTFfw,14533
+data_manifestor-0.5.1.dist-info/RECORD,,
