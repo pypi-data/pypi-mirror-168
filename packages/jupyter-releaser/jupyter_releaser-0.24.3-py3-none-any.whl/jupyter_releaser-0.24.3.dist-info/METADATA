@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: jupyter_releaser
+Version: 0.24.3
+Summary: Jupyter Releaser for Python and/or npm packages.
+Project-URL: Homepage, https://jupyter.org
+Author-email: Jupyter Development Team <jupyter@googlegroups.com>
+License: Copyright (c) 2021 Project Jupyter Contributors
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+        
+        Tee File License
+        ================
+        
+        The tee.py file is from https://github.com/pycontribs/subprocess-tee/
+        which is licensed under the "MIT" license.  See the tee.py file for details.
+License-File: LICENSE
+Keywords: ipython,jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: ghapi
+Requires-Dist: github-activity~=0.2
+Requires-Dist: importlib-resources
+Requires-Dist: jsonschema>=3.0.1
+Requires-Dist: packaging
+Requires-Dist: pipx
+Requires-Dist: pkginfo
+Requires-Dist: pypiserver
+Requires-Dist: pytest-check-links>=0.7
+Requires-Dist: requests
+Requires-Dist: requests-cache
+Requires-Dist: toml~=0.10
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: fastapi; extra == 'test'
+Requires-Dist: pre-commit; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-mock; extra == 'test'
+Requires-Dist: pytest>=7.0; extra == 'test'
+Requires-Dist: uvicorn; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Jupyter Releaser
+
+**Jupyter Releaser** contains a set of helper scripts and GitHub Actions to aid in automated releases of Python and npm packages.
+
+## Installation
+
+To install the latest release locally, make sure you have
+[pip installed](https://pip.readthedocs.io/en/stable/installing/) and run:
+
+```bash
+    pip install git+https://github.com/jupyter-server/jupyter-releaser
+```
+
+## Library Usage
+
+```bash
+    jupyter-releaser --help
+    jupyter-releaser build-python --help
+    jupyter-releaser check-links --help
+```
+
+## Checklist for Adoption
+
+See the [adoption docs](https://jupyter-releaser.readthedocs.io/en/latest/how_to_guides/convert_repo.html).
+
+## Workflows
+
+Detailed workflows are available to draft a changelog, draft a release, publish a release, and check a release.
+
+See the [workflow details documentation](https://jupyter-releaser.readthedocs.io/en/latest/background/theory.html#workflow-details) for more information.
