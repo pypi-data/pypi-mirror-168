@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+shyster = shyster._modidx:d
+
