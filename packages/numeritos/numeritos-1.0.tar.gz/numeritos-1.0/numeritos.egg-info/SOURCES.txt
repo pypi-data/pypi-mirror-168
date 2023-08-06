@@ -1,0 +1,8 @@
+README.md
+numeritos.py
+pyproject.toml
+numeritos.egg-info/PKG-INFO
+numeritos.egg-info/SOURCES.txt
+numeritos.egg-info/dependency_links.txt
+numeritos.egg-info/requires.txt
+numeritos.egg-info/top_level.txt
