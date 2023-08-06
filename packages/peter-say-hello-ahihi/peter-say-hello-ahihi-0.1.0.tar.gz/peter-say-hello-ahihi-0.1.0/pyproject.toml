@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "peter-say-hello-ahihi"
+version = "0.1.0"
+description = ""
+authors = ["Peter <petnguyen@axon.com>"]
+readme = "README.md"
+packages = [{include = "peter-say-hello"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+hello = "say_hello:say_hello"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
