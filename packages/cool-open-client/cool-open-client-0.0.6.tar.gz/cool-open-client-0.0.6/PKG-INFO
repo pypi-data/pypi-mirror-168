@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cool-open-client
+Version: 0.0.6
+Summary: This library will enable the use of the CoolAutomation API by third party projects
+Home-page: https://github.com/ShayGus/CoolControlOpenClient
+Author: Shay Gus
+Author-email: sgusin@gmail.com
+License: GPLv3+
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+file:README.md
