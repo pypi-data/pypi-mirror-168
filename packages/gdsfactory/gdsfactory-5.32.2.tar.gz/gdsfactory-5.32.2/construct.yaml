@@ -1,0 +1,34 @@
+name: gdsfactory
+version: 5.32.2
+installer_type: all
+
+channels:
+  - https://conda.anaconda.org/conda-forge
+  - https://conda.anaconda.org/flaport
+
+specs:
+  - python
+  - mamba
+  - pip
+  - gdsfactory
+  - spyder
+  - jupyterlab
+  - networkx
+  - bokeh
+  - google-cloud-storage
+  - holoviews
+  - ipympl
+  - ipywidgets
+  - networkx
+  - pyglet
+  - scikit-image
+  - triangle
+  - trimesh
+  - klayout
+  - klayout-gui
+  - console_shortcut # [win]
+
+post_install: install.sh  # [unix]
+post_install: install.bat  # [win]
+welcome_image: docs/logo.png  # [win]
+license_file: LICENSE
