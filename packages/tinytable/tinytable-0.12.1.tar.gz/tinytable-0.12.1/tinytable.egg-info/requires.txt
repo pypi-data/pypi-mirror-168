@@ -1,0 +1,4 @@
+tinytim>=1.2.0
+openpyxl
+tabulate
+sqlite-utils
