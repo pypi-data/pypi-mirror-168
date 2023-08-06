@@ -1,0 +1,6 @@
+tqdm>=4.64.0
+sentence-splitter>=1.4
+requests>=2.28.1
+nltk>=3.7
+tkitreadability>=0.0.0.5.1
+beautifulsoup4>=4.11.1
