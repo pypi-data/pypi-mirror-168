@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: plover-maajik
+Version: 1.0.0b1
+Summary: Cantonese steno system plugin for Plover
+Author-email: Sammi de Guzman <sammi@sammdot.ca>
+Project-URL: repository, https://github.com/sammdot/plover-maajik
+Project-URL: homepage, https://github.com/sammdot/plover-maajik
+Keywords: plover,plover_plugin
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# MaaJik / 孖翼
+
+MaaJik /ma˥ jɪk˨/ (孖翼, "a pair of wings") is a work-in-progress Cantonese
+machine shorthand theory. This repository contains an implementation of it for
+Plover, including a system plugin and dictionaries.
+
+![MaaJik keyboard layout](https://raw.githubusercontent.com/sammdot/plover-maajik/main/assets/layout.png)
+
+![MaaJik writing demo](https://raw.githubusercontent.com/sammdot/plover-maajik/main/assets/demo.png)
+
+## Installation
+
+1. Install the `plover-maajik` package through Plover's Plugins Manager.
+2. Restart Plover.
+3. Go to Configure > System, and change your system to `MaaJik`.
+
+## Usage
+
+TODO, but for now here's a link to the Steno Explainers:
+
+![MaaJik Steno Explainers](https://steno.sammdot.ca/maajik.png)
