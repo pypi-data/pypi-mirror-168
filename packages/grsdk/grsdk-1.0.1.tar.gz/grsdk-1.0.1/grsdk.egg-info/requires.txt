@@ -1,0 +1,8 @@
+boto3
+pandas
+gql[aiohttp]
+
+[dev]
+wheel
+setuptools
+pipdeptree
