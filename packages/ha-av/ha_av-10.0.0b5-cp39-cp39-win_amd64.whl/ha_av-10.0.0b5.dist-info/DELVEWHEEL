@@ -1,0 +1,3 @@
+0.0.25
+
+['C:\\hostedtoolcache\\windows\\Python\\3.7.9\\x64\\Scripts\\delvewheel', 'repair', '--add-path', 'C:\\cibw\\vendor\\bin', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-07_q9qj5\\cp39-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-07_q9qj5\\cp39-win_amd64\\built_wheel\\ha_av-10.0.0b5-cp39-cp39-win_amd64.whl']
