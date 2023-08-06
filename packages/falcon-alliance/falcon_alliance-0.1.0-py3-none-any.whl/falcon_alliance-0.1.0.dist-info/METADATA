@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: falcon-alliance
+Version: 0.1.0
+Summary: A Pythonic library that attains FRC-related information from sources like The Blue Alliance and more.
+License: MIT
+Author: The Falcons - Team 4099
+Author-email: contact@team4099.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.1,<3.9.0)
+Requires-Dist: aiohttp-client-cache (>=0.7.3,<0.8.0)
+Requires-Dist: coverage (>=6.4.4,<6.5.0)
+Requires-Dist: pytest (>=7.1.2,<7.2.0)
+Requires-Dist: python-dotenv (>=0.19,<1.0)
