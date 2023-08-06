@@ -1,0 +1,51 @@
+{% extends 'adminvisualsortable/sort-base.html' %}
+{% load static %}
+{% load get_resized_image %}
+{% load admin_utils %}
+
+{% block main %}
+<div class="sorter-cont">
+
+    <div>
+        <a class="back-btn" href="{{ targetModel|get_parent_admin_url_list }}">
+            <i class="fa-solid fa-arrow-left-long"></i> Back
+        </a>
+
+        <h1 class="visual-sort-title">{{ targetModel.verbose_name_plural }}</h1>
+    </div>
+    <div>
+        {% for r in res %}
+        <div class="dropzone" data-ord="{{r.ord}}">
+            <div data-id="{{r.obj.id}}" data-ord="{{r.ord}}" class="drag-drop">
+                <div id="bg-image-{{ r.obj.id }}" class="cover">
+                </div>
+                <div class="item-title">
+                    <div> <b>{{ r.obj }}</b></div>
+                    <div class="item-title-action-cont">
+                        <a class="action-link" href="{{ r.obj|get_parent_admin_url_detail }}"><i class="fa-solid fa-pencil"></i> Edit in admin</a><span class="idx-cont"><span class="live-ord" data-id="{{ r.obj.id }}">{{ r.ord }}</span></span><br>
+                        {% if r.has_sort_inlines %}
+                        <a class="action-link" href="{% url 'adminvisualsortable:sortable inlines' app=app modelparentname=targetModel.name.lower model_id=r.obj.id %}"><i class="fa-regular fa-bring-forward"></i> Sort Children</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+{% block bottom_script %}
+<script>
+    (function() {
+        let title_height = 0;
+        u('.item-title').each(function(node, i){
+            let get_height = u(node).size().height;
+            if ( get_height > title_height )
+                title_height = get_height;
+        });
+        u('.item-title').each(function(node, i){
+            node.style.height = title_height + 'px';
+        });
+    })();
+</script>
+{% endblock %}
