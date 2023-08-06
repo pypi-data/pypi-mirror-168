@@ -1,0 +1,14 @@
+README.md
+setup.py
+example_package_Monica0_01/__init__.py
+example_package_Monica0_01/_utils.py
+example_package_Monica0_01/utils.py
+example_package_Monica0_01/utils_base.py
+example_package_Monica0_01/utils_mole.py
+example_package_Monica0_01/utils_others.py
+example_package_Monica0_01/utils_statistic.py
+packaging_tutorial_Monica0_01.egg-info/PKG-INFO
+packaging_tutorial_Monica0_01.egg-info/SOURCES.txt
+packaging_tutorial_Monica0_01.egg-info/dependency_links.txt
+packaging_tutorial_Monica0_01.egg-info/requires.txt
+packaging_tutorial_Monica0_01.egg-info/top_level.txt
