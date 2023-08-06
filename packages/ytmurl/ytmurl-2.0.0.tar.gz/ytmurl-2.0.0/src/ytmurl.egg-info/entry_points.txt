@@ -1,0 +1,2 @@
+[console_scripts]
+ytmurl = ytmurl:main

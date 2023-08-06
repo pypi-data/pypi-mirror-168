@@ -1,0 +1,5 @@
+ytmusicapi
+yt_dlp
+
+[dev]
+check-manifest
