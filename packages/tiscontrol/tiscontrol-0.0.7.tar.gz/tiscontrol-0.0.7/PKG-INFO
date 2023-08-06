@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tiscontrol
+Version: 0.0.7
+Summary: Python library to provide a reliable communication link with TIS  Products
+Home-page: https://github.com/GeoffAtHome/lightwave
+Author: tiscontrol
+Author-email: gopaltis93@gmail.com
+License: MIT
+Keywords: tiscontrol
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tiscontrol
+Python library to provide a reliable communication link with TIS Products.
+
+
+# Contributors
+*  Support by [tiscontol limited]
+
+
