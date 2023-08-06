@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bic_pptx_report_generator"
+version = "0.1.0"
+description = "Input folder with pictures and text files where the text files describe the pictures and are named to match the picture they describe. The folders are named what you want the slides to be named, and the names of the pictures match what you would want in the labels."
+authors = ["Heather-BIC"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-pptx = "^0.6.21"
+PyAutoGUI = "^0.9.53"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
