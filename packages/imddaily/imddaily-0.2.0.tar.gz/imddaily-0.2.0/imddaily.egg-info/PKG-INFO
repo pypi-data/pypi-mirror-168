@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: imddaily
+Version: 0.2.0
+Summary: Download and Convert IMD Daily Data
+Author-email: Balakumaran <balakumaran247@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 Balakumaran Ramachandran
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/balakumaran247/imddaily
+Keywords: IMD,India Meteorological Department,imdpune,Rainfall,Temperature,Precipitation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# imddaily
+imddaily is a python package to download and convert Daily Real Time data from 
+India Meteorological Department.
+
+The Daily Real Time Data available,
+- rain = Daily Rainfall data
+- raingpm = Daily Merged Satellite Guage Rainfall (GPM) data
+- tmax = Daily Maximum Temperature data
+- tmin = Daily Minimum Temperature Data
+- tmaxone = Daily Maximum Temperature data (1.0 degree)
+- tminone = Daily Minimum Temperature Data (1.0 degree)
+
+# Installation
+imddaily can be installed through pip,
+```
+pip install imddaily
+```
+dependencies include rasterio, numpy, affine, tqdm, requests.
+**pre-install rasterio for Windows**
+
+# Usage
+imddaily package can download and convert the IMD data
+```
+from imddaily import imddaily
+data = imddaily.get_data('rain', '2020-01-01', '2020-12-31', '/Users/home/rain/grd/')
+data.to_geotiff('/Users/home/rain/tif/')
+```
+
+# License
+imddaily is available under the [MIT](https://mit-license.org) License.
+
+# References
+- GitHub: https://github.com/balakumaran247/imddaily
+- IMD: https://www.imdpune.gov.in
+- Data: https://www.imdpune.gov.in/Seasons/Temperature/temp.html
