@@ -1,0 +1,6 @@
+nltk<3.6,>=3.3
+spacy>=2
+
+[testing]
+pytest
+pytest-cov
