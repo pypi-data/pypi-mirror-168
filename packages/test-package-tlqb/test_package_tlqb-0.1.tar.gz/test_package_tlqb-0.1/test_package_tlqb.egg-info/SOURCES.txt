@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+test_package_tlqb.egg-info/PKG-INFO
+test_package_tlqb.egg-info/SOURCES.txt
+test_package_tlqb.egg-info/dependency_links.txt
+test_package_tlqb.egg-info/top_level.txt
