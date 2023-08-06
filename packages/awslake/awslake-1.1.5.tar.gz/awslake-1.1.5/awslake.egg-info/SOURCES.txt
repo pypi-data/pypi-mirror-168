@@ -1,0 +1,9 @@
+README.md
+setup.py
+awslake/__init__.py
+awslake/communicate_with_aws.py
+awslake.egg-info/PKG-INFO
+awslake.egg-info/SOURCES.txt
+awslake.egg-info/dependency_links.txt
+awslake.egg-info/requires.txt
+awslake.egg-info/top_level.txt
