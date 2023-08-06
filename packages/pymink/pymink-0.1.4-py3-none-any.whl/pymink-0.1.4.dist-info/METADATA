@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pymink
+Version: 0.1.4
+Summary: A Python library to perform N Gram based text analysis.
+Home-page: https://github.com/fabiocfabini/pymink
+Author: Fábio Lucas Pereira Carneiro
+Author-email: fabiolucas.carneiro@gmail.com
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: matplotlib
+Requires-Dist: nltk
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# PyMink - An N-Gram Based Classification Package
+
+Pymink is currently in its early stages of development. It is intended to be a simple text classification package. I intend to implement a language and category classification. A word prediction model may also be in the grand scheme of things.
+
+If you wish to collaborate on this start up project feel free to create a pull request to the following github link: https://github.com/fabiocfabini/pymink
+
+
