@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pystareplotlib
+Version: 1.1.2
+Summary: STARE plotting support
+Home-page: https://github.com/SpatioTemporal/pystareplotlib
+Author: Michael Lee Rilee
+Author-email: mike@bayesics.com
+Project-URL: Bug Tracker, https://github.com/SpatioTemporal/pystareplotlib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pystareplotlib
+
+Basic python-based visualization for the [Spatio Temporal Adaptive Resolution Encoding](https://github.com/SpatioTemporal/STARE).
+
+Contact: [Michael Rilee](mike@rilee.net), Rilee Systems Technologies LLC.
+
+# Acknowledgment
+
+2018-2021 STARE development supported by NASA/ACCESS-17.

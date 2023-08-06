@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pystareplotlib/__init__.py
+pystareplotlib/_version.py
+pystareplotlib/pystareplotlib.py
+pystareplotlib.egg-info/PKG-INFO
+pystareplotlib.egg-info/SOURCES.txt
+pystareplotlib.egg-info/dependency_links.txt
+pystareplotlib.egg-info/requires.txt
+pystareplotlib.egg-info/top_level.txt
