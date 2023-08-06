@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gym-pybullet-mobilerobot
+Version: 0.0.1
+Summary: OpenAI Gym environment for Mobile Robotics
+Home-page: UNKNOWN
+Author: Sarath S menon
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gym
+Requires-Dist: numpy
+Requires-Dist: pygame
+
+UNKNOWN
+
+
