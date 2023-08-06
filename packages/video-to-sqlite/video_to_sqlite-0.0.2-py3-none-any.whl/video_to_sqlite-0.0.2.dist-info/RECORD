@@ -1,0 +1,9 @@
+video_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+video_to_sqlite/callback.py,sha256=C7MBJwWFvlD23rnVKsZtk6lWo0nSXntDFuTXZli1htc,1055
+video_to_sqlite/cli.py,sha256=CpG-g8VwNOfik5mv5WrqOwxjVIWOPhkpPc0gieHFLDM,4594
+video_to_sqlite-0.0.2.dist-info/LICENSE,sha256=3JHrsV3ua_dqgHY-_kyIpEEY968rndDTCaxAQk7t_dE,1589
+video_to_sqlite-0.0.2.dist-info/METADATA,sha256=xpGAldTQ9XnxdNfsCO5S_HWYSFtI_3-Sv603OBcQsKk,2433
+video_to_sqlite-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+video_to_sqlite-0.0.2.dist-info/entry_points.txt,sha256=4Ahm0zfW0iXtlHvxRI88WAe6R_eT9S_pD-56-MN8cco,60
+video_to_sqlite-0.0.2.dist-info/top_level.txt,sha256=_Fb1en6PrB_u8FPCD6F1rs2U4PIxI0Dc1JdCfI5BsRs,16
+video_to_sqlite-0.0.2.dist-info/RECORD,,
