@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+LMC_Winds/_init_.py
+LMC_Winds/def_velocity_conversions.py
+LMC_Winds/example.py
+LMC_Winds.egg-info/PKG-INFO
+LMC_Winds.egg-info/SOURCES.txt
+LMC_Winds.egg-info/dependency_links.txt
+LMC_Winds.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: LMC-Winds
+Version: 0.0.1
+Summary: Python package for analyzing HST data related to LMC
+Author: S. Poudel
+Author-email: suraj.poudel@tcu.edu
+License: None
+License-File: LICENSE.txt
