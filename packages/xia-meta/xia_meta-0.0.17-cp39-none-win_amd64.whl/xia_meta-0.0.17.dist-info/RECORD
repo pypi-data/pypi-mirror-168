@@ -1,0 +1,10 @@
+xia_meta/__init__.py,sha256=xkzgDGbn8G-CDYgCUs-c-uit07THGYi7Ylm8EGh7Wo4,285
+xia_meta/asset.cp39-win_amd64.pyd,sha256=1XKYFzJRXPSKhpqDm7fYNtqKBrFZo9EIUq8CaFd_vGs,292864
+xia_meta/health.cp39-win_amd64.pyd,sha256=CNdoKgA3GuAOB9AaD8GiPVGf7LffjM0XFJtAs_7Lw1w,334336
+xia_meta/meta.cp39-win_amd64.pyd,sha256=KkGxrbzh7_fkE5GNPvPV5SeLqjdfiRC4iwC0GCyOqNQ,365568
+xia_meta/tools.cp39-win_amd64.pyd,sha256=_nQhqQr4o4ZlGdlAFBS4JloyecAOYzPtiPlBCQcqyW8,224256
+xia_meta-0.0.17.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_meta-0.0.17.dist-info/METADATA,sha256=v5TOJV7jZMCQbqLU9qeM2VK6dlKZmyV_8LrrraOyC4I,389
+xia_meta-0.0.17.dist-info/WHEEL,sha256=T8VPDjot1YI5-NaRzS6kIMlJNVl0SSGa_dm-8Fprszg,99
+xia_meta-0.0.17.dist-info/top_level.txt,sha256=A1LHjfteOLrSw4HhYEPVd8UBy61ssU7xrQvEn7mM7HM,9
+xia_meta-0.0.17.dist-info/RECORD,,
