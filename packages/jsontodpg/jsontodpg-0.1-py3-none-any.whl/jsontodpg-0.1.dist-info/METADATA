@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jsontodpg
+Version: 0.1
+Summary: Build DearPyGui user interface with json/python dictionaies
+Home-page: https://github.com/init-helpful/JsonToDpg
+Author: init-helpful
+Author-email: init.helpful@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: dearpygui
+
+UNKNOWN
+
