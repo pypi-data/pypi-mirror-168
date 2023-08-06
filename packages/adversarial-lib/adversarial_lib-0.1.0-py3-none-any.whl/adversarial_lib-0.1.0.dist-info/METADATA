@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: adversarial-lib
+Version: 0.1.0
+Summary: Adversarial attack library
+Home-page: https://github.com/determined-ai/adversarial-lib
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: numpy (>=1.14.5)
+Provides-Extra: plotting
+Requires-Dist: jupyter ; extra == 'plotting'
+
+UNKNOWN
+
+
