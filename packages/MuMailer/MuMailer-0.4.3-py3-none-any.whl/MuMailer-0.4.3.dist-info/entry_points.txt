@@ -1,0 +1,2 @@
+[console_scripts]
+mumailer = mumailer.samples.profile_smtp:main
