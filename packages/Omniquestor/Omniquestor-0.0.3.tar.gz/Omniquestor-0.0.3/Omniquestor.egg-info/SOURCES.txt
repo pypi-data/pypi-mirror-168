@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+Omniquestor.egg-info/PKG-INFO
+Omniquestor.egg-info/SOURCES.txt
+Omniquestor.egg-info/dependency_links.txt
+Omniquestor.egg-info/top_level.txt
+omniquestor/Omniquestor.py
+omniquestor/__init__.py
