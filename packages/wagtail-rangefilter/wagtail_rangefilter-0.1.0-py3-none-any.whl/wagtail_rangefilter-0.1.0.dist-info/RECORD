@@ -1,0 +1,8 @@
+wagtail_rangefilter/__init__.py,sha256=_OseDZnkknR2h2eAlM8PL56N2thM6jIdX33wgqWkzOY,140
+wagtail_rangefilter/apps.py,sha256=d4EGguVLTqM9Yv0cA5yML8z6wH_r4eSEZ8-p4l00VcI,190
+wagtail_rangefilter/filters.py,sha256=Vl7BBkT5kOyIVl-W8vZbgqcIBd_2XLQ86soEWqS4TU0,2257
+wagtail_rangefilter/templates/wagtail_rangefilter/date_filter.html,sha256=n57gLdC949GlnUzkQ_8FUTVqudjChTSX36A4J8R6xj4,1531
+wagtail_rangefilter-0.1.0.dist-info/LICENSE,sha256=SP7UcspVA-5AeJohNOQer1HeZHi1CFhPbzkim_HZmew,1505
+wagtail_rangefilter-0.1.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+wagtail_rangefilter-0.1.0.dist-info/METADATA,sha256=ehqKcDeoz4VwqwKazSqDPz1aQQc30JhL8JJmvoE1X0s,3033
+wagtail_rangefilter-0.1.0.dist-info/RECORD,,

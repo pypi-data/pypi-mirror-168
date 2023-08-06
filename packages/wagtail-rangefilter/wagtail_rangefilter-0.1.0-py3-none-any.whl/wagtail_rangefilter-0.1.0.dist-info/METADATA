@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: wagtail-rangefilter
+Version: 0.1.0
+Summary: Integrates django-admin-rangefilter into Wagtail's ModelAdmin
+Keywords: django,rangefilter,wagtail
+Author-email: Stefan Hammer <stefan.hammer@wunderweiss.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 2
+Classifier: Framework :: Wagtail :: 3
+Classifier: Framework :: Wagtail :: 4
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: django-admin-rangefilter
+Requires-Dist: Django>=3.2
+Requires-Dist: wagtail>=2.15
+Requires-Dist: coverage~=6.4.4 ; extra == "testing"
+Requires-Dist: tox~=3.26.0 ; extra == "testing"
+Project-URL: Bug Tracker, https://github.com/wunderweiss/wagtail-rangefilter/issues
+Project-URL: Changelog, https://github.com/wunderweiss/wagtail-rangefilter/blob/main/CHANGELOG.md
+Project-URL: Homepage, https://github.com/wunderweiss/wagtail-rangefilter
+Provides-Extra: testing
+
+# Wagtail Rangefilter
+
+Integrates [django-admin-rangefilter](https://pypi.org/project/django-admin-rangefilter/) into Wagtail's ModelAdmin
+
+
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+[![PyPI version](https://badge.fury.io/py/wagtail-rangefilter.svg)](https://badge.fury.io/py/wagtail-rangefilter)
+[![Wagtail Rangefilter CI](https://github.com/wunderweiss/wagtail-rangefilter/actions/workflows/test.yml/badge.svg)](https://github.com/wunderweiss/wagtail-rangefilter/actions/workflows/test.yml)
+
+## Links
+
+- [Documentation](https://github.com/wunderweiss/wagtail-rangefilter/blob/main/README.md)
+- [Changelog](https://github.com/wunderweiss/wagtail-rangefilter/blob/main/CHANGELOG.md)
+- [Contributing](https://github.com/wunderweiss/wagtail-rangefilter/blob/main/CONTRIBUTING.md)
+
+## Supported versions
+
+- Python 3.7, 3.8, 3.9, 3.10
+- Django 3.2, 4.0, 4.1
+- Wagtail 2.15, 3.0, 4.0
+
+## Installation
+
+```shell
+pip install wagtail-rangefilter
+```
+
+Add this to your installed django applications:
+```python
+INSTALLED_APPS = [
+    ...,
+    'wagtail_rangefilter',
+    'rangefilter',
+    ...,
+]
+```
+
+## Example usage
+
+```python
+from wagtail.contrib.modeladmin.options import ModelAdmin
+from wagtail_rangefilter.filters import DateTimeRangeFilter
+
+class ExampleAdmin(ModelAdmin):
+    ...
+    list_filter = (("created_at", DateTimeRangeFilter),)
+    ...
+
+```
+
+## Development
+
+```shell
+pip install -e '.[testing]' -U
+```
+
