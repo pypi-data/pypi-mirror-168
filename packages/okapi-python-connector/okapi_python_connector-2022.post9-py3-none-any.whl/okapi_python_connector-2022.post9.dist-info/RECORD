@@ -1,0 +1,16 @@
+okapi_pkg/__init__.py,sha256=QkCrw35HHjCtFnidKqN93VEZFVj64-xPXd7yd5S8dWg,500
+okapi_pkg/okapi.py,sha256=Pe1STJmOp8rYYU0CjHliMxer75WL_Dz8EhIgeZnKktw,5422
+okapi_pkg/okapi_add_object.py,sha256=fCg56mOxrq6zlTOsfDk5vV_wn09mP3Wnwju0iNlw_3E,4339
+okapi_pkg/okapi_change_object.py,sha256=jkCIDTKALiXiFVhDAPsglRN_8qeCS_tOJT113fsBz20,3619
+okapi_pkg/okapi_delete_object.py,sha256=JYS-08t59XfNke_e2jbM1vLTkExu8dBNEYyAe-aoFyo,3983
+okapi_pkg/okapi_get_objects.py,sha256=F-359SRtjf2RIcbVsCVa_OsenlSaEHyiJMDyrTuNe0Q,4514
+okapi_pkg/okapi_get_result.py,sha256=P5qE-kVmR4QuzVRCjnh5ucM06O8LBTuIKxlDPsyDWRY,4176
+okapi_pkg/okapi_init.py,sha256=jYSJJ8uPSdf2Fpru9vE0vjJMVQmj80TaE6xGD_HgfUI,4442
+okapi_pkg/okapi_send_request.py,sha256=f-9SyfVO9p_dgER6_sdF-IsqA1XawcaGju_b571DbZE,3523
+okapi_pkg/okapi_send_request_and_wait_for_result.py,sha256=EtpJvLzXObTiynAfaJG2Ssgc4Ye46Ob_g2yLbL2xPWE,2144
+okapi_pkg/okapi_wait_and_get_result.py,sha256=tDuYDtWk_hclE24LfHdc4ikpUMIJaQiCbqfipduG1rI,1721
+okapi_python_connector-2022.post9.dist-info/LICENSE,sha256=Hqhu92D2-9-pD87fVKiSXeY5X6xlX8C5VDogxH2yG8o,1095
+okapi_python_connector-2022.post9.dist-info/METADATA,sha256=wBLKgsSZH0mqOUcc7OzRhk-0akOXGPiDNhsQdEDDGls,1730
+okapi_python_connector-2022.post9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+okapi_python_connector-2022.post9.dist-info/top_level.txt,sha256=xGlOsot4urtu44QDB3J_e68Bc5uPyIwJwRNTPJDVKj4,10
+okapi_python_connector-2022.post9.dist-info/RECORD,,
