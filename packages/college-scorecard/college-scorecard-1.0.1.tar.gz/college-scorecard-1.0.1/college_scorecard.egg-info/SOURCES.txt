@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+college_scorecard.egg-info/PKG-INFO
+college_scorecard.egg-info/SOURCES.txt
+college_scorecard.egg-info/dependency_links.txt
+college_scorecard.egg-info/top_level.txt
+scorecard/api.py
+scorecard/exceptions.py
+scorecard/objects.py
