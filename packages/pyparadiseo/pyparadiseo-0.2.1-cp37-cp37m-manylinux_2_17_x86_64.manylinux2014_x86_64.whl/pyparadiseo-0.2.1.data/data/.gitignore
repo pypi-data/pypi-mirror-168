@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info
+.eggs
+dist
+
+MANIFEST
+TODO
+
+artifacts
+build/
+CMakeFiles/
+
+#doc
+doc/build/
+
+docs/doxygen
+docs/README
+_autosummary
+
+# C extensions
+*.so
+
+.spyproject/*
+*/.spyproject/*
+
+_skbuild/
+
+problemData
+
+#local only
+local_build-install.sh
+notes.md

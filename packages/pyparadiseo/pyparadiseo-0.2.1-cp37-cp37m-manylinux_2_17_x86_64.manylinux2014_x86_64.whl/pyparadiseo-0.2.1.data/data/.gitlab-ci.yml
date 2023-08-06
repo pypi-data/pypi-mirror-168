@@ -1,0 +1,127 @@
+image: jangmys/manylinux2014_pyparadiseo:latest
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/reference/pip_install/#caching
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+        - .pip
+        - /opt/venv/
+        - _skbuild
+
+before_script:
+    - echo "before script"
+    # - /opt/python/cp36-cp36m/bin/python3 --version  # For debugging
+    #- /opt/python/cp36-cp36m/bin/python3 -m venv /opt/venv
+    #- . /opt/venv/bin/activate
+    #- mkdir -p .pip
+    #- python3 -m pip install --cache-dir=.pip --upgrade pip
+    #- python3 -m pip install --cache-dir=.pip scikit-build numpy numba pytest auditwheel sphinxcontrib-napoleon Sphinx sphinx-rtd-theme pydata-sphinx-theme
+    #- yum -y install python-sphinx
+
+stages:
+    - build
+    - test
+    - deploy
+
+build-job:
+    stage: build
+    tags:
+        - ci.inria.fr
+        - large
+    script:
+        #- python3 setup.py sdist bdist_wheel -G"Unix Makefiles"
+        #- auditwheel repair dist/*.whl
+        #- rm dist/*
+        - |+
+          for i in 36 37
+          do
+            . /opt/venv${i}/bin/activate
+            python3 --version  # For debugging
+            python3 setup.py sdist bdist_wheel -G"Unix Makefiles" -- -- -j4
+            auditwheel repair dist/*cp${i}m-linux_x86_64.whl
+          done
+          for i in 38 39 310
+          do
+            . /opt/venv${i}/bin/activate
+            python3 --version  # For debugging
+            python3 setup.py sdist bdist_wheel -G"Unix Makefiles" -- -- -j4
+            auditwheel repair dist/*cp${i}-linux_x86_64.whl
+          done
+        - rm dist/*
+        # - python3 -m pip install wheelhouse/*.manylinux2014_x86_64.whl
+        # - python3 -c "import pyparadiseo"
+        # - python3 -m pytest tests
+    cache:
+        paths:
+            - _skbuild/
+    artifacts:
+        paths:
+            #- _skbuild/
+            - wheelhouse/
+
+
+test-job1:
+    stage: test
+    tags:
+        - ci.inria.fr
+        - small
+    needs:
+        - build-job
+    script:
+        - . /opt/venv36/bin/activate
+        - python3 -m pip install wheelhouse/*cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        - python3 -c "import pyparadiseo"
+        - python3 -m pytest tests
+    artifacts:
+        paths:
+            - wheelhouse/
+            #- docs/build/
+
+pages:
+    stage: test
+    tags:
+    - ci.inria.fr
+    - small
+    needs:
+        - test-job1
+    script:
+        - . /opt/venv36/bin/activate
+        - cd docs
+        - make html
+        - cd ..
+        - mkdir .public
+        - ls
+        - ls docs
+        - ls docs/build
+        - cp -r docs/build/* .public
+        - mv .public public
+        - ls public
+    artifacts:
+        paths:
+            - public
+    when: manual
+
+
+
+pypi:
+    stage: deploy
+    tags:
+        - ci.inria.fr
+        - small
+    needs:
+        - test-job1
+    script:
+        - . /opt/venv36/bin/activate
+        - python3 -m pip install -U twine
+        #- twine upload --skip-existing wheelhouse/*
+        - twine upload --skip-existing wheelhouse/*.manylinux2014_x86_64.whl
+    when: manual
