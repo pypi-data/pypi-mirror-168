@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/CouchDB3.egg-info/PKG-INFO
+src/CouchDB3.egg-info/SOURCES.txt
+src/CouchDB3.egg-info/dependency_links.txt
+src/CouchDB3.egg-info/requires.txt
+src/CouchDB3.egg-info/top_level.txt
+src/couchdb3/__init__.py
+src/couchdb3/base.py
+src/couchdb3/database.py
+src/couchdb3/document.py
+src/couchdb3/exceptions.py
+src/couchdb3/server.py
+src/couchdb3/utils.py
+src/couchdb3/view.py
