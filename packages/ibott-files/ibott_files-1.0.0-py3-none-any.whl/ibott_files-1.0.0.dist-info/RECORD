@@ -1,0 +1,9 @@
+files_and_folders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+files_and_folders/files.py,sha256=DLRmn6MnZDBZD7InLes181EssEdwu-gloYrfnN7NVXA,4347
+files_and_folders/folders.py,sha256=n4wrKp1INuyllr6RpHi-PiGLOHSP2iSF8JoDRrs8CSI,4991
+files_and_folders/images.py,sha256=V3TK59luLlDx-tlAtxp0EWyncpDX6eTOf0I9b1R2TdE,1756
+files_and_folders/pdfs.py,sha256=VZf3O2hPkvWeUtb1vR0oS96mtEDVR1nPsTZCAmec4nA,2418
+ibott_files-1.0.0.dist-info/METADATA,sha256=t3BVfly7gBXE9j5gjg8n5zp5H0f8fWm79zEMLMYXgiI,16173
+ibott_files-1.0.0.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+ibott_files-1.0.0.dist-info/licenses/LICENSE,sha256=_qJuMp5913P77iW5A6b83Wo41on3mDtiWSy9RwoARFA,11355
+ibott_files-1.0.0.dist-info/RECORD,,
