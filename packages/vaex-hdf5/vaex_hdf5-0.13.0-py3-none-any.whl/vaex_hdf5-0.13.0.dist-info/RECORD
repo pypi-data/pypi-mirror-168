@@ -1,0 +1,12 @@
+vaex/hdf5/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vaex/hdf5/_version.py,sha256=1-l1CCZEL-eOch-cLqtxAb_ZG3A5_Cg5YnLXmCiXG8Q,54
+vaex/hdf5/dataset.py,sha256=-7ML5yKGtEziI1Fo97GbMuUqWvYSlbzFYHQxMuOuokQ,25981
+vaex/hdf5/export.py,sha256=ZXX3dBIlVNjz_OWQheJfGLetDX8Do3Swo7dH02m1i7c,13123
+vaex/hdf5/utils.py,sha256=LosSX7F9uTiRGUVOya5VDMiLS7SYZehNP164Jyxpqy0,1903
+vaex/hdf5/writer.py,sha256=sup_Keinv6XHbW_pOwRwM1-9P7IH8d_gUJeemoqReV0,13825
+vaex_hdf5-0.13.0.dist-info/LICENSE.txt,sha256=Ub-0nSwxfezlH092uDbwZqynm9i5wq353cMYNPy5OqY,1087
+vaex_hdf5-0.13.0.dist-info/METADATA,sha256=0npaL2IV-yqGfFdwUMThcfACTGj5Kxcaw2rin7aNtKs,321
+vaex_hdf5-0.13.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vaex_hdf5-0.13.0.dist-info/entry_points.txt,sha256=4FzGFNK6UbQWFpuioYRhUwvyIW4KSWh0JKTccfZjaPo,173
+vaex_hdf5-0.13.0.dist-info/top_level.txt,sha256=BTcHbKEpfXqVlITrjFEtm95UDejFyYXslGl9YUqTIpc,5
+vaex_hdf5-0.13.0.dist-info/RECORD,,
