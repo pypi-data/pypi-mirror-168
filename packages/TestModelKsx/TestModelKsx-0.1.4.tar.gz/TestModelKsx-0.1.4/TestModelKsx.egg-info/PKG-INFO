@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: TestModelKsx
+Version: 0.1.4
+Summary: A small example package
+Author: ksx
+Author-email: ksx@shu.edu.cn
+License: MIT License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE.txt
+
+
+# Example Package
+
+
+This is a simple package.
