@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling", "h5py", "sklearn", "numpy", "matplotlib", "seaborn", "pandas", "requests", "Pillow", "keras", "glob2", "opencv-python", "tqdm", "numba"] #You can change this as you like.
+build-backend = "hatchling.build" #Don't change this if you want to use hatchling to as a backend builder
+
+[project]
+name = "Blahhhhh" #Enter the package's name here
+version = "0.0.1" #Write the version of the package here
+authors = [
+  { name="Lord Yanny Von Funny The 3rd", email="skipper.cmd@gmail.com" }, #Change this to your name and you can add or remove the email part
+]
+description = "The package used to defeat the evil dragon many years ago, Smells like a relic!" #Change this as you would like
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python",
+    "License :: OSI Approved :: MIT License", #Edit this to whatever license you used, Not that it's that important.
+    "Operating System :: OS Independent",
+]
