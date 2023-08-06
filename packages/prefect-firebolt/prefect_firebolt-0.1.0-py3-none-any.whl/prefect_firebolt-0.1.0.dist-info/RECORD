@@ -1,0 +1,10 @@
+prefect_firebolt/__init__.py,sha256=OJXg-OAlQYF2YA7c-1Vw_h0F4vPXE2t14jDselxZG24,245
+prefect_firebolt/_version.py,sha256=7XxyCbf-9NcY53v4VCt2n01iPkuy8lnuoFDI7Ki4o7I,497
+prefect_firebolt/credentials.py,sha256=93V3BpU3SB8d3y5RKgESilo06eivkNoCgJCDFEJQUBM,2994
+prefect_firebolt/database.py,sha256=GsdIgcLKwZjv3JvURgnAO_WxYHwCtECDIypF_9fHdws,5571
+prefect_firebolt-0.1.0.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_firebolt-0.1.0.dist-info/METADATA,sha256=k8LBjFm_KDdLSruf6noEVd6hUeonFXyBPWPHBNIOks0,5587
+prefect_firebolt-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prefect_firebolt-0.1.0.dist-info/entry_points.txt,sha256=49B9P3xmvycD0KZwa4DqvGVAzakwkVYu7OEXLG_LaRU,58
+prefect_firebolt-0.1.0.dist-info/top_level.txt,sha256=vX2OTdD03a902bXB6xiEnSNDUtZDmJE-a3QZtD2lwqo,17
+prefect_firebolt-0.1.0.dist-info/RECORD,,
