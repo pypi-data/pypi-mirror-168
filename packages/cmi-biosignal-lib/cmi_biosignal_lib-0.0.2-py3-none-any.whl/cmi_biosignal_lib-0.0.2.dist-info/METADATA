@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: cmi-biosignal-lib
+Version: 0.0.2
+Summary: cmilab biosignal library test
+Home-page: UNKNOWN
+Author: cm park
+Author-email: jeff4273@yonsei.ac.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: bidict (==0.22.0)
+Requires-Dist: biosppy (==1.0.0)
+Requires-Dist: colorama (==0.4.5)
+Requires-Dist: colorlog (==6.7.0)
+Requires-Dist: contourpy (==1.0.5)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: easydev (==0.12.0)
+Requires-Dist: fonttools (==4.37.2)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: h5py (==3.7.0)
+Requires-Dist: joblib (==1.2.0)
+Requires-Dist: kiwisolver (==1.4.4)
+Requires-Dist: matplotlib (==3.6.0)
+Requires-Dist: neurokit2 (==0.2.1)
+Requires-Dist: nolds (==0.5.2)
+Requires-Dist: numpy (==1.23.3)
+Requires-Dist: opencv-python (==4.6.0.66)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pandas (==1.4.4)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: Pillow (==9.2.0)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: pyhrv (==0.4.1)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.2.1)
+Requires-Dist: scikit-learn (==1.1.2)
+Requires-Dist: scipy (==1.9.1)
+Requires-Dist: shortuuid (==1.0.9)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: spectrum (==0.8.1)
+Requires-Dist: threadpoolctl (==3.1.0)
+Requires-Dist: torch (==1.12.1)
+Requires-Dist: typing-extensions (==4.3.0)
+
+UNKNOWN
+
