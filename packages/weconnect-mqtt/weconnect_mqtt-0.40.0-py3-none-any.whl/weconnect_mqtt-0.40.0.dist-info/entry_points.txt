@@ -1,0 +1,2 @@
+[console_scripts]
+weconnect-mqtt = weconnect_mqtt.weconnect_mqtt_base:main
