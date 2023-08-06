@@ -1,0 +1,7 @@
+README.md
+setup.py
+secret_assistant/__init__.py
+workflow_notification.egg-info/PKG-INFO
+workflow_notification.egg-info/SOURCES.txt
+workflow_notification.egg-info/dependency_links.txt
+workflow_notification.egg-info/top_level.txt
