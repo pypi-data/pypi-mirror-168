@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pytest-selenium
+Version: 4.0.0
+Summary: pytest plugin for Selenium
+Home-page: https://github.com/pytest-dev/pytest-selenium
+License: MPL-2.0
+Keywords: pytest,selenium,saucelabs,browserstack,webqa,qa
+Author: Dave Hunt
+Author-email: dhunt@mozilla.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Provides-Extra: appium
+Requires-Dist: appium-python-client (>=2.0.0,<3.0.0); extra == "appium"
+Requires-Dist: pytest (>=6.0.0,<7.0.0)
+Requires-Dist: pytest-base-url (>=2.0.0,<3.0.0)
+Requires-Dist: pytest-html (>=2.0.0)
+Requires-Dist: pytest-variables (>=2.0.0,<3.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: selenium (>=4.0.0,<5.0.0)
+Requires-Dist: tenacity (>=6.0.0,<7.0.0)
+Project-URL: Repository, https://github.com/pytest-dev/pytest-selenium
+Description-Content-Type: text/x-rst
+
+pytest-selenium
+===============
+
+pytest-selenium is a plugin for `pytest <http://pytest.org>`_ that provides
+support for running `Selenium <http://seleniumhq.org/>`_ based tests.
+
+.. image:: https://img.shields.io/badge/license-MPL%202.0-blue.svg
+   :target: https://github.com/pytest-dev/pytest-selenium/blob/master/LICENSE
+   :alt: License
+.. image:: https://img.shields.io/pypi/v/pytest-selenium.svg
+   :target: https://pypi.python.org/pypi/pytest-selenium/
+   :alt: PyPI
+.. image:: https://img.shields.io/travis/pytest-dev/pytest-selenium.svg
+   :target: https://travis-ci.org/pytest-dev/pytest-selenium/
+   :alt: Travis
+.. image:: https://img.shields.io/badge/docs-latest-brightgreen.svg
+   :target: http://pytest-selenium.readthedocs.io/en/latest/
+   :alt: Read the Docs
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/ambv/black
+.. image:: https://img.shields.io/github/issues-raw/pytest-dev/pytest-selenium.svg
+   :target: https://github.com/pytest-dev/pytest-selenium/issues
+   :alt: Issues
+.. image:: https://img.shields.io/requires/github/pytest-dev/pytest-selenium.svg
+   :target: https://requires.io/github/pytest-dev/pytest-selenium/requirements/?branch=master
+   :alt: Requirements
+
+Resources
+---------
+
+- `Documentation <http://pytest-selenium.readthedocs.io/en/latest/>`_
+- `Issue Tracker <http://github.com/pytest-dev/pytest-selenium/issues>`_
+- `Code <http://github.com/pytest-dev/pytest-selenium/>`_
+
