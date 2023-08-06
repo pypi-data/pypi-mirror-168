@@ -1,0 +1,2 @@
+[console_scripts]
+mdvwhole = mdvwhole.whole:main
