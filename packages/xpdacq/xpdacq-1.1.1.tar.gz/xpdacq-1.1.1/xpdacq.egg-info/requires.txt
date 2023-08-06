@@ -1,0 +1,6 @@
+numpy>=1.11
+matplotlib>=1.5.1
+pyyaml
+boltons
+bluesky>=v0.5.1
+event_model

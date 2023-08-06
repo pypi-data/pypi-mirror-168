@@ -1,0 +1,15 @@
+python >=3.8
+bluesky
+bluesky-darkframes
+databroker
+frozendict
+numpy
+openpyxl
+ophyd
+pandas
+pyfai
+pyopencl
+pyyaml
+xlrd
+xpdconf
+xpdsim

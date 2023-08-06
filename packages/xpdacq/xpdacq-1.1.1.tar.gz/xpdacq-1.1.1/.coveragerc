@@ -1,0 +1,20 @@
+[run]
+source =
+    xpdacq
+[report]
+omit =
+    */python?.?/*
+    */site-packages/nose/*
+    # ignore _version.py and versioneer.py
+    .*version.*
+    *_version.py
+    */examples
+    */data/*
+    */999-load.py
+    */999-load2.py
+    */yamlclass.py
+    */yamllist.py
+
+exclude_lines =
+    if __name__ == '__main__':
+    pragma: no cover
