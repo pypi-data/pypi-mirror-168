@@ -1,0 +1,9 @@
+graphql_sync_dataloaders/__init__.py,sha256=ndXlZeej3_GnXNfYzCruLlGmukJ1esM1tOR-hp3a6pE,268
+graphql_sync_dataloaders/exceptions.py,sha256=qOYckIKzW09U407zkGt3ull4O1CW534nyJ8y_Sv81OA,90
+graphql_sync_dataloaders/execution_context.py,sha256=oV1X-vTQ13NinaOxOkhruUE8gabaTQfd3yqODCusZpc,14161
+graphql_sync_dataloaders/sync_dataloader.py,sha256=cf8YN__cB52yfgbFp1ZBNYw4ZrFPjQU4UjF-VqGMGNc,1472
+graphql_sync_dataloaders/sync_future.py,sha256=LvTodEmQedt6D1Klow1XNBQblNVT1S7EoKQJGcFEdD8,1633
+graphql_sync_dataloaders-0.1.0.dist-info/LICENSE,sha256=Oo3GaE3u6AMGV7AXjVuHNl7AZJIIEy0jgEFLe6woKng,1069
+graphql_sync_dataloaders-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+graphql_sync_dataloaders-0.1.0.dist-info/METADATA,sha256=NotrAiY_DWYisM1I1qxFoHnX6zCa1JrbNBtZHRBPx7E,5506
+graphql_sync_dataloaders-0.1.0.dist-info/RECORD,,
