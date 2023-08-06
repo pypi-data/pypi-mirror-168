@@ -1,0 +1,1 @@
+(self.webpackChunkipyregulartable=self.webpackChunkipyregulartable||[]).push([[42],{5042:()=>{}}]);
