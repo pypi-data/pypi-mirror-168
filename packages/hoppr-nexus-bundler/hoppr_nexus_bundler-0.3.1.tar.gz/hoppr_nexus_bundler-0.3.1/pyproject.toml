@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "hoppr_nexus_bundler"
+version = "0.3.1"
+description = "Plug-in for Hoppr to bundle artifacts into a Nexus Repository"
+authors = ["LMCO Open Source <open.source@lmco.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://hoppr.dev/"
+repository = "https://gitlab.com/-/ide/project/lmco/hoppr/plugins/hoppr-nexus-bundler"
+
+keywords = [
+    "hoppr",
+    "plugin",
+    "nexus",
+]
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Information Technology",
+    "Topic :: Communications :: File Sharing",
+    "Topic :: Software Development :: Version Control",
+    "Topic :: System :: Software Distribution"
+]
+
+packages = [
+    { include = "nexus_bundler" },
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+pylint = "^2.14.4"
+mypy = "^0.961"
+coverage = "^6.4.1"
+pytest = "^7.1.2"
+hoppr = ">=0.20.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
