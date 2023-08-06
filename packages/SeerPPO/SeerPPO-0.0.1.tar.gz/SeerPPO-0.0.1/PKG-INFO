@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SeerPPO
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/Walon1998/SeerPPO
+Author: Neville Walo
+Author-email: neville.walo@gmail.com
+License: UNKNOWN
+Keywords: rl,seer,ppo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7, <4
+License-File: LICENSE
+
+UNKNOWN
+
