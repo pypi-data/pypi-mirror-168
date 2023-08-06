@@ -1,0 +1,14 @@
+ixbrlparse/__init__.py,sha256=X-Aq0_MAAYd-syPY6qs3t3AiNkgct2DeNNjPxm0D0HI,59
+ixbrlparse/__main__.py,sha256=i48RBYyAhcics-YcXUF9uhg3_UhRD13EkL_Cm7JNYGo,1853
+ixbrlparse/core.py,sha256=f79yCuT4JdmNjjQLIDka1gExG_PY4YU5jD9TuBFIOvQ,6246
+ixbrlparse/version.py,sha256=sNUIXY4j-uBW0UNJ1UBlk71jQtO-yq-NEWFI_pOQcKY,23
+ixbrlparse/components/__init__.py,sha256=HmSN2bMC_Xum-ztR-pWEnIA10Qmg7fA-8rM8nY4oi_A,111
+ixbrlparse/components/context.py,sha256=OZqrd7FUxKKRt4keCXYu5r2RBUrEDo81eZylf1yuWxM,1347
+ixbrlparse/components/nonnumeric.py,sha256=rSKE6qSNNIV_95mhTQC14MBOkei4nv2W6AoifEub5Qg,574
+ixbrlparse/components/numeric.py,sha256=x7zHjLXY615Cao_pTlYd32qC5W90k7q8n_7_Wasc6j8,1348
+ixbrlparse/components/transform.py,sha256=w2fGe1QUOEUtFNeBFjqRTuCUjhHaoTnnxXTcJIOwiWw,2674
+ixbrlparse-0.3.1.dist-info/LICENSE,sha256=6qPv1qfs4dp2mHCbrWjIXfqPrubNdNzfCgmhZUhgFeU,1088
+ixbrlparse-0.3.1.dist-info/METADATA,sha256=Q3aSqir91fYD25h4AZCHNn2ste5JfPlv_KdAO7NGt7M,6006
+ixbrlparse-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ixbrlparse-0.3.1.dist-info/top_level.txt,sha256=cwZmO7tO9Cw3fp-YtY26mwdia6xzGMPF-sCzWwdh55g,11
+ixbrlparse-0.3.1.dist-info/RECORD,,
