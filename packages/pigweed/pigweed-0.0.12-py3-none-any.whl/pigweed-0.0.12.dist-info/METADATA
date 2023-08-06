@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: pigweed
+Version: 0.0.12
+Summary: Pigweed Python modules
+Home-page: https://pigweed.dev
+Author: Pigweed Authors
+Author-email: pigweed-developers@googlegroups.com
+Project-URL: Documentation, https://pigweed.dev
+Project-URL: Source Code, https://cs.pigweed.dev/pigweed
+Project-URL: Code Reviews, https://pigweed-review.googlesource.com
+Project-URL: Mailing List, https://groups.google.com/g/pigweed
+Project-URL: Issue Tracker, https://bugs.pigweed.dev
+Project-URL: Chat, https://discord.gg/M9NSeTA
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: build (==0.8.0)
+Requires-Dist: coloredlogs
+Requires-Dist: coverage
+Requires-Dist: cryptography
+Requires-Dist: google-cloud-storage
+Requires-Dist: googleapis-common-protos (==1.56.2)
+Requires-Dist: ipython
+Requires-Dist: jinja2
+Requires-Dist: mypy-protobuf (==3.2.0)
+Requires-Dist: mypy (==0.971)
+Requires-Dist: parameterized
+Requires-Dist: prompt-toolkit (>=3.0.26)
+Requires-Dist: protobuf
+Requires-Dist: protobuf (==3.20.1)
+Requires-Dist: ptpython (>=3.0.20)
+Requires-Dist: pyelftools
+Requires-Dist: pygments
+Requires-Dist: pygments-style-dracula
+Requires-Dist: pygments-style-tomorrow
+Requires-Dist: pylint (==2.9.3)
+Requires-Dist: pyperclip
+Requires-Dist: pyserial
+Requires-Dist: pyserial (<4.0,>=3.5)
+Requires-Dist: pyyaml
+Requires-Dist: scan-build (==2.0.19)
+Requires-Dist: setuptools
+Requires-Dist: six
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: sphinx (>3)
+Requires-Dist: sphinxcontrib-mermaid (>=0.7.1)
+Requires-Dist: types-protobuf (==3.19.22)
+Requires-Dist: types-pygments
+Requires-Dist: types-pyyaml
+Requires-Dist: types-setuptools
+Requires-Dist: types-six
+Requires-Dist: watchdog (>=2.1.0)
+Requires-Dist: wheel
+Requires-Dist: yapf (==0.31.0)
+Requires-Dist: graphlib-backport ; python_version < "3.9"
+
+# Pigweed
+
+Pigweed is an open source collection of embedded-targeted libraries–or as we
+like to call them, modules. These modules are building blocks and infrastructure
+that enable faster and more reliable development on small-footprint MMU-less
+32-bit microcontrollers like the STMicroelectronics STM32L452 or the Nordic
+nRF52832.
+
+For more information please see our website: https://pigweed.dev/.
+
+## Links
+
+- [Documentation](https://pigweed.dev/)
+- [Source Code](https://cs.pigweed.dev/pigweed)
+- [Code Reviews](https://pigweed-review.googlesource.com)
+- [Mailing List](https://groups.google.com/forum/#!forum/pigweed)
+- [Chat Room](https://discord.gg/M9NSeTA)
+- [Issue Tracker](https://bugs.pigweed.dev/)
+
