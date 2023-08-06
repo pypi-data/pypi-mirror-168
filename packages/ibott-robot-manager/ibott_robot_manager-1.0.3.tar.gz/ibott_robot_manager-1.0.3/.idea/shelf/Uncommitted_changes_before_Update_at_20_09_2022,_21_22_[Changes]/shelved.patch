@@ -1,0 +1,76 @@
+Index: ../Robot-framework/iBott/powerpoint_activities.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from iBott.files_activities import File\nimport os\nfrom pptx import Presentation\nfrom pptx.slide import Slide\n\n\ndef add_title(self, text):\n    self.shapes.title.text = text\n\n\ndef add_subtitle(self, text):\n    self.placeholders[1].text = text\n\n\nclass PowerPoint(File):\n    def __init__(self, path):\n        self.ppt = self.__file(path)\n        super().__init__(path)\n        setattr(Slide, 'add_title', add_title)\n\n    @staticmethod\n    def __file(path):\n        if os.path.isfile(path):\n            return Presentation(path)\n        else:\n            ppt = Presentation()\n            ppt.save(path)\n        return ppt\n\n    def add_slide(self, layout):\n        slide = self.ppt.slides.add_slide(self.ppt.slide_layouts[layout])\n        self.ppt.save(self.path)\n        return slide\n\n    def save(self):\n        self.ppt.save(self.path)\n\n\nppt = PowerPoint('/Users/enriquecrespodebenito/Desktop/pdfDeclaracion.pptx')\n\nslide = ppt.add_slide(2)\nslide.add_title('POOLS')\nppt.save()\n
+===================================================================
+diff --git a/../Robot-framework/iBott/powerpoint_activities.py b/../Robot-framework/iBott/powerpoint_activities.py
+--- a/../Robot-framework/iBott/powerpoint_activities.py	
++++ b/../Robot-framework/iBott/powerpoint_activities.py	
+@@ -8,8 +8,12 @@
+     self.shapes.title.text = text
+ 
+ 
+-def add_subtitle(self, text):
+-    self.placeholders[1].text = text
++def add_subtitle(self, text, placeholders=1):
++    self.placeholders[placeholders].text = text
++
++
++def add_image(self, image,  left=0, top=0):
++    self.shapes.add_picture(image, left, top)
+ 
+ 
+ class PowerPoint(File):
+@@ -17,6 +21,10 @@
+         self.ppt = self.__file(path)
+         super().__init__(path)
+         setattr(Slide, 'add_title', add_title)
++        setattr(Slide, 'add_subtitle', add_subtitle)
++        setattr(Slide, 'add_image', add_image)
++
++
+ 
+     @staticmethod
+     def __file(path):
+@@ -35,9 +43,20 @@
+     def save(self):
+         self.ppt.save(self.path)
+ 
++    @property
++    def slides(self):
++        return len(self.ppt.slides)
++
+ 
+ ppt = PowerPoint('/Users/enriquecrespodebenito/Desktop/pdfDeclaracion.pptx')
+-
+-slide = ppt.add_slide(2)
+-slide.add_title('POOLS')
++'''
++slide = ppt.add_slide(0)
++#slide.add_title('POOLS')
++slide.add_image('/Users/enriquecrespodebenito/Desktop/olivier-levasseur-la-buse-par-michel-faure.jpeg')
+ ppt.save()
++'''
++import urllib.request
++
++
++url= "https://beachbe.com/product/beach-shader-canopy?wvideo=abndi375vn "
++urllib.request.urlretrieve(url, '/Users/enriquecrespodebenito/Desktop/video_downloads/video_name.mp4')
+\ No newline at end of file
+Index: ../Robot-framework/.idea/Robot-framework.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\" />\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.7 (Robot-framework)\" jdkType=\"Python SDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n  <component name=\"PackageRequirementsSettings\">\n    <option name=\"modifyBaseFiles\" value=\"true\" />\n  </component>\n</module>
+===================================================================
+diff --git a/../Robot-framework/.idea/Robot-framework.iml b/../Robot-framework/.idea/Robot-framework.iml
+--- a/../Robot-framework/.idea/Robot-framework.iml	
++++ b/../Robot-framework/.idea/Robot-framework.iml	
+@@ -2,7 +2,7 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="jdk" jdkName="Python 3.7 (Robot-framework)" jdkType="Python SDK" />
++    <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+   <component name="PackageRequirementsSettings">
