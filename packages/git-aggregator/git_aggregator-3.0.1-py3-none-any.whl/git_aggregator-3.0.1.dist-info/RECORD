@@ -1,0 +1,14 @@
+git_aggregator/__init__.py,sha256=-w79xBXXlelkbkCdjfvE2Te8sprjI_M6EO6UPGIx2nY,119
+git_aggregator/_compat.py,sha256=sYQU7c5HWccCgncNXXKyhq8z-5kOkmTdnKCiDdjMxaQ,658
+git_aggregator/config.py,sha256=dZC4vqS1joek-jHNVPlwle6ORuqe4XSueK7K_FTQvtI,6663
+git_aggregator/exception.py,sha256=1Um3FtzyjJNqNL5s1WSEsFe52DRfTvriOZ6Kq3-8v7I,384
+git_aggregator/log.py,sha256=Olgp5NMfRITxFmg99PGqfUqH0rQK3p8lIvQCiMjbiBI,3302
+git_aggregator/main.py,sha256=gx96o6PXmnK4T77lg2EBbHKlPS7P2eN8cZf2NuMyVYw,7752
+git_aggregator/repo.py,sha256=2Rxtq0iLvsdx8RutiR-vgK8kW4qvis1i-kqaHOqNRvY,16428
+git_aggregator/utils.py,sha256=O90C6Pyh0llpArM-7g4cwO7zzoodT77qv3QP8vGxxOQ,1182
+git_aggregator-3.0.1.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+git_aggregator-3.0.1.dist-info/METADATA,sha256=unPjR1ElEVKzVx8nPqOZBRg_fLyRve47Ghz8yF_SuTo,10983
+git_aggregator-3.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+git_aggregator-3.0.1.dist-info/entry_points.txt,sha256=bGO2rIon5UBgXyaZHMmqzLBdIt6WoWZxEHgr1Pz0pnw,58
+git_aggregator-3.0.1.dist-info/top_level.txt,sha256=p-1fLc1q9Z4cu1AuSK1-BPl8N286GG5aB1OGEoCMUec,15
+git_aggregator-3.0.1.dist-info/RECORD,,
