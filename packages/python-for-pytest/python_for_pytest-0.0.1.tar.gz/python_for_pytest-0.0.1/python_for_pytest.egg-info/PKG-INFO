@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: python-for-pytest
+Version: 0.0.1
+Summary: It is simple and fast to use unit testing
+Home-page: http://github.com
+Author: SunXiuWen
+Author-email: xiuwensun@163.com
+License: UNKNOWN
+Description: ---
+        我的开源小脚本-愉快的写单元测试
+        # 人生苦短，我用Python！
+        ---
+        
+        
+        ### 一、简介
+            用于python3版本依赖pytest框架构建单元测试之接口测试用例数据模板excel生成与读取，并提供用于api接口通用测试方法，使用简单，即插即用。
+        
+        ### 二、怎么使用？
+        #### 1. 安装包
+        ```shell script
+        pip install python-for-pytest
+        ```
+        
+        #### 2. 在您的项目工程根目录下创建test包，您的测试用例文件就可以写在其中
+        ```shell script
+        # 目录结构大概如下
+        your_project_dir
+        |-- app
+        |-- test
+          |--__init__.py
+        ```
+        
+        #### 3. 本工具提供关于flask和sanic框架通用的单元测试样例脚本，可自动生成测试样例脚本供参考，代码如下
+        ```python
+        # 在test包下的__init__.py文件中调用如下代码，会生成一个参考样例脚本
+        from pathlib import Path
+        from python_for_pytest import init_pytest_for_flask
+        # from python_for_pytest import init_pytest_for_sanic
+        
+        
+        base_path = Path(__file__).resolve().parent
+        
+        init_pytest_for_flask(base_path,"custom_script_name.py")
+        
+        ```
+        
+        #### 4. 根据测试样例脚本的提示，准备您预测试的接口json报文样例,并按要求在报文根节点下添加uri、method、result、message节点，例如下面示例
+        ```shell script
+        # 单个接口
+        api={
+            "uri": "/test/get",  # 接口的访问资源路径
+            "method": "get",     # 接口的请求方法
+            "result":"0", # 预期结果
+            "message":"操作成功，符合预期", # 对预期结果的说明
+            "head": {
+                "sysCode": "S20160",
+                "appCode": "A01009",
+                "sign": "99999999"
+            }
+        }
+        
+        # 多个接口，将每个接口样例添加到列表中
+        api = [
+            {
+                "uri": "/test/get",
+                "method": "get",
+                "result":"0", # 预期结果
+                "message":"操作成功，符合预期", # 对预期结果的说明
+                "head": {
+                    "sysCode": "S20160"
+                },
+                "biz": {
+                    "phoneNumber": "1111111111",
+                    "developPerson": "1232221",
+                    "prod_info": [
+                        {
+                            "prod_nbr": "444444"
+                        }
+                    ]
+                }
+            },
+            {
+                "uri": "/test/post",
+                "method": "post",
+                "result":"0", # 预期结果
+                "message":"操作成功，符合预期", # 对预期结果的说明
+                "head": {
+                    "reqTime": "2015-01-23 15:32:03",
+                    "sign": "3333"
+                },
+                "biz": {
+                    "serialnum": "12",
+                    "prod_info": [
+                        {
+                            "prod_nbr": "1111"
+                        },
+                        {
+                            "prod_nbr": "2222"
+                        }
+                    ]
+                }
+            }
+        ]
+        ```
+        
+        #### 5. 报文及测试样例写好后，就可以在terminal下执行如下命令，进行单元测试
+        ```shell script
+        cd test
+        pytest
+        ```
+        
+        
+        ### 备注
+        ```
+        本工具初始化会自动生成测试用例数据源excel文件，pytest.ini配置文件，单元测试脚本模板文件
+        
+        保存测试数据到excel表
+        表格式说明如下：
+        1. 每个sheet【标签页】代表一个接口
+        2. 每列表示请求报文中的字段，如果涉及到层级关系需要以点分隔，如biz.dataObject.code，如果是列表将增加数字代表列表index
+        3. 测试数据文件名默认为:mock_data.xls,支持自定义
+        4. 提供的报文必须在json一级中增加字段：uri【接口资源路劲】，method【接口请求方法】,result【预期结果】,message【对预期结果的说明】
+        5. 如果一次提交多个接口，以列表包裹字典，每个字典代表一个接口
+        6. 支持自定字段是存在每列，或每行
+        7. 用户可以编辑excel文件，为每个excel添加多组数据，测试不同的预期结果
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
