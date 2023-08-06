@@ -1,0 +1,3 @@
+check-link<1.0.0,>=0.0.9
+typing-extensions
+ckanext-toolbelt
