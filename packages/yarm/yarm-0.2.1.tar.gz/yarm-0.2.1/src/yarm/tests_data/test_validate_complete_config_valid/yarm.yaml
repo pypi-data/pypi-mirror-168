@@ -1,0 +1,72 @@
+# In this file, UPPERCASE is used for keys and values that you can edit.
+# But normally, you don't have to use uppercase.
+import:
+  - path: MODULE_A.py
+  - path: MODULE_B.py
+
+output:
+  dir: OUTPUT
+  basename: BASENAME
+  export_tables: csv
+  export_queries: csv
+  styles:
+    column_width: 15
+
+input:
+  strip: true
+  slugify_columns: false
+  lowercase_columns: false
+  uppercase_rows: false
+  include_index: false
+
+tables_config:
+  TABLE_FROM_SPREADSHEET:
+    - path: SOURCE_A.xlsx
+      sheet: A.1
+  TABLE_FROM_CSV:
+    - path: SOURCE_B.csv
+  TABLE_FROM_MULTIPLE_SOURCES:
+    - path: SOURCE_C.xlsx
+      sheet: C.1
+    - path: SOURCE_D.csv
+  TABLE_PIVOT:
+    - path: SOURCE_C.xlsx
+      sheet: C.PIVOT
+      pivot:
+        index: ID
+        columns: KEY
+        values: VALUE
+  TABLE_DATETIME:
+    - path: SOURCE_A.xlsx
+      sheet: A.DATETIME
+      include_index: true
+      datetime:
+        CREATED:
+        MODIFIED: "%b %d, %Y"
+        "TOUCHED UP": "%Y-%m-%d"
+
+queries:
+  - name: QUERY A
+    sql: SELECT * FROM table_from_spreadsheet AS s;
+
+  - name: QUERY B
+    sql: >
+      SELECT
+      s.id,
+      COLUMN_A,
+      COLUMN_B
+      FROM
+      TABLE_FROM_SPREADSHEET AS s
+      LEFT JOIN
+      TABLE_FROM_CSV AS c
+      ON
+      s.id = c.ID
+      ;
+    replace:
+      COLUMN_A:
+        MATCH A1: REPLACE A1
+        MATCH A2: REPLACE A2
+        'MATCH B1 W/"''COMPLEX''" #STRING': 'REPLACE B1 W/''"COMPLEX"'' #STRING'
+      COLUMN_B_MISSING:
+        MATCH B1: This match won't ever happen, because the field is missing.
+    postprocess: test
