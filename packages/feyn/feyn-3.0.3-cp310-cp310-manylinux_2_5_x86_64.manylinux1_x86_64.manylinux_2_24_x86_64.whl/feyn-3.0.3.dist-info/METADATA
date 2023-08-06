@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: feyn
+Version: 3.0.3
+Summary: Feyn is a symbolic regression package named after Richard Feynman, that uses the QLattice as a simulator to generate models.
+Home-page: https://abzu.ai
+Author: Abzu
+Author-email: support@abzu.ai
+License: CC BY-NC-ND 4.0
+Project-URL: Documentation, https://docs.abzu.ai
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.22.0)
+Requires-Dist: pynacl
+Requires-Dist: pandas
+Requires-Dist: lark
+Requires-Dist: svgwrite
+Requires-Dist: matplotlib
+Requires-Dist: typing-extensions
+Requires-Dist: scikit-learn
+Requires-Dist: sympy
+Provides-Extra: extras
+Requires-Dist: ipython ; extra == 'extras'
+Requires-Dist: ipywidgets ; extra == 'extras'
+Provides-Extra: tests
+Requires-Dist: numpy (>=1.22.0) ; extra == 'tests'
+Requires-Dist: pynacl ; extra == 'tests'
+Requires-Dist: pandas ; extra == 'tests'
+Requires-Dist: lark ; extra == 'tests'
+Requires-Dist: svgwrite ; extra == 'tests'
+Requires-Dist: matplotlib ; extra == 'tests'
+Requires-Dist: typing-extensions ; extra == 'tests'
+Requires-Dist: scikit-learn ; extra == 'tests'
+Requires-Dist: sympy ; extra == 'tests'
+Requires-Dist: ipython ; extra == 'tests'
+Requires-Dist: ipywidgets ; extra == 'tests'
+Requires-Dist: statsmodels ; extra == 'tests'
+Requires-Dist: regex ; extra == 'tests'
+Requires-Dist: importlib-metadata ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+
+# Feyn
+
+## Quick start
+
+`Feyn` is available as Python3.7+ package [through `pip`](https://pypi.org/project/feyn/). You can install it with the following command:
+
+```bash
+richard@feyn:~$ pip3 install feyn
+```
+
+Once installed, go to your preferred `Python` environment and follow along with this example.
+
+## Running a QLattice
+
+If you're using the community edition of a `QLattice` then you can instantiate it by:
+
+```python
+import feyn
+
+ql = feyn.QLattice()
+```
+
+## Auto run
+
+The quickest way to get started is to use the `auto_run` function on the `QLattice`. First we will make a classification problem with `feyn.datasets.make_classification`.
+
+```python
+from feyn.datasets import make_classification
+
+train, test = make_classification()
+models = ql.auto_run(train, output_name = 'y', kind = 'classification')
+```
+
+This returns a list of fitted models that are the best the `QLattice` has sampled, sorted by ascending loss.
+
+## Evaluate
+
+The model with the lowest loss is `models[0]`. We can evaluate that model with the `plot` function and it's ROC curve.
+
+```python
+best = models[0]
+best.plot(train, test)
+best.plot_roc_curve(test)
+```
