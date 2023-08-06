@@ -1,0 +1,12 @@
+numpy>=1.19
+packaging
+
+[both]
+tensorflow>=2.4
+torch>=1.8
+
+[pytorch]
+torch>=1.8
+
+[tensorflow]
+tensorflow>=2.4
