@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: AutomaticDemuxer
+Version: 1.34
+Summary: Automatically Demux tracks from media-files
+Home-page: https://github.com/jlw4049/AutomaticDemuxer
+Author: Jessie Wilson
+Author-email: jessielw4049@gmail.com
+License: MIT
+Keywords: AutomaticDemuxer
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Automatic Demuxer
+
+Package to demux media-files into single file formats to be used elsewhere.
+
+*Video tracks are only supported currently*
+
+Developed by Jessie Wilson (2022)
+
+## Install
+
+`pip install AutomaticDemuxer`
+
+**If using Linux you must also install MediaInfo**
+
+`sudo apt install mediainfo`
+
+## Uninstall
+
+`pip uninstall AutomaticDemuxer`
+
+## Examples of How To Use
+
+**Video: Example with callback**
+
+```python
+from automatic_demuxer import AutoDemuxer
+
+
+def callback_func(x):
+    """
+    AutoDemuxer will return a dictionary with keys 'output' and 'percent'
+    "output" will always display the ffmpeg command line output
+    "percent" will return None if there is no track duration OR when the job hasn't fully started/is finished
+    "job_pid" will return a pathlike/string of the full path of the output filename
+    """
+    print(x["output"])
+    print(x["percent"])
+    print(x["job_pid"])
+
+    # check if x["percent"] is not none before using output
+    if x["percent"]:
+        print(f"do something with {str(x['percent'])}")
+
+
+demux = AutoDemuxer()
+demux.video_demux(file_input=r"fileinput.mkv", callback=callback_func)
+```
+
+\
+**Video: Example without callback**
+
+When not using callback the FFMPEG output is automatically printed to console in the format of a string.
+This does not include percentage.
+
+```python
+from automatic_demuxer import AutoDemuxer
+
+demux = AutoDemuxer()
+demux.video_demux(file_input=r"fileinput.mkv")
+```
+
+\
+**Video: Return status**
+
+```python
+from automatic_demuxer import AutoDemuxer
+
+demux = AutoDemuxer()
+demux.video_demux(file_input=r"fileinput.mkv")
+
+# To print the return code
+print(demux.status["return_code"])
+
+# To print the output file name
+print(demux.status["output_filename"])
+
+# To print a completed status (completed internally by checking the output path name and getting a return code of 0)
+# This will return "Ok" or "Error"
+print(demux.status["status"])
+```
+
+## Video Parameters
+
+`file_input` String or Pathlike path to input file.
+
+`ffmpeg_path` String or Pathlike path to ffmpeg.\
+*Optional: Will raise an error if not found on path or defined*
+
+`track_number` Track number based off of ffmpeg stream selection or mediainfo's 'Stream identifier'.\
+*Optional: Defaults to 0*
+
+`suffix` String to define the output ending suffix.\
+*Optional: Defaults to "\_out\_"*
+
+`insert_delay` Bool to insert delay string into filename output if delay is detected.\
+*Optional: Defaults to True*
+
+`video_output_extension` The output extension in the form of a string. e.g. "mkv" or ".mkv"\
+*Optional: Defaults to "mkv"*
+
+`callback` Log callback progress to a variable instead of printing to console\
+*Optional: Defaults to None*
+
+`fallback_ext` Extension in the form of a string. e.g. "mkv" or "mp4". Default is "mkv", if changed the program will
+fall back to what ever extension is selected\
+*Optional: Defaults to "mkv"*
