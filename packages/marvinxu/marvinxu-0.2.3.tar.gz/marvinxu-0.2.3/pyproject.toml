@@ -1,0 +1,33 @@
+[project]
+name = "marvinxu"
+version = "0.2.3"
+description = "Marvin's toolkit"
+authors = [
+    { name = "MarvinXu", email = "272077995@qq.com" },
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.scripts]
+test = "pytest"
+
+[tool.pdm.dev-dependencies]
+formatting = [
+    "black>=22.8.0",
+    "isort>=5.10.1",
+]
+test = [
+    "pytest>=7.1.3",
+]
