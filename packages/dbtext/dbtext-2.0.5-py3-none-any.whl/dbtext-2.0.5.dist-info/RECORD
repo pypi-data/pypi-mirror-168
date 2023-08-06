@@ -1,0 +1,13 @@
+dbtext/__init__.py,sha256=Ra9hF5XewiE4ZFlmhUfMyKI6WX2xhyfhBY5184n869s,218
+dbtext/base_odbc.py,sha256=zdovIEpe0FcakVCTR7xyjd22NE2iYrLYGEpv2H43Ybc,34735
+dbtext/db_to_text.py,sha256=5yoTi17MuRPeAPTQSymP-vzLCLaZswjqUgqC_V0omhQ,675
+dbtext/jsonutils.py,sha256=MvTL83df9L3362A-zbAdewp0xlkCC_7WiWr3dE7GGYI,651
+dbtext/mongodb.py,sha256=ChfWJUzuGvxMqTL04SczwxM6jVky-fthuQV7YNsFSqE,13703
+dbtext/mssql_server.py,sha256=VhiZP0cHtwYvRq6q2t7aK6dV_qQ6ePYEhsBPNjyxjrs,3935
+dbtext/mysql.py,sha256=1QCm0nh5dVFH6036vBWJPrTKaLliN-yToLw-N6L57aM,2098
+dbtext/sqlite3db.py,sha256=OPAwFJh-pa9lDmpG3aM4RAf55b4gZhtBnbYbodWz0Bo,1303
+dbtext-2.0.5.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+dbtext-2.0.5.dist-info/METADATA,sha256=H9jsIvp31UC0daFF83bUT-MExEIDRPFlefmp1SSILWM,12785
+dbtext-2.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dbtext-2.0.5.dist-info/top_level.txt,sha256=tmpwNVVbAu0cCnJo-jtUk9tuvneDydPXjArKGK4IyaQ,7
+dbtext-2.0.5.dist-info/RECORD,,
