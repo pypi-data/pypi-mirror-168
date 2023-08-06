@@ -1,0 +1,2 @@
+class Outliers(object):
+    pass
