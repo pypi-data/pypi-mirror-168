@@ -1,0 +1,45 @@
+from Classification.Instance.CompositeInstance import CompositeInstance
+from Classification.Instance.Instance import Instance
+from Classification.InstanceList.InstanceList import InstanceList
+from Classification.Model.Model import Model
+from Math.DiscreteDistribution import DiscreteDistribution
+
+
+class DummyModel(Model):
+
+    distribution: DiscreteDistribution
+
+    def __init__(self, trainSet: InstanceList):
+        """
+        Constructor which sets the distribution using the given InstanceList.
+
+        PARAMETERS
+        ----------
+        trainSet : InstanceList
+            InstanceList which is used to get the class distribution.
+        """
+        self.distribution = trainSet.classDistribution()
+
+    def predict(self, instance: Instance) -> str:
+        """
+        The predict method takes an Instance as an input and returns the entry of distribution which has the maximum
+        value.
+
+        PARAMETERS
+        ----------
+        instance : Instance
+            Instance to make prediction.
+
+        RETURNS
+        -------
+        str
+            The entry of distribution which has the maximum value.
+        """
+        if isinstance(instance, CompositeInstance):
+            possible_class_labels = instance.getPossibleClassLabels()
+            return self.distribution.getMaxItemIncludeTheseOnly(possible_class_labels)
+        else:
+            return self.distribution.getMaxItem()
+
+    def predictProbability(self, instance: Instance) -> dict:
+        return self.distribution.getProbabilityDistribution()
