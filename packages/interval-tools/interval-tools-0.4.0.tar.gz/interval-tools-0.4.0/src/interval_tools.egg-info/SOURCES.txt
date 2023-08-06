@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/interval/__init__.py
+src/interval/ddd.py
+src/interval/utils.py
+src/interval_tools.egg-info/PKG-INFO
+src/interval_tools.egg-info/SOURCES.txt
+src/interval_tools.egg-info/dependency_links.txt
+src/interval_tools.egg-info/requires.txt
+src/interval_tools.egg-info/top_level.txt
