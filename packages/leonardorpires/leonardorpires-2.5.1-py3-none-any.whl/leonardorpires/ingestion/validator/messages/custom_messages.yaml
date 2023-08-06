@@ -1,0 +1,83 @@
+cerberus:
+  connection_string:
+    36:
+      jdbc_reader: "Must be of string type with an allowed connection string structure"
+  password:
+    36:
+      jdbc_reader: "Unallowed value. The value must be of string type. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.jdbc_reader_validator"
+      rabbitmq_reader: "Unallowed value. The value must be of string type. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.rabbitmq_reader_validator"
+  user:
+    36:
+      jdbc_reader: "Must be of string type"
+  query:
+    68:
+      jdbc_reader: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.jdbc_reader_validator"
+    36:
+      jdbc_reader: "Must be of string type"
+  format:
+    68:
+      file_reader: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_reader_validator"
+      file_writer: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_writer_validator"
+      presto_writer: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+  mount_name:
+    68:
+      file_writer: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_writer_validator"
+      presto_writer: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+  country:
+    68:
+      file_reader: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_reader_validator"
+      file_writer: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_writer_validator"
+      presto_writer: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+  filter:
+    36:
+      file_reader: "Must be of string type and a Sql expression, like: 'NAME != 10'"
+  path:
+    65:
+      file_writer: "The field requires a specific regex: (([A-Z0-9][a-z0-9]+)+/([A-Z0-9][a-z0-9]+)+)(/([A-Z0-9][a-z0-9]+)+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_writer_validator"
+      presto_writer: "The field requires a specific regex: (([A-Z0-9][a-z0-9]+)+/([A-Z0-9][a-z0-9]+)+)(/([A-Z0-9][a-z0-9]+)+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+  table_id:
+    65:
+      file_reader: "The field requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_writer_validator"
+    36:
+      jdbc_reader: "Must be of string type"
+  mode:
+    68:
+      file_writer: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_writer_validator"
+      sql_writer: "Unallowed value. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.sql_writer_validator"
+  partition_by:
+    65:
+      file_writer: "The field has to be a list or a string. In both cases, the elements (column(s) name(s)) requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_writer_validator"
+      presto_writer: "The field has to be a list or a string. In both cases, the elements (column(s) name(s)) requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+    36:
+      file_writer: "The field has to be a list or a string. In both cases, the elements (column(s) name(s)) requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.file_writer_validator"
+      presto_writer: "The field has to be a list or a string. In both cases, the elements (column(s) name(s)) requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+  schema:
+    65:
+      presto_writer: "The field requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+      sql_writer: "The field requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.sql_writer_validator"
+    36:
+      rabbitmq_reader: "Unallowed value. The value must be of string type. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.rabbitmq_reader_validator"
+  temp_path:
+    65:
+      sql_writer: "The field requires a specific regex: (([A-Z0-9][a-z0-9]+)+/([A-Z0-9][a-z0-9]+)+)(/([A-Z0-9][a-z0-9]+)+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.sql_writer_validator"
+  table_name:
+    65:
+      presto_writer: "The field requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+      sql_writer: "The field requires a specific regex: [a-z0-9]+(_[a-z0-9]+)*. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.sql_writer_validator"
+  options:
+    36:
+      jdbc_reader: "Must be of dict type with allowed spark read options"
+      file_reader: "Must be of dict type with allowed spark read options"
+  sync_mode:
+    68:
+      presto_writer: "Unallowed value. Allowed only FULL, DROP and ADD. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.presto_writer_validator"
+  queue_name:
+    36:
+      rabbitmq_reader: "Unallowed value. The value must be of string type. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.rabbitmq_reader_validator"
+  host:
+    36:
+      rabbitmq_reader: "Unallowed value. The value must be of string type. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.rabbitmq_reader_validator"
+  username:
+    36:
+      rabbitmq_reader: "Unallowed value. The value must be of string type. For more information, check our docs: https://stpyiris.z13.web.core.windows.net/html/pyiris.ingestion.validator.html#module-pyiris.ingestion.validator.rabbitmq_reader_validator"
+
