@@ -1,0 +1,9 @@
+olca_schema/__init__.py,sha256=Z06wvOF5QhDwc_VK1CpSsjhH33BXOlvFgnbvtl1vF0o,10969
+olca_schema/schema.py,sha256=RbpUm01CG4SMaWgSN4IyexgiRHiEGL6WyH8WFuMzfG4,106129
+olca_schema/zipio.py,sha256=CjZWndRsWUUGtOwai4sbHXjWAuUAHfgplDZcFfGlH9k,4883
+olca_schema/units/__init__.py,sha256=ok11-Y3a7iohFl0W0PF1DgLpR8lXpiiGD-DwjXaWjaA,1886
+olca_schema/units/units.csv,sha256=dsWvZtXBtSl_UKJnHdf68zqG7M24yVdUTRkcmsFqbTI,40186
+olca_schema-0.0.5.dist-info/METADATA,sha256=Fpa74ciD__kgOhulWsy398mwvD5sjvt8U6b382JxV1I,1998
+olca_schema-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+olca_schema-0.0.5.dist-info/top_level.txt,sha256=0y2z6lgCG74yLzPp1vCWlpyFsMq9Cfdhc3gLV5Nlm9o,12
+olca_schema-0.0.5.dist-info/RECORD,,
