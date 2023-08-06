@@ -1,0 +1,11 @@
+absl-py>=0.7.1
+jmp>=0.0.2
+numpy>=1.18.0
+tabulate>=0.8.9
+
+[:python_version < "3.8"]
+typing_extensions
+
+[jax]
+jax==0.3.16
+jaxlib==0.3.15
