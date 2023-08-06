@@ -1,0 +1,9 @@
+README.md
+setup.py
+hs_ocr_lib_test/__init__.py
+hs_ocr_lib_test/test.py
+testprojectrajlaxmi.egg-info/PKG-INFO
+testprojectrajlaxmi.egg-info/SOURCES.txt
+testprojectrajlaxmi.egg-info/dependency_links.txt
+testprojectrajlaxmi.egg-info/requires.txt
+testprojectrajlaxmi.egg-info/top_level.txt

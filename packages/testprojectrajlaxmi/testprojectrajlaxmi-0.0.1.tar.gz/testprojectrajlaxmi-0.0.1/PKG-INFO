@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: testprojectrajlaxmi
+Version: 0.0.1
+Summary: A package to say hello world
+Author: Rajlaxmi Dharmpuriwar
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+This is a test project by Rajlaxmi
