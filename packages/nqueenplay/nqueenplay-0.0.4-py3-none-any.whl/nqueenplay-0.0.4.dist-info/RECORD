@@ -1,0 +1,10 @@
+nqueenplay/__init__.py,sha256=exJvFJ3AB5iW7iKE_sWZ6jWU-UHLmllx27EhlCAyCf8,26
+nqueenplay/exceptions.py,sha256=r6wypYqSq-cJxmShIHqqpAt3YPAmKMyfIHwb4FX5vMA,159
+nqueenplay/move_direction.py,sha256=zvJY5jaHayLKTnzH-zc79vCZDtn6e-DNqa9YExo_bXI,135
+nqueenplay/queens.py,sha256=31lnDYJzc2yoiuKTqGKov7GsjZkm-Mvtt6CE3EPCiO0,7724
+nqueenplay/version.py,sha256=uG-5oNwDob1F5sNesmHKWPMKVlkBNy70KvtPNKSbxCM,42
+nqueenplay-0.0.4.dist-info/LICENSE,sha256=SnF6XLZ52WLL_MOsCR4MIBaRTvFcu0gPWZg8KDnadm0,1081
+nqueenplay-0.0.4.dist-info/METADATA,sha256=j11UM3gGdJ3gB4wQMiKZi7jyzYo6woOq3-jIFyy5_Lc,7062
+nqueenplay-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nqueenplay-0.0.4.dist-info/top_level.txt,sha256=A36ZF0jn9W1Ym7XEN9P646R0Px-CQ2M2NUX8nrDaxx4,11
+nqueenplay-0.0.4.dist-info/RECORD,,
