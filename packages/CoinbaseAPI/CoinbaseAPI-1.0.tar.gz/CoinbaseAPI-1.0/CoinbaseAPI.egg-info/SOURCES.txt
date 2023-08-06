@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.cfg
+setup.py
+CoinbaseAPI/CoinbaseAPI.py
+CoinbaseAPI/__init__.py
+CoinbaseAPI.egg-info/PKG-INFO
+CoinbaseAPI.egg-info/SOURCES.txt
+CoinbaseAPI.egg-info/dependency_links.txt
+CoinbaseAPI.egg-info/top_level.txt
