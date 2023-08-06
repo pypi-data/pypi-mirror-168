@@ -1,0 +1,2 @@
+[console_scripts]
+nd2_extractor = nd2_extractor.nd2_extractor:main
