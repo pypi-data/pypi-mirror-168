@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: pynumaflow
+Version: 0.2.1
+Summary: Provides the interfaces of writing Python User Defined Functions and Sinks for NumaFlow.
+License: Apache-2.0
+Author: NumaFlow Developers
+Maintainer: Avik Basu
+Maintainer-email: avikbasu93@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: grpcio (>=1.48.1,<2.0.0)
+Requires-Dist: grpcio-tools (>=1.48.1,<2.0.0)
+Requires-Dist: msgpack (>=1.0.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Python SDK for Numaflow
+
+This SDK provides the interface for writing [UDFs](https://numaproj.github.io/numaflow/user-defined-functions/) 
+and [UDSinks](https://numaproj.github.io/numaflow/sinks/user-defined-sinks/) in Python.
+
+## Implement a User Defined Function (UDF)
+
+```python
+
+from pynumaflow.function import Messages, Message, Datum, UserDefinedFunctionServicer
+
+
+def map_handler(key: str, datum: Datum) -> Messages:
+    val = datum.value
+    _ = datum.event_time
+    _ = datum.watermark
+    messages = Messages()
+    messages.append(Message.to_vtx(key, val))
+    return messages
+
+
+if __name__ == "__main__":
+    grpc_server = UserDefinedFunctionServicer(map_handler)
+    grpc_server.start()
+```
+
+### Sample Image (TODO)
+
+## Implement a User Defined Sink (UDSink)
+
+```python
+from typing import List
+from pynumaflow.sink import Message, Responses, Response, HTTPSinkHandler
+
+
+def udsink_handler(messages: List[Message], __) -> Responses:
+    responses = Responses()
+    for msg in messages:
+        responses.append(Response.as_success(msg.id))
+    return responses
+
+
+if __name__ == "__main__":
+    handler = HTTPSinkHandler(udsink_handler)
+    handler.start()
+```
+
+### Sample Image
+
+A sample UDSink [Dockerfile](examples/sink/simplesink/Dockerfile) is provided 
+under [examples](examples/sink/simplesink).
+
