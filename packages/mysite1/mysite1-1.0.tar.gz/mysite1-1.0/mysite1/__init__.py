@@ -1,0 +1,1 @@
+from mysite1 import hello
