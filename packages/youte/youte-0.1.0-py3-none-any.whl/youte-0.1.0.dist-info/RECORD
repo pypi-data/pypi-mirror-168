@@ -1,0 +1,15 @@
+youte/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+youte/__main__.py,sha256=dIgCZQ6tVI_5QufJQuL2D5ZSnTN_KU7uqeyrbn1BEXY,10051
+youte/collector.py,sha256=7Wj3HwbbSbiPXAgfjXpjlHnc3Yp1W2DtJDK5j_kJq8g,13530
+youte/config.py,sha256=M-UXHdl0AbHTdKQ7NoC-W2TrCmO8eai2DXuOoymYf7s,2524
+youte/exceptions.py,sha256=8PCocJXB7at9aa2uP2WVJuxaO25uuwPUu_JiX0iB0oM,323
+youte/quota.py,sha256=laZYXv8V1TRtzeyOAwEVmd7e-olugyRQUpewFRtm-xY,4076
+youte/table_mappings.py,sha256=Um_XgwxJfq1g_yzMnT0WOc7eWOXDzTIG2o_hDDh9Pk8,5167
+youte/tidier.py,sha256=53r1s94XHJqk6SDyWwcSLMFSDxqMoD6x1uzGnKs12Ek,12215
+youte/utilities.py,sha256=d-Uz_kxXjR8LecSOXCBnKr6L5V_NvlqK49z-iH1XM7I,796
+youte-0.1.0.dist-info/LICENCE,sha256=HDs1GDSlj5Fi9VOy7XB3CYIk1jS6TH7bVmlGzFwNt00,1081
+youte-0.1.0.dist-info/METADATA,sha256=Wd4PhR9X8GHzH-cDiE4DlywkPlYs87Q3zokTqn49w_k,13424
+youte-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+youte-0.1.0.dist-info/entry_points.txt,sha256=Tm_I8Lphy8ZQnO9hxWJL89w-yryPkairuA_xia41g18,47
+youte-0.1.0.dist-info/top_level.txt,sha256=fhTJJRUg4qHayG7T9QQKufjO3aMRJS5Gn33dbo0zNZM,6
+youte-0.1.0.dist-info/RECORD,,
