@@ -1,0 +1,13 @@
+tjsp/__init__.py,sha256=ZLgxYp8pzG97E9WT6NgHn5pADv2uAngVVlSwxuAir50,113
+tjsp/paths.py,sha256=c_SFyvzQmxZnPrZFtABz9wGLnngBVHEBVUHzxoD_Htc,384
+tjsp/tjsp_dates.py,sha256=M5pQkJoMQ8CIK1UFSkGKyVsoKx-Nf2uVCHkFX_7u_hw,1297
+tjsp/tjsp_update.py,sha256=-m5_ptZlPCBAANdvouYBrFkAke4zKfkeCIaiCmkvLog,2449
+tjsp/update.py,sha256=yK5jSIkt_HKwekWRWW6WHNiNCKNFthKawOAi_cCh5vY,421
+tjsp/data/date.txt,sha256=_pgfUpPufR_kcFc1pwCugMGmZz0lzL4rg7C5tumSsm8,26
+tjsp/data/tabela_debitos_judiciais.csv,sha256=PXqQzvRIVC6ohV4lvLWDIHWYkC_Fkp3ZJzGQ3ZERWYM,33637
+tjsp/data/tabela_debitos_judiciais.pdf,sha256=nlBUvxNuGbrEky24EluDLXNR-eo4JR7vUFOz26fV5ds,131726
+tjsp-0.0.7.dist-info/LICENSE,sha256=gJ3LA8Jfut0xCF8KgrFYKPSWIkG1FGwW3gFnck1rnoM,1073
+tjsp-0.0.7.dist-info/METADATA,sha256=gZSNihE6w7SH_m6YCMR7rJIaz-q98jvg6MeZu8DvxLA,3434
+tjsp-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tjsp-0.0.7.dist-info/top_level.txt,sha256=gD1QO4Y9CnCy7zADnPtn2h4SmbW7QiHi2I5cOUk3KxE,5
+tjsp-0.0.7.dist-info/RECORD,,
