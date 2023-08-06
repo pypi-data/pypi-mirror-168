@@ -1,0 +1,9 @@
+LICENSE,sha256=M693avhs7YwRHfwgkD_Ko5Snh7Le6kE4967Nfdmuuf8,1082
+py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yls_yara/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+yls_yara/linting.py,sha256=kw-T4aZ1OkwTi5QYMTcMYL7HPSc4tDlLE8gm833NEYY,2963
+yls_yara-1.1.0.dist-info/entry_points.txt,sha256=4C_it9MH8dhldhcUsUUaVbvtYF5wGBwQNneSrkz28Zk,21
+yls_yara-1.1.0.dist-info/LICENSE,sha256=M693avhs7YwRHfwgkD_Ko5Snh7Le6kE4967Nfdmuuf8,1082
+yls_yara-1.1.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+yls_yara-1.1.0.dist-info/METADATA,sha256=XnPYAz4xLe0Lhy3dqkLu-hC4DKMEhShnQmrSRogNw28,1127
+yls_yara-1.1.0.dist-info/RECORD,,

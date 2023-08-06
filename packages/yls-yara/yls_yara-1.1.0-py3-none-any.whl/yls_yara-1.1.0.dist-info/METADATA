@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: yls-yara
+Version: 1.1.0
+Summary: YLS plugin adding linting using yara-python.
+License: MIT
+Author: Matej Kastak
+Author-email: matej.kastak@avast.com
+Maintainer: Matej Kašťák
+Maintainer-email: matej.kastak@avast.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: yara-python (>=4.2.0,<5.0.0)
+Requires-Dist: yls (>=1.1.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# yls-yara
+
+![PyPI](https://img.shields.io/pypi/v/yls-yara)
+
+An [YLS](https://www.github.com/avast/yls) plugin adding
+[YARA](https://github.com/VirusTotal/yara) linting capabilities.
+
+This plugin runs `yara.compile` on every save, parses the errors, and returns
+list of diagnostic messages.
+
+## License
+
+Copyright (c) 2022 Avast Software, licensed under the MIT license. See the
+[`LICENSE`](https://github.com/avast/yls/blob/master/plugins/yls-yara/LICENSE)
+file for more details.
+
