@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+requirements.txt
+setup.py
+bin/financetoolbox
+src/financetoolbox/VERSION
+src/financetoolbox/cli.py
+src/financetoolbox.egg-info/PKG-INFO
+src/financetoolbox.egg-info/SOURCES.txt
+src/financetoolbox.egg-info/dependency_links.txt
+src/financetoolbox.egg-info/requires.txt
+src/financetoolbox.egg-info/top_level.txt
