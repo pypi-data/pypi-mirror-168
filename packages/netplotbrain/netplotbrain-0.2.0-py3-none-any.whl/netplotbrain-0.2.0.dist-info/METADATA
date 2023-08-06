@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: netplotbrain
+Version: 0.2.0
+Summary: Package to plot networks on brains
+Home-page: https://www.github.com/wiheto/netplotbrain
+Author: wiheto, silviafan
+Author-email: william.thompson@gu.se
+License: GNU V3
+Platform: UNKNOWN
+Requires-Python: >3.5
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.3.3)
+Requires-Dist: nibabel (>=3.1.0)
+Requires-Dist: templateflow (>=0.6.3)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: scipy (>=1.4.1)
+
+netplotbrain.             Plotting networks on neuroimaging files,             nodes and edges can be plotted onto 3D brains.             
+
