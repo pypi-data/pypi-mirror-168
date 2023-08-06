@@ -1,0 +1,10 @@
+proteus/__init__.py,sha256=SGAMN-ViXTeNC_nk4OuBClg1SZVjLZRxxkduLdxY64g,2130
+proteus/api.py,sha256=94utDnFgUeKFZ7Cj7-JuJMu3HLNBtBRPYKI1UnX2j9g,4208
+proteus/config.py,sha256=WiUEN80twFkDElIr7cBwgEMqsbdQe8AAw7V3cC7YJkA,1547
+proteus/logger.py,sha256=4BCEl5fRWWezYMIcc8K2JLZb1MPQEx4YtzaiB9vbQt0,713
+proteus/oidc.py,sha256=zGj6tkB09WLIyJCOAGDKd1DAQ4dZE7vZZvhjsT8yJ3g,6655
+proteus/reporting.py,sha256=ST4a8xkS8S5ZhVUZW5bfc8UAQ7LE9coigTFY2gVUQJw,2582
+proteus_runtime-0.1.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+proteus_runtime-0.1.11.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+proteus_runtime-0.1.11.dist-info/METADATA,sha256=niatYPrwENW9qQjhgJCmCI0AO8v0aiModVcuOetzDDA,482
+proteus_runtime-0.1.11.dist-info/RECORD,,
