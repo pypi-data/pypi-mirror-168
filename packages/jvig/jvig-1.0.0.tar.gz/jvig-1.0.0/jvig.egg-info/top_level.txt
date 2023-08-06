@@ -1,0 +1,4 @@
+dist
+icon
+jvig
+venv
