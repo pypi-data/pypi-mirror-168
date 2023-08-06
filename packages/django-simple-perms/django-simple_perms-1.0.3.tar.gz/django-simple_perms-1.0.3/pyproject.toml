@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "django-simple_perms"
+version = "1.0.3"
+description = "A simple class based permission backend for django"
+authors = ["Fabien MICHEL <fabien.michel@hespul.org>"]
+license = "WTFPL"
+readme="README.md"
+repository="https://bitbucket.org/hespul/django-simple_perms"
+classifiers=[
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 3.2',
+        'Framework :: Django :: 4.0',
+        'Intended Audience :: Developers',
+        'License :: Public Domain',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+]
+
+packages = [
+    { include = "simple_perms" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = ">=3.2"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "2.20.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 88
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint."messages control"]
+disable = [
+    "missing-docstring",
+    "import-error",
+    "invalid-name",
+    "too-few-public-methods",
+    "unused-argument",
+]
