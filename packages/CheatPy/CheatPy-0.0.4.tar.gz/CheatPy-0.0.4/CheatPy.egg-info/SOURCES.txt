@@ -1,0 +1,11 @@
+Cheat.cpp
+README.md
+setup.py
+CheatPy/__init__.pyi
+CheatPy/py.typed
+CheatPy.egg-info/PKG-INFO
+CheatPy.egg-info/SOURCES.txt
+CheatPy.egg-info/dependency_links.txt
+CheatPy.egg-info/not-zip-safe
+CheatPy.egg-info/requires.txt
+CheatPy.egg-info/top_level.txt
