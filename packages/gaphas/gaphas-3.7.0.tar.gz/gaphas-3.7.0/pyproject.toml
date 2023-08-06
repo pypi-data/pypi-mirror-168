@@ -1,0 +1,104 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "gaphas"
+version = "3.7.0"
+description="Gaphas is a GTK+ based diagramming widget"
+authors = [
+    "Arjan J. Molenaar <gaphor@gmail.com>",
+    "Dan Yeaw <dan@yeaw.me>"
+]
+license = "Apache-2.0"
+
+readme = "README.md"
+
+homepage = "https://gaphas.readthedocs.io/"
+repository = "https://github.com/gaphor/gaphas"
+documentation = "https://gaphas.readthedocs.io/"
+
+keywords = ["gtk", "diagram", "gaphas"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: GTK",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyGObject = "^3.38.0"
+pycairo = "^1.20.0"
+sphinx = { version = ">=4.3,<6.0", optional = true }
+sphinx-rtd-theme = { version = "^1.0", optional = true }
+gaphor = { version = "^2.7", python = "^3.9, <3.11", optional = true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1"
+pytest-cov = "^2.12"
+pytest-runner = "^6.0"
+black = "^22.8"
+pre-commit = "^2.20"
+tox = "^3.26"
+pytest-sugar = "^0.9.5"
+
+[tool.poetry.extras]
+docs = [ "sphinx", "sphinx-rtd-theme", "gaphor" ]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist = clean, py39, py310, py311, report
+tox_pyenv_fallback = false
+
+[gh-actions]
+python =
+    3.9: py39
+    3.10: py310
+    3.11: py311
+
+[testenv]
+whitelist_externals =
+    xvfb-run
+commands =
+    xvfb-run pytest --cov --cov-append --cov-report=term-missing {posargs}
+deps =
+    pytest
+    pytest-cov
+depends =
+    {py39,py310, py311}: clean
+    report: py39,py310,py311
+passenv = TEST_GTK_VERSION
+
+[testenv:report]
+deps = coverage[toml]
+skip_install = true
+commands =
+    coverage report
+    coverage html
+
+[testenv:clean]
+deps = coverage[toml]
+skip_install = true
+commands = coverage erase
+"""
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+known_third_party = ["cairo", "gi", "importlib_metadata", "pytest"]
+skip = ".venv,build,dist"
+
+[tool.coverage.run]
+source = ["gaphas"]
