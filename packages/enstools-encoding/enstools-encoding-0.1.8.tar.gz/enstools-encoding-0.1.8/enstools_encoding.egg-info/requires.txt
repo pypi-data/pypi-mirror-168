@@ -1,0 +1,4 @@
+xarray
+PyYAML
+h5py
+h5netcdf
