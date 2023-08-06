@@ -1,0 +1,9 @@
+README.md
+setup.py
+Gistats.egg-info/PKG-INFO
+Gistats.egg-info/SOURCES.txt
+Gistats.egg-info/dependency_links.txt
+Gistats.egg-info/top_level.txt
+gistats/__init__.py
+gistats/main.py
+gistats/util.py
