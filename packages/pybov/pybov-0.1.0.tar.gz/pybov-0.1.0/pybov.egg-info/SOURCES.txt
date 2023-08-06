@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+versioneer.py
+b3/__init__.py
+b3/_version.py
+b3/exceptions.py
+b3/utils.py
+pybov.egg-info/PKG-INFO
+pybov.egg-info/SOURCES.txt
+pybov.egg-info/dependency_links.txt
+pybov.egg-info/top_level.txt
