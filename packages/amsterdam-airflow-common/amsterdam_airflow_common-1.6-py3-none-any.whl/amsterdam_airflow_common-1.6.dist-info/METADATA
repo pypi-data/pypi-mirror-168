@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: amsterdam-airflow-common
+Version: 1.6
+Summary: Amsterdam Airflow operator: common operators
+Home-page: https://amsterdam.nl
+License: MIT
+Keywords: airflow,operators
+Author: Amsterdam
+Author-email: welcome@amsterdam.nl
+Maintainer: Amsterdam
+Maintainer-email: welcome@amsterdam.nl
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: apache-airflow (==2.2.5)
+Requires-Dist: apache-airflow-providers-http (==2.0.1)
+Requires-Dist: apache-airflow-providers-oracle (==2.0.1)
+Requires-Dist: apache-airflow-providers-postgres (==2.4.0)
+Requires-Dist: azure-identity (==1.6.1)
+Requires-Dist: cachecontrol[filecache] (>=0.12.9,<0.13.0)
+Requires-Dist: cx-Oracle (==8.3.0)
+Requires-Dist: dsnparse (==0.1.15)
+Requires-Dist: environs (==9.3.3)
+Requires-Dist: geoalchemy2 (==0.7.0)
+Requires-Dist: numpy (==1.22.0)
+Requires-Dist: poetry-core (>=1.1.0b3,<2.0.0)
+Requires-Dist: poetry-plugin-export (>=1.0.5,<2.0.0)
+Requires-Dist: shapely (==1.7.1)
