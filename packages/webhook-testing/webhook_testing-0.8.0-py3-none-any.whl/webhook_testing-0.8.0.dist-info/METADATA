@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: webhook-testing
+Version: 0.8.0
+Summary: A service for testing webhooks
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: secure
+Requires-Dist: uvicorn
+
+UNKNOWN
+
