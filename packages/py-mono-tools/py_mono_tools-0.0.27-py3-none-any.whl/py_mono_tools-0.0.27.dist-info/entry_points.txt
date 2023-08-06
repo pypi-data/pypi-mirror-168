@@ -1,0 +1,4 @@
+[console_scripts]
+pmt=py_mono_tools.main:cli
+py_mono_tools=py_mono_tools.main:cli
+
