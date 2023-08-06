@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: andreani-aa-tools
+Version: 0.0.7
+Summary: Common functions and protocols used by the Andreani Advanced Analytics team
+Home-page: https://github.com/pypa/sampleproject
+Author-email: Ignacio Belogi <ibelogi@andreani.com>, Gabriel Aranda <garanda@andreani.com>, Mariana Liu <mliu@andreani.com>, Yasmin Ojeda <yojeda@andreani.com>, Ariel Fleiderman <afleiderman@andreani.com>, Daiana Alonso <dalonso@andreani.com>, Facundo Silvestre <fsilvestre@andreani.com>, Santiago Bergman <sbergman@andreani.com>, Matías Moyano <mmoyano@andreani.com>, Giuliana Vera <gvera@andreani.com>, Eloy Chang <echang@andreani.com>
+License: MIT License
+        
+        Copyright (c) 2022 Eloy Chang
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/eloychang/andreani_aa_tools
+Project-URL: Bug Tracker, https://github.com/eloychang/andreani_aa_tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Andreani Advanced Analytics tools
+
+## Instalar usando pip
+
+```
+
+pip install andreani-aa-tools
+
+```
+
+## Importanción
+
+```
+
+import aa_tools
+
+```
+
+## Ejemplo de uso
+
+```
+
+from aa_tools import logger, haversine
+
+if __name__ == "__main__":
+
+    log = logger("test.py", "main")
+
+    result = haversine(-58.490160, -34.566116, -58.485096, -34.572123, log)
+
+    log.log_console(f"Haversine distance: {result}", "INFO")
+
+    log.close()
+
+```
+
+### Listado de funciones agregadas:
+
+* Haversine: Distancia euclidia entre dos puntos.
+
+* Logger: Maneja el log según los lineamientos de Andreani.
+
+* Datalake: Interfaz de conexión al datalake para descargar y cargar archivos csv y/o parquet.
+
+
+### Listado de funciones a agregar:
+
+* División de un dataframe en una lista de dataframes para procesamiento en hilos.
+
+* Distancia de ruta entre dos puntos.
+
+* Model training
