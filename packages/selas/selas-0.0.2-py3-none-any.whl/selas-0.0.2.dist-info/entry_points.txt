@@ -1,0 +1,2 @@
+[console_scripts]
+selas = selas.cli:app
