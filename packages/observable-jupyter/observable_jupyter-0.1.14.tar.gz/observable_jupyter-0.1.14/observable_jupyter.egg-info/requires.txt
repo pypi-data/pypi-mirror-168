@@ -1,0 +1,9 @@
+
+[dev]
+jupyter
+nox
+pytest
+
+[test]
+pytest
+IPython
