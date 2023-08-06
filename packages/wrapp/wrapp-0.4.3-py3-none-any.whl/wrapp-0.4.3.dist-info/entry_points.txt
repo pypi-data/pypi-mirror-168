@@ -1,0 +1,4 @@
+[console_scripts]
+wrapp=wrapp.wrapp:app
+wrapp.new=wrapp.wrapp:new
+
