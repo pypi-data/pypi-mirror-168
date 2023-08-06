@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: evatidevice
+Version: 0.0.3
+Summary: Add push folder function for tidevice.
+Home-page: https://github.com/shizhao-git/evatidevice
+Author: shizhao
+Author-email: shizhao@mail.nwpu.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tidevice
+
+# EvaTidevice
+
+**EvaTidevice** is Add push folder function for tidevice.
+
+## Example Usage
+
+```python
+from evatidevice import EvaTidevice
+
+evaTidevice = EvaTidevice(udid, bundle_id)
+
+evaTidevice.pushtree(src, dst)  # push file/folder
+evaTidevice.pulltree(src, dst)  # pull file/folder
+
+```
+
+## Installing EvaTidevice
+
+EvaTidevice is available on PyPI:
+
+```console
+$ python -m pip install evatidevice
+```
+
+
