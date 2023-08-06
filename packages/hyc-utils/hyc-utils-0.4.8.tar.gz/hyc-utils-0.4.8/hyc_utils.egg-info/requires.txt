@@ -1,0 +1,9 @@
+numpy
+matplotlib
+torch
+tomli
+
+[dev]
+pandas
+pytest
+twine
