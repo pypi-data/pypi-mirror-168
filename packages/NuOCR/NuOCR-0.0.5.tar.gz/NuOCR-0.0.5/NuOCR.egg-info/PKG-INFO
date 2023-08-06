@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: NuOCR
+Version: 0.0.5
+Summary: Using NuOCR service via APIs
+Author: Nuvento (Jigar Makwana)
+Author-email: <makwana.jigar@nuvento.com>
+Keywords: python,NuOCR,OCR
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+Hello! 
+
+Testing this APIs for the NuOCR services. Will update this once its tested and verified.
