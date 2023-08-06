@@ -1,0 +1,51 @@
+numpy>=1.13.1
+packaging
+
+[:python_version < "3.9"]
+importlib_resources
+
+[all]
+awkward-cuda-kernels==1.10.0
+pytest>=6
+pytest-cov
+autograd
+flake8
+pandas>=0.24.0
+PyYAML
+
+[all:python_version < "3.11"]
+numba>=0.50.0
+numexpr
+
+[all:sys_platform != "win32"]
+fsspec
+
+[all:sys_platform != "win32" and python_version < "3.11"]
+jax>=0.2.7
+jaxlib!=0.1.68,>=0.1.57
+pyarrow>=7.0.0
+
+[cuda]
+awkward-cuda-kernels==1.10.0
+
+[dev]
+autograd
+flake8
+pandas>=0.24.0
+PyYAML
+
+[dev:python_version < "3.11"]
+numba>=0.50.0
+numexpr
+
+[dev:sys_platform != "win32"]
+fsspec
+
+[dev:sys_platform != "win32" and python_version < "3.11"]
+jax>=0.2.7
+jaxlib!=0.1.68,>=0.1.57
+pyarrow>=7.0.0
+
+[test]
+pytest>=6
+pytest-cov
