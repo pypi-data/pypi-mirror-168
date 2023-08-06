@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: aioqbt
+Version: 0.5.0
+Author: Aaron Tsang
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: aiohttp (<4,>=3.8.1)
+Requires-Dist: typing-extensions (<5,>=4.0.1)
+Provides-Extra: dev
+Requires-Dist: mypy (<1,~=0.961) ; extra == 'dev'
+Requires-Dist: black (~=22.6.0) ; extra == 'dev'
+Requires-Dist: isort (~=5.10.1) ; extra == 'dev'
+Requires-Dist: sphinx (~=5.1.0) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (<8,~=7.1.2) ; extra == 'test'
+Requires-Dist: pytest-asyncio (<1,~=0.19.0) ; extra == 'test'
+Requires-Dist: coverage[toml] (~=6.4.4) ; extra == 'test'
+
