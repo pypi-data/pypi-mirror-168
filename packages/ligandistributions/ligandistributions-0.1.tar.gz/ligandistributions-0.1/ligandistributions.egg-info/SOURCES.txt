@@ -1,0 +1,9 @@
+setup.py
+ligandistributions/Gaussiandistribution.py
+ligandistributions/Generaldistribution.py
+ligandistributions/__init__.py
+ligandistributions.egg-info/PKG-INFO
+ligandistributions.egg-info/SOURCES.txt
+ligandistributions.egg-info/dependency_links.txt
+ligandistributions.egg-info/not-zip-safe
+ligandistributions.egg-info/top_level.txt
