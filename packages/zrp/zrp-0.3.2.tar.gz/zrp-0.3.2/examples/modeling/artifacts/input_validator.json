@@ -1,0 +1,1 @@
+{"is_empty": false, "is_all_missing": false, "n_obs": 462, "is_unique_key": true, "pct_na": {"first_name": 0.0, "middle_name": 0.683982683982684, "last_name": 0.0, "house_number": 0.0, "street_address": 0.0, "city": 0.0, "state": 0.0, "zip_code": 0.0, "ZEST_KEY": 0.0}}

@@ -1,0 +1,1 @@
+{"is_empty": false, "is_all_missing": false, "n_obs": 5, "is_unique_key": true, "pct_na": {"zip_code": 0.0, "state": 0.0, "middle_name": 0.2, "first_name": 0.0, "street_address": 0.0, "house_number": 0.0, "last_name": 0.0}, "is_geocoded": {"count": {"GEOID": 0, "Block Group": 0, "Census Tract": 0, "Zip Code": 0}}}
