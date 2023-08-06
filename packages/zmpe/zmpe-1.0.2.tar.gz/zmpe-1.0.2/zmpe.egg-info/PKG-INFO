@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: zmpe
+Version: 1.0.2
+Summary: The program controls the execution of any programs, scripts or commands OS and sends the execution result to zabbix, and in case of an execution error, it additionally can notify via telegram.
+Author-email: ministrbob777@gmail.com
+License-File: LICENSE
