@@ -1,0 +1,21 @@
+numpy
+lxml
+mistune>=2.0.2
+pybars3
+pyyaml
+svgpathtools==1.4.1
+pcbnewTransition>=0.2
+Pillow~=9.0
+click>=7.1
+
+[:platform_system != "Windows"]
+pyVirtualDisplay~=3.0
+
+[:platform_system == "Windows"]
+LnkParse3
+
+[dev]
+pytest
+types-pillow
+types-click
+types-PyYAML
