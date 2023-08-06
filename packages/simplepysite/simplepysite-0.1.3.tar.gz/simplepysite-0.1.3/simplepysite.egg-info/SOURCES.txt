@@ -1,0 +1,13 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+simplepysite/__init__.py
+simplepysite/__main__.py
+simplepysite/site.py
+simplepysite.egg-info/PKG-INFO
+simplepysite.egg-info/SOURCES.txt
+simplepysite.egg-info/dependency_links.txt
+simplepysite.egg-info/not-zip-safe
+simplepysite.egg-info/requires.txt
+simplepysite.egg-info/top_level.txt
