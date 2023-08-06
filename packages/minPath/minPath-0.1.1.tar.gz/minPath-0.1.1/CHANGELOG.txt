@@ -1,0 +1,9 @@
+Change Log
+==========
+
+0.1.1 (2022/09/19)
+-------------------
+- First Release
+- nothing new just rewrite the description
+- deleted useless modules(those modules were tests and a mess code)
+- fix installing unwanted packages `install_requires`
