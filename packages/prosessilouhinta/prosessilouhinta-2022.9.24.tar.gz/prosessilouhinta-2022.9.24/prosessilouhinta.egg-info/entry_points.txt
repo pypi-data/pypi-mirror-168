@@ -1,0 +1,2 @@
+[console_scripts]
+prosessilouhinta = prosessilouhinta.cli:main
