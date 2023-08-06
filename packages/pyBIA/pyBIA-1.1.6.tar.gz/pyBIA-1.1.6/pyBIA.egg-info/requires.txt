@@ -1,0 +1,17 @@
+numpy
+tensorflow
+scikit-learn
+scikit-optimize
+scipy
+photutils
+matplotlib
+progress
+pandas
+missingpy
+optuna
+boruta
+astropy
+xgboost
+BorutaShap
+scikit-plot
+dill
