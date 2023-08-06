@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: boatrace.models
+Version: 0.0.1
+Summary: Models of Japanese boatrace
+Home-page: https://github.com/BoatraceRepository/boatrace.models
+Author: k0kishima
+Author-email: okishimaxyz@gmail.com
+Maintainer: k0kishima
+Maintainer-email: okishimaxyz@gmail.com
+License: MIT
+Keywords: boatrace kyotei
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# boatrace.models
+
+ボートレース関連の開発で用いるモデルのパッケージ
+
+
