@@ -1,0 +1,8 @@
+exclude mlb_showdown_bot/team_backgrounds/*
+include mlb_showdown_bot/fonts/*
+include mlb_showdown_bot/output/.gitkeep
+include mlb_showdown_bot/team_logos/*
+include mlb_showdown_bot/templates/*
+include mlb_showdown_bot/uploads/.gitkeep
+include mlb_showdown_bot/player_ids.csv
+include static/interface/*
