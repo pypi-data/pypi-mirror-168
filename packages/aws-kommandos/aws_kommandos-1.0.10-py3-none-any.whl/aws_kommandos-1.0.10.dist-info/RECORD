@@ -1,0 +1,9 @@
+aws_kommandos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_kommandos/kommandos.py,sha256=I-gzVlZk8VqXjGWrRkuVhjBz5E4syojV90gLLvDbdjo,69893
+aws_kommandos-1.0.10.data/scripts/install.sh,sha256=HNtSVs9o3z0SsY0_TsR452h9PX5Mkei4VFv5gLtWaiw,1683
+aws_kommandos-1.0.10.dist-info/LICENSE,sha256=967_AkS3_ngrUwOCrxq3JgC4B4b91RLNanyo6Z-dwSY,1063
+aws_kommandos-1.0.10.dist-info/METADATA,sha256=EkvSGUxRJNWU-TYHJyAHVNX0-rtB32I9ZFZPiyHgnUI,9244
+aws_kommandos-1.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_kommandos-1.0.10.dist-info/entry_points.txt,sha256=inPPkDguqZ_hCLcv_2Sh6SquuJodfturSpGYtBK4Vds,63
+aws_kommandos-1.0.10.dist-info/top_level.txt,sha256=o9yilLmMcOyBCtOLZSROAflx-8wmIxItl4AsaR5iyBU,14
+aws_kommandos-1.0.10.dist-info/RECORD,,
