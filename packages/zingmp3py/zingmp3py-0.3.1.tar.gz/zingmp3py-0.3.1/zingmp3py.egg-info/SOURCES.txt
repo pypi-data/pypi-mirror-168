@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+zingmp3py/__init__.py
+zingmp3py/sobj.py
+zingmp3py/util.py
+zingmp3py/zasync.py
+zingmp3py/zsync.py
+zingmp3py.egg-info/PKG-INFO
+zingmp3py.egg-info/SOURCES.txt
+zingmp3py.egg-info/dependency_links.txt
+zingmp3py.egg-info/requires.txt
+zingmp3py.egg-info/top_level.txt
