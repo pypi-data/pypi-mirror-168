@@ -1,0 +1,7 @@
+setup.py
+FLOBOT/__init__.py
+FLOBOT.egg-info/PKG-INFO
+FLOBOT.egg-info/SOURCES.txt
+FLOBOT.egg-info/dependency_links.txt
+FLOBOT.egg-info/requires.txt
+FLOBOT.egg-info/top_level.txt
