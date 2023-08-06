@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Quickstart on a cluster &#8212; PacBio Data Processing 1.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Usage" href="usage/index.html" />
+    <link rel="prev" title="Quickstart for the impatient" href="quickstart.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="quickstart-on-a-cluster">
+<span id="quickstart9steps"></span><h1>Quickstart on a cluster<a class="headerlink" href="#quickstart-on-a-cluster" title="Permalink to this headline">¶</a></h1>
+<p>This is a very synthetic document that summarizes the steps necessary to install
+and use the <strong>PacBio Data Processing</strong> software on a cluster. Not many details are given
+here, since this document is only intended to be a brief reference. If you need
+more details on each step, please follow the provided links.</p>
+<section id="goal">
+<h2>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<p>Starting with a PacBio sequencing file (bam file) and a
+reference sequence (fasta file), the <cite>sm-analysis</cite> tool from <strong>PacBio Data Processing</strong> will
+generate a csv file (a so-called <a class="reference internal" href="indepth/methylation_reports.html#methylation-report-format"><span class="std std-ref">methylation report</span></a>).
+Each row corresponds to one molecule, (<em>hole number</em> or <em>ZMW</em> in the PacBio parlance)
+with columns containing properties for each molecule that overcame good
+quality filters.</p>
+<p>Additional to this, a <a class="reference internal" href="indepth/summary_reports.html#summary-report"><span class="std std-ref">Summary Reports</span></a> is generated containing some basic
+statistics about the input, the process and output files.</p>
+</section>
+<section id="steps">
+<h2>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Create a cluster account. Needless to say, this step is strongly dependent
+on the cluster and details cannot be given here (but see
+<a class="reference internal" href="indepth/cluster.html#using-a-cluster"><span class="std std-ref">Using PacBio Data Processing on a cluster</span></a> if you plan to use the <a class="reference external" href="https://csc.uni-frankfurt.de/">Goethe-HLR cluster</a>).</p></li>
+<li><p>Open a terminal and login to access to the cluster
+(see <a class="reference internal" href="indepth/cluster.html#using-a-cluster"><span class="std std-ref">Using PacBio Data Processing on a cluster</span></a>).</p></li>
+<li><p>Install Python-3.9 (or above) in the cluster (see the <a class="reference internal" href="usage/installation.html#installation"><span class="std std-ref">Installation</span></a> document).</p></li>
+<li><p>Create a virtual environment (see the <a class="reference internal" href="usage/installation.html#installation"><span class="std std-ref">Installation</span></a> document).</p></li>
+<li><p>Install the external dependences <a class="reference internal" href="indepth/pbindex.html#about-pbindex"><span class="std std-ref">pbindex</span></a>,
+<a class="reference internal" href="indepth/aligners.html#aligners"><span class="std std-ref">pbmm2</span></a>, <a class="reference internal" href="indepth/kinetics_tools.html#kineticstools"><span class="std std-ref">kineticsTools</span></a> and <a class="reference internal" href="indepth/ccs.html#about-ccs"><span class="std std-ref">ccs</span></a>
+(see the <a class="reference internal" href="indepth/cluster.html#using-a-cluster"><span class="std std-ref">Using PacBio Data Processing on a cluster</span></a> document).</p></li>
+<li><p>Install <strong>PacBio Data Processing</strong> (see the <a class="reference internal" href="usage/installation.html#installation"><span class="std std-ref">Installation</span></a> document).</p></li>
+<li><p>Copy the input files to the cluster. Assuming that you want to process
+a file called <code class="docutils literal notranslate"><span class="pre">pbsequencing.bam</span></code> and your reference is stored in
+a file called <code class="docutils literal notranslate"><span class="pre">reference.fasta</span></code> (with its companion index
+<code class="docutils literal notranslate"><span class="pre">reference.fasta.fai</span></code>), run the following command in a terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">scp pbsequencing.bam reference.fasta{,.fai} dave@goethe.hhlr-gu.de:/scratch/fuchs/darmstadt/dave/myproject/</span>
+</pre></div>
+</div>
+<p>YMMV: the paths will change depending on the name of your account,
+and the destination directory. The destination directory must exist.
+Recent versions of <code class="docutils literal notranslate"><span class="pre">rsync</span></code> accept a <code class="docutils literal notranslate"><span class="pre">--mkpath</span></code> option to create missing
+components of the destination path; don’t count on having
+recent versions of software by default on a cluster ;-)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The cluster administrators tend to be very concerned about a proper usage of the
+filesystems available in a cluster. Quite often they provide different filesystems
+with different properties (speed, size, etc) along with suggestions and policies to
+use them properly. Try to find out what is the situation in your case and stick, as
+much as you can, to their policy to minimize performance problems.
+On the <a class="reference external" href="https://csc.uni-frankfurt.de/">Goethe-HLR cluster</a> website you can learn about filesystems in the
+<a class="reference external" href="https://csc.uni-frankfurt.de/wiki/doku.php?id=public:usage:goethe#storage">Goethe-HLR storage</a> or <a class="reference external" href="https://csc.uni-frankfurt.de/wiki/doku.php?id=public:usage:fuchs#storage">FUCHS-CSC storage</a> sections.</p>
+</div>
+</li>
+<li><p>Prepare and submit a Job (see <a class="reference internal" href="indepth/cluster.html#using-a-cluster"><span class="std std-ref">Using PacBio Data Processing on a cluster</span></a>). This step is where the
+analysis done by <strong>PacBio Data Processing</strong> is carried out.</p></li>
+<li><p>Copy the output files to your personal computer:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">scp dave@goethe.hhlr-gu.de:/scratch/fuchs/darmstadt/dave/[file to transfer] .</span>
+</pre></div>
+</div>
+<p>where the trailing <code class="docutils literal notranslate"><span class="pre">.</span></code> (<em>dot</em>) can be replaced by any other <em>local path</em>,
+of course. The special case of <code class="docutils literal notranslate"><span class="pre">.</span></code> means <em>current working directory</em>.</p>
+<p>Or, to synchronize the remote location with your current working directory:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">rsync -avz dave@goethe.hhlr-gu.de:/scratch/fuchs/darmstadt/dave/myproject/ ./</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PacBio Data Processing</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart for the impatient</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart on a cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indepth/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devel/index.html">Developer’s documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="quickstart.html" title="previous chapter">Quickstart for the impatient</a></li>
+      <li>Next: <a href="usage/index.html" title="next chapter">Usage</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021-2022, David Palao and David Velázquez.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/quickstart_9steps.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

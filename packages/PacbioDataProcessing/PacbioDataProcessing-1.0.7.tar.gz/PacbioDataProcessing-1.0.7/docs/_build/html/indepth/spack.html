@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Using Spack &#8212; PacBio Data Processing 1.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Installing Python" href="python.html" />
+    <link rel="prev" title="HTSlib" href="htslib.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="using-spack">
+<span id="id1"></span><h1>Using Spack<a class="headerlink" href="#using-spack" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://spack.readthedocs.io/">Spack</a> is a package manager designed for large multi-user systems,
+like clusters or supercomputers. One of its virtues is its simplicity
+of usage. Chances are that if you are working with a cluster or a
+supercomputer, <a class="reference external" href="https://spack.readthedocs.io/">Spack</a> can help you get the work done when it comes
+to installing software.</p>
+<p>There is plenty of useful information in the official <a class="reference external" href="https://spack.readthedocs.io/">Spack</a>
+documentation as well as in the <a class="reference external" href="https://spack-tutorial.readthedocs.io/">Spack tutorial</a>. Some cluster admins
+also have specific instructions on how to properly configure Spack in
+their environment (like the <a class="reference external" href="https://csc.uni-frankfurt.de/wiki/doku.php?id=public:usage:spack">instructions to use spack at Goethe-HLR</a>).</p>
+<p>Therefore, we are not repeating that here. However in this document
+you will find some very basic <em>recipes</em> to help you in the process of
+installing <strong>PacBio Data Processing</strong> on a cluster.</p>
+<section id="installing-a-compiler-with-spack">
+<h2>Installing a compiler with Spack<a class="headerlink" href="#installing-a-compiler-with-spack" title="Permalink to this headline">¶</a></h2>
+<p>Once Spack is properly installed, it can be used to install a specific
+compiler. To install <code class="docutils literal notranslate"><span class="pre">gcc-11.3</span></code> you can simply run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>spack install gcc@11.3
+</pre></div>
+</div>
+<p>(Of course, other versions can be chosen, eg. <code class="docutils literal notranslate"><span class="pre">gcc&#64;9.3</span></code>).</p>
+<p>It will be probably a long process, but it should be smooth… hopefully.
+At the end Spack will tell you that there is a new module available to use
+the compiler, if you like. In my case it is called
+<code class="docutils literal notranslate"><span class="pre">gcc-11.3.0-gcc-8.2.0-qynjstf</span></code> and it could be <em>loaded</em> with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>module load gcc-11.3.0-gcc-8.2.0-qynjstf
+</pre></div>
+</div>
+<p>That will make the compiler <em>visible</em> within the current shell session:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>gcc --version
+<span class="go">gcc (GCC) 11.3.0</span>
+<span class="go">Copyright (C) 2021 Free Software Foundation, Inc.</span>
+<span class="go">This is free software; see the source for copying conditions.  There is NO</span>
+<span class="go">warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span>
+</pre></div>
+</div>
+<div class="admonition-adding-a-compiler-to-your-spack admonition">
+<p class="admonition-title">Adding a compiler to your Spack</p>
+<p>If you want to <em>add</em> the compiler to your Spack installation, such that
+the newly added compiler can be selected to compile new software with
+Spack, some configuration is needed (have a look at the <a class="reference external" href="https://spack.readthedocs.io/">Spack</a>
+documentation for details). After installing the compiler (the
+<code class="docutils literal notranslate"><span class="pre">spack</span> <span class="pre">install</span> <span class="pre">gcc...</span></code> line above), you can add the compiler with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>spack compiler add <span class="k">$(</span>spack location -i gcc@11.3.0<span class="k">)</span>
+</pre></div>
+</div>
+<p>Now the installation of some software using that compiler could be done with</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>spack install python@3.9%gcc@11.3
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">PacBio Data Processing</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart for the impatient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_9steps.html">Quickstart on a cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devel/index.html">Developer’s documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Guides</a><ul>
+      <li>Previous: <a href="htslib.html" title="previous chapter">HTSlib</a></li>
+      <li>Next: <a href="python.html" title="next chapter">Installing Python</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021-2022, David Palao and David Velázquez.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/indepth/spack.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

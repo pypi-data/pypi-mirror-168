@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Pbindex &#8212; PacBio Data Processing 1.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Aligners" href="aligners.html" />
+    <link rel="prev" title="PacBio tools" href="pacbio_tools.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="pbindex">
+<span id="about-pbindex"></span><h1>Pbindex<a class="headerlink" href="#pbindex" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="../usage/sm_analysis.html#sm-analysis"><span class="std std-ref">sm-analysis program</span></a> delegates the indexing of
+one-molecule BAM files to <code class="docutils literal notranslate"><span class="pre">pbindex</span></code>, which must be accessible at runtime.
+By default, <code class="docutils literal notranslate"><span class="pre">pbindex</span></code> is searched for in the <a class="reference internal" href="glossary.html#term-PATH"><span class="xref std std-term">PATH</span></a>. If it is
+not found in the <a class="reference internal" href="glossary.html#term-PATH"><span class="xref std std-term">PATH</span></a>, you will receive an informative runtime
+error message:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>CRITICAL<span class="o">]</span> <span class="o">[</span>Errno <span class="m">2</span><span class="o">]</span> No such file or directory: <span class="s1">&#39;pbindex&#39;</span>
+</pre></div>
+</div>
+<p>and the <a class="reference internal" href="../usage/sm_analysis.html#sm-analysis"><span class="std std-ref">sm-analysis program</span></a> itself will stop.</p>
+<p>In that case, the instructions in the following sections can help you.</p>
+<section id="installing-pbindex">
+<h2>Installing Pbindex<a class="headerlink" href="#installing-pbindex" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pbindex</span></code> is provided by the <a class="reference external" href="https://github.com/PacificBiosciences/pbbam">pbbam</a> package.
+A simple way to install <a class="reference external" href="https://github.com/PacificBiosciences/pbbam">pbbam</a> is with <code class="docutils literal notranslate"><span class="pre">conda</span></code>.
+Have a look at <a class="reference internal" href="bioconda.html#setting-up-bioconda"><span class="std std-ref">Setting up Bioconda</span></a>, and follow the instructions in there
+if you want to choose the <em>conda route</em>. Once those steps are followed,
+and the resulting <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment is <em>active</em>, install <code class="docutils literal notranslate"><span class="pre">pbbam</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda install pbbam
+</pre></div>
+</div>
+<p>Upon success, you will be able to pass the path to the <code class="docutils literal notranslate"><span class="pre">pbindex</span></code>
+executable to <a class="reference internal" href="../usage/sm_analysis.html#sm-analysis"><span class="std std-ref">sm-analysis</span></a> if needed (see below how).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Notice that, contrary to the suggestion given in <a class="reference external" href="https://github.com/PacificBiosciences/pbbioconda">PacBio &amp; Bioconda</a>,
+the explicit selection of the <code class="docutils literal notranslate"><span class="pre">bioconda</span></code> channel by means of the <code class="docutils literal notranslate"><span class="pre">-c</span></code>
+option of <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">bioconda</span> <span class="pre">...</span></code>)
+triggers a dependency error. DO NOT USE the <code class="docutils literal notranslate"><span class="pre">-c</span> <span class="pre">bioconda</span></code> option,
+just run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">...</span></code> instead, as explained in the main text.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An alternative way to install <code class="docutils literal notranslate"><span class="pre">pbindex</span></code> is through <a class="reference internal" href="pacbio_tools.html#smrt-link"><span class="std std-ref">SMRT-link software server tool</span></a>.</p>
+</div>
+</section>
+<section id="using-pbindex-from-sm-analysis">
+<h2>Using Pbindex from <cite>sm-analysis</cite><a class="headerlink" href="#using-pbindex-from-sm-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Let us assume that <strong>PacBio Data Processing</strong> was installed inside a virtual environment
+located in:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/home/dave/.venvs/pdp
+</pre></div>
+</div>
+<p>and let us assume that <code class="docutils literal notranslate"><span class="pre">pbbam</span></code> was installed in:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/home/dave/miniconda3
+</pre></div>
+</div>
+<p>then, after activating the <strong>PacBio Data Processing</strong>’s virtual environment:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span> /home/dave/.venvs/pdp/bin/activate
+</pre></div>
+</div>
+<p>you can tell <code class="docutils literal notranslate"><span class="pre">sm-analysis</span></code> about <code class="docutils literal notranslate"><span class="pre">pbindex</span></code> by using a command
+line option (<a class="reference internal" href="../usage/sm_analysis.html#cmdoption-sm-analysis-p"><code class="xref std std-option docutils literal notranslate"><span class="pre">sm-analysis</span> <span class="pre">-p</span></code></a>) as follows:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sm-analysis --pbindex-path /home/dave/miniconda3/bin/pbindex
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">PacBio Data Processing</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart for the impatient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_9steps.html">Quickstart on a cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devel/index.html">Developer’s documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Guides</a><ul>
+      <li>Previous: <a href="pacbio_tools.html" title="previous chapter">PacBio tools</a></li>
+      <li>Next: <a href="aligners.html" title="next chapter">Aligners</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021-2022, David Palao and David Velázquez.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/indepth/pbindex.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Installing Python &#8212; PacBio Data Processing 1.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Setting up Bioconda" href="bioconda.html" />
+    <link rel="prev" title="Using Spack" href="spack.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="installing-python">
+<span id="id1"></span><h1>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this headline">¶</a></h1>
+<p>There are multiple options to install Python. If you are working with
+Linux, hopefully this document can help you. If you are working with
+another OS or the instructions below do not help you, you can visit the
+official <a class="reference external" href="https://www.python.org/">Python</a> site, where there is a link to <a class="reference external" href="https://www.python.org/downloads/">Download Python</a>.
+Then install Python using the downloaded file.</p>
+<p>In case you need/want to learn more about the Python installation process
+in general, you might be interested in reading this
+<a class="reference external" href="http://docs.python-guide.org/en/latest/starting/installation/">Python installation guide</a>.</p>
+<p>In Linux, if you have administration permissions, the easiest way to
+install Python is through your system’s package manager. How this can
+be done is obviously outside the scope of this documentation.</p>
+<p>If you don’t have priviledges to install software on your target system
+using the package manager (that is typically the case if you plan to run
+<strong>PacBio Data Processing</strong> on a cluster), you still can easily use Spack to install Python.
+Alternatively, you can also install Python directly from <em>sources</em>. In
+the sections below these two options are described.</p>
+<section id="default-installing-python-with-spack">
+<h2>Default: installing Python with Spack<a class="headerlink" href="#default-installing-python-with-spack" title="Permalink to this headline">¶</a></h2>
+<p>With Spack (see <a class="reference internal" href="spack.html#using-spack"><span class="std std-ref">Using Spack</span></a> for details) the installation
+of Python is straigthforward. Once Spack is on your system, which
+doesn’t require particular priviledges, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>spack install python@3.9.13
+</pre></div>
+</div>
+<p>to install <code class="docutils literal notranslate"><span class="pre">CPython-3.9.13</span></code> (see <a class="reference internal" href="glossary.html#term-CPython"><span class="xref std std-term">CPython</span></a>).</p>
+<p>On success, Spack will inform you about the <a class="reference internal" href="glossary.html#term-module"><span class="xref std std-term">module</span></a> that has
+been created and which must be <em>loaded</em> if you want to use it. In
+my case the name of the module is <code class="docutils literal notranslate"><span class="pre">python-3.9.13-gcc-9.5.0-oesebwh</span></code>,
+hence, to use it:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>module load python-3.9.13-gcc-9.5.0-oesebwh
+</pre></div>
+</div>
+<p>YMMV. If you forget the name of the module, you can use the <code class="docutils literal notranslate"><span class="pre">&lt;TAB&gt;</span></code> to
+autocomplete the line, or list all modules available in your system with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>module avail
+</pre></div>
+</div>
+</section>
+<section id="alternative-installing-python-from-sources">
+<h2>Alternative: installing Python from sources<a class="headerlink" href="#alternative-installing-python-from-sources" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Use this option as a last resort, since you need to be able to
+install some libraries in order to produce a usable Python
+installation from the sources. If you cannot install Python with
+your package manager, you might expect problems getting Python
+up and running from sources…</p>
+</div>
+<p>If you download the <em>sources</em> (typically a file ending in <code class="docutils literal notranslate"><span class="pre">.tgz</span></code>,
+<code class="docutils literal notranslate"><span class="pre">.tar.xz</span></code> or similar) the procedure is relatively simple:</p>
+<ol class="arabic">
+<li><p><em>untar</em> the file. For instance:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tar xf Python-3.9.13.tgz
+</pre></div>
+</div>
+</li>
+<li><p>Enter in the created directory with the sources:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> Python-3.9.13
+</pre></div>
+</div>
+</li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> file and follow the instructions in its
+<em>Build Instructions</em> section. They schematically amount to 3 steps:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>./configure
+<span class="gp">$ </span>make
+<span class="gp">$ </span>make install
+</pre></div>
+</div>
+<p>In the <code class="docutils literal notranslate"><span class="pre">configure</span></code> step you can customize various features of the
+compilation and installation process. For instance, two common options
+are <code class="docutils literal notranslate"><span class="pre">--prefix</span></code> (to install Python in a custom location and not in
+the default system-wide location) and <code class="docutils literal notranslate"><span class="pre">--enable-optimizations</span></code>. The
+following command (to be executed before <code class="docutils literal notranslate"><span class="pre">make</span></code>) would use both
+options:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>./configure --prefix<span class="o">=</span>/home/dave --enable-optimizations
+</pre></div>
+</div>
+<p>The given prefix (<code class="docutils literal notranslate"><span class="pre">/home/dave</span></code>) implies that the <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">install</span></code>
+step will create suitable directories under the given location to
+have the necessary structure to use Python. It is up to the user
+to leverage that installation. That could be as simple as calling
+python with the full (or relative) path to its interpreter, e.g. in
+the case of using <code class="docutils literal notranslate"><span class="pre">--prefix=/home/dave</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>/home/dave/bin/python3
+</pre></div>
+</div>
+<p>If you want to use the compiled interpreter as your default Python
+interpreter, modify the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> shell variable to make the terminal
+aware of your recently installed Python:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/home/dave/bin:</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+<p>After that, the current shell and any subprocesses created from it, will
+know that by typing:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python
+<span class="gp"># </span>or
+<span class="gp">$ </span>python3
+</pre></div>
+</div>
+<p>(or any other executable installed, check the contents of
+<code class="docutils literal notranslate"><span class="pre">/home/dave/bin</span></code>) you mean actually <code class="docutils literal notranslate"><span class="pre">/home/dave/bin/python</span></code> or
+<code class="docutils literal notranslate"><span class="pre">/home/dave/bin/python3</span></code>, etc.</p>
+<p>If you want this change to be permanent, i.e. if you don’t want to type
+the complete path to your newly installed Python interpreter but you don’t
+want to modify the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable <em>every</em> time you log in, and you are
+using <a class="reference internal" href="glossary.html#term-Bash"><span class="xref std std-term">Bash</span></a>, add the <code class="docutils literal notranslate"><span class="pre">export</span></code> line above near the end of your
+<code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file (<code class="docutils literal notranslate"><span class="pre">/home/dave/.bashrc</span></code> in our example);
+if <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> is missing in your home directory, feel free to create one.</p>
+<p>The CPython <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> file is worth having a look for more insights
+about the options available for the manual installation of CPython. It
+contains very useful hints and a lot more information.</p>
+</li>
+</ol>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">PacBio Data Processing</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart for the impatient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_9steps.html">Quickstart on a cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devel/index.html">Developer’s documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Guides</a><ul>
+      <li>Previous: <a href="spack.html" title="previous chapter">Using Spack</a></li>
+      <li>Next: <a href="bioconda.html" title="next chapter">Setting up Bioconda</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021-2022, David Palao and David Velázquez.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/indepth/python.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
