@@ -1,0 +1,7 @@
+tippo<4,>=3.1
+typing_inspect<1,>=0
+six<2,>=1
+pyrsistent
+
+[:python_version < "3.4"]
+enum34
