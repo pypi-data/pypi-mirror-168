@@ -1,0 +1,5 @@
+global-exclude *.pyc
+global-include logging.yaml
+include LICENSE
+include ondewo/*
+include setup.py
