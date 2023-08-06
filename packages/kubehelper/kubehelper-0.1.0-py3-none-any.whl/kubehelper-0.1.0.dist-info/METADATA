@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kubehelper
+Version: 0.1.0
+Summary: 
+Author: oliver-g-alexander
+Author-email: oliver.g.alexander@protonmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.21,<0.18.0)
