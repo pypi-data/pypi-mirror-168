@@ -1,0 +1,4 @@
+xlwings
+pandas
+pyautogui
+opencv-python
