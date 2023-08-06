@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "feature-reviser"
+version = "0.1"
+description = "Find the right features of your dataset for the right model."
+authors = ["Christopher Lemke <chris@syhbl.mozmail.com>"]
+license = "MIT"
+homepage = "https://github.com/chrislemke/feature-reviser"
+repository = "https://github.com/chrislemke/feature-reviser"
+packages = [{ include = "feature_reviser" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+scikit-learn = "^1.1.2"
+joblib = "^1.2.0"
+pandas = "^1.4.4"
+numpy = "^1.23.3"
+
+
+[tool.poetry.dev-dependencies]
+black = {extras = ["jupyter"], version = "^22.3.0"}
+isort = "^5.10.1"
+pylint = "^2.13.9"
+mypy = "0.942"
+pre-commit = "^2.19.0"
+mkdocs = "^1.3.1"
+mkdocs-material = "^8.5.2"
+mkdocstrings = "^0.18.1"
+pytest = "^7.1.3"
+bandit = "^1.7.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+exclude = ["tests/*", "docs/*"]
+
+[tool.pytest.ini_options]
+minversion = "7.1.3"
+testpaths = ["tests"]
+
+[tool.pylint.messages_control]
+disable = [
+    "C0301",
+    "C0114",
+    "C0103",
+    "E0401",
+    "R0902",
+    "R0913",
+    "R0914",
+    "R0915",
+]
+
+[tool.pylint.format]
+max-line-length = 88

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: feature-reviser
+Version: 0.1
+Summary: Find the right features of your dataset for the right model.
+Home-page: https://github.com/chrislemke/feature-reviser
+License: MIT
+Author: Christopher Lemke
+Author-email: chris@syhbl.mozmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: joblib (>=1.2.0,<2.0.0)
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
+Requires-Dist: pandas (>=1.4.4,<2.0.0)
+Requires-Dist: scikit-learn (>=1.1.2,<2.0.0)
+Project-URL: Repository, https://github.com/chrislemke/feature-reviser
