@@ -1,0 +1,12 @@
+par3_align/align_books.py,sha256=WctsqQwXIIUVF85a2NNVwtSHkplIRUuhUmW91avBl-s,5533
+par3_align/similarity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+par3_align/similarity/sim/sim.pt,sha256=WfBT-PLG80BduUYUL2smsfVs4qPgD6CcKI6hK6452SM,80377076
+par3_align/similarity/sim/sim.sp.30k.model,sha256=Xr3gVjAJpNhj8pW91BYz1HVAihg4chqlRdyhmGzYQxc,764188
+par3_align/similarity/sim_models.py,sha256=qmZ-I6g-61X0a2kdIoLcvNt2LpGGLLwYaBMUXRMsdSg,2326
+par3_align/similarity/sim_utils.py,sha256=m8-ejQGifBAVOxiKC91KU74A-o3o1XeWjtQlGbF7bGg,2201
+par3_align/similarity/test_sim.py,sha256=9Qq4NoRh1F2PJy1vcpbnDIuJLKqcuE1gK-6Ab1MwM84,2978
+par3_align/utils.py,sha256=3wnrxW8Pt0bPaCgZwWfUeeKqyYn7ePSuL9oliipyceI,5845
+par3_align-0.1.0.dist-info/LICENSE,sha256=CRk34CNJKZEQWThm8uPPmeX40O976TPAESmIdkzwgZc,1066
+par3_align-0.1.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+par3_align-0.1.0.dist-info/METADATA,sha256=CuWg407MUJGLG_QVaNCZ4ADH6LP0rZRSoFtSZpvDGuM,10616
+par3_align-0.1.0.dist-info/RECORD,,
