@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyekfmm/__init__.py
+pyekfmm/fmm.py
+pyekfmm.egg-info/PKG-INFO
+pyekfmm.egg-info/SOURCES.txt
+pyekfmm.egg-info/dependency_links.txt
+pyekfmm.egg-info/not-zip-safe
+pyekfmm.egg-info/requires.txt
+pyekfmm.egg-info/top_level.txt
+pyekfmm/src/calculator.c
+pyekfmm/src/eikonal.c
