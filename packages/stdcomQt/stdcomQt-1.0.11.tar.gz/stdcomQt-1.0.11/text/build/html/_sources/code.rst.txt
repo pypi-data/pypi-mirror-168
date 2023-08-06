@@ -1,0 +1,17 @@
+Code Documentation
+==================
+
+.. automodule:: stdcomQt
+    :members:
+
+.. automodule:: stdcomutilitywidgets
+    :members:
+
+.. automodule:: stdcomvsettings
+    :members:
+
+.. automodule:: stdcomQtPjanice
+    :members:
+.
+.
+
