@@ -1,0 +1,11 @@
+agmodeling/.gitignore,sha256=w1_HV4hqNI7sTTBHTlsMgd7oqWhSPtCKCH9zesKn4i4,14
+agmodeling/__init__.py,sha256=MDQ-JhTR-oPl0IGx7Ftm_2-AMnR7i1-sfSUalk47bJ0,158
+agmodeling/scoring/.gitignore,sha256=PcAghwSNW8JJ_NSUM-Owq_qPu_aeX7WxOVxZt-NzuYI,49
+agmodeling/scoring/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agmodeling/scoring/set_method.py,sha256=orf6Gwtr70i3M9hJbOvatZbPZwaqplVFyuNYSCb5Seo,6066
+agmodeling-0.5.dist-info/.gitignore,sha256=btXwNi4qLyeWlN76ZvFCHukxB-R5L8EM8YgfnJg_-Hs,60
+agmodeling-0.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+agmodeling-0.5.dist-info/METADATA,sha256=No4_r4DkFKfYkEAfau5exOzvaluMCpoqe5Vekn4OlmA,3450
+agmodeling-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+agmodeling-0.5.dist-info/top_level.txt,sha256=uL52YtmR57ifAb9dbkUcaolmrZsPmjuZZ3oVe-TpUUU,11
+agmodeling-0.5.dist-info/RECORD,,
