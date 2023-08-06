@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: awslake
+Version: 1.1.1
+Summary: Communicate with AWS infrastructure
+Home-page: https://github.com/FahadahmedK/awslake
+Author: Fahad Ahmed
+Author-email: fahad.ahmed95@live.com
+License: Apache License 2.0
+Requires-Python: >3.7.0
