@@ -1,0 +1,3 @@
+[console_scripts]
+duqtools = duqtools.cli:cli
+
