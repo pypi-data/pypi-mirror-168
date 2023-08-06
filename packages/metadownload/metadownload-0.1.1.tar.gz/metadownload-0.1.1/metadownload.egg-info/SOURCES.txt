@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+metadownload/__init__.py
+metadownload/metadownload.py
+metadownload.egg-info/PKG-INFO
+metadownload.egg-info/SOURCES.txt
+metadownload.egg-info/dependency_links.txt
+metadownload.egg-info/entry_points.txt
+metadownload.egg-info/requires.txt
+metadownload.egg-info/top_level.txt
