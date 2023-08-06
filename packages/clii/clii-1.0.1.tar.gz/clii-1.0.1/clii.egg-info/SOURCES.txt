@@ -1,0 +1,9 @@
+LICENSE
+README.md
+clii.py
+setup.cfg
+setup.py
+clii.egg-info/PKG-INFO
+clii.egg-info/SOURCES.txt
+clii.egg-info/dependency_links.txt
+clii.egg-info/top_level.txt
