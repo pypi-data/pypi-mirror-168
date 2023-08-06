@@ -1,0 +1,11 @@
+s3fs
+datasets
+yaspin
+colorlog
+plotly==5.10.0
+cufflinks
+wordcloud
+tokenizers
+pydantic
+statsmodels==0.13.2
+pandas-profiling[notebook]==2.13.0
