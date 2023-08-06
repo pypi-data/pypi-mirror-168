@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: coinlib
+Version: 1.8.8
+Summary: Develop new code for your coindeck environment
+Home-page: https://gitlab.com/coindeck/coinlib
+Author: coindeck
+Author-email: donnercody86@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+
+# coinlib - python-client
+
+Develop, Run and extend your coinlib environment with new features, logics, notifications and much more with this library.
+
+## Installation
+
+pip install coinlib
+
