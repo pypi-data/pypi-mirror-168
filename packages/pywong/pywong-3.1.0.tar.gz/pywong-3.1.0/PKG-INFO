@@ -1,0 +1,189 @@
+Metadata-Version: 2.1
+Name: pywong
+Version: 3.1.0
+Summary: pywong工具模块.
+Home-page: https://blog.csdn.net/qq_16284479?type=blog
+Author: ghy
+Author-email: 1563713769@qq.com
+License: Apache-2.0 license
+Platform: all
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+﻿# pywong
+
+#### 介绍
+Python工具,封装常用操作.
+
+#### 安装教程
+
+1.  pip安装
+    ```python
+    pip install pywong
+    pip install pywong==1.1.1
+    ```
+
+#### 使用说明
+
+1.  db操作示例
+    
+    - mysql:
+    ```python
+    from pywong.db.mysql.settings import DEFAULT, DATABASES
+    from pywong.db.mysql.utils import DbHelper
+    
+    
+    def run():
+        """run方法"""
+        DEFAULT['host'] = '127.0.0.1'
+        DEFAULT['password'] = '123456'
+    
+        DATABASES['default_database'] = 'demo'
+    
+        db_help = DbHelper(host=DEFAULT['host'], user=DEFAULT['user'], password=DEFAULT['password'],
+                           port=DEFAULT['port'], database=DATABASES['default_database'])
+    
+        sql = 'SELECT * FROM sys_user'
+        print(db_help.execute(sql))
+    
+    
+    if __name__ == "__main__":
+        """main方法"""
+        run()
+    
+    输出：
+    [{'id': 1, 'dept_id': 4, 'status': None, 'remark': None}]
+    ```
+    - postgresql:
+    ```python
+    from pywong.db.postgresql.settings import DEFAULT, DATABASES
+    from pywong.db.postgresql.utils import DbHelper
+    
+    
+    def run():
+        """run方法"""
+        DEFAULT['host'] = '127.0.0.1'
+        DEFAULT['password'] = '123456'
+    
+        DATABASES['default_database'] = 'demo'
+    
+        db_help = DbHelper(host=DEFAULT['host'], user=DEFAULT['user'], password=DEFAULT['password'],
+                           port=DEFAULT['port'], database=DATABASES['default_database'])
+    
+        sql = 'SELECT * FROM sys_user'
+        print(db_help.execute(sql))
+    
+    
+    if __name__ == "__main__":
+        """main方法"""
+        run()
+    
+    输出：
+    [{'id': 1, 'dept_id': 4, 'status': None, 'remark': None}]
+    ```
+    - mssql:
+    ```python
+    from pywong.db.mssql.settings import DEFAULT, DATABASES
+    from pywong.db.mssql.utils import DbHelper
+    
+    
+    def run():
+        """run方法"""
+        DEFAULT['server'] = '127.0.0.1'
+        DEFAULT['password'] = '123456'
+    
+        DATABASES['default_database'] = 'demo'
+    
+        db_help = DbHelper(server=DEFAULT['server'], user=DEFAULT['user'], password=DEFAULT['password'],
+                       port=DEFAULT['port'], database=DATABASES['default_database'])
+    
+        sql = 'SELECT * FROM sys_user'
+        print(db_help.execute(sql))
+    
+    
+    if __name__ == "__main__":
+        """main方法"""
+        run()
+    
+    输出：
+    [{'id': 1, 'dept_id': 4, 'status': None, 'remark': None}]
+    ```
+2.  资源监测示例
+    ```python
+    from pywong.monitor.resource_monitor import Resource
+    import time
+    
+    
+    def run():
+        """run方法"""
+        system_monitor = Resource()
+        while True:
+            time.sleep(2)
+            print(system_monitor.memory)
+            print(system_monitor.cpu)
+            print(system_monitor.hard_disk)
+    
+    
+    if __name__ == '__main__':
+        """main方法"""
+        run()
+    
+    输出：
+    Memory usage rate: 54.2%
+    CPU usage rate: 0.0%
+    HardDisk C:\ usage rate: 38.5%
+    HardDisk D:\ usage rate: 9.4%
+    ```
+3.  ml及异常值检测示例
+    
+    - knn:
+    ```python
+    from pywong.ml.sk.knn import KNNClassifier
+    from pywong.db.postgresql.settings import DEFAULT, DATABASES
+    
+    
+    def run():
+        """run方法"""
+        DEFAULT['host'] = '127.0.0.1'
+        DEFAULT['password'] = '123456'
+    
+        DATABASES['default_database'] = 'ems'
+    
+        knn = KNNClassifier(name='knn', k=1)
+        knn_clf = knn.fit(target='zls_value', sql="SELECT zls_value, qty, state FROM data_all", test_size=0.1)
+        print(knn_clf.predict_inner())
+        print(knn_clf.score())
+        knn_clf.save()
+    
+    
+    if __name__ == '__main__':
+        """main方法"""
+        run()
+    
+    输出：
+    [0.]
+    1.0
+    保存D:\model\knn.model.
+    ```
+    - 其他:
+     ```python
+    略
+    ```
+    
+
+#### 版本说明
+    
+1.  pywong 3.1.0
+    
+    功能列表：
+    
+    - MySql、PostgreSql和SqlServer驱动.
+
+    - 资源监测.
+
+    - KNNClassifier、MLinearRegression、RandomForest和TimeSeriesProphet封装.
+
+    - 异常值检测.

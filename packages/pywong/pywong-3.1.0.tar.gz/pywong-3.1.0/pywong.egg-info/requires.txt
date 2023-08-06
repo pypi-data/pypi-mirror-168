@@ -1,0 +1,9 @@
+PyMySQL>=1.0.2
+psycopg2>=2.9.3
+pymssql>=2.2.5
+pandas>=1.4.3
+SQLAlchemy>=1.4.39
+psutil>=5.9.1
+scikit-learn>=1.1.1
+joblib>=1.1.0
+prophet>1.1
