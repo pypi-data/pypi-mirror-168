@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+Hiram_sdk_lotr.egg-info/PKG-INFO
+Hiram_sdk_lotr.egg-info/SOURCES.txt
+Hiram_sdk_lotr.egg-info/dependency_links.txt
+Hiram_sdk_lotr.egg-info/top_level.txt
+Hiram_sdk_the_one/__init__.py
+Hiram_sdk_the_one/functions.py
