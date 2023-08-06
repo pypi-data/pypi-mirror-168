@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: EmailValidatorFandino
+Version: 0.0.2
+Summary: A validator for email
+Home-page: 
+Author: Cristian Fandiño
+Author-email: cristian.fandino02@uptc.edu.co
+License: MIT
+Keywords: email
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Program to validate emails, in language a Python algorithm is implemented that allows syntactic analysis of strings W. Where W ∈ L(M) and L(G). It is stated that L(M) or L(G) defines the language of the grammar for W ⊆ “all valid address structures (not only the most used ones) of electronic mail”.
+
+Change Log
+==========
+
+0.0.2 (18/09/2022)
+-------------------
+- Second Release. Fix bugs

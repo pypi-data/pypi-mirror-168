@@ -1,0 +1,1 @@
+Program to validate emails, in language a Python algorithm is implemented that allows syntactic analysis of strings W. Where W ∈ L(M) and L(G). It is stated that L(M) or L(G) defines the language of the grammar for W ⊆ “all valid address structures (not only the most used ones) of electronic mail”.
