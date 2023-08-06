@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/sat_gt_fel_invoices_downloader/__init__.py
+src/sat_gt_fel_invoices_downloader/actions.py
+src/sat_gt_fel_invoices_downloader/main.py
+src/sat_gt_fel_invoices_downloader/models.py
+src/sat_gt_fel_invoices_downloader.egg-info/PKG-INFO
+src/sat_gt_fel_invoices_downloader.egg-info/SOURCES.txt
+src/sat_gt_fel_invoices_downloader.egg-info/dependency_links.txt
+src/sat_gt_fel_invoices_downloader.egg-info/requires.txt
+src/sat_gt_fel_invoices_downloader.egg-info/top_level.txt
