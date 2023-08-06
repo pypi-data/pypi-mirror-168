@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: ttml-to-json
+Version: 0.1
+Summary: Convert TTML to JSON
+Home-page: https://github.com/simonw/ttml-to-json
+Author: Simon Willison
+License: Apache License, Version 2.0
+Project-URL: Issues, https://github.com/simonw/ttml-to-json/issues
+Project-URL: CI, https://github.com/simonw/ttml-to-json/actions
+Project-URL: Changelog, https://github.com/simonw/ttml-to-json/releases
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# ttml-to-json
+
+[![PyPI](https://img.shields.io/pypi/v/ttml-to-json.svg)](https://pypi.org/project/ttml-to-json/)
+[![Changelog](https://img.shields.io/github/v/release/simonw/ttml-to-json?include_prereleases&label=changelog)](https://github.com/simonw/ttml-to-json/releases)
+[![Tests](https://github.com/simonw/ttml-to-json/workflows/Test/badge.svg)](https://github.com/simonw/ttml-to-json/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/ttml-to-json/blob/master/LICENSE)
+
+ Convert TTML to JSON
+
+## Installation
+
+Install this tool using `pip`:
+
+    pip install ttml-to-json
+
+## Usage
+
+To output JSON for a TTML file:
+
+    ttml-to-json subtitles.ttml
+
+This will output to standard output. Use `-o filename` to send it to a specified file.
+
+You can also use:
+
+    python -m ttml_to_json ...
+
+## Development
+
+To contribute to this tool, first checkout the code. Then create a new virtual environment:
+
+    cd ttml-to-json
+    python -m venv venv
+    source venv/bin/activate
+
+Now install the dependencies and test dependencies:
+
+    pip install -e '.[test]'
+
+To run the tests:
+
+    pytest

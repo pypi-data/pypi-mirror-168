@@ -1,0 +1,2 @@
+[console_scripts]
+ttml-to-json = ttml_to_json.cli:cli
