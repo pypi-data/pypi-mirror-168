@@ -1,0 +1,2 @@
+[console_scripts]
+limitys = limitys.cli:main
