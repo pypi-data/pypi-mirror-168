@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "info-ut"
+version = "0.1.4"
+readme = "README.md"
+license = "GPL-3.0-only"
+repository = "https://github.com/UnivTerbuka/info-ut"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+description = "Modul python untuk medapatkan informasi terbaru dari website Universitas Terbuka"
+authors = ["hexatester <hexatester@protonmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+feedparser = "^6.0.10"
+beautifulsoup4 = "^4.11.1"
+attrs = ">=21.0.0,<23.0.0"
+requests = "^2.28.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.910"
+black = "^21.7b0"
+types-requests = "^2.25.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
