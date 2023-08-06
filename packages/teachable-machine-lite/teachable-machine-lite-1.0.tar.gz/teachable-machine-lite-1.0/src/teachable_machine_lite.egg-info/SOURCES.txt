@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dist/teachable-machine-lite-1.0.tar.gz
+dist/teachable_machine_lite-1.0-py3-none-any.whl
+src/teachable_machine_lite.py
+src/teachable_machine_lite.egg-info/PKG-INFO
+src/teachable_machine_lite.egg-info/SOURCES.txt
+src/teachable_machine_lite.egg-info/dependency_links.txt
+src/teachable_machine_lite.egg-info/requires.txt
+src/teachable_machine_lite.egg-info/top_level.txt
