@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: handyplot
+Version: 0.3.2
+Summary: Add line scatter and color lib.
+Home-page: https://github.com/minho-hong/handyplot.git
+Author: Hong Peng
+License: GPL
+Requires-Python: >=3.8.0
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: vtk
+
