@@ -1,0 +1,12 @@
+detaorm/__init__.py,sha256=c5gF7OuMVlTAJFjEgPBc5BkvkMmAyNvPw2TqhF6reLA,212
+detaorm/base.py,sha256=URHOWDw0PJ04kqQppt49OXghMnshymzqwSi-OM4XbTs,6765
+detaorm/client.py,sha256=-tMyGGPrtfxugQwLaT7-hybZqfKKXWlZsDCwPWzdSH8,7854
+detaorm/field.py,sha256=Y0c9NlTUWXtVXhGr1nNlzEgXDly9RUpHMlrhxiMZBuE,2363
+detaorm/paginator.py,sha256=ZigEH-s9nQejLDudgYNfdTkAqoIYiBs1sb_tr50vYQo,1815
+detaorm/query.py,sha256=wtbVPnTmIckAavtEGyTi8n6FkkfN6cSuAc7AA2zM4vk,3069
+detaorm/types.py,sha256=6bSQkWyUBxWjmdTfInSA-SuDH9Kuu94MSkPWKVqtnaM,51
+detaorm/update.py,sha256=Gg6LroAzpCyzt31qL6XtbZrlxV3a6p7oK4aXVoqx3Uk,681
+detaorm-0.2.0.dist-info/LICENSE,sha256=laug5LeX8aXU_721_qy-p3dMtnKIXD0qQxOlpSVvU6Y,1069
+detaorm-0.2.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+detaorm-0.2.0.dist-info/METADATA,sha256=4KhMUdOOKCahYIAewBZx5U_cf5yT66_0cm6JNUwltSQ,2689
+detaorm-0.2.0.dist-info/RECORD,,
