@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: ez_modern_treasury
+Version: 0.0.43
+Summary: EZs Modern Treasury Client Library
+Home-page: https://github.com/equityzen/ez-modern-treasury
+Author: Issam Zeibak
+Author-email: issam.zeibak@equityzen.com
+License: MIT
+Download-URL: https://github.com/EquityZen/ez-modern_treasury/archive/refs/tags/v_0.0.43.tar.gz
+Description: UNKNOWN
+Keywords: Modern Treasury,Finance
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
