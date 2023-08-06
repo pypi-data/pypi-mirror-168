@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: itk-genericlabelinterpolator
+Version: 1.1.1
+Summary: ITK classes for generic interpolation of label images.
+Home-page: https://github.com/InsightSoftwareConsortium/ITKGenericLabelInterpolator
+Download-URL: https://github.com/InsightSoftwareConsortium/ITKGenericLabelInterpolator
+Author: Joël Schaerer
+Author-email: joelthelion@laposte.net
+License: Apache
+Keywords: ITK InsightToolkit Label-images Interpolation
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: Android
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+Requires-Dist: itk (>=5.3rc2.post2)
+
+itk-genericlabelinterpolator provides a generic interpolator for label images to interpolate each label with an ordinary image interpolator, and return the label with the highest value.
+Please refer to:
+Schaerer J., Roche F., Belaroussi B., "A generic interpolator for multi-label images.", Insight Journal, January-December 2014, https://hdl.handle.net/10380/3506.
