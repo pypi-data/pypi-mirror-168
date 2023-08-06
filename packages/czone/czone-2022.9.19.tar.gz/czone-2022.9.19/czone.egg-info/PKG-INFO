@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: czone
+Version: 2022.9.19
+Summary: An open source python package for generating nanoscale+ atomic scenes
+Home-page: https://github.com/lerandc/construction_zone
+Author: Luis Rangel DaCosta
+Author-email: luisrd@berkeley.edu
+Requires-Python: >=3.7
+License-File: LICENSE.txt
