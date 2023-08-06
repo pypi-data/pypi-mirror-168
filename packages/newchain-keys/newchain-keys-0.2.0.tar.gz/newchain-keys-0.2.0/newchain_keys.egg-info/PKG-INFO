@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: newchain-keys
+Version: 0.2.0
+Summary: Common API for NewChain key operations.
+Home-page: https://github.com/xiawu/newchain-keys.py
+Author: Xia Wu
+Author-email: xiawu@zeuux.org
+License: MIT
+Keywords: newchain
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: newchain-keys
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: dev
+License-File: LICENSE
