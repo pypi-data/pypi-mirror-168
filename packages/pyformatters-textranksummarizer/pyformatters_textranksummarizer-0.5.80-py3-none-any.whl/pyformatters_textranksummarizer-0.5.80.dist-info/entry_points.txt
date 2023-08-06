@@ -1,0 +1,6 @@
+[pyformatters.plugins]
+textranksummarizer=pyformatters_textranksummarizer.textranksummarizer:TextRankSummarizerFormatter
+
+[pyprocessors.plugins]
+textranksummarizer=pyformatters_textranksummarizer.textranksummarizer:TextRankSummarizerFormatter
+
