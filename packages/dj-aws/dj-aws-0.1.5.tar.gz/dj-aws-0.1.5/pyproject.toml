@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "dj-aws"
+version = "0.1.5"
+description = "Django + AWS made easy"
+authors = [
+    "Adrian <adrian@rydeas.com>"
+]
+repository = "https://github.com/adrianmeraz/dj-aws"
+
+packages = [
+    { include = "djaws" }
+]
+exclude = [
+    "manage.py"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+boto3 = "~1.24.77"
+Django = "~3.2.15"
+PyJWT = {extras = ["crypto"], version = "^2.3.0"}
+
+dj-starter = "~0.1.12"
+
+[tool.poetry.dev-dependencies]
+coverage = "~6.4"
+respx = "~0.20.0"
+tblib = "~1.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
