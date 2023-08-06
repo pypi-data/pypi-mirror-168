@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: helax
+Version: 0.1.2
+Summary: Python package for computing helicity amplitudes
+Home-page: https://github.com/LoganAMorrison/helax
+License: MIT
+Keywords: quantum-field-theory,helicity-amplitudes
+Author: Logan A. Morrison
+Author-email: loganmorrison99@gmail.com
+Maintainer: Logan Morrison
+Maintainer-email: loganmorrison99@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: Environment :: GPU
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Typing :: Typed
+Provides-Extra: gpu
+Requires-Dist: chex (>=0.1.5,<0.2.0); extra == "gpu"
+Requires-Dist: jax (>=0.3.17,<0.4.0); extra == "gpu"
+Requires-Dist: jaxlib (>=0.3.15,<0.4.0); extra == "gpu"
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
+Requires-Dist: scipy (>=1.9.1,<2.0.0)
+Project-URL: Documentation, https://github.com/LoganAMorrison/helax
+Project-URL: Repository, https://github.com/LoganAMorrison/helax
+Description-Content-Type: text/markdown
+
+# `helax`: Helicity Amplitudes with Jax or NumPy
+
+Implementation from scratch of the HELAS library using Jax and NumPy.
+
