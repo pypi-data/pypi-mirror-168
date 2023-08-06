@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lo-extension-dev"
+description = "A tool to help developing LibreOffice Extension."
+readme = "README.rst"
+requires-python = ">=3.7"
+keywords = ["one", "two"]
+license = { file="LICENSE.txt" }
+classifiers = [
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+        "argparse",
+        "psutil",
+]
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "src/lo_extension_dev/__init__.py"
+
+[project.scripts]
+manage_extension = "lo_extension_dev.manage:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "lo_extension_dev.VERSION"}
+
+[project.urls]
+"Bug Reports" = "https://github.com/bastien34/lo-extension-dev/issues"
+#"Funding" = "https://donate.pypi.org"
+"Source" = "https://github.com/bastien34/lo-extension"

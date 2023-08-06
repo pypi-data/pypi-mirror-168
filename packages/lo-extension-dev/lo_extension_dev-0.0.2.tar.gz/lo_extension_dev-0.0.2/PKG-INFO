@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: lo-extension-dev
+Version: 0.0.2
+Summary: A tool to help developing LibreOffice Extension.
+Project-URL: Bug Reports, https://github.com/bastien34/lo-extension-dev/issues
+Project-URL: Source, https://github.com/bastien34/lo-extension
+License: Copyright (c) 2023-Bastien Roques
+        
+        Permission is hereby granted, free of charge, to any person obtaining
+        a copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+        WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+License-File: LICENSE.txt
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: argparse
+Requires-Dist: psutil
+Description-Content-Type: text/x-rst
+
+=============================
+Libreoffice Developing Helper
+=============================
+
+
+This tool helps developing LibreOffice Extension. It mainly does:
+
+    - build an LibreOffice extension from your source
+
+    - install / uninstall extension
+
+    - create shortcut from installed extension to development files
+
+WHY
+---
+When developing for LibreOffice, it is common to often reinstall the extension
+to test it. It means compiling, uninstalling, installing. This tasks are time
+consuming. Beside, if you want to make modification of your code without
+reinstalling, you need to create some shortcuts from the installation path to
+your code. This command line tool helps achieving this goal.
+
+
+Installation
+------------
+
+::
+
+  $ pip install lo-extension-dev
