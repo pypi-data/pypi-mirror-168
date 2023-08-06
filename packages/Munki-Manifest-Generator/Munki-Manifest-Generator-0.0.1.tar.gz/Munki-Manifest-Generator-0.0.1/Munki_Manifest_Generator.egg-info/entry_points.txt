@@ -1,0 +1,2 @@
+[console_scripts]
+munki-manifest-generator = munki_manifest_generator.main:main
