@@ -1,0 +1,16 @@
+.Rproj*
+.Rhistory
+.RData
+.Ruserdata
+*.swp
+*.o
+~*
+*.so
+*.a
+.fuse*
+tests/tmp
+build
+dist
+*.back
+**/.DS_Store
+.vscode/

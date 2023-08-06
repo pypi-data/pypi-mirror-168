@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"files.associations": {
+			"*.rmd": "markdown",
+			"exception": "cpp",
+			"optional": "cpp",
+			"armadillo": "cpp",
+			"complex": "cpp"
+		},
+		"autoDocstring.docstringFormat": "numpy",
+		"jupyter.jupyterServerType": "local"
+	}
+}

@@ -1,0 +1,4 @@
+include README.md
+global-include CMakeLists.txt *.cmake
+recursive-include pybind11 *
+recursive-include lib *
