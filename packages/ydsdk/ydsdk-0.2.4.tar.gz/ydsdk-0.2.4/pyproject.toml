@@ -1,0 +1,18 @@
+[project]
+name = "ydsdk"
+version = "0.2.4"
+authors = [
+  { name="lideqiang", email="lideqiang@yundun.com" },
+]
+description = "Yundun Api Sdk For Python"
+readme = "readme.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yundun-php/ydsdk_python"
+"Bug Tracker" = "https://github.com/yundun-php/ydsdk_python/issues"
