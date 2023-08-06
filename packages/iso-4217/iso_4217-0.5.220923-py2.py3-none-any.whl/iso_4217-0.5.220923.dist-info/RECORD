@@ -1,0 +1,12 @@
+iso_4217/__init__.py,sha256=KYrUn9WhmM1YXdvyqknl01ZJ1EiS3OApDZY_avuFwfg,243
+iso_4217/currency.py,sha256=R3YzEnEIff3IGBQNQ4rz7Gnx5Oon2SnIG4-XZYspRj4,4135
+iso_4217/lists.py,sha256=xZZcfl55NDEIH3fqx-M4Ufrkab1y2hpqSFl2KwoTeAg,4279
+iso_4217/pint.py,sha256=OwDumsDcQMN6-B-6ZS5GzPAO42d03dsW96lr0GC6k_U,999
+iso_4217/data/list-one.xml,sha256=Nfe8av3kxbQcrJIUh8jjZMn4c5pGgPyCVtiptiTYBI0,47640
+iso_4217/data/list-three.xml,sha256=A08fUMriY1wx8n9d4lJZbq1TeILrcntgVjB6U-MKCuQ,29349
+iso_4217-0.5.220923.dist-info/LICENSE,sha256=vc0jngo5NtldSnABrKse2Ws3fT84gx16KeugeqHn1tA,1071
+iso_4217-0.5.220923.dist-info/METADATA,sha256=SQg8awGA4qefp-S5RoLSjZNVVPc4hdmJnpnkVOb-Y-c,3320
+iso_4217-0.5.220923.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+iso_4217-0.5.220923.dist-info/top_level.txt,sha256=xRJ3KN8fHBQG-Nw98UMXiu3EZRRY1TtLRkxKYtpR668,9
+iso_4217-0.5.220923.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+iso_4217-0.5.220923.dist-info/RECORD,,
