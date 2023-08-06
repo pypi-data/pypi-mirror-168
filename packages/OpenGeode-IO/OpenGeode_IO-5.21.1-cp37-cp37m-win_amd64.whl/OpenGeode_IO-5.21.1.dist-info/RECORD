@@ -1,0 +1,17 @@
+opengeode_io/OpenGeode-IO_mesh.dll,sha256=O_O_hkrHYkuxh4syOaJ7SxbHJ8piGTlpNnm2YDalo88,1020928
+opengeode_io/OpenGeode-IO_model.dll,sha256=agjqU3k3cNq7cqMKBO12dv1v81ltiQy4NJ28uvWnOQ4,347136
+opengeode_io/__init__.py,sha256=n9sY7AY-ck2pGvb7llTjZ7kPPS7AM3uiP3RsBpAaALs,1280
+opengeode_io/concrt140.dll,sha256=VzIpoH84q50vwuGluY6SQ7mzkQAyMYDIOtfdr5ju5Go,317864
+opengeode_io/msvcp140.dll,sha256=n-5vNlR9b26nygM4ZVVV26a7D3mLxgM00puU0VR9pNo,566704
+opengeode_io/msvcp140_1.dll,sha256=hzGpPlGcJZXJ_UiebZrAfpZESMDaHI7p7lAKeYlIJhc,23944
+opengeode_io/msvcp140_2.dll,sha256=Nmr44HHwBNpdlagypGsuiCGo4ClDQKk_fJXPSMRBBn4,186800
+opengeode_io/msvcp140_atomic_wait.dll,sha256=xhoocR-Mbpv9SHnPX1OwE9ZTutrTCKvj6IfGlLIj1vA,57264
+opengeode_io/msvcp140_codecvt_ids.dll,sha256=m0X9BpvQB22Kv-t8PDCh9cX8jnEkAXhTqT2DGjRsPSE,21424
+opengeode_io/opengeode_io_py_mesh.pyd,sha256=G3qvGWwZNl8bPToze7MQ9SLH0JgmtED0kY4AfgPcwxY,128000
+opengeode_io/opengeode_io_py_model.pyd,sha256=41dUem3Ty8BbNmyyHv2XubOiE5-p2asSyeDGOl98MSk,128000
+opengeode_io/vcruntime140.dll,sha256=nStA8DlcxdG01eoXuElwwplx1EjDcQRnbbV3WG1K0bE,98224
+opengeode_io/vcruntime140_1.dll,sha256=NASKuqBw7ME7MYzqMUJfTKPt0TPTUDGKxlJZ5gWMizI,37256
+OpenGeode_IO-5.21.1.dist-info/METADATA,sha256=ivMU68x9P6QOKNiQ8nPTqXII7YvQ1ugYzyKok5SMZpE,3066
+OpenGeode_IO-5.21.1.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+OpenGeode_IO-5.21.1.dist-info/top_level.txt,sha256=UbHospLC99KjjzaIpg_8PZkv87pJ67SRlIyMrWV58CY,13
+OpenGeode_IO-5.21.1.dist-info/RECORD,,
