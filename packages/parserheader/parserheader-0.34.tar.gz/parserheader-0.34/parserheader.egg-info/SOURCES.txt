@@ -1,0 +1,14 @@
+.gitignore
+LICENSE.rst
+README.rst
+__version__.py
+setup.cfg
+setup.py
+parserheader/__init__.py
+parserheader/__version__.py
+parserheader/parserheader.py
+parserheader.egg-info/PKG-INFO
+parserheader.egg-info/SOURCES.txt
+parserheader.egg-info/dependency_links.txt
+parserheader.egg-info/requires.txt
+parserheader.egg-info/top_level.txt
