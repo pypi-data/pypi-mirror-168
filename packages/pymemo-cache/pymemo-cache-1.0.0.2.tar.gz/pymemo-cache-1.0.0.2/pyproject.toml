@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pymemo-cache"
+description = "PyMemo: simple Python memoization library"
+version = "1.0.0.2"
+readme = "README.md"
+keywords = ["memoization", "memo", "caching"]
+license = {text = "MIT License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3"
+dependencies = []
+
+[tool.setuptools]
+packages = ["pymemo"]
