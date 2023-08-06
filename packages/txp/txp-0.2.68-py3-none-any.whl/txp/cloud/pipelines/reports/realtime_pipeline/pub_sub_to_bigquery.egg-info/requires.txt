@@ -1,0 +1,5 @@
+google-cloud-bigquery==2.30.1
+google==3.0.0
+google-cloud-firestore==2.3.4
+dynaconf
+txp[cloud]
