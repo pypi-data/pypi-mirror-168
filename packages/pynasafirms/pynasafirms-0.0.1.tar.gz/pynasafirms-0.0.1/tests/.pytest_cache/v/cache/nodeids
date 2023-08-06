@@ -1,0 +1,18 @@
+[
+  "test_area.py::TestArea::test_get_area_modis_nrt",
+  "test_area.py::TestArea::test_get_area_modis_sp",
+  "test_area.py::TestArea::test_get_area_viirs_noaa20_nrt",
+  "test_area.py::TestArea::test_get_area_viirs_snpp_nrt",
+  "test_area.py::TestArea::test_get_area_viirs_snpp_sp",
+  "test_country.py::TestCountry::test_country_modis_nrt",
+  "test_country.py::TestCountry::test_country_modis_sp",
+  "test_country.py::TestCountry::test_country_viirs_noaa20_nrt",
+  "test_country.py::TestCountry::test_country_viirs_snpp_nrt",
+  "test_country.py::TestCountry::test_country_viirs_snpp_sp",
+  "test_country.py::TestCountry::test_get_supported_countries",
+  "test_data.py::TestArea::test_get_data_availability_all",
+  "test_data.py::TestArea::test_get_data_availability_modis_nrt",
+  "test_data.py::TestArea::test_get_data_availability_modis_sp",
+  "test_data.py::TestArea::test_get_data_availability_viirs_noaa20_nrt",
+  "test_data.py::TestArea::test_get_data_availability_viirs_snpp_sp"
+]

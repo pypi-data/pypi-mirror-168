@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pynasafirms"
+version = "0.0.1"
+authors = [
+  { name="PlantDaddy", email="CqP5TZ77NYBf5uQt@protonmail.com" },
+]
+description = "A package for querying NASA's FIRMS"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PlantDaddy/pyNASAFIRMS"
+"Bug Tracker" = "https://github.com/PlantDaddy/pyNASAFIRMS/issues"
