@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: py2latexTemplate
+Version: 0.0.4
+Summary: Code for producing LaTeX files with python scripts (heavily dependent on sympy module); makes it simpler to format elegantly and include python math/code blocks in your LaTeX.
+Home-page: https://github.com/gabrielle-ohlson/py2latexTemplate
+Author: Gabrielle Ohlson
+Description-Content-Type: text/markdown

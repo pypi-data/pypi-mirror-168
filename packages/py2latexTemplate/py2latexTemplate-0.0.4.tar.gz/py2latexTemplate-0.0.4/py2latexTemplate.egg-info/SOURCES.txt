@@ -1,0 +1,11 @@
+README.md
+setup.py
+py2latexTemplate/OML.pickle
+py2latexTemplate/__init__.py
+py2latexTemplate/flexSymbols.pickle
+py2latexTemplate/latexTemplate.py
+py2latexTemplate.egg-info/PKG-INFO
+py2latexTemplate.egg-info/SOURCES.txt
+py2latexTemplate.egg-info/dependency_links.txt
+py2latexTemplate.egg-info/requires.txt
+py2latexTemplate.egg-info/top_level.txt
