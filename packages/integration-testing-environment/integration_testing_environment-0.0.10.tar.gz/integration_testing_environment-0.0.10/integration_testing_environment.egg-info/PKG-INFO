@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: integration-testing-environment
+Version: 0.0.10
+Summary: Integration testing environment for web gui api load testing
+Home-page: https://github.com/JE-Chen/Integration-testing-environment
+Author: JE-Chen
+Author-email: zenmailman@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Environment :: X11 Applications
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: another_extension
+License-File: LICENSE
+
+# Integration-testing-environment as Integration Test Environment(ITE)
+
+---
+## Now ITE support: GUI, API, Web, Loading. Testing
+###### Maybe will add app testing, maybe. 
+
+---
+
+### Features
+* ITE GUI for beginner
+* GUI testing (use AutoControl)
+* API testing (use APITestka)
+* Web testing (use WebRunner)
+* Loading testing (use LoadDensity)
+* Multi test task runner (multi process)
+  * you can run multi testing on same time
+  * open log window to check testing result
+* Send mail when testing failure (need to setting mail)
+
+---
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/JE-Chen/Integration-testing-environment/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/JE-Chen/Integration-testing-environment/tree/main)
+
+[![ITE GitHub Actions Dev](https://github.com/JE-Chen/Integration-testing-environment/actions/workflows/ITE-github-actions_dev.yml/badge.svg)](https://github.com/JE-Chen/Integration-testing-environment/actions/workflows/ITE-github-actions_dev.yml)
+
+[![ITE GitHub Actions Stable](https://github.com/JE-Chen/Integration-testing-environment/actions/workflows/ITE-github-actions_stable.yml/badge.svg)](https://github.com/JE-Chen/Integration-testing-environment/actions/workflows/ITE-github-actions_stable.yml)
+
+### install
+#### stable
+```commandline
+pip install integration_testing_environment
+```
+#### dev
+```commandline
+pip install integration_testing_environment_dev
+```
+
+
