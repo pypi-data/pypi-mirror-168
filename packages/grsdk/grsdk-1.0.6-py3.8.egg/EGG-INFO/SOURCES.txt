@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+grsdk/grsdk.egg-info/PKG-INFO
+grsdk/grsdk.egg-info/SOURCES.txt
+grsdk/grsdk.egg-info/dependency_links.txt
+grsdk/grsdk.egg-info/top_level.txt
