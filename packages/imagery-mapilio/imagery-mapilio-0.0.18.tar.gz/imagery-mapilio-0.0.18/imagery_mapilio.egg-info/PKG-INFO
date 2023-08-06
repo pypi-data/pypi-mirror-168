@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: imagery-mapilio
+Version: 0.0.18
+Summary: Mapilio Imagery Library
+Home-page: https://github.com/mapilio/imagery.git
+Author: Mapilio - Ozcan Durak
+Author-email: ozcan@visiosoft.com.tr
+License: licensed
+Project-URL: Bug Reports, https://github.com/mapilio/imagery-tools/issues
+Project-URL: Say Thanks!, https://mapilio.com/#contact
+Project-URL: Source, https://github.com/mapilio/imagery-tools/
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+
+UNKNOWN
+
