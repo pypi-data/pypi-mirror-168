@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: plunk
+Version: 0.1.3
+Summary: Dump of disorganized ML tools -- the place where homeless code goes until a home is found
+Home-page: https://github.com/otosense/plunk
+Author: OtoSense
+License: apache-2.0
+Description: 
+        # plunk
+        Dump of disorganized ML tools -- the place where homeless code goes until a home is found
+        
+        
+        To install:	```pip install plunk```
+        
+Platform: any
+Description-Content-Type: text/markdown
