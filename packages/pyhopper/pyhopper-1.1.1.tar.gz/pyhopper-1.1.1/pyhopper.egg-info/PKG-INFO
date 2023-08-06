@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: pyhopper
+Version: 1.1.1
+Summary: TODO
+Home-page: https://github.com/pyhopper/pyhopper
+Author: Mathias Lechner and the PyHopper team
+Author-email: mlech26l@gmail.com
+License: Apache Software License (Apache 2.0)
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >3.6.0
