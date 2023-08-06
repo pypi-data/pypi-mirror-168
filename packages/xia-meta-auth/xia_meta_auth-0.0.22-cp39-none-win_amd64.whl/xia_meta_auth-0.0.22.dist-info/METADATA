@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xia-meta-auth
+Version: 0.0.22
+Summary: X-I-A Meta Authorization Module
+Home-page: https://git.top-infra.com/
+Author: Xia CHEN
+Author-email: admin@x-i-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: passlib
+Requires-Dist: xia-engine-firestore
+Requires-Dist: xia-meta
+Requires-Dist: xia-cache
+
+# X-I-A Meta Authorization Module
+## Introduction
+
+
+
