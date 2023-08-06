@@ -1,0 +1,13 @@
+README.md
+setup.py
+NuOCR/__init__.py
+NuOCR.egg-info/PKG-INFO
+NuOCR.egg-info/SOURCES.txt
+NuOCR.egg-info/dependency_links.txt
+NuOCR.egg-info/requires.txt
+NuOCR.egg-info/top_level.txt
+NuOCR/Util/__init__.py
+NuOCR/Util/extractor.py
+NuOCR/Util/io_adaptor.py
+NuOCR/Util/user.py
+NuOCR/Util/util.py
