@@ -1,0 +1,44 @@
+{
+  "../components/Cells/Category/CategoryGroupCell.client.js -> react-plotly.js": {
+    "id": 8660,
+    "files": [
+      "static/chunks/e48519b3.5973849ed6da3c6f.js",
+      "static/chunks/660.3ae7d6baff585a03.js"
+    ]
+  },
+  "../components/Cells/Category/CategoryGroupExpanded.client.js -> react-plotly.js": {
+    "id": 8660,
+    "files": [
+      "static/chunks/e48519b3.5973849ed6da3c6f.js",
+      "static/chunks/660.3ae7d6baff585a03.js"
+    ]
+  },
+  "../components/Cells/CurveAssetCell.client.js -> react-plotly.js": {
+    "id": 8660,
+    "files": [
+      "static/chunks/e48519b3.5973849ed6da3c6f.js",
+      "static/chunks/660.3ae7d6baff585a03.js"
+    ]
+  },
+  "../components/Cells/Histogram/HistogramGroupCell.client.js -> react-plotly.js": {
+    "id": 8660,
+    "files": [
+      "static/chunks/e48519b3.5973849ed6da3c6f.js",
+      "static/chunks/660.3ae7d6baff585a03.js"
+    ]
+  },
+  "../components/Cells/Histogram/HistogramGroupExpanded.client.js -> react-plotly.js": {
+    "id": 8660,
+    "files": [
+      "static/chunks/e48519b3.5973849ed6da3c6f.js",
+      "static/chunks/660.3ae7d6baff585a03.js"
+    ]
+  },
+  "../components/SettingsBar/Imports.client.js -> react-plotly.js": {
+    "id": 8660,
+    "files": [
+      "static/chunks/e48519b3.5973849ed6da3c6f.js",
+      "static/chunks/660.3ae7d6baff585a03.js"
+    ]
+  }
+}
