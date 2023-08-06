@@ -1,0 +1,12 @@
+CHANGES.md
+MANIFEST.in
+README.md
+setup.py
+modbus_tcprtu/__init__.py
+modbus_tcprtu/modbus_tcprtu.py
+modbus_tcprtu.egg-info/PKG-INFO
+modbus_tcprtu.egg-info/SOURCES.txt
+modbus_tcprtu.egg-info/dependency_links.txt
+modbus_tcprtu.egg-info/not-zip-safe
+modbus_tcprtu.egg-info/requires.txt
+modbus_tcprtu.egg-info/top_level.txt

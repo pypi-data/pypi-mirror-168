@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: modbus_tcprtu
+Version: 1.0.0
+Summary: A ModbusRTU Over TCP/IP library, depends on modbus_tk.
+Home-page: https://github.com/sintrb/modbus_tcprtu/
+Author: trb
+Author-email: sintrb@gmail.com
+License: UNKNOWN
+Description: # modbus_tcprtu
+        
+        A ModbusRTU Over TCP/IP library, depends on modbus_tk. It's often use with 485-to-TCP converter.
+        
+        ```python
+        
+        # must install modbus_tk
+        import modbus_tk.defines as cst
+        from modbus_tcprtu import TcpRtuMaster
+        
+        # create a master
+        master = TcpRtuMaster(host='127.0.0.1', port=9001)
+        master.set_timeout(2)
+        for i in range(10):
+            # read data from modbus
+            # just use as modbus_tk.Master
+            print(i, master.execute(1, cst.READ_HOLDING_REGISTERS, 0, i + 1))
+        
+        ```
+        
+        
+        CHANGES
+        ===============
+        1.0.0
+        
+        - First version
+        
+Keywords: modbus,modbus_tk,modbus_tcp,modbus_rtu
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
