@@ -1,0 +1,35 @@
+[project]
+name = "deephaven-plugin-plotly-js"
+dynamic = []
+description = "TEST"
+authors = [
+    { name = "Devin Smith", email = "devinsmith@deephaven.io" },
+]
+dependencies = [
+    "deephaven-plugin>=0.2.0",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+version = "0.1.0.dev0"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.entry-points."deephaven.plugin"]
+registration_cls = "deephaven_plugin_plotly_js:PlotlyJsRegistration"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+setup-script = "build.py"
+includes = [
+    "src/deephaven_plugin_plotly_js/",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "build.py"
