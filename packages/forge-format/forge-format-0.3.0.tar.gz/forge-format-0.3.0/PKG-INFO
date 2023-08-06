@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: forge-format
+Version: 0.3.0
+Summary: Formatting library for Forge
+Home-page: https://www.forgepackages.com/
+License: MIT
+Keywords: django,saas,forge,framework
+Author: Dave Gaeddert
+Author-email: dave.gaeddert@dropseed.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: black (>=22.0.0)
+Requires-Dist: click (>=8.0.0)
+Requires-Dist: forge-core (>=0.4.0,<1.0.0)
+Requires-Dist: isort (>=5.0.0)
+Requires-Dist: python-dotenv
+Project-URL: Documentation, https://www.forgepackages.com/docs/
+Project-URL: Repository, https://github.com/forgepackages/forge-format
+Description-Content-Type: text/markdown
+
+A unified, opinionated code formatting command for Django projects.
+
+Uses [black](https://github.com/psf/black) and [isort](https://pycqa.github.io/isort/) to format Python code.
+
+
+## Installation
+
+### Django + Forge Quickstart
+
+If you use the [Forge Quickstart](https://www.forgepackages.com/docs/forge/quickstart/),
+everything you need will be ready and available as `forge format`.
+
+### Install for existing Django projects
+
+First, install `forge-format` from [PyPI](https://pypi.org/project/forge-format/):
+
+```sh
+pip install forge-format
+```
+
+Then add it to your `INSTALLED_APPS` in `settings.py`:
+
+```python
+INSTALLED_APPS = [
+    ...
+    "forgeformat",
+]
+```
+
+Now you will have access to the `format` command:
+
+```sh
+python manage.py format
+```
+
