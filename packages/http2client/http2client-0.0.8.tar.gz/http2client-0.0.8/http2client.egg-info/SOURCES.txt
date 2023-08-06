@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+http2client/__init__.py
+http2client/http2client.py
+http2client.egg-info/PKG-INFO
+http2client.egg-info/SOURCES.txt
+http2client.egg-info/dependency_links.txt
+http2client.egg-info/requires.txt
+http2client.egg-info/top_level.txt
