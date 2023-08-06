@@ -1,0 +1,14 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+filesplit.egg-info/PKG-INFO
+filesplit.egg-info/SOURCES.txt
+filesplit.egg-info/dependency_links.txt
+filesplit.egg-info/top_level.txt
+src/__init__.py
+src/merge.py
+src/split.py
+src/common/__init__.py
+src/common/constant.py
+src/common/error.py
