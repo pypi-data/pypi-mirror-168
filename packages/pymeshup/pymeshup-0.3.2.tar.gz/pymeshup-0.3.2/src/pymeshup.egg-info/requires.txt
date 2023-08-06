@@ -1,0 +1,10 @@
+vtk
+numpy
+matplotlib
+PySide6-Essentials
+pymeshlab
+
+[testing]
+setuptools
+pytest
+pytest-cov
