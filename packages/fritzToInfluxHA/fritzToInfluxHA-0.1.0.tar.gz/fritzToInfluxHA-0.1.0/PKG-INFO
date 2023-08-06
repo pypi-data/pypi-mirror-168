@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fritzToInfluxHA
+Version: 0.1.0
+Summary: Periodially read Fritz!Box HA device data and store in InfluxDB
+Home-page: https://github.com/signag/fritzToInfluxHA
+Author: signag
+Author-email: siegfried.nagel@t-online.de
+Project-URL: Source, https://github.com/signag/fritzToInfluxHA/
+Keywords: RaspberryPi Fritz!Box HomeAutomation Monitoring InfluxDB
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# fritzToInfluxHA
+Read Fritz!Box HA data and store in InfluxDB

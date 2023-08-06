@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fritzToInfluxHA/__init__.py
+fritzToInfluxHA/fritzResponse.py
+fritzToInfluxHA/fritzToInfluxHA.py
+fritzToInfluxHA.egg-info/PKG-INFO
+fritzToInfluxHA.egg-info/SOURCES.txt
+fritzToInfluxHA.egg-info/dependency_links.txt
+fritzToInfluxHA.egg-info/requires.txt
+fritzToInfluxHA.egg-info/top_level.txt
+fritzToInfluxHA/fritz/FritzBox.py
+fritzToInfluxHA/fritz/FritzHaDevice.py
+fritzToInfluxHA/fritz/__init__.py
+fritzToInfluxHA/influx/__init__.py
