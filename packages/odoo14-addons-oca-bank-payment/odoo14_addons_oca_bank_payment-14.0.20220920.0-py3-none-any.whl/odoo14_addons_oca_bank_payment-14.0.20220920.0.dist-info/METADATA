@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-bank-payment
+Version: 14.0.20220920.0
+Summary: Meta package for oca-bank-payment Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-account-banking-mandate
+Requires-Dist: odoo14-addon-account-banking-mandate-sale
+Requires-Dist: odoo14-addon-account-banking-pain-base
+Requires-Dist: odoo14-addon-account-banking-sepa-credit-transfer
+Requires-Dist: odoo14-addon-account-banking-sepa-direct-debit
+Requires-Dist: odoo14-addon-account-invoice-select-for-payment
+Requires-Dist: odoo14-addon-account-payment-mode
+Requires-Dist: odoo14-addon-account-payment-order
+Requires-Dist: odoo14-addon-account-payment-order-return
+Requires-Dist: odoo14-addon-account-payment-order-sequence-payment-mode
+Requires-Dist: odoo14-addon-account-payment-order-tier-validation
+Requires-Dist: odoo14-addon-account-payment-order-vendor-email
+Requires-Dist: odoo14-addon-account-payment-partner
+Requires-Dist: odoo14-addon-account-payment-purchase
+Requires-Dist: odoo14-addon-account-payment-purchase-stock
+Requires-Dist: odoo14-addon-account-payment-sale
+
+UNKNOWN
+
