@@ -1,0 +1,9 @@
+drasyl/__init__.py,sha256=70DVFpmDJajNXvkXg7h1WXNV1t6uIrl18sX9dHX8mEc,60
+drasyl/libdrasyl.py,sha256=UkUaWgRHpJb1ICUsGVsDgJKIWSav_H7EEPi-tc-OFfs,7792
+drasyl/version.py,sha256=DzDKYnznRbvBmwio5zuNlZf7nre5lMrW7-LHnZOyCDE,86
+drasyl/libdrasyl/libdrasyl.dll,sha256=YNQiH7q9KDUfnO6r64syM5WIPzXB-Weg_EpCNGdZKh0,63270912
+drasyl-0.9.0.dev0.dist-info/LICENSE,sha256=ysk2ozV5Uqsy81lt7CsKJ4vWMJmeSNZnK5P-Bk6qMq4,1101
+drasyl-0.9.0.dev0.dist-info/METADATA,sha256=DFXibqAdfK2hXDXV2GAT1_q2DOs-JzveYd-QkQzLEEI,5446
+drasyl-0.9.0.dev0.dist-info/WHEEL,sha256=kbzA5tyEuvWcVsltnhCG02Vwq0RkG0K4o74bVDVA1mQ,107
+drasyl-0.9.0.dev0.dist-info/top_level.txt,sha256=z2L-2Z_lM5wI6n9IruZN-JbaDyDVjU04pKDSkZM2zHU,7
+drasyl-0.9.0.dev0.dist-info/RECORD,,
