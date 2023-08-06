@@ -1,0 +1,3 @@
+[ape_cli_subcommands]
+ape_notebook = ape_notebook._cli:cli
+
