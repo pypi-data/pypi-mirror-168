@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: py3-service-check
+Version: 0.3
+Summary: python3自动化检测
+Home-page: https://mp.weixin.qq.com/s/9FQ-Tun5FbpBepBAsdY62w
+Author: Meng Wang
+Author-email: wmlucas@163.com
+License: MIT License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: influxdb
+Requires-Dist: loguru
+Requires-Dist: vthread
+
+# Example Package
+This is a simple example package. You can use
+
+[联系作者](https://mp.weixin.qq.com/s/9FQ-Tun5FbpBepBAsdY62w)
+
+to write your content.
