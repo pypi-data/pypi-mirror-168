@@ -1,0 +1,11 @@
+其他项目引用，公共包，打包方式
+
+打包发布流程：
+pip install twine
+修改 setup.py 中版本号
+删除-dist sdist 编译文件
+
+python setup.py sdist build
+
+twine upload dist/*
+
