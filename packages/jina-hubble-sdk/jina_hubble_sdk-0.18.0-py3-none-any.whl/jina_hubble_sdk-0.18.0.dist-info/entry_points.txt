@@ -1,0 +1,3 @@
+[console_scripts]
+docker-credential-jina-hubble = hubble.dockerauth:main
+jina-auth = hubble.__main__:main
