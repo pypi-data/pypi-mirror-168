@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e -o pipefail -u
+
+# Downtime of the linked websites shouldn't block a release.
+if [[ ${CIRCLE_BRANCH-} != main ]]; then
+  rc_path=.remarkrc.yml
+else
+  rc_path=.remarkrc-allow-dead-urls.yml
+fi
+
+remark --frail --ignore-path=.gitignore --rc-path=$rc_path .

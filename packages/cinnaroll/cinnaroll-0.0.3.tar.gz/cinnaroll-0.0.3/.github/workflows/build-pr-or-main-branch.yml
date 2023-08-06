@@ -1,0 +1,53 @@
+name: Build PR or main branch
+
+concurrency:
+  # See https://docs.github.com/en/actions/using-jobs/using-concurrency#example-using-a-fallback-value for this trick
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+defaults:
+  run:
+    shell: bash -e -o pipefail -u -x {0}
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm install --global remark-cli remark-lint-no-dead-urls remark-validate-links
+      - name: Perform general checks
+        run: ci/checks/run-all-checks.sh
+
+  tox:
+    needs: checks
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Python versions must be quoted so as not to be interpreted as floats :/
+        python-version: ['3.6', '3.7', '3.8', '3.9', '3.10']
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Test with tox
+        # language=sh
+        run: |
+          PATH=$PATH:$HOME/.local/bin
+          pip install tox tox-gh-actions
+          if [[ ${{ matrix.python-version }} == 3.6 ]]; then
+            # tox-gh-actions doesn't support Python 3.6 anymore, would run all envs otherwise :/
+            tox -e py36,mypy-py36
+          else
+            tox
+          fi
