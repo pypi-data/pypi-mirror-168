@@ -1,0 +1,8 @@
+[console_scripts]
+nb-device = nb2an.tools.getdevice:main
+nb-devices = nb2an.tools.getdevices:main
+nb-networks = nb2an.tools.getnetwork:main
+nb-outlets = nb2an.tools.getoutlets:main
+nb-racks = nb2an.tools.getracks:main
+nb-update-ansible = nb2an.tools.update_ansible:main
+
