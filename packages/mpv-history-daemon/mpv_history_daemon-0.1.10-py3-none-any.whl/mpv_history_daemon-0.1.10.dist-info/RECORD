@@ -1,0 +1,12 @@
+mpv_history_daemon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mpv_history_daemon/__main__.py,sha256=X_am1e1Hnxg-0w75J8wk78ZWLp_TVeQWCuYyDnwKZAY,2459
+mpv_history_daemon/daemon.py,sha256=jhGEs04-hOKkYtFOWqMHnOU-Flm_Py29U9ehVlNlAxw,17755
+mpv_history_daemon/events.py,sha256=2f-2R5WzuYhA7laJHyJyyZDTLf_HHVoYX_K34QdWeTc,15889
+mpv_history_daemon/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mpv_history_daemon-0.1.10.data/scripts/mpv_history_daemon_restart,sha256=VoW6MpG-sqEBj2GPqkeK6H2yHEjbRtbTtQDvPs3mQRA,1072
+mpv_history_daemon-0.1.10.dist-info/LICENSE,sha256=yVuuHRzgI17MzTVgt3LsHvuX80innw--CmNPDCzO_iw,11358
+mpv_history_daemon-0.1.10.dist-info/METADATA,sha256=l87O1Qqxczm6OnlTVUewSROpsN09vzSQZgNvbz5gTRk,5397
+mpv_history_daemon-0.1.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mpv_history_daemon-0.1.10.dist-info/entry_points.txt,sha256=5Xd1F3OfuK8ODuAy8hgjhbg6TT3b0BL-6KaNf5k-TsE,71
+mpv_history_daemon-0.1.10.dist-info/top_level.txt,sha256=Tlv5C_BdDOw4qtpIT7lNl0VdSPwd6c5lRB-jrm4Cjl4,19
+mpv_history_daemon-0.1.10.dist-info/RECORD,,
