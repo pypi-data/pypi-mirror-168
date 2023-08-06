@@ -1,0 +1,3 @@
+[console_scripts]
+dataserver=python_rds_ref.dataserver:cli
+
