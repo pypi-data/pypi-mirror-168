@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/wenutils/__init__.py
+src/wenutils/utils.py
+src/wenutils.egg-info/PKG-INFO
+src/wenutils.egg-info/SOURCES.txt
+src/wenutils.egg-info/dependency_links.txt
+src/wenutils.egg-info/top_level.txt
