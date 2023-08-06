@@ -1,0 +1,10 @@
+README.md
+setup.py
+yafp.egg-info/PKG-INFO
+yafp.egg-info/SOURCES.txt
+yafp.egg-info/dependency_links.txt
+yafp.egg-info/requires.txt
+yafp.egg-info/top_level.txt
+yet_another_fastapi_profiler/__init__.py
+yet_another_fastapi_profiler/call_stat.py
+yet_another_fastapi_profiler/middleware.py

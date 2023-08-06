@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: yafp
+Version: 1.0.0
+Home-page: https://github.com/teplinsky-maxim/yet-another-fastapi-profiler
+Author: Maxim Teplinsky
+Author-email: email@example.com
+License: MIT
+Keywords: fastapi yet_another_fastapi_profiler filter minimal time
