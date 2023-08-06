@@ -1,0 +1,7 @@
+[console_scripts]
+hello=hello:main
+hello-data=hello.data:main
+hello-fiftyone=hello.fiftyone:main
+hello-video=hello.video:main
+hello-x3m=hello.x3m:main
+
