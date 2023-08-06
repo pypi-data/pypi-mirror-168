@@ -1,0 +1,25 @@
+python-dateutil>=2.6.0
+Jinja2>=2.10.1
+MarkupSafe
+structlog
+ltd-conveyor
+requests
+pydantic
+click
+pypandoc
+panflute
+pybtex
+pytz
+aiohttp
+GitPython
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[dev]
+pytest
+pytest-cov
+pytest-flake8
+pre-commit
+types-setuptools
+types-requests
