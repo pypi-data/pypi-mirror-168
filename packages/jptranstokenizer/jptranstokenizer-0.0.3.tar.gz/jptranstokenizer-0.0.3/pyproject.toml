@@ -1,0 +1,60 @@
+[build-system]
+requires = ["poetry-core", "setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jptranstokenizer"
+description = "Japanese tokenizer with transformers library"
+dynamic = ["version"]
+authors = [
+    {email = "msuzuki9609@gmail.com"},
+    {name = "Masahiro Suzuki"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "transformers>=4.7.0"
+]
+classifiers=[
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+homepage = "https://github.com/retarfi/jptranstokenizer/"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools_scm]
+write_to = "src/jptranstokenizer/_version.py"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+transformers = "^4.7.0"
+pyknp = "^0.6.1"
+sentencepiece = "^0.1.96"
+spcacy = "^3.2.0"
+SudachiTra = "^0.1.7"
+
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+mypy = "^0.971"
+pytest = "^7.1.2"
+
+
+[tool.black]
+skip-magic-trailing-comma = true
+
+[tool.isort]
+profile = 'black'
+force_single_line = true
+
+[tool.mypy]
+disallow_untyped_defs = true
+ignore_missing_imports = true
