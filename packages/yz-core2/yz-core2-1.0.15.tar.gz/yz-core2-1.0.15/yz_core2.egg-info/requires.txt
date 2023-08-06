@@ -1,0 +1,15 @@
+fastapi>=0.68.1
+uvicorn>0.13
+yzrpc>=0.1
+
+[oss-aliyun]
+oss2!=3.0.0,>=2.13.1
+
+[oss-aws]
+boto3==1.17.27
+
+[oss-huawei]
+esdk-obs-python>=3.22.2
+
+[rpc]
+yzrpc>=0.1
