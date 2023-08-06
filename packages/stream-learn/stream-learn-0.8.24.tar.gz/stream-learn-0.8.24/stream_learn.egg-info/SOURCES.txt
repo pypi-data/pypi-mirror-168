@@ -1,0 +1,2352 @@
+.coveralls.yml
+.gitignore
+.nojekyll
+.readthedocs.yaml
+LICENSE
+Makefile
+README.md
+pytest.ini
+references_ensembles.bib
+references_evaluators.bib
+requirements.txt
+setup.cfg
+setup.py
+.github/workflows/codeql-analysis.yml
+_vapor/drift_plotter 2.py
+_vapor/drift_plotter.py
+_vapor/same_stream 2.py
+_vapor/same_stream.py
+_vapor/stream_animator 2.py
+_vapor/stream_animator.py
+_vapor/test 2.py
+_vapor/test.py
+docs/Makefile
+docs/make.bat
+docs/source/about.rst
+docs/source/classifiers_api.rst
+docs/source/classifiers_guide.rst
+docs/source/conf.py
+docs/source/ensembles_api.rst
+docs/source/ensembles_guide.rst
+docs/source/evaluators_api.rst
+docs/source/evaluators_guide.rst
+docs/source/index.rst
+docs/source/metrics_api.rst
+docs/source/quickstart.rst
+docs/source/references_ensembles.bib
+docs/source/references_evaluators.bib
+docs/source/streams_api.rst
+docs/source/streams_guide.rst
+docs/source/utils_api.rst
+docs/source/_static/disco.gif
+docs/source/_static/disco.png
+docs/source/_static/dynamic-imbalanced.gif
+docs/source/_static/dynamic-imbalanced.png
+docs/source/_static/gradual.gif
+docs/source/_static/gradual.png
+docs/source/_static/incremental.gif
+docs/source/_static/incremental.png
+docs/source/_static/logo.png
+docs/source/_static/nonrecurring.gif
+docs/source/_static/nonrecurring.png
+docs/source/_static/recurring.gif
+docs/source/_static/recurring.png
+docs/source/_static/simplest.png
+docs/source/_static/static-imbalanced.gif
+docs/source/_static/static-imbalanced.png
+docs/source/_static/stationary.gif
+docs/source/_static/stationary.png
+docs/source/_static/sudden.gif
+docs/source/_static/sudden.png
+docs/source/plots/0_stationary.gif
+docs/source/plots/0_stationary.png
+docs/source/plots/1_sudden.gif
+docs/source/plots/1_sudden.png
+docs/source/plots/2_gradual.png
+docs/source/plots/2_incremental.gif
+docs/source/plots/3_gradual.gif
+docs/source/plots/3_incremental.png
+docs/source/plots/4_reocurring.gif
+docs/source/plots/4_reocurring.png
+docs/source/plots/5_nonreocurring.gif
+docs/source/plots/5_nonreocurring.png
+docs/source/plots/6_balanced.gif
+docs/source/plots/6_balanced.png
+docs/source/plots/7_static_imbalanced.gif
+docs/source/plots/7_static_imbalanced.png
+docs/source/plots/8_dynamic_imbalanced.gif
+docs/source/plots/8_dynamic_imbalanced.png
+docs/source/plots/9_disco.gif
+docs/source/plots/9_disco.png
+docs/source/plots/9_first.png
+docs/source/plots/9_second.png
+docs/source/plots/confusion_matrix.png
+docs/source/plots/cummean.png
+docs/source/plots/ensemble.png
+docs/source/plots/evaluators_pr.png
+docs/source/plots/evaluators_ttt.png
+docs/source/plots/fliptest.png
+docs/source/plots/fliptest_0.png
+docs/source/plots/fliptest_1.png
+docs/source/plots/hello.gif
+docs/source/plots/keyframes/0_stationary-000.png
+docs/source/plots/keyframes/0_stationary-001.png
+docs/source/plots/keyframes/0_stationary-002.png
+docs/source/plots/keyframes/0_stationary-003.png
+docs/source/plots/keyframes/0_stationary-004.png
+docs/source/plots/keyframes/0_stationary-005.png
+docs/source/plots/keyframes/0_stationary-006.png
+docs/source/plots/keyframes/0_stationary-007.png
+docs/source/plots/keyframes/0_stationary-008.png
+docs/source/plots/keyframes/0_stationary-009.png
+docs/source/plots/keyframes/0_stationary-010.png
+docs/source/plots/keyframes/0_stationary-011.png
+docs/source/plots/keyframes/0_stationary-012.png
+docs/source/plots/keyframes/0_stationary-013.png
+docs/source/plots/keyframes/0_stationary-014.png
+docs/source/plots/keyframes/0_stationary-015.png
+docs/source/plots/keyframes/0_stationary-016.png
+docs/source/plots/keyframes/0_stationary-017.png
+docs/source/plots/keyframes/0_stationary-018.png
+docs/source/plots/keyframes/0_stationary-019.png
+docs/source/plots/keyframes/0_stationary-020.png
+docs/source/plots/keyframes/0_stationary-021.png
+docs/source/plots/keyframes/0_stationary-022.png
+docs/source/plots/keyframes/0_stationary-023.png
+docs/source/plots/keyframes/0_stationary-024.png
+docs/source/plots/keyframes/0_stationary-025.png
+docs/source/plots/keyframes/0_stationary-026.png
+docs/source/plots/keyframes/0_stationary-027.png
+docs/source/plots/keyframes/0_stationary-028.png
+docs/source/plots/keyframes/0_stationary-029.png
+docs/source/plots/keyframes/0_stationary-030.png
+docs/source/plots/keyframes/0_stationary-031.png
+docs/source/plots/keyframes/0_stationary-032.png
+docs/source/plots/keyframes/0_stationary-033.png
+docs/source/plots/keyframes/0_stationary-034.png
+docs/source/plots/keyframes/0_stationary-035.png
+docs/source/plots/keyframes/0_stationary-036.png
+docs/source/plots/keyframes/0_stationary-037.png
+docs/source/plots/keyframes/0_stationary-038.png
+docs/source/plots/keyframes/0_stationary-039.png
+docs/source/plots/keyframes/0_stationary-040.png
+docs/source/plots/keyframes/0_stationary-041.png
+docs/source/plots/keyframes/0_stationary-042.png
+docs/source/plots/keyframes/0_stationary-043.png
+docs/source/plots/keyframes/0_stationary-044.png
+docs/source/plots/keyframes/0_stationary-045.png
+docs/source/plots/keyframes/0_stationary-046.png
+docs/source/plots/keyframes/0_stationary-047.png
+docs/source/plots/keyframes/0_stationary-048.png
+docs/source/plots/keyframes/0_stationary-049.png
+docs/source/plots/keyframes/0_stationary-050.png
+docs/source/plots/keyframes/0_stationary-051.png
+docs/source/plots/keyframes/0_stationary-052.png
+docs/source/plots/keyframes/0_stationary-053.png
+docs/source/plots/keyframes/0_stationary-054.png
+docs/source/plots/keyframes/0_stationary-055.png
+docs/source/plots/keyframes/0_stationary-056.png
+docs/source/plots/keyframes/0_stationary-057.png
+docs/source/plots/keyframes/0_stationary-058.png
+docs/source/plots/keyframes/0_stationary-059.png
+docs/source/plots/keyframes/0_stationary-060.png
+docs/source/plots/keyframes/0_stationary-061.png
+docs/source/plots/keyframes/0_stationary-062.png
+docs/source/plots/keyframes/0_stationary-063.png
+docs/source/plots/keyframes/0_stationary-064.png
+docs/source/plots/keyframes/0_stationary-065.png
+docs/source/plots/keyframes/0_stationary-066.png
+docs/source/plots/keyframes/0_stationary-067.png
+docs/source/plots/keyframes/0_stationary-068.png
+docs/source/plots/keyframes/0_stationary-069.png
+docs/source/plots/keyframes/0_stationary-070.png
+docs/source/plots/keyframes/0_stationary-071.png
+docs/source/plots/keyframes/0_stationary-072.png
+docs/source/plots/keyframes/0_stationary-073.png
+docs/source/plots/keyframes/0_stationary-074.png
+docs/source/plots/keyframes/0_stationary-075.png
+docs/source/plots/keyframes/0_stationary-076.png
+docs/source/plots/keyframes/0_stationary-077.png
+docs/source/plots/keyframes/0_stationary-078.png
+docs/source/plots/keyframes/0_stationary-079.png
+docs/source/plots/keyframes/0_stationary-080.png
+docs/source/plots/keyframes/0_stationary-081.png
+docs/source/plots/keyframes/0_stationary-082.png
+docs/source/plots/keyframes/0_stationary-083.png
+docs/source/plots/keyframes/0_stationary-084.png
+docs/source/plots/keyframes/0_stationary-085.png
+docs/source/plots/keyframes/0_stationary-086 2.png
+docs/source/plots/keyframes/0_stationary-086.png
+docs/source/plots/keyframes/0_stationary-087 2.png
+docs/source/plots/keyframes/0_stationary-087.png
+docs/source/plots/keyframes/0_stationary-088 2.png
+docs/source/plots/keyframes/0_stationary-088.png
+docs/source/plots/keyframes/0_stationary-089 2.png
+docs/source/plots/keyframes/0_stationary-089.png
+docs/source/plots/keyframes/0_stationary-090 2.png
+docs/source/plots/keyframes/0_stationary-090.png
+docs/source/plots/keyframes/0_stationary-091 2.png
+docs/source/plots/keyframes/0_stationary-091.png
+docs/source/plots/keyframes/0_stationary-092 2.png
+docs/source/plots/keyframes/0_stationary-092.png
+docs/source/plots/keyframes/0_stationary-093 2.png
+docs/source/plots/keyframes/0_stationary-093.png
+docs/source/plots/keyframes/0_stationary-094 2.png
+docs/source/plots/keyframes/0_stationary-094.png
+docs/source/plots/keyframes/0_stationary-095 2.png
+docs/source/plots/keyframes/0_stationary-095.png
+docs/source/plots/keyframes/0_stationary-096 2.png
+docs/source/plots/keyframes/0_stationary-096.png
+docs/source/plots/keyframes/0_stationary-097 2.png
+docs/source/plots/keyframes/0_stationary-097.png
+docs/source/plots/keyframes/0_stationary-098 2.png
+docs/source/plots/keyframes/0_stationary-098.png
+docs/source/plots/keyframes/0_stationary-099 2.png
+docs/source/plots/keyframes/0_stationary-099.png
+docs/source/plots/keyframes/1_sudden-000 2.png
+docs/source/plots/keyframes/1_sudden-000.png
+docs/source/plots/keyframes/1_sudden-001 2.png
+docs/source/plots/keyframes/1_sudden-001.png
+docs/source/plots/keyframes/1_sudden-002 2.png
+docs/source/plots/keyframes/1_sudden-002.png
+docs/source/plots/keyframes/1_sudden-003 2.png
+docs/source/plots/keyframes/1_sudden-003.png
+docs/source/plots/keyframes/1_sudden-004 2.png
+docs/source/plots/keyframes/1_sudden-004.png
+docs/source/plots/keyframes/1_sudden-005 2.png
+docs/source/plots/keyframes/1_sudden-005.png
+docs/source/plots/keyframes/1_sudden-006 2.png
+docs/source/plots/keyframes/1_sudden-006.png
+docs/source/plots/keyframes/1_sudden-007 2.png
+docs/source/plots/keyframes/1_sudden-007.png
+docs/source/plots/keyframes/1_sudden-008 2.png
+docs/source/plots/keyframes/1_sudden-008.png
+docs/source/plots/keyframes/1_sudden-009 2.png
+docs/source/plots/keyframes/1_sudden-009.png
+docs/source/plots/keyframes/1_sudden-010 2.png
+docs/source/plots/keyframes/1_sudden-010.png
+docs/source/plots/keyframes/1_sudden-011 2.png
+docs/source/plots/keyframes/1_sudden-011.png
+docs/source/plots/keyframes/1_sudden-012 2.png
+docs/source/plots/keyframes/1_sudden-012.png
+docs/source/plots/keyframes/1_sudden-013 2.png
+docs/source/plots/keyframes/1_sudden-013.png
+docs/source/plots/keyframes/1_sudden-014 2.png
+docs/source/plots/keyframes/1_sudden-014.png
+docs/source/plots/keyframes/1_sudden-015 2.png
+docs/source/plots/keyframes/1_sudden-015.png
+docs/source/plots/keyframes/1_sudden-016 2.png
+docs/source/plots/keyframes/1_sudden-016.png
+docs/source/plots/keyframes/1_sudden-017 2.png
+docs/source/plots/keyframes/1_sudden-017.png
+docs/source/plots/keyframes/1_sudden-018 2.png
+docs/source/plots/keyframes/1_sudden-018.png
+docs/source/plots/keyframes/1_sudden-019 2.png
+docs/source/plots/keyframes/1_sudden-019.png
+docs/source/plots/keyframes/1_sudden-020 2.png
+docs/source/plots/keyframes/1_sudden-020.png
+docs/source/plots/keyframes/1_sudden-021 2.png
+docs/source/plots/keyframes/1_sudden-021.png
+docs/source/plots/keyframes/1_sudden-022 2.png
+docs/source/plots/keyframes/1_sudden-022.png
+docs/source/plots/keyframes/1_sudden-023 2.png
+docs/source/plots/keyframes/1_sudden-023.png
+docs/source/plots/keyframes/1_sudden-024 2.png
+docs/source/plots/keyframes/1_sudden-024.png
+docs/source/plots/keyframes/1_sudden-025 2.png
+docs/source/plots/keyframes/1_sudden-025.png
+docs/source/plots/keyframes/1_sudden-026 2.png
+docs/source/plots/keyframes/1_sudden-026.png
+docs/source/plots/keyframes/1_sudden-027 2.png
+docs/source/plots/keyframes/1_sudden-027.png
+docs/source/plots/keyframes/1_sudden-028 2.png
+docs/source/plots/keyframes/1_sudden-028.png
+docs/source/plots/keyframes/1_sudden-029 2.png
+docs/source/plots/keyframes/1_sudden-029.png
+docs/source/plots/keyframes/1_sudden-030 2.png
+docs/source/plots/keyframes/1_sudden-030.png
+docs/source/plots/keyframes/1_sudden-031 2.png
+docs/source/plots/keyframes/1_sudden-031.png
+docs/source/plots/keyframes/1_sudden-032 2.png
+docs/source/plots/keyframes/1_sudden-032.png
+docs/source/plots/keyframes/1_sudden-033 2.png
+docs/source/plots/keyframes/1_sudden-033.png
+docs/source/plots/keyframes/1_sudden-034 2.png
+docs/source/plots/keyframes/1_sudden-034.png
+docs/source/plots/keyframes/1_sudden-035 2.png
+docs/source/plots/keyframes/1_sudden-035.png
+docs/source/plots/keyframes/1_sudden-036 2.png
+docs/source/plots/keyframes/1_sudden-036.png
+docs/source/plots/keyframes/1_sudden-037 2.png
+docs/source/plots/keyframes/1_sudden-037.png
+docs/source/plots/keyframes/1_sudden-038 2.png
+docs/source/plots/keyframes/1_sudden-038.png
+docs/source/plots/keyframes/1_sudden-039 2.png
+docs/source/plots/keyframes/1_sudden-039.png
+docs/source/plots/keyframes/1_sudden-040 2.png
+docs/source/plots/keyframes/1_sudden-040.png
+docs/source/plots/keyframes/1_sudden-041 2.png
+docs/source/plots/keyframes/1_sudden-041.png
+docs/source/plots/keyframes/1_sudden-042 2.png
+docs/source/plots/keyframes/1_sudden-042.png
+docs/source/plots/keyframes/1_sudden-043 2.png
+docs/source/plots/keyframes/1_sudden-043.png
+docs/source/plots/keyframes/1_sudden-044 2.png
+docs/source/plots/keyframes/1_sudden-044.png
+docs/source/plots/keyframes/1_sudden-045 2.png
+docs/source/plots/keyframes/1_sudden-045.png
+docs/source/plots/keyframes/1_sudden-046 2.png
+docs/source/plots/keyframes/1_sudden-046.png
+docs/source/plots/keyframes/1_sudden-047 2.png
+docs/source/plots/keyframes/1_sudden-047.png
+docs/source/plots/keyframes/1_sudden-048 2.png
+docs/source/plots/keyframes/1_sudden-048.png
+docs/source/plots/keyframes/1_sudden-049 2.png
+docs/source/plots/keyframes/1_sudden-049.png
+docs/source/plots/keyframes/1_sudden-050 2.png
+docs/source/plots/keyframes/1_sudden-050.png
+docs/source/plots/keyframes/1_sudden-051 2.png
+docs/source/plots/keyframes/1_sudden-051.png
+docs/source/plots/keyframes/1_sudden-052 2.png
+docs/source/plots/keyframes/1_sudden-052.png
+docs/source/plots/keyframes/1_sudden-053 2.png
+docs/source/plots/keyframes/1_sudden-053.png
+docs/source/plots/keyframes/1_sudden-054 2.png
+docs/source/plots/keyframes/1_sudden-054.png
+docs/source/plots/keyframes/1_sudden-055 2.png
+docs/source/plots/keyframes/1_sudden-055.png
+docs/source/plots/keyframes/1_sudden-056 2.png
+docs/source/plots/keyframes/1_sudden-056.png
+docs/source/plots/keyframes/1_sudden-057 2.png
+docs/source/plots/keyframes/1_sudden-057.png
+docs/source/plots/keyframes/1_sudden-058 2.png
+docs/source/plots/keyframes/1_sudden-058.png
+docs/source/plots/keyframes/1_sudden-059 2.png
+docs/source/plots/keyframes/1_sudden-059.png
+docs/source/plots/keyframes/1_sudden-060 2.png
+docs/source/plots/keyframes/1_sudden-060.png
+docs/source/plots/keyframes/1_sudden-061 2.png
+docs/source/plots/keyframes/1_sudden-061.png
+docs/source/plots/keyframes/1_sudden-062 2.png
+docs/source/plots/keyframes/1_sudden-062.png
+docs/source/plots/keyframes/1_sudden-063 2.png
+docs/source/plots/keyframes/1_sudden-063.png
+docs/source/plots/keyframes/1_sudden-064 2.png
+docs/source/plots/keyframes/1_sudden-064.png
+docs/source/plots/keyframes/1_sudden-065 2.png
+docs/source/plots/keyframes/1_sudden-065.png
+docs/source/plots/keyframes/1_sudden-066 2.png
+docs/source/plots/keyframes/1_sudden-066.png
+docs/source/plots/keyframes/1_sudden-067 2.png
+docs/source/plots/keyframes/1_sudden-067.png
+docs/source/plots/keyframes/1_sudden-068 2.png
+docs/source/plots/keyframes/1_sudden-068.png
+docs/source/plots/keyframes/1_sudden-069 2.png
+docs/source/plots/keyframes/1_sudden-069.png
+docs/source/plots/keyframes/1_sudden-070 2.png
+docs/source/plots/keyframes/1_sudden-070.png
+docs/source/plots/keyframes/1_sudden-071 2.png
+docs/source/plots/keyframes/1_sudden-071.png
+docs/source/plots/keyframes/1_sudden-072 2.png
+docs/source/plots/keyframes/1_sudden-072.png
+docs/source/plots/keyframes/1_sudden-073 2.png
+docs/source/plots/keyframes/1_sudden-073.png
+docs/source/plots/keyframes/1_sudden-074 2.png
+docs/source/plots/keyframes/1_sudden-074.png
+docs/source/plots/keyframes/1_sudden-075 2.png
+docs/source/plots/keyframes/1_sudden-075.png
+docs/source/plots/keyframes/1_sudden-076 2.png
+docs/source/plots/keyframes/1_sudden-076.png
+docs/source/plots/keyframes/1_sudden-077 2.png
+docs/source/plots/keyframes/1_sudden-077.png
+docs/source/plots/keyframes/1_sudden-078 2.png
+docs/source/plots/keyframes/1_sudden-078.png
+docs/source/plots/keyframes/1_sudden-079 2.png
+docs/source/plots/keyframes/1_sudden-079.png
+docs/source/plots/keyframes/1_sudden-080 2.png
+docs/source/plots/keyframes/1_sudden-080.png
+docs/source/plots/keyframes/1_sudden-081 2.png
+docs/source/plots/keyframes/1_sudden-081.png
+docs/source/plots/keyframes/1_sudden-082 2.png
+docs/source/plots/keyframes/1_sudden-082.png
+docs/source/plots/keyframes/1_sudden-083 2.png
+docs/source/plots/keyframes/1_sudden-083.png
+docs/source/plots/keyframes/1_sudden-084 2.png
+docs/source/plots/keyframes/1_sudden-084.png
+docs/source/plots/keyframes/1_sudden-085 2.png
+docs/source/plots/keyframes/1_sudden-085.png
+docs/source/plots/keyframes/1_sudden-086 2.png
+docs/source/plots/keyframes/1_sudden-086.png
+docs/source/plots/keyframes/1_sudden-087 2.png
+docs/source/plots/keyframes/1_sudden-087.png
+docs/source/plots/keyframes/1_sudden-088 2.png
+docs/source/plots/keyframes/1_sudden-088.png
+docs/source/plots/keyframes/1_sudden-089 2.png
+docs/source/plots/keyframes/1_sudden-089.png
+docs/source/plots/keyframes/1_sudden-090 2.png
+docs/source/plots/keyframes/1_sudden-090.png
+docs/source/plots/keyframes/1_sudden-091 2.png
+docs/source/plots/keyframes/1_sudden-091.png
+docs/source/plots/keyframes/1_sudden-092 2.png
+docs/source/plots/keyframes/1_sudden-092.png
+docs/source/plots/keyframes/1_sudden-093 2.png
+docs/source/plots/keyframes/1_sudden-093.png
+docs/source/plots/keyframes/1_sudden-094 2.png
+docs/source/plots/keyframes/1_sudden-094.png
+docs/source/plots/keyframes/1_sudden-095 2.png
+docs/source/plots/keyframes/1_sudden-095.png
+docs/source/plots/keyframes/1_sudden-096 2.png
+docs/source/plots/keyframes/1_sudden-096.png
+docs/source/plots/keyframes/1_sudden-097 2.png
+docs/source/plots/keyframes/1_sudden-097.png
+docs/source/plots/keyframes/1_sudden-098 2.png
+docs/source/plots/keyframes/1_sudden-098.png
+docs/source/plots/keyframes/1_sudden-099 2.png
+docs/source/plots/keyframes/1_sudden-099.png
+docs/source/plots/keyframes/2_gradual-000 2.png
+docs/source/plots/keyframes/2_gradual-000.png
+docs/source/plots/keyframes/2_gradual-001 2.png
+docs/source/plots/keyframes/2_gradual-001.png
+docs/source/plots/keyframes/2_gradual-002 2.png
+docs/source/plots/keyframes/2_gradual-002.png
+docs/source/plots/keyframes/2_gradual-003 2.png
+docs/source/plots/keyframes/2_gradual-003.png
+docs/source/plots/keyframes/2_gradual-004 2.png
+docs/source/plots/keyframes/2_gradual-004.png
+docs/source/plots/keyframes/2_gradual-005 2.png
+docs/source/plots/keyframes/2_gradual-005.png
+docs/source/plots/keyframes/2_gradual-006 2.png
+docs/source/plots/keyframes/2_gradual-006.png
+docs/source/plots/keyframes/2_gradual-007 2.png
+docs/source/plots/keyframes/2_gradual-007.png
+docs/source/plots/keyframes/2_gradual-008 2.png
+docs/source/plots/keyframes/2_gradual-008.png
+docs/source/plots/keyframes/2_gradual-009 2.png
+docs/source/plots/keyframes/2_gradual-009.png
+docs/source/plots/keyframes/2_gradual-010 2.png
+docs/source/plots/keyframes/2_gradual-010.png
+docs/source/plots/keyframes/2_gradual-011 2.png
+docs/source/plots/keyframes/2_gradual-011.png
+docs/source/plots/keyframes/2_gradual-012 2.png
+docs/source/plots/keyframes/2_gradual-012.png
+docs/source/plots/keyframes/2_gradual-013 2.png
+docs/source/plots/keyframes/2_gradual-013.png
+docs/source/plots/keyframes/2_gradual-014 2.png
+docs/source/plots/keyframes/2_gradual-014.png
+docs/source/plots/keyframes/2_gradual-015 2.png
+docs/source/plots/keyframes/2_gradual-015.png
+docs/source/plots/keyframes/2_gradual-016 2.png
+docs/source/plots/keyframes/2_gradual-016.png
+docs/source/plots/keyframes/2_gradual-017 2.png
+docs/source/plots/keyframes/2_gradual-017.png
+docs/source/plots/keyframes/2_gradual-018 2.png
+docs/source/plots/keyframes/2_gradual-018.png
+docs/source/plots/keyframes/2_gradual-019 2.png
+docs/source/plots/keyframes/2_gradual-019.png
+docs/source/plots/keyframes/2_gradual-020 2.png
+docs/source/plots/keyframes/2_gradual-020.png
+docs/source/plots/keyframes/2_gradual-021 2.png
+docs/source/plots/keyframes/2_gradual-021.png
+docs/source/plots/keyframes/2_gradual-022 2.png
+docs/source/plots/keyframes/2_gradual-022.png
+docs/source/plots/keyframes/2_gradual-023 2.png
+docs/source/plots/keyframes/2_gradual-023.png
+docs/source/plots/keyframes/2_gradual-024 2.png
+docs/source/plots/keyframes/2_gradual-024.png
+docs/source/plots/keyframes/2_gradual-025 2.png
+docs/source/plots/keyframes/2_gradual-025.png
+docs/source/plots/keyframes/2_gradual-026 2.png
+docs/source/plots/keyframes/2_gradual-026.png
+docs/source/plots/keyframes/2_gradual-027 2.png
+docs/source/plots/keyframes/2_gradual-027.png
+docs/source/plots/keyframes/2_gradual-028 2.png
+docs/source/plots/keyframes/2_gradual-028.png
+docs/source/plots/keyframes/2_gradual-029 2.png
+docs/source/plots/keyframes/2_gradual-029.png
+docs/source/plots/keyframes/2_gradual-030 2.png
+docs/source/plots/keyframes/2_gradual-030.png
+docs/source/plots/keyframes/2_gradual-031 2.png
+docs/source/plots/keyframes/2_gradual-031.png
+docs/source/plots/keyframes/2_gradual-032 2.png
+docs/source/plots/keyframes/2_gradual-032.png
+docs/source/plots/keyframes/2_gradual-033 2.png
+docs/source/plots/keyframes/2_gradual-033.png
+docs/source/plots/keyframes/2_gradual-034 2.png
+docs/source/plots/keyframes/2_gradual-034.png
+docs/source/plots/keyframes/2_gradual-035 2.png
+docs/source/plots/keyframes/2_gradual-035.png
+docs/source/plots/keyframes/2_gradual-036 2.png
+docs/source/plots/keyframes/2_gradual-036.png
+docs/source/plots/keyframes/2_gradual-037 2.png
+docs/source/plots/keyframes/2_gradual-037.png
+docs/source/plots/keyframes/2_gradual-038 2.png
+docs/source/plots/keyframes/2_gradual-038.png
+docs/source/plots/keyframes/2_gradual-039 2.png
+docs/source/plots/keyframes/2_gradual-039.png
+docs/source/plots/keyframes/2_gradual-040 2.png
+docs/source/plots/keyframes/2_gradual-040.png
+docs/source/plots/keyframes/2_gradual-041 2.png
+docs/source/plots/keyframes/2_gradual-041.png
+docs/source/plots/keyframes/2_gradual-042 2.png
+docs/source/plots/keyframes/2_gradual-042.png
+docs/source/plots/keyframes/2_gradual-043 2.png
+docs/source/plots/keyframes/2_gradual-043.png
+docs/source/plots/keyframes/2_gradual-044 2.png
+docs/source/plots/keyframes/2_gradual-044.png
+docs/source/plots/keyframes/2_gradual-045 2.png
+docs/source/plots/keyframes/2_gradual-045.png
+docs/source/plots/keyframes/2_gradual-046 2.png
+docs/source/plots/keyframes/2_gradual-046.png
+docs/source/plots/keyframes/2_gradual-047 2.png
+docs/source/plots/keyframes/2_gradual-047.png
+docs/source/plots/keyframes/2_gradual-048 2.png
+docs/source/plots/keyframes/2_gradual-048.png
+docs/source/plots/keyframes/2_gradual-049 2.png
+docs/source/plots/keyframes/2_gradual-049.png
+docs/source/plots/keyframes/2_gradual-050 2.png
+docs/source/plots/keyframes/2_gradual-050.png
+docs/source/plots/keyframes/2_gradual-051 2.png
+docs/source/plots/keyframes/2_gradual-051.png
+docs/source/plots/keyframes/2_gradual-052 2.png
+docs/source/plots/keyframes/2_gradual-052.png
+docs/source/plots/keyframes/2_gradual-053 2.png
+docs/source/plots/keyframes/2_gradual-053.png
+docs/source/plots/keyframes/2_gradual-054 2.png
+docs/source/plots/keyframes/2_gradual-054.png
+docs/source/plots/keyframes/2_gradual-055 2.png
+docs/source/plots/keyframes/2_gradual-055.png
+docs/source/plots/keyframes/2_gradual-056 2.png
+docs/source/plots/keyframes/2_gradual-056.png
+docs/source/plots/keyframes/2_gradual-057 2.png
+docs/source/plots/keyframes/2_gradual-057.png
+docs/source/plots/keyframes/2_gradual-058 2.png
+docs/source/plots/keyframes/2_gradual-058.png
+docs/source/plots/keyframes/2_gradual-059 2.png
+docs/source/plots/keyframes/2_gradual-059.png
+docs/source/plots/keyframes/2_gradual-060 2.png
+docs/source/plots/keyframes/2_gradual-060.png
+docs/source/plots/keyframes/2_gradual-061 2.png
+docs/source/plots/keyframes/2_gradual-061.png
+docs/source/plots/keyframes/2_gradual-062 2.png
+docs/source/plots/keyframes/2_gradual-062.png
+docs/source/plots/keyframes/2_gradual-063 2.png
+docs/source/plots/keyframes/2_gradual-063.png
+docs/source/plots/keyframes/2_gradual-064 2.png
+docs/source/plots/keyframes/2_gradual-064.png
+docs/source/plots/keyframes/2_gradual-065 2.png
+docs/source/plots/keyframes/2_gradual-065.png
+docs/source/plots/keyframes/2_gradual-066 2.png
+docs/source/plots/keyframes/2_gradual-066.png
+docs/source/plots/keyframes/2_gradual-067 2.png
+docs/source/plots/keyframes/2_gradual-067.png
+docs/source/plots/keyframes/2_gradual-068 2.png
+docs/source/plots/keyframes/2_gradual-068.png
+docs/source/plots/keyframes/2_gradual-069 2.png
+docs/source/plots/keyframes/2_gradual-069.png
+docs/source/plots/keyframes/2_gradual-070 2.png
+docs/source/plots/keyframes/2_gradual-070.png
+docs/source/plots/keyframes/2_gradual-071 2.png
+docs/source/plots/keyframes/2_gradual-071.png
+docs/source/plots/keyframes/2_gradual-072 2.png
+docs/source/plots/keyframes/2_gradual-072.png
+docs/source/plots/keyframes/2_gradual-073 2.png
+docs/source/plots/keyframes/2_gradual-073.png
+docs/source/plots/keyframes/2_gradual-074 2.png
+docs/source/plots/keyframes/2_gradual-074.png
+docs/source/plots/keyframes/2_gradual-075 2.png
+docs/source/plots/keyframes/2_gradual-075.png
+docs/source/plots/keyframes/2_gradual-076 2.png
+docs/source/plots/keyframes/2_gradual-076.png
+docs/source/plots/keyframes/2_gradual-077 2.png
+docs/source/plots/keyframes/2_gradual-077.png
+docs/source/plots/keyframes/2_gradual-078 2.png
+docs/source/plots/keyframes/2_gradual-078.png
+docs/source/plots/keyframes/2_gradual-079 2.png
+docs/source/plots/keyframes/2_gradual-079.png
+docs/source/plots/keyframes/2_gradual-080 2.png
+docs/source/plots/keyframes/2_gradual-080.png
+docs/source/plots/keyframes/2_gradual-081 2.png
+docs/source/plots/keyframes/2_gradual-081.png
+docs/source/plots/keyframes/2_gradual-082 2.png
+docs/source/plots/keyframes/2_gradual-082.png
+docs/source/plots/keyframes/2_gradual-083 2.png
+docs/source/plots/keyframes/2_gradual-083.png
+docs/source/plots/keyframes/2_gradual-084 2.png
+docs/source/plots/keyframes/2_gradual-084.png
+docs/source/plots/keyframes/2_gradual-085 2.png
+docs/source/plots/keyframes/2_gradual-085.png
+docs/source/plots/keyframes/2_gradual-086 2.png
+docs/source/plots/keyframes/2_gradual-086.png
+docs/source/plots/keyframes/2_gradual-087 2.png
+docs/source/plots/keyframes/2_gradual-087.png
+docs/source/plots/keyframes/2_gradual-088 2.png
+docs/source/plots/keyframes/2_gradual-088.png
+docs/source/plots/keyframes/2_gradual-089 2.png
+docs/source/plots/keyframes/2_gradual-089.png
+docs/source/plots/keyframes/2_gradual-090 2.png
+docs/source/plots/keyframes/2_gradual-090.png
+docs/source/plots/keyframes/2_gradual-091 2.png
+docs/source/plots/keyframes/2_gradual-091.png
+docs/source/plots/keyframes/2_gradual-092 2.png
+docs/source/plots/keyframes/2_gradual-092.png
+docs/source/plots/keyframes/2_gradual-093 2.png
+docs/source/plots/keyframes/2_gradual-093.png
+docs/source/plots/keyframes/2_gradual-094 2.png
+docs/source/plots/keyframes/2_gradual-094.png
+docs/source/plots/keyframes/2_gradual-095 2.png
+docs/source/plots/keyframes/2_gradual-095.png
+docs/source/plots/keyframes/2_gradual-096 2.png
+docs/source/plots/keyframes/2_gradual-096.png
+docs/source/plots/keyframes/2_gradual-097 2.png
+docs/source/plots/keyframes/2_gradual-097.png
+docs/source/plots/keyframes/2_gradual-098 2.png
+docs/source/plots/keyframes/2_gradual-098.png
+docs/source/plots/keyframes/2_gradual-099 2.png
+docs/source/plots/keyframes/2_gradual-099.png
+docs/source/plots/keyframes/2_incremental-000 2.png
+docs/source/plots/keyframes/2_incremental-000.png
+docs/source/plots/keyframes/2_incremental-001 2.png
+docs/source/plots/keyframes/2_incremental-001.png
+docs/source/plots/keyframes/2_incremental-002 2.png
+docs/source/plots/keyframes/2_incremental-002.png
+docs/source/plots/keyframes/2_incremental-003 2.png
+docs/source/plots/keyframes/2_incremental-003.png
+docs/source/plots/keyframes/2_incremental-004 2.png
+docs/source/plots/keyframes/2_incremental-004.png
+docs/source/plots/keyframes/2_incremental-005 2.png
+docs/source/plots/keyframes/2_incremental-005.png
+docs/source/plots/keyframes/2_incremental-006 2.png
+docs/source/plots/keyframes/2_incremental-006.png
+docs/source/plots/keyframes/2_incremental-007 2.png
+docs/source/plots/keyframes/2_incremental-007.png
+docs/source/plots/keyframes/2_incremental-008 2.png
+docs/source/plots/keyframes/2_incremental-008.png
+docs/source/plots/keyframes/2_incremental-009 2.png
+docs/source/plots/keyframes/2_incremental-009.png
+docs/source/plots/keyframes/2_incremental-010 2.png
+docs/source/plots/keyframes/2_incremental-010.png
+docs/source/plots/keyframes/2_incremental-011 2.png
+docs/source/plots/keyframes/2_incremental-011.png
+docs/source/plots/keyframes/2_incremental-012 2.png
+docs/source/plots/keyframes/2_incremental-012.png
+docs/source/plots/keyframes/2_incremental-013 2.png
+docs/source/plots/keyframes/2_incremental-013.png
+docs/source/plots/keyframes/2_incremental-014 2.png
+docs/source/plots/keyframes/2_incremental-014.png
+docs/source/plots/keyframes/2_incremental-015 2.png
+docs/source/plots/keyframes/2_incremental-015.png
+docs/source/plots/keyframes/2_incremental-016 2.png
+docs/source/plots/keyframes/2_incremental-016.png
+docs/source/plots/keyframes/2_incremental-017 2.png
+docs/source/plots/keyframes/2_incremental-017.png
+docs/source/plots/keyframes/2_incremental-018 2.png
+docs/source/plots/keyframes/2_incremental-018.png
+docs/source/plots/keyframes/2_incremental-019 2.png
+docs/source/plots/keyframes/2_incremental-019.png
+docs/source/plots/keyframes/2_incremental-020 2.png
+docs/source/plots/keyframes/2_incremental-020.png
+docs/source/plots/keyframes/2_incremental-021 2.png
+docs/source/plots/keyframes/2_incremental-021.png
+docs/source/plots/keyframes/2_incremental-022 2.png
+docs/source/plots/keyframes/2_incremental-022.png
+docs/source/plots/keyframes/2_incremental-023 2.png
+docs/source/plots/keyframes/2_incremental-023.png
+docs/source/plots/keyframes/2_incremental-024 2.png
+docs/source/plots/keyframes/2_incremental-024.png
+docs/source/plots/keyframes/2_incremental-025 2.png
+docs/source/plots/keyframes/2_incremental-025.png
+docs/source/plots/keyframes/2_incremental-026 2.png
+docs/source/plots/keyframes/2_incremental-026.png
+docs/source/plots/keyframes/2_incremental-027 2.png
+docs/source/plots/keyframes/2_incremental-027.png
+docs/source/plots/keyframes/2_incremental-028 2.png
+docs/source/plots/keyframes/2_incremental-028.png
+docs/source/plots/keyframes/2_incremental-029 2.png
+docs/source/plots/keyframes/2_incremental-029.png
+docs/source/plots/keyframes/2_incremental-030 2.png
+docs/source/plots/keyframes/2_incremental-030.png
+docs/source/plots/keyframes/2_incremental-031 2.png
+docs/source/plots/keyframes/2_incremental-031.png
+docs/source/plots/keyframes/2_incremental-032 2.png
+docs/source/plots/keyframes/2_incremental-032.png
+docs/source/plots/keyframes/2_incremental-033 2.png
+docs/source/plots/keyframes/2_incremental-033.png
+docs/source/plots/keyframes/2_incremental-034 2.png
+docs/source/plots/keyframes/2_incremental-034.png
+docs/source/plots/keyframes/2_incremental-035 2.png
+docs/source/plots/keyframes/2_incremental-035.png
+docs/source/plots/keyframes/2_incremental-036 2.png
+docs/source/plots/keyframes/2_incremental-036.png
+docs/source/plots/keyframes/2_incremental-037 2.png
+docs/source/plots/keyframes/2_incremental-037.png
+docs/source/plots/keyframes/2_incremental-038 2.png
+docs/source/plots/keyframes/2_incremental-038.png
+docs/source/plots/keyframes/2_incremental-039 2.png
+docs/source/plots/keyframes/2_incremental-039.png
+docs/source/plots/keyframes/2_incremental-040 2.png
+docs/source/plots/keyframes/2_incremental-040.png
+docs/source/plots/keyframes/2_incremental-041 2.png
+docs/source/plots/keyframes/2_incremental-041.png
+docs/source/plots/keyframes/2_incremental-042 2.png
+docs/source/plots/keyframes/2_incremental-042.png
+docs/source/plots/keyframes/2_incremental-043 2.png
+docs/source/plots/keyframes/2_incremental-043.png
+docs/source/plots/keyframes/2_incremental-044 2.png
+docs/source/plots/keyframes/2_incremental-044.png
+docs/source/plots/keyframes/2_incremental-045 2.png
+docs/source/plots/keyframes/2_incremental-045.png
+docs/source/plots/keyframes/2_incremental-046 2.png
+docs/source/plots/keyframes/2_incremental-046.png
+docs/source/plots/keyframes/2_incremental-047 2.png
+docs/source/plots/keyframes/2_incremental-047.png
+docs/source/plots/keyframes/2_incremental-048 2.png
+docs/source/plots/keyframes/2_incremental-048.png
+docs/source/plots/keyframes/2_incremental-049 2.png
+docs/source/plots/keyframes/2_incremental-049.png
+docs/source/plots/keyframes/2_incremental-050 2.png
+docs/source/plots/keyframes/2_incremental-050.png
+docs/source/plots/keyframes/2_incremental-051 2.png
+docs/source/plots/keyframes/2_incremental-051.png
+docs/source/plots/keyframes/2_incremental-052 2.png
+docs/source/plots/keyframes/2_incremental-052.png
+docs/source/plots/keyframes/2_incremental-053 2.png
+docs/source/plots/keyframes/2_incremental-053.png
+docs/source/plots/keyframes/2_incremental-054 2.png
+docs/source/plots/keyframes/2_incremental-054.png
+docs/source/plots/keyframes/2_incremental-055 2.png
+docs/source/plots/keyframes/2_incremental-055.png
+docs/source/plots/keyframes/2_incremental-056 2.png
+docs/source/plots/keyframes/2_incremental-056.png
+docs/source/plots/keyframes/2_incremental-057 2.png
+docs/source/plots/keyframes/2_incremental-057.png
+docs/source/plots/keyframes/2_incremental-058 2.png
+docs/source/plots/keyframes/2_incremental-058.png
+docs/source/plots/keyframes/2_incremental-059 2.png
+docs/source/plots/keyframes/2_incremental-059.png
+docs/source/plots/keyframes/2_incremental-060 2.png
+docs/source/plots/keyframes/2_incremental-060.png
+docs/source/plots/keyframes/2_incremental-061 2.png
+docs/source/plots/keyframes/2_incremental-061.png
+docs/source/plots/keyframes/2_incremental-062 2.png
+docs/source/plots/keyframes/2_incremental-062.png
+docs/source/plots/keyframes/2_incremental-063 2.png
+docs/source/plots/keyframes/2_incremental-063.png
+docs/source/plots/keyframes/2_incremental-064 2.png
+docs/source/plots/keyframes/2_incremental-064.png
+docs/source/plots/keyframes/2_incremental-065 2.png
+docs/source/plots/keyframes/2_incremental-065.png
+docs/source/plots/keyframes/2_incremental-066 2.png
+docs/source/plots/keyframes/2_incremental-066.png
+docs/source/plots/keyframes/2_incremental-067 2.png
+docs/source/plots/keyframes/2_incremental-067.png
+docs/source/plots/keyframes/2_incremental-068 2.png
+docs/source/plots/keyframes/2_incremental-068.png
+docs/source/plots/keyframes/2_incremental-069 2.png
+docs/source/plots/keyframes/2_incremental-069.png
+docs/source/plots/keyframes/2_incremental-070 2.png
+docs/source/plots/keyframes/2_incremental-070.png
+docs/source/plots/keyframes/2_incremental-071 2.png
+docs/source/plots/keyframes/2_incremental-071.png
+docs/source/plots/keyframes/2_incremental-072 2.png
+docs/source/plots/keyframes/2_incremental-072.png
+docs/source/plots/keyframes/2_incremental-073 2.png
+docs/source/plots/keyframes/2_incremental-073.png
+docs/source/plots/keyframes/2_incremental-074 2.png
+docs/source/plots/keyframes/2_incremental-074.png
+docs/source/plots/keyframes/2_incremental-075 2.png
+docs/source/plots/keyframes/2_incremental-075.png
+docs/source/plots/keyframes/2_incremental-076 2.png
+docs/source/plots/keyframes/2_incremental-076.png
+docs/source/plots/keyframes/2_incremental-077 2.png
+docs/source/plots/keyframes/2_incremental-077.png
+docs/source/plots/keyframes/2_incremental-078 2.png
+docs/source/plots/keyframes/2_incremental-078.png
+docs/source/plots/keyframes/2_incremental-079 2.png
+docs/source/plots/keyframes/2_incremental-079.png
+docs/source/plots/keyframes/2_incremental-080 2.png
+docs/source/plots/keyframes/2_incremental-080.png
+docs/source/plots/keyframes/2_incremental-081 2.png
+docs/source/plots/keyframes/2_incremental-081.png
+docs/source/plots/keyframes/2_incremental-082 2.png
+docs/source/plots/keyframes/2_incremental-082.png
+docs/source/plots/keyframes/2_incremental-083 2.png
+docs/source/plots/keyframes/2_incremental-083.png
+docs/source/plots/keyframes/2_incremental-084 2.png
+docs/source/plots/keyframes/2_incremental-084.png
+docs/source/plots/keyframes/2_incremental-085 2.png
+docs/source/plots/keyframes/2_incremental-085.png
+docs/source/plots/keyframes/2_incremental-086 2.png
+docs/source/plots/keyframes/2_incremental-086.png
+docs/source/plots/keyframes/2_incremental-087 2.png
+docs/source/plots/keyframes/2_incremental-087.png
+docs/source/plots/keyframes/2_incremental-088 2.png
+docs/source/plots/keyframes/2_incremental-088.png
+docs/source/plots/keyframes/2_incremental-089 2.png
+docs/source/plots/keyframes/2_incremental-089.png
+docs/source/plots/keyframes/2_incremental-090 2.png
+docs/source/plots/keyframes/2_incremental-090.png
+docs/source/plots/keyframes/2_incremental-091 2.png
+docs/source/plots/keyframes/2_incremental-091.png
+docs/source/plots/keyframes/2_incremental-092 2.png
+docs/source/plots/keyframes/2_incremental-092.png
+docs/source/plots/keyframes/2_incremental-093 2.png
+docs/source/plots/keyframes/2_incremental-093.png
+docs/source/plots/keyframes/2_incremental-094 2.png
+docs/source/plots/keyframes/2_incremental-094.png
+docs/source/plots/keyframes/2_incremental-095 2.png
+docs/source/plots/keyframes/2_incremental-095.png
+docs/source/plots/keyframes/2_incremental-096 2.png
+docs/source/plots/keyframes/2_incremental-096.png
+docs/source/plots/keyframes/2_incremental-097 2.png
+docs/source/plots/keyframes/2_incremental-097.png
+docs/source/plots/keyframes/2_incremental-098 2.png
+docs/source/plots/keyframes/2_incremental-098.png
+docs/source/plots/keyframes/2_incremental-099 2.png
+docs/source/plots/keyframes/2_incremental-099.png
+docs/source/plots/keyframes/3_gradual-000 2.png
+docs/source/plots/keyframes/3_gradual-000.png
+docs/source/plots/keyframes/3_gradual-001 2.png
+docs/source/plots/keyframes/3_gradual-001.png
+docs/source/plots/keyframes/3_gradual-002 2.png
+docs/source/plots/keyframes/3_gradual-002.png
+docs/source/plots/keyframes/3_gradual-003 2.png
+docs/source/plots/keyframes/3_gradual-003.png
+docs/source/plots/keyframes/3_gradual-004 2.png
+docs/source/plots/keyframes/3_gradual-004.png
+docs/source/plots/keyframes/3_gradual-005 2.png
+docs/source/plots/keyframes/3_gradual-005.png
+docs/source/plots/keyframes/3_gradual-006 2.png
+docs/source/plots/keyframes/3_gradual-006.png
+docs/source/plots/keyframes/3_gradual-007 2.png
+docs/source/plots/keyframes/3_gradual-007.png
+docs/source/plots/keyframes/3_gradual-008 2.png
+docs/source/plots/keyframes/3_gradual-008.png
+docs/source/plots/keyframes/3_gradual-009 2.png
+docs/source/plots/keyframes/3_gradual-009.png
+docs/source/plots/keyframes/3_gradual-010 2.png
+docs/source/plots/keyframes/3_gradual-010.png
+docs/source/plots/keyframes/3_gradual-011 2.png
+docs/source/plots/keyframes/3_gradual-011.png
+docs/source/plots/keyframes/3_gradual-012 2.png
+docs/source/plots/keyframes/3_gradual-012.png
+docs/source/plots/keyframes/3_gradual-013 2.png
+docs/source/plots/keyframes/3_gradual-013.png
+docs/source/plots/keyframes/3_gradual-014 2.png
+docs/source/plots/keyframes/3_gradual-014.png
+docs/source/plots/keyframes/3_gradual-015 2.png
+docs/source/plots/keyframes/3_gradual-015.png
+docs/source/plots/keyframes/3_gradual-016 2.png
+docs/source/plots/keyframes/3_gradual-016.png
+docs/source/plots/keyframes/3_gradual-017 2.png
+docs/source/plots/keyframes/3_gradual-017.png
+docs/source/plots/keyframes/3_gradual-018 2.png
+docs/source/plots/keyframes/3_gradual-018.png
+docs/source/plots/keyframes/3_gradual-019 2.png
+docs/source/plots/keyframes/3_gradual-019.png
+docs/source/plots/keyframes/3_gradual-020 2.png
+docs/source/plots/keyframes/3_gradual-020.png
+docs/source/plots/keyframes/3_gradual-021 2.png
+docs/source/plots/keyframes/3_gradual-021.png
+docs/source/plots/keyframes/3_gradual-022 2.png
+docs/source/plots/keyframes/3_gradual-022.png
+docs/source/plots/keyframes/3_gradual-023 2.png
+docs/source/plots/keyframes/3_gradual-023.png
+docs/source/plots/keyframes/3_gradual-024 2.png
+docs/source/plots/keyframes/3_gradual-024.png
+docs/source/plots/keyframes/3_gradual-025 2.png
+docs/source/plots/keyframes/3_gradual-025.png
+docs/source/plots/keyframes/3_gradual-026 2.png
+docs/source/plots/keyframes/3_gradual-026.png
+docs/source/plots/keyframes/3_gradual-027 2.png
+docs/source/plots/keyframes/3_gradual-027.png
+docs/source/plots/keyframes/3_gradual-028 2.png
+docs/source/plots/keyframes/3_gradual-028.png
+docs/source/plots/keyframes/3_gradual-029 2.png
+docs/source/plots/keyframes/3_gradual-029.png
+docs/source/plots/keyframes/3_gradual-030 2.png
+docs/source/plots/keyframes/3_gradual-030.png
+docs/source/plots/keyframes/3_gradual-031 2.png
+docs/source/plots/keyframes/3_gradual-031.png
+docs/source/plots/keyframes/3_gradual-032 2.png
+docs/source/plots/keyframes/3_gradual-032.png
+docs/source/plots/keyframes/3_gradual-033 2.png
+docs/source/plots/keyframes/3_gradual-033.png
+docs/source/plots/keyframes/3_gradual-034 2.png
+docs/source/plots/keyframes/3_gradual-034.png
+docs/source/plots/keyframes/3_gradual-035 2.png
+docs/source/plots/keyframes/3_gradual-035.png
+docs/source/plots/keyframes/3_gradual-036 2.png
+docs/source/plots/keyframes/3_gradual-036.png
+docs/source/plots/keyframes/3_gradual-037 2.png
+docs/source/plots/keyframes/3_gradual-037.png
+docs/source/plots/keyframes/3_gradual-038 2.png
+docs/source/plots/keyframes/3_gradual-038.png
+docs/source/plots/keyframes/3_gradual-039 2.png
+docs/source/plots/keyframes/3_gradual-039.png
+docs/source/plots/keyframes/3_gradual-040 2.png
+docs/source/plots/keyframes/3_gradual-040.png
+docs/source/plots/keyframes/3_gradual-041 2.png
+docs/source/plots/keyframes/3_gradual-041.png
+docs/source/plots/keyframes/3_gradual-042 2.png
+docs/source/plots/keyframes/3_gradual-042.png
+docs/source/plots/keyframes/3_gradual-043 2.png
+docs/source/plots/keyframes/3_gradual-043.png
+docs/source/plots/keyframes/3_gradual-044 2.png
+docs/source/plots/keyframes/3_gradual-044.png
+docs/source/plots/keyframes/3_gradual-045 2.png
+docs/source/plots/keyframes/3_gradual-045.png
+docs/source/plots/keyframes/3_gradual-046 2.png
+docs/source/plots/keyframes/3_gradual-046.png
+docs/source/plots/keyframes/3_gradual-047 2.png
+docs/source/plots/keyframes/3_gradual-047.png
+docs/source/plots/keyframes/3_gradual-048 2.png
+docs/source/plots/keyframes/3_gradual-048.png
+docs/source/plots/keyframes/3_gradual-049 2.png
+docs/source/plots/keyframes/3_gradual-049.png
+docs/source/plots/keyframes/3_gradual-050 2.png
+docs/source/plots/keyframes/3_gradual-050.png
+docs/source/plots/keyframes/3_gradual-051 2.png
+docs/source/plots/keyframes/3_gradual-051.png
+docs/source/plots/keyframes/3_gradual-052 2.png
+docs/source/plots/keyframes/3_gradual-052.png
+docs/source/plots/keyframes/3_gradual-053 2.png
+docs/source/plots/keyframes/3_gradual-053.png
+docs/source/plots/keyframes/3_gradual-054 2.png
+docs/source/plots/keyframes/3_gradual-054.png
+docs/source/plots/keyframes/3_gradual-055 2.png
+docs/source/plots/keyframes/3_gradual-055.png
+docs/source/plots/keyframes/3_gradual-056 2.png
+docs/source/plots/keyframes/3_gradual-056.png
+docs/source/plots/keyframes/3_gradual-057 2.png
+docs/source/plots/keyframes/3_gradual-057.png
+docs/source/plots/keyframes/3_gradual-058 2.png
+docs/source/plots/keyframes/3_gradual-058.png
+docs/source/plots/keyframes/3_gradual-059 2.png
+docs/source/plots/keyframes/3_gradual-059.png
+docs/source/plots/keyframes/3_gradual-060 2.png
+docs/source/plots/keyframes/3_gradual-060.png
+docs/source/plots/keyframes/3_gradual-061 2.png
+docs/source/plots/keyframes/3_gradual-061.png
+docs/source/plots/keyframes/3_gradual-062 2.png
+docs/source/plots/keyframes/3_gradual-062.png
+docs/source/plots/keyframes/3_gradual-063 2.png
+docs/source/plots/keyframes/3_gradual-063.png
+docs/source/plots/keyframes/3_gradual-064 2.png
+docs/source/plots/keyframes/3_gradual-064.png
+docs/source/plots/keyframes/3_gradual-065 2.png
+docs/source/plots/keyframes/3_gradual-065.png
+docs/source/plots/keyframes/3_gradual-066 2.png
+docs/source/plots/keyframes/3_gradual-066.png
+docs/source/plots/keyframes/3_gradual-067 2.png
+docs/source/plots/keyframes/3_gradual-067.png
+docs/source/plots/keyframes/3_gradual-068 2.png
+docs/source/plots/keyframes/3_gradual-068.png
+docs/source/plots/keyframes/3_gradual-069 2.png
+docs/source/plots/keyframes/3_gradual-069.png
+docs/source/plots/keyframes/3_gradual-070 2.png
+docs/source/plots/keyframes/3_gradual-070.png
+docs/source/plots/keyframes/3_gradual-071 2.png
+docs/source/plots/keyframes/3_gradual-071.png
+docs/source/plots/keyframes/3_gradual-072 2.png
+docs/source/plots/keyframes/3_gradual-072.png
+docs/source/plots/keyframes/3_gradual-073 2.png
+docs/source/plots/keyframes/3_gradual-073.png
+docs/source/plots/keyframes/3_gradual-074 2.png
+docs/source/plots/keyframes/3_gradual-074.png
+docs/source/plots/keyframes/3_gradual-075 2.png
+docs/source/plots/keyframes/3_gradual-075.png
+docs/source/plots/keyframes/3_gradual-076 2.png
+docs/source/plots/keyframes/3_gradual-076.png
+docs/source/plots/keyframes/3_gradual-077 2.png
+docs/source/plots/keyframes/3_gradual-077.png
+docs/source/plots/keyframes/3_gradual-078 2.png
+docs/source/plots/keyframes/3_gradual-078.png
+docs/source/plots/keyframes/3_gradual-079 2.png
+docs/source/plots/keyframes/3_gradual-079.png
+docs/source/plots/keyframes/3_gradual-080 2.png
+docs/source/plots/keyframes/3_gradual-080.png
+docs/source/plots/keyframes/3_gradual-081 2.png
+docs/source/plots/keyframes/3_gradual-081.png
+docs/source/plots/keyframes/3_gradual-082 2.png
+docs/source/plots/keyframes/3_gradual-082.png
+docs/source/plots/keyframes/3_gradual-083 2.png
+docs/source/plots/keyframes/3_gradual-083.png
+docs/source/plots/keyframes/3_gradual-084 2.png
+docs/source/plots/keyframes/3_gradual-084.png
+docs/source/plots/keyframes/3_gradual-085 2.png
+docs/source/plots/keyframes/3_gradual-085.png
+docs/source/plots/keyframes/3_gradual-086 2.png
+docs/source/plots/keyframes/3_gradual-086.png
+docs/source/plots/keyframes/3_gradual-087 2.png
+docs/source/plots/keyframes/3_gradual-087.png
+docs/source/plots/keyframes/3_gradual-088 2.png
+docs/source/plots/keyframes/3_gradual-088.png
+docs/source/plots/keyframes/3_gradual-089 2.png
+docs/source/plots/keyframes/3_gradual-089.png
+docs/source/plots/keyframes/3_gradual-090 2.png
+docs/source/plots/keyframes/3_gradual-090.png
+docs/source/plots/keyframes/3_gradual-091 2.png
+docs/source/plots/keyframes/3_gradual-091.png
+docs/source/plots/keyframes/3_gradual-092 2.png
+docs/source/plots/keyframes/3_gradual-092.png
+docs/source/plots/keyframes/3_gradual-093 2.png
+docs/source/plots/keyframes/3_gradual-093.png
+docs/source/plots/keyframes/3_gradual-094 2.png
+docs/source/plots/keyframes/3_gradual-094.png
+docs/source/plots/keyframes/3_gradual-095 2.png
+docs/source/plots/keyframes/3_gradual-095.png
+docs/source/plots/keyframes/3_gradual-096 2.png
+docs/source/plots/keyframes/3_gradual-096.png
+docs/source/plots/keyframes/3_gradual-097 2.png
+docs/source/plots/keyframes/3_gradual-097.png
+docs/source/plots/keyframes/3_gradual-098 2.png
+docs/source/plots/keyframes/3_gradual-098.png
+docs/source/plots/keyframes/3_gradual-099 2.png
+docs/source/plots/keyframes/3_gradual-099.png
+docs/source/plots/keyframes/3_incremental-000 2.png
+docs/source/plots/keyframes/3_incremental-000.png
+docs/source/plots/keyframes/3_incremental-001 2.png
+docs/source/plots/keyframes/3_incremental-001.png
+docs/source/plots/keyframes/3_incremental-002 2.png
+docs/source/plots/keyframes/3_incremental-002.png
+docs/source/plots/keyframes/3_incremental-003 2.png
+docs/source/plots/keyframes/3_incremental-003.png
+docs/source/plots/keyframes/3_incremental-004 2.png
+docs/source/plots/keyframes/3_incremental-004.png
+docs/source/plots/keyframes/3_incremental-005 2.png
+docs/source/plots/keyframes/3_incremental-005.png
+docs/source/plots/keyframes/3_incremental-006 2.png
+docs/source/plots/keyframes/3_incremental-006.png
+docs/source/plots/keyframes/3_incremental-007 2.png
+docs/source/plots/keyframes/3_incremental-007.png
+docs/source/plots/keyframes/3_incremental-008 2.png
+docs/source/plots/keyframes/3_incremental-008.png
+docs/source/plots/keyframes/3_incremental-009 2.png
+docs/source/plots/keyframes/3_incremental-009.png
+docs/source/plots/keyframes/3_incremental-010 2.png
+docs/source/plots/keyframes/3_incremental-010.png
+docs/source/plots/keyframes/3_incremental-011 2.png
+docs/source/plots/keyframes/3_incremental-011.png
+docs/source/plots/keyframes/3_incremental-012 2.png
+docs/source/plots/keyframes/3_incremental-012.png
+docs/source/plots/keyframes/3_incremental-013 2.png
+docs/source/plots/keyframes/3_incremental-013.png
+docs/source/plots/keyframes/3_incremental-014 2.png
+docs/source/plots/keyframes/3_incremental-014.png
+docs/source/plots/keyframes/3_incremental-015 2.png
+docs/source/plots/keyframes/3_incremental-015.png
+docs/source/plots/keyframes/3_incremental-016 2.png
+docs/source/plots/keyframes/3_incremental-016.png
+docs/source/plots/keyframes/3_incremental-017 2.png
+docs/source/plots/keyframes/3_incremental-017.png
+docs/source/plots/keyframes/3_incremental-018 2.png
+docs/source/plots/keyframes/3_incremental-018.png
+docs/source/plots/keyframes/3_incremental-019 2.png
+docs/source/plots/keyframes/3_incremental-019.png
+docs/source/plots/keyframes/3_incremental-020 2.png
+docs/source/plots/keyframes/3_incremental-020.png
+docs/source/plots/keyframes/3_incremental-021 2.png
+docs/source/plots/keyframes/3_incremental-021.png
+docs/source/plots/keyframes/3_incremental-022 2.png
+docs/source/plots/keyframes/3_incremental-022.png
+docs/source/plots/keyframes/3_incremental-023 2.png
+docs/source/plots/keyframes/3_incremental-023.png
+docs/source/plots/keyframes/3_incremental-024 2.png
+docs/source/plots/keyframes/3_incremental-024.png
+docs/source/plots/keyframes/3_incremental-025 2.png
+docs/source/plots/keyframes/3_incremental-025.png
+docs/source/plots/keyframes/3_incremental-026 2.png
+docs/source/plots/keyframes/3_incremental-026.png
+docs/source/plots/keyframes/3_incremental-027 2.png
+docs/source/plots/keyframes/3_incremental-027.png
+docs/source/plots/keyframes/3_incremental-028 2.png
+docs/source/plots/keyframes/3_incremental-028.png
+docs/source/plots/keyframes/3_incremental-029 2.png
+docs/source/plots/keyframes/3_incremental-029.png
+docs/source/plots/keyframes/3_incremental-030 2.png
+docs/source/plots/keyframes/3_incremental-030.png
+docs/source/plots/keyframes/3_incremental-031 2.png
+docs/source/plots/keyframes/3_incremental-031.png
+docs/source/plots/keyframes/3_incremental-032 2.png
+docs/source/plots/keyframes/3_incremental-032.png
+docs/source/plots/keyframes/3_incremental-033 2.png
+docs/source/plots/keyframes/3_incremental-033.png
+docs/source/plots/keyframes/3_incremental-034 2.png
+docs/source/plots/keyframes/3_incremental-034.png
+docs/source/plots/keyframes/3_incremental-035 2.png
+docs/source/plots/keyframes/3_incremental-035.png
+docs/source/plots/keyframes/3_incremental-036 2.png
+docs/source/plots/keyframes/3_incremental-036.png
+docs/source/plots/keyframes/3_incremental-037 2.png
+docs/source/plots/keyframes/3_incremental-037.png
+docs/source/plots/keyframes/3_incremental-038 2.png
+docs/source/plots/keyframes/3_incremental-038.png
+docs/source/plots/keyframes/3_incremental-039 2.png
+docs/source/plots/keyframes/3_incremental-039.png
+docs/source/plots/keyframes/3_incremental-040 2.png
+docs/source/plots/keyframes/3_incremental-040.png
+docs/source/plots/keyframes/3_incremental-041 2.png
+docs/source/plots/keyframes/3_incremental-041.png
+docs/source/plots/keyframes/3_incremental-042 2.png
+docs/source/plots/keyframes/3_incremental-042.png
+docs/source/plots/keyframes/3_incremental-043 2.png
+docs/source/plots/keyframes/3_incremental-043.png
+docs/source/plots/keyframes/3_incremental-044 2.png
+docs/source/plots/keyframes/3_incremental-044.png
+docs/source/plots/keyframes/3_incremental-045 2.png
+docs/source/plots/keyframes/3_incremental-045.png
+docs/source/plots/keyframes/3_incremental-046 2.png
+docs/source/plots/keyframes/3_incremental-046.png
+docs/source/plots/keyframes/3_incremental-047 2.png
+docs/source/plots/keyframes/3_incremental-047.png
+docs/source/plots/keyframes/3_incremental-048 2.png
+docs/source/plots/keyframes/3_incremental-048.png
+docs/source/plots/keyframes/3_incremental-049 2.png
+docs/source/plots/keyframes/3_incremental-049.png
+docs/source/plots/keyframes/3_incremental-050 2.png
+docs/source/plots/keyframes/3_incremental-050.png
+docs/source/plots/keyframes/3_incremental-051 2.png
+docs/source/plots/keyframes/3_incremental-051.png
+docs/source/plots/keyframes/3_incremental-052 2.png
+docs/source/plots/keyframes/3_incremental-052.png
+docs/source/plots/keyframes/3_incremental-053 2.png
+docs/source/plots/keyframes/3_incremental-053.png
+docs/source/plots/keyframes/3_incremental-054 2.png
+docs/source/plots/keyframes/3_incremental-054.png
+docs/source/plots/keyframes/3_incremental-055 2.png
+docs/source/plots/keyframes/3_incremental-055.png
+docs/source/plots/keyframes/3_incremental-056 2.png
+docs/source/plots/keyframes/3_incremental-056.png
+docs/source/plots/keyframes/3_incremental-057 2.png
+docs/source/plots/keyframes/3_incremental-057.png
+docs/source/plots/keyframes/3_incremental-058 2.png
+docs/source/plots/keyframes/3_incremental-058.png
+docs/source/plots/keyframes/3_incremental-059 2.png
+docs/source/plots/keyframes/3_incremental-059.png
+docs/source/plots/keyframes/3_incremental-060 2.png
+docs/source/plots/keyframes/3_incremental-060.png
+docs/source/plots/keyframes/3_incremental-061 2.png
+docs/source/plots/keyframes/3_incremental-061.png
+docs/source/plots/keyframes/3_incremental-062 2.png
+docs/source/plots/keyframes/3_incremental-062.png
+docs/source/plots/keyframes/3_incremental-063 2.png
+docs/source/plots/keyframes/3_incremental-063.png
+docs/source/plots/keyframes/3_incremental-064 2.png
+docs/source/plots/keyframes/3_incremental-064.png
+docs/source/plots/keyframes/3_incremental-065 2.png
+docs/source/plots/keyframes/3_incremental-065.png
+docs/source/plots/keyframes/3_incremental-066 2.png
+docs/source/plots/keyframes/3_incremental-066.png
+docs/source/plots/keyframes/3_incremental-067 2.png
+docs/source/plots/keyframes/3_incremental-067.png
+docs/source/plots/keyframes/3_incremental-068 2.png
+docs/source/plots/keyframes/3_incremental-068.png
+docs/source/plots/keyframes/3_incremental-069 2.png
+docs/source/plots/keyframes/3_incremental-069.png
+docs/source/plots/keyframes/3_incremental-070 2.png
+docs/source/plots/keyframes/3_incremental-070.png
+docs/source/plots/keyframes/3_incremental-071 2.png
+docs/source/plots/keyframes/3_incremental-071.png
+docs/source/plots/keyframes/3_incremental-072 2.png
+docs/source/plots/keyframes/3_incremental-072.png
+docs/source/plots/keyframes/3_incremental-073 2.png
+docs/source/plots/keyframes/3_incremental-073.png
+docs/source/plots/keyframes/3_incremental-074 2.png
+docs/source/plots/keyframes/3_incremental-074.png
+docs/source/plots/keyframes/3_incremental-075 2.png
+docs/source/plots/keyframes/3_incremental-075.png
+docs/source/plots/keyframes/3_incremental-076 2.png
+docs/source/plots/keyframes/3_incremental-076.png
+docs/source/plots/keyframes/3_incremental-077 2.png
+docs/source/plots/keyframes/3_incremental-077.png
+docs/source/plots/keyframes/3_incremental-078 2.png
+docs/source/plots/keyframes/3_incremental-078.png
+docs/source/plots/keyframes/3_incremental-079 2.png
+docs/source/plots/keyframes/3_incremental-079.png
+docs/source/plots/keyframes/3_incremental-080 2.png
+docs/source/plots/keyframes/3_incremental-080.png
+docs/source/plots/keyframes/3_incremental-081 2.png
+docs/source/plots/keyframes/3_incremental-081.png
+docs/source/plots/keyframes/3_incremental-082 2.png
+docs/source/plots/keyframes/3_incremental-082.png
+docs/source/plots/keyframes/3_incremental-083 2.png
+docs/source/plots/keyframes/3_incremental-083.png
+docs/source/plots/keyframes/3_incremental-084 2.png
+docs/source/plots/keyframes/3_incremental-084.png
+docs/source/plots/keyframes/3_incremental-085 2.png
+docs/source/plots/keyframes/3_incremental-085.png
+docs/source/plots/keyframes/3_incremental-086 2.png
+docs/source/plots/keyframes/3_incremental-086.png
+docs/source/plots/keyframes/3_incremental-087 2.png
+docs/source/plots/keyframes/3_incremental-087.png
+docs/source/plots/keyframes/3_incremental-088 2.png
+docs/source/plots/keyframes/3_incremental-088.png
+docs/source/plots/keyframes/3_incremental-089 2.png
+docs/source/plots/keyframes/3_incremental-089.png
+docs/source/plots/keyframes/3_incremental-090 2.png
+docs/source/plots/keyframes/3_incremental-090.png
+docs/source/plots/keyframes/3_incremental-091 2.png
+docs/source/plots/keyframes/3_incremental-091.png
+docs/source/plots/keyframes/3_incremental-092 2.png
+docs/source/plots/keyframes/3_incremental-092.png
+docs/source/plots/keyframes/3_incremental-093 2.png
+docs/source/plots/keyframes/3_incremental-093.png
+docs/source/plots/keyframes/3_incremental-094 2.png
+docs/source/plots/keyframes/3_incremental-094.png
+docs/source/plots/keyframes/3_incremental-095 2.png
+docs/source/plots/keyframes/3_incremental-095.png
+docs/source/plots/keyframes/3_incremental-096 2.png
+docs/source/plots/keyframes/3_incremental-096.png
+docs/source/plots/keyframes/3_incremental-097 2.png
+docs/source/plots/keyframes/3_incremental-097.png
+docs/source/plots/keyframes/3_incremental-098 2.png
+docs/source/plots/keyframes/3_incremental-098.png
+docs/source/plots/keyframes/3_incremental-099 2.png
+docs/source/plots/keyframes/3_incremental-099.png
+docs/source/plots/keyframes/4_reocurring-000 2.png
+docs/source/plots/keyframes/4_reocurring-000.png
+docs/source/plots/keyframes/4_reocurring-001 2.png
+docs/source/plots/keyframes/4_reocurring-001.png
+docs/source/plots/keyframes/4_reocurring-002 2.png
+docs/source/plots/keyframes/4_reocurring-002.png
+docs/source/plots/keyframes/4_reocurring-003 2.png
+docs/source/plots/keyframes/4_reocurring-003.png
+docs/source/plots/keyframes/4_reocurring-004 2.png
+docs/source/plots/keyframes/4_reocurring-004.png
+docs/source/plots/keyframes/4_reocurring-005 2.png
+docs/source/plots/keyframes/4_reocurring-005.png
+docs/source/plots/keyframes/4_reocurring-006 2.png
+docs/source/plots/keyframes/4_reocurring-006.png
+docs/source/plots/keyframes/4_reocurring-007 2.png
+docs/source/plots/keyframes/4_reocurring-007.png
+docs/source/plots/keyframes/4_reocurring-008 2.png
+docs/source/plots/keyframes/4_reocurring-008.png
+docs/source/plots/keyframes/4_reocurring-009 2.png
+docs/source/plots/keyframes/4_reocurring-009.png
+docs/source/plots/keyframes/4_reocurring-010 2.png
+docs/source/plots/keyframes/4_reocurring-010.png
+docs/source/plots/keyframes/4_reocurring-011 2.png
+docs/source/plots/keyframes/4_reocurring-011.png
+docs/source/plots/keyframes/4_reocurring-012 2.png
+docs/source/plots/keyframes/4_reocurring-012.png
+docs/source/plots/keyframes/4_reocurring-013 2.png
+docs/source/plots/keyframes/4_reocurring-013.png
+docs/source/plots/keyframes/4_reocurring-014 2.png
+docs/source/plots/keyframes/4_reocurring-014.png
+docs/source/plots/keyframes/4_reocurring-015 2.png
+docs/source/plots/keyframes/4_reocurring-015.png
+docs/source/plots/keyframes/4_reocurring-016 2.png
+docs/source/plots/keyframes/4_reocurring-016.png
+docs/source/plots/keyframes/4_reocurring-017 2.png
+docs/source/plots/keyframes/4_reocurring-017.png
+docs/source/plots/keyframes/4_reocurring-018 2.png
+docs/source/plots/keyframes/4_reocurring-018.png
+docs/source/plots/keyframes/4_reocurring-019 2.png
+docs/source/plots/keyframes/4_reocurring-019.png
+docs/source/plots/keyframes/4_reocurring-020 2.png
+docs/source/plots/keyframes/4_reocurring-020.png
+docs/source/plots/keyframes/4_reocurring-021 2.png
+docs/source/plots/keyframes/4_reocurring-021.png
+docs/source/plots/keyframes/4_reocurring-022 2.png
+docs/source/plots/keyframes/4_reocurring-022.png
+docs/source/plots/keyframes/4_reocurring-023 2.png
+docs/source/plots/keyframes/4_reocurring-023.png
+docs/source/plots/keyframes/4_reocurring-024 2.png
+docs/source/plots/keyframes/4_reocurring-024.png
+docs/source/plots/keyframes/4_reocurring-025 2.png
+docs/source/plots/keyframes/4_reocurring-025.png
+docs/source/plots/keyframes/4_reocurring-026 2.png
+docs/source/plots/keyframes/4_reocurring-026.png
+docs/source/plots/keyframes/4_reocurring-027 2.png
+docs/source/plots/keyframes/4_reocurring-027.png
+docs/source/plots/keyframes/4_reocurring-028 2.png
+docs/source/plots/keyframes/4_reocurring-028.png
+docs/source/plots/keyframes/4_reocurring-029 2.png
+docs/source/plots/keyframes/4_reocurring-029.png
+docs/source/plots/keyframes/4_reocurring-030 2.png
+docs/source/plots/keyframes/4_reocurring-030.png
+docs/source/plots/keyframes/4_reocurring-031 2.png
+docs/source/plots/keyframes/4_reocurring-031.png
+docs/source/plots/keyframes/4_reocurring-032 2.png
+docs/source/plots/keyframes/4_reocurring-032.png
+docs/source/plots/keyframes/4_reocurring-033 2.png
+docs/source/plots/keyframes/4_reocurring-033.png
+docs/source/plots/keyframes/4_reocurring-034 2.png
+docs/source/plots/keyframes/4_reocurring-034.png
+docs/source/plots/keyframes/4_reocurring-035 2.png
+docs/source/plots/keyframes/4_reocurring-035.png
+docs/source/plots/keyframes/4_reocurring-036 2.png
+docs/source/plots/keyframes/4_reocurring-036.png
+docs/source/plots/keyframes/4_reocurring-037 2.png
+docs/source/plots/keyframes/4_reocurring-037.png
+docs/source/plots/keyframes/4_reocurring-038 2.png
+docs/source/plots/keyframes/4_reocurring-038.png
+docs/source/plots/keyframes/4_reocurring-039 2.png
+docs/source/plots/keyframes/4_reocurring-039.png
+docs/source/plots/keyframes/4_reocurring-040 2.png
+docs/source/plots/keyframes/4_reocurring-040.png
+docs/source/plots/keyframes/4_reocurring-041 2.png
+docs/source/plots/keyframes/4_reocurring-041.png
+docs/source/plots/keyframes/4_reocurring-042 2.png
+docs/source/plots/keyframes/4_reocurring-042.png
+docs/source/plots/keyframes/4_reocurring-043 2.png
+docs/source/plots/keyframes/4_reocurring-043.png
+docs/source/plots/keyframes/4_reocurring-044 2.png
+docs/source/plots/keyframes/4_reocurring-044.png
+docs/source/plots/keyframes/4_reocurring-045 2.png
+docs/source/plots/keyframes/4_reocurring-045.png
+docs/source/plots/keyframes/4_reocurring-046 2.png
+docs/source/plots/keyframes/4_reocurring-046.png
+docs/source/plots/keyframes/4_reocurring-047 2.png
+docs/source/plots/keyframes/4_reocurring-047.png
+docs/source/plots/keyframes/4_reocurring-048 2.png
+docs/source/plots/keyframes/4_reocurring-048.png
+docs/source/plots/keyframes/4_reocurring-049 2.png
+docs/source/plots/keyframes/4_reocurring-049.png
+docs/source/plots/keyframes/4_reocurring-050 2.png
+docs/source/plots/keyframes/4_reocurring-050.png
+docs/source/plots/keyframes/4_reocurring-051 2.png
+docs/source/plots/keyframes/4_reocurring-051.png
+docs/source/plots/keyframes/4_reocurring-052 2.png
+docs/source/plots/keyframes/4_reocurring-052.png
+docs/source/plots/keyframes/4_reocurring-053 2.png
+docs/source/plots/keyframes/4_reocurring-053.png
+docs/source/plots/keyframes/4_reocurring-054 2.png
+docs/source/plots/keyframes/4_reocurring-054.png
+docs/source/plots/keyframes/4_reocurring-055 2.png
+docs/source/plots/keyframes/4_reocurring-055.png
+docs/source/plots/keyframes/4_reocurring-056 2.png
+docs/source/plots/keyframes/4_reocurring-056.png
+docs/source/plots/keyframes/4_reocurring-057 2.png
+docs/source/plots/keyframes/4_reocurring-057.png
+docs/source/plots/keyframes/4_reocurring-058 2.png
+docs/source/plots/keyframes/4_reocurring-058.png
+docs/source/plots/keyframes/4_reocurring-059 2.png
+docs/source/plots/keyframes/4_reocurring-059.png
+docs/source/plots/keyframes/4_reocurring-060 2.png
+docs/source/plots/keyframes/4_reocurring-060.png
+docs/source/plots/keyframes/4_reocurring-061 2.png
+docs/source/plots/keyframes/4_reocurring-061.png
+docs/source/plots/keyframes/4_reocurring-062 2.png
+docs/source/plots/keyframes/4_reocurring-062.png
+docs/source/plots/keyframes/4_reocurring-063 2.png
+docs/source/plots/keyframes/4_reocurring-063.png
+docs/source/plots/keyframes/4_reocurring-064 2.png
+docs/source/plots/keyframes/4_reocurring-064.png
+docs/source/plots/keyframes/4_reocurring-065 2.png
+docs/source/plots/keyframes/4_reocurring-065.png
+docs/source/plots/keyframes/4_reocurring-066 2.png
+docs/source/plots/keyframes/4_reocurring-066.png
+docs/source/plots/keyframes/4_reocurring-067 2.png
+docs/source/plots/keyframes/4_reocurring-067.png
+docs/source/plots/keyframes/4_reocurring-068 2.png
+docs/source/plots/keyframes/4_reocurring-068.png
+docs/source/plots/keyframes/4_reocurring-069 2.png
+docs/source/plots/keyframes/4_reocurring-069.png
+docs/source/plots/keyframes/4_reocurring-070 2.png
+docs/source/plots/keyframes/4_reocurring-070.png
+docs/source/plots/keyframes/4_reocurring-071 2.png
+docs/source/plots/keyframes/4_reocurring-071.png
+docs/source/plots/keyframes/4_reocurring-072 2.png
+docs/source/plots/keyframes/4_reocurring-072.png
+docs/source/plots/keyframes/4_reocurring-073 2.png
+docs/source/plots/keyframes/4_reocurring-073.png
+docs/source/plots/keyframes/4_reocurring-074 2.png
+docs/source/plots/keyframes/4_reocurring-074.png
+docs/source/plots/keyframes/4_reocurring-075 2.png
+docs/source/plots/keyframes/4_reocurring-075.png
+docs/source/plots/keyframes/4_reocurring-076 2.png
+docs/source/plots/keyframes/4_reocurring-076.png
+docs/source/plots/keyframes/4_reocurring-077 2.png
+docs/source/plots/keyframes/4_reocurring-077.png
+docs/source/plots/keyframes/4_reocurring-078 2.png
+docs/source/plots/keyframes/4_reocurring-078.png
+docs/source/plots/keyframes/4_reocurring-079 2.png
+docs/source/plots/keyframes/4_reocurring-079.png
+docs/source/plots/keyframes/4_reocurring-080 2.png
+docs/source/plots/keyframes/4_reocurring-080.png
+docs/source/plots/keyframes/4_reocurring-081 2.png
+docs/source/plots/keyframes/4_reocurring-081.png
+docs/source/plots/keyframes/4_reocurring-082 2.png
+docs/source/plots/keyframes/4_reocurring-082.png
+docs/source/plots/keyframes/4_reocurring-083 2.png
+docs/source/plots/keyframes/4_reocurring-083.png
+docs/source/plots/keyframes/4_reocurring-084 2.png
+docs/source/plots/keyframes/4_reocurring-084.png
+docs/source/plots/keyframes/4_reocurring-085 2.png
+docs/source/plots/keyframes/4_reocurring-085.png
+docs/source/plots/keyframes/4_reocurring-086 2.png
+docs/source/plots/keyframes/4_reocurring-086.png
+docs/source/plots/keyframes/4_reocurring-087 2.png
+docs/source/plots/keyframes/4_reocurring-087.png
+docs/source/plots/keyframes/4_reocurring-088 2.png
+docs/source/plots/keyframes/4_reocurring-088.png
+docs/source/plots/keyframes/4_reocurring-089 2.png
+docs/source/plots/keyframes/4_reocurring-089.png
+docs/source/plots/keyframes/4_reocurring-090 2.png
+docs/source/plots/keyframes/4_reocurring-090.png
+docs/source/plots/keyframes/4_reocurring-091 2.png
+docs/source/plots/keyframes/4_reocurring-091.png
+docs/source/plots/keyframes/4_reocurring-092 2.png
+docs/source/plots/keyframes/4_reocurring-092.png
+docs/source/plots/keyframes/4_reocurring-093 2.png
+docs/source/plots/keyframes/4_reocurring-093.png
+docs/source/plots/keyframes/4_reocurring-094 2.png
+docs/source/plots/keyframes/4_reocurring-094.png
+docs/source/plots/keyframes/4_reocurring-095 2.png
+docs/source/plots/keyframes/4_reocurring-095.png
+docs/source/plots/keyframes/4_reocurring-096 2.png
+docs/source/plots/keyframes/4_reocurring-096.png
+docs/source/plots/keyframes/4_reocurring-097 2.png
+docs/source/plots/keyframes/4_reocurring-097.png
+docs/source/plots/keyframes/4_reocurring-098 2.png
+docs/source/plots/keyframes/4_reocurring-098.png
+docs/source/plots/keyframes/4_reocurring-099 2.png
+docs/source/plots/keyframes/4_reocurring-099.png
+docs/source/plots/keyframes/5_nonreocurring-000 2.png
+docs/source/plots/keyframes/5_nonreocurring-000.png
+docs/source/plots/keyframes/5_nonreocurring-001 2.png
+docs/source/plots/keyframes/5_nonreocurring-001.png
+docs/source/plots/keyframes/5_nonreocurring-002 2.png
+docs/source/plots/keyframes/5_nonreocurring-002.png
+docs/source/plots/keyframes/5_nonreocurring-003 2.png
+docs/source/plots/keyframes/5_nonreocurring-003.png
+docs/source/plots/keyframes/5_nonreocurring-004 2.png
+docs/source/plots/keyframes/5_nonreocurring-004.png
+docs/source/plots/keyframes/5_nonreocurring-005 2.png
+docs/source/plots/keyframes/5_nonreocurring-005.png
+docs/source/plots/keyframes/5_nonreocurring-006 2.png
+docs/source/plots/keyframes/5_nonreocurring-006.png
+docs/source/plots/keyframes/5_nonreocurring-007 2.png
+docs/source/plots/keyframes/5_nonreocurring-007.png
+docs/source/plots/keyframes/5_nonreocurring-008 2.png
+docs/source/plots/keyframes/5_nonreocurring-008.png
+docs/source/plots/keyframes/5_nonreocurring-009 2.png
+docs/source/plots/keyframes/5_nonreocurring-009.png
+docs/source/plots/keyframes/5_nonreocurring-010 2.png
+docs/source/plots/keyframes/5_nonreocurring-010.png
+docs/source/plots/keyframes/5_nonreocurring-011 2.png
+docs/source/plots/keyframes/5_nonreocurring-011.png
+docs/source/plots/keyframes/5_nonreocurring-012 2.png
+docs/source/plots/keyframes/5_nonreocurring-012.png
+docs/source/plots/keyframes/5_nonreocurring-013 2.png
+docs/source/plots/keyframes/5_nonreocurring-013.png
+docs/source/plots/keyframes/5_nonreocurring-014 2.png
+docs/source/plots/keyframes/5_nonreocurring-014.png
+docs/source/plots/keyframes/5_nonreocurring-015 2.png
+docs/source/plots/keyframes/5_nonreocurring-015.png
+docs/source/plots/keyframes/5_nonreocurring-016 2.png
+docs/source/plots/keyframes/5_nonreocurring-016.png
+docs/source/plots/keyframes/5_nonreocurring-017 2.png
+docs/source/plots/keyframes/5_nonreocurring-017.png
+docs/source/plots/keyframes/5_nonreocurring-018 2.png
+docs/source/plots/keyframes/5_nonreocurring-018.png
+docs/source/plots/keyframes/5_nonreocurring-019 2.png
+docs/source/plots/keyframes/5_nonreocurring-019.png
+docs/source/plots/keyframes/5_nonreocurring-020 2.png
+docs/source/plots/keyframes/5_nonreocurring-020.png
+docs/source/plots/keyframes/5_nonreocurring-021 2.png
+docs/source/plots/keyframes/5_nonreocurring-021.png
+docs/source/plots/keyframes/5_nonreocurring-022 2.png
+docs/source/plots/keyframes/5_nonreocurring-022.png
+docs/source/plots/keyframes/5_nonreocurring-023 2.png
+docs/source/plots/keyframes/5_nonreocurring-023.png
+docs/source/plots/keyframes/5_nonreocurring-024 2.png
+docs/source/plots/keyframes/5_nonreocurring-024.png
+docs/source/plots/keyframes/5_nonreocurring-025 2.png
+docs/source/plots/keyframes/5_nonreocurring-025.png
+docs/source/plots/keyframes/5_nonreocurring-026 2.png
+docs/source/plots/keyframes/5_nonreocurring-026.png
+docs/source/plots/keyframes/5_nonreocurring-027 2.png
+docs/source/plots/keyframes/5_nonreocurring-027.png
+docs/source/plots/keyframes/5_nonreocurring-028 2.png
+docs/source/plots/keyframes/5_nonreocurring-028.png
+docs/source/plots/keyframes/5_nonreocurring-029 2.png
+docs/source/plots/keyframes/5_nonreocurring-029.png
+docs/source/plots/keyframes/5_nonreocurring-030 2.png
+docs/source/plots/keyframes/5_nonreocurring-030.png
+docs/source/plots/keyframes/5_nonreocurring-031 2.png
+docs/source/plots/keyframes/5_nonreocurring-031.png
+docs/source/plots/keyframes/5_nonreocurring-032 2.png
+docs/source/plots/keyframes/5_nonreocurring-032.png
+docs/source/plots/keyframes/5_nonreocurring-033 2.png
+docs/source/plots/keyframes/5_nonreocurring-033.png
+docs/source/plots/keyframes/5_nonreocurring-034 2.png
+docs/source/plots/keyframes/5_nonreocurring-034.png
+docs/source/plots/keyframes/5_nonreocurring-035 2.png
+docs/source/plots/keyframes/5_nonreocurring-035.png
+docs/source/plots/keyframes/5_nonreocurring-036 2.png
+docs/source/plots/keyframes/5_nonreocurring-036.png
+docs/source/plots/keyframes/5_nonreocurring-037 2.png
+docs/source/plots/keyframes/5_nonreocurring-037.png
+docs/source/plots/keyframes/5_nonreocurring-038 2.png
+docs/source/plots/keyframes/5_nonreocurring-038.png
+docs/source/plots/keyframes/5_nonreocurring-039 2.png
+docs/source/plots/keyframes/5_nonreocurring-039.png
+docs/source/plots/keyframes/5_nonreocurring-040 2.png
+docs/source/plots/keyframes/5_nonreocurring-040.png
+docs/source/plots/keyframes/5_nonreocurring-041 2.png
+docs/source/plots/keyframes/5_nonreocurring-041.png
+docs/source/plots/keyframes/5_nonreocurring-042 2.png
+docs/source/plots/keyframes/5_nonreocurring-042.png
+docs/source/plots/keyframes/5_nonreocurring-043 2.png
+docs/source/plots/keyframes/5_nonreocurring-043.png
+docs/source/plots/keyframes/5_nonreocurring-044 2.png
+docs/source/plots/keyframes/5_nonreocurring-044.png
+docs/source/plots/keyframes/5_nonreocurring-045 2.png
+docs/source/plots/keyframes/5_nonreocurring-045.png
+docs/source/plots/keyframes/5_nonreocurring-046 2.png
+docs/source/plots/keyframes/5_nonreocurring-046.png
+docs/source/plots/keyframes/5_nonreocurring-047 2.png
+docs/source/plots/keyframes/5_nonreocurring-047.png
+docs/source/plots/keyframes/5_nonreocurring-048 2.png
+docs/source/plots/keyframes/5_nonreocurring-048.png
+docs/source/plots/keyframes/5_nonreocurring-049 2.png
+docs/source/plots/keyframes/5_nonreocurring-049.png
+docs/source/plots/keyframes/5_nonreocurring-050 2.png
+docs/source/plots/keyframes/5_nonreocurring-050.png
+docs/source/plots/keyframes/5_nonreocurring-051 2.png
+docs/source/plots/keyframes/5_nonreocurring-051.png
+docs/source/plots/keyframes/5_nonreocurring-052 2.png
+docs/source/plots/keyframes/5_nonreocurring-052.png
+docs/source/plots/keyframes/5_nonreocurring-053 2.png
+docs/source/plots/keyframes/5_nonreocurring-053.png
+docs/source/plots/keyframes/5_nonreocurring-054 2.png
+docs/source/plots/keyframes/5_nonreocurring-054.png
+docs/source/plots/keyframes/5_nonreocurring-055 2.png
+docs/source/plots/keyframes/5_nonreocurring-055.png
+docs/source/plots/keyframes/5_nonreocurring-056 2.png
+docs/source/plots/keyframes/5_nonreocurring-056.png
+docs/source/plots/keyframes/5_nonreocurring-057 2.png
+docs/source/plots/keyframes/5_nonreocurring-057.png
+docs/source/plots/keyframes/5_nonreocurring-058 2.png
+docs/source/plots/keyframes/5_nonreocurring-058.png
+docs/source/plots/keyframes/5_nonreocurring-059 2.png
+docs/source/plots/keyframes/5_nonreocurring-059.png
+docs/source/plots/keyframes/5_nonreocurring-060 2.png
+docs/source/plots/keyframes/5_nonreocurring-060.png
+docs/source/plots/keyframes/5_nonreocurring-061 2.png
+docs/source/plots/keyframes/5_nonreocurring-061.png
+docs/source/plots/keyframes/5_nonreocurring-062 2.png
+docs/source/plots/keyframes/5_nonreocurring-062.png
+docs/source/plots/keyframes/5_nonreocurring-063 2.png
+docs/source/plots/keyframes/5_nonreocurring-063.png
+docs/source/plots/keyframes/5_nonreocurring-064 2.png
+docs/source/plots/keyframes/5_nonreocurring-064.png
+docs/source/plots/keyframes/5_nonreocurring-065 2.png
+docs/source/plots/keyframes/5_nonreocurring-065.png
+docs/source/plots/keyframes/5_nonreocurring-066 2.png
+docs/source/plots/keyframes/5_nonreocurring-066.png
+docs/source/plots/keyframes/5_nonreocurring-067 2.png
+docs/source/plots/keyframes/5_nonreocurring-067.png
+docs/source/plots/keyframes/5_nonreocurring-068 2.png
+docs/source/plots/keyframes/5_nonreocurring-068.png
+docs/source/plots/keyframes/5_nonreocurring-069 2.png
+docs/source/plots/keyframes/5_nonreocurring-069.png
+docs/source/plots/keyframes/5_nonreocurring-070 2.png
+docs/source/plots/keyframes/5_nonreocurring-070.png
+docs/source/plots/keyframes/5_nonreocurring-071 2.png
+docs/source/plots/keyframes/5_nonreocurring-071.png
+docs/source/plots/keyframes/5_nonreocurring-072 2.png
+docs/source/plots/keyframes/5_nonreocurring-072.png
+docs/source/plots/keyframes/5_nonreocurring-073 2.png
+docs/source/plots/keyframes/5_nonreocurring-073.png
+docs/source/plots/keyframes/5_nonreocurring-074 2.png
+docs/source/plots/keyframes/5_nonreocurring-074.png
+docs/source/plots/keyframes/5_nonreocurring-075 2.png
+docs/source/plots/keyframes/5_nonreocurring-075.png
+docs/source/plots/keyframes/5_nonreocurring-076 2.png
+docs/source/plots/keyframes/5_nonreocurring-076.png
+docs/source/plots/keyframes/5_nonreocurring-077 2.png
+docs/source/plots/keyframes/5_nonreocurring-077.png
+docs/source/plots/keyframes/5_nonreocurring-078 2.png
+docs/source/plots/keyframes/5_nonreocurring-078.png
+docs/source/plots/keyframes/5_nonreocurring-079 2.png
+docs/source/plots/keyframes/5_nonreocurring-079.png
+docs/source/plots/keyframes/5_nonreocurring-080 2.png
+docs/source/plots/keyframes/5_nonreocurring-080.png
+docs/source/plots/keyframes/5_nonreocurring-081 2.png
+docs/source/plots/keyframes/5_nonreocurring-081.png
+docs/source/plots/keyframes/5_nonreocurring-082 2.png
+docs/source/plots/keyframes/5_nonreocurring-082.png
+docs/source/plots/keyframes/5_nonreocurring-083 2.png
+docs/source/plots/keyframes/5_nonreocurring-083.png
+docs/source/plots/keyframes/5_nonreocurring-084 2.png
+docs/source/plots/keyframes/5_nonreocurring-084.png
+docs/source/plots/keyframes/5_nonreocurring-085 2.png
+docs/source/plots/keyframes/5_nonreocurring-085.png
+docs/source/plots/keyframes/5_nonreocurring-086 2.png
+docs/source/plots/keyframes/5_nonreocurring-086.png
+docs/source/plots/keyframes/5_nonreocurring-087 2.png
+docs/source/plots/keyframes/5_nonreocurring-087.png
+docs/source/plots/keyframes/5_nonreocurring-088 2.png
+docs/source/plots/keyframes/5_nonreocurring-088.png
+docs/source/plots/keyframes/5_nonreocurring-089 2.png
+docs/source/plots/keyframes/5_nonreocurring-089.png
+docs/source/plots/keyframes/5_nonreocurring-090 2.png
+docs/source/plots/keyframes/5_nonreocurring-090.png
+docs/source/plots/keyframes/5_nonreocurring-091 2.png
+docs/source/plots/keyframes/5_nonreocurring-091.png
+docs/source/plots/keyframes/5_nonreocurring-092 2.png
+docs/source/plots/keyframes/5_nonreocurring-092.png
+docs/source/plots/keyframes/5_nonreocurring-093 2.png
+docs/source/plots/keyframes/5_nonreocurring-093.png
+docs/source/plots/keyframes/5_nonreocurring-094 2.png
+docs/source/plots/keyframes/5_nonreocurring-094.png
+docs/source/plots/keyframes/5_nonreocurring-095 2.png
+docs/source/plots/keyframes/5_nonreocurring-095.png
+docs/source/plots/keyframes/5_nonreocurring-096 2.png
+docs/source/plots/keyframes/5_nonreocurring-096.png
+docs/source/plots/keyframes/5_nonreocurring-097 2.png
+docs/source/plots/keyframes/5_nonreocurring-097.png
+docs/source/plots/keyframes/5_nonreocurring-098 2.png
+docs/source/plots/keyframes/5_nonreocurring-098.png
+docs/source/plots/keyframes/5_nonreocurring-099 2.png
+docs/source/plots/keyframes/5_nonreocurring-099.png
+docs/source/plots/keyframes/6_balanced-000 2.png
+docs/source/plots/keyframes/6_balanced-000.png
+docs/source/plots/keyframes/6_balanced-001 2.png
+docs/source/plots/keyframes/6_balanced-001.png
+docs/source/plots/keyframes/6_balanced-002 2.png
+docs/source/plots/keyframes/6_balanced-002.png
+docs/source/plots/keyframes/6_balanced-003 2.png
+docs/source/plots/keyframes/6_balanced-003.png
+docs/source/plots/keyframes/6_balanced-004 2.png
+docs/source/plots/keyframes/6_balanced-004.png
+docs/source/plots/keyframes/6_balanced-005 2.png
+docs/source/plots/keyframes/6_balanced-005.png
+docs/source/plots/keyframes/6_balanced-006 2.png
+docs/source/plots/keyframes/6_balanced-006.png
+docs/source/plots/keyframes/6_balanced-007 2.png
+docs/source/plots/keyframes/6_balanced-007.png
+docs/source/plots/keyframes/6_balanced-008 2.png
+docs/source/plots/keyframes/6_balanced-008.png
+docs/source/plots/keyframes/6_balanced-009 2.png
+docs/source/plots/keyframes/6_balanced-009.png
+docs/source/plots/keyframes/6_balanced-010 2.png
+docs/source/plots/keyframes/6_balanced-010.png
+docs/source/plots/keyframes/6_balanced-011 2.png
+docs/source/plots/keyframes/6_balanced-011.png
+docs/source/plots/keyframes/6_balanced-012 2.png
+docs/source/plots/keyframes/6_balanced-012.png
+docs/source/plots/keyframes/6_balanced-013 2.png
+docs/source/plots/keyframes/6_balanced-013.png
+docs/source/plots/keyframes/6_balanced-014 2.png
+docs/source/plots/keyframes/6_balanced-014.png
+docs/source/plots/keyframes/6_balanced-015 2.png
+docs/source/plots/keyframes/6_balanced-015.png
+docs/source/plots/keyframes/6_balanced-016 2.png
+docs/source/plots/keyframes/6_balanced-016.png
+docs/source/plots/keyframes/6_balanced-017 2.png
+docs/source/plots/keyframes/6_balanced-017.png
+docs/source/plots/keyframes/6_balanced-018 2.png
+docs/source/plots/keyframes/6_balanced-018.png
+docs/source/plots/keyframes/6_balanced-019 2.png
+docs/source/plots/keyframes/6_balanced-019.png
+docs/source/plots/keyframes/6_balanced-020 2.png
+docs/source/plots/keyframes/6_balanced-020.png
+docs/source/plots/keyframes/6_balanced-021 2.png
+docs/source/plots/keyframes/6_balanced-021.png
+docs/source/plots/keyframes/6_balanced-022 2.png
+docs/source/plots/keyframes/6_balanced-022.png
+docs/source/plots/keyframes/6_balanced-023 2.png
+docs/source/plots/keyframes/6_balanced-023.png
+docs/source/plots/keyframes/6_balanced-024 2.png
+docs/source/plots/keyframes/6_balanced-024.png
+docs/source/plots/keyframes/6_balanced-025 2.png
+docs/source/plots/keyframes/6_balanced-025.png
+docs/source/plots/keyframes/6_balanced-026 2.png
+docs/source/plots/keyframes/6_balanced-026.png
+docs/source/plots/keyframes/6_balanced-027 2.png
+docs/source/plots/keyframes/6_balanced-027.png
+docs/source/plots/keyframes/6_balanced-028 2.png
+docs/source/plots/keyframes/6_balanced-028.png
+docs/source/plots/keyframes/6_balanced-029 2.png
+docs/source/plots/keyframes/6_balanced-029.png
+docs/source/plots/keyframes/6_balanced-030 2.png
+docs/source/plots/keyframes/6_balanced-030.png
+docs/source/plots/keyframes/6_balanced-031 2.png
+docs/source/plots/keyframes/6_balanced-031.png
+docs/source/plots/keyframes/6_balanced-032 2.png
+docs/source/plots/keyframes/6_balanced-032.png
+docs/source/plots/keyframes/6_balanced-033 2.png
+docs/source/plots/keyframes/6_balanced-033.png
+docs/source/plots/keyframes/6_balanced-034 2.png
+docs/source/plots/keyframes/6_balanced-034.png
+docs/source/plots/keyframes/6_balanced-035 2.png
+docs/source/plots/keyframes/6_balanced-035.png
+docs/source/plots/keyframes/6_balanced-036 2.png
+docs/source/plots/keyframes/6_balanced-036.png
+docs/source/plots/keyframes/6_balanced-037 2.png
+docs/source/plots/keyframes/6_balanced-037.png
+docs/source/plots/keyframes/6_balanced-038 2.png
+docs/source/plots/keyframes/6_balanced-038.png
+docs/source/plots/keyframes/6_balanced-039 2.png
+docs/source/plots/keyframes/6_balanced-039.png
+docs/source/plots/keyframes/6_balanced-040 2.png
+docs/source/plots/keyframes/6_balanced-040.png
+docs/source/plots/keyframes/6_balanced-041 2.png
+docs/source/plots/keyframes/6_balanced-041.png
+docs/source/plots/keyframes/6_balanced-042 2.png
+docs/source/plots/keyframes/6_balanced-042.png
+docs/source/plots/keyframes/6_balanced-043 2.png
+docs/source/plots/keyframes/6_balanced-043.png
+docs/source/plots/keyframes/6_balanced-044 2.png
+docs/source/plots/keyframes/6_balanced-044.png
+docs/source/plots/keyframes/6_balanced-045 2.png
+docs/source/plots/keyframes/6_balanced-045.png
+docs/source/plots/keyframes/6_balanced-046 2.png
+docs/source/plots/keyframes/6_balanced-046.png
+docs/source/plots/keyframes/6_balanced-047 2.png
+docs/source/plots/keyframes/6_balanced-047.png
+docs/source/plots/keyframes/6_balanced-048 2.png
+docs/source/plots/keyframes/6_balanced-048.png
+docs/source/plots/keyframes/6_balanced-049 2.png
+docs/source/plots/keyframes/6_balanced-049.png
+docs/source/plots/keyframes/6_balanced-050 2.png
+docs/source/plots/keyframes/6_balanced-050.png
+docs/source/plots/keyframes/6_balanced-051 2.png
+docs/source/plots/keyframes/6_balanced-051.png
+docs/source/plots/keyframes/6_balanced-052 2.png
+docs/source/plots/keyframes/6_balanced-052.png
+docs/source/plots/keyframes/6_balanced-053 2.png
+docs/source/plots/keyframes/6_balanced-053.png
+docs/source/plots/keyframes/6_balanced-054 2.png
+docs/source/plots/keyframes/6_balanced-054.png
+docs/source/plots/keyframes/6_balanced-055 2.png
+docs/source/plots/keyframes/6_balanced-055.png
+docs/source/plots/keyframes/6_balanced-056 2.png
+docs/source/plots/keyframes/6_balanced-056.png
+docs/source/plots/keyframes/6_balanced-057 2.png
+docs/source/plots/keyframes/6_balanced-057.png
+docs/source/plots/keyframes/6_balanced-058 2.png
+docs/source/plots/keyframes/6_balanced-058.png
+docs/source/plots/keyframes/6_balanced-059 2.png
+docs/source/plots/keyframes/6_balanced-059.png
+docs/source/plots/keyframes/6_balanced-060 2.png
+docs/source/plots/keyframes/6_balanced-060.png
+docs/source/plots/keyframes/6_balanced-061 2.png
+docs/source/plots/keyframes/6_balanced-061.png
+docs/source/plots/keyframes/6_balanced-062 2.png
+docs/source/plots/keyframes/6_balanced-062.png
+docs/source/plots/keyframes/6_balanced-063 2.png
+docs/source/plots/keyframes/6_balanced-063.png
+docs/source/plots/keyframes/6_balanced-064 2.png
+docs/source/plots/keyframes/6_balanced-064.png
+docs/source/plots/keyframes/6_balanced-065 2.png
+docs/source/plots/keyframes/6_balanced-065.png
+docs/source/plots/keyframes/6_balanced-066 2.png
+docs/source/plots/keyframes/6_balanced-066.png
+docs/source/plots/keyframes/6_balanced-067 2.png
+docs/source/plots/keyframes/6_balanced-067.png
+docs/source/plots/keyframes/6_balanced-068 2.png
+docs/source/plots/keyframes/6_balanced-068.png
+docs/source/plots/keyframes/6_balanced-069 2.png
+docs/source/plots/keyframes/6_balanced-069.png
+docs/source/plots/keyframes/6_balanced-070 2.png
+docs/source/plots/keyframes/6_balanced-070.png
+docs/source/plots/keyframes/6_balanced-071 2.png
+docs/source/plots/keyframes/6_balanced-071.png
+docs/source/plots/keyframes/6_balanced-072 2.png
+docs/source/plots/keyframes/6_balanced-072.png
+docs/source/plots/keyframes/6_balanced-073 2.png
+docs/source/plots/keyframes/6_balanced-073.png
+docs/source/plots/keyframes/6_balanced-074 2.png
+docs/source/plots/keyframes/6_balanced-074.png
+docs/source/plots/keyframes/6_balanced-075 2.png
+docs/source/plots/keyframes/6_balanced-075.png
+docs/source/plots/keyframes/6_balanced-076 2.png
+docs/source/plots/keyframes/6_balanced-076.png
+docs/source/plots/keyframes/6_balanced-077 2.png
+docs/source/plots/keyframes/6_balanced-077.png
+docs/source/plots/keyframes/6_balanced-078 2.png
+docs/source/plots/keyframes/6_balanced-078.png
+docs/source/plots/keyframes/6_balanced-079 2.png
+docs/source/plots/keyframes/6_balanced-079.png
+docs/source/plots/keyframes/6_balanced-080 2.png
+docs/source/plots/keyframes/6_balanced-080.png
+docs/source/plots/keyframes/6_balanced-081 2.png
+docs/source/plots/keyframes/6_balanced-081.png
+docs/source/plots/keyframes/6_balanced-082 2.png
+docs/source/plots/keyframes/6_balanced-082.png
+docs/source/plots/keyframes/6_balanced-083 2.png
+docs/source/plots/keyframes/6_balanced-083.png
+docs/source/plots/keyframes/6_balanced-084 2.png
+docs/source/plots/keyframes/6_balanced-084.png
+docs/source/plots/keyframes/6_balanced-085 2.png
+docs/source/plots/keyframes/6_balanced-085.png
+docs/source/plots/keyframes/6_balanced-086 2.png
+docs/source/plots/keyframes/6_balanced-086.png
+docs/source/plots/keyframes/6_balanced-087 2.png
+docs/source/plots/keyframes/6_balanced-087.png
+docs/source/plots/keyframes/6_balanced-088 2.png
+docs/source/plots/keyframes/6_balanced-088.png
+docs/source/plots/keyframes/6_balanced-089 2.png
+docs/source/plots/keyframes/6_balanced-089.png
+docs/source/plots/keyframes/6_balanced-090 2.png
+docs/source/plots/keyframes/6_balanced-090.png
+docs/source/plots/keyframes/6_balanced-091 2.png
+docs/source/plots/keyframes/6_balanced-091.png
+docs/source/plots/keyframes/6_balanced-092 2.png
+docs/source/plots/keyframes/6_balanced-092.png
+docs/source/plots/keyframes/6_balanced-093 2.png
+docs/source/plots/keyframes/6_balanced-093.png
+docs/source/plots/keyframes/6_balanced-094 2.png
+docs/source/plots/keyframes/6_balanced-094.png
+docs/source/plots/keyframes/6_balanced-095 2.png
+docs/source/plots/keyframes/6_balanced-095.png
+docs/source/plots/keyframes/6_balanced-096 2.png
+docs/source/plots/keyframes/6_balanced-096.png
+docs/source/plots/keyframes/6_balanced-097 2.png
+docs/source/plots/keyframes/6_balanced-097.png
+docs/source/plots/keyframes/6_balanced-098 2.png
+docs/source/plots/keyframes/6_balanced-098.png
+docs/source/plots/keyframes/6_balanced-099 2.png
+docs/source/plots/keyframes/6_balanced-099.png
+docs/source/plots/keyframes/7_static_imbalanced-000 2.png
+docs/source/plots/keyframes/7_static_imbalanced-000.png
+docs/source/plots/keyframes/7_static_imbalanced-001 2.png
+docs/source/plots/keyframes/7_static_imbalanced-001.png
+docs/source/plots/keyframes/7_static_imbalanced-002 2.png
+docs/source/plots/keyframes/7_static_imbalanced-002.png
+docs/source/plots/keyframes/7_static_imbalanced-003 2.png
+docs/source/plots/keyframes/7_static_imbalanced-003.png
+docs/source/plots/keyframes/7_static_imbalanced-004 2.png
+docs/source/plots/keyframes/7_static_imbalanced-004.png
+docs/source/plots/keyframes/7_static_imbalanced-005 2.png
+docs/source/plots/keyframes/7_static_imbalanced-005.png
+docs/source/plots/keyframes/7_static_imbalanced-006 2.png
+docs/source/plots/keyframes/7_static_imbalanced-006.png
+docs/source/plots/keyframes/7_static_imbalanced-007 2.png
+docs/source/plots/keyframes/7_static_imbalanced-007.png
+docs/source/plots/keyframes/7_static_imbalanced-008 2.png
+docs/source/plots/keyframes/7_static_imbalanced-008.png
+docs/source/plots/keyframes/7_static_imbalanced-009 2.png
+docs/source/plots/keyframes/7_static_imbalanced-009.png
+docs/source/plots/keyframes/7_static_imbalanced-010 2.png
+docs/source/plots/keyframes/7_static_imbalanced-010.png
+docs/source/plots/keyframes/7_static_imbalanced-011 2.png
+docs/source/plots/keyframes/7_static_imbalanced-011.png
+docs/source/plots/keyframes/7_static_imbalanced-012 2.png
+docs/source/plots/keyframes/7_static_imbalanced-012.png
+docs/source/plots/keyframes/7_static_imbalanced-013 2.png
+docs/source/plots/keyframes/7_static_imbalanced-013.png
+docs/source/plots/keyframes/7_static_imbalanced-014 2.png
+docs/source/plots/keyframes/7_static_imbalanced-014.png
+docs/source/plots/keyframes/7_static_imbalanced-015 2.png
+docs/source/plots/keyframes/7_static_imbalanced-015.png
+docs/source/plots/keyframes/7_static_imbalanced-016 2.png
+docs/source/plots/keyframes/7_static_imbalanced-016.png
+docs/source/plots/keyframes/7_static_imbalanced-017 2.png
+docs/source/plots/keyframes/7_static_imbalanced-017.png
+docs/source/plots/keyframes/7_static_imbalanced-018 2.png
+docs/source/plots/keyframes/7_static_imbalanced-018.png
+docs/source/plots/keyframes/7_static_imbalanced-019 2.png
+docs/source/plots/keyframes/7_static_imbalanced-019.png
+docs/source/plots/keyframes/7_static_imbalanced-020 2.png
+docs/source/plots/keyframes/7_static_imbalanced-020.png
+docs/source/plots/keyframes/7_static_imbalanced-021 2.png
+docs/source/plots/keyframes/7_static_imbalanced-021.png
+docs/source/plots/keyframes/7_static_imbalanced-022 2.png
+docs/source/plots/keyframes/7_static_imbalanced-022.png
+docs/source/plots/keyframes/7_static_imbalanced-023 2.png
+docs/source/plots/keyframes/7_static_imbalanced-023.png
+docs/source/plots/keyframes/7_static_imbalanced-024 2.png
+docs/source/plots/keyframes/7_static_imbalanced-024.png
+docs/source/plots/keyframes/7_static_imbalanced-025 2.png
+docs/source/plots/keyframes/7_static_imbalanced-025.png
+docs/source/plots/keyframes/7_static_imbalanced-026 2.png
+docs/source/plots/keyframes/7_static_imbalanced-026.png
+docs/source/plots/keyframes/7_static_imbalanced-027 2.png
+docs/source/plots/keyframes/7_static_imbalanced-027.png
+docs/source/plots/keyframes/7_static_imbalanced-028 2.png
+docs/source/plots/keyframes/7_static_imbalanced-028.png
+docs/source/plots/keyframes/7_static_imbalanced-029 2.png
+docs/source/plots/keyframes/7_static_imbalanced-029.png
+docs/source/plots/keyframes/7_static_imbalanced-030 2.png
+docs/source/plots/keyframes/7_static_imbalanced-030.png
+docs/source/plots/keyframes/7_static_imbalanced-031 2.png
+docs/source/plots/keyframes/7_static_imbalanced-031.png
+docs/source/plots/keyframes/7_static_imbalanced-032 2.png
+docs/source/plots/keyframes/7_static_imbalanced-032.png
+docs/source/plots/keyframes/7_static_imbalanced-033 2.png
+docs/source/plots/keyframes/7_static_imbalanced-033.png
+docs/source/plots/keyframes/7_static_imbalanced-034 2.png
+docs/source/plots/keyframes/7_static_imbalanced-034.png
+docs/source/plots/keyframes/7_static_imbalanced-035 2.png
+docs/source/plots/keyframes/7_static_imbalanced-035.png
+docs/source/plots/keyframes/7_static_imbalanced-036 2.png
+docs/source/plots/keyframes/7_static_imbalanced-036.png
+docs/source/plots/keyframes/7_static_imbalanced-037 2.png
+docs/source/plots/keyframes/7_static_imbalanced-037.png
+docs/source/plots/keyframes/7_static_imbalanced-038 2.png
+docs/source/plots/keyframes/7_static_imbalanced-038.png
+docs/source/plots/keyframes/7_static_imbalanced-039 2.png
+docs/source/plots/keyframes/7_static_imbalanced-039.png
+docs/source/plots/keyframes/7_static_imbalanced-040 2.png
+docs/source/plots/keyframes/7_static_imbalanced-040.png
+docs/source/plots/keyframes/7_static_imbalanced-041 2.png
+docs/source/plots/keyframes/7_static_imbalanced-041.png
+docs/source/plots/keyframes/7_static_imbalanced-042 2.png
+docs/source/plots/keyframes/7_static_imbalanced-042.png
+docs/source/plots/keyframes/7_static_imbalanced-043 2.png
+docs/source/plots/keyframes/7_static_imbalanced-043.png
+docs/source/plots/keyframes/7_static_imbalanced-044 2.png
+docs/source/plots/keyframes/7_static_imbalanced-044.png
+docs/source/plots/keyframes/7_static_imbalanced-045 2.png
+docs/source/plots/keyframes/7_static_imbalanced-045.png
+docs/source/plots/keyframes/7_static_imbalanced-046 2.png
+docs/source/plots/keyframes/7_static_imbalanced-046.png
+docs/source/plots/keyframes/7_static_imbalanced-047 2.png
+docs/source/plots/keyframes/7_static_imbalanced-047.png
+docs/source/plots/keyframes/7_static_imbalanced-048 2.png
+docs/source/plots/keyframes/7_static_imbalanced-048.png
+docs/source/plots/keyframes/7_static_imbalanced-049 2.png
+docs/source/plots/keyframes/7_static_imbalanced-049.png
+docs/source/plots/keyframes/7_static_imbalanced-050 2.png
+docs/source/plots/keyframes/7_static_imbalanced-050.png
+docs/source/plots/keyframes/7_static_imbalanced-051 2.png
+docs/source/plots/keyframes/7_static_imbalanced-051.png
+docs/source/plots/keyframes/7_static_imbalanced-052 2.png
+docs/source/plots/keyframes/7_static_imbalanced-052.png
+docs/source/plots/keyframes/7_static_imbalanced-053 2.png
+docs/source/plots/keyframes/7_static_imbalanced-053.png
+docs/source/plots/keyframes/7_static_imbalanced-054 2.png
+docs/source/plots/keyframes/7_static_imbalanced-054.png
+docs/source/plots/keyframes/7_static_imbalanced-055 2.png
+docs/source/plots/keyframes/7_static_imbalanced-055.png
+docs/source/plots/keyframes/7_static_imbalanced-056 2.png
+docs/source/plots/keyframes/7_static_imbalanced-056.png
+docs/source/plots/keyframes/7_static_imbalanced-057 2.png
+docs/source/plots/keyframes/7_static_imbalanced-057.png
+docs/source/plots/keyframes/7_static_imbalanced-058 2.png
+docs/source/plots/keyframes/7_static_imbalanced-058.png
+docs/source/plots/keyframes/7_static_imbalanced-059 2.png
+docs/source/plots/keyframes/7_static_imbalanced-059.png
+docs/source/plots/keyframes/7_static_imbalanced-060 2.png
+docs/source/plots/keyframes/7_static_imbalanced-060.png
+docs/source/plots/keyframes/7_static_imbalanced-061 2.png
+docs/source/plots/keyframes/7_static_imbalanced-061.png
+docs/source/plots/keyframes/7_static_imbalanced-062 2.png
+docs/source/plots/keyframes/7_static_imbalanced-062.png
+docs/source/plots/keyframes/7_static_imbalanced-063 2.png
+docs/source/plots/keyframes/7_static_imbalanced-063.png
+docs/source/plots/keyframes/7_static_imbalanced-064 2.png
+docs/source/plots/keyframes/7_static_imbalanced-064.png
+docs/source/plots/keyframes/7_static_imbalanced-065 2.png
+docs/source/plots/keyframes/7_static_imbalanced-065.png
+docs/source/plots/keyframes/7_static_imbalanced-066 2.png
+docs/source/plots/keyframes/7_static_imbalanced-066.png
+docs/source/plots/keyframes/7_static_imbalanced-067 2.png
+docs/source/plots/keyframes/7_static_imbalanced-067.png
+docs/source/plots/keyframes/7_static_imbalanced-068 2.png
+docs/source/plots/keyframes/7_static_imbalanced-068.png
+docs/source/plots/keyframes/7_static_imbalanced-069 2.png
+docs/source/plots/keyframes/7_static_imbalanced-069.png
+docs/source/plots/keyframes/7_static_imbalanced-070 2.png
+docs/source/plots/keyframes/7_static_imbalanced-070.png
+docs/source/plots/keyframes/7_static_imbalanced-071 2.png
+docs/source/plots/keyframes/7_static_imbalanced-071.png
+docs/source/plots/keyframes/7_static_imbalanced-072 2.png
+docs/source/plots/keyframes/7_static_imbalanced-072.png
+docs/source/plots/keyframes/7_static_imbalanced-073 2.png
+docs/source/plots/keyframes/7_static_imbalanced-073.png
+docs/source/plots/keyframes/7_static_imbalanced-074 2.png
+docs/source/plots/keyframes/7_static_imbalanced-074.png
+docs/source/plots/keyframes/7_static_imbalanced-075 2.png
+docs/source/plots/keyframes/7_static_imbalanced-075.png
+docs/source/plots/keyframes/7_static_imbalanced-076 2.png
+docs/source/plots/keyframes/7_static_imbalanced-076.png
+docs/source/plots/keyframes/7_static_imbalanced-077 2.png
+docs/source/plots/keyframes/7_static_imbalanced-077.png
+docs/source/plots/keyframes/7_static_imbalanced-078 2.png
+docs/source/plots/keyframes/7_static_imbalanced-078.png
+docs/source/plots/keyframes/7_static_imbalanced-079 2.png
+docs/source/plots/keyframes/7_static_imbalanced-079.png
+docs/source/plots/keyframes/7_static_imbalanced-080 2.png
+docs/source/plots/keyframes/7_static_imbalanced-080.png
+docs/source/plots/keyframes/7_static_imbalanced-081 2.png
+docs/source/plots/keyframes/7_static_imbalanced-081.png
+docs/source/plots/keyframes/7_static_imbalanced-082 2.png
+docs/source/plots/keyframes/7_static_imbalanced-082.png
+docs/source/plots/keyframes/7_static_imbalanced-083 2.png
+docs/source/plots/keyframes/7_static_imbalanced-083.png
+docs/source/plots/keyframes/7_static_imbalanced-084 2.png
+docs/source/plots/keyframes/7_static_imbalanced-084.png
+docs/source/plots/keyframes/7_static_imbalanced-085 2.png
+docs/source/plots/keyframes/7_static_imbalanced-085.png
+docs/source/plots/keyframes/7_static_imbalanced-086 2.png
+docs/source/plots/keyframes/7_static_imbalanced-086.png
+docs/source/plots/keyframes/7_static_imbalanced-087 2.png
+docs/source/plots/keyframes/7_static_imbalanced-087.png
+docs/source/plots/keyframes/7_static_imbalanced-088 2.png
+docs/source/plots/keyframes/7_static_imbalanced-088.png
+docs/source/plots/keyframes/7_static_imbalanced-089 2.png
+docs/source/plots/keyframes/7_static_imbalanced-089.png
+docs/source/plots/keyframes/7_static_imbalanced-090 2.png
+docs/source/plots/keyframes/7_static_imbalanced-090.png
+docs/source/plots/keyframes/7_static_imbalanced-091 2.png
+docs/source/plots/keyframes/7_static_imbalanced-091.png
+docs/source/plots/keyframes/7_static_imbalanced-092 2.png
+docs/source/plots/keyframes/7_static_imbalanced-092.png
+docs/source/plots/keyframes/7_static_imbalanced-093 2.png
+docs/source/plots/keyframes/7_static_imbalanced-093.png
+docs/source/plots/keyframes/7_static_imbalanced-094 2.png
+docs/source/plots/keyframes/7_static_imbalanced-094.png
+docs/source/plots/keyframes/7_static_imbalanced-095 2.png
+docs/source/plots/keyframes/7_static_imbalanced-095.png
+docs/source/plots/keyframes/7_static_imbalanced-096 2.png
+docs/source/plots/keyframes/7_static_imbalanced-096.png
+docs/source/plots/keyframes/7_static_imbalanced-097 2.png
+docs/source/plots/keyframes/7_static_imbalanced-097.png
+docs/source/plots/keyframes/7_static_imbalanced-098 2.png
+docs/source/plots/keyframes/7_static_imbalanced-098.png
+docs/source/plots/keyframes/7_static_imbalanced-099 2.png
+docs/source/plots/keyframes/7_static_imbalanced-099.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-000 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-000.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-001 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-001.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-002 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-002.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-003 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-003.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-004 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-004.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-005 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-005.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-006 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-006.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-007 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-007.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-008 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-008.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-009 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-009.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-010 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-010.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-011 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-011.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-012 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-012.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-013 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-013.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-014 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-014.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-015 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-015.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-016 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-016.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-017 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-017.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-018 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-018.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-019 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-019.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-020 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-020.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-021 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-021.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-022 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-022.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-023 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-023.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-024 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-024.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-025 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-025.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-026 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-026.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-027 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-027.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-028 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-028.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-029 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-029.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-030 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-030.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-031 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-031.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-032 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-032.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-033 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-033.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-034 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-034.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-035 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-035.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-036 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-036.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-037 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-037.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-038 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-038.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-039 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-039.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-040 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-040.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-041 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-041.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-042 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-042.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-043 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-043.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-044 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-044.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-045 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-045.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-046 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-046.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-047 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-047.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-048 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-048.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-049 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-049.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-050 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-050.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-051 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-051.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-052 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-052.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-053 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-053.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-054 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-054.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-055 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-055.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-056 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-056.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-057 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-057.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-058 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-058.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-059 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-059.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-060 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-060.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-061 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-061.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-062 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-062.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-063 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-063.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-064 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-064.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-065 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-065.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-066 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-066.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-067 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-067.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-068 2.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-068.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-069.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-070.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-071.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-072.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-073.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-074.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-075.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-076.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-077.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-078.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-079.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-080.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-081.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-082.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-083.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-084.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-085.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-086.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-087.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-088.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-089.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-090.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-091.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-092.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-093.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-094.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-095.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-096.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-097.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-098.png
+docs/source/plots/keyframes/8_dynamic_imbalanced-099.png
+docs/source/plots/keyframes/9_disco-000.png
+docs/source/plots/keyframes/9_disco-001.png
+docs/source/plots/keyframes/9_disco-002.png
+docs/source/plots/keyframes/9_disco-003.png
+docs/source/plots/keyframes/9_disco-004.png
+docs/source/plots/keyframes/9_disco-005.png
+docs/source/plots/keyframes/9_disco-006.png
+docs/source/plots/keyframes/9_disco-007.png
+docs/source/plots/keyframes/9_disco-008.png
+docs/source/plots/keyframes/9_disco-009.png
+docs/source/plots/keyframes/9_disco-010.png
+docs/source/plots/keyframes/9_disco-011.png
+docs/source/plots/keyframes/9_disco-012.png
+docs/source/plots/keyframes/9_disco-013.png
+docs/source/plots/keyframes/9_disco-014.png
+docs/source/plots/keyframes/9_disco-015.png
+docs/source/plots/keyframes/9_disco-016.png
+docs/source/plots/keyframes/9_disco-017.png
+docs/source/plots/keyframes/9_disco-018.png
+docs/source/plots/keyframes/9_disco-019.png
+docs/source/plots/keyframes/9_disco-020.png
+docs/source/plots/keyframes/9_disco-021.png
+docs/source/plots/keyframes/9_disco-022.png
+docs/source/plots/keyframes/9_disco-023.png
+docs/source/plots/keyframes/9_disco-024.png
+docs/source/plots/keyframes/9_disco-025.png
+docs/source/plots/keyframes/9_disco-026.png
+docs/source/plots/keyframes/9_disco-027.png
+docs/source/plots/keyframes/9_disco-028.png
+docs/source/plots/keyframes/9_disco-029.png
+docs/source/plots/keyframes/9_disco-030.png
+docs/source/plots/keyframes/9_disco-031.png
+docs/source/plots/keyframes/9_disco-032.png
+docs/source/plots/keyframes/9_disco-033.png
+docs/source/plots/keyframes/9_disco-034.png
+docs/source/plots/keyframes/9_disco-035.png
+docs/source/plots/keyframes/9_disco-036.png
+docs/source/plots/keyframes/9_disco-037.png
+docs/source/plots/keyframes/9_disco-038.png
+docs/source/plots/keyframes/9_disco-039.png
+docs/source/plots/keyframes/9_disco-040.png
+docs/source/plots/keyframes/9_disco-041.png
+docs/source/plots/keyframes/9_disco-042.png
+docs/source/plots/keyframes/9_disco-043.png
+docs/source/plots/keyframes/9_disco-044.png
+docs/source/plots/keyframes/9_disco-045.png
+docs/source/plots/keyframes/9_disco-046.png
+docs/source/plots/keyframes/9_disco-047.png
+docs/source/plots/keyframes/9_disco-048.png
+docs/source/plots/keyframes/9_disco-049.png
+docs/source/plots/keyframes/9_disco-050.png
+docs/source/plots/keyframes/9_disco-051.png
+docs/source/plots/keyframes/9_disco-052.png
+docs/source/plots/keyframes/9_disco-053.png
+docs/source/plots/keyframes/9_disco-054.png
+docs/source/plots/keyframes/9_disco-055.png
+docs/source/plots/keyframes/9_disco-056.png
+docs/source/plots/keyframes/9_disco-057.png
+docs/source/plots/keyframes/9_disco-058.png
+docs/source/plots/keyframes/9_disco-059.png
+docs/source/plots/keyframes/9_disco-060.png
+docs/source/plots/keyframes/9_disco-061.png
+docs/source/plots/keyframes/9_disco-062.png
+docs/source/plots/keyframes/9_disco-063.png
+docs/source/plots/keyframes/9_disco-064.png
+docs/source/plots/keyframes/9_disco-065.png
+docs/source/plots/keyframes/9_disco-066.png
+docs/source/plots/keyframes/9_disco-067.png
+docs/source/plots/keyframes/9_disco-068.png
+docs/source/plots/keyframes/9_disco-069.png
+docs/source/plots/keyframes/9_disco-070.png
+docs/source/plots/keyframes/9_disco-071.png
+docs/source/plots/keyframes/9_disco-072.png
+docs/source/plots/keyframes/9_disco-073.png
+docs/source/plots/keyframes/9_disco-074.png
+docs/source/plots/keyframes/9_disco-075.png
+docs/source/plots/keyframes/9_disco-076.png
+docs/source/plots/keyframes/9_disco-077.png
+docs/source/plots/keyframes/9_disco-078.png
+docs/source/plots/keyframes/9_disco-079.png
+docs/source/plots/keyframes/9_disco-080.png
+docs/source/plots/keyframes/9_disco-081.png
+docs/source/plots/keyframes/9_disco-082.png
+docs/source/plots/keyframes/9_disco-083.png
+docs/source/plots/keyframes/9_disco-084.png
+docs/source/plots/keyframes/9_disco-085.png
+docs/source/plots/keyframes/9_disco-086.png
+docs/source/plots/keyframes/9_disco-087.png
+docs/source/plots/keyframes/9_disco-088.png
+docs/source/plots/keyframes/9_disco-089.png
+docs/source/plots/keyframes/9_disco-090.png
+docs/source/plots/keyframes/9_disco-091.png
+docs/source/plots/keyframes/9_disco-092.png
+docs/source/plots/keyframes/9_disco-093.png
+docs/source/plots/keyframes/9_disco-094.png
+docs/source/plots/keyframes/9_disco-095.png
+docs/source/plots/keyframes/9_disco-096.png
+docs/source/plots/keyframes/9_disco-097.png
+docs/source/plots/keyframes/9_disco-098.png
+docs/source/plots/keyframes/9_disco-099.png
+plots/0_stationary.gif
+plots/0_stationary.png
+plots/1_sudden.gif
+plots/1_sudden.png
+plots/2_gradual.png
+plots/2_incremental.gif
+plots/3_gradual.gif
+plots/3_incremental.png
+plots/4_reocurring.gif
+plots/4_reocurring.png
+plots/5_nonreocurring.gif
+plots/5_nonreocurring.png
+plots/6_balanced.gif
+plots/6_balanced.png
+plots/7_static_imbalanced.gif
+plots/7_static_imbalanced.png
+plots/8_dynamic_imbalanced.gif
+plots/8_dynamic_imbalanced.png
+plots/9_disco.gif
+plots/9_disco.png
+plots/9_first.png
+plots/9_second.png
+plots/confusion_matrix.png
+plots/ensemble.png
+plots/evaluators_pr.png
+plots/evaluators_ttt.png
+plots/fliptest.png
+plots/fliptest_0.png
+plots/fliptest_1.png
+stream_learn.egg-info/PKG-INFO
+stream_learn.egg-info/SOURCES.txt
+stream_learn.egg-info/dependency_links.txt
+stream_learn.egg-info/requires.txt
+stream_learn.egg-info/top_level.txt
+strlearn/__init__.py
+strlearn/_version.py
+strlearn/classifiers/ASC.py
+strlearn/classifiers/SampleWeightedMetaEstimator.py
+strlearn/classifiers/__init__.py
+strlearn/ensembles/AUE.py
+strlearn/ensembles/AWE.py
+strlearn/ensembles/CDS.py
+strlearn/ensembles/DWM.py
+strlearn/ensembles/KMC.py
+strlearn/ensembles/KUE.py
+strlearn/ensembles/NIE.py
+strlearn/ensembles/OOB.py
+strlearn/ensembles/OUSE.py
+strlearn/ensembles/OnlineBagging.py
+strlearn/ensembles/REA.py
+strlearn/ensembles/ROSE.py
+strlearn/ensembles/SEA.py
+strlearn/ensembles/UOB.py
+strlearn/ensembles/WAE.py
+strlearn/ensembles/__init__.py
+strlearn/ensembles/base.py
+strlearn/ensembles/pruning.py
+strlearn/evaluators/Prequential.py
+strlearn/evaluators/TestThenTrain.py
+strlearn/evaluators/__init__.py
+strlearn/metrics/__init__.py
+strlearn/metrics/base.py
+strlearn/streams/ARFFParser.py
+strlearn/streams/CSVParser.py
+strlearn/streams/NPYParser.py
+strlearn/streams/SemiSyntheticStreamGenerator.py
+strlearn/streams/StreamGenerator.py
+strlearn/streams/__init__.py
+strlearn/tests/__init__.py
+strlearn/tests/test_classifiers.py
+strlearn/tests/test_common.py
+strlearn/tests/test_ensembles.py
+strlearn/tests/test_evaluators.py
+strlearn/tests/test_metrics.py
+strlearn/tests/test_sklearn.py
+strlearn/tests/test_streams.py
+strlearn/utils/__init__.py
+strlearn/utils/base.py
