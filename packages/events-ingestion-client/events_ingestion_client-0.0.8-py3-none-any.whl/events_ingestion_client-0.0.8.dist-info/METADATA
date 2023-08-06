@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: events-ingestion-client
+Version: 0.0.8
+Summary: Events Ingestion API
+Home-page: UNKNOWN
+Author-email: support@datakitchen.io
+License: UNKNOWN
+Keywords: Swagger,Events Ingestion API
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    The Observation platform&#x27;s Events Ingestion API  # noqa: E501
+    
+
