@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+setup.py
+.github/README.md
+oatk/__init__.py
+oatk/__main__.py
+oatk.egg-info/PKG-INFO
+oatk.egg-info/SOURCES.txt
+oatk.egg-info/dependency_links.txt
+oatk.egg-info/entry_points.txt
+oatk.egg-info/requires.txt
+oatk.egg-info/top_level.txt
