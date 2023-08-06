@@ -1,0 +1,21 @@
+.pvf-md-box {
+    padding: 0.25rem;
+}
+
+.pvf-md-box> :last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pvf-md-box> :first-child {
+    margin-top: 0;
+}
+
+.pvf-md-box>h2 {
+    color: #111827;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.3333333;
+}

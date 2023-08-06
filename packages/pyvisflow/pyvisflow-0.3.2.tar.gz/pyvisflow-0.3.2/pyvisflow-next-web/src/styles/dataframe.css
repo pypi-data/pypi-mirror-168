@@ -1,0 +1,65 @@
+.pvf-dataframe table {
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    /* text-align: center; */
+
+    border: none;
+    border-spacing: 0;
+    color: black;
+}
+
+
+.pvf-dataframe thead {
+
+    border-bottom: 1px solid rgb(209, 213, 219);
+    vertical-align: bottom;
+    display: table-header-group;
+    border-color: inherit;
+}
+
+.pvf-dataframe tr,
+.pvf-dataframe th,
+.pvf-dataframe td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5em 0.5em;
+    line-height: normal;
+    white-space: normal;
+    max-width: none;
+    border: none;
+}
+
+
+
+.pvf-dataframe tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.pvf-dataframe tbody tr {
+    border-bottom: 1px solid rgb(209, 213, 219);
+}
+
+.pvf-dataframe tbody tr:last-child {
+    border-bottom: 0;
+}
+
+.pvf-dataframe thead tr:last-child {
+    border-bottom: 1px solid rgb(209, 213, 219);
+}
+
+
+
+.pvf-dataframe tbody tr:hover {
+    background: rgba(66, 165, 245, 0.2);
+}
+
+
+
+.pvf-dataframe tbody tr th {
+    padding: 0.5rem 3rem;
+    width: 1%;
+    white-space: nowrap;
+}

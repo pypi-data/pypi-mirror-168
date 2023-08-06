@@ -1,0 +1,44 @@
+from typing import Union,Dict,List
+{{父类 | import_father}}
+from pyvisflow.core.props import StrTypePropInfo, NumberTypePropInfo, BoolTypePropInfo
+from pyvisflow.models.TComponent import TComponentType
+from pyvisflow.core.props import *
+
+TypePropInfo=Union[StrTypePropInfo,NumberTypePropInfo,BoolTypePropInfo]
+
+class _{{类名}}({{父类}}):
+    '''
+    {{备注}}
+    '''
+
+    def __init__(self) -> None:
+        super().__init__('{{tag}}', TComponentType.{{ComponentType}})
+
+    def _ex_get_react_data(self):
+        return super()._ex_get_react_data()
+
+{% for p in props %}
+    @property
+    def {{p['属性名']}}(self):
+        '''
+        可选值：{{p['可选值']}} \n
+        {{p['说明']}}
+        '''
+
+        {% if p['值属性类型'] %}
+        p = self.get_prop('{{p['响应属性名']}}')
+        return {{p['值属性类型'] | getter_prop(p['响应属性名'])}}
+
+        {% else %}
+        return self.get_prop('{{p['响应属性名']}}')
+        {% endif %}
+
+
+    @{{p['属性名']}}.setter
+    def {{p['属性名']}}(self, value: Union[{{p['值属性类型'] | try_get('TypePropInfo')}},{{p['属性类型']}}]):
+        '''
+        可选值：{{p['可选值']}} \n
+        {{p['说明']}}
+        '''
+        self.set_prop('{{p['响应属性名']}}', value)
+{% endfor %}
