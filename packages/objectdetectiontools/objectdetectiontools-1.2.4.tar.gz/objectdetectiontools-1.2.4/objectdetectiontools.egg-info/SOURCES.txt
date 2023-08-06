@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+objectdetectiontools/__init__.py
+objectdetectiontools/images.py
+objectdetectiontools/parser.py
+objectdetectiontools/reader.py
+objectdetectiontools.egg-info/PKG-INFO
+objectdetectiontools.egg-info/SOURCES.txt
+objectdetectiontools.egg-info/dependency_links.txt
+objectdetectiontools.egg-info/top_level.txt
