@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pydiscovergy
+Version: 1.2.0
+Summary: Async Python 3 library for interacting with Discovergy smart meters API
+Home-page: https://github.com/jpbede/pydiscovergy
+Author: Jan-Philipp Benecke
+Author-email: jan-philipp.benecke@jpbe.de
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: authlib
+
+file:README.md
