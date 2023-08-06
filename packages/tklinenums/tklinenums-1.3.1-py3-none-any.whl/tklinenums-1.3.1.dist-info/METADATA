@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tklinenums
+Version: 1.3.1
+Summary: A simple Tkinter widget for displaying line numbers
+Home-page: https://github.com/Moosems/TkLineNums
+Author: Moosems
+Author-email: moosems.j@gmail.com
+
