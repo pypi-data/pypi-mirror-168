@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: radio-beam
+Version: 0.3.4
+Summary: Operations for radio astronomy beams with astropy
+Home-page: http://radio_beam.readthedocs.org
+Author: Adam Leroy, Adam Ginsburg, Erik Rosolowsky, Tom Robitaille, and Eric Koch
+Author-email: adam.g.ginsburg@gmail.com, koch.eric.w@gmail.com
+License: BSD
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: all
+License-File: LICENSE.rst
+
+Radio Beam: Tools for Beam IO and Manipulation
+==============================================
+
+Radio Beam is a simple toolkit for reading beam information from FITS headers
+and manipulating beams.  Some example applications include:
+
+ * Convolution and deconvolution
+ * Unit conversion (Jy to/from K)
+ * Handle sets of beams for spectral cubes with varying resolution between channels
+ * Find the smallest common beam from a set of beams
+ * Add the beam shape to a matplotlib plot
+
+See the [documentation](https://radio-beam.readthedocs.io/en/latest/) for more information.
+
+[![Build Status](https://travis-ci.org/radio-astro-tools/radio_beam.svg?branch=master)](https://travis-ci.org/radio-astro-tools/radio_beam)
