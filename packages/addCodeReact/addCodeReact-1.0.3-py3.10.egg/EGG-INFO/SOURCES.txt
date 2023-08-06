@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+addCodeReact.egg-info/PKG-INFO
+addCodeReact.egg-info/SOURCES.txt
+addCodeReact.egg-info/dependency_links.txt
+addCodeReact.egg-info/entry_points.txt
+addCodeReact.egg-info/not-zip-safe
+addCodeReact.egg-info/top_level.txt
+myfunctionfolder/__init__.py
+myfunctionfolder/myfunction.py
+myfunctionfolder/myfunction_click.py

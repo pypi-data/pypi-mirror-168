@@ -1,0 +1,3 @@
+[console_scripts]
+addCode = myfunctionfolder.myfunction_click:main
+
