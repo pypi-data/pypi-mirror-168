@@ -1,0 +1,4 @@
+[console_scripts]
+extrabol = extrabol.extrabol:main
+snana2extrabol = extrabol.snana2extrabol:convert
+

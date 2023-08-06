@@ -1,0 +1,16 @@
+extrabol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extrabol/extrabol.py,sha256=ncVi4U1XicI7QSRJECVOCHRyif7CbBl4w_8Mxn17bYo,34984
+extrabol/snana2extrabol.py,sha256=bEV8B5gDewbROTxGIQI3rB7o9aU7J-hgHxVt7cFnzuo,2664
+extrabol/example/PSc000174_extrabol.dat,sha256=VjMwbtEWhlaaW9TH2Veicuo2Sm2RUAPs6rZqNDAhHqA,17503
+extrabol/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extrabol/template_bank/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extrabol/template_bank/smoothed_sn1a.npz,sha256=pXhZN_HmWVl90YgpdRDm0sAkik4o4bFbSv9b4sTuPSs,5244546
+extrabol/template_bank/smoothed_sn1bc.npz,sha256=QGZfX4e8vHndzqxtDzRMbXIN728l_HT44MnaQIF2xkU,4956426
+extrabol/template_bank/smoothed_sn2l.npz,sha256=vvLMRXvrbvUllfCH9JplXdsj7DBcJQmNbwLhBvjp7ww,692250
+extrabol/template_bank/smoothed_sn2p.npz,sha256=jj4aCvWTTdi8IrfFjyQJeLBF3I-77ci-K6SOEr7-u2o,692250
+extrabol-0.1.5.dist-info/LICENSE,sha256=CKKumPmF0YGwq1ixSgMFUc2WCB_efNn4nARZtZcOx_k,1058
+extrabol-0.1.5.dist-info/METADATA,sha256=3gkn5YwrJBOn2qpzlLSHOctKfZaICbs_8sPW0jmwfiw,2823
+extrabol-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+extrabol-0.1.5.dist-info/entry_points.txt,sha256=XeWj8w-SPW0Ly_Cb5jRck-dS26LZnRgGQX2O0FU8KxQ,102
+extrabol-0.1.5.dist-info/top_level.txt,sha256=vAMx_y7jgCHNvLFSII7EMsJg8INgPTN1g2c2vXUumNo,24
+extrabol-0.1.5.dist-info/RECORD,,
