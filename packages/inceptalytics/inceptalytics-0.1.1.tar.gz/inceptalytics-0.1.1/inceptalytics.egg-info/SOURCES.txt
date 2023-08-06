@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+inceptalytics/__init__.py
+inceptalytics/analytics.py
+inceptalytics/utils.py
+inceptalytics.egg-info/PKG-INFO
+inceptalytics.egg-info/SOURCES.txt
+inceptalytics.egg-info/dependency_links.txt
+inceptalytics.egg-info/requires.txt
+inceptalytics.egg-info/top_level.txt
