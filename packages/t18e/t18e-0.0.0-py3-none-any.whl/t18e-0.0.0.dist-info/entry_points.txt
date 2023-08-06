@@ -1,0 +1,3 @@
+[console_scripts]
+t18e = t18e.run
+
