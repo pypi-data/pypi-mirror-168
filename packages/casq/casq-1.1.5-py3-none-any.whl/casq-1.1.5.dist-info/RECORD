@@ -1,0 +1,9 @@
+casq/__init__.py,sha256=x_cX9BUwQNrOUGJB-Ok5T3reTTsN9Ta6MWDrpOadIig,858
+casq/bmaExport.py,sha256=qrgfnkegbtirHsvl1tTHmqfE0p48INRzHb4t5eyRrV4,12640
+casq/celldesigner2qual.py,sha256=k9MUy1ei6ADxWwzqq-7XZ1gcBfG8np4Q3MQ4PQ1ANh0,43139
+casq/utils.py,sha256=SehlZjJceHGdKMo0SPUKUawdjd1_o_IrB7E9DzElOqc,1559
+casq-1.1.5.dist-info/METADATA,sha256=kxnHU8TP1eK23wNMDrObCWBc2EBHLO_Clnuo8NtJNsk,5579
+casq-1.1.5.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+casq-1.1.5.dist-info/entry_points.txt,sha256=121fEF9gJKKNK1tcwNX4lA3n6TVhZAUoquO18vKV21U,53
+casq-1.1.5.dist-info/licenses/LICENSE,sha256=GzeCzK17hhQQDNow0_r0L8OfLpeTKQjFQwBQU7ZUymg,32473
+casq-1.1.5.dist-info/RECORD,,
