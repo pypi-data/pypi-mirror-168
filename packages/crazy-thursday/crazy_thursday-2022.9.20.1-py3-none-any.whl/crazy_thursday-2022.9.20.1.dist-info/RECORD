@@ -1,0 +1,13 @@
+crazy_thursday/__init__.py,sha256=UVkE-PIG95J8e1neDcpMqTkghQopVaj6DAM7jAQBzi0,26
+crazy_thursday/__main__.py,sha256=ApTqRuUn-ZTwoNDcSVTFOkh0-0HSq1l2Fe4ZxbR_VjA,523
+crazy_thursday/corpus.jsonl,sha256=yHjaaXdEGqhG6jb72v3L61iDFggmvt2vLZzeCRoeWEk,4142
+crazy_thursday/requirements.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripts/get_issues.py,sha256=y1nNkZsFE9V25TcNPvZxLZkOtGiF9UmDRq0o9huxn7o,2455
+scripts/update_curpus.py,sha256=6xWCqycrFcm8UvVIusjBIUt6eW690uK6BJUhG8B0VZg,1701
+crazy_thursday-2022.9.20.1.dist-info/LICENSE,sha256=_upto96WqiJ-Y1zZvEU-AQhRIIfeqfj63Q_eCxjNUbs,1048
+crazy_thursday-2022.9.20.1.dist-info/METADATA,sha256=_UYGp-GUM4bjKtsRCqrcqTuHzJcAzGM4CDnjdpcjNBY,3912
+crazy_thursday-2022.9.20.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+crazy_thursday-2022.9.20.1.dist-info/entry_points.txt,sha256=NBPbnWD3SIY7HBxPdSI9ftaD_3Fo10JbKM3-2vo8S9g,99
+crazy_thursday-2022.9.20.1.dist-info/top_level.txt,sha256=tLybIYuQLI9RnK_MENGQn0LQ9Vml0UbmhCBKAK1txyg,23
+crazy_thursday-2022.9.20.1.dist-info/RECORD,,
