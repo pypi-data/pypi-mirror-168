@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/znp/__init__.py
+src/znp/__main__.py
+src/znp/options.py
+src/znp/prompts.py
+src/znp/utils.py
+src/znp/zathura.py
+src/znp/zsocket.py
+src/znp.egg-info/PKG-INFO
+src/znp.egg-info/SOURCES.txt
+src/znp.egg-info/dependency_links.txt
+src/znp.egg-info/entry_points.txt
+src/znp.egg-info/requires.txt
+src/znp.egg-info/top_level.txt

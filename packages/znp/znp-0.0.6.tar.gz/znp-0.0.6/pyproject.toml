@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "znp"
+version = "0.0.6"
+description = "Simple program to open a file in existing zathura instance"
+readme = "README.md"
+license = { text = "GNU General Public License v3 (GPLv3)" }
+keywords = [ "zathura" ]
+dependencies = [
+    "python-magic",
+    "psutil",
+    "loadconf",
+    "promptx"
+]
+
+[project.optional-dependencies]
+x11 = ["ewmh"]
+
+[project.scripts]
+znp = "znp.__main__:main"
+
+[project.urls]
+repository = "https://codeberg.org/johndovern/znp"

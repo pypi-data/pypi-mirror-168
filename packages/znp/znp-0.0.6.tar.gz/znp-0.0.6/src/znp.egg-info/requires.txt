@@ -1,0 +1,7 @@
+python-magic
+psutil
+loadconf
+promptx
+
+[x11]
+ewmh
