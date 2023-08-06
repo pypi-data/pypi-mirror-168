@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: links_referrer
+Version: 0.1.2
+Summary: Links referrer (for traffic)
+Home-page: https://github.com/KM8Oz/insta_refs.git
+Author: @KM8Oz (kmoz000)
+Author-email: <kimo@oldi.dev>
+License: MIT License
+Keywords: Traffic,SEO,shortlink,shortner,referral,links
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Communications :: Email
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## LinksReferrer :
+    - generate shortlinks for free
+    
+## usage: 
+
+``` 
+from links_referrer import LinksReferrer
+Referral = LinksReferrer(url="https://youtu.be/ubVJ8OARMxs")
+print(Referral.getshortcuts())
+
+```

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+links_referrer.egg-info/PKG-INFO
+links_referrer.egg-info/SOURCES.txt
+links_referrer.egg-info/dependency_links.txt
+links_referrer.egg-info/top_level.txt
