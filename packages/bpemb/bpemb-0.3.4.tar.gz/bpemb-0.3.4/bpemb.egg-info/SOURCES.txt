@@ -1,0 +1,13 @@
+README.md
+setup.py
+bpemb/__init__.py
+bpemb/available_languages.py
+bpemb/available_vocab_sizes.py
+bpemb/bpemb.py
+bpemb/util.py
+bpemb.egg-info/PKG-INFO
+bpemb.egg-info/SOURCES.txt
+bpemb.egg-info/dependency_links.txt
+bpemb.egg-info/requires.txt
+bpemb.egg-info/top_level.txt
+bpemb.egg-info/zip-safe
