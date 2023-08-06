@@ -1,0 +1,9 @@
+xia_engine_firestore/__init__.py,sha256=NdLSw-LUx1LsnqTMcfs0glPbREPlG2dZlFfHyyRoWYY,356
+xia_engine_firestore/connection.cp310-win_amd64.pyd,sha256=EphncOJkkbUaR4z-nMCJMPo3FmsxIJs54lgqYrMfjlY,229888
+xia_engine_firestore/document.cp310-win_amd64.pyd,sha256=x7VQ9PV1jAARrozrrkCkC6D9VfiW0tRvq2fpkh_T4sE,430592
+xia_engine_firestore/engine.cp310-win_amd64.pyd,sha256=Eayp36e9dmmCnV-Y4YAguPnIYc7_KFP1_di2WiRsSJ8,312320
+xia_engine_firestore-0.0.23.dist-info/LICENSE,sha256=6IJZU6MxRh9zrBB3mhBzWZBocZwh-egw1BB4XRWq2ns,155
+xia_engine_firestore-0.0.23.dist-info/METADATA,sha256=vSuUeGUeCxUWwLOpZdZEerp2GAVegZxq6GzofdOtHok,402
+xia_engine_firestore-0.0.23.dist-info/WHEEL,sha256=xKD-W076Kxa9P8HVHMBFDAZ44LgNHrPjF081MKvpixU,100
+xia_engine_firestore-0.0.23.dist-info/top_level.txt,sha256=NUY0_anDQ8KVQ1TnPs_SCf-78KqRmu8_ARIL_J5agrg,21
+xia_engine_firestore-0.0.23.dist-info/RECORD,,
