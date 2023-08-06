@@ -1,0 +1,13 @@
+{%- block enum %}
+class {{file.name}}(StrEnum):    
+{%- if file.default %}
+    # the first value ({{file.default}}) is the default
+    {{file.default}} = '{{file.default}}'
+{% endif -%}
+{%- for symbol in  file.symbols -%}
+{%- if symbol != file.default %}
+    {{symbol|snake_case|upper}} = '{{symbol}}'
+{%- endif -%}
+{% endfor %}
+
+{% endblock -%}
