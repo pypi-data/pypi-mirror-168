@@ -1,0 +1,55 @@
+[tool.poetry]
+authors = [
+  "Craig Trim <craigtrim@gmail.com>",
+]
+
+maintainers = [
+  "Craig Trim <craigtrim@gmail.com>",
+]
+
+description = "Perform Intent Classification using an External Schema"
+license = "MIT"
+name = "schema-classification"
+readme = "README.md"
+version = "0.1.3"
+
+keywords = ["nlp", "nlu", "ai", "classification", "intents"]
+repository = "https://github.com/craigtrim/spacy-token-parser"
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+baseblock = "*"
+python = "3.8.5"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "*"
+flakeheaven = "*"
+mypy = "*"
+pre-commit = "^2.20.0"
+pytest = "*"
+
+[tool.poetry.build]
+generate-setup-file = true
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.mypy]
+enable_error_code = [
+  "ignore-without-code",
+  "redundant-expr",
+  "truthy-bool",
+]
+
+explicit_package_bases = true
+files = "src"
+mypy_path = "src"
+namespace_packages = true
+show_error_codes = true
+strict = false
