@@ -1,0 +1,5 @@
+setup.py
+cjutils.egg-info/PKG-INFO
+cjutils.egg-info/SOURCES.txt
+cjutils.egg-info/dependency_links.txt
+cjutils.egg-info/top_level.txt
