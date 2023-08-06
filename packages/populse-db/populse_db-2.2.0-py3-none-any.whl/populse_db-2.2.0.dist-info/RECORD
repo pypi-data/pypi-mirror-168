@@ -1,0 +1,13 @@
+populse_db/__init__.py,sha256=BTYQXiC-AQVXsqWRAmPA2LCdP6OTMeNxvF8ycC2XoXU,114
+populse_db/database.py,sha256=C9DzHmbMd7Ivf6djgnuWkZ68pJfbWDQZt3p238sEj8M,32054
+populse_db/filter.py,sha256=jvjNN1YtQ61ZKCn2d3-vAA5jGC5KtKeIgUTiuXVPjf4,12923
+populse_db/info.py,sha256=H9TXFNjYDb76BH5eia1eacA99MJY056B7PdURL3B5B4,2069
+populse_db/test.py,sha256=xwGzytqtHcJFa6FByMoNcZu3Wi1tOrewb_VVqSvhLLU,93935
+populse_db/engine/__init__.py,sha256=6uzs3Fk7fg-MtRjuzHUYyy7e6sonGWyW0Y4XjG4vqwQ,10595
+populse_db/engine/sqlite.py,sha256=t70ubeO7LzdmDChNqYnum_WzX0r6vbgeMnL9JoK00rk,35617
+populse_db-2.2.0.dist-info/LICENSE.en,sha256=AU4GLn1rO55oa7jLZCR51syLt3XY7hhZCLZpuNqvXy8,21396
+populse_db-2.2.0.dist-info/LICENSE.fr,sha256=lnj0H_gdV9ga3lePju1hbou4Fe_HmyM1kJFuJ7F57kI,22400
+populse_db-2.2.0.dist-info/METADATA,sha256=FuUA67983SxfYsht_HiMZIxK1hVug_K1QIgmwsFPf20,1056
+populse_db-2.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+populse_db-2.2.0.dist-info/top_level.txt,sha256=vz1NQrc1zB84dV7v4IIejwnbTPUKDvYpESYruQz-1XU,11
+populse_db-2.2.0.dist-info/RECORD,,
