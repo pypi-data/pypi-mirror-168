@@ -1,0 +1,6 @@
+pip<22.3,>=22.2
+PyInstaller>=4.0
+importlib_metadata
+
+[:python_version < "3.8"]
+typing-extensions
