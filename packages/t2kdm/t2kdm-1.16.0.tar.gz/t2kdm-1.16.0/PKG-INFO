@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: t2kdm
+Version: 1.16.0
+Summary: T2K Data Manager
+Home-page: https://github.com/t2k-software/t2kdm
+Author: Lukas Koch
+Author-email: lukas.koch@mailbox.org
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+
+t2kdm - T2K Data Manager
+
+Provides functions for a smoother handling of grid data within the T2K
+experiment.
+
