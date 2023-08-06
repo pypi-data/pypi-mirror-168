@@ -1,0 +1,13 @@
+README.md
+setup.py
+ascii_video_player/__init__.py
+ascii_video_player/ascii_frames.py
+ascii_video_player/asciivp.py
+ascii_video_player/play.py
+asciivp.egg-info/PKG-INFO
+asciivp.egg-info/SOURCES.txt
+asciivp.egg-info/dependency_links.txt
+asciivp.egg-info/entry_points.txt
+asciivp.egg-info/requires.txt
+asciivp.egg-info/top_level.txt
+test/test.py

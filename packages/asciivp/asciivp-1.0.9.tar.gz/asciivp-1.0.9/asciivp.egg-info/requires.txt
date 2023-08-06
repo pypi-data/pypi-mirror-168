@@ -1,0 +1,3 @@
+opencv-python
+pafy-tmsl
+youtube-dl

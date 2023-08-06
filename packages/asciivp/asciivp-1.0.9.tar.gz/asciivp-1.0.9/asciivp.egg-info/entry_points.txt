@@ -1,0 +1,3 @@
+[console_scripts]
+asciivp = ascii_video_player.asciivp:main
+
