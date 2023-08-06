@@ -1,0 +1,13 @@
+googleapiwrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+googleapiwrapper/common.py,sha256=QfoKt5hUuhBjYEE24RJmUd1P-Zo3FKR8-NEs81G1Me0,501
+googleapiwrapper/gmail_api.py,sha256=gbdKjVxAV1UfIKodxZzn03hu4jHRA_xocxVmXkh4sSU,18183
+googleapiwrapper/gmail_api_extensions.py,sha256=DrkUnYGXs12_jxY9hg-xSFG450fEB7DaSK5pwp7MGvo,20353
+googleapiwrapper/gmail_domain.py,sha256=TdB652yJ2yuifsn6TMoGxm0j9zhNaYyQVPdVO7hLmg4,7740
+googleapiwrapper/google_auth.py,sha256=UxSKOqcsvCIOHeX_1wSEgMiMjKinZBLvHbivcttHcY8,5487
+googleapiwrapper/google_drive.py,sha256=d8wAlBVQjOIrg6vGY6fYS-53eTxLh5ap3E02WPqZwTs,30524
+googleapiwrapper/google_sheet.py,sha256=Ze-N9mbMc38v5BoDiPUBPcGBYJWTuWD86vbF4nlVtq0,20855
+googleapiwrapper/utils.py,sha256=3OfCmImauK_GRVLlrG-h-nAsT81jO4BkMHz_oGwnjMU,371
+google_api_wrapper2-1.0.0.dist-info/LICENSE,sha256=8LMAzGgyzwkoQHRNFATEbr5fIFcZdSPGC95nD5oXFXI,1286
+google_api_wrapper2-1.0.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+google_api_wrapper2-1.0.0.dist-info/METADATA,sha256=FsdkTsnkzr2t7KwRDmP3xIWasJ1EzwQDHAPuC7S5W4w,1850
+google_api_wrapper2-1.0.0.dist-info/RECORD,,
