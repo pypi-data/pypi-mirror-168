@@ -1,0 +1,2 @@
+[pytest11]
+share_hdf = pytest_share_hdf.plugin
