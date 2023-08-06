@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pydlfmt/__init__.py
+pydlfmt.egg-info/PKG-INFO
+pydlfmt.egg-info/SOURCES.txt
+pydlfmt.egg-info/dependency_links.txt
+pydlfmt.egg-info/not-zip-safe
+pydlfmt.egg-info/requires.txt
+pydlfmt.egg-info/top_level.txt
