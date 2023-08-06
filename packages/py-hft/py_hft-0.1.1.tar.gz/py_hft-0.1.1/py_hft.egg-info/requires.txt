@@ -1,0 +1,13 @@
+tushare
+matplotlib
+tqdm
+psutil
+pandas
+tabulate
+ipython
+catboost
+statsmodels
+scipy
+termcolor
+jupyter
+tushare

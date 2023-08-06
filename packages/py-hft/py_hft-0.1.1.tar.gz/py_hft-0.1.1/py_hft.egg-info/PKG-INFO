@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: py-hft
+Version: 0.1.1
+Summary: util for hft
+Home-page: https://zhuanlan.zhihu.com/p/26159930
+Author: arockie
+Author-email: arockie123@gmail.com
+License: MIT
+Description: util for hft
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
