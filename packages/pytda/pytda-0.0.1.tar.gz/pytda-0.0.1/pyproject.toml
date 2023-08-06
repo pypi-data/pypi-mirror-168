@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+name = "pytda"
+description = "Consume the TD Ameritrade API and Streaming Data"
+readme = "README.rst"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = ["TD", "TDA", "TD Ameritrade", "TD API"]
+authors = [
+    {name = "Narvin Singh", email = "Narvin.A.Singh@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = ["python-dateutil", "requests", "websockets"]
+
+[project.urls]
+Homepage = "https://gitlab.com/narvin/pytda"
+Repository = "https://gitlab.com/narvin/pytda"
+"Bug Tracker" = "https://gitlab.com/narvin/pytda/-/issues"
+
+[tool.setuptools]
+package-data = {"*" = ["py.typed"]}
+
+[tool.setuptools.dynamic]
+version = {attr = "pytda.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pylint.messages_control]
+disable = [
+    "duplicate-code",
+    "too-many-arguments",
+    "too-many-branches",
+    "too-many-locals",
+]
+
+[tool.mypy]
+strict = true
