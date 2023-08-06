@@ -1,0 +1,3 @@
+[console_scripts]
+redis-export = redisexport.main:redis_export
+redis-import = redisexport.main:redis_import
