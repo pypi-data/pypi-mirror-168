@@ -1,0 +1,5 @@
+huspacy/__init__.py,sha256=bcFXejaXd_pDpH4KFoUVEVS0JgHBUl7cEKVac39XKQ8,3458
+huspacy/utils.py,sha256=xKc0XKlsI87ULJrSPDMERR6KwYF0J-9bJd-B0tnAyEo,2117
+huspacy_nightly-0.4.4.dev69.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+huspacy_nightly-0.4.4.dev69.dist-info/METADATA,sha256=_PDXIIGeis4Ntv-Wl13Zq9si88I_atpr7Zv33S06pkg,11094
+huspacy_nightly-0.4.4.dev69.dist-info/RECORD,,
