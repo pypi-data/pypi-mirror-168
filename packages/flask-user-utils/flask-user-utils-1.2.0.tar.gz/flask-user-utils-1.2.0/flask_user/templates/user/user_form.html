@@ -1,0 +1,31 @@
+{% extends 'user/base.html' %}
+
+{% block content %}
+{% if request.args.get('error_message') %}
+  <h5 class="error-message border-rounded mt-3">{{ request.args.get('error_message') }}</h5>
+{% endif %}
+  <div class="container vh-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-7">
+        <form class="form border-rounded" method="post" action="{{ form_action }}">
+          {% block form %}
+            {{ form.csrf_token }}
+            <div class="row mb-3">
+              {{ form.email.label(class_="form-label") }}
+              {{ form.email(class_="form-control") }}
+            </div>
+            <div class="row mb-3">
+              {{ form.password.label(class_="form-label") }}
+              {{ form.password(class_="form-control") }}
+            </div>
+            <div class="row">
+              <button class="col btn mt-3" type="submit">
+                {% block submit_value %}{% endblock %}
+              </button>
+            </div>
+          {% endblock %}
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

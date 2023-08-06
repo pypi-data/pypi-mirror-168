@@ -1,0 +1,11 @@
+{% extends 'user/user_form.html' %}
+{% from 'user/macros/container_title.html' import build_container_title %}
+
+{% block title %}Login{% endblock %}
+
+{% block submit_value %}Entrar{% endblock %}
+
+{% block form %}
+  {{ build_container_title('Login') }}
+  {{ super() }}
+{% endblock %}

@@ -1,0 +1,7 @@
+Flask
+SQLAlchemy
+dynaconf
+python-dotenv
+Flask-Login
+psycopg2
+Flask-WTF
