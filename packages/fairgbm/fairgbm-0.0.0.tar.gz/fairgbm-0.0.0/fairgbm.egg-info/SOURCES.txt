@@ -1,0 +1,9 @@
+README.md
+setup.py
+fairgbm/__init__.py
+fairgbm.egg-info/PKG-INFO
+fairgbm.egg-info/SOURCES.txt
+fairgbm.egg-info/dependency_links.txt
+fairgbm.egg-info/not-zip-safe
+fairgbm.egg-info/requires.txt
+fairgbm.egg-info/top_level.txt
