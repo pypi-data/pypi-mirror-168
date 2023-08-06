@@ -1,0 +1,3 @@
+[console_scripts]
+image_mint = image_mint.console:main
+
