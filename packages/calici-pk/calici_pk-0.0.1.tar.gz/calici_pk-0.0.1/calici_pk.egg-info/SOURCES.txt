@@ -1,0 +1,7 @@
+Licence.txt
+setup.py
+calici_pk/__init__.py
+calici_pk.egg-info/PKG-INFO
+calici_pk.egg-info/SOURCES.txt
+calici_pk.egg-info/dependency_links.txt
+calici_pk.egg-info/top_level.txt
