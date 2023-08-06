@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/jonni2_example/__init__.py
+src/jonni2_example/jonni2_adder.py
+src/jonni2_example.egg-info/PKG-INFO
+src/jonni2_example.egg-info/SOURCES.txt
+src/jonni2_example.egg-info/dependency_links.txt
+src/jonni2_example.egg-info/requires.txt
+src/jonni2_example.egg-info/top_level.txt
