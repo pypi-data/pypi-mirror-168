@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/diskinfo/__init__.py
+src/diskinfo/demo.py
+src/diskinfo/disk.py
+src/diskinfo/diskinfo.py
+src/diskinfo.egg-info/PKG-INFO
+src/diskinfo.egg-info/SOURCES.txt
+src/diskinfo.egg-info/dependency_links.txt
+src/diskinfo.egg-info/top_level.txt
+test/test_data.py
+test/test_disk.py
+test/test_diskinfo.py
