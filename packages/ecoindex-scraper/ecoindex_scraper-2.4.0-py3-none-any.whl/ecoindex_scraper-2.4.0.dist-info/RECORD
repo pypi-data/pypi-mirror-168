@@ -1,0 +1,9 @@
+LICENSE,sha256=QwLJnWVu0hRQaa1C94mb_BsYUoqtEKDgBdzbmPSE0HM,1069
+ecoindex_scraper/__init__.py,sha256=oYfVf_O8t7PWTTkyzuhCViCU_sdOjYpbb-N4TPxRxg8,35
+ecoindex_scraper/models.py,sha256=pUFe0D7PTWl7voZVddu2HVEQr4W6h0EWx85AUOwNfu0,2577
+ecoindex_scraper/scrap.py,sha256=RIK2XrArwvmaCUh_JtabgRUc1rOrqQOvv_L2Q8xh2Dw,5216
+ecoindex_scraper/utils.py,sha256=_hx5Jgr4CWLBR90xBm9irvJmUxWIsi9bSIAkgbw2Hh4,723
+ecoindex_scraper-2.4.0.dist-info/LICENSE,sha256=QwLJnWVu0hRQaa1C94mb_BsYUoqtEKDgBdzbmPSE0HM,1069
+ecoindex_scraper-2.4.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+ecoindex_scraper-2.4.0.dist-info/METADATA,sha256=2DEKmKLU23wIgEr2O530WnWjd0sq9c1C7qJs9JQtrI8,3768
+ecoindex_scraper-2.4.0.dist-info/RECORD,,
