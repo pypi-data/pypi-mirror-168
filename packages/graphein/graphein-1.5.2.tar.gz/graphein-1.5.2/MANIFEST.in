@@ -1,0 +1,7 @@
+recursive-include graphein/ *include versioneer.py
+include graphein/_version.py
+include versioneer.py
+include README.md
+include .requirements/*
+include graphein/protein/features/nodes/amino_acid_properties.csv
+include graphein/protein/features/nodes/meiler_embeddings.csv
