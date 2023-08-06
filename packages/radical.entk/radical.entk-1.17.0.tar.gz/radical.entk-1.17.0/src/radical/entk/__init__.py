@@ -1,0 +1,43 @@
+# pylint: disable=unused-argument
+# ------------------------------------------------------------------------------
+#
+from .pipeline import Pipeline
+from .stage    import Stage
+from .task     import Task
+from .         import states
+
+from .appman.appmanager import AppManager
+from . import execman
+
+# ------------------------------------------------------------------------------
+#
+import warnings
+import os                           as _os
+import radical.utils                as _ru
+import requests                     as _req
+from packaging.version import parse as parse_version
+
+
+def custom_formatwarning(msg, *args, **kwargs):
+    # ignore everything except the message
+    return str(msg) + '\n'
+
+
+warnings.formatwarning = custom_formatwarning
+
+version_short, version_detail, version_base, version_branch, \
+        sdist_name, sdist_path = _ru.get_version(_os.path.dirname(__file__))
+
+version = version_short
+
+try:
+    r = _req.get('https://pypi.org/pypi/radical.entk/json', timeout=5)
+    last_version = list(r.json()['releases'].keys())[-1]
+    if parse_version(version) < parse_version(last_version):
+        warnings.warn('WARNING: You are using radical.entk version %s, however '
+                      'version %s is available.' % (version, last_version),
+                      UserWarning)
+except ConnectionError:
+    pass
+
+# ------------------------------------------------------------------------------
