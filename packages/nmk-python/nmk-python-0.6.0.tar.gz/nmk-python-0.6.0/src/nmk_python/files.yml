@@ -1,0 +1,15 @@
+config:
+    # Folder(s) for Python sources
+    pythonSrcFolders:
+        - ${PROJECTDIR}/src
+
+    # Found Python source files
+    pythonSrcFiles:
+        __resolver__: nmk_python.files.PythonFilesFinder
+
+    # Root folder for test sources
+    pythonTestSources: ${PROJECTDIR}/src/tests
+
+    # Found Python test source files
+    pythonTestFiles:
+        __resolver__: nmk_python.files.PythonTestFilesFinder
