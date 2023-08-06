@@ -1,0 +1,10 @@
+uvc/uvc_bindings.cpython-311-darwin.so,sha256=7jUpXYP6p25vVsggjaGVUqyPY-RcaXie3_wU_bcZaEU,564704
+uvc/__init__.py,sha256=LhpXx0szVooCUKN9G1XkvGFjnNMQRwWQcjgGMQ68ehU,384
+uvc/.dylibs/libusb-1.0.0.dylib,sha256=J4O9KcRCodWkmazqhWyQGjaAOhQbU4MZzIU6B9B_ltE,199280
+uvc/.dylibs/libturbojpeg.0.2.0.dylib,sha256=iO7B1ev6cN49uwP_bm2Z3vNcLfaRWQXHB8uEXvemHBI,762048
+uvc/.dylibs/libuvc.0.1.0.dylib,sha256=kXYc_W_9pg4By0269CZR7M4p9rbifCmglgRr-L88VvI,118320
+pupil_labs_uvc-1.0.0b4.dist-info/RECORD,,
+pupil_labs_uvc-1.0.0b4.dist-info/LICENSE,sha256=om3RlSD6mRhZAqmFamNvtGoeYGS0mUjZD39RaIgwlfM,2797
+pupil_labs_uvc-1.0.0b4.dist-info/WHEEL,sha256=LjUZbJ2Zv6V7jcNDz-kX9p0oX8zf280vwJzGMqWCX-A,105
+pupil_labs_uvc-1.0.0b4.dist-info/top_level.txt,sha256=yZoTLK2U-GEMmSbXwuzQ8zBv0xII25fXNBX_G0p_KP4,4
+pupil_labs_uvc-1.0.0b4.dist-info/METADATA,sha256=zs6gD-zNqfQ-ebhg_Q6PPr2y31yVMf0JjQHMZ9CRqLc,5509
