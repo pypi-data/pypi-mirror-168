@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+ruslat/__init__.py
+ruslat/command_line.py
+ruslat/conversion_tables.py
+ruslat/converter.py
+ruslat/cyrillic_ortho_fixer.py
+ruslat.egg-info/PKG-INFO
+ruslat.egg-info/SOURCES.txt
+ruslat.egg-info/dependency_links.txt
+ruslat.egg-info/entry_points.txt
+ruslat.egg-info/top_level.txt
