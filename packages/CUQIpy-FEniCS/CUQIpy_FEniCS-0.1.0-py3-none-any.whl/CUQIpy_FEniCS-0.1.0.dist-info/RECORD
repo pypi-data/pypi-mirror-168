@@ -1,0 +1,10 @@
+cuqipy_fenics/__init__.py,sha256=DPNYIrOxMkAo3wCp68neGP5ALVwJCtjpsuS_gXc5ZEc,186
+cuqipy_fenics/_version.py,sha256=glZ8nH4QYSUUfzGixejdY_y-VixHR7_PE1l6Lct1bu0,497
+cuqipy_fenics/geometry.py,sha256=kBMNcl4d_5O0d3IvP60UQE_agWkjfsriyeuaNSlBDt8,8992
+cuqipy_fenics/pde.py,sha256=SQGc13gPKkUjbPF9EA3Z5s_0scXfit40bWfowe23D3M,4100
+cuqipy_fenics/testproblem.py,sha256=dnlbuTMl3oJhk0Dbzbalwx_Cstkmm1F1o7gkVch7iRY,4827
+CUQIpy_FEniCS-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CUQIpy_FEniCS-0.1.0.dist-info/METADATA,sha256=eW7o3ivQ7cKKbR7jn0Oebidc-GQvSNxblincd5T7a2Y,40925
+CUQIpy_FEniCS-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CUQIpy_FEniCS-0.1.0.dist-info/top_level.txt,sha256=I5DOtRcOn_I9x0Epcrw601od5gaeV1C4vxcnzoTDa4k,14
+CUQIpy_FEniCS-0.1.0.dist-info/RECORD,,
