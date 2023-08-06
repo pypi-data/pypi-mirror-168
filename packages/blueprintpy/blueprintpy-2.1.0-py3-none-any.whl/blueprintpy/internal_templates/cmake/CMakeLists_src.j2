@@ -1,0 +1,18 @@
+#
+# {{ project_name }} sources
+#
+
+cmake_minimum_required(VERSION 3.21)
+
+## 外部依存関係を追加...
+
+add_library({{ project_name|lower }})
+target_sources({{ project_name|lower }} PRIVATE
+    {{ project_name|lower }}.cpp
+)
+target_include_directories({{ project_name|lower }} PRIVATE
+    ${PROJECT_SOURCE_DIR}/include
+)
+target_compile_options({{ project_name|lower }} PRIVATE
+    -Wall
+)

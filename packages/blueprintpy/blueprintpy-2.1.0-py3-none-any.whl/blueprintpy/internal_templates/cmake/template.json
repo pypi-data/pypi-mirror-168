@@ -1,0 +1,56 @@
+{
+    "name": "cmake",
+    "args": [
+        {
+            "name": "project_name",
+            "description": "The name of project"
+        },
+        {
+            "name": "project_descripiton",
+            "description": "The description of project"
+        },
+        {
+            "name": "cpp_standard",
+            "description": "Minimum version of C++ to use in the project, default is 17",
+            "default_value": "17"
+        }
+    ],
+    "contents": [
+        {
+            "src": "README.md.j2",
+            "dest": "README.md"
+        },
+        {
+            "src": "CMakeLists_root.j2",
+            "dest": "CMakeLists.txt"
+        },
+        {
+            "src": "CMakeLists_src.j2",
+            "dest": "src/CMakeLists.txt"
+        },
+        {
+            "src": "CMakeLists_tests.j2",
+            "dest": "tests/CMakeLists.txt"
+        },
+        {
+            "src": "CMakeLists_cli.j2",
+            "dest": "cli/CMakeLists.txt"
+        },
+        {
+            "src": "project.cpp.j2",
+            "dest": "src/{{project_name|lower}}.cpp"
+        },
+        {
+            "src": "project.hpp.j2",
+            "dest": "include/{{project_name|lower}}.hpp"
+        },
+        {
+            "src": "test_project.cpp.j2",
+            "dest": "tests/test_{{project_name|lower}}.cpp"
+        },
+        {
+            "src": "main.cpp.j2",
+            "dest": "cli/main.cpp"
+        }
+    ]
+}
