@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "colorama>=0.4.5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roUtilities"
+version = "0.1.2"
+authors = [
+  { name="rorosin"},
+]
+description = "Adds an utilities, that rorosin needs in his projects."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Anton-Rosin-Dev/roUtilities/"
+"Bug Tracker" = "https://github.com/Anton-Rosin-Dev/roUtilities/issues"
