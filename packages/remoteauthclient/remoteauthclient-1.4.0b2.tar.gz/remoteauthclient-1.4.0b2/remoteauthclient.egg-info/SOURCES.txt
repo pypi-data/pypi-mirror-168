@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+remoteauthclient/__init__.py
+remoteauthclient/remoteauthclient.py
+remoteauthclient.egg-info/PKG-INFO
+remoteauthclient.egg-info/SOURCES.txt
+remoteauthclient.egg-info/dependency_links.txt
+remoteauthclient.egg-info/requires.txt
+remoteauthclient.egg-info/top_level.txt
