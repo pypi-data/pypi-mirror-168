@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+nbexec/__init__.py
+nbexec/__version__.py
+nbexec/cli.py
+nbexec/core.py
+nbexec.egg-info/PKG-INFO
+nbexec.egg-info/SOURCES.txt
+nbexec.egg-info/dependency_links.txt
+nbexec.egg-info/entry_points.txt
+nbexec.egg-info/requires.txt
+nbexec.egg-info/top_level.txt
+test/test_basics.py

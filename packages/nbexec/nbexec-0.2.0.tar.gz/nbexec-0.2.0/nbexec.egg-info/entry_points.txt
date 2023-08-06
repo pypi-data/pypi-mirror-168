@@ -1,0 +1,2 @@
+[console_scripts]
+nbexec = nbexec.cli:main
