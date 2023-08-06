@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bin/zooniverse-classifications-analyse.py
+pyniverse/ZooniverseClassifications.py
+pyniverse/__init__.py
+pyniverse.egg-info/PKG-INFO
+pyniverse.egg-info/SOURCES.txt
+pyniverse.egg-info/dependency_links.txt
+pyniverse.egg-info/requires.txt
+pyniverse.egg-info/top_level.txt
