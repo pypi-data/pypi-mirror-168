@@ -1,0 +1,8 @@
+fastcore
+pandas
+ir_datasets
+pyvespa
+
+[dev]
+matplotlib<3.6
+plotnine
