@@ -1,0 +1,3 @@
+[console_scripts]
+dahlia=dahlia.__main__:main
+
