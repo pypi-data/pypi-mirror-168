@@ -1,0 +1,32 @@
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "template_KCEvers"
+version = "0.0.3"
+authors = [
+  { name="Kyra Caitlin Evers", email="kyra.c.evers@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+license = { file="LICENSE.txt" }
+# keywords = ["one", "two"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy==1.21.6", "pathlib==1.0.1",
+]
+
+
+[project.urls]
+# "Homepage" = "https://github.com/pypa/sampleproject"
+# "Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
