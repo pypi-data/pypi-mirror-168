@@ -1,0 +1,10 @@
+pandas>=1.5.0
+pytest
+requests
+tqdm
+numpy
+matplotlib
+click
+psutil
+pims
+jupyterlab
