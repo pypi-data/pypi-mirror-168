@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: sshscript
+Version: 1.1.17
+Summary: write automation scripts for ssh and subprocess in python
+Home-page: https://github.com/iapyeh/sshscript
+Author: Hsin Yuan Yeh
+Author-email: iapyeh@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/iapyeh/sshscript/issues
+Description:     
+        SSHScript
+        #########
+        System automation is a process of realizing management logics by repeating networking and execution. SSHScript makes Python an easy tool for creating system automation processes. With syntax sugar of SSHScript, writing python scripts to execute commands on local host or remote hosts is easy.
+        
+        You just need to embed commands and networking in python scripts. SSHScript would execute them and let you handle outputs all in Python. You need not know programming about the subprocess module and Paramiko(ssh).
+        
+        Technically, SSHScript is an integration of the subprocess and Paramiko. It provides an unique interface to invoke commands on local host and remote hosts. It could perform the same functionality as a shell script. But it is pure Python.
+        
+        Releases
+        ========
+        
+        The last version is 1.1.17. (2022/9/22). Relase Notes_
+        
+        More
+        ====
+        
+        * docs_
+        
+        * Examples_
+        
+        
+        .. bottom of content
+        
+        .. _paramiko : https://www.paramiko.org/
+        
+        .. _docs : https://iapyeh.github.io/sshscript/index
+        
+        .. _Examples : https://iapyeh.github.io/sshscript/examples/index
+        
+        
+        .. _Notes : https://iapyeh.github.io/sshscript/release-v1.1.17
+        
+Keywords: pypi,sshscript,ssh,paramiko,subprocess,shell script
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7.0
+Description-Content-Type: text/x-rst
