@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: codesmith
+Version: 0.0.1
+Summary: Platform for Task-Specific Languages built on IPython / Jupyter notebooks
+Author: Ezra Keshet
+Author-email: ezrakeshet@gmail.com
+Keywords: IPython,task-specific languages
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: IPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Utilities
+Classifier: Framework :: Jupyter
+Classifier: Environment :: Web Environment
+License-File: LICENSE
+Requires-Dist: svgling
+Requires-Dist: astor
+Requires-Dist: pyparsing
+
+Hello

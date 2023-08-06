@@ -1,0 +1,10 @@
+codesmith/__init__.py,sha256=y9fF0QwfPV6flPIVv7ond4WIjC9npugOWQtwWpZ50IQ,2722
+codesmith/eval.py,sha256=oIaDyoS_eRB4lVFCvWhJGUoaPi1B8TF3LBsKkCH0JLs,7983
+codesmith/python.py,sha256=0pzrdKbNCzzG-fjG0xnASbxu20QSEFlKtRzpRc6fuJ4,11414
+codesmith/read.py,sha256=dA6Kcjyo2bn1xw9BtjOW5pgvYGebU4hulZBVWimo9UY,3623
+codesmith/wrapper.py,sha256=dn0d-09Y2z1JqcG5ci0cVI91U9738zBrsZbgRdadet4,2536
+codesmith-0.0.1.dist-info/LICENSE,sha256=1FWzsqVNAyVS_TBNolV_Tsqyf8Jlt_EsB71BMlG09Ag,1104
+codesmith-0.0.1.dist-info/METADATA,sha256=odM8rz_v8FnyKUywQHah9QjIVwmtPx1H9HWhjBI1wTg,758
+codesmith-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+codesmith-0.0.1.dist-info/top_level.txt,sha256=1yPeePF8CvkqUHoGVprZ42UNCF-B7uz1ccfrQbQdGqI,10
+codesmith-0.0.1.dist-info/RECORD,,
