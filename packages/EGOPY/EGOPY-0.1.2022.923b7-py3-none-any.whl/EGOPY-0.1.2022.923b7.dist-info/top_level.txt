@@ -1,0 +1,17 @@
+ego_algotrading
+ego_chartwizard
+ego_ctabacktester
+ego_ctastrategy
+ego_ctp
+ego_datamanager
+ego_datarecorder
+ego_optionmaster
+ego_paperaccount
+ego_portfoliomanager
+ego_portfoliostrategy
+ego_riskmanager
+ego_spreadtrading
+ego_sqlite
+ego_tts
+ego_tushare
+egopy
