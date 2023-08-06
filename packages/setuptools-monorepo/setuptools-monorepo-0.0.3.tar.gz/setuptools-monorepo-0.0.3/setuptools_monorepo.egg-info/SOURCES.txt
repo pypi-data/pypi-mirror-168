@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+monorepo_loader/__init__.py
+monorepo_loader/setuptools_monorepo.py
+requirements/test.requirements.txt
+setuptools_monorepo.egg-info/PKG-INFO
+setuptools_monorepo.egg-info/SOURCES.txt
+setuptools_monorepo.egg-info/dependency_links.txt
+setuptools_monorepo.egg-info/entry_points.txt
+setuptools_monorepo.egg-info/top_level.txt

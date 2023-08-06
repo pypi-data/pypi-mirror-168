@@ -1,0 +1,2 @@
+[distutils.setup_keywords]
+monorepo_call = monorepo_loader.setuptools_monorepo:handle_monorepo_package
