@@ -1,0 +1,11 @@
+_coneref.cp38-win_amd64.pyd,sha256=WcwsbSXTOBvPeU99Chnrq5hRuKdrmsQo1HRBGWmhtGc,416256
+coneref/__init__.py,sha256=IWaXk3OUdgi1MWbe_rnOchqVKk0t1jesq1q17_2mM5s,68
+coneref/cones_utils.py,sha256=Z9xCHlBCAcVt2PwvSDpx2dwNIW5nzqSCHgJUXYVMfvc,5943
+coneref/cvxpy_interface.py,sha256=0ZKe0WZ1r3z6HOH2B4i0FTb-1u7JBjOAqMaXThEHNlA,11161
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_one.py,sha256=SyDcD7pC2-ZLUNly49_CLfzOIKXOvd7mDPEddJzUvBg,63
+coneref-0.1.4.dist-info/LICENSE,sha256=2abb7rd4mLZtgqaY3RcPJ9EqVcjjxlBSEqsbcLPRsLU,1086
+coneref-0.1.4.dist-info/METADATA,sha256=SjaQAvXrsEWxdtu7f4MhfpVZEUv4HAd6xTChDu9mo2M,448
+coneref-0.1.4.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+coneref-0.1.4.dist-info/top_level.txt,sha256=GmjaCYzCWz4P2B1vRakhpOs2V5Jm2RXU15MaizbvF7o,23
+coneref-0.1.4.dist-info/RECORD,,
