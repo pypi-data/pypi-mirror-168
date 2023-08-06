@@ -1,0 +1,8 @@
+*stub*/
+_autosummary
+dist
+build
+*.egg
+*.egg-info
+.*
+__pycache__
