@@ -1,0 +1,14 @@
+pandas
+vollseg-napari
+scipy
+tifffile
+matplotlib
+imagecodecs
+napari[all]
+diplib
+sklearn
+dask
+natsort
+napari-animation
+pydot
+graphviz
