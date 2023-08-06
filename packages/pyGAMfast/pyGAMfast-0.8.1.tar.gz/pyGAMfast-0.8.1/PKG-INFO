@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyGAMfast
+Version: 0.8.1
+Summary: GAM toolkit
+Author-email: will norcliffe <wnorkybrown@gmail.com>
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: scipy>=0.17
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: future
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-pylint ; extra == "test"
+Requires-Dist: codecov ; extra == "test"
+Requires-Dist: mock ; extra == "test"
+Requires-Dist: progressbar2 ; extra == "train"
+Project-URL: Home, https://github.com/wnorcbrown/pygamfast
+Provides-Extra: test
+Provides-Extra: train
