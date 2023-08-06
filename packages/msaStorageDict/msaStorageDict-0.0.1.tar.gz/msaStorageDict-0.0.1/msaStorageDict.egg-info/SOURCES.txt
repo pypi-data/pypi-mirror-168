@@ -1,0 +1,14 @@
+LICENCE
+README.md
+setup.py
+msaStorageDict/__init__.py
+msaStorageDict/base.py
+msaStorageDict/encoding.py
+msaStorageDict/memory.py
+msaStorageDict/redis.py
+msaStorageDict/zookeeper.py
+msaStorageDict.egg-info/PKG-INFO
+msaStorageDict.egg-info/SOURCES.txt
+msaStorageDict.egg-info/dependency_links.txt
+msaStorageDict.egg-info/top_level.txt
+msaStorageDict.egg-info/zip-safe
