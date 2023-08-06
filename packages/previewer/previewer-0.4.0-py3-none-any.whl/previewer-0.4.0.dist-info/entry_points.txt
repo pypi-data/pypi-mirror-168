@@ -1,0 +1,3 @@
+[console_scripts]
+previewer=previewer.cli:run
+
