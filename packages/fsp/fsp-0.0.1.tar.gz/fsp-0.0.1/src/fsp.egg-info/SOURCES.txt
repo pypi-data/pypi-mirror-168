@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/fsp.egg-info/PKG-INFO
+src/fsp.egg-info/SOURCES.txt
+src/fsp.egg-info/dependency_links.txt
+src/fsp.egg-info/top_level.txt
