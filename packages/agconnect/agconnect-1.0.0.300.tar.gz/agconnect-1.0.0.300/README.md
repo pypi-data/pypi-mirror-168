@@ -1,0 +1,42 @@
+# Huawei AppGallery Connect Python Server SDK for Auth
+
+## Overview
+
+Most apps need to identify and authenticate users to tailor the app experience for individual users. However, building such a system from scratch is a difficult process. Auth Service can quickly build a secure and reliable user authentication system for your app. You only need to access Auth Service capabilities in your app without caring about the facilities and implementation on the cloud.
+
+For more information, visit the [Auth Service Introduction](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-introduction-0000001053732605).
+
+## Installation
+
+You can install the agconnect via PyPi
+
+    pip install agconnect
+
+After the installation takes place, you can import the package as shown below
+
+    from agconnect.auth_server import AGCAuth
+
+# Supported Environments
+
+This project supports Python version 3.6 or higher
+
+Also note that the Huawei AppGallery Connect Python Server SDK should only be used in server-side/back-end environments controlled by the application developer.This includes most server and serverless platforms. Do not use the Python Server SDK environment in the client.
+
+## Documentation
+
+- [Getting Started with the Server](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-introduction-0000001053732605)
+- [Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-introduction-0000001053732605)
+
+## License
+
+Huawei AppGallery Connect Python Server SDK for Auth is licensed under the "ISC".
+
+## Keywords
+
+[agconnect](https://pypi.org/search/?q=agconnect&o=)
+
+[python](https://pypi.org/search/?q=python&o=) 
+
+[server sdk](https://pypi.org/search/?q=server+sdk&o=)
+
+[authentication](https://pypi.org/search/?q=authentication&o=)
