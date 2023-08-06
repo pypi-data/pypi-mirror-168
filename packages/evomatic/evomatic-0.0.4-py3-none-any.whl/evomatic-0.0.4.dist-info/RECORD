@@ -1,0 +1,15 @@
+evomatic/__init__.py,sha256=mtrc5Y6T4Ip39WtFfSWQlY15S_3wJnL7YAseZ2E9bLk,6188
+evomatic/_version.py,sha256=tcW5WR5SDjuBEIjLMShMi_qo95F90_X0yoMvgycBv8k,176
+evomatic/fitness.py,sha256=QsIEL3H1aipIdhnHwac2g00jLqYkxz2pPqh2qYqHgB8,6366
+evomatic/genetic.py,sha256=E07MSCoaKwA5qdzkQtXwROjAQNIKBiMueAxI_nS1pYU,7755
+evomatic/io.py,sha256=rssnmRDu6uzOMvdP99UroEWOd447T4Pjq_UUdEPb504,2675
+evomatic/mutate.py,sha256=a-_gmkERAzkB7yfEMhLGzo2CXUnWelRhF3MAu4yrgy8,4083
+evomatic/plots.py,sha256=A1m2ha4IXUWbR8aXOe8WuqocmYqVoYDWLnfFXcyIVZw,12239
+evomatic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evomatic/recombination.py,sha256=nJlyCgBc5GWHNEHO4QEHGk57p4r0NAIr-DxhVnbVdeE,1036
+evomatic/tournaments.py,sha256=xmvjzAiqweDwSayRk9XGuDSs0lKycp5O8cBkeiyUuZY,815
+evomatic-0.0.4.dist-info/LICENSE,sha256=30JX_lxHe6nRlugeSNNm_crhLnwsndludCKuQVlYGEI,1522
+evomatic-0.0.4.dist-info/METADATA,sha256=wLFNB5bDUtWrefjbxfhZHw1S12vFDsWdKKW5EBGeitE,1174
+evomatic-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+evomatic-0.0.4.dist-info/top_level.txt,sha256=L8QBYc9-3zaDo7E8YtKTlJ7tr1CCqxlJ6ckkqX-sMgY,9
+evomatic-0.0.4.dist-info/RECORD,,
