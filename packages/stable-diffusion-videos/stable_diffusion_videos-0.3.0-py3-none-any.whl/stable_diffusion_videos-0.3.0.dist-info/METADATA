@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: stable-diffusion-videos
+Version: 0.3.0
+Summary: Create 🔥 videos with Stable Diffusion by exploring the latent space and morphing between text prompts.
+Author: Nathan Raw
+Author-email: naterawdata@gmail.com
+License: Apache
+License-File: LICENSE
+Requires-Dist: transformers
+Requires-Dist: diffusers (==0.3.0)
+Requires-Dist: scipy
+Requires-Dist: fire
+Requires-Dist: gradio
+Provides-Extra: realesrgan
+Requires-Dist: realesrgan (==0.2.5.0) ; extra == 'realesrgan'
+
