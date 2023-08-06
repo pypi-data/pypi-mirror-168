@@ -1,0 +1,2 @@
+m-singleton>=0.3
+m-caching>=0.1.8

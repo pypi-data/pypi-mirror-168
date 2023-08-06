@@ -1,0 +1,4 @@
+mobio/libs/kafka_lib
+mobio/libs/kafka_lib/helpers
+mobio/libs/kafka_lib/models
+mobio/libs/kafka_lib/models/mongo
