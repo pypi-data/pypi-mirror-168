@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: django-audit-events
+Version: 0.2.13
+Summary: Log audit events in Django
+Home-page: https://bitbucket.org/akinonteam/django-audit-events
+Author: Onur Güzel
+Author-email: dev@akinon.com
+Maintainer: Akinon
+Maintainer-email: dev@akinon.com
+License: MIT
+Project-URL: Documentation, https://django-audit-events.readthedocs.io/
+Project-URL: Source Code, https://bitbucket.org/akinonteam/django-audit-events
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Django Audit Events
+
+[![Build status](https://img.shields.io/bitbucket/pipelines/akinonteam/django-audit-events)](https://bitbucket.org/akinonteam/django-audit-events/addon/pipelines/home)
+[![Documentation status](https://readthedocs.org/projects/django-audit-events/badge/?version=latest)](https://django-audit-events.readthedocs.io/en/latest/?badge=latest)
+![PyPI](https://img.shields.io/pypi/v/django-audit-events)
+![PyPI - Django version](https://img.shields.io/pypi/djversions/django-audit-events)
+![PyPI - Python version](https://img.shields.io/pypi/pyversions/django-audit-events)
+![PyPI - License](https://img.shields.io/pypi/l/django-audit-events)
+[![Total alerts](https://img.shields.io/lgtm/alerts/bitbucket/akinonteam/django-audit-events)](https://lgtm.com/projects/b/akinonteam/django-audit-events/alerts/)
+[![Code quality](https://img.shields.io/lgtm/grade/python/bitbucket/akinonteam/django-audit-events)](https://lgtm.com/projects/b/akinonteam/django-audit-events/context:python)
+
+Extensible custom audit events for humans! This Django app allows you to easily create your own events in your project. Currently only works on PostgreSQL.
+
+Let's have a look:
+
+```python
+def awesome_view(request):
+    foo_obj = Foo.objects.get(pk=1)
+    # Do something with foo_obj...
+    request.audit_context.create_event(
+        foo_obj,
+        something="done",
+        bar="baz"
+    )
+```
+
+This will create an audit event, including the request URL, logged-in user, remote IP address, and the following event content:
+
+```
+>>> event.content
+{"something": "done", "bar: "baz"}
+```
+
+For more information about installation and usage, check out the [documentation](https://django-audit-events.readthedocs.io/)!
+
+

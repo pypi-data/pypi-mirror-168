@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-08 11:40+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps.py:9
+msgid "Django Audit Event"
+msgstr "Django Denetim Olayı"
+
+#: mixin.py:16
+msgid "Audit context cannot be None"
+msgstr "Denetim bağlamı None olamaz"
+
+#: mixin.py:19
+msgid "Audit context must be an AuditContext instance"
+msgstr "Denetim bağlamı bir AuditContext nesnesi olmalı"
+
+#: models.py:14
+msgid "ID"
+msgstr "ID"
+
+#: models.py:15
+msgid "Timestamp"
+msgstr "Zaman damgası"
+
+#: models.py:19
+msgid "User"
+msgstr "Kullanıcı"
+
+#: models.py:24
+msgid "IP address"
+msgstr "IP adresi"
+
+#: models.py:26
+msgid "URL"
+msgstr "İnternet adresi"
+
+#: models.py:27
+msgid "Query params"
+msgstr "Sorgu parametreleri"
+
+#: models.py:28
+msgid "Post data"
+msgstr "Form verisi"
+
+#: models.py:54
+msgid "Headers"
+msgstr "İstek başlıkları"
+
+#: models.py:32
+msgid "Content"
+msgstr "İçerik"
+
+#: models.py:35
+msgid "Audit event"
+msgstr "Denetim olayı"
+
+#: models.py:36
+msgid "Audit events"
+msgstr "Denetim olayları"

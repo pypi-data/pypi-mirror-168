@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+*.egg-info
+
+django_audit_events/version.py
+
+.tox/
+build/
+dist/
+docs/_build/

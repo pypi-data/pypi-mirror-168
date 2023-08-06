@@ -1,0 +1,15 @@
+black==21.12b0; python_version >= "3"
+celery
+django>=1.10,<3.2
+djangorestframework>=3.4.3,<3.12
+djangorestframework-filters>=0.8.0,<0.12
+isort>=4.3.21, <=5.0.4
+model-bakery
+psycopg2-binary
+setuptools_scm
+sphinx==1.8.5
+sphinx-rtd-theme<0.5
+tox
+tox-pyenv
+vine==1.3.0
+click==7.1.2
