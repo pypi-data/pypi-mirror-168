@@ -1,0 +1,8 @@
+transformers
+diffusers==0.3.0
+scipy
+fire
+gradio
+
+[realesrgan]
+realesrgan==0.2.5.0
