@@ -1,0 +1,13 @@
+LICENSE,sha256=--NE6tb0M-SOAnoBdVmnz7CL_zCDtsjVcvJgAbWL1ys,1073
+cfgman/__init__.py,sha256=qirL96wOG6P8FgC_Ut90_S8ff_MAtA3YLTGbbwHldZY,6915
+cfgman/errors.py,sha256=rO-lJxm_FNFV8MZ-25O0NHtHthnyEzYrmXSdvv17Fgo,1439
+cfgman/loaders/__init__.py,sha256=3P015taCCyi-08hlJmcCvpFzSq5c_ncHuSWKMXXtjxc,1489
+cfgman/loaders/env.py,sha256=IycGa8GyLMpaC_EjinCdXKhhzgSEpLCssOdWEae3OD0,3649
+cfgman/loaders/file.py,sha256=8oKsaZVMFQFYWkkAxJ-_MHGGrTRIvnpZ7jSlIsNGBq0,5793
+cfgman/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfgman/tree.py,sha256=Z4HfnhIp5olCdEedZK2LuHh1AOeWJUnf_0uMbnpRQZI,1849
+cfgman/types.py,sha256=-TLh_OmOHKsmfSuCVLH6QO-RqdFezRRVSbwEsVAtNzM,106
+cfgman-0.1.0.dist-info/LICENSE,sha256=--NE6tb0M-SOAnoBdVmnz7CL_zCDtsjVcvJgAbWL1ys,1073
+cfgman-0.1.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+cfgman-0.1.0.dist-info/METADATA,sha256=ORui0crV4ePFWzBJ6YJLlzdz8JXP_qFlzeYhU_scKKg,3450
+cfgman-0.1.0.dist-info/RECORD,,
