@@ -1,0 +1,6 @@
+crcmod
+deprecated
+intelhex
+pexpect
+requests>=2.4.2
+wheel
