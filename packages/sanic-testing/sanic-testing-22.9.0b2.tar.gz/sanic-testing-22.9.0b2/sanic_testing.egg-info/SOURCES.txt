@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+sanic_testing/__init__.py
+sanic_testing/manager.py
+sanic_testing/reusable.py
+sanic_testing/testing.py
+sanic_testing/websocket.py
+sanic_testing.egg-info/PKG-INFO
+sanic_testing.egg-info/SOURCES.txt
+sanic_testing.egg-info/dependency_links.txt
+sanic_testing.egg-info/requires.txt
+sanic_testing.egg-info/top_level.txt
