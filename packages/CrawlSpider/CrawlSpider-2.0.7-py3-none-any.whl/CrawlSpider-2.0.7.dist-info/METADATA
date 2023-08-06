@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: CrawlSpider
+Version: 2.0.7
+Summary: Python Common Spider for Humans.
+Home-page: https://gitee.com/dreamricky/crawl-spider
+Author: Ricky Wang
+Author-email: ricky.wbjian@gmail.com
+License: Apache 2.0
+Project-URL: Author Website, https://blog.csdn.net/qq_36154755
+Keywords: spider scrapy beatifulsoup xpath 正则
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyperclip (==1.8.2)
+Requires-Dist: PySide2 (==5.15.2)
+Requires-Dist: PySocks (==1.7.1)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: PyExecJS (==1.5.1)
+Requires-Dist: protobuf (==3.14.0)
+Requires-Dist: pkginfo (==1.8.3)
+Requires-Dist: cos-python-sdk-v5 (==1.9.15)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: beautifulsoup4 (==4.10.0)
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: DBUtils (==3.0.2)
+Requires-Dist: PyMySQL (==0.9.3)
+Requires-Dist: selenium (==4.0.0)
+Requires-Dist: aiofiles (==0.8.0)
+Requires-Dist: aiohttp (==3.8.1)
+Requires-Dist: aiohttp-requests (==0.1.3)
+Requires-Dist: fake-useragent (==0.1.11)
+Requires-Dist: retrying (==1.3.3)
+Requires-Dist: redis (==4.3.3)
+Requires-Dist: aiomysql (==0.0.22)
+Requires-Dist: fire (==0.4.0)
+Requires-Dist: psutil (==5.9.1)
+Requires-Dist: urllib3 (==1.26.6)
+Requires-Dist: boto3 (==1.24.24)
+Requires-Dist: botocore (==1.27.24)
+Requires-Dist: aliyun-python-sdk-core-v3 (==2.13.33)
+Requires-Dist: aliyun-python-sdk-green (==3.6.5)
+Requires-Dist: aliyun-python-sdk-kms (==2.15.0)
+Requires-Dist: tenacity (==8.0.1)
+Requires-Dist: psycopg2-binary
+Requires-Dist: psycopg
+Requires-Dist: pytz
+Requires-Dist: pyyaml (==5.4.1)
+Requires-Dist: pyexcel-xlsx (==0.6.0)
+Requires-Dist: loguru (==0.6.0)
+Provides-Extra: asyncloop
+Requires-Dist: uvloop ; extra == 'asyncloop'
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+
+# CrawlSpider
+
+**CrawlSpider** is a simple, yet light, spider library.
+
+
+```python
+import asyncio
+from CrawlSpider.Utils.SpiderRequest import spiderRequest
+
+async def get(url):
+    res = await spiderRequest.get(
+        url,
+        form='json'
+    )
+    print(res)
+
+if __name__ == '__main__':
+    asyncio.run(get("https://httpbin.org/get"))
+```
+
+响应结果
+```json
+{
+    "status_code": 200,
+    "content": {
+        "args": {},
+        "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Cookie": "_hjAbsoluteSessionInProgress=0; _sp_id.eeee=d332c9c-a67e-4564-80ed-114737664d84",
+            "Host": "httpbin.org",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36",
+            "X-Amzn-Trace-Id": "Root=1-62c6edbe-3de25d31339352e"
+        },
+        "origin": "xxx.xxx.xxx.xxx",
+        "url": "https://httpbin.org/get"
+    }
+}
+```
+
+CrawlSpider allows you to crawl data from website extremely easily.
+There’s no need to manually change proxy and request's headers in crawling data
+
+
+
+
+## Installing CrawlSpider and Supported Versions
+
+CrawlSpider is available on PyPI:
+
+```console
+$ python -m pip install CrawlSpider
+```
+
+CrawlSpider officially supports Python 3.7+.
+    
+    
+    
+    
+    
+    
+    

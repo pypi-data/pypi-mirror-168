@@ -1,0 +1,2 @@
+[console_scripts]
+CrawlSpiderUtils = CrawlSpider.Utils.__main__:main
