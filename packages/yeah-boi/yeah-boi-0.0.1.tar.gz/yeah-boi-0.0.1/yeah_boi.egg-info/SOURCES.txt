@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+yeah_boi.egg-info/PKG-INFO
+yeah_boi.egg-info/SOURCES.txt
+yeah_boi.egg-info/dependency_links.txt
+yeah_boi.egg-info/top_level.txt
