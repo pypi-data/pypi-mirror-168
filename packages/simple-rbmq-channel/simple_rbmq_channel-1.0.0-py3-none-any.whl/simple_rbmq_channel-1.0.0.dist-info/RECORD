@@ -1,0 +1,6 @@
+rbmq_channel/__init__.py,sha256=8oGwKjpUH1x1Kk4brgx3eVLnOZpED5cQfuzeEMZb9t0,46
+rbmq_channel/rabbitmq.py,sha256=vvVwbKywNQvqCPh2OLQISTLu9ND1WLeIMWNkd6uLc1Y,4992
+simple_rbmq_channel-1.0.0.dist-info/METADATA,sha256=4QS5E2gjarKyigY0oOJztWxCKgxHpBYLbbhxVbWdziU,321
+simple_rbmq_channel-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+simple_rbmq_channel-1.0.0.dist-info/top_level.txt,sha256=VRxAM0lfZWyejKYuloiXRm1jMiakfF7XMRGUMyc82Yc,13
+simple_rbmq_channel-1.0.0.dist-info/RECORD,,
