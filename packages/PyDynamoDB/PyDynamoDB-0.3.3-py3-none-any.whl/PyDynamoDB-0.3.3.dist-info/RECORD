@@ -1,0 +1,16 @@
+pydynamodb/__init__.py,sha256=B7jjdx549vLtQL6r77wdWtsJd0o0X7bM7J1dm3rCUK8,1474
+pydynamodb/common.py,sha256=bvapCJOtiE3f4f-sEMzF0auztNdWFT0otpGQmgi2pA4,5435
+pydynamodb/connection.py,sha256=bM5gem0sCUn0N4hlfWc6rCLhsmw6SPyCg-bG2PHdB9A,4010
+pydynamodb/converter.py,sha256=_iMT7Zpleo6phhZmC2xg7lT9kM3YnjVuTvBeOcu63hY,7715
+pydynamodb/cursor.py,sha256=opw_wy6k2HlH6QIxJPP7SJF0oyTYtppBW-d_JvY97Kc,6504
+pydynamodb/error.py,sha256=sh_qAt1NaEOdG0S89zJDAWb66188U89s41dsXxPMxl8,712
+pydynamodb/result_set.py,sha256=7lFggLr-7h5aAPKvo7iUegVhRYMcTbAA3kqeNtpvMrw,9082
+pydynamodb/util.py,sha256=Y0lUgiT2JYLPjOtDZqWUR6EiikOSp0WlzOrsgOboaEE,2521
+pydynamodb/sqlalchemy_dynamodb/__init__.py,sha256=ET_X6L6il6HnHJ4XBkeVtCWTOiVGSa7ST3SxsCZeQhc,9089
+pydynamodb/sqlalchemy_dynamodb/pydynamodb.py,sha256=e91naIdTe9O3f6r1f4GJFmx6YJQgZ38CuB6YRFyzQFk,9866
+PyDynamoDB-0.3.3.dist-info/LICENSE,sha256=M_q2tTZm99X5aWixXraxW_h4-pXuePxTMFxFkBf0rfk,2335
+PyDynamoDB-0.3.3.dist-info/METADATA,sha256=GJpjGpmUzfmmVigSxa_BOfd6sZJ16GqUtXjaaiPQC3c,9877
+PyDynamoDB-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyDynamoDB-0.3.3.dist-info/entry_points.txt,sha256=MDQkRdWEDSXwbZVrRpld_42oVN8yqSaroE3ZnHwuNNY,170
+PyDynamoDB-0.3.3.dist-info/top_level.txt,sha256=Tgh6vqdblFe5WM2EhZjw0VNBbfTWD2NhTkdGHUy6U3Q,11
+PyDynamoDB-0.3.3.dist-info/RECORD,,
