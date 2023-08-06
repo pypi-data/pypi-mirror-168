@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+django_google_sheets.egg-info/PKG-INFO
+django_google_sheets.egg-info/SOURCES.txt
+django_google_sheets.egg-info/dependency_links.txt
+django_google_sheets.egg-info/requires.txt
+django_google_sheets.egg-info/top_level.txt
+googlesheets/__init__.py
+googlesheets/sheets.py

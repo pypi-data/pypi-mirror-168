@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-google-sheets
+Version: 0.0.1
+Summary: Não é oficial do google
+Author: issei momonge
+Author-email: mggyggf@gmail.com
+License: MIT License
+Keywords: django google sheets
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# django-google-sheets
+
+essa biblioteca foi feito para uso proprio mas estÃ¡ sendo disponibilizado em varios projetos
+devido a isso nÃ£o existe uma documentaÃ§Ã£o
