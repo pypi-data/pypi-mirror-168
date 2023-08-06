@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mycustomtest"
+version = "0.1.1"
+description = ""
+authors = ["mycustomtest <mycustomtest@example.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+mct = "mycustomtest.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
