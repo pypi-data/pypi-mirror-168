@@ -1,0 +1,9 @@
+package_pku/__init__.py,sha256=zi6drKiLifAc4YawT8Nag3tu0zDM1lHj1aVuj1Fw3VQ,51
+package_pku/modul1.py,sha256=porO7uXZa7shQiAG7LLArKHrcRVH75oc8VBvTeGy61U,69
+package_pku/modul2.py,sha256=-evlBJGv3wbXaRbJRVt_hxVGpDz8i2J8kKjW5WkGVQY,91
+package_pku/data/jup_start.cmd,sha256=uj9PcaKqkhuuvc8WEyUP0Icp87-CUYdbpgjCHMdpefg,47
+package_pku-0.0.3.data/data/data/jup_start.cmd,sha256=uj9PcaKqkhuuvc8WEyUP0Icp87-CUYdbpgjCHMdpefg,47
+package_pku-0.0.3.dist-info/METADATA,sha256=Ktcm8_ge0hH8cou7V6kbAVLGtfe3iqGyJAoWqRHRH-U,642
+package_pku-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+package_pku-0.0.3.dist-info/top_level.txt,sha256=tj6A1MdAFEKUDQDFThpmXVm8QOjIl-Cw4gaWsbHL1nA,12
+package_pku-0.0.3.dist-info/RECORD,,

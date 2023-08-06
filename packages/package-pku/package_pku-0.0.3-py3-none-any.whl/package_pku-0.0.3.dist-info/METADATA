@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: package-pku
+Version: 0.0.3
+Summary: Demonstrating how to use PyPI
+Home-page: UNKNOWN
+Author: ExperTeach GmbH
+Author-email: et_pku@web.de
+License: UNKNOWN
+Keywords: python,code, Expertttt
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+﻿# pyfi
+
+Demonstration des test.PyPI by pku
+
+## Benutzung
+Lässige Grüße aus Modul2:
+```python
+import pyfi
+pyfi.funktion2()
+```
+
