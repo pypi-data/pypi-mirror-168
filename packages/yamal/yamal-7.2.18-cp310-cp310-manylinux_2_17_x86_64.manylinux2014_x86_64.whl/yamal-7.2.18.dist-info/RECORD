@@ -1,0 +1,16 @@
+yamal-7.2.18.dist-info/top_level.txt,sha256=qp9OpqHw48tEtx_10l_2SfdwspKXgbhIyaUPZ34Xvc4,6
+yamal-7.2.18.dist-info/WHEEL,sha256=AENPUwuTc6qB95Mrn5JB5boXegWw6oDhuwuuX0q_ONg,152
+yamal-7.2.18.dist-info/METADATA,sha256=B4ib-PF66IfFjayKPr0mHK-Ye1cVTFpN0iGkewXYRJs,352
+yamal-7.2.18.dist-info/RECORD,,
+yamal-7.2.18.dist-info/LICENSE,sha256=K-oilpIR02D4PQ0BpO7mLf8asLsXNNTrNwcj57NDX-w,601
+yamal/ytp.pyi,sha256=8pKxps9w3V0zsv1XNbwbsDVx9MZlNR7WjlVM6nWIv5k,2931
+yamal/testmodule.so,sha256=DH1vle-LgODLkXqmtJo_c4M36ZO5JVzAMKFz4W67M_o,1676680
+yamal/ytp.cpython-310-x86_64-linux-gnu.so,sha256=TH6S5DidtHUjQIuXJAwlNzaulteDqJJCVHLXfJ3Km20,2778432
+yamal/__init__.py,sha256=heBTDBN17kPwVCbf48q-I0O1c_-ldPoeynkaPEScUzc,8052
+yamal/sys_base.pyi,sha256=hAqgB6tnTQ_YK2FvOmep2rmc0S70ssirePyDeN77FG4,1472
+yamal/sys_base.cpython-310-x86_64-linux-gnu.so,sha256=pitRvJVgoZHbEzbOVaLy03qgK8q-AoCwHL_0yCWs6RQ,1757440
+yamal/tests/sys_tests.py,sha256=YQu15hY0qWmIA5TdjzV4NYizCRmxGMzSjL1AkjOi7aU,6169
+yamal/tests/__init__.py,sha256=FRRhdi0S7q-Ba1S7BeA3mojsRbYiXjBSwcBqj2M7xVk,600
+yamal/tests/ytp.py,sha256=OQ0rN3tRncms3tdsZgyUwVY6jGGPnFFI8RAx6LMiJ4M,28444
+yamal-7.2.18.data/scripts/yamal-run.py,sha256=hN7k4UeVjS4qVbuDZN4mEjWyYcPolSO29QdWA5Alx4Y,2485
+yamal-7.2.18.data/scripts/test-yamal-python,sha256=IqndrSE9YKwcO8RAGg4-pzzIlDRWDzgaAsRvH3ZpDss,893
