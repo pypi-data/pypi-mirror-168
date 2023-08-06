@@ -1,0 +1,9 @@
+LICENSE
+README.md
+bsbdocs.py
+pyproject.toml
+sphinxext_bsb.egg-info/PKG-INFO
+sphinxext_bsb.egg-info/SOURCES.txt
+sphinxext_bsb.egg-info/dependency_links.txt
+sphinxext_bsb.egg-info/requires.txt
+sphinxext_bsb.egg-info/top_level.txt
