@@ -1,0 +1,2 @@
+requests
+iec870ree_moxa>=0.5.1
