@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/pygameinputs/Button.py
+src/pygameinputs/Label.py
+src/pygameinputs/Sliders.py
+src/pygameinputs/TextBox.py
+src/pygameinputs/__init__.py
+src/pygameinputs.egg-info/PKG-INFO
+src/pygameinputs.egg-info/SOURCES.txt
+src/pygameinputs.egg-info/dependency_links.txt
+src/pygameinputs.egg-info/requires.txt
+src/pygameinputs.egg-info/top_level.txt
