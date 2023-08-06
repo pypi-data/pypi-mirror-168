@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: iotedge_application_link_sdk
+Version: 0.3.0
+Summary: IoT Stack Edge application Link SDK
+Home-page: https://pypi.org/project/iotedge_application_link_sdk/
+Author: ucloud.cn
+Author-email: ibu-bot@ucloud.cn
+License: Apache 2 License
+Platform: any
+
+IoT Stack Edge application Link SDK
+ https://docs.ucloud.cn/uiot-stack/README
+

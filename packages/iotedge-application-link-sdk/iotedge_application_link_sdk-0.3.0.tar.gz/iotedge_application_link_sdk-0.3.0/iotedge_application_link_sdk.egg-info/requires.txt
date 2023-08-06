@@ -1,0 +1,2 @@
+asyncio-nats-client>=0.10.0
+cachetools>=4.0.0
