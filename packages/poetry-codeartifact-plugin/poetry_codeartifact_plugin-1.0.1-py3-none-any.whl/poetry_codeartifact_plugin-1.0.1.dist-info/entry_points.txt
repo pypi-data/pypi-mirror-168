@@ -1,0 +1,3 @@
+[poetry.plugin]
+poetry-codeartifact-plugin=poetry_codeartifact_plugin.plugin:CodeArtifactPlugin
+
