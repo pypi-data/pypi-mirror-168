@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: randomlib
+Version: 0.12
+Summary: An random Library
+Author: Random
+Author-email: randomlib@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: regex
+Requires-Dist: importlib.resources
+Requires-Dist: pandas
+Requires-Dist: transformers
+Requires-Dist: numpy
+Requires-Dist: torch
+
