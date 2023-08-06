@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "sapiadapter"
+version = "0.33.91361"
+description = ""
+authors = ["Zafar Iqbal <zaf@sparc.space>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.11"
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
