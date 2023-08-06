@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+bin/miniplayer
+miniplayer/__init__.py
+miniplayer.egg-info/PKG-INFO
+miniplayer.egg-info/SOURCES.txt
+miniplayer.egg-info/dependency_links.txt
+miniplayer.egg-info/requires.txt
+miniplayer.egg-info/top_level.txt
