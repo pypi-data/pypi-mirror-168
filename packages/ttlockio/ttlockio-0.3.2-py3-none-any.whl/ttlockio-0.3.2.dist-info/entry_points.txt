@@ -1,0 +1,4 @@
+[console_scripts]
+create_access_token = bin.create_access_token
+create_user_and_access_token = bin.create_user_and_access_token
+refresh_access_token = bin.refresh_access_token
