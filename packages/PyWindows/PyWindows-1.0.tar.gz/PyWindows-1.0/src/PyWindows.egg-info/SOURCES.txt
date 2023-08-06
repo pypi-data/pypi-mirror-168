@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/PyWindows/PyWindows.py
+src/PyWindows/__init__.py
+src/PyWindows.egg-info/PKG-INFO
+src/PyWindows.egg-info/SOURCES.txt
+src/PyWindows.egg-info/dependency_links.txt
+src/PyWindows.egg-info/top_level.txt
+src/PyWindows/lib/C-Python-Window-Lib.dll
+src/PyWindows/lib/SDL2.dll
+src/PyWindows/lib/SDL2_image.dll
+src/PyWindows/lib/player.png
