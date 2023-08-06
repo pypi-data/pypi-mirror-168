@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flask-pydantic-serializers
+Version: 0.0.1
+Summary: Base class for serializing data using pydantic Flask
+Home-page: https://github.com/Jeep123Samuels/flask_pydantic_serializers
+Author: J Samuels
+Author-email: jeep123samuels@gmail.com
+License: MIT
+Download-URL: https://github.com/Jeep123Samuels/flask_pydantic_serializers/archive/main.zip
+Keywords: Flask,pydantic,serializers
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+
+UNKNOWN
+
