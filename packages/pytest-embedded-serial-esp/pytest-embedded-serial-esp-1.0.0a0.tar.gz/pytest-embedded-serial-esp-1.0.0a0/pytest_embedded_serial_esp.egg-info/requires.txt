@@ -1,0 +1,2 @@
+pytest-embedded-serial~=1.0.0a0
+esptool>=4.0
