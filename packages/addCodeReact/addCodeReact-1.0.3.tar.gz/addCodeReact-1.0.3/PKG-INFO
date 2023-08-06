@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: addCodeReact
+Version: 1.0.3
+Summary: Package for react code dynamically
+Home-page: https://github.com/subhasankari95/python_add_code_react
+Author: Subha Sankari
+Author-email: subhasankari1995@gmail.com
+License: MIT
+Keywords: python dynamic react code command line
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Package to add dynamic react components import code
+
