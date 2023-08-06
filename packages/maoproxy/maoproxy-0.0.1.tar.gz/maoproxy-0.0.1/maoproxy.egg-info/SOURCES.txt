@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+maoproxy/__init__.py
+maoproxy/proxy.py
+maoproxy.egg-info/PKG-INFO
+maoproxy.egg-info/SOURCES.txt
+maoproxy.egg-info/dependency_links.txt
+maoproxy.egg-info/requires.txt
+maoproxy.egg-info/top_level.txt
