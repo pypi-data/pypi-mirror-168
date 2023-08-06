@@ -1,0 +1,8 @@
+mlflow_mlserver_docker/Dockerfile,sha256=5Eda8Lkh3G8Mv1IRrxOlR0wVQF6rEgceEn3MCZhbcZ4,557
+mlflow_mlserver_docker/__init__.py,sha256=vI5ag9RclJpbaPD1hbpose41nR-HbBC7O29vV2hzVs4,268
+mlflow_mlserver_docker/cli.py,sha256=tZCf-8eefaCreiyjKsZhjxp54WKT6W1kBCQ90FFewtQ,1268
+mlflow_mlserver_docker/main.py,sha256=jfhN-ha7Kwi-iXu4fIcr7B6vBvFA1ue8hBZ0xEhxubk,3049
+mlflow_mlserver_docker-0.4.0.dist-info/entry_points.txt,sha256=01synBpw06kmE1F7Rr8ySDRO_v58-AKdMiI4_4aFBhk,73
+mlflow_mlserver_docker-0.4.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+mlflow_mlserver_docker-0.4.0.dist-info/METADATA,sha256=H9ZTKKsPvyYgnffPxgK9MLTwu8o88zqJYmRb6B6j8cw,1355
+mlflow_mlserver_docker-0.4.0.dist-info/RECORD,,

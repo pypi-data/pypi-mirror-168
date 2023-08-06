@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mlflow-mlserver-docker
+Version: 0.4.0
+Summary: Package mlflow models as mlserver docker images
+Home-page: https://github.com/dingobar/mlflow-mlserver-docker
+Author: Martin Morset
+Author-email: mmorset@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: boto3 (>=1.24.76,<2.0.0)
+Requires-Dist: mlflow-skinny (>=1.28.0,<2.0.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Requires-Dist: python-on-whales (>=0.52.0,<0.53.0)
+Requires-Dist: typer[all] (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# Mlflow Mlserver Docker
+
+This is a utility package for building mlserver docker images based on MLflow models on a remote
+tracking server.
+
+Currently, the S3 backend is the only officially supported backend, but any backend should work just
+fine as long as you have all the required dependencies installed. If you're interested in other
+backends let me know.
+
+## Installation
+
+```
+pip install mlflow-mlserver-docker
+```
+
+## Usage
+
+```sh
+mlflow-mlserver-docker build runs:/fg8934ug54eg9hrdegu904/model
+```
+
+## Development
+
+```sh
+poetry install
+poetry self add poetry-version-plugin
+```
+
+Make sure `docker` is running.
+
