@@ -1,0 +1,15 @@
+songdkl/__about__.py,sha256=JLXvmyzAxm5Zp9S4flg5RaoqoPVelzgzy8VJbhrs-fI,802
+songdkl/__init__.py,sha256=yE3kJP3RWxMApSeGhQWG3ua1fPG3Fd4qTsG8zJ677EI,226
+songdkl/__main__.py,sha256=hgqV28iaYfKDSrtfZhBvDescwHdidEzrh9m3quau0Oo,1476
+songdkl/audio.py,sha256=ALjIAg2fOVWoHn_PA4F5IBcEUiqWv5_Yo8vjgt19nm8,4333
+songdkl/numsyls.py,sha256=2KBBYJtN3U-Yqd8WmDYIUCHoz73PKccakm7ICOV7fkE,4712
+songdkl/songdkl.py,sha256=IXavBjCTb-85pt6IPhN8kklqEHJWlIplHQk9O5KjL0s,4959
+songdkl/syllables.py,sha256=4sEZcud1g7f7Dz9MQ8wSWJ9A7CkqVjPiE7lpefReyB8,3553
+songdkl/argparser/__init__.py,sha256=Bvz6FE1Sl60BZ41Iv6Mldo8kzMIP_ZFf3RV7bgGpGrQ,26
+songdkl/argparser/argparser.py,sha256=dImMQ8g80K1cAjO7oDnMGxJkkoJ2hl20dqQG18xh90g,3322
+songdkl/argparser/epilogs.py,sha256=axxB-wqHUb83irEuSIoh7OsKScGIzzvcADGTzSRG3zE,2002
+songdkl-0.2.0b1.dist-info/entry_points.txt,sha256=L489ftpmwQsfG08Hdy6rOLiPF3lLQZz8B2sW5FdSSPE,49
+songdkl-0.2.0b1.dist-info/LICENSE,sha256=wzw6Y6tE_3g-sjsD0rH0M3SXZJRkHoCY2kjOb_TPPK4,1535
+songdkl-0.2.0b1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+songdkl-0.2.0b1.dist-info/METADATA,sha256=FGYLWvn5ZxRZwBlAUcf1tkWOzJCIXr0Jo6ScrwynKb4,1160
+songdkl-0.2.0b1.dist-info/RECORD,,

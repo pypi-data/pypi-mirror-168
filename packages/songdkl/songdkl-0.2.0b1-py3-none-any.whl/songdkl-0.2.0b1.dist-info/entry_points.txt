@@ -1,0 +1,3 @@
+[console_scripts]
+songdkl=songdkl.__main__:main
+
