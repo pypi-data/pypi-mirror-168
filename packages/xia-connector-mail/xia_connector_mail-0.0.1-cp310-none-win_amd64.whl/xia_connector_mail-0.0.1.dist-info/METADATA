@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: xia-connector-mail
+Version: 0.0.1
+Summary: X-I-A Mail Connector
+Home-page: https://develop.x-i-a.com/docs/xia-connector-mail/0.0.1/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: xia-engine
+Requires-Dist: xia-engine-firestore
+Requires-Dist: xia-meta-secret
+
+.. image:: https://img.shields.io/pypi/v/xia-connector-mail.svg
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-connector-mail/
+
+====================================
+X-I-A Mail Connector
+====================================
+
+Use to send mail
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-connector-mail
+
+
