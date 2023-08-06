@@ -1,0 +1,13 @@
+configur8/__about__.py,sha256=_XKDPAt4GoSXX-4WvwIOv3r8Kmf3FID7AI-vwZzpE-g,65
+configur8/__init__.py,sha256=rjW2L0OwiAkfTOiGeOwpLy3q0owhhve9oeJN_sdWQjs,284
+configur8/cfg.py,sha256=Q7Xy5-zL9axJR0ndDTC531Q6XVpkLNwT9OlEQuQZG-s,7234
+configur8/core.py,sha256=plfYe-OquGTRttkODvfG7f2KP2fn0S7NkHKHdZg5K6E,136
+configur8/email.py,sha256=JJxDF7ttLVBy63ic33n1t4C_hKYwdTJCwvdUoFIuPSM,469
+configur8/env.py,sha256=JfbnsUZrBNJ-8XPAwrv6LwIJTcWPuNYuqYAU2759vt0,5007
+configur8/path.py,sha256=-_divdOkZzXfIVzQwFPmB538LuWz44INozR2NpKGagY,1528
+configur8/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configur8/url.py,sha256=F4RHYXbL2IEUyq-QnprMJNhsjh-o-2bt8AfMR8mv4aE,2502
+configur8/util.py,sha256=VQ0cDfpxDaOWVh3t867Hqnn0HQfntMhHb1wYHVgB-Q0,177
+configur8-1.5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+configur8-1.5.dist-info/METADATA,sha256=6k24q9guop50yNXvwk2s9A1u_JSQooUcPP3AYFQJ07g,473
+configur8-1.5.dist-info/RECORD,,
