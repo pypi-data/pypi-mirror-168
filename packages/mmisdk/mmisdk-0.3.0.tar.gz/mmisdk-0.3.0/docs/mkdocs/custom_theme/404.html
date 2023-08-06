@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+
+<!-- Content block -->
+{% block content %}
+
+<!-- align page content center -->
+<style>
+  .md-sidebar {
+    display: none;
+  }
+</style>
+
+<p style="text-align: center">
+    <img src="/assets/logo.svg" width=100px alt="Codefi logo">
+    <br />
+    <h1 id="404-page-not-found" style="text-align: center; font-size: 3em;">404</h1>
+</p>
+<p style="text-align: center"><strong>Forgive us, we can't find the page you asked for.</strong></p>
+<p style="text-align: center">
+  Try the <a href="/">homepage</a>, or use the search field on the top of this page.
+</p>
+
+{% endblock %}
