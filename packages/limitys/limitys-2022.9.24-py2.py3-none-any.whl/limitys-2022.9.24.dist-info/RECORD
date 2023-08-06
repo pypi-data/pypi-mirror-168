@@ -1,0 +1,10 @@
+limitys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+limitys/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+limitys/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+limitys/limitys.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+limitys-2022.9.24.dist-info/LICENSE,sha256=7xgn1qW4kKTaB163LiE9nqy5u7ddEv-GDesuxK-SW58,1069
+limitys-2022.9.24.dist-info/METADATA,sha256=2isqJ4s5xOK5z6iWeWPy17KFg_wji7kAx8_g4BLjzcc,3086
+limitys-2022.9.24.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+limitys-2022.9.24.dist-info/entry_points.txt,sha256=Cjmt7PgNLkEeEGw_JmVsNpiM_GHRwPyhIdFk5bFrtAs,45
+limitys-2022.9.24.dist-info/top_level.txt,sha256=RaVt_lP5waAAcRQyKvpblky0ftcMCPfm35OgHVwzfk8,8
+limitys-2022.9.24.dist-info/RECORD,,
