@@ -1,0 +1,12 @@
+setup.py
+krauss_misc/__init__.py
+krauss_misc/basic_file_ops.py
+krauss_misc/relpath.py
+krauss_misc/rwkos.py
+krauss_misc/string_cleaner.py
+krauss_misc/tkinter_utils.py
+krauss_misc/txt_mixin.py
+krauss_misc.egg-info/PKG-INFO
+krauss_misc.egg-info/SOURCES.txt
+krauss_misc.egg-info/dependency_links.txt
+krauss_misc.egg-info/top_level.txt
