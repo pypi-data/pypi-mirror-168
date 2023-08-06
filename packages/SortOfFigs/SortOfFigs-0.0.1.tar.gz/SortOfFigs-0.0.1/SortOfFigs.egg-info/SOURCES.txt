@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+Library/Sort_Fig.py
+Library/__init__.py
+SortOfFigs.egg-info/PKG-INFO
+SortOfFigs.egg-info/SOURCES.txt
+SortOfFigs.egg-info/dependency_links.txt
+SortOfFigs.egg-info/top_level.txt
