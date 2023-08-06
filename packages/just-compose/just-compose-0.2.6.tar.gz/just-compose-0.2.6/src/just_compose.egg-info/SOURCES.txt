@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/just_compose/__init__.py
+src/just_compose/main.py
+src/just_compose.egg-info/PKG-INFO
+src/just_compose.egg-info/SOURCES.txt
+src/just_compose.egg-info/dependency_links.txt
+src/just_compose.egg-info/entry_points.txt
+src/just_compose.egg-info/requires.txt
+src/just_compose.egg-info/top_level.txt

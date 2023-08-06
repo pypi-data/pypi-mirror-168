@@ -1,0 +1,2 @@
+[console_scripts]
+jcompose = just_compose:main.entrypoint
