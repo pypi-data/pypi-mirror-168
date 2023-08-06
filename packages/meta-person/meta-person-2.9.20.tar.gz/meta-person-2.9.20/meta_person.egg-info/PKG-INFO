@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: meta-person
+Version: 2.9.20
+Summary: Meta Person Toolkit
+Home-page: https://github.com/CachCheng/cvperson
+Author: CachCheng
+Author-email: tkggpdc2007@163.com
+License: Apache-2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# cvperson
+行人识别通用框架
+
+
