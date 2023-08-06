@@ -1,0 +1,10 @@
+elasticdeform/__init__.py,sha256=csYPTHeBiYPJ8ctGwvCQi2-vASU8iJ8HkCWAedZ-pyo,80
+elasticdeform/_deform_grid.cp39-win_amd64.pyd,sha256=g6pG_-OT8Zf4x23sKmJAqO8FUK01Mde6jjYRLfoeoQI,39424
+elasticdeform/deform_grid.py,sha256=oiX8dOjRn49qsw-2t2tItxhfMFh2rFeLrUfBhz1Ovr0,18441
+elasticdeform/tf.py,sha256=QSL1NfQI6vgn8v40kGhdFxyNEh1nLxn8zqYNqsxDLgw,2779
+elasticdeform/torch.py,sha256=s05uRI3NCPW-pAynTg24K0GVnkFj5HPCWKv6ST2if7k,2244
+elasticdeform-0.5.0.dist-info/LICENSE.txt,sha256=kIQ4XrmJZHJ_qf7Az4qbvqWbq66FDIZ0dsapjmUKX0Y,1670
+elasticdeform-0.5.0.dist-info/METADATA,sha256=eZy982kQWVqy6q-huxzyU9wxqLMALxtRkscAKHTkyr0,9567
+elasticdeform-0.5.0.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+elasticdeform-0.5.0.dist-info/top_level.txt,sha256=ZM7bPik9OVDSTGfhzPEg-PncgbSY4xea5S79ZyexpgM,14
+elasticdeform-0.5.0.dist-info/RECORD,,
