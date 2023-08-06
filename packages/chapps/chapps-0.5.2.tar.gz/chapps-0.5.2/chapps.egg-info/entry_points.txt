@@ -1,0 +1,2 @@
+[console_scripts]
+apply-migrations = chapps.alembic.apply:main
