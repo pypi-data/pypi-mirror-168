@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fps_noauth
+Version: 0.0.43
+Summary: An FPS plugin for an unprotected API
+Project-URL: Homepage, https://jupyter.org
+Author-email: Jupyter Development Team <jupyter@googlegroups.com>
+License: BSD 3-Clause License
+License-File: COPYING.md
+Keywords: fastapi,jupyter,pluggy,plugins,server
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# fps-noauth
+
+An FPS plugin for an unprotected API.
