@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "graph-parse"
+version = "0.2.0"
+description = ""
+authors = ["james <jamesnarayanrao@gmail.com>"]
+readme = "README.md"
+packages = [{include = "graph_parse"}]
+
+[tool.poetry.dependencies]
+python = "^3.10.5"
+pydash = "*"
+pydantic = "*"
+pytest = "*"
+mypy = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
