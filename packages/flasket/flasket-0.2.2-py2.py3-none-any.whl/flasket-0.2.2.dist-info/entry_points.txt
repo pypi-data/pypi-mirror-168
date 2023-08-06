@@ -1,0 +1,3 @@
+[console_scripts]
+flasket = flasket.middleware.gunicorn:main
+flasket-dev = flasket.middleware.flask:main

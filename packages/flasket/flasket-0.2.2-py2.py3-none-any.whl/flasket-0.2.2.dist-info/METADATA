@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: flasket
+Version: 0.2.2
+Summary: Flask and Gunicorn WSGI application
+Home-page: https://gitlab.com/jlecomte/projects/flasket
+Author: Julien Lecomte
+Author-email: julien@lecomte.at
+License: MIT
+Project-URL: Documentation, https://jlecomte.gitlab.io/projects/flasket/
+Project-URL: Source code, https://gitlab.com/jlecomte/projects/flasket
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attr
+Requires-Dist: boltons
+Requires-Dist: connexion
+Requires-Dist: flask
+Requires-Dist: flask-gordon
+Requires-Dist: gunicorn
+Requires-Dist: html5lib
+Requires-Dist: limits
+Requires-Dist: openapi-schema-validator
+Requires-Dist: swagger-ui-bundle
+Requires-Dist: torxtools
+
+[![documentation](https://img.shields.io/badge/documentation-html-informational)](https://jlecomte.gitlab.io/projects/flasket)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen)](https://spdx.org/licenses/MIT.html)
+[![pipelines](https://gitlab.com/jlecomte/projects/flasket/badges/master/pipeline.svg)](https://gitlab.com/jlecomte/projects/flasket/pipelines)
+[![coverage](https://gitlab.com/jlecomte/projects/flasket/badges/master/coverage.svg)](https://jlecomte.gitlab.io/projects/flasket/coverage/index.html)
+
+# Flasket
+
+A small flask.
+
+A flask + connexion ensemble to quickly deploy an app.
+
+## Installation from PyPI
+
+You can install the latest version from PyPI package repository.
+
+~~~bash
+python3 -mpip install -U flasket
+~~~
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Locations
+
+  * Documentation: [https://jlecomte.gitlab.io/projects/flasket/](https://jlecomte.gitlab.io/projects/flasket)
+  * GitLab: [https://gitlab.com/jlecomte/projects/flasket](https://gitlab.com/jlecomte/projects/flasket)
+  * PyPi: [https://pypi.org/project/flasket](https://pypi.org/project/flasket)
+
