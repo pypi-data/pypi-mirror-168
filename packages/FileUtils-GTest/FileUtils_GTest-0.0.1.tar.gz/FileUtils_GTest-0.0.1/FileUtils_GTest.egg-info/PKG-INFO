@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: FileUtils-GTest
+Version: 0.0.1
+Summary: FileUtils_GTest
+Home-page: https://github.com/BigDataFounder/FileUtils_GTest
+Author: gengch
+Author-email: gengchuanhua@gmail.com
+License: MIT
+License-File: LICENSE

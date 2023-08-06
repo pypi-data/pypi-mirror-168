@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+FileUtils_GTest/FileUtils.py
+FileUtils_GTest/__init__.py
+FileUtils_GTest.egg-info/PKG-INFO
+FileUtils_GTest.egg-info/SOURCES.txt
+FileUtils_GTest.egg-info/dependency_links.txt
+FileUtils_GTest.egg-info/top_level.txt
