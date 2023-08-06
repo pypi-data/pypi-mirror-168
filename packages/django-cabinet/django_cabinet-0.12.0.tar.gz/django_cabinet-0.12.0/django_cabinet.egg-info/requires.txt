@@ -1,0 +1,6 @@
+Django>=3.2
+django-imagefield
+django-tree-queries
+
+[tests]
+coverage
