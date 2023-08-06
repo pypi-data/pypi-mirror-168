@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: numena
+Version: 0.0.1.1
+Summary: Image Processing and Analysis toolbox package
+License: MIT
+Author: Kévin
+Author-email: cortacero@inserm.fr
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: czifile
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: roifile
+Requires-Dist: scikit-image
+Requires-Dist: simplejson
+Requires-Dist: tifffile
+Description-Content-Type: text/markdown
+
+# Numena
+

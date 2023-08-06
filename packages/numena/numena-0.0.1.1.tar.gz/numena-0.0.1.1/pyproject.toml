@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "numena"
+version = "0.0.1.1"
+description = "Image Processing and Analysis toolbox package"
+authors = ["Kévin <cortacero@inserm.fr>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "*"
+matplotlib = "*"
+pandas = "*"
+opencv-python = "*"
+scikit-image = "*"
+roifile = "*"
+simplejson = "*"
+tifffile = "*"
+czifile = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
