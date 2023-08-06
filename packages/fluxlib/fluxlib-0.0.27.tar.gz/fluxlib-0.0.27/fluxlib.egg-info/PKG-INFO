@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fluxlib
+Version: 0.0.27
+Summary: fluxlib is a package for eddy covariance post-processing
+Home-page: https://github.com/soonyenju/fluxlib
+Author: Songyan Zhu
+Author-email: sz394@exeter.ac.uk
+License: MIT Licence
+Keywords: eddy covariance,flux,gap-filling
+Platform: any
+
+Three parts: 1) fluxnet2015 dataset processing; 2) gap-filling; 3) partitioning refferred to Hesseflux please
+
