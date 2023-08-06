@@ -1,0 +1,2 @@
+[console_scripts]
+calcstream = dijkstra_conda.cli:main
