@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/miniFasta/__init__.py
+src/miniFasta/_miniFasta.py
+src/miniFasta/_reader.py
+src/miniFasta/_writer.py
+src/miniFasta.egg-info/PKG-INFO
+src/miniFasta.egg-info/SOURCES.txt
+src/miniFasta.egg-info/dependency_links.txt
+src/miniFasta.egg-info/not-zip-safe
+src/miniFasta.egg-info/requires.txt
+src/miniFasta.egg-info/top_level.txt
