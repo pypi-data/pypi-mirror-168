@@ -1,0 +1,2 @@
+[console_scripts]
+igm = igm.entry:cli_entry
