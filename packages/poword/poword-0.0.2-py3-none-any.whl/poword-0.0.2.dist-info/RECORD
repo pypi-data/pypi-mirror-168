@@ -1,0 +1,13 @@
+poword/__init__.py,sha256=yBWPtw0z2YdiTKdevkBLw6mY33X1cCBP0_017KgU5aI,31
+poword/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poword/api/word.py,sha256=9hPgzBngrM3ygReHvwjPjcwoNUgkKm3zCWQk-kb3Vck,589
+poword/core/WordType.py,sha256=M4buF1P7BSNMROmNEQ2zZWeaei1-UrDseC82MR-PMoc,1468
+poword/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poword/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=1ECFUo5DMCh0_O25xqftFJdGqCZidwqj_DIRXV5D8xM,182
+tests/test_word.py,sha256=lnhhbIA-TsV1TTVTByDOU50_a0UHq_2Ce0GCKsJhki8,230
+poword-0.0.2.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+poword-0.0.2.dist-info/METADATA,sha256=p0v9Az0N-OIuA5dwBUZIb2m8p2E8-7jFv-Roy55EK-4,10470
+poword-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+poword-0.0.2.dist-info/top_level.txt,sha256=pQf1hARdXpWCSKmy-LBtHt8jlmRfPyWALiH2XPuZo0o,13
+poword-0.0.2.dist-info/RECORD,,
