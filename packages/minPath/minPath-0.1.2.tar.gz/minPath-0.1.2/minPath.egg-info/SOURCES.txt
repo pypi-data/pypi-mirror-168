@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+minPath/Errors.py
+minPath/Objects.py
+minPath/__init__.py
+minPath.egg-info/PKG-INFO
+minPath.egg-info/SOURCES.txt
+minPath.egg-info/dependency_links.txt
+minPath.egg-info/top_level.txt
