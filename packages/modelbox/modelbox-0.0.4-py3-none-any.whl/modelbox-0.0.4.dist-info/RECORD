@@ -1,0 +1,12 @@
+modelbox/__init__.py,sha256=VxMCAwzyLSt2Xpsh_2S0887lnc3NlAPLLcDLwH4eR8c,79
+modelbox/client.py,sha256=rOUnjlwrbubcQQ6zrjz7OQ5la_s3VNAEtYgWIqw70S8,7496
+modelbox/lightning_logger.py,sha256=FGkx2c52C8YzuhtJNWeuNZSfPbUJPouK1b7TmW4JZvk,5478
+modelbox/modelbox.py,sha256=1V3QbQcYgcODYd2pLjnFPTrwy320PAhfWSV7PrAjxro,14925
+modelbox/resource_usage.py,sha256=h3puYgOW1FMGTaDGTWPiOtNfkNSHgiTy3zw7A6T2onw,102
+modelbox/service_pb2.py,sha256=BD-gpbPjREh50qJ2rnaB0qdqYB-Oybw01gtfcI-e2g8,38133
+modelbox/service_pb2_grpc.py,sha256=y5fpZPOubeBQgD0FqB4qmLkkc01fmMcLWX5sYHcShaY,31023
+modelbox-0.0.4.dist-info/LICENSE,sha256=CY-HBgVjaKe5t-6gFNcKIPouFtPH1-emVO7OExHtZBg,11350
+modelbox-0.0.4.dist-info/METADATA,sha256=PRde5W4WdduubpJZ1U4vxNMyLIfxgtFtn8j3q_0-XDM,3430
+modelbox-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+modelbox-0.0.4.dist-info/top_level.txt,sha256=EsPcFNQkk5Y43JOoQibBvOlRmoYskOXk9yMOJXyN4lI,9
+modelbox-0.0.4.dist-info/RECORD,,
