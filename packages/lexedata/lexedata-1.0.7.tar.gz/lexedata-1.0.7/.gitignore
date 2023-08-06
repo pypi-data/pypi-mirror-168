@@ -1,0 +1,16 @@
+*.pyc
+*.egg
+__pycache__
+*.egg-info
+dist
+venv
+.mypy*
+.tox
+.idea*
+.coverage
+.coveragerc
+
+# Sphinx generated files
+docs-build/
+
+src/lexedata/data/clics-clics3-97832b5/clics3-network.gml.zip
