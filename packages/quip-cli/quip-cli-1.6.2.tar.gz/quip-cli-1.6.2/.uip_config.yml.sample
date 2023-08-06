@@ -1,0 +1,25 @@
+defaults:     # Default values
+  template: ue-task                     # default template for uip init command
+  bootstrap:
+    source: ../ue/ue-baseline           # path of extension baseline project
+    template_source: ../ut/ut-baseline  # path of universal template baseline project
+    exclude:                # folders that will be excluded for extension
+      - .git
+      - .uip
+    template-exclude:       # folders that will be excluded for universal template
+      - .git
+  # uac_password: <password>     # keeping the password in this file is not safe
+  icon_font: "cour.ttf"
+extension.yml:              # default values for extension.yml
+  extension:
+    name: ""
+    version: "1.0.0"
+    api_level: "1.2.0"
+    requires_python: ">=3.7"
+  owner:
+    name: <Developer Name>
+    organization: Stonebranch Inc.
+  comments: Created using ue-task template
+uip.yml:                    # dafault values for .uip/config/uip.yml
+  userid: ops.admin
+  url: http://localhost:8080/uc
