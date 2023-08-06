@@ -1,0 +1,6 @@
+AMQPStorm==2.7.1
+redis2
+redis3
+redis
+deka_plog
+pytz

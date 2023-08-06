@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: deka_dubbo
+Version: 1.0.0
+Summary: pip install deka_dubbo，rabbitmq为中间件的分布式任务框架
+Home-page: UNKNOWN
+Author: zy
+Author-email: 517826265@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: all
