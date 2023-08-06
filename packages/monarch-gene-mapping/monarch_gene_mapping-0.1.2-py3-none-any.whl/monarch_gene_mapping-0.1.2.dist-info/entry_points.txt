@@ -1,0 +1,3 @@
+[console_scripts]
+gene-mapping=monarch_gene_mapping.main:typer_app
+
