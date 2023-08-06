@@ -1,0 +1,13 @@
+woflo/__init__.py,sha256=lVgjf07DQvUb820I_TKulowo_lZrILwblchf7ydA7iM,34
+woflo/runners/__init__.py,sha256=rCqus1qaOCTyxTBWrpvMPdHlvTe4w-USXnCgKo0SM3Y,157
+woflo/runners/base.py,sha256=kdfU7hDUQFgNo2f67jwBMR63ggeN-P4wIC3lnppVFsw,839
+woflo/runners/multiprocess.py,sha256=T9u0NjsGDZF_TGZF3Xdh-M3GjbkJShwbl0ZqD6leDOw,1562
+woflo/runners/sequential.py,sha256=jSshhSnhwBU7Flm9IUbyNonlXtWJ-M8JEEh3I0M2Nmo,763
+woflo/task/__init__.py,sha256=srTx_vTnkfb7rxhJXMXNhahtBRswOcpK9nqVRZnABQM,53
+woflo/task/task.py,sha256=16a2A9lS2U_lJjuwHMfZm_7T6xO0Cf7hySJekfo41w0,3089
+woflo/util/__init__.py,sha256=h2QOrzxL06EDcQhXwLvDT1efpDE2fXl2iD14JgvOnoc,37
+woflo/util/logger.py,sha256=zIRQEDU9peY3udkael-SU8oQUgj3L11gHt8xMYhWTQ0,249
+woflo-0.8.0.dist-info/LICENSE,sha256=jM7ig8wjZ-rww29NOaw5XHVaWMuNaMRmhXKc5FMHOX0,1069
+woflo-0.8.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+woflo-0.8.0.dist-info/METADATA,sha256=0U7utobwvuzFj2Y3nqJihvOD1W0H-NIH_1kvPbAhtjc,4312
+woflo-0.8.0.dist-info/RECORD,,
