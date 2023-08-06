@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lb-nightly-scheduler
+Version: 0.4.0
+Summary: Scheduler implementation for LHCb Nightly and Continuous Integration Build System
+Home-page: https://gitlab.cern.ch/lhcb-core/nightly-builds/lb-nightly-scheduler
+License: GPL-3.0-only
+Author: Marco Clemencic
+Author-email: marco.clemencic@cern.ch
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: GitPython (>=3.1.18,<4.0.0)
+Requires-Dist: lb-nightly-configuration (>=0.3,<0.4)
+Requires-Dist: lb-nightly-db (>=0.2,<0.3)
+Requires-Dist: lb-nightly-rpc (>=0.2,<0.3)
+Requires-Dist: lb-nightly-utils (>=0.4,<0.5)
+Requires-Dist: luigi (>=3.0.3,<4.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Project-URL: Repository, https://gitlab.cern.ch/lhcb-core/nightly-builds/lb-nightly-scheduler.git
