@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/housing/__init__.py
+src/housing/ingest_data.py
+src/housing/main.py
+src/housing/mlflow_utils.py
+src/housing/score.py
+src/housing/setup_logger.py
+src/housing/sklearn_utils.py
+src/housing/train.py
+src/housing/transformers.py
+src/housing_prediction_0.4.egg-info/PKG-INFO
+src/housing_prediction_0.4.egg-info/SOURCES.txt
+src/housing_prediction_0.4.egg-info/dependency_links.txt
+src/housing_prediction_0.4.egg-info/top_level.txt
