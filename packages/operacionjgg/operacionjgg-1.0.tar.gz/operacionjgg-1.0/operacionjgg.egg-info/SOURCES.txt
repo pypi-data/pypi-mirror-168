@@ -1,0 +1,7 @@
+setup.py
+operacionjgg/MathOperations.py
+operacionjgg/__init__.py
+operacionjgg.egg-info/PKG-INFO
+operacionjgg.egg-info/SOURCES.txt
+operacionjgg.egg-info/dependency_links.txt
+operacionjgg.egg-info/top_level.txt
