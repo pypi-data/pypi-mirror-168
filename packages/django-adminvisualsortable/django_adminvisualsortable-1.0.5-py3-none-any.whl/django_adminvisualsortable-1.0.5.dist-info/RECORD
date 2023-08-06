@@ -1,0 +1,14 @@
+adminvisualsortable/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adminvisualsortable/admin.py,sha256=A_uCoIl_omzuiLrcYsE1RJU9MdmcHXmor6q5GtUNVlQ,1669
+adminvisualsortable/apps.py,sha256=0qNnlBYg1xmzjrd9YX5oDpGYMpONbmb03oCj9CMBN-A,170
+adminvisualsortable/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+adminvisualsortable/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+adminvisualsortable/urls.py,sha256=QVDp4Fy-eZt4mpTmnIC3eWafJZZh70hVe-0B6213lio,984
+adminvisualsortable/views.py,sha256=TuIAciXO0I53G0POv7iO-O75ZBGydszTtRQSL2LpoLo,7270
+adminvisualsortable/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adminvisualsortable/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adminvisualsortable/templatetags/admin_utils.py,sha256=4bzHDC0_gB57INcDx3YcQOOMaZVOrL47YP3piGb_Flg,1299
+django_adminvisualsortable-1.0.5.dist-info/METADATA,sha256=n0HfI8wbsiwFJZlPLboaw0PwvYQ-3EGSX3Nbd63IhCY,693
+django_adminvisualsortable-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_adminvisualsortable-1.0.5.dist-info/top_level.txt,sha256=OTHgtcxEgFCYC-NJ-jjKMi9eTakbWhR-0D_ErtGz2MY,20
+django_adminvisualsortable-1.0.5.dist-info/RECORD,,
