@@ -1,0 +1,164 @@
+#!/usr/bin/env python3
+"""Script to run pydaikin."""
+
+import argparse
+import asyncio
+from contextlib import nullcontext
+import time
+
+from aiohttp import ClientError
+
+from pydaikin import discovery  # pylint: disable=cyclic-import
+from pydaikin.daikin_brp069 import (  # noqa: E0611; pylint: disable=no-name-in-module
+    DaikinBRP069 as appliance,
+)
+
+
+def list_all_devices():
+    """Print all discovered devices."""
+    for dev in discovery.get_devices():
+        try:
+            appl = loop.run_until_complete(appliance.factory(dev['ip']))
+            support_energy_consumption = (
+                "Supported" if appl.support_energy_consumption else "Unsupported"
+            )
+        except ClientError:
+            support_energy_consumption = "Unknown"
+        print(
+            "%18s (%s): %s - %s energy consumption"
+            % (dev['ip'], dev['mac'], dev['name'], support_energy_consumption)
+        )
+
+
+parser = argparse.ArgumentParser(description='Daikin wireless interface.')
+
+group = parser.add_mutually_exclusive_group(required=True)
+
+group.add_argument(
+    'device', metavar='dev', nargs='?', help='device, either ip or common name'
+)
+
+group.add_argument(
+    '-l', '--list', action='store_true', help='list all the devices found'
+)
+
+parser.add_argument(
+    '-a',
+    '--all',
+    action='store_true',
+    help='show all the values available for the device',
+)
+
+parser.add_argument(
+    '-p', '--password', help='unit\'s password (only used by SkyFi devices)'
+)
+
+parser.add_argument('-k', '--key', help='unit\'s key (only used by BRP072Cxx devices)')
+
+settings = parser.add_argument_group('device settings', 'Modify paramaters of a device')
+
+settings.add_argument(
+    '-m', '--mode', choices=appliance.daikin_values('mode'), help='set working mode'
+)
+
+settings.add_argument('-t', '--temp', type=float, help='set target temperature')
+
+settings.add_argument('-y', '--humidity', type=int, help='set target humidity')
+
+settings.add_argument(
+    '-f', '--fan', choices=appliance.daikin_values('f_rate'), help='set fan speed'
+)
+
+settings.add_argument(
+    '-d',
+    '--direction',
+    choices=appliance.daikin_values('f_dir'),
+    help='set fan movement',
+)
+
+settings.add_argument(
+    '-w', '--away', choices=appliance.daikin_values('en_hol'), help='set away mode'
+)
+
+settings.add_argument(
+    '-s', '--sensor', action='store_true', help='tail sensors\'s value'
+)
+
+settings.add_argument('--file', type=str, help='file path for sensors logging')
+
+settings.add_argument(
+    '-v',
+    '--verbose',
+    help='Verbose level (none: critical, v: error, vv: warning, vvv: info, vvvv: debug)',
+    action='count',
+    default=0,
+)
+
+args = parser.parse_args()
+loop = asyncio.get_event_loop()
+
+if args.verbose:
+    import logging
+
+    logging.basicConfig(
+        level=[
+            logging.CRITICAL,
+            logging.ERROR,
+            logging.WARNING,
+            logging.INFO,
+            logging.DEBUG,
+        ][args.verbose]
+    )
+
+if args.list:
+    list_all_devices()
+
+else:
+    settings = {}
+
+    if args.mode:
+        settings.update({"mode": args.mode})
+
+    if args.temp:
+        settings.update({"stemp": str(args.temp)})
+
+    if args.humidity:
+        settings.update({"shum": str(args.humidity)})
+
+    if args.fan:
+        settings.update({"f_rate": args.fan})
+
+    if args.direction:
+        settings.update({"f_dir": args.direction})
+
+    if args.away:
+        settings.update({"en_hol": args.away})
+
+    if args.all:
+        ONLY_SUMMARY = False
+    else:
+        ONLY_SUMMARY = True
+
+    daikin = loop.run_until_complete(
+        appliance.factory(args.device, key=args.key, password=args.password)
+    )
+
+    if settings == {}:
+        daikin.show_values(ONLY_SUMMARY)
+
+    else:
+        loop.run_until_complete(daikin.set(settings))
+
+    if args.sensor:
+        print('\nPress CTRL+C to stop logging sensor data...\n')
+
+        with (open(args.file, 'a') if args.file else nullcontext()) as f:
+            try:
+                while True:
+                    loop.run_until_complete(daikin.update_status())
+                    daikin.show_sensors()
+                    if args.file:
+                        daikin.log_sensors(f)
+                    time.sleep(30)
+            except KeyboardInterrupt:
+                pass
