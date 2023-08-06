@@ -1,0 +1,71 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <title>Admin Visual Sortable</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <!-- The YUI CSS Foundation -->
+        <link rel="stylesheet" type="text/css" href="{% static 'adminvisualsortable/css/yui/cssreset-min.css' %}" >
+        <!-- FA -->
+        <link rel="preload" href="https://4sigma-fontawesome.fra1.cdn.digitaloceanspaces.com/fontawesome-pro-6.1.1-web/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://4sigma-fontawesome.fra1.cdn.digitaloceanspaces.com/fontawesome-pro-6.1.1-web/css/all.min.css" ></noscript>
+        <!-- Site CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'adminvisualsortable/css/all.mini.css' %}?version={{ctx_version}}" >
+        <link rel="stylesheet" type="text/css" href="{% static 'adminvisualsortable/css/adminvisualsortable.css' %}?version={{ctx_version}}" >
+        <script src="{% static 'adminvisualsortable/js/modernizr-custom-only-webp.js' %}?version={{ctx_version}}"></script>
+        <script type="text/javascript">
+            var djvars = {
+                csrf_token: '{{ csrf_token }}',
+                urls: {
+                    api_sort_model: "{% url 'adminvisualsortable:api sort models' %}",
+                }
+            }
+        </script>
+        <style>
+            {% for r in res %}
+            {% if preview_field %}
+            #bg-image-{{ r.obj.id }} {
+                background-image: url("{{ r.obj.image.url }}");
+                background-position: center center;
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+            }
+            {% else %}
+            #bg-image-{{ r.obj.id }} {
+                background-image: url("{% static 'adminvisualsortable/img/placeholder-image.png' %}");
+                background-position: center center;
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+            }
+            {% endif %}
+            {% endfor %}
+        </style>
+        {% block extra_style %}
+        {% endblock %}
+    </head>
+    <body>
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
+        <script src="{% static 'adminvisualsortable/js/umbrella.min.js' %}"></script>
+        <script src="{% static 'adminvisualsortable/js/interact.min.js' %}"></script>
+        <script src="{% static 'adminvisualsortable/js/admin-sorter.js' %}?version={{ctx_version}}"></script>
+        <script>
+            document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+            const model_name = '{{targetModel.name}}';
+            const app = '{{app}}';
+            const model_parent = '{{parentModel.name}}'
+
+        </script>
+        {% block bottom_script %}
+        {% endblock %}
+    </body>
+</html>
