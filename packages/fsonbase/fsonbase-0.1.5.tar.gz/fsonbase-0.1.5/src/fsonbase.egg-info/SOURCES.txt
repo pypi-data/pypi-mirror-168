@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fsonbase/__init__.py
+src/fsonbase/fcluster.py
+src/fsonbase/fsonbase.py
+src/fsonbase.egg-info/PKG-INFO
+src/fsonbase.egg-info/SOURCES.txt
+src/fsonbase.egg-info/dependency_links.txt
+src/fsonbase.egg-info/top_level.txt
