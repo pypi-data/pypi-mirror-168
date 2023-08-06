@@ -1,0 +1,7 @@
+[tool.ruff]
+line-length = 88
+extend-exclude = [
+    "excluded.py",
+    "migrations",
+    "directory/also_excluded.py",
+]
