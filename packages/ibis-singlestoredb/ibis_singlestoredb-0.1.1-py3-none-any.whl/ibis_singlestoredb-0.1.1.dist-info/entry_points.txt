@@ -1,0 +1,2 @@
+[ibis.backends]
+singlestoredb = ibis_singlestoredb
