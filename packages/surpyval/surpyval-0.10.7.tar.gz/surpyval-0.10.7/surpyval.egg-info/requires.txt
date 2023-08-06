@@ -1,0 +1,9 @@
+autograd
+numpy
+scipy
+pandas
+autograd_gamma
+matplotlib
+numpy_indexed
+numba
+formulaic
