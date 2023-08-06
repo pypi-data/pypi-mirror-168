@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "numpy==1.21.6", "pandas==1.3.5", "tqdm==4.64.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "feature_selection_lofo"
+version = "0.0.1"
+authors = [
+  { name="Azzam Radman", email="azzamradman1993@gmail.com" },
+]
+description = "This is an implementation of LOFO for automatic feature selection."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Azzam-Radman/LOFO"
+"Bug Tracker" = "https://github.com/Azzam-Radman/LOFO/issues"
