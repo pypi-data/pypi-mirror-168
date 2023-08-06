@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+greek_to_greeklish.egg-info/PKG-INFO
+greek_to_greeklish.egg-info/SOURCES.txt
+greek_to_greeklish.egg-info/dependency_links.txt
+greek_to_greeklish.egg-info/requires.txt
+greek_to_greeklish.egg-info/top_level.txt
+python_module/__init__.py
+python_module/main.py
+python_module/toGreeklish.py
