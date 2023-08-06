@@ -1,0 +1,5 @@
+bagpipes>=0.8.6
+numpy>=1.14.2
+astropy
+matplotlib>=2.2.2
+scipy
