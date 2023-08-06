@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: nd2-extractor
+Version: 0.0.2
+Summary: A simple tool to extract ND2 files to PNG or TIFF, (zarr + metadata coming soon)
+Author: Georgeos Hardo
+Author-email: gh464@cam.ac.uk
