@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: oauth-userdb
+Version: 1.0.3
+Summary: OAuth User DB
+Home-page: UNKNOWN
+Author: Jimming Cheng
+Author-email: jimming@gmail.com
+License: UNKNOWN
+Description: # oauth_userdb
+        OAuth User Database
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
