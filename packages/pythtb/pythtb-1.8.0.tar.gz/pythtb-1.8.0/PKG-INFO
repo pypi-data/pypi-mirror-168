@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pythtb
+Version: 1.8.0
+Summary: Simple solver for tight binding models for use in condensed matter physics and materials science.
+Home-page: http://www.physics.rutgers.edu/pythtb
+Download-URL: http://www.physics.rutgers.edu/pythtb
+Author: Sinisa Coh and David Vanderbilt
+Author-email: sinisacoh@gmail.com
+License: gpl-3.0
+Keywords: tight binding,solid state physics,condensed matter physics,materials science
+Platform: UNIX
+Platform: MAC OS X
+Platform: Windows
+
+The tight binding method is an approximate approach for solving for the electronic wave functions for electrons in solids assuming a basis of localized atomic-like orbitals.
+
