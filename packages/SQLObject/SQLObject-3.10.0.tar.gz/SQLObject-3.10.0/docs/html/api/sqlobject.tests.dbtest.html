@@ -1,0 +1,283 @@
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sqlobject.tests.dbtest module &#8212; SQLObject 3.10.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.10.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sqlobject.tests.dbtest module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sqlobject.tests.dbtest">
+<span id="sqlobject-tests-dbtest-module"></span><h1>sqlobject.tests.dbtest module<a class="headerlink" href="#module-sqlobject.tests.dbtest" title="Permalink to this heading">¶</a></h1>
+<p>The framework for making database tests.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.Dummy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">Dummy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#Dummy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.Dummy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Used for creating fake objects; a really poor ‘mock object’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.deprecated_module">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">deprecated_module</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#deprecated_module"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.deprecated_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.getConnection">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">getConnection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#getConnection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.getConnection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.getConnectionURI">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">getConnectionURI</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#getConnectionURI"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.getConnectionURI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.inserts">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">inserts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#inserts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.inserts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a bunch of rows.</p>
+<p>You can use it like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">inserts</span><span class="p">(</span><span class="n">Person</span><span class="p">,</span> <span class="p">[{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;blah&#39;</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;doe&#39;</span><span class="p">},</span> <span class="o">...</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Or:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">inserts</span><span class="p">(</span><span class="n">Person</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;blah&#39;</span><span class="p">,</span> <span class="s1">&#39;doe&#39;</span><span class="p">)],</span> <span class="n">schema</span><span class="o">=</span>
+        <span class="p">[</span><span class="s1">&#39;fname&#39;</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>If you give a single string for the <cite>schema</cite> then it’ll split
+that string to get the list of column names.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.raises">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">raises</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expected_exception</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">E</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">E</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">RaisesContext</span><span class="p"><span class="pre">[</span></span><span class="pre">E</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ExceptionInfo</span><span class="p"><span class="pre">[</span></span><span class="pre">E</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/_pytest/python_api.html#raises"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.raises" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert that a code block/function call raises <code class="docutils literal notranslate"><span class="pre">expected_exception</span></code>
+or raise a failure exception otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>match</strong> – <p>If specified, a string containing a regular expression,
+or a regular expression object, that is tested against the string
+representation of the exception using <code class="xref py py-func docutils literal notranslate"><span class="pre">re.search()</span></code>. To match a literal
+string that may contain <span class="xref std std-ref">special characters</span>, the pattern can
+first be escaped with <code class="xref py py-func docutils literal notranslate"><span class="pre">re.escape()</span></code>.</p>
+<p>(This is only used when <code class="xref py py-func docutils literal notranslate"><span class="pre">pytest.raises()</span></code> is used as a context manager,
+and passed through to the function otherwise.
+When using <code class="xref py py-func docutils literal notranslate"><span class="pre">pytest.raises()</span></code> as a function, you can use:
+<code class="docutils literal notranslate"><span class="pre">pytest.raises(Exc,</span> <span class="pre">func,</span> <span class="pre">match=&quot;passed</span> <span class="pre">on&quot;).match(&quot;my</span> <span class="pre">pattern&quot;)</span></code>.)</p>
+</p>
+</dd>
+</dl>
+<p>Use <code class="docutils literal notranslate"><span class="pre">pytest.raises</span></code> as a context manager, which will capture the exception of the given
+type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pytest</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ZeroDivisionError</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+</pre></div>
+</div>
+<p>If the code block does not raise the expected exception (<code class="docutils literal notranslate"><span class="pre">ZeroDivisionError</span></code> in the example
+above), or no exception at all, the check will fail instead.</p>
+<p>You can also use the keyword argument <code class="docutils literal notranslate"><span class="pre">match</span></code> to assert that the
+exception matches a text or regex:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="n">match</span><span class="o">=</span><span class="s1">&#39;must be 0 or None&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;value must be 0 or None&quot;</span><span class="p">)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="n">match</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;must be \d+$&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;value must be 42&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The context manager produces an <code class="xref py py-class docutils literal notranslate"><span class="pre">ExceptionInfo</span></code> object which can be used to inspect the
+details of the captured exception:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc_info</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;value must be 42&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">exc_info</span><span class="o">.</span><span class="n">type</span> <span class="ow">is</span> <span class="ne">ValueError</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">exc_info</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;value must be 42&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using <code class="docutils literal notranslate"><span class="pre">pytest.raises</span></code> as a context manager, it’s worthwhile to
+note that normal context manager rules apply and that the exception
+raised <em>must</em> be the final line in the scope of the context manager.
+Lines of code after that, within the scope of the context manager will
+not be executed. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">value</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc_info</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;value must be &lt;= 10&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">assert</span> <span class="n">exc_info</span><span class="o">.</span><span class="n">type</span> <span class="ow">is</span> <span class="ne">ValueError</span>  <span class="c1"># this will not execute</span>
+</pre></div>
+</div>
+<p>Instead, the following approach must be taken (note the difference in
+scope):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc_info</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;value must be &lt;= 10&quot;</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">exc_info</span><span class="o">.</span><span class="n">type</span> <span class="ow">is</span> <span class="ne">ValueError</span>
+</pre></div>
+</div>
+</div>
+<p><strong>Using with</strong> <code class="docutils literal notranslate"><span class="pre">pytest.mark.parametrize</span></code></p>
+<p>When using <span class="xref std std-ref">pytest.mark.parametrize ref</span>
+it is possible to parametrize tests such that
+some runs raise an exception and others do not.</p>
+<p>See <span class="xref std std-ref">parametrizing_conditional_raising</span> for an example.</p>
+<p><strong>Legacy form</strong></p>
+<p>It is possible to specify a callable by passing a to-be-called lambda:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">raises</span><span class="p">(</span><span class="ne">ZeroDivisionError</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">&lt;ExceptionInfo ...&gt;</span>
+</pre></div>
+</div>
+<p>or you can specify an arbitrary callable with arguments:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">raises</span><span class="p">(</span><span class="ne">ZeroDivisionError</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">&lt;ExceptionInfo ...&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">raises</span><span class="p">(</span><span class="ne">ZeroDivisionError</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">&lt;ExceptionInfo ...&gt;</span>
+</pre></div>
+</div>
+<p>The form above is fully supported but discouraged for new code because the
+context manager form is regarded as more readable and less error-prone.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Similar to caught exception objects in Python, explicitly clearing
+local references to returned <code class="docutils literal notranslate"><span class="pre">ExceptionInfo</span></code> objects can
+help the Python interpreter speed up its garbage collection.</p>
+<p>Clearing those references breaks a reference cycle
+(<code class="docutils literal notranslate"><span class="pre">ExceptionInfo</span></code> –&gt; caught exception –&gt; frame stack raising
+the exception –&gt; current frame stack –&gt; local variables –&gt;
+<code class="docutils literal notranslate"><span class="pre">ExceptionInfo</span></code>) which makes Python keep all objects referenced
+from that cycle (including all local variables in the current
+frame) alive until the next cyclic garbage collection run.
+More detailed information can be found in the official Python
+documentation for <span class="xref std std-ref">the try statement</span>.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.setupClass">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">setupClass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">soClasses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#setupClass"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.setupClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes sure the classes have a corresponding and correct table.
+This won’t recreate the table if it already exists.  It will check
+that the table is properly defined (in case you change your table
+definition).</p>
+<p>You can provide a single class or a list of classes; if a list
+then classes will be created in the order you provide, and
+destroyed in the opposite order.  So if class A depends on class
+B, then do setupClass([B, A]) and B won’t be destroyed or cleared
+until after A is destroyed or cleared.</p>
+<p>If force is true, then the database will be recreated no matter
+what.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.setupCyclicClasses">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">setupCyclicClasses</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">classes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#setupCyclicClasses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.setupCyclicClasses" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.setupLogging">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">setupLogging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#setupLogging"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.setupLogging" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.setup_module">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">setup_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#setup_module"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.setup_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.supports">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">supports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#supports"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.supports" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.tests.dbtest.teardown_module">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.tests.dbtest.</span></span><span class="sig-name descname"><span class="pre">teardown_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/dbtest.html#teardown_module"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.dbtest.teardown_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/sqlobject.tests.dbtest.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.10.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sqlobject.tests.dbtest module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2004-2022, Ian Bicking and contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+    </div>
+  </body>
+</html>

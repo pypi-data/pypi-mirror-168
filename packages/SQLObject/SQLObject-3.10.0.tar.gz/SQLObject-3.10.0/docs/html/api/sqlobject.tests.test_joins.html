@@ -1,0 +1,807 @@
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sqlobject.tests.test_joins module &#8212; SQLObject 3.10.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.10.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sqlobject.tests.test_joins module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sqlobject.tests.test_joins">
+<span id="sqlobject-tests-test-joins-module"></span><h1>sqlobject.tests.test_joins module<a class="headerlink" href="#module-sqlobject.tests.test_joins" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">AddressJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#AddressJoiner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SQLObject</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.addPersonJoiner">
+<span class="sig-name descname"><span class="pre">addPersonJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.addPersonJoiner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.byZip">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">byZip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.byZip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">address_joiner</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.personJoiners">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">personJoiners</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.personJoiners" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">address_joiner</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.removePersonJoiner">
+<span class="sig-name descname"><span class="pre">removePersonJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.removePersonJoiner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sqlmeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlmeta</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta.childName">
+<span class="sig-name descname"><span class="pre">childName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta.idName">
+<span class="sig-name descname"><span class="pre">idName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta.joinDefinitions">
+<span class="sig-name descname"><span class="pre">joinDefinitions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.RelatedJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta.joins">
+<span class="sig-name descname"><span class="pre">joins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.SORelatedJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta.soClass">
+<span class="sig-name descname"><span class="pre">soClass</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_joins.AddressJoiner" title="sqlobject.tests.test_joins.AddressJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddressJoiner</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;sqlobject.styles.MixedCaseUnderscoreStyle</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.sqlmeta.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'address_joiner'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner.zip">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">zip</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner.zip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">AddressJoiner2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#AddressJoiner2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SQLObject</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">address_joiner2</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.personJoiner2">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">personJoiner2</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.personJoiner2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.personJoiner2ID">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">personJoiner2ID</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.personJoiner2ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.plus4">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">plus4</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.plus4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">address_joiner2</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sqlmeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlmeta</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.childName">
+<span class="sig-name descname"><span class="pre">childName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.defaultOrder">
+<span class="sig-name descname"><span class="pre">defaultOrder</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['-zip',</span> <span class="pre">'plus4']</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.defaultOrder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.idName">
+<span class="sig-name descname"><span class="pre">idName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.joinDefinitions">
+<span class="sig-name descname"><span class="pre">joinDefinitions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.joins">
+<span class="sig-name descname"><span class="pre">joins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.soClass">
+<span class="sig-name descname"><span class="pre">soClass</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_joins.AddressJoiner2" title="sqlobject.tests.test_joins.AddressJoiner2"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddressJoiner2</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;sqlobject.styles.MixedCaseUnderscoreStyle</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'address_joiner2'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner2.zip">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">zip</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner2.zip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">AddressJoiner3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#AddressJoiner3"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SQLObject</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">address_joiner3</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.personJoiner3">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">personJoiner3</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.personJoiner3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.personJoiner3ID">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">personJoiner3ID</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.personJoiner3ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">address_joiner3</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sqlmeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlmeta</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.childName">
+<span class="sig-name descname"><span class="pre">childName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.idName">
+<span class="sig-name descname"><span class="pre">idName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.joinDefinitions">
+<span class="sig-name descname"><span class="pre">joinDefinitions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.joins">
+<span class="sig-name descname"><span class="pre">joins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.soClass">
+<span class="sig-name descname"><span class="pre">soClass</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_joins.AddressJoiner3" title="sqlobject.tests.test_joins.AddressJoiner3"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddressJoiner3</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;sqlobject.styles.MixedCaseUnderscoreStyle</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'address_joiner3'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.AddressJoiner3.zip">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">zip</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.AddressJoiner3.zip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">ExplicitJoiningSO</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#ExplicitJoiningSO"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SQLObject</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.foo">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">foo</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.foo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">explicit_joining_s_o</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">explicit_joining_s_o</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sqlmeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlmeta</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.childName">
+<span class="sig-name descname"><span class="pre">childName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.idName">
+<span class="sig-name descname"><span class="pre">idName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.joinDefinitions">
+<span class="sig-name descname"><span class="pre">joinDefinitions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.MultipleJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.joins">
+<span class="sig-name descname"><span class="pre">joins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.SOMultipleJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.soClass">
+<span class="sig-name descname"><span class="pre">soClass</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_joins.ExplicitJoiningSO" title="sqlobject.tests.test_joins.ExplicitJoiningSO"><code class="xref py py-class docutils literal notranslate"><span class="pre">ExplicitJoiningSO</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;sqlobject.styles.MixedCaseUnderscoreStyle</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'explicit_joining_s_o'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ExplicitJoiningSO.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">ImplicitJoiningSO</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#ImplicitJoiningSO"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SQLObject</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.addBar">
+<span class="sig-name descname"><span class="pre">addBar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.addBar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.foo">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">foo</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.foo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">implicit_joining_s_o</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">implicit_joining_s_o</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.removeBar">
+<span class="sig-name descname"><span class="pre">removeBar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.removeBar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sqlmeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlmeta</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.childName">
+<span class="sig-name descname"><span class="pre">childName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.idName">
+<span class="sig-name descname"><span class="pre">idName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.joinDefinitions">
+<span class="sig-name descname"><span class="pre">joinDefinitions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.RelatedJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.joins">
+<span class="sig-name descname"><span class="pre">joins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.SORelatedJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.soClass">
+<span class="sig-name descname"><span class="pre">soClass</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_joins.ImplicitJoiningSO" title="sqlobject.tests.test_joins.ImplicitJoiningSO"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImplicitJoiningSO</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;sqlobject.styles.MixedCaseUnderscoreStyle</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'implicit_joining_s_o'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.ImplicitJoiningSO.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">PersonJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#PersonJoiner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SQLObject</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.addAddressJoiner">
+<span class="sig-name descname"><span class="pre">addAddressJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.addAddressJoiner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.addressJoiners">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">addressJoiners</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.addressJoiners" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.byName">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">byName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.byName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">person_joiner</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">person_joiner</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.removeAddressJoiner">
+<span class="sig-name descname"><span class="pre">removeAddressJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.removeAddressJoiner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sqlmeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlmeta</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta.childName">
+<span class="sig-name descname"><span class="pre">childName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta.idName">
+<span class="sig-name descname"><span class="pre">idName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta.joinDefinitions">
+<span class="sig-name descname"><span class="pre">joinDefinitions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.RelatedJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta.joins">
+<span class="sig-name descname"><span class="pre">joins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.SORelatedJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta.soClass">
+<span class="sig-name descname"><span class="pre">soClass</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_joins.PersonJoiner" title="sqlobject.tests.test_joins.PersonJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">PersonJoiner</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;sqlobject.styles.MixedCaseUnderscoreStyle</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner.sqlmeta.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'person_joiner'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">PersonJoiner2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#PersonJoiner2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SQLObject</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.addressJoiner2s">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">addressJoiner2s</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.addressJoiner2s" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.byName">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">byName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.byName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">person_joiner2</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">person_joiner2</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sqlmeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlmeta</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.childName">
+<span class="sig-name descname"><span class="pre">childName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.idName">
+<span class="sig-name descname"><span class="pre">idName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.joinDefinitions">
+<span class="sig-name descname"><span class="pre">joinDefinitions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.MultipleJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.joins">
+<span class="sig-name descname"><span class="pre">joins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.SOMultipleJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.soClass">
+<span class="sig-name descname"><span class="pre">soClass</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_joins.PersonJoiner2" title="sqlobject.tests.test_joins.PersonJoiner2"><code class="xref py py-class docutils literal notranslate"><span class="pre">PersonJoiner2</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;sqlobject.styles.MixedCaseUnderscoreStyle</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'person_joiner2'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner2.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">PersonJoiner3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#PersonJoiner3"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SQLObject</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.addressJoiner3s">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">addressJoiner3s</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.addressJoiner3s" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.byName">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">byName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.byName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">person_joiner3</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">person_joiner3</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sqlmeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlmeta</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.childName">
+<span class="sig-name descname"><span class="pre">childName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.idName">
+<span class="sig-name descname"><span class="pre">idName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.joinDefinitions">
+<span class="sig-name descname"><span class="pre">joinDefinitions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.MultipleJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.joins">
+<span class="sig-name descname"><span class="pre">joins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;sqlobject.joins.SOMultipleJoin</span> <span class="pre">object&gt;]</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.soClass">
+<span class="sig-name descname"><span class="pre">soClass</span></span><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_joins.PersonJoiner3" title="sqlobject.tests.test_joins.PersonJoiner3"><code class="xref py py-class docutils literal notranslate"><span class="pre">PersonJoiner3</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;sqlobject.styles.MixedCaseUnderscoreStyle</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'person_joiner3'</span></em><a class="headerlink" href="#sqlobject.tests.test_joins.PersonJoiner3.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">TestJoin</span></span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin.assertNamesEqual">
+<span class="sig-name descname"><span class="pre">assertNamesEqual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">people</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin.assertNamesEqual"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin.assertNamesEqual" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin.assertZipsEqual">
+<span class="sig-name descname"><span class="pre">assertZipsEqual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zips</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin.assertZipsEqual"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin.assertZipsEqual" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin.setup_method">
+<span class="sig-name descname"><span class="pre">setup_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">meth</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin.setup_method"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin.setup_method" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin.test_join">
+<span class="sig-name descname"><span class="pre">test_join</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin.test_join"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin.test_join" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin.test_joinAttributeWithUnderscores">
+<span class="sig-name descname"><span class="pre">test_joinAttributeWithUnderscores</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin.test_joinAttributeWithUnderscores"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin.test_joinAttributeWithUnderscores" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">TestJoin2</span></span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin2.setup_method">
+<span class="sig-name descname"><span class="pre">setup_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">meth</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin2.setup_method"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin2.setup_method" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin2.test_basic">
+<span class="sig-name descname"><span class="pre">test_basic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin2.test_basic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin2.test_basic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin2.test_defaultOrder">
+<span class="sig-name descname"><span class="pre">test_defaultOrder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin2.test_defaultOrder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin2.test_defaultOrder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.tests.test_joins.</span></span><span class="sig-name descname"><span class="pre">TestJoin3</span></span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin3"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin3.setup_method">
+<span class="sig-name descname"><span class="pre">setup_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">meth</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin3.setup_method"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin3.setup_method" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.tests.test_joins.TestJoin3.test_accessors">
+<span class="sig-name descname"><span class="pre">test_accessors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_joins.html#TestJoin3.test_accessors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.tests.test_joins.TestJoin3.test_accessors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/sqlobject.tests.test_joins.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.10.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sqlobject.tests.test_joins module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2004-2022, Ian Bicking and contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,919 @@
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sqlobject.col module &#8212; SQLObject 3.10.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.10.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sqlobject.col module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sqlobject.col">
+<span id="sqlobject-col-module"></span><h1>sqlobject.col module<a class="headerlink" href="#module-sqlobject.col" title="Permalink to this heading">¶</a></h1>
+<p>Col – SQLObject columns</p>
+<p>Note that each column object is named BlahBlahCol, and these are used
+in class definitions.  But there’s also a corresponding SOBlahBlahCol
+object, which is used in SQLObject <em>classes</em>.</p>
+<p>An explanation: when a SQLObject subclass is created, the metaclass
+looks through your class definition for any subclasses of Col.  It
+collects them together, and indexes them to do all the database stuff
+you like, like the magic attributes and whatnot.  It then asks the Col
+object to create an SOCol object (usually a subclass, actually).  The
+SOCol object contains all the interesting logic, as well as a record
+of the attribute name you used and the class it is bound to (set by
+the metaclass).</p>
+<p>So, in summary: Col objects are what you define, but SOCol objects
+are what gets used.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.BLOBCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">BLOBCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#BLOBCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.BLOBCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.StringCol" title="sqlobject.col.StringCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringCol</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.BLOBCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.BLOBCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOBLOBCol" title="sqlobject.col.SOBLOBCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOBLOBCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.BigIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">BigIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#BigIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.BigIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.BigIntCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.BigIntCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOBigIntCol" title="sqlobject.col.SOBigIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOBigIntCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.BoolCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">BoolCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#BoolCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.BoolCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.BoolCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.BoolCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOBoolCol" title="sqlobject.col.SOBoolCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOBoolCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.Col">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">Col</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#Col"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.Col" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.Col.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.Col.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.col.Col.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#sqlobject.col.Col.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.Col.withClass">
+<span class="sig-name descname"><span class="pre">withClass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">soClass</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#Col.withClass"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.Col.withClass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.CurrencyCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">CurrencyCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#CurrencyCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.CurrencyCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.DecimalCol" title="sqlobject.col.DecimalCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">DecimalCol</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.CurrencyCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.CurrencyCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOCurrencyCol" title="sqlobject.col.SOCurrencyCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCurrencyCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.DateCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">DateCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#DateCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.DateCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.DateCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.DateCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SODateCol" title="sqlobject.col.SODateCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SODateCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.DateTimeCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">DateTimeCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#DateTimeCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.DateTimeCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.DateTimeCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.DateTimeCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SODateTimeCol" title="sqlobject.col.SODateTimeCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SODateTimeCol</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.DateTimeCol.now">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">now</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#DateTimeCol.now"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.DateTimeCol.now" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.DecimalCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">DecimalCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#DecimalCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.DecimalCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.DecimalCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.DecimalCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SODecimalCol" title="sqlobject.col.SODecimalCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SODecimalCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.DecimalStringCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">DecimalStringCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#DecimalStringCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.DecimalStringCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.StringCol" title="sqlobject.col.StringCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringCol</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.DecimalStringCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.DecimalStringCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SODecimalStringCol" title="sqlobject.col.SODecimalStringCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SODecimalStringCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.EnumCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">EnumCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#EnumCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.EnumCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.EnumCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.EnumCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOEnumCol" title="sqlobject.col.SOEnumCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOEnumCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.FloatCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">FloatCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#FloatCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.FloatCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.FloatCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.FloatCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOFloatCol" title="sqlobject.col.SOFloatCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOFloatCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.ForeignKey">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">ForeignKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">foreignKey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#ForeignKey"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.ForeignKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.KeyCol" title="sqlobject.col.KeyCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeyCol</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.ForeignKey.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.ForeignKey.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOForeignKey" title="sqlobject.col.SOForeignKey"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOForeignKey</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.IntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">IntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#IntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.IntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.IntCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.IntCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOIntCol" title="sqlobject.col.SOIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOIntCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.JSONCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">JSONCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#JSONCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.JSONCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.StringCol" title="sqlobject.col.StringCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringCol</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.JSONCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.JSONCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOJSONCol" title="sqlobject.col.SOJSONCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOJSONCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.JsonbCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">JsonbCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#JsonbCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.JsonbCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.JsonbCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.JsonbCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOJsonbCol" title="sqlobject.col.SOJsonbCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOJsonbCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.KeyCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">KeyCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#KeyCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.KeyCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.KeyCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.KeyCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOKeyCol" title="sqlobject.col.SOKeyCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOKeyCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.MediumIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">MediumIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#MediumIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.MediumIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.MediumIntCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.MediumIntCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOMediumIntCol" title="sqlobject.col.SOMediumIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOMediumIntCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.PickleCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">PickleCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#PickleCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.PickleCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.BLOBCol" title="sqlobject.col.BLOBCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">BLOBCol</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.PickleCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.PickleCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOPickleCol" title="sqlobject.col.SOPickleCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOPickleCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOBLOBCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOBLOBCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOBLOBCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOBLOBCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOStringCol" title="sqlobject.col.SOStringCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOStringCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOBLOBCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOBLOBCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOBLOBCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOBigIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOBigIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOBigIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOBigIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOIntCol" title="sqlobject.col.SOIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOIntCol</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOBoolCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOBoolCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">soClass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creationOrder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultSQL=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">foreignKey=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateID=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateMethodName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraints=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNull=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNone=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unique=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sqlType=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnDef=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator2=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">immutable=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cascade=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lazy=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noCache=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceDBName=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbEncoding=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_vars=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOBoolCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOBoolCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOBoolCol.autoConstraints">
+<span class="sig-name descname"><span class="pre">autoConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOBoolCol.autoConstraints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOBoolCol.autoConstraints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOBoolCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOBoolCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOBoolCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">soClass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creationOrder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultSQL=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">foreignKey=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateID=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateMethodName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraints=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNull=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNone=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unique=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sqlType=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnDef=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator2=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">immutable=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cascade=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lazy=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noCache=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceDBName=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbEncoding=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_vars=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.autoConstraints">
+<span class="sig-name descname"><span class="pre">autoConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.autoConstraints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.autoConstraints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.createSQL">
+<span class="sig-name descname"><span class="pre">createSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.createSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.createSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.default">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">default</span></span><a class="headerlink" href="#sqlobject.col.SOCol.default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.firebirdCreateSQL">
+<span class="sig-name descname"><span class="pre">firebirdCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.firebirdCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.firebirdCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.getDbEncoding">
+<span class="sig-name descname"><span class="pre">getDbEncoding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.getDbEncoding"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.getDbEncoding" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.joinName">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">joinName</span></span><a class="headerlink" href="#sqlobject.col.SOCol.joinName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.maxdbCreateSQL">
+<span class="sig-name descname"><span class="pre">maxdbCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.maxdbCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.maxdbCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.mssqlCreateSQL">
+<span class="sig-name descname"><span class="pre">mssqlCreateSQL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.mssqlCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.mssqlCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.mysqlCreateSQL">
+<span class="sig-name descname"><span class="pre">mysqlCreateSQL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.mysqlCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.mysqlCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.postgresCreateSQL">
+<span class="sig-name descname"><span class="pre">postgresCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.postgresCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.postgresCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.sqliteCreateSQL">
+<span class="sig-name descname"><span class="pre">sqliteCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.sqliteCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.sqliteCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.sybaseCreateSQL">
+<span class="sig-name descname"><span class="pre">sybaseCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCol.sybaseCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCol.sybaseCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sqlobject.col.SOCol.validator">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">validator</span></span><a class="headerlink" href="#sqlobject.col.SOCol.validator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOCurrencyCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOCurrencyCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOCurrencyCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOCurrencyCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SODecimalCol" title="sqlobject.col.SODecimalCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SODecimalCol</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SODateCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SODateCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SODateCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SODateCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SODateCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SODateCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SODateCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a validator for the column.</p>
+<p>Can be overriden in descendants.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.SODateCol.dateFormat">
+<span class="sig-name descname"><span class="pre">dateFormat</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'%Y-%m-%d'</span></em><a class="headerlink" href="#sqlobject.col.SODateCol.dateFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SODateTimeCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SODateTimeCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SODateTimeCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SODateTimeCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SODateTimeCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SODateTimeCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SODateTimeCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.SODateTimeCol.datetimeFormat">
+<span class="sig-name descname"><span class="pre">datetimeFormat</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S.%f'</span></em><a class="headerlink" href="#sqlobject.col.SODateTimeCol.datetimeFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SODecimalCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SODecimalCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SODecimalCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SODecimalCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SODecimalCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SODecimalCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SODecimalCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SODecimalStringCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SODecimalStringCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SODecimalStringCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SODecimalStringCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOStringCol" title="sqlobject.col.SOStringCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOStringCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SODecimalStringCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SODecimalStringCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SODecimalStringCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOEnumCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOEnumCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOEnumCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOEnumCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOEnumCol.autoConstraints">
+<span class="sig-name descname"><span class="pre">autoConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOEnumCol.autoConstraints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOEnumCol.autoConstraints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOEnumCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOEnumCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOEnumCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOFloatCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOFloatCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">soClass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creationOrder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultSQL=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">foreignKey=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateID=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateMethodName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraints=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNull=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNone=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unique=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sqlType=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnDef=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator2=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">immutable=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cascade=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lazy=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noCache=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceDBName=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbEncoding=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_vars=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOFloatCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOFloatCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOFloatCol.autoConstraints">
+<span class="sig-name descname"><span class="pre">autoConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOFloatCol.autoConstraints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOFloatCol.autoConstraints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOFloatCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOFloatCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOFloatCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOForeignKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOKeyCol" title="sqlobject.col.SOKeyCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOKeyCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.maxdbCreateReferenceConstraint">
+<span class="sig-name descname"><span class="pre">maxdbCreateReferenceConstraint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.maxdbCreateReferenceConstraint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.maxdbCreateReferenceConstraint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.maxdbCreateSQL">
+<span class="sig-name descname"><span class="pre">maxdbCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.maxdbCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.maxdbCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.mssqlCreateReferenceConstraint">
+<span class="sig-name descname"><span class="pre">mssqlCreateReferenceConstraint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.mssqlCreateReferenceConstraint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.mssqlCreateReferenceConstraint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.mssqlCreateSQL">
+<span class="sig-name descname"><span class="pre">mssqlCreateSQL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.mssqlCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.mssqlCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.mysqlCreateReferenceConstraint">
+<span class="sig-name descname"><span class="pre">mysqlCreateReferenceConstraint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.mysqlCreateReferenceConstraint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.mysqlCreateReferenceConstraint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.mysqlCreateSQL">
+<span class="sig-name descname"><span class="pre">mysqlCreateSQL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.mysqlCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.mysqlCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.postgresCreateReferenceConstraint">
+<span class="sig-name descname"><span class="pre">postgresCreateReferenceConstraint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.postgresCreateReferenceConstraint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.postgresCreateReferenceConstraint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.postgresCreateSQL">
+<span class="sig-name descname"><span class="pre">postgresCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.postgresCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.postgresCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.sqliteCreateSQL">
+<span class="sig-name descname"><span class="pre">sqliteCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.sqliteCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.sqliteCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.sybaseCreateReferenceConstraint">
+<span class="sig-name descname"><span class="pre">sybaseCreateReferenceConstraint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.sybaseCreateReferenceConstraint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.sybaseCreateReferenceConstraint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOForeignKey.sybaseCreateSQL">
+<span class="sig-name descname"><span class="pre">sybaseCreateSQL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOForeignKey.sybaseCreateSQL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOForeignKey.sybaseCreateSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOIntCol.addSQLAttrs">
+<span class="sig-name descname"><span class="pre">addSQLAttrs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOIntCol.addSQLAttrs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOIntCol.addSQLAttrs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOIntCol.autoConstraints">
+<span class="sig-name descname"><span class="pre">autoConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOIntCol.autoConstraints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOIntCol.autoConstraints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOIntCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOIntCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOIntCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOJSONCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOJSONCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOJSONCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOJSONCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOStringCol" title="sqlobject.col.SOStringCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOStringCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOJSONCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOJSONCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOJSONCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOJsonbCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOJsonbCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">soClass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creationOrder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultSQL=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">foreignKey=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateID=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateMethodName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraints=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNull=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNone=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unique=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sqlType=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnDef=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator2=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">immutable=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cascade=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lazy=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noCache=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceDBName=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbEncoding=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_vars=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOJsonbCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOJsonbCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOJsonbCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOJsonbCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOJsonbCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOKeyCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOKeyCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOKeyCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOKeyCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.SOKeyCol.key_type">
+<span class="sig-name descname"><span class="pre">key_type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{&lt;class</span> <span class="pre">'int'&gt;:</span> <span class="pre">'INT',</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;:</span> <span class="pre">'TEXT'}</span></em><a class="headerlink" href="#sqlobject.col.SOKeyCol.key_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOMediumIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOMediumIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOMediumIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOMediumIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOIntCol" title="sqlobject.col.SOIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOIntCol</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOPickleCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOPickleCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOPickleCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOPickleCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOBLOBCol" title="sqlobject.col.SOBLOBCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOBLOBCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOPickleCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOPickleCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOPickleCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOSetCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOSetCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOSetCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOSetCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOSetCol.autoConstraints">
+<span class="sig-name descname"><span class="pre">autoConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOSetCol.autoConstraints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOSetCol.autoConstraints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOSetCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOSetCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOSetCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOSmallIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOSmallIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOSmallIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOSmallIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOIntCol" title="sqlobject.col.SOIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOIntCol</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOStringCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOStringCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOStringCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOStringCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOStringLikeCol" title="sqlobject.col.SOStringLikeCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOStringLikeCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOStringCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOStringCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOStringCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOStringLikeCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOStringLikeCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOStringLikeCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOStringLikeCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<p>A common ancestor for SOStringCol and SOUnicodeCol</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOStringLikeCol.autoConstraints">
+<span class="sig-name descname"><span class="pre">autoConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOStringLikeCol.autoConstraints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOStringLikeCol.autoConstraints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOTimeCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOTimeCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOTimeCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOTimeCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOTimeCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOTimeCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOTimeCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.SOTimeCol.timeFormat">
+<span class="sig-name descname"><span class="pre">timeFormat</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'%H:%M:%S.%f'</span></em><a class="headerlink" href="#sqlobject.col.SOTimeCol.timeFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOTimedeltaCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOTimedeltaCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">soClass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creationOrder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultSQL=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">foreignKey=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateID=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateMethodName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraints=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNull=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNone=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unique=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sqlType=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnDef=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator2=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">immutable=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cascade=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lazy=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noCache=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceDBName=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbEncoding=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_vars=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOTimedeltaCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOTimedeltaCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOTimedeltaCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOTimedeltaCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOTimedeltaCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOTimestampCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOTimestampCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOTimestampCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOTimestampCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SODateTimeCol" title="sqlobject.col.SODateTimeCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SODateTimeCol</span></code></a></p>
+<p>Necessary to support MySQL’s use of TIMESTAMP versus DATETIME types</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOTinyIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOTinyIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOTinyIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOTinyIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOIntCol" title="sqlobject.col.SOIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOIntCol</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOUnicodeCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOUnicodeCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOUnicodeCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOUnicodeCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOStringLikeCol" title="sqlobject.col.SOStringLikeCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOStringLikeCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOUnicodeCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOUnicodeCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOUnicodeCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SOUuidCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SOUuidCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">soClass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creationOrder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultSQL=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">foreignKey=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateID=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternateMethodName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraints=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNull=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notNone=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unique=&lt;class</span> <span class="pre">'sqlobject.sqlbuilder.NoDefault'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sqlType=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnDef=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validator2=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">immutable=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cascade=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lazy=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noCache=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceDBName=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origName=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbEncoding=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_vars=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOUuidCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOUuidCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.SOCol" title="sqlobject.col.SOCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOCol</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sqlobject.col.SOUuidCol.createValidators">
+<span class="sig-name descname"><span class="pre">createValidators</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SOUuidCol.createValidators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SOUuidCol.createValidators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of validators for the column.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SetCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SetCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SetCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SetCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.SetCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.SetCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOSetCol" title="sqlobject.col.SOSetCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOSetCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.SmallIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">SmallIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#SmallIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.SmallIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.SmallIntCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.SmallIntCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOSmallIntCol" title="sqlobject.col.SOSmallIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOSmallIntCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.StringCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">StringCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#StringCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.StringCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.StringCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.StringCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOStringCol" title="sqlobject.col.SOStringCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOStringCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.TimeCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">TimeCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#TimeCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.TimeCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.TimeCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.TimeCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOTimeCol" title="sqlobject.col.SOTimeCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOTimeCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.TimedeltaCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">TimedeltaCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#TimedeltaCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.TimedeltaCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.TimedeltaCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.TimedeltaCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOTimedeltaCol" title="sqlobject.col.SOTimedeltaCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOTimedeltaCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.TimestampCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">TimestampCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#TimestampCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.TimestampCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.TimestampCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.TimestampCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOTimestampCol" title="sqlobject.col.SOTimestampCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOTimestampCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.TinyIntCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">TinyIntCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#TinyIntCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.TinyIntCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.TinyIntCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.TinyIntCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOTinyIntCol" title="sqlobject.col.SOTinyIntCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOTinyIntCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.UnicodeCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">UnicodeCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#UnicodeCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.UnicodeCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.UnicodeCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.UnicodeCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOUnicodeCol" title="sqlobject.col.SOUnicodeCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOUnicodeCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.col.UuidCol">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">UuidCol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#UuidCol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.UuidCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.col.Col" title="sqlobject.col.Col"><code class="xref py py-class docutils literal notranslate"><span class="pre">Col</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.col.UuidCol.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.col.UuidCol.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.col.SOUuidCol" title="sqlobject.col.SOUuidCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">SOUuidCol</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sqlobject.col.use_microseconds">
+<span class="sig-prename descclassname"><span class="pre">sqlobject.col.</span></span><span class="sig-name descname"><span class="pre">use_microseconds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/col.html#use_microseconds"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.col.use_microseconds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/sqlobject.col.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.10.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sqlobject.col module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2004-2022, Ian Bicking and contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+    </div>
+  </body>
+</html>

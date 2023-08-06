@@ -1,0 +1,214 @@
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sqlobject.joins module &#8212; SQLObject 3.10.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.10.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sqlobject.joins module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sqlobject.joins">
+<span id="sqlobject-joins-module"></span><h1>sqlobject.joins module<a class="headerlink" href="#module-sqlobject.joins" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.joins.ManyToMany">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.joins.</span></span><span class="sig-name descname"><span class="pre">ManyToMany</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/joins.html#ManyToMany"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.joins.ManyToMany" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.boundattributes.html#sqlobject.boundattributes.BoundFactory" title="sqlobject.boundattributes.BoundFactory"><code class="xref py py-class docutils literal notranslate"><span class="pre">BoundFactory</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.ManyToMany.createJoinTable">
+<span class="sig-name descname"><span class="pre">createJoinTable</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#sqlobject.joins.ManyToMany.createJoinTable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.ManyToMany.declarative_count">
+<span class="sig-name descname"><span class="pre">declarative_count</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#sqlobject.joins.ManyToMany.declarative_count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.ManyToMany.factory_class">
+<span class="sig-name descname"><span class="pre">factory_class</span></span><a class="headerlink" href="#sqlobject.joins.ManyToMany.factory_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">SOManyToMany</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.ManyToMany.intermediateTable">
+<span class="sig-name descname"><span class="pre">intermediateTable</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.joins.ManyToMany.intermediateTable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.ManyToMany.joinColumn">
+<span class="sig-name descname"><span class="pre">joinColumn</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.joins.ManyToMany.joinColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.ManyToMany.otherColumn">
+<span class="sig-name descname"><span class="pre">otherColumn</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.joins.ManyToMany.otherColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.joins.MultipleJoin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.joins.</span></span><span class="sig-name descname"><span class="pre">MultipleJoin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">otherClass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/joins.html#MultipleJoin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.joins.MultipleJoin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Join</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.MultipleJoin.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.joins.MultipleJoin.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">SOMultipleJoin</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.joins.OneToMany">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.joins.</span></span><span class="sig-name descname"><span class="pre">OneToMany</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/joins.html#OneToMany"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.joins.OneToMany" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.boundattributes.html#sqlobject.boundattributes.BoundFactory" title="sqlobject.boundattributes.BoundFactory"><code class="xref py py-class docutils literal notranslate"><span class="pre">BoundFactory</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.OneToMany.declarative_count">
+<span class="sig-name descname"><span class="pre">declarative_count</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#sqlobject.joins.OneToMany.declarative_count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.OneToMany.factory_class">
+<span class="sig-name descname"><span class="pre">factory_class</span></span><a class="headerlink" href="#sqlobject.joins.OneToMany.factory_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">SOOneToMany</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.OneToMany.joinColumn">
+<span class="sig-name descname"><span class="pre">joinColumn</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#sqlobject.joins.OneToMany.joinColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.joins.RelatedJoin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.joins.</span></span><span class="sig-name descname"><span class="pre">RelatedJoin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">otherClass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/joins.html#RelatedJoin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.joins.RelatedJoin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.joins.MultipleJoin" title="sqlobject.joins.MultipleJoin"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleJoin</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.RelatedJoin.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.joins.RelatedJoin.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">SORelatedJoin</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.joins.SQLMultipleJoin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.joins.</span></span><span class="sig-name descname"><span class="pre">SQLMultipleJoin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">otherClass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/joins.html#SQLMultipleJoin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.joins.SQLMultipleJoin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Join</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.SQLMultipleJoin.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.joins.SQLMultipleJoin.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">SOSQLMultipleJoin</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.joins.SQLRelatedJoin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.joins.</span></span><span class="sig-name descname"><span class="pre">SQLRelatedJoin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">otherClass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/joins.html#SQLRelatedJoin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.joins.SQLRelatedJoin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sqlobject.joins.RelatedJoin" title="sqlobject.joins.RelatedJoin"><code class="xref py py-class docutils literal notranslate"><span class="pre">RelatedJoin</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.SQLRelatedJoin.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.joins.SQLRelatedJoin.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">SOSQLRelatedJoin</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sqlobject.joins.SingleJoin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sqlobject.joins.</span></span><span class="sig-name descname"><span class="pre">SingleJoin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">otherClass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/joins.html#SingleJoin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sqlobject.joins.SingleJoin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Join</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sqlobject.joins.SingleJoin.baseClass">
+<span class="sig-name descname"><span class="pre">baseClass</span></span><a class="headerlink" href="#sqlobject.joins.SingleJoin.baseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">SOSingleJoin</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/sqlobject.joins.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.10.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sqlobject.joins module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2004-2022, Ian Bicking and contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+    </div>
+  </body>
+</html>
