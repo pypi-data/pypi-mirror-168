@@ -1,0 +1,9 @@
+googlesheets2csv/__init__.py,sha256=bV4fUWUFnJCZQKBzoaU91cE_ikapVbBHZtkQ7hMlYrw,52
+googlesheets2csv/download.py,sha256=OFTKcSJhKBRx8ioIE-qPPTOUVBhxe82oKQZT1ExMdyE,1210
+googlesheets2csv/scripts/__init__.py,sha256=QmhBsuRjcqFvDg1GDOmmrtxe_zD3nGWTMYcAdsQYXpM,27
+googlesheets2csv/scripts/cli.py,sha256=WvjJO6wtLjGVUVnduMUtPYCel6V4sMPdtED3-5wMXIA,2538
+googlesheets2csv-0.1.0.dist-info/METADATA,sha256=VIb-jtZf1S4WstWz4qQaBkd-9wKDdSrmRWuHku2k24g,3279
+googlesheets2csv-0.1.0.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+googlesheets2csv-0.1.0.dist-info/entry_points.txt,sha256=YM4nl9-Y1khj1JocHH2Jb2XmbSp0PDL5GWmvKy-pFqg,71
+googlesheets2csv-0.1.0.dist-info/licenses/LICENSE,sha256=it8RsRcZ1i3g4GQSkFWlTB6-aLjXmSBPAhBLXTDwX7s,1069
+googlesheets2csv-0.1.0.dist-info/RECORD,,

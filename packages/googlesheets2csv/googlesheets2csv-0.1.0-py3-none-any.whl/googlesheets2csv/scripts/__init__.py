@@ -1,0 +1,1 @@
+"""googlesheets2csv cli"""

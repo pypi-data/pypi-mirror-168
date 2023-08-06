@@ -1,0 +1,2 @@
+[console_scripts]
+googlesheets2csv = googlesheets2csv.scripts.cli:main
