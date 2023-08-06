@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "ascall"
+authors = [{name = "vastxiao", email = "vastxiao@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+keywords = ["async", "asyncio", "func", "function"]
+requires-python = ">=3.9"
+
+[project.urls]
+Home = "https://vastxiao.github.io/"
+
+[tool.flit.sdist]
+exclude = ["test.py"]
+
