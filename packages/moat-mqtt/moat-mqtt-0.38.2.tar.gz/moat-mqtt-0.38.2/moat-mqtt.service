@@ -1,0 +1,23 @@
+[Unit]
+Description=MoaT-MQTT broker
+After=distkv.service
+Wants=distkv.service
+
+ConditionFileNotEmpty=/etc/moat/mqtt.cfg
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/moat -c /etc/moat/mqtt.cfg mqtt broker
+
+User=moat
+Group=moat
+
+TimeoutSec=30
+WatchdogSec=10
+
+Restart=always
+RestartSec=5
+

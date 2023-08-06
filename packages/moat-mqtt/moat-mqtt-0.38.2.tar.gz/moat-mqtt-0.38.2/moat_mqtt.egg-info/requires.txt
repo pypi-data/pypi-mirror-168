@@ -1,0 +1,12 @@
+anyio~=3.0
+asyncscope
+asyncwebsockets>=0.9.2
+attrs>=19
+moat-util
+msgpack
+passlib
+pyyaml
+simplejson
+transitions
+transitions
+wsproto
