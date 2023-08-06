@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+gfs_dynamical_core/__init__.py
+gfs_dynamical_core.egg-info/PKG-INFO
+gfs_dynamical_core.egg-info/SOURCES.txt
+gfs_dynamical_core.egg-info/dependency_links.txt
+gfs_dynamical_core.egg-info/not-zip-safe
+gfs_dynamical_core.egg-info/requires.txt
+gfs_dynamical_core.egg-info/top_level.txt
+gfs_dynamical_core/_components/gfs/_gfs_dynamics.pyx

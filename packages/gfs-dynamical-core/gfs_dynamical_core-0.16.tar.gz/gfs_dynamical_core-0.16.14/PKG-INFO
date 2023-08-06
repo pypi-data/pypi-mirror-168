@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gfs_dynamical_core
+Version: 0.16.14
+Summary: Only the dynamical core of the climt repository
+Home-page: https://github.com/Ai33L/gfs_dynamical_core.git
+Author: Rodrigo Caballero
+Author-email: rodrigo.caballero@misu.su.se
+License: BSD license
+Keywords: gfs_dynamical_core
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+GFS dynamical core
+
+
+To be added
+
