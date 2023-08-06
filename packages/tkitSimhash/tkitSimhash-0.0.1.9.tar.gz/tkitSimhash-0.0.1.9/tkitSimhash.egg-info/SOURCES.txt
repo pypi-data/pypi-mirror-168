@@ -1,0 +1,9 @@
+README.md
+setup.py
+tkitSimhash/__init__.py
+tkitSimhash/simHash.py
+tkitSimhash.egg-info/PKG-INFO
+tkitSimhash.egg-info/SOURCES.txt
+tkitSimhash.egg-info/dependency_links.txt
+tkitSimhash.egg-info/requires.txt
+tkitSimhash.egg-info/top_level.txt
