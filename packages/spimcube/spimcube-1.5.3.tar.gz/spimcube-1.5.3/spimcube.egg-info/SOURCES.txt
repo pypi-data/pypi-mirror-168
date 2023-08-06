@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spimcube/__init__.py
+spimcube/functions.py
+spimcube/procedures.py
+spimcube/spimclass.py
+spimcube/utils.py
+spimcube.egg-info/PKG-INFO
+spimcube.egg-info/SOURCES.txt
+spimcube.egg-info/dependency_links.txt
+spimcube.egg-info/not-zip-safe
+spimcube.egg-info/requires.txt
+spimcube.egg-info/top_level.txt
