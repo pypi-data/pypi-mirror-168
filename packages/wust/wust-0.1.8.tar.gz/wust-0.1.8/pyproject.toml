@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "wust"
+version = "0.1.8"
+description = "WEkEO User Support Toolbox contains a set of tools to ease work in WEkEO."
+authors = ["David Bazin <dbazin@wekeo.eu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7" 
+intake-thredds = ">=2021.6.16"
+matplotlib = ">=3.5.2"
+netCDF4 = "1.6.0"
+pydap = ">=3.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
