@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "cotinga"
+version = "0.2.0"
+description = "Teachers' helper to manage their pupils' progression."
+authors = ["Nicolas Hainaux <nh.techn@gmail.com>"]
+readme = 'README.rst'
+include = ['pyproject.toml']
+license = 'GNU General Public License v3 or later (GPLv3+)'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sqlalchemy = "^1.4.31"
+pygobject = "^3.42"
+toml = "^0.10.2"
+Babel = "^2.9.1"
+sqlalchemy-utils = "^0.38.2"
+reportlab = "^3.6.7"
+wheel = "^0.37.1"
+pikepdf = "^5.0.1"
+python-magic = "^0.4.25"
+microlib = "^1.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=3.0"
+polib = "^1.1"
+flake8 = "^4.0.1"
+pytest-mock = "^3.8.2"
+
+[tool.poetry.scripts]
+cotinga = "cotinga:run"
+
+[build-system]
+# requires = ["poetry-core>=1.0.0"]
+# build-backend = "poetry.core.masonry.api"
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
