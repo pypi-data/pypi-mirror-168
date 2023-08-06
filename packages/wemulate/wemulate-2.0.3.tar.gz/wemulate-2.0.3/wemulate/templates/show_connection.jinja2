@@ -1,0 +1,9 @@
+{% for param in parameters -%}
+    {% if not param.direction %}
+<-> {{param.parameter_name }}: {{ param.value }} 
+    {% elif param.direction == "incoming" %}
+--> {{param.parameter_name }}: {{ param.value }} 
+    {% else %}
+<-- {{param.parameter_name }}: {{ param.value }}
+    {% endif %}
+{% endfor %}
