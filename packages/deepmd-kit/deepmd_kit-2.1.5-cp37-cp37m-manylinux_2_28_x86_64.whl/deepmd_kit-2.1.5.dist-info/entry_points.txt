@@ -1,0 +1,2 @@
+[console_scripts]
+dp = deepmd.entrypoints.main:main
