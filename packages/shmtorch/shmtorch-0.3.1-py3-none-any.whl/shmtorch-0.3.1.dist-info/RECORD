@@ -1,0 +1,5 @@
+shmtorch/__init__.py,sha256=XRYz18QJnQjkUUipSANBFFkcVH9gYuaFi9I78wIfCCI,321
+shmtorch/shmtorch.py,sha256=irAgua0GdWp-BLmuMWWrQzGLGfJlFFQ7v6vmdIu0jsk,6061
+shmtorch-0.3.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+shmtorch-0.3.1.dist-info/METADATA,sha256=XQ9OhzsViCgggxnee9c0iNwt9UCXIV9s4MR4bvNlXUM,454
+shmtorch-0.3.1.dist-info/RECORD,,
