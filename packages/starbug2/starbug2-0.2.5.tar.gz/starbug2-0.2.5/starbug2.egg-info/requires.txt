@@ -1,0 +1,5 @@
+photutils
+astropy
+parse
+scipy
+webbpsf
