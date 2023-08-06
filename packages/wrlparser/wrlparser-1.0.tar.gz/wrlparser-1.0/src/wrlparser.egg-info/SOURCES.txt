@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/ir.py
+src/log.py
+src/toks.py
+src/wrlparser.py
+src/ply/__init__.py
+src/ply/lex.py
+src/ply/yacc.py
+src/wrlparser.egg-info/PKG-INFO
+src/wrlparser.egg-info/SOURCES.txt
+src/wrlparser.egg-info/dependency_links.txt
+src/wrlparser.egg-info/requires.txt
+src/wrlparser.egg-info/top_level.txt
