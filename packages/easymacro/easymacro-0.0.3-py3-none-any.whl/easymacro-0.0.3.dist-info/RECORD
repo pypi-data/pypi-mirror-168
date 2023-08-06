@@ -1,0 +1,10 @@
+macro/__init__.py,sha256=-KuLEBIKR-wctCTOgGqovU-yNc2x6quJ6Os7_dltSrw,116
+macro/clipboard.py,sha256=utKBowY1cNkZXo9HEpygTxtebr2l1A3_maL6nHfxLow,571
+macro/keyboard.py,sha256=Pu7ajsgVRav_moJapjFea98WqCJbaDpwP5zYad-p4fA,132
+macro/mouse.py,sha256=4VBKJwRogqTLCnXeaEOQZpi3m40_rI7CR1kKfqoQ4Yw,2518
+macro/utils.py,sha256=E2uSGQoNdNkPXbIK34MIn0XnHzUf00Uwhn05EVrofcQ,2039
+macro/window.py,sha256=H_HPcYtG-Q3qFsvIqEGjdOuOkP8jGEg7dGGUqA9dgoU,3060
+easymacro-0.0.3.dist-info/METADATA,sha256=EERtq5WF3gXT_dv1caJiz2ezdWBDQHs6F74zR5QvCyY,324
+easymacro-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+easymacro-0.0.3.dist-info/top_level.txt,sha256=F3_GRcTm8Mln6D8laXmS8A7QflqG-jiswomzEJqhh64,6
+easymacro-0.0.3.dist-info/RECORD,,
