@@ -1,0 +1,12 @@
+PyJWT>=2.4.0
+requests
+yarl
+
+[dev]
+black
+pytest
+coverage
+Faker
+python-dotenv
+twine
+build
