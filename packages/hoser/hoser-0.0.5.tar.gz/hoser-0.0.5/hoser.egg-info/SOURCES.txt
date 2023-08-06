@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+hoser/__init__.py
+hoser/compile.py
+hoser/run.py
+hoser/serialize.py
+hoser/streamutils.py
+hoser.egg-info/PKG-INFO
+hoser.egg-info/SOURCES.txt
+hoser.egg-info/dependency_links.txt
+hoser.egg-info/requires.txt
+hoser.egg-info/top_level.txt
+hoser/stdlib/__init__.py
+hoser/stdlib/xargs.py
