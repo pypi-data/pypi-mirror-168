@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/mousipy/__init__.py
+src/mousipy/mousipy.py
+src/mousipy.egg-info/PKG-INFO
+src/mousipy.egg-info/SOURCES.txt
+src/mousipy.egg-info/dependency_links.txt
+src/mousipy.egg-info/requires.txt
+src/mousipy.egg-info/top_level.txt
+src/mousipy/biomart/human_to_mouse_biomart_export.csv
+src/mousipy/biomart/mouse_to_human_biomart_export.csv
