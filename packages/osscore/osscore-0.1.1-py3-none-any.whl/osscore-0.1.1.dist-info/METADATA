@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: osscore
+Version: 0.1.1
+Summary: 
+Author: similarface
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aliyun-python-sdk-core (>=2.13.36,<3.0.0)
+Requires-Dist: aliyun-python-sdk-sts (>=3.1.0,<4.0.0)
+Requires-Dist: oss2 (>=2.16.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+## 易于使用，人性化的阿里云oss工具包
+
+### 安装
+
+```bash
+pip install osscore
+```
+
+### 使用
+
+#### OSSFileSystem
+
+- access_key_id or define env OSS_ACCESS_KEY_ID
+- access_key_secret or define env OSS_ACCESS_KEY_SECRET
+- endpoint or define env OSS_ENDPOINT
+- token
+
+##### 上传文件
+
+```python
+from osscore import OSSFileSystem
+
+OSSFileSystem().upload("bucket_name", "local_path", "key")
+```
+
+##### 下载文件
+
+> local_path 不写会返回 temp file
+
+```python
+from osscore import OSSFileSystem
+
+OSSFileSystem().download("bucket_name", "key", "local_path")
+```
