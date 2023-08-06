@@ -1,0 +1,5 @@
+sphinx
+rdkit
+sphinx_rtd_theme
+jupytext
+nbsphinx
