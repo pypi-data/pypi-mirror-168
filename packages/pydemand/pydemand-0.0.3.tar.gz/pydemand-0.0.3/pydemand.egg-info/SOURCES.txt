@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+pydemand/__init__.py
+pydemand/config.py
+pydemand/retriever.py
+pydemand.egg-info/PKG-INFO
+pydemand.egg-info/SOURCES.txt
+pydemand.egg-info/dependency_links.txt
+pydemand.egg-info/requires.txt
+pydemand.egg-info/top_level.txt
