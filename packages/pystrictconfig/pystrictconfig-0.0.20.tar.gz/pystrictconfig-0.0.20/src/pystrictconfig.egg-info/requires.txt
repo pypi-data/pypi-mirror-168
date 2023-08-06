@@ -1,0 +1,14 @@
+PyYAML==6.0
+click
+
+[dev]
+tox
+bumpver
+pip-tools
+twine
+
+[test]
+check-manifest
+pytest
+pytest-cov
+flake8
