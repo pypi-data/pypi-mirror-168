@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: connectlib
+Version: 0.21.5
+Summary: Federated Learning library
+Home-page: https://owkin-connectlib.readthedocs-hosted.com/en/latest/
+Author: Owkin
+Author-email: flow@owkin.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: connectlib
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
