@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Tare
+Version: 0.0.4
+Summary: Tools of Tare
+Home-page: UNKNOWN
+Author: QihaoZhu
+Author-email: zhuqh@pku.edu.cn
+License: apache 3.0
+Platform: UNKNOWN
+Requires: numpy
+Requires: pytorch
+Requires: javalang
+Requires: pickle
+Requires: tqdm
+
+UNKNOWN
+
+
