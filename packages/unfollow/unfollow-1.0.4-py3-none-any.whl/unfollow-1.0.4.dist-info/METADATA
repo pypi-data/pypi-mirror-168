@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: unfollow
+Version: 1.0.4
+Summary: 😡 Python CLI tool that shows you who has unfollowed you on GitHub
+Home-page: https://github.com/TechWiz-3/who-unfollowed-me
+Author: Zac the Wise aka TechWiz-3
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: rich
+
+UNKNOWN
+
+

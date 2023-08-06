@@ -1,0 +1,11 @@
+unfollow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unfollow/beautify.py,sha256=6xFDSytQHMiHOpXmNvmFq33RxFsPMTUBpV0l3Nx38GA,1587
+unfollow/cli.py,sha256=w1wIaEDskv9Z8NkOoCYl6Emvgt4Ql1lKb9DHOoG64Pk,6026
+unfollow/input.py,sha256=uzZiqm8VCDY99QGv90779ThcAlPDR1REmiwCjgks8Wk,1242
+unfollow/unfollow.py,sha256=YeLjNYHHHpS1qsSlEyiTz_6kdLkXcAyQGs5sHc3-h20,5353
+unfollow-1.0.4.data/scripts/unfollow,sha256=Rb_IVxUHG8h_sfpG8fe3yvtJdop7T6TdLqVXlr_sw-0,48
+unfollow-1.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+unfollow-1.0.4.dist-info/METADATA,sha256=98Kf6Z0uYXIIMvtuqdzOx95Q8pAobryFG2ZZYmbQrc0,311
+unfollow-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+unfollow-1.0.4.dist-info/top_level.txt,sha256=2ReSQZfJaedE4mCraOta2GUEW8F12gj8M5RxmxLjoPQ,9
+unfollow-1.0.4.dist-info/RECORD,,
