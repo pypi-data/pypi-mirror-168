@@ -1,0 +1,127 @@
+import os
+import json
+import shutil
+import requests
+# from pathlib import Path
+
+# URLS, REQUIREMENTS, README, ADMIN
+from .trace import MANAGE, WSGI, SETTINGS, BASE_SETTINGS, VIEWS, BASE_MODELS, APP_URLS
+
+
+def generate(terminal_token, project_token, *args):
+    try:
+        res = requests.post('https://api.clix.dev/api/package/sync',
+        data=json.dumps({
+            'terminal_token': terminal_token,
+            'project_token': project_token,
+        })).json()
+
+        project_name = res.get('misc').get('project_name')
+        working_dir = os.getcwd() + '/' + args[0] + '/' + project_name + '/' if args[0] else os.getcwd() + '/' + project_name + '/'
+        
+        # TODO some logic needed here
+        if os.path.exists(working_dir):
+            shutil.rmtree(working_dir)
+        os.makedirs(working_dir)
+        
+        base_file_tree = {
+            'manage.py': MANAGE(project_name),
+            project_name + '/': [('__init__.py', ''), ('wsgi.py', WSGI(project_name)), ('settings.py', SETTINGS(res.get('settings'),))],
+        }
+            # , ('urls.py', URLS(res.get('apps')))
+            # 'README.md': README(),
+            # 'requirements.txt': REQUIREMENTS(),
+            # 'db.sqlite3': '',
+            # 'static/': [],
+            # 'templates/': [], removed at beta
+            # 'templates/admin/': [('base_site.html', """{% extends "admin/base_site.html" %}{% load static %}{% block extrahead %}<link rel="stylesheet" href="https://api.clix.dev/static/admin.css" type="text/css" />{% endblock %}""")],
+
+        # generating base file tree
+        for k, v in base_file_tree.items():
+            if type(v) is str:
+                with open(working_dir + k, 'w') as ff:
+                    ff.write(base_file_tree.get(k))
+            else:
+                os.mkdir(working_dir + k)
+                for f in v:
+                    with open(working_dir + k + f[0], 'w') as ff:
+                        ff.write(f[1])
+        
+        # generate apps
+        # removed ('urls.py', APP_URLS(app)), ('models.py', MODELS(app)), ('admin.py', ADMIN(app)), ('apps.py', f"from django.apps import AppConfig\n\n\nclass AppConfig(AppConfig):\n\tname = '{app.get('name')}'"), ('tests.py', 'from django.test import TestCase'), because of beta
+        # removed 'migrations/': [('__init__.py', '')] for beta
+        for app in res.get('apps'):
+            file_extensions = {
+                '': [('__init__.py', ''), ('views.py', VIEWS(app))],
+            }
+            # TODO can make this much simpler
+            for k, v in file_extensions.items():
+                working_d = working_dir + 'clix' + '/' + k
+                os.mkdir(working_d)
+                for file_name, file_content in v:
+                    with open(working_d + file_name, 'w') as ff:
+                        ff.write(file_content)
+
+        sync(terminal_token, project_token, args)
+
+        return True
+    except Exception as e:
+        print(e)
+        raise Exception('base template error')
+
+
+# creates clixdev.__path__/apps/clix/*
+def sync(terminal_token, project_token, *args):
+    res = requests.post('https://api.clix.dev/api/package/sync',
+                        data=json.dumps({
+                            'terminal_token': terminal_token,
+                            'project_token': project_token,
+                        })).json()
+    
+    import clixdev
+    if not os.path.exists(clixdev.__path__[0] + '/apps'):
+        os.mkdir(clixdev.__path__[0] + '/apps')
+        if not os.path.exists(clixdev.__path__[0] + '/apps/clix'):
+            os.mkdir(clixdev.__path__[0] + '/apps/clix')
+            if not os.path.exists(clixdev.__path__[0] + '/apps/clix/migrations'):
+                os.mkdir(clixdev.__path__[0] + '/apps/clix/migrations')
+    
+    f = open(clixdev.__path__[0] + '/apps' + '/__init__.py', 'w')
+    f.write("")
+    f.close()
+
+    f = open(clixdev.__path__[0] + '/apps/clix' + '/__init__.py', 'w')
+    f.write("")
+    f.close()
+    
+    f = open(clixdev.__path__[0] + '/apps/clix/migrations' + '/__init__.py', 'w')
+    f.write("")
+    f.close()
+
+    # write urls based on res -> api.clix.dev
+    f = open(clixdev.__path__[0] + '/apps/clix' + '/urls.py', 'w')
+    f.write(APP_URLS(res.get('apps')[0]))
+    f.close()
+
+    f = open(clixdev.__path__[0] + '/apps/clix' + '/models.py', 'w')
+    f.write(BASE_MODELS(res.get('apps')[0]))
+    f.close()
+    
+    f = open(clixdev.__path__[0] + '/apps/clix' + '/settings.py', 'w')
+    f.write(BASE_SETTINGS(res.get('misc').get('project_name'), res.get('misc').get('secret_key')))
+    f.close()
+
+    f = open(clixdev.__path__[0] + '/apps/clix' + '/apps.py', 'w')
+    f.write("""from django.apps import AppConfig
+
+class AppConfig(AppConfig):
+        name = 'clixdev.apps.clix'
+""")
+    f.close()
+
+    # not sure about views yet
+    # f = open('projects/' + '/_validators.txt', 'w')
+    # f.write(json.dumps("""[{"name": "API", "base_url": "api", "endpoints": [{"misc": {"endpoint_id": "ae0937d9-95e4-4ea1-9ff5-76312209e948", "is_draft": false, "token": "rcxxday", "name": "Get all users", "description": "The description", "base_url": "api"}, "request": {"method": "GET", "host": "localhost", "uri": "users/all"}, "headers": {"authorization": true, "body": {"0": ["auth-token", "str"]}}, "params": {"0": ["d", "uuid"]}, "body": {"type": "none", "payload": {}}, "response": {"code": "200", "message": "OK"}}], "models": [{"table_name": "User", "fields": {"0": ["D372D1", "id", "UUIDField", null, null, false, false, false, true, true], "1": ["F8B9D7", "f_name", "CharField", null, null, true, true, true, false, false], "2": ["D0BA20", "l_name", "CharField", null, null, true, true, true, false, false], "3": ["21341C", "created_at", "DateTimeField", null, null, false, false, true, false, false]}}]}]"""))
+    # f.close()
+
+    return True
