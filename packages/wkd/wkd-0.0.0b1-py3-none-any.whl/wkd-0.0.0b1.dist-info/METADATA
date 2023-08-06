@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: wkd
+Version: 0.0.0b1
+Summary: Which key via dmenu.
+License: GNU General Public License v3 (GPLv3)
+Project-URL: repository, https://codeberg.org/johndovern/wkd
+Keywords: dmenu
+Description-Content-Type: text/markdown
+Requires-Dist: loadconf
+Requires-Dist: promptx
+
