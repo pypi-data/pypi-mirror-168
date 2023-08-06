@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: qiboconnection
+Version: 0.6.0
+Summary: manage the remote connection to send qibo experiment to the quantum devices and simulators
+Home-page: https://github.com/qilimanjaro-tech/qiboconnection
+Author: Qibo team
+Author-email: info@qilimanjaro.tech
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: typeguard (==2.13.3)
+Requires-Dist: types-requests (==2.27.15)
+Requires-Dist: numpy (==1.22.3)
+Requires-Dist: qibo (==0.1.7)
+Requires-Dist: websocket-client (==1.3.2)
+Requires-Dist: PyJWT (==2.3.0)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: recommonmark ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'docs'
+Requires-Dist: sphinx-markdown-tables ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: IPython ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# qibo connection
+
+Library to manage the remote connection to send qibo experiment to the quantum devices and simulators
