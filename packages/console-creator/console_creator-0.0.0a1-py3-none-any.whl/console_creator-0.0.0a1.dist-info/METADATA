@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: console-creator
+Version: 0.0.0a1
+Summary: With console_creator, create consoles (python like, cdm like or java like) for your softwere.
+Author-email: Cyprien BONTRON <c.b.e.python@gmail.com>
+Maintainer-email: Cyprien BONTRON <c.b.e.python@gmail.com>
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License        
+        Futher information at: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+Project-URL: Download-URL, https://pypi.org/project/console_creator/
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Utilities
+Classifier: License :: Free for non-commercial use
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Console creator
+
+[![Version](https://img.shields.io/pypi/v/console-creator.svg)](https://pypi.org/project/console-creator/) [![PyVersion](https://img.shields.io/pypi/pyversions/console-creator.svg)](https://pypi.org/project/console-creator/)
+
+## Project's description
+With console_creator, create consoles (python like, cdm like or java like) for your softwere.
+This framework is currently in development.
+
+# How create a console
+First, you can create four types of consoles :
+- python like console
+- cmd like console
+- colored console
+- customized console
+
+Currently, all those features are in development.
+
+## Thanks
+This framework rely on few others frameworks that are free.
+The code is written in Python 3.10.
+
+## License
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (CC-BY-NC-SA)**
+
+(Futher information at: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode )
+
+©Cyprien BONTRON (c.b.e.python@gmail.com)
+
