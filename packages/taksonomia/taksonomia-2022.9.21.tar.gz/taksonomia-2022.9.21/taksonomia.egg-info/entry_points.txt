@@ -1,0 +1,2 @@
+[console_scripts]
+taksonomia = taksonomia.cli:main
