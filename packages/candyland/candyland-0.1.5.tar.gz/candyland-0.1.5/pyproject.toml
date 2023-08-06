@@ -1,0 +1,19 @@
+[tool.poetry]
+authors = ["FL03 <jo3mccain@icloud.com>"]
+description = ""
+name = "candyland"
+packages = [{ include = "candyland", from = "src" }]
+readme = "README.md"
+version = "0.1.5"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+pydantic = "^1.10.2"
+
+[tool.poetry.dev-dependencies]
+black = "latest"
+pytest = "latest"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
