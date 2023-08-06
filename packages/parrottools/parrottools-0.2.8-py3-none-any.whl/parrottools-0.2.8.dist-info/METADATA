@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: parrottools
+Version: 0.2.8
+Summary: Collection of common utilities.
+Home-page: https://github.com/parrot-com/parrottools
+Author: Parrot
+Maintainer: Parrot
+Project-URL: Source Code, https://github.com/parrot-com/parrottools
+Keywords: observability,logging
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: structlog (~=21.1.0)
+Requires-Dist: sentry-sdk (==1.*)
+Requires-Dist: boto3 (~=1.18.11)
+Requires-Dist: protobuf (>=3.17.3)
+Requires-Dist: parrotschemas (~=0.1.4)
+Requires-Dist: contextvars (~=2.4) ; python_version < "3.7"
+Provides-Extra: dev
+Requires-Dist: pytest (>=6.2.1) ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.9.3) ; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest (>=6.2.1) ; extra == 'tests'
+Requires-Dist: freezegun (==1.1.0) ; extra == 'tests'
+
+# Parrot tools
+
+
+## Modules
+
+[Logging](docs/logging.md)
+
+
+## Development
+
+Install dependencies
+
+```bash
+make install
+```
+
+Install pre-commit hook to avoid commiting invalid code:
+
+```bash
+make pre-commit-install
+```
+
+## Tests
+
+Run all tests:
+
+```bash
+make test
+```
