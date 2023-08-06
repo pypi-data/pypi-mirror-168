@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "python-recorder"
+version = "0.0.4"
+description = "Device independent framework for synchronized recording, designed for researchers collecting multimodal datasets."
+authors = ["Andreu Gimenez <esdandreu@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "recorder"}]
+homepage = "https://github.com/AcousticOdometry/python-recorder"
+repository = "https://github.com/AcousticOdometry/python-recorder"
+
+[tool.poetry.scripts]
+recorder = "recorder.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = {extras = ["all"], version = "^0.4.0"}
+PyInquirer = "^1.0.3"
+PyYAML = "^5.1"
+numpy = "^1.22.2"
+sounddevice = "^0.4.4"
+pyrealsense2 = {version = "^2.50.0", optional = true}
+Flask = "^2.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+yapf = "^0.32.0"
+
+[tool.poetry.extras]
+realsense = ["pyrealsense2"]
+all = ["pyrealsense2"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.yapf]
+based_on_style = "pep8"
+indent_closing_brackets = true
+coalesce_brackets = true
+indent_dictionary_value = true
