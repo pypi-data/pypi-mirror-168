@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tdsense
+Version: 0.1.0
+Summary: A package to simplify the analytics on time series with Teradata Vantage.
+Home-page: UNKNOWN
+Author: Denis Molin
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: teradataml (>=17.10)
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy (>1.7.0)
+Requires-Dist: sklearn (>1.0.0)
+Requires-Dist: matplotlib (>3.0.0)
+
+UNKNOWN
+
