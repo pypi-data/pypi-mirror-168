@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/proyecto_BRADLEE_KEVIN_JUANPABLO.egg-info/PKG-INFO
+src/proyecto_BRADLEE_KEVIN_JUANPABLO.egg-info/SOURCES.txt
+src/proyecto_BRADLEE_KEVIN_JUANPABLO.egg-info/dependency_links.txt
+src/proyecto_BRADLEE_KEVIN_JUANPABLO.egg-info/requires.txt
+src/proyecto_BRADLEE_KEVIN_JUANPABLO.egg-info/top_level.txt
+src/proyectofinal/__init__.py
+src/proyectofinal/perceptron.py

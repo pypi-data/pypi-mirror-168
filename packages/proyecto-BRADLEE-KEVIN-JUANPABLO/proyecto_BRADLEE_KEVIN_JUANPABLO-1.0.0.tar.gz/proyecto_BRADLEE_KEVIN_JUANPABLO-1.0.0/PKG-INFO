@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: proyecto_BRADLEE_KEVIN_JUANPABLO
+Version: 1.0.0
+Summary: Usamos numpy para desarollar algunos problemas
+Author: BRADLEE CASTRO-KEVIN ROA-JUAN BELEÑO
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+#Taller de programacion
+##BRADLEE ALEJANDRO CASTRO
+##JUAN PABLO BELEÑO
+##KEVIN RAFAEL ROA
+##Usamos numpy para desarollar algunos problemas cotidianos.
