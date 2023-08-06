@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: svgdiagram
+Version: 0.0.13
+Summary: Create SVG diagrams with python
+Home-page: https://github.com/MatthiasRieck/svgdiagram
+Author: Matthias Rieck
+Author-email: Matthias.Rieck@tum.de
+Requires: yattag
+Requires: cairosvg
+License-File: LICENSE
+
+Create SVG diagrams with python
