@@ -1,0 +1,43 @@
+[build-system]
+requires = ["flit_scm"]
+build-backend = "flit_scm:buildapi"
+
+[tool.setuptools_scm]
+write_to = "src/gee_whiz_2/_version.py"
+
+[project]
+name = "gee_whiz_2"
+dynamic = ["version"]
+requires-python = ">=3.8"
+authors = [
+    {name = "James Harmison", email = "jharmison@gmail.com"}
+]
+description = "Gee Whiz 2 is a script for managing Guild Wars 2 addons, profiles, and Lutris installations from a simple launcher script."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Games/Entertainment",
+    "Typing :: Typed"
+]
+dependencies = [
+    "pyyaml >=6,<7",
+    "pydantic >=1.9,<2",
+    "requests >=2.28,<3",
+    "semantic_version >=2.10,<3",
+    "click >=8.1,<9",
+    "tqdm >=4.64,<5",
+    "rich >= 12.5.1,<13",
+    "rich-click >= 1.5.2",
+    "Pygments >= 2.13.0",
+    "vdf >= 3.4"
+]
+
+[project.urls]
+Source = "https://git.jharmison.com/james/gw2"
+Documentation = "https://git.jharmison.com/james/gw2"
+
+[project.scripts]
+gw2 = "gee_whiz_2.cli:main"
