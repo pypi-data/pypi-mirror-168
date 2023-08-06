@@ -1,0 +1,138 @@
+[tool.poetry]
+name = "libvcs"
+version = "0.16.5"
+description = "Lite, typed, python utilities for Git, SVN, Mercurial, etc."
+license = "MIT"
+authors = ["Tony Narlock <tony@git-pull.com>"]
+keywords = [
+  "libvcs",
+  "git",
+  "mercurial",
+  "hg",
+  "svn",
+  "subversion",
+  "library",
+  "lib",
+  "wrapper",
+  "vcs",
+  "version control",
+  "scm",
+  "clone",
+  "checkout",
+  "abstraction",
+  "version-control",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Framework :: Pytest",
+  "Intended Audience :: Developers",
+  "Operating System :: POSIX",
+  "Operating System :: MacOS :: MacOS X",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Utilities",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Version Control",
+  "Topic :: Software Development :: Version Control :: Git",
+  "Topic :: Software Development :: Version Control :: Mercurial",
+  "Topic :: System :: Shells",
+  "Typing :: Typed",
+]
+homepage = "http://github.com/vcs-python/libvcs/"
+readme = "README.md"
+packages = [
+  { include = "*", from = "src" },
+]
+include = [
+  { path = "tests", format = "sdist" },
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/vcs-python/libvcs/issues"
+Documentation = "https://libvcs.git-pull.com"
+Repository = "https://github.com/vcs-python/libvcs"
+Changes = "https://github.com/vcs-python/libvcs/blob/master/CHANGES"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typing-extensions = { version = "^4.1.1", python = '3.10' }
+
+[tool.poetry.dev-dependencies]
+### Docs ###
+sphinx = "*"
+furo = "*"
+sphinx-autobuild = "*"
+sphinx-autodoc-typehints = "*"
+sphinx-inline-tabs = "*"
+sphinxext-opengraph = "*"
+sphinx-copybutton = "*"
+sphinxext-rediraffe = "*"
+myst_parser = "*"
+
+### Testing ###
+gp-libs = "^0.0.1-alpha.9"
+pytest = "*"
+pytest-rerunfailures = "*"
+pytest-mock = "*"
+pytest-watcher = "^0.2.3"
+
+### Coverage ###
+codecov = "*"
+coverage = "*"
+pytest-cov = "*"
+
+### Format ###
+black = "*"
+isort = "*"
+
+### Lint ###
+flake8 = "*"
+flake8-bugbear = "^22.8.23"
+flake8-comprehensions = "*"
+mypy = "*"
+types-docutils = "^0.19.0"
+
+[tool.poetry.extras]
+docs = [
+  "gp-libs",
+  "sphinx",
+  "sphinx-autodoc-typehints",
+  "sphinx-autobuild",
+  "sphinx-copybutton",
+  "sphinxext-opengraph",
+  "sphinx-inline-tabs",
+  "sphinxext-rediraffe",
+  "myst_parser",
+  "furo",
+]
+test = [
+  "gp-libs",
+  "pytest",
+  "pytest-rerunfailures",
+  "pytest-mock",
+  "pytest-watcher",
+]
+coverage = ["codecov", "coverage", "pytest-cov"]
+format = ["black", "isort"]
+lint = [
+  "flake8",
+  "flake8-bugbear",
+  "flake8-comprehensions",
+  "mypy",
+  "types-docutils",
+]
+
+[tool.poetry.plugins.pytest11]
+libvcs = "libvcs.pytest_plugin"
+
+[tool.mypy]
+strict = true
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
