@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tmart
+Version: 1.0.2
+Summary: Radiative transfer modelling of the adjacency effect in aquatic remote sensing
+Author: Yulun Wu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Py6S
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: pathos
+Requires-Dist: matplotlib
+
+# tmart
+See documentation on [https://tmart-rtm.github.io](https://tmart-rtm.github.io) 
+
+For questions and suggestions (I'm always open to!), please email [ywu146@uottawa.ca](ywu146@uottawa.ca)
