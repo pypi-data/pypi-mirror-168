@@ -1,0 +1,20 @@
+population_size: 50
+min_iterations: 20
+targets:
+  maximise:
+    - density
+  minimise:
+    - mass
+constraints:
+  allowed_elements:
+    - Au
+    - Ag
+    - Pd
+    - Ir
+    - Cr
+    - Fe
+    - Ni
+    - Co
+plot: true
+output_directory: ./
+
