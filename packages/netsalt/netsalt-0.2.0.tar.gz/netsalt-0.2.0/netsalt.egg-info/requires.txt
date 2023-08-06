@@ -1,0 +1,14 @@
+scipy>=1.2.0
+networkx>=2.5
+matplotlib>=3.3.0
+scikit-image
+tables
+pandas
+tqdm
+h5py
+numpy
+luigi
+pyyaml
+seaborn
+dir-content-diff
+pulp
