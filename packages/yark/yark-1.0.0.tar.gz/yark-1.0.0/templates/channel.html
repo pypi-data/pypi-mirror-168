@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block styling %}
+<style>
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column;
+        margin: 0.75rem;
+    }
+
+    .thumbnail {
+        overflow: hidden;
+    }
+
+    .thumbnail>img {
+        width: 300px !important;
+        height: 168.75px !important;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .info>p {
+        margin-top: 0.5rem;
+    }
+
+    .title {
+        max-width: 225px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .uploaded {
+        padding-top: 0.12rem;
+        font-size: 0.7rem;
+    }
+
+    .frost {
+        filter: blur(5px);
+        opacity: 0.4;
+        margin-top: -5px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 class="hero">{{ name }}'s videos</h1>
+{% if channel.videos %}
+<div id="content">
+    {% for video in channel.videos %}
+    <a href="/channel/{{ name }}/{{ video.id }}" class="video">
+        <!-- Thumbnail -->
+        <div class="thumbnail">
+            <img src="/archive/{{ video.thumbnail.current().path }}" {% if not video.downloaded(ldir) %}class="frost" {%
+                endif %} />
+        </div>
+        <!-- Information -->
+        <div class="info">
+            <!-- Title -->
+            <p class="title">{{ video.title.current() }}</p>
+            <p class="uploaded">
+                <!-- Updated -->
+                {% if video.updated() %}🌀 {% endif %}
+                <!-- Uploaded -->
+                {{ video.uploaded.strftime("%d/%m/%Y") }}
+            </p>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% else %}
+<p style="text-align: center;">No videos found!</p>
+{% endif %}
+{% endblock %}
