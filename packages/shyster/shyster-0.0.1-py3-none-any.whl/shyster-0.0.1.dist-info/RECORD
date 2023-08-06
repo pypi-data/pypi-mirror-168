@@ -1,0 +1,13 @@
+shyster/__init__.py,sha256=3aLV9O4E3AkuGgA7ODZT-MfWUZx3IQP43vRQnckr0vE,38
+shyster/_modidx.py,sha256=uNXSYdsILXu_9tMSIW3-I6XAhQsPkTv6BPUdoguU8XU,1231
+shyster/file.py,sha256=8czt2Pb9FUnn-_ooULanrrB6UN2Geo4wVFL1AIjvdAU,1167
+shyster/html.py,sha256=7a-AfhcPvfzJh8L4Lv4IsWUwiP-gA_JfBXHq6oG6X-0,1473
+shyster/hyphenation.py,sha256=8HOFqHt_u9kHDAXNfXBKAqWqXsjJTiZ97ZsCr3KpK6Q,1862
+shyster/main.py,sha256=7TGzb7QRfRqDmTN7j0apODVmae38sEwXjBGw_0wkxHA,1554
+shyster/pattern.py,sha256=umBmyDt-5var2Y-e8YPGAeDp-R00d9JaGyA_E23XFqI,1407
+shyster-0.0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+shyster-0.0.1.dist-info/METADATA,sha256=egh2HL3BXqGzOPT7pwSfNZXe3_8rERBCvs6xURRq7ww,4706
+shyster-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shyster-0.0.1.dist-info/entry_points.txt,sha256=dnDT5LEXqOSt6yLYMFw13xe4ZcM8Sv_IsMiEhIqap4s,57
+shyster-0.0.1.dist-info/top_level.txt,sha256=geMbovi-VKs0BqpRwbH3qOU9emt1SlKAEqUtWzX7weM,8
+shyster-0.0.1.dist-info/RECORD,,
