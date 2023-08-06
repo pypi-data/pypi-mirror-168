@@ -1,0 +1,15 @@
+ShynaTermux/ShTermuxSetup.py,sha256=LUSTvw--aiWlvZ1VPCJSbx_vCzVv1BBYf4Mcp4AflN4,2278
+ShynaTermux/ShynaCloseAlarm.py,sha256=bZZRdriqUruYGe1f6yU5_0eJXAI4bJ5FMwAgItuAIss,2976
+ShynaTermux/ShynaMakeAlarm.py,sha256=BP5eEwEZLCKCkthGUTkTr-A9pvhj7kAZmxZnfaC-mtg,7545
+ShynaTermux/ShynaTalkToMe.py,sha256=ZhPeA-d_o3iDv6GQz1PtgTwtR8Jrb7v4VIrRQQo3QPs,2473
+ShynaTermux/Shyna_check_charge.py,sha256=9J3LV1yTWCnZwfMlOEwDvqMdfs4RZfnCmx9CB0HOYLE,867
+ShynaTermux/Shyna_get_connection.py,sha256=PZFwEck8Sq0GHYVzKVxPBkq1Ry8osc6jzUodKpHNZ2Q,1677
+ShynaTermux/Shyna_get_location.py,sha256=AxYBitZ9GkjuITYkr28u3DeSE7lwuppZNxWUvnC1Aeo,2326
+ShynaTermux/Shyna_setup_test.py,sha256=indDK9wxF92k-ROPIHJEWq0sph6417rcWPO1iOVt_do,471
+ShynaTermux/Shyna_speak_sentence.py,sha256=CH2Mmnt1PgyLye5EwKhuYuKxxLfVIpHdmvQIww7OdNk,947
+ShynaTermux/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ShynaTermux-0.89.1.dist-info/LICENSE,sha256=CaIPV_TRrt-AaAWAkNKLQOlscJkLeTgFSuyqQArSsP4,1070
+ShynaTermux-0.89.1.dist-info/METADATA,sha256=ElTnsQ_Q6At7TePmQLzI48sJ6mIQlBDCk8bOGzzW95A,433
+ShynaTermux-0.89.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ShynaTermux-0.89.1.dist-info/top_level.txt,sha256=ApErBE8YcEC0_2BRoLmXJcu0eKCKhTMd0lpL-D-jp1E,12
+ShynaTermux-0.89.1.dist-info/RECORD,,
