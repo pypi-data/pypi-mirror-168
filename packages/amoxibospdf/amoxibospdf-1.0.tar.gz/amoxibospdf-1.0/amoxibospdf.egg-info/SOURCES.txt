@@ -1,0 +1,9 @@
+README.md
+setup.py
+amoxibospdf/__init__.py
+amoxibospdf/pdf2image.py
+amoxibospdf/pdf2txt.py
+amoxibospdf.egg-info/PKG-INFO
+amoxibospdf.egg-info/SOURCES.txt
+amoxibospdf.egg-info/dependency_links.txt
+amoxibospdf.egg-info/top_level.txt
