@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nd2-extractor
+Version: 0.0.2
+Summary: A simple tool to extract ND2 files to PNG or TIFF, (zarr + metadata coming soon)
+Author: Georgeos Hardo
+Author-email: gh464@cam.ac.uk
+Requires-Dist: matplotlib
+Requires-Dist: pims
+Requires-Dist: tabulate
+Requires-Dist: pims-nd2
+Requires-Dist: opencv-python
+Requires-Dist: cowpy
+Requires-Dist: celluloid
+Requires-Dist: colorama
+Requires-Dist: termcolor
+Requires-Dist: tqdm
+Requires-Dist: joblib
+Requires-Dist: ipywidgets
+Requires-Dist: tifffile
+Requires-Dist: pandas
+Requires-Dist: pystackreg
+Requires-Dist: pyyaml
+
