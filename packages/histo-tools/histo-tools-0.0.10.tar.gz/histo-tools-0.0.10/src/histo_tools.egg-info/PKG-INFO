@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: histo-tools
+Version: 0.0.10
+Summary: General histology tools.
+Home-page: https://github.com/aelefebv/histo-tools
+Author: Austin E. Y. T. Lefebvre
+Author-email: austin.e.lefebvre@gmail.com
+License: MIT
+Keywords: histology
+License-File: LICENSE
