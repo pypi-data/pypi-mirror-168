@@ -1,0 +1,3 @@
+[console_scripts]
+pmeter = src.pmeter.pmeter_cli:main
+
