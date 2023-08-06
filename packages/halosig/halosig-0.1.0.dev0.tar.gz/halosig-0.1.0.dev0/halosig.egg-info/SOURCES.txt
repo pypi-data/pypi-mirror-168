@@ -1,0 +1,8 @@
+README.md
+setup.py
+halosig/__init__.py
+halosig.egg-info/PKG-INFO
+halosig.egg-info/SOURCES.txt
+halosig.egg-info/dependency_links.txt
+halosig.egg-info/requires.txt
+halosig.egg-info/top_level.txt
