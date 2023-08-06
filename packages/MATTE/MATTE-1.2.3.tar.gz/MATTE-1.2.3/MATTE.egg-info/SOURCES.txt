@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+MATTE/__init__.py
+MATTE/analysis.py
+MATTE/cluster.py
+MATTE/preprocess.py
+MATTE/utils.py
+MATTE.egg-info/PKG-INFO
+MATTE.egg-info/SOURCES.txt
+MATTE.egg-info/dependency_links.txt
+MATTE.egg-info/requires.txt
+MATTE.egg-info/top_level.txt
