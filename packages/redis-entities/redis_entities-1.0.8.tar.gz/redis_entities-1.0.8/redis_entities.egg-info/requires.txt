@@ -1,0 +1,6 @@
+pycryptodome>=3.14.1
+type-utils>=1.0.2
+
+[test]
+pytest
+fakeredis
