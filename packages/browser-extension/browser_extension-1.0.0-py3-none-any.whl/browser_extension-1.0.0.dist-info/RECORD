@@ -1,0 +1,16 @@
+browser_extension/__init__.py,sha256=LxoWfdjgiL8zdJXIzO-UaQPTiyME8d0yP5UWkEWdtlg,55
+browser_extension/browsers/__init__.py,sha256=kuDXEwnGfXkDZDpOlHB1f0usJv5tQ0sVLJ-tHLvU67A,62
+browser_extension/browsers/chrome.py,sha256=VCvx9lLci5bPw4D3TI1A8y7NKFix9vMvjAh6YtyvM3E,1811
+browser_extension/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+browser_extension/core/config.py,sha256=AfV6bC29siV7ukEFmLQ_PGGpYVedmIwIZqPkHB5BqSU,342
+browser_extension/core/constants.py,sha256=k846KENflR8Sxy6R5xqQSBeBoYz3VKSNCBW0fPBU0gw,360
+browser_extension/core/downloader.py,sha256=Vn6-DBtv-6Hm5HTCc-otPQib8W7aohfgp1N4BjeO0aQ,1528
+browser_extension/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+browser_extension/exceptions/base.py,sha256=ekte6E10cAcqxrVkcOl0yNckAxAsWC3QkAnbEOUm52Y,113
+browser_extension/exceptions/parse_exception.py,sha256=ZPFR31pkHdrDFHbqr24aMsOBstGCbt6nElwPLopac_Q,233
+browser_extension/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+browser_extension-1.0.0.dist-info/LICENSE,sha256=fxuL5kofnFGhEGZGm-ielhS4SbJWnu-Mu-7DBvFyh-k,1072
+browser_extension-1.0.0.dist-info/METADATA,sha256=vpW5B3-NaFJDx3BMZbLKHqutinhb6DIEC1HUWexvhug,1572
+browser_extension-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+browser_extension-1.0.0.dist-info/top_level.txt,sha256=bV2QKCB32oIG2LOumsjck7QFeACHqRoZ85T8hc3i6mY,18
+browser_extension-1.0.0.dist-info/RECORD,,

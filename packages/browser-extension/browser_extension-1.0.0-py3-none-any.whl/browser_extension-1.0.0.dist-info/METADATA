@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: browser-extension
+Version: 1.0.0
+Summary: Download browser extensions
+Home-page: https://github.com/batuhan0sanli/browser_extension
+Author: batuhan0sanli
+Author-email: batuhansanli@gmail.com
+License: MIT
+Keywords: browser extension download selenium chrome chromium webdriver
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: python-dotenv (>=0.19.2)
+
+# Browser Extension
+
+A tool to download and use browser extensions on Selenium/Browsers!
+
+## Installation
+
+```bash
+pip install browser-extension
+```
+
+## Usage
+
+### For Download and Use
+
+```python
+from browser_extension import ChromeExtension
+
+extension_url = '<extension_url>'
+chrome_version = '<chrome_version>'
+
+path = ChromeExtension(extension_url, chrome_version).download()
+print(path)
+```
+
+### Use With Selenium
+
+```python
+from browser_extension import ChromeExtension
+
+# Load the extension
+extension_url = '<extension_url>'
+chrome_version = '<chrome_version>'
+path = ChromeExtension(extension_url, chrome_version).download()
+
+# Load the extension in Selenium
+options = webdriver.ChromeOptions()
+options.add_extension(path)
+driver = webdriver.Chrome(options=options)  # or add to your existing options
+```
+
