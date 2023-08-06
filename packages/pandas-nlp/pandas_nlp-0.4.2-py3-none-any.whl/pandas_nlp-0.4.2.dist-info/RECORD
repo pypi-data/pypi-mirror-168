@@ -1,0 +1,8 @@
+pandas_nlp/__init__.py,sha256=M1VwhC_6HHYVP0ELa3SgQAiLdodU1JWZHpwkkrskEzk,207
+pandas_nlp/cache.py,sha256=hNpfEYZh5lUyANd4HzHUzL53n1qk6qObIb53IFL-Q90,571
+pandas_nlp/fasttext_cli.py,sha256=qcQvrRTtrQUhsQinqBn-y_cTUtF--boBMqbONXdPvsQ,1095
+pandas_nlp/series_accessor.py,sha256=Dm9t_PgctFmG8h1OC4ZC5FJ5EMi0yorrIEdi7Gw-nI0,2289
+pandas_nlp-0.4.2.dist-info/LICENSE,sha256=M0nVs9bactT9pSL3-XRNgcke_mVVd1i-4KXySzTqo3M,1081
+pandas_nlp-0.4.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pandas_nlp-0.4.2.dist-info/METADATA,sha256=Q3pKS6CbbWjkXc_wmnJFJFBbfSTSdk0TGx2r-LEMewM,3000
+pandas_nlp-0.4.2.dist-info/RECORD,,
