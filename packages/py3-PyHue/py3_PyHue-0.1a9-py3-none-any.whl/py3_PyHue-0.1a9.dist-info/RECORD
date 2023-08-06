@@ -1,0 +1,10 @@
+pyhue/Bridge.py,sha256=uDlkt_gu0gOPSWlEuO3IMecNrsgDj-MBw210KJBV8BQ,7782
+pyhue/Lights.py,sha256=gNmpmbY9-FYQQbMRNpAgv9Cg2u9ySjEyhiWF_1ReEqg,5523
+pyhue/__init__.py,sha256=Z3Rc0TiZ5gSkZt0R5_iSM1hNfrS9_3MpX9Sss1YwTI8,54
+pyhue/libs/ColourConverter.py,sha256=4Q_-IbTpJ65p2vSx6Bv2a-U6Skm_AoTeMAtEj9qu3Eo,9758
+pyhue/libs/__init__.py,sha256=nXHCuLWPg62XmyJF6Kt_jPHWplktHRm7YIJSFxGdJs8,181
+py3_PyHue-0.1a9.dist-info/LICENSE,sha256=Dw3ewsgqINfOAewwopC5dvYuWnWARhTUJjdAAxJapPw,1061
+py3_PyHue-0.1a9.dist-info/METADATA,sha256=tS7NgbTyZ35ukEOgZvk2eo1ryU_DnRepLXbk7wrWusc,3085
+py3_PyHue-0.1a9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py3_PyHue-0.1a9.dist-info/top_level.txt,sha256=hl0ctJvulooy6cdXTaBHy4gdEgTMnOWUL-KfESyd7xE,6
+py3_PyHue-0.1a9.dist-info/RECORD,,
