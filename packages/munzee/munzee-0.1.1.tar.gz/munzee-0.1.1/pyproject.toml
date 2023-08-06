@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "munzee"
+version = "0.1.1"
+description = "Python Munzee API wrapper"
+authors = ["MatyiFKBT <6183867+MatyiFKBT@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.28.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pre-commit = "^2.19.0"
+isort = "^5.10.1"
+black = "^22.6.0"
+flake8 = "^4.0.1"
+python-dotenv = "^0.20.0"
+pytest-parallel = "^0.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+test   = "pytest --workers 5 --lf --cov --cov-report html:coverage/html --cov-fail-under=70"
+fmt    = "black ."
+bump	 = "poetry version patch"
