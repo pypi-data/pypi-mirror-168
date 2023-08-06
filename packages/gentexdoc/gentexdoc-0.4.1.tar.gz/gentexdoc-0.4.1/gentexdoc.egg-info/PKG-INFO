@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: gentexdoc
+Version: 0.4.1
+Summary: Markdown to Latex to PDF generator
+Home-page: https://gitlab.com/frPursuit/gentexdoc
+Author: Pursuit
+Author-email: fr.pursuit@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Latex document generator
+
+Latex document generator (or GenTexDoc) is a utility that enables its users to generate PDF documents by inserting Markdown code inside a Latex template.
+
+## Installation
+
+- Install fontconfig: `sudo apt install fontconfig`
+- Install pandoc (for the markdown to Latex conversion): `sudo apt install pandoc`
+- Install XeLateX (for the Latex to PDF conversion): `sudo apt install texlive-xetex texlive-lang-french texlive-font-utils`
+- Install GenTexDoc: `pip install gentexdoc`
+
+*Custom fonts then need to be placed in the `/usr/local/share/fonts` directory.*
+
+## How does it work?
+
+GenTexDoc uses [Jinja2](https://pypi.org/project/Jinja2/) formatted Latex templates. The Jinja2 syntax allows named elements to be inserted inside the Latex document.
+
+These named elements are meant to be written in the Markdown format, and are converted from Markdown to Latex using [Pandoc](https://github.com/jgm/pandoc).
+
+A named element can be either a *block* of Markdown code, or simply a one-line *variable*.
+
+
+## How to use it
+
+### Writing a Latex template
+
+First, create a Latex template. It will serve as a base for your documents.
+In the template, make references to named elements with the Jinja2 syntax `{{ element_name }}`, where `element_name` is the name of the element you'd like to insert in your document.
+
+For this example, we'll consider the template below:
+
+```latex
+%%%%%%%%%% HEADER %%%%%%%%%%
+
+\documentclass[a4paper]{scrarticle}
+
+{{ builtin.packages }}
+
+\title{Test document}
+\date
+{
+  \vspace{-1.5cm}
+  {{ date }}
+}
+
+%%%%%%%%%% DOCUMENT %%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+{{ content }}
+
+\end{document}
+```
+
+Note that in the example, we're inserting the named entity `builtin.packages`. This entity contains a list of packages that are necessary for all markdown features to be used properly.
+
+
+### Writing markdown input files
+
+Then, write a markdown input file that defines the necessary elements.
+
+- To define a variabe, use the syntax `[var]: <varname> (value)`
+- To define a block, use the syntax:
+
+```md
+[block]: <blockname>
+
+(Block content)
+
+[endblock]: <blockname>
+```
+
+
+In the example below, we're defining a variable named `date` and a block named `content`.
+
+```md
+# My awesome markdown input file
+
+[var]: <date> (10/10/2021)
+
+[block]: <content>
+
+This is the content of my document.
+
+[endblock]: <content>
+```
+
+
+### Generate the PDF
+
+After writing your template and your markdown input files, all that's left to do is to generate the final PDF file.
+
+If your template is named `template.tex`, and your only markdown input file is named `document.md`, then you can generate a PDF named `document.pdf` with the command: `gentexdoc -t template.tex document.md -o document.pdf`
+
+*Note that the output file doesn't need to be specified in that case.*
+
+
+## License
+
+This project is licensed under the [GNU GPLv3 license](LICENSE).

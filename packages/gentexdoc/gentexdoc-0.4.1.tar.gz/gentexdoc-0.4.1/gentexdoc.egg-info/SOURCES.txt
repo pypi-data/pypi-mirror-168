@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gentexdoc/__init__.py
+gentexdoc/builtin.py
+gentexdoc/generator.py
+gentexdoc/main.py
+gentexdoc/processing.py
+gentexdoc/util.py
+gentexdoc.egg-info/PKG-INFO
+gentexdoc.egg-info/SOURCES.txt
+gentexdoc.egg-info/dependency_links.txt
+gentexdoc.egg-info/entry_points.txt
+gentexdoc.egg-info/requires.txt
+gentexdoc.egg-info/top_level.txt
