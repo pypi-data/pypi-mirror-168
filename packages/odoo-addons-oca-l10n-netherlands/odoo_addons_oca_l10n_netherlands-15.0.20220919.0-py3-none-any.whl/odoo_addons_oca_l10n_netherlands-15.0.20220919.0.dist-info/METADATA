@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-l10n-netherlands
+Version: 15.0.20220919.0
+Summary: Meta package for oca-l10n-netherlands Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 15.0
+Requires-Dist: odoo-addon-l10n-nl-bank (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-l10n-nl-bsn (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-l10n-nl-postcode (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-l10n-nl-tax-statement (<15.1dev,>=15.0dev)
+
+UNKNOWN
+
