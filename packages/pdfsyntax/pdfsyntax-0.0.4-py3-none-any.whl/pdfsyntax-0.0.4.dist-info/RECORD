@@ -1,0 +1,14 @@
+pdfsyntax/__init__.py,sha256=u6Rfjzt33BywpwntfeGMv_dZ_gGB76p1R6PuLU56hpU,58
+pdfsyntax/__main__.py,sha256=CU39VFIrBVIT5I9KdnFQjxkR651xV3UHCv2Mrx53c14,32
+pdfsyntax/api.py,sha256=HGUvfTKOXINJ7KXmyWucP-SbltRX2WzpdoL92DJDx9g,3805
+pdfsyntax/cli.py,sha256=QOWXu_YT5YO0OKTQbshUsWaicNXk9IlhKrRugkCttao,2848
+pdfsyntax/display.py,sha256=3KYo0PyEXFrg4J_SzBLGopf9A29Owkt9Wdy295amKS8,8307
+pdfsyntax/docstruct.py,sha256=uIqUTpab5J3ruLflFHXqAlX8UGe1tmFen8U2yLRNsNQ,8842
+pdfsyntax/filestruct.py,sha256=_HFFz_3RS-bqS81zHnP7KbvC-YCzN9BcAJ9GNmwLTds,9526
+pdfsyntax/objects.py,sha256=b-5xF_2O9ay3mQ_13HGBKakYWvNlBVXotCxYRKC11Ac,8170
+pdfsyntax/text.py,sha256=LG3PVzifIWRXhEQXjXHpJW_FfuV67t8G3XdFAjdl7cQ,2632
+pdfsyntax-0.0.4.dist-info/LICENSE,sha256=tzneoFPvB9FsXoU51awyhzUaPQOX-YEP-tpmGlDbIc0,1066
+pdfsyntax-0.0.4.dist-info/METADATA,sha256=AQd5gAyRTz-AuyJTMi-ShjRwViB--iZQRJgmq5rOdks,3005
+pdfsyntax-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdfsyntax-0.0.4.dist-info/top_level.txt,sha256=v49D3MXsDxVwTlB4i1RgJKnQqnATpPm0qGHBKXdMQqk,10
+pdfsyntax-0.0.4.dist-info/RECORD,,
