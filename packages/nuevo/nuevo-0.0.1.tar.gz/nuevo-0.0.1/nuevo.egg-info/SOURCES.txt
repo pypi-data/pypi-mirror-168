@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+nuevo/ActivationFunctions.py
+nuevo/CostFunctions.py
+nuevo/Layers.py
+nuevo/Models.py
+nuevo/__init__.py
+nuevo/coweb.py
+nuevo.egg-info/PKG-INFO
+nuevo.egg-info/SOURCES.txt
+nuevo.egg-info/dependency_links.txt
+nuevo.egg-info/requires.txt
+nuevo.egg-info/top_level.txt
