@@ -1,0 +1,46 @@
+Products.PloneKeywordManager Installation
+=========================================
+
+This package is designed as a Plone add-on package.
+
+https://docs.plone.org/manage/installing/installing_addons.html
+
+Using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+  * Add ``Products.PloneKeywordManager`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        Products.PloneKeywordManager [Levenshtein]
+
+  * If you want Products.PloneKeywordManager to be a dependency of a module,
+    update the setup.py of this module, e.g.:
+
+    install_requires=[
+          ...
+          'Products.PloneKeywordManager[Levenshtein]',
+          ...
+      ],
+
+  * If you get troubles with python-Levenshtein install, you may remove the
+    [Levenshtein] extra.
+
+  * Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
+
+Once installed, restart your plone instance and visit Site Setup ( /@@overview-controlpanel)
+From there, open the Add-ons Panel, select "Keyword Manager" and click 'install'
+
+Because its top level Python namespace package is called ``Products``, this
+package can also be installed in Zope 2 as an old style **Zope 2 Product**.
+
+For that, move (or symlink) the ``PloneKeywordManager`` folder of this project
+(``Products.PloneKeywordManager/Products/PloneKeywordManager``) into the ``Products`` directory of
+the Zope instance it has to be installed for, and restart the server.
+
+You can also skip the ZCML slug if you install this package the **Zope 2
+Product** way.

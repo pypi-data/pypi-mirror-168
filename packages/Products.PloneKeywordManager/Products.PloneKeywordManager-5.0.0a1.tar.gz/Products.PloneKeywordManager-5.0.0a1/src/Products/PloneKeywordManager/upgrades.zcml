@@ -1,0 +1,27 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    i18n_domain="Products.PloneKeywordManager"
+    >
+
+  <!-- Upgrade steps -->
+  <gs:upgradeStep
+      title="Remove tool"
+      description="Remove Products.PloneKeywordManager persistent tool"
+      profile="Products.PloneKeywordManager:default"
+      source="3"
+      destination="4"
+      handler=".upgrades.to_4"
+      />
+
+  <!-- Upgrade steps -->
+  <gs:upgradeStep
+      title="Upgrade Products.PloneKeywordManager 3"
+      description="Products.PloneKeywordManager upgrade step"
+      profile="Products.PloneKeywordManager:default"
+      source="2"
+      destination="3"
+      handler=".upgrades.to_3"
+      />
+
+</configure>
