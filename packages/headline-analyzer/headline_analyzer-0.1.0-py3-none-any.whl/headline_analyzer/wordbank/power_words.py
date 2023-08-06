@@ -1,0 +1,28 @@
+
+power_words = {
+"bargain",
+"before",
+"best",
+"big",
+"bigger",
+"billion",
+"bonanza",
+"bonus",
+"cash",
+"cheap",
+"deadline",
+"discount",
+"dollar",
+"don’t miss out",
+"double",
+"economical",
+"exclusive",
+"expires",
+"explode",
+"extra",
+"fast",
+"feast",
+"final",
+"first",
+"fortune"
+}
