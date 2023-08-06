@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+./bls_api/labor_series.json
+bls_api/__init__.py
+bls_api/labor_series.json
+bls_api/main.py
+bls_api/protocols.py
+bls_api.egg-info/PKG-INFO
+bls_api.egg-info/SOURCES.txt
+bls_api.egg-info/dependency_links.txt
+bls_api.egg-info/top_level.txt
