@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cytoplots
+Version: 0.1.1
+Summary: Plotting library for cytometry data
+License: MIT
+Author: burtonrj
+Author-email: burtonrj@cardiff.ac.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cytotools (>=0.1.1,<0.2.0)
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Requires-Dist: statannotations (>=0.4.4,<0.5.0)
