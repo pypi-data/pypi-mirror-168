@@ -1,0 +1,14 @@
+LICENSE.TXT
+README.md
+setup.cfg
+setup.py
+request2postman/__init__.py
+request2postman/collection.py
+request2postman/headers.py
+request2postman/hooks.py
+request2postman/request.py
+request2postman.egg-info/PKG-INFO
+request2postman.egg-info/SOURCES.txt
+request2postman.egg-info/dependency_links.txt
+request2postman.egg-info/requires.txt
+request2postman.egg-info/top_level.txt
