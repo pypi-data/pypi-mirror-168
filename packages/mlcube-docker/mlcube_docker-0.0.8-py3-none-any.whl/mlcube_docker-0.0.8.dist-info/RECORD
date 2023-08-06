@@ -1,0 +1,13 @@
+mlcube_docker/__init__.py,sha256=j07nxw68Mx3I4uVQtL3IfdLXItwYqgG7GEe6d0P7vUM,2879
+mlcube_docker/__main__.py,sha256=GJVXaEpmCjgqj2d-9NDKngrd9n6ZtUfJrpfGYizT82E,71
+mlcube_docker/docker_run.py,sha256=DjCnRuIUXYIiPYimy0cW51eGfUTRYnkb0RB0jf1Z554,13565
+mlcube_docker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlcube_docker/tests/test_config.py,sha256=LU0cNGt3S6j58ve_DmqoebtekE0-OC7gmnn85NpKJng,1327
+mlcube_docker/tests/test_docker_runner.py,sha256=b9Vu109_LLNVQv5jmbb399Bvfqnn7xilpWn_zwuj9w0,3434
+mlcube_docker/tests/test_factory_fn.py,sha256=mTvX1lRBy0TI9pZRwP-SvHMrO-JgVI58U3ovIEdCNsQ,450
+mlcube_docker/tests/test_mlcube_docker_cli.py,sha256=hs1YDFxb3-67rEBt4dcXo2JgJvFT06TcOdVgU9m3Rb8,172
+mlcube_docker-0.0.8.dist-info/METADATA,sha256=DgCAeodBp-QIY5J9wgCbaUQeOBMOy6ViHGhkufsBtn0,261
+mlcube_docker-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mlcube_docker-0.0.8.dist-info/entry_points.txt,sha256=f2pcAOIutFdCgxrc3FkNRggTVA-_NHTtKgWMGO_hTXs,61
+mlcube_docker-0.0.8.dist-info/top_level.txt,sha256=xIHan2_UttWtN1t4bHcYecITsRJHyfWIjO_c2lSxzdA,14
+mlcube_docker-0.0.8.dist-info/RECORD,,
