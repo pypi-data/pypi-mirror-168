@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: deephaven-plugin-plotly-js
+Version: 0.1.0.dev3
+Summary: Deephaven Plotly JS Plugin
+License: Apache-2.0
+Keywords: deephaven,plotly,js,plugin
+Author-email: Devin Smith <devinsmith@deephaven.io>
+Maintainer-email: Devin Smith <devinsmith@deephaven.io>
+Requires-Python: >=3.7
+Project-URL: bug, https://github.com/deephaven/deephaven-plugin-plotly-js/issues
+Project-URL: homepage, https://github.com/deephaven/deephaven-plugin-plotly-js
+Project-URL: source, https://github.com/deephaven/deephaven-plugin-plotly-js
+Description-Content-Type: text/markdown
+
+# deephaven-plugin-plotly-js
+
+The Deephaven Plotly JS Plugin!
+
+Packages [@deephaven/js-plugin-plotly](https://www.npmjs.com/package/@deephaven/js-plugin-plotly) as a JS plugin for [deephaven-core](https://github.com/deephaven/deephaven-core). Most useful when combined with [deephaven-plugin-plotly](https://github.com/deephaven/deephaven-plugin-plotly).
+
+
+## Quickstart
+
+```sh
+pip install deephaven-plugin-plotly deephaven-plugin-plotly-js
+```
+
+
+## Development
+
+```sh
+pdm build
+```
+
