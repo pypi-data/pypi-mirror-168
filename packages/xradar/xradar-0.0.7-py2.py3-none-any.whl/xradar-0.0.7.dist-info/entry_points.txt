@@ -1,0 +1,3 @@
+[xarray.backends]
+cfradial1 = xradar.io.backends:CfRadial1BackendEntrypoint
+odim = xradar.io.backends:OdimBackendEntrypoint
