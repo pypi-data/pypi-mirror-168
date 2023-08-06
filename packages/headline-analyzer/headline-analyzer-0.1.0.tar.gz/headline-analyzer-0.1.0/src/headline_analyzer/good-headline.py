@@ -1,0 +1,1 @@
+good_headline = {'word_count': 12}
