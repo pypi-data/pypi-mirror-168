@@ -1,0 +1,10 @@
+fps_terminals/__init__.py,sha256=LYPGiQ8gybi3N0IngHjSM48pOw2C2eXKgHzrfr6FfSM,23
+fps_terminals/models.py,sha256=xTBuIOu0mOXCMPZM_akpKdLK7G4fmsaB_qeGTG3Ta2I,97
+fps_terminals/routes.py,sha256=r2v6ms5XzLtjqrY0ORr88-P5UECbNlDkMgzR62YQ77Y,2074
+fps_terminals/server.py,sha256=rumqqdBrKWwnslXsoiyiEzoXybKApuXaOY3lZEDfPok,2341
+fps_terminals/win_server.py,sha256=L7PwGYNB7USRrNHkWveuggILq-eHk6-KDiH5iSNUEfE,1691
+fps_terminals-0.0.43.dist-info/METADATA,sha256=4WkF52O_7PGSmB9Z5S3bUziUzfXscB3IaG19O7tn6Bw,568
+fps_terminals-0.0.43.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+fps_terminals-0.0.43.dist-info/entry_points.txt,sha256=eIchXShDgVC1Dp_aEoJeZriYy2u1hsOuJt-ew2YmHPI,50
+fps_terminals-0.0.43.dist-info/licenses/COPYING.md,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+fps_terminals-0.0.43.dist-info/RECORD,,
