@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sma_finder
+Version: 1.0
+Summary: A tool for diagnosing spinal muscular atrophy (SMA) using exome or genome sequencing data
+Home-page: https://github.com/broadinstitute/sma_finder
+License: MIT
+Description: sma_finder.py: A tool for diagnosing spinal muscular atrophy (SMA) based on exome or genome sequencing data. 
+        
+        ### Install
+        
+        ```
+        python3 -m pip install sma_finder
+        ```
+        
+Keywords: Spinal Muscular Atrophy,SMA,SMN,SMN1,SMN2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
