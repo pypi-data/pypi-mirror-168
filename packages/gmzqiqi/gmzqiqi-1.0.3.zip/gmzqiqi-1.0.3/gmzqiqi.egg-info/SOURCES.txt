@@ -1,0 +1,10 @@
+LICENSE.text
+MANIFEST.in
+README.rst
+setup.py
+tools.py
+gmzqi/gmzqione.py
+gmzqiqi.egg-info/PKG-INFO
+gmzqiqi.egg-info/SOURCES.txt
+gmzqiqi.egg-info/dependency_links.txt
+gmzqiqi.egg-info/top_level.txt
