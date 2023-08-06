@@ -1,0 +1,536 @@
+Metadata-Version: 2.1
+Name: cpgzh
+Version: 0.1.48
+Summary: pgzero的一个助手工具
+Home-page: https://gitee.com/deepin-opensource/cpgzh
+Author: fslong
+Author-email: fsl470657570@outlook.com
+License: MIT
+Platform: all
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame
+Requires-Dist: pgzero
+Requires-Dist: guizero
+Requires-Dist: pillow
+
+
+# cpgzh
+
+## 介绍
+本作品基于pgzero，主要用于少儿编程教学方面。  
+增加了一些功能并加了一些中文介绍，方便国内用户使用，更新日志可以拖到底部查看，用法基本和pgzero一致，增加的功能用法请查看`example.py`文件，特别感谢：    
+1. **pgzhelper**：一个新加坡机构做的模块，本作品参考了挺多内容，官网地址：[https://www.aposteriori.com.sg/pygame-zero-helper/](https://www.aposteriori.com.sg/pygame-zero-helper/)。  
+2. **黄复雄**老师：黄老师对pgzhelper进行了翻译，感兴趣的同学可以查看：[https://zhuanlan.zhihu.com/p/347855713](https://zhuanlan.zhihu.com/p/347855713)。
+3. **Muspi Merol**老师：Muspi Merol老师为本项目贡献了一些建设性意见并协助维护代码。    
+
+## 当前功能列表
+
+1. 创建延时任务和切换动画
+2. 输入框等杂项功能，增加游戏界面的交互功能、数据存储功能
+3. 整合绘图命令，接口更加统一
+4. 便捷的字体造型，写字不再繁琐，使用微软雅黑字体默认支持中文
+5. 导入了pgzero常见的功能，编写游戏时候从cpgzh中导入相关东西即可
+
+## 软件架构
+基于pgzero、pgzhelper和guizero。
+
+
+## 安装教程
+
+1.  使用pip安装即可：`pip3 install cpgzh`
+
+## 使用说明
+使用方法和pgzero基本相同，多了几个方法而已，下面对我增加的功能进行介绍，其他的移步[官网](https://www.aposteriori.com.sg/pygame-zero-helper/)或者[黄复雄老师的文档](https://zhuanlan.zhihu.com/p/347855713)即可。
+
+
+### 一、`Actor`类的增强  
+这些功能都是封装在`Actor`类当中的。
+#### 1、延时任务
+1. 首先在创建角色的时候创建master对象
+```py
+monv = Actor("恶魔女_人偶-待机-000.png", center=(800, 400))
+monv.images = [f"恶魔女_人偶-待机-{i:0>3}.png" for i in range(30)]
+master = Master()
+```
+2. 然后在合适位置创建延迟任务
+```py
+def on_key_down(key):
+    # 等待1s后隐藏
+    if key == keys.X:
+        master.create_delay_tasks(monv.hide, 1)
+```
+3. 然后在`update()`函数中调用`master`的`run_tasks`方法
+```py
+def update():
+    "更新数据"
+    master.run_tasks()
+```
+create_delay_tasks方法总共有四个参数：
+1. task：要执行的任务，一般为某个函数或者方法。
+2. seconds：延迟的时间是多少秒。
+3. times：这个任务执行多少次。
+4. args：这个任务要用到的参数，请传入一个可迭代对象，比如列表或者元组。
+5. 只写第一个参数就是等待1秒执行1次task。
+#### 2、自动切换造型
+```python
+from cpgzh import *
+jisi = Actor('大祭司_人偶-待机-000.png', center=(400, 400))
+jisi.images = [f'大祭司_人偶-待机-{i:0>3}.png' for i in range(30)]# 绑定造型列表，根据你的素材来吧
+def draw():
+    jisi.draw()
+go()
+```
+1. 使用`jisi.images = [f'大祭司_人偶-待机-{i:0>3}.png' for i in range(30)]`给`jisi`角色绑定要切换的造型；
+2. 设置`jisi.animate_fps`可以获取或设置切换造型的速度，默认为每秒钟切换10次，如果要切换100次就设置100即可：`jisi.animate_fps=100`；  
+3. 如果要停止造型的切换只需要将`jisi.animate_fps`设置为0即可：`jisi.animate_fps=0`;
+4.  还提供一个方法：`jisi.toggle_animate()`，如果角色在切换造型，这个方法就会停止切换，反之将会开始切换（切换回来`animate_fps=10`）。
+#### 3、隐藏和显示 
+`Actor`类封装了`hide`和`show`两个方法，我们可以很方便的使用他来显示和隐藏角色，示例代码：
+```python
+from cpgzh import *
+monv = Actor('魔女_人偶-待机-000.png', center=(400, 400))
+monv.images = [f'魔女_人偶-待机-{i:0>3}.png' for i in range(30)]# 绑定造型列表，根据你的素材来吧
+def update():
+    monv.animate()# 根据设定的频率切换造型
+def draw():
+    monv.draw()
+def on_key_down(key):
+    '当键盘按下时'
+    # 停止切换造型
+    elif key == keys.U:
+        monv.animate_fps = 0
+    # 隐藏角色
+    elif key == keys.V:
+        monv.hide()
+    # 显示角色
+    elif key == keys.W:
+        monv.show()
+    # 等待1s后隐藏
+    elif key == keys.X:
+        master.create_delay_tasks(monv.hide, 1)
+    # 等待1s后显示
+    elif key == keys.Y:
+        master.create_delay_tasks(monv.show, 1)
+go()
+```  
+还有其他一系列功能，详见`example.py`文件中的示例。
+
+
+
+### 二、输入框等杂项功能
+增加了一系列功能，包括输入、切换全屏、加载和保存数据等等，他们封装在`master`、`mouse`或者`keyboard`当中，以键盘按下执行一些功能示例如下： 
+![](img/1.png) 
+```python
+#实例化管家
+from cpgzh import Master
+master=Master()#实例化的时候可以直接传递存档位置作为参数
+def on_key_down(key):
+    # 设置全屏化
+    if key == keys.A:
+        master.set_fullscreen()
+    # 设置窗口化
+    elif key == keys.B:
+        master.set_windowed()
+    # 切换全屏和窗口化
+    elif key == keys.C:
+        master.toggle_fullscreen()
+    # 隐藏鼠标
+    elif key == keys.D:
+        mouse.hide()
+    # 显示鼠标
+    elif key == keys.E:
+        mouse.show()
+    # 输入文本
+    elif key == keys.F:
+        text = master.input("请输入一个名字:")
+        print(text)
+    # 选择文件
+    elif key == keys.G:
+        text = master.select_file("请选择一个文件：")
+        print(text)
+    # 保存文件
+    elif key == keys.H:
+        text = master.select_file_save("请选择存档保存位置：")
+        print(text)
+    # 选择文件夹
+    elif key == keys.I:
+        text = master.select_dir("请选择一个文件夹:")
+        print(text)
+    # 是否选择框
+    elif key == keys.J:
+        text = master.yes_no("是否选择女装？")
+        print(text)
+    # 保存master的数据
+    elif key == keys.K:
+        master.save_data()
+    # 手动加载存储的数据
+    elif key == keys.L:
+        # master.data.text = 'test'
+        master.data_path = "测试.dat"
+        master.load_data()
+    # 删除保存的数据
+    elif key == keys.M:
+        master.del_data()
+    # 设置动画的帧率
+    elif key == keys.N:
+        fps = master.input("请输入动画切换的速度(每s切换多少次)：")
+        jisi.animate_fps = int(fps)
+    # 切换造型是否切换
+    elif key == keys.O:
+        jisi.toggle_animate()
+    # 提示信息
+    elif key == keys.P:
+        master.msg("提示：\n你已经换好女装了")
+    # 警告信息
+    elif key == keys.Q:
+        master.warning("警告:\n今天的女装不太完美")
+    # 错误信息
+    elif key == keys.R:
+        master.error("错误：\n你还没换好女装")
+    # 游戏开始
+    elif key == keys.S:
+        print(master.data.start())
+    # 获取游戏运行时常
+    elif key == keys.T:
+        print(master.data.get_time())
+    # 停止切换造型
+    elif key == keys.U:
+        monv.animate_fps = 0
+    # 隐藏角色
+    elif key == keys.V:
+        monv.hide()
+    # 显示角色
+    elif key == keys.W:
+        monv.show()
+    # 等待1s后隐藏
+    elif key == keys.X:
+        master.create_delay_tasks(monv.hide, 1)
+    # 等待1s后显示
+    elif key == keys.Y:
+        master.create_delay_tasks(monv.show, 1)
+    # 按下空格键
+    elif key == keys.SPACE:        
+        print(key) 
+    # 增加透明特效  
+    elif key == keys.Z:        
+        jisi.transparency += 10
+    # 增加颜色特效
+    elif key==keys.K_1:        
+        monv.color_effect += 10
+```  
+需要特殊说明的是，`master`会自带一个数据保存的功能，绑定在`master`的`data`对象上，这个对象可以把绑定在他身上的数据保存到当前的目录，如果不指定`master.dataPath`属性会自动保存在`data.dat`文件中。  
+默认情况下，`master.data`会有几个默认属性，包括游戏状态、时间、得分，你也可以自行绑定其他属性：  
+```python
+class Data:
+    '数据存储类'
+    def __init__(self, data_path) -> None:
+        '数据类'
+        self.status = 0  # 游戏状态\
+        self.time = 0  # 游戏持续时间
+        self.score = 0  # 得分
+```      
+
+**注意：** 在master类实例化的时候就会自动加载一次存档，所以这里要小心一些，容易出现奇怪的事情。  
+为了数据的传递方便，`master.data`对象有个`temp`属性，这个属性会自动存放一些数据，比如选择的文件夹，或者输入的数据，也就是说获取输入的内容还可以这样写：  
+```python
+master.input('请输入一个名字:')
+print(master.data.temp)
+```  
+存档相关功能如下：
+```py
+# 设置存档位置：
+master.data_path = "测试.dat"
+# 保存master的数据
+master.save_data()
+# 手动加载存储的数据
+master.data.text = 'test'        
+master.load_data()
+# 删除保存的数据
+master.del_data()
+# 打印得分
+print(master.data.score)
+```
+### 三、整合绘图命令  
+这些功能都是封装在`Pen`类当中的。   
+对绘图命令进行了整合，可以更方便快速绘制各种图形。  
+![](img/9.png)
+使用方法如下：  
+1、导入并实例化`Pen`类
+```python
+from cpgzh import *
+pen = Pen()
+```
+2、在`draw`函数中绘制想要的图形
+```python
+def draw():
+    # 绘制一个点
+    pen.dot((300, 50), 50, '#ffff00')
+    # 绘制一条线
+    pen.line((250, 50), (350, 50), '#00ffff', 20)
+    # 绘制圆或者圆环
+    pen.circle((100, 200), 100, '#ff0000', 20)
+    # 绘制椭圆或者椭圆环
+    pen.ellipse((300, 200), 200, 100, '#00ff00', 20)
+    # 绘制方块或者方块环
+    pen.rect((500, 200), 200, 200, '#0000ff', 10, 30)
+    # 清屏
+    pen.clear()
+```
+### 四、便捷的写字和设置字体样式   
+这些功能都是封装在`Pen`类和`Font`类当中的。  
+pgzero字体设置比较繁琐，很多时候小伙伴们也不太知道那些个参数都是干啥的，每次写字都要写很多行，太难受了。  
+所以对字体样式进行了封装，帮大家方便快速写字。   
+![](img/10.png)  
+建议做游戏时候将不同的字体先实例化成不同的对象，到时候用就可以了。  
+
+使用方法如下：  
+#### 1、导入和实例化样式
+```python
+from cpgzh import Font # 导入字体样式类
+from cpgzh import pen # 导入画笔
+font1 = FontStyle()# 实例化字体样式font1
+font1.color='red'# 修改颜色
+font2 = FontStyle()# 实例化字体样式font2
+font2.color='blue'# 修改颜色
+font2.bold=True# 加粗
+font2.angle=180# 旋转180度
+```  
+#### 2、写字  
+下面的写字代码一定要放在draw函数中。
+```python
+# 默认样式写字
+pen.text('haha', topleft=(200, 400))
+# font1样式写字
+pen.text('haha', font=font1, center=(200, 450))
+# font2样式写字
+pen.text('haha', font=font2, center=(200, 500))
+```
+`pen`的`text`方法和`textbox`方法功能与pgzero的类似，唯一多了的是多了字体功能，大家如果哪里不明白可以参考pgzero的相关文档。   
+
+#### 3、修改样式
+我们可以修改font对象的参数，从而改变字体的样子，可以改的字体样式如下（可根据默认值修改）:  
+```python
+font.bold = None#加粗
+font.italic = None# 斜体
+font.underline=None# 下划线
+font.color = 'black'# 字体颜色
+font.gcolor = None# 渐变色
+font.ocolor = None# 边框颜色        
+font.scolor = None# 阴影颜色
+font.align = 'left'# 左对齐
+font.alpha = 1.0# 不透明度
+font.angle = 0# 旋转角度
+font.owidth = None# 边框宽度
+font.shadow = (0.0,0.0)# 阴影，x方向和y方向
+font.fontsize = 30# 字体大小
+font.fontname = '宋体'# 字体名字
+``` 
+
+
+
+### 五、最简框架
+
+```python
+from cpgzh import *
+################################
+# 设置参数
+WIDTH=800 # 设置宽度
+HEIGHT=600 # 设置高度
+TITLE='游戏标题'
+
+################################
+# 创建角色
+
+
+################################
+# 自定义函数
+
+
+################################
+# 自动执行脚本
+def update():
+    '更新数据，每帧执行'
+
+def draw():
+    '绘制角色'
+
+
+go()
+```
+
+
+
+## 功能截图：   
+(详见软件仓库，pypi不会显示)
+![](img/1.png)
+![](img/2.png)
+![](img/3.png)
+![](img/4.png)
+![](img/5.png)
+![](img/6.png)
+![](img/7.png)
+![](img/8.png)
+![](img/9.png)
+![](img/10.png)
+
+**用法详情可以参考`example.py`文件**
+
+
+
+## 更新日志   
+**2022-09-15**
+1. 修复颜色特效刷新不成功的bug。
+2. 有多个造型变换的角色也能加颜色特效了。
+
+### 已知bug和不足
+1. 增加颜色特效会超级卡顿，角色造型多的时候慎用。
+**2022-09-15**
+### 新增功能
+1. 新增设置角色透明特效功能，特效范围0～100，透明特效增加10：`actor.transparency += 10`
+2. 新增设置角色颜色特效功能，特效范围0~100，颜色特效增加10：`actor.color_effect += 10`
+### 已知bug和不足
+1. 颜色特效目前只能针对当前角色的当前造型，如果角色造型在变化，每变一个造型都要单独设置一次，这块暂时未解决。
+2. 增加颜色特效时候非常的卡，慎用。
+
+**2022-05-13**
+1. 修复角色造型数字编号获取bug
+**2022-04-15**
+1. 优化部分文字介绍
+2. 优化加载角色造型图片文件夹功能
+3. 修复加载字体的bug
+
+**2022-03-07**
+1. 由于大部分情况是需要绘制的角色才需要切换造型，所以将actor的切换造型写在了`draw()`函数里面，不用大家再在`update()`里面手动切换造型了，如果想暂停切换造型直接将actor的`animate_fps`设置0就可以了。
+2. 将延迟任务功能放到了master模块里面，统一由master来控制所有角色的延迟任务，不用每个角色再去都调用执行延时任务方法，更高效简洁。
+
+首先在创建角色的时候创建master对象
+```py
+master = Master()
+```
+然后在合适位置创建延迟任务
+```py
+# 等待1s后隐藏
+if key == keys.X:
+    master.create_delay_tasks(monv.hide, 1)
+```
+最后在`update()`函数中调用`master`的`run_tasks`方法
+```py
+def update():
+    "更新数据"
+    master.run_tasks()
+```
+
+**2022-03-03**
+1. 新增游戏窗口居中功能，只需要将窗口宽度和高度参数写在导入本库之前(不写的话会距离左边缘、上边缘各100像素)，居中的代码如下：  
+```py
+WIDTH = 800
+HEIGHT = 500
+from cpgzh import *
+```
+
+**2022-03-02**    
+1. 修复设置角色动画速度不正常bug，现在你可以使用`actor.animate_fps=5`，来设置jisi这个角色1秒钟切换五次造型。
+2. 增加按键提示功能，在vscode中，使用keys的时候会有提示。
+   ![](img/11.png) 
+   **注意**：如果某个按键按下没效果，请大家定位到本库安装目录中，执行一下`get_keys.py`文件，就可以生成新的按键枚举。
+3.  优化文档
+
+**2021-12-29**    
+
+1. 新增填充功能
+
+```py
+from cpgzh import *
+pen=Pen()
+def draw():
+    pen.fill("yellow")
+go()
+```
+2. 新增角色面向功能`actor.face_to()`
+```py
+def face_to(self, pos=None):
+    '''
+    面向一个对象
+    pos参数不传递则面向鼠标
+    pos传入一个坐标则面向这个坐标
+    pos传入一个Actor则面向这个演员
+    '''
+```
+3. 将鼠标控制功能单独绑定到`mouse`对象，包括`get_pos`、`set_pos`、`hide`、`show`功能，分别是获取和设置鼠标坐标，隐藏和显示鼠标指针。`mouse.key`包含了鼠标的各个键。
+```py
+mouse.get_pos()#获取坐标
+mouse.set_pos()#设置坐标
+mouse.hide()#隐藏
+mouse.show()#显示
+mouse.keys.LEFT#左键
+mouse.keys.RIGHT#右键
+mouse.keys.MIDDLE#中键
+```
+
+
+
+**2021-12-22**  
+
+1. 增加输入框区分数据类型的功能
+   ```py
+    def input(self, msg="请输入数据：", dtype=0) -> str:
+        """
+        简单输入框\n
+        dtype控制输入的数据类型\n
+        dtype=0或其他输入字符串\n
+        dtype=1输入整数\n
+        dtype=2输入浮点数\n
+        """
+   ```
+2. 修复使用文件夹作为角色造型时，造型顺序不正常的bug
+
+**2021-12-14**
+1. 增加gif动画支持功能，现在你可以直接用gif动画作为角色造型了，代码十分简单：
+   ```python
+    from cpgzh import *
+
+    #创建角色 
+    rc=Actor('r-c.gif',center=(700,700))
+    # r-c.gif是放在images中的图片，也可以使用绝对地址，即使不在游戏目录下也可以的：
+    # rc=Actor('/home/fslong/文档/cpgzh/images/r-c.gif',center=(700,700))    
+    pen=Pen()
+
+    def update():
+        '更新数据'
+        rc.animate()#按帧率切换造型
+    
+    def draw():
+        '绘制角色'
+        pen.clear()#清理屏幕绘图
+        rc.draw()# 绘制角色
+    go()#启动游戏引擎
+   ```
+2. 增加加载一个文件夹中图片功能，直接将上一条代码中`'r-c.gif'`改成`'r-c'`即可，同样支持绝对目录也支持相对目录。
+3. **已知问题：** 加载整个文件夹所有图片的时候，文件名排序有点问题，`11.png`会排在`1.png`和`2.png`中间，如果图片较多还是建议手动设置`actor.images`属性，后续我会修复这个bug。  
+4. 增加自由缩放功能：`actor.scale=0.5`是原比例缩放到0.5倍, `actor.scale=(0.5,0.6)`是x方向缩放到0.5倍，y方向缩放到0.6倍。
+
+
+**2021-12-13**
+1. 修复写字颜色不正常的bug
+2. 修复textbox的bug
+3. 更新注释  
+
+**2021-11-20**
+1. 修复角色切换造型fps失效的bug  
+   
+**2021-11-14**：    
+1. 自动切换造型与延时任务分离
+2. 隐藏和显示功能
+3. 优化延时任务，增加任务执行完毕之后做的事
+4. 优化画笔功能，将屏幕清理功能绑定在画笔上
+5. 优化`Actor`类各个方法的介绍
+6. 优化`README.md`文档内容
