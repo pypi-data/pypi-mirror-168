@@ -1,0 +1,3 @@
+prune src/dg_commons_tests
+include requirements.txt
+include requirements-extra.txt
