@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: INFINITE_BATTLE_RPG
+Version: 1.1
+Summary: This package contains implementation of the offline RPG "INFINITE_BATTLE_RPG" on command line interface.
+Home-page: https://github.com/PythonApkDev/PythonApkDev.github.io/tree/main/beginner-projects/INFINITE_BATTLE_RPG
+Author: PythonApkDev
+Author-email: pythonapkdev2022@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# INFINITE_BATTLE_RPG
+
+**Infinite Battle RPG** is an offline RPG where the player can face an infinite number of rounds.
+
+## Executable File
+
+The executable file is downloadable at 
+https://github.com/PythonApkDev/PythonApkDev.github.io/blob/main/beginner-projects/INFINITE_BATTLE_RPG/INFINITE_BATTLE_RPG/dist/infinite_battle_rpg/infinite_battle_rpg.
+
+## Source Code
+
+Python code used to create the game is available in 
+https://github.com/PythonApkDev/PythonApkDev.github.io/blob/main/beginner-projects/INFINITE_BATTLE_RPG/INFINITE_BATTLE_RPG/infinite_battle_rpg.py.
+
+## Installation
+
+**pip install INFINITE_BATTLE_RPG**
+
+## How to Use the Executable File?
+
+First, open by double-clicking the file "infinite_battle_rpg". 
+How the executable file looks like is shown in the image below (the file is enclosed with a red rectangle).
+
+### Image 1
+
+![Executable File](images/Executable%20File.png)
+
+## Getting Started
+
+After you run the game, you will be asked to enter your name. Then, you will be redirected to the main menu.
+
+### Image 2
+
+![Getting Started](images/Getting%20Started.png)
+
+## Main Menu
+
+### Image 3
+
+After you enter your name, you will be asked whether you want to continue playing the game or not.
+
+![Main Menu](images/Main%20Menu.png)
+
+## Gameplay
+
+During gameplay, you can battle in an infinite number of rounds. You will be back to the first round once you are 
+defeated by the enemy. You will keep proceeding to the next round if you win the battle.
+
+### Image 4
+
+![Gameplay](images/Gameplay.png)

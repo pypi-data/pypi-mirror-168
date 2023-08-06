@@ -1,0 +1,2 @@
+[console_scripts]
+INFINITE_BATTLE_RPG = INFINITE_BATTLE_RPG.infinite_battle_rpg:main
