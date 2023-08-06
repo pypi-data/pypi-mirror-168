@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: helmsman
+Version: 0.1.8
+Summary: Helmsman is a test framework for helm
+Home-page: https://github.com/mrlyc/helmsman
+Keywords: helmsman
+Author: MrLYC
+Author-email: imyikong@gmail.com
+Requires-Python: >=3.7,<3.11
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: jmespath (>=0.10.0,<0.11.0)
+Requires-Dist: py-linq (>=1.3.0,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/mrlyc/helmsman/issues
+Project-URL: Documentation, https://helmsman.readthedocs.io
+Project-URL: Repository, https://github.com/mrlyc/helmsman
+Description-Content-Type: text/markdown
+
+
+# Helmsman
+
+
+<div align="center">
+
+[![PyPI - Version](https://img.shields.io/pypi/v/helmsman.svg)](https://pypi.python.org/pypi/helmsman)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/helmsman.svg)](https://pypi.python.org/pypi/helmsman)
+[![Tests](https://github.com/mrlyc/helmsman/workflows/tests/badge.svg)](https://github.com/mrlyc/helmsman/actions?workflow=tests)
+[![Codecov](https://codecov.io/gh/mrlyc/helmsman/branch/main/graph/badge.svg)](https://codecov.io/gh/mrlyc/helmsman)
+[![Read the Docs](https://readthedocs.org/projects/helmsman/badge/)](https://helmsman.readthedocs.io/)
+[![PyPI - License](https://img.shields.io/pypi/l/helmsman.svg)](https://pypi.python.org/pypi/helmsman)
+
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)
+
+</div>
+
+
+Helmsman is a test framework for helm
+
+
+* GitHub repo: <https://github.com/mrlyc/helmsman.git>
+* Documentation: <https://helmsman.readthedocs.io>
+* Free software: MIT
+
+
+## Features
+
+* TODO
+
+## Quickstart
+
+TODO
+
+## Credits
+
+This package was created with [Cookiecutter][cookiecutter] and the [fedejaure/cookiecutter-modern-pypackage][cookiecutter-modern-pypackage] project template.
+
+[cookiecutter]: https://github.com/cookiecutter/cookiecutter
+[cookiecutter-modern-pypackage]: https://github.com/fedejaure/cookiecutter-modern-pypackage
+
