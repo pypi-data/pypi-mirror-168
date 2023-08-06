@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: menpo3d
+Version: 0.8.4
+Summary: Menpo library providing tools for 3D Computer Vision research
+Author: James Booth
+Author-email: james.booth08@imperial.ac.uk
+License-File: LICENSE.txt
+License-File: AUTHORS.txt
