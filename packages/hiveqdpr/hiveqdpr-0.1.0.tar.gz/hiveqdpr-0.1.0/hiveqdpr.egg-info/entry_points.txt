@@ -1,0 +1,14 @@
+[console_scripts]
+hqpdr-bip39-masterpass = hiveqdpr:_main_bip38_masterpass
+hqpdr-bip39-wif = hiveqdpr:_main_bip38_wif
+hqpdr-disasterkey-bip39 = hiveqdpr:_main_disasterkey_bip38
+hqpdr-disasterkey-pass = hiveqdpr:_main_disasterkey_pass
+hqpdr-sign-bip38 = hiveqdpr:_main_sign_bip38
+hqpdr-sign-pass = hiveqdpr:_main_sign_pass
+hqpdr-sign-wif = hiveqdpr:_main_sign_wif
+hqpdr-userpost-altpass = hiveqdpr:_main_userpost_altpass
+hqpdr-userpost-masterpass = hiveqdpr:_main_userpost_masterpass
+hqpdr-userpost-randomkey = hiveqdpr:_main_userpost_randomkey
+hqpdr-userpost-wif = hiveqdpr:_main_userpost_wif
+hqpdr-userverify-ecdsa = hiveqdpr:_main_userverify_ecdsa
+hqpdr-validate = hiveqdpr:_main_validate

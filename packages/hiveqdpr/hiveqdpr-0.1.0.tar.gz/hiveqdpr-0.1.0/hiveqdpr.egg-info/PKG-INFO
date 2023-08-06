@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hiveqdpr
+Version: 0.1.0
+Summary: Hive Quantum-Disaster Prepare tool
+Home-page: https://github.com/pibara/hive-coinzdense-disaster-recovery
+Author: Rob Meijer
+Author-email: pibara@gmail.com
+License: BSD
+Keywords: hive postquantum coinzdense signing crypto
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+
+Leave some data on your HIVE account for a one-time quantum disaster recovery.
+

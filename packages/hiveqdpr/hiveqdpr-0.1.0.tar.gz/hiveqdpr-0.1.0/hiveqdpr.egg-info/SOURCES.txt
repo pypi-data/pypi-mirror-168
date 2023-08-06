@@ -1,0 +1,10 @@
+README.md
+hiveqdpr.py
+setup.py
+hiveqdpr.egg-info/PKG-INFO
+hiveqdpr.egg-info/SOURCES.txt
+hiveqdpr.egg-info/dependency_links.txt
+hiveqdpr.egg-info/entry_points.txt
+hiveqdpr.egg-info/not-zip-safe
+hiveqdpr.egg-info/requires.txt
+hiveqdpr.egg-info/top_level.txt
