@@ -1,0 +1,2 @@
+[console_scripts]
+userstorage = userstorage.__main__:main
