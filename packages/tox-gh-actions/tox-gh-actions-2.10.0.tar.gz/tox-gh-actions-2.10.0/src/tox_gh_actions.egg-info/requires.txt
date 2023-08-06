@@ -1,0 +1,23 @@
+importlib_resources
+tox<4,>=3.12
+
+[:python_version < "3.5"]
+typing
+
+[testing]
+coverage<6
+flake8<4,>=3
+pytest-cov<3,>=2
+pytest-mock<3,>=2
+
+[testing:platform_python_implementation == "CPython" and python_version >= "3.6"]
+black
+
+[testing:python_version < "3.10"]
+pytest<7,>=4
+
+[testing:python_version >= "3.10"]
+pytest<7,>=6.2.5
+
+[testing:python_version >= "3.5"]
+pytest-randomly>=3
