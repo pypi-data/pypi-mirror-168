@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nexcsi
+Version: 0.1.0
+Summary: A fast and simple decoder for Nexmon_CSI
+Home-page: https://github.com/nexmonster/nexcsi.git
+License: MIT
+Keywords: Nexmon,CSI,Nexmon_CSI,WiFi
+Author: Aravind Reddy Voggu
+Author-email: zerodividedby0@gmail.com
+Maintainer: Aravind Reddy Voggu
+Maintainer-email: zerodividedby0@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
+Project-URL: Repository, https://github.com/nexmonster/nexcsi.git
