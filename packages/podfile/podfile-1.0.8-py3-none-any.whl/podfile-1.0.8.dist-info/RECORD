@@ -1,0 +1,17 @@
+podfile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+podfile/__version__.py,sha256=NND_6JDYnYnGzN3-RTpS5F7wzv62vDf7hAxiyTSBJfE,22
+podfile/common.py,sha256=GwRdGSWxP0ykrvQIighh8Uow8roNTexE7DbvlRjqFo4,3478
+podfile/definition.py,sha256=txsZZrytzSlxKIHXhivyLwih9Iv3VHEnCUNG6XUx2io,1062
+podfile/file.py,sha256=kPswfzzvVNR0STx3-r1D0XbITpQViahEHosnheWAxag,4776
+podfile/install.py,sha256=KkdKl1nn8tPnrfc2bDCARWyj1UgBnPHXtXYQU3hPoeQ,2105
+podfile/module.py,sha256=IbP3F-qzb55MeGyk3Nccb41LrdPFZzGitnNrmN4ENlM,2003
+podfile/podfile.py,sha256=t9XK3BqDiMANldN-0FN8y7VlRfQyHj7Onkiz0cM_Lso,1684
+podfile/podspec.py,sha256=fzbrVtVC0pO_OjKBiCb_NdBgtTF-PN6ztu_s8DjTbEY,3882
+podfile/util.py,sha256=-b1i_kfw4Nk8qHwnHKC3kgzEtAmpKSxlxUKT2PrNccg,230
+podfile/yaml_podfile.py,sha256=iSPF2spzXubjM4XOsJXJ-uunQEjPZ27KiSypQggUeKk,3283
+podfile/yaml_target.py,sha256=-3tSvGDl0jTjQgHwjLoQYTHJdSeigkspBZH5Pa2Tkpo,1685
+podfile-1.0.8.dist-info/LICENSE,sha256=4FxkpXsZehVhpPuNuR__WuBk0R5XFK3cwF1RaYsUxXQ,1062
+podfile-1.0.8.dist-info/METADATA,sha256=VtdLTT0Q9Jk17rJ3ySgDlmAKUPRnuNDU7sTcMcyUC8M,870
+podfile-1.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+podfile-1.0.8.dist-info/top_level.txt,sha256=Bj3oKwsXlyzr0K9HGxKg8NPPVJRxNqd5hWOdBOpJGqs,8
+podfile-1.0.8.dist-info/RECORD,,
