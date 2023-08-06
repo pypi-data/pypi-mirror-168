@@ -1,0 +1,11 @@
+filesplit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filesplit/merge.py,sha256=4mgBToSimJ8Wig_MEYu8JI6ZeQatVIumFZJybT-4mfs,6419
+filesplit/split.py,sha256=bUCnG8bNCt8W8tnnQLjn6100DvOIQ5hfhaJbDQZlB-g,10776
+filesplit/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filesplit/common/constant.py,sha256=ArVtzZC0KPf-L6fa5QG_ObW578WUUsgUfQ47J6zujZY,191
+filesplit/common/error.py,sha256=XP7umiySNludVqdjgww67FGQ53DE9Z-lSRYYCECKNnk,149
+filesplit-4.0.1.dist-info/LICENSE.txt,sha256=nfx3_3xo0l6Et2E54JZ3NyTRI--pmjmAPXly1Ad9B1E,1077
+filesplit-4.0.1.dist-info/METADATA,sha256=umfrJpxN0gWynxdd1uwL01O-FAvBamd9H9o8ya7WbeM,5692
+filesplit-4.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+filesplit-4.0.1.dist-info/top_level.txt,sha256=E_TGmQGDj9aJvE7cLInarxBeUtcbc7mk1wDcq_F4MVg,10
+filesplit-4.0.1.dist-info/RECORD,,
