@@ -1,0 +1,10 @@
+setup.py
+mina_distributions/Binomialdistribution.py
+mina_distributions/Gaussiandistribution.py
+mina_distributions/Generaldistribution.py
+mina_distributions/__init__.py
+mina_distributions.egg-info/PKG-INFO
+mina_distributions.egg-info/SOURCES.txt
+mina_distributions.egg-info/dependency_links.txt
+mina_distributions.egg-info/not-zip-safe
+mina_distributions.egg-info/top_level.txt
