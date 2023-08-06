@@ -1,0 +1,7 @@
+[
+  "test_control.py::test_basename",
+  "test_control.py::test_both",
+  "test_control.py::test_prefix",
+  "test_control.py::test_suffix",
+  "test_steam.py::test_steam"
+]
