@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "zenconfig"
+version = "1.2.0"
+description = "Simple configuration loader for python."
+authors = ["Gabriel Pajot <gab@les-cactus.co>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/gpajot/zen-config"
+include = ["zenconfig/py.typed"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+
+PyYAML = { version = "^6", optional = true }
+
+tomli = { version = "^2", optional = true }
+tomli-w = { version = "^1", optional = true }
+
+pydantic = { version = "^1", optional = true }
+
+[tool.poetry.extras]
+yaml = ["PyYAML"]
+toml = ["tomli", "tomli-w"]
+pydantic = ["pydantic"]
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7"
+pytest-mock = "^3"
+flake8 = "^5"
+mypy = "~0"
+black = "^22"
+isort = "^5"
+pre-commit = "^2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+install_types = true
+non_interactive = true
+
