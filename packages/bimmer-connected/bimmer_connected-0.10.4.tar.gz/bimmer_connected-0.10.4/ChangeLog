@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.10.4
+------
+
+* Reduce API calls (#486)
