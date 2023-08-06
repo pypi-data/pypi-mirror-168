@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+SplatStats/Battle.py
+SplatStats/__init__.py
+SplatStats/_version.py
+SplatStats/auxiliary.py
+SplatStats/parsers.py
+SplatStats.egg-info/PKG-INFO
+SplatStats.egg-info/SOURCES.txt
+SplatStats.egg-info/dependency_links.txt
+SplatStats.egg-info/requires.txt
+SplatStats.egg-info/top_level.txt
