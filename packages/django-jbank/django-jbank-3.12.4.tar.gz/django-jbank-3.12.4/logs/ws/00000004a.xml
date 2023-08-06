@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pkif="http://danskebank.dk/PKI/PKIFactoryService" xmlns:elem="http://danskebank.dk/PKI/PKIFactoryService/elements">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <pkif:getServiceCertificatesIn>
+      <pkif:RequestHeader>
+        <pkif:SenderId>14552891418</pkif:SenderId>
+        <pkif:CustomerId>14552891418</pkif:CustomerId>
+        <pkif:RequestId>4</pkif:RequestId>
+        <pkif:Timestamp>2021-04-08T03:10:42.181124+03:00</pkif:Timestamp>
+        <pkif:InterfaceVersion>1</pkif:InterfaceVersion>
+        <pkif:Environment>PRODUCTION</pkif:Environment>
+      </pkif:RequestHeader>
+    <elem:getServiceCertificatesRequest><elem:BankRootCertificateSerialNo>14476134</elem:BankRootCertificateSerialNo><elem:Timestamp>2021-04-08T03:10:42.181124+03:00</elem:Timestamp><elem:RequestId>4</elem:RequestId></elem:getServiceCertificatesRequest></pkif:getServiceCertificatesIn>
+  </soapenv:Body>
+</soapenv:Envelope>
