@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: async-reolink.api
+Version: 0.6.6
+Summary: Async ReoLink camera API framework for python
+License: MIT
+Project-URL: source, https://github.com/xannor/py_reolinkapi
+Project-URL: tracker, https://github.com/xannor/py_reolinkapi/issues
+Keywords: ReoLink,async,api
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: typing-extensions
+
+Async Reolink API
+
+This is a base framework for an async client library for ReoLink Camera's. This package alone will not allow connecting to a camera as it is only the basic framework and not a complete implemented. Other packages will be built on top of this to handle specific implementation details.
