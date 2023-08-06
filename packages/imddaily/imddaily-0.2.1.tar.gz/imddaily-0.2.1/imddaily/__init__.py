@@ -1,0 +1,1 @@
+from .imddaily import __version__

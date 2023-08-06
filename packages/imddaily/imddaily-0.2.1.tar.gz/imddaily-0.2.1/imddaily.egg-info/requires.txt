@@ -1,0 +1,9 @@
+tqdm
+requests
+affine
+numpy
+rasterio
+
+[dev]
+black
+pytest
