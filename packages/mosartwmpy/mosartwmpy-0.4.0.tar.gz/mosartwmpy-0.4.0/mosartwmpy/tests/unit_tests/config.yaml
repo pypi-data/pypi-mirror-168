@@ -1,0 +1,234 @@
+grid:
+  latitude: lat
+  longitude: lon
+  path: ./input/domains/mosart_conus_nldas_grid.nc
+  subdomain: null
+  unmask_output: true
+  variables:
+    channel_floodplain_width: rwid0
+    channel_length: rlen
+    channel_manning: nr
+    channel_slope: rslp
+    channel_width: rwid
+    downstream_id: dnID
+    drainage_density: gxr
+    drainage_fraction: frac
+    flow_direction: fdir
+    grid_channel_depth: rdep
+    hillslope: hslp
+    hillslope_manning: nh
+    id: ID
+    land_fraction: frac
+    local_drainage_area: area
+    nldas_id: NLDAS_ID
+    subnetwork_manning: nt
+    subnetwork_slope: tslp
+    subnetwork_width: twid
+    total_drainage_area_multi: areaTotal
+    total_drainage_area_single: areaTotal2
+heat:
+  enabled: false
+inundation:
+  enabled: false
+reservoir_stratification:
+  enabled: false
+runoff:
+  latitude: lat
+  longitude: lon
+  path: ./mosartwmpy/tests/runoff_1981_01_01.nc
+  read_from_file: true
+  time: time
+  variables:
+    subsurface_runoff: QDRAI
+    surface_runoff: QOVER
+    wetland_runoff: null
+sediment:
+  enabled: false
+simulation:
+  end_date: 1981-01-31
+  grid_output:
+  - long_name: Index of the grid cell in a 1d array
+    name: GINDEX
+    variable: id
+  - long_name: NLDAS_ID of grid cell.
+    name: NLDAS_ID
+    variable: nldas_id
+  - long_name: Index of the outlet grid cell in a 1d array
+    name: OUTLETG
+    variable: outlet_id
+  - long_name: Index of the downstream grid cell in a 1d array
+    name: DSIG
+    variable: downstream_id
+  - long_name: Land mask 1=Land, 2=Ocean, 3=Outlet
+    name: MASK
+    variable: land_mask
+  - long_name: area
+    name: area
+    variable: area
+  - long_name: areatotal
+    name: areatotal
+    variable: total_drainage_area_multi
+  - long_name: areatotal2
+    name: areatotal2
+    variable: total_drainage_area_single
+  log_level: INFO
+  log_to_file: true
+  log_to_std_out: true
+  name: unit_tests
+  output:
+  - long_name: Surface runoff
+    name: QSUR_LIQ
+    units: m/s
+    variable: hillslope_surface_runoff
+  - long_name: Subsurface runoff
+    name: QSUB_LIQ
+    units: m/s
+    variable: hillslope_subsurface_runoff
+  - long_name: Mosart liquid storage
+    name: STORAGE_LIQ
+    units: m3
+    variable: storage
+  - long_name: Mosart river basin flow (same as channel_outflow)
+    name: RIVER_DISCHARGE_OVER_LAND_LIQ
+    units: m3/s
+    variable: runoff_land
+  - long_name: Mosart main channel inflow to grid cell
+    name: channel_inflow
+    units: m3/s
+    variable: channel_inflow_upstream
+  - long_name: Mosart main channel outflow from grid cell
+    name: channel_outflow
+    units: m3/s
+    variable: runoff_land
+  - long_name: Mosart storage in reservoir
+    name: WRM_STORAGE
+    units: m3
+    variable: reservoir_storage
+  - long_name: Mosart reservoir supply to grid cell
+    name: WRM_SUPPLY
+    units: m3/s
+    variable: grid_cell_supply
+  - long_name: Mosart demand reqeusted by grid cell
+    name: WRM_DEMAND
+    units: m3/s
+    variable: grid_cell_demand_rate
+  - long_name: Mosart unmet demand at grid cell
+    name: WRM_DEFICIT
+    units: m3
+    variable: grid_cell_deficit
+  output_file_frequency: monthly
+  output_path: ./mosartwmpy/tests
+  output_resolution: 86400
+  restart_file: null
+  restart_file_frequency: yearly
+  routing_iterations: 5
+  start_date: 1981-01-01
+  subcycles: 3
+  timestep: 10800
+water_management:
+  demand:
+    demand: totalDemand
+    farmer_abm:
+      crop_prices_by_nldas_id:
+        path: ./mosartwmpy/tests/test_crop_prices_by_nldas_id.parquet
+        variables:
+          calculated_area: calculated_area
+          calculated_water_demand: calculated_water_demand
+          crop: crop
+          gammas: gammas
+          net_prices: net_prices
+          nir: nir
+          nir_corrected: nir_corrected
+          nldas_id: nldas_id
+      enabled: false
+      historic_storage_supply:
+        path: ./mosartwmpy/tests/test_historic_storage_supply_bias.parquet
+        variables:
+          demand_factor: demand_factor
+          nldas_id: nldas_id
+          river_discharge_over_land_liquid_original: river_discharge_over_land_liquid_original
+          storage_sum_original: storage_sum_original
+          sw_avail_bias_corrected: sw_avail_bias_corrected
+          wrm_supply_original: wrm_supply_original
+          wrm_supply_prev: wrm_supply_prev
+      land_water_constraints:
+        path: ./mosartwmpy/tests/test_land_water_constraints_by_farm.parquet
+        variables:
+          land_constraints_by_farm: land_constraints_by_farm
+          nldas_id: nldas_id
+          sw_irrigation_vol: sw_irrigation_vol
+      land_water_constraints_live:
+        path: ./mosartwmpy/tests/test_land_water_constraints_by_farm_live.parquet
+      mu: 0.2
+      path: ./mosartwmpy/tests
+      warmup_period: 10
+    groundwater_enabled: false
+    latitude: lat
+    longitude: lon
+    output:
+      path: ./output/demand
+    path: ./mosartwmpy/tests/demand_1981_01_01.nc
+    read_from_file: true
+    return_flow_enabled: false
+    time: time
+    total_demand_enabled: false
+  enabled: true
+  reservoirs:
+    demand:
+      path: ./mosartwmpy/tests/mean_demand.parquet
+      variables:
+        demand: MEAN_DEMAND
+        demand_month_index: MONTH_INDEX
+        demand_reservoir_id: GRAND_ID
+    dependencies:
+      path: ./mosartwmpy/tests/dependency_database.parquet
+      variables:
+        dependent_cell_index: DEPENDENT_CELL_INDEX
+        dependent_reservoir_id: GRAND_ID
+        reservoir_cell_index: RESERVOIR_CELL_INDEX
+    enable_istarf: true
+    parameters:
+      grid_cell_index: GRID_CELL_INDEX
+      path: ./mosartwmpy/tests/reservoirs.nc
+      variables:
+        reservoir_depth: DEPTH_M
+        reservoir_grand_meanflow_cumecs: grand_meanflow_cumecs
+        reservoir_grid_index: GRID_CELL_INDEX
+        reservoir_height: DAM_HGT_M
+        reservoir_id: GRAND_ID
+        reservoir_length: DAM_LEN_M
+        reservoir_lower_alpha: lower_alpha
+        reservoir_lower_beta: lower_beta
+        reservoir_lower_max: lower_max
+        reservoir_lower_min: lower_min
+        reservoir_lower_mu: lower_mu
+        reservoir_observed_meanflow_cumecs: observed_meanflow_cumecs
+        reservoir_release_alpha_one: release_alpha_one
+        reservoir_release_alpha_two: release_alpha_two
+        reservoir_release_beta_one: release_beta_one
+        reservoir_release_beta_two: release_beta_two
+        reservoir_release_c: release_c
+        reservoir_release_max: release_max
+        reservoir_release_min: release_min
+        reservoir_release_p_one: release_p_one
+        reservoir_release_p_two: release_p_two
+        reservoir_storage_capacity: CAP_MCM
+        reservoir_surface_area: AREA_SKM
+        reservoir_upper_alpha: upper_alpha
+        reservoir_upper_beta: upper_beta
+        reservoir_upper_max: upper_max
+        reservoir_upper_min: upper_min
+        reservoir_upper_mu: upper_mu
+        reservoir_use_electricity: USE_ELEC
+        reservoir_use_fish_protection: USE_FISH
+        reservoir_use_flood_control: USE_FCON
+        reservoir_use_irrigation: USE_IRRI
+        reservoir_use_navigation: USE_NAVI
+        reservoir_use_recreation: USE_RECR
+        reservoir_use_supply: USE_SUPP
+    streamflow:
+      path: ./mosartwmpy/tests/mean_flow.parquet
+      variables:
+        streamflow: MEAN_FLOW
+        streamflow_month_index: MONTH_INDEX
+        streamflow_reservoir_id: GRAND_ID
