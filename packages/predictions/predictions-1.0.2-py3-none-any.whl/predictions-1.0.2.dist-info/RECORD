@@ -1,0 +1,10 @@
+predictions/__init__.py,sha256=vzcRXOTk98-URFOH-2FpbTxnSYnyVs-l0GqQ1DnRLC4,192
+predictions/crash.py,sha256=HzIeS9uxfKW6zDzKKKK47Q_gkqPWil-pP0s63Ko8TE8,973
+predictions/mines.py,sha256=k8edhrRgUlnIZMJpuqh2K-SM7FJh5AduVKCSAMT8SWA,902
+predictions/roulette.py,sha256=wYnl0DBU4_2IKr6BVEmOZrN433hH8-aPOwNAh2XljGk,142
+predictions/towers.py,sha256=qTMwWA-cAM7N8r7vcnJurBF2a-3bFJy7v-e4dwbq4E8,301
+predictions-1.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+predictions-1.0.2.dist-info/METADATA,sha256=t-0JQQOQ4lcswWWf6WktMOmojhq3lXqYusLM7OdjUYU,1393
+predictions-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+predictions-1.0.2.dist-info/top_level.txt,sha256=nJhfGCx6vhoFm_gmmv1EvFjnSfp7J_rbkWxyIUBLOtw,12
+predictions-1.0.2.dist-info/RECORD,,
