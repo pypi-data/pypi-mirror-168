@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sws-py-sdk
+Version: 0.10.0
+Summary: A Python SDK for managing communication with SWS APIs
+Home-page: https://github.com/user/serato
+Download-URL: https://github.com/serato/sws-py-sdk/archive/v0.1.0.tar.gz
+Author: Benjamin Farrelly
+Author-email: benjamin.farrelly@serato.com
+License: MIT
+Keywords: Serato,API,SDK
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7

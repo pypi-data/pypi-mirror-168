@@ -1,0 +1,15 @@
+README.md
+setup.py
+sws_py_sdk/__init__.py
+sws_py_sdk/ecom.py
+sws_py_sdk/firewall_header.py
+sws_py_sdk/identity.py
+sws_py_sdk/license.py
+sws_py_sdk/service.py
+sws_py_sdk/sws.py
+sws_py_sdk/sws_client.py
+sws_py_sdk.egg-info/PKG-INFO
+sws_py_sdk.egg-info/SOURCES.txt
+sws_py_sdk.egg-info/dependency_links.txt
+sws_py_sdk.egg-info/requires.txt
+sws_py_sdk.egg-info/top_level.txt
