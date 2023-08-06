@@ -1,0 +1,3 @@
+[console_scripts]
+django_mqtt_bridge = django_mqtt_bridge.cli:main
+
