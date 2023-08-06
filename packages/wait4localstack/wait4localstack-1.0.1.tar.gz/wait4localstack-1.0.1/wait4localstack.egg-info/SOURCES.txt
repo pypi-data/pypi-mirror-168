@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./wait4localstack/VERSION
+./wait4localstack/__init__.py
+./wait4localstack/localstack.py
+./wait4localstack/service.py
+wait4localstack.egg-info/PKG-INFO
+wait4localstack.egg-info/SOURCES.txt
+wait4localstack.egg-info/dependency_links.txt
+wait4localstack.egg-info/entry_points.txt
+wait4localstack.egg-info/requires.txt
+wait4localstack.egg-info/top_level.txt
