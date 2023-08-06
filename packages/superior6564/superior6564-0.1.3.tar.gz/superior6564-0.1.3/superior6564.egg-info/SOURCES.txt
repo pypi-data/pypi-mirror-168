@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+superior6564/__init__.py
+superior6564/degget.py
+superior6564/games_help.py
+superior6564/packages.py
+superior6564.egg-info/PKG-INFO
+superior6564.egg-info/SOURCES.txt
+superior6564.egg-info/dependency_links.txt
+superior6564.egg-info/top_level.txt
