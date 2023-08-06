@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: ezdl
+Version: 0.0.3
+Summary: A Simple Tool to make Deep Learning projects easier
+Home-page: https://github.com/pasqualedem/EzDL
+Author: Pasquale De Marinis
+Author-email: pas.demarinis@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: ruamel.yaml
+Requires-Dist: scipy
+Requires-Dist: super-gradients
+Requires-Dist: torch
+Requires-Dist: torchaudio
+Requires-Dist: torchmetrics
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Requires-Dist: wandb
+Requires-Dist: transformers
+Requires-Dist: einops
+Requires-Dist: gradio
+Requires-Dist: easydict
+
+# EzDL
+## Installation
+Recommended to create a Python virtual environment
+
+    pip install ezdl
+
+## Usage
+
+    .
+
+**mandatory arguments**
+	
+	action:	Choose the action to do perform: 
+			experiment, resume, resume_run, complete, preprocess, manipulate, app
+
+**optional arguments**:
+
+    -h, --help            show this help message and exit
+    --resume              Resume the experiment
+    -d DIR, --dir DIR     Set the local tracking directory
+    -f FILE, --file FILE  Set the config file
+    --grid GRID           Select the first grid to start from
+    --run RUN             Select the run in grid to start from
+    --filters FILTERS     Filters to query in the resuming mode
+    -s STAGE, --stage STAGE
+                          Stages to execute in the resuming mode
+    -p PATH, --path PATH  Path to the tracking url in the resuming mode
+    --subset SUBSET       Subset chosen for preprocessing
+		  
+### Parameter file
+YAML file that contains all parameters necessary to the exepriment to be run.
