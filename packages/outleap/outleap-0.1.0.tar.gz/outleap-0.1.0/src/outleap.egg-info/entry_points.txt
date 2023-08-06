@@ -1,0 +1,2 @@
+[console_scripts]
+outleap-agent = outleap.scripts.agent:agent_main

@@ -1,0 +1,5 @@
+coverage:
+  fixes:
+    - "__init__.py::outleap/__init__.py"
+  ignore:
+    - "src/outleap/scripts"
