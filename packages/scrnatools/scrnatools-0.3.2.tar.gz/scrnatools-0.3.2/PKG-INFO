@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: scrnatools
+Version: 0.3.2
+Summary: Tools for single cell RNA sequencing pipelines
+Home-page: https://github.com/j-germino/sc-rna-tools
+Author: Joe Germino
+Author-email: joe.germino@ucsf.edu
+License-File: LICENSE.txt

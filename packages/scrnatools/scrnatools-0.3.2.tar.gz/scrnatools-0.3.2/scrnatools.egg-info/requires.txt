@@ -1,0 +1,12 @@
+scanpy
+scrublet
+scvi-tools
+matplotlib
+pandas
+numpy
+seaborn
+memory-profiler
+leidenalg
+datetime
+anndata
+scipy
