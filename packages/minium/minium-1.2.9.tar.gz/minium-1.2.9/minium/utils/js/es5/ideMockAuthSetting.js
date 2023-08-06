@@ -1,0 +1,1 @@
+function ideMockAuthSetting(a){var b=this;return new Promise(function(c){b.origin(global.babelHelpers["extends"]({},a,{success:function success(a){Object.assign(a.authSetting,global.__minium_auth_setting),c(a)}}))})}

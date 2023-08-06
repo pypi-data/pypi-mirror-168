@@ -1,0 +1,1 @@
+function addNetworkMockRule(a){return global["__minium_%(interface)s_network_mock_rule"]||(global["__minium_%(interface)s_network_mock_rule"]=[]),global["__minium_%(interface)s_network_mock_rule"].push(a),!!global["__minium_%(interface)s_network_mocked"]}

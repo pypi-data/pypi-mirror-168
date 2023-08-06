@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: minium
+Version: 1.2.9
+Summary: Minium is the best MiniProgram auto test framework.
+Home-page: https://minitest.weixin.qq.com/#/
+Author: WeChat-Test
+Author-email: minitest@tencent.com
+License: MIT
+Description: See the [document](https://minitest.weixin.qq.com/#/minium/Python/readme) for details
+Keywords: minium,WeApp,MiniProgram,Automation,Test
+Platform: MacOS
+Platform: Windows
+Requires-Python: >=3.8

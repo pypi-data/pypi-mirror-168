@@ -1,0 +1,1 @@
+function addCloudCallMockRule(a,b){return global["__minium_".concat(b,"_mock_rule")]||(global["__minium_".concat(b,"_mock_rule")]=[]),global["__minium_".concat(b,"_mock_rule")].push(a),!!global.__minium_cloud_call_mocked}

@@ -1,0 +1,1 @@
+function cleanNetworkMockRule(){global["__minium_%(interface)s_network_mocked"]&&global["__minium_%(interface)s_network_mock_rule"].splice(0,global["__minium_%(interface)s_network_mock_rule"].length)}

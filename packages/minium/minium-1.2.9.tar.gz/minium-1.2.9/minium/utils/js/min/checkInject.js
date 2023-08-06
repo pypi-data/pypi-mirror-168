@@ -1,0 +1,1 @@
+function checkInject(){return!!global.__minium||(global.__minium={},!1)}

@@ -1,0 +1,7 @@
+ddt
+pyyaml
+websocket_client
+requests
+future
+tidevice==0.4.10
+pyee
