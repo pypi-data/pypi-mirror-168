@@ -1,0 +1,20 @@
+{
+    "user_id": "00000",
+    "programming_learning_level": 1,
+    "python_learning_level": 1,
+    "nlp_theory_level": 1,
+    "nlp_skill_level": 1,
+    "ip_theory_level": 1,
+    "ip_skill_level": 1,
+    "sp_theory_level": 1,
+    "sp_skill_level": 1,
+    "ml_theory_level": 1,
+    "ml_skill_level": 1,
+    "db_theory_level": 1,
+    "db_skill_level": 1,
+    "atcoder_rate": 1,
+    "english_reading_level": 1,
+    "english_resistance_level": 2,
+    "translation_resistance": 1,
+    "learning_directivity": 1
+}

@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: omoujan
+Version: 0.1.1
+Summary: A JupyterLab extension.
+Home-page: https://github.com/gh-tyl/omoujan
+Author: 
+Author-email: 
+License: BSD-3-Clause
+Keywords: Jupyter,JupyterLab,JupyterLab3
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 3
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: jupyter-packaging
+
+## Requirements
+
+- JupyterLab >= 3.0
+
+## Install
+
+To install the extension, execute:
+
+```bash
+pip install omoujan
+```
+
+## Register your experience
+To register your experience
+
+```bash
+omoujan init
+```
+
+## Usage
+You do not need to set anything up. Just start your project.
+
+## Uninstall
+
+To remove the extension, execute:
+
+```bash
+pip uninstall omoujan
+```
