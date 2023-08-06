@@ -1,0 +1,3 @@
+[console_scripts]
+mcg=my-custom-greeter.main:app
+
