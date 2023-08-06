@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+AzimPy.egg-info/PKG-INFO
+AzimPy.egg-info/SOURCES.txt
+AzimPy.egg-info/dependency_links.txt
+AzimPy.egg-info/requires.txt
+AzimPy.egg-info/top_level.txt
+azimpy/__init__.py
+azimpy/orientation.py
+azimpy/params.py
+azimpy/plot.py
+azimpy/rstats.py
+azimpy/utils.py
+azimpy/version/__init__.py
