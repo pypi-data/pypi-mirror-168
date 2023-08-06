@@ -1,0 +1,8 @@
+README.md
+setup.py
+qtido/__init__.py
+qtido.egg-info/PKG-INFO
+qtido.egg-info/SOURCES.txt
+qtido.egg-info/dependency_links.txt
+qtido.egg-info/requires.txt
+qtido.egg-info/top_level.txt
