@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+verify_key/__init__.py
+verify_key/proje_key.py
+verify_key.egg-info/PKG-INFO
+verify_key.egg-info/SOURCES.txt
+verify_key.egg-info/dependency_links.txt
+verify_key.egg-info/not-zip-safe
+verify_key.egg-info/top_level.txt
