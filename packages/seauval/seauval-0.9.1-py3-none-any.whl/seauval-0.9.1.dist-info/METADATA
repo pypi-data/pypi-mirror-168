@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: seauval
+Version: 0.9.1
+Home-page: https://gitlab.com/ludovic.hofer/sae
+Author: Ludovic Hofer
+Author-email: medrimonia@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# SEAUVAL: SEmi-AUtomatic eVALution
+
+A set of python tools based on package `anytree` to assist teachers in producing
+valuable and explicit feedback for students.
+
+## Building
+
+`make build`
+
+## Local install
+
+`pip3 install --force-reinstall dist/seauval-X.X-py3-none-any-whl`
+
+## Upload to pip repository
+`python -m twine upload dist/*`
