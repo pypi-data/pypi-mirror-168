@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: healthcheck-decorator
+Version: 0.1.0
+Summary: Decorate a function to monitor if it is executed
+Home-page: https://github.com/Trafitto/healthcheck-decorator
+Author: Trafitto
+Author-email: develop@trafitto.com
+License: MIT
+Keywords: healtcheck,decorator,monitoring
+Platform: UNKNOWN
+Requires-Dist: redis (>=4.3.4)
+
+UNKNOWN
+
