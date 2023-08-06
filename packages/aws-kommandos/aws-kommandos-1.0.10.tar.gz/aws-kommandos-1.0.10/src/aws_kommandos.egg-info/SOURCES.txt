@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./src/aws_kommandos/__init__.py
+./src/aws_kommandos/kommandos.py
+./src/aws_kommandos.egg-info/PKG-INFO
+./src/aws_kommandos.egg-info/SOURCES.txt
+./src/aws_kommandos.egg-info/dependency_links.txt
+./src/aws_kommandos.egg-info/entry_points.txt
+./src/aws_kommandos.egg-info/requires.txt
+./src/aws_kommandos.egg-info/top_level.txt
+invocation-scripts/phishing-server/install.sh
+invocation-scripts/proxy-server/install.sh
+invocation-scripts/vpn-server/install.sh
