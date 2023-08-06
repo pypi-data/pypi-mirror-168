@@ -1,0 +1,6 @@
+flask
+flask-cors
+flask-socketio
+simple-websocket
+numpy
+trimesh
