@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: easymacro
+Version: 0.0.2
+Summary: Easily make macros in Python!
+Author: Wurgo, Languste27
+Author-email: <wurgoalt@gmail.com>
+Keywords: python,macro,windows,mouse,keyboard,input
+Description-Content-Type: text/markdown
+
+
+A Python library made for easing macro developement.
