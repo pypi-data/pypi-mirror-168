@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+bonesinger/__init__.py
+bonesinger/__main__.py
+bonesinger/core.py
+bonesinger/docker.py
+bonesinger/executors.py
+bonesinger/parser.py
+bonesinger/pipeline.py
+bonesinger/step.py
+bonesinger/util.py
+bonesinger.egg-info/PKG-INFO
+bonesinger.egg-info/SOURCES.txt
+bonesinger.egg-info/dependency_links.txt
+bonesinger.egg-info/entry_points.txt
+bonesinger.egg-info/top_level.txt
