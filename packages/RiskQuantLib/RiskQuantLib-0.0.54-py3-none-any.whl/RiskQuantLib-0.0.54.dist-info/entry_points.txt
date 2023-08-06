@@ -1,0 +1,10 @@
+[console_scripts]
+addRQL = RiskQuantLib:addProjectTemplate
+clearRQL = RiskQuantLib:clearAllProjectTemplate
+delRQL = RiskQuantLib:delProjectTemplate
+getRQL = RiskQuantLib:addProjectTemplateFromGithub
+listRQL = RiskQuantLib:listProjectTemplate
+newRQL = RiskQuantLib:newProject
+pkgRQL = RiskQuantLib:packProject
+saveRQL = RiskQuantLib:saveProject
+tplRQL = RiskQuantLib:unpackProject
