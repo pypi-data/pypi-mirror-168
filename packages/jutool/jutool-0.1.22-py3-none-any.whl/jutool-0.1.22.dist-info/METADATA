@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jutool
+Version: 0.1.22
+Summary: Some base methods for developing
+Home-page: http://www.example.com/~cschultz/bvote/
+Author: Ke
+Author-email: jiangke1207@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: progressbar2 (==4.0.0)
+
+# basepackage
+
