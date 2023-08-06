@@ -1,0 +1,2 @@
+[console_scripts]
+image-diff = image_diff.cli:cli
