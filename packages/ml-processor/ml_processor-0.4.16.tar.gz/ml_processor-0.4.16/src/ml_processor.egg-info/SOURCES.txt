@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+src/ml_processor/__init__.py
+src/ml_processor/configuration.py
+src/ml_processor/data_prep.py
+src/ml_processor/eda_analysis.py
+src/ml_processor/etl_processor.py
+src/ml_processor/jsonSerializer.py
+src/ml_processor/model_training.py
+src/ml_processor/outliers.py
+src/ml_processor.egg-info/PKG-INFO
+src/ml_processor.egg-info/SOURCES.txt
+src/ml_processor.egg-info/dependency_links.txt
+src/ml_processor.egg-info/not-zip-safe
+src/ml_processor.egg-info/top_level.txt
