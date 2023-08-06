@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Bogidden
+Version: 2.1.3.5
+Summary: A module containing only basic functions
+Home-page: UNKNOWN
+Author: Aqouthe
+Author-email: hoonie0929@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+#Greetings
+=================
+Hello, my name is 'Aqouthe', the creator of this module. 
+For this module, I just made a basic basis with codes I found on the internet, and the codes I made myself.
+(thanks to those who uploaded them on the internet)
+Hope you enjoy coding today.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Code Description
+====================
+you know in the math-related functions. 
+And there is a function that determines the palindrome (is_palindrome) and a chatbot function. 
+You can just use them however you like.
+And, when you create a project using what I have created, invoke the scripters_thanks function in specialproject. then come on
+
+
