@@ -1,0 +1,5 @@
+include data/excel/*.*
+include data/excel/chinese/*.*
+include data/word/*.docx
+include data/xml/*.xml
+include data/pdf/*.pdf
