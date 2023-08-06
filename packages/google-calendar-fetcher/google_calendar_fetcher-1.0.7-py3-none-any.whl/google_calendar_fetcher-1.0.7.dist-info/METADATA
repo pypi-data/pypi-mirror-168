@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: google-calendar-fetcher
+Version: 1.0.7
+Summary: Command Line tool to quickly get Google Calendar events.
+Home-page: https://github.com/nicolamaritan/google_calendar_fetcher/
+Author: nicolamaritan
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+License-File: LICENSE
+Requires-Dist: google
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: pytz
+Requires-Dist: colorama
+
+UNKNOWN
+
