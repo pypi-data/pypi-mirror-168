@@ -1,0 +1,57 @@
+{% if project_roles -%}
+module "projects-iam-{{auth_group_shortname}}-{{env}}" {
+  source   = "terraform-google-modules/iam/google//modules/projects_iam"
+  projects = [module.terraform-dapla-team-base.environment_conf["{{env}}"].project_id]
+  mode     = "additive"
+
+  conditional_bindings = [
+    {% for pr in project_roles -%}
+    {
+      role        = "{{pr.name}}"
+      title       = "{{pr.title if pr.title else pr.name}}"
+      description = "Expiring after {{expiry.timestamp}}"
+      expression  = "request.time < timestamp(\"{{expiry.timestamp}}\")"
+      members     = ["group:{{auth_group}}@groups.ssb.no"]
+    },
+    {% endfor -%}
+  ]
+}
+{% endif -%}
+
+{% if read_buckets -%}
+module "buckets-read-iam-{{auth_group_shortname}}-{{env}}" {
+  source = "terraform-google-modules/iam/google//modules/storage_buckets_iam"
+
+  storage_buckets = {{read_buckets | tojson()}}
+  mode            = "additive"
+
+  conditional_bindings = [
+    {
+      role        = "organizations/{{org_nr}}/roles/ssb.bucket.read"
+      title       = "Temporary bucket read access"
+      description = "Expiring after {{expiry.timestamp}}"
+      expression  = "request.time < timestamp(\"{{expiry.timestamp}}\")"
+      members     = ["group:{{auth_group}}@groups.ssb.no"]
+    }
+  ]
+}
+{% endif -%}
+
+{% if write_buckets -%}
+module "buckets-write-iam-{{auth_group_shortname}}-{{env}}" {
+  source = "terraform-google-modules/iam/google//modules/storage_buckets_iam"
+
+  storage_buckets = {{write_buckets | tojson()}}
+  mode            = "additive"
+
+  conditional_bindings = [
+    {
+      role        = "organizations/{{org_nr}}/roles/ssb.bucket.write"
+      title       = "Temporary bucket write access"
+      description = "Expiring after {{expiry.timestamp}}"
+      expression  = "request.time < timestamp(\"{{expiry.timestamp}}\")"
+      members     = ["group:{{auth_group}}@groups.ssb.no"]
+    }
+  ]
+}
+{% endif -%}

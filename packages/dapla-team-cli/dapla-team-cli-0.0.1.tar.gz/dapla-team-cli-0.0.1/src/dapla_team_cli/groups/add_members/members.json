@@ -1,0 +1,5714 @@
+[
+  {
+    "name": "Aaberge, Rolf",
+    "email": "rolf.aaberge@ssb.no",
+    "email_short": "roa@ssb.no"
+  },
+  {
+    "name": "Aalandslid, Vebjørn",
+    "email": "vebjorn.aalandslid@ssb.no",
+    "email_short": "vaa@ssb.no"
+  },
+  {
+    "name": "Aamodt, Ingebjørg",
+    "email": "ingebjorg.aamodt@ssb.no",
+    "email_short": "iaa@ssb.no"
+  },
+  {
+    "name": "Aamodt, Marianne",
+    "email": "marianne.aamodt@ssb.no",
+    "email_short": "odt@ssb.no"
+  },
+  {
+    "name": "Aanensen, Thomas",
+    "email": "thomas.aanensen@ssb.no",
+    "email_short": "tre@ssb.no"
+  },
+  {
+    "name": "Aarstad Per Amund",
+    "email": "peramund.aarstad@ssb.no",
+    "email_short": "pam@ssb.no"
+  },
+  {
+    "name": "Aas, Anders Falla",
+    "email": "anders.aas@ssb.no",
+    "email_short": "afa@ssb.no"
+  },
+  {
+    "name": "Aas, Ole Andreas",
+    "email": "ole.aas@ssb.no",
+    "email_short": "oaa@ssb.no"
+  },
+  {
+    "name": "Aasen, Marita",
+    "email": "marita.aasen@ssb.no",
+    "email_short": "kons_maen@ssb.no"
+  },
+  {
+    "name": "Aasen, Rannveig",
+    "email": "rannveig.aasen@ssb.no",
+    "email_short": "rsa@ssb.no"
+  },
+  {
+    "name": "Aasestad, Kristin",
+    "email": "kristin.aasestad@ssb.no",
+    "email_short": "kaa@ssb.no"
+  },
+  {
+    "name": "Abdi, Abdullaahi",
+    "email": "abdullaahi.abdi@ssb.no",
+    "email_short": "adu@ssb.no"
+  },
+  {
+    "name": "Abdullahi, Shukri Idris",
+    "email": "shukri.abdullahi@ssb.no",
+    "email_short": "shu@ssb.no"
+  },
+  {
+    "name": "Abelsæth, Anne",
+    "email": "anne.abelsaeth@ssb.no",
+    "email_short": "aae@ssb.no"
+  },
+  {
+    "name": "Abidi, Moez",
+    "email": "moez.abidi@ssb.no",
+    "email_short": "mza@ssb.no"
+  },
+  {
+    "name": "Abonyo, Samuel",
+    "email": "samuel.abonyo@ssb.no",
+    "email_short": "abo@ssb.no"
+  },
+  {
+    "name": "Abrahamsen, Dag Ragnvald",
+    "email": "dag.ragnvald.abrahamsen@ssb.no",
+    "email_short": "dra@ssb.no"
+  },
+  {
+    "name": "Abrahamsen, Olav",
+    "email": "olav.abrahamsen@ssb.no",
+    "email_short": "aon@ssb.no"
+  },
+  {
+    "name": "Abshir, Nafisso Hassan",
+    "email": "nafisso.abshir@ssb.no",
+    "email_short": "nhs@ssb.no"
+  },
+  {
+    "name": "Abuzeid, Aseel",
+    "email": "aseel.abuzeid@ssb.no",
+    "email_short": "abu@ssb.no"
+  },
+  {
+    "name": "Acquah, Francis Kwamena",
+    "email": "francis.kwamena.acquah@ssb.no",
+    "email_short": "fka@ssb.no"
+  },
+  {
+    "name": "Afifi, Poyan",
+    "email": "poyan.afifi@ssb.no",
+    "email_short": "paf@ssb.no"
+  },
+  {
+    "name": "Agramonte, Jose Armando Castillo",
+    "email": "jose.agramonte@ssb.no",
+    "email_short": "jca@ssb.no"
+  },
+  {
+    "name": "Åhjem, Solveig I",
+    "email": "solveig.ahjem@ssb.no",
+    "email_short": "soi@ssb.no"
+  },
+  {
+    "name": "Akselsen, Vidar",
+    "email": "vidar.akselsen@ssb.no",
+    "email_short": "iak@ssb.no"
+  },
+  { "name": "aku", "email": "aku@ssb.no", "email_short": "aku@ssb.no" },
+  {
+    "name": "Alabay, Ibrahim",
+    "email": "ibrahim.alabay@ssb.no",
+    "email_short": "bay@ssb.no"
+  },
+  {
+    "name": "Albertsen, Daniel",
+    "email": "daniel.albertsen@ssb.no",
+    "email_short": "dts@ssb.no"
+  },
+  {
+    "name": "Ali, Hamdi",
+    "email": "hamdi.ali@ssb.no",
+    "email_short": "hsy@ssb.no"
+  },
+  {
+    "name": "Alizadeh, Naim",
+    "email": "naim.alizadeh@ssb.no",
+    "email_short": "lna@ssb.no"
+  },
+  {
+    "name": "Allertsen, Linda",
+    "email": "linda.allertsen@ssb.no",
+    "email_short": "lia@ssb.no"
+  },
+  {
+    "name": "Almaas, Henrik Eli",
+    "email": "henrik.almaas@ssb.no",
+    "email_short": "ike@ssb.no"
+  },
+  {
+    "name": "Almadi, Danya",
+    "email": "danya.almadi@ssb.no",
+    "email_short": "dlm@ssb.no"
+  },
+  {
+    "name": "Almaz, Seher",
+    "email": "seher.almaz@ssb.no",
+    "email_short": "eea@ssb.no"
+  },
+  {
+    "name": "Alper, Melike Oguz",
+    "email": "melike.oguz.alper@ssb.no",
+    "email_short": "oam@ssb.no"
+  },
+  {
+    "name": "Alstad, Elise",
+    "email": "elise.alstad@ssb.no",
+    "email_short": "lal@ssb.no"
+  },
+  {
+    "name": "Alvær, Eirik",
+    "email": "eirik.alvaer@ssb.no",
+    "email_short": "kons-alvar@ssb.no"
+  },
+  {
+    "name": "Åmberg, Johan",
+    "email": "johan.amberg@ssb.no",
+    "email_short": "jag@ssb.no"
+  },
+  {
+    "name": "Amdal, Nils",
+    "email": "nils.amdal@ssb.no",
+    "email_short": "nal@ssb.no"
+  },
+  {
+    "name": "Amundsen, Nicolai",
+    "email": "nicolai.amundsen@ssb.no",
+    "email_short": "nia@ssb.no"
+  },
+  {
+    "name": "Amundsen, Ranveig",
+    "email": "ranveig.amundsen@ssb.no",
+    "email_short": "ram@ssb.no"
+  },
+  {
+    "name": "Amundsen, Trudi",
+    "email": "trudi.amundsen@ssb.no",
+    "email_short": "tua@ssb.no"
+  },
+  {
+    "name": "Amundsen, Ulrik Rongved",
+    "email": "ulrik.rongved.amundsen@ssb.no",
+    "email_short": "ulr@ssb.no"
+  },
+  {
+    "name": "Anders",
+    "email": "anders.elton@ssb.no",
+    "email_short": "kons-elton@ssb.no"
+  },
+  {
+    "name": "Andersen, Espen",
+    "email": "espen.andersen@ssb.no",
+    "email_short": "esa@ssb.no"
+  },
+  {
+    "name": "Andersen, Glenn Cato",
+    "email": "glenn.andersen@ssb.no",
+    "email_short": "gca@ssb.no"
+  },
+  {
+    "name": "Andersen, May Toril",
+    "email": "may.andersen@ssb.no",
+    "email_short": "amt@ssb.no"
+  },
+  {
+    "name": "Andersen, Morten Qvenild",
+    "email": "morten.qvenild.andersen@ssb.no",
+    "email_short": "moa@ssb.no"
+  },
+  {
+    "name": "Andersen, Synøve Nygaard",
+    "email": "synove.andersen@ssb.no",
+    "email_short": "sna@ssb.no"
+  },
+  {
+    "name": "Andersson, Saja",
+    "email": "saja.andersson@ssb.no",
+    "email_short": "kons_saja@ssb.no"
+  },
+  {
+    "name": "Andreassen, Edvard",
+    "email": "edvard.andreassen@ssb.no",
+    "email_short": "edv@ssb.no"
+  },
+  {
+    "name": "Andreassen, Ivar",
+    "email": "ivar.andreassen@ssb.no",
+    "email_short": "ani@ssb.no"
+  },
+  {
+    "name": "Andreassen, Leif",
+    "email": "leif.andreassen@ssb.no",
+    "email_short": "lan@ssb.no"
+  },
+  {
+    "name": "Andresen, Bente Elisabeth",
+    "email": "bente.elisabeth.andresen@ssb.no",
+    "email_short": "bab@ssb.no"
+  },
+  {
+    "name": "Andresen, Martin Eckhoff",
+    "email": "martin.andresen@ssb.no",
+    "email_short": "mrt@ssb.no"
+  },
+  {
+    "name": "Andresen, Sophia Mai Howard",
+    "email": "sophia.andresen@ssb.no",
+    "email_short": "hia@ssb.no"
+  },
+  {
+    "name": "Ånerud, Trine",
+    "email": "trine.anerud@ssb.no",
+    "email_short": "taa@ssb.no"
+  },
+  {
+    "name": "Ånestad, Tor Kristian",
+    "email": "tor.anestad@ssb.no",
+    "email_short": "tkn@ssb.no"
+  },
+  {
+    "name": "Anne-Kathrine Jernberg",
+    "email": "anne.kathrine.jernberg@ssb.no",
+    "email_short": "akj@ssb.no"
+  },
+  {
+    "name": "Ansari Yasin",
+    "email": "yasin.ansari@ssb.no",
+    "email_short": "yaa@ssb.no"
+  },
+  {
+    "name": "Antonsen, Roy",
+    "email": "roy.antonsen@ssb.no",
+    "email_short": "rmt@ssb.no"
+  },
+  {
+    "name": "Apelseth, Andreas Indrebø",
+    "email": "andreas.apelseth@ssb.no",
+    "email_short": "aap@ssb.no"
+  },
+  {
+    "name": "Arega, Meron Assefa",
+    "email": "meron.arega@ssb.no",
+    "email_short": "efa@ssb.no"
+  },
+  {
+    "name": "Arnesen, Geir Hoel",
+    "email": "geir.hoel.arnesen@ssb.no",
+    "email_short": "gei@ssb.no"
+  },
+  {
+    "name": "Arnesen, Hanna Stangebye",
+    "email": "hanna.arnesen@ssb.no",
+    "email_short": "bye@ssb.no"
+  },
+  {
+    "name": "Arnesen, Irene",
+    "email": "irene.arnesen@ssb.no",
+    "email_short": "iae@ssb.no"
+  },
+  {
+    "name": "Arnesen, Rebecca",
+    "email": "rebecca.arnesen@ssb.no",
+    "email_short": "rar@ssb.no"
+  },
+  {
+    "name": "Arntzen, Jørgen Knutsønn",
+    "email": "jorgen.arntzen@ssb.no",
+    "email_short": "jka@ssb.no"
+  },
+  {
+    "name": "Arodi, Corretta Aluoch",
+    "email": "corretta.aluoch.arodi@ssb.no",
+    "email_short": "cos@ssb.no"
+  },
+  {
+    "name": "Aronofsky, Hanna",
+    "email": "hanna.aronofsky@ssb.no",
+    "email_short": "hfy@ssb.no"
+  },
+  {
+    "name": "Aronsen, Simon Oftestad",
+    "email": "simon.aronsen@ssb.no",
+    "email_short": "nof@ssb.no"
+  },
+  {
+    "name": "Asanza, Mario",
+    "email": "mario.monsen@ssb.no",
+    "email_short": "aaz@ssb.no"
+  },
+  {
+    "name": "Aslaksen, Iulie",
+    "email": "iulie.aslaksen@ssb.no",
+    "email_short": "iua@ssb.no"
+  },
+  {
+    "name": "Audoly, Richard",
+    "email": "richard.audoly@ssb.no",
+    "email_short": "rca@ssb.no"
+  },
+  {
+    "name": "Aukrust, Inge",
+    "email": "inge.aukrust@ssb.no",
+    "email_short": "iau@ssb.no"
+  },
+  {
+    "name": "Aulie, Britt Helen Hagerud",
+    "email": "britt.helen.hagerud.auli@ssb.no",
+    "email_short": "brh@ssb.no"
+  },
+  {
+    "name": "Aune, Finn Roar",
+    "email": "finn.roar.aune@ssb.no",
+    "email_short": "fau@ssb.no"
+  },
+  {
+    "name": "Auno, Anne Mari",
+    "email": "anne.auno@ssb.no",
+    "email_short": "aun@ssb.no"
+  },
+  {
+    "name": "Aursland, Thor Andreas",
+    "email": "thor.aursland@ssb.no",
+    "email_short": "tna@ssb.no"
+  },
+  {
+    "name": "Austnes, Thore",
+    "email": "thore.austnes@ssb.no",
+    "email_short": "aut@ssb.no"
+  },
+  {
+    "name": "Authen, Ole Kristian",
+    "email": "ole.authen@ssb.no",
+    "email_short": "nau@ssb.no"
+  },
+  {
+    "name": "Axelsen, Geir",
+    "email": "geir.axelsen@ssb.no",
+    "email_short": "gax@ssb.no"
+  },
+  {
+    "name": "Azamifard, Arash",
+    "email": "arash.azamifard@ssb.no",
+    "email_short": "ahz@ssb.no"
+  },
+  {
+    "name": "Azure MFA",
+    "email": "",
+    "email_short": "mfa@ssbno.onmicrosoft.com"
+  },
+  {
+    "name": "Babaskina, Tatiana",
+    "email": "tatiana.babaskina@ssb.no",
+    "email_short": "tba@ssb.no"
+  },
+  {
+    "name": "Backe, Heidi Bekkevold",
+    "email": "heidi.backe@ssb.no",
+    "email_short": "bbh@ssb.no"
+  },
+  {
+    "name": "Badina, Svetlana",
+    "email": "svetlana.badina@ssb.no",
+    "email_short": "bad@ssb.no"
+  },
+  {
+    "name": "Bakke, Stein",
+    "email": "stein.bakke@ssb.no",
+    "email_short": "sba@ssb.no"
+  },
+  {
+    "name": "Bakke, Stine",
+    "email": "stine.bakke@ssb.no",
+    "email_short": "eba@ssb.no"
+  },
+  {
+    "name": "Bakke, Thore Nafstad",
+    "email": "thore.bakke@ssb.no",
+    "email_short": "tnb@ssb.no"
+  },
+  {
+    "name": "Baklien, Anne Turi",
+    "email": "anne.turi.baklien@ssb.no",
+    "email_short": "atf@ssb.no"
+  },
+  {
+    "name": "Barash, Joridan",
+    "email": "joridan.barash@ssb.no",
+    "email_short": "jba@ssb.no"
+  },
+  {
+    "name": "Barstad, Anders",
+    "email": "anders.barstad@ssb.no",
+    "email_short": "aba@ssb.no"
+  },
+  {
+    "name": "Barth, Nini",
+    "email": "nini.barth@ssb.no",
+    "email_short": "nba@ssb.no"
+  },
+  {
+    "name": "Bartsch, Beate",
+    "email": "beate.bartsch@ssb.no",
+    "email_short": "bba@ssb.no"
+  },
+  {
+    "name": "Båshus, Trond",
+    "email": "trond.bashus@ssb.no",
+    "email_short": "tbh@ssb.no"
+  },
+  {
+    "name": "Batool, Sahifa",
+    "email": "sahifa.batool@ssb.no",
+    "email_short": "ifa@ssb.no"
+  },
+  {
+    "name": "Batra, Gaurav",
+    "email": "gaurav.batra@ssb.no",
+    "email_short": "kons-batra@ssb.no"
+  },
+  {
+    "name": "Bauer-Nilsen, Louise",
+    "email": "louise.bauer-nilsen@ssb.no",
+    "email_short": "lob@ssb.no"
+  },
+  {
+    "name": "Baumann, Sofie Hillestad",
+    "email": "sofie.baumann@ssb.no",
+    "email_short": "ofi@ssb.no"
+  },
+  {
+    "name": "Bazilyk, Sergei",
+    "email": "sergei.bazilyk@ssb.no",
+    "email_short": "baz@ssb.no"
+  },
+  {
+    "name": "Beam, Jim",
+    "email": "jim.beam@ssb.no",
+    "email_short": "jmb@ssb.no"
+  },
+  {
+    "name": "Bekkengen, Fam Vivian",
+    "email": "vivian.bekkengen@ssb.no",
+    "email_short": "fvb@ssb.no"
+  },
+  {
+    "name": "Bekkengen, Jane Hansine",
+    "email": "jane.hansine.bekkengen@ssb.no",
+    "email_short": "jhb@ssb.no"
+  },
+  {
+    "name": "Bekkevold, Hege Raaberg",
+    "email": "hege.raaberg.bekkevold@ssb.no",
+    "email_short": "hcj@ssb.no"
+  },
+  {
+    "name": "Bensnes, Simon Søbstad",
+    "email": "simon.bensnes@ssb.no",
+    "email_short": "sdb@ssb.no"
+  },
+  {
+    "name": "Berg, Fanny Cecilie",
+    "email": "fanny.berg@ssb.no",
+    "email_short": "fcb@ssb.no"
+  },
+  {
+    "name": "Berg, Nina",
+    "email": "nina.berg@ssb.no",
+    "email_short": "nbe@ssb.no"
+  },
+  {
+    "name": "Berge, Christoffer",
+    "email": "cristoffer.berge@ssb.no",
+    "email_short": "chb@ssb.no"
+  },
+  {
+    "name": "Berge, Gisle",
+    "email": "gisle.berge@ssb.no",
+    "email_short": "gib@ssb.no"
+  },
+  {
+    "name": "Berget, Jørgen Vinje",
+    "email": "jorgen.berget@ssb.no",
+    "email_short": "jvb@ssb.no"
+  },
+  {
+    "name": "Bergh, Marius",
+    "email": "marius.bergh@ssb.no",
+    "email_short": "pmb@ssb.no"
+  },
+  {
+    "name": "Berglund, Frode",
+    "email": "frode.berglund@ssb.no",
+    "email_short": "fbe@ssb.no"
+  },
+  {
+    "name": "Bergman, Annette Grasmo",
+    "email": "annette.bergman@ssb.no",
+    "email_short": "bag@ssb.no"
+  },
+  {
+    "name": "Bergset, Trond",
+    "email": "trond.bergset@ssb.no",
+    "email_short": "trd@ssb.no"
+  },
+  {
+    "name": "Bergseteren, Tove",
+    "email": "tove.bergseteren@ssb.no",
+    "email_short": "tov@ssb.no"
+  },
+  {
+    "name": "Bergsødegård, Inger",
+    "email": "inger.bergsodegard@ssb.no",
+    "email_short": "ifb@ssb.no"
+  },
+  {
+    "name": "Bergsødegård, Tove",
+    "email": "tove.bergsodegard@ssb.no",
+    "email_short": "tgb@ssb.no"
+  },
+  {
+    "name": "Bergsvik, Janna",
+    "email": "janna.bergsvik@ssb.no",
+    "email_short": "jbk@ssb.no"
+  },
+  {
+    "name": "Bergvall, Kristin",
+    "email": "kristin.bergvall@ssb.no",
+    "email_short": "kll@ssb.no"
+  },
+  {
+    "name": "Berntsen, Øyvind Isachsen",
+    "email": "oyvind.berntsen@ssb.no",
+    "email_short": "yib@ssb.no"
+  },
+  {
+    "name": "Berrefjord, Astri",
+    "email": "astri.berrefjord@ssb.no",
+    "email_short": "fjo@ssb.no"
+  },
+  {
+    "name": "Berrios Claudia",
+    "email": "claudia.berrios@ssb.no",
+    "email_short": "cla@ssb.no"
+  },
+  {
+    "name": "Bersaas, Øyvind Woxmyhr",
+    "email": "oyvind.woxmyhr.bersaas@ssb.no",
+    "email_short": "ywb@ssb.no"
+  },
+  {
+    "name": "Beyrer, Svetlana",
+    "email": "svetlana.beyrer@ssb.no",
+    "email_short": "svb@ssb.no"
+  },
+  {
+    "name": "Bhuller, Manudeep Singh",
+    "email": "manudeep.bhuller@ssb.no",
+    "email_short": "msi@ssb.no"
+  },
+  {
+    "name": "Billingsø, Lars-Roger",
+    "email": "lars-roger.billingso@ssb.no",
+    "email_short": "lrb@ssb.no"
+  },
+  {
+    "name": "Billingsø, Turid",
+    "email": "turid.billingso@ssb.no",
+    "email_short": "ung@ssb.no"
+  },
+  {
+    "name": "Billit, Tom Jonas",
+    "email": "tom.billit@ssb.no",
+    "email_short": "tjb@ssb.no"
+  },
+  {
+    "name": "Birkelund, Jostein",
+    "email": "jostein.birkelund@ssb.no",
+    "email_short": "jbi@ssb.no"
+  },
+  {
+    "name": "Birkevold, Reidun",
+    "email": "reidun.birkevold@ssb.no",
+    "email_short": "rbv@ssb.no"
+  },
+  {
+    "name": "Bjelvert, Malin",
+    "email": "malin.bjelvert@ssb.no",
+    "email_short": "pma@ssb.no"
+  },
+  {
+    "name": "Bjerke, Malin",
+    "email": "malin.bjerke@ssb.no",
+    "email_short": "abj@ssb.no"
+  },
+  {
+    "name": "Bjertnæs, Geir H.",
+    "email": "geir.h.bjertnas@ssb.no",
+    "email_short": "ghb@ssb.no"
+  },
+  {
+    "name": "Bjørkås, Eivind",
+    "email": "eivind.bjorkas@ssb.no",
+    "email_short": "evb@ssb.no"
+  },
+  {
+    "name": "Bjørkheim, Julie Brun",
+    "email": "julie.bjorkheim@ssb.no",
+    "email_short": "jbb@ssb.no"
+  },
+  {
+    "name": "Bjørkholt, Solveig",
+    "email": "solveig.bjorkholt@ssb.no",
+    "email_short": "sgb@ssb.no"
+  },
+  {
+    "name": "Bjørkli, Elin Såheim",
+    "email": "elin.saheim.bjorkli@ssb.no",
+    "email_short": "ebj@ssb.no"
+  },
+  {
+    "name": "Bjørlo, Berit",
+    "email": "berit.bjorlo@ssb.no",
+    "email_short": "bbj@ssb.no"
+  },
+  {
+    "name": "Bjørnerud, Linn Christin",
+    "email": "linn.bjornerud@ssb.no",
+    "email_short": "lcb@ssb.no"
+  },
+  {
+    "name": "Bjørnøy, June",
+    "email": "june.bjornoy@ssb.no",
+    "email_short": "jub@ssb.no"
+  },
+  {
+    "name": "Bjørnskau, Thomas",
+    "email": "thomas.bjornskau@ssb.no",
+    "email_short": "thb@ssb.no"
+  },
+  {
+    "name": "Bjørnstad, Helga Marie",
+    "email": "helga.bjornstad@ssb.no",
+    "email_short": "jrn@ssb.no"
+  },
+  {
+    "name": "Bjørnstad, Jan",
+    "email": "jan.bjornstad@ssb.no",
+    "email_short": "jab@ssb.no"
+  },
+  {
+    "name": "Bjørnstad, Nina",
+    "email": "nina.bjornstad@ssb.no",
+    "email_short": "nin@ssb.no"
+  },
+  {
+    "name": "Blakstad, Dag",
+    "email": "dag.blakstad@ssb.no",
+    "email_short": "dab@ssb.no"
+  },
+  {
+    "name": "Blandhol, Christine",
+    "email": "christine.blandhol@ssb.no",
+    "email_short": "cbl@ssb.no"
+  },
+  {
+    "name": "Blikeng, Fredrick",
+    "email": "fredrick.blikeng@ssb.no",
+    "email_short": "fbl@ssb.no"
+  },
+  {
+    "name": "Bloch, Sonia R M",
+    "email": "sonia.bloch@ssb.no",
+    "email_short": "blo@ssb.no"
+  },
+  {
+    "name": "Bloch, Vilni Verner Holst",
+    "email": "vilni.verner.holst.bloch@ssb.no",
+    "email_short": "vvh@ssb.no"
+  },
+  {
+    "name": "Blytt, Julian Paulsen",
+    "email": "julian.blytt@ssb.no",
+    "email_short": "jpb@ssb.no"
+  },
+  {
+    "name": "Bø, Erlend Eide",
+    "email": "erlend.bo@ssb.no",
+    "email_short": "eeb@ssb.no"
+  },
+  {
+    "name": "Boateng, Sadiq Kwesi",
+    "email": "sadiq.kwesi.boateng@ssb.no",
+    "email_short": "boa@ssb.no"
+  },
+  {
+    "name": "Bøeng, Ann Christin",
+    "email": "ann.christin.boeng@ssb.no",
+    "email_short": "abg@ssb.no"
+  },
+  {
+    "name": "Bolsgård, Øyvind",
+    "email": "oyvind.bolsgard@ssb.no",
+    "email_short": "obo@ssb.no"
+  },
+  {
+    "name": "Bonney, John",
+    "email": "john.bonney@ssb.no",
+    "email_short": "nbn@ssb.no"
+  },
+  {
+    "name": "Boquist, Siri Elisabet",
+    "email": "siri.elisabet.boquist@ssb.no",
+    "email_short": "sib@ssb.no"
+  },
+  {
+    "name": "Bore, Ragnhild Rein",
+    "email": "ragnhild.bore@ssb.no",
+    "email_short": "rrb@ssb.no"
+  },
+  {
+    "name": "Borgås, Frode",
+    "email": "frode.borgas@ssb.no",
+    "email_short": "fro@ssb.no"
+  },
+  {
+    "name": "Børgund, Nanna",
+    "email": "nanna.borgund@ssb.no",
+    "email_short": "nnb@ssb.no"
+  },
+  {
+    "name": "Børrud, Solfrid",
+    "email": "solfrid.borrud@ssb.no",
+    "email_short": "sbd@ssb.no"
+  },
+  {
+    "name": "Bothner, Trude Melby",
+    "email": "trude.bothner@ssb.no",
+    "email_short": "tmb@ssb.no"
+  },
+  {
+    "name": "Boué, Kim Benjamin",
+    "email": "kim.benjamin.boue@ssb.no",
+    "email_short": "kbb@ssb.no"
+  },
+  {
+    "name": "Boug, Pål",
+    "email": "pal.boug@ssb.no",
+    "email_short": "bou@ssb.no"
+  },
+  {
+    "name": "Bougroug, Achraf",
+    "email": "achraf.bougroug@ssb.no",
+    "email_short": "acb@ssb.no"
+  },
+  {
+    "name": "Bøvelstad, Hege Marie",
+    "email": "hege.bovelstad@ssb.no",
+    "email_short": "ebv@ssb.no"
+  },
+  {
+    "name": "Braathen, Stig",
+    "email": "stig.braathen@ssb.no",
+    "email_short": "sbr@ssb.no"
+  },
+  {
+    "name": "Brændvang, Ann-Kristin",
+    "email": "ann-kristin.braendvang@ssb.no",
+    "email_short": "akb@ssb.no"
+  },
+  {
+    "name": "Bragstad, Eigil Alf",
+    "email": "eigil.bragstad@ssb.no",
+    "email_short": "gst@ssb.no"
+  },
+  {
+    "name": "Brakalsvålet, Randi",
+    "email": "randi.brakalsvalet@ssb.no",
+    "email_short": "rbr@ssb.no"
+  },
+  {
+    "name": "Brakalsvålet, Torild-Irene",
+    "email": "torild.irene.brakalsvalet@ssb.no",
+    "email_short": "tik@ssb.no"
+  },
+  {
+    "name": "Brasch, Thomas Von",
+    "email": "thomas.vonbrasch@ssb.no",
+    "email_short": "tly@ssb.no"
+  },
+  {
+    "name": "Brathaug, Ann Lisbet",
+    "email": "ann.lisbet.brathaug@ssb.no",
+    "email_short": "abr@ssb.no"
+  },
+  {
+    "name": "Bråthen, Henrik",
+    "email": "henrik.brathen@ssb.no",
+    "email_short": "bhe@ssb.no"
+  },
+  {
+    "name": "Bråthen, Jorunn Sedal",
+    "email": "jorunn.brathen@ssb.no",
+    "email_short": "nns@ssb.no"
+  },
+  {
+    "name": "Bråthen, Kåre",
+    "email": "kare.brathen@ssb.no",
+    "email_short": "brn@ssb.no"
+  },
+  {
+    "name": "Bråthen, Marius Berg",
+    "email": "marius.berg.brathen@ssb.no",
+    "email_short": "mbb@ssb.no"
+  },
+  {
+    "name": "Bråthen, Remy",
+    "email": "remy.brathen@ssb.no",
+    "email_short": "brr@ssb.no"
+  },
+  {
+    "name": "Bratholmen, Nadine Viktoria Lunde",
+    "email": "nadine.bratholmen@ssb.no",
+    "email_short": "nvb@ssb.no"
+  },
+  {
+    "name": "Bredeli, Else",
+    "email": "else.bredeli@ssb.no",
+    "email_short": "ehf@ssb.no"
+  },
+  {
+    "name": "Bredesen-Vestby, Ole",
+    "email": "ole.bredesen-vestby@ssb.no",
+    "email_short": "obv@ssb.no"
+  },
+  {
+    "name": "Breivik, Line",
+    "email": "line.breivik@ssb.no",
+    "email_short": "lma@ssb.no"
+  },
+  {
+    "name": "Brekke, Ina",
+    "email": "ina.brekke@ssb.no",
+    "email_short": "iab@ssb.no"
+  },
+  {
+    "name": "Brenna, Heidi Marie",
+    "email": "heidi.marie.brenna@ssb.no",
+    "email_short": "hmb@ssb.no"
+  },
+  {
+    "name": "Bretteville-Jensen, Johannes",
+    "email": "johannes.bretteville-jensen@ssb.no",
+    "email_short": "rjo@ssb.no"
+  },
+  {
+    "name": "Broen Kjeka, Eivind",
+    "email": "eivind.broen@ssb.no",
+    "email_short": "ekb@ssb.no"
+  },
+  {
+    "name": "Brovold, Christian",
+    "email": "christian.brovold@ssb.no",
+    "email_short": "cbr@ssb.no"
+  },
+  {
+    "name": "Bruer-Skarsbø, Øyvind",
+    "email": "oyvind.bruer-skarsbo@ssb.no",
+    "email_short": "obr@ssb.no"
+  },
+  {
+    "name": "Bruheim, Daniel Phillips",
+    "email": "danielphillips.bruheim@ssb.no",
+    "email_short": "dpb@ssb.no"
+  },
+  {
+    "name": "Brunborg, Helge",
+    "email": "brunborg@ssb.no",
+    "email_short": "hbr@ssb.no"
+  },
+  {
+    "name": "Bruusgaard, Jan",
+    "email": "jan.bruusgaard@ssb.no",
+    "email_short": "jbr@ssb.no"
+  },
+  {
+    "name": "Bryn, Herborg",
+    "email": "herborg.bryn@ssb.no",
+    "email_short": "hby@ssb.no"
+  },
+  {
+    "name": "Brynestad, Eirin Ingvaldsen",
+    "email": "eirin.ingvaldsen.brynestad@ssb.no",
+    "email_short": "eby@ssb.no"
+  },
+  {
+    "name": "Brynjar Hasle",
+    "email": "brynjar@chemistry.no",
+    "email_short": "kons-brynjar@ssb.no"
+  },
+  {
+    "name": "Buczek, Pawel",
+    "email": "pawel.buczek@ssb.no",
+    "email_short": "pbu@ssb.no"
+  },
+  {
+    "name": "Bue, Trude Elisabeth",
+    "email": "trude.bue@ssb.no",
+    "email_short": "bue@ssb.no"
+  },
+  {
+    "name": "Bulygina, Polina",
+    "email": "polina.bulygina@ssb.no",
+    "email_short": "lyg@ssb.no"
+  },
+  {
+    "name": "Burud, Kai",
+    "email": "kai.burud@ssb.no",
+    "email_short": "bur@ssb.no"
+  },
+  {
+    "name": "Bye, Brita",
+    "email": "brita.bye@ssb.no",
+    "email_short": "bby@ssb.no"
+  },
+  {
+    "name": "Bye, Knut Snellingen",
+    "email": "knut.snellingen.bye@ssb.no",
+    "email_short": "ksb@ssb.no"
+  },
+  {
+    "name": "Bye, Lise Snellingen",
+    "email": "lise.snellingen.bye@ssb.no",
+    "email_short": "lnd@ssb.no"
+  },
+  {
+    "name": "Bye, Torstein Arne",
+    "email": "torstein.arne.bye@ssb.no",
+    "email_short": "tab@ssb.no"
+  },
+  {
+    "name": "Campechano, Maria Asuncion",
+    "email": "maria.campechano@ssb.no",
+    "email_short": "mca@ssb.no"
+  },
+  {
+    "name": "Cappelen, Ådne",
+    "email": "adne.cappelen@ssb.no",
+    "email_short": "cap@ssb.no"
+  },
+  {
+    "name": "Carlsson, Jenny M.A.",
+    "email": "jenny.carlsson@ssb.no",
+    "email_short": "jec@ssb.no"
+  },
+  {
+    "name": "Castberg, Benedicte",
+    "email": "benedicte.castberg@ssb.no",
+    "email_short": "cab@ssb.no"
+  },
+  {
+    "name": "Chaudhary, Manju",
+    "email": "manju.chaudhary@ssb.no",
+    "email_short": "nju@ssb.no"
+  },
+  {
+    "name": "Choudhury, Robin",
+    "email": "robin.choudhury@ssb.no",
+    "email_short": "rch@ssb.no"
+  },
+  {
+    "name": "Christensen, Jacob",
+    "email": "jacob.christensen@ssb.no",
+    "email_short": "jch@ssb.no"
+  },
+  {
+    "name": "Christiansen, Martin Sidselrud",
+    "email": "martin.christiansen@ssb.no",
+    "email_short": "inc@ssb.no"
+  },
+  {
+    "name": "Claus, Gunnar",
+    "email": "gunnar.claus@ssb.no",
+    "email_short": "guc@ssb.no"
+  },
+  {
+    "name": "Colmenares-Miralles, Jorge",
+    "email": "jorge.colmenares-miralles@ssb.no",
+    "email_short": "jcm@ssb.no"
+  },
+  {
+    "name": "Corneil, Carl Franklin",
+    "email": "carl.corneil@ssb.no",
+    "email_short": "cfc@ssb.no"
+  },
+  {
+    "name": "Croos, Anne Louisa",
+    "email": "anne.louisa.croos@ssb.no",
+    "email_short": "alc@ssb.no"
+  },
+  {
+    "name": "Dagsvik, John",
+    "email": "john.dagsvik@ssb.no",
+    "email_short": "jda@ssb.no"
+  },
+  {
+    "name": "Dal, Anita Cecilie",
+    "email": "anitacecilie.dal@ssb.no",
+    "email_short": "acd@ssb.no"
+  },
+  {
+    "name": "Dale, Lars Jacob Balchen",
+    "email": "lars.dale@ssb.no",
+    "email_short": "ljd@ssb.no"
+  },
+  {
+    "name": "Dalen, Hanne Marit",
+    "email": "hannemarit.dalen@ssb.no",
+    "email_short": "hmd@ssb.no"
+  },
+  {
+    "name": "Dalen, Håvard Bergesen",
+    "email": "havard.dalen@ssb.no",
+    "email_short": "rge@ssb.no"
+  },
+  {
+    "name": "Dalen, Lin Hege Austad",
+    "email": "lin.hege.austad.dalen@ssb.no",
+    "email_short": "lhd@ssb.no"
+  },
+  {
+    "name": "Delbekk, Gunn Reidun",
+    "email": "gunn.reidun.delbekk@ssb.no",
+    "email_short": "del@ssb.no"
+  },
+  {
+    "name": "Delerud, Annie",
+    "email": "annie.delerud@ssb.no",
+    "email_short": "dea@ssb.no"
+  },
+  {
+    "name": "Denisova, Ekaterina",
+    "email": "ekaterina.denisova@ssb.no",
+    "email_short": "ede@ssb.no"
+  },
+  {
+    "name": "Derakhshanfar, Soheila",
+    "email": "soheila.derakhshanfar@ssb.no",
+    "email_short": "srf@ssb.no"
+  },
+  {
+    "name": "Digranes, Arve",
+    "email": "arve.digranes@ssb.no",
+    "email_short": "avd@ssb.no"
+  },
+  {
+    "name": "Dimakos, Xeni Kristine",
+    "email": "xeni.dimakos@ssb.no",
+    "email_short": "xkd@ssb.no"
+  },
+  {
+    "name": "Ding, Ning",
+    "email": "ning.ding@ssb.no",
+    "email_short": "ngd@ssb.no"
+  },
+  {
+    "name": "Dobey, Elisabeth Andresen",
+    "email": "elisabeth.dobey@ssb.no",
+    "email_short": "ead@ssb.no"
+  },
+  {
+    "name": "Døhl, Per-Christian",
+    "email": "per-christian.dohl@ssb.no",
+    "email_short": "pcd@ssb.no"
+  },
+  {
+    "name": "Dommermuth, Lars",
+    "email": "lars.dommermuth@ssb.no",
+    "email_short": "ldo@ssb.no"
+  },
+  {
+    "name": "Dønnum, Oskar Arnesen",
+    "email": "oskar.donnum@ssb.no",
+    "email_short": "aos@ssb.no"
+  },
+  {
+    "name": "Drageset, Olve",
+    "email": "olve.drageset@ssb.no",
+    "email_short": "old@ssb.no"
+  },
+  {
+    "name": "Dragonmoen, Heidi",
+    "email": "heidi.dragonmoen@ssb.no",
+    "email_short": "hdr@ssb.no"
+  },
+  {
+    "name": "Drange, Nina",
+    "email": "nina.drange@ssb.no",
+    "email_short": "ndr@ssb.no"
+  },
+  {
+    "name": "Dreier, Jan Ivar",
+    "email": "jan.ivar.dreier@ssb.no",
+    "email_short": "jid@ssb.no"
+  },
+  {
+    "name": "Dreierbakken, Svein Åge",
+    "email": "svein.dreierbakken@ssb.no",
+    "email_short": "sgd@ssb.no"
+  },
+  {
+    "name": "Dyrhaug, Tone",
+    "email": "tone.dyrhaug@ssb.no",
+    "email_short": "Dyr@ssb.no"
+  },
+  {
+    "name": "Dyrstad, Kari Malene Jørgensen",
+    "email": "kari.dyrstad@ssb.no",
+    "email_short": "rim@ssb.no"
+  },
+  {
+    "name": "Dysterud, Marianne Vik",
+    "email": "marianne.vik.dysterud@ssb.no",
+    "email_short": "mvd@ssb.no"
+  },
+  {
+    "name": "Dzamarija, Minja Tea",
+    "email": "minja.tea.dzamarija@ssb.no",
+    "email_short": "dza@ssb.no"
+  },
+  {
+    "name": "Edelmann, Fredrik Steinrem",
+    "email": "fredrik.edelmann@ssb.no",
+    "email_short": "fed@ssb.no"
+  },
+  {
+    "name": "Edvardsen, Øyvind",
+    "email": "oyvind.edvardsen@ssb.no",
+    "email_short": "oye@ssb.no"
+  },
+  {
+    "name": "Eeg-Henriksen, Hjørdis",
+    "email": "hjordis.eeg-henriksen@ssb.no",
+    "email_short": "hee@ssb.no"
+  },
+  {
+    "name": "Eek, Evy Ingeborg",
+    "email": "evy.eek@ssb.no",
+    "email_short": "eek@ssb.no"
+  },
+  {
+    "name": "Egge-Hoveid, Kristin",
+    "email": "kristin.egge-hoveid@ssb.no",
+    "email_short": "keg@ssb.no"
+  },
+  {
+    "name": "Egge, Eivind Andreas Sirnæs",
+    "email": "eivind.egge@ssb.no",
+    "email_short": "eae@ssb.no"
+  },
+  {
+    "name": "Egner-Kaupang, Are",
+    "email": "are.egner-kaupang@ssb.no",
+    "email_short": "egk@ssb.no"
+  },
+  {
+    "name": "Eibak, Elisabeth Eng",
+    "email": "elisabeth.eng.eibak@ssb.no",
+    "email_short": "eib@ssb.no"
+  },
+  {
+    "name": "Eidlaug, Espen Gusterud",
+    "email": "espen.eidlaug@ssb.no",
+    "email_short": "ust@ssb.no"
+  },
+  {
+    "name": "Eidshagen, Arne W",
+    "email": "arne.eidshagen@ssb.no",
+    "email_short": "new@ssb.no"
+  },
+  {
+    "name": "Eika, Lasse",
+    "email": "lasse.eika@ssb.no",
+    "email_short": "lae@ssb.no"
+  },
+  {
+    "name": "Eisenhauer, Philipp",
+    "email": "philipp.eisenhauer@ssb.no",
+    "email_short": "phe@ssb.no"
+  },
+  {
+    "name": "Ekeberg, Kristin Thune",
+    "email": "kristin.thune.ekeberg@ssb.no",
+    "email_short": "kte@ssb.no"
+  },
+  {
+    "name": "Ekeberg, Rikke",
+    "email": "rikke.ekeberg@ssb.no",
+    "email_short": "rke@ssb.no"
+  },
+  {
+    "name": "Ekeland, Anders",
+    "email": "anders.ekeland@ssb.no",
+    "email_short": "eke@ssb.no"
+  },
+  {
+    "name": "Ekornhol, Bjørg",
+    "email": "bjorg.ekornhol@ssb.no",
+    "email_short": "bne@ssb.no"
+  },
+  {
+    "name": "Ekornrud, Trond",
+    "email": "trond.ekornrud@ssb.no",
+    "email_short": "eko@ssb.no"
+  },
+  {
+    "name": "Ekren, Rachel",
+    "email": "rachel.ekren@ssb.no",
+    "email_short": "rhe@ssb.no"
+  },
+  {
+    "name": "Elgåen, Grethe",
+    "email": "grethe.elgaen@ssb.no",
+    "email_short": "gel@ssb.no"
+  },
+  {
+    "name": "Elgesem, Fridtjof",
+    "email": "fridtjof.elgesem@ssb.no",
+    "email_short": "feg@ssb.no"
+  },
+  {
+    "name": "Eliassen, Jostein",
+    "email": "jostein.eliassen@ssb.no",
+    "email_short": "jel@ssb.no"
+  },
+  {
+    "name": "Elisenberg, Daniel",
+    "email": "daniel.elisenberg@ssb.no",
+    "email_short": "dbe@ssb.no"
+  },
+  {
+    "name": "Elisenberg, Stian",
+    "email": "stian.elisenberg@ssb.no",
+    "email_short": "seg@ssb.no"
+  },
+  {
+    "name": "Ellingsen, Jan Egil",
+    "email": "jan-egil.ellingsen@ssb.no",
+    "email_short": "jee@ssb.no"
+  },
+  {
+    "name": "Ellingsrud, Sigmund",
+    "email": "sigmund.ellingsrud@ssb.no",
+    "email_short": "SDE@ssb.no"
+  },
+  {
+    "name": "Ellingsvold, Anne",
+    "email": "anne.ellingsvold@ssb.no",
+    "email_short": "aee@ssb.no"
+  },
+  {
+    "name": "Elman, Henrik",
+    "email": "henrik.elman@ssb.no",
+    "email_short": "nri@ssb.no"
+  },
+  {
+    "name": "Engebakken, Tom Anders",
+    "email": "tom.engebakken@ssb.no",
+    "email_short": "tae@ssb.no"
+  },
+  {
+    "name": "Engebretsen, Amund",
+    "email": "amund.engebretsen@ssb.no",
+    "email_short": "eam@ssb.no"
+  },
+  {
+    "name": "Engebretsen, Erik",
+    "email": "erik.engebretsen@ssb.no",
+    "email_short": "ere@ssb.no"
+  },
+  {
+    "name": "Engebretsen, Karl Eirik",
+    "email": "karl.eirik.engebretsen@ssb.no",
+    "email_short": "kee@ssb.no"
+  },
+  {
+    "name": "Engebretsen, Monika",
+    "email": "monika.graesli.engebretsen@ssb.no",
+    "email_short": "mge@ssb.no"
+  },
+  {
+    "name": "Engedal, Mona Irene Andersen",
+    "email": "mona.irene.andersen.engedal@ssb.no",
+    "email_short": "mia@ssb.no"
+  },
+  {
+    "name": "Engelien, Erik",
+    "email": "erik.engelien@ssb.no",
+    "email_short": "eer@ssb.no"
+  },
+  {
+    "name": "Engelstad, Linda Yvonne",
+    "email": "linda.engelstad@ssb.no",
+    "email_short": "day@ssb.no"
+  },
+  {
+    "name": "Engesveen, Cathrine",
+    "email": "cathrine.engesveen@ssb.no",
+    "email_short": "eca@ssb.no"
+  },
+  {
+    "name": "Engh, Magnus Theodor",
+    "email": "magnus.theodor.engh@ssb.no",
+    "email_short": "dor@ssb.no"
+  },
+  {
+    "name": "Engum, Juni",
+    "email": "juni.engum@ssb.no",
+    "email_short": "jue@ssb.no"
+  },
+  {
+    "name": "Engvik, Maria",
+    "email": "maria.engvik@ssb.no",
+    "email_short": "meg@ssb.no"
+  },
+  {
+    "name": "Epland, Jon",
+    "email": "jon.epland@ssb.no",
+    "email_short": "jep@ssb.no"
+  },
+  {
+    "name": "Erichsen, Ellen Marie G",
+    "email": "ellen.erichsen@ssb.no",
+    "email_short": "ege@ssb.no"
+  },
+  {
+    "name": "Eriksen, Lisa Wold",
+    "email": "lisa.wold.eriksen@ssb.no",
+    "email_short": "lwe@ssb.no"
+  },
+  {
+    "name": "Espeland, Magnus",
+    "email": "magnus.espeland@ssb.no",
+    "email_short": "epd@ssb.no"
+  },
+  {
+    "name": "Evensen, Ellen Wold",
+    "email": "ellen.wold.evensen@ssb.no",
+    "email_short": "ewe@ssb.no"
+  },
+  {
+    "name": "Evensen, Trude Nygård",
+    "email": "trude.evensen@ssb.no",
+    "email_short": "tne@ssb.no"
+  },
+  {
+    "name": "Fæhn, Taran",
+    "email": "taran.faehn@ssb.no",
+    "email_short": "tfn@ssb.no"
+  },
+  {
+    "name": "Fagereng, Andreas",
+    "email": "andreas.fagereng@ssb.no",
+    "email_short": "faa@ssb.no"
+  },
+  {
+    "name": "Fagereng, Nina",
+    "email": "nina.fagereng@ssb.no",
+    "email_short": "nif@ssb.no"
+  },
+  {
+    "name": "Falch, Trygve",
+    "email": "trygve.falch@ssb.no",
+    "email_short": "trf@ssb.no"
+  },
+  {
+    "name": "Faldmo, Matz Ivan",
+    "email": "matz.ivan.faldmo@ssb.no",
+    "email_short": "mif@ssb.no"
+  },
+  {
+    "name": "Falnes-Dalheim, Elisabeth",
+    "email": "elisabeth.falnes-dalheim@ssb.no",
+    "email_short": "eld@ssb.no"
+  },
+  {
+    "name": "Fazli, Nawid",
+    "email": "nawid.fazli@ssb.no",
+    "email_short": "faz@ssb.no"
+  },
+  {
+    "name": "Fidje, Endre",
+    "email": "endre.fidje@ssb.no",
+    "email_short": "enf@ssb.no"
+  },
+  {
+    "name": "Finnstun, Runar",
+    "email": "runar.finnstun@ssb.no",
+    "email_short": "fin@ssb.no"
+  },
+  {
+    "name": "Finsveen, Johannes",
+    "email": "johannes.finsveen@ssb.no",
+    "email_short": "jfi@ssb.no"
+  },
+  {
+    "name": "Fjærli, Erik",
+    "email": "erik.fjaerli@ssb.no",
+    "email_short": "efj@ssb.no"
+  },
+  {
+    "name": "Fjeld, Merete",
+    "email": "merete.fjeld@ssb.no",
+    "email_short": "mef@ssb.no"
+  },
+  {
+    "name": "Fjelldalen, Susanne",
+    "email": "susanne.fjelldalen@ssb.no",
+    "email_short": "sfd@ssb.no"
+  },
+  {
+    "name": "Flekke, Lillian",
+    "email": "lillian.flekke@ssb.no",
+    "email_short": "lif@ssb.no"
+  },
+  {
+    "name": "Fløgstad, Peter",
+    "email": "peter.flogstad@ssb.no",
+    "email_short": "kons-peter@ssb.no"
+  },
+  {
+    "name": "Fløtre, Ingvild Alseth",
+    "email": "ingvild.flotre@ssb.no",
+    "email_short": "gvi@ssb.no"
+  },
+  {
+    "name": "Fodstad, Gunnar",
+    "email": "gunnar.fodstad@ssb.no",
+    "email_short": "kons_fod@ssb.no"
+  },
+  {
+    "name": "Folkedal, Jon",
+    "email": "jon.folkedal@ssb.no",
+    "email_short": "jfo@ssb.no"
+  },
+  {
+    "name": "Folsland, Jon Olav",
+    "email": "jon.folsland@ssb.no",
+    "email_short": "fol@ssb.no"
+  },
+  {
+    "name": "Fondevik, Harald",
+    "email": "harald.fondevik@ssb.no",
+    "email_short": "hfo@ssb.no"
+  },
+  {
+    "name": "Fordal, Jan",
+    "email": "jan.fordal@ssb.no",
+    "email_short": "For@ssb.no"
+  },
+  {
+    "name": "Forfang, Morten",
+    "email": "morten.forfang@ssb.no",
+    "email_short": "kons_for@ssb.no"
+  },
+  {
+    "name": "Fosen, Johan",
+    "email": "johan.fosen@ssb.no",
+    "email_short": "jof@ssb.no"
+  },
+  {
+    "name": "Foss, Aslaug Hurlen",
+    "email": "aslaug.hurlen.foss@ssb.no",
+    "email_short": "ahf@ssb.no"
+  },
+  {
+    "name": "Foss, Emmie Stolpe",
+    "email": "emmie.foss@ssb.no",
+    "email_short": "emm@ssb.no"
+  },
+  {
+    "name": "Fossanger, Kjersti Fjærtoft",
+    "email": "kjersti.fossanger@ssb.no",
+    "email_short": "kfo@ssb.no"
+  },
+  {
+    "name": "Fossanger, Siri Fjærtoft",
+    "email": "siri.fossanger@ssb.no",
+    "email_short": "sff@ssb.no"
+  },
+  {
+    "name": "Fossheim, Mette May",
+    "email": "mette.may.fossheim@ssb.no",
+    "email_short": "mmf@ssb.no"
+  },
+  {
+    "name": "Frahan, Lancelot Henry de",
+    "email": "lancelot.frahan@ssb.no",
+    "email_short": "lhf@ssb.no"
+  },
+  {
+    "name": "Frankovic, Ivan",
+    "email": "ivan.frankovic@ssb.no",
+    "email_short": "ifr@ssb.no"
+  },
+  {
+    "name": "Fredborg, Eirik",
+    "email": "eirik.fredborg@ssb.no",
+    "email_short": "efr@ssb.no"
+  },
+  {
+    "name": "Fredriksen, Dennis",
+    "email": "dennis.fredriksen@ssb.no",
+    "email_short": "dff@ssb.no"
+  },
+  {
+    "name": "Fredriksen, Kristin",
+    "email": "kristin.fredriksen@ssb.no",
+    "email_short": "kfr@ssb.no"
+  },
+  {
+    "name": "Fretheim, Anni Sutatip",
+    "email": "anni.fretheim@ssb.no",
+    "email_short": "stf@ssb.no"
+  },
+  {
+    "name": "Friestad, Wenche Lill Døhlen",
+    "email": "wenche.friestad@ssb.no",
+    "email_short": "wlf@ssb.no"
+  },
+  {
+    "name": "Frøberg, Anne",
+    "email": "anne.froberg@ssb.no",
+    "email_short": "afn@ssb.no"
+  },
+  {
+    "name": "Frydenberg, Hilde Sofie",
+    "email": "hilde.frydenberg@ssb.no",
+    "email_short": "hfr@ssb.no"
+  },
+  {
+    "name": "Fuglerud, Dan Inge",
+    "email": "dan.fuglerud@ssb.no",
+    "email_short": "dif@ssb.no"
+  },
+  {
+    "name": "Furseth, Jan Ole",
+    "email": "jan.ole.furseth@ssb.no",
+    "email_short": "jfu@ssb.no"
+  },
+  {
+    "name": "Fyrberg, Johanna",
+    "email": "johanna.fyrberg@ssb.no",
+    "email_short": "jfy@ssb.no"
+  },
+  {
+    "name": "Gaarder, Ingvil",
+    "email": "ingvil.gaarder@ssb.no",
+    "email_short": "iga@ssb.no"
+  },
+  {
+    "name": "Gading, Rakel",
+    "email": "rakel.gading@ssb.no",
+    "email_short": "rgg@ssb.no"
+  },
+  {
+    "name": "Gallefoss, Dan",
+    "email": "dan.gallefoss@ssb.no",
+    "email_short": "dga@ssb.no"
+  },
+  {
+    "name": "Garnåsjordet, Per Arild",
+    "email": "perarild.garnasjordet@ssb.no",
+    "email_short": "pag@ssb.no"
+  },
+  {
+    "name": "Gausdal, Dag",
+    "email": "dag.gausdal@ssb.no",
+    "email_short": "dgd@ssb.no"
+  },
+  {
+    "name": "Gautvedt, Anton",
+    "email": "anton.gautvedt@ssb.no",
+    "email_short": "aga@ssb.no"
+  },
+  {
+    "name": "Gazmuri, Ana",
+    "email": "ana.gazmuri@ssb.no",
+    "email_short": "kons_ana@ssb.no"
+  },
+  {
+    "name": "Genneper, Susanne Maria",
+    "email": "susanne.genneper@ssb.no",
+    "email_short": "nem@ssb.no"
+  },
+  {
+    "name": "Gimming, Kristian",
+    "email": "kristian.gimming@ssb.no",
+    "email_short": "kgi@ssb.no"
+  },
+  {
+    "name": "Gipling, Elin Karine",
+    "email": "elin.gipling@ssb.no",
+    "email_short": "ekg@ssb.no"
+  },
+  {
+    "name": "Gisholt, Åsmund",
+    "email": "asmund.gisholt@ssb.no",
+    "email_short": "gis@ssb.no"
+  },
+  {
+    "name": "Gjedtjernet, Per Erik",
+    "email": "per.erik.gjedtjernet@ssb.no",
+    "email_short": "peg@ssb.no"
+  },
+  {
+    "name": "Gjelsnes, Kari Lagertha",
+    "email": "kari.gjelsnes@ssb.no",
+    "email_short": "klg@ssb.no"
+  },
+  {
+    "name": "Gjermshusengen, Line",
+    "email": "line.gjermshusengen@ssb.no",
+    "email_short": "lgj@ssb.no"
+  },
+  {
+    "name": "Gjervan, Trond",
+    "email": "trond.gjervan@ssb.no",
+    "email_short": "tig@ssb.no"
+  },
+  {
+    "name": "Gløersen, Rune",
+    "email": "rune.gloersen@ssb.no",
+    "email_short": "rgl@ssb.no"
+  },
+  {
+    "name": "Glomsås, Kristin",
+    "email": "kristin.glomsas@ssb.no",
+    "email_short": "krg@ssb.no"
+  },
+  {
+    "name": "Goa, Kristin",
+    "email": "kristin.goa@ssb.no",
+    "email_short": "kgo@ssb.no"
+  },
+  {
+    "name": "Godøy, Anna",
+    "email": "anna.godoy@ssb.no",
+    "email_short": "agy@ssb.no"
+  },
+  {
+    "name": "Goff, Leonard",
+    "email": "leonard.goff@ssb.no",
+    "email_short": "lgo@ssb.no"
+  },
+  {
+    "name": "Got, Steven Chun Wei",
+    "email": "steven.got@ssb.no",
+    "email_short": "sgg@ssb.no"
+  },
+  {
+    "name": "Graber, Michael",
+    "email": "michael.graber@ssb.no",
+    "email_short": "mga@ssb.no"
+  },
+  {
+    "name": "Gram, Karin Hamre",
+    "email": "karin.hamre.gram@ssb.no",
+    "email_short": "hka@ssb.no"
+  },
+  {
+    "name": "Gran-Henriksen, Bjørn",
+    "email": "bjorn.gran-henriksen@ssb.no",
+    "email_short": "bge@ssb.no"
+  },
+  {
+    "name": "Granerud, Nataliya",
+    "email": "nataliya.granerud@ssb.no",
+    "email_short": "nag@ssb.no"
+  },
+  {
+    "name": "Granvoll, Elsa",
+    "email": "elsa.granvoll@ssb.no",
+    "email_short": "elg@ssb.no"
+  },
+  {
+    "name": "Gravem, Dag F",
+    "email": "dag.f.gravem@ssb.no",
+    "email_short": "dfg@ssb.no"
+  },
+  {
+    "name": "Greaker, Mads",
+    "email": "mads.greaker@ssb.no",
+    "email_short": "mgr@ssb.no"
+  },
+  {
+    "name": "Grebstad, Unni",
+    "email": "unni.grebstad@ssb.no",
+    "email_short": "ugr@ssb.no"
+  },
+  {
+    "name": "Grendal, Ola Nestvold",
+    "email": "ola.grendal@ssb.no",
+    "email_short": "ong@ssb.no"
+  },
+  {
+    "name": "Grimsrud, Kristine M.",
+    "email": "kristine.grimsrud@ssb.no",
+    "email_short": "kgd@ssb.no"
+  },
+  {
+    "name": "Grimstad, Martin Lundeby",
+    "email": "martin.grimstad@ssb.no",
+    "email_short": "glm@ssb.no"
+  },
+  {
+    "name": "Grimstad, Sara",
+    "email": "sara.grimstad@ssb.no",
+    "email_short": "sgr@ssb.no"
+  },
+  {
+    "name": "Grini, Knut Håkon",
+    "email": "knut.grini@ssb.no",
+    "email_short": "gri@ssb.no"
+  },
+  {
+    "name": "Gronna, Danute",
+    "email": "danute.gronna@ssb.no",
+    "email_short": "dgr@ssb.no"
+  },
+  {
+    "name": "Grøsland, Mari",
+    "email": "mari.grosland@ssb.no",
+    "email_short": "mgd@ssb.no"
+  },
+  {
+    "name": "Grov, Jan",
+    "email": "jan.grov@ssb.no",
+    "email_short": "jgr@ssb.no"
+  },
+  {
+    "name": "Gruben, Maren Hestetun",
+    "email": "maren.gruben@ssb.no",
+    "email_short": "mhg@ssb.no"
+  },
+  {
+    "name": "Gueug, Robert",
+    "email": "robert.gueug@ssb.no",
+    "email_short": "rgu@ssb.no"
+  },
+  {
+    "name": "Gulbrandsen, Magnus",
+    "email": "magnus.gulbrandsen@ssb.no",
+    "email_short": "mgg@ssb.no"
+  },
+  {
+    "name": "Gundersen, Bjørnar",
+    "email": "bjornar.gundersen@ssb.no",
+    "email_short": "bgn@ssb.no"
+  },
+  {
+    "name": "Gundersen, Geir Inge",
+    "email": "geir.inge.gundersen@ssb.no",
+    "email_short": "gig@ssb.no"
+  },
+  {
+    "name": "Gundersen, Marit Berger",
+    "email": "marit.berger.gundersen@ssb.no",
+    "email_short": "mbe@ssb.no"
+  },
+  {
+    "name": "Gundersen, Martine Bergh",
+    "email": "martine.gundersen@ssb.no",
+    "email_short": "mbg@ssb.no"
+  },
+  {
+    "name": "Gunnes, Trude",
+    "email": "trude.gunnes@ssb.no",
+    "email_short": "gut@ssb.no"
+  },
+  {
+    "name": "Gurmu, Emshaw Degife",
+    "email": "emshaw.degife.gurmu@ssb.no",
+    "email_short": "edg@ssb.no"
+  },
+  {
+    "name": "Haarberg, Tonje Arnesen",
+    "email": "tonje.arnesen.haarberg@ssb.no",
+    "email_short": "tja@ssb.no"
+  },
+  {
+    "name": "Haarr, Lena Weitzenburger",
+    "email": "lena.weitzenburgerhaarr@ssb.no",
+    "email_short": "lwh@ssb.no"
+  },
+  {
+    "name": "Håby, Tor Albert",
+    "email": "tor.haby@ssb.no",
+    "email_short": "aby@ssb.no"
+  },
+  {
+    "name": "Hagem, Cathrine",
+    "email": "cathrine.hagem@ssb.no",
+    "email_short": "cah@ssb.no"
+  },
+  {
+    "name": "Hagemo, Jon Ole Johansen",
+    "email": "jon.ole.johansen.hagemo@ssb.no",
+    "email_short": "ojj@ssb.no"
+  },
+  {
+    "name": "Hagen, Anders",
+    "email": "anders.hagen@ssb.no",
+    "email_short": "nhk@ssb.no"
+  },
+  {
+    "name": "Hagen, Brit Mette",
+    "email": "britmette.hagen@ssb.no",
+    "email_short": "bmh@ssb.no"
+  },
+  {
+    "name": "Hagen, Krister",
+    "email": "krister.hagen@ssb.no",
+    "email_short": "erh@ssb.no"
+  },
+  {
+    "name": "Hagen, Øyvind",
+    "email": "oyvind.hagen@ssb.no",
+    "email_short": "oyh@ssb.no"
+  },
+  {
+    "name": "Hagen, Thomas",
+    "email": "thomas.hagen@ssb.no",
+    "email_short": "tha@ssb.no"
+  },
+  {
+    "name": "Haglund, Anders",
+    "email": "anders.haglund@ssb.no",
+    "email_short": "aeh@ssb.no"
+  },
+  {
+    "name": "Hallan, Magnus",
+    "email": "magnus.hallan@ssb.no",
+    "email_short": "gnu@ssb.no"
+  },
+  {
+    "name": "Halland, Kristin",
+    "email": "kristin.halland@ssb.no",
+    "email_short": "knh@ssb.no"
+  },
+  {
+    "name": "Halle, Mina Måsvær",
+    "email": "mina.halle@ssb.no",
+    "email_short": "min@ssb.no"
+  },
+  {
+    "name": "Halvorsen, Mats",
+    "email": "mats.halvorsen@ssb.no",
+    "email_short": "lvo@ssb.no"
+  },
+  {
+    "name": "Halvorsen, Bente",
+    "email": "bente.halvorsen@ssb.no",
+    "email_short": "btl@ssb.no"
+  },
+  {
+    "name": "Halvorsen, Bente R",
+    "email": "bente.r.halvorsen@ssb.no",
+    "email_short": "ors@ssb.no"
+  },
+  {
+    "name": "Halvorsen, Elin",
+    "email": "elin.halvorsen@ssb.no",
+    "email_short": "vor@ssb.no"
+  },
+  {
+    "name": "Halvorsen, Hans Christian",
+    "email": "hans.halvorsen@ssb.no",
+    "email_short": "nsc@ssb.no"
+  },
+  {
+    "name": "Hammer, Kjell",
+    "email": "kjell.hammer@ssb.no",
+    "email_short": "klh@ssb.no"
+  },
+  {
+    "name": "Hammersgård, Jens",
+    "email": "jens.hammersgard@ssb.no",
+    "email_short": "jeg@ssb.no"
+  },
+  {
+    "name": "Hammersland, Roger",
+    "email": "roger.hammersland@ssb.no",
+    "email_short": "rhs@ssb.no"
+  },
+  {
+    "name": "Hamre, Jørn Ivar",
+    "email": "jorn.ivar.hamre@ssb.no",
+    "email_short": "ham@ssb.no"
+  },
+  {
+    "name": "Han, Fenglin",
+    "email": "fenglin.han@ssb.no",
+    "email_short": "fnh@ssb.no"
+  },
+  {
+    "name": "Hansen, Andre Hvaal",
+    "email": "andre.hvaal.hansen@ssb.no",
+    "email_short": "anh@ssb.no"
+  },
+  {
+    "name": "Hansen, Christopher Okazaki",
+    "email": "christopher.hansen@ssb.no",
+    "email_short": "coh@ssb.no"
+  },
+  {
+    "name": "Hansen, Johannes",
+    "email": "johannes.hansen@ssb.no",
+    "email_short": "jhn@ssb.no"
+  },
+  {
+    "name": "Hansen, Mona Irene",
+    "email": "mona.irene.hansen@ssb.no",
+    "email_short": "mih@ssb.no"
+  },
+  {
+    "name": "Hansen, Olaf Espeland",
+    "email": "olaf.espeland.hansen@ssb.no",
+    "email_short": "oeh@ssb.no"
+  },
+  {
+    "name": "Hansen, Tom Cato",
+    "email": "tomcato.hansen@ssb.no",
+    "email_short": "tch@ssb.no"
+  },
+  {
+    "name": "Hanssen, Kathrine Remers",
+    "email": "kathrine.hanssen@ssb.no",
+    "email_short": "hrk@ssb.no"
+  },
+  {
+    "name": "Hansson, Ann Kristin",
+    "email": "ann.kristin.hansson@ssb.no",
+    "email_short": "ank@ssb.no"
+  },
+  {
+    "name": "Håpnes, Simen",
+    "email": "simen.hapnes@ssb.no",
+    "email_short": "kons_simen@ssb.no"
+  },
+  {
+    "name": "Haraldsdottir, Gudrun",
+    "email": "gudrun.haraldsdottir@ssb.no",
+    "email_short": "guh@ssb.no"
+  },
+  {
+    "name": "Haraldsen, Gustav",
+    "email": "gustav.haraldsen@ssb.no",
+    "email_short": "gha@ssb.no"
+  },
+  {
+    "name": "Haraldsrud, Elisabeth",
+    "email": "elisabeth.haraldsrud@ssb.no",
+    "email_short": "hae@ssb.no"
+  },
+  {
+    "name": "Harbosen, Anne Margrete",
+    "email": "anne.harbosen@ssb.no",
+    "email_short": "ret@ssb.no"
+  },
+  {
+    "name": "Harildstad, Anders",
+    "email": "anders.harildstad@ssb.no",
+    "email_short": "dna@ssb.no"
+  },
+  {
+    "name": "Harmenberg, Karl",
+    "email": "karl.harmenberg@ssb.no",
+    "email_short": "hrb@ssb.no"
+  },
+  {
+    "name": "Harnæs, Inger Kristine",
+    "email": "inger.kristine.harnaes@ssb.no",
+    "email_short": "ikh@ssb.no"
+  },
+  {
+    "name": "Hart, Evan",
+    "email": "evan.hart@ssb.no",
+    "email_short": "evr@ssb.no"
+  },
+  {
+    "name": "Haslund, Jan",
+    "email": "jan.haslund@ssb.no",
+    "email_short": "jha@ssb.no"
+  },
+  {
+    "name": "Hattrem, Aurora",
+    "email": "aurora.hattrem@ssb.no",
+    "email_short": "auh@ssb.no"
+  },
+  {
+    "name": "Haug, Magnus",
+    "email": "magnus.haug@ssb.no",
+    "email_short": "mgh@ssb.no"
+  },
+  {
+    "name": "Haug, Tina Merete",
+    "email": "tina.haug@ssb.no",
+    "email_short": "tih@ssb.no"
+  },
+  {
+    "name": "Hauge, Ingeborg",
+    "email": "ingeborg.hauge@ssb.no",
+    "email_short": "uge@ssb.no"
+  },
+  {
+    "name": "Haugen, Anne Karin Linderud",
+    "email": "anne.karin.linderud.haugen@ssb.no",
+    "email_short": "ake@ssb.no"
+  },
+  {
+    "name": "Haugen, John Åge",
+    "email": "johnage.haugen@ssb.no",
+    "email_short": "ohn@ssb.no"
+  },
+  {
+    "name": "Haugen, Kaja Sillerud",
+    "email": "kaja.sillerud.haugen@ssb.no",
+    "email_short": "khs@ssb.no"
+  },
+  {
+    "name": "Haugen, Kristin Foldal",
+    "email": "kristin.foldal.haugen@ssb.no",
+    "email_short": "krf@ssb.no"
+  },
+  {
+    "name": "Haugen, Per Ola",
+    "email": "per.ola.haugen@ssb.no",
+    "email_short": "poh@ssb.no"
+  },
+  {
+    "name": "Haugen, Sindre Mikael",
+    "email": "sindre.haugen@ssb.no",
+    "email_short": "rdn@ssb.no"
+  },
+  {
+    "name": "Haugholt, Thora Kristina",
+    "email": "thora.haugholt@ssb.no",
+    "email_short": "tkh@ssb.no"
+  },
+  {
+    "name": "Haugseth, Stian Indal",
+    "email": "stian.haugseth@ssb.no",
+    "email_short": "sdh@ssb.no"
+  },
+  {
+    "name": "Haugstveit, Fatima Valdes",
+    "email": "fatima.valdes.haugstveit@ssb.no",
+    "email_short": "fvh@ssb.no"
+  },
+  {
+    "name": "Håvarstein, Erik",
+    "email": "erik.havarstein@ssb.no",
+    "email_short": "ehr@ssb.no"
+  },
+  {
+    "name": "Håvarstein, Morten",
+    "email": "morten.havarstein@ssb.no",
+    "email_short": "mnh@ssb.no"
+  },
+  {
+    "name": "Haveråen, Berit",
+    "email": "berit.haveraen@ssb.no",
+    "email_short": "bhr@ssb.no"
+  },
+  {
+    "name": "Heide, Kim Massey",
+    "email": "kim.massey.heide@ssb.no",
+    "email_short": "kmh@ssb.no"
+  },
+  {
+    "name": "Heiland, Inga",
+    "email": "inga.heiland@ssb.no",
+    "email_short": "iah@ssb.no"
+  },
+  {
+    "name": "Heimdal, Knut Ward",
+    "email": "knut.heimdal@ssb.no",
+    "email_short": "kwl@ssb.no"
+  },
+  {
+    "name": "Heldal, Johan",
+    "email": "johan.heldal@ssb.no",
+    "email_short": "jhe@ssb.no"
+  },
+  {
+    "name": "Helgeberg, Elisabeth",
+    "email": "elisabeth.helgeberg@ssb.no",
+    "email_short": "ehg@ssb.no"
+  },
+  {
+    "name": "Helliesen, Magnus Kvåle",
+    "email": "magnus.helliesen@ssb.no",
+    "email_short": "mkh@ssb.no"
+  },
+  {
+    "name": "Hendriks, Coen",
+    "email": "coen.hendriks@ssb.no",
+    "email_short": "hen@ssb.no"
+  },
+  {
+    "name": "Henriksen, Guro",
+    "email": "guro.henriksen@ssb.no",
+    "email_short": "ghe@ssb.no"
+  },
+  {
+    "name": "Henriksen, Stian",
+    "email": "stian.henriksen@ssb.no",
+    "email_short": "nhe@ssb.no"
+  },
+  {
+    "name": "Henrysson, Allan",
+    "email": "allan.henrysson@ssb.no",
+    "email_short": "rys@ssb.no"
+  },
+  {
+    "name": "Herfindal, Tore",
+    "email": "tore.herfindal@ssb.no",
+    "email_short": "ohe@ssb.no"
+  },
+  {
+    "name": "Herstad, Eyo",
+    "email": "eyo.herstad@ssb.no",
+    "email_short": "eyh@ssb.no"
+  },
+  {
+    "name": "Hestholm, Mogens",
+    "email": "mogens.hestholm@ssb.no",
+    "email_short": "mog@ssb.no"
+  },
+  {
+    "name": "Hetland, Arve",
+    "email": "arve.hetland@ssb.no",
+    "email_short": "ahe@ssb.no"
+  },
+  {
+    "name": "Hetland, Aslak",
+    "email": "aslak.hetland@ssb.no",
+    "email_short": "ahl@ssb.no"
+  },
+  {
+    "name": "Hetle, Anne Olaug",
+    "email": "anne.olaug.hetle@ssb.no",
+    "email_short": "aoh@ssb.no"
+  },
+  {
+    "name": "Hillesland, Vidar",
+    "email": "vidar.hillesland@ssb.no",
+    "email_short": "vhd@ssb.no"
+  },
+  {
+    "name": "Hirsch, Elise Helene Von",
+    "email": "elise.hirsch@ssb.no",
+    "email_short": "ehh@ssb.no"
+  },
+  {
+    "name": "Hjemås, Geir",
+    "email": "geir.hjemas@ssb.no",
+    "email_short": "ghj@ssb.no"
+  },
+  {
+    "name": "Hjorth, Kristin",
+    "email": "kristin.hjorth@ssb.no",
+    "email_short": "khj@ssb.no"
+  },
+  {
+    "name": "Ho, Jonathan",
+    "email": "jonathan.ho@ssb.no",
+    "email_short": "jho@ssb.no"
+  },
+  {
+    "name": "Hoel, Marit",
+    "email": "marit.hoel@ssb.no",
+    "email_short": "hoe@ssb.no"
+  },
+  {
+    "name": "Hoen, Bjarne Tautra",
+    "email": "bjarne.hoen@ssb.no",
+    "email_short": "utr@ssb.no"
+  },
+  {
+    "name": "Høiby, Hanne Beate",
+    "email": "hanne.hoiby@ssb.no",
+    "email_short": "hab@ssb.no"
+  },
+  {
+    "name": "Høie, Henning",
+    "email": "henning.hoie@ssb.no",
+    "email_short": "hei@ssb.no"
+  },
+  {
+    "name": "Høitomt, Ravinder",
+    "email": "ravinder.hoitomt@ssb.no",
+    "email_short": "rah@ssb.no"
+  },
+  {
+    "name": "Hole, Bente",
+    "email": "bente.hole@ssb.no",
+    "email_short": "nte@ssb.no"
+  },
+  {
+    "name": "Hole, Magnus Falnes",
+    "email": "magnus.hole@ssb.no",
+    "email_short": "hmf@ssb.no"
+  },
+  {
+    "name": "Holm, Elisa",
+    "email": "elisa.holm@ssb.no",
+    "email_short": "enh@ssb.no"
+  },
+  {
+    "name": "Holm, Martin Blomhoff",
+    "email": "martin.holm@ssb.no",
+    "email_short": "mbm@ssb.no"
+  },
+  {
+    "name": "Holmberg, Rolf Gunnar",
+    "email": "rolf.holmberg@ssb.no",
+    "email_short": "rho@ssb.no"
+  },
+  {
+    "name": "Holmøy, Aina",
+    "email": "aina.holmoy@ssb.no",
+    "email_short": "aih@ssb.no"
+  },
+  {
+    "name": "Holmøy, Erling",
+    "email": "erling.holmoy@ssb.no",
+    "email_short": "erl@ssb.no"
+  },
+  {
+    "name": "Holmvik, Stig Eivind",
+    "email": "stig.holmvik@ssb.no",
+    "email_short": "tii@ssb.no"
+  },
+  {
+    "name": "Holseter, Anne Marie Rustad",
+    "email": "anne.marie.rustad.holseter@ssb.no",
+    "email_short": "amr@ssb.no"
+  },
+  {
+    "name": "Holstad, Magne",
+    "email": "magne.holstad@ssb.no",
+    "email_short": "gnh@ssb.no"
+  },
+  {
+    "name": "Holt, Aud Kari Joramo",
+    "email": "aud.kari.joramo.holt@ssb.no",
+    "email_short": "ajo@ssb.no"
+  },
+  {
+    "name": "Holt, Jim Henry",
+    "email": "jim.holt@ssb.no",
+    "email_short": "jhh@ssb.no"
+  },
+  {
+    "name": "Holt, Liv Engen",
+    "email": "liv.engen.holt@ssb.no",
+    "email_short": "eng@ssb.no"
+  },
+  {
+    "name": "Holt, Per Morten",
+    "email": "per.morten.holt@ssb.no",
+    "email_short": "hpm@ssb.no"
+  },
+  {
+    "name": "Holth, Bjørn Are",
+    "email": "bjorn.are.holth@ssb.no",
+    "email_short": "bja@ssb.no"
+  },
+  {
+    "name": "Holtsmark, Bjart",
+    "email": "bjart.holtsmark@ssb.no",
+    "email_short": "bjj@ssb.no"
+  },
+  {
+    "name": "Holtung, Anne",
+    "email": "anne.holtung@ssb.no",
+    "email_short": "hoa@ssb.no"
+  },
+  {
+    "name": "Homstvedt, Svein",
+    "email": "svein.homstvedt@ssb.no",
+    "email_short": "hom@ssb.no"
+  },
+  {
+    "name": "Horgen, Erik Herstad",
+    "email": "erik.horgen@ssb.no",
+    "email_short": "heh@ssb.no"
+  },
+  {
+    "name": "Høstmark, Maria",
+    "email": "maria.hostmark@ssb.no",
+    "email_short": "mai@ssb.no"
+  },
+  {
+    "name": "Hov, Kjersti",
+    "email": "kjersti.nyborg.hov@ssb.no",
+    "email_short": "hkj@ssb.no"
+  },
+  {
+    "name": "Hove, Ingrid Hatlebakk",
+    "email": "ingrid.hatlebakk.hove@ssb.no",
+    "email_short": "mhi@ssb.no"
+  },
+  {
+    "name": "Hovind, Anita Gjelstad",
+    "email": "anita.hovind@ssb.no",
+    "email_short": "adh@ssb.no"
+  },
+  {
+    "name": "Høydahl, Even",
+    "email": "even.hoydahl@ssb.no",
+    "email_short": "eve@ssb.no"
+  },
+  {
+    "name": "Høydahl, Unn H.",
+    "email": "unnh.hoydahl@ssb.no",
+    "email_short": "uhh@ssb.no"
+  },
+  {
+    "name": "Huitfeldt, Ingrid M. S.",
+    "email": "ingrid.huitfeldt@ssb.no",
+    "email_short": "ish@ssb.no"
+  },
+  {
+    "name": "Hungnes, Håvard",
+    "email": "havard.hungnes@ssb.no",
+    "email_short": "hhu@ssb.no"
+  },
+  {
+    "name": "Hunstad, Siv",
+    "email": "siv.hunstad@ssb.no",
+    "email_short": "sih@ssb.no"
+  },
+  {
+    "name": "Husås, Tom Kristian",
+    "email": "tom.husas@ssb.no",
+    "email_short": "okh@ssb.no"
+  },
+  {
+    "name": "Husebye, Nora Kristin",
+    "email": "nora.husebye@ssb.no",
+    "email_short": "nhu@ssb.no"
+  },
+  {
+    "name": "Husø, Jonathan",
+    "email": "jonathan.huso@ssb.no",
+    "email_short": "jhu@ssb.no"
+  },
+  {
+    "name": "Hussain, Wasif Tufail",
+    "email": "wasif.hussain@ssb.no",
+    "email_short": "wat@ssb.no"
+  },
+  {
+    "name": "Hustoft, Anne Gro",
+    "email": "anne.gro.hustoft@ssb.no",
+    "email_short": "agt@ssb.no"
+  },
+  {
+    "name": "Hveem, Katrine",
+    "email": "katrine.hveem@ssb.no",
+    "email_short": "hve@ssb.no"
+  },
+  {
+    "name": "Ibenholt, Vidar",
+    "email": "vidar.ibenholt@ssb.no",
+    "email_short": "ibe@ssb.no"
+  },
+  {
+    "name": "Ihlang, Gudveig",
+    "email": "gudveig.ihlang@ssb.no",
+    "email_short": "gbr@ssb.no"
+  },
+  {
+    "name": "Ince, Havva",
+    "email": "havva.ince@ssb.no",
+    "email_short": "vva@ssb.no"
+  },
+  {
+    "name": "Instebø, Daniel",
+    "email": "daniel.instebo@ssb.no",
+    "email_short": "dbl@ssb.no"
+  },
+  {
+    "name": "Iqbal, Faiza",
+    "email": "faiza.iqbal@ssb.no",
+    "email_short": "fzi@ssb.no"
+  },
+  {
+    "name": "Jagminaite, Ieva",
+    "email": "ieva.jagminaite@ssb.no",
+    "email_short": "ijg@ssb.no"
+  },
+  {
+    "name": "Jakobsen, Heidi Rindal",
+    "email": "heidi.jakobsen@ssb.no",
+    "email_short": "hrj@ssb.no"
+  },
+  {
+    "name": "Jansen, Xiaoming Chen",
+    "email": "jansen.xiaoming.chen@ssb.no",
+    "email_short": "cxi@ssb.no"
+  },
+  {
+    "name": "Jansson, Lise N Andersen",
+    "email": "lise.andersen.jansson@ssb.no",
+    "email_short": "laj@ssb.no"
+  },
+  {
+    "name": "Jasinski, Marek",
+    "email": "marek.jasinski@ssb.no",
+    "email_short": "rek@ssb.no"
+  },
+  {
+    "name": "Jensen, Arild Magne",
+    "email": "amj@ssb.no",
+    "email_short": "amj@ssb.no"
+  },
+  {
+    "name": "Jensen, Arne",
+    "email": "arne.jensen@ssb.no",
+    "email_short": "aje@ssb.no"
+  },
+  {
+    "name": "Jensen, Bjørn",
+    "email": "bjorn.jensen@ssb.no",
+    "email_short": "jen@ssb.no"
+  },
+  {
+    "name": "Jensen, Håvard Georg",
+    "email": "havard.jensen@ssb.no",
+    "email_short": "geo@ssb.no"
+  },
+  {
+    "name": "Jensen, Malin Engel",
+    "email": "malin.jensen@ssb.no",
+    "email_short": "mej@ssb.no"
+  },
+  {
+    "name": "Jensen, Roger",
+    "email": "roger.jensen@ssb.no",
+    "email_short": "roj@ssb.no"
+  },
+  {
+    "name": "Jensen, Silje Sofie",
+    "email": "silje.jensen@ssb.no",
+    "email_short": "ssj@ssb.no"
+  },
+  {
+    "name": "Jenssen, Magnus Myrdal",
+    "email": "magnus.jenssen@ssb.no",
+    "email_short": "mmj@ssb.no"
+  },
+  {
+    "name": "Jentoft, Susie",
+    "email": "susie.jentoft@ssb.no",
+    "email_short": "coo@ssb.no"
+  },
+  {
+    "name": "Jia. Zhiyang",
+    "email": "zhiyang.jia@ssb.no",
+    "email_short": "jia@ssb.no"
+  },
+  {
+    "name": "Johannessen, Randi",
+    "email": "randi.johannessen@ssb.no",
+    "email_short": "raj@ssb.no"
+  },
+  {
+    "name": "Johansen, Aina",
+    "email": "aina.johansen@ssb.no",
+    "email_short": "ajn@ssb.no"
+  },
+  {
+    "name": "Johansen, Hanne",
+    "email": "hanne.johansen@ssb.no",
+    "email_short": "haj@ssb.no"
+  },
+  {
+    "name": "Johansen, Ingvild",
+    "email": "ingvild.johansen@ssb.no",
+    "email_short": "joi@ssb.no"
+  },
+  {
+    "name": "Johansen, Rune",
+    "email": "rune.johansen@ssb.no",
+    "email_short": "une@ssb.no"
+  },
+  {
+    "name": "Johansen, Svein",
+    "email": "svein.johansen@ssb.no",
+    "email_short": "sjo@ssb.no"
+  },
+  {
+    "name": "Johansen, Trude",
+    "email": "trude.johansen@ssb.no",
+    "email_short": "tjn@ssb.no"
+  },
+  {
+    "name": "Johansson, Anita Mobekk",
+    "email": "anita.mobekk.johansson@ssb.no",
+    "email_short": "bam@ssb.no"
+  },
+  {
+    "name": "Johnsen, Magnus Berglund",
+    "email": "magnus.johnsen@ssb.no",
+    "email_short": "mjo@ssb.no"
+  },
+  {
+    "name": "Johnsrud, Finn",
+    "email": "finn.johnsrud@ssb.no",
+    "email_short": "fij@ssb.no"
+  },
+  {
+    "name": "Johnsrud, Grethe Irene",
+    "email": "grethe.johnsrud@ssb.no",
+    "email_short": "gij@ssb.no"
+  },
+  {
+    "name": "Jokinen, Antti",
+    "email": "antti.jokinen@ssb.no",
+    "email_short": "apj@ssb.no"
+  },
+  {
+    "name": "Jonassen, Helen",
+    "email": "helen.jonassen@ssb.no",
+    "email_short": "jmh@ssb.no"
+  },
+  {
+    "name": "Joneid, Bjørn Roar",
+    "email": "bjorn.roar.joneid@ssb.no",
+    "email_short": "bnj@ssb.no"
+  },
+  {
+    "name": "Jonsson, Pia Jihan",
+    "email": "pia.jonsson@ssb.no",
+    "email_short": "pjj@ssb.no"
+  },
+  {
+    "name": "Jordbakke, Guri Natalie",
+    "email": "guri.jordbakke@ssb.no",
+    "email_short": "gnj@ssb.no"
+  },
+  {
+    "name": "Jørgensen, Nils",
+    "email": "nils.jorgensen@ssb.no",
+    "email_short": "njr@ssb.no"
+  },
+  {
+    "name": "Jørgensen, Oddrun",
+    "email": "oddrun.jorgensen@ssb.no",
+    "email_short": "toj@ssb.no"
+  },
+  {
+    "name": "Jørgensen, Siw",
+    "email": "siw.jorgensen@ssb.no",
+    "email_short": "ivj@ssb.no"
+  },
+  {
+    "name": "Judin, Madli Irene",
+    "email": "madli.judin@ssb.no",
+    "email_short": "mij@ssb.no"
+  },
+  {
+    "name": "Jung, Mathilde ter",
+    "email": "mathilde.jung@ssb.no",
+    "email_short": "mtj@ssb.no"
+  },
+  {
+    "name": "Jytte Duemark",
+    "email": "jytte.duemark@ssb.no",
+    "email_short": "due@ssb.no"
+  },
+  {
+    "name": "Kalantzakos, Vassilios",
+    "email": "vassilios.kalantzakos@ssb.no",
+    "email_short": "vak@ssb.no"
+  },
+  {
+    "name": "Kalcic, Maja",
+    "email": "maja.kalcic@ssb.no",
+    "email_short": "maj@ssb.no"
+  },
+  {
+    "name": "Kalko, Jakob",
+    "email": "jakob.kalko@ssb.no",
+    "email_short": "kaj@ssb.no"
+  },
+  {
+    "name": "Kallåk, Katinka Endresen",
+    "email": "katinka.kallak@ssb.no",
+    "email_short": "ati@ssb.no"
+  },
+  {
+    "name": "Karlsen, Ariel Dahlberg",
+    "email": "ariel.karlsen@ssb.no",
+    "email_short": "aig@ssb.no"
+  },
+  {
+    "name": "Karlsen, Håkon Torfinn",
+    "email": "hakon.karlsen@ssb.no",
+    "email_short": "htk@ssb.no"
+  },
+  {
+    "name": "Karlsen, Hedvig Caroline",
+    "email": "hedvig.karlsen@ssb.no",
+    "email_short": "hck@ssb.no"
+  },
+  {
+    "name": "Karlsen, Per Øyvind H",
+    "email": "per.karlsen@ssb.no",
+    "email_short": "phk@ssb.no"
+  },
+  {
+    "name": "Karv, Hanna",
+    "email": "hanna.karv@ssb.no",
+    "email_short": "vra@ssb.no"
+  },
+  {
+    "name": "Kaur, Rupinder",
+    "email": "rupinder.kaur@ssb.no",
+    "email_short": "rpk@ssb.no"
+  },
+  {
+    "name": "Kaushal, Kevin",
+    "email": "kevin.kaushal@ssb.no",
+    "email_short": "kvk@ssb.no"
+  },
+  {
+    "name": "Keute, Anna Lena",
+    "email": "anna.keute@ssb.no",
+    "email_short": "keu@ssb.no"
+  },
+  {
+    "name": "Khoury, Laura",
+    "email": "laura.khoury@ssb.no",
+    "email_short": "lky@ssb.no"
+  },
+  {
+    "name": "Kilicdogan, Erdal",
+    "email": "erdal.kilicdogan@ssb.no",
+    "email_short": "eki@ssb.no"
+  },
+  {
+    "name": "Kiøsterud, Ellen Cathrine",
+    "email": "ellen.kiosterud@ssb.no",
+    "email_short": "eck@ssb.no"
+  },
+  {
+    "name": "Kirkeberg, Mads Ivar",
+    "email": "mads.ivar.kirkeberg@ssb.no",
+    "email_short": "mik@ssb.no"
+  },
+  {
+    "name": "Kirkebøen, Lars Johannessen",
+    "email": "lars.johannessen.kirkeboen@ssb.no",
+    "email_short": "kir@ssb.no"
+  },
+  {
+    "name": "Kirkemo, Hans Kristian Sunde",
+    "email": "hans.kirkemo@ssb.no",
+    "email_short": "nki@ssb.no"
+  },
+  {
+    "name": "Kittilsen, Øyvind Meen",
+    "email": "oyvind.kittilsen@ssb.no",
+    "email_short": "ymk@ssb.no"
+  },
+  {
+    "name": "Kleven, Øyvin",
+    "email": "oyvin.kleven@ssb.no",
+    "email_short": "kle@ssb.no"
+  },
+  {
+    "name": "Kløv, Camilla Stenberg",
+    "email": "camilla.klov@ssb.no",
+    "email_short": "agv@ssb.no"
+  },
+  {
+    "name": "Knashaug, Ole Martin",
+    "email": "ole.martin.knashaug@ssb.no",
+    "email_short": "omk@ssb.no"
+  },
+  {
+    "name": "Knudsen, Pål",
+    "email": "pal.knudsen@ssb.no",
+    "email_short": "pkn@ssb.no"
+  },
+  {
+    "name": "Knutsen, Eirik",
+    "email": "eirik.knutsen@ssb.no",
+    "email_short": "eir@ssb.no"
+  },
+  {
+    "name": "Knutsen, Maren Langelandsvik",
+    "email": "maren.knutsen@ssb.no",
+    "email_short": "dsv@ssb.no"
+  },
+  {
+    "name": "Køber, Tonje",
+    "email": "tonje.kober@ssb.no",
+    "email_short": "ton@ssb.no"
+  },
+  {
+    "name": "Koksvik, Morten",
+    "email": "morten.koksvik@ssb.no",
+    "email_short": "mko@ssb.no"
+  },
+  {
+    "name": "Kolsrud, Dag",
+    "email": "dag.kolsrud@ssb.no",
+    "email_short": "dok@ssb.no"
+  },
+  {
+    "name": "Konci, Ervis",
+    "email": "ervis.konci@ssb.no",
+    "email_short": "kon@ssb.no"
+  },
+  {
+    "name": "Konsulent Techstep",
+    "email": "",
+    "email_short": "kons-techstep@ssbno.onmicrosoft.com"
+  },
+  {
+    "name": "Konttinen, Kimmo Tapio",
+    "email": "kimmo.konttinen@ssb.no",
+    "email_short": "ktk@ssb.no"
+  },
+  {
+    "name": "Kordahl, Emil",
+    "email": "emil.kordahl@ssb.no",
+    "email_short": "ekd@ssb.no"
+  },
+  {
+    "name": "Kornishyna, Olena",
+    "email": "olena.konishyna@ssb.no",
+    "email_short": "kons_olena@ssb.no"
+  },
+  {
+    "name": "Kornstad, Tom",
+    "email": "tom.kornstad@ssb.no",
+    "email_short": "tko@ssb.no"
+  },
+  {
+    "name": "Kostøl, Andreas Ravndal",
+    "email": "andreas.kostol@ssb.no",
+    "email_short": "kos@ssb.no"
+  },
+  {
+    "name": "Kraakenes, Kari",
+    "email": "kari.kraakenes@ssb.no",
+    "email_short": "kkr@ssb.no"
+  },
+  {
+    "name": "Kralova, Dominika",
+    "email": "dominika.kralova@ssb.no",
+    "email_short": "dkr@ssb.no"
+  },
+  {
+    "name": "Krane, Rita Sollund",
+    "email": "rita.krane@ssb.no",
+    "email_short": "llu@ssb.no"
+  },
+  {
+    "name": "Kringlebotten, Marit",
+    "email": "marit.kringlebotten@ssb.no",
+    "email_short": "mtk@ssb.no"
+  },
+  {
+    "name": "Kristiansen, Espen",
+    "email": "espen.kristiansen@ssb.no",
+    "email_short": "esk@ssb.no"
+  },
+  {
+    "name": "Kristiansen, Ina Viktoria",
+    "email": "ina.viktoria.kristiansen@ssb.no",
+    "email_short": "ikt@ssb.no"
+  },
+  {
+    "name": "Kristoffersen, Anne Grete",
+    "email": "annegrete.kristoffersen@ssb.no",
+    "email_short": "agf@ssb.no"
+  },
+  {
+    "name": "Kristoffersen, Sigrun",
+    "email": "sigrun.kristoffersen@ssb.no",
+    "email_short": "sek@ssb.no"
+  },
+  {
+    "name": "Krogsrud, Anne- Marte",
+    "email": "anne-marte.krogsrud@ssb.no",
+    "email_short": "amk@ssb.no"
+  },
+  {
+    "name": "Krogsrud, Kari-Dorte",
+    "email": "kari-dorte.krogsrud@ssb.no",
+    "email_short": "kdk@ssb.no"
+  },
+  {
+    "name": "Krokedal, Linn",
+    "email": "linn.krokedal@ssb.no",
+    "email_short": "ikd@ssb.no"
+  },
+  {
+    "name": "Kruse, Herman",
+    "email": "herman.kruse@ssb.no",
+    "email_short": "hkr@ssb.no"
+  },
+  {
+    "name": "Krusedokken, Arne Sigve",
+    "email": "arne.sigve.krusedokken@ssb.no",
+    "email_short": "sak@ssb.no"
+  },
+  {
+    "name": "Kumlin, Calle",
+    "email": "calle.kumlin@ssb.no",
+    "email_short": "cku@ssb.no"
+  },
+  {
+    "name": "Kundeservice",
+    "email": "kundeservice@ssb.no",
+    "email_short": "kds@ssb.no"
+  },
+  {
+    "name": "Kurt, Fatma Altug",
+    "email": "farma.kurt@ssb.no",
+    "email_short": "fak@ssb.no"
+  },
+  {
+    "name": "Kurta, Dior",
+    "email": "dior.kurta@ssb.no",
+    "email_short": "ktd@ssb.no"
+  },
+  {
+    "name": "Kvalstad, Inge",
+    "email": "inge.kvalstad@ssb.no",
+    "email_short": "ink@ssb.no"
+  },
+  {
+    "name": "Kvamsås, Joar",
+    "email": "joar.kvamsas@ssb.no",
+    "email_short": "jrk@ssb.no"
+  },
+  {
+    "name": "Kvesetberget, Guri",
+    "email": "guri.kvesetberget@ssb.no",
+    "email_short": "URI@ssb.no"
+  },
+  {
+    "name": "Kvile, Jarle",
+    "email": "jarle.kvile@ssb.no",
+    "email_short": "jkv@ssb.no"
+  },
+  {
+    "name": "Kwarasey, Marleen Asonona Larsen",
+    "email": "marleen.kwarasey@ssb.no",
+    "email_short": "mlk@ssb.no"
+  },
+  {
+    "name": "Kyle Danny Jenni",
+    "email": "kyle.jenni@ssb.no",
+    "email_short": "kdj@ssb.no"
+  },
+  {
+    "name": "La Mond Wibeke",
+    "email": "wibeke.la.mond@ssb.no",
+    "email_short": "Wdj@ssb.no"
+  },
+  {
+    "name": "Lægreid, Eiliv",
+    "email": "eilev.laegreid@ssb.no",
+    "email_short": "evd@ssb.no"
+  },
+  {
+    "name": "Lagerstrøm, Bengt Oscar",
+    "email": "bengt.oscar.lagerstrom@ssb.no",
+    "email_short": "bol@ssb.no"
+  },
+  {
+    "name": "Lahn, Trygve",
+    "email": "trygve.lahn@ssb.no",
+    "email_short": "gve@ssb.no"
+  },
+  {
+    "name": "Lamadon, Thihaut",
+    "email": "thihaut.lamadon@ssb.no",
+    "email_short": "tlm@ssb.no"
+  },
+  {
+    "name": "Landsverk, Sylvi Kristin",
+    "email": "sylvi.landsverk@ssb.no",
+    "email_short": "syl@ssb.no"
+  },
+  {
+    "name": "Langangen, Christina",
+    "email": "christina.langangen@ssb.no",
+    "email_short": "chl@ssb.no"
+  },
+  {
+    "name": "Langballe, Trym",
+    "email": "trym.langballe@ssb.no",
+    "email_short": "lat@ssb.no"
+  },
+  {
+    "name": "Langdal, Eivind",
+    "email": "eivind.langdal@ssb.no",
+    "email_short": "dla@ssb.no"
+  },
+  {
+    "name": "Langhoff, Kristine",
+    "email": "kristine.langhoff@ssb.no",
+    "email_short": "lak@ssb.no"
+  },
+  {
+    "name": "Langørgen, Audun",
+    "email": "audun.langorgen@ssb.no",
+    "email_short": "aul@ssb.no"
+  },
+  {
+    "name": "Langseth, Arild",
+    "email": "arild.langseth@ssb.no",
+    "email_short": "ala@ssb.no"
+  },
+  {
+    "name": "Langsrud, Øyvind",
+    "email": "oyvind.langsrud@ssb.no",
+    "email_short": "oyl@ssb.no"
+  },
+  {
+    "name": "Larsen, Anne Lyslid",
+    "email": "anne.larsen@ssb.no",
+    "email_short": "all@ssb.no"
+  },
+  {
+    "name": "Larsen, Ben",
+    "email": "ben.larsen@ssb.no",
+    "email_short": "nla@ssb.no"
+  },
+  {
+    "name": "Larsen, Bodil Merethe",
+    "email": "bodil.merethe.larsen@ssb.no",
+    "email_short": "bml@ssb.no"
+  },
+  {
+    "name": "Larsen, Efil",
+    "email": "efil.larsen@ssb.no",
+    "email_short": "efl@ssb.no"
+  },
+  {
+    "name": "Larsen, Frode",
+    "email": "frode.larsen@ssb.no",
+    "email_short": "lfr@ssb.no"
+  },
+  {
+    "name": "Larsen, Glenruben Engen",
+    "email": "glenruben.larsen@ssb.no",
+    "email_short": "gle@ssb.no"
+  },
+  {
+    "name": "Larsen, Magnus Dybwik",
+    "email": "magnus.dybwik.larsen@ssb.no",
+    "email_short": "mdl@ssb.no"
+  },
+  {
+    "name": "Larsson, Gunnar",
+    "email": "gunnar.larsson@ssb.no",
+    "email_short": "gon@ssb.no"
+  },
+  {
+    "name": "Larsson, Marius Runningen",
+    "email": "marius.runningen.larsson@ssb.no",
+    "email_short": "riu@ssb.no"
+  },
+  {
+    "name": "Lauritsen, Nann-Kristin",
+    "email": "nann-kristin.lauritsen@ssb.no",
+    "email_short": "lau@ssb.no"
+  },
+  {
+    "name": "Lauveng, Jonas Eid",
+    "email": "jonas.lauveng@ssb.no",
+    "email_short": "nae@ssb.no"
+  },
+  {
+    "name": "Lea, Jo Lauritz",
+    "email": "jo.lea@ssb.no",
+    "email_short": "jll@ssb.no"
+  },
+  {
+    "name": "Leirvik, Magnus Engen",
+    "email": "magnus.leirvik@ssb.no",
+    "email_short": "lme@ssb.no"
+  },
+  {
+    "name": "Leknes, Stefan",
+    "email": "stefan.leknes@ssb.no",
+    "email_short": "sfl@ssb.no"
+  },
+  {
+    "name": "Lerbo, Christian",
+    "email": "christian.lerbo@ssb.no",
+    "email_short": "cle@ssb.no"
+  },
+  {
+    "name": "Lervåg, Maj-Lisa",
+    "email": "maj-lisa.lervag@ssb.no",
+    "email_short": "jli@ssb.no"
+  },
+  {
+    "name": "Letnes, Morten Wiig",
+    "email": "morten.letnes@ssb.no",
+    "email_short": "ort@ssb.no"
+  },
+  {
+    "name": "Leuven, Edwin",
+    "email": "edwin.leuven@ssb.no",
+    "email_short": "leu@ssb.no"
+  },
+  {
+    "name": "Lian, Bård",
+    "email": "bard.lian@ssb.no",
+    "email_short": "bli@ssb.no"
+  },
+  {
+    "name": "Lien, Håvard Hungnes",
+    "email": "havard.lien@ssb.no",
+    "email_short": "ien@ssb.no"
+  },
+  {
+    "name": "Light, Jack",
+    "email": "jack.light@ssb.no",
+    "email_short": "jcl@ssb.no"
+  },
+  {
+    "name": "Lightfoot, Halvor Sanness",
+    "email": "halvor.lightfoot@ssb.no",
+    "email_short": "hsl@ssb.no"
+  },
+  {
+    "name": "Lillegård, Magnar",
+    "email": "magnar.lillegard@ssb.no",
+    "email_short": "mld@ssb.no"
+  },
+  {
+    "name": "Lindberg, Njål",
+    "email": "njal.lindberg@ssb.no",
+    "email_short": "nli@ssb.no"
+  },
+  {
+    "name": "Lindgren, Petter",
+    "email": "petter.lindgren@ssb.no",
+    "email_short": "pli@ssb.no"
+  },
+  {
+    "name": "Lindholt, Lars",
+    "email": "lars.lindholt@ssb.no",
+    "email_short": "lli@ssb.no"
+  },
+  {
+    "name": "Lindstrøm, Eirik Larsen",
+    "email": "eirik.lindstrom@ssb.no",
+    "email_short": "lel@ssb.no"
+  },
+  {
+    "name": "Lindvig, Inger Margrethe",
+    "email": "inger.lindvig@ssb.no",
+    "email_short": "iml@ssb.no"
+  },
+  {
+    "name": "Linnerud, Jenny",
+    "email": "jenny.linnerud@ssb.no",
+    "email_short": "jal@ssb.no"
+  },
+  {
+    "name": "Linnerud, Knut",
+    "email": "knut.linnerud@ssb.no",
+    "email_short": "knl@ssb.no"
+  },
+  {
+    "name": "Linstad, Tove",
+    "email": "tove.linstad@ssb.no",
+    "email_short": "lit@ssb.no"
+  },
+  {
+    "name": "Liu, Gang",
+    "email": "gang.liu@ssb.no",
+    "email_short": "liu@ssb.no"
+  },
+  {
+    "name": "Liu, Kai",
+    "email": "kai.liu@ssb.no",
+    "email_short": "kiu@ssb.no"
+  },
+  {
+    "name": "Løken, Katrine Vellesen",
+    "email": "katrine.loken@ssb.no",
+    "email_short": "kav@ssb.no"
+  },
+  {
+    "name": "Løkken, Sturla",
+    "email": "sturla.lokken@ssb.no",
+    "email_short": "sal@ssb.no"
+  },
+  {
+    "name": "Løndal, Rune Einarsson",
+    "email": "runeeinarsson.londal@ssb.no",
+    "email_short": "onl@ssb.no"
+  },
+  {
+    "name": "Longva, Karen",
+    "email": "karen.longva@ssb.no",
+    "email_short": "klo@ssb.no"
+  },
+  {
+    "name": "Lønø, Kristian",
+    "email": "kristian.lono@ssb.no",
+    "email_short": "krl@ssb.no"
+  },
+  {
+    "name": "Lorentzen, Isabell Bjerkelund",
+    "email": "isabell.lorentzen@ssb.no",
+    "email_short": "ibl@ssb.no"
+  },
+  {
+    "name": "Løvbak, Per Olav",
+    "email": "per.olav.lovbak@ssb.no",
+    "email_short": "plo@ssb.no"
+  },
+  {
+    "name": "Løvbak, Tove Helene",
+    "email": "tove.lovbak@ssb.no",
+    "email_short": "tol@ssb.no"
+  },
+  {
+    "name": "Lozano-Handelsby, Siri",
+    "email": "siri.lozano-handelsby@ssb.no",
+    "email_short": "slh@ssb.no"
+  },
+  {
+    "name": "Lund, Kari-Anne",
+    "email": "kari-anne.lund@ssb.no",
+    "email_short": "lka@ssb.no"
+  },
+  {
+    "name": "Lund, Stine Lotte",
+    "email": "stine.lotte.lund@ssb.no",
+    "email_short": "sll@ssb.no"
+  },
+  {
+    "name": "Lund, Svein Olav",
+    "email": "svein.lund@ssb.no",
+    "email_short": "vei@ssb.no"
+  },
+  {
+    "name": "Lund, Vidar",
+    "email": "vidar.lund@ssb.no",
+    "email_short": "vlu@ssb.no"
+  },
+  {
+    "name": "Lunde, Elin Skretting",
+    "email": "elin.skretting.lunde@ssb.no",
+    "email_short": "esl@ssb.no"
+  },
+  {
+    "name": "Lunde, Harald",
+    "email": "harald.lunde@ssb.no",
+    "email_short": "hlu@ssb.no"
+  },
+  {
+    "name": "Lundereng, Ane",
+    "email": "ane.lundereng@ssb.no",
+    "email_short": "nlu@ssb.no"
+  },
+  {
+    "name": "Lupp, Daniel",
+    "email": "daniel.lupp@ssb.no",
+    "email_short": "dlu@ssb.no"
+  },
+  {
+    "name": "Lyby, Solveig",
+    "email": "solveig.lyby@ssb.no",
+    "email_short": "sly@ssb.no"
+  },
+  {
+    "name": "Lydersen, Zeynep",
+    "email": "zeynep.lydersen@ssb.no",
+    "email_short": "zly@ssb.no"
+  },
+  {
+    "name": "Lyle, Christina",
+    "email": "christina.lyle@ssb.no",
+    "email_short": "cly@ssb.no"
+  },
+  {
+    "name": "Lynum, Karl Ove",
+    "email": "karl.lynum@ssb.no",
+    "email_short": "kly@ssb.no"
+  },
+  {
+    "name": "Lysen, Jinghui Geng",
+    "email": "jinghui.lysen@ssb.no",
+    "email_short": "jgl@ssb.no"
+  },
+  {
+    "name": "Lysø, Arvid Olav",
+    "email": "arvid.olav.lyso@ssb.no",
+    "email_short": "aol@ssb.no"
+  },
+  {
+    "name": "Maal, Simen Jansen",
+    "email": "simen.maal@ssb.no",
+    "email_short": "sjm@ssb.no"
+  },
+  {
+    "name": "Maan, Kanwar Singh",
+    "email": "kanwar.singh.maan@ssb.no",
+    "email_short": "sin@ssb.no"
+  },
+  {
+    "name": "Madshus, Morten",
+    "email": "morten.madshus@ssb.no",
+    "email_short": "mms@ssb.no"
+  },
+  {
+    "name": "Mæland, Ståle",
+    "email": "stale.maeland@ssb.no",
+    "email_short": "stm@ssb.no"
+  },
+  {
+    "name": "Mælum, Elisabeth",
+    "email": "elisabeth.maelum@ssb.no",
+    "email_short": "elm@ssb.no"
+  },
+  {
+    "name": "Magne Furuholmen Myren engasjemen til 23/7 2023. tms 359903",
+    "email": "magne.myren@ssb.no",
+    "email_short": "mfm@ssb.no"
+  },
+  {
+    "name": "Malloul, Sara Fazia",
+    "email": "sara.malloul@ssb.no",
+    "email_short": "sfm@ssb.no"
+  },
+  {
+    "name": "Mamelund, Anne Mari Baby",
+    "email": "anne.mari.baby.mamelund@ssb.no",
+    "email_short": "elu@ssb.no"
+  },
+  {
+    "name": "Marone, Victoria Ray",
+    "email": "victoria.marone@ssb.no",
+    "email_short": "vrm@ssb.no"
+  },
+  {
+    "name": "Marsteintrædet, Siv",
+    "email": "siv.marsteintraedet@ssb.no",
+    "email_short": "ima@ssb.no"
+  },
+  {
+    "name": "Martinsen, Vegard",
+    "email": "pal.martinsen@ssb.no",
+    "email_short": "pvm@ssb.no"
+  },
+  {
+    "name": "Mathiassen, Astrid",
+    "email": "astrid.mathiassen@ssb.no",
+    "email_short": "mss@ssb.no"
+  },
+  {
+    "name": "Mathiesen, Jens",
+    "email": "jens.mathiesen@ssb.no",
+    "email_short": "jma@ssb.no"
+  },
+  {
+    "name": "Mazza, Marco Mathias",
+    "email": "marco.mazza@ssb.no",
+    "email_short": "mmm@ssb.no"
+  },
+  {
+    "name": "Mc Mahon, Lise Dalen",
+    "email": "lise.dalen.mcmahon@ssb.no",
+    "email_short": "lid@ssb.no"
+  },
+  {
+    "name": "Medby, Per",
+    "email": "per.medby@ssb.no",
+    "email_short": "pme@ssb.no"
+  },
+  {
+    "name": "Melby, Ingrid",
+    "email": "ingrid.melby@ssb.no",
+    "email_short": "ime@ssb.no"
+  },
+  {
+    "name": "Melfald, Wenche",
+    "email": "wenche.melfald@ssb.no",
+    "email_short": "wem@ssb.no"
+  },
+  {
+    "name": "Melgård, Torill",
+    "email": "ome@ssbno.onmicrosoft.com",
+    "email_short": "ome@ssb.no"
+  },
+  {
+    "name": "Melhus, Lena",
+    "email": "lena.melhus@ssb.no",
+    "email_short": "lem@ssb.no"
+  },
+  {
+    "name": "Meling, Tom Grimstvedt",
+    "email": "tom.meling@ssb.no",
+    "email_short": "tmg@ssb.no"
+  },
+  {
+    "name": "Mellbye, Alex",
+    "email": "alex.mellbye@ssb.no",
+    "email_short": "alx@ssb.no"
+  },
+  {
+    "name": "Mellem, Kari Benterud",
+    "email": "kari.benterud.mellem@ssb.no",
+    "email_short": "kbm@ssb.no"
+  },
+  {
+    "name": "Mellem, Marianne",
+    "email": "marianne.mellem@ssb.no",
+    "email_short": "mnm@ssb.no"
+  },
+  {
+    "name": "Mellemberg, Stig Anders",
+    "email": "stig.mellemberg@ssb.no",
+    "email_short": "der@ssb.no"
+  },
+  {
+    "name": "Mellemstrand, Bjarte",
+    "email": "bjarte.mellemstrand@ssb.no",
+    "email_short": "bme@ssb.no"
+  },
+  {
+    "name": "Mersland, Marit",
+    "email": "marit.mersland@ssb.no",
+    "email_short": "mrm@ssb.no"
+  },
+  {
+    "name": "Mevik, Anna-Karin",
+    "email": "anna-karin.mevik@ssb.no",
+    "email_short": "Mev@ssb.no"
+  },
+  {
+    "name": "Midttun, Sindre",
+    "email": "sindre.midttun@ssb.no",
+    "email_short": "imi@ssb.no"
+  },
+  {
+    "name": "Mili, Jobaida Yeasmin",
+    "email": "jobaida.mili@ssb.no",
+    "email_short": "jym@ssb.no"
+  },
+  {
+    "name": "Mirza, Waqas Maqsood",
+    "email": "waqas.mirza@ssb.no",
+    "email_short": "wmm@ssb.no"
+  },
+  {
+    "name": "Moafi, Hossein",
+    "email": "hossein.moafi@ssb.no",
+    "email_short": "mho@ssb.no"
+  },
+  {
+    "name": "Modalsli, Jørgen Heibø",
+    "email": "jorgen.modalsli@ssb.no",
+    "email_short": "mod@ssb.no"
+  },
+  {
+    "name": "Modig, Ingrid",
+    "email": "ingrid.modig@ssb.no",
+    "email_short": "imo@ssb.no"
+  },
+  {
+    "name": "Moe, Caroline",
+    "email": "caroline.moe@ssb.no",
+    "email_short": "cam@ssb.no"
+  },
+  {
+    "name": "Moe, Dana",
+    "email": "dana.moe@ssb.no",
+    "email_short": "dnm@ssb.no"
+  },
+  {
+    "name": "Moen, Kjersti",
+    "email": "kjersti.moen@ssb.no",
+    "email_short": "kons_kemo@ssb.no"
+  },
+  {
+    "name": "Moen, Thomas",
+    "email": "thomas.moen@ssb.no",
+    "email_short": "thm@ssb.no"
+  },
+  {
+    "name": "Mohamed, Hamdi A.",
+    "email": "hamdi.mohamed@ssb.no",
+    "email_short": "dia@ssb.no"
+  },
+  {
+    "name": "Mohammad, Ishaq Ebrahim",
+    "email": "ishaq.mohammad@ssb.no",
+    "email_short": "iem@ssb.no"
+  },
+  {
+    "name": "Mohn, Sigmund Book",
+    "email": "sigmund.mohn@ssb.no",
+    "email_short": "sbm@ssb.no"
+  },
+  {
+    "name": "Mokarian, David",
+    "email": "david.mokarian@ssb.no",
+    "email_short": "dam@ssb.no"
+  },
+  {
+    "name": "Moland, Vigdis Irene",
+    "email": "vigdisirene.moland@ssb.no",
+    "email_short": "igd@ssb.no"
+  },
+  {
+    "name": "Molhempour, Bernadette",
+    "email": "bernadette.molhempour@ssb.no",
+    "email_short": "our@ssb.no"
+  },
+  {
+    "name": "Molin, Robert Mattias",
+    "email": "robert.molin@ssb.no",
+    "email_short": "rmm@ssb.no"
+  },
+  {
+    "name": "Møller, Hilde",
+    "email": "hilde.moller@ssb.no",
+    "email_short": "hml@ssb.no"
+  },
+  {
+    "name": "Molstad, Christian Sørlien",
+    "email": "christian.molstad@ssb.no",
+    "email_short": "csm@ssb.no"
+  },
+  {
+    "name": "Morken, Herman",
+    "email": "herman.morken@ssb.no",
+    "email_short": "nmo@ssb.no"
+  },
+  {
+    "name": "Mosli, Kjersti",
+    "email": "kjersti.mosli@ssb.no",
+    "email_short": "kli@ssb.no"
+  },
+  {
+    "name": "Motevalli, Afshin",
+    "email": "afshin.motevalli@ssb.no",
+    "email_short": "afm@ssb.no"
+  },
+  {
+    "name": "Mountjoy, John Thomas",
+    "email": "john.mountjoy@ssb.no",
+    "email_short": "jtm@ssb.no"
+  },
+  {
+    "name": "Msall, Lucy",
+    "email": "lucy.msall@ssb.no",
+    "email_short": "lms@ssb.no"
+  },
+  {
+    "name": "Muller, Daniel Milliam",
+    "email": "daniel.muller@ssb.no",
+    "email_short": "dmm@ssb.no"
+  },
+  {
+    "name": "Mundal, Anne",
+    "email": "anne.mundal@ssb.no",
+    "email_short": "amu@ssb.no"
+  },
+  {
+    "name": "Mustafa, Fitim",
+    "email": "fitim.mustafa@ssb.no",
+    "email_short": "fmu@ssb.no"
+  },
+  {
+    "name": "Myhre, Andreas",
+    "email": "andreas.myhre@ssb.no",
+    "email_short": "mya@ssb.no"
+  },
+  {
+    "name": "Myklebust, Janne",
+    "email": "janne.myklebust@ssb.no",
+    "email_short": "myj@ssb.no"
+  },
+  {
+    "name": "Myrli, Harald",
+    "email": "harald.myrli@ssb.no",
+    "email_short": "hmy@ssb.no"
+  },
+  {
+    "name": "Myro, Svein",
+    "email": "svein.myro@ssb.no",
+    "email_short": "smy@ssb.no"
+  },
+  {
+    "name": "Mysen, Lisbeth",
+    "email": "lisbeth.mysen@ssb.no",
+    "email_short": "Lmy@ssb.no"
+  },
+  {
+    "name": "Mysen, Styrk Ole Dolve",
+    "email": "styrk.mysen@ssb.no",
+    "email_short": "tmy@ssb.no"
+  },
+  {
+    "name": "Næs, Peder",
+    "email": "peder.naes@ssb.no",
+    "email_short": "pns@ssb.no"
+  },
+  {
+    "name": "Næss, Ole-Andreas Elvik",
+    "email": "ole-andreas.naess@ssb.no",
+    "email_short": "onn@ssb.no"
+  },
+  {
+    "name": "Nakstad, Yoon",
+    "email": "yoon.nakstad@ssb.no",
+    "email_short": "nak@ssb.no"
+  },
+  {
+    "name": "Natvik, Gisle",
+    "email": "gisle.natvik@ssb.no",
+    "email_short": "gna@ssb.no"
+  },
+  {
+    "name": "Naz, Ghazala",
+    "email": "ghazala.naz@ssb.no",
+    "email_short": "naz@ssb.no"
+  },
+  {
+    "name": "Nesbakken, Runa",
+    "email": "runa.nesbakken@ssb.no",
+    "email_short": "rne@ssb.no"
+  },
+  {
+    "name": "Nesset, Anne",
+    "email": "anne.nesset@ssb.no",
+    "email_short": "ant@ssb.no"
+  },
+  {
+    "name": "Nicholas, Deniz Kutay",
+    "email": "deniz.kutay.nicholas@ssb.no",
+    "email_short": "dku@ssb.no"
+  },
+  {
+    "name": "Nickelsen, Erlend",
+    "email": "erlend.nickelsen@ssb.no",
+    "email_short": "edn@ssb.no"
+  },
+  {
+    "name": "Niklasson, Johnny",
+    "email": "johnny.niklasson@ssb.no",
+    "email_short": "jnk@ssb.no"
+  },
+  {
+    "name": "Nilsen, Bent Snorre",
+    "email": "bentsnorre.nilsen@ssb.no",
+    "email_short": "nts@ssb.no"
+  },
+  {
+    "name": "Nilsen, Trude",
+    "email": "trude.nilsen@ssb.no",
+    "email_short": "tdn@ssb.no"
+  },
+  {
+    "name": "Nimczik, Jan Sebastian",
+    "email": "jan.nimczik@ssb.no",
+    "email_short": "jsn@ssb.no"
+  },
+  {
+    "name": "Nitter-Hauge, Johan",
+    "email": "johan.nitter-hauge@ssb.no",
+    "email_short": "jni@ssb.no"
+  },
+  {
+    "name": "Njaa, Dag Egil",
+    "email": "dag.egil.njaa@ssb.no",
+    "email_short": "dej@ssb.no"
+  },
+  {
+    "name": "Nordal, Oddny",
+    "email": "oddny.nordal@ssb.no",
+    "email_short": "ono@ssb.no"
+  },
+  {
+    "name": "Nordbakken, Karl Henrik",
+    "email": "karl.nordbakken@ssb.no",
+    "email_short": "kno@ssb.no"
+  },
+  {
+    "name": "Nordby, Jens Arve",
+    "email": "jens.arve.nordby@ssb.no",
+    "email_short": "jad@ssb.no"
+  },
+  {
+    "name": "Nordby, Pål",
+    "email": "pal.nordby@ssb.no",
+    "email_short": "rby@ssb.no"
+  },
+  {
+    "name": "Nordermoen, Helga",
+    "email": "helga.nordermoen@ssb.no",
+    "email_short": "hno@ssb.no"
+  },
+  {
+    "name": "Nordgaard, Sigve Sjømæling",
+    "email": "sigve.nordgaard@ssb.no",
+    "email_short": "kons-sigve@ssb.no"
+  },
+  {
+    "name": "Nordgård, Ingelin",
+    "email": "ingelin.nordgaard@ssb.no",
+    "email_short": "tga@ssb.no"
+  },
+  {
+    "name": "Nordhus, Inger",
+    "email": "inger.nordhus@ssb.no",
+    "email_short": "itn@ssb.no"
+  },
+  {
+    "name": "Nordli, Øyvind",
+    "email": "oyvind.nordli@ssb.no",
+    "email_short": "kons_oyno@ssb.no"
+  },
+  {
+    "name": "Nordseth, Carina",
+    "email": "carina.nordseth@ssb.no",
+    "email_short": "cgn@ssb.no"
+  },
+  {
+    "name": "Normann, Tor Morten",
+    "email": "tor.morten.normann@ssb.no",
+    "email_short": "tmn@ssb.no"
+  },
+  {
+    "name": "Nøstbakken, Linda",
+    "email": "linda.nostbakken@ssb.no",
+    "email_short": "ldn@ssb.no"
+  },
+  {
+    "name": "Nøtnæs, Tore",
+    "email": "tore.notnaes@ssb.no",
+    "email_short": "not@ssb.no"
+  },
+  {
+    "name": "Nyberg, Bjørn Olav",
+    "email": "bjorn.nyberg@ssb.no",
+    "email_short": "bon@ssb.no"
+  },
+  {
+    "name": "Nygaard, Bente",
+    "email": "bente.nygaard@ssb.no",
+    "email_short": "bny@ssb.no"
+  },
+  {
+    "name": "Nygaard, Ragnhild",
+    "email": "ragnhild.nygaard@ssb.no",
+    "email_short": "Rjn@ssb.no"
+  },
+  {
+    "name": "Nygård, Geir",
+    "email": "geir.nygard@ssb.no",
+    "email_short": "gen@ssb.no"
+  },
+  {
+    "name": "Nygård, Odd Erik",
+    "email": "odd.erik.nygard@ssb.no",
+    "email_short": "Oen@ssb.no"
+  },
+  {
+    "name": "Nygårdseter, Gjermund",
+    "email": "gjermund.nygardseter@ssb.no",
+    "email_short": "gje@ssb.no"
+  },
+  {
+    "name": "Nygårdseter, Hanne Marie",
+    "email": "hanne.marie.nygardseter@ssb.no",
+    "email_short": "hmn@ssb.no"
+  },
+  {
+    "name": "Nylænder, Heidi Karin",
+    "email": "heidi.karin.nylander@ssb.no",
+    "email_short": "nyl@ssb.no"
+  },
+  {
+    "name": "Nymark, Toril Aasheim",
+    "email": "toril.nymark@ssb.no",
+    "email_short": "tny@ssb.no"
+  },
+  {
+    "name": "Nymoen, Erik H.",
+    "email": "erik.h.nymoen@ssb.no",
+    "email_short": "ehn@ssb.no"
+  },
+  {
+    "name": "Nystrøm, Daniel",
+    "email": "daniel.nystrom@ssb.no",
+    "email_short": "dan@ssb.no"
+  },
+  {
+    "name": "Oddli, Sunna Marie",
+    "email": "sunna.oddli@ssb.no",
+    "email_short": "osm@ssb.no"
+  },
+  {
+    "name": "Ødegaard, Kristina Dorothea",
+    "email": "kristina.odegaard@ssb.no",
+    "email_short": "kons_kris@ssb.no"
+  },
+  {
+    "name": "Ogbamichael, Tarik",
+    "email": "tarik.ogbamichael@ssb.no",
+    "email_short": "tao@ssb.no"
+  },
+  {
+    "name": "Øiseth, Karin Synnøve",
+    "email": "karin.synnove.oiseth@ssb.no",
+    "email_short": "kss@ssb.no"
+  },
+  {
+    "name": "Økland, Trym Kristian",
+    "email": "trym.okland@ssb.no",
+    "email_short": "trk@ssb.no"
+  },
+  {
+    "name": "Olafsen, Erik",
+    "email": "erik.olafsen@ssb.no",
+    "email_short": "eol@ssb.no"
+  },
+  {
+    "name": "Olesen, Sunniva",
+    "email": "sunniva.olsesen@ssb.no",
+    "email_short": "suo@ssb.no"
+  },
+  {
+    "name": "Olsen, Bjørn",
+    "email": "bjorn.olsen@ssb.no",
+    "email_short": "ols@ssb.no"
+  },
+  {
+    "name": "Olsen, Bjørn Magne",
+    "email": "bjorn.m.olsen@ssb.no",
+    "email_short": "bmg@ssb.no"
+  },
+  {
+    "name": "Olsen, Grete",
+    "email": "grete.olsen@ssb.no",
+    "email_short": "gol@ssb.no"
+  },
+  {
+    "name": "Olsen, Kristin T.",
+    "email": "kristin.t.olsen@ssb.no",
+    "email_short": "kri@ssb.no"
+  },
+  {
+    "name": "Olsen, Vivian",
+    "email": "vivian.olsen@ssb.no",
+    "email_short": "vio@ssb.no"
+  },
+  {
+    "name": "Olsson, Ann-Sofie Maria",
+    "email": "ann-sofie.olsson@ssb.no",
+    "email_short": "nnf@ssb.no"
+  },
+  {
+    "name": "Olsson, Mette",
+    "email": "mette.olsson@ssb.no",
+    "email_short": "mol@ssb.no"
+  },
+  {
+    "name": "Olsson, Urban",
+    "email": "urban.olsson@ssb.no",
+    "email_short": "urb@ssb.no"
+  },
+  {
+    "name": "Ølstadløkken, Eva Kristin",
+    "email": "eva.kristin.olstadlokken@ssb.no",
+    "email_short": "olk@ssb.no"
+  },
+  {
+    "name": "Omholt, Elisabeth Løyland",
+    "email": "elisabeth.omholt@ssb.no",
+    "email_short": "oel@ssb.no"
+  },
+  {
+    "name": "Onshuus, Helene",
+    "email": "helene.onshuus@ssb.no",
+    "email_short": "hon@ssb.no"
+  },
+  {
+    "name": "Onstad, Mona Eide",
+    "email": "mona.onstad@ssb.no",
+    "email_short": "ona@ssb.no"
+  },
+  {
+    "name": "Oppedal, Mons Even",
+    "email": "mons.even.oppedal@ssb.no",
+    "email_short": "meo@ssb.no"
+  },
+  {
+    "name": "Oppøyen, Madeleine Elisabeth Schlyter",
+    "email": "madeleine.oppoyen@ssb.no",
+    "email_short": "mop@ssb.no"
+  },
+  {
+    "name": "Osnes, Jacob Andreas",
+    "email": "jacob.andreas.osnes@ssb.no",
+    "email_short": "osn@ssb.no"
+  },
+  {
+    "name": "Østby, Lars",
+    "email": "lars.ostby@ssb.no",
+    "email_short": "los@ssb.no"
+  },
+  {
+    "name": "Østby, Mona Nedberg",
+    "email": "mona.ostby@ssb.no",
+    "email_short": "ned@ssb.no"
+  },
+  {
+    "name": "Østby, Sodok Suwannee",
+    "email": "sodok.ostby@ssb.no",
+    "email_short": "sus@ssb.no"
+  },
+  {
+    "name": "Østensen, Katharina",
+    "email": "katharina.ostensen@ssb.no",
+    "email_short": "kis@ssb.no"
+  },
+  {
+    "name": "Østhus, Andreas",
+    "email": "andreas.osthus@ssb.no",
+    "email_short": "thu@ssb.no"
+  },
+  {
+    "name": "Østli, Bente",
+    "email": "bente.ostli@ssb.no",
+    "email_short": "beo@ssb.no"
+  },
+  {
+    "name": "Ottersen, Ingunn Hegstad",
+    "email": "ingunn.ottersen@ssb.no",
+    "email_short": "inh@ssb.no"
+  },
+  {
+    "name": "Ovenberg, Ståle",
+    "email": "stale.ovenberg@ssb.no",
+    "email_short": "seo@ssb.no"
+  },
+  {
+    "name": "Øverby, Cathrine Gran",
+    "email": "cathrine.overby@ssb.no",
+    "email_short": "cgy@ssb.no"
+  },
+  {
+    "name": "Øvrum, Erik",
+    "email": "erik.ovrum@ssb.no",
+    "email_short": "erv@ssb.no"
+  },
+  {
+    "name": "Oyier, Boyd",
+    "email": "boyd.oyier@ssb.no",
+    "email_short": "oyi@ssb.no"
+  },
+  {
+    "name": "Ozz, Tom",
+    "email": "tom.ozz@ssb.no",
+    "email_short": "toz@ssb.no"
+  },
+  {
+    "name": "Padmanabhan, Nina",
+    "email": "nina.padmanabhan@ssb.no",
+    "email_short": "pni@ssb.no"
+  },
+  {
+    "name": "Palmstrøm, Cecilie",
+    "email": "cecilie.palmstrom@ssb.no",
+    "email_short": "pce@ssb.no"
+  },
+  {
+    "name": "Pålsson, Victoria",
+    "email": "victoria.palsson@ssb.no",
+    "email_short": "vcp@ssb.no"
+  },
+  {
+    "name": "Pan, Weihai",
+    "email": "weihai.pan@ssb.no",
+    "email_short": "wep@ssb.no"
+  },
+  {
+    "name": "Pancevski, Elena",
+    "email": "elena.pancevski@ssb.no",
+    "email_short": "epa@ssb.no"
+  },
+  {
+    "name": "Parr, Joel",
+    "email": "joel.parr@ssb.no",
+    "email_short": "jpa@ssb.no"
+  },
+  {
+    "name": "Paulie, Charlotte",
+    "email": "charlotte.paulie@ssb.no",
+    "email_short": "cpa@ssb.no"
+  },
+  {
+    "name": "Paulsen, Caroline Wang",
+    "email": "caroline.paulsen@ssb.no",
+    "email_short": "cwp@ssb.no"
+  },
+  {
+    "name": "Paulsen, Kari Anita Solaas",
+    "email": "kari.paulsen@ssb.no",
+    "email_short": "krs@ssb.no"
+  },
+  {
+    "name": "Pay, Bendik Hjelde",
+    "email": "bendik.pay@ssb.no",
+    "email_short": "bep@ssb.no"
+  },
+  {
+    "name": "Pedersen, Anita",
+    "email": "anita.pedersen@ssb.no",
+    "email_short": "ape@ssb.no"
+  },
+  {
+    "name": "Pedersen, Anne Kristin",
+    "email": "anne.kristin.pedersen@ssb.no",
+    "email_short": "akp@ssb.no"
+  },
+  {
+    "name": "Pedersen, Siv Irene",
+    "email": "siv.irene.pedersen@ssb.no",
+    "email_short": "sip@ssb.no"
+  },
+  {
+    "name": "Pedersen, Tor-Arne Nikolai",
+    "email": "tor-arne.pedersen@ssb.no",
+    "email_short": "tap@ssb.no"
+  },
+  { "name": "Pedersen, Trond", "email": "", "email_short": "konspeder@ssb.no" },
+  {
+    "name": "Perlic, Biljana",
+    "email": "biljana.perlic@ssb.no",
+    "email_short": "bpc@ssb.no"
+  },
+  {
+    "name": "Petersen, Liv Torunn",
+    "email": "liv.torunn.petersen@ssb.no",
+    "email_short": "ltp@ssb.no"
+  },
+  {
+    "name": "Pettersen, Anne-Marit",
+    "email": "anne-marit.pettersen@ssb.no",
+    "email_short": "amp@ssb.no"
+  },
+  {
+    "name": "Pettersen, Malin",
+    "email": "malin.pettersen@ssb.no",
+    "email_short": "INP@ssb.no"
+  },
+  {
+    "name": "Pham, Dinh Quang",
+    "email": "dinh.quang.pham@ssb.no",
+    "email_short": "dqp@ssb.no"
+  },
+  {
+    "name": "Phil, Tove Øen",
+    "email": "toveoen.pihl@ssb.no",
+    "email_short": "tvp@ssb.no"
+  },
+  {
+    "name": "Pilskog, Geir Martin",
+    "email": "geir.pilskog@ssb.no",
+    "email_short": "gmp@ssb.no"
+  },
+  {
+    "name": "Pirabakaran, Vidya",
+    "email": "vidya.pirabakaran@ssb.no",
+    "email_short": "vpi@ssb.no"
+  },
+  {
+    "name": "Pirija, Nordin",
+    "email": "nordin.pirija@ssb.no",
+    "email_short": "npi@ssb.no"
+  },
+  {
+    "name": "Pistaferri, Luigi",
+    "email": "luigi.pistaferri@ssb.no",
+    "email_short": "lup@ssb.no"
+  },
+  {
+    "name": "Pitt, Line Kristin Wilhelmsen",
+    "email": "line.pitt@ssb.no",
+    "email_short": "lkp@ssb.no"
+  },
+  {
+    "name": "Poinas, Francois",
+    "email": "francois.poinas@ssb.no",
+    "email_short": "kons_poinas@ssb.no"
+  },
+  {
+    "name": "Poudel, Diwakar",
+    "email": "diwakar.poudel@ssb.no",
+    "email_short": "dpo@ssb.no"
+  },
+  {
+    "name": "Pran, Hilde",
+    "email": "hilde.pran@ssb.no",
+    "email_short": "pra@ssb.no"
+  },
+  {
+    "name": "Prasad, Kashyap",
+    "email": "kashyap.prasad@ssb.no",
+    "email_short": "kpp@ssb.no"
+  },
+  {
+    "name": "Prithyani, Preeti",
+    "email": "preeti.prithyani@ssb.no",
+    "email_short": "ppr@ssb.no"
+  },
+  {
+    "name": "Puvanesalingam, Kapina Sivagnananthan",
+    "email": "kapina.puvanesalingam@ssb.no",
+    "email_short": "kap@ssb.no"
+  },
+  {
+    "name": "Qi Xiao Yan",
+    "email": "xiaoyan.qi@ssb.no",
+    "email_short": "iao@ssb.no"
+  },
+  {
+    "name": "Ragnarsøn, Richard",
+    "email": "richard.ragnarson@ssb.no",
+    "email_short": "rir@ssb.no"
+  },
+  {
+    "name": "Rahmani, Ibrahim",
+    "email": "ibrahim.rahmani@ssb.no",
+    "email_short": "kons-ibra@ssb.no"
+  },
+  {
+    "name": "Raja, Mehran",
+    "email": "mehran.raja@ssb.no",
+    "email_short": "mhr@ssb.no"
+  },
+  {
+    "name": "Rake, Camilla",
+    "email": "camilla.rake@ssb.no",
+    "email_short": "cra@ssb.no"
+  },
+  {
+    "name": "Raknerud, Arvid",
+    "email": "arvid.raknerud@ssb.no",
+    "email_short": "Rak@ssb.no"
+  },
+  {
+    "name": "Ramm, Jorun",
+    "email": "jorun.ramm@ssb.no",
+    "email_short": "jrm@ssb.no"
+  },
+  {
+    "name": "Randen, Trine Heill Braathu",
+    "email": "trine.heill.braathu.randen@ssb.no",
+    "email_short": "tri@ssb.no"
+  },
+  {
+    "name": "Rath, Anja",
+    "email": "anja.rath@ssb.no",
+    "email_short": "nra@ssb.no"
+  },
+  {
+    "name": "Rauan, Estrellita Cometa",
+    "email": "estrellita.cometa.rauan@ssb.no",
+    "email_short": "era@ssb.no"
+  },
+  {
+    "name": "Raza, Ali",
+    "email": "ali.raza@ssb.no",
+    "email_short": "lra@ssb.no"
+  },
+  {
+    "name": "Razwani, Brosik",
+    "email": "brosik.razwani@ssb.no",
+    "email_short": "raz@ssb.no"
+  },
+  {
+    "name": "Refsdal, Ivar",
+    "email": "ivar.refsdal@ssb.no",
+    "email_short": "konsrefsd@ssb.no"
+  },
+  {
+    "name": "Reid, Svein Johan",
+    "email": "svein.reid@ssb.no",
+    "email_short": "sjr@ssb.no"
+  },
+  {
+    "name": "Reiremo, Tore Adam",
+    "email": "tore.reiremo@ssb.no",
+    "email_short": "tar@ssb.no"
+  },
+  {
+    "name": "Reistad, Tord Ingolf",
+    "email": "tord.reistad@ssb.no",
+    "email_short": "tir@ssb.no"
+  },
+  {
+    "name": "Rekstad, Runa Sørlie",
+    "email": "runa.rekstad@ssb.no",
+    "email_short": "rsr@ssb.no"
+  },
+  {
+    "name": "resepsjonenOslo",
+    "email": "resepsjonenoslo@ssb.no",
+    "email_short": "ren@ssb.no"
+  },
+  {
+    "name": "Revheim, Sigbjørn",
+    "email": "sigbjorn.revheim@ssb.no",
+    "email_short": "kons_revh@ssb.no"
+  },
+  {
+    "name": "Revold, Mathias Killengreen",
+    "email": "mathias.revold@ssb.no",
+    "email_short": "rmk@ssb.no"
+  },
+  {
+    "name": "Ring, Marius",
+    "email": "marius.ring@ssb.no",
+    "email_short": "mrg@ssb.no"
+  },
+  {
+    "name": "Ringstad, Pål",
+    "email": "pal.ringstad@ssb.no",
+    "email_short": "pri@ssb.no"
+  },
+  {
+    "name": "Risberg, Terje",
+    "email": "terje.risberg@ssb.no",
+    "email_short": "rit@ssb.no"
+  },
+  {
+    "name": "Risnes, Ørnulf",
+    "email": "ornulf.risnes@ssb.no",
+    "email_short": "konsrisn@ssb.no"
+  },
+  {
+    "name": "Risto, Svein-Erik",
+    "email": "svein-erik.risto@ssb.no",
+    "email_short": "rse@ssb.no"
+  },
+  {
+    "name": "Rochlenge, Camilla",
+    "email": "camilla.rochlenge@ssb.no",
+    "email_short": "car@ssb.no"
+  },
+  {
+    "name": "Rognerud, Live Margrethe",
+    "email": "live.rognerud@ssb.no",
+    "email_short": "lmr@ssb.no"
+  },
+  {
+    "name": "Røhnebæk, Peder Gjølstad",
+    "email": "peder.rohnebaek@ssb.no",
+    "email_short": "pgj@ssb.no"
+  },
+  {
+    "name": "Rokkan, Christine Sørøy",
+    "email": "christine.rokkan@ssb.no",
+    "email_short": "csr@ssb.no"
+  },
+  {
+    "name": "Roll-Hansen, Dag",
+    "email": "dag.roll-hansen@ssb.no",
+    "email_short": "roh@ssb.no"
+  },
+  {
+    "name": "Rolsdorph, Nina",
+    "email": "nina.rolsdorph@ssb.no",
+    "email_short": "nro@ssb.no"
+  },
+  {
+    "name": "Rømo, Anna Lena",
+    "email": "anna.lena.romo@ssb.no",
+    "email_short": "alr@ssb.no"
+  },
+  {
+    "name": "Rong, Maxwell C",
+    "email": "maxwell.rong@ssb.no",
+    "email_short": "mcr@ssb.no"
+  },
+  {
+    "name": "Rønning, Andreas",
+    "email": "andreas.ronning@ssb.no",
+    "email_short": "rga@ssb.no"
+  },
+  {
+    "name": "Rønning, Elisabeth",
+    "email": "elisabeth.ronning@ssb.no",
+    "email_short": "elr@ssb.no"
+  },
+  {
+    "name": "Rønning, Marte",
+    "email": "marte.ronning@ssb.no",
+    "email_short": "mro@ssb.no"
+  },
+  {
+    "name": "Rønning, Torbjørn Cock",
+    "email": "torbjorn.cock.ronning@ssb.no",
+    "email_short": "tcr@ssb.no"
+  },
+  {
+    "name": "Rørholt, Anne",
+    "email": "anne.rorholt@ssb.no",
+    "email_short": "ner@ssb.no"
+  },
+  {
+    "name": "Rørhus, Jan Olav",
+    "email": "jan.rorhus@ssb.no",
+    "email_short": "jao@ssb.no"
+  },
+  {
+    "name": "Rørstad, Kristoffer",
+    "email": "kristoffer.rorstad@ssb.no",
+    "email_short": "rrd@ssb.no"
+  },
+  {
+    "name": "Røsegg. Agnes",
+    "email": "agnes.rosegg@ssb.no",
+    "email_short": "egg@ssb.no"
+  },
+  {
+    "name": "Rossbach, Katharina",
+    "email": "katharina.rossbach@ssb.no",
+    "email_short": "krc@ssb.no"
+  },
+  {
+    "name": "Røstadsand, Jon",
+    "email": "jon-ivar.rostadsand@ssb.no",
+    "email_short": "jir@ssb.no"
+  },
+  {
+    "name": "Rothe, Jan Sebastian",
+    "email": "jansebastian.rothe@ssb.no",
+    "email_short": "jsr@ssb.no"
+  },
+  {
+    "name": "Røv, Vilde",
+    "email": "vilde.rov@ssb.no",
+    "email_short": "vir@ssb.no"
+  },
+  {
+    "name": "Ruen, Ingvild Røstøen",
+    "email": "ingvild.ruen@ssb.no",
+    "email_short": "irr@ssb.no"
+  },
+  {
+    "name": "Rundtom, Terje Olav",
+    "email": "terje.olav.rundtom@ssb.no",
+    "email_short": "teo@ssb.no"
+  },
+  {
+    "name": "Rusten, Leif",
+    "email": "leif.rusten@ssb.no",
+    "email_short": "lru@ssb.no"
+  },
+  {
+    "name": "Rusti, Audun",
+    "email": "audun.rusti@ssb.no",
+    "email_short": "aru@ssb.no"
+  },
+  {
+    "name": "Rybalka, Marina",
+    "email": "marina.rybalka@ssb.no",
+    "email_short": "ryb@ssb.no"
+  },
+  {
+    "name": "Rygvold, Ole Petter",
+    "email": "ole-petter.rygvold@ssb.no",
+    "email_short": "opr@ssb.no"
+  },
+  {
+    "name": "Sæbø, Hans Viggo",
+    "email": "hans.viggo.sabo@ssb.no",
+    "email_short": "hvs@ssb.no"
+  },
+  {
+    "name": "Sæternes, Sophie Brennvall",
+    "email": "sophie.saeternes@ssb.no",
+    "email_short": "hie@ssb.no"
+  },
+  {
+    "name": "Sætre, Simen",
+    "email": "simen.saetre@ssb.no",
+    "email_short": "imt@ssb.no"
+  },
+  {
+    "name": "Sætrevik, Nilufer",
+    "email": "nilufer.saetrevik@ssb.no",
+    "email_short": "nst@ssb.no"
+  },
+  {
+    "name": "Saga, Espen",
+    "email": "espen.saga@ssb.no",
+    "email_short": "nsl@ssb.no"
+  },
+  {
+    "name": "Sagelvmo, Ingunn",
+    "email": "ingunn.sagelvmo@ssb.no",
+    "email_short": "isa@ssb.no"
+  },
+  {
+    "name": "Sagen, Sjur Sutterud",
+    "email": "sjur.sagen@ssb.no",
+    "email_short": "sjs@ssb.no"
+  },
+  {
+    "name": "Sahadevan, Rajdevan",
+    "email": "rajdevan.sahadevan@ssb.no",
+    "email_short": "ajd@ssb.no"
+  },
+  {
+    "name": "Sand, Marit Eline",
+    "email": "marit.sand@ssb.no",
+    "email_short": "ari@ssb.no"
+  },
+  {
+    "name": "Sandaker, Nicolay Frederik Svevnerud",
+    "email": "nicolay.frederik.svevnerud.sandaker@ssb.no",
+    "email_short": "nfs@ssb.no"
+  },
+  {
+    "name": "Sandberg, Gislaug Østerås",
+    "email": "gislaug.sandberg@ssb.no",
+    "email_short": "gns@ssb.no"
+  },
+  {
+    "name": "Sandberg, Lasse",
+    "email": "lasse.sandberg@ssb.no",
+    "email_short": "san@ssb.no"
+  },
+  {
+    "name": "Sandberg, Mikael",
+    "email": "mikael.sandberg@ssb.no",
+    "email_short": "msa@ssb.no"
+  },
+  {
+    "name": "Sandelien, Mari",
+    "email": "mari.sandelien@ssb.no",
+    "email_short": "Sam@ssb.no"
+  },
+  {
+    "name": "Sander, Jan",
+    "email": "jan.sander@ssb.no",
+    "email_short": "jhs@ssb.no"
+  },
+  {
+    "name": "Sandsbraaten, Anne",
+    "email": "anne.sandsbraaten@ssb.no",
+    "email_short": "nds@ssb.no"
+  },
+  {
+    "name": "Sandstå, Birte Larsen",
+    "email": "birte.sandsta@ssb.no",
+    "email_short": "bls@ssb.no"
+  },
+  {
+    "name": "Sandvik, Lene",
+    "email": "lene.sandvik@ssb.no",
+    "email_short": "lsa@ssb.no"
+  },
+  {
+    "name": "Sandvik, Ole",
+    "email": "ole.sandvik@ssb.no",
+    "email_short": "osa@ssb.no"
+  },
+  {
+    "name": "Santos, Iris",
+    "email": "iris.santos@ssb.no",
+    "email_short": "air@ssb.no"
+  },
+  {
+    "name": "Sarpebakken, Bo",
+    "email": "bo.sarpebakken@ssb.no",
+    "email_short": "bsp@ssb.no"
+  },
+  {
+    "name": "Sarwar, Aiza",
+    "email": "aiza.sarwar@ssb.no",
+    "email_short": "azs@ssb.no"
+  },
+  {
+    "name": "Sarwar, Arooj",
+    "email": "arooj.sarwar@ssb.no",
+    "email_short": "ajs@ssb.no"
+  },
+  {
+    "name": "Schenkel, Jonas",
+    "email": "jonas.schenkel@ssb.no",
+    "email_short": "joc@ssb.no"
+  },
+  {
+    "name": "Schiro, Emma",
+    "email": "emma.schiro@ssb.no",
+    "email_short": "esc@ssb.no"
+  },
+  {
+    "name": "Schjalm, Arnfinn",
+    "email": "arnfinn.schjalm@ssb.no",
+    "email_short": "sch@ssb.no"
+  },
+  {
+    "name": "Schjelderup, Nils-Jakob",
+    "email": "nils-jakob.schjelderup@ssb.no",
+    "email_short": "njf@ssb.no"
+  },
+  {
+    "name": "Schnelle, Kenneth",
+    "email": "kenneth.schnelle@ssb.no",
+    "email_short": "sck@ssb.no"
+  },
+  {
+    "name": "Schøning, Per",
+    "email": "per.schoning@ssb.no",
+    "email_short": "per@ssb.no"
+  },
+  {
+    "name": "Schulstad, Kenneth",
+    "email": "kenneth.schulstad@ssb.no",
+    "email_short": "kons_schu@ssb.no"
+  },
+  {
+    "name": "Schwartz, Mariel E.",
+    "email": "mariel.schwartz@ssb.no",
+    "email_short": "mez@ssb.no"
+  },
+  {
+    "name": "SecuritasOslo",
+    "email": "securitas.oslo@ssb.no",
+    "email_short": "kons_secur@ssb.no"
+  },
+  {
+    "name": "Seferi, Gezim",
+    "email": "gezim.seferi@ssb.no",
+    "email_short": "gse@ssb.no"
+  },
+  {
+    "name": "Segiet, Katarzyna",
+    "email": "katarzyna.segiet@ssb.no",
+    "email_short": "kzs@ssb.no"
+  },
+  {
+    "name": "Seierstad, Ane",
+    "email": "ane.seierstad@ssb.no",
+    "email_short": "Sei@ssb.no"
+  },
+  { "name": "Service berreg", "email": "", "email_short": "brg@ssb.no" },
+  {
+    "name": "Setzler, Bradley Jackson",
+    "email": "bradley.setzler@ssb.no",
+    "email_short": "bjs@ssb.no"
+  },
+  {
+    "name": "Shimay, Mihret",
+    "email": "mihret.shimay@ssb.no",
+    "email_short": "mio@ssb.no"
+  },
+  {
+    "name": "Sigstad, Henrik",
+    "email": "henrik.sigstad@ssb.no",
+    "email_short": "hes@ssb.no"
+  },
+  {
+    "name": "Sikkeland, John Sondre",
+    "email": "john.sikkeland@ssb.no",
+    "email_short": "jns@ssb.no"
+  },
+  {
+    "name": "Silnes, Aina",
+    "email": "aina.silnes@ssb.no",
+    "email_short": "ais@ssb.no"
+  },
+  {
+    "name": "Sivertstøl, Øyvind",
+    "email": "oyvind.sivertstol@ssb.no",
+    "email_short": "sid@ssb.no"
+  },
+  { "name": "Sivtest_Admin", "email": "", "email_short": "si4@ssb.no" },
+  { "name": "Sivtest_Intervjuer", "email": "", "email_short": "si6@ssb.no" },
+  { "name": "Sivtest_Reserve", "email": "", "email_short": "si5@ssb.no" },
+  {
+    "name": "Sjøberg, Johan",
+    "email": "johan.sjoberg@ssb.no",
+    "email_short": "sjj@ssb.no"
+  },
+  {
+    "name": "Sjølie, Håvard",
+    "email": "havard.sjolie@ssb.no",
+    "email_short": "hsj@ssb.no"
+  },
+  {
+    "name": "Sjømæling, Erik",
+    "email": "erik.sjomaeling@ssb.no",
+    "email_short": "esg@ssb.no"
+  },
+  {
+    "name": "Sjøvold, Knut",
+    "email": "knut.sjovold@ssb.no",
+    "email_short": "ksj@ssb.no"
+  },
+  {
+    "name": "Skaar, Bjørn-Andre",
+    "email": "bjorn.skaar@ssb.no",
+    "email_short": "kons-skaar@ssb.no"
+  },
+  {
+    "name": "Skaar, Emma",
+    "email": "emma.skaar@ssb.no",
+    "email_short": "ske@ssb.no"
+  },
+  {
+    "name": "Skalle, Bjørn",
+    "email": "bjorn.skalle@ssb.no",
+    "email_short": "bsk@ssb.no"
+  },
+  {
+    "name": "Skara, Anne Bakke",
+    "email": "anne.skara@ssb.no",
+    "email_short": "bes@ssb.no"
+  },
+  {
+    "name": "Skårerhøgda, Martin",
+    "email": "martin.skarerhogda@ssb.no",
+    "email_short": "msk@ssb.no"
+  },
+  {
+    "name": "Skauby, Are Dhaenens",
+    "email": "are.skauby@ssb.no",
+    "email_short": "uby@ssb.no"
+  },
+  {
+    "name": "Skinderviken, Roar",
+    "email": "roar.skinderviken@ssb.no",
+    "email_short": "kons_roar@ssb.no"
+  },
+  {
+    "name": "Skjæveland, Martin Handeland",
+    "email": "martin.skjaeveland@ssb.no",
+    "email_short": "mdd@ssb.no"
+  },
+  {
+    "name": "Skjeldås, Marie Karoline",
+    "email": "marie.skjeldas@ssb.no",
+    "email_short": "oli@ssb.no"
+  },
+  {
+    "name": "Skjerpen, Camilla",
+    "email": "camilla.skjerpen@ssb.no",
+    "email_short": "skc@ssb.no"
+  },
+  {
+    "name": "Skjerpen, Terje",
+    "email": "terje.skjerpen@ssb.no",
+    "email_short": "tes@ssb.no"
+  },
+  {
+    "name": "Skjulhaug, Sebastian Guha",
+    "email": "sebastian.skjulhaug@ssb.no",
+    "email_short": "uha@ssb.no"
+  },
+  {
+    "name": "Skoglund, Emil",
+    "email": "emil.skoglund@ssb.no",
+    "email_short": "ems@ssb.no"
+  },
+  {
+    "name": "Skoglund, Morten",
+    "email": "morten.skoglund@ssb.no",
+    "email_short": "msd@ssb.no"
+  },
+  {
+    "name": "Skotvold, Robert",
+    "email": "robert.skotvold@ssb.no",
+    "email_short": "sko@ssb.no"
+  },
+  {
+    "name": "Skretting, Julia",
+    "email": "julia.skretting@ssb.no",
+    "email_short": "jzh@ssb.no"
+  },
+  {
+    "name": "Skullerud, Håkon Frøysa",
+    "email": "hakon.skullerud@ssb.no",
+    "email_short": "sku@ssb.no"
+  },
+  {
+    "name": "Skulstad, Bjørn Marius L.",
+    "email": "bjornmarius.skulstad@ssb.no",
+    "email_short": "bms@ssb.no"
+  },
+  {
+    "name": "Sky, Vibeke",
+    "email": "vibeke.sky@ssb.no",
+    "email_short": "vis@ssb.no"
+  },
+  {
+    "name": "Skyrudsmoen, Lene",
+    "email": "lene.skyrudsmoen@ssb.no",
+    "email_short": "lks@ssb.no"
+  },
+  {
+    "name": "Slaastad, Tove Irene",
+    "email": "tove.irene.slaastad@ssb.no",
+    "email_short": "tis@ssb.no"
+  },
+  {
+    "name": "Slaatten, Inger Johanne",
+    "email": "inger.johanne.slaatten@ssb.no",
+    "email_short": "ijs@ssb.no"
+  },
+  {
+    "name": "Sletholen, Aud Ragnhild",
+    "email": "aud.ragnhild.sletholen@ssb.no",
+    "email_short": "asl@ssb.no"
+  },
+  {
+    "name": "Slettebø, Olav",
+    "email": "olav.slettebo@ssb.no",
+    "email_short": "ohs@ssb.no"
+  },
+  {
+    "name": "Sletten, Pål",
+    "email": "pal.sletten@ssb.no",
+    "email_short": "slp@ssb.no"
+  },
+  {
+    "name": "Smedstad, Jan Werner",
+    "email": "jan.werner.smedstad@ssb.no",
+    "email_short": "jws@ssb.no"
+  },
+  {
+    "name": "Smerud, Grete",
+    "email": "grete.smerud@ssb.no",
+    "email_short": "sme@ssb.no"
+  },
+  {
+    "name": "Snekkerbakken, Rachel",
+    "email": "rachel.snekkerbakken@ssb.no",
+    "email_short": "rac@ssb.no"
+  },
+  {
+    "name": "Søbye, Espen",
+    "email": "espen.sobye@ssb.no",
+    "email_short": "eso@ssb.no"
+  },
+  {
+    "name": "Søfting, Martin",
+    "email": "martin.softing@ssb.no",
+    "email_short": "msf@ssb.no"
+  },
+  {
+    "name": "Soland, Geir",
+    "email": "geir.soland@ssb.no",
+    "email_short": "gso@ssb.no"
+  },
+  {
+    "name": "Solås, June",
+    "email": "june.solas@ssb.no",
+    "email_short": "uso@ssb.no"
+  },
+  {
+    "name": "Solbakken, Edda Torsdatter",
+    "email": "edda.torsdatter.solbakken@ssb.no",
+    "email_short": "ets@ssb.no"
+  },
+  {
+    "name": "Solbakken, Heidi Sørnes",
+    "email": "heidi.solbakken@ssb.no",
+    "email_short": "idi@ssb.no"
+  },
+  {
+    "name": "Solem, Richard",
+    "email": "richard.solem@ssb.no",
+    "email_short": "ori@ssb.no"
+  },
+  {
+    "name": "Solheim, Leiv",
+    "email": "leiv.solheim@ssb.no",
+    "email_short": "lso@ssb.no"
+  },
+  {
+    "name": "Solstrand, Sunniva Maria",
+    "email": "sunniva.solstrand@ssb.no",
+    "email_short": "sum@ssb.no"
+  },
+  {
+    "name": "Sommer, Jennifer Emilie",
+    "email": "jennifer.sommer@ssb.no",
+    "email_short": "jem@ssb.no"
+  },
+  {
+    "name": "Sommer, Simen",
+    "email": "simen.sommer@ssb.no",
+    "email_short": "sik@ssb.no"
+  },
+  {
+    "name": "Sønstebø, Anders",
+    "email": "anders.sonstebo@ssb.no",
+    "email_short": "son@ssb.no"
+  },
+  {
+    "name": "Sørbråten, Maylen",
+    "email": "maylen.sorbraten@ssb.no",
+    "email_short": "mas@ssb.no"
+  },
+  {
+    "name": "Sørenes, Daniel",
+    "email": "daniel.sorenes@ssb.no",
+    "email_short": "dsr@ssb.no"
+  },
+  {
+    "name": "Sørjoten, Guro Lindberg",
+    "email": "guro.sorjoten@ssb.no",
+    "email_short": "gls@ssb.no"
+  },
+  {
+    "name": "Sørli-Nesset, Per Morten",
+    "email": "per.morten.sorli-nesset@ssb.no",
+    "email_short": "pms@ssb.no"
+  },
+  {
+    "name": "Sørli, Arne",
+    "email": "arne.sorli@ssb.no",
+    "email_short": "aei@ssb.no"
+  },
+  {
+    "name": "Sørlien, Karstein Kristiansen",
+    "email": "karstein.sorlien@ssb.no",
+    "email_short": "KLN@ssb.no"
+  },
+  {
+    "name": "Sørøy, Trond",
+    "email": "trond.soroy@ssb.no",
+    "email_short": "ron@ssb.no"
+  },
+  {
+    "name": "Souri, Mahta",
+    "email": "mahta.souri@ssb.no",
+    "email_short": "mhs@ssb.no"
+  },
+  {
+    "name": "Spachmo, Anne Britt",
+    "email": "anne.britt.spachmo@ssb.no",
+    "email_short": "spa@ssb.no"
+  },
+  {
+    "name": "Stålnacke, Margareta",
+    "email": "margareta.stalnacke@ssb.no",
+    "email_short": "mrs@ssb.no"
+  },
+  {
+    "name": "Stambøl, Lasse Sigbjørn",
+    "email": "lasse.sigbjorn.stambol@ssb.no",
+    "email_short": "lss@ssb.no"
+  },
+  {
+    "name": "Stavestrand, Eirik",
+    "email": "eirik.stavestrand@ssb.no",
+    "email_short": "kons_stave@ssb.no"
+  },
+  {
+    "name": "Stavnes, Einar Døvik",
+    "email": "einar.stavnes@ssb.no",
+    "email_short": "eds@ssb.no"
+  },
+  {
+    "name": "Steen-Johnsen, Søren",
+    "email": "soren.johnsen@ssb.no",
+    "email_short": "rst@ssb.no"
+  },
+  {
+    "name": "Steffensen, Kjartan",
+    "email": "kjartan.steffensen@ssb.no",
+    "email_short": "stk@ssb.no"
+  },
+  {
+    "name": "Steine, Frøydis Sæbø",
+    "email": "froydis.steine@ssb.no",
+    "email_short": "fss@ssb.no"
+  },
+  {
+    "name": "Steinkellner, Alice",
+    "email": "alice.steinkellner@ssb.no",
+    "email_short": "ali@ssb.no"
+  },
+  {
+    "name": "Steinnes, Margrete",
+    "email": "margrete.steinnes@ssb.no",
+    "email_short": "ste@ssb.no"
+  },
+  {
+    "name": "Steinset, Trond Amund",
+    "email": "trond.amund.steinset@ssb.no",
+    "email_short": "tra@ssb.no"
+  },
+  {
+    "name": "Stenbrenden, Are",
+    "email": "are.stenbrenden@ssb.no",
+    "email_short": "aet@ssb.no"
+  },
+  {
+    "name": "Stene, Reid Jone",
+    "email": "reid.jone.stene@ssb.no",
+    "email_short": "rjs@ssb.no"
+  },
+  {
+    "name": "Stenseng, Iris Anita",
+    "email": "iris.stenseng@ssb.no",
+    "email_short": "ias@ssb.no"
+  },
+  {
+    "name": "Stensrud, Olav",
+    "email": "olav.stensrud@ssb.no",
+    "email_short": "ens@ssb.no"
+  },
+  {
+    "name": "Stensvik, Anne Karine",
+    "email": "anne-karine.stensvik@ssb.no",
+    "email_short": "nek@ssb.no"
+  },
+  {
+    "name": "Stokke, Hildegunn",
+    "email": "hildegunn.stokke@ssb.no",
+    "email_short": "hgs@ssb.no"
+  },
+  {
+    "name": "Stokmo, Åse",
+    "email": "ase.stokmo@ssb.no",
+    "email_short": "tok@ssb.no"
+  },
+  {
+    "name": "Stølan, Solveig Bryne Castberg",
+    "email": "solveig.stolan@ssb.no",
+    "email_short": "sbc@ssb.no"
+  },
+  {
+    "name": "Stølen, Nils Martin",
+    "email": "nils.martin.stolen@ssb.no",
+    "email_short": "nms@ssb.no"
+  },
+  {
+    "name": "Storbråten, Berit",
+    "email": "berit.storbraten@ssb.no",
+    "email_short": "bit@ssb.no"
+  },
+  {
+    "name": "Stormoen, Harald",
+    "email": "harald.stormoen@ssb.no",
+    "email_short": "dst@ssb.no"
+  },
+  {
+    "name": "Storrøsten, Halvor",
+    "email": "halvor.storrosten@ssb.no",
+    "email_short": "hbs@ssb.no"
+  },
+  {
+    "name": "Storrud, Ayfer",
+    "email": "ayfer.storrud@ssb.no",
+    "email_short": "ays@ssb.no"
+  },
+  {
+    "name": "Storvold, Kim",
+    "email": "kim.storvold@ssb.no",
+    "email_short": "rem@ssb.no"
+  },
+  {
+    "name": "Strand, Maria Jøssang",
+    "email": "maria.strand@ssb.no",
+    "email_short": "iaj@ssb.no"
+  },
+  {
+    "name": "Strandseter, Vidar",
+    "email": "vidar.strandseter@ssb.no",
+    "email_short": "vst@ssb.no"
+  },
+  {
+    "name": "Strisland, Erik Selseng",
+    "email": "erik.strisland@ssb.no",
+    "email_short": "knd@ssb.no"
+  },
+  {
+    "name": "Strøm, Birger",
+    "email": "birger.strom@ssb.no",
+    "email_short": "bgs@ssb.no"
+  },
+  {
+    "name": "Strøm, Frøydis",
+    "email": "froydis.strom@ssb.no",
+    "email_short": "fst@ssb.no"
+  },
+  {
+    "name": "Stubhaug, Magnus Eliasson",
+    "email": "magnus.eliasson.stubhaug@ssb.no",
+    "email_short": "mst@ssb.no"
+  },
+  {
+    "name": "Sundheim, Øyvind",
+    "email": "oyvind.sundheim@ssb.no",
+    "email_short": "ysu@ssb.no"
+  },
+  {
+    "name": "Sundt, Anja",
+    "email": "anja.sundt@ssb.no",
+    "email_short": "uan@ssb.no"
+  },
+  {
+    "name": "Sundt, Camilla Schjetlein",
+    "email": "camilla.schjetlein.sundt@ssb.no",
+    "email_short": "css@ssb.no"
+  },
+  {
+    "name": "Sundt, Sophie Emilie",
+    "email": "sophie.sundt@ssb.no",
+    "email_short": "oph@ssb.no"
+  },
+  {
+    "name": "Surén, Ida Clemetsen",
+    "email": "ida.suren@ssb.no",
+    "email_short": "ics@ssb.no"
+  },
+  {
+    "name": "Svanøe-Hafstad, Berit",
+    "email": "berit.svanoe-hafstad@ssb.no",
+    "email_short": "bsh@ssb.no"
+  },
+  {
+    "name": "Svarstad, Marius Brekk",
+    "email": "marius.svarstad@ssb.no",
+    "email_short": "mbs@ssb.no"
+  },
+  {
+    "name": "Sve, Dagfinn",
+    "email": "dagfinn.sve@ssb.no",
+    "email_short": "sda@ssb.no"
+  },
+  {
+    "name": "Sveen, Knut-Erik F.",
+    "email": "knut-erik.sveen@ssb.no",
+    "email_short": "kef@ssb.no"
+  },
+  {
+    "name": "Svenkerud, Simen",
+    "email": "simen.svenkerud@ssb.no",
+    "email_short": "ssv@ssb.no"
+  },
+  {
+    "name": "Svensrud, Hanne Marit",
+    "email": "hanne.marit.svensrud@ssb.no",
+    "email_short": "hms@ssb.no"
+  },
+  {
+    "name": "Svergja, John Kasper",
+    "email": "john.svergja@ssb.no",
+    "email_short": "hnk@ssb.no"
+  },
+  {
+    "name": "Swendsen, Anders Rygh",
+    "email": "anders.rygh.swendsen@ssb.no",
+    "email_short": "asw@ssb.no"
+  },
+  {
+    "name": "Syse, Astri",
+    "email": "astri.syse@ssb.no",
+    "email_short": "sya@ssb.no"
+  },
+  {
+    "name": "Szolnoki, Andras",
+    "email": "andras.szolnoki@ssb.no",
+    "email_short": "asz@ssb.no"
+  },
+  {
+    "name": "Taha, Salma",
+    "email": "salma.taha@ssb.no",
+    "email_short": "sah@ssb.no"
+  },
+  {
+    "name": "Tahir, Aisha Iqbal",
+    "email": "aisha.tahir@ssb.no",
+    "email_short": "aqt@ssb.no"
+  },
+  {
+    "name": "Tairi, Enver",
+    "email": "enver.tairi@ssb.no",
+    "email_short": "eta@ssb.no"
+  },
+  {
+    "name": "Takle, Mona",
+    "email": "mona.takle@ssb.no",
+    "email_short": "mta@ssb.no"
+  },
+  {
+    "name": "Tandberg, Trine",
+    "email": "trine.tandberg@ssb.no",
+    "email_short": "ttm@ssb.no"
+  },
+  {
+    "name": "Tanding, Ståle",
+    "email": "stale.tanding@ssb.no",
+    "email_short": "tgn@ssb.no"
+  },
+  {
+    "name": "Tangen, Anne Hege",
+    "email": "anne.hege.tangen@ssb.no",
+    "email_short": "aht@ssb.no"
+  },
+  {
+    "name": "Tangen, Hilde Elisabeth",
+    "email": "hilde.elisabeth.tangen@ssb.no",
+    "email_short": "hit@ssb.no"
+  },
+  {
+    "name": "Tangen, Tor Arne",
+    "email": "tor.tangen@ssb.no",
+    "email_short": "tat@ssb.no"
+  },
+  {
+    "name": "Tatouti, Youssef",
+    "email": "youssef.tatouti@ssb.no",
+    "email_short": "yta@ssb.no"
+  },
+  {
+    "name": "Teigen, Sølvi Rabben",
+    "email": "solvi.teigen@ssb.no",
+    "email_short": "slv@ssb.no"
+  },
+  {
+    "name": "Telle, Kjetil",
+    "email": "kjetil.telle@ssb.no",
+    "email_short": "tel@ssb.no"
+  },
+  {
+    "name": "Tengs, Elise",
+    "email": "elise.tengs@ssb.no",
+    "email_short": "ngs@ssb.no"
+  },
+  {
+    "name": "Texmon, Inger",
+    "email": "inger.texmon@ssb.no",
+    "email_short": "iet@ssb.no"
+  },
+  {
+    "name": "Thindberg, Christian",
+    "email": "christian.thindberg@ssb.no",
+    "email_short": "cth@ssb.no"
+  },
+  {
+    "name": "Thistel, Linn Seime",
+    "email": "linn.thistel@ssb.no",
+    "email_short": "lkt@ssb.no"
+  },
+  {
+    "name": "Thomas, Michael J.",
+    "email": "michael.thomas@ssb.no",
+    "email_short": "mjt@ssb.no"
+  },
+  {
+    "name": "Thon, Roger",
+    "email": "roger.thon@ssb.no",
+    "email_short": "rgt@ssb.no"
+  },
+  {
+    "name": "Thonstad, Merete",
+    "email": "merete.thonstad@ssb.no",
+    "email_short": "met@ssb.no"
+  },
+  {
+    "name": "Thorbjørnsen, Eivind",
+    "email": "eivind.thorbjornsen@ssb.no",
+    "email_short": "vin@ssb.no"
+  },
+  {
+    "name": "Thoresen, Thor Olav",
+    "email": "thor.olav.thoresen@ssb.no",
+    "email_short": "tot@ssb.no"
+  },
+  {
+    "name": "Thorsen, Lotte Rustad",
+    "email": "lotte.thorsen@ssb.no",
+    "email_short": "lrt@ssb.no"
+  },
+  {
+    "name": "Thorsnes, Silje Skjolden",
+    "email": "silje.skjolden.thorsnes@ssb.no",
+    "email_short": "tss@ssb.no"
+  },
+  {
+    "name": "Thorud, Anne Brit",
+    "email": "anne.brit.thorud@ssb.no",
+    "email_short": "ath@ssb.no"
+  },
+  {
+    "name": "Thorvaldsen, Lars",
+    "email": "lars.thorvaldsen@ssb.no",
+    "email_short": "lth@ssb.no"
+  },
+  {
+    "name": "Thuen, Kjetil",
+    "email": "kjetil.thuen@ssb.no",
+    "email_short": "konsthuen@ssb.no"
+  },
+  {
+    "name": "Thuen, Vegard",
+    "email": "vegard.thuen@ssb.no",
+    "email_short": "vth@ssb.no"
+  },
+  {
+    "name": "Tikabo, Mahari",
+    "email": "mahari.tikabo@ssb.no",
+    "email_short": "ika@ssb.no"
+  },
+  {
+    "name": "Tilrem, Erlend",
+    "email": "erlend.tilrem@ssb.no",
+    "email_short": "eti@ssb.no"
+  },
+  {
+    "name": "Tjernsberg, Torbjørn",
+    "email": "torbjorn.tjernsberg@ssb.no",
+    "email_short": "tje@ssb.no"
+  },
+  {
+    "name": "Todsen, Steinar",
+    "email": "steinar.todsen@ssb.no",
+    "email_short": "sto@ssb.no"
+  },
+  {
+    "name": "Tømmerås, Ane Margrete",
+    "email": "ane.tommeras@ssb.no",
+    "email_short": "ess@ssb.no"
+  },
+  {
+    "name": "Tønjum, Pia",
+    "email": "pia.tonjum@ssb.no",
+    "email_short": "pet@ssb.no"
+  },
+  {
+    "name": "Tonum, Kenneth",
+    "email": "kenneth.tonum@ssb.no",
+    "email_short": "num@ssb.no"
+  },
+  {
+    "name": "Toraman, Mehmet",
+    "email": "mehmet.toraman@ssb.no",
+    "email_short": "Meh@ssb.no"
+  },
+  {
+    "name": "Torgals, Sindre",
+    "email": "sindre.torgals@ssb.no",
+    "email_short": "dre@ssb.no"
+  },
+  {
+    "name": "Torgan, Oda Andersen",
+    "email": "oda.torgan@ssb.no",
+    "email_short": "oat@ssb.no"
+  },
+  {
+    "name": "Torkelsen, Elin",
+    "email": "elin.torkelsen@ssb.no",
+    "email_short": "eni@ssb.no"
+  },
+  {
+    "name": "Torp, Camilla",
+    "email": "camilla.torp@ssb.no",
+    "email_short": "cat@ssb.no"
+  },
+  {
+    "name": "Torp, Jenny",
+    "email": "jenny.torp@ssb.no",
+    "email_short": "oje@ssb.no"
+  },
+  {
+    "name": "Torp, Jo Andre",
+    "email": "jo.torp@ssb.no",
+    "email_short": "jat@ssb.no"
+  },
+  {
+    "name": "Torsteinsen, Arnhild",
+    "email": "arnhild.torsteinsen@ssb.no",
+    "email_short": "ato@ssb.no"
+  },
+  {
+    "name": "Torsvik, Gaute",
+    "email": "gaute.torsvik@ssb.no",
+    "email_short": "oga@ssb.no"
+  },
+  {
+    "name": "Toth, Boriska",
+    "email": "boriska.toth@ssb.no",
+    "email_short": "bto@ssb.no"
+  },
+  {
+    "name": "Totland, Eirin",
+    "email": "eirin.totland@ssb.no",
+    "email_short": "iri@ssb.no"
+  },
+  {
+    "name": "Tran, Hieu Minh",
+    "email": "hieu.tran@ssb.no",
+    "email_short": "hmt@ssb.no"
+  },
+  {
+    "name": "Trelsgård, Nils Arne",
+    "email": "nils.trelsgard@ssb.no",
+    "email_short": "nat@ssb.no"
+  },
+  {
+    "name": "Tretvoll, Håkon",
+    "email": "hakon.tretvoll@ssb.no",
+    "email_short": "htr@ssb.no"
+  },
+  {
+    "name": "Tuhus, Per Torstein",
+    "email": "per.torstein.tuhus@ssb.no",
+    "email_short": "ptt@ssb.no"
+  },
+  {
+    "name": "Tuv, Nina",
+    "email": "nina.tuv@ssb.no",
+    "email_short": "ntu@ssb.no"
+  },
+  {
+    "name": "Tuveng, Irene",
+    "email": "irene.tuveng@ssb.no",
+    "email_short": "itu@ssb.no"
+  },
+  {
+    "name": "Tveita, Ola",
+    "email": "ola.tveita@ssb.no",
+    "email_short": "tve@ssb.no"
+  },
+  {
+    "name": "Tyutchev, Alexey",
+    "email": "alexey.tyutchev@ssb.no",
+    "email_short": "kons_tyutchev@ssb.no"
+  },
+  {
+    "name": "Undelstvedt, Jørn Kristian",
+    "email": "jorn.kristian.undelstvedt@ssb.no",
+    "email_short": "jku@ssb.no"
+  },
+  {
+    "name": "Utby, Henrik",
+    "email": "henrik.utby@ssb.no",
+    "email_short": "utb@ssb.no"
+  },
+  {
+    "name": "Utkilen, Janne Therese",
+    "email": "janne.utkilen@ssb.no",
+    "email_short": "jtu@ssb.no"
+  },
+  {
+    "name": "Uy, Johnnadel Salita",
+    "email": "johnnadel.uy@ssb.no",
+    "email_short": "jsu@ssb.no"
+  },
+  {
+    "name": "Vaaje, Per Inge",
+    "email": "per.vaaje@ssb.no",
+    "email_short": "piv@ssb.no"
+  },
+  {
+    "name": "Vågdal, Marit",
+    "email": "marit.vagdal@ssb.no",
+    "email_short": "mva@ssb.no"
+  },
+  {
+    "name": "Våge, Kjell Ove",
+    "email": "kjell.vage@ssb.no",
+    "email_short": "kov@ssb.no"
+  },
+  {
+    "name": "Vålen, Roar",
+    "email": "roar.valen@ssb.no",
+    "email_short": "rav@ssb.no"
+  },
+  {
+    "name": "Valen, Thorleiv",
+    "email": "thorleiv.valen@ssb.no",
+    "email_short": "val@ssb.no"
+  },
+  {
+    "name": "Van, Thi Mem",
+    "email": "mem.van@ssb.no",
+    "email_short": "mem@ssb.no"
+  },
+  {
+    "name": "Vangen, Ole Henrik",
+    "email": "ole.vangen@ssb.no",
+    "email_short": "ohv@ssb.no"
+  },
+  {
+    "name": "Vassenden, Elisabetta",
+    "email": "elisabetta.vassenden@ssb.no",
+    "email_short": "elv@ssb.no"
+  },
+  {
+    "name": "Vassenden, Kåre",
+    "email": "kare.vassenden@ssb.no",
+    "email_short": "kva@ssb.no"
+  },
+  {
+    "name": "Vattø, Trine Engh",
+    "email": "trine.vatto@ssb.no",
+    "email_short": "tev@ssb.no"
+  },
+  {
+    "name": "Vedø, Anne",
+    "email": "anne.vedo@ssb.no",
+    "email_short": "ave@ssb.no"
+  },
+  {
+    "name": "Vedvik, Louise Sade",
+    "email": "louise.vedvik@ssb.no",
+    "email_short": "lou@ssb.no"
+  },
+  {
+    "name": "Vegard, Kristine Erstad",
+    "email": "kristine.erstad.vegard@ssb.no",
+    "email_short": "kev@ssb.no"
+  },
+  {
+    "name": "Vegsund, Heidi",
+    "email": "heidi.vegsund@ssb.no",
+    "email_short": "hev@ssb.no"
+  },
+  {
+    "name": "Veiteberg, Finn",
+    "email": "finn.veiteberg@ssb.no",
+    "email_short": "fiv@ssb.no"
+  },
+  {
+    "name": "Venkataraman, Prabakar",
+    "email": "prabakar.venkataraman@ssb.no",
+    "email_short": "pve@ssb.no"
+  },
+  {
+    "name": "Vestad, Ola",
+    "email": "ola.vestad@ssb.no",
+    "email_short": "olv@ssb.no"
+  },
+  {
+    "name": "Vestbekken, Tore",
+    "email": "tore.vestbekken@ssb.no",
+    "email_short": "ves@ssb.no"
+  },
+  {
+    "name": "Vestby, Annette",
+    "email": "annette.vestby@ssb.no",
+    "email_short": "anv@ssb.no"
+  },
+  {
+    "name": "Vestli, Bjørn",
+    "email": "bjorn.vestli@ssb.no",
+    "email_short": "bjv@ssb.no"
+  },
+  {
+    "name": "Vestli, Ronny",
+    "email": "ronny.vestli@ssb.no",
+    "email_short": "rve@ssb.no"
+  },
+  {
+    "name": "Vestli, Stian",
+    "email": "stian.vestli@ssb.no",
+    "email_short": "vti@ssb.no"
+  },
+  {
+    "name": "Vestre, Arnstein",
+    "email": "arnstein.vestre@ssb.no",
+    "email_short": "arv@ssb.no"
+  },
+  {
+    "name": "Vestre, Therese Løken",
+    "email": "therese.vestre@ssb.no",
+    "email_short": "vlt@ssb.no"
+  },
+  {
+    "name": "Viggen, Ove",
+    "email": "ove.viggen@ssb.no",
+    "email_short": "ovi@ssb.no"
+  },
+  {
+    "name": "Vigran, Åsne",
+    "email": "asne.vigran@ssb.no",
+    "email_short": "vig@ssb.no"
+  },
+  {
+    "name": "Vigtel, Trond Christian",
+    "email": "trond.vigtel@ssb.no",
+    "email_short": "tcv@ssb.no"
+  },
+  {
+    "name": "Vikesund, Kristina",
+    "email": "kristina.vikesund@ssb.no",
+    "email_short": "kvd@ssb.no"
+  },
+  {
+    "name": "Vikingstad, Kurt",
+    "email": "kurt.vikingstad@ssb.no",
+    "email_short": "kuv@ssb.no"
+  },
+  {
+    "name": "Villund, Ole Richard Storberget",
+    "email": "ole.villund@ssb.no",
+    "email_short": "vil@ssb.no"
+  },
+  {
+    "name": "Vinter, Kim",
+    "email": "kim.vinter@ssb.no",
+    "email_short": "kiv@ssb.no"
+  },
+  {
+    "name": "Visaggi, Maria",
+    "email": "maria.visaggi@ssb.no",
+    "email_short": "mvi@ssb.no"
+  },
+  {
+    "name": "Vold, Borgny",
+    "email": "borgny.vold@ssb.no",
+    "email_short": "bov@ssb.no"
+  },
+  {
+    "name": "Waaler, Svein Erik",
+    "email": "sveinerik.waaler@ssb.no",
+    "email_short": "sew@ssb.no"
+  },
+  {
+    "name": "Wahl, Beverley",
+    "email": "beverley.wahl@ssb.no",
+    "email_short": "bwa@ssb.no"
+  },
+  {
+    "name": "Waldinger, Daniel",
+    "email": "daniel.waldinger@ssb.no",
+    "email_short": "dwa@ssb.no"
+  },
+  {
+    "name": "Walls, Andrew",
+    "email": "andrew.walls@ssb.no",
+    "email_short": "adw@ssb.no"
+  },
+  {
+    "name": "Walsøe, Heidi Kristin",
+    "email": "heidi.walsoe@ssb.no",
+    "email_short": "hkw@ssb.no"
+  },
+  {
+    "name": "Walther-Zhang, Yun",
+    "email": "yun.walther-zhang@ssb.no",
+    "email_short": "ywz@ssb.no"
+  },
+  {
+    "name": "Waltila, Anders",
+    "email": "anders.waltila@ssb.no",
+    "email_short": "kons_awa@ssb.no"
+  },
+  {
+    "name": "Wang, Jan Henrik",
+    "email": "jan.henrik.wang@ssb.no",
+    "email_short": "JHW@ssb.no"
+  },
+  {
+    "name": "Wangen, Benjamin",
+    "email": "benjamin.wangen@ssb.no",
+    "email_short": "bew@ssb.no"
+  },
+  {
+    "name": "Wangen, Glenn-Erik",
+    "email": "glenn-erik.wangen@ssb.no",
+    "email_short": "gew@ssb.no"
+  },
+  {
+    "name": "Warchal, Maciej",
+    "email": "maciej.warchal@ssb.no",
+    "email_short": "wma@ssb.no"
+  },
+  {
+    "name": "Weber, Andrea",
+    "email": "andrea.weber@ssb.no",
+    "email_short": "anw@ssb.no"
+  },
+  {
+    "name": "Wendt, Kaja Kathrine",
+    "email": "kaja.wendt@ssb.no",
+    "email_short": "kkw@ssb.no"
+  },
+  {
+    "name": "Wennemo, Tom",
+    "email": "tom.wennemo@ssb.no",
+    "email_short": "wen@ssb.no"
+  },
+  {
+    "name": "Wenstad, Peder",
+    "email": "peder.wenstad@ssb.no",
+    "email_short": "kons_wenstad@ssb.no"
+  },
+  {
+    "name": "Wentzel, Mirjam",
+    "email": "mirjam.wentzel@ssb.no",
+    "email_short": "miw@ssb.no"
+  },
+  {
+    "name": "Westlie, Vetle Tvedt",
+    "email": "vetle.westlie@ssb.no",
+    "email_short": "vtw@ssb.no"
+  },
+  {
+    "name": "Westvold, Trine",
+    "email": "trine.westvold@ssb.no",
+    "email_short": "twe@ssb.no"
+  },
+  {
+    "name": "Wettre, Sigbjørn Ragnar",
+    "email": "sigbjorn.ragnar.wettre@ssb.no",
+    "email_short": "srw@ssb.no"
+  },
+  {
+    "name": "Weyer, Ingrid Semb",
+    "email": "ingrid.semb.weyer@ssb.no",
+    "email_short": "ise@ssb.no"
+  },
+  {
+    "name": "Whist, Anders",
+    "email": "anders.whist@ssb.no",
+    "email_short": "awh@ssb.no"
+  },
+  {
+    "name": "Wietfeldt, Linda",
+    "email": "linda.wietfeldt@ssb.no",
+    "email_short": "lwi@ssb.no"
+  },
+  {
+    "name": "Wiig, Ole",
+    "email": "ole.wiig@ssb.no",
+    "email_short": "owi@ssb.no"
+  },
+  {
+    "name": "Wiik, Kenneth Aarskaug",
+    "email": "kennethaarskaug.wiik@ssb.no",
+    "email_short": "kaw@ssb.no"
+  },
+  {
+    "name": "Wilhelmsen, Lars",
+    "email": "lars.wilhelmsen@ssb.no",
+    "email_short": "wla@ssb.no"
+  },
+  {
+    "name": "Wilhelmsen, Rune",
+    "email": "rune.wilhelmsen@ssb.no",
+    "email_short": "ruw@ssb.no"
+  },
+  {
+    "name": "Winther, Miles Mason",
+    "email": "miles.winther@ssb.no",
+    "email_short": "mmw@ssb.no"
+  },
+  {
+    "name": "With, Mari Lande",
+    "email": "mari.lande.with@ssb.no",
+    "email_short": "mlw@ssb.no"
+  },
+  {
+    "name": "Wold, Bjørn Kjetil Getz",
+    "email": "bjorn.wold@ssb.no",
+    "email_short": "bkw@ssb.no"
+  },
+  {
+    "name": "Wongyarit, Wanwisa",
+    "email": "wanwisa.wongyarit@ssb.no",
+    "email_short": "won@ssb.no"
+  },
+  {
+    "name": "Wrzos-Kaminska, Agata",
+    "email": "agata.wrzos-kaminska@ssb.no",
+    "email_short": "awk@ssb.no"
+  },
+  { "name": "www", "email": "", "email_short": "www@ssb.no" },
+  {
+    "name": "Ydersbond, Trond Arild",
+    "email": "trond.arild.ydersbond@ssb.no",
+    "email_short": "tad@ssb.no"
+  },
+  {
+    "name": "Yonezawa, Hidemichi",
+    "email": "hidemichi.yonezawa@ssb.no",
+    "email_short": "hyo@ssb.no"
+  },
+  {
+    "name": "Yousaf, Nazia",
+    "email": "nazia.yousaf@ssb.no",
+    "email_short": "nay@ssb.no"
+  },
+  {
+    "name": "Zahirovic, Edita",
+    "email": "edita.zahirovic@ssb.no",
+    "email_short": "eza@ssb.no"
+  },
+  {
+    "name": "Zawadka, Magdalena",
+    "email": "magdalena.zawadka@ssb.no",
+    "email_short": "zma@ssb.no"
+  },
+  {
+    "name": "Zhang, Li Chun",
+    "email": "li.chun.zhang@ssb.no",
+    "email_short": "lcz@ssb.no"
+  },
+  {
+    "name": "Ziade, Salah Eddine",
+    "email": "salah.ziade@ssb.no",
+    "email_short": "sez@ssb.no"
+  },
+  {
+    "name": "Zoutman, Floris",
+    "email": "floris.zoutman@ssb.no",
+    "email_short": "fzo@ssb.no"
+  }
+]
