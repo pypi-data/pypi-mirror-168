@@ -1,0 +1,13 @@
+coastsat/SDS_classify.py,sha256=ZRRppVN63k-gkeuGLhI6tIXj3Y6FRxP5Xso7VqIzmRU,31030
+coastsat/SDS_download.py,sha256=uuhcg16H657b7m8cleksspLTCjkq8MzpCKQlzWvuxmw,59160
+coastsat/SDS_preprocess.py,sha256=Bsi9PJaTRbTsWOeicMGZBZqLF8JKSVtOjBACV2W_hPQ,40866
+coastsat/SDS_shoreline.py,sha256=KtA9u6fJxfA1-OrYRjS0a4ry3M-KmGzSERoiUK-PGJk,51869
+coastsat/SDS_tools.py,sha256=08vIhqy1Zw3Lt8TJaBizLM2ZH6lrKTAbquUosmRPeDE,27091
+coastsat/SDS_transects.py,sha256=0T0vwHQO-xbHodJv_9Nrj7OlO9kDbs44gUvPUblgFVo,29635
+coastsat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coastsat/gdal_merge.py,sha256=BL8XAssio3aKEJoinqg7duJRGBz073ccXfqbg_MCnq0,18307
+pkg_toml_test_2320sharon-0.0.19.dist-info/LICENSE.md,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+pkg_toml_test_2320sharon-0.0.19.dist-info/METADATA,sha256=smvPMKhf9GCqCpfsPlxrt_wY26IZm6gwoFXD79FEsHw,5063
+pkg_toml_test_2320sharon-0.0.19.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pkg_toml_test_2320sharon-0.0.19.dist-info/top_level.txt,sha256=4IOAQrFRcG1dowwL1cOThDZ1k6CdIabqy38mxRCk7kE,9
+pkg_toml_test_2320sharon-0.0.19.dist-info/RECORD,,
