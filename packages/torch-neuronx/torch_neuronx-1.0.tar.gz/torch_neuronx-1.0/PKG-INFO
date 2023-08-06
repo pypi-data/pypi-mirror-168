@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: torch_neuronx
+Version: 1.0
+Maintainer: Amazon Web Services, Inc.
+Maintainer-email: aws-neuron-support@amazon.com
+License: Proprietary
+Description-Content-Type: text/markdown
+
+WRONG PACKAGE. Please install the package from Neuron Repository - pip.repos.neuron.amazonaws.com
