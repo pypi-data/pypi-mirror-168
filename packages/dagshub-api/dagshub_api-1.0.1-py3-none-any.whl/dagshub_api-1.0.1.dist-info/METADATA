@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dagshub-api
+Version: 1.0.1
+Summary: DagsHub API
+Home-page: UNKNOWN
+Author-email: 
+License: UNKNOWN
+Keywords: Swagger,DagsHub API
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    The api docs are made with SwaggerUI using the OpenAPI 3 specification.   # noqa: E501
+    
+
