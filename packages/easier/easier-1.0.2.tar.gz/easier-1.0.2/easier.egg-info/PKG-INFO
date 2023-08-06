@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: easier
+Version: 1.0.2
+Summary: Tools for analysis
+Home-page: https://github.com/robdmc/easier
+Author: Rob deCarvalho
+Author-email: unlisted@unlisted.net
+License: MIT
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Provides-Extra: dev
+License-File: LICENSE
+
+Tools for analysis
