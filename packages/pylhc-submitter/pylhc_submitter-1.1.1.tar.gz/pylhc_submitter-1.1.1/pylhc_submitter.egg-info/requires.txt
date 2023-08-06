@@ -1,0 +1,23 @@
+numpy>=1.19
+pandas>=1.0
+tfs-pandas>=3.0
+generic-parser>=1.0.8
+scipy>=1.4.0
+matplotlib>=3.2.0
+
+[:sys_platform == "linux"]
+htcondor>=8.9.2
+
+[all]
+pytest>=5.2
+pytest-cov>=2.7
+sphinx
+sphinx_rtd_theme
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest>=5.2
+pytest-cov>=2.7
