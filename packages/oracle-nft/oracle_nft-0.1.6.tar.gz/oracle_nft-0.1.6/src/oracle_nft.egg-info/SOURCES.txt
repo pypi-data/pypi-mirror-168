@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/helpers.py
+src/main.py
+src/oracle.py
+src/processors.py
+src/oracle_nft.egg-info/PKG-INFO
+src/oracle_nft.egg-info/SOURCES.txt
+src/oracle_nft.egg-info/dependency_links.txt
+src/oracle_nft.egg-info/top_level.txt
