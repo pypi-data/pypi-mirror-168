@@ -1,0 +1,19 @@
+jinja2>=3.0
+MarkupSafe>=2.0
+whitenoise>=5.3
+
+[:python_version < "3.11"]
+tomlkit>=0.10.1
+
+[dev]
+black
+ipython
+mypy
+
+[test]
+flake8
+flake8-bugbear
+flake8-logging-format
+flake8-quotes
+pytest
+pytest-cov
