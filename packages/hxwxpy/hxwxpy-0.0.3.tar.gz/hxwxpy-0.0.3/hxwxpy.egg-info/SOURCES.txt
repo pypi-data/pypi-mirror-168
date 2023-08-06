@@ -1,0 +1,8 @@
+setup.py
+hx-wxpy/__init__.py
+hx-wxpy/api_sendtext.py
+hx-wxpy/word_filter.py
+hxwxpy.egg-info/PKG-INFO
+hxwxpy.egg-info/SOURCES.txt
+hxwxpy.egg-info/dependency_links.txt
+hxwxpy.egg-info/top_level.txt
