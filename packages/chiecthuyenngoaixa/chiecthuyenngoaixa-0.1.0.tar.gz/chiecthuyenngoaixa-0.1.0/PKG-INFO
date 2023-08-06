@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: chiecthuyenngoaixa
+Version: 0.1.0
+Summary: An utility library for processing Vietnamese texts
+Home-page: https://github.com/IoeCmcomc/chiecthuyenngoaixa
+License: MIT
+Keywords: Vietnamese,text
+Author: IoeCmcomc
+Author-email: 53734763+IoeCmcomc@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Vietnamese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Project-URL: Repository, https://github.com/IoeCmcomc/chiecthuyenngoaixa
+Description-Content-Type: text/markdown
+
+# vina
